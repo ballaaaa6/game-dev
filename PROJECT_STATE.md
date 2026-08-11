@@ -5,9 +5,12 @@
 
 ## สถานะปัจจุบัน
 
-- Workspace นี้ไม่มี `.git` และไม่พบ Git repository metadata ในขอบเขตที่ตรวจสอบ จึงไม่มี branch หรือ commit ที่ยืนยันได้
+- Workspace นี้ถูก initialize เป็น Git repository แล้ว โดยใช้ branch `main`
+- ตั้ง remote `origin` เป็น `https://github.com/ballaaaa6/game-dev.git` และ push initial commit สำเร็จแล้ว
+- Commit ล่าสุดที่ push: `4dd0064` (`Initial project import`)
+- การอัปโหลดตั้งใจตัด APK/ZIP, extraction raw, Ghidra installation/database และ export C ขนาดใหญ่ตาม `.gitignore`; ไฟล์ที่เหลือใน working tree ยังอยู่ในเครื่องและไม่ถูกลบ
 - เป็น workspace สำหรับวิเคราะห์และต่อยอด office runtime จาก extraction เดิม โดยแยกผลลัพธ์ไว้ใน `Phases/`
-- ไม่พบงานที่กำลังรันหรือไฟล์ที่ระบุ active task อยู่ใน repository
+- ไม่มีงานที่กำลังรันใน repository
 
 ## สิ่งที่ทำเสร็จแล้ว
 
@@ -40,6 +43,7 @@
 
 - `AGENTS.md` — กฎ Cross-Session Handoff และ workspace conventions
 - `PROJECT_STATE.md` — สถานะเริ่มต้นจากการตรวจสอบไฟล์จริงและรายงานปัจจุบัน
+- `.gitignore` — รายการ raw/generated data ที่ไม่อัปโหลดไป GitHub
 
 ## งานที่ต้องทำต่อ
 
