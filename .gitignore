@@ -4,11 +4,11 @@ __pycache__/
 APK_Toolkit/.last_extraction.env
 
 # Raw APK/ZIP inputs and extracted source trees
-APK_Toolkit/*.apk
-APK_Toolkit/*.zip
+APK_Toolkit/
 game-dev-story-mod_Extracted/
 game-dev-story-mod_Sprites/
 game-dev-story-mod_Dumped/
+viewer/
 
 # Ghidra installation and project database (large generated binary data)
 ghidra_11.0.1_PUBLIC/
