@@ -7,8 +7,8 @@
 
 - Workspace นี้ถูก initialize เป็น Git repository แล้ว โดยใช้ branch `main`
 - ตั้ง remote `origin` เป็น `https://github.com/ballaaaa6/game-dev.git` และ push initial commit สำเร็จแล้ว
-- Commit ล่าสุดที่ push: `4dd0064` (`Initial project import`)
-- การอัปโหลดตั้งใจตัด APK/ZIP, extraction raw, Ghidra installation/database และ export C ขนาดใหญ่ตาม `.gitignore`; ไฟล์ที่เหลือใน working tree ยังอยู่ในเครื่องและไม่ถูกลบ
+- Commit ล่าสุดที่ push ก่อนการปรับนี้: `bb67167` (`Record GitHub upload state`)
+- การอัปโหลดตัด APK/ZIP, extraction raw, `game-dev-story-mod_Dumped/`, Ghidra installation/database และ export C ขนาดใหญ่ตาม `.gitignore`; โฟลเดอร์ที่ตัดออกยังอยู่ในเครื่องและไม่ถูกลบ
 - เป็น workspace สำหรับวิเคราะห์และต่อยอด office runtime จาก extraction เดิม โดยแยกผลลัพธ์ไว้ใน `Phases/`
 - ไม่มีงานที่กำลังรันใน repository
 
@@ -44,6 +44,10 @@
 - `AGENTS.md` — กฎ Cross-Session Handoff และ workspace conventions
 - `PROJECT_STATE.md` — สถานะเริ่มต้นจากการตรวจสอบไฟล์จริงและรายงานปัจจุบัน
 - `.gitignore` — รายการ raw/generated data ที่ไม่อัปโหลดไป GitHub
+
+## การเปลี่ยนแปลงล่าสุด
+
+- เตรียมลบ `game-dev-story-mod_Dumped/` ออกจาก GitHub และเพิ่มทั้งโฟลเดอร์เข้า `.gitignore` ตามขอบเขตการอัปโหลดใหม่
 
 ## งานที่ต้องทำต่อ
 

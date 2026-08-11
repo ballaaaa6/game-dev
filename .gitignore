@@ -8,16 +8,7 @@ APK_Toolkit/*.apk
 APK_Toolkit/*.zip
 game-dev-story-mod_Extracted/
 game-dev-story-mod_Sprites/
+game-dev-story-mod_Dumped/
 
 # Ghidra installation and project database (large generated binary data)
 ghidra_11.0.1_PUBLIC/
-game-dev-story-mod_Dumped/KairoHack.rep/
-
-# Large generated decompiler exports that exceed GitHub's per-file limit
-game-dev-story-mod_Dumped/Exported_ALL.c
-game-dev-story-mod_Dumped/Exported_ALL.recovered.c
-
-# Raw dumped binaries/metadata; scripts and categorized source remain tracked
-game-dev-story-mod_Dumped/*.so
-game-dev-story-mod_Dumped/*.json
-game-dev-story-mod_Dumped/*.log
