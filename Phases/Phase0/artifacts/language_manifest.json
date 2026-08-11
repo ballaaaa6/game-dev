@@ -1,0 +1,641 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-08-11T09:39:49.892342Z",
+  "source_root": "game-dev-story-mod_Sprites/language",
+  "file_count": 12,
+  "locales": [
+    "de",
+    "es",
+    "fr",
+    "hi",
+    "it",
+    "ko",
+    "pt",
+    "ru",
+    "SC",
+    "TC",
+    "TH",
+    "tr"
+  ],
+  "files": [
+    {
+      "path": "game-dev-story-mod_Sprites/language/GameDevStory_de.csv",
+      "relative_path": "language/GameDevStory_de.csv",
+      "locale": "de",
+      "size_bytes": 113254,
+      "modified_utc": "2026-08-11T08:28:33.527795Z",
+      "sha256": "bb7d66e287a3f230a6e9fd0b32aa2fc18395d704dd5b756dfd96b838a394ea7d",
+      "has_utf8_bom": true,
+      "strict_utf8": true,
+      "decode_error": null,
+      "line_count": 2436,
+      "metadata": {
+        "@title": [
+          "Deutsch"
+        ],
+        "@language": [
+          "de"
+        ],
+        "@scale": [
+          "auto"
+        ],
+        "@appli": [
+          "8 - Do not change"
+        ],
+        "@version": [
+          "2.02 - Do not change"
+        ],
+        "@author": [
+          "kairosoft"
+        ]
+      },
+      "record_count": 2418,
+      "canonical_id_count": 2418,
+      "continuation_row_count": 12,
+      "first_id": "#00000",
+      "last_id": "#02419",
+      "min_numeric_id": 0,
+      "max_numeric_id": 2419,
+      "duplicate_ids": [],
+      "nonstandard_id_rows": [],
+      "malformed_rows": [],
+      "csv_syntax_warnings": [],
+      "placeholder_tokens": [
+        "<0>",
+        "<1>",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>"
+      ]
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/language/GameDevStory_es.csv",
+      "relative_path": "language/GameDevStory_es.csv",
+      "locale": "es",
+      "size_bytes": 109562,
+      "modified_utc": "2026-08-11T08:28:33.527795Z",
+      "sha256": "461ed4e7a320bb6f54ab7e9669304bc5cea3c3b244222ca1aca9ba1877451ed9",
+      "has_utf8_bom": true,
+      "strict_utf8": true,
+      "decode_error": null,
+      "line_count": 2436,
+      "metadata": {
+        "@title": [
+          "Español"
+        ],
+        "@language": [
+          "es"
+        ],
+        "@scale": [
+          "auto"
+        ],
+        "@appli": [
+          "8 - Do not change"
+        ],
+        "@version": [
+          "2.02 - Do not change"
+        ],
+        "@author": [
+          "kairosoft"
+        ]
+      },
+      "record_count": 2418,
+      "canonical_id_count": 2418,
+      "continuation_row_count": 12,
+      "first_id": "#00000",
+      "last_id": "#02419",
+      "min_numeric_id": 0,
+      "max_numeric_id": 2419,
+      "duplicate_ids": [],
+      "nonstandard_id_rows": [],
+      "malformed_rows": [],
+      "csv_syntax_warnings": [],
+      "placeholder_tokens": [
+        "<0>",
+        "<1>",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>"
+      ]
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/language/GameDevStory_fr.csv",
+      "relative_path": "language/GameDevStory_fr.csv",
+      "locale": "fr",
+      "size_bytes": 120984,
+      "modified_utc": "2026-08-11T08:28:33.527795Z",
+      "sha256": "0ff84c612e76444321cf6c722c71abf3808d5328ce44085cc1d45711106226d4",
+      "has_utf8_bom": true,
+      "strict_utf8": true,
+      "decode_error": null,
+      "line_count": 2436,
+      "metadata": {
+        "@title": [
+          "Français"
+        ],
+        "@language": [
+          "fr"
+        ],
+        "@scale": [
+          "auto"
+        ],
+        "@appli": [
+          "8 - Do not change"
+        ],
+        "@version": [
+          "2.02 - Do not change"
+        ],
+        "@author": [
+          "kairosoft"
+        ]
+      },
+      "record_count": 2418,
+      "canonical_id_count": 2417,
+      "continuation_row_count": 12,
+      "first_id": "#00000",
+      "last_id": "#02418",
+      "min_numeric_id": 0,
+      "max_numeric_id": 2418,
+      "duplicate_ids": [],
+      "nonstandard_id_rows": [
+        "line 2436: 02419"
+      ],
+      "malformed_rows": [],
+      "csv_syntax_warnings": [],
+      "placeholder_tokens": [
+        "<0>",
+        "<1>",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>"
+      ]
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/language/GameDevStory_hi.csv",
+      "relative_path": "language/GameDevStory_hi.csv",
+      "locale": "hi",
+      "size_bytes": 240161,
+      "modified_utc": "2026-08-11T08:28:33.529210Z",
+      "sha256": "d55e17a6c436b0c29219e005b4e4b5e1731808d8e026487a783a24fe9cfb4a98",
+      "has_utf8_bom": true,
+      "strict_utf8": true,
+      "decode_error": null,
+      "line_count": 2436,
+      "metadata": {
+        "@title": [
+          "हिंदी"
+        ],
+        "@language": [
+          "hi"
+        ],
+        "@scale": [
+          "auto"
+        ],
+        "@appli": [
+          "8 - Do not change"
+        ],
+        "@version": [
+          "2.02 - Do not change"
+        ],
+        "@author": [
+          "kairosoft"
+        ]
+      },
+      "record_count": 2418,
+      "canonical_id_count": 2418,
+      "continuation_row_count": 12,
+      "first_id": "#00000",
+      "last_id": "#02419",
+      "min_numeric_id": 0,
+      "max_numeric_id": 2419,
+      "duplicate_ids": [],
+      "nonstandard_id_rows": [],
+      "malformed_rows": [],
+      "csv_syntax_warnings": [],
+      "placeholder_tokens": [
+        "<0>",
+        "<1>",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>"
+      ]
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/language/GameDevStory_it.csv",
+      "relative_path": "language/GameDevStory_it.csv",
+      "locale": "it",
+      "size_bytes": 105809,
+      "modified_utc": "2026-08-11T08:28:33.529210Z",
+      "sha256": "00d9a66ef45c5f4a8787c7a66270a147812099aa1b1654d2dcb3a7af1234178e",
+      "has_utf8_bom": true,
+      "strict_utf8": true,
+      "decode_error": null,
+      "line_count": 2436,
+      "metadata": {
+        "@title": [
+          "Italiano"
+        ],
+        "@language": [
+          "it"
+        ],
+        "@scale": [
+          "auto"
+        ],
+        "@appli": [
+          "8 - Do not change"
+        ],
+        "@version": [
+          "2.02 - Do not change"
+        ],
+        "@author": [
+          "kairosoft"
+        ]
+      },
+      "record_count": 2418,
+      "canonical_id_count": 2418,
+      "continuation_row_count": 12,
+      "first_id": "#00000",
+      "last_id": "#02419",
+      "min_numeric_id": 0,
+      "max_numeric_id": 2419,
+      "duplicate_ids": [],
+      "nonstandard_id_rows": [],
+      "malformed_rows": [],
+      "csv_syntax_warnings": [
+        "line 573: ',' expected after '\"'",
+        "line 1824: ',' expected after '\"'"
+      ],
+      "placeholder_tokens": [
+        "<0>",
+        "<1>",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>"
+      ]
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/language/GameDevStory_ko.csv",
+      "relative_path": "language/GameDevStory_ko.csv",
+      "locale": "ko",
+      "size_bytes": 116670,
+      "modified_utc": "2026-08-11T08:28:33.529711Z",
+      "sha256": "65cdd874c2c8ab1d2274c0d00c7307339c20afcf0dc25d9f4f915c98575d1fa9",
+      "has_utf8_bom": true,
+      "strict_utf8": true,
+      "decode_error": null,
+      "line_count": 2437,
+      "metadata": {
+        "@title": [
+          "조선어"
+        ],
+        "@language": [
+          "ko"
+        ],
+        "@scale": [
+          "auto"
+        ],
+        "@appli": [
+          "8 - Do not change"
+        ],
+        "@version": [
+          "2.04 - Do not change"
+        ],
+        "@author": [
+          "kairosoft"
+        ]
+      },
+      "record_count": 2419,
+      "canonical_id_count": 2419,
+      "continuation_row_count": 12,
+      "first_id": "#00000",
+      "last_id": "#02419",
+      "min_numeric_id": 0,
+      "max_numeric_id": 2419,
+      "duplicate_ids": [],
+      "nonstandard_id_rows": [],
+      "malformed_rows": [],
+      "csv_syntax_warnings": [],
+      "placeholder_tokens": [
+        "<0>",
+        "<1>",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>"
+      ]
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/language/GameDevStory_pt.csv",
+      "relative_path": "language/GameDevStory_pt.csv",
+      "locale": "pt",
+      "size_bytes": 107001,
+      "modified_utc": "2026-08-11T08:28:33.530210Z",
+      "sha256": "d879766e12fe9d4a06aebafd659c00051c62b6433e0ea10ed9c483858ece3858",
+      "has_utf8_bom": true,
+      "strict_utf8": true,
+      "decode_error": null,
+      "line_count": 2436,
+      "metadata": {
+        "@title": [
+          "Português"
+        ],
+        "@language": [
+          "pt"
+        ],
+        "@scale": [
+          "auto"
+        ],
+        "@appli": [
+          "8 - Do not change"
+        ],
+        "@version": [
+          "2.02 - Do not change"
+        ],
+        "@author": [
+          "kairosoft"
+        ]
+      },
+      "record_count": 2418,
+      "canonical_id_count": 2418,
+      "continuation_row_count": 12,
+      "first_id": "#00000",
+      "last_id": "#02419",
+      "min_numeric_id": 0,
+      "max_numeric_id": 2419,
+      "duplicate_ids": [],
+      "nonstandard_id_rows": [],
+      "malformed_rows": [],
+      "csv_syntax_warnings": [
+        "line 537: ',' expected after '\"'"
+      ],
+      "placeholder_tokens": [
+        "<0>",
+        "<1>",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>"
+      ]
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/language/GameDevStory_ru.csv",
+      "relative_path": "language/GameDevStory_ru.csv",
+      "locale": "ru",
+      "size_bytes": 169776,
+      "modified_utc": "2026-08-11T08:28:33.530711Z",
+      "sha256": "a42db6c933668b89329f6616abfac160b114ad0d6aa192597583cfe74fbdf04f",
+      "has_utf8_bom": true,
+      "strict_utf8": true,
+      "decode_error": null,
+      "line_count": 2436,
+      "metadata": {
+        "@title": [
+          "Русский"
+        ],
+        "@language": [
+          "ru"
+        ],
+        "@scale": [
+          "auto"
+        ],
+        "@appli": [
+          "8 - Do not change"
+        ],
+        "@version": [
+          "2.02 - Do not change"
+        ],
+        "@author": [
+          "kairosoft"
+        ]
+      },
+      "record_count": 2418,
+      "canonical_id_count": 2418,
+      "continuation_row_count": 12,
+      "first_id": "#00000",
+      "last_id": "#02419",
+      "min_numeric_id": 0,
+      "max_numeric_id": 2419,
+      "duplicate_ids": [],
+      "nonstandard_id_rows": [],
+      "malformed_rows": [],
+      "csv_syntax_warnings": [],
+      "placeholder_tokens": [
+        "<0>",
+        "<1>",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>"
+      ]
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/language/GameDevStory_SC.csv",
+      "relative_path": "language/GameDevStory_SC.csv",
+      "locale": "SC",
+      "size_bytes": 98130,
+      "modified_utc": "2026-08-11T08:28:33.530711Z",
+      "sha256": "8a9618ce3947c3924e68c2f88c94a23a837cd261b3a7fa0330c28c7965874293",
+      "has_utf8_bom": true,
+      "strict_utf8": true,
+      "decode_error": null,
+      "line_count": 2438,
+      "metadata": {
+        "@title": [
+          "簡体字"
+        ],
+        "@language": [
+          "zh-CN"
+        ],
+        "@scale": [
+          "auto"
+        ],
+        "@appli": [
+          "8 - Do not change"
+        ],
+        "@version": [
+          "2.04 - Do not change"
+        ],
+        "@author": [
+          "Kairosoft"
+        ]
+      },
+      "record_count": 2420,
+      "canonical_id_count": 2420,
+      "continuation_row_count": 12,
+      "first_id": "#00000",
+      "last_id": "#02419",
+      "min_numeric_id": 0,
+      "max_numeric_id": 2419,
+      "duplicate_ids": [],
+      "nonstandard_id_rows": [],
+      "malformed_rows": [],
+      "csv_syntax_warnings": [],
+      "placeholder_tokens": [
+        "<0>",
+        "<1>",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>"
+      ]
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/language/GameDevStory_TC.csv",
+      "relative_path": "language/GameDevStory_TC.csv",
+      "locale": "TC",
+      "size_bytes": 97716,
+      "modified_utc": "2026-08-11T08:28:33.531211Z",
+      "sha256": "afb1e6e3890aef4b6cffd1b3eb5535f1792e8257b4d13943c7a9bb7de6f69b25",
+      "has_utf8_bom": true,
+      "strict_utf8": true,
+      "decode_error": null,
+      "line_count": 2438,
+      "metadata": {
+        "@title": [
+          " 繁体字"
+        ],
+        "@language": [
+          "zh"
+        ],
+        "@scale": [
+          "auto"
+        ],
+        "@appli": [
+          "8 - Do not change"
+        ],
+        "@version": [
+          "2.04 - Do not change"
+        ],
+        "@author": [
+          "Kairosoft"
+        ]
+      },
+      "record_count": 2420,
+      "canonical_id_count": 2420,
+      "continuation_row_count": 12,
+      "first_id": "#00000",
+      "last_id": "#02419",
+      "min_numeric_id": 0,
+      "max_numeric_id": 2419,
+      "duplicate_ids": [],
+      "nonstandard_id_rows": [],
+      "malformed_rows": [],
+      "csv_syntax_warnings": [],
+      "placeholder_tokens": [
+        "<0>",
+        "<1>",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>"
+      ]
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/language/GameDevStory_TH.csv",
+      "relative_path": "language/GameDevStory_TH.csv",
+      "locale": "TH",
+      "size_bytes": 225704,
+      "modified_utc": "2026-08-11T08:28:33.531711Z",
+      "sha256": "577a078c546894d6cc005f29432f33ea1713c8d1dbf71cd6217db6a9d1767910",
+      "has_utf8_bom": true,
+      "strict_utf8": true,
+      "decode_error": null,
+      "line_count": 2416,
+      "metadata": {
+        "@title": [
+          "ไทย"
+        ],
+        "@language": [
+          "th"
+        ],
+        "@scale": [
+          "auto"
+        ],
+        "@appli": [
+          "8 - Do not change"
+        ],
+        "@version": [
+          "2.05 - Do not change"
+        ],
+        "@author": [
+          "Kairosoft"
+        ]
+      },
+      "record_count": 2398,
+      "canonical_id_count": 2398,
+      "continuation_row_count": 12,
+      "first_id": "#00000",
+      "last_id": "#02419",
+      "min_numeric_id": 0,
+      "max_numeric_id": 2419,
+      "duplicate_ids": [],
+      "nonstandard_id_rows": [],
+      "malformed_rows": [],
+      "csv_syntax_warnings": [],
+      "placeholder_tokens": [
+        "<0>",
+        "<1>",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>"
+      ]
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/language/GameDevStory_tr.csv",
+      "relative_path": "language/GameDevStory_tr.csv",
+      "locale": "tr",
+      "size_bytes": 109360,
+      "modified_utc": "2026-08-11T08:28:33.531711Z",
+      "sha256": "9404cc5dd6513882cac8370cdc93dc492ac8350b87d2fa14893e6b2e34a290cb",
+      "has_utf8_bom": true,
+      "strict_utf8": true,
+      "decode_error": null,
+      "line_count": 2436,
+      "metadata": {
+        "@title": [
+          "Türkçe"
+        ],
+        "@language": [
+          "tr"
+        ],
+        "@scale": [
+          "auto"
+        ],
+        "@appli": [
+          "8 - Do not change"
+        ],
+        "@version": [
+          "2.02 - Do not change"
+        ],
+        "@author": [
+          "kairosoft"
+        ]
+      },
+      "record_count": 2418,
+      "canonical_id_count": 2418,
+      "continuation_row_count": 12,
+      "first_id": "#00000",
+      "last_id": "#02419",
+      "min_numeric_id": 0,
+      "max_numeric_id": 2419,
+      "duplicate_ids": [],
+      "nonstandard_id_rows": [],
+      "malformed_rows": [],
+      "csv_syntax_warnings": [],
+      "placeholder_tokens": [
+        "<0>",
+        "<1>",
+        "<2>",
+        "<3>",
+        "<4>",
+        "<5>"
+      ]
+    }
+  ]
+}

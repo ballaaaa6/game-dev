@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-08-11T09:40:11.740519Z",
+  "phase": "phase1",
+  "status": "pass_with_warnings",
+  "checks": [
+    {
+      "id": "catalog_count",
+      "status": "pass",
+      "details": "catalog=405 expected=405"
+    },
+    {
+      "id": "catalog_unique_keys",
+      "status": "pass",
+      "details": "duplicate_paths=0 duplicate_ids=0"
+    },
+    {
+      "id": "source_hash_integrity",
+      "status": "pass",
+      "details": "missing=0 catalog_mismatch=0 phase0_mismatch=0"
+    },
+    {
+      "id": "png_metadata",
+      "status": "pass",
+      "details": "invalid_png_metadata=0"
+    },
+    {
+      "id": "seb_manifest_integrity",
+      "status": "pass",
+      "details": "catalog_seb=53 manifest_seb=53 hash_mismatch=0 parse_issues=0"
+    },
+    {
+      "id": "seb_structural_decode",
+      "status": "attention",
+      "details": "decoded=53 tail_shortfall=53"
+    },
+    {
+      "id": "office_manifest_integrity",
+      "status": "pass",
+      "details": "catalog_office=168 manifest_office=168 missing=0 extra=0"
+    },
+    {
+      "id": "code_trace_integrity",
+      "status": "pass",
+      "details": "functions=14 evidence=18 source_mismatch=0"
+    },
+    {
+      "id": "preview_artifacts_present",
+      "status": "pass",
+      "details": "declared=2 missing=0"
+    },
+    {
+      "id": "inf_referential_integrity",
+      "status": "pass",
+      "details": "records=358 probable_suffix_recoveries=6"
+    },
+    {
+      "id": "bonus_referential_integrity",
+      "status": "pass",
+      "details": "rows=146 placeholders=2 direct_links=144"
+    },
+    {
+      "id": "known_anomalies_are_recorded",
+      "status": "pass",
+      "details": "orphan_office_png=2 floor_pair_gaps=4 seb_tail_shortfall=53"
+    },
+    {
+      "id": "input_audit_status",
+      "status": "pass",
+      "details": "audit_failures=0"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "SEB structural decoder recorded a four-byte final-record shortfall for 53 file(s); source bytes were not padded.",
+    "INF adapter resolution remains probable: com/img.inf:37 socialShare",
+    "INF adapter resolution remains probable: com/seb.inf:29 socialShare",
+    "INF adapter resolution remains probable: game/img.inf:123 floorCover",
+    "INF adapter resolution remains probable: game/seb.inf:2 backlight",
+    "INF adapter resolution remains probable: office/img.inf:146 reception_036",
+    "INF adapter resolution remains probable: office/seb.inf:21 floor36",
+    "Office PNGs without direct bonus reference: ['office/reception_001.png', 'office/reception_002.png']",
+    "Office floors without same-name SEB: [{'png': 'office/floor13.png', 'expected_seb': 'office/floor13.seb'}, {'png': 'office/floor2.png', 'expected_seb': 'office/floor2.seb'}, {'png': 'office/floor4.png', 'expected_seb': 'office/floor4.seb'}, {'png': 'office/floor9.png', 'expected_seb': 'office/floor9.seb'}]"
+  ],
+  "summary": {
+    "catalog_files": 405,
+    "catalog_expected_files": 405,
+    "inf_records": 358,
+    "bonus_rows": 146,
+    "phase0_hashes_checked": 405,
+    "seb_manifest_files": 53,
+    "seb_tail_shortfall_files": 53
+  }
+}

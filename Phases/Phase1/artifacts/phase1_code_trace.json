@@ -1,0 +1,865 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-08-11T09:40:03.783215Z",
+  "phase": "phase1",
+  "source_policy": "Read-only decompiled sources; claims retain line-addressable evidence and confidence.",
+  "functions": [
+    {
+      "name": "form_GameForm__SetScale",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 15724,
+      "end_line": 15766,
+      "confidence": "verified",
+      "sha256": "e4adfbabd36688c3847a9f306f0d60ec862d98f63309fab95cad288345fbd42b"
+    },
+    {
+      "name": "form_GameForm__GetGameWidth",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 15767,
+      "end_line": 15806,
+      "confidence": "verified",
+      "sha256": "064bf69d90d4b3cca2b15c0b40d23ec0aaf37ac5ccd4149f3ba50755e69088a6"
+    },
+    {
+      "name": "form_GameForm__GetGameHeight",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 15807,
+      "end_line": 15846,
+      "confidence": "verified",
+      "sha256": "e1b3a92f7c03b4c79c01103242de11b9112f1279e8211da0dd3ddad3b9ca7a4f"
+    },
+    {
+      "name": "form_GameForm__DrawObj",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 15847,
+      "end_line": 17616,
+      "confidence": "verified",
+      "sha256": "93912ea62b85365b358eeab7c4fcdb350895a1608108c4efb7818eac9f175fdc"
+    },
+    {
+      "name": "form_GameForm__DrawFloorCover",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 24144,
+      "end_line": 24211,
+      "confidence": "verified",
+      "sha256": "84ad8f96bd8f62fb72bc8b76930a9d44cc51971253e65b47563097cbed793854"
+    },
+    {
+      "name": "form_GameForm__GetDeskImgData",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 24566,
+      "end_line": 24609,
+      "confidence": "verified",
+      "sha256": "55cc15e44520cb567cc48f9d0c5dd1f018459e33aabc0d64b2048b25ce9462e0"
+    },
+    {
+      "name": "form_GameForm__GetChairImgData",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 24610,
+      "end_line": 24653,
+      "confidence": "verified",
+      "sha256": "3e5b4ea4b5d6a59783b2add62133e1db370993d534936a93e6c8ddc0dfb71083"
+    },
+    {
+      "name": "form_GameForm__DrawChair",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 55952,
+      "end_line": 55993,
+      "confidence": "verified",
+      "sha256": "9a3a87a15b4a9c9a688b6a1c7c2ebb0e4c57e500d61693c23f0261d41b2a00e5"
+    },
+    {
+      "name": "form_GameForm__DrawDesk",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 55994,
+      "end_line": 56039,
+      "confidence": "verified",
+      "sha256": "5c3371884e5f01f165bf92f7314d900a0e6da18b371fb731e4805d2536e66a0a"
+    },
+    {
+      "name": "form_GameForm__DrawCeoDesk",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 56040,
+      "end_line": 56085,
+      "confidence": "verified",
+      "sha256": "5c044f556143e2ba5fabdda40666ec8223e5b928a99a20cbdfdf71758f119ade"
+    },
+    {
+      "name": "form_GameForm__DrawReception",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 56086,
+      "end_line": 56118,
+      "confidence": "verified",
+      "sha256": "d372c689d58340d81c0474eb76376018c91e02897e589b733cd94c8b27cfe6aa"
+    },
+    {
+      "name": "form_GameForm__SetOrigin",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 41012,
+      "end_line": 41024,
+      "confidence": "verified",
+      "sha256": "42730512f781d8e9ab57254552ae24f19529275a6918e86c1b6cacdc91b326b4"
+    },
+    {
+      "name": "form_GameForm__LoadBihinImage",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 56677,
+      "end_line": 56779,
+      "confidence": "verified",
+      "sha256": "f1fc788de70e01482689adc031fcc8101b3ea22f00842ec58cf6d268db9f8416"
+    },
+    {
+      "name": "form_GameForm___cctor",
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "start_line": 56780,
+      "end_line": 59930,
+      "confidence": "verified",
+      "sha256": "67ec34b7ebc00126607aaf51c251e2d9f16e6b7ee9ccca0a33f09f9e10f27ec4"
+    }
+  ],
+  "call_sites": {
+    "form_GameForm__DrawFloorCover": [
+      {
+        "line": 19913,
+        "text": "form_GameForm__DrawFloorCover(uVar15,param_2,iVar10 >> 1,iVar12);"
+      },
+      {
+        "line": 24144,
+        "text": "// Function: form_GameForm__DrawFloorCover"
+      },
+      {
+        "line": 24148,
+        "text": "void form_GameForm__DrawFloorCover(undefined8 param_1,long param_2,int param_3,int param_4)"
+      }
+    ],
+    "form_GameForm__DrawObj": [
+      {
+        "line": 15847,
+        "text": "// Function: form_GameForm__DrawObj"
+      },
+      {
+        "line": 15851,
+        "text": "void form_GameForm__DrawObj(long param_1,long param_2)"
+      }
+    ],
+    "form_GameForm__DrawHuman": [
+      {
+        "line": 16325,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 19463,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 19465,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 19499,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 19509,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 19687,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 24076,
+        "text": "// Function: form_GameForm__DrawHuman"
+      },
+      {
+        "line": 24080,
+        "text": "void form_GameForm__DrawHuman(void)"
+      },
+      {
+        "line": 24083,
+        "text": "form_GameForm__DrawHuman();"
+      },
+      {
+        "line": 41025,
+        "text": "// Function: form_GameForm__DrawHuman"
+      },
+      {
+        "line": 41029,
+        "text": "void form_GameForm__DrawHuman"
+      },
+      {
+        "line": 65457,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 65462,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 65474,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 65479,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 65484,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 67027,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 67442,
+        "text": "form_GameForm__DrawHuman(lVar16,param_2,0x22,0xac,10,0xf,4,0);"
+      },
+      {
+        "line": 67455,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 67496,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 70196,
+        "text": "form_GameForm__DrawHuman(lVar5,param_2,0x52,0x58,0x17,8,4,0);"
+      },
+      {
+        "line": 70202,
+        "text": "form_GameForm__DrawHuman(lVar5,param_2,0x94,0x58,10,2,4,0);"
+      },
+      {
+        "line": 71726,
+        "text": "form_GameForm__DrawHuman(lVar22,param_2,0xb6,0x96,uVar8,uVar9,iVar11 % 2 + 8,0);"
+      },
+      {
+        "line": 75955,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 76739,
+        "text": "form_GameForm__DrawHuman(lVar22,param_2,0x4a,0x7a,(int)cVar3,(int)cVar4,iVar14 % 2 + 8,0,0);"
+      },
+      {
+        "line": 79001,
+        "text": "form_GameForm__DrawHuman(lVar26,param_2,0x18,iVar13,uVar17,uVar18,4,0);"
+      },
+      {
+        "line": 80668,
+        "text": "form_GameForm__DrawHuman(lVar22,param_2,0xca,0xb4,(int)cVar3,(int)cVar4,iVar14 % 2 + 8,0,0);"
+      },
+      {
+        "line": 80807,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 80840,
+        "text": "form_GameForm__DrawHuman(lVar22,param_2,0x40,0x7c,(int)cVar3,(int)cVar4,iVar14 % 2 + 8,0,0);"
+      },
+      {
+        "line": 82254,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82258,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82262,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82266,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82270,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82274,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82278,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82282,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82286,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82290,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82294,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82298,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82302,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82306,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82310,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82314,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82326,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82330,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82336,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82341,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82346,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82351,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82356,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82361,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82366,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82371,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82376,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82381,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82386,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82391,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82396,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82401,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82406,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82411,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82417,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82424,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82429,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82434,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82439,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82444,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82449,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82454,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82459,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82472,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82490,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82512,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82534,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82556,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 82589,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 84102,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 84718,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 85963,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 86797,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 86905,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 88049,
+        "text": "form_GameForm__DrawHuman(lVar16,param_2,0x96,0xb5,0x28,0x17,4,0);"
+      },
+      {
+        "line": 88053,
+        "text": "form_GameForm__DrawHuman(lVar16,param_2,0xbe,0xb5,0x28,0x17,8,0);"
+      },
+      {
+        "line": 88092,
+        "text": "form_GameForm__DrawHuman(lVar16,param_2,0x8a,0xb5,0x28,0x17,4,0);"
+      },
+      {
+        "line": 88386,
+        "text": "form_GameForm__DrawHuman(lVar16,param_2,0x22,0xac,10,0xf,4,0);"
+      },
+      {
+        "line": 88402,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 88445,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 89347,
+        "text": "form_GameForm__DrawHuman(lVar25,param_2,0x9a,0xa4,(int)cVar1,(int)cVar2,iVar12 % 2 + 4,0,0);"
+      },
+      {
+        "line": 89961,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 90031,
+        "text": "form_GameForm__DrawHuman(lVar25,param_2,0x34,0x80,uVar36,uVar19,iVar13,0,0);"
+      },
+      {
+        "line": 91904,
+        "text": "form_GameForm__DrawHuman(lVar16,param_2,0x3a,0x8a,10,0xf,iVar12 % 2 + 4,0);"
+      },
+      {
+        "line": 91924,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 91946,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 92578,
+        "text": "form_GameForm__DrawHuman(lVar16,param_2,0x22,0xac,10,0xf,4,0);"
+      },
+      {
+        "line": 92588,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 92631,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 93116,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 93126,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 93130,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 93140,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 93144,
+        "text": "form_GameForm__DrawHuman"
+      },
+      {
+        "line": 93453,
+        "text": "form_GameForm__DrawHuman(lVar16,param_2,0x2d,0x48,0x20,0x14,4,0);"
+      },
+      {
+        "line": 93456,
+        "text": "form_GameForm__DrawHuman(lVar16,param_2,0xb3,0x45,0x21,0x18,8,0);"
+      },
+      {
+        "line": 93638,
+        "text": "form_GameForm__DrawHuman(lVar16,param_2,0x22,0x53,2,0,4,0);"
+      },
+      {
+        "line": 93641,
+        "text": "form_GameForm__DrawHuman(lVar16,param_2,0xbe,0x53,10,0xf,8,0);"
+      },
+      {
+        "line": 96157,
+        "text": "form_GameForm__DrawHuman(lVar15,param_2,iVar13,0x78,uVar7,uVar8,iVar3 % 2 + 8,0);"
+      },
+      {
+        "line": 99881,
+        "text": "form_GameForm__DrawHuman(lVar11,param_2,0xb6,0x96,uVar6,uVar7,iVar2 % 2 + 8,0);"
+      },
+      {
+        "line": 100640,
+        "text": "form_GameForm__DrawHuman(lVar12,param_2,0xc3,0x1b,10,0xf,8,0);"
+      },
+      {
+        "line": 101102,
+        "text": "form_GameForm__DrawHuman(lVar11,param_2,0xd2,0x60,0x21,0x18,8,0)"
+      }
+    ],
+    "form_GameForm__DrawDesk": [
+      {
+        "line": 16609,
+        "text": "form_GameForm__DrawDesk(lVar15,param_2);"
+      },
+      {
+        "line": 55994,
+        "text": "// Function: form_GameForm__DrawDesk"
+      },
+      {
+        "line": 55998,
+        "text": "void form_GameForm__DrawDesk(undefined8 param_1,long param_2)"
+      }
+    ],
+    "form_GameForm__DrawChair": [
+      {
+        "line": 16490,
+        "text": "form_GameForm__DrawChair(lVar15,param_2);"
+      },
+      {
+        "line": 55952,
+        "text": "// Function: form_GameForm__DrawChair"
+      },
+      {
+        "line": 55956,
+        "text": "void form_GameForm__DrawChair"
+      }
+    ],
+    "form_GameForm__DrawReception": [
+      {
+        "line": 16674,
+        "text": "form_GameForm__DrawReception"
+      },
+      {
+        "line": 56086,
+        "text": "// Function: form_GameForm__DrawReception"
+      },
+      {
+        "line": 56090,
+        "text": "void form_GameForm__DrawReception"
+      }
+    ],
+    "form_GameForm__SetOrigin": [
+      {
+        "line": 41012,
+        "text": "// Function: form_GameForm__SetOrigin"
+      },
+      {
+        "line": 41016,
+        "text": "void form_GameForm__SetOrigin(void)"
+      }
+    ],
+    "form_GameForm__SetScale": [
+      {
+        "line": 15724,
+        "text": "// Function: form_GameForm__SetScale"
+      },
+      {
+        "line": 15728,
+        "text": "void form_GameForm__SetScale(long param_1,undefined4 param_2)"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "id": "drawobj_dispatches_human",
+      "claim": "DrawObj contains a direct branch that calls DrawHuman with computed integer coordinates.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 16325
+      },
+      "note": "The surrounding expression combines two AppData array values; the decompiler does not name their semantic axes."
+    },
+    {
+      "id": "drawobj_dispatches_chair",
+      "claim": "DrawObj dispatches object rendering to DrawChair.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 16490
+      }
+    },
+    {
+      "id": "drawobj_dispatches_desk",
+      "claim": "DrawObj dispatches object rendering to DrawDesk.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 16609
+      }
+    },
+    {
+      "id": "drawobj_dispatches_ceo_desk",
+      "claim": "DrawObj has a distinct DrawCeoDesk branch.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 16638
+      }
+    },
+    {
+      "id": "drawobj_dispatches_reception",
+      "claim": "DrawObj dispatches reception rendering with computed x/y plus source-rectangle arguments.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 16674
+      }
+    },
+    {
+      "id": "drawobj_sort_comparison",
+      "claim": "DrawObj performs an ordering comparison over two AppData-backed integer arrays before swapping entries.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 15976
+      },
+      "note": "Ordering behavior is verified; the field meaning (for example y/depth) remains unknown."
+    },
+    {
+      "id": "floor_cover_source_rect",
+      "claim": "DrawFloorCover selects an entry from an AppData array at offset +0x78 and passes its x/y/w/h fields to DrawImage with caller offsets.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 24170
+      }
+    },
+    {
+      "id": "chair_image_source",
+      "claim": "DrawChair reads the furniture image list at AppData +0x1110 and uses its +0x28 image slot with caller source rectangle fields.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 55982
+      }
+    },
+    {
+      "id": "desk_image_source",
+      "claim": "DrawDesk reads the furniture image list at AppData +0x1110 and uses its +0x30 image slot.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 56028
+      }
+    },
+    {
+      "id": "reception_image_source",
+      "claim": "DrawReception reads the reception image at AppData +0x1128 and uses caller source rectangle fields.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 56108
+      }
+    },
+    {
+      "id": "desk_index_lookup",
+      "claim": "GetDeskImgData maps an integer index by quotient/remainder into an AppData array at +0x488.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 24589
+      }
+    },
+    {
+      "id": "chair_index_lookup",
+      "claim": "GetChairImgData maps an integer index by quotient/remainder into an AppData array at +0x490.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 24633
+      }
+    },
+    {
+      "id": "scale_clamp",
+      "claim": "SetScale clamps the requested scale through GetScaleRange/AppData Clamp and stores the result at GameForm +0x108.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 15748
+      }
+    },
+    {
+      "id": "game_width_formula",
+      "claim": "GetGameWidth derives a scaled width from surface_GameView.GetGameWidth and the stored scale.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 15786
+      }
+    },
+    {
+      "id": "game_height_formula",
+      "claim": "GetGameHeight derives a scaled height from surface_GameView.GetGameHeight and subtracts the decompiled constant 0x898 before division.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 15835
+      }
+    },
+    {
+      "id": "setorigin_empty_export",
+      "claim": "The exported form_GameForm__SetOrigin body is an empty return.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 41019
+      },
+      "note": "This does not prove that every origin operation is a no-op; another overload or renderer may own the actual transform."
+    },
+    {
+      "id": "bihin_image_loading",
+      "claim": "LoadBihinImage builds image names from AppData name entries plus a suffix and stores loaded images in the furniture image container.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 56715
+      }
+    },
+    {
+      "id": "seb_eof_behavior",
+      "claim": "The shared StreamUtil.Read loop raises EOFException when a requested read returns fewer bytes.",
+      "confidence": "verified",
+      "source": {
+        "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
+        "line": 107167
+      },
+      "note": "This supports treating the four-byte SEB tail shortfall as extraction/source evidence, not a safe zero-fill."
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "grid_contract",
+      "claim": "A tile grid, A*, or fixed furniture footprint is not established by this trace.",
+      "confidence": "unknown",
+      "reason": "No direct occupancy/pathfinding/seat contract was identified in the selected renderer entry points."
+    },
+    {
+      "id": "collision_contract",
+      "claim": "Collision, walkable, seat, and interaction zones remain unverified.",
+      "confidence": "unknown",
+      "reason": "The selected draw functions consume arrays and image data but do not name a collision schema."
+    },
+    {
+      "id": "depth_field_semantics",
+      "claim": "The sort key used by DrawObj is not named as y/depth/z by the decompiler.",
+      "confidence": "unknown",
+      "reason": "The compare-and-swap pattern is visible, but array offsets are not recovered field names."
+    }
+  ],
+  "summary": {
+    "functions_indexed": 14,
+    "evidence_verified": 18,
+    "evidence_unknown": 0,
+    "unresolved_contracts": 3
+  },
+  "source_files": [
+    {
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "sha256": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
+      "line_count": 108291
+    },
+    {
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+      "sha256": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
+      "line_count": 297945
+    },
+    {
+      "path": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
+      "sha256": "19af9b427031643115f78962e487a2afb246ca485e34e70d1d44285a036aeb48",
+      "line_count": 365949
+    }
+  ]
+}

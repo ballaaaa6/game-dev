@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-08-11T09:40:09.084932Z",
+  "phase": "phase1",
+  "source_policy": "Derived visual previews only; source PNGs are unchanged.",
+  "previews": [
+    {
+      "path": "Phases/Phase1/docs/phase1_office_preview.png",
+      "source_room": "office/floor0.png",
+      "source_samples": [
+        "office/chair_000.png",
+        "office/desk_000.png",
+        "office/pc_000.png",
+        "office/reception_000.png"
+      ],
+      "notes": [
+        "Room display uses a 600x600 crop of the top visible area from floor0.png; source PNG remains unchanged.",
+        "No guessed grid, pivot, collision, seat, or furniture placement is drawn."
+      ]
+    },
+    {
+      "path": "Phases/Phase1/docs/phase1_office_floor_contact_sheet.png",
+      "source_count": 25,
+      "notes": [
+        "Each tile is a visual crop only; no runtime coordinates or grid are implied."
+      ]
+    }
+  ]
+}

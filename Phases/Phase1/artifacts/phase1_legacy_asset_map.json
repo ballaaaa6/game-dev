@@ -1,0 +1,5209 @@
+{
+  "schema": 1,
+  "generated_at_utc": "2026-08-11T09:40:00.910017Z",
+  "phase": "phase1",
+  "source_policy": "Raw INF and catalog rows are preserved; only links are derived.",
+  "inf_documents": [
+    {
+      "path": "game-dev-story-mod_Sprites/com/img.inf",
+      "relative_path": "com/img.inf",
+      "kind": "png",
+      "records": [
+        {
+          "line": 1,
+          "legacy_index": 0,
+          "raw_name": "saveload.png",
+          "resolved_relative_path": "com/saveload.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 2,
+          "legacy_index": 1,
+          "raw_name": "back00_240.png",
+          "resolved_relative_path": "com/back00_240.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 3,
+          "legacy_index": 2,
+          "raw_name": "cm.png",
+          "resolved_relative_path": "com/cm.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 4,
+          "legacy_index": 3,
+          "raw_name": "cm_amazon.png",
+          "resolved_relative_path": "com/cm_amazon.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 5,
+          "legacy_index": 4,
+          "raw_name": "cm_amazon_50off.png",
+          "resolved_relative_path": "com/cm_amazon_50off.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 6,
+          "legacy_index": 5,
+          "raw_name": "banana.png",
+          "resolved_relative_path": "com/banana.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 7,
+          "legacy_index": 6,
+          "raw_name": "social.png",
+          "resolved_relative_path": "com/social.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 8,
+          "legacy_index": 7,
+          "raw_name": "chinpan.png",
+          "resolved_relative_path": "com/chinpan.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 9,
+          "legacy_index": 8,
+          "raw_name": "kumax.png",
+          "resolved_relative_path": "com/kumax.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 10,
+          "legacy_index": 9,
+          "raw_name": "chinpan_labo.png",
+          "resolved_relative_path": "com/chinpan_labo.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 11,
+          "legacy_index": 10,
+          "raw_name": "banana_number01.png",
+          "resolved_relative_path": "com/banana_number01.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 12,
+          "legacy_index": 11,
+          "raw_name": "base.png",
+          "resolved_relative_path": "com/base.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 13,
+          "legacy_index": 12,
+          "raw_name": "lock.png",
+          "resolved_relative_path": "com/lock.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 14,
+          "legacy_index": 13,
+          "raw_name": "trophyicon.png",
+          "resolved_relative_path": "com/trophyicon.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 15,
+          "legacy_index": 14,
+          "raw_name": "ranking_icons.png",
+          "resolved_relative_path": "com/ranking_icons.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 16,
+          "legacy_index": 15,
+          "raw_name": "ranking_arrow.png",
+          "resolved_relative_path": "com/ranking_arrow.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 17,
+          "legacy_index": 16,
+          "raw_name": "chinpanlabo_button.png",
+          "resolved_relative_path": "com/chinpanlabo_button.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 18,
+          "legacy_index": 17,
+          "raw_name": "new.png",
+          "resolved_relative_path": "com/new.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 19,
+          "legacy_index": 18,
+          "raw_name": "ranking_kusoge.png",
+          "resolved_relative_path": "com/ranking_kusoge.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 20,
+          "legacy_index": 19,
+          "raw_name": "ranking_moneyY20.png",
+          "resolved_relative_path": "com/ranking_moneyY20.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 21,
+          "legacy_index": 20,
+          "raw_name": "ranking_myhard.png",
+          "resolved_relative_path": "com/ranking_myhard.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 22,
+          "legacy_index": 21,
+          "raw_name": "ranking_sales.png",
+          "resolved_relative_path": "com/ranking_sales.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 23,
+          "legacy_index": 22,
+          "raw_name": "chinpan_chari.png",
+          "resolved_relative_path": "com/chinpan_chari.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 24,
+          "legacy_index": 23,
+          "raw_name": "office_cover.png",
+          "resolved_relative_path": "com/office_cover.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 25,
+          "legacy_index": 24,
+          "raw_name": "delivery_back00.png",
+          "resolved_relative_path": "com/delivery_back00.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 26,
+          "legacy_index": 25,
+          "raw_name": "ranking_gamedex.png",
+          "resolved_relative_path": "com/ranking_gamedex.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 27,
+          "legacy_index": 26,
+          "raw_name": "ranking_titleback.png",
+          "resolved_relative_path": "com/ranking_titleback.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 28,
+          "legacy_index": 27,
+          "raw_name": "ranking_window01.png",
+          "resolved_relative_path": "com/ranking_window01.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 29,
+          "legacy_index": 28,
+          "raw_name": "ranking_window02.png",
+          "resolved_relative_path": "com/ranking_window02.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 30,
+          "legacy_index": 29,
+          "raw_name": "ranking_window03.png",
+          "resolved_relative_path": "com/ranking_window03.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 31,
+          "legacy_index": 30,
+          "raw_name": "ranking_windowback.png",
+          "resolved_relative_path": "com/ranking_windowback.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 32,
+          "legacy_index": 31,
+          "raw_name": "ranking_back.png",
+          "resolved_relative_path": "com/ranking_back.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 33,
+          "legacy_index": 32,
+          "raw_name": "ranking_banner01.png",
+          "resolved_relative_path": "com/ranking_banner01.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 34,
+          "legacy_index": 33,
+          "raw_name": "ranking_banner02.png",
+          "resolved_relative_path": "com/ranking_banner02.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 35,
+          "legacy_index": 34,
+          "raw_name": "ranking_confetti.png",
+          "resolved_relative_path": "com/ranking_confetti.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 36,
+          "legacy_index": 35,
+          "raw_name": "ranking_glory.png",
+          "resolved_relative_path": "com/ranking_glory.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 37,
+          "legacy_index": 36,
+          "raw_name": "socialShare",
+          "resolved_relative_path": "com/socialShare.png",
+          "resolution": "unique_basename_extension",
+          "confidence": "probable",
+          "anomaly": "missing_extension_in_source_inf"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/com/seb.inf",
+      "relative_path": "com/seb.inf",
+      "kind": "seb",
+      "records": [
+        {
+          "line": 1,
+          "legacy_index": 0,
+          "raw_name": "saveload.seb",
+          "resolved_relative_path": "com/saveload.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 2,
+          "legacy_index": 1,
+          "raw_name": "back00_240.seb",
+          "resolved_relative_path": "com/back00_240.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 3,
+          "legacy_index": 2,
+          "raw_name": "cm.seb",
+          "resolved_relative_path": "com/cm.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 4,
+          "legacy_index": 3,
+          "raw_name": "cm_amazon.seb",
+          "resolved_relative_path": "com/cm_amazon.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 5,
+          "legacy_index": 4,
+          "raw_name": "banana.seb",
+          "resolved_relative_path": "com/banana.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 6,
+          "legacy_index": 5,
+          "raw_name": "socialRanking.seb",
+          "resolved_relative_path": "com/socialRanking.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 7,
+          "legacy_index": 6,
+          "raw_name": "socialAchievement.seb",
+          "resolved_relative_path": "com/socialAchievement.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 8,
+          "legacy_index": 7,
+          "raw_name": "chinpan.seb",
+          "resolved_relative_path": "com/chinpan.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 9,
+          "legacy_index": 8,
+          "raw_name": "kumax.seb",
+          "resolved_relative_path": "com/kumax.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 10,
+          "legacy_index": 9,
+          "raw_name": "chinpan_labo.seb",
+          "resolved_relative_path": "com/chinpan_labo.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 11,
+          "legacy_index": 10,
+          "raw_name": "banana_number01.seb",
+          "resolved_relative_path": "com/banana_number01.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 12,
+          "legacy_index": 11,
+          "raw_name": "base.seb",
+          "resolved_relative_path": "com/base.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 13,
+          "legacy_index": 12,
+          "raw_name": "lock.seb",
+          "resolved_relative_path": "com/lock.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 14,
+          "legacy_index": 13,
+          "raw_name": "trophyicon.seb",
+          "resolved_relative_path": "com/trophyicon.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 15,
+          "legacy_index": 14,
+          "raw_name": "ranking_icons.seb",
+          "resolved_relative_path": "com/ranking_icons.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 16,
+          "legacy_index": 15,
+          "raw_name": "ranking_arrow.seb",
+          "resolved_relative_path": "com/ranking_arrow.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 17,
+          "legacy_index": 16,
+          "raw_name": "chinpanlabo_button.seb",
+          "resolved_relative_path": "com/chinpanlabo_button.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 18,
+          "legacy_index": 17,
+          "raw_name": "new.seb",
+          "resolved_relative_path": "com/new.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 19,
+          "legacy_index": 18,
+          "raw_name": "ranking_title_icons.seb",
+          "resolved_relative_path": "com/ranking_title_icons.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 20,
+          "legacy_index": 19,
+          "raw_name": "chinpan_chari.seb",
+          "resolved_relative_path": "com/chinpan_chari.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 21,
+          "legacy_index": 20,
+          "raw_name": "office_cover.seb",
+          "resolved_relative_path": "com/office_cover.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 22,
+          "legacy_index": 21,
+          "raw_name": "delivery_back.seb",
+          "resolved_relative_path": "com/delivery_back.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 23,
+          "legacy_index": 22,
+          "raw_name": "ranking_window.seb",
+          "resolved_relative_path": "com/ranking_window.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 24,
+          "legacy_index": 23,
+          "raw_name": "ranking_frame.seb",
+          "resolved_relative_path": "com/ranking_frame.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 25,
+          "legacy_index": 24,
+          "raw_name": "ranking_back.seb",
+          "resolved_relative_path": "com/ranking_back.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 26,
+          "legacy_index": 25,
+          "raw_name": "ranking_confetti.seb",
+          "resolved_relative_path": "com/ranking_confetti.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 27,
+          "legacy_index": 26,
+          "raw_name": "ranking_glory.seb",
+          "resolved_relative_path": "com/ranking_glory.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 28,
+          "legacy_index": 27,
+          "raw_name": "ranking_button.seb",
+          "resolved_relative_path": "com/ranking_button.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 29,
+          "legacy_index": 28,
+          "raw_name": "socialShare",
+          "resolved_relative_path": "com/socialShare.seb",
+          "resolution": "unique_basename_extension",
+          "confidence": "probable",
+          "anomaly": "missing_extension_in_source_inf"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/game/img.inf",
+      "relative_path": "game/img.inf",
+      "kind": "png",
+      "records": [
+        {
+          "line": 1,
+          "legacy_index": 0,
+          "raw_name": "appicon_24.png",
+          "resolved_relative_path": "game/appicon_24.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 2,
+          "legacy_index": 1,
+          "raw_name": "body0.png",
+          "resolved_relative_path": "game/body0.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 3,
+          "legacy_index": 2,
+          "raw_name": "body1.png",
+          "resolved_relative_path": "game/body1.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 4,
+          "legacy_index": 3,
+          "raw_name": "body10.png",
+          "resolved_relative_path": "game/body10.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 5,
+          "legacy_index": 4,
+          "raw_name": "body11.png",
+          "resolved_relative_path": "game/body11.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 6,
+          "legacy_index": 5,
+          "raw_name": "body12.png",
+          "resolved_relative_path": "game/body12.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 7,
+          "legacy_index": 6,
+          "raw_name": "body13.png",
+          "resolved_relative_path": "game/body13.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 8,
+          "legacy_index": 7,
+          "raw_name": "body14.png",
+          "resolved_relative_path": "game/body14.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 9,
+          "legacy_index": 8,
+          "raw_name": "body15.png",
+          "resolved_relative_path": "game/body15.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 10,
+          "legacy_index": 9,
+          "raw_name": "body16.png",
+          "resolved_relative_path": "game/body16.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 11,
+          "legacy_index": 10,
+          "raw_name": "body17.png",
+          "resolved_relative_path": "game/body17.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 12,
+          "legacy_index": 11,
+          "raw_name": "body18.png",
+          "resolved_relative_path": "game/body18.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 13,
+          "legacy_index": 12,
+          "raw_name": "body19.png",
+          "resolved_relative_path": "game/body19.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 14,
+          "legacy_index": 13,
+          "raw_name": "body2.png",
+          "resolved_relative_path": "game/body2.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 15,
+          "legacy_index": 14,
+          "raw_name": "body20.png",
+          "resolved_relative_path": "game/body20.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 16,
+          "legacy_index": 15,
+          "raw_name": "body21.png",
+          "resolved_relative_path": "game/body21.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 17,
+          "legacy_index": 16,
+          "raw_name": "body22.png",
+          "resolved_relative_path": "game/body22.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 18,
+          "legacy_index": 17,
+          "raw_name": "body23.png",
+          "resolved_relative_path": "game/body23.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 19,
+          "legacy_index": 18,
+          "raw_name": "body24.png",
+          "resolved_relative_path": "game/body24.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 20,
+          "legacy_index": 19,
+          "raw_name": "body25.png",
+          "resolved_relative_path": "game/body25.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 21,
+          "legacy_index": 20,
+          "raw_name": "body3.png",
+          "resolved_relative_path": "game/body3.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 22,
+          "legacy_index": 21,
+          "raw_name": "body4.png",
+          "resolved_relative_path": "game/body4.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 23,
+          "legacy_index": 22,
+          "raw_name": "body5.png",
+          "resolved_relative_path": "game/body5.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 24,
+          "legacy_index": 23,
+          "raw_name": "body6.png",
+          "resolved_relative_path": "game/body6.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 25,
+          "legacy_index": 24,
+          "raw_name": "body7.png",
+          "resolved_relative_path": "game/body7.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 26,
+          "legacy_index": 25,
+          "raw_name": "body8.png",
+          "resolved_relative_path": "game/body8.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 27,
+          "legacy_index": 26,
+          "raw_name": "body9.png",
+          "resolved_relative_path": "game/body9.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 28,
+          "legacy_index": 27,
+          "raw_name": "bugbubble.png",
+          "resolved_relative_path": "game/bugbubble.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 29,
+          "legacy_index": 28,
+          "raw_name": "buttoneffect.png",
+          "resolved_relative_path": "game/buttoneffect.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 30,
+          "legacy_index": 29,
+          "raw_name": "chair0_origin.png",
+          "resolved_relative_path": "game/chair0_origin.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 31,
+          "legacy_index": 30,
+          "raw_name": "desk0_origin.png",
+          "resolved_relative_path": "game/desk0_origin.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 32,
+          "legacy_index": 31,
+          "raw_name": "event0.png",
+          "resolved_relative_path": "game/event0.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 33,
+          "legacy_index": 32,
+          "raw_name": "event1.png",
+          "resolved_relative_path": "game/event1.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 34,
+          "legacy_index": 33,
+          "raw_name": "event2.png",
+          "resolved_relative_path": "game/event2.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 35,
+          "legacy_index": 34,
+          "raw_name": "event3.png",
+          "resolved_relative_path": "game/event3.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 36,
+          "legacy_index": 35,
+          "raw_name": "event4.png",
+          "resolved_relative_path": "game/event4.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 37,
+          "legacy_index": 36,
+          "raw_name": "event5.png",
+          "resolved_relative_path": "game/event5.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 38,
+          "legacy_index": 37,
+          "raw_name": "event6.png",
+          "resolved_relative_path": "game/event6.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 39,
+          "legacy_index": 38,
+          "raw_name": "event7.png",
+          "resolved_relative_path": "game/event7.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 40,
+          "legacy_index": 39,
+          "raw_name": "event8.png",
+          "resolved_relative_path": "game/event8.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 41,
+          "legacy_index": 40,
+          "raw_name": "face_0.png",
+          "resolved_relative_path": "game/face_0.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 42,
+          "legacy_index": 41,
+          "raw_name": "face_1.png",
+          "resolved_relative_path": "game/face_1.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 43,
+          "legacy_index": 42,
+          "raw_name": "face_10.png",
+          "resolved_relative_path": "game/face_10.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 44,
+          "legacy_index": 43,
+          "raw_name": "face_11.png",
+          "resolved_relative_path": "game/face_11.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 45,
+          "legacy_index": 44,
+          "raw_name": "face_12.png",
+          "resolved_relative_path": "game/face_12.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 46,
+          "legacy_index": 45,
+          "raw_name": "face_13.png",
+          "resolved_relative_path": "game/face_13.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 47,
+          "legacy_index": 46,
+          "raw_name": "face_14.png",
+          "resolved_relative_path": "game/face_14.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 48,
+          "legacy_index": 47,
+          "raw_name": "face_15.png",
+          "resolved_relative_path": "game/face_15.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 49,
+          "legacy_index": 48,
+          "raw_name": "face_16.png",
+          "resolved_relative_path": "game/face_16.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 50,
+          "legacy_index": 49,
+          "raw_name": "face_17.png",
+          "resolved_relative_path": "game/face_17.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 51,
+          "legacy_index": 50,
+          "raw_name": "face_18.png",
+          "resolved_relative_path": "game/face_18.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 52,
+          "legacy_index": 51,
+          "raw_name": "face_19.png",
+          "resolved_relative_path": "game/face_19.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 53,
+          "legacy_index": 52,
+          "raw_name": "face_2.png",
+          "resolved_relative_path": "game/face_2.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 54,
+          "legacy_index": 53,
+          "raw_name": "face_20.png",
+          "resolved_relative_path": "game/face_20.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 55,
+          "legacy_index": 54,
+          "raw_name": "face_21.png",
+          "resolved_relative_path": "game/face_21.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 56,
+          "legacy_index": 55,
+          "raw_name": "face_22.png",
+          "resolved_relative_path": "game/face_22.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 57,
+          "legacy_index": 56,
+          "raw_name": "face_23.png",
+          "resolved_relative_path": "game/face_23.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 58,
+          "legacy_index": 57,
+          "raw_name": "face_24.png",
+          "resolved_relative_path": "game/face_24.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 59,
+          "legacy_index": 58,
+          "raw_name": "face_25.png",
+          "resolved_relative_path": "game/face_25.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 60,
+          "legacy_index": 59,
+          "raw_name": "face_26.png",
+          "resolved_relative_path": "game/face_26.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 61,
+          "legacy_index": 60,
+          "raw_name": "face_27.png",
+          "resolved_relative_path": "game/face_27.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 62,
+          "legacy_index": 61,
+          "raw_name": "face_28.png",
+          "resolved_relative_path": "game/face_28.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 63,
+          "legacy_index": 62,
+          "raw_name": "face_29.png",
+          "resolved_relative_path": "game/face_29.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 64,
+          "legacy_index": 63,
+          "raw_name": "face_3.png",
+          "resolved_relative_path": "game/face_3.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 65,
+          "legacy_index": 64,
+          "raw_name": "face_30.png",
+          "resolved_relative_path": "game/face_30.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 66,
+          "legacy_index": 65,
+          "raw_name": "face_31.png",
+          "resolved_relative_path": "game/face_31.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 67,
+          "legacy_index": 66,
+          "raw_name": "face_32.png",
+          "resolved_relative_path": "game/face_32.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 68,
+          "legacy_index": 67,
+          "raw_name": "face_33.png",
+          "resolved_relative_path": "game/face_33.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 69,
+          "legacy_index": 68,
+          "raw_name": "face_34.png",
+          "resolved_relative_path": "game/face_34.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 70,
+          "legacy_index": 69,
+          "raw_name": "face_35.png",
+          "resolved_relative_path": "game/face_35.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 71,
+          "legacy_index": 70,
+          "raw_name": "face_4.png",
+          "resolved_relative_path": "game/face_4.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 72,
+          "legacy_index": 71,
+          "raw_name": "face_5.png",
+          "resolved_relative_path": "game/face_5.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 73,
+          "legacy_index": 72,
+          "raw_name": "face_6.png",
+          "resolved_relative_path": "game/face_6.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 74,
+          "legacy_index": 73,
+          "raw_name": "face_7.png",
+          "resolved_relative_path": "game/face_7.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 75,
+          "legacy_index": 74,
+          "raw_name": "face_8.png",
+          "resolved_relative_path": "game/face_8.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 76,
+          "legacy_index": 75,
+          "raw_name": "face_9.png",
+          "resolved_relative_path": "game/face_9.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 77,
+          "legacy_index": 76,
+          "raw_name": "floor0.png",
+          "resolved_relative_path": "game/floor0.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 78,
+          "legacy_index": 77,
+          "raw_name": "floor1.png",
+          "resolved_relative_path": "game/floor1.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 79,
+          "legacy_index": 78,
+          "raw_name": "floor2.png",
+          "resolved_relative_path": "game/floor2.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 80,
+          "legacy_index": 79,
+          "raw_name": "floorparts0.png",
+          "resolved_relative_path": "game/floorparts0.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 81,
+          "legacy_index": 80,
+          "raw_name": "fukidasi.png",
+          "resolved_relative_path": "game/fukidasi.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 82,
+          "legacy_index": 81,
+          "raw_name": "hard00.png",
+          "resolved_relative_path": "game/hard00.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 83,
+          "legacy_index": 82,
+          "raw_name": "hard01.png",
+          "resolved_relative_path": "game/hard01.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 84,
+          "legacy_index": 83,
+          "raw_name": "hard02.png",
+          "resolved_relative_path": "game/hard02.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 85,
+          "legacy_index": 84,
+          "raw_name": "hard03.png",
+          "resolved_relative_path": "game/hard03.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 86,
+          "legacy_index": 85,
+          "raw_name": "hard04.png",
+          "resolved_relative_path": "game/hard04.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 87,
+          "legacy_index": 86,
+          "raw_name": "hard05.png",
+          "resolved_relative_path": "game/hard05.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 88,
+          "legacy_index": 87,
+          "raw_name": "hard06.png",
+          "resolved_relative_path": "game/hard06.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 89,
+          "legacy_index": 88,
+          "raw_name": "hard07.png",
+          "resolved_relative_path": "game/hard07.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 90,
+          "legacy_index": 89,
+          "raw_name": "hard08.png",
+          "resolved_relative_path": "game/hard08.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 91,
+          "legacy_index": 90,
+          "raw_name": "hard09.png",
+          "resolved_relative_path": "game/hard09.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 92,
+          "legacy_index": 91,
+          "raw_name": "hard10.png",
+          "resolved_relative_path": "game/hard10.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 93,
+          "legacy_index": 92,
+          "raw_name": "hard11.png",
+          "resolved_relative_path": "game/hard11.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 94,
+          "legacy_index": 93,
+          "raw_name": "hard12.png",
+          "resolved_relative_path": "game/hard12.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 95,
+          "legacy_index": 94,
+          "raw_name": "hard13.png",
+          "resolved_relative_path": "game/hard13.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 96,
+          "legacy_index": 95,
+          "raw_name": "hard14.png",
+          "resolved_relative_path": "game/hard14.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 97,
+          "legacy_index": 96,
+          "raw_name": "hard15.png",
+          "resolved_relative_path": "game/hard15.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 98,
+          "legacy_index": 97,
+          "raw_name": "hard16.png",
+          "resolved_relative_path": "game/hard16.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 99,
+          "legacy_index": 98,
+          "raw_name": "hard17.png",
+          "resolved_relative_path": "game/hard17.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 100,
+          "legacy_index": 99,
+          "raw_name": "hard18.png",
+          "resolved_relative_path": "game/hard18.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 101,
+          "legacy_index": 100,
+          "raw_name": "hard19.png",
+          "resolved_relative_path": "game/hard19.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 102,
+          "legacy_index": 101,
+          "raw_name": "hard20.png",
+          "resolved_relative_path": "game/hard20.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 103,
+          "legacy_index": 102,
+          "raw_name": "hard21.png",
+          "resolved_relative_path": "game/hard21.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 104,
+          "legacy_index": 103,
+          "raw_name": "hard22.png",
+          "resolved_relative_path": "game/hard22.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 105,
+          "legacy_index": 104,
+          "raw_name": "hard23.png",
+          "resolved_relative_path": "game/hard23.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 106,
+          "legacy_index": 105,
+          "raw_name": "hard24.png",
+          "resolved_relative_path": "game/hard24.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 107,
+          "legacy_index": 106,
+          "raw_name": "hard25.png",
+          "resolved_relative_path": "game/hard25.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 108,
+          "legacy_index": 107,
+          "raw_name": "hard26.png",
+          "resolved_relative_path": "game/hard26.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 109,
+          "legacy_index": 108,
+          "raw_name": "hard27.png",
+          "resolved_relative_path": "game/hard27.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 110,
+          "legacy_index": 109,
+          "raw_name": "hard28.png",
+          "resolved_relative_path": "game/hard28.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 111,
+          "legacy_index": 110,
+          "raw_name": "interface0.png",
+          "resolved_relative_path": "game/interface0.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 112,
+          "legacy_index": 111,
+          "raw_name": "jobtype.png",
+          "resolved_relative_path": "game/jobtype.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 113,
+          "legacy_index": 112,
+          "raw_name": "kairo.png",
+          "resolved_relative_path": "game/kairo.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 114,
+          "legacy_index": 113,
+          "raw_name": "main00.png,256x256",
+          "resolved_relative_path": null,
+          "resolution": "unresolved",
+          "confidence": "unknown",
+          "anomaly": null
+        },
+        {
+          "line": 115,
+          "legacy_index": 114,
+          "raw_name": "main01.png",
+          "resolved_relative_path": "game/main01.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 116,
+          "legacy_index": 115,
+          "raw_name": "num7.png",
+          "resolved_relative_path": "game/num7.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 117,
+          "legacy_index": 116,
+          "raw_name": "number_time.png",
+          "resolved_relative_path": "game/number_time.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 118,
+          "legacy_index": 117,
+          "raw_name": "pc.png",
+          "resolved_relative_path": "game/pc.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 119,
+          "legacy_index": 118,
+          "raw_name": "title0.png",
+          "resolved_relative_path": "game/title0.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 120,
+          "legacy_index": 119,
+          "raw_name": "title1.png",
+          "resolved_relative_path": "game/title1.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 121,
+          "legacy_index": 120,
+          "raw_name": "cameraman.png",
+          "resolved_relative_path": "game/cameraman.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 122,
+          "legacy_index": 121,
+          "raw_name": "backlight.png",
+          "resolved_relative_path": "game/backlight.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 123,
+          "legacy_index": 122,
+          "raw_name": "floorCover",
+          "resolved_relative_path": "game/floorCover.png",
+          "resolution": "unique_basename_extension",
+          "confidence": "probable",
+          "anomaly": "missing_extension_in_source_inf"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/game/seb.inf",
+      "relative_path": "game/seb.inf",
+      "kind": "seb",
+      "records": [
+        {
+          "line": 1,
+          "legacy_index": 0,
+          "raw_name": "cameraman.seb",
+          "resolved_relative_path": "game/cameraman.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 2,
+          "legacy_index": 1,
+          "raw_name": "backlight",
+          "resolved_relative_path": "game/backlight.seb",
+          "resolution": "unique_basename_extension",
+          "confidence": "probable",
+          "anomaly": "missing_extension_in_source_inf"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/office/img.inf",
+      "relative_path": "office/img.inf",
+      "kind": "png",
+      "records": [
+        {
+          "line": 1,
+          "legacy_index": 0,
+          "raw_name": "floor0.png",
+          "resolved_relative_path": "office/floor0.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 2,
+          "legacy_index": 1,
+          "raw_name": "floor1.png",
+          "resolved_relative_path": "office/floor1.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 3,
+          "legacy_index": 2,
+          "raw_name": "floor2.png",
+          "resolved_relative_path": "office/floor2.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 4,
+          "legacy_index": 3,
+          "raw_name": "floor3.png",
+          "resolved_relative_path": "office/floor3.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 5,
+          "legacy_index": 4,
+          "raw_name": "floor4.png",
+          "resolved_relative_path": "office/floor4.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 6,
+          "legacy_index": 5,
+          "raw_name": "floor5.png",
+          "resolved_relative_path": "office/floor5.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 7,
+          "legacy_index": 6,
+          "raw_name": "floor6.png",
+          "resolved_relative_path": "office/floor6.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 8,
+          "legacy_index": 7,
+          "raw_name": "floor7.png",
+          "resolved_relative_path": "office/floor7.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 9,
+          "legacy_index": 8,
+          "raw_name": "floor8.png",
+          "resolved_relative_path": "office/floor8.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 10,
+          "legacy_index": 9,
+          "raw_name": "floor9.png",
+          "resolved_relative_path": "office/floor9.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 11,
+          "legacy_index": 11,
+          "raw_name": "floor11.png",
+          "resolved_relative_path": "office/floor11.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 12,
+          "legacy_index": 12,
+          "raw_name": "floor12.png",
+          "resolved_relative_path": "office/floor12.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 13,
+          "legacy_index": 13,
+          "raw_name": "floor13.png",
+          "resolved_relative_path": "office/floor13.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 14,
+          "legacy_index": 14,
+          "raw_name": "floor14.png",
+          "resolved_relative_path": "office/floor14.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 15,
+          "legacy_index": 15,
+          "raw_name": "floor15.png",
+          "resolved_relative_path": "office/floor15.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 16,
+          "legacy_index": 16,
+          "raw_name": "floor16.png",
+          "resolved_relative_path": "office/floor16.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 17,
+          "legacy_index": 17,
+          "raw_name": "floor17.png",
+          "resolved_relative_path": "office/floor17.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 18,
+          "legacy_index": 18,
+          "raw_name": "floor18.png",
+          "resolved_relative_path": "office/floor18.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 19,
+          "legacy_index": 19,
+          "raw_name": "floor19.png",
+          "resolved_relative_path": "office/floor19.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 20,
+          "legacy_index": 21,
+          "raw_name": "floor21.png",
+          "resolved_relative_path": "office/floor21.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 21,
+          "legacy_index": 31,
+          "raw_name": "floor31.png",
+          "resolved_relative_path": "office/floor31.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 22,
+          "legacy_index": 33,
+          "raw_name": "floor33.png",
+          "resolved_relative_path": "office/floor33.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 23,
+          "legacy_index": 34,
+          "raw_name": "floor34.png",
+          "resolved_relative_path": "office/floor34.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 24,
+          "legacy_index": 35,
+          "raw_name": "floor35.png",
+          "resolved_relative_path": "office/floor35.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 25,
+          "legacy_index": 36,
+          "raw_name": "floor36.png",
+          "resolved_relative_path": "office/floor36.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 26,
+          "legacy_index": null,
+          "raw_name": "chair_000.png",
+          "resolved_relative_path": "office/chair_000.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 27,
+          "legacy_index": null,
+          "raw_name": "chair_001.png",
+          "resolved_relative_path": "office/chair_001.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 28,
+          "legacy_index": null,
+          "raw_name": "chair_002.png",
+          "resolved_relative_path": "office/chair_002.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 29,
+          "legacy_index": null,
+          "raw_name": "chair_003.png",
+          "resolved_relative_path": "office/chair_003.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 30,
+          "legacy_index": null,
+          "raw_name": "chair_004.png",
+          "resolved_relative_path": "office/chair_004.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 31,
+          "legacy_index": null,
+          "raw_name": "chair_005.png",
+          "resolved_relative_path": "office/chair_005.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 32,
+          "legacy_index": null,
+          "raw_name": "chair_006.png",
+          "resolved_relative_path": "office/chair_006.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 33,
+          "legacy_index": null,
+          "raw_name": "chair_007.png",
+          "resolved_relative_path": "office/chair_007.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 34,
+          "legacy_index": null,
+          "raw_name": "chair_008.png",
+          "resolved_relative_path": "office/chair_008.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 35,
+          "legacy_index": null,
+          "raw_name": "chair_009.png",
+          "resolved_relative_path": "office/chair_009.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 36,
+          "legacy_index": null,
+          "raw_name": "chair_010.png",
+          "resolved_relative_path": "office/chair_010.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 37,
+          "legacy_index": null,
+          "raw_name": "chair_011.png",
+          "resolved_relative_path": "office/chair_011.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 38,
+          "legacy_index": null,
+          "raw_name": "chair_012.png",
+          "resolved_relative_path": "office/chair_012.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 39,
+          "legacy_index": null,
+          "raw_name": "chair_013.png",
+          "resolved_relative_path": "office/chair_013.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 40,
+          "legacy_index": null,
+          "raw_name": "chair_014.png",
+          "resolved_relative_path": "office/chair_014.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 41,
+          "legacy_index": null,
+          "raw_name": "chair_015.png",
+          "resolved_relative_path": "office/chair_015.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 42,
+          "legacy_index": null,
+          "raw_name": "chair_016.png",
+          "resolved_relative_path": "office/chair_016.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 43,
+          "legacy_index": null,
+          "raw_name": "chair_017.png",
+          "resolved_relative_path": "office/chair_017.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 44,
+          "legacy_index": null,
+          "raw_name": "chair_018.png",
+          "resolved_relative_path": "office/chair_018.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 45,
+          "legacy_index": null,
+          "raw_name": "chair_019.png",
+          "resolved_relative_path": "office/chair_019.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 46,
+          "legacy_index": null,
+          "raw_name": "chair_020.png",
+          "resolved_relative_path": "office/chair_020.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 47,
+          "legacy_index": null,
+          "raw_name": "chair_021.png",
+          "resolved_relative_path": "office/chair_021.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 48,
+          "legacy_index": null,
+          "raw_name": "chair_022.png",
+          "resolved_relative_path": "office/chair_022.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 49,
+          "legacy_index": null,
+          "raw_name": "chair_023.png",
+          "resolved_relative_path": "office/chair_023.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 50,
+          "legacy_index": null,
+          "raw_name": "chair_024.png",
+          "resolved_relative_path": "office/chair_024.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 51,
+          "legacy_index": null,
+          "raw_name": "chair_025.png",
+          "resolved_relative_path": "office/chair_025.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 52,
+          "legacy_index": null,
+          "raw_name": "chair_026.png",
+          "resolved_relative_path": "office/chair_026.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 53,
+          "legacy_index": null,
+          "raw_name": "chair_027.png",
+          "resolved_relative_path": "office/chair_027.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 54,
+          "legacy_index": null,
+          "raw_name": "chair_028.png",
+          "resolved_relative_path": "office/chair_028.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 55,
+          "legacy_index": null,
+          "raw_name": "chair_029.png",
+          "resolved_relative_path": "office/chair_029.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 56,
+          "legacy_index": null,
+          "raw_name": "desk_000.png",
+          "resolved_relative_path": "office/desk_000.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 57,
+          "legacy_index": null,
+          "raw_name": "desk_001.png",
+          "resolved_relative_path": "office/desk_001.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 58,
+          "legacy_index": null,
+          "raw_name": "desk_002.png",
+          "resolved_relative_path": "office/desk_002.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 59,
+          "legacy_index": null,
+          "raw_name": "desk_003.png",
+          "resolved_relative_path": "office/desk_003.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 60,
+          "legacy_index": null,
+          "raw_name": "desk_004.png",
+          "resolved_relative_path": "office/desk_004.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 61,
+          "legacy_index": null,
+          "raw_name": "desk_005.png",
+          "resolved_relative_path": "office/desk_005.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 62,
+          "legacy_index": null,
+          "raw_name": "desk_006.png",
+          "resolved_relative_path": "office/desk_006.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 63,
+          "legacy_index": null,
+          "raw_name": "desk_007.png",
+          "resolved_relative_path": "office/desk_007.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 64,
+          "legacy_index": null,
+          "raw_name": "desk_008.png",
+          "resolved_relative_path": "office/desk_008.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 65,
+          "legacy_index": null,
+          "raw_name": "desk_009.png",
+          "resolved_relative_path": "office/desk_009.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 66,
+          "legacy_index": null,
+          "raw_name": "desk_010.png",
+          "resolved_relative_path": "office/desk_010.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 67,
+          "legacy_index": null,
+          "raw_name": "desk_011.png",
+          "resolved_relative_path": "office/desk_011.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 68,
+          "legacy_index": null,
+          "raw_name": "desk_012.png",
+          "resolved_relative_path": "office/desk_012.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 69,
+          "legacy_index": null,
+          "raw_name": "desk_013.png",
+          "resolved_relative_path": "office/desk_013.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 70,
+          "legacy_index": null,
+          "raw_name": "desk_014.png",
+          "resolved_relative_path": "office/desk_014.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 71,
+          "legacy_index": null,
+          "raw_name": "desk_015.png",
+          "resolved_relative_path": "office/desk_015.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 72,
+          "legacy_index": null,
+          "raw_name": "desk_016.png",
+          "resolved_relative_path": "office/desk_016.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 73,
+          "legacy_index": null,
+          "raw_name": "desk_017.png",
+          "resolved_relative_path": "office/desk_017.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 74,
+          "legacy_index": null,
+          "raw_name": "desk_018.png",
+          "resolved_relative_path": "office/desk_018.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 75,
+          "legacy_index": null,
+          "raw_name": "desk_019.png",
+          "resolved_relative_path": "office/desk_019.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 76,
+          "legacy_index": null,
+          "raw_name": "desk_020.png",
+          "resolved_relative_path": "office/desk_020.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 77,
+          "legacy_index": null,
+          "raw_name": "desk_021.png",
+          "resolved_relative_path": "office/desk_021.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 78,
+          "legacy_index": null,
+          "raw_name": "desk_022.png",
+          "resolved_relative_path": "office/desk_022.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 79,
+          "legacy_index": null,
+          "raw_name": "desk_023.png",
+          "resolved_relative_path": "office/desk_023.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 80,
+          "legacy_index": null,
+          "raw_name": "desk_024.png",
+          "resolved_relative_path": "office/desk_024.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 81,
+          "legacy_index": null,
+          "raw_name": "desk_025.png",
+          "resolved_relative_path": "office/desk_025.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 82,
+          "legacy_index": null,
+          "raw_name": "desk_026.png",
+          "resolved_relative_path": "office/desk_026.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 83,
+          "legacy_index": null,
+          "raw_name": "desk_027.png",
+          "resolved_relative_path": "office/desk_027.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 84,
+          "legacy_index": null,
+          "raw_name": "desk_028.png",
+          "resolved_relative_path": "office/desk_028.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 85,
+          "legacy_index": null,
+          "raw_name": "desk_029.png",
+          "resolved_relative_path": "office/desk_029.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 86,
+          "legacy_index": null,
+          "raw_name": "pc_000.png",
+          "resolved_relative_path": "office/pc_000.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 87,
+          "legacy_index": null,
+          "raw_name": "pc_001.png",
+          "resolved_relative_path": "office/pc_001.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 88,
+          "legacy_index": null,
+          "raw_name": "pc_002.png",
+          "resolved_relative_path": "office/pc_002.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 89,
+          "legacy_index": null,
+          "raw_name": "pc_003.png",
+          "resolved_relative_path": "office/pc_003.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 90,
+          "legacy_index": null,
+          "raw_name": "pc_004.png",
+          "resolved_relative_path": "office/pc_004.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 91,
+          "legacy_index": null,
+          "raw_name": "pc_005.png",
+          "resolved_relative_path": "office/pc_005.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 92,
+          "legacy_index": null,
+          "raw_name": "pc_006.png",
+          "resolved_relative_path": "office/pc_006.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 93,
+          "legacy_index": null,
+          "raw_name": "pc_007.png",
+          "resolved_relative_path": "office/pc_007.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 94,
+          "legacy_index": null,
+          "raw_name": "pc_008.png",
+          "resolved_relative_path": "office/pc_008.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 95,
+          "legacy_index": null,
+          "raw_name": "pc_009.png",
+          "resolved_relative_path": "office/pc_009.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 96,
+          "legacy_index": null,
+          "raw_name": "pc_010.png",
+          "resolved_relative_path": "office/pc_010.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 97,
+          "legacy_index": null,
+          "raw_name": "pc_011.png",
+          "resolved_relative_path": "office/pc_011.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 98,
+          "legacy_index": null,
+          "raw_name": "pc_012.png",
+          "resolved_relative_path": "office/pc_012.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 99,
+          "legacy_index": null,
+          "raw_name": "pc_013.png",
+          "resolved_relative_path": "office/pc_013.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 100,
+          "legacy_index": null,
+          "raw_name": "pc_014.png",
+          "resolved_relative_path": "office/pc_014.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 101,
+          "legacy_index": null,
+          "raw_name": "pc_015.png",
+          "resolved_relative_path": "office/pc_015.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 102,
+          "legacy_index": null,
+          "raw_name": "pc_016.png",
+          "resolved_relative_path": "office/pc_016.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 103,
+          "legacy_index": null,
+          "raw_name": "pc_017.png",
+          "resolved_relative_path": "office/pc_017.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 104,
+          "legacy_index": null,
+          "raw_name": "pc_018.png",
+          "resolved_relative_path": "office/pc_018.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 105,
+          "legacy_index": null,
+          "raw_name": "pc_019.png",
+          "resolved_relative_path": "office/pc_019.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 106,
+          "legacy_index": null,
+          "raw_name": "pc_020.png",
+          "resolved_relative_path": "office/pc_020.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 107,
+          "legacy_index": null,
+          "raw_name": "pc_021.png",
+          "resolved_relative_path": "office/pc_021.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 108,
+          "legacy_index": null,
+          "raw_name": "pc_022.png",
+          "resolved_relative_path": "office/pc_022.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 109,
+          "legacy_index": null,
+          "raw_name": "pc_023.png",
+          "resolved_relative_path": "office/pc_023.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 110,
+          "legacy_index": null,
+          "raw_name": "pc_024.png",
+          "resolved_relative_path": "office/pc_024.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 111,
+          "legacy_index": null,
+          "raw_name": "pc_025.png",
+          "resolved_relative_path": "office/pc_025.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 112,
+          "legacy_index": null,
+          "raw_name": "pc_026.png",
+          "resolved_relative_path": "office/pc_026.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 113,
+          "legacy_index": null,
+          "raw_name": "pc_027.png",
+          "resolved_relative_path": "office/pc_027.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 114,
+          "legacy_index": null,
+          "raw_name": "pc_028.png",
+          "resolved_relative_path": "office/pc_028.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 115,
+          "legacy_index": null,
+          "raw_name": "pc_029.png",
+          "resolved_relative_path": "office/pc_029.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 116,
+          "legacy_index": null,
+          "raw_name": "pc_030.png",
+          "resolved_relative_path": "office/pc_030.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 117,
+          "legacy_index": null,
+          "raw_name": "pc_031.png",
+          "resolved_relative_path": "office/pc_031.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 118,
+          "legacy_index": null,
+          "raw_name": "pc_032.png",
+          "resolved_relative_path": "office/pc_032.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 119,
+          "legacy_index": null,
+          "raw_name": "pc_033.png",
+          "resolved_relative_path": "office/pc_033.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 120,
+          "legacy_index": null,
+          "raw_name": "pc_034.png",
+          "resolved_relative_path": "office/pc_034.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 121,
+          "legacy_index": null,
+          "raw_name": "pc_035.png",
+          "resolved_relative_path": "office/pc_035.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 122,
+          "legacy_index": null,
+          "raw_name": "reception_000.png",
+          "resolved_relative_path": "office/reception_000.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 123,
+          "legacy_index": null,
+          "raw_name": "reception_001.png",
+          "resolved_relative_path": "office/reception_001.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 124,
+          "legacy_index": null,
+          "raw_name": "reception_002.png",
+          "resolved_relative_path": "office/reception_002.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 125,
+          "legacy_index": null,
+          "raw_name": "reception_003.png",
+          "resolved_relative_path": "office/reception_003.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 126,
+          "legacy_index": null,
+          "raw_name": "reception_004.png",
+          "resolved_relative_path": "office/reception_004.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 127,
+          "legacy_index": null,
+          "raw_name": "reception_005.png",
+          "resolved_relative_path": "office/reception_005.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 128,
+          "legacy_index": null,
+          "raw_name": "reception_006.png",
+          "resolved_relative_path": "office/reception_006.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 129,
+          "legacy_index": null,
+          "raw_name": "reception_007.png",
+          "resolved_relative_path": "office/reception_007.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 130,
+          "legacy_index": null,
+          "raw_name": "reception_008.png",
+          "resolved_relative_path": "office/reception_008.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 131,
+          "legacy_index": null,
+          "raw_name": "reception_009.png",
+          "resolved_relative_path": "office/reception_009.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 132,
+          "legacy_index": null,
+          "raw_name": "reception_011.png",
+          "resolved_relative_path": "office/reception_011.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 133,
+          "legacy_index": null,
+          "raw_name": "reception_012.png",
+          "resolved_relative_path": "office/reception_012.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 134,
+          "legacy_index": null,
+          "raw_name": "reception_013.png",
+          "resolved_relative_path": "office/reception_013.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 135,
+          "legacy_index": null,
+          "raw_name": "reception_014.png",
+          "resolved_relative_path": "office/reception_014.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 136,
+          "legacy_index": null,
+          "raw_name": "reception_015.png",
+          "resolved_relative_path": "office/reception_015.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 137,
+          "legacy_index": null,
+          "raw_name": "reception_016.png",
+          "resolved_relative_path": "office/reception_016.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 138,
+          "legacy_index": null,
+          "raw_name": "reception_017.png",
+          "resolved_relative_path": "office/reception_017.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 139,
+          "legacy_index": null,
+          "raw_name": "reception_018.png",
+          "resolved_relative_path": "office/reception_018.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 140,
+          "legacy_index": null,
+          "raw_name": "reception_019.png",
+          "resolved_relative_path": "office/reception_019.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 141,
+          "legacy_index": null,
+          "raw_name": "reception_021.png",
+          "resolved_relative_path": "office/reception_021.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 142,
+          "legacy_index": null,
+          "raw_name": "reception_031.png",
+          "resolved_relative_path": "office/reception_031.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 143,
+          "legacy_index": null,
+          "raw_name": "reception_033.png",
+          "resolved_relative_path": "office/reception_033.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 144,
+          "legacy_index": null,
+          "raw_name": "reception_034.png",
+          "resolved_relative_path": "office/reception_034.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 145,
+          "legacy_index": null,
+          "raw_name": "reception_035.png",
+          "resolved_relative_path": "office/reception_035.png",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 146,
+          "legacy_index": null,
+          "raw_name": "reception_036",
+          "resolved_relative_path": "office/reception_036.png",
+          "resolution": "unique_basename_extension",
+          "confidence": "probable",
+          "anomaly": "missing_extension_in_source_inf"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/office/seb.inf",
+      "relative_path": "office/seb.inf",
+      "kind": "seb",
+      "records": [
+        {
+          "line": 1,
+          "legacy_index": null,
+          "raw_name": "floor.seb",
+          "resolved_relative_path": "office/floor.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 2,
+          "legacy_index": null,
+          "raw_name": "floor0.seb",
+          "resolved_relative_path": "office/floor0.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 3,
+          "legacy_index": null,
+          "raw_name": "floor1.seb",
+          "resolved_relative_path": "office/floor1.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 4,
+          "legacy_index": null,
+          "raw_name": "floor3.seb",
+          "resolved_relative_path": "office/floor3.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 5,
+          "legacy_index": null,
+          "raw_name": "floor5.seb",
+          "resolved_relative_path": "office/floor5.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 6,
+          "legacy_index": null,
+          "raw_name": "floor6.seb",
+          "resolved_relative_path": "office/floor6.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 7,
+          "legacy_index": null,
+          "raw_name": "floor7.seb",
+          "resolved_relative_path": "office/floor7.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 8,
+          "legacy_index": null,
+          "raw_name": "floor11.seb",
+          "resolved_relative_path": "office/floor11.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 9,
+          "legacy_index": null,
+          "raw_name": "floor12.seb",
+          "resolved_relative_path": "office/floor12.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 10,
+          "legacy_index": null,
+          "raw_name": "floor14.seb",
+          "resolved_relative_path": "office/floor14.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 11,
+          "legacy_index": null,
+          "raw_name": "floor15.seb",
+          "resolved_relative_path": "office/floor15.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 12,
+          "legacy_index": null,
+          "raw_name": "floor16.seb",
+          "resolved_relative_path": "office/floor16.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 13,
+          "legacy_index": null,
+          "raw_name": "floor17.seb",
+          "resolved_relative_path": "office/floor17.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 14,
+          "legacy_index": null,
+          "raw_name": "floor18.seb",
+          "resolved_relative_path": "office/floor18.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 15,
+          "legacy_index": null,
+          "raw_name": "floor19.seb",
+          "resolved_relative_path": "office/floor19.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 16,
+          "legacy_index": null,
+          "raw_name": "floor21.seb",
+          "resolved_relative_path": "office/floor21.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 17,
+          "legacy_index": null,
+          "raw_name": "floor31.seb",
+          "resolved_relative_path": "office/floor31.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 18,
+          "legacy_index": null,
+          "raw_name": "floor33.seb",
+          "resolved_relative_path": "office/floor33.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 19,
+          "legacy_index": null,
+          "raw_name": "floor34.seb",
+          "resolved_relative_path": "office/floor34.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 20,
+          "legacy_index": null,
+          "raw_name": "floor35.seb",
+          "resolved_relative_path": "office/floor35.seb",
+          "resolution": "exact",
+          "confidence": "verified",
+          "anomaly": null
+        },
+        {
+          "line": 21,
+          "legacy_index": null,
+          "raw_name": "floor36",
+          "resolved_relative_path": "office/floor36.seb",
+          "resolution": "unique_basename_extension",
+          "confidence": "probable",
+          "anomaly": "missing_extension_in_source_inf"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "bonus_catalog": {
+    "path": "game-dev-story-mod_Sprites/xls/English.lproj/bonus.txt",
+    "relative_path": "xls/English.lproj/bonus.txt",
+    "rows": [
+      {
+        "line": 1,
+        "catalog_id": 0,
+        "item_id": 0,
+        "asset_ref": "floor0",
+        "asset_relative_path": "office/floor0.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": -1,
+        "name_en": "Small Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 2,
+        "catalog_id": 1,
+        "item_id": 1,
+        "asset_ref": "floor1",
+        "asset_relative_path": "office/floor1.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": -1,
+        "name_en": "Medium Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 3,
+        "catalog_id": 2,
+        "item_id": 2,
+        "asset_ref": "floor2",
+        "asset_relative_path": "office/floor2.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 0,
+        "name_en": "Large Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 4,
+        "catalog_id": 3,
+        "item_id": 3,
+        "asset_ref": "floor3",
+        "asset_relative_path": "office/floor3.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Cool Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 5,
+        "catalog_id": 4,
+        "item_id": 5,
+        "asset_ref": "floor4",
+        "asset_relative_path": "office/floor4.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Dungeon Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 6,
+        "catalog_id": 5,
+        "item_id": 6,
+        "asset_ref": "floor5",
+        "asset_relative_path": "office/floor5.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Hot Springs Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 7,
+        "catalog_id": 6,
+        "item_id": 8,
+        "asset_ref": "floor6",
+        "asset_relative_path": "office/floor6.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Basketball Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 8,
+        "catalog_id": 7,
+        "item_id": 12,
+        "asset_ref": "floor7",
+        "asset_relative_path": "office/floor7.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Village Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 9,
+        "catalog_id": 8,
+        "item_id": 7,
+        "asset_ref": "floor8",
+        "asset_relative_path": "office/floor8.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Cat's Meow Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 10,
+        "catalog_id": 9,
+        "item_id": 12,
+        "asset_ref": "floor11",
+        "asset_relative_path": "office/floor11.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Startup Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 11,
+        "catalog_id": 10,
+        "item_id": 30,
+        "asset_ref": "floor12",
+        "asset_relative_path": "office/floor12.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Gamer Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 12,
+        "catalog_id": 11,
+        "item_id": 16,
+        "asset_ref": "floor13",
+        "asset_relative_path": "office/floor13.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Mountain Cabin Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 13,
+        "catalog_id": 12,
+        "item_id": 19,
+        "asset_ref": "floor14",
+        "asset_relative_path": "office/floor14.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Space Colony Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 14,
+        "catalog_id": 13,
+        "item_id": 4,
+        "asset_ref": "floor36",
+        "asset_relative_path": "office/floor36.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Basic Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 15,
+        "catalog_id": 14,
+        "item_id": 10,
+        "asset_ref": "floor34",
+        "asset_relative_path": "office/floor34.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Brilliant Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 16,
+        "catalog_id": 15,
+        "item_id": 11,
+        "asset_ref": "floor17",
+        "asset_relative_path": "office/floor17.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Bakery Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 17,
+        "catalog_id": 16,
+        "item_id": 50,
+        "asset_ref": "floor21",
+        "asset_relative_path": "office/floor21.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 9,
+        "name_en": "Lifelike Kairo Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 18,
+        "catalog_id": 17,
+        "item_id": 13,
+        "asset_ref": "floor31",
+        "asset_relative_path": "office/floor31.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Dreamy Cute Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 19,
+        "catalog_id": 18,
+        "item_id": 14,
+        "asset_ref": "floor18",
+        "asset_relative_path": "office/floor18.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Mini City Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 20,
+        "catalog_id": 19,
+        "item_id": 15,
+        "asset_ref": "floor19",
+        "asset_relative_path": "office/floor19.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Power Plant Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 21,
+        "catalog_id": 20,
+        "item_id": 17,
+        "asset_ref": "floor16",
+        "asset_relative_path": "office/floor16.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Mystery Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 22,
+        "catalog_id": 21,
+        "item_id": 21,
+        "asset_ref": "floor15",
+        "asset_relative_path": "office/floor15.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Aquatic Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 23,
+        "catalog_id": 22,
+        "item_id": 22,
+        "asset_ref": "floor33",
+        "asset_relative_path": "office/floor33.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Forest Camp Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 24,
+        "catalog_id": 23,
+        "item_id": 23,
+        "asset_ref": "floor35",
+        "asset_relative_path": "office/floor35.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 4,
+        "name_en": "Pirate Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 25,
+        "catalog_id": 24,
+        "item_id": 48,
+        "asset_ref": "floor9",
+        "asset_relative_path": "office/floor9.png",
+        "type_id": 0,
+        "category": "floor",
+        "unlock_or_flag": 7,
+        "name_en": "Dream Kairo Office",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 26,
+        "catalog_id": 50,
+        "item_id": 100,
+        "asset_ref": "-1",
+        "asset_relative_path": null,
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": -1,
+        "name_en": "Secretary's Desk",
+        "raw_field_count": 11,
+        "resolution": "placeholder"
+      },
+      {
+        "line": 27,
+        "catalog_id": 51,
+        "item_id": 101,
+        "asset_ref": "-1",
+        "asset_relative_path": null,
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": -1,
+        "name_en": "Small Front Desk",
+        "raw_field_count": 11,
+        "resolution": "placeholder"
+      },
+      {
+        "line": 28,
+        "catalog_id": 52,
+        "item_id": 102,
+        "asset_ref": "reception_000",
+        "asset_relative_path": "office/reception_000.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 0,
+        "name_en": "Regular Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 29,
+        "catalog_id": 53,
+        "item_id": 103,
+        "asset_ref": "reception_004",
+        "asset_relative_path": "office/reception_004.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Guild Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 30,
+        "catalog_id": 54,
+        "item_id": 104,
+        "asset_ref": "reception_005",
+        "asset_relative_path": "office/reception_005.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Inn Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 31,
+        "catalog_id": 55,
+        "item_id": 105,
+        "asset_ref": "reception_006",
+        "asset_relative_path": "office/reception_006.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Cheerleader Outfit",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 32,
+        "catalog_id": 56,
+        "item_id": 106,
+        "asset_ref": "reception_007",
+        "asset_relative_path": "office/reception_007.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Construction Company",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 33,
+        "catalog_id": 57,
+        "item_id": 107,
+        "asset_ref": "reception_008",
+        "asset_relative_path": "office/reception_008.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 2,
+        "name_en": "Cat Cafe Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 34,
+        "catalog_id": 58,
+        "item_id": 108,
+        "asset_ref": "reception_003",
+        "asset_relative_path": "office/reception_003.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Cool Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 35,
+        "catalog_id": 59,
+        "item_id": 109,
+        "asset_ref": "reception_036",
+        "asset_relative_path": "office/reception_036.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Basic Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 36,
+        "catalog_id": 60,
+        "item_id": 110,
+        "asset_ref": "reception_034",
+        "asset_relative_path": "office/reception_034.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Brilliant Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 37,
+        "catalog_id": 61,
+        "item_id": 111,
+        "asset_ref": "reception_017",
+        "asset_relative_path": "office/reception_017.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 2,
+        "name_en": "Bakery Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 38,
+        "catalog_id": 62,
+        "item_id": 112,
+        "asset_ref": "reception_021",
+        "asset_relative_path": "office/reception_021.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Office Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 39,
+        "catalog_id": 63,
+        "item_id": 113,
+        "asset_ref": "reception_011",
+        "asset_relative_path": "office/reception_011.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Casual Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 40,
+        "catalog_id": 64,
+        "item_id": 114,
+        "asset_ref": "reception_031",
+        "asset_relative_path": "office/reception_031.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Dreamy Cute Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 41,
+        "catalog_id": 65,
+        "item_id": 115,
+        "asset_ref": "reception_018",
+        "asset_relative_path": "office/reception_018.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Train Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 42,
+        "catalog_id": 66,
+        "item_id": 116,
+        "asset_ref": "reception_019",
+        "asset_relative_path": "office/reception_019.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Factory Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 43,
+        "catalog_id": 67,
+        "item_id": 117,
+        "asset_ref": "reception_013",
+        "asset_relative_path": "office/reception_013.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Mountain Cabin Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 44,
+        "catalog_id": 68,
+        "item_id": 118,
+        "asset_ref": "reception_016",
+        "asset_relative_path": "office/reception_016.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Classic Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 45,
+        "catalog_id": 69,
+        "item_id": 119,
+        "asset_ref": "reception_012",
+        "asset_relative_path": "office/reception_012.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 2,
+        "name_en": "Gamer Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 46,
+        "catalog_id": 70,
+        "item_id": 120,
+        "asset_ref": "reception_014",
+        "asset_relative_path": "office/reception_014.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Space Colony Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 47,
+        "catalog_id": 71,
+        "item_id": 121,
+        "asset_ref": "reception_015",
+        "asset_relative_path": "office/reception_015.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Resort Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 48,
+        "catalog_id": 72,
+        "item_id": 122,
+        "asset_ref": "reception_033",
+        "asset_relative_path": "office/reception_033.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 1,
+        "name_en": "Forest Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 49,
+        "catalog_id": 73,
+        "item_id": 123,
+        "asset_ref": "reception_035",
+        "asset_relative_path": "office/reception_035.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 3,
+        "name_en": "Pirate Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 50,
+        "catalog_id": 74,
+        "item_id": 124,
+        "asset_ref": "reception_009",
+        "asset_relative_path": "office/reception_009.png",
+        "type_id": 1,
+        "category": "reception",
+        "unlock_or_flag": 5,
+        "name_en": "Dream Kairo Front Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 51,
+        "catalog_id": 100,
+        "item_id": 200,
+        "asset_ref": "desk_000",
+        "asset_relative_path": "office/desk_000.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 0,
+        "name_en": "Office Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 52,
+        "catalog_id": 101,
+        "item_id": 201,
+        "asset_ref": "desk_001",
+        "asset_relative_path": "office/desk_001.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Round Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 53,
+        "catalog_id": 102,
+        "item_id": 202,
+        "asset_ref": "desk_002",
+        "asset_relative_path": "office/desk_002.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Manager's Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 54,
+        "catalog_id": 103,
+        "item_id": 203,
+        "asset_ref": "desk_003",
+        "asset_relative_path": "office/desk_003.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Folding Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 55,
+        "catalog_id": 104,
+        "item_id": 204,
+        "asset_ref": "desk_004",
+        "asset_relative_path": "office/desk_004.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Cubicle Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 56,
+        "catalog_id": 105,
+        "item_id": 205,
+        "asset_ref": "desk_005",
+        "asset_relative_path": "office/desk_005.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Cardboard Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 57,
+        "catalog_id": 106,
+        "item_id": 206,
+        "asset_ref": "desk_006",
+        "asset_relative_path": "office/desk_006.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Basic Wood Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 58,
+        "catalog_id": 107,
+        "item_id": 207,
+        "asset_ref": "desk_007",
+        "asset_relative_path": "office/desk_007.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Basic Desk (Red)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 59,
+        "catalog_id": 108,
+        "item_id": 208,
+        "asset_ref": "desk_008",
+        "asset_relative_path": "office/desk_008.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Basic Desk (Blue)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 60,
+        "catalog_id": 109,
+        "item_id": 209,
+        "asset_ref": "desk_009",
+        "asset_relative_path": "office/desk_009.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Basic Desk (Green)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 61,
+        "catalog_id": 110,
+        "item_id": 210,
+        "asset_ref": "desk_010",
+        "asset_relative_path": "office/desk_010.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Basic Desk (Yellow)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 62,
+        "catalog_id": 111,
+        "item_id": 211,
+        "asset_ref": "desk_011",
+        "asset_relative_path": "office/desk_011.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Basic Desk (Pink)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 63,
+        "catalog_id": 112,
+        "item_id": 212,
+        "asset_ref": "desk_012",
+        "asset_relative_path": "office/desk_012.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Basic Desk (Purple)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 64,
+        "catalog_id": 113,
+        "item_id": 213,
+        "asset_ref": "desk_013",
+        "asset_relative_path": "office/desk_013.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Basic Desk (Orange)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 65,
+        "catalog_id": 114,
+        "item_id": 214,
+        "asset_ref": "desk_014",
+        "asset_relative_path": "office/desk_014.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Round Corner Desk (Black)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 66,
+        "catalog_id": 115,
+        "item_id": 215,
+        "asset_ref": "desk_015",
+        "asset_relative_path": "office/desk_015.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Round Corner Desk (Blue)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 67,
+        "catalog_id": 116,
+        "item_id": 216,
+        "asset_ref": "desk_016",
+        "asset_relative_path": "office/desk_016.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Glass-Topped Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 68,
+        "catalog_id": 117,
+        "item_id": 217,
+        "asset_ref": "desk_017",
+        "asset_relative_path": "office/desk_017.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Glass Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 69,
+        "catalog_id": 118,
+        "item_id": 218,
+        "asset_ref": "desk_018",
+        "asset_relative_path": "office/desk_018.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "School Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 70,
+        "catalog_id": 119,
+        "item_id": 219,
+        "asset_ref": "desk_019",
+        "asset_relative_path": "office/desk_019.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Study Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 71,
+        "catalog_id": 120,
+        "item_id": 220,
+        "asset_ref": "desk_020",
+        "asset_relative_path": "office/desk_020.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Wooden Desk (Dark)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 72,
+        "catalog_id": 121,
+        "item_id": 221,
+        "asset_ref": "desk_021",
+        "asset_relative_path": "office/desk_021.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Wooden Desk (Light)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 73,
+        "catalog_id": 122,
+        "item_id": 222,
+        "asset_ref": "desk_022",
+        "asset_relative_path": "office/desk_022.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Writing Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 74,
+        "catalog_id": 123,
+        "item_id": 223,
+        "asset_ref": "desk_023",
+        "asset_relative_path": "office/desk_023.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Cat Paw Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 75,
+        "catalog_id": 124,
+        "item_id": 224,
+        "asset_ref": "desk_024",
+        "asset_relative_path": "office/desk_024.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Spaceship Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 76,
+        "catalog_id": 125,
+        "item_id": 225,
+        "asset_ref": "desk_025",
+        "asset_relative_path": "office/desk_025.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 3,
+        "name_en": "Anti-Grav Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 77,
+        "catalog_id": 126,
+        "item_id": 226,
+        "asset_ref": "desk_026",
+        "asset_relative_path": "office/desk_026.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Metal Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 78,
+        "catalog_id": 127,
+        "item_id": 227,
+        "asset_ref": "desk_027",
+        "asset_relative_path": "office/desk_027.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 1,
+        "name_en": "Busy Worker Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 79,
+        "catalog_id": 128,
+        "item_id": 228,
+        "asset_ref": "desk_028",
+        "asset_relative_path": "office/desk_028.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 2,
+        "name_en": "RGB Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 80,
+        "catalog_id": 129,
+        "item_id": 229,
+        "asset_ref": "desk_029",
+        "asset_relative_path": "office/desk_029.png",
+        "type_id": 3,
+        "category": "desk",
+        "unlock_or_flag": 5,
+        "name_en": "Kairobot Desk",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 81,
+        "catalog_id": 150,
+        "item_id": 300,
+        "asset_ref": "chair_000",
+        "asset_relative_path": "office/chair_000.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 0,
+        "name_en": "Basic Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 82,
+        "catalog_id": 151,
+        "item_id": 305,
+        "asset_ref": "chair_001",
+        "asset_relative_path": "office/chair_001.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Stupendous Chair (Red)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 83,
+        "catalog_id": 152,
+        "item_id": 301,
+        "asset_ref": "chair_002",
+        "asset_relative_path": "office/chair_002.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Cushioned Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 84,
+        "catalog_id": 153,
+        "item_id": 302,
+        "asset_ref": "chair_003",
+        "asset_relative_path": "office/chair_003.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Pipe Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 85,
+        "catalog_id": 154,
+        "item_id": 303,
+        "asset_ref": "chair_004",
+        "asset_relative_path": "office/chair_004.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Balance Ball",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 86,
+        "catalog_id": 155,
+        "item_id": 304,
+        "asset_ref": "chair_005",
+        "asset_relative_path": "office/chair_005.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Cardboard Box",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 87,
+        "catalog_id": 156,
+        "item_id": 306,
+        "asset_ref": "chair_006",
+        "asset_relative_path": "office/chair_006.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Stupendous Chair (Blue)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 88,
+        "catalog_id": 157,
+        "item_id": 307,
+        "asset_ref": "chair_007",
+        "asset_relative_path": "office/chair_007.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Stupendous Chair (Green)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 89,
+        "catalog_id": 158,
+        "item_id": 308,
+        "asset_ref": "chair_008",
+        "asset_relative_path": "office/chair_008.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Stupendous Chair (Yellow)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 90,
+        "catalog_id": 159,
+        "item_id": 309,
+        "asset_ref": "chair_009",
+        "asset_relative_path": "office/chair_009.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Stupendous Chair (Pink)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 91,
+        "catalog_id": 160,
+        "item_id": 310,
+        "asset_ref": "chair_010",
+        "asset_relative_path": "office/chair_010.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Stupendous Chair (Purple)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 92,
+        "catalog_id": 161,
+        "item_id": 311,
+        "asset_ref": "chair_011",
+        "asset_relative_path": "office/chair_011.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Stupendous Chair (Orange)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 93,
+        "catalog_id": 162,
+        "item_id": 312,
+        "asset_ref": "chair_012",
+        "asset_relative_path": "office/chair_012.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Classroom Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 94,
+        "catalog_id": 163,
+        "item_id": 313,
+        "asset_ref": "chair_013",
+        "asset_relative_path": "office/chair_013.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Folding Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 95,
+        "catalog_id": 164,
+        "item_id": 314,
+        "asset_ref": "chair_014",
+        "asset_relative_path": "office/chair_014.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Wooden Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 96,
+        "catalog_id": 165,
+        "item_id": 315,
+        "asset_ref": "chair_015",
+        "asset_relative_path": "office/chair_015.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Futon Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 97,
+        "catalog_id": 166,
+        "item_id": 316,
+        "asset_ref": "chair_016",
+        "asset_relative_path": "office/chair_016.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Eastern-Style Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 98,
+        "catalog_id": 167,
+        "item_id": 317,
+        "asset_ref": "chair_017",
+        "asset_relative_path": "office/chair_017.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Cat Ears Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 99,
+        "catalog_id": 168,
+        "item_id": 318,
+        "asset_ref": "chair_018",
+        "asset_relative_path": "office/chair_018.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Stylish Chair (White)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 100,
+        "catalog_id": 169,
+        "item_id": 319,
+        "asset_ref": "chair_019",
+        "asset_relative_path": "office/chair_019.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Stylish Chair (Black)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 101,
+        "catalog_id": 170,
+        "item_id": 320,
+        "asset_ref": "chair_020",
+        "asset_relative_path": "office/chair_020.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Modern Chair (Red)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 102,
+        "catalog_id": 171,
+        "item_id": 321,
+        "asset_ref": "chair_021",
+        "asset_relative_path": "office/chair_021.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Modern Chair (Yellow)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 103,
+        "catalog_id": 172,
+        "item_id": 322,
+        "asset_ref": "chair_022",
+        "asset_relative_path": "office/chair_022.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Gamer Chair (Black)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 104,
+        "catalog_id": 173,
+        "item_id": 323,
+        "asset_ref": "chair_023",
+        "asset_relative_path": "office/chair_023.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Gamer Chair (White)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 105,
+        "catalog_id": 174,
+        "item_id": 324,
+        "asset_ref": "chair_024",
+        "asset_relative_path": "office/chair_024.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Bar Stool",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 106,
+        "catalog_id": 175,
+        "item_id": 325,
+        "asset_ref": "chair_025",
+        "asset_relative_path": "office/chair_025.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 1,
+        "name_en": "Barrel",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 107,
+        "catalog_id": 176,
+        "item_id": 326,
+        "asset_ref": "chair_026",
+        "asset_relative_path": "office/chair_026.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 2,
+        "name_en": "Slime Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 108,
+        "catalog_id": 177,
+        "item_id": 327,
+        "asset_ref": "chair_027",
+        "asset_relative_path": "office/chair_027.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 2,
+        "name_en": "Octoman Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 109,
+        "catalog_id": 178,
+        "item_id": 328,
+        "asset_ref": "chair_028",
+        "asset_relative_path": "office/chair_028.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 3,
+        "name_en": "Piggy Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 110,
+        "catalog_id": 179,
+        "item_id": 329,
+        "asset_ref": "chair_029",
+        "asset_relative_path": "office/chair_029.png",
+        "type_id": 4,
+        "category": "chair",
+        "unlock_or_flag": 4,
+        "name_en": "Kairobot Chair",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 111,
+        "catalog_id": 200,
+        "item_id": 400,
+        "asset_ref": "pc_000",
+        "asset_relative_path": "office/pc_000.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 0,
+        "name_en": "Wowdows 96",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 112,
+        "catalog_id": 201,
+        "item_id": 401,
+        "asset_ref": "pc_001",
+        "asset_relative_path": "office/pc_001.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Wowdows CX",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 113,
+        "catalog_id": 202,
+        "item_id": 410,
+        "asset_ref": "pc_002",
+        "asset_relative_path": "office/pc_002.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "iHack (Blue)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 114,
+        "catalog_id": 203,
+        "item_id": 403,
+        "asset_ref": "pc_003",
+        "asset_relative_path": "office/pc_003.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 2,
+        "name_en": "Gaming PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 115,
+        "catalog_id": 204,
+        "item_id": 404,
+        "asset_ref": "pc_004",
+        "asset_relative_path": "office/pc_004.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Multi-Monitor Setup",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 116,
+        "catalog_id": 205,
+        "item_id": 405,
+        "asset_ref": "pc_005",
+        "asset_relative_path": "office/pc_005.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "PC With Figures",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 117,
+        "catalog_id": 206,
+        "item_id": 406,
+        "asset_ref": "pc_006",
+        "asset_relative_path": "office/pc_006.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Stylish PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 118,
+        "catalog_id": 207,
+        "item_id": 466,
+        "asset_ref": "pc_007",
+        "asset_relative_path": "office/pc_007.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 5,
+        "name_en": "Super Duper Computer Kray",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 119,
+        "catalog_id": 208,
+        "item_id": 408,
+        "asset_ref": "pc_008",
+        "asset_relative_path": "office/pc_008.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 3,
+        "name_en": "Kairo Notebook",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 120,
+        "catalog_id": 209,
+        "item_id": 409,
+        "asset_ref": "pc_009",
+        "asset_relative_path": "office/pc_009.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Organic PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 121,
+        "catalog_id": 210,
+        "item_id": 410,
+        "asset_ref": "pc_022",
+        "asset_relative_path": "office/pc_022.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 2,
+        "name_en": "Kitty Cat PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 122,
+        "catalog_id": 211,
+        "item_id": 414,
+        "asset_ref": "pc_014",
+        "asset_relative_path": "office/pc_014.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Marpple ][",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 123,
+        "catalog_id": 212,
+        "item_id": 411,
+        "asset_ref": "pc_012",
+        "asset_relative_path": "office/pc_012.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "iHack (Pink)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 124,
+        "catalog_id": 213,
+        "item_id": 412,
+        "asset_ref": "pc_013",
+        "asset_relative_path": "office/pc_013.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "iHack (Purple)",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 125,
+        "catalog_id": 214,
+        "item_id": 413,
+        "asset_ref": "pc_011",
+        "asset_relative_path": "office/pc_011.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "HackBook mini",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 126,
+        "catalog_id": 215,
+        "item_id": 415,
+        "asset_ref": "pc_015",
+        "asset_relative_path": "office/pc_015.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Golden Delicious",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 127,
+        "catalog_id": 216,
+        "item_id": 416,
+        "asset_ref": "pc_016",
+        "asset_relative_path": "office/pc_016.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Wooden PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 128,
+        "catalog_id": 217,
+        "item_id": 417,
+        "asset_ref": "pc_017",
+        "asset_relative_path": "office/pc_017.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 2,
+        "name_en": "Tower PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 129,
+        "catalog_id": 218,
+        "item_id": 465,
+        "asset_ref": "pc_018",
+        "asset_relative_path": "office/pc_018.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 3,
+        "name_en": "Golden PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 130,
+        "catalog_id": 219,
+        "item_id": 419,
+        "asset_ref": "pc_019",
+        "asset_relative_path": "office/pc_019.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 2,
+        "name_en": "Cyberslime PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 131,
+        "catalog_id": 220,
+        "item_id": 420,
+        "asset_ref": "pc_020",
+        "asset_relative_path": "office/pc_020.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 3,
+        "name_en": "Futuristic PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 132,
+        "catalog_id": 221,
+        "item_id": 421,
+        "asset_ref": "pc_021",
+        "asset_relative_path": "office/pc_021.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Retro-Future PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 133,
+        "catalog_id": 222,
+        "item_id": 422,
+        "asset_ref": "pc_023",
+        "asset_relative_path": "office/pc_023.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Celeb-Endorsed PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 134,
+        "catalog_id": 223,
+        "item_id": 423,
+        "asset_ref": "pc_024",
+        "asset_relative_path": "office/pc_024.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 3,
+        "name_en": "Kairo Family PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 135,
+        "catalog_id": 224,
+        "item_id": 424,
+        "asset_ref": "pc_010",
+        "asset_relative_path": "office/pc_010.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Sweet PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 136,
+        "catalog_id": 225,
+        "item_id": 425,
+        "asset_ref": "pc_025",
+        "asset_relative_path": "office/pc_025.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Typewriter PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 137,
+        "catalog_id": 226,
+        "item_id": 426,
+        "asset_ref": "pc_035",
+        "asset_relative_path": "office/pc_035.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Doorway 2007",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 138,
+        "catalog_id": 227,
+        "item_id": 427,
+        "asset_ref": "pc_026",
+        "asset_relative_path": "office/pc_026.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Artisanal PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 139,
+        "catalog_id": 228,
+        "item_id": 428,
+        "asset_ref": "pc_027",
+        "asset_relative_path": "office/pc_027.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "YBM PC-AX",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 140,
+        "catalog_id": 229,
+        "item_id": 429,
+        "asset_ref": "pc_028",
+        "asset_relative_path": "office/pc_028.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Bagintosh",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 141,
+        "catalog_id": 230,
+        "item_id": 430,
+        "asset_ref": "pc_029",
+        "asset_relative_path": "office/pc_029.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "BETTT 2021",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 142,
+        "catalog_id": 231,
+        "item_id": 431,
+        "asset_ref": "pc_030",
+        "asset_relative_path": "office/pc_030.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 2,
+        "name_en": "NeWSTEP",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 143,
+        "catalog_id": 232,
+        "item_id": 432,
+        "asset_ref": "pc_031",
+        "asset_relative_path": "office/pc_031.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "PDA Pal",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 144,
+        "catalog_id": 233,
+        "item_id": 433,
+        "asset_ref": "pc_032",
+        "asset_relative_path": "office/pc_032.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "Amigo PC",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 145,
+        "catalog_id": 234,
+        "item_id": 434,
+        "asset_ref": "pc_033",
+        "asset_relative_path": "office/pc_033.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 2,
+        "name_en": "FM-W CITIES",
+        "raw_field_count": 11,
+        "resolution": "linked"
+      },
+      {
+        "line": 146,
+        "catalog_id": 235,
+        "item_id": 435,
+        "asset_ref": "pc_034",
+        "asset_relative_path": "office/pc_034.png",
+        "type_id": 2,
+        "category": "pc",
+        "unlock_or_flag": 1,
+        "name_en": "PC 680500",
+        "raw_field_count": 7,
+        "resolution": "linked"
+      }
+    ],
+    "errors": []
+  },
+  "office_asset_audit": {
+    "png_count": 146,
+    "direct_bonus_reference_count": 144,
+    "unreferenced_pngs": [
+      "office/reception_001.png",
+      "office/reception_002.png"
+    ],
+    "floor_png_without_same_name_seb": [
+      {
+        "png": "office/floor13.png",
+        "expected_seb": "office/floor13.seb"
+      },
+      {
+        "png": "office/floor2.png",
+        "expected_seb": "office/floor2.seb"
+      },
+      {
+        "png": "office/floor4.png",
+        "expected_seb": "office/floor4.seb"
+      },
+      {
+        "png": "office/floor9.png",
+        "expected_seb": "office/floor9.seb"
+      }
+    ]
+  }
+}

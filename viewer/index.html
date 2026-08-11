@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .debug-panel {
+            margin-top: 20px;
+            padding: 15px;
+            background: #2a2a2a;
+            border-radius: 8px;
+            border: 1px solid #444;
+            font-size: 14px;
+            color: #4CAF50;
+            font-family: monospace;
+        }
+        .debug-panel p {
+            margin: 5px 0;
+        }
+        .debug-panel span {
+            color: #fff;
+        }
+    </style>
+    <title>Kairosoft Agent Dashboard</title>
+    <link rel="stylesheet" href="style.css?v=7">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="top-nav">
+            <div class="logo">
+                <span class="pulse"></span>
+                <h1>AI Agent Office Viewer</h1>
+            </div>
+            <div class="status">System Online</div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar glass-panel">
+                <h2>Configuration</h2>
+                
+                <div class="control-group">
+                    <label for="bodySelect">Body Asset</label>
+                    <select id="bodySelect" class="custom-select"></select>
+                </div>
+
+                <div class="control-group">
+                    <label for="faceSelect">Face Asset</label>
+                    <select id="faceSelect" class="custom-select"></select>
+                </div>
+
+                <div class="control-group">
+                    <label for="scaleRange">Scale</label>
+                    <div class="range-wrapper">
+                        <input type="range" id="scaleRange" min="2" max="16" value="8" step="1">
+                        <span id="scaleValue">8x</span>
+                    </div>
+                </div>
+
+                <h2>Playback</h2>
+                <div class="playback-controls">
+                    <button id="btnIdle" class="btn active">Idle</button>
+                    <button id="btnWalk" class="btn">Walk</button>
+                    <button id="btnDesk" class="btn">Meeting</button>
+                    <button id="btnTyping" class="btn">Typing</button>
+                    <button id="btnCheer" class="btn">Cheer</button>
+                    <button id="btnExhausted" class="btn">Exhausted</button>
+                </div>
+                
+                <div class="control-group direction-group">
+                    <label>Engine Direction Enum</label>
+                    <div class="d-pad" style="grid-template-columns: 1fr 1fr; gap: 8px;">
+                        <button class="dir-btn active" data-dir="0">Dir 0</button>
+                        <button class="dir-btn" data-dir="1">Dir 1</button>
+                        <button class="dir-btn" data-dir="2">Dir 2</button>
+                        <button class="dir-btn" data-dir="3">Dir 3</button>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="viewer-area">
+                <div class="canvas-container glass-panel">
+                    <canvas id="previewCanvas" width="288" height="304"></canvas>
+                    <div class="canvas-grid-overlay"></div>
+                    <div class="debug-panel">
+                        <p>Current Mode: <span id="debug-mode">--</span></p>
+                        <p>Formula: <span id="debug-formula">--</span></p>
+                        <p>Face Used (Src X): <span id="debug-face">--</span></p>
+                        <p>Body Used (Src X, Y): <span id="debug-body">--</span></p>
+                    </div>
+                </div>
+                
+                <div class="info-panel glass-panel">
+                    <h3>Contact Sheet (42 Modes)</h3>
+                    <div class="contact-sheet" id="contactSheet"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="data/bodyface_records.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
