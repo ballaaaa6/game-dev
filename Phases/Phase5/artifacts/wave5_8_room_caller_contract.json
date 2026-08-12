@@ -1,0 +1,476 @@
+{
+  "schema_version": "wave5-8-room-caller-contract-v1",
+  "phase": "Phase5",
+  "wave": "Wave5",
+  "stage": "W5.8-room-caller-screen-origin-png-placement-and-seb-separation",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "status": "room_png_screen_placement_verified_seb_room_mapping_open",
+  "game_screen_entry": {
+    "function": "Method_form_GameForm_RenderGameScreen",
+    "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
+    "source_address": "0x00f16edc",
+    "source_line": 4669,
+    "source_lines": {
+      "game_width_read": 4712,
+      "clip": 4751,
+      "mesh_depth_setup": 4727,
+      "set_origin": 4765,
+      "draw_obj_call": 4766,
+      "reset_origin": 4767
+    },
+    "coordinate_flow": {
+      "viewport_constants": {
+        "VIEW_X": 0,
+        "VIEW_Y": 22,
+        "VIEW_W": "GameForm+0x8",
+        "VIEW_H": "GameForm+0xc"
+      },
+      "origin_expression": "iVar5 = GameForm.GetGameWidth(); iVar3 = iVar5 - 0xef; if (-1 < iVar5 - 0xf0) iVar3 = iVar5 - 0xf0; Graphics.SetOrigin(iVar3 >> 1, 0)",
+      "clip_expression": "clip_x uses the same 0xf0/0xf1 width branch; clip width is GameForm+0x8 and height is GameForm+0xc",
+      "draw_obj_boundary": "Graphics origin is active while DrawObj runs and is reset immediately afterward",
+      "status": "screen_origin_and_clip_flow_verified; expression preserved without simplifying the one-pixel branch"
+    },
+    "depth_boundary": {
+      "setup": "MeshManager.SetDepth(mesh, 0, 1, 0) before DrawObj",
+      "draw_obj_set_depth_call_count": 0,
+      "semantic_status": "no per-object Graphics.SetDepth in scoped DrawObj; do not rename object sort fields as depth"
+    }
+  },
+  "room_draw_path": {
+    "entry_function": "form_GameForm__DrawObj",
+    "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+    "source_address": "0x00f173c8",
+    "source_line": 15847,
+    "object_fields": {
+      "ObjecX": {
+        "offset": "0x298",
+        "source_line": 275648
+      },
+      "ObjecY": {
+        "offset": "0x2A0",
+        "source_line": 275649
+      },
+      "ObjecCX": {
+        "offset": "0x2A8",
+        "source_line": 275650
+      },
+      "ObjecCY": {
+        "offset": "0x2B0",
+        "source_line": 275651
+      },
+      "ObjecWX": {
+        "offset": "0x2B8",
+        "source_line": 275652
+      },
+      "ObjecWY": {
+        "offset": "0x2C0",
+        "source_line": 275653
+      },
+      "ObjecZX": {
+        "offset": "0x2C8",
+        "source_line": 275654
+      },
+      "ObjecZY": {
+        "offset": "0x2D0",
+        "source_line": 275655
+      },
+      "ObjecSY": {
+        "offset": "0x2D8",
+        "source_line": 275656
+      },
+      "ObjecUpDown": {
+        "offset": "0x2F0",
+        "source_line": 275659
+      },
+      "ObjecSyurui": {
+        "offset": "0x2F8",
+        "source_line": 275660
+      },
+      "ObjecAnime": {
+        "offset": "0x300",
+        "source_line": 275661
+      },
+      "ObjecPoint": {
+        "offset": "0x308",
+        "source_line": 275662
+      }
+    },
+    "image_slots": {
+      "imgFloorMain": {
+        "offset": "0x1120",
+        "source_line": 276199
+      },
+      "imgFloorParts": {
+        "offset": "0x1128",
+        "source_line": 276200
+      },
+      "IndexImgFloorMain": {
+        "offset": "0x1180",
+        "source_line": 276211
+      },
+      "IndexImgFloorParts": {
+        "offset": "0x1188",
+        "source_line": 276213
+      }
+    },
+    "dispatch": {
+      "object_type_field": "ObjecSyurui (+0x2f8)",
+      "object_order_field": "ObjecUpDown (+0x2f0)",
+      "observed_branches": [
+        {
+          "value": 4,
+          "callee": "form_GameForm__DrawChair"
+        },
+        {
+          "value": 5,
+          "callee": "bounded object branch before furniture/floor fallback"
+        },
+        {
+          "value": 6,
+          "callee": "form_GameForm__DrawCeoDesk"
+        },
+        {
+          "value": 7,
+          "callee": "form_GameForm__DrawReception"
+        },
+        {
+          "value": "other",
+          "callee": "direct Graphics.DrawImage using imgFloorParts slot"
+        }
+      ],
+      "semantic_policy": "numeric branch labels remain structural; do not equate value 7 with a universal room type outside this DrawObj slice"
+    },
+    "direct_img_floor_parts_branch": {
+      "source_lines": {
+        "draw_image": 16711,
+        "destination_x": 16712,
+        "destination_y": 16714,
+        "image_field": 16716,
+        "source_cx": 16717,
+        "source_cy": 16718,
+        "source_wx": 16719,
+        "source_wy": 16720
+      },
+      "formula": "DrawImage(ObjecX + ObjecZX, ObjecY + ObjecZY, GameForm.imgFloorParts, ObjecCX, ObjecCY, ObjecWX, ObjecWY, 0)",
+      "status": "bounded_room_png_crop_and_local_placement_verified"
+    },
+    "reception_helper": {
+      "function": "form_GameForm__DrawReception",
+      "source_line": 56086,
+      "call_from_draw_obj_line": 16674,
+      "draw_image_line": 56106,
+      "img_floor_parts_line": 56108,
+      "formula": "DrawImage(ObjecX + ObjecZX, ObjecY + ObjecZY, GameForm.imgFloorParts, ObjecCX, ObjecCY, ObjecWX, ObjecWY, 0)",
+      "status": "helper_argument_flow_verified; object array producer remains outside this slice"
+    },
+    "seb_separation": {
+      "resource_manager_seb_call_count_in_draw_obj": 0,
+      "resource_manager_seb_call_count_status": "scoped_zero",
+      "conclusion": "DrawObj room path reaches PNG/furniture DrawImage helpers directly; no ResourceManager.DrawSeb consumer is present inside this function"
+    }
+  },
+  "seb_caller_inventory": {
+    "scope": "all categorized C files except kairo.c implementation definitions",
+    "call_site_count": 38,
+    "caller_functions": [
+      "form_RankForm___draw",
+      "form_SpForm___draw",
+      "form_SubForm__DrawButtonSeb",
+      "form_SubForm__DrawTalk",
+      "form_SubForm___draw",
+      "form_SubForm___draw3",
+      "system_form_BillingForm___draw",
+      "system_form_FriendForm___draw",
+      "system_form_HttpForm__DrawConnect",
+      "system_form_LanguageForm__DrawButton"
+    ],
+    "call_sites": [
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 10530,
+        "caller_function": "system_form_BillingForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(*(int *)(lVar17 + (long)(int)uVar27 * 4 + 0x20) + 0x14), (float)iVar9,lVar24,param_2,2,0,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 10740,
+        "caller_function": "system_form_BillingForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(*(int *)(lVar17 + (long)(int)uVar27 * 4 + 0x20) + 200), (float)(*(int *)(lVar17 + (long)(int)uVar29 * 4 + 0x20) + 0xaf),lVar22, param_2,0,1,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 10933,
+        "caller_function": "system_form_BillingForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(*(int *)(lVar17 + (long)(int)uVar27 * 4 + 0x20) + 0x44), (float)(*(int *)(lVar17 + (long)(int)uVar29 * 4 + 0x20) + 0x4a),lVar24,param_2, 4,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 10943,
+        "caller_function": "system_form_BillingForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(*(int *)(lVar17 + (long)(int)uVar27 * 4 + 0x20) + 0x54), (float)(*(int *)(lVar17 + (long)(int)uVar29 * 4 + 0x20) + 0x4a),lVar22,param_2, 3,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 10953,
+        "caller_function": "system_form_BillingForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(*(int *)(lVar17 + (long)(int)uVar27 * 4 + 0x20) + 0x80), (float)(*(int *)(lVar17 + (long)(int)uVar29 * 4 + 0x20) + 0x49),lVar22,param_2, 0,1,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 10984,
+        "caller_function": "system_form_BillingForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(iVar15 + 0x27),(float)(iVar14 + 0x1b),lVar22,param_2,2,0,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 11164,
+        "caller_function": "system_form_BillingForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(*(int *)(lVar17 + (long)(int)uVar27 * 4 + 0x20) + 4), (float)(*(int *)(lVar17 + (long)(int)uVar29 * 4 + 0x20) + 6),lVar22,param_2,5,0,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 11208,
+        "caller_function": "system_form_BillingForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(iVar9 + 0x18),(float)(iVar14 + 0xf),lVar22,param_2,2,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 11212,
+        "caller_function": "system_form_BillingForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(iVar9 + 0x2c),(float)(iVar14 + 0x12),lVar22,param_2,8,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 11223,
+        "caller_function": "system_form_BillingForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(iVar9 + 0x20),(float)(iVar14 + 0x17),lVar22,param_2,9, (int)((uVar27 + ((uint)(int)(char)uVar27 >> 0xd & 3)) * 0x1000000) >> 0x1a,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 11408,
+        "caller_function": "system_form_BillingForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb (0x425c0000,(float)(iVar14 + iVar9),lVar22,param_2,1,uVar16 != 0,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 17366,
+        "caller_function": "system_form_FriendForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(iVar14 + 0x3b),(float)(iVar13 + 2),lVar25,param_2,0x10,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 17523,
+        "caller_function": "system_form_FriendForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(iVar13 + 0xe),(float)(iVar14 + 0xf),lVar25,param_2,0x10,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 17847,
+        "caller_function": "system_form_FriendForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(iVar14 + 0x3b),(float)(iVar13 + 2),lVar25,param_2,0x10,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 17998,
+        "caller_function": "system_form_FriendForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(iVar13 + 0xe),(float)(iVar14 + 0xf),lVar25,param_2,0x10,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 19715,
+        "caller_function": "system_form_HttpForm__DrawConnect",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb(fVar10,fVar11,lVar7,param_1,1,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 19724,
+        "caller_function": "system_form_HttpForm__DrawConnect",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb(fVar10,fVar11,lVar7,param_1,2,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
+        "source_line": 22989,
+        "caller_function": "system_form_LanguageForm__DrawButton",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb((float)param_2,(float)param_3,lVar10,param_1,0,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 64194,
+        "caller_function": "form_SubForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb(0x43340000,0x42f60000,lVar15,param_2,0,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 64371,
+        "caller_function": "form_SubForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb(0x43340000,0x42f60000,lVar12,param_2,0,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 71674,
+        "caller_function": "form_SubForm___draw3",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb (0x433b0000,0x43370000,lVar15,param_2,0x13, (*(int *)(*(long *)(*plVar27 + 0xb8) + 0x1bc) / 6) % 3,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 71701,
+        "caller_function": "form_SubForm___draw3",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb (0x43360000,0x43350000,lVar23,param_2,uVar16,iVar11 % 2,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 94304,
+        "caller_function": "form_SubForm__DrawButtonSeb",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)param_7,(float)param_8,param_4,param_3,param_5,param_6,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 99824,
+        "caller_function": "form_SubForm__DrawTalk",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb (0x433b0000,0x43370000,lVar9,param_2,0x13, (*(int *)(*(long *)(*(long *)puVar5 + 0xb8) + 0x1bc) / 6) % 3,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 99852,
+        "caller_function": "form_SubForm__DrawTalk",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb (0x43360000,0x43350000,lVar11,param_2,uVar8,iVar2 % 2,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 100578,
+        "caller_function": "form_RankForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)iVar10,(float)(iVar20 * 0x5a),lVar11,param_2,0x18,0,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 100618,
+        "caller_function": "form_RankForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSebAnchor (0x42f00000,0x42f00000,lVar12,param_2,0x16,0,0x22,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 100681,
+        "caller_function": "form_RankForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb (0x41700000,(float)(iVar10 + -0x26),lVar11,param_2,0x1b, uVar9 == *(uint *)(param_1 + 0xe0),0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 100913,
+        "caller_function": "form_RankForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSebAnchor (0x42f00000,0x42f00000,lVar11,param_2,0x16,1,0x22,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 100957,
+        "caller_function": "form_RankForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSebAnchor (0x42f00000,0x42480000,lVar11,param_2,0x19,0,2,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 100962,
+        "caller_function": "form_RankForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSebAnchor (0x42f00000,0x42480000,lVar11,param_2,0x17,0,2,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 100966,
+        "caller_function": "form_RankForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSebAnchor (0x42480000,0x42860000,lVar11,param_2,0xe,1,0x22,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 101052,
+        "caller_function": "form_RankForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSebAnchor (0x43340000,0x42ba0000,lVar11,param_2,0xe,0,0x22,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 101056,
+        "caller_function": "form_RankForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSebAnchor (0x42700000,0x42ba0000,lVar11,param_2,0xe,0,0x22,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 101071,
+        "caller_function": "form_RankForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSebAnchor (0x42f00000,0x432f0000,lVar11,param_2,0x1a,0,0x22,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 101079,
+        "caller_function": "form_RankForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb (0x40a00000,0x42f00000,lVar11,param_2,0x17,1,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 101241,
+        "caller_function": "form_RankForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSebAnchor (0x41980000,(float)(iVar7 + 8),lVar11,param_2, 0xf,1,0x24,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 105075,
+        "caller_function": "form_SpForm___draw",
+        "call": "kairo_unity_ui_ResourceManager__DrawSeb ((float)(iVar12 + 9),(float)(iVar11 + 8),lVar15,param_2,0,(ulong)uVar7 / 10,0);"
+      }
+    ],
+    "classification": "observed callers are UI/subform/rank/special-form consumers; none is the GameForm.DrawObj room path",
+    "room_mapping_status": "no direct floor0.seb-to-DrawObj caller recovered in this scan"
+  },
+  "cross_wave_join": {
+    "w53_crop_contract": {
+      "destination_x": "ObjecX + ObjecZX",
+      "destination_y": "ObjecY + ObjecZY",
+      "source_rect": [
+        "ObjecCX",
+        "ObjecCY",
+        "ObjecWX",
+        "ObjecWY"
+      ],
+      "coordinate_status": "verified_argument_flow; universal transform semantics remain open"
+    },
+    "w56_floor_selector": {
+      "initial_floor_parts_selector": -1,
+      "resolved_floor_parts_asset": "floorparts0.png",
+      "runtime_floor_parts_slot": "GameForm+0x1128"
+    },
+    "w57_seb_contract_status": "seb_local_crop_and_external_base_placement_verified_room_world_transform_open",
+    "interpretation": "W5.7 closes SEB local consumer arithmetic, while W5.8 closes the separate GameForm PNG room-screen path; the two asset/draw paths must not be conflated"
+  },
+  "room_placement": {
+    "status": "png_room_screen_placement_bounded_seb_room_mapping_open",
+    "closed": [
+      "GameForm RenderGameScreen clip/origin wrapper around DrawObj",
+      "ObjecX/ObjecY plus ObjecZX/ObjecZY destination flow",
+      "ObjecCX/ObjecCY/ObjecWX/ObjecWY crop flow",
+      "imgFloorParts field slot at GameForm+0x1128 in the room draw path",
+      "scoped separation between DrawObj PNG rendering and ResourceManager SEB UI consumers"
+    ],
+    "open": [
+      "producer semantics for every object coordinate array and camera/world mapping",
+      "full isometric/world-to-screen transform beyond the verified screen origin",
+      "ObjecUpDown/ObjecSY semantic depth meaning",
+      "direct caller or mapping from office/floor0.seb to the room floor renderer",
+      "SEB anchor enum/pivot and depth semantics",
+      "four-byte final-record shortfall and legacy-equivalent SEB decoding"
+    ],
+    "policy": "use PNG room formulas only within the verified GameForm screen boundary; keep SEB room reconstruction and legacy_equivalence=false"
+  },
+  "guardrails": [
+    "Do not use the office/floor0.seb sample as proof of the GameForm room PNG draw path.",
+    "Do not rename numeric ObjecSyurui branches or ObjecUpDown/ObjecSY as universal product/depth semantics.",
+    "The SetOrigin expression is a screen-centering boundary; it does not prove the producer-side world/isometric transform.",
+    "Keep W5.7 SEB local crop evidence separate from W5.8 GameForm PNG room placement evidence.",
+    "Keep legacy_equivalence=false."
+  ],
+  "source_files": {
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c": "19af9b427031643115f78962e487a2afb246ca485e34e70d1d44285a036aeb48",
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
+    "game-dev-story-mod_Dumped/dump.cs": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
+    "Phases/Phase5/artifacts/wave5_3_numeric_crop_placement_contract.json": "5b92e5c72fb14f1d577f1be09bac2ce630eaa7e9e402bdac75e5798201438217",
+    "Phases/Phase5/artifacts/wave5_6_floorparts_seb_contract.json": "d6816a7b9af3419e88bd2adb52dba6503531c2680f39a4028fd2425cdfb784f5",
+    "Phases/Phase5/artifacts/wave5_7_seb_consumer_contract.json": "44e0d63406be1e0836ad040a8663241d19c5e6cec154b878f8bedd7d2418cca3"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "wave6-gap-register-v1",
+  "phase": "Phase6",
+  "wave": "Wave6",
+  "legacy_equivalence": false,
+  "status": "complete_with_known_limitations",
+  "gaps": [
+    { "id": "W6-GAP-001", "area": "persistence_backend", "status": "local_adapter_only", "impact": "repository boundary exists but state is browser-local and not multi-user", "action": "replace LocalStorageTaskRepository with an authorized remote implementation when backend scope is approved" },
+    { "id": "W6-GAP-002", "area": "permissions", "status": "explicit_local_policy", "impact": "actor/role checks are local and have no authentication or server authority", "action": "keep policy interface and add auth/server authorization only with backend scope" },
+    { "id": "W6-GAP-003", "area": "auto_assignment", "status": "out_of_scope", "impact": "tasks are assigned explicitly", "action": "revisit after Phase7 model adapter exists" },
+    { "id": "W6-GAP-004", "area": "task_navigation", "status": "highlight_only", "impact": "focus uses visual highlight; no recovered world camera transform", "action": "retain adapter highlight until camera semantics are closed" },
+    { "id": "W6-GAP-005", "area": "legacy_equivalence", "status": "false", "impact": "task state is new product state", "action": "do not map task status to raw legacy gameplay state" },
+    { "id": "W6-GAP-006", "area": "notification_localization", "status": "adapter_text", "impact": "task notification strings are web adapter text", "action": "add locale keys only when Phase3 language layer is product dependency" }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "schema_version": "wave4-message-graph-trace-v1",
+  "phase": "Phase4",
+  "wave": "Wave4",
+  "stage": "W4.5-R3-message-graph-and-audio-hardening",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "producer": {
+    "function": "form_GameForm__AddMessage",
+    "direct_source_callsite_count": 9,
+    "direct_source_calls": [
+      {
+        "source_line": 1875,
+        "end_line": 1875,
+        "caller": "form_GameForm__MainProcess",
+        "raw_call": "form_GameForm__AddMessage(param_1,uVar22,0);",
+        "well_formed": true
+      },
+      {
+        "source_line": 3216,
+        "end_line": 3216,
+        "caller": "form_GameForm__MainProcess",
+        "raw_call": "form_GameForm__AddMessage(param_1,uVar22,0);",
+        "well_formed": true
+      },
+      {
+        "source_line": 3276,
+        "end_line": 3276,
+        "caller": "form_GameForm__MainProcess",
+        "raw_call": "form_GameForm__AddMessage(param_1,uVar22,0);",
+        "well_formed": true
+      },
+      {
+        "source_line": 6490,
+        "end_line": 6490,
+        "caller": "form_GameForm__MainProcess",
+        "raw_call": "form_GameForm__AddMessage(param_1,uVar22,0);",
+        "well_formed": true
+      },
+      {
+        "source_line": 6687,
+        "end_line": 6687,
+        "caller": "form_GameForm__MainProcess",
+        "raw_call": "form_GameForm__AddMessage(param_1,uVar22,0);",
+        "well_formed": true
+      },
+      {
+        "source_line": 6696,
+        "end_line": 6696,
+        "caller": "form_GameForm__MainProcess",
+        "raw_call": "form_GameForm__AddMessage(param_1,uVar22,0);",
+        "well_formed": true
+      },
+      {
+        "source_line": 48469,
+        "end_line": 48469,
+        "caller": "form_GameForm__ZyanruOK",
+        "raw_call": "form_GameForm__AddMessage(uVar9,uVar9,1);",
+        "well_formed": true
+      },
+      {
+        "source_line": 48569,
+        "end_line": 48569,
+        "caller": "form_GameForm__NaiyoOK",
+        "raw_call": "form_GameForm__AddMessage(uVar7,uVar7,2);",
+        "well_formed": true
+      },
+      {
+        "source_line": 98775,
+        "end_line": 98775,
+        "caller": "form_SubForm__TalkEnd",
+        "raw_call": "form_GameForm__AddMessage(lVar10,uVar12,0);",
+        "well_formed": true
+      }
+    ],
+    "graph_expression_counts": {
+      "0": 7,
+      "1": 1,
+      "2": 1
+    },
+    "status": "verified_source_producer_inventory"
+  },
+  "draw_consumer": {
+    "function": "form_GameForm___draw",
+    "function_span": {
+      "start_line": 19167,
+      "end_line": 23720
+    },
+    "operation_span": {
+      "start_line": 20468,
+      "end_line": 20595
+    },
+    "message_graph_refs": [
+      20468,
+      20560,
+      20578,
+      20590
+    ],
+    "observed_behavior": [
+      {
+        "condition": "MessageGraph >= 0",
+        "operation": "adds graph-dependent horizontal padding before notification text/image layout",
+        "status": "verified_render_behavior"
+      },
+      {
+        "condition": "MessageGraph == 1",
+        "operation": "draws an image from imgMain using source x = graph * 0xe + 0x38 and a 0xe by 0xe crop",
+        "status": "verified_render_behavior"
+      },
+      {
+        "condition": "MessageGraph == 2",
+        "operation": "branches to the same image-draw path",
+        "status": "verified_render_behavior"
+      }
+    ],
+    "image_field": {
+      "offset": "0x1140",
+      "field": "imgMain",
+      "status": "verified_declaration"
+    },
+    "raw_labels": {
+      "1": null,
+      "2": null,
+      "status": "numeric_graph_labels_not_named"
+    }
+  },
+  "audio_consumer": {
+    "source_lines": [
+      1648,
+      1651,
+      1654,
+      1656
+    ],
+    "operation": "when MessageMaxTime - MessageTime == 1, calls SoundPlay(param_1,1,3,0)",
+    "status": "verified_threshold_and_call; sound_label_open"
+  },
+  "conclusion": {
+    "message_graph": "render behavior for graph 1/2 verified; product labels remain raw",
+    "audio": "threshold behavior verified; audio meaning open",
+    "wave5_blocker": false
+  },
+  "evidence": [
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 19167,
+      "needle": "// Function: form_GameForm___draw",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 16430,
+      "needle": "kairo_unity_ui_Graphics__DrawImage",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276237,
+      "needle": "MessageGraph;",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276203,
+      "needle": "public static Image imgMain;",
+      "status": "verified"
+    }
+  ]
+}

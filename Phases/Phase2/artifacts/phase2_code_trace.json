@@ -1,0 +1,4383 @@
+{
+  "schema": "phase2.code-trace.v1",
+  "sources": [
+    "game-dev-story-mod_Dumped/dump.cs",
+    "game-dev-story-mod_Dumped/script.json",
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+    "game-dev-story-mod_Dumped/bodyface_records.reference.json"
+  ],
+  "game_form_class": {
+    "class": "form.GameForm",
+    "fields": [
+      {
+        "name": "IMG_LIST",
+        "declaration": "public static readonly string[] IMG_LIST; // 0x68",
+        "line": 275516,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "BodyFaceMax",
+        "declaration": "internal static int BodyFaceMax; // 0x120",
+        "line": 275575,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "BodyFace",
+        "declaration": "internal static int[][] BodyFace; // 0x128",
+        "line": 275576,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "KeyAnimeT",
+        "declaration": "public static int KeyAnimeT; // 0x1BC",
+        "line": 275605,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "KaiwaFaceG",
+        "declaration": "internal static int KaiwaFaceG; // 0x254",
+        "line": 275635,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "KaiwaBodyG",
+        "declaration": "internal static int KaiwaBodyG; // 0x258",
+        "line": 275636,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "ObjecAnime",
+        "declaration": "internal static int[] ObjecAnime; // 0x300",
+        "line": 275661,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "HumanDexFaceG",
+        "declaration": "public static int[] HumanDexFaceG; // 0x3F8",
+        "line": 275700,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "HumanDexBodyG",
+        "declaration": "public static int[] HumanDexBodyG; // 0x400",
+        "line": 275701,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "HumanDexMode",
+        "declaration": "internal static int[] HumanDexMode; // 0x408",
+        "line": 275702,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "HumanDexAnime",
+        "declaration": "internal static int[] HumanDexAnime; // 0x430",
+        "line": 275707,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "HumanDexWalk",
+        "declaration": "internal static int[] HumanDexWalk; // 0x438",
+        "line": 275708,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "SyainFaceG",
+        "declaration": "public static sbyte[] SyainFaceG; // 0x5B8",
+        "line": 275767,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "SyainBodyG",
+        "declaration": "public static sbyte[] SyainBodyG; // 0x5C0",
+        "line": 275768,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "imgFace",
+        "declaration": "public static Image[] imgFace; // 0x1150",
+        "line": 276205,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "imgBody",
+        "declaration": "public static Image[] imgBody; // 0x1158",
+        "line": 276206,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      }
+    ],
+    "methods": [
+      {
+        "name": "AddBodyFace",
+        "signature": "public void AddBodyFace(int P0, int P1, int P2, int P3, int P4, int P5, int P6, int P7, int P8, int P9, int P10, int P11, int P12, int P13) { }",
+        "rva": "0xe36598",
+        "line": 276465,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "DrawHuman",
+        "signature": "public void DrawHuman(Graphics g, int X, int Y, int TFace, int TBody, int TMode) { }",
+        "rva": "0xe258b4",
+        "line": 276585,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "DrawHuman",
+        "signature": "public void DrawHuman(Graphics g, int X, int Y, int TFace, int TBody, int TMode, int TKage) { }",
+        "rva": "0xe48e34",
+        "line": 276588,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "GetHumanTalkName",
+        "signature": "public string GetHumanTalkName(int chara) { }",
+        "rva": "0xe4aee0",
+        "line": 276621,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "GetTalkIndex",
+        "signature": "public int GetTalkIndex(string tag) { }",
+        "rva": "0xe4ade0",
+        "line": 276624,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "DrawFukidashi",
+        "signature": "public static void DrawFukidashi(Graphics g, int x, int y, int fukidashiId, int time, int arg = 0) { }",
+        "rva": "0xe258d0",
+        "line": 276753,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "DrawDesk",
+        "signature": "private void DrawDesk(Graphics g, int desk, int pc, int display, int x, int y, int ux, int uy, int uw, int uh) { }",
+        "rva": "0xe6d354",
+        "line": 276762,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      },
+      {
+        "name": "DrawChair",
+        "signature": "private void DrawChair(Graphics g, int chair, int x, int y, int ux, int uy, int uw, int uh) { }",
+        "rva": "0xe6d288",
+        "line": 276771,
+        "source_dump": "game-dev-story-mod_Dumped/dump.cs"
+      }
+    ]
+  },
+  "script_methods": [
+    {
+      "Address": 14902680,
+      "Name": "form.GameForm$$AddBodyFace",
+      "Signature": "void form_GameForm__AddBodyFace (form_GameForm_o* __this, int32_t P0, int32_t P1, int32_t P2, int32_t P3, int32_t P4, int32_t P5, int32_t P6, int32_t P7, int32_t P8, int32_t P9, int32_t P10, int32_t P11, int32_t P12, int32_t P13, const MethodInfo* method);",
+      "TypeSignature": "viiiiiiiiiiiiiiii"
+    },
+    {
+      "Address": 14910736,
+      "Name": "form.GameForm$$AddKaiwaHumanSet",
+      "Signature": "void form_GameForm__AddKaiwaHumanSet (form_GameForm_o* __this, System_String_o* TName, int32_t TFaceG, int32_t TBodyG, const MethodInfo* method);",
+      "TypeSignature": "viiiii"
+    },
+    {
+      "Address": 14985324,
+      "Name": "form.GameForm$$AddKaiwaTalkData",
+      "Signature": "void form_GameForm__AddKaiwaTalkData (form_GameForm_o* __this, System_String_o* talkTag, System_String_o* arg, const MethodInfo* method);",
+      "TypeSignature": "viiii"
+    },
+    {
+      "Address": 14794640,
+      "Name": "form.GameForm$$Draw",
+      "Signature": "void form_GameForm__Draw (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, const MethodInfo* method);",
+      "TypeSignature": "viii"
+    },
+    {
+      "Address": 15126784,
+      "Name": "form.GameForm$$Draw",
+      "Signature": "void form_GameForm__Draw (form_GameForm_o* __this, int32_t now, int32_t max, kairo_unity_ui_Graphics_o* g, const MethodInfo* method);",
+      "TypeSignature": "viiiii"
+    },
+    {
+      "Address": 15127584,
+      "Name": "form.GameForm$$DrawCeoDesk",
+      "Signature": "void form_GameForm__DrawCeoDesk (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, int32_t desk, int32_t pc, int32_t display, int32_t x, int32_t y, int32_t ux, int32_t uy, int32_t uw, int32_t uh, const MethodInfo* method);",
+      "TypeSignature": "viiiiiiiiiiii"
+    },
+    {
+      "Address": 15127176,
+      "Name": "form.GameForm$$DrawChair",
+      "Signature": "void form_GameForm__DrawChair (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, int32_t chair, int32_t x, int32_t y, int32_t ux, int32_t uy, int32_t uw, int32_t uh, const MethodInfo* method);",
+      "TypeSignature": "viiiiiiiiii"
+    },
+    {
+      "Address": 15127380,
+      "Name": "form.GameForm$$DrawDesk",
+      "Signature": "void form_GameForm__DrawDesk (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, int32_t desk, int32_t pc, int32_t display, int32_t x, int32_t y, int32_t ux, int32_t uy, int32_t uw, int32_t uh, const MethodInfo* method);",
+      "TypeSignature": "viiiiiiiiiiii"
+    },
+    {
+      "Address": 15130392,
+      "Name": "form.GameForm$$DrawDisplay",
+      "Signature": "void form_GameForm__DrawDisplay (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, int32_t pc, int32_t displayFrame, int32_t x, int32_t y, int32_t ux, int32_t uy, int32_t uw, int32_t uh, const MethodInfo* method);",
+      "TypeSignature": "viiiiiiiiiii"
+    },
+    {
+      "Address": 14834192,
+      "Name": "form.GameForm$$DrawFloorCover",
+      "Signature": "void form_GameForm__DrawFloorCover (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, int32_t bgX, int32_t bgY, const MethodInfo* method);",
+      "TypeSignature": "viiiii"
+    },
+    {
+      "Address": 14833872,
+      "Name": "form.GameForm$$DrawFukidashi",
+      "Signature": "void form_GameForm__DrawFukidashi (kairo_unity_ui_Graphics_o* g, int32_t x, int32_t y, int32_t fukidashiId, int32_t time, int32_t arg, const MethodInfo* method);",
+      "TypeSignature": "viiiiiii"
+    },
+    {
+      "Address": 14833844,
+      "Name": "form.GameForm$$DrawHuman",
+      "Signature": "void form_GameForm__DrawHuman (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, int32_t X, int32_t Y, int32_t TFace, int32_t TBody, int32_t TMode, const MethodInfo* method);",
+      "TypeSignature": "viiiiiiii"
+    },
+    {
+      "Address": 14978612,
+      "Name": "form.GameForm$$DrawHuman",
+      "Signature": "void form_GameForm__DrawHuman (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, int32_t X, int32_t Y, int32_t TFace, int32_t TBody, int32_t TMode, int32_t TKage, const MethodInfo* method);",
+      "TypeSignature": "viiiiiiiii"
+    },
+    {
+      "Address": 14832836,
+      "Name": "form.GameForm$$DrawImage",
+      "Signature": "void form_GameForm__DrawImage (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, kairo_unity_ui_Image_o* Img, int32_t X, int32_t Y, int32_t GX, int32_t GY, int32_t WX, int32_t WY, const MethodInfo* method);",
+      "TypeSignature": "viiiiiiiiii"
+    },
+    {
+      "Address": 14978180,
+      "Name": "form.GameForm$$DrawImage",
+      "Signature": "void form_GameForm__DrawImage (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, kairo_unity_ui_Image_o* Img, int32_t dx, int32_t dy, int32_t dw, int32_t dh, int32_t sx, int32_t sy, int32_t sw, int32_t sh, const MethodInfo* method);",
+      "TypeSignature": "viiiiiiiiiiii"
+    },
+    {
+      "Address": 14775240,
+      "Name": "form.GameForm$$DrawObj",
+      "Signature": "void form_GameForm__DrawObj (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, const MethodInfo* method);",
+      "TypeSignature": "viii"
+    },
+    {
+      "Address": 15127788,
+      "Name": "form.GameForm$$DrawReception",
+      "Signature": "void form_GameForm__DrawReception (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, int32_t x, int32_t y, int32_t ux, int32_t uy, int32_t uw, int32_t uh, const MethodInfo* method);",
+      "TypeSignature": "viiiiiiiii"
+    },
+    {
+      "Address": 14834476,
+      "Name": "form.GameForm$$DrawScrollBarY",
+      "Signature": "System_Int32_array* form_GameForm__DrawScrollBarY (kairo_unity_ui_Graphics_o* g, int32_t x, int32_t y, int32_t h, int32_t largeChange, int32_t value, int32_t maximum, bool var_lock, const MethodInfo* method);",
+      "TypeSignature": "iiiiiiiiii"
+    },
+    {
+      "Address": 14833052,
+      "Name": "form.GameForm$$DrawString",
+      "Signature": "void form_GameForm__DrawString (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, System_String_o* Str, int32_t X, int32_t Y, int32_t TMode, const MethodInfo* method);",
+      "TypeSignature": "viiiiiii"
+    },
+    {
+      "Address": 14833804,
+      "Name": "form.GameForm$$DrawString",
+      "Signature": "void form_GameForm__DrawString (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, System_String_o* Str, int32_t X, int32_t Y, const MethodInfo* method);",
+      "TypeSignature": "viiiiii"
+    },
+    {
+      "Address": 14977768,
+      "Name": "form.GameForm$$DrawStringS",
+      "Signature": "void form_GameForm__DrawStringS (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, System_String_o* Str, int32_t X, int32_t Y, const MethodInfo* method);",
+      "TypeSignature": "viiiiii"
+    },
+    {
+      "Address": 14977776,
+      "Name": "form.GameForm$$DrawStringS",
+      "Signature": "void form_GameForm__DrawStringS (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, System_String_o* Str, int32_t X, int32_t Y, int32_t TMode, const MethodInfo* method);",
+      "TypeSignature": "viiiiiii"
+    },
+    {
+      "Address": 14977328,
+      "Name": "form.GameForm$$DrawString_",
+      "Signature": "void form_GameForm__DrawString_ (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, System_String_o* Str, int32_t X, int32_t Y, int32_t TMode, const MethodInfo* method);",
+      "TypeSignature": "viiiiiii"
+    },
+    {
+      "Address": 15125152,
+      "Name": "form.GameForm$$Draw_",
+      "Signature": "void form_GameForm__Draw_ (form_GameForm_o* __this, int32_t now, int32_t max, const MethodInfo* method);",
+      "TypeSignature": "viiii"
+    },
+    {
+      "Address": 14986976,
+      "Name": "form.GameForm$$GetHumanTalkName",
+      "Signature": "System_String_o* form_GameForm__GetHumanTalkName (form_GameForm_o* __this, int32_t chara, const MethodInfo* method);",
+      "TypeSignature": "iiii"
+    },
+    {
+      "Address": 14986720,
+      "Name": "form.GameForm$$GetTalkIndex",
+      "Signature": "int32_t form_GameForm__GetTalkIndex (form_GameForm_o* __this, System_String_o* tag, const MethodInfo* method);",
+      "TypeSignature": "iiii"
+    },
+    {
+      "Address": 14795280,
+      "Name": "form.GameForm$$_draw",
+      "Signature": "void form_GameForm___draw (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, const MethodInfo* method);",
+      "TypeSignature": "viii"
+    },
+    {
+      "Address": 15130240,
+      "Name": "form.GameForm$$isCaptureState",
+      "Signature": "bool form_GameForm__isCaptureState (form_GameForm_o* __this, const MethodInfo* method);",
+      "TypeSignature": "iii"
+    }
+  ],
+  "draw_human_calls": [
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 16333,
+      "function": "form_GameForm__DrawObj",
+      "function_address": "0x00f173c8",
+      "raw_args": [
+        "param_1",
+        "param_2",
+        "*(int *)(lVar27 + lVar15 * 4 + 0x20) + *(int *)(lVar35 + lVar15 * 4 + 0x20)",
+        "*(int *)(lVar28 + lVar15 * 4 + 0x20) + *(int *)(lVar23 + lVar15 * 4 + 0x20)",
+        "*(undefined4 *)(lVar29 + lVar25 * 4 + 0x20)",
+        "*(undefined4 *)(lVar30 + lVar25 * 4 + 0x20)",
+        "*(undefined4 *)(lVar22 + lVar15 * 4 + 0x20)",
+        "1"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(lVar29 + lVar25 * 4 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(lVar30 + lVar25 * 4 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "*(undefined4 *)(lVar22 + lVar15 * 4 + 0x20)",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "1",
+          "literal": 1
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 19464,
+      "function": "form_GameForm___draw",
+      "function_address": "0x00f1c210",
+      "raw_args": [
+        "param_1",
+        "param_2",
+        "0x52",
+        "0x88",
+        "0x28",
+        "0x17",
+        "(*(int *)(lVar17 + 0x1bc) / 6) % 2 + 4",
+        "1"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x28",
+          "literal": 40
+        },
+        "TBody": {
+          "raw": "0x17",
+          "literal": 23
+        },
+        "TMode": {
+          "raw": "(*(int *)(lVar17 + 0x1bc) / 6) % 2 + 4",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "1",
+          "literal": 1
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 19467,
+      "function": "form_GameForm___draw",
+      "function_address": "0x00f1c210",
+      "raw_args": [
+        "param_1",
+        "param_2",
+        "0x8e",
+        "0x88",
+        "0x28",
+        "0x17",
+        "(*(int *)(*(long *)(*(long *)puVar8 + 0xb8) + 0x1bc) / 6) % 2 + 8",
+        "1"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x28",
+          "literal": 40
+        },
+        "TBody": {
+          "raw": "0x17",
+          "literal": 23
+        },
+        "TMode": {
+          "raw": "(*(int *)(*(long *)(*(long *)puVar8 + 0xb8) + 0x1bc) / 6) % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "1",
+          "literal": 1
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 19500,
+      "function": "form_GameForm___draw",
+      "function_address": "0x00f1c210",
+      "raw_args": [
+        "param_1",
+        "param_2",
+        "0x4c",
+        "0x88",
+        "0x28",
+        "0x17",
+        "(*(int *)(lVar17 + 0x1bc) / 6) % 2 + 4",
+        "1"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x28",
+          "literal": 40
+        },
+        "TBody": {
+          "raw": "0x17",
+          "literal": 23
+        },
+        "TMode": {
+          "raw": "(*(int *)(lVar17 + 0x1bc) / 6) % 2 + 4",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "1",
+          "literal": 1
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 19511,
+      "function": "form_GameForm___draw",
+      "function_address": "0x00f1c210",
+      "raw_args": [
+        "param_1",
+        "param_2",
+        "0x94",
+        "0x88",
+        "0x20",
+        "0x14",
+        "(*(int *)(*(long *)(*(long *)puVar8 + 0xb8) + 0x1bc) / 6) % 2 + 8",
+        "1"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x20",
+          "literal": 32
+        },
+        "TBody": {
+          "raw": "0x14",
+          "literal": 20
+        },
+        "TMode": {
+          "raw": "(*(int *)(*(long *)(*(long *)puVar8 + 0xb8) + 0x1bc) / 6) % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "1",
+          "literal": 1
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 19691,
+      "function": "form_GameForm___draw",
+      "function_address": "0x00f1c210",
+      "raw_args": [
+        "param_1",
+        "param_2",
+        "iVar10 + -8",
+        "iVar12 + -0x1e",
+        "*(undefined4 *)(lVar26 + lVar34 * 4 + 0x20)",
+        "*(undefined4 *)(lVar27 + lVar34 * 4 + 0x20)",
+        "*(undefined4 *)(lVar17 + lVar34 * 4 + 0x20)",
+        "1"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(lVar26 + lVar34 * 4 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(lVar27 + lVar34 * 4 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "*(undefined4 *)(lVar17 + lVar34 * 4 + 0x20)",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "1",
+          "literal": 1
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 65459,
+      "function": "form_SubForm___draw2",
+      "function_address": "0x00fa83a4",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x3c",
+        "0x6e",
+        "0x29",
+        "4",
+        "(*(int *)(*(long *)(*plVar31 + 0xb8) + 0x1bc) / 3) % 2 + 4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x29",
+          "literal": 41
+        },
+        "TBody": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TMode": {
+          "raw": "(*(int *)(*(long *)(*plVar31 + 0xb8) + 0x1bc) / 3) % 2 + 4",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 65464,
+      "function": "form_SubForm___draw2",
+      "function_address": "0x00fa83a4",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x50",
+        "0x6a",
+        "0x21",
+        "0x18",
+        "(*(int *)(*(long *)(*plVar31 + 0xb8) + 0x1bc) / 3) % 2 + 4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x21",
+          "literal": 33
+        },
+        "TBody": {
+          "raw": "0x18",
+          "literal": 24
+        },
+        "TMode": {
+          "raw": "(*(int *)(*(long *)(*plVar31 + 0xb8) + 0x1bc) / 3) % 2 + 4",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 65476,
+      "function": "form_SubForm___draw2",
+      "function_address": "0x00fa83a4",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x6f",
+        "0x6a",
+        "0x20",
+        "0x14",
+        "(*(int *)(*(long *)(*plVar31 + 0xb8) + 0x1bc) / 3) % 2 + 4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x20",
+          "literal": 32
+        },
+        "TBody": {
+          "raw": "0x14",
+          "literal": 20
+        },
+        "TMode": {
+          "raw": "(*(int *)(*(long *)(*plVar31 + 0xb8) + 0x1bc) / 3) % 2 + 4",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 65481,
+      "function": "form_SubForm___draw2",
+      "function_address": "0x00fa83a4",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x8e",
+        "0x6a",
+        "0x28",
+        "0x17",
+        "(*(int *)(*(long *)(*plVar31 + 0xb8) + 0x1bc) / 3) % 2 + 8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x28",
+          "literal": 40
+        },
+        "TBody": {
+          "raw": "0x17",
+          "literal": 23
+        },
+        "TMode": {
+          "raw": "(*(int *)(*(long *)(*plVar31 + 0xb8) + 0x1bc) / 3) % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 65486,
+      "function": "form_SubForm___draw2",
+      "function_address": "0x00fa83a4",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0xa2",
+        "0x6e",
+        "10",
+        "0xf",
+        "(*(int *)(*(long *)(*plVar31 + 0xb8) + 0x1bc) / 3) % 2 + 8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "10",
+          "literal": 10
+        },
+        "TBody": {
+          "raw": "0xf",
+          "literal": 15
+        },
+        "TMode": {
+          "raw": "(*(int *)(*(long *)(*plVar31 + 0xb8) + 0x1bc) / 3) % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 67029,
+      "function": "form_SubForm___draw2",
+      "function_address": "0x00fa83a4",
+      "raw_args": [
+        "lVar22",
+        "param_2",
+        "iVar10",
+        "iVar15 + -0xf",
+        "(long)*(char *)(lVar24 + (int)uVar20 + 0x20)",
+        "(long)*(char *)(lVar16 + (int)uVar20 + 0x20)",
+        "8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar24 + (int)uVar20 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar16 + (int)uVar20 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 67442,
+      "function": "form_SubForm___draw2",
+      "function_address": "0x00fa83a4",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x22",
+        "0xac",
+        "10",
+        "0xf",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "10",
+          "literal": 10
+        },
+        "TBody": {
+          "raw": "0xf",
+          "literal": 15
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 67457,
+      "function": "form_SubForm___draw2",
+      "function_address": "0x00fa83a4",
+      "raw_args": [
+        "lVar24",
+        "param_2",
+        "0x34",
+        "0xac",
+        "(long)*(char *)(lVar16 + 0x20)",
+        "(long)*(char *)(lVar22 + 0x20)",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar16 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar22 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 67499,
+      "function": "form_SubForm___draw2",
+      "function_address": "0x00fa83a4",
+      "raw_args": [
+        "lVar28",
+        "param_2",
+        "iVar10 * -0x10 + 0xbf",
+        "0xac",
+        "(long)*(char *)(lVar22 + (int)uVar21 + 0x20)",
+        "(long)*(char *)(lVar24 + (int)uVar21 + 0x20)",
+        "8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar22 + (int)uVar21 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar24 + (int)uVar21 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 70196,
+      "function": "form_SubForm__DrawFan",
+      "function_address": "0x00fb272c",
+      "raw_args": [
+        "lVar5",
+        "param_2",
+        "0x52",
+        "0x58",
+        "0x17",
+        "8",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x17",
+          "literal": 23
+        },
+        "TBody": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 70202,
+      "function": "form_SubForm__DrawFan",
+      "function_address": "0x00fb272c",
+      "raw_args": [
+        "lVar5",
+        "param_2",
+        "0x94",
+        "0x58",
+        "10",
+        "2",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "10",
+          "literal": 10
+        },
+        "TBody": {
+          "raw": "2",
+          "literal": 2
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 71726,
+      "function": "form_SubForm___draw3",
+      "function_address": "0x00fb4610",
+      "raw_args": [
+        "lVar22",
+        "param_2",
+        "0xb6",
+        "0x96",
+        "uVar8",
+        "uVar9",
+        "iVar11 % 2 + 8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "uVar8",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "uVar9",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "iVar11 % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 75957,
+      "function": "form_SubForm___draw4",
+      "function_address": "0x00fbca84",
+      "raw_args": [
+        "lVar22",
+        "param_2",
+        "0x22",
+        "0x42",
+        "(long)*(char *)(lVar16 + (int)uVar29 + 0x20)",
+        "(long)*(char *)(lVar26 + (int)uVar29 + 0x20)",
+        "4",
+        "0",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar16 + (int)uVar29 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar26 + (int)uVar29 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 76739,
+      "function": "form_SubForm___draw4",
+      "function_address": "0x00fbca84",
+      "raw_args": [
+        "lVar22",
+        "param_2",
+        "0x4a",
+        "0x7a",
+        "(int)cVar3",
+        "(int)cVar4",
+        "iVar14 % 2 + 8",
+        "0",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(int)cVar3",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(int)cVar4",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "iVar14 % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 79001,
+      "function": "form_SubForm___draw4",
+      "function_address": "0x00fbca84",
+      "raw_args": [
+        "lVar26",
+        "param_2",
+        "0x18",
+        "iVar13",
+        "uVar17",
+        "uVar18",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "uVar17",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "uVar18",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 80668,
+      "function": "form_SubForm___draw4",
+      "function_address": "0x00fbca84",
+      "raw_args": [
+        "lVar22",
+        "param_2",
+        "0xca",
+        "0xb4",
+        "(int)cVar3",
+        "(int)cVar4",
+        "iVar14 % 2 + 8",
+        "0",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(int)cVar3",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(int)cVar4",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "iVar14 % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 80810,
+      "function": "form_SubForm___draw4",
+      "function_address": "0x00fbca84",
+      "raw_args": [
+        "lVar22",
+        "param_2",
+        "0x40",
+        "0x7c",
+        "(long)*(char *)(lVar26 + (int)uVar29 + 0x20)",
+        "(long)*(char *)(lVar24 + (int)uVar29 + 0x20)",
+        "(uVar28 - (uVar32 & 0x7ffffffe)) * 2 + 0x11",
+        "0",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar26 + (int)uVar29 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar24 + (int)uVar29 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "(uVar28 - (uVar32 & 0x7ffffffe)) * 2 + 0x11",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 80840,
+      "function": "form_SubForm___draw4",
+      "function_address": "0x00fbca84",
+      "raw_args": [
+        "lVar22",
+        "param_2",
+        "0x40",
+        "0x7c",
+        "(int)cVar3",
+        "(int)cVar4",
+        "iVar14 % 2 + 8",
+        "0",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(int)cVar3",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(int)cVar4",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "iVar14 % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82256,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar23",
+        "param_2",
+        "0x1e",
+        "0x14",
+        "*(undefined4 *)(*(long *)(lVar16 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(lVar16 + 0xb8) + 0xfc)",
+        "0",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(lVar16 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(lVar16 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0",
+          "literal": 0
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82260,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x30",
+        "0x14",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "1",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "1",
+          "literal": 1
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82264,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x42",
+        "0x14",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "2",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "2",
+          "literal": 2
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82268,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x54",
+        "0x14",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "3",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "3",
+          "literal": 3
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82272,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x1e",
+        "0x36",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82276,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x30",
+        "0x36",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "5",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "5",
+          "literal": 5
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82280,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x42",
+        "0x36",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "6",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "6",
+          "literal": 6
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82284,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x54",
+        "0x36",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "7",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "7",
+          "literal": 7
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82288,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x1e",
+        "0x58",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82292,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x30",
+        "0x58",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "9",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "9",
+          "literal": 9
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82296,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x42",
+        "0x58",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "10",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "10",
+          "literal": 10
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82300,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x54",
+        "0x58",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0xb",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0xb",
+          "literal": 11
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82304,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x1e",
+        "0x7a",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0xc",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0xc",
+          "literal": 12
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82308,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x30",
+        "0x7a",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0xd",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0xd",
+          "literal": 13
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82312,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x42",
+        "0x7a",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0xe",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0xe",
+          "literal": 14
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82316,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x54",
+        "0x7a",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0xf",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0xf",
+          "literal": 15
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82328,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar23",
+        "param_2",
+        "0x6a",
+        "0x14",
+        "*(undefined4 *)(lVar16 + 0x100)",
+        "*(undefined4 *)(lVar16 + 0xfc)",
+        "0x10",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(lVar16 + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(lVar16 + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x10",
+          "literal": 16
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82332,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x7e",
+        "0x14",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x11",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x11",
+          "literal": 17
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82338,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x92",
+        "0x14",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x12",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x12",
+          "literal": 18
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82343,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0xa6",
+        "0x14",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x13",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x13",
+          "literal": 19
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82348,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x6a",
+        "0x36",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x14",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x14",
+          "literal": 20
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82353,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x7e",
+        "0x36",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x15",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x15",
+          "literal": 21
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82358,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x92",
+        "0x36",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x16",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x16",
+          "literal": 22
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82363,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0xa6",
+        "0x36",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x17",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x17",
+          "literal": 23
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82368,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0xba",
+        "0x36",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x18",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x18",
+          "literal": 24
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82373,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x6a",
+        "0x52",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x19",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x19",
+          "literal": 25
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82378,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x7e",
+        "0x52",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x1a",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x1a",
+          "literal": 26
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82383,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x92",
+        "0x52",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x1b",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x1b",
+          "literal": 27
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82388,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0xa6",
+        "0x52",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x1c",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x1c",
+          "literal": 28
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82393,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0xba",
+        "0x52",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x1d",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x1d",
+          "literal": 29
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82398,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x6a",
+        "0x74",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x1e",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x1e",
+          "literal": 30
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82403,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x7e",
+        "0x74",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x1f",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x1f",
+          "literal": 31
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82408,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x92",
+        "0x74",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x20",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x20",
+          "literal": 32
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82413,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0xa6",
+        "0x74",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x21",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x21",
+          "literal": 33
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82421,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x4c",
+        "0xaa",
+        "*(undefined4 *)(lVar23 + 0x100)",
+        "*(undefined4 *)(lVar23 + 0xfc)",
+        "(*(int *)(lVar23 + 0x1bc) / 6) % 2 + (*(int *)(lVar23 + 0x10c) % 2) * 5 + 0x14",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(lVar23 + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(lVar23 + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "(*(int *)(lVar23 + 0x1bc) / 6) % 2 + (*(int *)(lVar23 + 0x10c) % 2) * 5 + 0x14",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82426,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x6a",
+        "0x90",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x22",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x22",
+          "literal": 34
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82431,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x7e",
+        "0x90",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x23",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x23",
+          "literal": 35
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82436,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x6a",
+        "0xb0",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x24",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x24",
+          "literal": 36
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82441,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x7e",
+        "0xb0",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x25",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x25",
+          "literal": 37
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82446,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x6a",
+        "0xd0",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x26",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x26",
+          "literal": 38
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82451,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x7e",
+        "0xd0",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x27",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x27",
+          "literal": 39
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82456,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x6a",
+        "0xf0",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x28",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x28",
+          "literal": 40
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82461,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x7e",
+        "0xf0",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+        "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+        "0x29",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(*(long *)(*plVar34 + 0xb8) + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x29",
+          "literal": 41
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82475,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar23",
+        "param_2",
+        "0x1e",
+        "0xaa",
+        "*(undefined4 *)(lVar16 + 0x100)",
+        "*(undefined4 *)(lVar16 + 0xfc)",
+        "(*(int *)(lVar16 + 0x1bc) / 6) % 2 + *(int *)(lVar16 + 0x10c) * 4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(lVar16 + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(lVar16 + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "(*(int *)(lVar16 + 0x1bc) / 6) % 2 + *(int *)(lVar16 + 0x10c) * 4",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82492,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar24",
+        "param_2",
+        "0x36",
+        "0xaa",
+        "*(undefined4 *)(lVar23 + 0x100)",
+        "*(undefined4 *)(lVar23 + 0xfc)",
+        "*(int *)(lVar23 + 0x10c) << 2",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(lVar23 + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(lVar23 + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "*(int *)(lVar23 + 0x10c) << 2",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82514,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar24",
+        "param_2",
+        "0x36",
+        "0xaa",
+        "*(undefined4 *)(lVar23 + 0x100)",
+        "*(undefined4 *)(lVar23 + 0xfc)",
+        "*(int *)(lVar23 + 0x10c) << 2 | 2",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(lVar23 + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(lVar23 + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "*(int *)(lVar23 + 0x10c) << 2 | 2",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82536,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar24",
+        "param_2",
+        "0x36",
+        "0xaa",
+        "*(undefined4 *)(lVar23 + 0x100)",
+        "*(undefined4 *)(lVar23 + 0xfc)",
+        "*(int *)(lVar23 + 0x10c) << 2",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(lVar23 + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(lVar23 + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "*(int *)(lVar23 + 0x10c) << 2",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82558,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar24",
+        "param_2",
+        "0x36",
+        "0xaa",
+        "*(undefined4 *)(lVar23 + 0x100)",
+        "*(undefined4 *)(lVar23 + 0xfc)",
+        "*(int *)(lVar23 + 0x10c) << 2 | 3",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(lVar23 + 0x100)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(lVar23 + 0xfc)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "*(int *)(lVar23 + 0x10c) << 2 | 3",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 82592,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar23",
+        "param_2",
+        "iVar15 + 0x1e + iVar12 * 0x12",
+        "iVar1",
+        "iVar31",
+        "iVar12",
+        "(*(int *)(*(long *)(lVar16 + 0xb8) + 0x1bc) / 6) % 2 + *(int *)(*(long *)(lVar16 + 0xb8) + 0x10c) * 4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "iVar31",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "iVar12",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "(*(int *)(*(long *)(lVar16 + 0xb8) + 0x1bc) / 6) % 2 + *(int *)(*(long *)(lVar16 + 0xb8) + 0x10c) * 4",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 84105,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar25",
+        "param_2",
+        "iVar12 + 0xc",
+        "iVar15 + 1",
+        "(long)*(char *)(lVar29 + (int)uVar30 + 0x20)",
+        "(long)*(char *)(lVar24 + (int)uVar30 + 0x20)",
+        "8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar29 + (int)uVar30 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar24 + (int)uVar30 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 84719,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar24",
+        "param_2",
+        "uVar3 * 0x12 + 10",
+        "0x78",
+        "uVar11",
+        "uVar14",
+        "iVar13 % 2 + 8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "uVar11",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "uVar14",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "iVar13 % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 85966,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar23",
+        "param_2",
+        "0xbe",
+        "0x42",
+        "*(undefined4 *)(lVar24 + (long)(int)uVar30 * 4 + 0x20)",
+        "*(undefined4 *)(lVar16 + (long)(int)uVar30 * 4 + 0x20)",
+        "8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(lVar24 + (long)(int)uVar30 * 4 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(lVar16 + (long)(int)uVar30 * 4 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 86799,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar23",
+        "param_2",
+        "0x42",
+        "0x78",
+        "(long)*(char *)(lVar16 + (int)uVar30 + 0x20)",
+        "(long)*(char *)(lVar24 + (int)uVar30 + 0x20)",
+        "iVar12 + 0x19",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar16 + (int)uVar30 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar24 + (int)uVar30 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "iVar12 + 0x19",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 86908,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar23",
+        "param_2",
+        "0x4a",
+        "0x7a",
+        "(long)*(char *)(lVar24 + (int)uVar30 + 0x20)",
+        "(long)*(char *)(lVar25 + (int)uVar30 + 0x20)",
+        "(*(int *)(lVar16 + 0x1bc) / 6) % 2 + 8",
+        "0",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar24 + (int)uVar30 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar25 + (int)uVar30 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "(*(int *)(lVar16 + 0x1bc) / 6) % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 88049,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x96",
+        "0xb5",
+        "0x28",
+        "0x17",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x28",
+          "literal": 40
+        },
+        "TBody": {
+          "raw": "0x17",
+          "literal": 23
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 88053,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0xbe",
+        "0xb5",
+        "0x28",
+        "0x17",
+        "8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x28",
+          "literal": 40
+        },
+        "TBody": {
+          "raw": "0x17",
+          "literal": 23
+        },
+        "TMode": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 88092,
+      "function": "form_SubForm___draw5",
+      "function_address": "0x00fc9860",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x8a",
+        "0xb5",
+        "0x28",
+        "0x17",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x28",
+          "literal": 40
+        },
+        "TBody": {
+          "raw": "0x17",
+          "literal": 23
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 88386,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x22",
+        "0xac",
+        "10",
+        "0xf",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "10",
+          "literal": 10
+        },
+        "TBody": {
+          "raw": "0xf",
+          "literal": 15
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 88404,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar26",
+        "param_2",
+        "0x34",
+        "0xac",
+        "(long)*(char *)(lVar16 + 0x20)",
+        "(long)*(char *)(lVar25 + 0x20)",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar16 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar25 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 88448,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar28",
+        "param_2",
+        "iVar13 * -0x10 + 0xbf",
+        "0xac",
+        "(long)*(char *)(lVar25 + (int)uVar38 + 0x20)",
+        "(long)*(char *)(lVar26 + (int)uVar38 + 0x20)",
+        "8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar25 + (int)uVar38 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar26 + (int)uVar38 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 89347,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar25",
+        "param_2",
+        "0x9a",
+        "0xa4",
+        "(int)cVar1",
+        "(int)cVar2",
+        "iVar12 % 2 + 4",
+        "0",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(int)cVar1",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(int)cVar2",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "iVar12 % 2 + 4",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 89963,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar25",
+        "param_2",
+        "0x34",
+        "0x80",
+        "(long)*(char *)(lVar16 + (int)uVar38 + 0x20)",
+        "(long)*(char *)(lVar26 + (int)uVar38 + 0x20)",
+        "0x12",
+        "0",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar16 + (int)uVar38 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar26 + (int)uVar38 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "0x12",
+          "literal": 18
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 90031,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar25",
+        "param_2",
+        "0x34",
+        "0x80",
+        "uVar36",
+        "uVar19",
+        "iVar13",
+        "0",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "uVar36",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "uVar19",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "iVar13",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 91904,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x3a",
+        "0x8a",
+        "10",
+        "0xf",
+        "iVar12 % 2 + 4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "10",
+          "literal": 10
+        },
+        "TBody": {
+          "raw": "0xf",
+          "literal": 15
+        },
+        "TMode": {
+          "raw": "iVar12 % 2 + 4",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 91926,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar27",
+        "param_2",
+        "0x52",
+        "0x8a",
+        "(long)*(char *)(lVar25 + 0x20)",
+        "(long)*(char *)(lVar26 + 0x20)",
+        "((uVar32 & 0xfffffffe) - uVar38) + 5",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar25 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar26 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "((uVar32 & 0xfffffffe) - uVar38) + 5",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 91948,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar27",
+        "param_2",
+        "0x8f",
+        "0x8a",
+        "*(undefined4 *)(lVar26 + (long)(int)uVar38 * 4 + 0x20)",
+        "*(undefined4 *)(lVar25 + (long)(int)uVar38 * 4 + 0x20)",
+        "iVar14 % 2 + 8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "*(undefined4 *)(lVar26 + (long)(int)uVar38 * 4 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "*(undefined4 *)(lVar25 + (long)(int)uVar38 * 4 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "iVar14 % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 92578,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x22",
+        "0xac",
+        "10",
+        "0xf",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "10",
+          "literal": 10
+        },
+        "TBody": {
+          "raw": "0xf",
+          "literal": 15
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 92590,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar26",
+        "param_2",
+        "0x34",
+        "0xac",
+        "(long)*(char *)(lVar16 + 0x20)",
+        "(long)*(char *)(lVar25 + 0x20)",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar16 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar25 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 92634,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar28",
+        "param_2",
+        "iVar13 * -0x10 + 0xbf",
+        "0xac",
+        "(long)*(char *)(lVar25 + (int)uVar38 + 0x20)",
+        "(long)*(char *)(lVar26 + (int)uVar38 + 0x20)",
+        "8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "(long)*(char *)(lVar25 + (int)uVar38 + 0x20)",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "(long)*(char *)(lVar26 + (int)uVar38 + 0x20)",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 93118,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x2f",
+        "0x8c",
+        "0x28",
+        "0x17",
+        "(*(int *)(*(long *)(*plVar35 + 0xb8) + 0x1bc) / 3) % 2 + 4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x28",
+          "literal": 40
+        },
+        "TBody": {
+          "raw": "0x17",
+          "literal": 23
+        },
+        "TMode": {
+          "raw": "(*(int *)(*(long *)(*plVar35 + 0xb8) + 0x1bc) / 3) % 2 + 4",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 93127,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x4f",
+        "0x8c",
+        "0x21",
+        "0x18",
+        "((uVar38 & 0xfffffffe) - uVar32) + 5",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x21",
+          "literal": 33
+        },
+        "TBody": {
+          "raw": "0x18",
+          "literal": 24
+        },
+        "TMode": {
+          "raw": "((uVar38 & 0xfffffffe) - uVar32) + 5",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 93132,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x6f",
+        "0x8c",
+        "0x20",
+        "0x14",
+        "(*(int *)(*(long *)(*plVar35 + 0xb8) + 0x1bc) / 3) % 2 + 4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x20",
+          "literal": 32
+        },
+        "TBody": {
+          "raw": "0x14",
+          "literal": 20
+        },
+        "TMode": {
+          "raw": "(*(int *)(*(long *)(*plVar35 + 0xb8) + 0x1bc) / 3) % 2 + 4",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 93141,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x8f",
+        "0x8c",
+        "0x21",
+        "0x18",
+        "((uVar38 & 0xfffffffe) - uVar32) + 9",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x21",
+          "literal": 33
+        },
+        "TBody": {
+          "raw": "0x18",
+          "literal": 24
+        },
+        "TMode": {
+          "raw": "((uVar38 & 0xfffffffe) - uVar32) + 9",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 93146,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0xaf",
+        "0x8c",
+        "0x28",
+        "0x17",
+        "(*(int *)(*(long *)(*plVar35 + 0xb8) + 0x1bc) / 3) % 2 + 8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x28",
+          "literal": 40
+        },
+        "TBody": {
+          "raw": "0x17",
+          "literal": 23
+        },
+        "TMode": {
+          "raw": "(*(int *)(*(long *)(*plVar35 + 0xb8) + 0x1bc) / 3) % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 93453,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x2d",
+        "0x48",
+        "0x20",
+        "0x14",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x20",
+          "literal": 32
+        },
+        "TBody": {
+          "raw": "0x14",
+          "literal": 20
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 93456,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0xb3",
+        "0x45",
+        "0x21",
+        "0x18",
+        "8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x21",
+          "literal": 33
+        },
+        "TBody": {
+          "raw": "0x18",
+          "literal": 24
+        },
+        "TMode": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 93638,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0x22",
+        "0x53",
+        "2",
+        "0",
+        "4",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "2",
+          "literal": 2
+        },
+        "TBody": {
+          "raw": "0",
+          "literal": 0
+        },
+        "TMode": {
+          "raw": "4",
+          "literal": 4
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 93641,
+      "function": "form_SubForm___draw6",
+      "function_address": "0x00fd606c",
+      "raw_args": [
+        "lVar16",
+        "param_2",
+        "0xbe",
+        "0x53",
+        "10",
+        "0xf",
+        "8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "10",
+          "literal": 10
+        },
+        "TBody": {
+          "raw": "0xf",
+          "literal": 15
+        },
+        "TMode": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 96157,
+      "function": "form_SubForm__DrawGyoretsu",
+      "function_address": "0x00fe4018",
+      "raw_args": [
+        "lVar15",
+        "param_2",
+        "iVar13",
+        "0x78",
+        "uVar7",
+        "uVar8",
+        "iVar3 % 2 + 8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "uVar7",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "uVar8",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "iVar3 % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 99881,
+      "function": "form_SubForm__DrawTalk",
+      "function_address": "0x00fe93e8",
+      "raw_args": [
+        "lVar11",
+        "param_2",
+        "0xb6",
+        "0x96",
+        "uVar6",
+        "uVar7",
+        "iVar2 % 2 + 8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "uVar6",
+          "literal": null
+        },
+        "TBody": {
+          "raw": "uVar7",
+          "literal": null
+        },
+        "TMode": {
+          "raw": "iVar2 % 2 + 8",
+          "literal": null
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 100640,
+      "function": "form_RankForm___draw",
+      "function_address": "0x00fea6c0",
+      "raw_args": [
+        "lVar12",
+        "param_2",
+        "0xc3",
+        "0x1b",
+        "10",
+        "0xf",
+        "8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "10",
+          "literal": 10
+        },
+        "TBody": {
+          "raw": "0xf",
+          "literal": 15
+        },
+        "TMode": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    },
+    {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 101103,
+      "function": "form_RankForm___draw",
+      "function_address": "0x00fea6c0",
+      "raw_args": [
+        "lVar11",
+        "param_2",
+        "0xd2",
+        "0x60",
+        "0x21",
+        "0x18",
+        "8",
+        "0"
+      ],
+      "selectors": {
+        "TFace": {
+          "raw": "0x21",
+          "literal": 33
+        },
+        "TBody": {
+          "raw": "0x18",
+          "literal": 24
+        },
+        "TMode": {
+          "raw": "8",
+          "literal": 8
+        },
+        "TKage": {
+          "raw": "0",
+          "literal": 0
+        }
+      }
+    }
+  ],
+  "draw_human_call_count": 106,
+  "literal_selector_coverage": {
+    "TFace_values": [
+      2,
+      10,
+      23,
+      32,
+      33,
+      40,
+      41
+    ],
+    "TBody_values": [
+      0,
+      2,
+      4,
+      8,
+      15,
+      20,
+      23,
+      24
+    ],
+    "TMode_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ],
+    "dynamic_selector_calls": 92
+  },
+  "function_evidence_lines": {
+    "AddBodyFace": {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "function_header_line": 26547,
+      "function_header_lines": [
+        26547
+      ],
+      "first_symbol_line": 26547
+    },
+    "DrawHuman": {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "function_header_line": 41025,
+      "function_header_lines": [
+        24076,
+        41025
+      ],
+      "first_symbol_line": 16325
+    },
+    "DrawFukidashi": {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "function_header_line": 24090,
+      "function_header_lines": [
+        24090
+      ],
+      "first_symbol_line": 16229
+    },
+    "GetTalkIndex": {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "function_header_line": 42479,
+      "function_header_lines": [
+        42479
+      ],
+      "first_symbol_line": 42346
+    },
+    "GetHumanTalkName": {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "function_header_line": 42541,
+      "function_header_lines": [
+        42541
+      ],
+      "first_symbol_line": 42408
+    }
+  },
+  "related_token_hits": {
+    "HumanDexAnime": {
+      "dump_source": "game-dev-story-mod_Dumped/dump.cs",
+      "dump_first_line": 275707,
+      "categorized_code_source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "categorized_code_first_line": null
+    },
+    "HumanDexWalk": {
+      "dump_source": "game-dev-story-mod_Dumped/dump.cs",
+      "dump_first_line": 275708,
+      "categorized_code_source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "categorized_code_first_line": null
+    },
+    "HumanDexMode": {
+      "dump_source": "game-dev-story-mod_Dumped/dump.cs",
+      "dump_first_line": 275702,
+      "categorized_code_source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "categorized_code_first_line": null
+    },
+    "KaiwaFaceG": {
+      "dump_source": "game-dev-story-mod_Dumped/dump.cs",
+      "dump_first_line": 275635,
+      "categorized_code_source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "categorized_code_first_line": null
+    },
+    "KaiwaBodyG": {
+      "dump_source": "game-dev-story-mod_Dumped/dump.cs",
+      "dump_first_line": 275636,
+      "categorized_code_source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "categorized_code_first_line": null
+    },
+    "DrawFukidashi": {
+      "dump_source": "game-dev-story-mod_Dumped/dump.cs",
+      "dump_first_line": 276753,
+      "categorized_code_source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "categorized_code_first_line": 16229
+    }
+  },
+  "draw_human_bodyface_table_access_lines": [
+    41054,
+    41109,
+    41119,
+    41132,
+    41291,
+    41309,
+    41361,
+    41404,
+    41452
+  ],
+  "composition_contract": {
+    "status": "verified_with_mode_dependent_branches",
+    "selector_to_image_array": [
+      {
+        "layer": "body",
+        "selector": "TBody",
+        "image_array_field": "imgBody",
+        "table_fields": {
+          "destination_x": "BodyFace[mode][0]",
+          "destination_y": "BodyFace[mode][1]",
+          "source_x": "BodyFace[mode][2]",
+          "source_y": "BodyFace[mode][3]",
+          "width": "BodyFace[mode][4]",
+          "height": "BodyFace[mode][5]"
+        },
+        "draw_sites": {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "lines": [
+            41288,
+            41300,
+            41401,
+            41413
+          ]
+        },
+        "confidence": "verified"
+      },
+      {
+        "layer": "face",
+        "selector": "TFace",
+        "image_array_field": "imgFace",
+        "table_fields": {
+          "destination_x": "BodyFace[mode][6]",
+          "destination_y": "BodyFace[mode][7]",
+          "source_x": "BodyFace[mode][8]",
+          "source_y": "BodyFace[mode][9]",
+          "width": "BodyFace[mode][10]",
+          "height": "BodyFace[mode][11]"
+        },
+        "draw_sites": {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "lines": [
+            41361,
+            41368,
+            41377,
+            41452,
+            41463,
+            41472
+          ]
+        },
+        "confidence": "verified",
+        "note": "The recovered implementation applies additional mode-dependent offset adjustments in some branches; the table destination fields remain the base offsets."
+      }
+    ],
+    "add_body_face_parameter_map": {
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "function": "form_GameForm__AddBodyFace",
+      "lines": [
+        26582,
+        26587,
+        26592,
+        26597,
+        26602,
+        26607,
+        26613,
+        26619,
+        26625,
+        26631,
+        26638,
+        26644,
+        26650,
+        26656
+      ],
+      "parameters": {
+        "P0": "body_dst_x",
+        "P1": "body_dst_y",
+        "P2": "body_src_x",
+        "P3": "body_src_y",
+        "P4": "body_width",
+        "P5": "body_height",
+        "P6": "face_dst_x",
+        "P7": "face_dst_y",
+        "P8": "face_src_x",
+        "P9": "face_src_y",
+        "P10": "face_width",
+        "P11": "face_height",
+        "P12": "shadow_dst_x",
+        "P13": "shadow_dst_y"
+      },
+      "confidence": "verified"
+    },
+    "shadow_fields": {
+      "table_fields": {
+        "x": "BodyFace[mode][12]",
+        "y": "BodyFace[mode][13]"
+      },
+      "confidence": "verified-record-only",
+      "note": "The table stores the two values, but this catalog does not promote a universal shadow rendering rule because DrawHuman has multiple branches and optional TKage behavior."
+    }
+  },
+  "dynamic_selector_trace": {
+    "human_dex_draw_call": {
+      "callsite": {
+        "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 19691,
+        "function": "form_GameForm___draw",
+        "function_address": "0x00f1c210",
+        "raw_args": [
+          "param_1",
+          "param_2",
+          "iVar10 + -8",
+          "iVar12 + -0x1e",
+          "*(undefined4 *)(lVar26 + lVar34 * 4 + 0x20)",
+          "*(undefined4 *)(lVar27 + lVar34 * 4 + 0x20)",
+          "*(undefined4 *)(lVar17 + lVar34 * 4 + 0x20)",
+          "1"
+        ],
+        "selectors": {
+          "TFace": {
+            "raw": "*(undefined4 *)(lVar26 + lVar34 * 4 + 0x20)",
+            "literal": null
+          },
+          "TBody": {
+            "raw": "*(undefined4 *)(lVar27 + lVar34 * 4 + 0x20)",
+            "literal": null
+          },
+          "TMode": {
+            "raw": "*(undefined4 *)(lVar17 + lVar34 * 4 + 0x20)",
+            "literal": null
+          },
+          "TKage": {
+            "raw": "1",
+            "literal": 1
+          }
+        }
+      },
+      "argument_mapping": {
+        "X": "HumanDexX[index] / 10 - 8",
+        "Y": "HumanDexY[index] / 10 - 30",
+        "TFace": "HumanDexFaceG[index]",
+        "TBody": "HumanDexBodyG[index]",
+        "TMode": "HumanDexAnime[index]",
+        "TKage": "1"
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "lines": [
+            19687,
+            19688,
+            19689,
+            19690,
+            19691
+          ],
+          "function": "form_GameForm___draw"
+        }
+      ],
+      "confidence": "verified",
+      "note": "This resolves one variable-driven DrawHuman path; it does not resolve every runtime callsite or assign semantic Agent states."
+    }
+  },
+  "interpretations": [
+    {
+      "fact": "DrawHuman parameter names are TFace, TBody, TMode in the current dump.",
+      "meaning": "selector_parameter_names",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/dump.cs",
+          "method": "DrawHuman",
+          "line": 276585
+        }
+      ]
+    },
+    {
+      "fact": "DrawHuman uses TMode to index the static BodyFace table in the recovered C.",
+      "meaning": "TMode_is_bodyface_table_selector",
+      "confidence": "verified-record-only",
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "lines": [
+            41054,
+            41109,
+            41119,
+            41132,
+            41291,
+            41309,
+            41361,
+            41404,
+            41452
+          ],
+          "note": "Recovered DrawHuman assigns TMode to uVar11 and accesses the BodyFace table at the GameForm static offset used by the implementation."
+        }
+      ]
+    },
+    {
+      "fact": "Literal DrawHuman calls expose only a subset of runtime selector values; many calls are variable-driven.",
+      "meaning": "literal_callsite_coverage_is_partial",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 16333
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19464
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19467
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19500
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19511
+        }
+      ]
+    },
+    {
+      "fact": "The recovered DrawHuman implementation selects imgBody by TBody and imgFace by TFace, then uses BodyFace[TMode] crop and destination fields.",
+      "meaning": "body_face_composition_contract",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/dump.cs",
+          "fields": [
+            "imgFace",
+            "imgBody",
+            "BodyFace"
+          ]
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "lines": [
+            41288,
+            41300,
+            41361,
+            41368,
+            41377,
+            41401,
+            41413,
+            41452,
+            41463,
+            41472
+          ]
+        }
+      ]
+    },
+    {
+      "fact": "The HumanDex draw path passes HumanDexFaceG, HumanDexBodyG, and HumanDexAnime into DrawHuman.",
+      "meaning": "human_dex_dynamic_selector_path",
+      "confidence": "verified",
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "lines": [
+            19687,
+            19688,
+            19689,
+            19690,
+            19691
+          ],
+          "note": "Expected recovered draw path; parser result is included in dynamic_selector_trace."
+        }
+      ]
+    }
+  ]
+}

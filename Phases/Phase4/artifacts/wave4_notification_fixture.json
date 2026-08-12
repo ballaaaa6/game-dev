@@ -1,0 +1,60 @@
+{
+  "schema_version": "wave4-notification-fixture-v1",
+  "phase": "Phase4",
+  "wave": "Wave4",
+  "stage": "W4-C6-message-notification-fixture",
+  "source_roots_read_only": true,
+  "fixture_scope": "bounded queue fixture; time unit remains unknown",
+  "source_contract": "Phases/Phase4/artifacts/wave4_notification_contract.json",
+  "cases": [
+    {
+      "id": "default_graph",
+      "input": {
+        "text": "fixture.message",
+        "graph_id": -1,
+        "queue": [
+          0,
+          0
+        ]
+      },
+      "expected": {
+        "slot": 0,
+        "MessageTime": 96,
+        "MessageMaxTime": 96,
+        "MessageGraph": -1,
+        "status": "queue_write_contract"
+      }
+    },
+    {
+      "id": "explicit_graph",
+      "input": {
+        "text": "fixture.message",
+        "graph_id": 2,
+        "queue": [
+          1,
+          0
+        ]
+      },
+      "expected": {
+        "slot": 1,
+        "MessageTime": 96,
+        "MessageMaxTime": 96,
+        "MessageGraph": 2,
+        "graph_semantics": null
+      }
+    },
+    {
+      "id": "ttl_policy",
+      "input": {
+        "raw_lifetime": 96,
+        "clock_unit": "configured_adapter_unit"
+      },
+      "expected": {
+        "status": "adapter_policy_required",
+        "legacy_unit": null,
+        "legacy_equivalence": false
+      }
+    }
+  ],
+  "status": "ready_for_bounded_consumer_trace"
+}

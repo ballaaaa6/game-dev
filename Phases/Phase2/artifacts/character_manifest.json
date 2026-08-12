@@ -1,0 +1,5215 @@
+{
+  "schema": "phase2.character-manifest.v1",
+  "composition_model": "original body atlas + original face atlas + BodyFace crop/offset record",
+  "runtime_selector_contract": {
+    "source_method": "form.GameForm.DrawHuman",
+    "parameters": {
+      "face": "TFace",
+      "body": "TBody",
+      "mode": "TMode",
+      "optional_shadow": "TKage"
+    },
+    "confidence": "verified",
+    "evidence": [
+      {
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "class": "form.GameForm",
+        "method": "DrawHuman"
+      }
+    ]
+  },
+  "body_assets": [
+    "body_0",
+    "body_1",
+    "body_2",
+    "body_3",
+    "body_4",
+    "body_5",
+    "body_6",
+    "body_7",
+    "body_8",
+    "body_9",
+    "body_10",
+    "body_11",
+    "body_12",
+    "body_13",
+    "body_14",
+    "body_15",
+    "body_16",
+    "body_17",
+    "body_18",
+    "body_19",
+    "body_20",
+    "body_21",
+    "body_22",
+    "body_23",
+    "body_24",
+    "body_25"
+  ],
+  "face_assets": [
+    "face_0",
+    "face_1",
+    "face_2",
+    "face_3",
+    "face_4",
+    "face_5",
+    "face_6",
+    "face_7",
+    "face_8",
+    "face_9",
+    "face_10",
+    "face_11",
+    "face_12",
+    "face_13",
+    "face_14",
+    "face_15",
+    "face_16",
+    "face_17",
+    "face_18",
+    "face_19",
+    "face_20",
+    "face_21",
+    "face_22",
+    "face_23",
+    "face_24",
+    "face_25",
+    "face_26",
+    "face_27",
+    "face_28",
+    "face_29",
+    "face_30",
+    "face_31",
+    "face_32",
+    "face_33",
+    "face_34",
+    "face_35"
+  ],
+  "characters": [],
+  "bodyface_mode_compositions": [
+    {
+      "mode_id": 0,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 16
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 14
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 48,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 0,
+          "callsite": "0xe29388"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 1,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 5
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 14
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 48,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 1,
+          "callsite": "0xe293c8"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 2,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 16,
+          "y": 0,
+          "width": 16,
+          "height": 16
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 14
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 48,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 2
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 2,
+          "callsite": "0xe2940c"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 3,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 32,
+          "y": 0,
+          "width": 16,
+          "height": 16
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 14
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 48,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 2
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 3,
+          "callsite": "0xe2944c"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 4,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 16,
+          "width": 16,
+          "height": 17
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 16,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 4,
+          "callsite": "0xe29488"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 5,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 16,
+          "width": 16,
+          "height": 6
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 16,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 5,
+          "callsite": "0xe294c4"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 6,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 16,
+          "y": 16,
+          "width": 16,
+          "height": 17
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 16,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 2
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 6,
+          "callsite": "0xe29500"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 7,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 32,
+          "y": 16,
+          "width": 16,
+          "height": 17
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 16,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 2
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 7,
+          "callsite": "0xe2953c"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 8,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 33,
+          "width": 16,
+          "height": 17
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 8,
+          "callsite": "0xe29578"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 9,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 33,
+          "width": 16,
+          "height": 6
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 9,
+          "callsite": "0xe295b4"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 10,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 16,
+          "y": 33,
+          "width": 16,
+          "height": 17
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 2
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 10,
+          "callsite": "0xe295f0"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 11,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 32,
+          "y": 33,
+          "width": 16,
+          "height": 17
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 2
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 11,
+          "callsite": "0xe2962c"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 12,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 50,
+          "width": 16,
+          "height": 16
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 14
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 32,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 12,
+          "callsite": "0xe29668"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 13,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 50,
+          "width": 16,
+          "height": 5
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 14
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 32,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 13,
+          "callsite": "0xe296a4"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 14,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 16,
+          "y": 50,
+          "width": 16,
+          "height": 16
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 14
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 32,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 2
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 14,
+          "callsite": "0xe296e0"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 15,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 32,
+          "y": 50,
+          "width": 16,
+          "height": 16
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 14
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 32,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 2
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 15,
+          "callsite": "0xe2971c"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 16,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 48,
+          "y": 0,
+          "width": 17,
+          "height": 20
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 10
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 32,
+          "y": 15,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 2,
+          "y": 29
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 16,
+          "callsite": "0xe2975c"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 17,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 48,
+          "y": 0,
+          "width": 17,
+          "height": 20
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 10
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 64,
+          "y": 15,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 2,
+          "y": 29
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 17,
+          "callsite": "0xe2979c"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 18,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 65,
+          "y": 0,
+          "width": 16,
+          "height": 20
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 10
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 48,
+          "y": 15,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 3
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 2,
+          "y": 29
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 18,
+          "callsite": "0xe297e0"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 19,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 81,
+          "y": 0,
+          "width": 20,
+          "height": 21
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 6
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 64,
+          "y": 15,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": -1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 2,
+          "y": 29
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 19,
+          "callsite": "0xe29824"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 20,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 65,
+          "y": 20,
+          "width": 16,
+          "height": 13
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 12
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 16,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 20,
+          "callsite": "0xe29860"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 21,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 65,
+          "y": 33,
+          "width": 16,
+          "height": 13
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 12
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 16,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 21,
+          "callsite": "0xe2989c"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 22,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 65,
+          "y": 20,
+          "width": 16,
+          "height": 13
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 12
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -2,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 22,
+          "callsite": "0xe298d8"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 23,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 65,
+          "y": 20,
+          "width": 16,
+          "height": 13
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 12
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 48,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 23,
+          "callsite": "0xe29918"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 24,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 82,
+          "y": 21,
+          "width": 20,
+          "height": 21
+        },
+        "destination_offset": {
+          "x": -3,
+          "y": 4
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 0,
+          "y": 15,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 24,
+          "callsite": "0xe29954"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 25,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 48,
+          "y": 51,
+          "width": 17,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 12
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 32,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 2,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 25,
+          "callsite": "0xe29994"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 26,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 65,
+          "y": 46,
+          "width": 17,
+          "height": 13
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 32,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 2,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 26,
+          "callsite": "0xe299d4"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 27,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 48,
+          "y": 51,
+          "width": 17,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 12
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 2,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 27,
+          "callsite": "0xe29a10"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 28,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 48,
+          "y": 51,
+          "width": 17,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 12
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 48,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 5,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 28,
+          "callsite": "0xe29a4c"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 29,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 82,
+          "y": 42,
+          "width": 20,
+          "height": 24
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 5
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 16,
+          "y": 15,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 2,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 29,
+          "callsite": "0xe29a88"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 30,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 48,
+          "y": 20,
+          "width": 17,
+          "height": 18
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 11
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 30,
+          "callsite": "0xe29ac4"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 31,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 48,
+          "y": 38,
+          "width": 17,
+          "height": 13
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 48,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 31,
+          "callsite": "0xe29b00"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 32,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 48,
+          "y": 20,
+          "width": 17,
+          "height": 18
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 11
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 32,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 32,
+          "callsite": "0xe29b3c"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 33,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 48,
+          "y": 20,
+          "width": 17,
+          "height": 18
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 11
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 16,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 3,
+          "y": 0
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 0,
+          "y": 0
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 33,
+          "callsite": "0xe29b78"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 34,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 16
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 14
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 32,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -2,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 34,
+          "callsite": "0xe29bb8"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 35,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 16
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 14
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 16,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 35,
+          "callsite": "0xe29bf8"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 36,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 16,
+          "width": 16,
+          "height": 17
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 48,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 1,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 36,
+          "callsite": "0xe29c34"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 37,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 16,
+          "width": 16,
+          "height": 17
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -2,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 37,
+          "callsite": "0xe29c70"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 38,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 33,
+          "width": 16,
+          "height": 17
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 16,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 2,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 38,
+          "callsite": "0xe29cac"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 39,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 33,
+          "width": 16,
+          "height": 17
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 13
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 32,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 39,
+          "callsite": "0xe29ce8"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 40,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 50,
+          "width": 16,
+          "height": 16
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 14
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 0,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": -1,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 40,
+          "callsite": "0xe29d24"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    },
+    {
+      "mode_id": 41,
+      "semantic_label": null,
+      "confidence": "verified-record-only",
+      "body": {
+        "runtime_selector_parameter": "TBody",
+        "source_rect": {
+          "x": 0,
+          "y": 50,
+          "width": 16,
+          "height": 16
+        },
+        "destination_offset": {
+          "x": 0,
+          "y": 14
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "body_0",
+          "body_1",
+          "body_2",
+          "body_3",
+          "body_4",
+          "body_5",
+          "body_6",
+          "body_7",
+          "body_8",
+          "body_9",
+          "body_10",
+          "body_11",
+          "body_12",
+          "body_13",
+          "body_14",
+          "body_15",
+          "body_16",
+          "body_17",
+          "body_18",
+          "body_19",
+          "body_20",
+          "body_21",
+          "body_22",
+          "body_23",
+          "body_24",
+          "body_25"
+        ],
+        "selected_asset_id": null
+      },
+      "face": {
+        "runtime_selector_parameter": "TFace",
+        "source_rect": {
+          "x": 48,
+          "y": 0,
+          "width": 16,
+          "height": 15
+        },
+        "destination_offset": {
+          "x": 2,
+          "y": 1
+        },
+        "compatible_asset_ids_by_crop_geometry": [
+          "face_0",
+          "face_1",
+          "face_2",
+          "face_3",
+          "face_4",
+          "face_5",
+          "face_6",
+          "face_7",
+          "face_8",
+          "face_9",
+          "face_10",
+          "face_11",
+          "face_12",
+          "face_13",
+          "face_14",
+          "face_15",
+          "face_16",
+          "face_17",
+          "face_18",
+          "face_19",
+          "face_20",
+          "face_21",
+          "face_22",
+          "face_23",
+          "face_24",
+          "face_25",
+          "face_26",
+          "face_27",
+          "face_28",
+          "face_29",
+          "face_30",
+          "face_31",
+          "face_32",
+          "face_33",
+          "face_34",
+          "face_35"
+        ],
+        "selected_asset_id": null
+      },
+      "shadow": {
+        "destination_offset": {
+          "x": 1,
+          "y": 28
+        },
+        "source_asset_id": null,
+        "rendered_by_catalog": false,
+        "note": "The record has a shadow destination, but no shadow source asset/primitive is promoted here."
+      },
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/bodyface_records.reference.json",
+          "record_mode": 41,
+          "callsite": "0xe29d60"
+        }
+      ],
+      "unknowns": [
+        "concrete TFace/TBody pair",
+        "semantic state",
+        "direction",
+        "pivot/anchor",
+        "timing"
+      ]
+    }
+  ],
+  "coverage": {
+    "bodyface_mode_records": 42,
+    "mode_records_with_concrete_asset_pair": 0,
+    "mode_records_with_verified_crop_geometry": 42,
+    "semantic_character_states_verified": 0
+  },
+  "notes": [
+    "The manifest is a traceable composition catalog, not a claim that every geometry-compatible asset pair is used by the original runtime.",
+    "No replacement sprites, mirroring, shadow primitives, or guessed offsets are introduced."
+  ]
+}

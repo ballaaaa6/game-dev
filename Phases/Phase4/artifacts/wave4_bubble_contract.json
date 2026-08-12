@@ -1,0 +1,158 @@
+{
+  "schema_version": "wave4-bubble-contract-v1",
+  "phase": "Phase4",
+  "wave": "Wave4",
+  "stage": "W4-C3-fukidashi-bubble-contract",
+  "source_roots_read_only": true,
+  "fields": [
+    {
+      "field": "fukiList",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275506,
+        "needle": "fukiList;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    },
+    {
+      "field": "FukiMax",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275614,
+        "needle": "FukiMax;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    },
+    {
+      "field": "FukiCX",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275615,
+        "needle": "FukiCX;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    },
+    {
+      "field": "FukiCY",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275616,
+        "needle": "FukiCY;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    },
+    {
+      "field": "FukiWX",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275617,
+        "needle": "FukiWX;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    },
+    {
+      "field": "HumanFukiTime",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276089,
+        "needle": "HumanFukiTime;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    },
+    {
+      "field": "HumanFukiIndex",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276090,
+        "needle": "HumanFukiIndex;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    }
+  ],
+  "functions": [
+    {
+      "symbol": "form_GameForm__AddFuki",
+      "bounded_behavior": "write TCX/TCY/TWX into FukiCX/FukiCY/FukiWX at FukiMax and increment FukiMax",
+      "status": "verified_bounded_write",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 28226,
+          "needle": "// Function: form_GameForm__AddFuki",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "symbol": "form_GameForm__CallFuki",
+      "bounded_behavior": "apply bounded time/index values to HumanFukiTime/HumanFukiIndex after active-human and limit checks",
+      "status": "verified_bounded_write_timer_semantics_open",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 30058,
+          "needle": "// Function: form_GameForm__CallFuki",
+          "status": "verified"
+        }
+      ]
+    },
+    {
+      "symbol": "form_GameForm__DrawFukidashi",
+      "bounded_behavior": "read fukiList by index, translate with Language.LT, trim, construct Balloon and draw at supplied coordinates",
+      "status": "verified_bounded_draw_contract",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24090,
+          "needle": "// Function: form_GameForm__DrawFukidashi",
+          "status": "verified"
+        }
+      ]
+    }
+  ],
+  "runtime_contract": {
+    "bubble_record": [
+      "bubble_id",
+      "actor_id",
+      "text_or_talk_ref",
+      "position",
+      "expires_at",
+      "status"
+    ],
+    "raw_mapping": {
+      "index": "HumanFukiIndex",
+      "time": "HumanFukiTime"
+    },
+    "ui_boundary": "Balloon and TextLayout are contract-only; browser rendering is an adapter",
+    "expiry_unit": "unknown_until_MainProcess_consumer_trace",
+    "legacy_equivalence": false
+  },
+  "evidence": [
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 15847,
+      "needle": "form_GameForm__DrawObj",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 16229,
+      "needle": "form_GameForm__DrawFukidashi",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+      "line": 20645,
+      "needle": "kairo_unity_util_Language__LT",
+      "status": "verified"
+    }
+  ],
+  "status": "bubble_storage_and_draw_boundary_ready_expiry_semantics_open"
+}

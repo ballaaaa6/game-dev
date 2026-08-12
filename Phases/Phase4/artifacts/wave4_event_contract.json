@@ -1,0 +1,294 @@
+{
+  "schema_version": "wave4-event-contract-v1",
+  "phase": "Phase4",
+  "wave": "Wave4",
+  "stage": "W4-C4-event-and-lifecycle-bridge",
+  "source_roots_read_only": true,
+  "queue_fields": [
+    {
+      "field": "EventMode",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276144,
+        "needle": "EventMode;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    },
+    {
+      "field": "EventTemp",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276145,
+        "needle": "EventTemp;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    },
+    {
+      "field": "EventTemp2",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276146,
+        "needle": "EventTemp2;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    },
+    {
+      "field": "EventMax",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276143,
+        "needle": "EventMax;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    }
+  ],
+  "producer": {
+    "function": "form_GameForm__AddEvent",
+    "bounded_behavior": "scan EventMode for first zero slot and write mode/temp/temp2 into parallel arrays",
+    "status": "verified_bounded_queue_write",
+    "evidence": [
+      {
+        "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 41863,
+        "needle": "// Function: form_GameForm__AddEvent",
+        "status": "verified"
+      }
+    ],
+    "callsite_count": 53,
+    "literal_mode_counts": {
+      "0x10": 1,
+      "0x11": 8,
+      "0x12": 1,
+      "0x13": 1,
+      "0x14": 2,
+      "0x15": 5,
+      "0x16": 1,
+      "0x17": 2,
+      "0x18": 3,
+      "0x1a": 1,
+      "0x1b": 1,
+      "0x1c": 1,
+      "0x1e": 1,
+      "0x1f": 1,
+      "0x20": 1,
+      "0xb": 1,
+      "0xc": 1,
+      "0xd": 1,
+      "0xe": 6,
+      "0xf": 4,
+      "1": 1,
+      "10": 1,
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "8": 1,
+      "9": 1,
+      "uVar22": 1
+    }
+  },
+  "consumer": {
+    "function": "form_GameForm__DoEvent",
+    "source_status": "assembly_fallback_only",
+    "instruction_count": 15569,
+    "branch_count": 4517,
+    "basic_block_count": 4053,
+    "status": "structural_branch_index_only",
+    "semantic_policy": "slice_only_branches_that_touch_dialogue_bubble_message_or_actor_lifecycle",
+    "known_call_targets": [
+      {
+        "target": "0x00db0cc0",
+        "count": 751
+      },
+      {
+        "target": "0x00db0bbc",
+        "count": 246
+      },
+      {
+        "target": "0x00f83b80",
+        "count": 157
+      },
+      {
+        "target": "0x00f25628",
+        "count": 67
+      },
+      {
+        "target": "0x018ecc5c",
+        "count": 49
+      },
+      {
+        "target": "0x019871fc",
+        "count": 35
+      },
+      {
+        "target": "0x00f1a908",
+        "count": 21
+      },
+      {
+        "target": "0x00db0c30",
+        "count": 17
+      },
+      {
+        "target": "0x00f528d8",
+        "count": 17
+      },
+      {
+        "target": "0x01aa9334",
+        "count": 15
+      },
+      {
+        "target": "0x01993888",
+        "count": 14
+      },
+      {
+        "target": "0x00f1aa34",
+        "count": 13
+      },
+      {
+        "target": "0x00f1a98c",
+        "count": 12
+      },
+      {
+        "target": "0x00f3ab48",
+        "count": 5
+      },
+      {
+        "target": "0x017d2e24",
+        "count": 5
+      },
+      {
+        "target": "0x01993a54",
+        "count": 4
+      },
+      {
+        "target": "0x018bc248",
+        "count": 4
+      },
+      {
+        "target": "0x00f8926c",
+        "count": 3
+      },
+      {
+        "target": "0x018bc378",
+        "count": 2
+      },
+      {
+        "target": "0x00f4b038",
+        "count": 2
+      },
+      {
+        "target": "0x00f541b4",
+        "count": 2
+      },
+      {
+        "target": "0x00f54bb0",
+        "count": 1
+      },
+      {
+        "target": "0x00f25500",
+        "count": 1
+      },
+      {
+        "target": "0x00f38220",
+        "count": 1
+      },
+      {
+        "target": "0x0184d040",
+        "count": 1
+      },
+      {
+        "target": "0x0199394c",
+        "count": 1
+      },
+      {
+        "target": "0x017ef368",
+        "count": 1
+      },
+      {
+        "target": "0x00f4a714",
+        "count": 1
+      },
+      {
+        "target": "0x00f4a184",
+        "count": 1
+      },
+      {
+        "target": "0x00f88a90",
+        "count": 1
+      },
+      {
+        "target": "0x00f4bcd8",
+        "count": 1
+      },
+      {
+        "target": "0x00f3d69c",
+        "count": 1
+      },
+      {
+        "target": "0x00f3dbcc",
+        "count": 1
+      },
+      {
+        "target": "0x00db0dec",
+        "count": 1
+      },
+      {
+        "target": "0x00db0de4",
+        "count": 1
+      }
+    ],
+    "evidence": [
+      {
+        "file": "game-dev-story-mod_Dumped/Failed_Functions_Assembly/00f5c704_form_GameForm__DoEvent.asm.txt",
+        "line": 2,
+        "needle": "00f5c704",
+        "status": "verified_assembly_entry"
+      }
+    ]
+  },
+  "related_functions": [
+    {
+      "symbol": "form_GameForm__MainProcess",
+      "status": "bounded_slice_required"
+    },
+    {
+      "symbol": "form_GameForm__AddKaiwa",
+      "status": "W4-C2"
+    },
+    {
+      "symbol": "form_GameForm__AddMessage",
+      "status": "W4-C6"
+    },
+    {
+      "symbol": "form_GameForm__CallFuki",
+      "status": "W4-C3"
+    }
+  ],
+  "semantic_status": "event_modes_not_named_without_consumer_evidence",
+  "legacy_equivalence": false,
+  "evidence": [
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 548,
+      "needle": "form_GameForm__AddEvent",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276144,
+      "needle": "internal static int[] EventMode",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/Failed_Functions_Assembly/00f5c704_form_GameForm__DoEvent.asm.txt",
+      "line": 2,
+      "needle": "00f5c704",
+      "status": "verified"
+    }
+  ],
+  "status": "producer_index_ready_consumer_semantics_open"
+}

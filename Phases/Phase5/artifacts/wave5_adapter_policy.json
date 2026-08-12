@@ -1,0 +1,15 @@
+{
+  "schema_version": "wave5-adapter-policy-v1",
+  "legacy_equivalence": false,
+  "policies": [
+    { "id": "timer.logical_tick", "decision": "Use explicit logical ticks; do not label raw 0x60 as milliseconds." },
+    { "id": "movement.direct_axis", "decision": "Use injected deterministic path provider; no legacy walk graph claim." },
+    { "id": "collision.explicit_points", "decision": "Use adapter collision data only; never infer from pixels." },
+    { "id": "seat.explicit_ownership", "decision": "Occupy/release/query is owned by actor_id and seat_id." },
+    { "id": "animation.static_fallback", "decision": "Unknown semantic animation uses a verified static frame policy." },
+    { "id": "selector.unresolved_face", "decision": "TFace=40/41 remains unresolved; no face substitution." },
+    { "id": "event.named_web", "decision": "Use named web events; raw EventMode/EventTemp/EventTemp2 remain opaque." },
+    { "id": "notification.raw_graph", "decision": "Keep MessageGraph as raw graph_id; no product label inference." },
+    { "id": "locale.default_th", "decision": "th is configurable web fallback, not a recovered legacy fact." }
+  ]
+}

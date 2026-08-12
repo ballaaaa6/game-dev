@@ -1,0 +1,4151 @@
+{
+  "schema_version": "wave3-actor-function-map-v1",
+  "phase": "Phase4",
+  "wave": "Wave3",
+  "stage": "W3-C0-actor-evidence-register",
+  "source_roots_read_only": true,
+  "address_namespace": {
+    "export_to_raw_delta": "-0x100000",
+    "status": "inherited_verified_wave1_wave2"
+  },
+  "scope": {
+    "function_count": 10,
+    "functions": [
+      {
+        "symbol": "form_GameForm__AddSyain",
+        "area": "identity",
+        "role": "employee table insertion and employee-facing source record",
+        "priority": "P0",
+        "semantic_status": "bounded_provenance_only",
+        "source_status": "categorized_c",
+        "dump_methods": [
+          {
+            "namespace": "form",
+            "name": "AddSyain",
+            "typedef_index": 3928,
+            "line_start": 275454,
+            "line_end": 276781,
+            "c_symbol": "form_GameForm__AddSyain",
+            "signature": "public int AddSyain(int TPoint, int TSyurui, string TName, string TMiniName, int TFaceG, int TBodyG, int TBosyuP, int TKyuryo, int TKeiyaku, int TSpeed, int TTaikyu, int TPara0, int TPara1, int TPara2, int TPara3, int TSuperMax, int TJobType, int TJobMuchP, int TJobLebel0, int TJobLebel1, int TJobLebel2, int TJobLebel3, int TJobLebel4, int TJobLebel5, int TJobLebel6, int TJobLebel7, string TMemo)",
+            "rva": "0xE36D00",
+            "rva_int": 14904576,
+            "line": 276474,
+            "source": "game-dev-story-mod_Dumped/dump.cs"
+          }
+        ],
+        "script_methods": [
+          {
+            "address": 14904576,
+            "address_hex": "0xE36D00",
+            "decompiler_address": "0xF36D00",
+            "name": "form.GameForm$$AddSyain",
+            "signature": "int32_t form_GameForm__AddSyain (form_GameForm_o* __this, int32_t TPoint, int32_t TSyurui, System_String_o* TName, System_String_o* TMiniName, int32_t TFaceG, int32_t TBodyG, int32_t TBosyuP, int32_t TKyuryo, int32_t TKeiyaku, int32_t TSpeed, int32_t TTaikyu, int32_t TPara0, int32_t TPara1, int32_t TPara2, int32_t TPara3, int32_t TSuperMax, int32_t TJobType, int32_t TJobMuchP, int32_t TJobLebel0, int32_t TJobLebel1, int32_t TJobLebel2, int32_t TJobLebel3, int32_t TJobLebel4, int32_t TJobLebel5, int32_t TJobLebel6, int32_t TJobLebel7, System_String_o* TMemo, const MethodInfo* method);",
+            "type_signature": "iiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
+          }
+        ],
+        "c_definitions": [
+          {
+            "symbol": "form_GameForm__AddSyain",
+            "occurrence": 1,
+            "status": "recovered_c_function",
+            "line_start": 26951,
+            "line_end": 27322,
+            "line_count": 372,
+            "address": null,
+            "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+          }
+        ],
+        "assembly_fallback": null,
+        "assembly_call_targets": null,
+        "inventory_reason": "Restore character composition, employee binding, movement and neutral animation selectors.",
+        "evidence_policy": "C0 records provenance and bounded scope; it does not close actor semantics"
+      },
+      {
+        "symbol": "form_GameForm__CallSyain",
+        "area": "identity_spawn",
+        "role": "actor slot allocation, object binding, and initial Human* writes",
+        "priority": "P0",
+        "semantic_status": "bounded_provenance_only",
+        "source_status": "categorized_c",
+        "dump_methods": [
+          {
+            "namespace": "form",
+            "name": "CallSyain",
+            "typedef_index": 3928,
+            "line_start": 275454,
+            "line_end": 276781,
+            "c_symbol": "form_GameForm__CallSyain",
+            "signature": "public int CallSyain(int TMode, int TIndex, int TSyurui)",
+            "rva": "0xE37624",
+            "rva_int": 14906916,
+            "line": 276480,
+            "source": "game-dev-story-mod_Dumped/dump.cs"
+          }
+        ],
+        "script_methods": [
+          {
+            "address": 14906916,
+            "address_hex": "0xE37624",
+            "decompiler_address": "0xF37624",
+            "name": "form.GameForm$$CallSyain",
+            "signature": "int32_t form_GameForm__CallSyain (form_GameForm_o* __this, int32_t TMode, int32_t TIndex, int32_t TSyurui, const MethodInfo* method);",
+            "type_signature": "iiiiii"
+          }
+        ],
+        "c_definitions": [
+          {
+            "symbol": "form_GameForm__CallSyain",
+            "occurrence": 1,
+            "status": "recovered_c_function",
+            "line_start": 27392,
+            "line_end": 27925,
+            "line_count": 534,
+            "address": null,
+            "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+          }
+        ],
+        "assembly_fallback": null,
+        "assembly_call_targets": null,
+        "inventory_reason": "Restore character composition, employee binding, movement and neutral animation selectors.",
+        "evidence_policy": "C0 records provenance and bounded scope; it does not close actor semantics"
+      },
+      {
+        "symbol": "form_GameForm__NextTarget",
+        "area": "target_position",
+        "role": "copy target arrays into actor position arrays by index",
+        "priority": "P0",
+        "semantic_status": "field_flow_verified_space_open",
+        "source_status": "categorized_c",
+        "dump_methods": [
+          {
+            "namespace": "form",
+            "name": "NextTarget",
+            "typedef_index": 3928,
+            "line_start": 275454,
+            "line_end": 276781,
+            "c_symbol": "form_GameForm__NextTarget",
+            "signature": "public void NextTarget(int TPos, int THumanIndex, int TMode)",
+            "rva": "0xE380A0",
+            "rva_int": 14909600,
+            "line": 276693,
+            "source": "game-dev-story-mod_Dumped/dump.cs"
+          }
+        ],
+        "script_methods": [
+          {
+            "address": 14909600,
+            "address_hex": "0xE380A0",
+            "decompiler_address": "0xF380A0",
+            "name": "form.GameForm$$NextTarget",
+            "signature": "void form_GameForm__NextTarget (form_GameForm_o* __this, int32_t TPos, int32_t THumanIndex, int32_t TMode, const MethodInfo* method);",
+            "type_signature": "viiiii"
+          }
+        ],
+        "c_definitions": [
+          {
+            "symbol": "form_GameForm__NextTarget",
+            "occurrence": 1,
+            "status": "recovered_c_function",
+            "line_start": 27926,
+            "line_end": 28005,
+            "line_count": 80,
+            "address": null,
+            "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+          }
+        ],
+        "assembly_fallback": null,
+        "assembly_call_targets": null,
+        "inventory_reason": "Restore character composition, employee binding, movement and neutral animation selectors.",
+        "evidence_policy": "C0 records provenance and bounded scope; it does not close actor semantics"
+      },
+      {
+        "symbol": "form_GameForm__AddTarget",
+        "area": "target_position",
+        "role": "target array producer",
+        "priority": "P0",
+        "semantic_status": "bounded_provenance_only",
+        "source_status": "categorized_c",
+        "dump_methods": [
+          {
+            "namespace": "form",
+            "name": "AddTarget",
+            "typedef_index": 3928,
+            "line_start": 275454,
+            "line_end": 276781,
+            "c_symbol": "form_GameForm__AddTarget",
+            "signature": "public void AddTarget(int TIndex, int TX, int TY)",
+            "rva": "0xE39FC4",
+            "rva_int": 14917572,
+            "line": 276432,
+            "source": "game-dev-story-mod_Dumped/dump.cs"
+          }
+        ],
+        "script_methods": [
+          {
+            "address": 14917572,
+            "address_hex": "0xE39FC4",
+            "decompiler_address": "0xF39FC4",
+            "name": "form.GameForm$$AddTarget",
+            "signature": "void form_GameForm__AddTarget (form_GameForm_o* __this, int32_t TIndex, int32_t TX, int32_t TY, const MethodInfo* method);",
+            "type_signature": "viiiii"
+          }
+        ],
+        "c_definitions": [
+          {
+            "symbol": "form_GameForm__AddTarget",
+            "occurrence": 1,
+            "status": "recovered_c_function",
+            "line_start": 29544,
+            "line_end": 29587,
+            "line_count": 44,
+            "address": null,
+            "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+          }
+        ],
+        "assembly_fallback": null,
+        "assembly_call_targets": null,
+        "inventory_reason": "Restore room/object records, furniture relations, coordinate placement and draw order.",
+        "evidence_policy": "C0 records provenance and bounded scope; it does not close actor semantics"
+      },
+      {
+        "symbol": "form_GameForm__MainProcess",
+        "area": "actor_tick",
+        "role": "large lifecycle/tick function; only actor-touching branches are in scope",
+        "priority": "P1",
+        "semantic_status": "bounded_slice_required",
+        "source_status": "categorized_c",
+        "dump_methods": [
+          {
+            "namespace": "form",
+            "name": "MainProcess",
+            "typedef_index": 3928,
+            "line_start": 275454,
+            "line_end": 276781,
+            "c_symbol": "form_GameForm__MainProcess",
+            "signature": "public void MainProcess()",
+            "rva": "0xDFEC90",
+            "rva_int": 14675088,
+            "line": 276702,
+            "source": "game-dev-story-mod_Dumped/dump.cs"
+          }
+        ],
+        "script_methods": [
+          {
+            "address": 14675088,
+            "address_hex": "0xDFEC90",
+            "decompiler_address": "0xEFEC90",
+            "name": "form.GameForm$$MainProcess",
+            "signature": "void form_GameForm__MainProcess (form_GameForm_o* __this, const MethodInfo* method);",
+            "type_signature": "vii"
+          }
+        ],
+        "c_definitions": [
+          {
+            "symbol": "form_GameForm__MainProcess",
+            "occurrence": 1,
+            "status": "recovered_c_function",
+            "line_start": 1,
+            "line_end": 15354,
+            "line_count": 15354,
+            "address": null,
+            "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+          }
+        ],
+        "assembly_fallback": null,
+        "assembly_call_targets": null,
+        "inventory_reason": "Translate only branches that mutate actor, dialogue, bubble, office object or Agent-facing lifecycle state.",
+        "evidence_policy": "C0 records provenance and bounded scope; it does not close actor semantics"
+      },
+      {
+        "symbol": "form_GameForm__DoEvent",
+        "area": "actor_tick_lifecycle",
+        "role": "event lifecycle function; current source is assembly fallback only",
+        "priority": "P1",
+        "semantic_status": "assembly_fallback_bounded_slice_required",
+        "source_status": "assembly_fallback_only",
+        "dump_methods": [
+          {
+            "namespace": "form",
+            "name": "DoEvent",
+            "typedef_index": 3928,
+            "line_start": 275454,
+            "line_end": 276781,
+            "c_symbol": "form_GameForm__DoEvent",
+            "signature": "public void DoEvent()",
+            "rva": "0xE5C704",
+            "rva_int": 15058692,
+            "line": 276705,
+            "source": "game-dev-story-mod_Dumped/dump.cs"
+          }
+        ],
+        "script_methods": [
+          {
+            "address": 15058692,
+            "address_hex": "0xE5C704",
+            "decompiler_address": "0xF5C704",
+            "name": "form.GameForm$$DoEvent",
+            "signature": "void form_GameForm__DoEvent (form_GameForm_o* __this, const MethodInfo* method);",
+            "type_signature": "vii"
+          }
+        ],
+        "c_definitions": [],
+        "assembly_fallback": {
+          "address": "00f5c704",
+          "file": "00f5c704_form_GameForm__DoEvent.asm.txt",
+          "instructions": 15569,
+          "status": "ok"
+        },
+        "assembly_call_targets": {
+          "source": "game-dev-story-mod_Dumped/Failed_Functions_Assembly/00f5c704_form_GameForm__DoEvent.asm.txt",
+          "instruction_count": 15569,
+          "branch_target_count": 1455,
+          "targets": [
+            {
+              "address": "0xDB0BBC",
+              "count": 246,
+              "symbol": null,
+              "resolution": "unresolved"
+            },
+            {
+              "address": "0xDB0C30",
+              "count": 17,
+              "symbol": null,
+              "resolution": "unresolved"
+            },
+            {
+              "address": "0xDB0CC0",
+              "count": 751,
+              "symbol": null,
+              "resolution": "unresolved"
+            },
+            {
+              "address": "0xDB0DE4",
+              "count": 1,
+              "symbol": null,
+              "resolution": "unresolved"
+            },
+            {
+              "address": "0xDB0DEC",
+              "count": 1,
+              "symbol": null,
+              "resolution": "unresolved"
+            },
+            {
+              "address": "0xF1A908",
+              "count": 21,
+              "symbol": "form_GameForm__AddKaiwa",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF1A98C",
+              "count": 12,
+              "symbol": "form_GameForm__AddKaiwa",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF1AA34",
+              "count": 13,
+              "symbol": "form_GameForm__EventGChange",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF25500",
+              "count": 1,
+              "symbol": "form_GameForm__MakerName",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF25628",
+              "count": 67,
+              "symbol": "form_GameForm__Rndm",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF38220",
+              "count": 1,
+              "symbol": "form_GameForm__AddTaisyoCorp",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF3AB48",
+              "count": 5,
+              "symbol": "form_GameForm__Print",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF3D69C",
+              "count": 1,
+              "symbol": "form_GameForm__HiScoreSave",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF3DBCC",
+              "count": 1,
+              "symbol": "form_GameForm__GameSave",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF4A184",
+              "count": 1,
+              "symbol": "form_GameForm__AddHanbaiSendenNinki",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF4A714",
+              "count": 1,
+              "symbol": "form_GameForm__AddMessage",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF4B038",
+              "count": 2,
+              "symbol": "form_GameForm__AddKaiwa",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF4BCD8",
+              "count": 1,
+              "symbol": "form_GameForm__CommonCode",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF528D8",
+              "count": 17,
+              "symbol": "form_GameForm__SoundPlay",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF541B4",
+              "count": 2,
+              "symbol": "form_GameForm__ParaData",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF54BB0",
+              "count": 1,
+              "symbol": "form_GameForm__CallBallEnd",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF83B80",
+              "count": 157,
+              "symbol": "form_MyFormBase__LT",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF88A90",
+              "count": 1,
+              "symbol": "form_MyFormBase__YEN",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0xF8926C",
+              "count": 3,
+              "symbol": "form_MyFormBase__UNI",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0x17D2E24",
+              "count": 5,
+              "symbol": "java_lang_JString__ValueOf",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0x17EF368",
+              "count": 1,
+              "symbol": "kairo_unity_util_Language__Japanese",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0x184D040",
+              "count": 1,
+              "symbol": "kairo_unity_ui_Font__StringWidth",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0x18BC248",
+              "count": 4,
+              "symbol": "java_lang_StringEx__Length",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0x18BC378",
+              "count": 2,
+              "symbol": "java_lang_StringEx__SubstringJ",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0x18ECC5C",
+              "count": 49,
+              "symbol": "kairo_unity_util_StringUtil__Replace",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0x19871FC",
+              "count": 35,
+              "symbol": "System_String__Concat",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0x1993888",
+              "count": 14,
+              "symbol": "System_String__Concat",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0x199394C",
+              "count": 1,
+              "symbol": "System_String__Concat",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0x1993A54",
+              "count": 4,
+              "symbol": "System_String__Concat",
+              "resolution": "script_method"
+            },
+            {
+              "address": "0x1AA9334",
+              "count": 15,
+              "symbol": "System_Int32__ToString",
+              "resolution": "script_method"
+            }
+          ]
+        },
+        "inventory_reason": "Translate only branches that mutate actor, dialogue, bubble, office object or Agent-facing lifecycle state.",
+        "evidence_policy": "C0 records provenance and bounded scope; it does not close actor semantics"
+      },
+      {
+        "symbol": "form_GameForm__DrawHuman",
+        "area": "animation_render",
+        "role": "TFace/TBody/TMode renderer entry; two recovered C definitions exist",
+        "priority": "P0",
+        "semantic_status": "composition_contract_verified_semantic_state_open",
+        "source_status": "categorized_c",
+        "dump_methods": [
+          {
+            "namespace": "form",
+            "name": "DrawHuman",
+            "typedef_index": 3928,
+            "line_start": 275454,
+            "line_end": 276781,
+            "c_symbol": "form_GameForm__DrawHuman",
+            "signature": "public void DrawHuman(Graphics g, int X, int Y, int TFace, int TBody, int TMode)",
+            "rva": "0xE258B4",
+            "rva_int": 14833844,
+            "line": 276585,
+            "source": "game-dev-story-mod_Dumped/dump.cs"
+          },
+          {
+            "namespace": "form",
+            "name": "DrawHuman",
+            "typedef_index": 3928,
+            "line_start": 275454,
+            "line_end": 276781,
+            "c_symbol": "form_GameForm__DrawHuman",
+            "signature": "public void DrawHuman(Graphics g, int X, int Y, int TFace, int TBody, int TMode, int TKage)",
+            "rva": "0xE48E34",
+            "rva_int": 14978612,
+            "line": 276588,
+            "source": "game-dev-story-mod_Dumped/dump.cs"
+          }
+        ],
+        "script_methods": [
+          {
+            "address": 14833844,
+            "address_hex": "0xE258B4",
+            "decompiler_address": "0xF258B4",
+            "name": "form.GameForm$$DrawHuman",
+            "signature": "void form_GameForm__DrawHuman (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, int32_t X, int32_t Y, int32_t TFace, int32_t TBody, int32_t TMode, const MethodInfo* method);",
+            "type_signature": "viiiiiiii"
+          },
+          {
+            "address": 14978612,
+            "address_hex": "0xE48E34",
+            "decompiler_address": "0xF48E34",
+            "name": "form.GameForm$$DrawHuman",
+            "signature": "void form_GameForm__DrawHuman (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, int32_t X, int32_t Y, int32_t TFace, int32_t TBody, int32_t TMode, int32_t TKage, const MethodInfo* method);",
+            "type_signature": "viiiiiiiii"
+          }
+        ],
+        "c_definitions": [
+          {
+            "symbol": "form_GameForm__DrawHuman",
+            "occurrence": 1,
+            "status": "recovered_c_function",
+            "line_start": 24076,
+            "line_end": 24089,
+            "line_count": 14,
+            "address": null,
+            "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+          },
+          {
+            "symbol": "form_GameForm__DrawHuman",
+            "occurrence": 2,
+            "status": "recovered_c_function",
+            "line_start": 41025,
+            "line_end": 41627,
+            "line_count": 603,
+            "address": null,
+            "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+          }
+        ],
+        "assembly_fallback": null,
+        "assembly_call_targets": null,
+        "inventory_reason": "Restore character composition, employee binding, movement and neutral animation selectors.",
+        "evidence_policy": "C0 records provenance and bounded scope; it does not close actor semantics"
+      },
+      {
+        "symbol": "form_GameForm__DrawObj",
+        "area": "scene_render",
+        "role": "object dispatch boundary that calls DrawHuman",
+        "priority": "P0",
+        "semantic_status": "dispatch_verified_depth_open",
+        "source_status": "categorized_c",
+        "dump_methods": [
+          {
+            "namespace": "form",
+            "name": "DrawObj",
+            "typedef_index": 3928,
+            "line_start": 275454,
+            "line_end": 276781,
+            "c_symbol": "form_GameForm__DrawObj",
+            "signature": "public void DrawObj(Graphics g)",
+            "rva": "0xE173C8",
+            "rva_int": 14775240,
+            "line": 276732,
+            "source": "game-dev-story-mod_Dumped/dump.cs"
+          }
+        ],
+        "script_methods": [
+          {
+            "address": 14775240,
+            "address_hex": "0xE173C8",
+            "decompiler_address": "0xF173C8",
+            "name": "form.GameForm$$DrawObj",
+            "signature": "void form_GameForm__DrawObj (form_GameForm_o* __this, kairo_unity_ui_Graphics_o* g, const MethodInfo* method);",
+            "type_signature": "viii"
+          }
+        ],
+        "c_definitions": [
+          {
+            "symbol": "form_GameForm__DrawObj",
+            "occurrence": 1,
+            "status": "recovered_c_function",
+            "line_start": 15847,
+            "line_end": 17616,
+            "line_count": 1770,
+            "address": null,
+            "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+          }
+        ],
+        "assembly_fallback": null,
+        "assembly_call_targets": null,
+        "inventory_reason": "Restore room/object records, furniture relations, coordinate placement and draw order.",
+        "evidence_policy": "C0 records provenance and bounded scope; it does not close actor semantics"
+      },
+      {
+        "symbol": "form_GameForm__CallHikkosi",
+        "area": "scene_actor_bridge",
+        "role": "room initialization caller that reaches CallSyain/AddTarget",
+        "priority": "P1",
+        "semantic_status": "bounded_scene_dependency_only",
+        "source_status": "categorized_c",
+        "dump_methods": [
+          {
+            "namespace": "form",
+            "name": "CallHikkosi",
+            "typedef_index": 3928,
+            "line_start": 275454,
+            "line_end": 276781,
+            "c_symbol": "form_GameForm__CallHikkosi",
+            "signature": "public void CallHikkosi(int TOffice, int TMode, bool isLoad = False)",
+            "rva": "0xE33E9C",
+            "rva_int": 14892700,
+            "line": 276483,
+            "source": "game-dev-story-mod_Dumped/dump.cs"
+          }
+        ],
+        "script_methods": [
+          {
+            "address": 14892700,
+            "address_hex": "0xE33E9C",
+            "decompiler_address": "0xF33E9C",
+            "name": "form.GameForm$$CallHikkosi",
+            "signature": "void form_GameForm__CallHikkosi (form_GameForm_o* __this, int32_t TOffice, int32_t TMode, bool isLoad, const MethodInfo* method);",
+            "type_signature": "viiiii"
+          }
+        ],
+        "c_definitions": [
+          {
+            "symbol": "form_GameForm__CallHikkosi",
+            "occurrence": 1,
+            "status": "recovered_c_function",
+            "line_start": 25013,
+            "line_end": 25699,
+            "line_count": 687,
+            "address": null,
+            "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+          }
+        ],
+        "assembly_fallback": null,
+        "assembly_call_targets": null,
+        "inventory_reason": "Restore room/object records, furniture relations, coordinate placement and draw order.",
+        "evidence_policy": "C0 records provenance and bounded scope; it does not close actor semantics"
+      },
+      {
+        "symbol": "form_GameForm__ProcessEvent",
+        "area": "event_boundary",
+        "role": "input/event boundary; no actor state claim from this C0 index",
+        "priority": "P1",
+        "semantic_status": "scope_boundary_only",
+        "source_status": "categorized_c",
+        "dump_methods": [
+          {
+            "namespace": "form",
+            "name": "ProcessEvent",
+            "typedef_index": 3928,
+            "line_start": 275454,
+            "line_end": 276781,
+            "c_symbol": "form_GameForm__ProcessEvent",
+            "signature": "public void ProcessEvent(int type, int param)",
+            "rva": "0xE1B2C4",
+            "rva_int": 14791364,
+            "line": 276699,
+            "source": "game-dev-story-mod_Dumped/dump.cs"
+          }
+        ],
+        "script_methods": [
+          {
+            "address": 14791364,
+            "address_hex": "0xE1B2C4",
+            "decompiler_address": "0xF1B2C4",
+            "name": "form.GameForm$$ProcessEvent",
+            "signature": "void form_GameForm__ProcessEvent (form_GameForm_o* __this, int32_t type, int32_t param, const MethodInfo* method);",
+            "type_signature": "viiii"
+          }
+        ],
+        "c_definitions": [
+          {
+            "symbol": "form_GameForm__ProcessEvent",
+            "occurrence": 1,
+            "status": "recovered_c_function",
+            "line_start": 18536,
+            "line_end": 19166,
+            "line_count": 631,
+            "address": null,
+            "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+          }
+        ],
+        "assembly_fallback": null,
+        "assembly_call_targets": null,
+        "inventory_reason": "Translate only branches that mutate actor, dialogue, bubble, office object or Agent-facing lifecycle state.",
+        "evidence_policy": "C0 records provenance and bounded scope; it does not close actor semantics"
+      }
+    ],
+    "field_groups": {
+      "identity_binding": [
+        "HumanEnabled",
+        "HumanObjec",
+        "HumanSyain",
+        "HumanSyurui",
+        "HumanVisitor"
+      ],
+      "position": [
+        "HumanX",
+        "HumanY",
+        "HumanPX",
+        "HumanPY"
+      ],
+      "target_points": [
+        "TargetX",
+        "TargetY",
+        "HumanNowPoint",
+        "HumanGoalPoint"
+      ],
+      "state_timing": [
+        "HumanMode",
+        "HumanTime",
+        "HumanStop",
+        "HumanWalkLong",
+        "HumanSitChair",
+        "HumanReaction",
+        "HumanWait",
+        "HumanState",
+        "HumanAnime"
+      ],
+      "composition": [
+        "HumanFaceG",
+        "HumanBodyG",
+        "HumanDegree",
+        "HumanFukiIndex",
+        "HumanFukiTime"
+      ],
+      "interaction_relations": [
+        "HumanMeetMode",
+        "HumanMeetSyain",
+        "HumanRequestMax",
+        "HumanBallTime",
+        "HumanBallMode",
+        "HumanBallIndex",
+        "HumanBallNumber",
+        "HumanDevProcess",
+        "DeskSyain",
+        "DeskObjec",
+        "ChairMainObjec",
+        "ChairSubObjec",
+        "PCObjec",
+        "DeskZahyou"
+      ]
+    },
+    "field_map": {
+      "HumanEnabled": {
+        "name": "HumanEnabled",
+        "declaration": "internal static int[] HumanEnabled;",
+        "offset": "0xe30",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276082,
+        "status": "verified_dump_field_declaration",
+        "group": "identity_binding",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 4,
+          "form_GameForm__MainProcess": 4
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27440,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe30"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27448,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe30"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27587,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe30"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27869,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe30"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 1400,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe30"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7868,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe30"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 11234,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe30"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 14347,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe30"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanObjec": {
+        "name": "HumanObjec",
+        "declaration": "internal static int[] HumanObjec;",
+        "offset": "0xe40",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276084,
+        "status": "verified_dump_field_declaration",
+        "group": "identity_binding",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 2,
+          "form_GameForm__MainProcess": 6
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27582,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27861,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8672,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8731,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8786,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9055,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9148,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9165,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe40"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanSyain": {
+        "name": "HumanSyain",
+        "declaration": "internal static int[] HumanSyain;",
+        "offset": "0xe50",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276086,
+        "status": "verified_dump_field_declaration",
+        "group": "identity_binding",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27565,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe50"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7720,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe50"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7737,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe50"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7749,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe50"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7761,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe50"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9762,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe50"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9775,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe50"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9912,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe50"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanSyurui": {
+        "name": "HumanSyurui",
+        "declaration": "internal static int[] HumanSyurui;",
+        "offset": "0xe58",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276087,
+        "status": "verified_dump_field_declaration",
+        "group": "identity_binding",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 4,
+        "offset_reference_functions": {
+          "form_GameForm__CallHikkosi": 1,
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 2
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27570,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe58"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7945,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe58"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12399,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe58"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25580,
+            "function": "form_GameForm__CallHikkosi",
+            "function_occurrence": 1,
+            "needle": "0xe58"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanVisitor": {
+        "name": "HumanVisitor",
+        "declaration": "internal static int[] HumanVisitor;",
+        "offset": "0xe60",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276088,
+        "status": "verified_dump_field_declaration",
+        "group": "identity_binding",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 3,
+        "offset_reference_functions": {
+          "form_GameForm__CallHikkosi": 2,
+          "form_GameForm__MainProcess": 1
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 13866,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe60"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25168,
+            "function": "form_GameForm__CallHikkosi",
+            "function_occurrence": 1,
+            "needle": "0xe60"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25169,
+            "function": "form_GameForm__CallHikkosi",
+            "function_occurrence": 1,
+            "needle": "0xe60"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanX": {
+        "name": "HumanX",
+        "declaration": "internal static int[] HumanX;",
+        "offset": "0xf10",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276110,
+        "status": "verified_dump_field_declaration",
+        "group": "position",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__MainProcess": 7,
+          "form_GameForm__NextTarget": 1
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27954,
+            "function": "form_GameForm__NextTarget",
+            "function_occurrence": 1,
+            "needle": "0xf10"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8169,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf10"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8274,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf10"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8300,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf10"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8457,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf10"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8580,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf10"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8627,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf10"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8875,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf10"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanY": {
+        "name": "HumanY",
+        "declaration": "internal static int[] HumanY;",
+        "offset": "0xf18",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276111,
+        "status": "verified_dump_field_declaration",
+        "group": "position",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__MainProcess": 7,
+          "form_GameForm__NextTarget": 1
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27962,
+            "function": "form_GameForm__NextTarget",
+            "function_occurrence": 1,
+            "needle": "0xf18"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8173,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf18"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8278,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf18"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8305,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf18"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8461,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf18"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8590,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf18"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8613,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf18"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8631,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf18"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanPX": {
+        "name": "HumanPX",
+        "declaration": "internal static int[] HumanPX;",
+        "offset": "0xf20",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276112,
+        "status": "verified_dump_field_declaration",
+        "group": "position",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__MainProcess": 7,
+          "form_GameForm__NextTarget": 1
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27976,
+            "function": "form_GameForm__NextTarget",
+            "function_occurrence": 1,
+            "needle": "0xf20"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8176,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf20"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8281,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf20"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8308,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf20"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8464,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf20"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8604,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf20"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8634,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf20"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9109,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf20"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanPY": {
+        "name": "HumanPY",
+        "declaration": "internal static int[] HumanPY;",
+        "offset": "0xf28",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276113,
+        "status": "verified_dump_field_declaration",
+        "group": "position",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__MainProcess": 7,
+          "form_GameForm__NextTarget": 1
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27984,
+            "function": "form_GameForm__NextTarget",
+            "function_occurrence": 1,
+            "needle": "0xf28"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8179,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf28"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8284,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf28"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8311,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf28"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8467,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf28"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8610,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf28"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8637,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf28"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9117,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf28"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "TargetX": {
+        "name": "TargetX",
+        "declaration": "internal static int[] TargetX;",
+        "offset": "0x310",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275663,
+        "status": "verified_dump_field_declaration",
+        "group": "target_points",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 6,
+        "offset_reference_functions": {
+          "form_GameForm__AddTarget": 1,
+          "form_GameForm__CallHikkosi": 3,
+          "form_GameForm__NextTarget": 2
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27951,
+            "function": "form_GameForm__NextTarget",
+            "function_occurrence": 1,
+            "needle": "0x310"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27973,
+            "function": "form_GameForm__NextTarget",
+            "function_occurrence": 1,
+            "needle": "0x310"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 29566,
+            "function": "form_GameForm__AddTarget",
+            "function_occurrence": 1,
+            "needle": "0x310"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25085,
+            "function": "form_GameForm__CallHikkosi",
+            "function_occurrence": 1,
+            "needle": "0x310"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25086,
+            "function": "form_GameForm__CallHikkosi",
+            "function_occurrence": 1,
+            "needle": "0x310"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25088,
+            "function": "form_GameForm__CallHikkosi",
+            "function_occurrence": 1,
+            "needle": "0x310"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "TargetY": {
+        "name": "TargetY",
+        "declaration": "internal static int[] TargetY;",
+        "offset": "0x318",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275664,
+        "status": "verified_dump_field_declaration",
+        "group": "target_points",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 5,
+        "offset_reference_functions": {
+          "form_GameForm__AddTarget": 1,
+          "form_GameForm__CallHikkosi": 2,
+          "form_GameForm__NextTarget": 2
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27959,
+            "function": "form_GameForm__NextTarget",
+            "function_occurrence": 1,
+            "needle": "0x318"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27981,
+            "function": "form_GameForm__NextTarget",
+            "function_occurrence": 1,
+            "needle": "0x318"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 29570,
+            "function": "form_GameForm__AddTarget",
+            "function_occurrence": 1,
+            "needle": "0x318"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25087,
+            "function": "form_GameForm__CallHikkosi",
+            "function_occurrence": 1,
+            "needle": "0x318"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25091,
+            "function": "form_GameForm__CallHikkosi",
+            "function_occurrence": 1,
+            "needle": "0x318"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanNowPoint": {
+        "name": "HumanNowPoint",
+        "declaration": "internal static int[] HumanNowPoint;",
+        "offset": "0xeb0",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276098,
+        "status": "verified_dump_field_declaration",
+        "group": "target_points",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27758,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xeb0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7662,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7690,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7789,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8038,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8046,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8327,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9089,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb0"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanGoalPoint": {
+        "name": "HumanGoalPoint",
+        "declaration": "internal static int[] HumanGoalPoint;",
+        "offset": "0xeb8",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276099,
+        "status": "verified_dump_field_declaration",
+        "group": "target_points",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27765,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xeb8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7794,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7922,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7964,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7986,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8079,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8125,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8330,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xeb8"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanMode": {
+        "name": "HumanMode",
+        "declaration": "internal static int[] HumanMode;",
+        "offset": "0xe78",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276091,
+        "status": "verified_dump_field_declaration",
+        "group": "state_timing",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27612,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe78"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8001,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe78"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8161,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe78"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8246,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe78"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8253,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe78"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8384,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe78"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8391,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe78"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8418,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe78"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanTime": {
+        "name": "HumanTime",
+        "declaration": "internal static int[] HumanTime;",
+        "offset": "0xe80",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276092,
+        "status": "verified_dump_field_declaration",
+        "group": "state_timing",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27622,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe80"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7934,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe80"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8013,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe80"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8165,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe80"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8396,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe80"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8430,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe80"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9208,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe80"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9241,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe80"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanStop": {
+        "name": "HumanStop",
+        "declaration": "internal static int[] HumanStop;",
+        "offset": "0xe88",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276093,
+        "status": "verified_dump_field_declaration",
+        "group": "state_timing",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27607,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe88"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7781,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe88"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7918,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe88"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8017,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe88"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8029,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe88"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8108,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe88"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8219,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe88"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9080,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe88"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanWalkLong": {
+        "name": "HumanWalkLong",
+        "declaration": "internal static int[] HumanWalkLong;",
+        "offset": "0xe90",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276094,
+        "status": "verified_dump_field_declaration",
+        "group": "state_timing",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27617,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe90"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7930,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe90"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8009,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe90"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8104,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe90"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8477,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe90"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9663,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe90"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 11285,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe90"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12391,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe90"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanSitChair": {
+        "name": "HumanSitChair",
+        "declaration": "internal static int[] HumanSitChair;",
+        "offset": "0xe98",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276095,
+        "status": "verified_dump_field_declaration",
+        "group": "state_timing",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27667,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe98"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8237,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe98"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9299,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe98"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12897,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe98"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12904,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe98"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12937,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe98"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12951,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe98"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12970,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe98"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanReaction": {
+        "name": "HumanReaction",
+        "declaration": "internal static int[] HumanReaction;",
+        "offset": "0xea0",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276096,
+        "status": "verified_dump_field_declaration",
+        "group": "state_timing",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 6,
+        "offset_reference_functions": {
+          "form_GameForm__CallHikkosi": 1,
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 4
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27674,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xea0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12606,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xea0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12637,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xea0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 14219,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xea0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 14250,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xea0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25608,
+            "function": "form_GameForm__CallHikkosi",
+            "function_occurrence": 1,
+            "needle": "0xea0"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanWait": {
+        "name": "HumanWait",
+        "declaration": "internal static int[] HumanWait;",
+        "offset": "0xea8",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276097,
+        "status": "verified_dump_field_declaration",
+        "group": "state_timing",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 7,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 6
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27682,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xea8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7877,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xea8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7884,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xea8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9803,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xea8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9939,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xea8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 11555,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xea8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 11607,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xea8"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanState": {
+        "name": "HumanState",
+        "declaration": "internal static int[] HumanState;",
+        "offset": "0xf48",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276117,
+        "status": "verified_dump_field_declaration",
+        "group": "state_timing",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 7,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 6
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27634,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xf48"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8228,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf48"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8264,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf48"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9323,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf48"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9329,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf48"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9342,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf48"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9350,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf48"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanAnime": {
+        "name": "HumanAnime",
+        "declaration": "internal static int[] HumanAnime;",
+        "offset": "0xf40",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276116,
+        "status": "verified_dump_field_declaration",
+        "group": "state_timing",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27628,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xf40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8698,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8710,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8757,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8791,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 11676,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 11691,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf40"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 11698,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf40"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanFaceG": {
+        "name": "HumanFaceG",
+        "declaration": "internal static int[] HumanFaceG;",
+        "offset": "0xf30",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276114,
+        "status": "verified_dump_field_declaration",
+        "group": "composition",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 3,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__DrawObj": 1,
+          "form_GameForm__MainProcess": 1
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27594,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xf30"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7764,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf30"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 16316,
+            "function": "form_GameForm__DrawObj",
+            "function_occurrence": 1,
+            "needle": "0xf30"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanBodyG": {
+        "name": "HumanBodyG",
+        "declaration": "internal static int[] HumanBodyG;",
+        "offset": "0xf38",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276115,
+        "status": "verified_dump_field_declaration",
+        "group": "composition",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 5,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__DrawObj": 3,
+          "form_GameForm__MainProcess": 1
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27602,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xf38"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7777,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf38"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 16240,
+            "function": "form_GameForm__DrawObj",
+            "function_occurrence": 1,
+            "needle": "0xf38"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 16241,
+            "function": "form_GameForm__DrawObj",
+            "function_occurrence": 1,
+            "needle": "0xf38"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 16319,
+            "function": "form_GameForm__DrawObj",
+            "function_occurrence": 1,
+            "needle": "0xf38"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanDegree": {
+        "name": "HumanDegree",
+        "declaration": "internal static int[] HumanDegree;",
+        "offset": "0xe38",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276083,
+        "status": "verified_dump_field_declaration",
+        "group": "composition",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__MainProcess": 8
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8490,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe38"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8500,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe38"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8521,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe38"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8572,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe38"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8738,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe38"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8768,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe38"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8809,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe38"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9143,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe38"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanFukiIndex": {
+        "name": "HumanFukiIndex",
+        "declaration": "internal static int[] HumanFukiIndex;",
+        "offset": "0xe70",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276090,
+        "status": "verified_dump_field_declaration",
+        "group": "composition",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 1,
+        "offset_reference_functions": {
+          "form_GameForm__DrawObj": 1
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 16193,
+            "function": "form_GameForm__DrawObj",
+            "function_occurrence": 1,
+            "needle": "0xe70"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanFukiTime": {
+        "name": "HumanFukiTime",
+        "declaration": "internal static int[] HumanFukiTime;",
+        "offset": "0xe68",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276089,
+        "status": "verified_dump_field_declaration",
+        "group": "composition",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__DrawObj": 3,
+          "form_GameForm__MainProcess": 4
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27873,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xe68"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 1408,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe68"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 1416,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe68"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8112,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe68"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9671,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xe68"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 16183,
+            "function": "form_GameForm__DrawObj",
+            "function_occurrence": 1,
+            "needle": "0xe68"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 16227,
+            "function": "form_GameForm__DrawObj",
+            "function_occurrence": 1,
+            "needle": "0xe68"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 16228,
+            "function": "form_GameForm__DrawObj",
+            "function_occurrence": 1,
+            "needle": "0xe68"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanMeetMode": {
+        "name": "HumanMeetMode",
+        "declaration": "internal static int[] HumanMeetMode;",
+        "offset": "0xed0",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276102,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27689,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xed0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7702,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7785,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7926,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7954,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8005,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8069,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8116,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed0"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanMeetSyain": {
+        "name": "HumanMeetSyain",
+        "declaration": "internal static int[] HumanMeetSyain;",
+        "offset": "0xed8",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276103,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27703,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xed8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8090,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9675,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 11942,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12049,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12251,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12585,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12833,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xed8"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanRequestMax": {
+        "name": "HumanRequestMax",
+        "declaration": "internal static int[] HumanRequestMax;",
+        "offset": "0xee0",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276104,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallHikkosi": 1,
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 6
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27696,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xee0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9513,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9655,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9691,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 14459,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 14469,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 14530,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25617,
+            "function": "form_GameForm__CallHikkosi",
+            "function_occurrence": 1,
+            "needle": "0xee0"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanBallTime": {
+        "name": "HumanBallTime",
+        "declaration": "internal static int[] HumanBallTime;",
+        "offset": "0xee8",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276105,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27877,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xee8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7905,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8056,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8654,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8661,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9494,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9886,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9960,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xee8"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanBallMode": {
+        "name": "HumanBallMode",
+        "declaration": "internal static int[] HumanBallMode;",
+        "offset": "0xef0",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276106,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__MainProcess": 8
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9895,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10069,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10350,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10383,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10399,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10427,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10443,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef0"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10463,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef0"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanBallIndex": {
+        "name": "HumanBallIndex",
+        "declaration": "internal static int[] HumanBallIndex;",
+        "offset": "0xef8",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276107,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__MainProcess": 8
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10065,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10132,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10151,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10202,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10293,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10328,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10691,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef8"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10704,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xef8"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanBallNumber": {
+        "name": "HumanBallNumber",
+        "declaration": "internal static int[] HumanBallNumber;",
+        "offset": "0xf00",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276108,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__MainProcess": 8
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10073,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf00"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10354,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf00"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10363,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf00"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10387,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf00"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10413,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf00"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10431,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf00"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10450,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf00"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10467,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf00"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "HumanDevProcess": {
+        "name": "HumanDevProcess",
+        "declaration": "internal static int[] HumanDevProcess;",
+        "offset": "0xf08",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276109,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__CallSyain": 1,
+          "form_GameForm__MainProcess": 7
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27660,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0xf08"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9746,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf08"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9930,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf08"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10029,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf08"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10047,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf08"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10056,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf08"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10096,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf08"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 10115,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0xf08"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "DeskSyain": {
+        "name": "DeskSyain",
+        "declaration": "public static int[] DeskSyain;",
+        "offset": "0x450",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275712,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 3,
+        "offset_reference_functions": {
+          "form_GameForm__CallHikkosi": 2,
+          "form_GameForm__CallSyain": 1
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27856,
+            "function": "form_GameForm__CallSyain",
+            "function_occurrence": 1,
+            "needle": "0x450"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25509,
+            "function": "form_GameForm__CallHikkosi",
+            "function_occurrence": 1,
+            "needle": "0x450"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25524,
+            "function": "form_GameForm__CallHikkosi",
+            "function_occurrence": 1,
+            "needle": "0x450"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "DeskObjec": {
+        "name": "DeskObjec",
+        "declaration": "internal static int[] DeskObjec;",
+        "offset": "0x458",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275713,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 0,
+        "offset_reference_functions": {},
+        "offset_reference_samples": [],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "ChairMainObjec": {
+        "name": "ChairMainObjec",
+        "declaration": "internal static int[] ChairMainObjec;",
+        "offset": "0x460",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275714,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 8,
+        "offset_reference_functions": {
+          "form_GameForm__MainProcess": 8
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8082,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x460"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 8361,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x460"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 9427,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x460"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12527,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x460"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12552,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x460"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 12974,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x460"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 13011,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x460"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 13048,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x460"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "ChairSubObjec": {
+        "name": "ChairSubObjec",
+        "declaration": "internal static int[] ChairSubObjec;",
+        "offset": "0x468",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275715,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 6,
+        "offset_reference_functions": {
+          "form_GameForm__MainProcess": 6
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 7847,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x468"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 13236,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x468"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 13289,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x468"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 13342,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x468"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 13408,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x468"
+          },
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 14401,
+            "function": "form_GameForm__MainProcess",
+            "function_occurrence": 1,
+            "needle": "0x468"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "PCObjec": {
+        "name": "PCObjec",
+        "declaration": "internal static int[] PCObjec;",
+        "offset": "0x470",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275716,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 1,
+        "offset_reference_functions": {
+          "form_GameForm__DrawObj": 1
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 16866,
+            "function": "form_GameForm__DrawObj",
+            "function_occurrence": 1,
+            "needle": "0x470"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      },
+      "DeskZahyou": {
+        "name": "DeskZahyou",
+        "declaration": "internal static readonly int[][][] DeskZahyou;",
+        "offset": "0x478",
+        "source": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275717,
+        "status": "verified_dump_field_declaration",
+        "group": "interaction_relations",
+        "semantic_status": "field_declared_offset_references_only",
+        "offset_reference_count_in_scoped_functions": 1,
+        "offset_reference_functions": {
+          "form_GameForm__DrawObj": 1
+        },
+        "offset_reference_samples": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 17009,
+            "function": "form_GameForm__DrawObj",
+            "function_occurrence": 1,
+            "needle": "0x478"
+          }
+        ],
+        "semantic_policy": "do_not_assign Agent meaning from field name or offset alone"
+      }
+    }
+  },
+  "call_graph_edges": [
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__AddObjec",
+      "count": 7,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__AddTarget",
+      "count": 81,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__CallChairChange",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__CallDeskChange",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__CallPCChange",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__CallSyain",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__NextTarget",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__Print",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallSyain",
+      "callee": "form_GameForm__AddObjec",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 27392
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallSyain",
+      "callee": "form_GameForm__NextTarget",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 27392
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawHuman",
+      "callee": "form_GameForm__DrawString",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawHuman",
+      "callee": "kairo_unity_ui_Graphics__DrawImage",
+      "count": 6,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawHuman",
+      "callee": "kairo_unity_ui_Graphics__GetColorOfRGB",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawHuman",
+      "callee": "kairo_unity_ui_Graphics__SetColor",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "form_GameForm__DrawCeoDesk",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "form_GameForm__DrawChair",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "form_GameForm__DrawDesk",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "form_GameForm__DrawFukidashi",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "form_GameForm__DrawHuman",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "form_GameForm__DrawReception",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "kairo_unity_ui_Graphics__DrawImage",
+      "count": 10,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "kairo_unity_ui_Graphics__GetOriginX",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "main_AppData__GetNumLen",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "surface_GameView__GetGameWidth",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__AddEvent",
+      "count": 55,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__AddKaiwa",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__AddMessage",
+      "count": 6,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__Atan2",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__AutoSave",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__Calcu",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__CallBallEnd",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__CallFuki",
+      "count": 11,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__CallNouryoku",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__CallZyuchuList",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__Ch_extraSeTime",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__CommonCode",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__Distan",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__DoEvent",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__EventGChange",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__NaiyoOK",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__NextPoint",
+      "count": 7,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__NextTarget",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__ParaData",
+      "count": 8,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__Print",
+      "count": 9,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__Rndm",
+      "count": 77,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__SoftKeyChange",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__SoundPlay",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__SubKeyEvent",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__ZyanruOK",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_MyFormBase__LT",
+      "count": 9,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_MyFormBase__UNI",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "kairo_unity_ui_Canvas__BackLight",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "kairo_unity_util_StringUtil__Replace",
+      "count": 6,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "main_Anim__Init",
+      "count": 14,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__NextPoint",
+      "callee": "form_GameForm__NextTarget",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 49358
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "form_GameForm__SaveSystemData",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "form_GameForm__SoftKeyChange",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "form_GameForm__SubKeyEvent",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "kairo_unity_ui_Canvas__GetInstance",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "kairo_unity_ui_Canvas__UpdateSoftLabel",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "surface_GamePad__GetInstance",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "surface_GameView__ClearMarker",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__DrawHuman",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___update",
+      "callee": "form_GameForm__MainProcess",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18282
+        }
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "boundary_id": "actor_spawn",
+      "functions": [
+        "form_GameForm__AddSyain",
+        "form_GameForm__CallSyain"
+      ],
+      "status": "ready_for_bounded_c1_trace",
+      "next_action": "trace source employee fields and initial Human* writes"
+    },
+    {
+      "boundary_id": "actor_target",
+      "functions": [
+        "form_GameForm__AddTarget",
+        "form_GameForm__NextTarget"
+      ],
+      "status": "field_flow_ready_space_semantics_open",
+      "next_action": "separate target point, current position, previous position, and coordinate spaces"
+    },
+    {
+      "boundary_id": "actor_tick",
+      "functions": [
+        "form_GameForm__MainProcess",
+        "form_GameForm__DoEvent"
+      ],
+      "status": "bounded_slice_required",
+      "next_action": "slice only branches that read/write actor state, position, target, or timer"
+    },
+    {
+      "boundary_id": "actor_draw",
+      "functions": [
+        "form_GameForm__DrawObj",
+        "form_GameForm__DrawHuman"
+      ],
+      "status": "dispatch_and_composition_boundary_ready",
+      "next_action": "map actor selectors to draw command without semantic animation claim"
+    }
+  ],
+  "summary": {
+    "function_count": 10,
+    "function_with_recovered_c": 9,
+    "function_assembly_fallback_only": 1,
+    "field_count": 41,
+    "call_graph_edge_count": 64,
+    "semantic_status": "actor_provenance_indexed_semantic_state_movement_open"
+  }
+}

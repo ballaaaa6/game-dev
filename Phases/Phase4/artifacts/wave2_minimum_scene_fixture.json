@@ -1,0 +1,140 @@
+{
+  "schema_version": "wave2-minimum-scene-fixture-v1",
+  "phase": "Phase4",
+  "wave": "Wave2",
+  "stage": "W2-C7-minimum-scene-gate",
+  "fixture_id": "office_floor0_bounded_object_and_dispatch_probe",
+  "scope": "minimum Wave 2 scene contract; not a final pixel snapshot or full room reconstruction",
+  "room": {
+    "floor": {
+      "path": "office/floor0.png",
+      "asset_id": "asset.office.floor0.png",
+      "sha256": "cfa23363fe9eb7bc41481b6325b46dc192ac301f73ab94a641b8e83bc7fc5b83",
+      "dimensions": {
+        "width": 600,
+        "height": 800
+      },
+      "status": "asset_verified"
+    },
+    "seb": {
+      "path": "office/floor0.seb",
+      "sha256": "f5345450808c61ade004594ac6498fbc58aace526976bff06a9025853174fd15",
+      "format": "legacy_ten_short_record",
+      "group_count": 1,
+      "tail_shortfall_bytes": 4,
+      "status": "truncated_final_record",
+      "confidence": "partial"
+    },
+    "placement_source": "DeskImgData",
+    "placement_index_field": "KaishaOffice"
+  },
+  "coordinate": {
+    "fixture_id": "coordinate_center_origin_800x600",
+    "graphics_origin": {
+      "x": 280,
+      "y": 180
+    },
+    "object_anchor_formula": {
+      "x": "ObjecX + ObjecZX",
+      "y": "ObjecY + ObjecZY",
+      "crop": [
+        "ObjecCX",
+        "ObjecCY",
+        "ObjecWX",
+        "ObjecWY"
+      ],
+      "status": "verified_for_observed_human_and_reception_callsites"
+    }
+  },
+  "objects": {
+    "bounded_placement_record": {
+      "record_id": "callhikkosi_param2_0_office_object_0",
+      "origin": "form_GameForm__CallHikkosi bounded first DeskImgData-backed AddObjec call",
+      "ObjecSyurui": "selected_desk_record_plus_5",
+      "ObjecX": 46,
+      "ObjecY": 61,
+      "ObjecCX": 100,
+      "ObjecCY": 0,
+      "ObjecWX": 33,
+      "ObjecWY": 46,
+      "ObjecSY": 32,
+      "ObjecZX": 0,
+      "ObjecZY": 0,
+      "ObjecEnabled": 1,
+      "ObjecVisible": 1,
+      "candidate_sort_key": 93,
+      "object_type_status": "symbolic_only_selected_desk_record_plus_5"
+    },
+    "known_dispatch_probe": {
+      "record_id": "known_reception_dispatch_probe",
+      "purpose": "exercise a verified renderer dispatch and anchor/crop argument flow without claiming CallHikkosi creates reception",
+      "ObjecSyurui": 7,
+      "ObjecX": 46,
+      "ObjecY": 61,
+      "ObjecCX": 100,
+      "ObjecCY": 0,
+      "ObjecWX": 33,
+      "ObjecWY": 46,
+      "ObjecZX": 0,
+      "ObjecZY": 0,
+      "renderer": "form.GameForm.DrawReception",
+      "draw_command": {
+        "space": "graphics-local-with-current-origin",
+        "x": 46,
+        "y": 61,
+        "crop": [
+          100,
+          0,
+          33,
+          46
+        ],
+        "origin_reference": {
+          "x": 280,
+          "y": 180
+        }
+      },
+      "status": "verified_dispatch_probe_not_room_object_claim"
+    }
+  },
+  "draw_order": {
+    "neutral_fixture_id": "draw_order_compare_and_swap_3_objects",
+    "bounded_record_candidate_key": 93,
+    "semantic_status": "sort_probe_only_depth_not_closed"
+  },
+  "asset_and_object_contracts": {
+    "room_contract": "wave2_room_contract.json",
+    "scene_contract": "scene_contract.json",
+    "furniture_contract": "wave2_furniture_contract.json"
+  },
+  "evidence": [
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 16674,
+      "needle": "form_GameForm__DrawReception",
+      "function": "form_GameForm__DrawObj"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 25125,
+      "needle": "form_GameForm__AddObjec",
+      "function": "form_GameForm__CallHikkosi"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 25129,
+      "needle": "*(int *)(lVar21 + (long)(int)uVar22 * 4 + 0x20) = (int)uVar9;",
+      "function": "form_GameForm__CallHikkosi"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275648,
+      "needle": "ObjecX; // 0x298"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275654,
+      "needle": "ObjecZX; // 0x2C8"
+    }
+  ],
+  "status": "minimum_scene_contract_ready_with_symbolic_room_object_type"
+}

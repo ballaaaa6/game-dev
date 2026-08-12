@@ -1,0 +1,63 @@
+{
+  "schema_version": "wave3-c1-build-manifest-v1",
+  "phase": "Phase4",
+  "wave": "Wave3",
+  "stage": "W3-C1-bounded-identity-spawn",
+  "source_roots_read_only": true,
+  "address_namespace": {
+    "export_to_raw_delta": "-0x100000",
+    "status": "verified_inherited_from_wave1_wave2"
+  },
+  "source_hashes": {
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c": {
+      "sha256": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
+      "bytes": 4974769
+    },
+    "game-dev-story-mod_Dumped/dump.cs": {
+      "sha256": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
+      "bytes": 12013789
+    },
+    "Phases/Phase4/artifacts/function_inventory.json": {
+      "sha256": "316b8d86204f1105d212d5b87f0b3f93c8c3732944f82f280e6efc9aa2f56ae7",
+      "bytes": 774313
+    },
+    "Phases/Phase4/artifacts/office_runtime_call_graph.json": {
+      "sha256": "07b7a18537641f12f0ce1b4ec630844ca1cfd38f7a7270f58a5f761c835522fa",
+      "bytes": 151540
+    },
+    "Phases/Phase4/artifacts/wave3_actor_function_map.json": {
+      "sha256": "a410be355c05e5468378d1d1c81bd272e1774c6d3f953b9bff38a4fc572c6f3f",
+      "bytes": 149053
+    },
+    "Phases/Phase4/artifacts/wave3_gap_register.json": {
+      "sha256": "9fa907f950bd12e004850538a297f47616edcf1f1068fe47aae47d80a351c819",
+      "bytes": 7984
+    },
+    "Phases/Phase4/artifacts/wave3_build_manifest.json": {
+      "sha256": "c6ef53c8b5fce55ed6be216ff17e0524b6bca30f3a5acf96e74071d99d2a62f6",
+      "bytes": 3159
+    },
+    "Phases/Phase4/artifacts/wave2_wave3_movement_interface.json": {
+      "sha256": "77caa70bd87917a8804b26c9201e3e52b4702cb8df947f15599e15ff556161f0",
+      "bytes": 1578
+    }
+  },
+  "artifact_inputs": [
+    "Phases/Phase4/artifacts/wave3_actor_function_map.json",
+    "Phases/Phase4/artifacts/wave3_gap_register.json",
+    "Phases/Phase4/artifacts/wave3_build_manifest.json",
+    "Phases/Phase4/artifacts/wave2_wave3_movement_interface.json"
+  ],
+  "artifact_outputs": [
+    "Phases/Phase4/artifacts/wave3_actor_identity_contract.json",
+    "Phases/Phase4/artifacts/wave3_spawn_fixture.json",
+    "Phases/Phase4/artifacts/wave3_c1_build_manifest.json"
+  ],
+  "artifact_summary": {
+    "employee_parameter_count": 27,
+    "initial_actor_field_count": 21,
+    "failure_case_count": 3,
+    "semantic_status": "bounded_identity_spawn_only"
+  },
+  "status": "W3-C1-built_identity_spawn_contract_ready_for_state_slice"
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": "wave4-notification-contract-v1",
+  "phase": "Phase4",
+  "wave": "Wave4",
+  "stage": "W4-C6-message-notification-bridge",
+  "source_roots_read_only": true,
+  "fields": [
+    {
+      "field": "MessageText",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276234,
+        "needle": "MessageText;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    },
+    {
+      "field": "MessageTime",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276235,
+        "needle": "MessageTime;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    },
+    {
+      "field": "MessageMaxTime",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276236,
+        "needle": "MessageMaxTime;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    },
+    {
+      "field": "MessageGraph",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276237,
+        "needle": "MessageGraph;",
+        "status": "verified"
+      },
+      "status": "verified_declaration"
+    }
+  ],
+  "function": {
+    "symbol": "form_GameForm__AddMessage",
+    "overloads": [
+      {
+        "signature": "AddMessage(string TText)",
+        "default_graph": -1
+      },
+      {
+        "signature": "AddMessage(string TText, int TGraph)",
+        "graph_argument": "TGraph"
+      }
+    ],
+    "bounded_behavior": "scan MessageTime for first zero slot, write MessageText, set MessageTime and MessageMaxTime to 0x60, then write MessageGraph",
+    "status": "verified_bounded_queue_write",
+    "evidence": [
+      {
+        "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 42195,
+        "needle": "// Function: form_GameForm__AddMessage",
+        "status": "verified"
+      }
+    ]
+  },
+  "runtime_contract": {
+    "notification_record": [
+      "message_id",
+      "text_or_text_ref",
+      "graph_id",
+      "created_at",
+      "expires_at",
+      "status"
+    ],
+    "default_lifetime_raw": 96,
+    "default_lifetime_unit": "unknown",
+    "graph_semantics": "raw_graph_id_not_decoded",
+    "office_event_mapping": "adapter-only until source event consumer is traced",
+    "legacy_equivalence": false
+  },
+  "not_in_scope": [
+    "sales/ranking/news gameplay notifications",
+    "inferring graph meaning from numeric value",
+    "claiming raw 0x60 is milliseconds"
+  ],
+  "evidence": [
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 1875,
+      "needle": "form_GameForm__AddMessage",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276234,
+      "needle": "internal static string[] MessageText",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276236,
+      "needle": "internal static int[] MessageMaxTime",
+      "status": "verified"
+    }
+  ],
+  "status": "bounded_message_storage_and_partial_graph_render_ready_ttl_labels_audio_open"
+}

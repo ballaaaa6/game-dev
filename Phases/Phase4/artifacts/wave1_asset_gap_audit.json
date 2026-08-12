@@ -1,0 +1,180 @@
+{
+  "schema_version": "wave1-asset-gap-audit-v1",
+  "stage": "W1-C3-asset-and-index-audit",
+  "source_roots_read_only": true,
+  "audit_roots": [
+    "game-dev-story-mod_Sprites",
+    "game-dev-story-mod_Extracted"
+  ],
+  "manifest_audit": [
+    {
+      "manifest": "game-dev-story-mod_Sprites/game/img.inf",
+      "record_count": 123,
+      "missing_asset_count": 0,
+      "status": "asset_verified"
+    },
+    {
+      "manifest": "game-dev-story-mod_Sprites/office/img.inf",
+      "record_count": 146,
+      "missing_asset_count": 0,
+      "status": "asset_verified"
+    },
+    {
+      "manifest": "game-dev-story-mod_Sprites/load/img.inf",
+      "record_count": 1,
+      "missing_asset_count": 0,
+      "status": "asset_verified"
+    },
+    {
+      "manifest": "game-dev-story-mod_Sprites/office/seb.inf",
+      "record_count": 21,
+      "missing_asset_count": 0,
+      "status": "asset_verified"
+    }
+  ],
+  "img_list_join": {
+    "total_entries": 80,
+    "resolved_entries": 65,
+    "resolved_by_asset_basename": [
+      {
+        "selector_index": 41,
+        "literal": "floorCover.png",
+        "manifest_filename": "floorCover",
+        "asset_path": "game-dev-story-mod_Sprites/game/floorCover.png",
+        "status": "asset_verified"
+      }
+    ],
+    "unmatched_entries": [
+      {
+        "selector_index": 9,
+        "literal": "bold",
+        "status": "not_an_image_resource",
+        "reason": "no exact candidate in either audited root; string is a general UI/style token"
+      },
+      {
+        "selector_index": 25,
+        "literal": "change or control parameters change (was '{0}' but became '{1}'), ",
+        "status": "not_an_image_resource",
+        "reason": "localized/message text"
+      },
+      {
+        "selector_index": 26,
+        "literal": "dest",
+        "status": "not_an_image_resource",
+        "reason": "utility/property token with no exact asset candidate"
+      },
+      {
+        "selector_index": 35,
+        "literal": "eventCount",
+        "status": "not_an_image_resource",
+        "reason": "field/key-like token with no exact asset candidate"
+      },
+      {
+        "selector_index": 36,
+        "literal": "face1",
+        "status": "missing_from_current_extraction",
+        "reason": "face-like literal has no exact asset candidate; current extracted family is face_0..face_35"
+      },
+      {
+        "selector_index": 37,
+        "literal": "face2",
+        "status": "missing_from_current_extraction",
+        "reason": "face-like literal has no exact asset candidate; current extracted family is face_0..face_35"
+      },
+      {
+        "selector_index": 38,
+        "literal": "face_",
+        "status": "not_an_image_resource",
+        "reason": "prefix token rather than a complete filename"
+      },
+      {
+        "selector_index": 42,
+        "literal": "floralwhite",
+        "status": "not_an_image_resource",
+        "reason": "color/style token with no exact asset candidate"
+      },
+      {
+        "selector_index": 43,
+        "literal": "fullscreen",
+        "status": "not_an_image_resource",
+        "reason": "UI mode token with no exact asset candidate"
+      },
+      {
+        "selector_index": 72,
+        "literal": "has sent a friend request.",
+        "status": "not_an_image_resource",
+        "reason": "localized/message text"
+      },
+      {
+        "selector_index": 73,
+        "literal": "interopXmlElement",
+        "status": "not_an_image_resource",
+        "reason": "runtime/utility token with no exact asset candidate"
+      },
+      {
+        "selector_index": 74,
+        "literal": "joystick",
+        "status": "not_an_image_resource",
+        "reason": "UI/utility token with no exact asset candidate"
+      },
+      {
+        "selector_index": 76,
+        "literal": "major",
+        "status": "not_an_image_resource",
+        "reason": "text/style token with no exact asset candidate"
+      },
+      {
+        "selector_index": 77,
+        "literal": "peachpuff",
+        "status": "not_an_image_resource",
+        "reason": "color/style token with no exact asset candidate"
+      },
+      {
+        "selector_index": 79,
+        "literal": "tk",
+        "status": "not_an_image_resource",
+        "reason": "utility token with no exact asset candidate"
+      }
+    ]
+  },
+  "tface_40_41": {
+    "status": "index_space_mismatch",
+    "confidence": "high",
+    "current_asset_family": "face_0.png through face_35.png",
+    "imgFace_array_length": 36,
+    "direct_drawhuman_evidence": [
+      {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276585,
+        "value": "DrawHuman(..., int TFace, int TBody, int TMode)"
+      },
+      {
+        "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 41368,
+        "value": "DrawHuman direct path loads imgFace at offset 0x1150"
+      },
+      {
+        "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 41370,
+        "value": "direct path checks imgFace length <= param_5 before indexing"
+      },
+      {
+        "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 41463,
+        "value": "second direct path also loads imgFace at offset 0x1150"
+      }
+    ],
+    "interpretation": "TFace=40/41 cannot be direct zero-based indices into the 36-slot imgFace array on the guarded paths; they require an alternate selector namespace, a skipped/fallback branch, or a missing extraction artifact",
+    "next_action": "trace callers and branch conditions around DrawHuman before labeling 40/41 as missing assets"
+  },
+  "summary": {
+    "manifest_records_audited": 291,
+    "manifest_records_missing": 0,
+    "img_list_unmatched_count": 15,
+    "img_list_non_image_or_prefix_count": 13,
+    "img_list_missing_face_like_count": 2,
+    "tface_40_41_status": "index_space_mismatch",
+    "unclassified_unknown_count": 0,
+    "status": "asset_audit_complete_with_known_selector_gaps"
+  }
+}

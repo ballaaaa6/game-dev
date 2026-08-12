@@ -1,0 +1,312 @@
+{
+  "schema_version": "wave3-actor-movement-contract-v1",
+  "phase": "Phase4",
+  "wave": "Wave3",
+  "stage": "W3-C3-target-position-and-adapter-movement",
+  "source_roots_read_only": true,
+  "inputs": {
+    "actor_function_map": "Phases/Phase4/artifacts/wave3_actor_function_map.json",
+    "identity_contract": "Phases/Phase4/artifacts/wave3_actor_identity_contract.json",
+    "state_contract": "Phases/Phase4/artifacts/wave3_actor_state_contract.json",
+    "wave2_movement_interface": "Phases/Phase4/artifacts/wave2_wave3_movement_interface.json",
+    "wave2_scene_fixture": "Phases/Phase4/artifacts/wave2_minimum_scene_fixture.json"
+  },
+  "raw_field_snapshot": {
+    "TargetX": {
+      "offset": "0x310",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275663,
+        "needle": "TargetX; // 0x310"
+      },
+      "status": "verified_dump_field_declaration"
+    },
+    "TargetY": {
+      "offset": "0x318",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275664,
+        "needle": "TargetY; // 0x318"
+      },
+      "status": "verified_dump_field_declaration"
+    },
+    "HumanX": {
+      "offset": "0xf10",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276110,
+        "needle": "HumanX; // 0xf10"
+      },
+      "status": "verified_dump_field_declaration"
+    },
+    "HumanY": {
+      "offset": "0xf18",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276111,
+        "needle": "HumanY; // 0xf18"
+      },
+      "status": "verified_dump_field_declaration"
+    },
+    "HumanPX": {
+      "offset": "0xf20",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276112,
+        "needle": "HumanPX; // 0xf20"
+      },
+      "status": "verified_dump_field_declaration"
+    },
+    "HumanPY": {
+      "offset": "0xf28",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276113,
+        "needle": "HumanPY; // 0xf28"
+      },
+      "status": "verified_dump_field_declaration"
+    }
+  },
+  "raw_field_flow": {
+    "producer": {
+      "function": "form_GameForm__AddTarget",
+      "signature": "AddTarget(TIndex, TX, TY)",
+      "steps": [
+        {
+          "step": 1,
+          "operation": "write",
+          "raw_array": "TargetX",
+          "index": "TIndex / param_2",
+          "value": "TX / param_3",
+          "evidence": [
+            {
+              "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+              "line": 29566,
+              "function": "form_GameForm__AddTarget",
+              "needle": "0x310"
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "operation": "write",
+          "raw_array": "TargetY",
+          "index": "TIndex / param_2",
+          "value": "TY / param_4",
+          "evidence": [
+            {
+              "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+              "line": 29570,
+              "function": "form_GameForm__AddTarget",
+              "needle": "0x318"
+            }
+          ]
+        }
+      ],
+      "status": "verified_bounded_raw_writes"
+    },
+    "consumer": {
+      "function": "form_GameForm__NextTarget",
+      "signature": "NextTarget(TPos, THumanIndex, TMode)",
+      "steps": [
+        {
+          "step": 3,
+          "condition": "TMode == 0",
+          "operation": "copy",
+          "from": "TargetX[TPos]",
+          "to": "HumanX[THumanIndex]",
+          "evidence": [
+            {
+              "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+              "line": 27951,
+              "function": "form_GameForm__NextTarget",
+              "needle": "lVar4 = *(long *)(lVar3 + 0x310);"
+            },
+            {
+              "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+              "line": 27954,
+              "function": "form_GameForm__NextTarget",
+              "needle": "lVar5 = *(long *)(lVar3 + 0xf10);"
+            }
+          ]
+        },
+        {
+          "step": 4,
+          "condition": "TMode == 0",
+          "operation": "copy",
+          "from": "TargetY[TPos]",
+          "to": "HumanY[THumanIndex]",
+          "evidence": [
+            {
+              "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+              "line": 27959,
+              "function": "form_GameForm__NextTarget",
+              "needle": "lVar4 = *(long *)(lVar3 + 0x318);"
+            },
+            {
+              "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+              "line": 27962,
+              "function": "form_GameForm__NextTarget",
+              "needle": "lVar3 = *(long *)(lVar3 + 0xf18);"
+            }
+          ]
+        },
+        {
+          "step": 5,
+          "condition": "all modes after bounds checks",
+          "operation": "copy",
+          "from": "TargetX[TPos]",
+          "to": "HumanPX[THumanIndex]",
+          "evidence": [
+            {
+              "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+              "line": 27976,
+              "function": "form_GameForm__NextTarget",
+              "needle": "lVar4 = *(long *)(lVar2 + 0xf20);"
+            }
+          ]
+        },
+        {
+          "step": 6,
+          "condition": "all modes after bounds checks",
+          "operation": "copy",
+          "from": "TargetY[TPos]",
+          "to": "HumanPY[THumanIndex]",
+          "evidence": [
+            {
+              "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+              "line": 27984,
+              "function": "form_GameForm__NextTarget",
+              "needle": "lVar2 = *(long *)(lVar2 + 0xf28);"
+            }
+          ]
+        }
+      ],
+      "status": "verified_bounded_array_copies"
+    },
+    "callers": [
+      {
+        "function": "form_GameForm__CallHikkosi",
+        "relationship": "calls AddTarget and NextTarget in room/actor setup slice",
+        "evidence": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 25013,
+            "needle": "form_GameForm__CallHikkosi"
+          }
+        ],
+        "status": "call_graph_observed_semantics_not_closed"
+      },
+      {
+        "function": "form_GameForm__CallSyain",
+        "relationship": "calls NextTarget during actor setup",
+        "evidence": [
+          {
+            "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "line": 27392,
+            "needle": "form_GameForm__CallSyain"
+          }
+        ],
+        "status": "call_graph_observed_semantics_not_closed"
+      }
+    ]
+  },
+  "coordinate_spaces": [
+    {
+      "space_id": "legacy_target_array",
+      "raw_fields": [
+        "TargetX",
+        "TargetY"
+      ],
+      "meaning": "array values written by AddTarget and read by NextTarget",
+      "status": "verified_raw_storage_flow",
+      "legacy_equivalence": true
+    },
+    {
+      "space_id": "legacy_actor_position_arrays",
+      "raw_fields": [
+        "HumanX",
+        "HumanY",
+        "HumanPX",
+        "HumanPY"
+      ],
+      "meaning": "array values written by NextTarget; HumanX/Y vs HumanPX/PY role is not named by source evidence",
+      "status": "verified_writes_role_open",
+      "legacy_equivalence": false
+    },
+    {
+      "space_id": "adapter_world_position",
+      "raw_fields": [],
+      "meaning": "stable [x, y] position consumed by the Wave 3 adapter movement fixture",
+      "status": "web_adapter_decision",
+      "legacy_equivalence": false
+    },
+    {
+      "space_id": "graphics_local_position",
+      "raw_fields": [],
+      "meaning": "rendering coordinate space with Wave 2 origin/anchor rules",
+      "origin": {
+        "x": 280,
+        "y": 180
+      },
+      "status": "wave2_coordinate_fixture_inherited",
+      "legacy_equivalence": false
+    }
+  ],
+  "provider_contract": {
+    "source": "Phases/Phase4/artifacts/wave2_wave3_movement_interface.json",
+    "status": "wave3_interface_ready_with_legacy_semantics_open",
+    "path": {
+      "inputs": [
+        "from_position",
+        "to_position",
+        "movement_context"
+      ],
+      "outputs": "path | no_path | unavailable",
+      "adapter_policy": "path data is injected and remains explicitly non-legacy"
+    },
+    "collision": {
+      "inputs": [
+        "object_id",
+        "candidate_position"
+      ],
+      "outputs": "blocked | clear | unavailable",
+      "adapter_policy": "blocked means no position mutation for that tick"
+    },
+    "seat": {
+      "inputs": [
+        "agent_id",
+        "seat_id",
+        "optional_furniture_object_id"
+      ],
+      "output": "seat_occupancy_state",
+      "adapter_policy": "seat occupancy is an explicit relation, not inferred from chair pixels"
+    }
+  },
+  "adapter_tick_policy": {
+    "clock": "deterministic fixture clock",
+    "step_rule": "advance at most one supplied waypoint per tick",
+    "arrival_rule": "arrived only when supplied path is exhausted or explicit target tolerance is met",
+    "blocked_rule": "do not teleport and do not mutate adapter position when collision returns blocked",
+    "unavailable_rule": "preserve position and return provider_unavailable",
+    "legacy_timing_equivalence": false,
+    "status": "web_adapter_decision"
+  },
+  "semantic_limits": [
+    "HumanX/HumanY are not promoted to a generic world position without a runtime adapter boundary",
+    "HumanPX/HumanPY are not labelled previous position solely from field names or offsets",
+    "TargetX/TargetY are not treated as a path graph or walkable grid",
+    "collision and seat state remain provider inputs, not recovered legacy semantics",
+    "adapter movement state is not claimed equivalent to HumanMode or HumanState"
+  ],
+  "summary": {
+    "target_field_count": 2,
+    "position_field_count": 4,
+    "raw_flow_step_count": 6,
+    "provider_count": 3,
+    "coordinate_space_count": 4,
+    "verified_raw_flow": true,
+    "legacy_movement_semantics": "open",
+    "status": "target_position_flow_verified_adapter_movement_fixture_only"
+  }
+}

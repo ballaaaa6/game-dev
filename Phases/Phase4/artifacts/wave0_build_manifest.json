@@ -1,0 +1,29 @@
+{
+  "schema": "phase4.wave0.index-build.v1",
+  "generated_at_utc": "2026-08-11T11:22:01.066233Z",
+  "source_manifest": {
+    "game-dev-story-mod_Dumped/dump.cs": {
+      "bytes": 12013789,
+      "sha256": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074"
+    },
+    "game-dev-story-mod_Dumped/script.json": {
+      "bytes": 34331643,
+      "sha256": "e9cd2ce5ea5f552183555d1bb8914030dfbd359c1f9eee2e6abef200535b5b35"
+    },
+    "game-dev-story-mod_Dumped/stringliteral.json": {
+      "bytes": 1223698,
+      "sha256": "1d7de50473f3b7df34ccd795fb2487657504c7ed96d675c27ece1d9484444527"
+    },
+    "game-dev-story-mod_Dumped/Failed_Functions_Assembly/failed_functions.asm.report.json": {
+      "bytes": 1697,
+      "sha256": "29c4011853932b232c73bf53c638307f58386acce6c978485bfbe70b4333fb51"
+    }
+  },
+  "artifacts": [
+    "field_offset_map.json",
+    "function_inventory.json",
+    "string_literal_map.json",
+    "office_runtime_call_graph.json",
+    "translation_coverage.json"
+  ]
+}

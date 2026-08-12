@@ -6,11 +6,11 @@
 |---|---|---|
 | Phase 0 | เสร็จแล้ว มี known limitations | `Phase0/artifacts/`, `Phase0/docs/` |
 | Phase 1 | inventory เสร็จ มี warnings ที่บันทึกไว้ | `Phase1/artifacts/`, `Phase1/docs/` |
-| Phase 2 | รอเริ่ม | `Phase2/references/`, `Phase2/docs/` |
+| Phase 2 | catalog เสร็จ มี known limitations | `Phase2/artifacts/`, `Phase2/docs/`, `Phase2/references/` |
 | Phase 3 | รอเริ่ม | `Phase3/references/`, `Phase3/docs/` |
-| Phase 4 | รอเริ่ม | `Phase4/docs/` |
-| Phase 5 | รอเริ่ม | `Phase5/docs/` |
-| Phase 6 | รอเริ่ม | `Phase6/docs/` |
+| Phase 4 | Wave 0–4 และ W4.5 contract/fixture/closure/hardening เสร็จแบบมีข้อจำกัด; P0-A Corpus Intelligence Pipeline เป็นงานเร่งด่วนก่อน P0-B TypeScript | `Phase4/artifacts/`, `Phase4/docs/`, `Phase4/tests/`, `Phase4/tools/` |
+| Phase 5 | `complete_with_known_limitations`; Wave 5 C0–C8 + W5.1-B–G + W5.2 furniture mapping contract, visual artifact และ full regression ผ่าน | `Phase5/runtime/`, `Phase5/artifacts/`, `Phase5/docs/`, `Phase5/tests/`, `Phase5/tools/` |
+| Phase 6 | `complete_with_known_limitations`; task system, dashboard, persistence และ interaction QA ผ่าน | `Phase6/runtime/`, `Phase6/artifacts/`, `Phase6/docs/`, `Phase6/tests/`, `Phase6/tools/` |
 | Phase 7 | รอเริ่ม | `Phase7/docs/` |
 
 ## Source ที่ไม่อยู่ใน Phases

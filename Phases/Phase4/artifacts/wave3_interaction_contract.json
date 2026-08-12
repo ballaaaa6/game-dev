@@ -1,0 +1,490 @@
+{
+  "schema_version": "wave3-interaction-contract-v1",
+  "phase": "Phase4",
+  "wave": "Wave3",
+  "stage": "W3-C4-furniture-seat-interaction-boundary",
+  "source_roots_read_only": true,
+  "inputs": {
+    "actor_function_map": "Phases/Phase4/artifacts/wave3_actor_function_map.json",
+    "wave2_furniture_contract": "Phases/Phase4/artifacts/wave2_furniture_contract.json",
+    "wave2_movement_interface": "Phases/Phase4/artifacts/wave2_wave3_movement_interface.json",
+    "movement_contract": "Phases/Phase4/artifacts/wave3_movement_contract.json"
+  },
+  "raw_field_snapshot": {
+    "HumanSitChair": {
+      "offset": "0xe98",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 276095,
+        "needle": "HumanSitChair; // 0xe98"
+      },
+      "scoped_reference_count": 8,
+      "scoped_reference_functions": {
+        "form_GameForm__CallSyain": 1,
+        "form_GameForm__MainProcess": 7
+      },
+      "status": "verified_dump_field_declaration_raw_relation_role_open"
+    },
+    "DeskSyain": {
+      "offset": "0x450",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275712,
+        "needle": "DeskSyain; // 0x450"
+      },
+      "scoped_reference_count": 3,
+      "scoped_reference_functions": {
+        "form_GameForm__CallHikkosi": 2,
+        "form_GameForm__CallSyain": 1
+      },
+      "status": "verified_dump_field_declaration_raw_relation_role_open"
+    },
+    "DeskObjec": {
+      "offset": "0x458",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275713,
+        "needle": "DeskObjec; // 0x458"
+      },
+      "scoped_reference_count": 0,
+      "scoped_reference_functions": {},
+      "status": "verified_dump_field_declaration_raw_relation_role_open"
+    },
+    "ChairMainObjec": {
+      "offset": "0x460",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275714,
+        "needle": "ChairMainObjec; // 0x460"
+      },
+      "scoped_reference_count": 8,
+      "scoped_reference_functions": {
+        "form_GameForm__MainProcess": 8
+      },
+      "status": "verified_dump_field_declaration_raw_relation_role_open"
+    },
+    "ChairSubObjec": {
+      "offset": "0x468",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275715,
+        "needle": "ChairSubObjec; // 0x468"
+      },
+      "scoped_reference_count": 6,
+      "scoped_reference_functions": {
+        "form_GameForm__MainProcess": 6
+      },
+      "status": "verified_dump_field_declaration_raw_relation_role_open"
+    },
+    "PCObjec": {
+      "offset": "0x470",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275716,
+        "needle": "PCObjec; // 0x470"
+      },
+      "scoped_reference_count": 1,
+      "scoped_reference_functions": {
+        "form_GameForm__DrawObj": 1
+      },
+      "status": "verified_dump_field_declaration_raw_relation_role_open"
+    },
+    "DeskZahyou": {
+      "offset": "0x478",
+      "declaration": {
+        "file": "game-dev-story-mod_Dumped/dump.cs",
+        "line": 275717,
+        "needle": "DeskZahyou; // 0x478"
+      },
+      "scoped_reference_count": 1,
+      "scoped_reference_functions": {
+        "form_GameForm__DrawObj": 1
+      },
+      "status": "verified_dump_field_declaration_raw_relation_role_open"
+    }
+  },
+  "relation_roles": [
+    {
+      "field": "HumanSitChair",
+      "role": "actor_to_chair_index_or_relation_candidate",
+      "status": "raw_index_flow_verified_occupancy_not_closed",
+      "legacy_equivalence": false
+    },
+    {
+      "field": "DeskSyain",
+      "role": "desk_slot_to_source_relation_array",
+      "status": "bounded_scan_assignment_clear_verified",
+      "legacy_equivalence": false
+    },
+    {
+      "field": "DeskObjec",
+      "role": "desk_to_object_relation_candidate",
+      "status": "wave2_accessor_relation_only",
+      "legacy_equivalence": false
+    },
+    {
+      "field": "ChairMainObjec",
+      "role": "chair_main_object_relation_indexed_by_HumanSitChair",
+      "status": "raw_consumer_verified_occupancy_not_closed",
+      "legacy_equivalence": false
+    },
+    {
+      "field": "ChairSubObjec",
+      "role": "chair_sub_object_relation_indexed_by_HumanSitChair",
+      "status": "raw_consumer_verified_occupancy_not_closed",
+      "legacy_equivalence": false
+    },
+    {
+      "field": "PCObjec",
+      "role": "pc_object_relation_used_by_draw_path",
+      "status": "render_relation_verified_occupancy_not_closed",
+      "legacy_equivalence": false
+    },
+    {
+      "field": "DeskZahyou",
+      "role": "desk_coordinate_data_used_by_draw_path",
+      "status": "coordinate_relation_verified_occupancy_not_closed",
+      "legacy_equivalence": false
+    },
+    {
+      "field": "seat_occupancy_state",
+      "role": "explicit_web_adapter_relation",
+      "status": "web_adapter_decision",
+      "legacy_equivalence": false,
+      "source_boundary": "do_not_mark_a_seat_occupied_from_chair_asset_or_array_presence_alone"
+    }
+  ],
+  "raw_relation_traces": [
+    {
+      "trace_id": "actor_seat_index_consumed_by_main_process",
+      "function": "form_GameForm__MainProcess",
+      "line_range": [
+        12883,
+        12991
+      ],
+      "raw_inputs": [
+        "HumanMode[slot]",
+        "HumanTime[slot]",
+        "HumanSitChair[slot]",
+        "ChairMainObjec[chair]"
+      ],
+      "raw_mutations": [
+        "HumanTime[slot] += 1 when HumanMode[slot] == 5",
+        "raw relation array at offset 0x2c8[ChairMainObjec[HumanSitChair[slot]]] = -3 when HumanTime == 1",
+        "raw relation array at offset 0x2d0[ChairMainObjec[HumanSitChair[slot]]] = -1 when HumanTime == 1"
+      ],
+      "occupancy_state": null,
+      "status": "verified_raw_index_and_relation_flow_occupancy_open",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 12886,
+          "function": "form_GameForm__MainProcess",
+          "needle": "if (*(int *)(lVar27 + (long)(int)uStack_64 * 4 + 0x20) == 5)"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 12896,
+          "function": "form_GameForm__MainProcess",
+          "needle": "*(int *)(lVar27 + 0x20) = *(int *)(lVar27 + 0x20) + 1;"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 12897,
+          "function": "form_GameForm__MainProcess",
+          "needle": "lVar24 = *(long *)(lVar24 + 0xe98);"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 12983,
+          "function": "form_GameForm__MainProcess",
+          "needle": "= 0xfffffffd;"
+        }
+      ],
+      "semantic_limits": [
+        "HumanSitChair is an observed index/reference flow, not proof of seat ownership",
+        "0x2c8/0x2d0 fields are outside the named actor relation map"
+      ]
+    },
+    {
+      "trace_id": "actor_seat_stage_2_and_3_relation_updates",
+      "function": "form_GameForm__MainProcess",
+      "line_range": [
+        12997,
+        13355
+      ],
+      "raw_inputs": [
+        "HumanTime[slot]",
+        "HumanSitChair[slot]",
+        "ChairMainObjec[chair]",
+        "ChairSubObjec[chair]"
+      ],
+      "raw_mutations": [
+        "raw relation array values 2/1/3 are written for HumanTime 2 and 3 branches",
+        "raw relation array values 0/0 are written for HumanTime 4 branch",
+        "bVar14 is set by the branch and is not resolved here"
+      ],
+      "occupancy_state": null,
+      "status": "verified_raw_stage_branches_occupancy_open",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 13001,
+          "function": "form_GameForm__MainProcess",
+          "needle": "if (*(int *)(lVar27 + (long)(int)uStack_64 * 4 + 0x20) == 2)"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 13038,
+          "function": "form_GameForm__MainProcess",
+          "needle": "if (*(int *)(lVar27 + (long)(int)uStack_64 * 4 + 0x20) == 3)"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 13236,
+          "function": "form_GameForm__MainProcess",
+          "needle": "lVar24 = *(long *)(lVar24 + 0x468);"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 13354,
+          "function": "form_GameForm__MainProcess",
+          "needle": "bVar14 = true;"
+        }
+      ],
+      "semantic_limits": [
+        "numeric HumanTime values are raw branch guards, not named seat lifecycle states",
+        "ChairMainObjec/ChairSubObjec presence does not prove occupancy"
+      ]
+    },
+    {
+      "trace_id": "desk_slot_scan_and_assignment",
+      "function": "form_GameForm__CallHikkosi",
+      "line_range": [
+        25509,
+        25534
+      ],
+      "raw_inputs": [
+        "DeskSyain",
+        "relation array at offset 0x6c8",
+        "relation array at offset 0x610"
+      ],
+      "raw_mutations": [
+        "scan DeskSyain for -1 slot",
+        "DeskSyain[free_slot] = source relation value",
+        "relation array at offset 0x610[source] = free_slot"
+      ],
+      "occupancy_state": null,
+      "status": "verified_bounded_desk_relation_flow_occupancy_open",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25509,
+          "function": "form_GameForm__CallHikkosi",
+          "needle": "lVar15 = *(long *)(*(long *)(lVar8 + 0xb8) + 0x450);"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25512,
+          "function": "form_GameForm__CallHikkosi",
+          "needle": "if (*(int *)(lVar15 + (long)(int)uVar18 * 4 + 0x20) == -1)"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25527,
+          "function": "form_GameForm__CallHikkosi",
+          "needle": "*(undefined4 *)(lVar21 + (long)(int)uVar18 * 4 + 0x20)"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25534,
+          "function": "form_GameForm__CallHikkosi",
+          "needle": "*(uint *)(lVar16 + (long)(int)uVar22 * 4 + 0x20) = uVar18;"
+        }
+      ],
+      "semantic_limits": [
+        "the source proves a slot scan/assignment relation, not a seat occupancy API",
+        "source relation arrays are not exposed as stable web identity"
+      ]
+    },
+    {
+      "trace_id": "actor_desk_relation_reset_on_call_syain",
+      "function": "form_GameForm__CallSyain",
+      "line_range": [
+        27850,
+        27875
+      ],
+      "raw_inputs": [
+        "SyainIndex",
+        "relation array at offset 0x610",
+        "DeskSyain"
+      ],
+      "raw_mutations": [
+        "DeskSyain[relation] = -1",
+        "raw array at offset 0x2e0[employee] = 0",
+        "raw array at offset 0xe30[employee] = 0"
+      ],
+      "occupancy_state": null,
+      "status": "verified_bounded_relation_clear_occupancy_open",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 27852,
+          "function": "form_GameForm__CallSyain",
+          "needle": "lVar7 = *(long *)(lVar5 + 0x610);"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 27856,
+          "function": "form_GameForm__CallSyain",
+          "needle": "lVar3 = *(long *)(lVar5 + 0x450);"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 27860,
+          "function": "form_GameForm__CallSyain",
+          "needle": "= 0xffffffff;"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 27868,
+          "function": "form_GameForm__CallSyain",
+          "needle": "= 0;"
+        }
+      ],
+      "semantic_limits": [
+        "clearing a raw relation is not mapped to adapter release without an owner contract",
+        "no seat_id/public actor_id is present in this source slice"
+      ]
+    },
+    {
+      "trace_id": "draw_object_furniture_relations",
+      "function": "form_GameForm__DrawObj",
+      "line_range": [
+        16860,
+        17020
+      ],
+      "raw_inputs": [
+        "HumanSyurui",
+        "PCObjec",
+        "DeskZahyou",
+        "object coordinate arrays"
+      ],
+      "raw_mutations": [],
+      "occupancy_state": null,
+      "status": "verified_render_relation_not_occupancy",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 16866,
+          "function": "form_GameForm__DrawObj",
+          "needle": "lVar23 = *(long *)(lVar22 + 0x470);"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17009,
+          "function": "form_GameForm__DrawObj",
+          "needle": "lVar22 = *(long *)(lVar35 + 0x478);"
+        }
+      ],
+      "semantic_limits": [
+        "PCObjec and DeskZahyou are used in a draw path here, not as occupancy proof",
+        "sprite presence and coordinate lookup are not seat ownership"
+      ]
+    }
+  ],
+  "adapter_contract": {
+    "status": "web_adapter_decision",
+    "legacy_equivalence": false,
+    "operations": {
+      "occupy": {
+        "inputs": [
+          "agent_id",
+          "seat_id",
+          "optional_furniture_object_id"
+        ],
+        "outputs": [
+          "occupied",
+          "conflict",
+          "unavailable"
+        ],
+        "rule": "one owner per seat; conflict does not mutate existing owner"
+      },
+      "release": {
+        "inputs": [
+          "agent_id",
+          "seat_id"
+        ],
+        "outputs": [
+          "released",
+          "not_owner",
+          "unavailable"
+        ],
+        "rule": "only current owner may release; unavailable preserves known state"
+      },
+      "query": {
+        "inputs": [
+          "seat_id"
+        ],
+        "outputs": [
+          "free",
+          "occupied",
+          "unavailable"
+        ],
+        "rule": "query is explicit state and never derived from chair image presence"
+      }
+    },
+    "movement_dependencies": {
+      "path": {
+        "inputs": [
+          "from_position",
+          "to_position",
+          "movement_context"
+        ],
+        "outputs": "path | no_path | unavailable",
+        "adapter_policy": "path data is injected and remains explicitly non-legacy"
+      },
+      "collision": {
+        "inputs": [
+          "object_id",
+          "candidate_position"
+        ],
+        "outputs": "blocked | clear | unavailable",
+        "adapter_policy": "blocked means no position mutation for that tick"
+      },
+      "seat_boundary": {
+        "legacy_status": "not_closed",
+        "web_adapter_decision": "seat occupancy must be an explicit relation/state owned by Wave 3; do not infer it from chair image or ChairMainObjec presence",
+        "inputs": [
+          "agent_id",
+          "seat_id",
+          "optional_furniture_object_id"
+        ],
+        "output": "seat_occupancy_state"
+      }
+    },
+    "conflict_policy": [
+      "occupied seat returns conflict and preserves owner",
+      "disabled actor cannot newly occupy; existing ownership requires explicit release policy",
+      "cancelled path does not implicitly occupy or release",
+      "legacy raw relation clear does not implicitly call adapter release"
+    ]
+  },
+  "not_claimed": [
+    "HumanSitChair is not automatically an occupied seat",
+    "ChairMainObjec/ChairSubObjec presence is not occupancy proof",
+    "DeskSyain raw slot relation is not a public actor/seat identity",
+    "PCObjec/DeskZahyou draw relations are not seat state",
+    "raw relation clear is not implicit adapter release",
+    "collision/walkable remain provider inputs and are not inferred from furniture pixels"
+  ],
+  "summary": {
+    "relation_field_count": 7,
+    "raw_trace_count": 5,
+    "adapter_operation_count": 3,
+    "legacy_occupancy_status": "not_closed",
+    "collision_status": "not_found_in_scoped_scene_functions",
+    "walkable_status": "not_found_in_scoped_scene_functions",
+    "status": "raw_furniture_relation_audit_adapter_seat_contract_ready_legacy_occupancy_open"
+  }
+}

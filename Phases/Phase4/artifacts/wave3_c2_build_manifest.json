@@ -1,0 +1,56 @@
+{
+  "schema_version": "wave3-c2-build-manifest-v1",
+  "phase": "Phase4",
+  "wave": "Wave3",
+  "stage": "W3-C2-raw-state-audit",
+  "source_roots_read_only": true,
+  "source_hashes": {
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c": {
+      "sha256": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
+      "bytes": 4974769
+    },
+    "game-dev-story-mod_Dumped/dump.cs": {
+      "sha256": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
+      "bytes": 12013789
+    },
+    "Phases/Phase4/artifacts/wave3_actor_function_map.json": {
+      "sha256": "a410be355c05e5468378d1d1c81bd272e1774c6d3f953b9bff38a4fc572c6f3f",
+      "bytes": 149053
+    },
+    "Phases/Phase4/artifacts/wave3_actor_identity_contract.json": {
+      "sha256": "d373537d61975580c8b947689335fcf75c2ebd586ce9edd8a2c5d4568695ec3f",
+      "bytes": 42194
+    },
+    "Phases/Phase4/artifacts/wave3_c1_build_manifest.json": {
+      "sha256": "15a56c89caf8d340bebdd598351025b16a87f62afb6ee0dc6da0ec048b7ec7fa",
+      "bytes": 2493
+    },
+    "Phases/Phase2/artifacts/agent_state_mapping.json": {
+      "sha256": "0be7bf44880c16ddae3f9d59dc08926a2448889ba5f0e13c1d8718043561627c",
+      "bytes": 7776
+    }
+  },
+  "artifact_inputs": [
+    "Phases/Phase4/artifacts/wave3_actor_function_map.json",
+    "Phases/Phase4/artifacts/wave3_actor_identity_contract.json",
+    "Phases/Phase4/artifacts/wave3_c1_build_manifest.json",
+    "Phases/Phase2/artifacts/agent_state_mapping.json"
+  ],
+  "artifact_outputs": [
+    "Phases/Phase4/artifacts/wave3_actor_state_contract.json",
+    "Phases/Phase4/artifacts/wave3_state_transition_fixture.json",
+    "Phases/Phase4/artifacts/wave3_c2_build_manifest.json"
+  ],
+  "artifact_summary": {
+    "raw_state_field_count": 12,
+    "transition_count": 4,
+    "verified_raw_transitions": 1,
+    "adapter_transitions": 2,
+    "probable_transitions": 1,
+    "main_process_tick_slice_count": 4,
+    "verified_raw_tick_slices": 4,
+    "timer_semantics": "raw decrement/reset/counter evidence present; unit and Agent meaning open",
+    "semantic_status": "raw_state_audit_ready_adapter_transitions_explicit_legacy_semantics_open"
+  },
+  "status": "W3-C2-built_raw_state_audit_with_semantic_gaps_open"
+}

@@ -1,0 +1,1456 @@
+{
+  "schema_version": "wave4-lifecycle-slices-v1",
+  "phase": "Phase4",
+  "wave": "Wave4",
+  "stage": "W4-C4-C6-bounded-consumer-slices",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "mainprocess": {
+    "function": "form_GameForm__MainProcess",
+    "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+    "source_status": "categorized_c",
+    "span": {
+      "start_line": 1,
+      "end_line": 15354
+    },
+    "call_summary": {
+      "symbol_occurrence_count": 73,
+      "well_formed_call_count": 73,
+      "by_call": {
+        "form_GameForm__AddEvent": 55,
+        "form_GameForm__AddKaiwa": 1,
+        "form_GameForm__AddMessage": 6,
+        "form_GameForm__CallFuki": 11
+      },
+      "same_line_add_event_call_count": 53,
+      "same_line_add_event_count_note": "the existing producer contract's 53 count uses a same-line call regex; two categorized-C callsites split the function name and opening parenthesis across lines"
+    },
+    "relevant_calls": [
+      {
+        "source_line": 548,
+        "end_line": 548,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xe,0,0,0);"
+      },
+      {
+        "source_line": 574,
+        "end_line": 574,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xe,9,0,0);"
+      },
+      {
+        "source_line": 601,
+        "end_line": 601,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xe,0xf,0,0);"
+      },
+      {
+        "source_line": 633,
+        "end_line": 633,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xe,0xd,0,0);"
+      },
+      {
+        "source_line": 1850,
+        "end_line": 1850,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x1a,uVar41,0,0);"
+      },
+      {
+        "source_line": 1875,
+        "end_line": 1875,
+        "call": "form_GameForm__AddMessage",
+        "classification": "notification_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddMessage(param_1,uVar22,0);"
+      },
+      {
+        "source_line": 1909,
+        "end_line": 1909,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,3,0,0,0);"
+      },
+      {
+        "source_line": 1928,
+        "end_line": 1928,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xe,4,0,0);"
+      },
+      {
+        "source_line": 2009,
+        "end_line": 2009,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x18,uVar22,0,0);"
+      },
+      {
+        "source_line": 2136,
+        "end_line": 2136,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x17,0,uStack_64,0);"
+      },
+      {
+        "source_line": 2287,
+        "end_line": 2287,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x17,1,uStack_64,0);"
+      },
+      {
+        "source_line": 2373,
+        "end_line": 2376,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x12,*(undefined4 *)(lVar21 + 0x24),uStack_64,0) ; lVar21 = *(long *)puVar12; lVar24 = *(long *)(*(long *)(lVar21 + 0xb8) + 0xb38);"
+      },
+      {
+        "source_line": 2530,
+        "end_line": 2530,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x13,iVar17,uStack_64,0);"
+      },
+      {
+        "source_line": 2562,
+        "end_line": 2562,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x1c,0,0,0);"
+      },
+      {
+        "source_line": 3007,
+        "end_line": 3007,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,8,0,0,0);"
+      },
+      {
+        "source_line": 3036,
+        "end_line": 3036,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,2,0,1,0);"
+      },
+      {
+        "source_line": 3109,
+        "end_line": 3109,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x14,1,0,0);"
+      },
+      {
+        "source_line": 3142,
+        "end_line": 3142,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x20,0,0,0);"
+      },
+      {
+        "source_line": 3216,
+        "end_line": 3216,
+        "call": "form_GameForm__AddMessage",
+        "classification": "notification_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddMessage(param_1,uVar22,0);"
+      },
+      {
+        "source_line": 3276,
+        "end_line": 3276,
+        "call": "form_GameForm__AddMessage",
+        "classification": "notification_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddMessage(param_1,uVar22,0);"
+      },
+      {
+        "source_line": 3685,
+        "end_line": 3685,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,2,lVar24 - 8U & 0xffffffff,0,0);"
+      },
+      {
+        "source_line": 3726,
+        "end_line": 3726,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,4,uStack_64,0,0);"
+      },
+      {
+        "source_line": 3756,
+        "end_line": 3756,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x1e,0,0,0);"
+      },
+      {
+        "source_line": 4495,
+        "end_line": 4495,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x15,0x3c,0,0);"
+      },
+      {
+        "source_line": 4518,
+        "end_line": 4518,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x15,0x2e,0,0);"
+      },
+      {
+        "source_line": 4544,
+        "end_line": 4544,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x15,9,(long)*(short *)(lVar24 + 0x32),0);"
+      },
+      {
+        "source_line": 4568,
+        "end_line": 4568,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x15,10,0,0);"
+      },
+      {
+        "source_line": 4603,
+        "end_line": 4603,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x18,4,0,0);"
+      },
+      {
+        "source_line": 4639,
+        "end_line": 4639,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x18,4,0,0);"
+      },
+      {
+        "source_line": 4682,
+        "end_line": 4682,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x15,0x2d,0,0);"
+      },
+      {
+        "source_line": 4718,
+        "end_line": 4718,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xf,1,0,0);"
+      },
+      {
+        "source_line": 4764,
+        "end_line": 4764,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xf,0xf,0,0);"
+      },
+      {
+        "source_line": 4810,
+        "end_line": 4810,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xf,0x10,0,0);"
+      },
+      {
+        "source_line": 4848,
+        "end_line": 4848,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xf,uVar22,0,0);"
+      },
+      {
+        "source_line": 5006,
+        "end_line": 5006,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x1b,0,0,0);"
+      },
+      {
+        "source_line": 5072,
+        "end_line": 5074,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent (param_1,0x15,uVar41,*(undefined4 *)(lVar21 + (long)(int)uStack_64 * 4 + 0x20),0 );"
+      },
+      {
+        "source_line": 5114,
+        "end_line": 5114,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x16,0,0,0);"
+      },
+      {
+        "source_line": 5286,
+        "end_line": 5286,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,9,iVar17,uVar41,0);"
+      },
+      {
+        "source_line": 5476,
+        "end_line": 5476,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,10,0,0,0);"
+      },
+      {
+        "source_line": 5535,
+        "end_line": 5535,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x14,0,0,0);"
+      },
+      {
+        "source_line": 5732,
+        "end_line": 5732,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xb,uStack_64,0,0);"
+      },
+      {
+        "source_line": 5988,
+        "end_line": 5988,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x11,uStack_64,4,0);"
+      },
+      {
+        "source_line": 6018,
+        "end_line": 6018,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x11,uStack_64,5,0);"
+      },
+      {
+        "source_line": 6048,
+        "end_line": 6048,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x11,uStack_64,6,0);"
+      },
+      {
+        "source_line": 6078,
+        "end_line": 6078,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x11,uStack_64,7,0);"
+      },
+      {
+        "source_line": 6108,
+        "end_line": 6108,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x11,uStack_64,8,0);"
+      },
+      {
+        "source_line": 6138,
+        "end_line": 6138,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x11,uStack_64,9,0);"
+      },
+      {
+        "source_line": 6168,
+        "end_line": 6168,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x11,uStack_64,10,0);"
+      },
+      {
+        "source_line": 6198,
+        "end_line": 6198,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x11,uStack_64,0xb,0);"
+      },
+      {
+        "source_line": 6490,
+        "end_line": 6490,
+        "call": "form_GameForm__AddMessage",
+        "classification": "notification_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddMessage(param_1,uVar22,0);"
+      },
+      {
+        "source_line": 6687,
+        "end_line": 6687,
+        "call": "form_GameForm__AddMessage",
+        "classification": "notification_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddMessage(param_1,uVar22,0);"
+      },
+      {
+        "source_line": 6696,
+        "end_line": 6696,
+        "call": "form_GameForm__AddMessage",
+        "classification": "notification_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddMessage(param_1,uVar22,0);"
+      },
+      {
+        "source_line": 7140,
+        "end_line": 7141,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent (param_1,0x19,*(undefined4 *)(lVar24 + (long)(int)uVar41 * 4 + 0x20),0,0);"
+      },
+      {
+        "source_line": 7541,
+        "end_line": 7541,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x1f,uVar22,uVar20,0);"
+      },
+      {
+        "source_line": 7649,
+        "end_line": 7649,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0x10,0,0,0);"
+      },
+      {
+        "source_line": 8400,
+        "end_line": 8400,
+        "call": "form_GameForm__CallFuki",
+        "classification": "human_bubble_schedule",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__CallFuki(param_1,uStack_64,4,0x19,0,1,0);"
+      },
+      {
+        "source_line": 8435,
+        "end_line": 8435,
+        "call": "form_GameForm__CallFuki",
+        "classification": "human_bubble_schedule",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__CallFuki(param_1,uStack_64,0x18,0x19,0,1,0);"
+      },
+      {
+        "source_line": 9334,
+        "end_line": 9334,
+        "call": "form_GameForm__CallFuki",
+        "classification": "human_bubble_schedule",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__CallFuki(param_1,uStack_64,6,0x28,0,1,0);"
+      },
+      {
+        "source_line": 9718,
+        "end_line": 9718,
+        "call": "form_GameForm__CallFuki",
+        "classification": "human_bubble_schedule",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__CallFuki(param_1,uStack_64,0xf,0x28,0,1,0);"
+      },
+      {
+        "source_line": 9900,
+        "end_line": 9900,
+        "call": "form_GameForm__CallFuki",
+        "classification": "human_bubble_schedule",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__CallFuki(param_1,uStack_64,2,0x28,0,1,0);"
+      },
+      {
+        "source_line": 11548,
+        "end_line": 11548,
+        "call": "form_GameForm__CallFuki",
+        "classification": "human_bubble_schedule",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__CallFuki(param_1,uStack_64,uVar20,0x28,0,1,0);"
+      },
+      {
+        "source_line": 11577,
+        "end_line": 11577,
+        "call": "form_GameForm__CallFuki",
+        "classification": "human_bubble_schedule",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__CallFuki(param_1,uStack_64,0x29,0x28,0,1,0);"
+      },
+      {
+        "source_line": 11588,
+        "end_line": 11588,
+        "call": "form_GameForm__CallFuki",
+        "classification": "human_bubble_schedule",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__CallFuki(param_1,uStack_64,0x29,0x28,0,1,0);"
+      },
+      {
+        "source_line": 11601,
+        "end_line": 11601,
+        "call": "form_GameForm__CallFuki",
+        "classification": "human_bubble_schedule",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__CallFuki(param_1,uVar41,iVar17 + 0x26,0x28,0,1,0);"
+      },
+      {
+        "source_line": 11641,
+        "end_line": 11641,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xe,0xb,0,0);"
+      },
+      {
+        "source_line": 12620,
+        "end_line": 12620,
+        "call": "form_GameForm__CallFuki",
+        "classification": "human_bubble_schedule",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__CallFuki(param_1,uVar41,uVar22,0x19,0,1,0);"
+      },
+      {
+        "source_line": 13740,
+        "end_line": 13740,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,5,uStack_64,0,0);"
+      },
+      {
+        "source_line": 13788,
+        "end_line": 13788,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,uVar22,uVar41,0,0);"
+      },
+      {
+        "source_line": 14233,
+        "end_line": 14233,
+        "call": "form_GameForm__CallFuki",
+        "classification": "human_bubble_schedule",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__CallFuki(param_1,uVar41,uVar22,0x19,0,1,0);"
+      },
+      {
+        "source_line": 14675,
+        "end_line": 14675,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xc,0,0,0);"
+      },
+      {
+        "source_line": 14727,
+        "end_line": 14727,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,0xd,0,0,0);"
+      },
+      {
+        "source_line": 14916,
+        "end_line": 14916,
+        "call": "form_GameForm__AddEvent",
+        "classification": "event_enqueue",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddEvent(param_1,1,0,0,0);"
+      },
+      {
+        "source_line": 15287,
+        "end_line": 15287,
+        "call": "form_GameForm__AddKaiwa",
+        "classification": "dialogue_append",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__AddKaiwa(param_1,uVar22,0,0);"
+      }
+    ],
+    "field_offset_refs": {
+      "0xe68": {
+        "field": "HumanFukiTime",
+        "role": "bubble_expiry_counter",
+        "reference_count": 4,
+        "source_lines": [
+          1408,
+          1416,
+          8112,
+          9671
+        ],
+        "status": "raw_offset_reference"
+      },
+      "0xe78": {
+        "field": "HumanMode",
+        "role": "raw_actor_mode",
+        "reference_count": 55,
+        "source_lines": [
+          8001,
+          8161,
+          8246,
+          8253,
+          8384,
+          8391,
+          8418,
+          8425,
+          9125,
+          9186,
+          9204,
+          9219,
+          9237,
+          9252,
+          9270,
+          9355
+        ],
+        "status": "raw_offset_reference"
+      },
+      "0xe80": {
+        "field": "HumanTime",
+        "role": "raw_actor_timer",
+        "reference_count": 63,
+        "source_lines": [
+          7934,
+          8013,
+          8165,
+          8396,
+          8430,
+          9208,
+          9241,
+          9274,
+          9502,
+          11289,
+          11801,
+          11809,
+          11860,
+          11881,
+          11891,
+          12115
+        ],
+        "status": "raw_offset_reference"
+      },
+      "0xff0": {
+        "field": "EventMax",
+        "role": "event_queue_length",
+        "reference_count": 1,
+        "source_lines": [
+          477
+        ],
+        "status": "raw_offset_reference"
+      },
+      "0x11f0": {
+        "field": "MessageText",
+        "role": "notification_text_queue",
+        "reference_count": 3,
+        "source_lines": [
+          1521,
+          1532,
+          1543
+        ],
+        "status": "raw_offset_reference"
+      },
+      "0x11f8": {
+        "field": "MessageTime",
+        "role": "notification_timer",
+        "reference_count": 13,
+        "source_lines": [
+          1433,
+          1458,
+          1490,
+          1502,
+          1514,
+          1515,
+          1549,
+          1560,
+          1561,
+          1567,
+          1584,
+          1614,
+          1651
+        ],
+        "status": "raw_offset_reference"
+      },
+      "0x1200": {
+        "field": "MessageMaxTime",
+        "role": "notification_max_timer",
+        "reference_count": 1,
+        "source_lines": [
+          1648
+        ],
+        "status": "raw_offset_reference"
+      },
+      "0x1208": {
+        "field": "MessageGraph",
+        "role": "notification_graph_id",
+        "reference_count": 2,
+        "source_lines": [
+          1553,
+          1572
+        ],
+        "status": "raw_offset_reference"
+      }
+    },
+    "consumer_slices": [
+      {
+        "id": "human_fuki_time_tick",
+        "line_start": 1408,
+        "line_end": 1420,
+        "fields": [
+          "HumanFukiTime"
+        ],
+        "observed_operation": "checks a positive per-index value and decrements it by one",
+        "semantic_status": "bounded_consumer_observed_timer_unit_open",
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_status": "categorized_c"
+      },
+      {
+        "id": "message_timer_tick_branch_a",
+        "line_start": 1433,
+        "line_end": 1494,
+        "fields": [
+          "MessageTime"
+        ],
+        "observed_operation": "checks a queued timer, decrements the selected entry, and enters removal when it reaches zero",
+        "semantic_status": "bounded_consumer_observed_timer_unit_open",
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_status": "categorized_c"
+      },
+      {
+        "id": "message_compaction",
+        "line_start": 1505,
+        "line_end": 1575,
+        "fields": [
+          "MessageText",
+          "MessageTime",
+          "MessageGraph"
+        ],
+        "observed_operation": "shifts later queue entries left, clears the final text/timer/graph slots, and preserves queue order",
+        "semantic_status": "bounded_queue_lifecycle_observed_graph_label_open",
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_status": "categorized_c"
+      },
+      {
+        "id": "message_timer_tick_branch_b",
+        "line_start": 1579,
+        "line_end": 1618,
+        "fields": [
+          "MessageTime"
+        ],
+        "observed_operation": "decrements a positive queued timer under the alternate branch guard",
+        "semantic_status": "bounded_consumer_observed_timer_unit_open",
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_status": "categorized_c"
+      },
+      {
+        "id": "message_max_timer_sound_threshold",
+        "line_start": 1648,
+        "line_end": 1656,
+        "fields": [
+          "MessageMaxTime",
+          "MessageTime"
+        ],
+        "observed_operation": "compares max-time and current-time difference and calls SoundPlay at a one-step threshold",
+        "semantic_status": "bounded_consumer_observed_audio_policy_open",
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_status": "categorized_c"
+      }
+    ],
+    "findings": [
+      "MainProcess directly decrements positive HumanFukiTime entries by one.",
+      "MainProcess directly decrements MessageTime entries and compacts MessageText/MessageTime/MessageGraph when a message expires.",
+      "MessageMaxTime participates in a one-step difference check before SoundPlay; its audio policy is not named here."
+    ],
+    "not_claimed": [
+      "the raw timer unit is not milliseconds or a recovered legacy frame duration",
+      "zero-time HumanFukiIndex cleanup is not proven by these slices",
+      "MessageGraph numeric IDs are not named as UI categories",
+      "HumanMode is not promoted to talking semantics"
+    ]
+  },
+  "drawobj": {
+    "function": "form_GameForm__DrawObj",
+    "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+    "source_status": "categorized_c",
+    "span": {
+      "start_line": 15847,
+      "end_line": 17616
+    },
+    "call_summary": {
+      "by_call": {
+        "form_GameForm__DrawFukidashi": 1
+      }
+    },
+    "relevant_calls": [
+      {
+        "source_line": 16229,
+        "end_line": 16232,
+        "call": "form_GameForm__DrawFukidashi",
+        "classification": "bubble_draw",
+        "well_formed_call": true,
+        "raw_excerpt": "form_GameForm__DrawFukidashi (param_2,iVar36 + iVar13 + iVar4 + iVar14 + -7, *(int *)(lVar15 + (long)(int)uVar26 * 4 + 0x20) + *(int *)(lVar35 + (long)(int)uVar26 * 4 + 0x20),uVar21);"
+      }
+    ],
+    "field_offset_refs": {
+      "0xe68": {
+        "field": "HumanFukiTime",
+        "role": "bubble_expiry_counter",
+        "reference_count": 3,
+        "source_lines": [
+          16183,
+          16227,
+          16228
+        ],
+        "status": "raw_offset_reference"
+      },
+      "0xe70": {
+        "field": "HumanFukiIndex",
+        "role": "bubble_text_index",
+        "reference_count": 1,
+        "source_lines": [
+          16193
+        ],
+        "status": "raw_offset_reference"
+      }
+    },
+    "finding": "DrawObj gates DrawFukidashi on a positive HumanFukiTime entry, then reads HumanFukiIndex before issuing the draw call.",
+    "semantic_status": "bounded_draw_consumer_observed_timer_unit_open"
+  },
+  "do_event": {
+    "function": "form_GameForm__DoEvent",
+    "source_file": "game-dev-story-mod_Dumped/Failed_Functions_Assembly/00f5c704_form_GameForm__DoEvent.asm.txt",
+    "source_status": "assembly_fallback_only",
+    "structural": {
+      "instruction_count": 15569,
+      "branch_count": 4517,
+      "basic_block_count": 4053
+    },
+    "bounded_target_policy": "only targets mapped to AddKaiwa/AddMessage/EventGChange/Print are indexed",
+    "target_map": [
+      {
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "address_mapping": "assembly VA = dump RVA + 0x100000",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 276626,
+          "needle": "RVA: 0xE1A908",
+          "status": "verified"
+        }
+      },
+      {
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "address_mapping": "assembly VA = dump RVA + 0x100000",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 276629,
+          "needle": "RVA: 0xE1A98C",
+          "status": "verified"
+        }
+      },
+      {
+        "target": "0x00f4b038",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_named_actor",
+        "address_mapping": "assembly VA = dump RVA + 0x100000",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 276632,
+          "needle": "RVA: 0xE4B038",
+          "status": "verified"
+        }
+      },
+      {
+        "target": "0x00f4a714",
+        "symbol": "form_GameForm__AddMessage",
+        "role": "notification_enqueue",
+        "address_mapping": "assembly VA = dump RVA + 0x100000",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 276614,
+          "needle": "RVA: 0xE4A714",
+          "status": "verified"
+        }
+      },
+      {
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "address_mapping": "assembly VA = dump RVA + 0x100000",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 276512,
+          "needle": "RVA: 0xE1AA34",
+          "status": "verified"
+        }
+      },
+      {
+        "target": "0x00f3ab48",
+        "symbol": "form_GameForm__Print",
+        "role": "diagnostic_or_text_side_effect",
+        "address_mapping": "assembly VA = dump RVA + 0x100000",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 276581,
+          "needle": "RVA: 0xE3AB48",
+          "status": "verified"
+        }
+      }
+    ],
+    "target_counts": {
+      "0x00f1a908": 21,
+      "0x00f1a98c": 12,
+      "0x00f1aa34": 13,
+      "0x00f3ab48": 5,
+      "0x00f4a714": 1,
+      "0x00f4b038": 2
+    },
+    "relevant_target_calls": [
+      {
+        "asm_line": 885,
+        "branch_address": "00f5d4c0",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f5d4c0 12 f5 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 913,
+        "branch_address": "00f5d530",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f5d530 f6 f4 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 946,
+        "branch_address": "00f5d5b4",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f5d5b4 d5 f4 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 1087,
+        "branch_address": "00f5d7e8",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f5d7e8 48 f4 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 1196,
+        "branch_address": "00f5d99c",
+        "target": "0x00f3ab48",
+        "symbol": "form_GameForm__Print",
+        "role": "diagnostic_or_text_side_effect",
+        "raw_instruction": "00f5d99c 6b 74 ff 97 bl ; 0x00f3ab48"
+      },
+      {
+        "asm_line": 1376,
+        "branch_address": "00f5dc6c",
+        "target": "0x00f3ab48",
+        "symbol": "form_GameForm__Print",
+        "role": "diagnostic_or_text_side_effect",
+        "raw_instruction": "00f5dc6c b7 73 ff 97 bl ; 0x00f3ab48"
+      },
+      {
+        "asm_line": 2754,
+        "branch_address": "00f5f1f4",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f5f1f4 c5 ed fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 4406,
+        "branch_address": "00f60bc4",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f60bc4 51 e7 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 4464,
+        "branch_address": "00f60cac",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f60cac 17 e7 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 4847,
+        "branch_address": "00f612a8",
+        "target": "0x00f4b038",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_named_actor",
+        "raw_instruction": "00f612a8 64 a7 ff 97 bl ; 0x00f4b038"
+      },
+      {
+        "asm_line": 5025,
+        "branch_address": "00f61570",
+        "target": "0x00f4b038",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_named_actor",
+        "raw_instruction": "00f61570 b2 a6 ff 97 bl ; 0x00f4b038"
+      },
+      {
+        "asm_line": 5056,
+        "branch_address": "00f615ec",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f615ec 12 e5 fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 5101,
+        "branch_address": "00f616a0",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f616a0 9a e4 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 5362,
+        "branch_address": "00f61ab4",
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "raw_instruction": "00f61ab4 b6 e3 fe 97 bl ; 0x00f1a98c"
+      },
+      {
+        "asm_line": 5372,
+        "branch_address": "00f61adc",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f61adc d6 e3 fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 5420,
+        "branch_address": "00f61b9c",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f61b9c 5b e3 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 5599,
+        "branch_address": "00f61e68",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f61e68 a8 e2 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 5665,
+        "branch_address": "00f61f70",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f61f70 66 e2 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 5731,
+        "branch_address": "00f62078",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f62078 24 e2 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 5816,
+        "branch_address": "00f621cc",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f621cc 1a e2 fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 5823,
+        "branch_address": "00f621e8",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f621e8 13 e2 fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 6006,
+        "branch_address": "00f624c4",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f624c4 11 e1 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 6440,
+        "branch_address": "00f62b8c",
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "raw_instruction": "00f62b8c 80 df fe 97 bl ; 0x00f1a98c"
+      },
+      {
+        "asm_line": 6451,
+        "branch_address": "00f62bb8",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f62bb8 9f df fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 6581,
+        "branch_address": "00f62dc0",
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "raw_instruction": "00f62dc0 f3 de fe 97 bl ; 0x00f1a98c"
+      },
+      {
+        "asm_line": 6600,
+        "branch_address": "00f62e0c",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f62e0c 0a df fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 7209,
+        "branch_address": "00f63790",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f63790 5e dc fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 7358,
+        "branch_address": "00f639e4",
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "raw_instruction": "00f639e4 ea db fe 97 bl ; 0x00f1a98c"
+      },
+      {
+        "asm_line": 7365,
+        "branch_address": "00f63a00",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f63a00 0d dc fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 7453,
+        "branch_address": "00f63b60",
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "raw_instruction": "00f63b60 8b db fe 97 bl ; 0x00f1a98c"
+      },
+      {
+        "asm_line": 7478,
+        "branch_address": "00f63bc4",
+        "target": "0x00f4a714",
+        "symbol": "form_GameForm__AddMessage",
+        "role": "notification_enqueue",
+        "raw_instruction": "00f63bc4 d4 9a ff 97 bl ; 0x00f4a714"
+      },
+      {
+        "asm_line": 7584,
+        "branch_address": "00f63d6c",
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "raw_instruction": "00f63d6c 08 db fe 97 bl ; 0x00f1a98c"
+      },
+      {
+        "asm_line": 7647,
+        "branch_address": "00f63e68",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f63e68 f3 da fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 8088,
+        "branch_address": "00f6454c",
+        "target": "0x00f3ab48",
+        "symbol": "form_GameForm__Print",
+        "role": "diagnostic_or_text_side_effect",
+        "raw_instruction": "00f6454c 7f 59 ff 97 bl ; 0x00f3ab48"
+      },
+      {
+        "asm_line": 8133,
+        "branch_address": "00f64600",
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "raw_instruction": "00f64600 e3 d8 fe 97 bl ; 0x00f1a98c"
+      },
+      {
+        "asm_line": 8143,
+        "branch_address": "00f64628",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f64628 03 d9 fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 8322,
+        "branch_address": "00f648f4",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f648f4 05 d8 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 8518,
+        "branch_address": "00f64c04",
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "raw_instruction": "00f64c04 62 d7 fe 97 bl ; 0x00f1a98c"
+      },
+      {
+        "asm_line": 9098,
+        "branch_address": "00f65514",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f65514 fd d4 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 9191,
+        "branch_address": "00f65688",
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "raw_instruction": "00f65688 c1 d4 fe 97 bl ; 0x00f1a98c"
+      },
+      {
+        "asm_line": 9202,
+        "branch_address": "00f656b4",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f656b4 e0 d4 fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 9755,
+        "branch_address": "00f65f58",
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "raw_instruction": "00f65f58 8d d2 fe 97 bl ; 0x00f1a98c"
+      },
+      {
+        "asm_line": 9767,
+        "branch_address": "00f65f88",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f65f88 ab d2 fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 9849,
+        "branch_address": "00f660d0",
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "raw_instruction": "00f660d0 2f d2 fe 97 bl ; 0x00f1a98c"
+      },
+      {
+        "asm_line": 9859,
+        "branch_address": "00f660f8",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f660f8 4f d2 fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 9963,
+        "branch_address": "00f66298",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f66298 9c d1 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 10005,
+        "branch_address": "00f66340",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f66340 72 d1 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 10114,
+        "branch_address": "00f664f4",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f664f4 05 d1 fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 10474,
+        "branch_address": "00f66a94",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f66a94 9d cf fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 10604,
+        "branch_address": "00f66c9c",
+        "target": "0x00f1a98c",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_windowed",
+        "raw_instruction": "00f66c9c 3c cf fe 97 bl ; 0x00f1a98c"
+      },
+      {
+        "asm_line": 10637,
+        "branch_address": "00f66d20",
+        "target": "0x00f1aa34",
+        "symbol": "form_GameForm__EventGChange",
+        "role": "related_visual_event_target",
+        "raw_instruction": "00f66d20 45 cf fe 97 bl ; 0x00f1aa34"
+      },
+      {
+        "asm_line": 10696,
+        "branch_address": "00f66e0c",
+        "target": "0x00f1a908",
+        "symbol": "form_GameForm__AddKaiwa",
+        "role": "dialogue_append_short",
+        "raw_instruction": "00f66e0c bf ce fe 97 bl ; 0x00f1a908"
+      },
+      {
+        "asm_line": 14187,
+        "branch_address": "00f6a498",
+        "target": "0x00f3ab48",
+        "symbol": "form_GameForm__Print",
+        "role": "diagnostic_or_text_side_effect",
+        "raw_instruction": "00f6a498 ac 41 ff 97 bl ; 0x00f3ab48"
+      },
+      {
+        "asm_line": 14242,
+        "branch_address": "00f6a574",
+        "target": "0x00f3ab48",
+        "symbol": "form_GameForm__Print",
+        "role": "diagnostic_or_text_side_effect",
+        "raw_instruction": "00f6a574 75 41 ff 97 bl ; 0x00f3ab48"
+      }
+    ],
+    "event_queue_field_refs": {
+      "0xff8": {
+        "field": "EventMode",
+        "role": "event_queue_mode",
+        "reference_count": 35,
+        "asm_lines": [
+          732,
+          743,
+          801,
+          962,
+          2762,
+          4414,
+          4475,
+          4858,
+          5036,
+          5109,
+          5397,
+          5436,
+          5615,
+          5681,
+          5747,
+          6014,
+          6477,
+          6625,
+          7391,
+          7672,
+          8169,
+          8330,
+          8753,
+          9114
+        ],
+        "status": "assembly_raw_offset_reference"
+      },
+      "0x1000": {
+        "field": "EventTemp",
+        "role": "event_queue_temp",
+        "reference_count": 1,
+        "asm_lines": [
+          786
+        ],
+        "status": "assembly_raw_offset_reference"
+      },
+      "0x1008": {
+        "field": "EventTemp2",
+        "role": "event_queue_temp2",
+        "reference_count": 1,
+        "asm_lines": [
+          793
+        ],
+        "status": "assembly_raw_offset_reference"
+      }
+    },
+    "findings": [
+      "DoEvent reads EventMode, EventTemp, and EventTemp2 in assembly, establishing a queue-consumer field boundary.",
+      "DoEvent has bounded call-target evidence for dialogue append and notification enqueue paths.",
+      "DoEvent branch predicates and event-mode meanings remain unresolved because the function is assembly fallback only."
+    ],
+    "not_claimed": [
+      "numeric event modes are not assigned names",
+      "AddKaiwa target calls are not treated as a complete dialogue state machine",
+      "actor lifecycle or HumanMode semantics are not inferred from nearby branches"
+    ]
+  },
+  "acceptance": {
+    "mainprocess_consumer_slice": "pass_bounded_raw_field_and_lifecycle_evidence",
+    "drawobj_consumer_slice": "pass_bounded_positive_timer_to_draw_index_evidence",
+    "doevent_dialogue_message_targets": "pass_target_calls_with_dump_rva_mapping",
+    "semantic_overreach_check": "pass_open_timer_graph_mode_and_actor_boundaries_preserved"
+  }
+}

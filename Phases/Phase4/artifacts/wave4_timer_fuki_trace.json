@@ -1,0 +1,156 @@
+{
+  "schema_version": "wave4-timer-fuki-trace-v1",
+  "phase": "Phase4",
+  "wave": "Wave4",
+  "stage": "W4.5-R1-timer-and-human-fuki-hardening",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "update_bridge": {
+    "function": "form_GameForm___update",
+    "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+    "source_span": {
+      "start_line": 18282,
+      "end_line": 18463
+    },
+    "mainprocess_call_lines": [
+      18401
+    ],
+    "repeat_control": {
+      "source_lines": [
+        18373,
+        18391,
+        18396,
+        18401,
+        18402,
+        18403
+      ],
+      "observed_candidate_counts": [
+        1,
+        2,
+        16
+      ],
+      "status": "verified_repeat_count_control_logical_tick_candidate",
+      "not_claimed": "not mapped to milliseconds or Unity deltaTime"
+    }
+  },
+  "human_fuki": {
+    "fields": {
+      "HumanFukiTime": {
+        "offset": "0xe68",
+        "all_source_reference_count": 15,
+        "all_source_lines": [
+          1408,
+          1416,
+          8112,
+          9671,
+          16183,
+          16227,
+          16228,
+          25633,
+          27873,
+          30102,
+          30117,
+          30132,
+          35615,
+          40153,
+          59423
+        ],
+        "status": "verified_raw_field_reference"
+      },
+      "HumanFukiIndex": {
+        "offset": "0xe70",
+        "all_source_reference_count": 5,
+        "all_source_lines": [
+          16193,
+          30136,
+          35628,
+          40167,
+          59428
+        ],
+        "status": "verified_raw_field_reference"
+      }
+    },
+    "write_and_consume_slice": {
+      "call_fuki": {
+        "source_lines": [
+          30102,
+          30117,
+          30135,
+          30136,
+          30139
+        ],
+        "operation": "CallFuki writes HumanFukiTime[param_2] = param_4 and HumanFukiIndex[param_2] = param_3 after bounds/limit checks",
+        "status": "verified_write_pair"
+      },
+      "mainprocess": {
+        "source_lines": [
+          1408,
+          1416,
+          1420
+        ],
+        "operation": "positive HumanFukiTime entry is decremented by one",
+        "status": "verified_consumer_tick"
+      },
+      "drawobj": {
+        "source_lines": [
+          16183,
+          16188,
+          16193,
+          16227,
+          16228,
+          16229
+        ],
+        "operation": "positive HumanFukiTime gates DrawFukidashi and HumanFukiIndex supplies the text index",
+        "status": "verified_draw_gate"
+      }
+    },
+    "cleanup_search": {
+      "scoped_mainprocess_clear_lines": [],
+      "status": "not_found_in_scoped_mainprocess",
+      "interpretation": "adapter must clear expired bubble state unless a wider save/load or event path proves cleanup"
+    }
+  },
+  "conclusion": {
+    "timer_unit": "logical_tick_candidate_with_speed_multiplier_open",
+    "human_fuki_index_cleanup": "not_found_in_scoped_mainprocess; targeted adapter cleanup required",
+    "wave5_blocker": false
+  },
+  "evidence": [
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 18282,
+      "needle": "// Function: form_GameForm___update",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 18401,
+      "needle": "form_GameForm__MainProcess(param_1,0);",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 30058,
+      "needle": "// Function: form_GameForm__CallFuki",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "line": 15847,
+      "needle": "// Function: form_GameForm__DrawObj",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276089,
+      "needle": "HumanFukiTime;",
+      "status": "verified"
+    },
+    {
+      "file": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276090,
+      "needle": "HumanFukiIndex;",
+      "status": "verified"
+    }
+  ]
+}

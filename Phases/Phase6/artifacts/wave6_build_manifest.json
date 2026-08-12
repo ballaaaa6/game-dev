@@ -1,0 +1,149 @@
+{
+  "schema_version": "wave6-build-manifest-v1",
+  "phase": "Phase6",
+  "wave": "Wave6",
+  "stage": "W6-C0..C7+W6.1-task-system-dashboard-hardening",
+  "status": "complete_with_known_limitations",
+  "legacy_equivalence": false,
+  "source_roots_read_only": true,
+  "files": [
+    {
+      "path": "Phases/Phase5/runtime/runtime.js",
+      "exists": true,
+      "sha256": "79107321c8ce280a7192b7c0bde14c464c9ad7a308b5d7bfe589c8d0de235131",
+      "bytes": 27268
+    },
+    {
+      "path": "Phases/Phase5/runtime/app.js",
+      "exists": true,
+      "sha256": "a0545ba1ebd7636603959841d9600c0ec6d6e22f3d28bb92ea2fb630bef56b36",
+      "bytes": 22604
+    },
+    {
+      "path": "Phases/Phase5/runtime/index.html",
+      "exists": true,
+      "sha256": "8db2973de5e511abfb5bf0b505332a3274f39d0677365db00dd99375be362f99",
+      "bytes": 5851
+    },
+    {
+      "path": "Phases/Phase5/runtime/style.css",
+      "exists": true,
+      "sha256": "302f53f7ca8fd9e41dac27f15141cfb0f73303ff00098f99326004adc203c6a3",
+      "bytes": 4272
+    },
+    {
+      "path": "Phases/Phase6/runtime/task_system.js",
+      "exists": true,
+      "sha256": "789da81ab0c6f468b335c34aa50aef67cbd8a08814a2fb9ad3a0c8604651c5d4",
+      "bytes": 30271
+    },
+    {
+      "path": "Phases/Phase6/runtime/task_storage.js",
+      "exists": true,
+      "sha256": "71b84ae8090237466b212a487025e72d11648d9d6fc42ee1c94d910398845635",
+      "bytes": 1431
+    },
+    {
+      "path": "Phases/Phase6/runtime/task_repository.js",
+      "exists": true,
+      "sha256": "6e9061b20e00fa8414053ba671e2c7bc8ee561e2032cbb3e58d31d6b3a464960",
+      "bytes": 4946
+    },
+    {
+      "path": "Phases/Phase6/tests/test_wave6_task_system.js",
+      "exists": true,
+      "sha256": "a28ac83b0eba724b5770e8cd0f7a18d53a1eab730f2f2070bab6b6fef813cddc",
+      "bytes": 12606
+    },
+    {
+      "path": "Phases/Phase6/tests/test_wave6_contract.py",
+      "exists": true,
+      "sha256": "0faa4402412dc87a7cb2b476f8c38f4753d9d344ca6ac7e36c773142860af86f",
+      "bytes": 5182
+    },
+    {
+      "path": "Phases/Phase6/tools/build_wave6_manifest.py",
+      "exists": true,
+      "sha256": "0d655b046a9fdef4ec0a65c09674a2c532819f38de610ee5da311d4d1c672e60",
+      "bytes": 2568
+    },
+    {
+      "path": "Phases/Phase6/artifacts/wave6_task_contract.json",
+      "exists": true,
+      "sha256": "a29da39264ede90fda5fca65512127fe228988ea4fe1a0e3d5bcf56fd6164078",
+      "bytes": 1596
+    },
+    {
+      "path": "Phases/Phase6/artifacts/wave6_assignment_rules.json",
+      "exists": true,
+      "sha256": "b9c47e94168e50dcae16def909dcdac59a0be2bc489604f6842a87612d86608e",
+      "bytes": 1239
+    },
+    {
+      "path": "Phases/Phase6/artifacts/wave6_event_catalog.json",
+      "exists": true,
+      "sha256": "e222024435fbc989c6cfc4994069c72f9c32195bdf4f558f36ed4cef06ca7cbb",
+      "bytes": 586
+    },
+    {
+      "path": "Phases/Phase6/artifacts/wave6_notification_contract.json",
+      "exists": true,
+      "sha256": "a2f8cf4514e0087f10f7992cb1cebaac99d5864a254e44f9b1fcb0edf0951610",
+      "bytes": 758
+    },
+    {
+      "path": "Phases/Phase6/artifacts/wave6_queue_fixture.json",
+      "exists": true,
+      "sha256": "e750cc6810ee669585d2732843d1017971c60d8bbbfabeb9d1a985297c8676fe",
+      "bytes": 886
+    },
+    {
+      "path": "Phases/Phase6/artifacts/wave6_interaction_report.json",
+      "exists": true,
+      "sha256": "12201c3b932981939d49c9e221295729eee936889ef1c9d289a538c52d105425",
+      "bytes": 1826
+    },
+    {
+      "path": "Phases/Phase6/artifacts/wave6_gap_register.json",
+      "exists": true,
+      "sha256": "8112c6c94c65a245ead31ecbcddb44238701f28b35c5368bc1e65da39b2bbc8d",
+      "bytes": 1579
+    },
+    {
+      "path": "Phases/Phase6/artifacts/wave6_repository_contract.json",
+      "exists": true,
+      "sha256": "b1b15ab650283baa88b5b681c4bcfb09267338f54e41fbbc052192a71237948c",
+      "bytes": 966
+    },
+    {
+      "path": "Phases/Phase6/artifacts/wave6_permission_policy.json",
+      "exists": true,
+      "sha256": "2b15dd86702af6e66816d2a8d00a5f6fc37f7056805377dbcc91fb2462c4b8de",
+      "bytes": 675
+    },
+    {
+      "path": "Phases/Phase6/artifacts/wave6_migration_fixture.json",
+      "exists": true,
+      "sha256": "87baac3a071704f7c83068c1955ffa2c745afc99302d0cf727d8e0f10f26fcf4",
+      "bytes": 505
+    },
+    {
+      "path": "Phases/Phase6/docs/wave6_plan.md",
+      "exists": true,
+      "sha256": "aa7703466721bcdaa4aa06d70af64d561eb2a602befdac53e1340aaa584d680d",
+      "bytes": 2535
+    },
+    {
+      "path": "Phases/Phase6/docs/wave6_runtime_architecture.md",
+      "exists": true,
+      "sha256": "fdf44a07815727b9cafbc7c341046e50b01f425f8267ab0dd5415eef991d3041",
+      "bytes": 3717
+    },
+    {
+      "path": "Phases/Phase6/docs/wave6_closure_report.md",
+      "exists": true,
+      "sha256": "1882346b93d100ab61d2d9a7cf46a8f14473405a6e549150ec28c9f9852fe2bd",
+      "bytes": 2145
+    }
+  ]
+}

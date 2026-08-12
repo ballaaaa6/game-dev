@@ -1,0 +1,88 @@
+{
+  "schema_version": "wave2-build-manifest-v1",
+  "phase": "Phase4",
+  "wave": "Wave2",
+  "stage": "W2-C7-minimum-gate",
+  "source_roots_read_only": true,
+  "address_namespace": {
+    "export_to_raw_delta": "-0x100000",
+    "status": "verified"
+  },
+  "source_hashes": {
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c": {
+      "sha256": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
+      "bytes": 4974769
+    },
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c": {
+      "sha256": "19af9b427031643115f78962e487a2afb246ca485e34e70d1d44285a036aeb48",
+      "bytes": 14228597
+    },
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c": {
+      "sha256": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
+      "bytes": 11229667
+    },
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c": {
+      "sha256": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
+      "bytes": 388527
+    },
+    "game-dev-story-mod_Dumped/dump.cs": {
+      "sha256": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
+      "bytes": 12013789
+    },
+    "game-dev-story-mod_Dumped/script.json": {
+      "sha256": "e9cd2ce5ea5f552183555d1bb8914030dfbd359c1f9eee2e6abef200535b5b35",
+      "bytes": 34331643
+    },
+    "game-dev-story-mod_Dumped/stringliteral.json": {
+      "sha256": "1d7de50473f3b7df34ccd795fb2487657504c7ed96d675c27ece1d9484444527",
+      "bytes": 1223698
+    },
+    "Phases/Phase4/artifacts/resource_selector_map.json": {
+      "sha256": "947ffba7c78fe1e80880e5a95ce546c6bc20e34e5c6919bb31cf05f7ee81a407",
+      "bytes": 248028
+    },
+    "Phases/Phase4/artifacts/wave1_selector_resolution.json": {
+      "sha256": "fd4e84f09f8c527da29de95108b18e1d3b188e3310fb7b6bf8198e5aa7f56895",
+      "bytes": 7340
+    },
+    "Phases/Phase4/artifacts/wave1_asset_gap_audit.json": {
+      "sha256": "678de072ad62e83ec05b0fc13eb526e3a73b6a2db1b5191a244cde51ca241e60",
+      "bytes": 5956
+    },
+    "Phases/Phase4/artifacts/wave1_gap_register.json": {
+      "sha256": "d0c8a84d379f866f19cd9bf8e2dc7ecc596834909198907e60d20f53de3719ea",
+      "bytes": 11563
+    },
+    "Phases/Phase1/artifacts/phase1_code_trace.json": {
+      "sha256": "26b5342a9c5447c50e008b9d31258490758075f3cabdf30e4831cd90733544ec",
+      "bytes": 25720
+    },
+    "Phases/Phase1/artifacts/office_manifest.json": {
+      "sha256": "a8758c6d4d7a71aa714896066359b32014ef214918d184bda8dfd0f94be1be20",
+      "bytes": 333172
+    },
+    "Phases/Phase1/artifacts/phase1_seb_manifest.json": {
+      "sha256": "dfa561e55f52ff17a7ef7600000edd7e80c75b43eda42b7bf8cfb968faf80637",
+      "bytes": 333328
+    },
+    "Phases/Phase2/artifacts/phase2_code_trace.json": {
+      "sha256": "1f4953cf4ec5c0659f6ed6671abe35be834362554b1cf99fd8ae8813ba6b2827",
+      "bytes": 117887
+    }
+  },
+  "artifact_summary": {
+    "selector_count": 5,
+    "scene_field_count": 48,
+    "room_fixture_count": 4,
+    "coordinate_space_count": 5,
+    "coordinate_fixture_status": "verified_formula_fixture_transform_semantics_still_open",
+    "draw_dispatch_count": 7,
+    "draw_order_fixture_status": "fixture_ready_for_assembly_or_pixel_regression",
+    "furniture_relation_count": 4,
+    "placement_fixture_status": "relation_contract_fixture_only",
+    "minimum_scene_fixture_status": "minimum_scene_contract_ready_with_symbolic_room_object_type",
+    "movement_interface_status": "wave3_interface_ready_with_legacy_semantics_open",
+    "gap_count": 15
+  },
+  "status": "W2-C0-baseline-through-W2-C7-minimum-gate-built_with_open_semantics"
+}

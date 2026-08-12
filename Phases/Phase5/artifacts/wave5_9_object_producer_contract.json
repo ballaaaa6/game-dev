@@ -1,0 +1,691 @@
+{
+  "schema_version": "wave5-9-object-producer-contract-v1",
+  "phase": "Phase5",
+  "wave": "Wave5",
+  "stage": "W5.9-object-producers-camera-world-transform-and-seb-mapping",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "status": "object_producer_bounded_camera_world_transform_open_seb_room_mapping_open",
+  "object_field_map": {
+    "ObjecX": {
+      "offset": "0x298",
+      "source_line": 275648
+    },
+    "ObjecY": {
+      "offset": "0x2A0",
+      "source_line": 275649
+    },
+    "ObjecCX": {
+      "offset": "0x2A8",
+      "source_line": 275650
+    },
+    "ObjecCY": {
+      "offset": "0x2B0",
+      "source_line": 275651
+    },
+    "ObjecWX": {
+      "offset": "0x2B8",
+      "source_line": 275652
+    },
+    "ObjecWY": {
+      "offset": "0x2C0",
+      "source_line": 275653
+    },
+    "ObjecZX": {
+      "offset": "0x2C8",
+      "source_line": 275654
+    },
+    "ObjecZY": {
+      "offset": "0x2D0",
+      "source_line": 275655
+    },
+    "ObjecSY": {
+      "offset": "0x2D8",
+      "source_line": 275656
+    },
+    "ObjecEnabled": {
+      "offset": "0x2E0",
+      "source_line": 275657
+    },
+    "ObjecVisible": {
+      "offset": "0x2E8",
+      "source_line": 275658
+    },
+    "ObjecUpDown": {
+      "offset": "0x2F0",
+      "source_line": 275659
+    },
+    "ObjecSyurui": {
+      "offset": "0x2F8",
+      "source_line": 275660
+    },
+    "ObjecAnime": {
+      "offset": "0x300",
+      "source_line": 275661
+    },
+    "ObjecPoint": {
+      "offset": "0x308",
+      "source_line": 275662
+    }
+  },
+  "add_objec_contract": {
+    "function": "form_GameForm__AddObjec",
+    "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+    "source_address": "0x00f33b54",
+    "source_line": 24849,
+    "parameter_map": {
+      "param_2": {
+        "field": "ObjecSyurui",
+        "field_offset": "0x2f8",
+        "field_load_line": 24929,
+        "assignment_line": 24936,
+        "assignment_status": "verified_direct_assignment"
+      },
+      "param_3": {
+        "field": "ObjecX",
+        "field_offset": "0x298",
+        "field_load_line": 24945,
+        "assignment_line": 24948,
+        "assignment_status": "verified_direct_assignment"
+      },
+      "param_4": {
+        "field": "ObjecY",
+        "field_offset": "0x2a0",
+        "field_load_line": 24949,
+        "assignment_line": 24952,
+        "assignment_status": "verified_direct_assignment"
+      },
+      "param_5": {
+        "field": "ObjecCX",
+        "field_offset": "0x2a8",
+        "field_load_line": 24953,
+        "assignment_line": 24956,
+        "assignment_status": "verified_direct_assignment"
+      },
+      "param_6": {
+        "field": "ObjecCY",
+        "field_offset": "0x2b0",
+        "field_load_line": 24957,
+        "assignment_line": 24960,
+        "assignment_status": "verified_direct_assignment"
+      },
+      "param_7": {
+        "field": "ObjecWX",
+        "field_offset": "0x2b8",
+        "field_load_line": 24961,
+        "assignment_line": 24964,
+        "assignment_status": "verified_direct_assignment"
+      },
+      "param_8": {
+        "field": "ObjecWY",
+        "field_offset": "0x2c0",
+        "field_load_line": 24965,
+        "assignment_line": 24968,
+        "assignment_status": "verified_direct_assignment"
+      },
+      "param_9": {
+        "field": "ObjecSY",
+        "field_offset": "0x2d8",
+        "field_load_line": 24977,
+        "assignment_line": 24980,
+        "assignment_status": "verified_direct_assignment"
+      }
+    },
+    "default_local_offsets": {
+      "ObjecZX": {
+        "value": 0,
+        "field_load_line": 24969,
+        "assignment_line": 24972
+      },
+      "ObjecZY": {
+        "value": 0,
+        "field_load_line": 24973,
+        "assignment_line": 24976
+      }
+    },
+    "initializes_enabled_visible": true,
+    "untouched_by_add_objec": [
+      "ObjecUpDown",
+      "ObjecAnime",
+      "ObjecPoint"
+    ],
+    "direct_call_site_count": 9,
+    "direct_call_sites": [
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 25125,
+        "caller_function": "form_GameForm__CallHikkosi",
+        "call": "form_GameForm__AddObjec (lVar8,*(int *)(lVar15 + 0x54) + 5,0x2e,0x3d,100,0,0x21,0x2e,0x20);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 25148,
+        "caller_function": "form_GameForm__CallHikkosi",
+        "call": "form_GameForm__AddObjec(uVar9,iVar17,uVar10,uVar11,uVar12,0,uVar13,uVar14,uVar7);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 25205,
+        "caller_function": "form_GameForm__CallHikkosi",
+        "call": "form_GameForm__AddObjec (lVar8,*(int *)(lVar15 + 0x54) + 5,0x71,0x1b,100,0x5e,0x14,0x31,0xf);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 25220,
+        "caller_function": "form_GameForm__CallHikkosi",
+        "call": "form_GameForm__AddObjec (uVar9,*(int *)(lVar8 + 0x54) + 5,0x85,0x1b,0x78,0x5e,0x1e,0x31, 0x1e);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 25292,
+        "caller_function": "form_GameForm__CallHikkosi",
+        "call": "form_GameForm__AddObjec (lVar8,*(int *)(lVar15 + 0x54) + 5,0x52,0x24,0x60,0x2e,0x1e,0x30,0x27);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 25307,
+        "caller_function": "form_GameForm__CallHikkosi",
+        "call": "form_GameForm__AddObjec (uVar9,*(int *)(lVar8 + 0x54) + 5,0x70,0x24,0x7e,0x2e,0x12,0x30, 0x18);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 25317,
+        "caller_function": "form_GameForm__CallHikkosi",
+        "call": "form_GameForm__AddObjec(uVar9,0,0x26,0x91,0,0,0x2e,0x2e,0x1e);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 27460,
+        "caller_function": "form_GameForm__CallSyain",
+        "call": "form_GameForm__AddObjec(lVar3,0xffffffff,0,0,0,0,0,0,0);"
+      },
+      {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_line": 27574,
+        "caller_function": "form_GameForm__CallSyain",
+        "call": "form_GameForm__AddObjec(uVar4,1,0xfffffc19,0,0,0x40,0x10,0x20,0x1e);"
+      }
+    ],
+    "producer_status": "parameter_to_field_and_zero_local_offsets_verified"
+  },
+  "producer_inventory": {
+    "main_process_xy_average_update": {
+      "function": "form_GameForm__MainProcess",
+      "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+      "source_address": "0x00efec90",
+      "source_line": 1,
+      "source_lines": {
+        "ObjecX_array_load": 9059,
+        "ObjecY_array_load": 9071,
+        "source_array_0xf50": 8842,
+        "source_array_0xf58": 8863,
+        "source_array_0xe40": 8672
+      },
+      "formula_x": "ObjecX[index] = iVar17 / iVar15 when iVar15 != 0, otherwise 0",
+      "formula_y": "ObjecY[index] = iVar18 / iVar16 when iVar16 != 0, otherwise 0",
+      "source_fields": [
+        "GameForm+0xF50",
+        "GameForm+0xF58",
+        "GameForm+0xE40"
+      ],
+      "semantic_status": "observed_arithmetic_update; source_array_semantics_not_recovered",
+      "source_assignment_lines": {
+        "ObjecX": 9069,
+        "ObjecY": 9079
+      }
+    },
+    "furniture_update_functions": {
+      "CallPCChange": {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_address": "0x00f351f8",
+        "source_line": 25700,
+        "data_source": "PCImgData and office coordinate table",
+        "fields_written_or_read_in_update_logic": {
+          "ObjecX": {
+            "offset": "0x298",
+            "access_count": 1,
+            "first_source_line": 25777
+          },
+          "ObjecY": {
+            "offset": "0x2a0",
+            "access_count": 1,
+            "first_source_line": 25784
+          },
+          "ObjecCX": {
+            "offset": "0x2a8",
+            "access_count": 1,
+            "first_source_line": 25799
+          },
+          "ObjecCY": {
+            "offset": "0x2b0",
+            "access_count": 1,
+            "first_source_line": 25804
+          },
+          "ObjecWX": {
+            "offset": "0x2b8",
+            "access_count": 1,
+            "first_source_line": 25815
+          },
+          "ObjecWY": {
+            "offset": "0x2c0",
+            "access_count": 1,
+            "first_source_line": 25810
+          },
+          "ObjecSY": {
+            "offset": "0x2d8",
+            "access_count": 1,
+            "first_source_line": 25794
+          },
+          "ObjecZX": {
+            "offset": "0x2c8",
+            "access_count": 0,
+            "first_source_line": null
+          },
+          "ObjecZY": {
+            "offset": "0x2d0",
+            "access_count": 0,
+            "first_source_line": null
+          }
+        },
+        "verified_update_fields": [
+          "ObjecX",
+          "ObjecY",
+          "ObjecCX",
+          "ObjecCY",
+          "ObjecWX",
+          "ObjecWY",
+          "ObjecSY"
+        ],
+        "local_offset_write_count": {
+          "ObjecZX": 0,
+          "ObjecZY": 0
+        },
+        "local_offset_write_status": "no_ObjecZX_or_ObjecZY_write_observed",
+        "formula_status": "branch_dependent_image_and_office_data_expression"
+      },
+      "CallDeskChange": {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_address": "0x00f35508",
+        "source_line": 25830,
+        "data_source": "DeskImgData and office coordinate table",
+        "fields_written_or_read_in_update_logic": {
+          "ObjecX": {
+            "offset": "0x298",
+            "access_count": 3,
+            "first_source_line": 25916
+          },
+          "ObjecY": {
+            "offset": "0x2a0",
+            "access_count": 5,
+            "first_source_line": 25933
+          },
+          "ObjecCX": {
+            "offset": "0x2a8",
+            "access_count": 3,
+            "first_source_line": 26064
+          },
+          "ObjecCY": {
+            "offset": "0x2b0",
+            "access_count": 1,
+            "first_source_line": 26113
+          },
+          "ObjecWX": {
+            "offset": "0x2b8",
+            "access_count": 3,
+            "first_source_line": 26127
+          },
+          "ObjecWY": {
+            "offset": "0x2c0",
+            "access_count": 1,
+            "first_source_line": 26184
+          },
+          "ObjecSY": {
+            "offset": "0x2d8",
+            "access_count": 2,
+            "first_source_line": 25938
+          },
+          "ObjecZX": {
+            "offset": "0x2c8",
+            "access_count": 0,
+            "first_source_line": null
+          },
+          "ObjecZY": {
+            "offset": "0x2d0",
+            "access_count": 0,
+            "first_source_line": null
+          }
+        },
+        "verified_update_fields": [
+          "ObjecX",
+          "ObjecY",
+          "ObjecCX",
+          "ObjecCY",
+          "ObjecWX",
+          "ObjecWY",
+          "ObjecSY"
+        ],
+        "local_offset_write_count": {
+          "ObjecZX": 0,
+          "ObjecZY": 0
+        },
+        "local_offset_write_status": "no_ObjecZX_or_ObjecZY_write_observed",
+        "formula_status": "branch_dependent_image_and_office_data_expression"
+      },
+      "CallChairChange": {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_address": "0x00f35d68",
+        "source_line": 26199,
+        "data_source": "ChairImgData and office coordinate table",
+        "fields_written_or_read_in_update_logic": {
+          "ObjecX": {
+            "offset": "0x298",
+            "access_count": 4,
+            "first_source_line": 26286
+          },
+          "ObjecY": {
+            "offset": "0x2a0",
+            "access_count": 4,
+            "first_source_line": 26304
+          },
+          "ObjecCX": {
+            "offset": "0x2a8",
+            "access_count": 4,
+            "first_source_line": 26318
+          },
+          "ObjecCY": {
+            "offset": "0x2b0",
+            "access_count": 2,
+            "first_source_line": 26433
+          },
+          "ObjecWX": {
+            "offset": "0x2b8",
+            "access_count": 3,
+            "first_source_line": 26447
+          },
+          "ObjecWY": {
+            "offset": "0x2c0",
+            "access_count": 2,
+            "first_source_line": 26487
+          },
+          "ObjecSY": {
+            "offset": "0x2d8",
+            "access_count": 1,
+            "first_source_line": 26272
+          },
+          "ObjecZX": {
+            "offset": "0x2c8",
+            "access_count": 0,
+            "first_source_line": null
+          },
+          "ObjecZY": {
+            "offset": "0x2d0",
+            "access_count": 0,
+            "first_source_line": null
+          }
+        },
+        "verified_update_fields": [
+          "ObjecX",
+          "ObjecY",
+          "ObjecCX",
+          "ObjecCY",
+          "ObjecWX",
+          "ObjecWY",
+          "ObjecSY"
+        ],
+        "local_offset_write_count": {
+          "ObjecZX": 0,
+          "ObjecZY": 0
+        },
+        "local_offset_write_status": "no_ObjecZX_or_ObjecZY_write_observed",
+        "formula_status": "branch_dependent_image_and_office_data_expression"
+      }
+    },
+    "call_graph": {
+      "CallHikkosi": {
+        "source_address": "0x00f33e9c",
+        "source_line": 25013,
+        "external_call_sites": [
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 39992,
+            "caller_function": "form_GameForm__LoadGameData",
+            "call": "form_GameForm__CallHikkosi (param_1,*(undefined4 *)(*(long *)(*(long *)puVar3 + 0xb8) + 0x734),0,0);"
+          },
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 95278,
+            "caller_function": "form_SubForm__EventEnd",
+            "call": "form_GameForm__CallHikkosi (lVar9,*(undefined4 *)(*(long *)(*(long *)puVar8 + 0xb8) + 0x734),1,0,0);"
+          }
+        ],
+        "internal_producer_calls": [
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 25125,
+            "caller_function": "form_GameForm__CallHikkosi",
+            "call": "form_GameForm__AddObjec (lVar8,*(int *)(lVar15 + 0x54) + 5,0x2e,0x3d,100,0,0x21,0x2e,0x20);"
+          },
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 25148,
+            "caller_function": "form_GameForm__CallHikkosi",
+            "call": "form_GameForm__AddObjec(uVar9,iVar17,uVar10,uVar11,uVar12,0,uVar13,uVar14,uVar7);"
+          },
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 25205,
+            "caller_function": "form_GameForm__CallHikkosi",
+            "call": "form_GameForm__AddObjec (lVar8,*(int *)(lVar15 + 0x54) + 5,0x71,0x1b,100,0x5e,0x14,0x31,0xf);"
+          },
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 25220,
+            "caller_function": "form_GameForm__CallHikkosi",
+            "call": "form_GameForm__AddObjec (uVar9,*(int *)(lVar8 + 0x54) + 5,0x85,0x1b,0x78,0x5e,0x1e,0x31, 0x1e);"
+          },
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 25292,
+            "caller_function": "form_GameForm__CallHikkosi",
+            "call": "form_GameForm__AddObjec (lVar8,*(int *)(lVar15 + 0x54) + 5,0x52,0x24,0x60,0x2e,0x1e,0x30,0x27);"
+          },
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 25307,
+            "caller_function": "form_GameForm__CallHikkosi",
+            "call": "form_GameForm__AddObjec (uVar9,*(int *)(lVar8 + 0x54) + 5,0x70,0x24,0x7e,0x2e,0x12,0x30, 0x18);"
+          },
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 25317,
+            "caller_function": "form_GameForm__CallHikkosi",
+            "call": "form_GameForm__AddObjec(uVar9,0,0x26,0x91,0,0,0x2e,0x2e,0x1e);"
+          },
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 25464,
+            "caller_function": "form_GameForm__CallHikkosi",
+            "call": "form_GameForm__CallSyain(param_1,1,*(undefined4 *)(lVar8 + lVar15 * 4),0);"
+          },
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 25564,
+            "caller_function": "form_GameForm__CallHikkosi",
+            "call": "form_GameForm__CallPCChange(lVar8,*(undefined4 *)(lVar15 + 0x734),uVar20);"
+          },
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 25565,
+            "caller_function": "form_GameForm__CallHikkosi",
+            "call": "form_GameForm__CallDeskChange (uVar9,*(undefined4 *)(*(long *)(*(long *)puVar4 + 0xb8) + 0x734),uVar19);"
+          },
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 25567,
+            "caller_function": "form_GameForm__CallHikkosi",
+            "call": "form_GameForm__CallChairChange (uVar9,*(undefined4 *)(*(long *)(*(long *)puVar4 + 0xb8) + 0x734),uVar19);"
+          }
+        ]
+      },
+      "CallSyain": {
+        "source_address": "0x00f37624",
+        "external_or_non_definition_call_sites": [
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 25464,
+            "caller_function": "form_GameForm__CallHikkosi",
+            "call": "form_GameForm__CallSyain(param_1,1,*(undefined4 *)(lVar8 + lVar15 * 4),0);"
+          },
+          {
+            "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+            "source_line": 43637,
+            "caller_function": "form_GameForm__CommonCode",
+            "call": "form_GameForm__CallSyain(param_1,0,param_3,0);"
+          }
+        ]
+      }
+    },
+    "nonzero_local_offset_producer_scan": {
+      "fields": [
+        "ObjecZX",
+        "ObjecZY"
+      ],
+      "direct_writes_observed_outside_AddObjec": 0,
+      "status": "no_nonzero_producer_recovered_in_scoped_form_c_scan"
+    }
+  },
+  "camera_transform_boundary": {
+    "dump_fields": {
+      "camX_": {
+        "offset": "0xEC",
+        "source_line": 275468
+      },
+      "camY_": {
+        "offset": "0xF0",
+        "source_line": 275469
+      },
+      "qCamX_": {
+        "offset": "0xF4",
+        "source_line": 275470
+      },
+      "qCamY_": {
+        "offset": "0xF8",
+        "source_line": 275471
+      },
+      "CameraZenkaiX": {
+        "offset": "0x10",
+        "source_line": 275489
+      },
+      "CameraZenkaiY": {
+        "offset": "0x14",
+        "source_line": 275490
+      },
+      "DisplayX": {
+        "offset": "0x38",
+        "source_line": 275499
+      },
+      "DisplayY": {
+        "offset": "0x3C",
+        "source_line": 275500
+      },
+      "CameraX": {
+        "offset": "0x40",
+        "source_line": 275501
+      },
+      "CameraY": {
+        "offset": "0x44",
+        "source_line": 275502
+      }
+    },
+    "c_evidence": {
+      "OnTouchCamera": {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_address": "0x00f25fd4",
+        "source_line": 24476,
+        "body_status": "no_op_return",
+        "body_line": 24483
+      },
+      "SetOrigin": {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "source_address": "0x00f48e30",
+        "source_line": 41012,
+        "body_status": "no_op_return",
+        "body_line": 41019
+      },
+      "RenderGameScreen": {
+        "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
+        "source_address": "0x00f16edc",
+        "source_lines": {
+          "game_width_read": 4712,
+          "clip": 4751,
+          "mesh_depth_setup": 4727,
+          "set_origin": 4765,
+          "draw_obj_call": 4766,
+          "reset_origin": 4767
+        },
+        "verified_boundary": "centered Graphics origin and clip around DrawObj only"
+      }
+    },
+    "named_camera_symbol_reference_count_in_c": 0,
+    "status": "producer_camera_world_isometric_transform_not_recovered"
+  },
+  "depth_boundary": {
+    "fields": {
+      "ObjecSY": {
+        "offset": "0x2D8",
+        "source_line": 275656
+      },
+      "ObjecUpDown": {
+        "offset": "0x2F0",
+        "source_line": 275659
+      }
+    },
+    "draw_obj_set_depth_call_count": 0,
+    "status": "numeric_sort_or_field_usage_only_no_universal_depth_semantics"
+  },
+  "seb_mapping": {
+    "generic_loadseb_bridge": {
+      "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
+      "source_line": 99955,
+      "call": "JarInflater.GetData -> ResourceManager.LoadSeb",
+      "status": "generic_loadseb_bridge_not_room_mapping"
+    },
+    "draw_obj_resource_manager_seb_call_count": 0,
+    "direct_floor0_seb_drawobj_callsite_count": 0,
+    "literal_floor0_seb_count_in_c_sources": 0,
+    "status": "direct_floor0_seb_to_gameform_drawobj_mapping_not_recovered"
+  },
+  "room_placement": {
+    "status": "object_producers_bounded_png_placement_camera_and_seb_mapping_open",
+    "closed": [
+      "AddObjec parameter-to-object-field provenance",
+      "AddObjec default ObjecZX/ObjecZY zero initialization",
+      "MainProcess observed ObjecX/ObjecY averaging update",
+      "CallPCChange/CallDeskChange/CallChairChange verified furniture object-field update set",
+      "scoped absence of nonzero ObjecZX/ObjecZY writes in the recovered producer functions",
+      "scoped absence of direct floor0.seb-to-DrawObj caller in the recovered source scan"
+    ],
+    "open": [
+      "semantic meaning of GameForm+0xE40/+0xF50/+0xF58 source arrays",
+      "camera/world/isometric transform from camera fields to object coordinates",
+      "nonzero ObjecZX/ObjecZY producer or local pivot semantics",
+      "ObjecUpDown/ObjecSY universal depth meaning",
+      "direct floor0.seb room renderer mapping and full SEB room reconstruction",
+      "SEB anchor enum/pivot semantics and final-record shortfall/legacy equivalence"
+    ],
+    "policy": "retain verified PNG screen formula while keeping producer/world/SEB semantics evidence-bounded"
+  },
+  "guardrails": [
+    "Do not rename GameForm+0xE40/+0xF50/+0xF58 without source-data evidence.",
+    "Do not infer camera/world/isometric semantics from field names when the recovered C bodies are no-op or stripped-offset code.",
+    "Do not treat ObjecSY or ObjecUpDown as universal depth without a per-object depth consumer.",
+    "Do not promote generic ResourceManager.LoadSeb into a floor0.seb room mapping.",
+    "Keep legacy_equivalence=false."
+  ],
+  "source_files": {
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c": "19af9b427031643115f78962e487a2afb246ca485e34e70d1d44285a036aeb48",
+    "game-dev-story-mod_Dumped/dump.cs": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
+    "Phases/Phase5/artifacts/wave5_8_room_caller_contract.json": "bbcee60b9f17836dfb33ff052ab914b931d91cffe05aa5c4bef40651872a7499"
+  }
+}

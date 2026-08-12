@@ -1,0 +1,29 @@
+{
+  "schema_version": "wave5-1-timer-contract-v1",
+  "stage": "W5.1-D-logical-timer-contract",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "unit": "logical_tick",
+  "wall_clock_equivalence": false,
+  "expiry_rule": "expires_at_tick <= clock.value",
+  "covered_resources": [
+    "bubble",
+    "notification"
+  ],
+  "zero_lifetime_policy": "expires_on_next_step_or_explicit_expiry_pass",
+  "cleanup": {
+    "bubble_owner_reference_cleared": true,
+    "notification_removed_from_active_map": true
+  },
+  "legacy_evidence": {
+    "human_fuki_time_decrement": "verified_bounded",
+    "message_lifetime": "raw_0x60_verified",
+    "unit": "unknown",
+    "human_fuki_index_cleanup": "not_found_in_scoped_expiry_path"
+  },
+  "status": "adapter_verified_with_legacy_unit_open",
+  "evidence": [
+    "Phases/Phase4/artifacts/wave4_timer_fuki_trace.json",
+    "Phases/Phase4/artifacts/wave4_event_contract.json"
+  ]
+}

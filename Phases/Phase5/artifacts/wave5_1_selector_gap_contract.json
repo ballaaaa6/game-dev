@@ -1,0 +1,31 @@
+{
+  "schema_version": "wave5-1-selector-gap-contract-v1",
+  "stage": "W5.1-F-tface-gap-classification",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "selectors": [
+    {
+      "name": "TFace",
+      "value": 40,
+      "status": "unresolved",
+      "classification": "index_space_gap",
+      "runtime_policy": "preserve_raw_selector_and_omit_face_layer"
+    },
+    {
+      "name": "TFace",
+      "value": 41,
+      "status": "unresolved",
+      "classification": "index_space_gap",
+      "runtime_policy": "preserve_raw_selector_and_omit_face_layer"
+    }
+  ],
+  "evidence": [
+    "Phases/Phase4/artifacts/wave1_asset_gap_audit.json",
+    "Phases/Phase4/artifacts/wave3_actor_animation_contract.json"
+  ],
+  "open_semantics": [
+    "special selector versus missing extraction",
+    "imgFace initializer literal conflict",
+    "alternate face atlas or dynamic index path"
+  ]
+}

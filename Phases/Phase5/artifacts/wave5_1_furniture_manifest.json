@@ -1,0 +1,57 @@
+{
+  "schema_version": "wave5-1-furniture-manifest-v1",
+  "stage": "W5.1-B-bounded-furniture-renderer",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "renderer_status": "bounded_asset_renderer",
+  "records": [
+    {
+      "id": "reception.fixture.0",
+      "type": "OBJ_TYPE_RECEPTION",
+      "source_family": "reception",
+      "source_index": 0,
+      "source_path": "game-dev-story-mod_Sprites/office/reception_000.png",
+      "dimensions": [78, 80],
+      "asset_status": "verified_source_asset_family",
+      "placement_status": "adapter_fixture_not_legacy_verified",
+      "evidence": [
+        "Phases/Phase4/artifacts/wave2_draw_order_contract.json",
+        "Phases/Phase4/artifacts/wave2_furniture_contract.json"
+      ]
+    },
+    {
+      "id": "desk.fixture.0",
+      "type": "OBJ_TYPE_DESK",
+      "source_family": "desk",
+      "source_index": 0,
+      "source_path": "game-dev-story-mod_Sprites/office/desk_000.png",
+      "dimensions": [150, 64],
+      "asset_status": "verified_source_asset_family",
+      "placement_status": "adapter_fixture_not_legacy_verified",
+      "evidence": [
+        "Phases/Phase4/artifacts/wave2_draw_order_contract.json",
+        "Phases/Phase4/artifacts/wave2_furniture_contract.json"
+      ]
+    },
+    {
+      "id": "chair.fixture.0",
+      "type": "OBJ_TYPE_CHAIR",
+      "source_family": "chair",
+      "source_index": 0,
+      "source_path": "game-dev-story-mod_Sprites/office/chair_000.png",
+      "dimensions": [84, 32],
+      "asset_status": "verified_source_asset_family",
+      "placement_status": "adapter_fixture_not_legacy_verified",
+      "evidence": [
+        "Phases/Phase4/artifacts/wave2_draw_order_contract.json",
+        "Phases/Phase4/artifacts/wave2_furniture_contract.json"
+      ]
+    }
+  ],
+  "open_semantics": [
+    "imgBihin_ selector-to-file index mapping",
+    "DrawDesk/DrawChair/DrawReception crop rectangles",
+    "full room placement from truncated floor0.seb",
+    "seat/collision/walkable legacy producer semantics"
+  ]
+}

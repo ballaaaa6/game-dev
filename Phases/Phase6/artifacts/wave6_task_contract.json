@@ -1,0 +1,52 @@
+{
+  "schema_version": "wave6-task-contract-v1",
+  "phase": "Phase6",
+  "wave": "Wave6",
+  "status": "task_engine_implemented_with_repository_boundary",
+  "legacy_equivalence": false,
+  "source": "phase6_web_adapter",
+  "task_statuses": ["queued", "working", "blocked", "done"],
+  "task_priorities": ["urgent", "high", "normal", "low"],
+  "terminal_status": "done",
+  "clock_policy": {
+    "unit": "logical_tick",
+    "wall_clock_equivalence": false,
+    "timestamps": ["created_at_tick", "updated_at_tick", "started_at_tick", "completed_at_tick"]
+  },
+  "task_fields": [
+    "id",
+    "title",
+    "description",
+    "priority",
+    "status",
+    "assignee_id",
+    "created_by",
+    "created_at_tick",
+    "updated_at_tick",
+    "blocked_reason",
+    "started_at_tick",
+    "completed_at_tick"
+  ],
+  "transition_policy": {
+    "queued": ["working"],
+    "working": ["blocked", "done"],
+    "blocked": ["working"],
+    "done": []
+  },
+  "agent_projection": {
+    "owner": "phase6_task_system",
+    "fields": ["taskId", "taskStatus"],
+    "legacy_status": "web_adapter_projection_only"
+  },
+  "persistence": {
+    "schema_version": "wave6-task-state-v1",
+    "repository_schema_version": "wave6-task-repository-v1",
+    "repository_interface": ["load", "save", "clear"],
+    "default_repository": "LocalStorageTaskRepository",
+    "default_storage": "localStorage",
+    "storage_key": "phase6.task_state.v1",
+    "revision_policy": "optimistic_expected_revision",
+    "migration": "direct state snapshot -> repository envelope revision 0",
+    "fallback": "memory_only_with_visible_status"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "wave4-actor-dialogue-fixture-v1",
+  "phase": "Phase4",
+  "wave": "Wave4",
+  "stage": "W4-C5-actor-dialogue-composition",
+  "source_roots_read_only": true,
+  "fixture_scope": "single actor dialogue-to-bubble adapter boundary; not legacy runtime equivalence",
+  "inputs": {
+    "spawn_fixture": "Phases/Phase4/artifacts/wave3_spawn_fixture.json",
+    "wave3_e2e_fixture": "Phases/Phase4/artifacts/wave3_actor_e2e_fixture.json",
+    "talk_fixture": "Phases/Phase4/artifacts/wave4_talk_fixture.json",
+    "bubble_fixture": "Phases/Phase4/artifacts/wave4_bubble_fixture.json"
+  },
+  "actor": {
+    "actor_id": "adapter.actor.0",
+    "employee_id": "adapter.employee.0",
+    "identity_policy": "Wave3 stable web adapter ID"
+  },
+  "trace": [
+    {
+      "tick": 0,
+      "event": "spawn",
+      "actor_id": "adapter.actor.0",
+      "provenance": "Phases/Phase4/artifacts/wave3_spawn_fixture.json"
+    },
+    {
+      "tick": 0,
+      "event": "dialogue_request",
+      "talk_tag": "fixture.tag",
+      "raw_speaker_id": 2,
+      "status": "adapter_input"
+    },
+    {
+      "tick": 0,
+      "event": "talk_lookup",
+      "status": "contract_fixture",
+      "provenance": "Phases/Phase4/artifacts/wave4_talk_fixture.json"
+    },
+    {
+      "tick": 0,
+      "event": "bubble_attach",
+      "raw_fields": {
+        "HumanFukiIndex": 0,
+        "HumanFukiTime": 3
+      },
+      "legacy_equivalence": false
+    },
+    {
+      "tick": 0,
+      "event": "bubble_draw",
+      "status": "draw_command_ready",
+      "legacy_equivalence": false
+    },
+    {
+      "tick": 3,
+      "event": "bubble_expire",
+      "status": "adapter_expired",
+      "legacy_timer_equivalence": false
+    }
+  ],
+  "not_claimed": [
+    "talking is not a recovered HumanMode semantic",
+    "raw speaker IDs are not public actor IDs",
+    "bubble expiry unit is not verified legacy timing",
+    "DoEvent has not been translated as a whole"
+  ],
+  "wave3_e2e_status": "deterministic_e2e_fixture_ready_legacy_semantics_open",
+  "legacy_equivalence": false,
+  "status": "adapter_dialogue_trace_ready_semantic_lifecycle_open"
+}

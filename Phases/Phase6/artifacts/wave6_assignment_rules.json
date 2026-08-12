@@ -1,0 +1,16 @@
+{
+  "schema_version": "wave6-assignment-rules-v1",
+  "legacy_equivalence": false,
+  "rules": [
+    { "id": "one_assignee_per_task", "status": "verified", "decision": "a task has zero or one assignee_id" },
+    { "id": "one_active_task_per_agent", "status": "verified", "decision": "queued, working or blocked task occupies an Agent" },
+    { "id": "done_is_terminal", "status": "verified", "decision": "done task cannot be assigned or started" },
+    { "id": "working_requires_assignee", "status": "verified", "decision": "start requires an existing assignee" },
+    { "id": "blocked_requires_reason", "status": "verified", "decision": "block requires non-empty blocked_reason" },
+    { "id": "moving_agent_guard", "status": "verified", "decision": "an Agent must arrive before starting or resuming" },
+    { "id": "no_implicit_movement", "status": "verified", "decision": "task actions do not invoke path/collision/seat providers" },
+    { "id": "manual_state_guard", "status": "ui_boundary", "decision": "dashboard task actions own state while an Agent has an active task" }
+  ],
+  "queue_order": ["priority_rank", "created_at_tick_ascending", "task_id_ascending"],
+  "priority_rank": { "urgent": 0, "high": 1, "normal": 2, "low": 3 }
+}

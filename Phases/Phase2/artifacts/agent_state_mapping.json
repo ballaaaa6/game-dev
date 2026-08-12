@@ -1,0 +1,236 @@
+{
+  "schema": "phase2.agent-state-mapping.v1",
+  "adaptation_layer": "Virtual AI Office state mapping; does not rewrite original-game facts",
+  "states": [
+    {
+      "agent_state": "idle",
+      "status": "unknown",
+      "legacy_state_or_mode": null,
+      "frame_sequence": [],
+      "bodyface_records": [],
+      "face_behavior": null,
+      "direction_behavior": null,
+      "timing": null,
+      "loop_behavior": null,
+      "furniture_or_seat_requirement": null,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/dump.cs",
+          "fields": [
+            "HumanDexMode",
+            "HumanDexAnime",
+            "HumanDexWalk"
+          ],
+          "note": "Named fields exist, but current evidence does not connect them to a verified mode sequence for this Agent state."
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025,
+          "note": "DrawHuman exists, but individual call context is not sufficient to assign this state."
+        }
+      ],
+      "unresolved_questions": [
+        "which mode(s) represent this state",
+        "direction",
+        "timing",
+        "loop",
+        "placement/seat semantics"
+      ]
+    },
+    {
+      "agent_state": "walking",
+      "status": "unknown",
+      "legacy_state_or_mode": null,
+      "frame_sequence": [],
+      "bodyface_records": [],
+      "face_behavior": null,
+      "direction_behavior": null,
+      "timing": null,
+      "loop_behavior": null,
+      "furniture_or_seat_requirement": null,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/dump.cs",
+          "fields": [
+            "HumanDexMode",
+            "HumanDexAnime",
+            "HumanDexWalk"
+          ],
+          "note": "Named fields exist, but current evidence does not connect them to a verified mode sequence for this Agent state."
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025,
+          "note": "DrawHuman exists, but individual call context is not sufficient to assign this state."
+        }
+      ],
+      "unresolved_questions": [
+        "which mode(s) represent this state",
+        "direction",
+        "timing",
+        "loop",
+        "placement/seat semantics"
+      ]
+    },
+    {
+      "agent_state": "working",
+      "status": "unknown",
+      "legacy_state_or_mode": null,
+      "frame_sequence": [],
+      "bodyface_records": [],
+      "face_behavior": null,
+      "direction_behavior": null,
+      "timing": null,
+      "loop_behavior": null,
+      "furniture_or_seat_requirement": null,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/dump.cs",
+          "fields": [
+            "HumanDexMode",
+            "HumanDexAnime",
+            "HumanDexWalk"
+          ],
+          "note": "Named fields exist, but current evidence does not connect them to a verified mode sequence for this Agent state."
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025,
+          "note": "DrawHuman exists, but individual call context is not sufficient to assign this state."
+        }
+      ],
+      "unresolved_questions": [
+        "which mode(s) represent this state",
+        "direction",
+        "timing",
+        "loop",
+        "placement/seat semantics"
+      ]
+    },
+    {
+      "agent_state": "sitting",
+      "status": "unknown",
+      "legacy_state_or_mode": null,
+      "frame_sequence": [],
+      "bodyface_records": [],
+      "face_behavior": null,
+      "direction_behavior": null,
+      "timing": null,
+      "loop_behavior": null,
+      "furniture_or_seat_requirement": null,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/dump.cs",
+          "fields": [
+            "HumanDexMode",
+            "HumanDexAnime",
+            "HumanDexWalk"
+          ],
+          "note": "Named fields exist, but current evidence does not connect them to a verified mode sequence for this Agent state."
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025,
+          "note": "DrawHuman exists, but individual call context is not sufficient to assign this state."
+        }
+      ],
+      "unresolved_questions": [
+        "which mode(s) represent this state",
+        "direction",
+        "timing",
+        "loop",
+        "placement/seat semantics"
+      ]
+    },
+    {
+      "agent_state": "break",
+      "status": "unknown",
+      "legacy_state_or_mode": null,
+      "frame_sequence": [],
+      "bodyface_records": [],
+      "face_behavior": null,
+      "direction_behavior": null,
+      "timing": null,
+      "loop_behavior": null,
+      "furniture_or_seat_requirement": null,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/dump.cs",
+          "fields": [
+            "HumanDexMode",
+            "HumanDexAnime",
+            "HumanDexWalk"
+          ],
+          "note": "Named fields exist, but current evidence does not connect them to a verified mode sequence for this Agent state."
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025,
+          "note": "DrawHuman exists, but individual call context is not sufficient to assign this state."
+        }
+      ],
+      "unresolved_questions": [
+        "which mode(s) represent this state",
+        "direction",
+        "timing",
+        "loop",
+        "placement/seat semantics"
+      ]
+    },
+    {
+      "agent_state": "talking",
+      "status": "probable",
+      "legacy_state_or_mode": "Kaiwa/dialogue rendering context; candidate TMode values 8 and 9",
+      "frame_sequence": [
+        "mode_08",
+        "mode_09"
+      ],
+      "bodyface_records": [
+        8,
+        9
+      ],
+      "face_behavior": "TFace is supplied by a dialogue/person selector in the observed call; exact face-change timing is unknown.",
+      "direction_behavior": null,
+      "timing": null,
+      "loop_behavior": null,
+      "furniture_or_seat_requirement": null,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 71726,
+          "note": "A DrawHuman call in the Kaiwa-related SubForm draw path uses TMode = iVar11 % 2 + 8 with TFace/TBody values loaded from form state."
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 80668,
+          "note": "A DrawHuman call with TMode = iVar14 % 2 + 8 is adjacent to DrawFukidashi."
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 80682,
+          "note": "The adjacent chat-bubble renderer is DrawFukidashi."
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/dump.cs",
+          "fields": [
+            "KaiwaFaceG",
+            "KaiwaBodyG"
+          ],
+          "note": "GameForm exposes dialogue character selectors."
+        }
+      ],
+      "unresolved_questions": [
+        "whether modes 8/9 are a talking loop or another alternating visual",
+        "timing",
+        "face-change behavior",
+        "text/bubble timing"
+      ]
+    }
+  ],
+  "coverage": {
+    "verified": 0,
+    "probable": 1,
+    "unknown": 5
+  },
+  "policy": "Unknown is retained when the current extraction does not connect a semantic state to a specific original frame sequence."
+}

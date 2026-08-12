@@ -1,0 +1,85 @@
+{
+  "schema_version": "wave4-hardening-manifest-v1",
+  "phase": "Phase4",
+  "wave": "Wave4",
+  "stage": "W4.5-evidence-hardening",
+  "source_roots_read_only": true,
+  "source_hashes": {
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c": {
+      "sha256": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
+      "bytes": 4974769
+    },
+    "game-dev-story-mod_Dumped/dump.cs": {
+      "sha256": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
+      "bytes": 12013789
+    },
+    "game-dev-story-mod_Dumped/Failed_Functions_Assembly/00f5c704_form_GameForm__DoEvent.asm.txt": {
+      "sha256": "1e302bd464b305a5333cef317884faa59b8486ac7dadb910355227e990a60ced",
+      "bytes": 710429
+    },
+    "Phases/Phase4/artifacts/string_literal_map.json": {
+      "sha256": "96791439b424034123ff4256c7a9e5d7b9f20d8dbcf22f3bef85511c1963f9e4",
+      "bytes": 10826612
+    },
+    "Phases/Phase4/artifacts/wave1_branch_index.json": {
+      "sha256": "cefc894a21eb3f33d0a049086e390f30f078ad817a8a6e904201715fcac92257",
+      "bytes": 4456833
+    },
+    "Phases/Phase4/artifacts/wave4_event_contract.json": {
+      "sha256": "1fd7423029f68f27528b5ee3dd3b8bd748efd55fee5e7e93a7ed52ffe8e377c2",
+      "bytes": 6557
+    },
+    "Phases/Phase4/artifacts/wave4_gap_register.json": {
+      "sha256": "00ec55fdd66ce875bba4eea2d014f4753d07f9662802485b515ce2ad0b17cbfa",
+      "bytes": 5025
+    },
+    "Phases/Phase4/artifacts/wave4_talk_contract.json": {
+      "sha256": "c3c65a6986d2950373d892168795688097207d276baa59b45f46c53b562067a0",
+      "bytes": 7325
+    },
+    "Phases/Phase4/artifacts/wave4_lifecycle_slices.json": {
+      "sha256": "d239680987f03f5262906736a211732f7f996ee25484f43da9c52ff0498a875d",
+      "bytes": 49192
+    }
+  },
+  "artifact_inputs": [
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+    "game-dev-story-mod_Dumped/dump.cs",
+    "game-dev-story-mod_Dumped/Failed_Functions_Assembly/00f5c704_form_GameForm__DoEvent.asm.txt",
+    "Phases/Phase4/artifacts/string_literal_map.json",
+    "Phases/Phase4/artifacts/wave1_branch_index.json",
+    "Phases/Phase4/artifacts/wave4_event_contract.json",
+    "Phases/Phase4/artifacts/wave4_gap_register.json",
+    "Phases/Phase4/artifacts/wave4_talk_contract.json",
+    "Phases/Phase4/artifacts/wave4_lifecycle_slices.json"
+  ],
+  "artifact_outputs": [
+    "Phases/Phase4/artifacts/wave4_timer_fuki_trace.json",
+    "Phases/Phase4/artifacts/wave4_talk_speaker_trace.json",
+    "Phases/Phase4/artifacts/wave4_message_graph_trace.json",
+    "Phases/Phase4/artifacts/wave4_event_mode_candidates.json",
+    "Phases/Phase4/artifacts/wave4_hardening_manifest.json",
+    "Phases/Phase4/docs/wave4_hardening_report.md",
+    "Phases/Phase4/docs/wave4_slices/timer_fuki_02.md",
+    "Phases/Phase4/docs/wave4_slices/talk_speaker_02.md",
+    "Phases/Phase4/docs/wave4_slices/message_graph_02.md",
+    "Phases/Phase4/docs/wave4_slices/event_mode_02.md"
+  ],
+  "packages": {
+    "W4.5-R1": "timer_and_human_fuki_lifecycle",
+    "W4.5-R2": "talk_token_and_speaker_boundary",
+    "W4.5-R3": "message_graph_render_and_audio_threshold",
+    "W4.5-R4": "DoEvent_target_clusters_without_mode_names",
+    "W4.5-R5": "hardening_report_and_wave5_handoff"
+  },
+  "acceptance": [
+    "logical tick evidence recorded without claiming milliseconds",
+    "HumanFukiIndex cleanup gap classified and adapter action explicit",
+    "MessageGraph render behavior for IDs 1/2 recorded without labels",
+    "talk raw parse/name bridge recorded without actor identity promotion",
+    "DoEvent target clusters recorded without numeric event names",
+    "all remaining boundaries have status and next action"
+  ],
+  "status": "W4.5-hardening_complete_with_remaining_boundaries",
+  "legacy_equivalence": false
+}

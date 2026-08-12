@@ -1,0 +1,25 @@
+{
+  "schema_version": "wave5-1-transform-depth-contract-v1",
+  "stage": "W5.1-C-adapter-transform-depth",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "coordinate_profile": {
+    "space": "adapter_canvas_pixels",
+    "object_destination": "explicit_manifest_destination",
+    "actor_destination": "agent_position_plus_bodyface_offset",
+    "object_depth": "manifest.sort_key",
+    "actor_depth": "agent.position[1]",
+    "tie_break": "kind_then_id",
+    "status": "adapter_verified_fixture_specific"
+  },
+  "evidence": [
+    "Phases/Phase4/artifacts/wave2_coordinate_contract.json",
+    "Phases/Phase4/artifacts/wave2_draw_order_contract.json"
+  ],
+  "open_semantics": [
+    "universal world/object/crop/screen transform",
+    "ObjecSY + ObjecY depth label",
+    "camera and pivot semantics",
+    "legacy pixel-equivalent draw order"
+  ]
+}

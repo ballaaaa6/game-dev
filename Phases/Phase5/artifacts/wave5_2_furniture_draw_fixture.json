@@ -1,0 +1,45 @@
+{
+  "schema_version": "wave5-2-furniture-draw-fixture-v1",
+  "stage": "W5.2-bounded-furniture-draw-fixture",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "fixture_id": "office_floor0_furniture_mapping_probe",
+  "runtime_policy": {
+    "coordinate_space": "adapter_canvas_pixels",
+    "destination": "manifest destination",
+    "crop": "full source asset preview while legacy crop is unresolved",
+    "placement": "explicit adapter fixture, not recovered room placement"
+  },
+  "objects": [
+    {
+      "id": "chair.fixture.0",
+      "asset_path": "game-dev-story-mod_Sprites/office/chair_000.png",
+      "destination": [340, 354],
+      "source_rect": null,
+      "legacy_image_slot": "imgBihin_[1]",
+      "status": "draw_command_ready_crop_pending"
+    },
+    {
+      "id": "desk.fixture.0",
+      "asset_path": "game-dev-story-mod_Sprites/office/desk_000.png",
+      "destination": [360, 338],
+      "source_rect": null,
+      "legacy_image_slot": "imgBihin_[2]",
+      "status": "draw_command_ready_crop_pending"
+    },
+    {
+      "id": "reception.fixture.0",
+      "asset_path": "game-dev-story-mod_Sprites/office/reception_000.png",
+      "destination": [236, 286],
+      "source_rect": null,
+      "legacy_image_slot": "imgFloorParts",
+      "status": "draw_command_ready_crop_pending"
+    }
+  ],
+  "evidence": [
+    "Phases/Phase5/runtime/data/room_manifest.json",
+    "Phases/Phase5/artifacts/wave5_2_furniture_mapping_contract.json",
+    "Phases/Phase4/artifacts/wave2_coordinate_contract.json",
+    "Phases/Phase4/artifacts/wave2_minimum_scene_fixture.json"
+  ]
+}

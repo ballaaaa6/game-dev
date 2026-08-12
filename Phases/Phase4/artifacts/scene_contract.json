@@ -1,0 +1,753 @@
+{
+  "schema_version": "wave2-scene-contract-v1",
+  "phase": "Phase4",
+  "wave": "Wave2",
+  "stage": "W2-C2-object-contract",
+  "source_roots_read_only": true,
+  "address_namespace": {
+    "export_to_raw_delta": "-0x100000",
+    "status": "verified_from_wave1"
+  },
+  "object_type_constants": [
+    {
+      "name": "OBJ_TYPE_PARTS",
+      "value": 0,
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276259,
+      "status": "verified_dump_constant"
+    },
+    {
+      "name": "OBJ_TYPE_HUMAN",
+      "value": 1,
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276260,
+      "status": "verified_dump_constant"
+    },
+    {
+      "name": "OBJ_TYPE_DISPLAY",
+      "value": 3,
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276261,
+      "status": "verified_dump_constant"
+    },
+    {
+      "name": "OBJ_TYPE_CHAIR",
+      "value": 4,
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276262,
+      "status": "verified_dump_constant"
+    },
+    {
+      "name": "OBJ_TYPE_DESK",
+      "value": 5,
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276263,
+      "status": "verified_dump_constant"
+    },
+    {
+      "name": "OBJ_TYPE_DESK_CEO",
+      "value": 6,
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276264,
+      "status": "verified_dump_constant"
+    },
+    {
+      "name": "OBJ_TYPE_RECEPTION",
+      "value": 7,
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276265,
+      "status": "verified_dump_constant"
+    }
+  ],
+  "field_map": {
+    "CameraX": {
+      "name": "CameraX",
+      "declaration": "public static int CameraX;",
+      "offset": "0x40",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275501,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "CameraY": {
+      "name": "CameraY",
+      "declaration": "public static int CameraY;",
+      "offset": "0x44",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275502,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ChairImgData": {
+      "name": "ChairImgData",
+      "declaration": "public static readonly int[][] ChairImgData;",
+      "offset": "0x490",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275720,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ChairMainObjec": {
+      "name": "ChairMainObjec",
+      "declaration": "internal static int[] ChairMainObjec;",
+      "offset": "0x460",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275714,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ChairSubObjec": {
+      "name": "ChairSubObjec",
+      "declaration": "internal static int[] ChairSubObjec;",
+      "offset": "0x468",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275715,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "DeskImgData": {
+      "name": "DeskImgData",
+      "declaration": "public static readonly int[][] DeskImgData;",
+      "offset": "0x488",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275719,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "DeskObjec": {
+      "name": "DeskObjec",
+      "declaration": "internal static int[] DeskObjec;",
+      "offset": "0x458",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275713,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "DeskSyain": {
+      "name": "DeskSyain",
+      "declaration": "public static int[] DeskSyain;",
+      "offset": "0x450",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275712,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "DeskZahyou": {
+      "name": "DeskZahyou",
+      "declaration": "internal static readonly int[][][] DeskZahyou;",
+      "offset": "0x478",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275717,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "FormX": {
+      "name": "FormX",
+      "declaration": "public static int FormX;",
+      "offset": "0x11B8",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276223,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "FormY": {
+      "name": "FormY",
+      "declaration": "public static int FormY;",
+      "offset": "0x11BC",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276224,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "GameHeight": {
+      "name": "GameHeight",
+      "declaration": "internal static int GameHeight;",
+      "offset": "0x64",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275513,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "GameWidth": {
+      "name": "GameWidth",
+      "declaration": "internal static int GameWidth;",
+      "offset": "0x60",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275512,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "IndexImgEvent": {
+      "name": "IndexImgEvent",
+      "declaration": "internal static int IndexImgEvent;",
+      "offset": "0x1184",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276212,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "IndexImgFloorMain": {
+      "name": "IndexImgFloorMain",
+      "declaration": "internal static int IndexImgFloorMain;",
+      "offset": "0x1180",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276211,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "IndexImgFloorParts": {
+      "name": "IndexImgFloorParts",
+      "declaration": "internal static int IndexImgFloorParts;",
+      "offset": "0x1188",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276213,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "KaishaOffice": {
+      "name": "KaishaOffice",
+      "declaration": "public static int KaishaOffice;",
+      "offset": "0x734",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275819,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecAnime": {
+      "name": "ObjecAnime",
+      "declaration": "internal static int[] ObjecAnime;",
+      "offset": "0x300",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275661,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecCX": {
+      "name": "ObjecCX",
+      "declaration": "internal static int[] ObjecCX;",
+      "offset": "0x2A8",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275650,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecCY": {
+      "name": "ObjecCY",
+      "declaration": "internal static int[] ObjecCY;",
+      "offset": "0x2B0",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275651,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecEnabled": {
+      "name": "ObjecEnabled",
+      "declaration": "internal static int[] ObjecEnabled;",
+      "offset": "0x2E0",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275657,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecIndex": {
+      "name": "ObjecIndex",
+      "declaration": "internal static int ObjecIndex;",
+      "offset": "0x290",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275647,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecMax": {
+      "name": "ObjecMax",
+      "declaration": "internal static int ObjecMax;",
+      "offset": "0x288",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275645,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecPoint": {
+      "name": "ObjecPoint",
+      "declaration": "internal static int[] ObjecPoint;",
+      "offset": "0x308",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275662,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecRefresh": {
+      "name": "ObjecRefresh",
+      "declaration": "internal static int ObjecRefresh;",
+      "offset": "0x28C",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275646,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecSY": {
+      "name": "ObjecSY",
+      "declaration": "internal static int[] ObjecSY;",
+      "offset": "0x2D8",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275656,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecSyurui": {
+      "name": "ObjecSyurui",
+      "declaration": "internal static int[] ObjecSyurui;",
+      "offset": "0x2F8",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275660,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecUpDown": {
+      "name": "ObjecUpDown",
+      "declaration": "internal static int[] ObjecUpDown;",
+      "offset": "0x2F0",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275659,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecVisible": {
+      "name": "ObjecVisible",
+      "declaration": "internal static int[] ObjecVisible;",
+      "offset": "0x2E8",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275658,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecWX": {
+      "name": "ObjecWX",
+      "declaration": "internal static int[] ObjecWX;",
+      "offset": "0x2B8",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275652,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecWY": {
+      "name": "ObjecWY",
+      "declaration": "internal static int[] ObjecWY;",
+      "offset": "0x2C0",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275653,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecX": {
+      "name": "ObjecX",
+      "declaration": "internal static int[] ObjecX;",
+      "offset": "0x298",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275648,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecY": {
+      "name": "ObjecY",
+      "declaration": "internal static int[] ObjecY;",
+      "offset": "0x2A0",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275649,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecZX": {
+      "name": "ObjecZX",
+      "declaration": "internal static int[] ObjecZX;",
+      "offset": "0x2C8",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275654,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "ObjecZY": {
+      "name": "ObjecZY",
+      "declaration": "internal static int[] ObjecZY;",
+      "offset": "0x2D0",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275655,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "OfficeObjecList": {
+      "name": "OfficeObjecList",
+      "declaration": "internal static int[] OfficeObjecList;",
+      "offset": "0x338",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275668,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "OfficeObjecMax": {
+      "name": "OfficeObjecMax",
+      "declaration": "internal static int OfficeObjecMax;",
+      "offset": "0x330",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275667,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "PCImgData": {
+      "name": "PCImgData",
+      "declaration": "internal static readonly int[][] PCImgData;",
+      "offset": "0x480",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275718,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "PCObjec": {
+      "name": "PCObjec",
+      "declaration": "internal static int[] PCObjec;",
+      "offset": "0x470",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275716,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "TargetX": {
+      "name": "TargetX",
+      "declaration": "internal static int[] TargetX;",
+      "offset": "0x310",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275663,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "TargetY": {
+      "name": "TargetY",
+      "declaration": "internal static int[] TargetY;",
+      "offset": "0x318",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 275664,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "imgBihin_": {
+      "name": "imgBihin_",
+      "declaration": "public static Image[] imgBihin_;",
+      "offset": "0x1110",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276197,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "imgBody": {
+      "name": "imgBody",
+      "declaration": "public static Image[] imgBody;",
+      "offset": "0x1158",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276206,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "imgEvent": {
+      "name": "imgEvent",
+      "declaration": "public static Image imgEvent;",
+      "offset": "0x1170",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276209,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "imgFace": {
+      "name": "imgFace",
+      "declaration": "public static Image[] imgFace;",
+      "offset": "0x1150",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276205,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "imgFloorCover": {
+      "name": "imgFloorCover",
+      "declaration": "public static Image imgFloorCover;",
+      "offset": "0x1130",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276201,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "imgFloorMain": {
+      "name": "imgFloorMain",
+      "declaration": "public static Image imgFloorMain;",
+      "offset": "0x1120",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276199,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    },
+    "imgFloorParts": {
+      "name": "imgFloorParts",
+      "declaration": "public static Image imgFloorParts;",
+      "offset": "0x1128",
+      "source": "game-dev-story-mod_Dumped/dump.cs",
+      "line": 276200,
+      "status": "verified_dump_field",
+      "role": "source_field_name_only_until_semantic_trace_closes"
+    }
+  },
+  "function_spans": {
+    "form_GameForm__AddObjec": {
+      "symbol": "form_GameForm__AddObjec",
+      "status": "recovered_c_function",
+      "line_start": 24849,
+      "line_end": 25012,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "form_GameForm__CallHikkosi": {
+      "symbol": "form_GameForm__CallHikkosi",
+      "status": "recovered_c_function",
+      "line_start": 25013,
+      "line_end": 25699,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "form_GameForm__AddTarget": {
+      "symbol": "form_GameForm__AddTarget",
+      "status": "recovered_c_function",
+      "line_start": 29544,
+      "line_end": 29587,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "form_GameForm__DrawObj": {
+      "symbol": "form_GameForm__DrawObj",
+      "status": "recovered_c_function",
+      "line_start": 15847,
+      "line_end": 17616,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "form_GameForm__DrawFloorCover": {
+      "symbol": "form_GameForm__DrawFloorCover",
+      "status": "recovered_c_function",
+      "line_start": 24144,
+      "line_end": 24211,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "form_GameForm__EventGChange": {
+      "symbol": "form_GameForm__EventGChange",
+      "status": "recovered_c_function",
+      "line_start": 18108,
+      "line_end": 18281,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "form_GameForm__LoadBihinImage": {
+      "symbol": "form_GameForm__LoadBihinImage",
+      "status": "recovered_c_function",
+      "line_start": 56677,
+      "line_end": 56779,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "form_GameForm__GetPcImgData": {
+      "symbol": "form_GameForm__GetPcImgData",
+      "status": "recovered_c_function",
+      "line_start": 24522,
+      "line_end": 24565,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "form_GameForm__GetDeskImgData": {
+      "symbol": "form_GameForm__GetDeskImgData",
+      "status": "recovered_c_function",
+      "line_start": 24566,
+      "line_end": 24609,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "form_GameForm__GetChairImgData": {
+      "symbol": "form_GameForm__GetChairImgData",
+      "status": "recovered_c_function",
+      "line_start": 24610,
+      "line_end": 24653,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "form_GameForm__CallPCChange": {
+      "symbol": "form_GameForm__CallPCChange",
+      "status": "recovered_c_function",
+      "line_start": 25700,
+      "line_end": 25829,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "form_GameForm__CallDeskChange": {
+      "symbol": "form_GameForm__CallDeskChange",
+      "status": "recovered_c_function",
+      "line_start": 25830,
+      "line_end": 26198,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "form_GameForm__CallChairChange": {
+      "symbol": "form_GameForm__CallChairChange",
+      "status": "recovered_c_function",
+      "line_start": 26199,
+      "line_end": 26546,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    }
+  },
+  "add_objec_contract": {
+    "function": {
+      "symbol": "form_GameForm__AddObjec",
+      "status": "recovered_c_function",
+      "line_start": 24849,
+      "line_end": 25012,
+      "address": null,
+      "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c"
+    },
+    "argument_to_field": [
+      {
+        "argument": "param_2",
+        "field": "ObjecSyurui",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24936,
+          "needle": "*(uint *)(lVar6 + (long)(int)uVar1 * 4 + 0x20) = param_2;"
+        }
+      },
+      {
+        "argument": "param_3",
+        "field": "ObjecX",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24948,
+          "needle": "*(undefined4 *)(lVar6 + (long)(int)*puVar7 * 4 + 0x20) = param_3;"
+        }
+      },
+      {
+        "argument": "param_4",
+        "field": "ObjecY",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24952,
+          "needle": "*(undefined4 *)(lVar6 + (long)(int)*puVar7 * 4 + 0x20) = param_4;"
+        }
+      },
+      {
+        "argument": "param_5",
+        "field": "ObjecCX",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24956,
+          "needle": "*(undefined4 *)(lVar6 + (long)(int)*puVar7 * 4 + 0x20) = param_5;"
+        }
+      },
+      {
+        "argument": "param_6",
+        "field": "ObjecCY",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24960,
+          "needle": "*(undefined4 *)(lVar6 + (long)(int)*puVar7 * 4 + 0x20) = param_6;"
+        }
+      },
+      {
+        "argument": "param_7",
+        "field": "ObjecWX",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24964,
+          "needle": "*(undefined4 *)(lVar6 + (long)(int)*puVar7 * 4 + 0x20) = param_7;"
+        }
+      },
+      {
+        "argument": "param_8",
+        "field": "ObjecWY",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24968,
+          "needle": "*(undefined4 *)(lVar6 + (long)(int)*puVar7 * 4 + 0x20) = param_8;"
+        }
+      },
+      {
+        "argument": "param_9",
+        "field": "ObjecSY",
+        "evidence": {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24980,
+          "needle": "*(undefined4 *)(lVar6 + (long)(int)*puVar7 * 4 + 0x20) = param_9;"
+        }
+      }
+    ],
+    "default_writes": [
+      {
+        "field": "ObjecEnabled",
+        "value": 1,
+        "status": "verified_from_recovered_c"
+      },
+      {
+        "field": "ObjecVisible",
+        "value": 1,
+        "status": "verified_from_recovered_c"
+      },
+      {
+        "field": "ObjecZX",
+        "value": 0,
+        "status": "verified_from_recovered_c"
+      },
+      {
+        "field": "ObjecZY",
+        "value": 0,
+        "status": "verified_from_recovered_c"
+      }
+    ],
+    "slot_policy": {
+      "free_slot_source": "ObjecEnabled",
+      "returned_value": "selected object slot/index",
+      "capacity_field": "ObjecMax",
+      "refresh_on_failure": "ObjecRefresh=1",
+      "status": "verified_for_control_flow_and_field_offsets"
+    }
+  },
+  "scene_dependencies": {
+    "room_initialization": {
+      "functions": [
+        "form_GameForm__CallHikkosi",
+        "form_GameForm__AddTarget",
+        "form_GameForm__AddObjec"
+      ],
+      "status": "recoverable_bounded_trace",
+      "next_action": "validate the minimum scene fixture, then expand the bounded branch until its room object type and numeric placement are producer-backed"
+    },
+    "furniture_image_data": {
+      "functions": [
+        "form.GameForm.GetPcImgData",
+        "form.GameForm.GetDeskImgData",
+        "form.GameForm.GetChairImgData",
+        "form.GameForm.LoadBihinImage"
+      ],
+      "status": "recoverable_bounded_trace",
+      "next_action": "use the relation contract as Wave 3 furniture input without treating asset presence as seat occupancy"
+    },
+    "draw_dispatch": {
+      "function": "form_GameForm__DrawObj",
+      "status": "verified_dispatch_and_sort_pattern",
+      "next_action": "validate the neutral fixture against assembly/runtime behavior before assigning depth semantics"
+    }
+  },
+  "semantic_policy": {
+    "verified": "direct field/call/constant evidence",
+    "recoverable": "bounded trace has a concrete next action",
+    "web_adapter_decision": "web behavior explicitly chosen when legacy behavior is not recovered",
+    "out_of_scope": "not required for scene truth or not present in audited source"
+  },
+  "summary": {
+    "field_count": 48,
+    "object_type_constant_count": 7,
+    "function_count": 13,
+    "stage_status": "object_contract_ready_for_minimum_scene_fixture"
+  }
+}

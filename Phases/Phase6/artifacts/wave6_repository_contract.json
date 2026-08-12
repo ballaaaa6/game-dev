@@ -1,0 +1,24 @@
+{
+  "schema_version": "wave6-repository-contract-v1",
+  "legacy_equivalence": false,
+  "interface": {
+    "load": "returns {schema_version, revision, snapshot, migrated_from}",
+    "save": "save(snapshot, expected_revision) with optimistic conflict check",
+    "clear": "remove current repository envelope",
+    "kind": "identifies implementation without changing TaskSystem API"
+  },
+  "envelope_schema": "wave6-task-repository-v1",
+  "state_schema": "wave6-task-state-v1",
+  "default_implementation": "LocalStorageTaskRepository",
+  "storage_key": "phase6.task_state.v1",
+  "migration": {
+    "from": "direct wave6-task-state-v1 snapshot",
+    "to": "wave6-task-repository-v1 envelope with revision 0",
+    "write_back": "next successful save writes the new envelope"
+  },
+  "conflict_policy": {
+    "error_code": "repository_conflict",
+    "runtime_status": "conflict_needs_reload",
+    "resolution": "reloadFromRepository discards stale in-memory changes"
+  }
+}

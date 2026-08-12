@@ -1,0 +1,24 @@
+{
+  "schema_version": "wave5-visual-test-report-v1",
+  "status": "browser_smoke_pass_with_bounded_furniture_renderer",
+  "runtime_url": "http://127.0.0.1:8765/Phases/Phase5/runtime/index.html",
+  "screenshot_artifact": "Phases/Phase5/artifacts/wave5_smoke.jpg",
+  "checks": [
+    { "id": "boot", "status": "passed", "evidence": "READY · tick 0" },
+    { "id": "floor_render", "status": "passed", "evidence": "floor0.png loaded from source root URL" },
+    { "id": "furniture_render", "status": "passed", "evidence": "reception_000.png, desk_000.png and chair_000.png loaded through bounded asset draw commands" },
+    { "id": "mixed_depth_order", "status": "passed", "evidence": "furniture and actors rendered through deterministic adapter draw_order" },
+    { "id": "actor_render", "status": "passed", "evidence": "two actors with body/face draw commands" },
+    { "id": "step_control", "status": "passed", "evidence": "tick changed from 0 to 1" },
+    { "id": "movement_control", "status": "passed", "evidence": "actor position advanced and movement remained deterministic" },
+    { "id": "dialogue_control", "status": "passed", "evidence": "dialogue.requested, bubble.attached and talk.resolved logged" },
+    { "id": "notification_control", "status": "passed", "evidence": "notification.created logged with raw graph id" },
+    { "id": "console_errors", "status": "passed", "evidence": "no browser error or warning logs" }
+  ],
+  "known_visual_limitations": [
+    "furniture source selector/crop/placement mapping is bounded adapter evidence, not recovered legacy room placement",
+    "animation uses static verified frame policy",
+    "source-root asset loading requires a local server rooted at the workspace"
+  ],
+  "legacy_equivalence": false
+}

@@ -1,0 +1,5716 @@
+{
+  "schema": "phase4.wave0.office-runtime-call-graph.v1",
+  "generated_at_utc": "2026-08-11T11:22:01.033733Z",
+  "scope": "Shortlist callers and relevant IL2CPP symbols in categorized C.",
+  "nodes": [
+    {
+      "symbol": "form_BootForm___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_FormManager__GetInstance",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__AddBodyFace",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__AddEvent",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__AddFuki",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__AddKaiwa",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "form_GameForm__AddKaiwaTalkData",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__AddMessage",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "form_GameForm__AddObjec",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__AddSyain",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__AddTarget",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__Atan2",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__AutoSave",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__Calcu",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__CallBallEnd",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__CallChairChange",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__CallDeskChange",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__CallFuki",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__CallHikkosi",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__CallNouryoku",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__CallPCChange",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__CallSyain",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__CallZyuchuList",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__Ch_extraSeTime",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__CommonCode",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "form_GameForm__Distan",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__DoEvent",
+      "selected": true,
+      "has_c_definition": false,
+      "definition_count": 0
+    },
+    {
+      "symbol": "form_GameForm__Draw",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "form_GameForm__DrawCeoDesk",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__DrawChair",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__DrawDesk",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__DrawDisplay",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__DrawFloorCover",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__DrawFukidashi",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__DrawHuman",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "form_GameForm__DrawObj",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__DrawReception",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__DrawScrollBarY",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__DrawString",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "form_GameForm__EventGChange",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__FillRect",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__GameScreenLayout",
+      "selected": true,
+      "has_c_definition": false,
+      "definition_count": 0
+    },
+    {
+      "symbol": "form_GameForm__GetChairImgData",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__GetDeskImgData",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__GetGameHeight",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__GetGameWidth",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__GetHumanTalkName",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__GetPcImgData",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__GetScaleRange",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__GetTalkIndex",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__Init",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__JG_hon",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__LoadBihinImage",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__MainProcess",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__MakerName",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__NaiyoOK",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__NewGamePara",
+      "selected": true,
+      "has_c_definition": false,
+      "definition_count": 0
+    },
+    {
+      "symbol": "form_GameForm__NextPoint",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__NextTarget",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__NowLoadBar",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__ParaData",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "form_GameForm__Print",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__ProcessEvent",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__RenderGameScreen",
+      "selected": true,
+      "has_c_definition": false,
+      "definition_count": 0
+    },
+    {
+      "symbol": "form_GameForm__ResetTextLayout",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__Rndm",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__SaveSystemData",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__SetScale",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__SmartBeginPaint",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__SoftKeyChange",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__SoundPlay",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "form_GameForm__SubKeyEvent",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__Update",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__UpdateKey",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm__ZyanruOK",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm___cctor",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm___draw",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_GameForm___update",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_MyFormBase__Active",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_MyFormBase__Draw",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_MyFormBase__GetTalkNotTextLayout",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_MyFormBase__Init",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_MyFormBase__Jp",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_MyFormBase__LT",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "form_MyFormBase__UNI",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "form_MyFormBase__Update",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "form_MyFormBase__YEN",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 4
+    },
+    {
+      "symbol": "form_SubForm___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "form_TitleForm___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_common_cfg_Config__ConvertExtension",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_common_cfg_Config__GetPlatform",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_common_cfg_Config__Init",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_common_cfg_Config__IsXbox",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_form_FormBase__Push",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_form_FormManagerBase__GetTopForm",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_form_FormManagerBase__RemoveAllForms",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_graphics_Offscreen_GetLayoutMethod___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_graphics_Offscreen_RenderMethod___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_graphics_Offscreen__CreateOffscreen",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_graphics_RectangleF__Height",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_graphics_RectangleF__Width",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_io_AssetReader__SetSecurity",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_io_RecordStore__CreateRecordStore",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_io_RecordStore__ReadRecord",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_io_RecordStore__SetPreferenceMode",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_io_RecordStore__Setup",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_io_Storage__Read",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_io_Storage__Setup",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_surface_SurfaceBase__CheckFirstTouch",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_surface_TouchOption__Drag",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 6
+    },
+    {
+      "symbol": "kairo_unity_type_RectF___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_type_Rect___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Balloon__Draw",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Balloon___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Canvas__BackLight",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Canvas__BeginPaint",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Canvas__CheckKeyPulse",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Canvas__GetInstance",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Canvas__GetKeyState",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Canvas__JumpReview",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Canvas__OpenBrowser",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Canvas__UpdateSoftLabel",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_DepthInfo__CreateDepthLines",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_DepthInfo__SetBoundingRect",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_DepthInfo___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Font__GetLocalizeScale",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Font__GetWidth",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Font__IsNeedLocalizeScale",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Font__LockLocalizeSetting",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Font__PushLocalizeSetting",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Font__SetSize",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Font__StringWidth",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Font__UnlockLocalizeSetting",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Font___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__BeginLocalCoordination",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 6
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__CheckLocalMatrix",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__ClearClip",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__ClipRect",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__Dispose",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__DrawImage",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__DrawLine",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__DrawRect",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__DrawRect2",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__DrawScaledImage",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__DrawString",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 10
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__DrawText",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__FillRect",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__GetColorOfRGB",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__GetFont",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__GetOriginX",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__GetOriginY",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__GetTransRectGUI",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__PopClip",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__PopFont",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__PopMatrix",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__PopRenderMode",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__PushAutoTextLayout",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__PushFont",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__PushMatrix",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__PushRenderMode",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__Scale",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__SetClip",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__SetColor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__SetFont",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__SetOrigin",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__SetRenderMode",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics__UpdateWorldMatrix",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Graphics___drawImage",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_IApplication_UIMethod___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_IApplication__GetPackageName",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_IApplication__GetProperty",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_ImageAtlasManager__GetInstance",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Image__CheckUse",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Image__CreateImage",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Image__Dispose",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Image__GetGraphics",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Image__GetHeight",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Image__GetOptionFile",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Image__GetWidth",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Image__Load",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "kairo_unity_ui_Image__LoadOptimize",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Matrix__ScaleTemporary",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Matrix__TranslateTemporary",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_ResourceManager__Dispose",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_ResourceManager__GetFileName",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_ResourceManager__GetImage",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_ResourceManager__Load",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 5
+    },
+    {
+      "symbol": "kairo_unity_ui_ResourceManager__LoadImage",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_ResourceManager__LoadReady",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_ResourceManager__LoadSeb",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_ResourceManager__LoadStart",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_ResourceManager__SetFolderName",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__Dispose",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__Draw",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 6
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__DrawFrame",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__GetBRect",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__GetDepthInfo",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__GetImage",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__GetSprite",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__GetSpriteLocal",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__GetSprites",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__GetSpritesLocal",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__GetWorkStaticValue",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__GetWorkValue",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb__PushThisFrameRender",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb___draw",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_Seb___load",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_TextFormat__GetAnchor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextFormat__GetXY",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout_TextBlock__Draw",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout__AddCache",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout__Draw",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 6
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout__Flush",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout__GetHeight",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout__GetRenderingFontSize",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout__Replace",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout__SearchCache",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout__SetFontSize",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout__SetSize",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout__SetSpeed",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout__SetText",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout___makeTextBlocks",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_ui_TextLayout___makeTextRubies",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Encrypter__SetEncryptionKey",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_util_JarInflater__Close",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_JarInflater__ConvertExtension",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_JarInflater__Exist",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_JarInflater__GetData",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_JarInflater__GetFiles",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_JarInflater__GetInputStream",
+      "selected": true,
+      "has_c_definition": false,
+      "definition_count": 0
+    },
+    {
+      "symbol": "kairo_unity_util_JarInflater__GetSize",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_JarInflater___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__AdjustMacroScope",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__CallTranslateText",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__Get",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_util_Language__GetLanguage",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__GetTranslateCache",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__Japanese",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__LT",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "kairo_unity_util_Language__MakeTextTable",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__SetTextTable",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__SetTranslateCache",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__TranslateBuiltInMultiLangText",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__TranslateConsoleText",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__TranslateSoftLabel",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__TranslateText",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language___translateText",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language___translateText2",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Language__set_UseResourceLanguage",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Log__Info",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_util_Profiler__BeginSample",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_Profiler__EndSample",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_StreamUtil__Read",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_util_StreamUtil__ReadShort",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "kairo_unity_util_StringUtil__LoadStringArray",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 4
+    },
+    {
+      "symbol": "kairo_unity_util_StringUtil__Replace",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "kairo_unity_util_StringUtil__Split",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "main_Anim__Init",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 2
+    },
+    {
+      "symbol": "main_AppData__Capture",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "main_AppData__Clamp",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 3
+    },
+    {
+      "symbol": "main_AppData__GetImage",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "main_AppData__GetInstance",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "main_AppData__GetNumLen",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "main_AppData__GetTalkTexts",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "main_AppData__Init",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "main_AppData__Random",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "main_AppData___ctor",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "surface_GamePad__GetInstance",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "surface_GameView__AddTouch",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 13
+    },
+    {
+      "symbol": "surface_GameView__ClearMarker",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "surface_GameView__GetGameHeight",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "surface_GameView__GetGameWidth",
+      "selected": true,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "surface_GameView__GetInstance",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    },
+    {
+      "symbol": "surface_SurfaceManager__Setup",
+      "selected": false,
+      "has_c_definition": true,
+      "definition_count": 1
+    }
+  ],
+  "edges": [
+    {
+      "caller": "form_GameForm__AddKaiwa",
+      "callee": "form_GameForm__ResetTextLayout",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42609
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwa",
+      "callee": "form_MyFormBase__GetTalkNotTextLayout",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42609
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwa",
+      "callee": "form_MyFormBase__Jp",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42609
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwa",
+      "callee": "form_MyFormBase__LT",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42609
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwa",
+      "callee": "kairo_unity_ui_Font__StringWidth",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42609
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwaTalkData",
+      "callee": "form_GameForm__AddKaiwa",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42290
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwaTalkData",
+      "callee": "form_GameForm__GetHumanTalkName",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42290
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwaTalkData",
+      "callee": "form_GameForm__GetTalkIndex",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42290
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwaTalkData",
+      "callee": "form_MyFormBase__LT",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42290
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwaTalkData",
+      "callee": "kairo_unity_util_Language__GetLanguage",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42290
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwaTalkData",
+      "callee": "kairo_unity_util_StringUtil__Replace",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42290
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwaTalkData",
+      "callee": "kairo_unity_util_StringUtil__Split",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42290
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwaTalkData",
+      "callee": "main_AppData__GetTalkTexts",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42290
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__AddKaiwaTalkData",
+      "callee": "main_AppData__Random",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42290
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallChairChange",
+      "callee": "form_GameForm__GetChairImgData",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 26199
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallDeskChange",
+      "callee": "form_GameForm__GetDeskImgData",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25830
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__AddObjec",
+      "count": 7,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__AddTarget",
+      "count": 81,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__CallChairChange",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__CallDeskChange",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__CallPCChange",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__CallSyain",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__NextTarget",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallHikkosi",
+      "callee": "form_GameForm__Print",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25013
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallPCChange",
+      "callee": "form_GameForm__GetPcImgData",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 25700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallSyain",
+      "callee": "form_GameForm__AddObjec",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 27392
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__CallSyain",
+      "callee": "form_GameForm__NextTarget",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 27392
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Draw",
+      "callee": "form_MyFormBase__Draw",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55855
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Draw",
+      "callee": "kairo_unity_ui_Canvas__BeginPaint",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55614
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Draw",
+      "callee": "kairo_unity_ui_Canvas__CheckKeyPulse",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55614
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Draw",
+      "callee": "kairo_unity_ui_Canvas__GetInstance",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55614
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Draw",
+      "callee": "kairo_unity_ui_Canvas__GetKeyState",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55614
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Draw",
+      "callee": "kairo_unity_ui_Font__StringWidth",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55614
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Draw",
+      "callee": "kairo_unity_ui_Graphics__DrawString",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55614
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Draw",
+      "callee": "kairo_unity_ui_Graphics__FillRect",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55614
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Draw",
+      "callee": "kairo_unity_ui_Graphics__GetColorOfRGB",
+      "count": 4,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55614
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Draw",
+      "callee": "kairo_unity_ui_Graphics__GetFont",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55614
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Draw",
+      "callee": "kairo_unity_ui_Graphics__SetColor",
+      "count": 4,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55614
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawCeoDesk",
+      "callee": "kairo_unity_ui_Graphics__DrawImage",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 56040
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawChair",
+      "callee": "kairo_unity_ui_Graphics__DrawImage",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55952
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawDesk",
+      "callee": "kairo_unity_ui_Graphics__DrawImage",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 55994
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawDisplay",
+      "callee": "kairo_unity_ui_Graphics__DrawImage",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 56625
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawFloorCover",
+      "callee": "kairo_unity_ui_Graphics__DrawImage",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24144
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawFukidashi",
+      "callee": "kairo_unity_ui_Balloon__Draw",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24090
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawFukidashi",
+      "callee": "kairo_unity_ui_Balloon___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24090
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawFukidashi",
+      "callee": "kairo_unity_util_Language__LT",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 24090
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawHuman",
+      "callee": "form_GameForm__DrawString",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawHuman",
+      "callee": "kairo_unity_ui_Graphics__DrawImage",
+      "count": 6,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawHuman",
+      "callee": "kairo_unity_ui_Graphics__GetColorOfRGB",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawHuman",
+      "callee": "kairo_unity_ui_Graphics__SetColor",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41025
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "form_GameForm__DrawCeoDesk",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "form_GameForm__DrawChair",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "form_GameForm__DrawDesk",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "form_GameForm__DrawFukidashi",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "form_GameForm__DrawHuman",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "form_GameForm__DrawReception",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "kairo_unity_ui_Graphics__DrawImage",
+      "count": 10,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "kairo_unity_ui_Graphics__GetOriginX",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "main_AppData__GetNumLen",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawObj",
+      "callee": "surface_GameView__GetGameWidth",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15847
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__DrawReception",
+      "callee": "kairo_unity_ui_Graphics__DrawImage",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 56086
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__EventGChange",
+      "callee": "main_AppData__GetImage",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18108
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__GetGameHeight",
+      "callee": "surface_GameView__GetGameHeight",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15807
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__GetGameWidth",
+      "callee": "surface_GameView__GetGameWidth",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15767
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__GetHumanTalkName",
+      "callee": "form_MyFormBase__LT",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42541
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__GetTalkIndex",
+      "callee": "kairo_unity_util_StringUtil__Split",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 42479
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Init",
+      "callee": "form_MyFormBase__Init",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15557
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Init",
+      "callee": "kairo_unity_graphics_Offscreen_GetLayoutMethod___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15557
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Init",
+      "callee": "kairo_unity_graphics_Offscreen_RenderMethod___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15557
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Init",
+      "callee": "kairo_unity_graphics_Offscreen__CreateOffscreen",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15557
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Init",
+      "callee": "surface_GameView__GetGameHeight",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15557
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Init",
+      "callee": "surface_GameView__GetGameWidth",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15557
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Init",
+      "callee": "surface_GameView__GetInstance",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15557
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__LoadBihinImage",
+      "callee": "form_GameForm__NowLoadBar",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 56677
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__LoadBihinImage",
+      "callee": "main_AppData__GetImage",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 56677
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__AddEvent",
+      "count": 55,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__AddKaiwa",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__AddMessage",
+      "count": 6,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__Atan2",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__AutoSave",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__Calcu",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__CallBallEnd",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__CallFuki",
+      "count": 11,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__CallNouryoku",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__CallZyuchuList",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__Ch_extraSeTime",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__CommonCode",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__Distan",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__DoEvent",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__EventGChange",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__NaiyoOK",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__NextPoint",
+      "count": 7,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__NextTarget",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__ParaData",
+      "count": 8,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__Print",
+      "count": 9,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__Rndm",
+      "count": 77,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__SoftKeyChange",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__SoundPlay",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__SubKeyEvent",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_GameForm__ZyanruOK",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_MyFormBase__LT",
+      "count": 9,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "form_MyFormBase__UNI",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "kairo_unity_ui_Canvas__BackLight",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "kairo_unity_util_StringUtil__Replace",
+      "count": 6,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__MainProcess",
+      "callee": "main_Anim__Init",
+      "count": 14,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__NextPoint",
+      "callee": "form_GameForm__CallFuki",
+      "count": 8,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 49358
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__NextPoint",
+      "callee": "form_GameForm__NextTarget",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 49358
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__NextPoint",
+      "callee": "form_GameForm__Rndm",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 49358
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "form_GameForm__SaveSystemData",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "form_GameForm__SoftKeyChange",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "form_GameForm__SubKeyEvent",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "kairo_unity_ui_Canvas__GetInstance",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "kairo_unity_ui_Canvas__UpdateSoftLabel",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "surface_GamePad__GetInstance",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ProcessEvent",
+      "callee": "surface_GameView__ClearMarker",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18536
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ResetTextLayout",
+      "callee": "kairo_unity_ui_Graphics__GetColorOfRGB",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 43154
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ResetTextLayout",
+      "callee": "kairo_unity_ui_TextLayout__GetRenderingFontSize",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 43154
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ResetTextLayout",
+      "callee": "kairo_unity_ui_TextLayout__SetFontSize",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 43154
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ResetTextLayout",
+      "callee": "kairo_unity_ui_TextLayout__SetSize",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 43154
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ResetTextLayout",
+      "callee": "kairo_unity_ui_TextLayout__SetSpeed",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 43154
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ResetTextLayout",
+      "callee": "kairo_unity_ui_TextLayout__SetText",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 43154
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__ResetTextLayout",
+      "callee": "kairo_unity_ui_TextLayout___ctor",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 43154
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__SetScale",
+      "callee": "form_GameForm__GetGameHeight",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15724
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__SetScale",
+      "callee": "form_GameForm__GetGameWidth",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15724
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__SetScale",
+      "callee": "form_GameForm__GetScaleRange",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15724
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__SetScale",
+      "callee": "main_AppData__Clamp",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 15724
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__SmartBeginPaint",
+      "callee": "kairo_unity_ui_Graphics__ClearClip",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 23721
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__SmartBeginPaint",
+      "callee": "kairo_unity_ui_Graphics__DrawScaledImage",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 23721
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__SmartBeginPaint",
+      "callee": "kairo_unity_ui_Graphics__FillRect",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 23721
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__SmartBeginPaint",
+      "callee": "kairo_unity_ui_Graphics__SetColor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 23721
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__SmartBeginPaint",
+      "callee": "kairo_unity_ui_Graphics__SetOrigin",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 23721
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__SmartBeginPaint",
+      "callee": "surface_GameView__GetGameHeight",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 23721
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__SmartBeginPaint",
+      "callee": "surface_GameView__GetGameWidth",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 23721
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "form_GameForm__AddKaiwa",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "form_GameForm__EventGChange",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "form_GameForm__SoundPlay",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "form_GameForm___update",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "form_MyFormBase__Active",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "form_MyFormBase__LT",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "form_MyFormBase__Update",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "form_MyFormBase__YEN",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "kairo_common_cfg_Config__IsXbox",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "kairo_unity_form_FormManagerBase__RemoveAllForms",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "kairo_unity_ui_Canvas__JumpReview",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "kairo_unity_ui_Canvas__OpenBrowser",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm__Update",
+      "callee": "kairo_unity_ui_IApplication__GetPackageName",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 17700
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_FormManager__GetInstance",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__DrawFloorCover",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__DrawFukidashi",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__DrawHuman",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__DrawScrollBarY",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__DrawString",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__FillRect",
+      "count": 10,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__GetGameHeight",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__GetGameWidth",
+      "count": 6,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__JG_hon",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__MakerName",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__Rndm",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_GameForm__SmartBeginPaint",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_MyFormBase__LT",
+      "count": 40,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_MyFormBase__UNI",
+      "count": 4,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "form_MyFormBase__YEN",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_form_FormManagerBase__GetTopForm",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_surface_SurfaceBase__CheckFirstTouch",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_surface_TouchOption__Drag",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Font__StringWidth",
+      "count": 9,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__ClearClip",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__DrawImage",
+      "count": 72,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__DrawLine",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__DrawScaledImage",
+      "count": 7,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__DrawString",
+      "count": 39,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__DrawText",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__FillRect",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__GetColorOfRGB",
+      "count": 50,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__GetOriginX",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__GetOriginY",
+      "count": 4,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__PopFont",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__PushFont",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__SetClip",
+      "count": 6,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__SetColor",
+      "count": 53,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__SetFont",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__SetOrigin",
+      "count": 9,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_Graphics__SetRenderMode",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_TextLayout__Draw",
+      "count": 14,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_TextLayout__Flush",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_TextLayout__GetRenderingFontSize",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_TextLayout__SetSize",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_TextLayout__SetText",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_ui_TextLayout___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_util_Language__Japanese",
+      "count": 8,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "kairo_unity_util_StringUtil__Replace",
+      "count": 14,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "main_Anim__Init",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "main_AppData__GetNumLen",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "surface_GameView__AddTouch",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "surface_GameView__GetGameHeight",
+      "count": 10,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___draw",
+      "callee": "surface_GameView__GetGameWidth",
+      "count": 11,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 19167
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___update",
+      "callee": "form_GameForm__GetGameHeight",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18282
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___update",
+      "callee": "form_GameForm__GetGameWidth",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18282
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___update",
+      "callee": "form_GameForm__MainProcess",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18282
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___update",
+      "callee": "form_GameForm__UpdateKey",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18282
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___update",
+      "callee": "form_SubForm___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18282
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___update",
+      "callee": "kairo_unity_form_FormBase__Push",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18282
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___update",
+      "callee": "kairo_unity_ui_Canvas__GetInstance",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18282
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___update",
+      "callee": "kairo_unity_ui_Canvas__UpdateSoftLabel",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18282
+        }
+      ]
+    },
+    {
+      "caller": "form_GameForm___update",
+      "callee": "main_AppData__Capture",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 18282
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_graphics_Offscreen__CreateOffscreen",
+      "callee": "kairo_unity_ui_IApplication_UIMethod___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 282745
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Graphics__DrawImage",
+      "callee": "kairo_unity_ui_Graphics___drawImage",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 56403
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 57446
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Graphics__DrawImage",
+      "callee": "kairo_unity_ui_Image__CheckUse",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 56403
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Graphics__DrawImage",
+      "callee": "kairo_unity_util_Log__Info",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 56403
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 57446
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Graphics__Scale",
+      "callee": "kairo_unity_ui_Graphics__UpdateWorldMatrix",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 51783
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Graphics__SetOrigin",
+      "callee": "kairo_unity_ui_Graphics__UpdateWorldMatrix",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 66962
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__Load",
+      "callee": "kairo_unity_io_RecordStore__ReadRecord",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108712
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__Load",
+      "callee": "kairo_unity_ui_ResourceManager__LoadReady",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107652
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107684
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108670
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108712
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108748
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__Load",
+      "callee": "kairo_unity_ui_ResourceManager__LoadStart",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107652
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107684
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108670
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108712
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108748
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__Load",
+      "callee": "kairo_unity_util_JarInflater__Close",
+      "count": 4,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107652
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108670
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108712
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108748
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__Load",
+      "callee": "kairo_unity_util_JarInflater___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108670
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadImage",
+      "callee": "kairo_unity_ui_Image__Load",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107221
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107246
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadReady",
+      "callee": "kairo_unity_ui_ResourceManager__Dispose",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107699
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadReady",
+      "callee": "kairo_unity_ui_ResourceManager__SetFolderName",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107699
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadReady",
+      "callee": "kairo_unity_util_JarInflater__Close",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108781
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadReady",
+      "callee": "kairo_unity_util_Language__set_UseResourceLanguage",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107699
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadReady",
+      "callee": "kairo_unity_util_StringUtil__LoadStringArray",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107699
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadSeb",
+      "callee": "kairo_unity_ui_Seb___ctor",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107271
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 107345
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadStart",
+      "callee": "kairo_unity_ui_ImageAtlasManager__GetInstance",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108035
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadStart",
+      "callee": "kairo_unity_ui_Image__GetOptionFile",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108035
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadStart",
+      "callee": "kairo_unity_ui_Image__LoadOptimize",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108035
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadStart",
+      "callee": "kairo_unity_ui_ResourceManager__GetFileName",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108035
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadStart",
+      "callee": "kairo_unity_util_JarInflater__Close",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108847
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadStart",
+      "callee": "kairo_unity_util_JarInflater__Exist",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108035
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadStart",
+      "callee": "kairo_unity_util_JarInflater__GetData",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108035
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_ResourceManager__LoadStart",
+      "callee": "kairo_unity_util_StringUtil__Split",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 108035
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Graphics__CheckLocalMatrix",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Graphics__DrawImage",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Graphics__DrawLine",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Graphics__DrawRect",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Graphics__FillRect",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Graphics__GetColorOfRGB",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Graphics__PopMatrix",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Graphics__PopRenderMode",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Graphics__PushMatrix",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Graphics__PushRenderMode",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Graphics__SetColor",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Matrix__TranslateTemporary",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Seb__GetImage",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Seb__GetWorkStaticValue",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119434
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Seb__PushThisFrameRender",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 109603
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 117463
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 117481
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__Draw",
+      "callee": "kairo_unity_ui_Seb___draw",
+      "count": 4,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 109603
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 116725
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 117463
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 117481
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__DrawFrame",
+      "callee": "kairo_unity_ui_Seb__Draw",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 109660
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__DrawFrame",
+      "callee": "kairo_unity_ui_Seb__GetSpriteLocal",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 109660
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__DrawFrame",
+      "callee": "kairo_unity_ui_Seb__GetSpritesLocal",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 109660
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__DrawFrame",
+      "callee": "kairo_unity_ui_Seb___draw",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 117387
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__GetDepthInfo",
+      "callee": "kairo_unity_ui_DepthInfo__CreateDepthLines",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119738
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__GetDepthInfo",
+      "callee": "kairo_unity_ui_DepthInfo__SetBoundingRect",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119738
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__GetDepthInfo",
+      "callee": "kairo_unity_ui_DepthInfo___ctor",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119738
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__GetDepthInfo",
+      "callee": "kairo_unity_ui_Seb__GetSprites",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 119738
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__GetSprites",
+      "callee": "kairo_unity_ui_Seb__GetSprite",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 114781
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb__GetSprites",
+      "callee": "kairo_unity_ui_Seb__GetWorkValue",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 114781
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb___load",
+      "callee": "kairo_unity_type_Rect___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 112855
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb___load",
+      "callee": "kairo_unity_ui_Seb__Dispose",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 112855
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb___load",
+      "callee": "kairo_unity_ui_Seb__GetBRect",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 112855
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb___load",
+      "callee": "kairo_unity_ui_Seb__GetSpritesLocal",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 112855
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb___load",
+      "callee": "kairo_unity_util_StreamUtil__Read",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 112855
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_Seb___load",
+      "callee": "kairo_unity_util_StreamUtil__ReadShort",
+      "count": 5,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 112855
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_graphics_RectangleF__Height",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_graphics_RectangleF__Width",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_type_RectF___ctor",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Font__GetLocalizeScale",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Font__GetWidth",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Font__IsNeedLocalizeScale",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Font__LockLocalizeSetting",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Font__PushLocalizeSetting",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Font__SetSize",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Font__UnlockLocalizeSetting",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Graphics__BeginLocalCoordination",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Graphics__CheckLocalMatrix",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Graphics__ClipRect",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Graphics__DrawRect2",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Graphics__GetFont",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Graphics__GetTransRectGUI",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Graphics__PopClip",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Graphics__PushAutoTextLayout",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Graphics__PushMatrix",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Graphics__SetColor",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_Matrix__ScaleTemporary",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_TextFormat__GetAnchor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_TextFormat__GetXY",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_TextLayout_TextBlock__Draw",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_TextLayout__AddCache",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_TextLayout__GetRenderingFontSize",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_TextLayout__Replace",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_TextLayout__SearchCache",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_TextLayout__SetFontSize",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_TextLayout__SetText",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_TextLayout___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_TextLayout___makeTextBlocks",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_ui_TextLayout___makeTextRubies",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_util_Language__Japanese",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 127583
+        },
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_util_Profiler__BeginSample",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Draw",
+      "callee": "kairo_unity_util_Profiler__EndSample",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 129723
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__Replace",
+      "callee": "kairo_unity_util_StringUtil__Replace",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 124321
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__SetText",
+      "callee": "kairo_unity_ui_Font__SetSize",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 124400
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__SetText",
+      "callee": "kairo_unity_ui_Font___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 124400
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__SetText",
+      "callee": "kairo_unity_ui_TextLayout__GetHeight",
+      "count": 4,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 124400
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__SetText",
+      "callee": "kairo_unity_ui_TextLayout__Replace",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 124281
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__SetText",
+      "callee": "kairo_unity_ui_TextLayout___makeTextBlocks",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 124400
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__SetText",
+      "callee": "kairo_unity_ui_TextLayout___makeTextRubies",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 124400
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_ui_TextLayout__SetText",
+      "callee": "kairo_unity_util_Language__TranslateConsoleText",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 124400
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_JarInflater__ConvertExtension",
+      "callee": "kairo_common_cfg_Config__ConvertExtension",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 169781
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_JarInflater__GetData",
+      "callee": "kairo_unity_io_Storage__Read",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 156301
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_JarInflater__GetData",
+      "callee": "kairo_unity_util_JarInflater__ConvertExtension",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 156301
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_JarInflater__GetData",
+      "callee": "kairo_unity_util_JarInflater__GetSize",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 156301
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_JarInflater__GetData",
+      "callee": "kairo_unity_util_Log__Info",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 156301
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__LT",
+      "callee": "kairo_unity_util_Language__GetTranslateCache",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 20645
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__LT",
+      "callee": "kairo_unity_util_Language__SetTranslateCache",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 20645
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__LT",
+      "callee": "kairo_unity_util_Language__TranslateText",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 20645
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__LT",
+      "callee": "kairo_unity_util_StringUtil__Replace",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 20645
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__MakeTextTable",
+      "callee": "kairo_unity_util_Language__AdjustMacroScope",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 19187
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__MakeTextTable",
+      "callee": "kairo_unity_util_Language__Japanese",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 19187
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__MakeTextTable",
+      "callee": "kairo_unity_util_StringUtil__Replace",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 19187
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__SetTextTable",
+      "callee": "kairo_unity_util_Language__MakeTextTable",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 19152
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__TranslateText",
+      "callee": "kairo_unity_util_Language__CallTranslateText",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 20834
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__TranslateText",
+      "callee": "kairo_unity_util_Language__GetTranslateCache",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 20834
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__TranslateText",
+      "callee": "kairo_unity_util_Language__SetTranslateCache",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 20834
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__TranslateText",
+      "callee": "kairo_unity_util_Language__TranslateBuiltInMultiLangText",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 20834
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language__TranslateText",
+      "callee": "kairo_unity_util_Language__TranslateConsoleText",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 20834
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language___translateText",
+      "callee": "kairo_unity_util_Language___translateText2",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 21345
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language___translateText2",
+      "callee": "kairo_unity_util_Language__Get",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 21414
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language___translateText2",
+      "callee": "kairo_unity_util_Language__MakeTextTable",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 21414
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language___translateText2",
+      "callee": "kairo_unity_util_Language__TranslateConsoleText",
+      "count": 3,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 21414
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language___translateText2",
+      "callee": "kairo_unity_util_Language__TranslateSoftLabel",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 21414
+        }
+      ]
+    },
+    {
+      "caller": "kairo_unity_util_Language___translateText2",
+      "callee": "kairo_unity_util_StringUtil__Replace",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+          "line": 21414
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__GetImage",
+      "callee": "kairo_unity_util_Log__Info",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 6462
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__GetInstance",
+      "callee": "main_AppData__Init",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__GetInstance",
+      "callee": "main_AppData___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__GetTalkTexts",
+      "callee": "form_GameForm__GetTalkIndex",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 7331
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__GetTalkTexts",
+      "callee": "kairo_unity_util_StringUtil__Replace",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 7331
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__GetTalkTexts",
+      "callee": "kairo_unity_util_StringUtil__Split",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 7331
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "form_BootForm___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "form_GameForm___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "form_TitleForm___ctor",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_common_cfg_Config__GetPlatform",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_common_cfg_Config__Init",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_io_AssetReader__SetSecurity",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_io_RecordStore__CreateRecordStore",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_io_RecordStore__SetPreferenceMode",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_io_RecordStore__Setup",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_io_Storage__Setup",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_ui_Canvas__GetInstance",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_ui_Graphics__Dispose",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_ui_Graphics__FillRect",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_ui_Graphics__GetColorOfRGB",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_ui_Graphics__SetColor",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_ui_Graphics__SetRenderMode",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_ui_IApplication__GetProperty",
+      "count": 2,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_ui_Image__CreateImage",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_ui_Image__Dispose",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_ui_Image__GetGraphics",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "kairo_unity_util_Encrypter__SetEncryptionKey",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    },
+    {
+      "caller": "main_AppData__Init",
+      "callee": "surface_SurfaceManager__Setup",
+      "count": 1,
+      "evidence": [
+        {
+          "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+          "line": 933
+        }
+      ]
+    }
+  ],
+  "unresolved_or_external_nodes": [
+    "form_GameForm__DoEvent",
+    "form_GameForm__GameScreenLayout",
+    "form_GameForm__NewGamePara",
+    "form_GameForm__RenderGameScreen",
+    "kairo_unity_util_JarInflater__GetInputStream"
+  ],
+  "summary": {
+    "nodes": 277,
+    "edges": 359,
+    "unresolved_nodes": 5
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "schema_version": "wave5-7-seb-consumer-contract-v1",
+  "phase": "Phase5",
+  "wave": "Wave5",
+  "stage": "W5.7-SEB-consumer-crop-local-placement-and-anchor-trace",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "status": "seb_local_crop_and_external_base_placement_verified_room_world_transform_open",
+  "resource_chain": {
+    "dump_api": {
+      "class": "kairo.unity.ui.ResourceManager",
+      "seb_array_field": "seb",
+      "seb_array_offset": "0x18",
+      "load_method": "LoadSeb(byte[] src)",
+      "source_file": "game-dev-story-mod_Dumped/dump.cs",
+      "source_lines": {
+        "class": 174644,
+        "load_method": 174713
+      }
+    },
+    "native_loader": {
+      "load_seb_function": "kairo_unity_ui_ResourceManager__LoadSeb",
+      "constructor": "kairo_unity_ui_Seb___ctor",
+      "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
+      "source_lines": {
+        "load_seb": 107271,
+        "constructor": 107294
+      }
+    },
+    "resource_consumer_call": {
+      "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
+      "source_line": 99955,
+      "observed_flow": "JarInflater.GetData -> ResourceManager.LoadSeb -> resource array slot",
+      "name_to_file_and_list_namespace": "not fully closed in this pass"
+    }
+  },
+  "seb_record_contract": {
+    "source_file": "game-dev-story-mod_Dumped/dump.cs",
+    "source_line": 175194,
+    "constants": {
+      "SP_FRAME_NO": 0,
+      "SP_TEX_ID": 1,
+      "SP_U": 2,
+      "SP_V": 3,
+      "SP_W": 4,
+      "SP_H": 5,
+      "SP_TRANS_X": 6,
+      "SP_TRANS_Y": 7,
+      "SP_REVERS_U": 8,
+      "SP_REVERS_V": 9,
+      "SP_BLEND": 10,
+      "SP_COLOR": 11,
+      "SP_END": 12
+    },
+    "loader_and_conversion": {
+      "get_sprites_local": 113655,
+      "get_sprites": 114781,
+      "get_sprite_local": 115405,
+      "conv_buffer_to_sprite": 116289,
+      "record_flow": "GetSprites/GetSpritesLocal -> GetSpriteLocal -> ConvBufferToSprite -> sprite object",
+      "field_semantics": "verified by Seb SP_* constants plus consumer field reads"
+    },
+    "sprite_object_offsets": {
+      "texture_id": {
+        "offset": "0x24",
+        "field": "SP_TEX_ID",
+        "source_line": 116351
+      },
+      "local_x": {
+        "offset": "0x38",
+        "field": "SP_TRANS_X",
+        "source_line": 116355
+      },
+      "local_y": {
+        "offset": "0x3c",
+        "field": "SP_TRANS_Y",
+        "source_line": 116359
+      },
+      "u": {
+        "offset": "0x28",
+        "field": "SP_U",
+        "source_line": 116389
+      },
+      "v": {
+        "offset": "0x2c",
+        "field": "SP_V",
+        "source_line": 116393
+      },
+      "w": {
+        "offset": "0x30",
+        "field": "SP_W",
+        "source_line": 116397
+      },
+      "h": {
+        "offset": "0x34",
+        "field": "SP_H",
+        "source_line": 116401
+      },
+      "blend_mode_low_nibble": {
+        "offset": "0x48",
+        "field": "SP_BLEND",
+        "source_line": 116408
+      },
+      "reverse_u_flag": {
+        "offset": "0x40",
+        "field": "SP_REVERS_U",
+        "source_line": 116410
+      },
+      "reverse_v_flag": {
+        "offset": "0x44",
+        "field": "SP_REVERS_V",
+        "source_line": 116412
+      },
+      "color": {
+        "offset": "0x4c",
+        "field": "SP_COLOR",
+        "source_line": 116339
+      }
+    },
+    "special_texture_ids": {
+      "TEXID_NONE": -1,
+      "TEXID_FRECT": -2,
+      "TEXID_RECT": -3,
+      "TEXID_LINE": -4,
+      "TEXID_HIDELINE": -8,
+      "TEXID_HIDERECT": -9,
+      "policy": "keep special primitive behavior separate from normal image crop"
+    }
+  },
+  "seb_draw_contract": {
+    "draw_image_shape": "DrawImage(destination_x, destination_y, image, source_u, source_v, source_w, source_h, alpha)",
+    "core_consumer": {
+      "function": "kairo_unity_ui_Seb__Draw",
+      "source_line": 119434,
+      "source_lines": {
+        "offset_x": 119482,
+        "offset_y": 119483,
+        "destination_matrix_or_add": 119484,
+        "source_rect": 119587,
+        "texture_lookup": 119598,
+        "draw_image": 119610
+      },
+      "destination_formula": "(caller_x + offset_x + local_x, caller_y + offset_y + local_y), or the same values applied through a temporary local matrix",
+      "source_formula": "(u, v, w, h)",
+      "image_formula": "Seb.GetImage(texture_id), with optional custom image dictionary lookup",
+      "status": "verified_local_crop_and_offset_flow"
+    },
+    "appdata_consumers": {
+      "horizontal_repeat": {
+        "function": "main_AppData__DrawSeb",
+        "source_address": "0x00f79fe4",
+        "source_line": 3402,
+        "source_lines": {
+          "destination_x": 3441,
+          "destination_y": 3442,
+          "source_u_with_repeat": 3443,
+          "draw_image": 3440
+        },
+        "destination_formula": "(base_x + local_x, base_y + local_y)",
+        "source_formula": "(u + w * repeat_index, v, w, h)"
+      },
+      "vertical_repeat": {
+        "function": "main_AppData__DrawSebV",
+        "source_address": "0x00f7a0f4",
+        "source_line": 3461,
+        "source_lines": {
+          "source_v_with_repeat": 3503,
+          "draw_image": 3499
+        },
+        "destination_formula": "(base_x + local_x, base_y + local_y)",
+        "source_formula": "(u, v + h * repeat_index, w, h)"
+      },
+      "normal": {
+        "function": "main_AppData__DrawSeb",
+        "source_address": "0x00f7a204",
+        "source_line": 3520,
+        "source_lines": {
+          "destination_x": 3554,
+          "destination_y": 3555,
+          "source_rect": 3556,
+          "draw_image": 3553
+        },
+        "destination_formula": "(base_x + local_x, base_y + local_y)",
+        "source_formula": "(u, v, w, h)"
+      },
+      "reverse_horizontal": {
+        "function": "main_AppData__DrawSebReverse",
+        "source_address": "0x00f7a2e4",
+        "source_line": 3574,
+        "source_lines": {
+          "destination_x": 3612,
+          "destination_y": 3613,
+          "draw_image": 3611
+        },
+        "destination_formula": "(base_x - local_x - w, base_y + local_y)",
+        "source_formula": "(u, v, w, h)"
+      }
+    },
+    "decompiler_guardrail": "The first scaled DrawSeb overload prints sprite+0x38 for both x and y; the normal, horizontal, vertical, reverse, and core consumers use +0x38 for x and +0x3c for y, so the latter is the trusted y contract."
+  },
+  "bounding_anchor_contract": {
+    "bounding_rect": {
+      "get_brect_frame_layer": 113729,
+      "get_bounding_rect": 113844,
+      "get_brect": 113892,
+      "get_pixel_rect": 114468,
+      "pixel_rect_policy": "use optional pixelBoundingRects_ tail when present; otherwise fall back to BRect",
+      "flip_policy": "BRect and PixelRect apply the SEB flip bits when selecting x/y extents"
+    },
+    "external_base": {
+      "function": "main_AppData__GetBRectSeb",
+      "source_file": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+      "source_line": 3727,
+      "source_lines": {
+        "get_bounding_rect": 3739,
+        "add_base_x": 3745,
+        "add_base_y": 3747,
+        "copy_width": 3748,
+        "copy_height": 3750
+      },
+      "formula": "output_rect.x = seb_bounding_rect.x + base_x; output_rect.y = seb_bounding_rect.y + base_y; width/height copied",
+      "status": "bounded_external_base_placement_verified"
+    },
+    "anchor_offset": {
+      "get_anchor_position": 117551,
+      "draw_anchor": 117603,
+      "set_offset": 109841,
+      "clear_offset": 120050,
+      "observed_flow": "GetBoundingRect -> anchor adjustment -> SetOffset -> draw -> ClearOffset",
+      "status": "anchor_adjustment_path_verified; anchor-bit naming remains open"
+    }
+  },
+  "cross_renderer_comparison": {
+    "legacy_object_draw": {
+      "source": "Phases/Phase5/artifacts/wave5_3_numeric_crop_placement_contract.json",
+      "destination": "ObjecX + ObjecZX, ObjecY + ObjecZY",
+      "source_rect": [
+        "ObjecCX",
+        "ObjecCY",
+        "ObjecWX",
+        "ObjecWY"
+      ]
+    },
+    "seb_draw": {
+      "destination": "base_x + SP_TRANS_X, base_y + SP_TRANS_Y",
+      "source_rect": [
+        "SP_U",
+        "SP_V",
+        "SP_W",
+        "SP_H"
+      ]
+    },
+    "comparison_status": "same DrawImage argument shape; object and SEB field namespaces remain separate",
+    "transform_policy": "do not infer a universal room/object/crop/screen transform from this shared call shape"
+  },
+  "floor0_probe": {
+    "source_artifact": "Phases/Phase5/artifacts/wave5_6_floorparts_seb_contract.json",
+    "record_status": "partial_final_record",
+    "effective_local_draw": {
+      "status": "structural_probe_only_partial_record",
+      "texture_id": 0,
+      "source_rect_u_v_w_h": [
+        0,
+        0,
+        600,
+        600
+      ],
+      "local_destination_offset_x_y": [
+        0,
+        0
+      ],
+      "external_base_x_y": "caller supplied; not present in floor0.seb record",
+      "missing_record_fields": [
+        "reverse_u",
+        "reverse_v"
+      ],
+      "policy": "do not claim a successful render from the truncated sample"
+    },
+    "interpretation": "the available bytes are consistent with a 600x600 local crop at zero local offset, but reverse fields are absent and the file is truncated"
+  },
+  "room_placement": {
+    "status": "bounded_local_placement_verified_room_world_transform_open",
+    "closed": [
+      "SEB texture id to image lookup at the draw consumer",
+      "SEB U/V/W/H source crop flow",
+      "SEB local trans_x/trans_y plus external base x/y destination flow",
+      "bounded GetBRectSeb external base addition",
+      "anchor helper offset lifecycle at the SEB API boundary"
+    ],
+    "open": [
+      "which room/floor caller supplies the complete external base x/y",
+      "floor PNG to complete room SEB mapping",
+      "universal world/object/crop/screen or isometric transform",
+      "exact anchor bit enum meaning and pivot policy",
+      "depth/z semantics and DepthMethod coordinate conversion",
+      "legacy-equivalent handling of the four-byte final-record shortfall"
+    ],
+    "policy": "use the verified local contract in adapters, but keep full room reconstruction and legacy_equivalence=false"
+  },
+  "remaining_gap": {
+    "id": "W5-GAP-009",
+    "status": "partially_closed_seb_local_crop_and_base_placement",
+    "closed": [
+      "IndexImgFloorParts selector and SEB structural framing from W5.6",
+      "SEB consumer crop fields and local destination offsets",
+      "bounded external base and anchor offset paths"
+    ],
+    "open": [
+      "full SEB room reconstruction",
+      "room/world/isometric transform and pivot semantics",
+      "depth semantics",
+      "complete legacy-equivalent renderer"
+    ]
+  },
+  "guardrails": [
+    "Keep office/floor0.seb separate from game/floorparts0.png and game/floor0.png selector namespaces.",
+    "Treat the local SEB draw formula as verified only at the consumer boundary; do not infer its caller's room/world coordinates.",
+    "Do not pad or synthesize missing reverse fields in the 24-byte floor0.seb sample.",
+    "Keep the first scaled DrawSeb y expression as a decompiler discrepancy, not a second placement contract.",
+    "Keep legacy_equivalence=false."
+  ],
+  "source_files": {
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c": "19af9b427031643115f78962e487a2afb246ca485e34e70d1d44285a036aeb48",
+    "game-dev-story-mod_Dumped/dump.cs": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
+    "Phases/Phase5/artifacts/wave5_3_numeric_crop_placement_contract.json": "5b92e5c72fb14f1d577f1be09bac2ce630eaa7e9e402bdac75e5798201438217",
+    "Phases/Phase5/artifacts/wave5_6_floorparts_seb_contract.json": "d6816a7b9af3419e88bd2adb52dba6503531c2680f39a4028fd2425cdfb784f5"
+  }
+}

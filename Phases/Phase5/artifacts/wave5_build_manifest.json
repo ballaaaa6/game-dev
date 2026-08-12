@@ -1,0 +1,182 @@
+{
+  "schema_version": "wave5-build-manifest-v1",
+  "phase": "Phase5",
+  "wave": "Wave5",
+  "stage": "C0-through-C8-W5.1-B-through-G-W5.2-furniture-mapping-W5.3-numeric-crop-placement-W5.4-loader-bridge-W5.5-exact-img-list-alignment-W5.6-floorparts-seb-structural-trace-W5.7-seb-consumer-crop-placement-trace-W5.8-room-caller-screen-placement-trace-and-W5.9-object-producer-camera-seb-mapping-trace-with-known-limitations",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "files": [
+    {
+      "path": "Phases/Phase4/artifacts/wave2_minimum_scene_fixture.json",
+      "exists": true,
+      "sha256": "2b9bf61f93a31fe8f800f4ad52cf9c41fb2740a94ed714970f20368a34886902"
+    },
+    {
+      "path": "Phases/Phase4/artifacts/wave2_furniture_contract.json",
+      "exists": true,
+      "sha256": "58ea97d993d6227e72ee6ab93136a8f3a2ecf9c09a2c076c544048adc608dad9"
+    },
+    {
+      "path": "Phases/Phase4/artifacts/wave2_draw_order_contract.json",
+      "exists": true,
+      "sha256": "d1b4ea265486e1323fae0d38d752c505eb6d594f37b75e8bf98d28b38cf90026"
+    },
+    {
+      "path": "Phases/Phase4/artifacts/wave2_wave3_movement_interface.json",
+      "exists": true,
+      "sha256": "77caa70bd87917a8804b26c9201e3e52b4702cb8df947f15599e15ff556161f0"
+    },
+    {
+      "path": "Phases/Phase4/artifacts/wave3_actor_e2e_fixture.json",
+      "exists": true,
+      "sha256": "c5f4d44b051442a195a2a7118c78ac43dcc1db2c947be71ae76f1294841d85ad"
+    },
+    {
+      "path": "Phases/Phase4/artifacts/wave4_locale_contract.json",
+      "exists": true,
+      "sha256": "1c41087d6e187e9e6449925edadd9b2119ce69368ea7d9cf0d0a8e3520e12823"
+    },
+    {
+      "path": "Phases/Phase4/artifacts/wave4_talk_contract.json",
+      "exists": true,
+      "sha256": "c3c65a6986d2950373d892168795688097207d276baa59b45f46c53b562067a0"
+    },
+    {
+      "path": "Phases/Phase4/artifacts/wave4_bubble_contract.json",
+      "exists": true,
+      "sha256": "fd298a53f639df4c536381b93c213b4009b8a30332230d383b9a6537e9c9051f"
+    },
+    {
+      "path": "Phases/Phase4/artifacts/wave4_notification_contract.json",
+      "exists": true,
+      "sha256": "a8111c7475a040388d0994cc03b07f7dc380e820a0e3235e0c0f95cbc270e2c7"
+    },
+    {
+      "path": "Phases/Phase4/artifacts/wave4_event_contract.json",
+      "exists": true,
+      "sha256": "1fd7423029f68f27528b5ee3dd3b8bd748efd55fee5e7e93a7ed52ffe8e377c2"
+    },
+    {
+      "path": "Phases/Phase2/artifacts/bodyface_analysis.json",
+      "exists": true,
+      "sha256": "098f8f1505c5aa3cfe9bbb5f67877d886973837ca22d73fa84bdac3aa48eb2c5"
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/office/floor0.png",
+      "exists": true,
+      "sha256": "cfa23363fe9eb7bc41481b6325b46dc192ac301f73ab94a641b8e83bc7fc5b83"
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/office/floor0.seb",
+      "exists": true,
+      "sha256": "f5345450808c61ade004594ac6498fbc58aace526976bff06a9025853174fd15"
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/office/reception_000.png",
+      "exists": true,
+      "sha256": "f843c3d98d81459f48326961cbe240450bab2abb39e4d1c831c22b50eca38ef9"
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/office/desk_000.png",
+      "exists": true,
+      "sha256": "c00f26775bbe8e2771272fd6943c61716fa3cdb35736780bf1c503c99c0a69d7"
+    },
+    {
+      "path": "game-dev-story-mod_Sprites/office/chair_000.png",
+      "exists": true,
+      "sha256": "9b9ffe148dce26d063635cb46b40d50e3d1cead56bba1ec9b32abdaf828a74ee"
+    },
+    {
+      "path": "Phases/Phase5/runtime/runtime.js",
+      "exists": true,
+      "sha256": "24112ee3af055ca1c2d1e2fbdf02fd78cd0800ed87aee1674e42b8cb34c7a922"
+    },
+    {
+      "path": "Phases/Phase5/runtime/app.js",
+      "exists": true,
+      "sha256": "3c77c452592275213d5309ef031dc82a20385c4c44b595eaebcb10013cd7f228"
+    },
+    {
+      "path": "Phases/Phase5/runtime/data/room_manifest.json",
+      "exists": true,
+      "sha256": "cec5c891c260cc36fca70d4c343116f289f0a7f11e4ceab216a940b8e1323baf"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_1_furniture_manifest.json",
+      "exists": true,
+      "sha256": "37d50d15be21cef041482dfa319a69f10ea9856cddb885f2b4aba724d55cb246"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_1_transform_depth_contract.json",
+      "exists": true,
+      "sha256": "d3696a0f5d9fd55d2f25727a62ee56f411eaf753c83ef738a59b7fa8663b0b84"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_1_timer_contract.json",
+      "exists": true,
+      "sha256": "dbcc5a1919bfd937ed3a19a6e30a7fbe9c3543aee4f24a8cf59bbd41b0e91ee7"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_1_animation_policy.json",
+      "exists": true,
+      "sha256": "b79d832c48d37264f1d5e57187ce08aa4c0844a8c6a3dbd569ff465b61b7971e"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_1_selector_gap_contract.json",
+      "exists": true,
+      "sha256": "9fcf8eb54c4510ca66f33189a0504552f9d9ce9b1c1eaed012dda8dcc8f961bc"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_1_event_mode_policy.json",
+      "exists": true,
+      "sha256": "f420aa3a3919f41ea0666248d140a1c9bd32589daeb423c8f4117a067e7bf9f1"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_2_furniture_mapping_contract.json",
+      "exists": true,
+      "sha256": "0db2da95503acb9d8bef29f4e10064cf8e0f3b5a4dbaaeb2893591a86e051d26"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_2_furniture_draw_fixture.json",
+      "exists": true,
+      "sha256": "2d985a0bc6f0acc8ed37da467e8be21f13464cf77d97b979cc24d3628b10d508"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_3_numeric_crop_placement_contract.json",
+      "exists": true,
+      "sha256": "5b92e5c72fb14f1d577f1be09bac2ce630eaa7e9e402bdac75e5798201438217"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_4_img_list_loader_bridge.json",
+      "exists": true,
+      "sha256": "b9772be7e2514153afcba384cc1ae55777e2b654337780e9f99e8fa8572bb06e"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_5_img_list_alignment.json",
+      "exists": true,
+      "sha256": "551120e07f6579a87f885a6dc513c6e4b095b8bdaffe606bd49f770fb4c38ce4"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_6_floorparts_seb_contract.json",
+      "exists": true,
+      "sha256": "d6816a7b9af3419e88bd2adb52dba6503531c2680f39a4028fd2425cdfb784f5"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_7_seb_consumer_contract.json",
+      "exists": true,
+      "sha256": "44e0d63406be1e0836ad040a8663241d19c5e6cec154b878f8bedd7d2418cca3"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_8_room_caller_contract.json",
+      "exists": true,
+      "sha256": "bbcee60b9f17836dfb33ff052ab914b931d91cffe05aa5c4bef40651872a7499"
+    },
+    {
+      "path": "Phases/Phase5/artifacts/wave5_9_object_producer_contract.json",
+      "exists": true,
+      "sha256": "16f4266e38d649616bcfce27c9dbf7918a3f01a156e19b413d62c5efc0dc2bcf"
+    }
+  ],
+  "runtime_host": "Phases/Phase5/runtime",
+  "status": "complete_with_known_limitations"
+}

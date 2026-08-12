@@ -1,0 +1,19 @@
+{
+  "schema_version": "wave5-1-event-mode-policy-v1",
+  "stage": "W5.1-G-raw-event-bridge",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "named_adapter_events": true,
+  "raw_mode_storage": "preserve_mode_and_args_without_semantic_name",
+  "status": "raw_only",
+  "targeted_mode_translation": "not_started_without_concrete_product_dependency",
+  "open_semantics": [
+    "numeric AddEvent mode taxonomy",
+    "DoEvent branch-to-mode mapping",
+    "actor/message lifecycle ownership"
+  ],
+  "evidence": [
+    "Phases/Phase4/artifacts/wave4_event_contract.json",
+    "Phases/Phase4/artifacts/wave4_event_mode_candidates.json"
+  ]
+}

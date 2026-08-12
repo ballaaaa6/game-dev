@@ -1,0 +1,387 @@
+{
+  "schema_version": "wave2-selector-adapter-v1",
+  "phase": "Phase4",
+  "wave": "Wave2",
+  "stage": "W2-C1-symbolic-selector-adapter",
+  "source_roots_read_only": true,
+  "policy": {
+    "numeric_value_policy": "do_not_hardcode_runtime_or_GOT-backed selector values",
+    "imgface_conflict_policy": "retain StringLiteral_7514=false and face asset evidence as conflicting_evidence",
+    "tface_40_41_policy": "retain as index_space_mismatch until caller/branch evidence resolves the namespace"
+  },
+  "namespaces": [
+    {
+      "name": "selector_index",
+      "meaning": "Runtime selector expression such as TFace, TBody, or a static DD* field.",
+      "must_not_be_joined_by": "filename numeric suffix"
+    },
+    {
+      "name": "resource_index",
+      "meaning": "Index assigned by img.inf/seb.inf loader order or explicit manifest index.",
+      "evidence": "Phases/Phase4/artifacts/resource_selector_map.json"
+    },
+    {
+      "name": "img_array_slot",
+      "meaning": "Slot in GameForm.imgFace/imgBody/imgBihin_ after initializer population.",
+      "evidence": "game-dev-story-mod_Dumped/dump.cs"
+    },
+    {
+      "name": "filename_numeric_id",
+      "meaning": "Number embedded in a filename such as body10 or face_10.",
+      "status": "not_a_resource_index_without_direct_evidence"
+    }
+  ],
+  "static_selectors": [
+    {
+      "name": "DDBody",
+      "field_offset": "0xA8",
+      "uses": [
+        "IMG_LIST[DDBody + i] for imgBody initialization"
+      ],
+      "write_site": {
+        "raw_elf_address": "0x00e6edd4",
+        "export_namespace_address": "0x00f6edd4",
+        "instruction": "str x9, [x0, #0xa8]",
+        "source_function": "form.GameForm___cctor"
+      },
+      "data_source": {
+        "got_slot": "0x001ec3138",
+        "relocation": "R_AARCH64_RELATIVE",
+        "relocation_target": "0x001f55780",
+        "raw_file_bytes_at_target": "ff5200a000000000"
+      },
+      "resolution_status": "dynamic_value_with_preconditions",
+      "value_status": "selector_index_not_decoded",
+      "adapter_policy": "symbolic_only_until_direct_numeric_value_is_recovered",
+      "next_action": "decode runtime data source/metadata and verify IMG_LIST bounds before assigning an index",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 275543,
+          "value": "DDBody at static offset 0xA8"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
+          "line": 5490,
+          "value": "imgBody path reads static offset 0xA8 as IMG_LIST base"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 57396,
+          "value": "cctor writes static storage at offset 0xA8"
+        }
+      ]
+    },
+    {
+      "name": "DDChair",
+      "field_offset": "0xAC",
+      "uses": [
+        "IMG_LIST[DDChair] for LoadBihinImage"
+      ],
+      "write_site": {
+        "raw_elf_address": "0x00e6edd4",
+        "export_namespace_address": "0x00f6edd4",
+        "instruction": "str x9, [x0, #0xa8]",
+        "source_function": "form.GameForm___cctor",
+        "packing_note": "shares the 64-bit store covering offsets 0xA8 and 0xAC"
+      },
+      "data_source": {
+        "got_slot": "0x001ec3138",
+        "relocation": "R_AARCH64_RELATIVE",
+        "relocation_target": "0x001f55780",
+        "raw_file_bytes_at_target": "ff5200a000000000"
+      },
+      "resolution_status": "dynamic_value_with_preconditions",
+      "value_status": "selector_index_not_decoded",
+      "adapter_policy": "symbolic_only_until_direct_numeric_value_is_recovered",
+      "next_action": "decode the adjacent 32-bit lane without assuming recovered-C 64-bit write ordering",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 275545,
+          "value": "DDChair at static offset 0xAC"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 56677,
+          "value": "LoadBihinImage uses IMG_LIST[DDChair]"
+        }
+      ]
+    },
+    {
+      "name": "DDDesk",
+      "field_offset": "0xB0",
+      "uses": [
+        "IMG_LIST[DDDesk] for LoadBihinImage"
+      ],
+      "write_site": {
+        "raw_elf_address": "0x00e6edec",
+        "export_namespace_address": "0x00f6edec",
+        "instruction": "str x9, [x0, #0xb0]",
+        "source_function": "form.GameForm___cctor"
+      },
+      "data_source": {
+        "got_slot": "0x001ec2f08",
+        "relocation": "R_AARCH64_RELATIVE",
+        "relocation_target": "0x001f55a30",
+        "raw_file_bytes_at_target": "ab5300a000000000"
+      },
+      "resolution_status": "dynamic_value_with_preconditions",
+      "value_status": "selector_index_not_decoded",
+      "adapter_policy": "symbolic_only_until_direct_numeric_value_is_recovered",
+      "next_action": "decode runtime data source and join the result with chair/desk image manifests",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 275546,
+          "value": "DDDesk at static offset 0xB0"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 56677,
+          "value": "LoadBihinImage uses IMG_LIST[DDDesk]"
+        }
+      ]
+    },
+    {
+      "name": "DDFace",
+      "field_offset": "0xB8",
+      "uses": [
+        "face-related static selector family; exact use requires callsite join"
+      ],
+      "write_site": {
+        "raw_elf_address": "0x00e6ee04",
+        "export_namespace_address": "0x00f6ee04",
+        "instruction": "str x9, [x0, #0xb8]",
+        "source_function": "form.GameForm___cctor"
+      },
+      "data_source": {
+        "got_slot": "0x001ec2e08",
+        "relocation": "R_AARCH64_RELATIVE",
+        "relocation_target": "0x001f55ec8",
+        "raw_file_bytes_at_target": "d15400a000000000"
+      },
+      "resolution_status": "dynamic_value_with_preconditions",
+      "value_status": "selector_index_not_decoded",
+      "adapter_policy": "symbolic_only_until_direct_numeric_value_is_recovered",
+      "next_action": "join DDFace writes with all face selector reads and resolve its namespace",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 275548,
+          "value": "DDFace at static offset 0xB8"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
+          "line": 5373,
+          "value": "imgFace destination is at offset 0x1150"
+        }
+      ]
+    },
+    {
+      "name": "DDPC",
+      "field_offset": "0xD4",
+      "uses": [
+        "IMG_LIST[DDPC] for LoadBihinImage"
+      ],
+      "write_site": {
+        "raw_elf_address": "0x00e6ee4c",
+        "export_namespace_address": "0x00f6ee4c",
+        "instruction": "str x9, [x0, #0xd0]",
+        "source_function": "form.GameForm___cctor",
+        "packing_note": "shares the 64-bit store covering offsets 0xD0 and 0xD4"
+      },
+      "data_source": {
+        "got_slot": "0x001ec2f80",
+        "relocation": "R_AARCH64_RELATIVE",
+        "relocation_target": "0x001f557f8",
+        "raw_file_bytes_at_target": "1d5300a000000000"
+      },
+      "resolution_status": "dynamic_value_with_preconditions",
+      "value_status": "selector_index_not_decoded",
+      "adapter_policy": "symbolic_only_until_direct_numeric_value_is_recovered",
+      "next_action": "decode the DDPC 32-bit lane and compare against pc image manifest bounds",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 275555,
+          "value": "DDPC at static offset 0xD4"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 56677,
+          "value": "LoadBihinImage uses IMG_LIST[DDPC]"
+        }
+      ]
+    }
+  ],
+  "asset_selector_contracts": {
+    "face": {
+      "expression": "StringLiteral_7514 + i + StringLiteral_833",
+      "array": "form.GameForm.imgFace",
+      "count": 36,
+      "mapping_status": "unknown",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
+        "line": 5373,
+        "needle": "*(undefined8 *)(*(long *)(lVar10 + 0xb8) + 0x1150) = uVar11;"
+      }
+    },
+    "body": {
+      "expression": "IMG_LIST[DDBody + i] + StringLiteral_833",
+      "array": "form.GameForm.imgBody",
+      "count": 25,
+      "mapping_status": "base_selector_value_unknown",
+      "evidence": {
+        "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
+        "line": 5490,
+        "needle": "plVar19 = *(long **)(lVar16 + 0x1158);"
+      }
+    }
+  },
+  "drawhuman_audit": {
+    "total_calls": 106,
+    "dynamic_selector_calls": 92,
+    "caller_counts": {
+      "form_GameForm__DrawObj": 1,
+      "form_GameForm___draw": 5,
+      "form_RankForm___draw": 2,
+      "form_SubForm__DrawFan": 2,
+      "form_SubForm__DrawGyoretsu": 1,
+      "form_SubForm__DrawTalk": 1,
+      "form_SubForm___draw2": 9,
+      "form_SubForm___draw3": 1,
+      "form_SubForm___draw4": 6,
+      "form_SubForm___draw5": 57,
+      "form_SubForm___draw6": 21
+    },
+    "literal_tface_values": [
+      2,
+      10,
+      23,
+      32,
+      33,
+      40,
+      41
+    ],
+    "tface_40_41_calls": [
+      {
+        "function": "form_GameForm___draw",
+        "line": 19464,
+        "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "TFace": 40,
+        "TBody": 23,
+        "status": "index_space_mismatch"
+      },
+      {
+        "function": "form_GameForm___draw",
+        "line": 19467,
+        "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "TFace": 40,
+        "TBody": 23,
+        "status": "index_space_mismatch"
+      },
+      {
+        "function": "form_GameForm___draw",
+        "line": 19500,
+        "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "TFace": 40,
+        "TBody": 23,
+        "status": "index_space_mismatch"
+      },
+      {
+        "function": "form_SubForm___draw2",
+        "line": 65459,
+        "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "TFace": 41,
+        "TBody": 4,
+        "status": "index_space_mismatch"
+      },
+      {
+        "function": "form_SubForm___draw2",
+        "line": 65481,
+        "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "TFace": 40,
+        "TBody": 23,
+        "status": "index_space_mismatch"
+      },
+      {
+        "function": "form_SubForm___draw5",
+        "line": 88049,
+        "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "TFace": 40,
+        "TBody": 23,
+        "status": "index_space_mismatch"
+      },
+      {
+        "function": "form_SubForm___draw5",
+        "line": 88053,
+        "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "TFace": 40,
+        "TBody": 23,
+        "status": "index_space_mismatch"
+      },
+      {
+        "function": "form_SubForm___draw5",
+        "line": 88092,
+        "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "TFace": 40,
+        "TBody": 23,
+        "status": "index_space_mismatch"
+      },
+      {
+        "function": "form_SubForm___draw6",
+        "line": 93118,
+        "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "TFace": 40,
+        "TBody": 23,
+        "status": "index_space_mismatch"
+      },
+      {
+        "function": "form_SubForm___draw6",
+        "line": 93146,
+        "source": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "TFace": 40,
+        "TBody": 23,
+        "status": "index_space_mismatch"
+      }
+    ],
+    "tface_40_41_audit": {
+      "status": "index_space_mismatch",
+      "confidence": "high",
+      "current_asset_family": "face_0.png through face_35.png",
+      "imgFace_array_length": 36,
+      "direct_drawhuman_evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 276585,
+          "value": "DrawHuman(..., int TFace, int TBody, int TMode)"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41368,
+          "value": "DrawHuman direct path loads imgFace at offset 0x1150"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41370,
+          "value": "direct path checks imgFace length <= param_5 before indexing"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 41463,
+          "value": "second direct path also loads imgFace at offset 0x1150"
+        }
+      ],
+      "interpretation": "TFace=40/41 cannot be direct zero-based indices into the 36-slot imgFace array on the guarded paths; they require an alternate selector namespace, a skipped/fallback branch, or a missing extraction artifact",
+      "next_action": "trace callers and branch conditions around DrawHuman before labeling 40/41 as missing assets"
+    }
+  },
+  "summary": {
+    "static_selector_count": 5,
+    "numeric_static_values_decoded": 0,
+    "drawhuman_call_count": 106,
+    "tface_40_41_call_count": 10,
+    "status": "symbolic_adapter_ready_with_known_selector_gaps"
+  }
+}

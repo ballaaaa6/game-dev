@@ -1,0 +1,316 @@
+{
+  "schema_version": "wave2-gap-register-v1",
+  "phase": "Phase4",
+  "wave": "Wave2",
+  "stage": "W2-C7-minimum-gate",
+  "source_roots_read_only": true,
+  "controlled_statuses": [
+    "verified",
+    "recoverable",
+    "conflicting_evidence",
+    "extraction_missing",
+    "out_of_scope"
+  ],
+  "gaps": [
+    {
+      "gap_id": "G-W1-C1-DDBody",
+      "question": "ค่า static DDBody ที่ใช้เป็นฐาน IMG_LIST คือเท่าใด และกำหนดจากจุดใด",
+      "status": "recoverable",
+      "impact": "risk",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 275543,
+          "value": "internal static readonly int DDBody; // 0xA8"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
+          "line": 5490,
+          "value": "IMG_LIST base + DDBody is read before imgBody lookup"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 57396,
+          "value": "GameForm static storage offset 0xA8 is initialized in cctor"
+        }
+      ],
+      "next_action": "carry DDBody as a symbolic runtime selector into Wave 2; only hardcode it after a direct numeric source is recovered",
+      "confidence": "high",
+      "carried_from": "Wave1"
+    },
+    {
+      "gap_id": "G-W1-C1-DDPC",
+      "question": "ค่า static DDPC ที่ใช้โดย LoadBihinImage คือเท่าใด",
+      "status": "recoverable",
+      "impact": "risk",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 275555,
+          "value": "internal static readonly int DDPC; // 0xD4"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 56677,
+          "value": "LoadBihinImage uses IMG_LIST[DDPC]"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 57399,
+          "value": "static storage covering offset 0xD4 is initialized in cctor"
+        }
+      ],
+      "next_action": "carry DDPC as a symbolic runtime selector into Wave 2; join to a manifest only after its numeric value is directly recovered",
+      "confidence": "high",
+      "carried_from": "Wave1"
+    },
+    {
+      "gap_id": "G-W1-C1-DDChair-DDDesk",
+      "question": "ค่า static DDChair และ DDDesk ที่ใช้โดย LoadBihinImage คือเท่าใด",
+      "status": "recoverable",
+      "impact": "risk",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 275545,
+          "value": "DDChair // 0xAC"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 275546,
+          "value": "DDDesk // 0xB0"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+          "line": 56677,
+          "value": "LoadBihinImage uses IMG_LIST[DDChair] and IMG_LIST[DDDesk]"
+        }
+      ],
+      "next_action": "carry DDChair/DDDesk as symbolic runtime selectors into Wave 2; do not infer adjacent values from the 64-bit store ordering",
+      "confidence": "high",
+      "carried_from": "Wave1"
+    },
+    {
+      "gap_id": "G-W1-C2-imgFace-prefix",
+      "question": "imgFace initializer prefix เป็น face_ จริงหรือ recovered literal false จริง",
+      "status": "conflicting_evidence",
+      "impact": "risk",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
+          "line": 5373,
+          "value": "imgFace destination offset 0x1150"
+        },
+        {
+          "file": "game-dev-story-mod_Dumped/stringliteral.json",
+          "value": "StringLiteral_7514 = false; StringLiteral_7513 = face_"
+        },
+        {
+          "file": "game-dev-story-mod_Sprites/game/img.inf",
+          "value": "face_0.png through face_35.png occupy resource indices 40-75"
+        },
+        {
+          "file": "Phases/Phase4/artifacts/wave1_imgface_conflict.json",
+          "value": "raw BootForm loop loads StringLiteral_7514 and StringLiteral_833; it does not load StringLiteral_7513"
+        }
+      ],
+      "next_action": "retain both literal and asset evidence; Wave 2 may use verified face fixtures but must not rewrite the recovered prefix without runtime/alternate-namespace evidence",
+      "confidence": "high",
+      "carried_from": "Wave1"
+    },
+    {
+      "gap_id": "G-W1-C3-face-selector-40-41",
+      "question": "TFace=40/41 อยู่ใน namespace ของ imgFace, IMG_LIST หรือ resource index ใด",
+      "status": "recoverable",
+      "impact": "risk",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/dump.cs",
+          "line": 276585,
+          "value": "DrawHuman(..., int TFace, int TBody, int TMode)"
+        },
+        {
+          "file": "Phases/Phase2/docs/phase2_report.md",
+          "value": "TFace=40 and TFace=41 have no direct extracted face asset"
+        },
+        {
+          "file": "Phases/Phase4/artifacts/wave1_asset_gap_audit.json",
+          "value": "imgFace length 36; direct DrawHuman paths bounds-check param_5, so 40/41 require alternate namespace or branch explanation"
+        }
+      ],
+      "next_action": "trace callers and branch conditions around DrawHuman when implementing the face selector adapter; until then preserve 40/41 as an index-space mismatch",
+      "confidence": "medium",
+      "carried_from": "Wave1"
+    },
+    {
+      "gap_id": "G-W1-C3-unmatched-img-list",
+      "question": "IMG_LIST entries that do not match game image files are image resources, text resources, or another pack",
+      "status": "verified",
+      "impact": "risk",
+      "evidence": [
+        {
+          "file": "Phases/Phase4/artifacts/resource_selector_map.json",
+          "value": "80 recovered IMG_LIST entries; unmatched names are retained with unknown_or_not_a_game_image status"
+        },
+        {
+          "file": "game-dev-story-mod_Sprites/game/img.inf",
+          "value": "game image manifest used for exact filename join"
+        },
+        {
+          "file": "Phases/Phase4/artifacts/wave1_asset_gap_audit.json",
+          "value": "all 291 manifest records resolve; 13 unmatched IMG_LIST names are classified as non-image/prefix and 2 face-like names are missing from current extraction"
+        }
+      ],
+      "next_action": "preserve the two face-like missing entries as extraction gaps and do not use unmatched utility strings for image mapping",
+      "confidence": "high",
+      "carried_from": "Wave1"
+    },
+    {
+      "gap_id": "G-W1-C4-NewGamePara-semantics",
+      "question": "ส่วนใดของ NewGamePara เป็น initialization, reset, exit หรือ event transition",
+      "status": "recoverable",
+      "impact": "risk",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/Failed_Functions_Assembly/00f265b8_form_GameForm__NewGamePara.asm.txt",
+          "line": 1,
+          "value": "13,671 assembly instructions; no recovered high-level C body"
+        },
+        {
+          "file": "Phases/Phase4/artifacts/wave1_branch_index.json",
+          "value": "2,075 branch records and 474 basic blocks"
+        },
+        {
+          "file": "Phases/Phase4/artifacts/wave1_slices.json",
+          "value": "W1-C4-NewGamePara-01 bounds a guard -> AddObjec -> post-call-check path"
+        }
+      ],
+      "next_action": "use the bounded slice as the Wave 2 evidence boundary; expand semantics only when a concrete lifecycle dependency requires it",
+      "confidence": "high",
+      "carried_from": "Wave1"
+    },
+    {
+      "gap_id": "G-W1-C4-DoEvent-semantics",
+      "question": "ส่วนใดของ DoEvent เป็น event dispatch, state update หรือ cleanup",
+      "status": "recoverable",
+      "impact": "risk",
+      "evidence": [
+        {
+          "file": "game-dev-story-mod_Dumped/Failed_Functions_Assembly/00f5c704_form_GameForm__DoEvent.asm.txt",
+          "line": 1,
+          "value": "15,569 assembly instructions; no recovered high-level C body"
+        },
+        {
+          "file": "Phases/Phase4/artifacts/wave1_branch_index.json",
+          "value": "4,517 branch records and 4,053 basic blocks"
+        },
+        {
+          "file": "Phases/Phase4/artifacts/wave1_slices.json",
+          "value": "W1-C4-DoEvent-01 bounds a guarded string transform -> AddKaiwa -> continuation path"
+        }
+      ],
+      "next_action": "use the bounded slice as the Wave 2 evidence boundary; expand dispatch/cleanup semantics only for a concrete dependency",
+      "confidence": "high",
+      "carried_from": "Wave1"
+    },
+    {
+      "gap_id": "G-W2-C1-selector-namespace",
+      "question": "Selector, resource index, image-array slot และ filename numeric id จะ join กันที่จุดใดของ runtime",
+      "status": "recoverable",
+      "impact": "risk",
+      "evidence": [
+        "Phases/Phase4/artifacts/wave1_selector_resolution.json",
+        "Phases/Phase4/artifacts/resource_selector_map.json",
+        "Phases/Phase4/artifacts/wave1_asset_gap_audit.json"
+      ],
+      "next_action": "ใช้ symbolic adapter และ trace เฉพาะ caller ที่อยู่ใน room/DrawObj path ก่อน decode numeric value",
+      "confidence": "high"
+    },
+    {
+      "gap_id": "G-W2-C2-object-record-semantics",
+      "question": "Object record fields ที่ AddObjec เขียนจะ map เป็น scene schema ได้ครบเพียงใด",
+      "status": "recoverable",
+      "impact": "risk",
+      "evidence": [
+        "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c:24849",
+        "game-dev-story-mod_Dumped/dump.cs"
+      ],
+      "next_action": "สร้าง fixture จาก CallHikkosi หนึ่ง branch แล้วตรวจ producer/consumer ของทุก field ที่ใช้จริง",
+      "confidence": "high"
+    },
+    {
+      "gap_id": "G-W2-C4-coordinate-spaces",
+      "question": "world/object/crop/screen coordinate transforms ที่ DrawFloorCover และ DrawObj ใช้คืออะไร",
+      "status": "recoverable",
+      "impact": "blocker",
+      "evidence": [
+        "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "Phases/Phase1/artifacts/phase1_code_trace.json"
+      ],
+      "next_action": "ตรวจ coordinate formula fixture กับ assembly/pixel evidence ก่อนปิด transform semantics",
+      "confidence": "medium"
+    },
+    {
+      "gap_id": "G-W2-C5-depth-field-semantics",
+      "question": "sort comparison ใน DrawObj ใช้ field ใดเป็นลำดับวาดและมีความหมาย depth หรือไม่",
+      "status": "recoverable",
+      "impact": "blocker",
+      "evidence": [
+        "Phases/Phase1/artifacts/phase1_code_trace.json:drawobj_sort_comparison",
+        "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "game-dev-story-mod_Dumped/dump.cs"
+      ],
+      "next_action": "ใช้ neutral compare-and-swap fixture เป็น regression probe แล้วตรวจ semantic depth จาก assembly/pixel behavior",
+      "confidence": "medium"
+    },
+    {
+      "gap_id": "G-W2-C6-seat-collision-walkable",
+      "question": "seat, collision, walkable และ interaction zone เป็น legacy fact หรือ web adapter behavior",
+      "status": "recoverable",
+      "impact": "risk",
+      "evidence": [
+        "Phases/Phase1/artifacts/phase1_code_trace.json:collision_contract",
+        "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "game-dev-story-mod_Dumped/dump.cs"
+      ],
+      "next_action": "trace direct occupancy/seat reads; ถ้าไม่พบให้ปิด legacy claim และบันทึก web_adapter_decision หรือ out_of_scope",
+      "confidence": "medium"
+    },
+    {
+      "gap_id": "G-W2-C6-furniture-relations",
+      "question": "PC/desk/chair image data และ object arrays เชื่อมกันอย่างไรใน change functions",
+      "status": "recoverable",
+      "impact": "risk",
+      "evidence": [
+        "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "game-dev-story-mod_Dumped/dump.cs"
+      ],
+      "next_action": "ใช้ furniture relation contract ตรวจ caller ที่สร้าง object และเชื่อมกับ room fixture",
+      "confidence": "high"
+    },
+    {
+      "gap_id": "G-W2-C7-placement-trace",
+      "question": "CallHikkosi สร้าง object placement ของ office/furniture อย่างไรโดยไม่เดาจากภาพ",
+      "status": "recoverable",
+      "impact": "blocker",
+      "evidence": [
+        "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "game-dev-story-mod_Dumped/dump.cs"
+      ],
+      "next_action": "ขยาย bounded branch ไปเป็น end-to-end room fixture และคง numeric placement เป็น unresolved จนกว่าจะมี producer evidence",
+      "confidence": "medium"
+    }
+  ],
+  "summary": {
+    "gap_count": 15,
+    "status_counts": {
+      "conflicting_evidence": 1,
+      "recoverable": 13,
+      "verified": 1
+    },
+    "unclassified_unknown_count": 0,
+    "current_wave2_gate": "not_ready_for_wave2_scene_closure",
+    "selector_adapter_status": "symbolic_adapter_ready_with_known_selector_gaps",
+    "scene_contract_status": "object_contract_ready_for_minimum_scene_fixture"
+  }
+}

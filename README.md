@@ -4,6 +4,9 @@
 
 ## พื้นที่หลัก
 
+- `Docs/AI_Agent_Office_Roadmap.md` — roadmap ใหญ่และ checklist ความคืบหน้าระดับ Phase
+- `TODO.md` — backlog งานย่อยที่พร้อมลงมือทำ เรียงตาม dependency
+- `PROJECT_STATE.md` — สถานะล่าสุด, known limitations และ handoff สำหรับ session ถัดไป
 - `Phases/` — artifacts, report, preview และ reference ที่จัดตาม Phase 0–7
 - `game-dev-story-mod_Sprites/` — source asset ที่ freeze ไว้ ห้ามแก้ระหว่างการวิเคราะห์
 - `game-dev-story-mod_Dumped/` — dump/decompiled source ที่ freeze ไว้

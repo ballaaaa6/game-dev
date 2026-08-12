@@ -1,0 +1,761 @@
+{
+  "schema_version": "wave3-actor-e2e-fixture-v1",
+  "phase": "Phase4",
+  "wave": "Wave3",
+  "stage": "W3-C6-single-actor-end-to-end",
+  "source_roots_read_only": true,
+  "fixture_id": "single_actor_end_to_end_boundary",
+  "fixture_scope": "deterministic contract composition; no claim of full legacy runtime equivalence",
+  "inputs": {
+    "wave2_minimum_scene_fixture": "Phases/Phase4/artifacts/wave2_minimum_scene_fixture.json",
+    "identity_contract": "Phases/Phase4/artifacts/wave3_actor_identity_contract.json",
+    "spawn_fixture": "Phases/Phase4/artifacts/wave3_spawn_fixture.json",
+    "state_contract": "Phases/Phase4/artifacts/wave3_actor_state_contract.json",
+    "state_fixture": "Phases/Phase4/artifacts/wave3_state_transition_fixture.json",
+    "movement_contract": "Phases/Phase4/artifacts/wave3_movement_contract.json",
+    "movement_fixture": "Phases/Phase4/artifacts/wave3_movement_fixture.json",
+    "interaction_contract": "Phases/Phase4/artifacts/wave3_interaction_contract.json",
+    "seat_fixture": "Phases/Phase4/artifacts/wave3_seat_fixture.json",
+    "animation_contract": "Phases/Phase4/artifacts/wave3_actor_animation_contract.json",
+    "draw_fixture": "Phases/Phase4/artifacts/wave3_draw_fixture.json"
+  },
+  "adapter_contract": {
+    "clock": {
+      "kind": "deterministic_adapter_clock",
+      "frame_ms": 100,
+      "legacy_timing_status": "unknown"
+    },
+    "scene_boundary": {
+      "fixture": "Phases/Phase4/artifacts/wave2_minimum_scene_fixture.json",
+      "room_status": "minimum_scene_contract_ready_with_symbolic_room_object_type",
+      "coordinate_status": "verified_for_observed_human_and_reception_callsites",
+      "draw_order_status": "sort_probe_only_depth_not_closed",
+      "status": "wave2_contract_boundary_not_full_room_runtime"
+    },
+    "state_boundary": {
+      "fixture": "Phases/Phase4/artifacts/wave3_actor_state_contract.json",
+      "raw_state_status": "raw_state_audit_ready_adapter_transitions_explicit_legacy_semantics_open",
+      "adapter_state_policy": "walking/idle/sitting are explicit web adapter states; raw HumanState/HumanMode are not silently mapped",
+      "status": "raw_and_adapter_state_namespaces_separate"
+    },
+    "movement_boundary": {
+      "fixture": "Phases/Phase4/artifacts/wave3_movement_contract.json",
+      "position_space": "adapter_world_position",
+      "arrival_tolerance": "fixture_exact_point",
+      "blocked_policy": "do not teleport and do not mutate adapter position when collision returns blocked",
+      "status": "web_adapter_decision"
+    },
+    "seat_boundary": {
+      "fixture": "Phases/Phase4/artifacts/wave3_interaction_contract.json",
+      "operations": [
+        "occupy",
+        "release",
+        "query"
+      ],
+      "legacy_occupancy_status": "not_closed",
+      "status": "explicit_adapter_relation_not_derived_from_raw_HumanSitChair"
+    },
+    "draw_boundary": {
+      "fixture": "Phases/Phase4/artifacts/wave3_actor_animation_contract.json",
+      "composition_status": "verified_with_mode_dependent_branches",
+      "selector_policy": "draw uses explicit TFace/TBody/TMode; semantic Agent state does not choose selectors",
+      "unknown_animation_policy": "static verified frame may be used by adapter; unresolved face selectors are never substituted",
+      "status": "deterministic_composition_semantic_animation_open"
+    },
+    "legacy_equivalence": false
+  },
+  "scenarios": [
+    {
+      "id": "spawn_idle_draw",
+      "purpose": "spawn one actor, retain raw seed, and issue a verified explicit draw command",
+      "trace": [
+        {
+          "tick": 0,
+          "event": "spawn",
+          "actor_id": "adapter.actor.0",
+          "employee_id": "adapter.employee.0",
+          "status": "spawned",
+          "raw_state": {
+            "HumanEnabled": 1,
+            "HumanMode": 0,
+            "HumanState": 0,
+            "HumanAnime": 0,
+            "HumanWait": 0
+          },
+          "selector_sources": {
+            "TFace": "SyainFaceG[SyainIndex]",
+            "TBody": "SyainBodyG[SyainIndex]",
+            "TMode": "explicit_draw_selector_required"
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_spawn_fixture.json",
+          "legacy_equivalence": false
+        },
+        {
+          "id": "raw_spawn_seed",
+          "input": {
+            "transition_id": "raw_spawn_seed"
+          },
+          "expected": {
+            "agent_state": null,
+            "status": "verified_bounded_raw_seed"
+          },
+          "tick": 0,
+          "event": "state",
+          "provenance": "Phases/Phase4/artifacts/wave3_state_transition_fixture.json"
+        },
+        {
+          "tick": 0,
+          "event": "draw",
+          "source_scenario": "actor_draw_mode_0",
+          "input": {
+            "actor_id": "adapter.actor.0",
+            "X": 100,
+            "Y": 200,
+            "TFace": 2,
+            "TBody": 3,
+            "TMode": 0,
+            "TKage": 1
+          },
+          "expected": {
+            "status": "draw_command_ready",
+            "semantic_state": null,
+            "commands": [
+              {
+                "layer": "body",
+                "image_array": "imgBody",
+                "asset": {
+                  "asset_id": "body_3",
+                  "source_path": "game-dev-story-mod_Sprites/game/body3.png",
+                  "filename": "body3.png",
+                  "dimensions": {
+                    "width": 102,
+                    "height": 66
+                  },
+                  "mapping_status": "asset_type_and_filename_verified",
+                  "confidence": "verified"
+                },
+                "source_rect": [
+                  0,
+                  0,
+                  16,
+                  16
+                ],
+                "destination": [
+                  100,
+                  214
+                ]
+              },
+              {
+                "layer": "face",
+                "image_array": "imgFace",
+                "asset": {
+                  "asset_id": "face_2",
+                  "source_path": "game-dev-story-mod_Sprites/game/face_2.png",
+                  "filename": "face_2.png",
+                  "dimensions": {
+                    "width": 80,
+                    "height": 30
+                  },
+                  "mapping_status": "asset_type_and_filename_verified",
+                  "confidence": "verified"
+                },
+                "source_rect": [
+                  48,
+                  0,
+                  16,
+                  15
+                ],
+                "destination": [
+                  101,
+                  201
+                ]
+              }
+            ],
+            "shadow": {
+              "record_values": [
+                1,
+                28
+              ],
+              "rendered": null
+            },
+            "legacy_equivalence": false
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_draw_fixture.json",
+          "legacy_equivalence": false
+        }
+      ],
+      "expected": {
+        "status": "passed",
+        "final_adapter_state": "idle",
+        "position": [
+          0,
+          0
+        ],
+        "draw_status": "draw_command_ready",
+        "legacy_equivalence": false
+      }
+    },
+    {
+      "id": "walk_to_target_arrive",
+      "purpose": "golden path from spawn through deterministic adapter movement to arrival and draw",
+      "trace": [
+        {
+          "tick": 0,
+          "event": "spawn",
+          "actor_id": "adapter.actor.0",
+          "employee_id": "adapter.employee.0",
+          "status": "spawned",
+          "raw_state": {
+            "HumanEnabled": 1,
+            "HumanMode": 0,
+            "HumanState": 0,
+            "HumanAnime": 0,
+            "HumanWait": 0
+          },
+          "selector_sources": {
+            "TFace": "SyainFaceG[SyainIndex]",
+            "TBody": "SyainBodyG[SyainIndex]",
+            "TMode": "explicit_draw_selector_required"
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_spawn_fixture.json",
+          "legacy_equivalence": false
+        },
+        {
+          "tick": 0,
+          "event": "state",
+          "transition": {
+            "transition_id": "adapter_move_requested",
+            "path": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ]
+            ]
+          },
+          "expected": {
+            "agent_state": "walking",
+            "legacy_equivalence": false,
+            "status": "web_adapter_decision"
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_state_transition_fixture.json"
+        },
+        {
+          "tick": 1,
+          "event": "move",
+          "position": [
+            1,
+            0
+          ],
+          "movement_status": "moving",
+          "provenance": "Phases/Phase4/artifacts/wave3_movement_fixture.json"
+        },
+        {
+          "tick": 2,
+          "event": "move",
+          "position": [
+            2,
+            0
+          ],
+          "movement_status": "moving",
+          "provenance": "Phases/Phase4/artifacts/wave3_movement_fixture.json"
+        },
+        {
+          "tick": 3,
+          "event": "move",
+          "position": [
+            3,
+            0
+          ],
+          "movement_status": "arrived",
+          "provenance": "Phases/Phase4/artifacts/wave3_movement_fixture.json"
+        },
+        {
+          "tick": 3,
+          "event": "state",
+          "transition": {
+            "transition_id": "adapter_move_arrived",
+            "position": [
+              2,
+              0
+            ]
+          },
+          "expected": {
+            "agent_state": "idle",
+            "legacy_equivalence": false,
+            "status": "web_adapter_decision"
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_state_transition_fixture.json"
+        },
+        {
+          "tick": 3,
+          "event": "draw",
+          "source_scenario": "actor_draw_mode_0",
+          "input": {
+            "actor_id": "adapter.actor.0",
+            "X": 100,
+            "Y": 200,
+            "TFace": 2,
+            "TBody": 3,
+            "TMode": 0,
+            "TKage": 1
+          },
+          "expected": {
+            "status": "draw_command_ready",
+            "semantic_state": null,
+            "commands": [
+              {
+                "layer": "body",
+                "image_array": "imgBody",
+                "asset": {
+                  "asset_id": "body_3",
+                  "source_path": "game-dev-story-mod_Sprites/game/body3.png",
+                  "filename": "body3.png",
+                  "dimensions": {
+                    "width": 102,
+                    "height": 66
+                  },
+                  "mapping_status": "asset_type_and_filename_verified",
+                  "confidence": "verified"
+                },
+                "source_rect": [
+                  0,
+                  0,
+                  16,
+                  16
+                ],
+                "destination": [
+                  100,
+                  214
+                ]
+              },
+              {
+                "layer": "face",
+                "image_array": "imgFace",
+                "asset": {
+                  "asset_id": "face_2",
+                  "source_path": "game-dev-story-mod_Sprites/game/face_2.png",
+                  "filename": "face_2.png",
+                  "dimensions": {
+                    "width": 80,
+                    "height": 30
+                  },
+                  "mapping_status": "asset_type_and_filename_verified",
+                  "confidence": "verified"
+                },
+                "source_rect": [
+                  48,
+                  0,
+                  16,
+                  15
+                ],
+                "destination": [
+                  101,
+                  201
+                ]
+              }
+            ],
+            "shadow": {
+              "record_values": [
+                1,
+                28
+              ],
+              "rendered": null
+            },
+            "legacy_equivalence": false
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_draw_fixture.json",
+          "legacy_equivalence": false
+        }
+      ],
+      "expected": {
+        "status": "passed",
+        "positions_by_tick": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "final_adapter_state": "idle",
+        "movement_status": "arrived",
+        "draw_status": "draw_command_ready",
+        "legacy_equivalence": false
+      }
+    },
+    {
+      "id": "blocked_target",
+      "purpose": "collision provider blocks movement without teleporting actor",
+      "trace": [
+        {
+          "tick": 0,
+          "event": "spawn",
+          "actor_id": "adapter.actor.0",
+          "employee_id": "adapter.employee.0",
+          "status": "spawned",
+          "raw_state": {
+            "HumanEnabled": 1,
+            "HumanMode": 0,
+            "HumanState": 0,
+            "HumanAnime": 0,
+            "HumanWait": 0
+          },
+          "selector_sources": {
+            "TFace": "SyainFaceG[SyainIndex]",
+            "TBody": "SyainBodyG[SyainIndex]",
+            "TMode": "explicit_draw_selector_required"
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_spawn_fixture.json",
+          "legacy_equivalence": false
+        },
+        {
+          "tick": 0,
+          "event": "state",
+          "transition": {
+            "transition_id": "adapter_move_requested",
+            "path": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                2,
+                0
+              ]
+            ]
+          },
+          "expected": {
+            "agent_state": "walking",
+            "legacy_equivalence": false,
+            "status": "web_adapter_decision"
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_state_transition_fixture.json"
+        },
+        {
+          "tick": 1,
+          "event": "move",
+          "position": [
+            0,
+            0
+          ],
+          "movement_status": "blocked",
+          "provenance": "Phases/Phase4/artifacts/wave3_movement_fixture.json"
+        }
+      ],
+      "expected": {
+        "status": "blocked",
+        "position_after_block": [
+          0,
+          0
+        ],
+        "movement_status": "blocked",
+        "draw_dispatched": false,
+        "legacy_equivalence": false
+      }
+    },
+    {
+      "id": "seat_occupied",
+      "purpose": "explicit seat conflict prevents actor 1 from acquiring a seat owned by actor 0",
+      "trace": [
+        {
+          "tick": 0,
+          "event": "spawn",
+          "actor_id": "adapter.actor.0",
+          "employee_id": "adapter.employee.0",
+          "status": "spawned",
+          "raw_state": {
+            "HumanEnabled": 1,
+            "HumanMode": 0,
+            "HumanState": 0,
+            "HumanAnime": 0,
+            "HumanWait": 0
+          },
+          "selector_sources": {
+            "TFace": "SyainFaceG[SyainIndex]",
+            "TBody": "SyainBodyG[SyainIndex]",
+            "TMode": "explicit_draw_selector_required"
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_spawn_fixture.json",
+          "legacy_equivalence": false
+        },
+        {
+          "tick": 0,
+          "event": "seat",
+          "operation": "occupy",
+          "actor_id": "adapter.actor.0",
+          "seat_id": "adapter.seat.0",
+          "result": "occupied",
+          "owner": "adapter.actor.0",
+          "provenance": "Phases/Phase4/artifacts/wave3_seat_fixture.json"
+        },
+        {
+          "tick": 1,
+          "event": "seat",
+          "operation": "occupy",
+          "actor_id": "adapter.actor.1",
+          "seat_id": "adapter.seat.0",
+          "result": "conflict",
+          "owner_after": "adapter.actor.0",
+          "provenance": "Phases/Phase4/artifacts/wave3_seat_fixture.json"
+        }
+      ],
+      "expected": {
+        "status": "seat_conflict",
+        "seat_owner": "adapter.actor.0",
+        "actor_state": "actor.1_not_seated",
+        "legacy_occupancy_equivalence": false
+      }
+    },
+    {
+      "id": "seat_release_then_sit",
+      "purpose": "owner release followed by explicit re-acquisition for the same actor",
+      "trace": [
+        {
+          "tick": 0,
+          "event": "spawn",
+          "actor_id": "adapter.actor.0",
+          "employee_id": "adapter.employee.0",
+          "status": "spawned",
+          "raw_state": {
+            "HumanEnabled": 1,
+            "HumanMode": 0,
+            "HumanState": 0,
+            "HumanAnime": 0,
+            "HumanWait": 0
+          },
+          "selector_sources": {
+            "TFace": "SyainFaceG[SyainIndex]",
+            "TBody": "SyainBodyG[SyainIndex]",
+            "TMode": "explicit_draw_selector_required"
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_spawn_fixture.json",
+          "legacy_equivalence": false
+        },
+        {
+          "tick": 0,
+          "event": "seat",
+          "operation": "occupy",
+          "actor_id": "adapter.actor.0",
+          "seat_id": "adapter.seat.0",
+          "result": "occupied",
+          "owner": "adapter.actor.0",
+          "provenance": "Phases/Phase4/artifacts/wave3_seat_fixture.json"
+        },
+        {
+          "tick": 1,
+          "event": "seat",
+          "operation": "release",
+          "actor_id": "adapter.actor.0",
+          "seat_id": "adapter.seat.0",
+          "result": "released",
+          "state_after": "free",
+          "provenance": "Phases/Phase4/artifacts/wave3_seat_fixture.json"
+        },
+        {
+          "tick": 2,
+          "event": "seat",
+          "operation": "occupy",
+          "actor_id": "adapter.actor.0",
+          "seat_id": "adapter.seat.0",
+          "result": "occupied",
+          "owner": "adapter.actor.0",
+          "adapter_state": "sitting",
+          "provenance": "Phases/Phase4/artifacts/wave3_seat_fixture.json"
+        },
+        {
+          "tick": 2,
+          "event": "draw",
+          "source_scenario": "actor_draw_mode_0",
+          "input": {
+            "actor_id": "adapter.actor.0",
+            "X": 100,
+            "Y": 200,
+            "TFace": 2,
+            "TBody": 3,
+            "TMode": 0,
+            "TKage": 1
+          },
+          "expected": {
+            "status": "draw_command_ready",
+            "semantic_state": null,
+            "commands": [
+              {
+                "layer": "body",
+                "image_array": "imgBody",
+                "asset": {
+                  "asset_id": "body_3",
+                  "source_path": "game-dev-story-mod_Sprites/game/body3.png",
+                  "filename": "body3.png",
+                  "dimensions": {
+                    "width": 102,
+                    "height": 66
+                  },
+                  "mapping_status": "asset_type_and_filename_verified",
+                  "confidence": "verified"
+                },
+                "source_rect": [
+                  0,
+                  0,
+                  16,
+                  16
+                ],
+                "destination": [
+                  100,
+                  214
+                ]
+              },
+              {
+                "layer": "face",
+                "image_array": "imgFace",
+                "asset": {
+                  "asset_id": "face_2",
+                  "source_path": "game-dev-story-mod_Sprites/game/face_2.png",
+                  "filename": "face_2.png",
+                  "dimensions": {
+                    "width": 80,
+                    "height": 30
+                  },
+                  "mapping_status": "asset_type_and_filename_verified",
+                  "confidence": "verified"
+                },
+                "source_rect": [
+                  48,
+                  0,
+                  16,
+                  15
+                ],
+                "destination": [
+                  101,
+                  201
+                ]
+              }
+            ],
+            "shadow": {
+              "record_values": [
+                1,
+                28
+              ],
+              "rendered": null
+            },
+            "legacy_equivalence": false
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_draw_fixture.json",
+          "legacy_equivalence": false
+        }
+      ],
+      "expected": {
+        "status": "passed",
+        "final_adapter_state": "sitting",
+        "seat_owner": "adapter.actor.0",
+        "draw_status": "draw_command_ready",
+        "legacy_occupancy_equivalence": false
+      }
+    },
+    {
+      "id": "animation_unknown_fallback",
+      "purpose": "unknown raw animation state uses an explicit verified static frame policy without asset substitution",
+      "trace": [
+        {
+          "tick": 0,
+          "event": "spawn",
+          "actor_id": "adapter.actor.0",
+          "employee_id": "adapter.employee.0",
+          "status": "spawned",
+          "raw_state": {
+            "HumanEnabled": 1,
+            "HumanMode": 0,
+            "HumanState": 0,
+            "HumanAnime": 0,
+            "HumanWait": 0
+          },
+          "selector_sources": {
+            "TFace": "SyainFaceG[SyainIndex]",
+            "TBody": "SyainBodyG[SyainIndex]",
+            "TMode": "explicit_draw_selector_required"
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_spawn_fixture.json",
+          "legacy_equivalence": false
+        },
+        {
+          "tick": 0,
+          "event": "animation_resolve",
+          "raw_state": {
+            "HumanState": 2,
+            "HumanMode": 5,
+            "HumanAnime": 15
+          },
+          "status": "semantic_animation_unknown",
+          "policy": "static_verified_frame_only_no_asset_substitution",
+          "provenance": "Phases/Phase4/artifacts/wave3_actor_animation_contract.json"
+        },
+        {
+          "tick": 0,
+          "event": "draw",
+          "source_scenario": "raw_state_does_not_choose_mode",
+          "input": {
+            "HumanState": 2,
+            "HumanMode": 5,
+            "HumanAnime": 15,
+            "TFace": 2,
+            "TBody": 3,
+            "TMode": 0
+          },
+          "expected": {
+            "status": "use_explicit_draw_selectors",
+            "state_to_selector_mapping": null,
+            "semantic_state": null
+          },
+          "provenance": "Phases/Phase4/artifacts/wave3_draw_fixture.json",
+          "legacy_equivalence": false
+        }
+      ],
+      "expected": {
+        "status": "passed",
+        "fallback_type": "adapter_static_frame_only",
+        "draw_status": "use_explicit_draw_selectors",
+        "asset_substitution": false,
+        "semantic_state": null,
+        "legacy_equivalence": false
+      }
+    }
+  ],
+  "required_scenarios": [
+    "spawn_idle_draw",
+    "walk_to_target_arrive",
+    "blocked_target",
+    "seat_occupied",
+    "seat_release_then_sit",
+    "animation_unknown_fallback"
+  ],
+  "not_claimed": [
+    "adapter state names are recovered HumanState/HumanMode semantics",
+    "adapter movement position equals legacy world/pixel/isometric position",
+    "seat occupancy is produced by HumanSitChair or chair arrays",
+    "raw HumanMode/HumanAnime selects DrawHuman TMode",
+    "static frame policy substitutes missing TFace=40/41 assets",
+    "Wave2 minimum scene fixture is a complete room reconstruction"
+  ],
+  "status": "deterministic_e2e_fixture_ready_legacy_semantics_open"
+}

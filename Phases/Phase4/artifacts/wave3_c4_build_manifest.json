@@ -1,0 +1,65 @@
+{
+  "schema_version": "wave3-c4-build-manifest-v1",
+  "phase": "Phase4",
+  "wave": "Wave3",
+  "stage": "W3-C4-furniture-seat-interaction-boundary",
+  "source_roots_read_only": true,
+  "source_hashes": {
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c": {
+      "sha256": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
+      "bytes": 4974769
+    },
+    "game-dev-story-mod_Dumped/dump.cs": {
+      "sha256": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
+      "bytes": 12013789
+    },
+    "Phases/Phase4/artifacts/wave3_actor_function_map.json": {
+      "sha256": "a410be355c05e5468378d1d1c81bd272e1774c6d3f953b9bff38a4fc572c6f3f",
+      "bytes": 149053
+    },
+    "Phases/Phase4/artifacts/wave3_actor_identity_contract.json": {
+      "sha256": "d373537d61975580c8b947689335fcf75c2ebd586ce9edd8a2c5d4568695ec3f",
+      "bytes": 42194
+    },
+    "Phases/Phase4/artifacts/wave3_actor_state_contract.json": {
+      "sha256": "ff32c0dfdde5737a03fb7a45708c4b46d9bd3d338da5a9141a9f8ea20b7601c9",
+      "bytes": 41290
+    },
+    "Phases/Phase4/artifacts/wave3_c2_build_manifest.json": {
+      "sha256": "c1ec6fd1ba27695ed3b64069abecfc1fb2da4f5d3051f653fcc1c8bf9a35e7b6",
+      "bytes": 2293
+    },
+    "Phases/Phase4/artifacts/wave3_movement_contract.json": {
+      "sha256": "36a139304e56c750a4967d309af45900444b918fb4e71aab330e8646bfb68fd6",
+      "bytes": 10486
+    },
+    "Phases/Phase4/artifacts/wave2_furniture_contract.json": {
+      "sha256": "58ea97d993d6227e72ee6ab93136a8f3a2ecf9c09a2c076c544048adc608dad9",
+      "bytes": 10667
+    },
+    "Phases/Phase4/artifacts/wave2_wave3_movement_interface.json": {
+      "sha256": "77caa70bd87917a8804b26c9201e3e52b4702cb8df947f15599e15ff556161f0",
+      "bytes": 1578
+    }
+  },
+  "artifact_inputs": [
+    "Phases/Phase4/artifacts/wave3_actor_function_map.json",
+    "Phases/Phase4/artifacts/wave2_furniture_contract.json",
+    "Phases/Phase4/artifacts/wave2_wave3_movement_interface.json",
+    "Phases/Phase4/artifacts/wave3_movement_contract.json"
+  ],
+  "artifact_outputs": [
+    "Phases/Phase4/artifacts/wave3_interaction_contract.json",
+    "Phases/Phase4/artifacts/wave3_seat_fixture.json",
+    "Phases/Phase4/artifacts/wave3_c4_build_manifest.json"
+  ],
+  "artifact_summary": {
+    "relation_field_count": 7,
+    "raw_trace_count": 5,
+    "adapter_operation_count": 3,
+    "scenario_count": 6,
+    "legacy_occupancy_status": "not_closed",
+    "semantic_status": "raw_furniture_relation_audit_adapter_seat_contract_ready_legacy_occupancy_open"
+  },
+  "status": "W3-C4-built_relation_audit_and_explicit_seat_fixture_legacy_occupancy_open"
+}

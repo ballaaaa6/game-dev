@@ -1,0 +1,58 @@
+{
+  "schema_version": "wave1-build-manifest-v1",
+  "builder": "Phases/Phase4/tools/build_wave1_resource_map.py",
+  "source_roots_read_only": true,
+  "artifacts": [
+    "Phases/Phase4/artifacts/resource_selector_map.json",
+    "Phases/Phase4/artifacts/wave1_branch_index.json"
+  ],
+  "source_sha256": {
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c": {
+      "sha256": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126"
+    },
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c": {
+      "sha256": "19af9b427031643115f78962e487a2afb246ca485e34e70d1d44285a036aeb48"
+    },
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c": {
+      "sha256": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac"
+    },
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c": {
+      "sha256": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687"
+    },
+    "game-dev-story-mod_Dumped/dump.cs": {
+      "sha256": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074"
+    },
+    "game-dev-story-mod_Dumped/stringliteral.json": {
+      "sha256": "1d7de50473f3b7df34ccd795fb2487657504c7ed96d675c27ece1d9484444527"
+    }
+  },
+  "counts": {
+    "manifest_count": 4,
+    "fixture_count": 10,
+    "fixture_families": [
+      "body",
+      "chair",
+      "desk",
+      "event",
+      "face",
+      "floor",
+      "pc",
+      "reception"
+    ],
+    "img_list_entries": 80,
+    "selector_contract_count": 5,
+    "unknown_selector_contracts": 2
+  },
+  "branch_index_counts": {
+    "form_GameForm__NewGamePara": {
+      "instructions": 13671,
+      "branches": 2075,
+      "basic_blocks": 474
+    },
+    "form_GameForm__DoEvent": {
+      "instructions": 15569,
+      "branches": 4517,
+      "basic_blocks": 4053
+    }
+  }
+}

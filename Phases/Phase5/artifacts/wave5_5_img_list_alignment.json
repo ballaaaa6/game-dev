@@ -1,0 +1,1412 @@
+{
+  "schema_version": "wave5-5-img-list-alignment-v1",
+  "phase": "Phase5",
+  "wave": "Wave5",
+  "stage": "W5.5-corrected-scriptstring-metadata-manifest-alignment",
+  "source_roots_read_only": true,
+  "legacy_equivalence": false,
+  "status": "exact_bihin_selector_join_verified",
+  "parser_correction": {
+    "native_label_namespace": "StringLiteral_N is one-based",
+    "json_array_namespace": "script.json ScriptString and stringliteral.json are zero-based",
+    "correct_index_rule": "zero_based_script_index = literal_label - 1",
+    "prior_failure_mode": "directly indexing stringliteral.json by PTR_StringLiteral_N shifted every recovered value by one",
+    "source": {
+      "file": "APK_Toolkit/Il2CppDumper/ghidra.py",
+      "line": 41,
+      "needle": "index = 1"
+    }
+  },
+  "native_scriptstring": {
+    "file": "game-dev-story-mod_Dumped/script.json",
+    "entry_count": 12647,
+    "script_string_and_stringliteral_values_equal": true,
+    "script_string_and_stringliteral_addresses_equal": true
+  },
+  "active_apk_global_metadata": {
+    "magic": "0xfab11baf",
+    "version": 31,
+    "literal_table_offset": "0x100",
+    "literal_table_bytes": 101288,
+    "literal_count": 12661,
+    "literal_data_offset": "0x18ca8",
+    "literal_data_bytes": 359768,
+    "join_rule": "match native ScriptString UTF-8 value exactly; do not reuse native label as active metadata index",
+    "img_list_values_found_by_exact_value": true,
+    "metadata_join_count": 80,
+    "suffix_literal": {
+      "literal_label": 833,
+      "native_value": ".png",
+      "active_metadata_indices": [
+        832
+      ]
+    },
+    "face_prefix_literal": {
+      "literal_label": 7514,
+      "native_value": "face_",
+      "active_metadata_indices": [
+        7524
+      ]
+    }
+  },
+  "loader_contract": {
+    "request_expression": "IMG_LIST[selector] + StringLiteral_833",
+    "resolved_suffix": ".png",
+    "lookup": "AppData.GetImage(name) matches list entry name and returns resGame_.img[index]",
+    "source_refs": [
+      {
+        "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
+        "line": 56677,
+        "needle": "// Function: form_GameForm__LoadBihinImage"
+      },
+      {
+        "file": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
+        "line": 6462,
+        "needle": "// Function: main_AppData__GetImage"
+      }
+    ]
+  },
+  "selector_fields": {
+    "DDChair": {
+      "offset": "0xAC",
+      "selector_index": 25,
+      "native_value": "chair0_origin",
+      "manifest_resource_index": 29,
+      "manifest_filename": "chair0_origin.png",
+      "active_metadata_indices": [
+        6986
+      ],
+      "status": "verified_exact"
+    },
+    "DDDesk": {
+      "offset": "0xB0",
+      "selector_index": 26,
+      "native_value": "desk0_origin",
+      "manifest_resource_index": 30,
+      "manifest_filename": "desk0_origin.png",
+      "active_metadata_indices": [
+        7288
+      ],
+      "status": "verified_exact"
+    },
+    "DDPC": {
+      "offset": "0xD4",
+      "selector_index": 77,
+      "native_value": "pc",
+      "manifest_resource_index": 117,
+      "manifest_filename": "pc.png",
+      "active_metadata_indices": [
+        8708
+      ],
+      "status": "verified_exact"
+    }
+  },
+  "img_list": {
+    "field": "form.GameForm.IMG_LIST",
+    "field_offset": "0x68",
+    "length": 80,
+    "entries": [
+      {
+        "selector_index": 0,
+        "literal_label": 6844,
+        "zero_based_script_index": 6843,
+        "native_value": "body0",
+        "native_address": "0x1f4e1b8",
+        "requested_filename": "body0.png",
+        "active_metadata_indices": [
+          6854
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body0.png",
+        "manifest_resource_index": 1,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body0.png"
+      },
+      {
+        "selector_index": 1,
+        "literal_label": 6845,
+        "zero_based_script_index": 6844,
+        "native_value": "body1",
+        "native_address": "0x1f4e1c0",
+        "requested_filename": "body1.png",
+        "active_metadata_indices": [
+          6855
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body1.png",
+        "manifest_resource_index": 2,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body1.png"
+      },
+      {
+        "selector_index": 2,
+        "literal_label": 6856,
+        "zero_based_script_index": 6855,
+        "native_value": "body2",
+        "native_address": "0x1f4e218",
+        "requested_filename": "body2.png",
+        "active_metadata_indices": [
+          6866
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body2.png",
+        "manifest_resource_index": 13,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body2.png"
+      },
+      {
+        "selector_index": 3,
+        "literal_label": 6862,
+        "zero_based_script_index": 6861,
+        "native_value": "body3",
+        "native_address": "0x1f4e248",
+        "requested_filename": "body3.png",
+        "active_metadata_indices": [
+          6872
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body3.png",
+        "manifest_resource_index": 20,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body3.png"
+      },
+      {
+        "selector_index": 4,
+        "literal_label": 6863,
+        "zero_based_script_index": 6862,
+        "native_value": "body4",
+        "native_address": "0x1f4e250",
+        "requested_filename": "body4.png",
+        "active_metadata_indices": [
+          6873
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body4.png",
+        "manifest_resource_index": 21,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body4.png"
+      },
+      {
+        "selector_index": 5,
+        "literal_label": 6864,
+        "zero_based_script_index": 6863,
+        "native_value": "body5",
+        "native_address": "0x1f4e258",
+        "requested_filename": "body5.png",
+        "active_metadata_indices": [
+          6874
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body5.png",
+        "manifest_resource_index": 22,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body5.png"
+      },
+      {
+        "selector_index": 6,
+        "literal_label": 6865,
+        "zero_based_script_index": 6864,
+        "native_value": "body6",
+        "native_address": "0x1f4e260",
+        "requested_filename": "body6.png",
+        "active_metadata_indices": [
+          6875
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body6.png",
+        "manifest_resource_index": 23,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body6.png"
+      },
+      {
+        "selector_index": 7,
+        "literal_label": 6866,
+        "zero_based_script_index": 6865,
+        "native_value": "body7",
+        "native_address": "0x1f4e268",
+        "requested_filename": "body7.png",
+        "active_metadata_indices": [
+          6876
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body7.png",
+        "manifest_resource_index": 24,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body7.png"
+      },
+      {
+        "selector_index": 8,
+        "literal_label": 6867,
+        "zero_based_script_index": 6866,
+        "native_value": "body8",
+        "native_address": "0x1f4e270",
+        "requested_filename": "body8.png",
+        "active_metadata_indices": [
+          6877
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body8.png",
+        "manifest_resource_index": 25,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body8.png"
+      },
+      {
+        "selector_index": 9,
+        "literal_label": 6868,
+        "zero_based_script_index": 6867,
+        "native_value": "body9",
+        "native_address": "0x1f4e278",
+        "requested_filename": "body9.png",
+        "active_metadata_indices": [
+          6878
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body9.png",
+        "manifest_resource_index": 26,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body9.png"
+      },
+      {
+        "selector_index": 10,
+        "literal_label": 6846,
+        "zero_based_script_index": 6845,
+        "native_value": "body10",
+        "native_address": "0x1f4e1c8",
+        "requested_filename": "body10.png",
+        "active_metadata_indices": [
+          6856
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body10.png",
+        "manifest_resource_index": 3,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body10.png"
+      },
+      {
+        "selector_index": 11,
+        "literal_label": 6847,
+        "zero_based_script_index": 6846,
+        "native_value": "body11",
+        "native_address": "0x1f4e1d0",
+        "requested_filename": "body11.png",
+        "active_metadata_indices": [
+          6857
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body11.png",
+        "manifest_resource_index": 4,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body11.png"
+      },
+      {
+        "selector_index": 12,
+        "literal_label": 6848,
+        "zero_based_script_index": 6847,
+        "native_value": "body12",
+        "native_address": "0x1f4e1d8",
+        "requested_filename": "body12.png",
+        "active_metadata_indices": [
+          6858
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body12.png",
+        "manifest_resource_index": 5,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body12.png"
+      },
+      {
+        "selector_index": 13,
+        "literal_label": 6849,
+        "zero_based_script_index": 6848,
+        "native_value": "body13",
+        "native_address": "0x1f4e1e0",
+        "requested_filename": "body13.png",
+        "active_metadata_indices": [
+          6859
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body13.png",
+        "manifest_resource_index": 6,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body13.png"
+      },
+      {
+        "selector_index": 14,
+        "literal_label": 6850,
+        "zero_based_script_index": 6849,
+        "native_value": "body14",
+        "native_address": "0x1f4e1e8",
+        "requested_filename": "body14.png",
+        "active_metadata_indices": [
+          6860
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body14.png",
+        "manifest_resource_index": 7,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body14.png"
+      },
+      {
+        "selector_index": 15,
+        "literal_label": 6851,
+        "zero_based_script_index": 6850,
+        "native_value": "body15",
+        "native_address": "0x1f4e1f0",
+        "requested_filename": "body15.png",
+        "active_metadata_indices": [
+          6861
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body15.png",
+        "manifest_resource_index": 8,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body15.png"
+      },
+      {
+        "selector_index": 16,
+        "literal_label": 6852,
+        "zero_based_script_index": 6851,
+        "native_value": "body16",
+        "native_address": "0x1f4e1f8",
+        "requested_filename": "body16.png",
+        "active_metadata_indices": [
+          6862
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body16.png",
+        "manifest_resource_index": 9,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body16.png"
+      },
+      {
+        "selector_index": 17,
+        "literal_label": 6853,
+        "zero_based_script_index": 6852,
+        "native_value": "body17",
+        "native_address": "0x1f4e200",
+        "requested_filename": "body17.png",
+        "active_metadata_indices": [
+          6863
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body17.png",
+        "manifest_resource_index": 10,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body17.png"
+      },
+      {
+        "selector_index": 18,
+        "literal_label": 6854,
+        "zero_based_script_index": 6853,
+        "native_value": "body18",
+        "native_address": "0x1f4e208",
+        "requested_filename": "body18.png",
+        "active_metadata_indices": [
+          6864
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body18.png",
+        "manifest_resource_index": 11,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body18.png"
+      },
+      {
+        "selector_index": 19,
+        "literal_label": 6855,
+        "zero_based_script_index": 6854,
+        "native_value": "body19",
+        "native_address": "0x1f4e210",
+        "requested_filename": "body19.png",
+        "active_metadata_indices": [
+          6865
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body19.png",
+        "manifest_resource_index": 12,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body19.png"
+      },
+      {
+        "selector_index": 20,
+        "literal_label": 6857,
+        "zero_based_script_index": 6856,
+        "native_value": "body20",
+        "native_address": "0x1f4e220",
+        "requested_filename": "body20.png",
+        "active_metadata_indices": [
+          6867
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body20.png",
+        "manifest_resource_index": 14,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body20.png"
+      },
+      {
+        "selector_index": 21,
+        "literal_label": 6858,
+        "zero_based_script_index": 6857,
+        "native_value": "body21",
+        "native_address": "0x1f4e228",
+        "requested_filename": "body21.png",
+        "active_metadata_indices": [
+          6868
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body21.png",
+        "manifest_resource_index": 15,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body21.png"
+      },
+      {
+        "selector_index": 22,
+        "literal_label": 6859,
+        "zero_based_script_index": 6858,
+        "native_value": "body22",
+        "native_address": "0x1f4e230",
+        "requested_filename": "body22.png",
+        "active_metadata_indices": [
+          6869
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body22.png",
+        "manifest_resource_index": 16,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body22.png"
+      },
+      {
+        "selector_index": 23,
+        "literal_label": 6860,
+        "zero_based_script_index": 6859,
+        "native_value": "body23",
+        "native_address": "0x1f4e238",
+        "requested_filename": "body23.png",
+        "active_metadata_indices": [
+          6870
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body23.png",
+        "manifest_resource_index": 17,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body23.png"
+      },
+      {
+        "selector_index": 24,
+        "literal_label": 6861,
+        "zero_based_script_index": 6860,
+        "native_value": "body24",
+        "native_address": "0x1f4e240",
+        "requested_filename": "body24.png",
+        "active_metadata_indices": [
+          6871
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "body24.png",
+        "manifest_resource_index": 18,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/body24.png"
+      },
+      {
+        "selector_index": 25,
+        "literal_label": 6976,
+        "zero_based_script_index": 6975,
+        "native_value": "chair0_origin",
+        "native_address": "0x1f4e5d8",
+        "requested_filename": "chair0_origin.png",
+        "active_metadata_indices": [
+          6986
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "chair0_origin.png",
+        "manifest_resource_index": 29,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/chair0_origin.png"
+      },
+      {
+        "selector_index": 26,
+        "literal_label": 7278,
+        "zero_based_script_index": 7277,
+        "native_value": "desk0_origin",
+        "native_address": "0x1f4ef48",
+        "requested_filename": "desk0_origin.png",
+        "active_metadata_indices": [
+          7288
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "desk0_origin.png",
+        "manifest_resource_index": 30,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/desk0_origin.png"
+      },
+      {
+        "selector_index": 27,
+        "literal_label": 7454,
+        "zero_based_script_index": 7453,
+        "native_value": "event0",
+        "native_address": "0x1f4f4c8",
+        "requested_filename": "event0.png",
+        "active_metadata_indices": [
+          7464
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "event0.png",
+        "manifest_resource_index": 31,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/event0.png"
+      },
+      {
+        "selector_index": 28,
+        "literal_label": 7455,
+        "zero_based_script_index": 7454,
+        "native_value": "event1",
+        "native_address": "0x1f4f4d0",
+        "requested_filename": "event1.png",
+        "active_metadata_indices": [
+          7465
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "event1.png",
+        "manifest_resource_index": 32,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/event1.png"
+      },
+      {
+        "selector_index": 29,
+        "literal_label": 7456,
+        "zero_based_script_index": 7455,
+        "native_value": "event2",
+        "native_address": "0x1f4f4d8",
+        "requested_filename": "event2.png",
+        "active_metadata_indices": [
+          7466
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "event2.png",
+        "manifest_resource_index": 33,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/event2.png"
+      },
+      {
+        "selector_index": 30,
+        "literal_label": 7457,
+        "zero_based_script_index": 7456,
+        "native_value": "event3",
+        "native_address": "0x1f4f4e0",
+        "requested_filename": "event3.png",
+        "active_metadata_indices": [
+          7467
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "event3.png",
+        "manifest_resource_index": 34,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/event3.png"
+      },
+      {
+        "selector_index": 31,
+        "literal_label": 7458,
+        "zero_based_script_index": 7457,
+        "native_value": "event4",
+        "native_address": "0x1f4f4e8",
+        "requested_filename": "event4.png",
+        "active_metadata_indices": [
+          7468
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "event4.png",
+        "manifest_resource_index": 35,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/event4.png"
+      },
+      {
+        "selector_index": 32,
+        "literal_label": 7459,
+        "zero_based_script_index": 7458,
+        "native_value": "event5",
+        "native_address": "0x1f4f4f0",
+        "requested_filename": "event5.png",
+        "active_metadata_indices": [
+          7469
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "event5.png",
+        "manifest_resource_index": 36,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/event5.png"
+      },
+      {
+        "selector_index": 33,
+        "literal_label": 7460,
+        "zero_based_script_index": 7459,
+        "native_value": "event6",
+        "native_address": "0x1f4f4f8",
+        "requested_filename": "event6.png",
+        "active_metadata_indices": [
+          7470
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "event6.png",
+        "manifest_resource_index": 37,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/event6.png"
+      },
+      {
+        "selector_index": 34,
+        "literal_label": 7461,
+        "zero_based_script_index": 7460,
+        "native_value": "event7",
+        "native_address": "0x1f4f500",
+        "requested_filename": "event7.png",
+        "active_metadata_indices": [
+          7471
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "event7.png",
+        "manifest_resource_index": 38,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/event7.png"
+      },
+      {
+        "selector_index": 35,
+        "literal_label": 7462,
+        "zero_based_script_index": 7461,
+        "native_value": "event8",
+        "native_address": "0x1f4f508",
+        "requested_filename": "event8.png",
+        "active_metadata_indices": [
+          7472
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "event8.png",
+        "manifest_resource_index": 39,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/event8.png"
+      },
+      {
+        "selector_index": 36,
+        "literal_label": 7511,
+        "zero_based_script_index": 7510,
+        "native_value": "face0",
+        "native_address": "0x1f4f690",
+        "requested_filename": "face0.png",
+        "active_metadata_indices": [
+          7521
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "normalized_face_family",
+        "manifest_filename": "face_0.png",
+        "manifest_resource_index": 40,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/face_0.png"
+      },
+      {
+        "selector_index": 37,
+        "literal_label": 7512,
+        "zero_based_script_index": 7511,
+        "native_value": "face1",
+        "native_address": "0x1f4f698",
+        "requested_filename": "face1.png",
+        "active_metadata_indices": [
+          7522
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "normalized_face_family",
+        "manifest_filename": "face_1.png",
+        "manifest_resource_index": 41,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/face_1.png"
+      },
+      {
+        "selector_index": 38,
+        "literal_label": 7513,
+        "zero_based_script_index": 7512,
+        "native_value": "face2",
+        "native_address": "0x1f4f6a0",
+        "requested_filename": "face2.png",
+        "active_metadata_indices": [
+          7523
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "normalized_face_family",
+        "manifest_filename": "face_2.png",
+        "manifest_resource_index": 52,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/face_2.png"
+      },
+      {
+        "selector_index": 39,
+        "literal_label": 7566,
+        "zero_based_script_index": 7565,
+        "native_value": "floor0",
+        "native_address": "0x1f4f848",
+        "requested_filename": "floor0.png",
+        "active_metadata_indices": [
+          7576
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "floor0.png",
+        "manifest_resource_index": 76,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/floor0.png"
+      },
+      {
+        "selector_index": 40,
+        "literal_label": 7567,
+        "zero_based_script_index": 7566,
+        "native_value": "floor1",
+        "native_address": "0x1f4f850",
+        "requested_filename": "floor1.png",
+        "active_metadata_indices": [
+          7577
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "floor1.png",
+        "manifest_resource_index": 77,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/floor1.png"
+      },
+      {
+        "selector_index": 41,
+        "literal_label": 7568,
+        "zero_based_script_index": 7567,
+        "native_value": "floor2",
+        "native_address": "0x1f4f858",
+        "requested_filename": "floor2.png",
+        "active_metadata_indices": [
+          7578
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "floor2.png",
+        "manifest_resource_index": 78,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/floor2.png"
+      },
+      {
+        "selector_index": 42,
+        "literal_label": 7570,
+        "zero_based_script_index": 7569,
+        "native_value": "floorparts0",
+        "native_address": "0x1f4f868",
+        "requested_filename": "floorparts0.png",
+        "active_metadata_indices": [
+          7580
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "floorparts0.png",
+        "manifest_resource_index": 79,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/floorparts0.png"
+      },
+      {
+        "selector_index": 43,
+        "literal_label": 7622,
+        "zero_based_script_index": 7621,
+        "native_value": "fukidasi",
+        "native_address": "0x1f4fa08",
+        "requested_filename": "fukidasi.png",
+        "active_metadata_indices": [
+          7632
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "fukidasi.png",
+        "manifest_resource_index": 80,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/fukidasi.png"
+      },
+      {
+        "selector_index": 44,
+        "literal_label": 7760,
+        "zero_based_script_index": 7759,
+        "native_value": "hard00",
+        "native_address": "0x1f4fe58",
+        "requested_filename": "hard00.png",
+        "active_metadata_indices": [
+          7770
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard00.png",
+        "manifest_resource_index": 81,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard00.png"
+      },
+      {
+        "selector_index": 45,
+        "literal_label": 7761,
+        "zero_based_script_index": 7760,
+        "native_value": "hard01",
+        "native_address": "0x1f4fe60",
+        "requested_filename": "hard01.png",
+        "active_metadata_indices": [
+          7771
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard01.png",
+        "manifest_resource_index": 82,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard01.png"
+      },
+      {
+        "selector_index": 46,
+        "literal_label": 7762,
+        "zero_based_script_index": 7761,
+        "native_value": "hard02",
+        "native_address": "0x1f4fe68",
+        "requested_filename": "hard02.png",
+        "active_metadata_indices": [
+          7772
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard02.png",
+        "manifest_resource_index": 83,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard02.png"
+      },
+      {
+        "selector_index": 47,
+        "literal_label": 7763,
+        "zero_based_script_index": 7762,
+        "native_value": "hard03",
+        "native_address": "0x1f4fe70",
+        "requested_filename": "hard03.png",
+        "active_metadata_indices": [
+          7773
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard03.png",
+        "manifest_resource_index": 84,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard03.png"
+      },
+      {
+        "selector_index": 48,
+        "literal_label": 7764,
+        "zero_based_script_index": 7763,
+        "native_value": "hard04",
+        "native_address": "0x1f4fe78",
+        "requested_filename": "hard04.png",
+        "active_metadata_indices": [
+          7774
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard04.png",
+        "manifest_resource_index": 85,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard04.png"
+      },
+      {
+        "selector_index": 49,
+        "literal_label": 7765,
+        "zero_based_script_index": 7764,
+        "native_value": "hard05",
+        "native_address": "0x1f4fe80",
+        "requested_filename": "hard05.png",
+        "active_metadata_indices": [
+          7775
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard05.png",
+        "manifest_resource_index": 86,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard05.png"
+      },
+      {
+        "selector_index": 50,
+        "literal_label": 7766,
+        "zero_based_script_index": 7765,
+        "native_value": "hard06",
+        "native_address": "0x1f4fe88",
+        "requested_filename": "hard06.png",
+        "active_metadata_indices": [
+          7776
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard06.png",
+        "manifest_resource_index": 87,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard06.png"
+      },
+      {
+        "selector_index": 51,
+        "literal_label": 7767,
+        "zero_based_script_index": 7766,
+        "native_value": "hard07",
+        "native_address": "0x1f4fe90",
+        "requested_filename": "hard07.png",
+        "active_metadata_indices": [
+          7777
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard07.png",
+        "manifest_resource_index": 88,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard07.png"
+      },
+      {
+        "selector_index": 52,
+        "literal_label": 7768,
+        "zero_based_script_index": 7767,
+        "native_value": "hard08",
+        "native_address": "0x1f4fe98",
+        "requested_filename": "hard08.png",
+        "active_metadata_indices": [
+          7778
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard08.png",
+        "manifest_resource_index": 89,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard08.png"
+      },
+      {
+        "selector_index": 53,
+        "literal_label": 7769,
+        "zero_based_script_index": 7768,
+        "native_value": "hard09",
+        "native_address": "0x1f4fea0",
+        "requested_filename": "hard09.png",
+        "active_metadata_indices": [
+          7779
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard09.png",
+        "manifest_resource_index": 90,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard09.png"
+      },
+      {
+        "selector_index": 54,
+        "literal_label": 7770,
+        "zero_based_script_index": 7769,
+        "native_value": "hard10",
+        "native_address": "0x1f4fea8",
+        "requested_filename": "hard10.png",
+        "active_metadata_indices": [
+          7780
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard10.png",
+        "manifest_resource_index": 91,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard10.png"
+      },
+      {
+        "selector_index": 55,
+        "literal_label": 7771,
+        "zero_based_script_index": 7770,
+        "native_value": "hard11",
+        "native_address": "0x1f4feb0",
+        "requested_filename": "hard11.png",
+        "active_metadata_indices": [
+          7781
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard11.png",
+        "manifest_resource_index": 92,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard11.png"
+      },
+      {
+        "selector_index": 56,
+        "literal_label": 7772,
+        "zero_based_script_index": 7771,
+        "native_value": "hard12",
+        "native_address": "0x1f4feb8",
+        "requested_filename": "hard12.png",
+        "active_metadata_indices": [
+          7782
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard12.png",
+        "manifest_resource_index": 93,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard12.png"
+      },
+      {
+        "selector_index": 57,
+        "literal_label": 7773,
+        "zero_based_script_index": 7772,
+        "native_value": "hard13",
+        "native_address": "0x1f4fec0",
+        "requested_filename": "hard13.png",
+        "active_metadata_indices": [
+          7783
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard13.png",
+        "manifest_resource_index": 94,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard13.png"
+      },
+      {
+        "selector_index": 58,
+        "literal_label": 7774,
+        "zero_based_script_index": 7773,
+        "native_value": "hard14",
+        "native_address": "0x1f4fec8",
+        "requested_filename": "hard14.png",
+        "active_metadata_indices": [
+          7784
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard14.png",
+        "manifest_resource_index": 95,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard14.png"
+      },
+      {
+        "selector_index": 59,
+        "literal_label": 7775,
+        "zero_based_script_index": 7774,
+        "native_value": "hard15",
+        "native_address": "0x1f4fed0",
+        "requested_filename": "hard15.png",
+        "active_metadata_indices": [
+          7785
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard15.png",
+        "manifest_resource_index": 96,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard15.png"
+      },
+      {
+        "selector_index": 60,
+        "literal_label": 7776,
+        "zero_based_script_index": 7775,
+        "native_value": "hard16",
+        "native_address": "0x1f4fed8",
+        "requested_filename": "hard16.png",
+        "active_metadata_indices": [
+          7786
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard16.png",
+        "manifest_resource_index": 97,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard16.png"
+      },
+      {
+        "selector_index": 61,
+        "literal_label": 7777,
+        "zero_based_script_index": 7776,
+        "native_value": "hard17",
+        "native_address": "0x1f4fee0",
+        "requested_filename": "hard17.png",
+        "active_metadata_indices": [
+          7787
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard17.png",
+        "manifest_resource_index": 98,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard17.png"
+      },
+      {
+        "selector_index": 62,
+        "literal_label": 7778,
+        "zero_based_script_index": 7777,
+        "native_value": "hard18",
+        "native_address": "0x1f4fee8",
+        "requested_filename": "hard18.png",
+        "active_metadata_indices": [
+          7788
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard18.png",
+        "manifest_resource_index": 99,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard18.png"
+      },
+      {
+        "selector_index": 63,
+        "literal_label": 7779,
+        "zero_based_script_index": 7778,
+        "native_value": "hard19",
+        "native_address": "0x1f4fef0",
+        "requested_filename": "hard19.png",
+        "active_metadata_indices": [
+          7789
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard19.png",
+        "manifest_resource_index": 100,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard19.png"
+      },
+      {
+        "selector_index": 64,
+        "literal_label": 7780,
+        "zero_based_script_index": 7779,
+        "native_value": "hard20",
+        "native_address": "0x1f4fef8",
+        "requested_filename": "hard20.png",
+        "active_metadata_indices": [
+          7790
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard20.png",
+        "manifest_resource_index": 101,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard20.png"
+      },
+      {
+        "selector_index": 65,
+        "literal_label": 7781,
+        "zero_based_script_index": 7780,
+        "native_value": "hard21",
+        "native_address": "0x1f4ff00",
+        "requested_filename": "hard21.png",
+        "active_metadata_indices": [
+          7791
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard21.png",
+        "manifest_resource_index": 102,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard21.png"
+      },
+      {
+        "selector_index": 66,
+        "literal_label": 7782,
+        "zero_based_script_index": 7781,
+        "native_value": "hard22",
+        "native_address": "0x1f4ff08",
+        "requested_filename": "hard22.png",
+        "active_metadata_indices": [
+          7792
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard22.png",
+        "manifest_resource_index": 103,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard22.png"
+      },
+      {
+        "selector_index": 67,
+        "literal_label": 7783,
+        "zero_based_script_index": 7782,
+        "native_value": "hard23",
+        "native_address": "0x1f4ff10",
+        "requested_filename": "hard23.png",
+        "active_metadata_indices": [
+          7793
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard23.png",
+        "manifest_resource_index": 104,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard23.png"
+      },
+      {
+        "selector_index": 68,
+        "literal_label": 7784,
+        "zero_based_script_index": 7783,
+        "native_value": "hard24",
+        "native_address": "0x1f4ff18",
+        "requested_filename": "hard24.png",
+        "active_metadata_indices": [
+          7794
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard24.png",
+        "manifest_resource_index": 105,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard24.png"
+      },
+      {
+        "selector_index": 69,
+        "literal_label": 7785,
+        "zero_based_script_index": 7784,
+        "native_value": "hard25",
+        "native_address": "0x1f4ff20",
+        "requested_filename": "hard25.png",
+        "active_metadata_indices": [
+          7795
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard25.png",
+        "manifest_resource_index": 106,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard25.png"
+      },
+      {
+        "selector_index": 70,
+        "literal_label": 7786,
+        "zero_based_script_index": 7785,
+        "native_value": "hard26",
+        "native_address": "0x1f4ff28",
+        "requested_filename": "hard26.png",
+        "active_metadata_indices": [
+          7796
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard26.png",
+        "manifest_resource_index": 107,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard26.png"
+      },
+      {
+        "selector_index": 71,
+        "literal_label": 7787,
+        "zero_based_script_index": 7786,
+        "native_value": "hard27",
+        "native_address": "0x1f4ff30",
+        "requested_filename": "hard27.png",
+        "active_metadata_indices": [
+          7797
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard27.png",
+        "manifest_resource_index": 108,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard27.png"
+      },
+      {
+        "selector_index": 72,
+        "literal_label": 7788,
+        "zero_based_script_index": 7787,
+        "native_value": "hard28",
+        "native_address": "0x1f4ff38",
+        "requested_filename": "hard28.png",
+        "active_metadata_indices": [
+          7798
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "hard28.png",
+        "manifest_resource_index": 109,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/hard28.png"
+      },
+      {
+        "selector_index": 73,
+        "literal_label": 7981,
+        "zero_based_script_index": 7980,
+        "native_value": "interface0",
+        "native_address": "0x1f50540",
+        "requested_filename": "interface0.png",
+        "active_metadata_indices": [
+          7991
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "interface0.png",
+        "manifest_resource_index": 110,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/interface0.png"
+      },
+      {
+        "selector_index": 74,
+        "literal_label": 8098,
+        "zero_based_script_index": 8097,
+        "native_value": "jobtype",
+        "native_address": "0x1f508e8",
+        "requested_filename": "jobtype.png",
+        "active_metadata_indices": [
+          8108
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "jobtype.png",
+        "manifest_resource_index": 111,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/jobtype.png"
+      },
+      {
+        "selector_index": 75,
+        "literal_label": 8332,
+        "zero_based_script_index": 8331,
+        "native_value": "main00",
+        "native_address": "0x1f51038",
+        "requested_filename": "main00.png",
+        "active_metadata_indices": [
+          8342
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "main00.png",
+        "manifest_resource_index": 113,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/main00.png"
+      },
+      {
+        "selector_index": 76,
+        "literal_label": 8333,
+        "zero_based_script_index": 8332,
+        "native_value": "main01",
+        "native_address": "0x1f51040",
+        "requested_filename": "main01.png",
+        "active_metadata_indices": [
+          8343
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "main01.png",
+        "manifest_resource_index": 114,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/main01.png"
+      },
+      {
+        "selector_index": 77,
+        "literal_label": 8698,
+        "zero_based_script_index": 8697,
+        "native_value": "pc",
+        "native_address": "0x1f51ba8",
+        "requested_filename": "pc.png",
+        "active_metadata_indices": [
+          8708
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "pc.png",
+        "manifest_resource_index": 117,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/pc.png"
+      },
+      {
+        "selector_index": 78,
+        "literal_label": 9277,
+        "zero_based_script_index": 9276,
+        "native_value": "title0",
+        "native_address": "0x1f52dc0",
+        "requested_filename": "title0.png",
+        "active_metadata_indices": [
+          9287
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "title0.png",
+        "manifest_resource_index": 118,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/title0.png"
+      },
+      {
+        "selector_index": 79,
+        "literal_label": 9278,
+        "zero_based_script_index": 9277,
+        "native_value": "title1",
+        "native_address": "0x1f52dc8",
+        "requested_filename": "title1.png",
+        "active_metadata_indices": [
+          9288
+        ],
+        "active_metadata_join": "exact_value_unique",
+        "manifest_join": "exact_filename",
+        "manifest_filename": "title1.png",
+        "manifest_resource_index": 119,
+        "manifest_asset_path": "game-dev-story-mod_Sprites/game/title1.png"
+      }
+    ]
+  },
+  "summary": {
+    "img_list_entry_count": 80,
+    "active_metadata_exact_value_join_count": 80,
+    "manifest_exact_filename_join_count": 77,
+    "manifest_normalized_face_join_count": 3,
+    "manifest_unresolved_join_count": 0,
+    "bihin_selector_exact_join_count": 3
+  },
+  "guardrails": [
+    "Promote only the verified DDPC/DDChair/DDDesk native IMG_LIST joins; keep dynamic floor/event selector semantics separate.",
+    "Use the native string value for active global-metadata alignment; native literal labels are not active metadata indices.",
+    "Keep face0/face1/face2 as normalized family candidates because the manifest spells them face_0/face_1/face_2.",
+    "Keep legacy_equivalence=false: this closes resource-name/index alignment, not crop, room placement, SEB, transform, or animation semantics."
+  ],
+  "source_files": {
+    "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
+    "game-dev-story-mod_Dumped/script.json": "e9cd2ce5ea5f552183555d1bb8914030dfbd359c1f9eee2e6abef200535b5b35",
+    "game-dev-story-mod_Dumped/stringliteral.json": "1d7de50473f3b7df34ccd795fb2487657504c7ed96d675c27ece1d9484444527",
+    "game-dev-story-mod_Extracted/assets/bin/Data/Managed/Metadata/global-metadata.dat": "310bc4e701ac626e52ba213644d2607ecefe13a5344e6fd5c26f7bab5c920f15",
+    "Phases/Phase4/artifacts/resource_selector_map.json": "947ffba7c78fe1e80880e5a95ce546c6bc20e34e5c6919bb31cf05f7ee81a407"
+  }
+}

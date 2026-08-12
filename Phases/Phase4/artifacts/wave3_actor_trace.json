@@ -1,0 +1,224 @@
+{
+  "schema_version": "wave3-actor-trace-v1",
+  "phase": "Phase4",
+  "wave": "Wave3",
+  "stage": "W3-C6-single-actor-golden-trace",
+  "trace_id": "spawn_move_arrive_draw",
+  "source_fixture": "Phases/Phase4/artifacts/wave3_actor_e2e_fixture.json",
+  "event_order": [
+    "spawn",
+    "state(adapter_walking)",
+    "move",
+    "state(adapter_idle_after_arrival)",
+    "draw"
+  ],
+  "events": [
+    {
+      "tick": 0,
+      "event": "spawn",
+      "actor_id": "adapter.actor.0",
+      "employee_id": "adapter.employee.0",
+      "status": "spawned",
+      "raw_state": {
+        "HumanEnabled": 1,
+        "HumanMode": 0,
+        "HumanState": 0,
+        "HumanAnime": 0,
+        "HumanWait": 0
+      },
+      "selector_sources": {
+        "TFace": "SyainFaceG[SyainIndex]",
+        "TBody": "SyainBodyG[SyainIndex]",
+        "TMode": "explicit_draw_selector_required"
+      },
+      "provenance": "Phases/Phase4/artifacts/wave3_spawn_fixture.json",
+      "legacy_equivalence": false
+    },
+    {
+      "tick": 0,
+      "event": "state",
+      "transition": {
+        "transition_id": "adapter_move_requested",
+        "path": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "expected": {
+        "agent_state": "walking",
+        "legacy_equivalence": false,
+        "status": "web_adapter_decision"
+      },
+      "provenance": "Phases/Phase4/artifacts/wave3_state_transition_fixture.json"
+    },
+    {
+      "tick": 1,
+      "event": "move",
+      "position": [
+        1,
+        0
+      ],
+      "movement_status": "moving",
+      "provenance": "Phases/Phase4/artifacts/wave3_movement_fixture.json"
+    },
+    {
+      "tick": 2,
+      "event": "move",
+      "position": [
+        2,
+        0
+      ],
+      "movement_status": "moving",
+      "provenance": "Phases/Phase4/artifacts/wave3_movement_fixture.json"
+    },
+    {
+      "tick": 3,
+      "event": "move",
+      "position": [
+        3,
+        0
+      ],
+      "movement_status": "arrived",
+      "provenance": "Phases/Phase4/artifacts/wave3_movement_fixture.json"
+    },
+    {
+      "tick": 3,
+      "event": "state",
+      "transition": {
+        "transition_id": "adapter_move_arrived",
+        "position": [
+          2,
+          0
+        ]
+      },
+      "expected": {
+        "agent_state": "idle",
+        "legacy_equivalence": false,
+        "status": "web_adapter_decision"
+      },
+      "provenance": "Phases/Phase4/artifacts/wave3_state_transition_fixture.json"
+    },
+    {
+      "tick": 3,
+      "event": "draw",
+      "source_scenario": "actor_draw_mode_0",
+      "input": {
+        "actor_id": "adapter.actor.0",
+        "X": 100,
+        "Y": 200,
+        "TFace": 2,
+        "TBody": 3,
+        "TMode": 0,
+        "TKage": 1
+      },
+      "expected": {
+        "status": "draw_command_ready",
+        "semantic_state": null,
+        "commands": [
+          {
+            "layer": "body",
+            "image_array": "imgBody",
+            "asset": {
+              "asset_id": "body_3",
+              "source_path": "game-dev-story-mod_Sprites/game/body3.png",
+              "filename": "body3.png",
+              "dimensions": {
+                "width": 102,
+                "height": 66
+              },
+              "mapping_status": "asset_type_and_filename_verified",
+              "confidence": "verified"
+            },
+            "source_rect": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "destination": [
+              100,
+              214
+            ]
+          },
+          {
+            "layer": "face",
+            "image_array": "imgFace",
+            "asset": {
+              "asset_id": "face_2",
+              "source_path": "game-dev-story-mod_Sprites/game/face_2.png",
+              "filename": "face_2.png",
+              "dimensions": {
+                "width": 80,
+                "height": 30
+              },
+              "mapping_status": "asset_type_and_filename_verified",
+              "confidence": "verified"
+            },
+            "source_rect": [
+              48,
+              0,
+              16,
+              15
+            ],
+            "destination": [
+              101,
+              201
+            ]
+          }
+        ],
+        "shadow": {
+          "record_values": [
+            1,
+            28
+          ],
+          "rendered": null
+        },
+        "legacy_equivalence": false
+      },
+      "provenance": "Phases/Phase4/artifacts/wave3_draw_fixture.json",
+      "legacy_equivalence": false
+    }
+  ],
+  "expected": {
+    "status": "passed",
+    "positions_by_tick": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "final_adapter_state": "idle",
+    "movement_status": "arrived",
+    "draw_status": "draw_command_ready",
+    "legacy_equivalence": false
+  },
+  "trace_policy": {
+    "clock": "deterministic_adapter_clock/frame_ms=100",
+    "position_space": "adapter_world_position",
+    "draw_selector_policy": "explicit TFace/TBody/TMode; raw state does not silently choose TMode",
+    "legacy_equivalence": false
+  },
+  "status": "golden_trace_ready_adapter_boundary_legacy_semantics_open"
+}
