@@ -24,7 +24,7 @@
 
 ## Dashboard
 
-- [ ] แสดง actor state, task state, scene, event log และ evidence/provenance ในหน้าเดียว
+- [x] แสดง actor state, task state, scene, event log และ evidence/provenance ในหน้าเดียว
 - [ ] เพิ่ม live state stream โดยยังรักษา deterministic replay/debug snapshot
 - [ ] วาง backend/auth/multi-user sync เป็น adapter boundary แยกจาก simulation core
 
