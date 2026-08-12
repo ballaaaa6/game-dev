@@ -19,7 +19,7 @@
 - [x] ออกแบบและตรวจ canonical simulation schema ที่ไม่ผูกกับ decompiled object layout
 - [x] ทำ deterministic SimulationCore reducer/tick/snapshot/digest พร้อม collision/event/bubble contracts
 - [ ] ทำ deterministic tick loop ที่จำลอง office ต่อเนื่องโดยไม่มี playback controls
-- [ ] เชื่อม scene/actor state เข้ากับ `runtime/office/` ผ่าน adapter contracts
+- [x] เชื่อม scene/actor state เข้ากับ `runtime/office/` ผ่าน Core-backed adapter contracts
 - [ ] ค่อยเชื่อม task assignment จริงและ LLM หลัง simulation baseline ผ่าน contract tests
 
 ## Dashboard

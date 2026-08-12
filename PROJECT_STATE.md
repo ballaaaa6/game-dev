@@ -3,10 +3,10 @@
 ## สถานะปัจจุบัน
 
 - จัดระเบียบ workspace ตามแนวทาง C#-first clean reconstruction เสร็จแล้ว
-- ขอบเขต semantic inventory รอบแรกถูกล็อกไว้ที่ gameplay-critical C# slice; ยังไม่เริ่มแก้ runtime implementation
+- ขอบเขต semantic inventory รอบแรกถูกล็อกไว้ที่ gameplay-critical C# slice; runtime implementation ทำต่อแบบ local-only
 - design spec ของ C# semantic inventory และ Simulation Core ผ่าน written-spec review แล้ว
-- Task 1 structural C# inventory, Task 2 deep semantic slices, Task 3 canonical schema และ Task 4 SimulationCore เสร็จแล้วและตรวจผ่าน
-- implementation ทำแบบ inline execution บนสาย `main`; core layer เสร็จแล้วแต่ยังไม่ migrate OfficeRuntime facade
+- Task 1 structural C# inventory, Task 2 deep semantic slices, Task 3 canonical schema, Task 4 SimulationCore และ Task 5 OfficeRuntime adapter migration เสร็จแล้วและตรวจผ่าน
+- implementation ทำแบบ inline execution บนสาย `main`; exported OfficeRuntime ใช้ SimulationCore เป็น state owner และมี compatibility projections
 - หลักฐาน C# ชุดใหม่อยู่ที่ `knowledge/csharp/primary/` และถูกแยกจาก runtime แล้ว
 - baseline, world assets, characters, language และ reverse-engineering อยู่ใต้ `knowledge/`
 - deterministic office runtime อยู่ที่ `runtime/office/`; dashboard/task runtime อยู่ที่ `runtime/dashboard/`
@@ -24,10 +24,11 @@
 - gameplay field claims มีสถานะ `verified=8`, `raw_only=10`, `assembly_fallback_bounded_slice_required=3`; method claims มี `DoEvent` เป็น assembly fallback
 - Simulation schema test ผ่าน และ Wave 5 contract ผ่าน `18/18`; `simulation-core-v1` contract artifact ถูกสร้างไว้ใน `runtime/office/evidence/`
 - SimulationCore test ผ่าน: spawn/move/arrival, blocked collision, invalid-command immutability, deterministic digest/subscriber และ bubble expiry
-- Wave 5 runtime regression ผ่าน `10` scenarios หลังเพิ่ม core แบบแยก module
+- Wave 5 runtime regression ผ่าน `11` scenarios หลัง migrate facade; Wave 6 task system ผ่าน `18` scenarios
+- Python office/dashboard contracts ผ่านรวม `30/30`; browser script order ตรวจว่า schema → core → runtime
 - character tests ผ่าน `5/5`
 - reverse-engineering suite ผ่าน `214/214`; corpus A0/A1 checks และ A2 canonical `--check` ผ่าน
-- office runtime ผ่าน Node `10` scenarios และ Python contract `17`
+- office runtime ผ่าน Node `11` scenarios และ Python Wave 5 contract `19/19`
 - dashboard runtime ผ่าน Node `18` scenarios และ Python contract `11`
 - maintenance tests ผ่าน `4/4`; Python compile checks ผ่าน; browser smoke ผ่าน READY/tick/task และไม่มี console errors
 - relocation comparison ผ่าน: logical members ครบและ protected roots มี file count/bytes เท่าเดิม
@@ -46,8 +47,8 @@
 - semantic names ของ numeric states และบาง branch ยังต้องยืนยันจาก C#/C/assembly หลายหลักฐาน ไม่ควรเดาเมื่อ evidence ยังขัดกัน
 - C# decompiler body ของ raw arrays หลายตัวไม่แสดงชื่อ field โดยตรง; access edges รอบนี้จึงใช้ bounded reverse-engineering claims ที่มี provenance ไม่ใช่การอ้างว่า C# body parse ได้ครบ
 - `HumanMode`, `HumanState`, `HumanAnime`, `EventMode` และ numeric message/graph labels ยังไม่ถูก promote เป็น product semantics
-- canonical schema ยังเป็น constructors/validators เท่านั้น; ยังไม่มี SimulationCore reducer, adapter ownership migration หรือ continuous scheduler
-- SimulationCore ยังเป็น local module แยกจาก `runtime.js`; OfficeRuntime ยังเป็น state owner เดิมจนกว่า Task 5 migration จะผ่าน
+- playback controls และ continuous scheduler ยังไม่ได้เปลี่ยนใน Task 5; งาน UI จะอยู่ Task 7
+- `CoreOfficeRuntime` เป็น exported facade ที่ delegate mutation ไปยัง core; old provider contracts และ renderer projections ยังทำงานผ่าน API เดิม
 - C# corpus ยังเป็นหลักฐานจาก decompiler ไม่ใช่ buildable runtime; project อ้างอิง output ภายนอกและยังไม่มี compile verdict
 - office/dashboard ปัจจุบันเป็น deterministic adapter baseline ยังไม่ใช่เกมเต็มและยังไม่มี LLM, backend, auth หรือ multi-user sync
 
@@ -60,6 +61,7 @@
 - `runtime/office/app/simulation_schema.js` — canonical state/command/event constructors and validators (local-only)
 - `runtime/office/evidence/simulation_core_contract.json` — schema boundary contract (local-only)
 - `runtime/office/app/simulation_core.js` — deterministic reducer/tick/snapshot/digest module (local-only)
+- `runtime/office/app/runtime.js` — Core-backed OfficeRuntime compatibility facade (local-only)
 - `knowledge/reverse-engineering/evidence/corpus/` — canonical corpus/index/views
 - `tools/csharp-evidence/` — C# checkers
 - `tools/maintenance/workspace_layout.py` — snapshot/relocation guard
@@ -71,6 +73,6 @@
 
 ## งานถัดไป
 
-1. เริ่ม Task 5: ย้าย OfficeRuntime mutation ownership มาอยู่ที่ SimulationCore adapter boundary
+1. เริ่ม Task 6: เชื่อม task projection และ semantic provenance เข้ากับ dashboard diagnostics
 2. คง compatibility projections สำหรับ providers/renderer เดิม โดยไม่สร้าง state owner ซ้ำ
-3. ดำเนินต่อ task projection/provenance dashboard ก่อนแตะ UI playback removal
+3. จากนั้นทำ Task 7 continuous scheduler และเอา playback controls ออกจาก UI
