@@ -5,9 +5,10 @@
 - จัดระเบียบ workspace ตามแนวทาง C#-first clean reconstruction เสร็จแล้ว
 - ขอบเขต semantic inventory รอบแรกถูกล็อกไว้ที่ gameplay-critical C# slice; runtime implementation ทำต่อแบบ local-only
 - design spec ของ C# semantic inventory และ Simulation Core ผ่าน written-spec review แล้ว
-- Task 1 structural C# inventory, Task 2 deep semantic slices, Task 3 canonical schema, Task 4 SimulationCore, Task 5 OfficeRuntime adapter migration และ Task 6 dashboard canonical projection/provenance เสร็จแล้วและตรวจผ่าน
+- Task 1 structural C# inventory, Task 2 deep semantic slices, Task 3 canonical schema, Task 4 SimulationCore, Task 5 OfficeRuntime adapter migration, Task 6 dashboard canonical projection/provenance, Task 7 continuous scheduler และ Task 8 final verification/report เสร็จแล้วและตรวจผ่าน
 - implementation ทำแบบ inline execution บนสาย `main`; exported OfficeRuntime ใช้ SimulationCore เป็น state owner และมี compatibility projections
 - dashboard อ่าน canonical snapshot จาก SimulationCore และ source-free semantic evidence projection ที่โหลดจาก `runtime/office/evidence/`; ไม่มีการ import raw C# ใน browser
+- dashboard เริ่ม scheduler ภายในเองที่ interval `160ms`; ไม่มี Play/Pause/Step/Reset หรือ speed control สำหรับ simulation
 - หลักฐาน C# ชุดใหม่อยู่ที่ `knowledge/csharp/primary/` และถูกแยกจาก runtime แล้ว
 - baseline, world assets, characters, language และ reverse-engineering อยู่ใต้ `knowledge/`
 - deterministic office runtime อยู่ที่ `runtime/office/`; dashboard/task runtime อยู่ที่ `runtime/dashboard/`
@@ -23,16 +24,18 @@
 - inventory input boundary มี 11 ไฟล์: primary 5 ไฟล์และ `data/*.cs`; structural fingerprint ล่าสุดคือ `24e14f6e7beea8521406aee64e946803c257e5e7c537bc92450ca50ef29207da`
 - semantic fingerprint ล่าสุดคือ `c67de72477df0273f68764f5c02d0a23993ab7ca28c291fda0bb93512ff002ae`; bounded access edges 18 รายการ
 - gameplay field claims มีสถานะ `verified=8`, `raw_only=10`, `assembly_fallback_bounded_slice_required=3`; method claims มี `DoEvent` เป็น assembly fallback
-- Simulation schema test ผ่าน และ Wave 5 contract ผ่าน `18/18`; `simulation-core-v1` contract artifact ถูกสร้างไว้ใน `runtime/office/evidence/`
+- Simulation schema test ผ่าน และ Wave 5 contract ผ่าน `20/20`; `simulation-core-v1` contract artifact ถูกสร้างไว้ใน `runtime/office/evidence/`
 - SimulationCore test ผ่าน: spawn/move/arrival, blocked collision, invalid-command immutability, deterministic digest/subscriber และ bubble expiry
 - Wave 5 runtime regression ผ่าน `11` scenarios หลัง migrate facade; Wave 6 task system ผ่าน `18` scenarios
 - Dashboard canonical snapshot/evidence contract ผ่าน `12/12`; `app.js` syntax check ผ่าน; browser script order ตรวจว่า schema → core → runtime
-- Python office/dashboard contracts ผ่านรวม `31/31`
+- Continuous scheduler test ผ่าน `2` scenarios; `app.js` และ scheduler syntax check ผ่าน
+- Python office/dashboard contracts ผ่านรวม `32/32`
+- final regression ผ่าน: C# evidence `8/8`, characters `5/5`, reverse-engineering `214/214`, maintenance `4/4`, office Python `20/20`, dashboard Python `12/12`; Node schema/core/scheduler/office/dashboard tests ผ่านทั้งหมด
 - character tests ผ่าน `5/5`
 - reverse-engineering suite ผ่าน `214/214`; corpus A0/A1 checks และ A2 canonical `--check` ผ่าน
-- office runtime ผ่าน Node `11` scenarios และ Python Wave 5 contract `19/19`
-- dashboard runtime ผ่าน Node `18` scenarios และ Python contract `11`
-- maintenance tests ผ่าน `4/4`; Python compile checks ผ่าน; browser smoke ผ่าน READY/tick/task และไม่มี console errors
+- office runtime ผ่าน Node `11` scenarios และ Python Wave 5 contract `20/20`
+- dashboard runtime ผ่าน Node `18` scenarios และ Python contract `12`
+- maintenance tests ผ่าน `4/4`; Python compile checks ผ่าน; browser smoke ผ่าน: READY/tick เดินเอง `96 → 101` ในประมาณ `700ms`, canvas `600x800`, diagnostics มี `simulation-core-v1`/evidence, task create/assign ผ่าน, ไม่มี console error/warning และ server ที่เปิดทดสอบถูกปิดแล้ว
 - relocation comparison ผ่าน: logical members ครบและ protected roots มี file count/bytes เท่าเดิม
 - cache/temp ที่สร้างระหว่างทดสอบถูกล้างแล้ว และไม่มี local server ค้าง
 - source roots เดิมยังถูกเก็บไว้แบบ read-only; dumped `Assembly-CSharp.dll` ยังอยู่ใน dump ตามเดิม
@@ -49,7 +52,7 @@
 - semantic names ของ numeric states และบาง branch ยังต้องยืนยันจาก C#/C/assembly หลายหลักฐาน ไม่ควรเดาเมื่อ evidence ยังขัดกัน
 - C# decompiler body ของ raw arrays หลายตัวไม่แสดงชื่อ field โดยตรง; access edges รอบนี้จึงใช้ bounded reverse-engineering claims ที่มี provenance ไม่ใช่การอ้างว่า C# body parse ได้ครบ
 - `HumanMode`, `HumanState`, `HumanAnime`, `EventMode` และ numeric message/graph labels ยังไม่ถูก promote เป็น product semantics
-- playback controls และ continuous scheduler ยังไม่ได้เปลี่ยนใน Task 6; งาน UI/scheduler จะอยู่ Task 7
+- scheduler เป็น wall-clock driver ของ UI เท่านั้น; logical tick/snapshot/digest ยัง deterministic และไม่มี visible stop/pause/speed path
 - `CoreOfficeRuntime` เป็น exported facade ที่ delegate mutation ไปยัง core; old provider contracts และ renderer projections ยังทำงานผ่าน API เดิม
 - C# corpus ยังเป็นหลักฐานจาก decompiler ไม่ใช่ buildable runtime; project อ้างอิง output ภายนอกและยังไม่มี compile verdict
 - office/dashboard ปัจจุบันเป็น deterministic adapter baseline ยังไม่ใช่เกมเต็มและยังไม่มี LLM, backend, auth หรือ multi-user sync
@@ -65,6 +68,8 @@
 - `runtime/office/app/simulation_core.js` — deterministic reducer/tick/snapshot/digest module (local-only)
 - `runtime/office/app/runtime.js` — Core-backed OfficeRuntime compatibility facade (local-only)
 - `runtime/office/app/app.js` และ `runtime/office/app/index.html` — dashboard canonical projection/evidence panel (local-only)
+- `runtime/office/app/continuous_scheduler.js` และ `runtime/office/tests/test_continuous_scheduler.js` — internal continuous tick driver and lifecycle tests (local-only)
+- `runtime/office/README.md` และ `runtime/office/reports/simulation_core_architecture.md` — implementation architecture/handoff docs
 - `knowledge/reverse-engineering/evidence/corpus/` — canonical corpus/index/views
 - `tools/csharp-evidence/` — C# checkers
 - `tools/maintenance/workspace_layout.py` — snapshot/relocation guard
@@ -76,6 +81,6 @@
 
 ## งานถัดไป
 
-1. ทำ Task 7 continuous scheduler และเอา playback controls ออกจาก UI
-2. คง compatibility projections สำหรับ providers/renderer เดิม โดยไม่สร้าง state owner ซ้ำ
+1. คง compatibility projections สำหรับ providers/renderer เดิม โดยไม่สร้าง state owner ซ้ำ
+2. ทำ live backend/auth/multi-user sync เป็น adapter แยกจาก core เมื่อ scope พร้อม
 3. ค่อยเชื่อม task assignment จริงและ LLM/backend หลัง simulation baseline ผ่าน contract tests

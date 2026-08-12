@@ -18,14 +18,14 @@
 - [x] สร้าง bounded semantic claims table โดยให้สถานะ `unknown`/`raw_only` อยู่ได้และมี provenance ต่อค่า
 - [x] ออกแบบและตรวจ canonical simulation schema ที่ไม่ผูกกับ decompiled object layout
 - [x] ทำ deterministic SimulationCore reducer/tick/snapshot/digest พร้อม collision/event/bubble contracts
-- [ ] ทำ deterministic tick loop ที่จำลอง office ต่อเนื่องโดยไม่มี playback controls
+- [x] ทำ deterministic tick loop ที่จำลอง office ต่อเนื่องโดยไม่มี playback controls
 - [x] เชื่อม scene/actor state เข้ากับ `runtime/office/` ผ่าน Core-backed adapter contracts
 - [ ] ค่อยเชื่อม task assignment จริงและ LLM หลัง simulation baseline ผ่าน contract tests
 
 ## Dashboard
 
 - [x] แสดง actor state, task state, scene, event log และ evidence/provenance ในหน้าเดียว
-- [ ] เพิ่ม live state stream โดยยังรักษา deterministic replay/debug snapshot
+- [x] เพิ่ม live UI state stream โดยยังรักษา deterministic replay/debug snapshot
 - [ ] วาง backend/auth/multi-user sync เป็น adapter boundary แยกจาก simulation core
 
 ## ห้ามทำในช่วงนี้
