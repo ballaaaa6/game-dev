@@ -1,21 +1,36 @@
-# Workspace index
+# C#-first Virtual Game Office
 
-โครงสร้างนี้แยก source เดิมออกจากผลลัพธ์ของแต่ละ phase แล้ว เพื่อให้ rerun หรือเริ่ม phase ใหม่ได้โดยไม่เขียนไฟล์ปนกันที่ root
+Workspace สำหรับสร้าง deterministic simulation ของ office และ dashboard โดยยึดหลักฐาน C# จาก Cpp2IL เป็น discovery input แล้วแยก runtime ที่เขียนใหม่ออกจาก source/evidence อย่างชัดเจน
 
-## พื้นที่หลัก
+## โครงสร้างปัจจุบัน
 
-- `Docs/AI_Agent_Office_Roadmap.md` — roadmap ใหญ่และ checklist ความคืบหน้าระดับ Phase
-- `TODO.md` — backlog งานย่อยที่พร้อมลงมือทำ เรียงตาม dependency
-- `PROJECT_STATE.md` — สถานะล่าสุด, known limitations และ handoff สำหรับ session ถัดไป
-- `Phases/` — artifacts, report, preview และ reference ที่จัดตาม Phase 0–7
-- `game-dev-story-mod_Sprites/` — source asset ที่ freeze ไว้ ห้ามแก้ระหว่างการวิเคราะห์
-- `game-dev-story-mod_Dumped/` — dump/decompiled source ที่ freeze ไว้
-- `game-dev-story-mod_Extracted/` — ไฟล์ extraction ดิบจาก APK
-- `ghidra_11.0.1_PUBLIC/` — Ghidra project เดิม
-- `APK_Toolkit/` — script, extractor และ input APK/ZIP; ผลลัพธ์ใหม่จะเขียนเข้า `Phases/`
-- `Docs/` — เอกสารอ้างอิงข้าม phase และคู่มือเครื่องมือ
-- `viewer/` — preview/runtime viewer เดิม
+- `knowledge/` — หลักฐานที่จัดตามความหมาย: baseline, world assets, characters, language, reverse-engineering และ C# corpus
+- `runtime/office/` — office scene/actor runtime แบบจำลองต่อเนื่อง
+- `runtime/dashboard/` — task system และ dashboard interaction
+- `tools/` — evidence checkers, reverse-engineering builders และ maintenance utilities
+- `docs/` — roadmap, guides, references และ archive ของแผนเก่า
+- `archive/` — legacy tools และแนวคิด AI integration ที่ยังไม่เปิดใช้งาน
 
-กติกาสำคัญ: ไม่สร้าง generated JSON/PNG/report ใหม่ไว้ที่ workspace root และไม่ย้ายหรือเขียนทับ source roots เดิม
+## แหล่งข้อมูลที่ห้ามแก้
 
-ดูรายละเอียดการเก็บผลลัพธ์ได้ที่ [`Phases/README.md`](<Phases/README.md>)
+- `game-dev-story-mod_Sprites/`
+- `game-dev-story-mod_Dumped/`
+- `game-dev-story-mod_Extracted/`
+- `APK_Toolkit/`
+- `ghidra_11.0.1_PUBLIC/`
+- `viewer/`
+
+`knowledge/csharp/primary/` คือ C# evidence ชุดใหม่ที่ใช้เป็นหลักในการอ่าน control flow; `Assembly-CSharp/` ที่ผู้ใช้ลบแล้วจะไม่ถูกสร้างกลับ และ DLL ที่อยู่ใน dump เป็นคนละ input จึงยังเก็บไว้ตามเดิม
+
+## จุดเริ่มต้นสำหรับ session ถัดไป
+
+อ่าน [AGENTS.md](AGENTS.md), [PROJECT_STATE.md](PROJECT_STATE.md), [TODO.md](TODO.md) แล้วดู [Roadmap 2.0](docs/roadmap/Roadmap_2.0_CSharp_First.md)
+
+คำสั่งตรวจสอบหลัก:
+
+```powershell
+python -m unittest discover -s knowledge/characters/tests -p "test_*.py" -v
+python -m unittest discover -s tools/reverse-engineering/tests -p "test_*.py" -v
+node runtime/office/tests/test_wave5_runtime.js
+node runtime/dashboard/tests/test_wave6_task_system.js
+```

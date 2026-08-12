@@ -4,26 +4,26 @@
 
 ## Cross-Session Handoff
 
-กฎต่อไปนี้เป็นข้อบังคับสำหรับทุก session:
-
-1. ก่อนเริ่มงาน ให้อ่าน `AGENTS.md`, `PROJECT_STATE.md` และไฟล์ handoff/state ที่เกี่ยวข้องกับงานหรือ phase นั้นก่อนเสมอ
-2. ถ้ามี `TODO.md` หรือ `DECISIONS.md` ให้อ่านด้วย และใช้เป็นข้อมูลประกอบเมื่อเกี่ยวข้อง
-3. หลังอ่าน state แล้วต้องตรวจสอบ codebase, ไฟล์จริง และผลลัพธ์ที่เกี่ยวข้องก่อนทำงานต่อเสมอ ห้ามถือว่า `PROJECT_STATE.md` แทนการตรวจสอบ repository ได้
-4. `PROJECT_STATE.md` ต้องเก็บเฉพาะข้อมูลที่จำเป็นต่อการทำงานต่อ ได้แก่:
-   - สิ่งที่ทำเสร็จแล้ว
-   - สิ่งที่กำลังทำหรือสถานะปัจจุบัน
-   - ปัญหา, blocker หรือ known limitation
-   - การตัดสินใจสำคัญ
-   - ไฟล์ที่ถูกแก้หรือสร้าง
-   - งานถัดไป
-5. เมื่อสถานะของโปรเจกต์เปลี่ยนอย่างมีนัยสำคัญ เช่น phase เปลี่ยน, สร้างหรือแก้ artifact, พบหรือแก้ blocker, เปลี่ยน decision หรือเปลี่ยนขอบเขตงาน ให้ตรวจสอบและ update `PROJECT_STATE.md` ทันที
-6. ก่อนจบ session หรือเมื่อผู้ใช้สั่ง `handoff` ให้ตรวจสอบไฟล์จริงและอัปเดต `PROJECT_STATE.md` ให้ตรงกับสถานะล่าสุดเสมอ
-7. ถ้ามี `TODO.md` หรือ `DECISIONS.md` และงานที่ทำเกี่ยวข้อง ให้ update ไฟล์เหล่านั้นพร้อมกัน
-8. เขียน handoff แบบกระชับ ไม่ใส่รายละเอียดฟุ่มเฟือยหรือข้อมูลที่หาได้จากการอ่าน codebase เพื่อจำกัด context และ token usage
-9. session ใหม่ต้องสามารถอ่าน `AGENTS.md` + `PROJECT_STATE.md` + codebase แล้วทำงานต่อได้โดยไม่ต้องพึ่ง chat history ของ session ก่อนหน้า
+1. ก่อนเริ่มงาน ให้อ่าน `AGENTS.md`, `PROJECT_STATE.md` และไฟล์ handoff/state ที่เกี่ยวข้องก่อนเสมอ
+2. ถ้ามี `TODO.md` หรือ `DECISIONS.md` ให้อ่านด้วยเมื่อเกี่ยวข้อง
+3. หลังอ่าน state แล้วต้องตรวจสอบ codebase และไฟล์จริงก่อนทำงานต่อ ห้ามถือ state แทนการตรวจสอบ repository
+4. `PROJECT_STATE.md` เก็บเฉพาะสิ่งที่ทำเสร็จ สถานะปัจจุบัน ปัญหา/ข้อจำกัด การตัดสินใจ ไฟล์ที่เปลี่ยน และงานถัดไป
+5. เมื่อสถานะเปลี่ยนอย่างมีนัยสำคัญ ให้ update `PROJECT_STATE.md` และ `TODO.md` ที่เกี่ยวข้องทันที
+6. ก่อนจบ session หรือเมื่อผู้ใช้สั่ง handoff ให้ตรวจสอบไฟล์จริงและอัปเดต state ให้ตรงกับสถานะล่าสุด
+7. เขียน handoff แบบกระชับ ไม่ใส่รายละเอียดที่หาได้จากการอ่าน codebase ซ้ำ
 
 ## Workspace Conventions
 
-- ให้ยึดข้อมูลจาก source/extraction ปัจจุบันและหลักฐานจาก code เป็นหลัก อย่าเดาความหมายของสิ่งที่ยังถูกระบุเป็น `unknown`
-- รักษา source roots เดิมแบบ read-only เว้นแต่ผู้ใช้สั่งเป็นอย่างอื่น และวาง generated phase artifacts ไว้ใต้ `Phases/` ตามโครงสร้างที่มีอยู่
-- ก่อนบันทึกสถานะ ให้ระบุสิ่งที่ตรวจสอบได้จริงแยกจากข้อเสนอหรือแผนงาน
+- ยึด source/extraction ปัจจุบันและหลักฐานจาก code เป็นหลัก อย่าเดาความหมายของสิ่งที่ยังเป็น `unknown`
+- รักษา source roots เดิมแบบ read-only
+- วาง generated evidence ใต้ `knowledge/*/evidence`, runtime contracts ใต้ `runtime/*/evidence` และรายงาน/roadmap ใต้ `docs/`
+- ห้ามสร้าง generated JSON/PNG/report ใหม่ไว้ที่ root
+- `knowledge/csharp/primary/` เป็น C# discovery evidence หลัก; ห้ามสร้าง `Assembly-CSharp/` กลับ
+- แยกหลักฐานออกจาก runtime: decompiled/C# evidence ใช้สำหรับวิเคราะห์และสร้าง contract เท่านั้น ไม่ execute โดยตรงในเว็บ
+
+## Local development server lifecycle
+
+- ก่อนเริ่ม server ให้ตรวจ listener และ process command line ของ repository ก่อน
+- reuse server ที่ healthy อยู่แล้ว ห้ามพึ่งพา auto-fallback port
+- ติดตาม process ที่เริ่มเองและหยุด process tree หลัง verify เว้นแต่ผู้ใช้ขอให้เปิดค้าง
+- ห้าม terminate Codex-owned `mcp/server.mjs`, `node_repl` หรือ process ใต้ `OpenAI\Codex\runtimes`
