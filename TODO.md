@@ -12,10 +12,10 @@
 
 - [x] ล็อก gameplay-critical C# slice และเขียน design spec ของ inventory/Simulation Core
 - [x] review written spec และแตก implementation plan ก่อนแก้โค้ด
-- [ ] เลือกวิธี execute implementation plan ก่อนแก้โค้ด
-- [ ] ทำ inventory class/method/field ของ `knowledge/csharp/primary/`
+- [x] เลือกวิธี execute implementation plan ก่อนแก้โค้ด (inline execution บน `main`)
+- [x] ทำ structural inventory class/method/field ของ gameplay-critical C# slice
 - [ ] แยก state, transition, timer, movement, scene, actor และ event contracts จากหลักฐาน
-- [ ] สร้าง semantic mapping table โดยให้สถานะ `unknown` อยู่ได้และมี provenance ต่อค่า
+- [x] สร้าง bounded semantic claims table โดยให้สถานะ `unknown`/`raw_only` อยู่ได้และมี provenance ต่อค่า
 - [ ] ออกแบบ canonical simulation schema ที่ไม่ผูกกับ decompiled object layout
 - [ ] ทำ deterministic tick loop ที่จำลอง office ต่อเนื่องโดยไม่มี playback controls
 - [ ] เชื่อม scene/actor state เข้ากับ `runtime/office/` ผ่าน adapter contracts

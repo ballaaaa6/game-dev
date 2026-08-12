@@ -5,7 +5,8 @@
 - จัดระเบียบ workspace ตามแนวทาง C#-first clean reconstruction เสร็จแล้ว
 - ขอบเขต semantic inventory รอบแรกถูกล็อกไว้ที่ gameplay-critical C# slice; ยังไม่เริ่มแก้ runtime implementation
 - design spec ของ C# semantic inventory และ Simulation Core ผ่าน written-spec review แล้ว
-- implementation plan ถูกเขียนแล้ว; ยังไม่เริ่มแก้ runtime implementation และยังรอเลือกวิธี execute plan
+- Task 1 structural C# inventory และ Task 2 deep semantic slices เสร็จแล้วและตรวจผ่าน
+- implementation ทำแบบ inline execution บนสาย `main`; ยังไม่เริ่มแก้ runtime implementation
 - หลักฐาน C# ชุดใหม่อยู่ที่ `knowledge/csharp/primary/` และถูกแยกจาก runtime แล้ว
 - baseline, world assets, characters, language และ reverse-engineering อยู่ใต้ `knowledge/`
 - deterministic office runtime อยู่ที่ `runtime/office/`; dashboard/task runtime อยู่ที่ `runtime/dashboard/`
@@ -16,6 +17,11 @@
 
 - C# primary corpus มี 85 `.cs` files และ `Assembly-CSharp.csproj`; source hash ตรงกับ relocation manifest ก่อนย้าย
 - C# coverage/semantic checker compile ผ่าน และอ้างอิง path ภายใน workspace ใหม่
+- structural inventory contract ผ่าน `3/3`; build/check ผ่านด้วย `types=14`, `fields=926`, `methods=257`
+- semantic slice contract ผ่าน `5/5`; รวม C# evidence tests `8/8`
+- inventory input boundary มี 11 ไฟล์: primary 5 ไฟล์และ `data/*.cs`; structural fingerprint ล่าสุดคือ `24e14f6e7beea8521406aee64e946803c257e5e7c537bc92450ca50ef29207da`
+- semantic fingerprint ล่าสุดคือ `c67de72477df0273f68764f5c02d0a23993ab7ca28c291fda0bb93512ff002ae`; bounded access edges 18 รายการ
+- gameplay field claims มีสถานะ `verified=8`, `raw_only=10`, `assembly_fallback_bounded_slice_required=3`; method claims มี `DoEvent` เป็น assembly fallback
 - character tests ผ่าน `5/5`
 - reverse-engineering suite ผ่าน `214/214`; corpus A0/A1 checks และ A2 canonical `--check` ผ่าน
 - office runtime ผ่าน Node `10` scenarios และ Python contract `17`
@@ -35,6 +41,8 @@
 ## Known limitations
 
 - semantic names ของ numeric states และบาง branch ยังต้องยืนยันจาก C#/C/assembly หลายหลักฐาน ไม่ควรเดาเมื่อ evidence ยังขัดกัน
+- C# decompiler body ของ raw arrays หลายตัวไม่แสดงชื่อ field โดยตรง; access edges รอบนี้จึงใช้ bounded reverse-engineering claims ที่มี provenance ไม่ใช่การอ้างว่า C# body parse ได้ครบ
+- `HumanMode`, `HumanState`, `HumanAnime`, `EventMode` และ numeric message/graph labels ยังไม่ถูก promote เป็น product semantics
 - C# corpus ยังเป็นหลักฐานจาก decompiler ไม่ใช่ buildable runtime; project อ้างอิง output ภายนอกและยังไม่มี compile verdict
 - office/dashboard ปัจจุบันเป็น deterministic adapter baseline ยังไม่ใช่เกมเต็มและยังไม่มี LLM, backend, auth หรือ multi-user sync
 
@@ -42,6 +50,8 @@
 
 - `knowledge/csharp/primary/` — C# discovery evidence
 - `knowledge/csharp/coverage/` — coverage reports ที่ได้จาก input ใหม่
+- `knowledge/csharp/evidence/semantic_inventory/` — local structural inventory artifacts (ยังไม่ publish)
+- `runtime/office/evidence/semantic_inventory_runtime.json` — local source-free status/provenance projection (ยังไม่ publish)
 - `knowledge/reverse-engineering/evidence/corpus/` — canonical corpus/index/views
 - `tools/csharp-evidence/` — C# checkers
 - `tools/maintenance/workspace_layout.py` — snapshot/relocation guard
@@ -53,6 +63,6 @@
 
 ## งานถัดไป
 
-1. เลือกวิธี execute implementation plan: subagent-driven หรือ inline execution
-2. เริ่ม Task 1: structural inventory และ evidence boundary
-3. ดำเนินต่อ Task 2–7 โดยคง provenance และ `unknown` ที่ยังพิสูจน์ไม่ได้
+1. เริ่ม Task 3: canonical Simulation Core schema และ validators
+2. ใช้ semantic inventory เป็น evidence/provenance input โดยคง `unknown`/`raw_only` เมื่อหลักฐานยังไม่พอ
+3. ดำเนินต่อ deterministic reducer และ OfficeRuntime adapter ก่อนแตะ UI playback removal
