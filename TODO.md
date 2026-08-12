@@ -16,7 +16,7 @@
 - [x] ทำ structural inventory class/method/field ของ gameplay-critical C# slice
 - [ ] แยก state, transition, timer, movement, scene, actor และ event contracts จากหลักฐาน
 - [x] สร้าง bounded semantic claims table โดยให้สถานะ `unknown`/`raw_only` อยู่ได้และมี provenance ต่อค่า
-- [ ] ออกแบบ canonical simulation schema ที่ไม่ผูกกับ decompiled object layout
+- [x] ออกแบบและตรวจ canonical simulation schema ที่ไม่ผูกกับ decompiled object layout
 - [ ] ทำ deterministic tick loop ที่จำลอง office ต่อเนื่องโดยไม่มี playback controls
 - [ ] เชื่อม scene/actor state เข้ากับ `runtime/office/` ผ่าน adapter contracts
 - [ ] ค่อยเชื่อม task assignment จริงและ LLM หลัง simulation baseline ผ่าน contract tests
