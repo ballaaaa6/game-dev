@@ -2,6 +2,7 @@
 
 ## สถานะปัจจุบัน
 
+- Scene-map reconstruction Task 2 SEB audit เสร็จแล้ว: พบ floor SEB 21 logical files ที่ shortfall 4 bytes เท่ากัน; ไม่มี direct named payload ใน APK/ZIP/extracted ที่ complete จึงได้ผล `no_full_payload_found` ทั้งหมด และไม่มี reextract payload ถูก stage
 - จัดระเบียบ workspace ตามแนวทาง C#-first clean reconstruction เสร็จแล้ว
 - ขอบเขต semantic inventory รอบแรกถูกล็อกไว้ที่ gameplay-critical C# slice; runtime implementation ทำต่อแบบ local-only
 - design spec ของ C# semantic inventory และ Simulation Core ผ่าน written-spec review แล้ว
@@ -17,6 +18,7 @@
 
 ## สิ่งที่ตรวจสอบแล้ว
 
+- Task 2 SEB codec/audit tests ผ่าน `6/6`; suite ของ Task 1+2 ผ่าน `11/11`; build audit และ `py_compile` ผ่าน; source/extraction file hashes `1,881` รายการตรงกับ Task 1 inventory
 - C# primary corpus มี 85 `.cs` files และ `Assembly-CSharp.csproj`; source hash ตรงกับ relocation manifest ก่อนย้าย
 - C# coverage/semantic checker compile ผ่าน และอ้างอิง path ภายใน workspace ใหม่
 - structural inventory contract ผ่าน `3/3`; build/check ผ่านด้วย `types=14`, `fields=926`, `methods=257`
@@ -49,6 +51,7 @@
 
 ## Known limitations
 
+- APK/ZIP มี Unity data members ชื่อ hash และไม่มี direct `floor*.seb`; การตามหา TextAsset ที่ฝังอยู่ต้องใช้ bundle provenance evidence เพิ่มเติม จึงยังไม่ยืนยันว่า shortfall เป็น source limitation แท้หรือ nested-extraction defect
 - semantic names ของ numeric states และบาง branch ยังต้องยืนยันจาก C#/C/assembly หลายหลักฐาน ไม่ควรเดาเมื่อ evidence ยังขัดกัน
 - C# decompiler body ของ raw arrays หลายตัวไม่แสดงชื่อ field โดยตรง; access edges รอบนี้จึงใช้ bounded reverse-engineering claims ที่มี provenance ไม่ใช่การอ้างว่า C# body parse ได้ครบ
 - `HumanMode`, `HumanState`, `HumanAnime`, `EventMode` และ numeric message/graph labels ยังไม่ถูก promote เป็น product semantics
@@ -81,6 +84,7 @@
 
 ## งานถัดไป
 
+1. หากต้องการยืนยัน source limitation ให้สร้าง evidence-first nested Unity bundle/TextAsset provenance audit โดยไม่แก้ extraction roots
 1. คง compatibility projections สำหรับ providers/renderer เดิม โดยไม่สร้าง state owner ซ้ำ
 2. ทำ live backend/auth/multi-user sync เป็น adapter แยกจาก core เมื่อ scope พร้อม
 3. ค่อยเชื่อม task assignment จริงและ LLM/backend หลัง simulation baseline ผ่าน contract tests

@@ -22,6 +22,11 @@
 - [x] เชื่อม scene/actor state เข้ากับ `runtime/office/` ผ่าน Core-backed adapter contracts
 - [ ] ค่อยเชื่อม task assignment จริงและ LLM หลัง simulation baseline ผ่าน contract tests
 
+## Scene-map reconstruction
+
+- [x] Audit every discovered `floor*.seb`, preserve four-byte partial tails, and conditionally stage only a verified complete archive candidate
+- [ ] Establish nested Unity bundle/TextAsset provenance before treating the four-byte SEB shortfall as a source limitation
+
 ## Dashboard
 
 - [x] แสดง actor state, task state, scene, event log และ evidence/provenance ในหน้าเดียว
