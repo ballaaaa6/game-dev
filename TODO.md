@@ -26,6 +26,7 @@
 
 - [x] Audit every discovered `floor*.seb`, preserve four-byte partial tails, and conditionally stage only a verified complete archive candidate
 - [x] Reject trailing-byte and incomplete archive payloads from recovery and staging
+- [x] Trace SEB consumer-boundary semantics with deterministic C#/C/assembly evidence and keep crop/translation/selector/object-base/camera/depth separate
 - [ ] Establish nested Unity bundle/TextAsset provenance before treating the four-byte SEB shortfall as a source limitation
 
 ## Dashboard
