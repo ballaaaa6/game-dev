@@ -8,6 +8,7 @@
 - design spec ของ C# semantic inventory และ Simulation Core ผ่าน written-spec review แล้ว
 - Task 1 structural C# inventory, Task 2 deep semantic slices, Task 3 canonical schema, Task 4 SimulationCore, Task 5 OfficeRuntime adapter migration, Task 6 dashboard canonical projection/provenance, Task 7 continuous scheduler และ Task 8 final verification/report เสร็จแล้วและตรวจผ่าน
 - Task 4 scene-map reconstruction semantics contract เสร็จแล้ว: เพิ่ม deterministic C#/C/assembly text-trace helper, SEB consumer-boundary evidence contract และ report ที่ระบุ crop/translation/selector/object-base/camera/depth แยกจากกัน
+- Task 5 object-placement contract เสร็จแล้ว: current page/reception-desk-chair fixture stays adapter-only, asset identity is verified, and original room/object placement remains unknown because no persisted/generated floor0 room-state record was found
 - implementation ทำแบบ inline execution บนสาย `main`; exported OfficeRuntime ใช้ SimulationCore เป็น state owner และมี compatibility projections
 - dashboard อ่าน canonical snapshot จาก SimulationCore และ source-free semantic evidence projection ที่โหลดจาก `runtime/office/evidence/`; ไม่มีการ import raw C# ใน browser
 - dashboard เริ่ม scheduler ภายในเองที่ interval `160ms`; ไม่มี Play/Pause/Step/Reset หรือ speed control สำหรับ simulation
@@ -77,7 +78,10 @@
 - `knowledge/reverse-engineering/evidence/corpus/` — canonical corpus/index/views
 - `tools/scene_reconstruction/csharp_trace.py` และ `tools/scene_reconstruction/build_seb_semantics_contract.py` — deterministic SEB consumer-boundary trace helper and contract builder
 - `knowledge/world-assets/evidence/scene_reconstruction/seb_semantics_contract.json` — SEB semantics evidence contract
+- `tools/scene_reconstruction/build_object_placement_contract.py` และ `tools/scene_reconstruction/test_object_placement.py` — object-placement lineage classifier and tests
+- `knowledge/world-assets/evidence/scene_reconstruction/object_placement_contract.json` — object-placement provenance contract
 - `.superpowers/sdd/2026-08-12-scene-map-reconstruction/task-4-report.md` — task 4 report and self-review
+- `.superpowers/sdd/2026-08-12-scene-map-reconstruction/task-5-report.md` — task 5 report and self-review
 - `tools/csharp-evidence/` — C# checkers
 - `tools/maintenance/workspace_layout.py` — snapshot/relocation guard
 - `knowledge/reorganization/relocation_manifest.before.json` และ `relocation_manifest.after.json` — relocation boundary
