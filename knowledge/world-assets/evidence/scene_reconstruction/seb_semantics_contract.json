@@ -235,7 +235,7 @@
         {
           "excerpt": "      System_Runtime_Serialization_ObjectManager__AddObjectHolder(param_1,lVar9);",
           "line": 154594,
-          "offset": 5937108,
+          "offset": 5937158,
           "source_hash": "19af9b427031643115f78962e487a2afb246ca485e34e70d1d44285a036aeb48",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
@@ -244,7 +244,7 @@
         {
           "excerpt": "    System_Runtime_Serialization_ObjectManager__AddObjectHolder(param_1,lVar1);",
           "line": 1426856,
-          "offset": 50673356,
+          "offset": 50673404,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -253,7 +253,7 @@
         {
           "excerpt": "// Function: System_Runtime_Serialization_ObjectManager__AddObjectHolder",
           "line": 1426878,
-          "offset": 50674041,
+          "offset": 50674098,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -262,7 +262,7 @@
         {
           "excerpt": "void System_Runtime_Serialization_ObjectManager__AddObjectHolder(long param_1,long param_2)",
           "line": 1426882,
-          "offset": 50674234,
+          "offset": 50674283,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -271,7 +271,7 @@
         {
           "excerpt": "  System_Runtime_Serialization_ObjectManager__AddObjectHolder(param_1,uVar3);",
           "line": 1427752,
-          "offset": 50705134,
+          "offset": 50705180,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -280,7 +280,7 @@
         {
           "excerpt": "// Function: form_GameForm__AddObjec",
           "line": 24849,
-          "offset": 1125230,
+          "offset": 1125258,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -289,7 +289,7 @@
         {
           "excerpt": "uint form_GameForm__AddObjec",
           "line": 24853,
-          "offset": 1125387,
+          "offset": 1125407,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -298,7 +298,7 @@
         {
           "excerpt": "    uVar9 = form_GameForm__AddObjec",
           "line": 25125,
-          "offset": 1135990,
+          "offset": 1136017,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -307,7 +307,7 @@
         {
           "excerpt": "    uVar7 = form_GameForm__AddObjec(uVar9,iVar17,uVar10,uVar11,uVar12,0,uVar13,uVar14,uVar7);",
           "line": 25148,
-          "offset": 1136984,
+          "offset": 1137011,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -316,7 +316,7 @@
         {
           "excerpt": "          uVar9 = form_GameForm__AddObjec",
           "line": 25205,
-          "offset": 1140228,
+          "offset": 1140261,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -325,7 +325,7 @@
         {
           "excerpt": "                uVar9 = form_GameForm__AddObjec",
           "line": 25220,
-          "offset": 1141113,
+          "offset": 1141152,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -334,7 +334,7 @@
         {
           "excerpt": "          uVar9 = form_GameForm__AddObjec",
           "line": 25292,
-          "offset": 1144678,
+          "offset": 1144711,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -343,7 +343,7 @@
         {
           "excerpt": "                uVar9 = form_GameForm__AddObjec",
           "line": 25307,
-          "offset": 1145565,
+          "offset": 1145604,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -352,7 +352,7 @@
         {
           "excerpt": "                  uVar9 = form_GameForm__AddObjec(uVar9,0,0x26,0x91,0,0,0x2e,0x2e,0x1e);",
           "line": 25317,
-          "offset": 1146177,
+          "offset": 1146218,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -361,7 +361,7 @@
         {
           "excerpt": "    uVar4 = form_GameForm__AddObjec(lVar3,0xffffffff,0,0,0,0,0,0,0);",
           "line": 27460,
-          "offset": 1245088,
+          "offset": 1245115,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -370,7 +370,7 @@
         {
           "excerpt": "                  form_GameForm__AddObjec(uVar4,1,0xfffffc19,0,0,0x40,0x10,0x20,0x1e);",
           "line": 27574,
-          "offset": 1250441,
+          "offset": 1250474,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -379,7 +379,7 @@
         {
           "excerpt": "\u2026\u0000ChosenBomb\u0000sb\u0000msg_sub\u0000<>c\u0000getNextDay0HourSec\u0000PCObjec\u0000ChairSubObjec\u0000AddObjec\u0000DeskObjec\u0000HumanObjec\u0000ChairMainObjec\u0000DebugHumanDirec\u0000EventGra\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 251889,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -388,7 +388,7 @@
         {
           "excerpt": "\tprivate void AddObjectHolder(ObjectHolder holder) { }",
           "line": 67219,
-          "offset": 2535777,
+          "offset": 2535791,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -397,7 +397,7 @@
         {
           "excerpt": "\tpublic int AddObjec(int TSyurui, int TX, int TY, int TCX, int TCY, int TWX, int TWY, int TSY) { }",
           "line": 276477,
-          "offset": 9767069,
+          "offset": 9767081,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -406,7 +406,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num2 = gameForm.AddObjec(4, 204, (int)typeof(_0021_00210), (int)typeof(_0021_00210), 0, 15, 27, 23);",
           "line": 16139,
-          "offset": 603212,
+          "offset": 603245,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -415,7 +415,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num6 = ((GameForm)num2).AddObjec(2, (int)num5, 0, 120, 0, 50, 40, 25);",
           "line": 16206,
-          "offset": 606456,
+          "offset": 606497,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -424,7 +424,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num10 = ((GameForm)num6).AddObjec(2, (int)num9, 0, 120, 0, 50, 40, 25);",
           "line": 16292,
-          "offset": 610541,
+          "offset": 610583,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -433,7 +433,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num14 = ((GameForm)num10).AddObjec(2, (int)num13, 0, 120, 0, 50, 40, 25);",
           "line": 16378,
-          "offset": 614649,
+          "offset": 614692,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -442,7 +442,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num18 = ((GameForm)num14).AddObjec(2, (int)num17, 0, 120, 0, 50, 40, 25);",
           "line": 16464,
-          "offset": 618787,
+          "offset": 618830,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -451,7 +451,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num20 = ((GameForm)num18).AddObjec(4, 57, 52, 14, 0, 15, 27, 25);",
           "line": 16510,
-          "offset": 621028,
+          "offset": 621071,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -460,7 +460,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num22 = ((GameForm)num20).AddObjec(4, 20, 70, 14, 0, 15, 27, 25);",
           "line": 16554,
-          "offset": 623150,
+          "offset": 623193,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -469,7 +469,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num24 = ((GameForm)num22).AddObjec(4, 98, 81, 0, 0, 14, 27, 25);",
           "line": 16598,
-          "offset": 625272,
+          "offset": 625315,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -478,7 +478,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num26 = ((GameForm)num24).AddObjec(4, 103, (int)typeof(_0021_00210), 44, 0, 9, 15, 25);",
           "line": 16644,
-          "offset": 627514,
+          "offset": 627557,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -487,7 +487,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num27 = ((GameForm)num26).AddObjec(4, 62, 99, 0, 0, 14, 27, 25);",
           "line": 16662,
-          "offset": 628443,
+          "offset": 628486,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -496,7 +496,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num29 = ((GameForm)num27).AddObjec(4, 67, 103, 44, 0, 9, 15, 25);",
           "line": 16708,
-          "offset": 630685,
+          "offset": 630728,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -505,7 +505,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num32 = ((GameForm)num29).AddObjec(2, (int)num31, 0, 120, 0, 50, 40, 25);",
           "line": 16772,
-          "offset": 633796,
+          "offset": 633839,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -514,7 +514,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num36 = ((GameForm)num32).AddObjec(2, (int)num35, 0, 120, 0, 50, 40, 25);",
           "line": 16858,
-          "offset": 637948,
+          "offset": 637991,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -523,7 +523,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num40 = ((GameForm)num36).AddObjec(2, (int)num39, 0, 120, 0, 50, 40, 25);",
           "line": 16944,
-          "offset": 642100,
+          "offset": 642143,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -532,7 +532,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num44 = ((GameForm)num40).AddObjec(2, (int)num43, 0, 120, 0, 50, 40, 25);",
           "line": 17030,
-          "offset": 646252,
+          "offset": 646295,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -541,7 +541,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num46 = ((GameForm)num44).AddObjec(4, 149, 98, 14, 0, 15, 27, 25);",
           "line": 17080,
-          "offset": 648683,
+          "offset": 648726,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -550,7 +550,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num48 = ((GameForm)num46).AddObjec(4, 112, 116, 14, 0, 15, 27, 25);",
           "line": 17124,
-          "offset": 650810,
+          "offset": 650853,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -559,7 +559,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num50 = ((GameForm)num48).AddObjec(4, 190, 127, 0, 0, 14, 27, 25);",
           "line": 17172,
-          "offset": 653129,
+          "offset": 653172,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -568,7 +568,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num52 = ((GameForm)num50).AddObjec(4, 195, 131, 44, 0, 9, 15, 25);",
           "line": 17218,
-          "offset": 655387,
+          "offset": 655430,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -577,7 +577,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num53 = ((GameForm)num52).AddObjec(4, 154, 145, 0, 0, 14, 27, 25);",
           "line": 17240,
-          "offset": 656488,
+          "offset": 656531,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -586,7 +586,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num55 = ((GameForm)num53).AddObjec(4, 159, 149, 44, 0, 9, 15, 25);",
           "line": 17286,
-          "offset": 658746,
+          "offset": 658789,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -595,7 +595,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num56 = ((GameForm)num55).AddObjec(3, 62, 58, 0, 70, 27, 23, 34);",
           "line": 17308,
-          "offset": 659847,
+          "offset": 659890,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -604,7 +604,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num58 = ((GameForm)num56).AddObjec(3, 26, 76, 0, 70, 27, 23, 34);",
           "line": 17340,
-          "offset": 661439,
+          "offset": 661482,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -613,7 +613,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num60 = ((GameForm)num58).AddObjec(3, 80, 61, 0, 42, 28, 28, 38);",
           "line": 17372,
-          "offset": 663032,
+          "offset": 663075,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -622,7 +622,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num62 = ((GameForm)num60).AddObjec(3, 44, 79, 0, 42, 28, 28, 38);",
           "line": 17404,
-          "offset": 664625,
+          "offset": 664668,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -631,7 +631,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num64 = ((GameForm)num62).AddObjec(3, 154, 104, 0, 70, 27, 23, 34);",
           "line": 17440,
-          "offset": 666405,
+          "offset": 666448,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -640,7 +640,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num66 = ((GameForm)num64).AddObjec(3, 118, 122, 0, 70, 27, 23, 34);",
           "line": 17472,
-          "offset": 668000,
+          "offset": 668043,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -649,7 +649,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num68 = ((GameForm)num66).AddObjec(3, 172, 107, 0, 42, 28, 28, 38);",
           "line": 17504,
-          "offset": 669595,
+          "offset": 669638,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -658,7 +658,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tint num70 = ((GameForm)num68).AddObjec(3, 136, 125, 0, 42, 28, 28, 38);",
           "line": 17536,
-          "offset": 671190,
+          "offset": 671233,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -667,7 +667,7 @@
         {
           "excerpt": "\tpublic int AddObjec(int TSyurui, int TX, int TY, int TCX, int TCY, int TWX, int TWY, int TSY)",
           "line": 30043,
-          "offset": 1292549,
+          "offset": 1292561,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -676,7 +676,7 @@
         {
           "excerpt": "\t\tint num14 = gameForm.AddObjec(-1, 0, 0, 0, 0, 0, 0, 0);",
           "line": 30857,
-          "offset": 1323843,
+          "offset": 1323866,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -685,7 +685,7 @@
         {
           "excerpt": "\t\t\t\tint num48 = ((GameForm)num14).AddObjec(1, -999, 0, 0, 64, 16, 32, 30);",
           "line": 31244,
-          "offset": 1340235,
+          "offset": 1340269,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -694,7 +694,7 @@
         {
           "excerpt": "\t\t\t\t\tint num7 = gameForm2.AddObjec(tSyurui, 82, 36, 96, 46, 30, 48, 39);",
           "line": 32369,
-          "offset": 1396559,
+          "offset": 1396585,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -703,7 +703,7 @@
         {
           "excerpt": "\t\t\t\t\tint num10 = ((GameForm)num7).AddObjec(tSyurui2, 112, 36, 126, 46, 18, 48, 24);",
           "line": 32417,
-          "offset": 1398672,
+          "offset": 1398706,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -712,7 +712,7 @@
         {
           "excerpt": "\t\t\t\t\tint num12 = ((GameForm)num10).AddObjec(0, 38, 145, 0, 0, 46, 46, 30);",
           "line": 32436,
-          "offset": 1399568,
+          "offset": 1399603,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -721,7 +721,7 @@
         {
           "excerpt": "\t\t\t\t\tint num17 = gameForm4.AddObjec(tSyurui3, 113, 27, 100, 94, 20, (int)typeof(_0021_00210), 15);",
           "line": 32537,
-          "offset": 1403817,
+          "offset": 1403844,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -730,7 +730,7 @@
         {
           "excerpt": "\t\t\t\t\tint num20 = ((GameForm)num17).AddObjec(tSyurui4, 133, 27, 120, 94, 30, (int)typeof(_0021_00210), 30);",
           "line": 32585,
-          "offset": 1405968,
+          "offset": 1406003,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -739,7 +739,7 @@
         {
           "excerpt": "\t\t\t\tint num24 = gameForm5.AddObjec(tSyurui5, 46, 61, 100, 0, 33, 46, 32);",
           "line": 32671,
-          "offset": 1409479,
+          "offset": 1409505,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -748,7 +748,7 @@
         {
           "excerpt": "\t\t\tint num27 = gameForm3.AddObjec(num, num4, num3, num2, 0, tWX, tWY, tSY);",
           "line": 32729,
-          "offset": 1411787,
+          "offset": 1411812,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -763,7 +763,7 @@
         {
           "excerpt": "          form_GameForm__DrawObj(param_1,param_2);",
           "line": 4766,
-          "offset": 209842,
+          "offset": 209867,
           "source_hash": "19af9b427031643115f78962e487a2afb246ca485e34e70d1d44285a036aeb48",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
@@ -772,7 +772,7 @@
         {
           "excerpt": "// Function: form_GameForm__DrawObj",
           "line": 15847,
-          "offset": 711223,
+          "offset": 711251,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -781,7 +781,7 @@
         {
           "excerpt": "void form_GameForm__DrawObj(long param_1,long param_2)",
           "line": 15851,
-          "offset": 711379,
+          "offset": 711399,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -790,7 +790,7 @@
         {
           "excerpt": "\u2026Syurui\u0000SyainSyurui\u0000DebugVisSyurui\u0000GaichuSyurui\u0000EventSuzi\u0000KirokuSuzi\u0000DrawObj\u0000obj\u0000ModeFormBack\u0000AsyncCallback\u0000callback\u0000ZyanruNaiyoNextCheck\u0000\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 260525,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -799,7 +799,7 @@
         {
           "excerpt": "\tpublic void DrawObj(Graphics g) { }",
           "line": 276732,
-          "offset": 9775882,
+          "offset": 9775895,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -808,7 +808,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\tDrawObj(g);",
           "line": 2575,
-          "offset": 63377,
+          "offset": 63384,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -817,7 +817,7 @@
         {
           "excerpt": "\tpublic unsafe void DrawObj(Graphics g)",
           "line": 201715,
-          "offset": 8193007,
+          "offset": 8193027,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -832,7 +832,7 @@
         {
           "excerpt": "                  kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 10530,
-          "offset": 392508,
+          "offset": 392558,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -841,7 +841,7 @@
         {
           "excerpt": "                  kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 10740,
-          "offset": 404461,
+          "offset": 404511,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -850,7 +850,7 @@
         {
           "excerpt": "          kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 10933,
-          "offset": 415163,
+          "offset": 415205,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -859,7 +859,7 @@
         {
           "excerpt": "          kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 10943,
-          "offset": 415814,
+          "offset": 415856,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -868,7 +868,7 @@
         {
           "excerpt": "          kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 10953,
-          "offset": 416465,
+          "offset": 416507,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -877,7 +877,7 @@
         {
           "excerpt": "            kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 10984,
-          "offset": 418298,
+          "offset": 418342,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -886,7 +886,7 @@
         {
           "excerpt": "    kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 11164,
-          "offset": 427587,
+          "offset": 427623,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -895,7 +895,7 @@
         {
           "excerpt": "    kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 11208,
-          "offset": 429614,
+          "offset": 429650,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -904,7 +904,7 @@
         {
           "excerpt": "    kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 11212,
-          "offset": 429836,
+          "offset": 429872,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -913,7 +913,7 @@
         {
           "excerpt": "      kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 11223,
-          "offset": 430275,
+          "offset": 430313,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -922,7 +922,7 @@
         {
           "excerpt": "              kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 11408,
-          "offset": 439084,
+          "offset": 439130,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -931,7 +931,7 @@
         {
           "excerpt": "    kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 17366,
-          "offset": 704201,
+          "offset": 704237,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -940,7 +940,7 @@
         {
           "excerpt": "    uVar28 = kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 17523,
-          "offset": 712330,
+          "offset": 712375,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -949,7 +949,7 @@
         {
           "excerpt": "    kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 17847,
-          "offset": 727594,
+          "offset": 727630,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -958,7 +958,7 @@
         {
           "excerpt": "    uVar28 = kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 17998,
-          "offset": 735279,
+          "offset": 735324,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -967,7 +967,7 @@
         {
           "excerpt": "          kairo_unity_ui_ResourceManager__DrawSeb(fVar10,fVar11,lVar7,param_1,1,0);",
           "line": 19715,
-          "offset": 801652,
+          "offset": 801694,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -976,7 +976,7 @@
         {
           "excerpt": "          kairo_unity_ui_ResourceManager__DrawSeb(fVar10,fVar11,lVar7,param_1,2,0);",
           "line": 19724,
-          "offset": 802192,
+          "offset": 802234,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -985,7 +985,7 @@
         {
           "excerpt": "        kairo_unity_ui_ResourceManager__DrawSeb((float)param_2,(float)param_3,lVar10,param_1,0,0);",
           "line": 22989,
-          "offset": 922521,
+          "offset": 922561,
           "source_hash": "fad5d92bc15661f90af34682034ebfb8022bb23ba95734e47ce09869396ee960",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/System.c",
@@ -994,7 +994,7 @@
         {
           "excerpt": "      kairo_unity_ui_ResourceManager__DrawSeb(0x43340000,0x42f60000,lVar15,param_2,0,0);",
           "line": 64194,
-          "offset": 2978277,
+          "offset": 2978315,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1003,7 +1003,7 @@
         {
           "excerpt": "    kairo_unity_ui_ResourceManager__DrawSeb(0x43340000,0x42f60000,lVar12,param_2,0,0);",
           "line": 64371,
-          "offset": 2985437,
+          "offset": 2985473,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1012,7 +1012,7 @@
         {
           "excerpt": "              kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 71674,
-          "offset": 3301381,
+          "offset": 3301427,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1021,7 +1021,7 @@
         {
           "excerpt": "        kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 71701,
-          "offset": 3302468,
+          "offset": 3302508,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1030,7 +1030,7 @@
         {
           "excerpt": "      kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 94304,
-          "offset": 4390967,
+          "offset": 4391005,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1039,7 +1039,7 @@
         {
           "excerpt": "            kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 99824,
-          "offset": 4603473,
+          "offset": 4603517,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1048,7 +1048,7 @@
         {
           "excerpt": "      kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 99852,
-          "offset": 4604560,
+          "offset": 4604598,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1057,7 +1057,7 @@
         {
           "excerpt": "          kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 100578,
-          "offset": 4634685,
+          "offset": 4634727,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1066,7 +1066,7 @@
         {
           "excerpt": "          kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 100681,
-          "offset": 4639620,
+          "offset": 4639662,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1075,7 +1075,7 @@
         {
           "excerpt": "                                kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 101079,
-          "offset": 4663059,
+          "offset": 4663123,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1084,7 +1084,7 @@
         {
           "excerpt": "      kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 105075,
-          "offset": 4849813,
+          "offset": 4849851,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1093,7 +1093,7 @@
         {
           "excerpt": "          kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 102775,
-          "offset": 4079917,
+          "offset": 4079959,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1102,7 +1102,7 @@
         {
           "excerpt": "              kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 102970,
-          "offset": 4088676,
+          "offset": 4088722,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1111,7 +1111,7 @@
         {
           "excerpt": "  kairo_unity_ui_ResourceManager__DrawSeb((float)param_3,(float)param_4,lVar9,param_2,0x1a,0);",
           "line": 103265,
-          "offset": 4100276,
+          "offset": 4100310,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1120,7 +1120,7 @@
         {
           "excerpt": "                kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 109277,
-          "offset": 4311871,
+          "offset": 4311919,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1129,7 +1129,7 @@
         {
           "excerpt": "// Function: kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 109313,
-          "offset": 4312918,
+          "offset": 4312963,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1138,7 +1138,7 @@
         {
           "excerpt": "void kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 109317,
-          "offset": 4313091,
+          "offset": 4313128,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1147,7 +1147,7 @@
         {
           "excerpt": "    kairo_unity_ui_ResourceManager__DrawSeb(param_1,param_2,param_4,param_5,param_6,param_7,param_8)",
           "line": 109362,
-          "offset": 4314579,
+          "offset": 4314615,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1156,7 +1156,7 @@
         {
           "excerpt": "// Function: kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 109567,
-          "offset": 4322026,
+          "offset": 4322071,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1165,7 +1165,7 @@
         {
           "excerpt": "void kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 109571,
-          "offset": 4322199,
+          "offset": 4322236,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1174,7 +1174,7 @@
         {
           "excerpt": "// Function: kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 109622,
-          "offset": 4323869,
+          "offset": 4323914,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1183,7 +1183,7 @@
         {
           "excerpt": "void kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 109626,
-          "offset": 4324042,
+          "offset": 4324079,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1192,7 +1192,7 @@
         {
           "excerpt": "      kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 154227,
-          "offset": 6031227,
+          "offset": 6031265,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1201,7 +1201,7 @@
         {
           "excerpt": "          kairo_unity_ui_ResourceManager__DrawSeb",
           "line": 154348,
-          "offset": 6037098,
+          "offset": 6037140,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1210,7 +1210,7 @@
         {
           "excerpt": "// Function: main_AppData__DrawSeb",
           "line": 3284,
-          "offset": 155079,
+          "offset": 155106,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1219,7 +1219,7 @@
         {
           "excerpt": "void main_AppData__DrawSeb(void)",
           "line": 3288,
-          "offset": 155234,
+          "offset": 155253,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1228,7 +1228,7 @@
         {
           "excerpt": "  main_AppData__DrawSeb();",
           "line": 3291,
-          "offset": 155273,
+          "offset": 155289,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1237,7 +1237,7 @@
         {
           "excerpt": "// Function: main_AppData__DrawSeb",
           "line": 3298,
-          "offset": 155416,
+          "offset": 155443,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1246,7 +1246,7 @@
         {
           "excerpt": "int main_AppData__DrawSeb",
           "line": 3302,
-          "offset": 155571,
+          "offset": 155589,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1255,7 +1255,7 @@
         {
           "excerpt": "// Function: main_AppData__DrawSeb",
           "line": 3402,
-          "offset": 158723,
+          "offset": 158750,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1264,7 +1264,7 @@
         {
           "excerpt": "void main_AppData__DrawSeb",
           "line": 3406,
-          "offset": 158878,
+          "offset": 158897,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1273,7 +1273,7 @@
         {
           "excerpt": "// Function: main_AppData__DrawSeb",
           "line": 3520,
-          "offset": 163065,
+          "offset": 163092,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1282,7 +1282,7 @@
         {
           "excerpt": "void main_AppData__DrawSeb",
           "line": 3524,
-          "offset": 163220,
+          "offset": 163239,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1291,7 +1291,7 @@
         {
           "excerpt": "\u2026Keta\u0000va\u0000AddKaiwa\u0000HumanZisya\u0000SyainZisya\u0000db\u0000DrawButtonSeb\u0000GetBRectSeb\u0000DrawSeb\u0000UpdateWeb\u0000CreateWeb\u0000InitWeb\u0000DrawWeb\u0000seb\u0000mscorlib\u0000ChosenBomb\u0000s\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 251765,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -1300,7 +1300,7 @@
         {
           "excerpt": "\tpublic void DrawSeb(Graphics g, float x, float y, int seb) { }",
           "line": 174803,
-          "offset": 6278480,
+          "offset": 6278493,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1309,7 +1309,7 @@
         {
           "excerpt": "\tpublic void DrawSeb(Graphics g, float x, float y, int seb, int frame) { }",
           "line": 174806,
-          "offset": 6278596,
+          "offset": 6278609,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1318,7 +1318,7 @@
         {
           "excerpt": "\tpublic void DrawSeb(Graphics g, float x, float y, int seb, int frame, int layer) { }",
           "line": 174809,
-          "offset": 6278723,
+          "offset": 6278736,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1327,7 +1327,7 @@
         {
           "excerpt": "\tpublic int DrawSeb(Graphics g, int x, int y, Seb seb, Image[] imgs, int frame, int w1000, int h1000) { }",
           "line": 274947,
-          "offset": 9705898,
+          "offset": 9705910,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1336,7 +1336,7 @@
         {
           "excerpt": "\tpublic int DrawSeb(Graphics g, int x, int y, Seb seb, Image[] imgs, int frame, int w1000, int h1000, int maxWidth, int maxHeight) { }",
           "line": 274950,
-          "offset": 9706053,
+          "offset": 9706065,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1345,7 +1345,7 @@
         {
           "excerpt": "\tpublic void DrawSeb(Graphics g, int x, int y, Seb seb, Image[] imgs, int frame, int ucnt) { }",
           "line": 274953,
-          "offset": 9706237,
+          "offset": 9706250,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1354,7 +1354,7 @@
         {
           "excerpt": "\tpublic void DrawSeb(Graphics g, int x, int y, Seb seb, Image img, int frame) { }",
           "line": 274959,
-          "offset": 9706526,
+          "offset": 9706539,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1363,7 +1363,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\tappData.resCom_.DrawSeb(g, 0f, y, 24, 0);",
           "line": 750,
-          "offset": 21821,
+          "offset": 21845,
           "source_hash": "5bafe56fd62ea8072c0572bca2b5423a6b13cdc830227e8e61c82d36e6d07b93",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/RankForm.cs",
@@ -1372,7 +1372,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\tappData4.resCom_.DrawSeb(g, 15f, num34, 27, frame ? 1 : 0);",
           "line": 940,
-          "offset": 27500,
+          "offset": 27528,
           "source_hash": "5bafe56fd62ea8072c0572bca2b5423a6b13cdc830227e8e61c82d36e6d07b93",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/RankForm.cs",
@@ -1381,7 +1381,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\t\tappData12.resCom_.DrawSeb(g, 5f, 120f, 23, 1);",
           "line": 1455,
-          "offset": 45902,
+          "offset": 45934,
           "source_hash": "5bafe56fd62ea8072c0572bca2b5423a6b13cdc830227e8e61c82d36e6d07b93",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/RankForm.cs",
@@ -1390,7 +1390,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tappData.resCom_.DrawSeb(g, num31, num64, 0, num24);",
           "line": 3939,
-          "offset": 139179,
+          "offset": 139208,
           "source_hash": "3ae93fbba3e1634418264a8296cdcfc74981c8a4dcea812100862c379b701500",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/SpForm.cs",
@@ -1399,7 +1399,7 @@
         {
           "excerpt": "\t\t\t\t((ResourceManager)0).DrawSeb(g, 180f, 123f, 0);",
           "line": 1547,
-          "offset": 47275,
+          "offset": 47300,
           "source_hash": "95404dcba8998ed6ff6b1014102e28d78f4e0746f5e70022f3fa4953ec870b63",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/SubForm.cs",
@@ -1408,7 +1408,7 @@
         {
           "excerpt": "\t\t\t\t((ResourceManager)0).DrawSeb(graphics, 180f, 123f, 0);",
           "line": 2165,
-          "offset": 65258,
+          "offset": 65283,
           "source_hash": "95404dcba8998ed6ff6b1014102e28d78f4e0746f5e70022f3fa4953ec870b63",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/SubForm.cs",
@@ -1417,7 +1417,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\tappData40.resCom_.DrawSeb(g, 187f, 183f, 19, frame);",
           "line": 63040,
-          "offset": 2722448,
+          "offset": 2722477,
           "source_hash": "95404dcba8998ed6ff6b1014102e28d78f4e0746f5e70022f3fa4953ec870b63",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/SubForm.cs",
@@ -1426,7 +1426,7 @@
         {
           "excerpt": "\t\tresCom_.DrawSeb(g, 182f, 181f, seb, frame2);",
           "line": 65528,
-          "offset": 2829482,
+          "offset": 2829492,
           "source_hash": "95404dcba8998ed6ff6b1014102e28d78f4e0746f5e70022f3fa4953ec870b63",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/SubForm.cs",
@@ -1435,7 +1435,7 @@
         {
           "excerpt": "\t\tres.DrawSeb(g, buttonX, buttonY, sebIndex, sebFrame);",
           "line": 106294,
-          "offset": 4521387,
+          "offset": 4521393,
           "source_hash": "95404dcba8998ed6ff6b1014102e28d78f4e0746f5e70022f3fa4953ec870b63",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/SubForm.cs",
@@ -1444,7 +1444,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\tappData3.resCom_.DrawSeb(g, 187f, 183f, 19, frame);",
           "line": 111006,
-          "offset": 4687720,
+          "offset": 4687745,
           "source_hash": "95404dcba8998ed6ff6b1014102e28d78f4e0746f5e70022f3fa4953ec870b63",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/SubForm.cs",
@@ -1453,7 +1453,7 @@
         {
           "excerpt": "\t\t\t\t\tresCom_.DrawSeb(g, 182f, 181f, seb, frame2);",
           "line": 111037,
-          "offset": 4688891,
+          "offset": 4688904,
           "source_hash": "95404dcba8998ed6ff6b1014102e28d78f4e0746f5e70022f3fa4953ec870b63",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/SubForm.cs",
@@ -1462,7 +1462,7 @@
         {
           "excerpt": "\tpublic int DrawSeb(Graphics g, int x, int y, Seb seb, Image[] imgs, int frame, int w1000, int h1000)",
           "line": 3780,
-          "offset": 119090,
+          "offset": 119102,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -1471,7 +1471,7 @@
         {
           "excerpt": "\t\treturn DrawSeb(g, x, y, seb, imgs, frame, w1000, h1000, -1, -1);",
           "line": 3784,
-          "offset": 119273,
+          "offset": 119282,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -1480,7 +1480,7 @@
         {
           "excerpt": "\tpublic int DrawSeb(Graphics g, int x, int y, Seb seb, Image[] imgs, int frame, int w1000, int h1000, int maxWidth, int maxHeight)",
           "line": 3787,
-          "offset": 119347,
+          "offset": 119359,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -1489,7 +1489,7 @@
         {
           "excerpt": "\tpublic void DrawSeb(Graphics g, int x, int y, Seb seb, Image[] imgs, int frame, int ucnt)",
           "line": 4096,
-          "offset": 130788,
+          "offset": 130801,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -1498,7 +1498,7 @@
         {
           "excerpt": "\tpublic void DrawSeb(Graphics g, int x, int y, Seb seb, Image img, int frame)",
           "line": 4374,
-          "offset": 141279,
+          "offset": 141292,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -1507,7 +1507,7 @@
         {
           "excerpt": "\t\t\t\t\tresource.DrawSeb(g, num10, num11, 1);",
           "line": 375,
-          "offset": 10368,
+          "offset": 10382,
           "source_hash": "ab692d33abd7f0071142cf4b04e607b52ed234e5e89814673008d0a7a67de856",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/system.form/HttpForm.cs",
@@ -1516,7 +1516,7 @@
         {
           "excerpt": "\t\t\t\t\tresource.DrawSeb(g, num10, num11, 2);",
           "line": 403,
-          "offset": 11485,
+          "offset": 11499,
           "source_hash": "ab692d33abd7f0071142cf4b04e607b52ed234e5e89814673008d0a7a67de856",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/system.form/HttpForm.cs",
@@ -1525,7 +1525,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\tresource.DrawSeb(g, x, y, 0);",
           "line": 1009,
-          "offset": 33354,
+          "offset": 33370,
           "source_hash": "a8096cd556fb5695987398c75a50eed11b26d76af35ad94d9595b68ac4c55eba",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/system.form/LanguageForm.cs",
@@ -1540,7 +1540,7 @@
         {
           "excerpt": "    kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 100618,
-          "offset": 4636205,
+          "offset": 4636241,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1549,7 +1549,7 @@
         {
           "excerpt": "              kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 100913,
-          "offset": 4651632,
+          "offset": 4651678,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1558,7 +1558,7 @@
         {
           "excerpt": "                      kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 100957,
-          "offset": 4654771,
+          "offset": 4654825,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1567,7 +1567,7 @@
         {
           "excerpt": "                      kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 100962,
-          "offset": 4655103,
+          "offset": 4655157,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1576,7 +1576,7 @@
         {
           "excerpt": "                        kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 100966,
-          "offset": 4655416,
+          "offset": 4655472,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1585,7 +1585,7 @@
         {
           "excerpt": "                          kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 101052,
-          "offset": 4661008,
+          "offset": 4661066,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1594,7 +1594,7 @@
         {
           "excerpt": "                            kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 101056,
-          "offset": 4661339,
+          "offset": 4661399,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1603,7 +1603,7 @@
         {
           "excerpt": "                              kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 101071,
-          "offset": 4662440,
+          "offset": 4662502,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1612,7 +1612,7 @@
         {
           "excerpt": "                                          kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 101241,
-          "offset": 4676325,
+          "offset": 4676399,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -1621,7 +1621,7 @@
         {
           "excerpt": "                kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 109437,
-          "offset": 4317111,
+          "offset": 4317159,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1630,7 +1630,7 @@
         {
           "excerpt": "// Function: kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 109459,
-          "offset": 4317802,
+          "offset": 4317847,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1639,7 +1639,7 @@
         {
           "excerpt": "void kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 109465,
-          "offset": 4318043,
+          "offset": 4318080,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1648,7 +1648,7 @@
         {
           "excerpt": "    kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 109556,
-          "offset": 4321689,
+          "offset": 4321725,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1657,7 +1657,7 @@
         {
           "excerpt": "// Function: kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 109708,
-          "offset": 4326538,
+          "offset": 4326583,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1666,7 +1666,7 @@
         {
           "excerpt": "void kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 109714,
-          "offset": 4326779,
+          "offset": 4326816,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1675,7 +1675,7 @@
         {
           "excerpt": "// Function: kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 109867,
-          "offset": 4332517,
+          "offset": 4332562,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1684,7 +1684,7 @@
         {
           "excerpt": "void kairo_unity_ui_ResourceManager__DrawSebAnchor",
           "line": 109873,
-          "offset": 4332758,
+          "offset": 4332795,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -1693,7 +1693,7 @@
         {
           "excerpt": "\tpublic void DrawSebAnchor(Graphics g, float x, float y, int seb, int anchor) { }",
           "line": 174812,
-          "offset": 6278861,
+          "offset": 6278874,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1702,7 +1702,7 @@
         {
           "excerpt": "\tpublic void DrawSebAnchor(Graphics g, float x, float y, int seb, int frame, int anchor) { }",
           "line": 174815,
-          "offset": 6278995,
+          "offset": 6279008,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1711,7 +1711,7 @@
         {
           "excerpt": "\tpublic void DrawSebAnchor(Graphics g, float x, float y, int seb, int frame, int layer, int anchor) { }",
           "line": 174818,
-          "offset": 6279140,
+          "offset": 6279153,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1720,7 +1720,7 @@
         {
           "excerpt": "\t\t\t\tappData2.resCom_.DrawSebAnchor(g, 120f, 120f, 22, 0, 34);",
           "line": 836,
-          "offset": 23946,
+          "offset": 23967,
           "source_hash": "5bafe56fd62ea8072c0572bca2b5423a6b13cdc830227e8e61c82d36e6d07b93",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/RankForm.cs",
@@ -1729,7 +1729,7 @@
         {
           "excerpt": "\t\t\t\t\t\tappData5.resCom_.DrawSebAnchor(g, 120f, 120f, 22, 1, 34);",
           "line": 1295,
-          "offset": 39615,
+          "offset": 39638,
           "source_hash": "5bafe56fd62ea8072c0572bca2b5423a6b13cdc830227e8e61c82d36e6d07b93",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/RankForm.cs",
@@ -1738,7 +1738,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\tappData6.resCom_.DrawSebAnchor(g, 120f, 50f, 25, 0, 2);",
           "line": 1352,
-          "offset": 41825,
+          "offset": 41851,
           "source_hash": "5bafe56fd62ea8072c0572bca2b5423a6b13cdc830227e8e61c82d36e6d07b93",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/RankForm.cs",
@@ -1747,7 +1747,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\tappData7.resCom_.DrawSebAnchor(g, 120f, 50f, 23, 0, 2);",
           "line": 1357,
-          "offset": 42006,
+          "offset": 42032,
           "source_hash": "5bafe56fd62ea8072c0572bca2b5423a6b13cdc830227e8e61c82d36e6d07b93",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/RankForm.cs",
@@ -1756,7 +1756,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\tappData8.resCom_.DrawSebAnchor(g, 50f, 67f, 14, 1, 34);",
           "line": 1361,
-          "offset": 42179,
+          "offset": 42206,
           "source_hash": "5bafe56fd62ea8072c0572bca2b5423a6b13cdc830227e8e61c82d36e6d07b93",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/RankForm.cs",
@@ -1765,7 +1765,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\tappData9.resCom_.DrawSebAnchor(g, 180f, 93f, 14, 0, 34);",
           "line": 1432,
-          "offset": 44853,
+          "offset": 44881,
           "source_hash": "5bafe56fd62ea8072c0572bca2b5423a6b13cdc830227e8e61c82d36e6d07b93",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/RankForm.cs",
@@ -1774,7 +1774,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\tappData10.resCom_.DrawSebAnchor(g, 60f, 93f, 14, 0, 34);",
           "line": 1436,
-          "offset": 45037,
+          "offset": 45067,
           "source_hash": "5bafe56fd62ea8072c0572bca2b5423a6b13cdc830227e8e61c82d36e6d07b93",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/RankForm.cs",
@@ -1783,7 +1783,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\tappData11.resCom_.DrawSebAnchor(g, 120f, 175f, 26, 0, 34);",
           "line": 1448,
-          "offset": 45619,
+          "offset": 45650,
           "source_hash": "5bafe56fd62ea8072c0572bca2b5423a6b13cdc830227e8e61c82d36e6d07b93",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/RankForm.cs",
@@ -1792,7 +1792,7 @@
         {
           "excerpt": "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tappData14.resCom_.DrawSebAnchor(g, 19f, y10, 15, 1, 36);",
           "line": 1609,
-          "offset": 54003,
+          "offset": 54046,
           "source_hash": "5bafe56fd62ea8072c0572bca2b5423a6b13cdc830227e8e61c82d36e6d07b93",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/RankForm.cs",
@@ -1807,7 +1807,7 @@
         {
           "excerpt": "// Function: main_AppData__DrawSebReverse",
           "line": 3574,
-          "offset": 164927,
+          "offset": 164954,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1816,7 +1816,7 @@
         {
           "excerpt": "void main_AppData__DrawSebReverse",
           "line": 3578,
-          "offset": 165089,
+          "offset": 165108,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1825,7 +1825,7 @@
         {
           "excerpt": "\u2026ase\u0000IsCheckKeyPulse\u0000GetResponse\u0000response\u0000System.IDisposable.Dispose\u0000DrawSebReverse\u0000PreUpdate\u0000ScrollUpdate\u0000OnUpdate\u0000_update\u0000OnCreate\u0000Multi\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 258014,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -1834,7 +1834,7 @@
         {
           "excerpt": "\tpublic void DrawSebReverse(Graphics g, int x, int y, Seb seb, int frame, Image[] imgs) { }",
           "line": 274962,
-          "offset": 9706657,
+          "offset": 9706670,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1843,7 +1843,7 @@
         {
           "excerpt": "\tpublic void DrawSebReverse(Graphics g, int x, int y, Seb seb, int frame, Image[] imgs)",
           "line": 4473,
-          "offset": 144810,
+          "offset": 144823,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -1858,7 +1858,7 @@
         {
           "excerpt": "// Function: main_AppData__DrawSebScale",
           "line": 6217,
-          "offset": 264101,
+          "offset": 264128,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1867,7 +1867,7 @@
         {
           "excerpt": "void main_AppData__DrawSebScale",
           "line": 6221,
-          "offset": 264261,
+          "offset": 264280,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1876,7 +1876,7 @@
         {
           "excerpt": "// Function: main_AppData__DrawSebScale",
           "line": 6291,
-          "offset": 266739,
+          "offset": 266766,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1885,7 +1885,7 @@
         {
           "excerpt": "void main_AppData__DrawSebScale",
           "line": 6295,
-          "offset": 266899,
+          "offset": 266918,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1894,7 +1894,7 @@
         {
           "excerpt": "// Function: main_AppData__DrawSebScale",
           "line": 6388,
-          "offset": 270078,
+          "offset": 270105,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1903,7 +1903,7 @@
         {
           "excerpt": "void main_AppData__DrawSebScale",
           "line": 6392,
-          "offset": 270238,
+          "offset": 270257,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1912,7 +1912,7 @@
         {
           "excerpt": "\u2026ange\u0000ShowFreeMovie\u0000ShowMovie\u0000BodyFaceUke\u0000take\u0000EndInvoke\u0000BeginInvoke\u0000DrawSebScale\u0000SetScale\u0000scale\u0000GetBonusItemRateTable\u0000GetBillingTable\u0000get\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 255277,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -1921,7 +1921,7 @@
         {
           "excerpt": "\tpublic void DrawSebScale(Graphics g, int x, int y, Seb seb, int frame, int width, int height) { }",
           "line": 275094,
-          "offset": 9711619,
+          "offset": 9711632,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1930,7 +1930,7 @@
         {
           "excerpt": "\tpublic void DrawSebScale(Graphics g, int x, int y, int width, int height, Seb seb, int frame, int sx, int sy, int swidth, int sheight) { }",
           "line": 275097,
-          "offset": 9711767,
+          "offset": 9711780,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1939,7 +1939,7 @@
         {
           "excerpt": "\tpublic void DrawSebScale(Graphics g, int x, int y, int width, int height, Seb seb, int frame, int line, int sx, int sy, int swidth, int \u2026",
           "line": 275100,
-          "offset": 9711956,
+          "offset": 9711969,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -1948,7 +1948,7 @@
         {
           "excerpt": "\tpublic void DrawSebScale(Graphics g, int x, int y, Seb seb, int frame, int width, int height)",
           "line": 8260,
-          "offset": 269095,
+          "offset": 269108,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -1957,7 +1957,7 @@
         {
           "excerpt": "\tpublic void DrawSebScale(Graphics g, int x, int y, int width, int height, Seb seb, int frame, int sx, int sy, int swidth, int sheight)",
           "line": 8433,
-          "offset": 275375,
+          "offset": 275388,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -1966,7 +1966,7 @@
         {
           "excerpt": "\tpublic void DrawSebScale(Graphics g, int x, int y, int width, int height, Seb seb, int frame, int line, int sx, int sy, int swidth, int \u2026",
           "line": 8708,
-          "offset": 285059,
+          "offset": 285072,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -1981,7 +1981,7 @@
         {
           "excerpt": "// Function: main_AppData__DrawSebV",
           "line": 3461,
-          "offset": 160893,
+          "offset": 160920,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1990,7 +1990,7 @@
         {
           "excerpt": "void main_AppData__DrawSebV",
           "line": 3465,
-          "offset": 161049,
+          "offset": 161068,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -1999,7 +1999,7 @@
         {
           "excerpt": "\u2026MODEFORM_GYORETSU\u0000T_U\u0000STATE_RECV\u0000TROPHY_GAMEDEV\u0000ID_PREV\u0000TPlusLV\u0000T_V\u0000DrawSebV\u0000DrawScrollbarV\u0000SYSSAVEI_REVIEW\u0000TYPE_WEB_VIEW\u0000PROC_TYPE_SET_V\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 243063,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -2008,7 +2008,7 @@
         {
           "excerpt": "\tpublic void DrawSebV(Graphics g, int x, int y, Seb seb, Image[] imgs, int frame, int vcnt) { }",
           "line": 274956,
-          "offset": 9706381,
+          "offset": 9706394,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2017,7 +2017,7 @@
         {
           "excerpt": "\tpublic void DrawSebV(Graphics g, int x, int y, Seb seb, Image[] imgs, int frame, int vcnt)",
           "line": 4235,
-          "offset": 136033,
+          "offset": 136046,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -2032,7 +2032,7 @@
         {
           "excerpt": "  lVar2 = kairo_unity_ui_Seb__GetSpritesLocal(param_3,param_7);",
           "line": 109679,
-          "offset": 4325674,
+          "offset": 4325704,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2041,7 +2041,7 @@
         {
           "excerpt": "      lVar34 = kairo_unity_ui_Seb__GetSpritesLocal(param_1,uVar46 & 0xffffffff);",
           "line": 113327,
-          "offset": 4460741,
+          "offset": 4460776,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2050,7 +2050,7 @@
         {
           "excerpt": "// Function: kairo_unity_ui_Seb__GetSpritesLocal",
           "line": 113655,
-          "offset": 4475790,
+          "offset": 4475823,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2059,7 +2059,7 @@
         {
           "excerpt": "long kairo_unity_ui_Seb__GetSpritesLocal(long param_1,undefined4 param_2)",
           "line": 113659,
-          "offset": 4475959,
+          "offset": 4475984,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2068,7 +2068,7 @@
         {
           "excerpt": "// Function: kairo_unity_ui_Seb__GetSprites",
           "line": 114781,
-          "offset": 4515486,
+          "offset": 4515519,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2077,7 +2077,7 @@
         {
           "excerpt": "long kairo_unity_ui_Seb__GetSprites(long param_1,undefined4 param_2)",
           "line": 114785,
-          "offset": 4515650,
+          "offset": 4515675,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2086,7 +2086,7 @@
         {
           "excerpt": "  lVar2 = kairo_unity_ui_Seb__GetSpritesLocal(param_3,param_7);",
           "line": 117434,
-          "offset": 4614658,
+          "offset": 4614688,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2095,7 +2095,7 @@
         {
           "excerpt": "      lVar8 = kairo_unity_ui_Seb__GetSprites(param_1,uVar6);",
           "line": 119810,
-          "offset": 4698267,
+          "offset": 4698301,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2104,7 +2104,7 @@
         {
           "excerpt": "  lVar4 = kairo_unity_ui_Seb__GetSprites(param_1,param_2 % 10000);",
           "line": 120098,
-          "offset": 4710363,
+          "offset": 4710393,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2113,7 +2113,7 @@
         {
           "excerpt": "        lVar16 = kairo_unity_ui_Seb__GetSprites(*(long *)(lVar14 + 0x18),iVar7,0);",
           "line": 128709,
-          "offset": 5056818,
+          "offset": 5056855,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2122,7 +2122,7 @@
         {
           "excerpt": "        lVar6 = kairo_unity_ui_Seb__GetSprites(*(long *)(lVar6 + 0x18),uVar5,0);",
           "line": 129177,
-          "offset": 5077683,
+          "offset": 5077719,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2131,7 +2131,7 @@
         {
           "excerpt": "    if ((param_5 == 0) || (lVar6 = kairo_unity_ui_Seb__GetSprites(param_5,param_7,0), lVar6 == 0)) {",
           "line": 3342,
-          "offset": 156472,
+          "offset": 156527,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -2140,7 +2140,7 @@
         {
           "excerpt": "    lVar2 = kairo_unity_ui_Seb__GetSprites(param_5,param_7,0);",
           "line": 3418,
-          "offset": 159161,
+          "offset": 159193,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -2149,7 +2149,7 @@
         {
           "excerpt": "    lVar2 = kairo_unity_ui_Seb__GetSprites(param_5,param_7,0);",
           "line": 3477,
-          "offset": 161333,
+          "offset": 161365,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -2158,7 +2158,7 @@
         {
           "excerpt": "    lVar2 = kairo_unity_ui_Seb__GetSprites(param_5,param_7,0);",
           "line": 3535,
-          "offset": 163482,
+          "offset": 163514,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -2167,7 +2167,7 @@
         {
           "excerpt": "    lVar3 = kairo_unity_ui_Seb__GetSprites(param_5,param_6,0);",
           "line": 3590,
-          "offset": 165367,
+          "offset": 165399,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -2176,7 +2176,7 @@
         {
           "excerpt": "    lVar5 = kairo_unity_ui_Seb__GetSprites(param_5,param_6,0);",
           "line": 6238,
-          "offset": 264662,
+          "offset": 264694,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -2185,7 +2185,7 @@
         {
           "excerpt": "    lVar8 = kairo_unity_ui_Seb__GetSprites(param_7,param_8,0);",
           "line": 6316,
-          "offset": 267411,
+          "offset": 267443,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -2194,7 +2194,7 @@
         {
           "excerpt": "    kairo_unity_ui_Seb__GetSprites(param_7,param_8,0);",
           "line": 6405,
-          "offset": 270654,
+          "offset": 270678,
           "source_hash": "a106025507801afa96072aae1a2ada799dbaed65004409a5e069382f8e2350ac",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/main.c",
@@ -2203,7 +2203,7 @@
         {
           "excerpt": "\tpublic int[][] GetSprites(int frameNo) { }",
           "line": 175366,
-          "offset": 6296398,
+          "offset": 6296414,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2212,7 +2212,7 @@
         {
           "excerpt": "\tprivate int[][] GetSpritesLocal(int frameNo) { }",
           "line": 175375,
-          "offset": 6296679,
+          "offset": 6296696,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2221,7 +2221,7 @@
         {
           "excerpt": "\t\t\t\tint[][] sprites = seb.GetSprites(frame);",
           "line": 3905,
-          "offset": 123966,
+          "offset": 123992,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -2230,7 +2230,7 @@
         {
           "excerpt": "\t\tint[][] sprites = seb.GetSprites(frame);",
           "line": 4128,
-          "offset": 132359,
+          "offset": 132383,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -2239,7 +2239,7 @@
         {
           "excerpt": "\t\tint[][] sprites = seb.GetSprites(frame);",
           "line": 4267,
-          "offset": 137605,
+          "offset": 137629,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -2248,7 +2248,7 @@
         {
           "excerpt": "\t\tint[][] sprites = seb2.GetSprites(frameNo);",
           "line": 4395,
-          "offset": 142206,
+          "offset": 142231,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -2257,7 +2257,7 @@
         {
           "excerpt": "\t\tint[][] sprites = seb2.GetSprites(frameNo);",
           "line": 4499,
-          "offset": 145983,
+          "offset": 146008,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -2266,7 +2266,7 @@
         {
           "excerpt": "\t\tint[][] sprites = seb2.GetSprites(frameNo);",
           "line": 8300,
-          "offset": 270911,
+          "offset": 270936,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -2275,7 +2275,7 @@
         {
           "excerpt": "\t\tint[][] sprites = seb2.GetSprites(frame);",
           "line": 8496,
-          "offset": 278297,
+          "offset": 278322,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -2284,7 +2284,7 @@
         {
           "excerpt": "\t\tint[][] sprites = seb.GetSprites(frame);",
           "line": 8763,
-          "offset": 287660,
+          "offset": 287684,
           "source_hash": "308c5740d936f01ef7b8adcce804d9f1882cb951efabfcfd01ad8f553b3cefc6",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/main/AppData.cs",
@@ -2299,7 +2299,7 @@
         {
           "excerpt": "            lVar9 = kairo_unity_ui_ResourceManager__LoadSeb(uVar11);",
           "line": 99955,
-          "offset": 3718079,
+          "offset": 3718131,
           "source_hash": "19af9b427031643115f78962e487a2afb246ca485e34e70d1d44285a036aeb48",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
@@ -2308,7 +2308,7 @@
         {
           "excerpt": "// Function: kairo_unity_ui_ResourceManager__LoadSeb",
           "line": 107271,
-          "offset": 4224521,
+          "offset": 4224566,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2317,7 +2317,7 @@
         {
           "excerpt": "undefined8 kairo_unity_ui_ResourceManager__LoadSeb(undefined8 param_1)",
           "line": 107275,
-          "offset": 4224694,
+          "offset": 4224737,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2326,7 +2326,7 @@
         {
           "excerpt": "// Function: kairo_unity_ui_ResourceManager__LoadSeb",
           "line": 107345,
-          "offset": 4226963,
+          "offset": 4227008,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2335,7 +2335,7 @@
         {
           "excerpt": "undefined8 kairo_unity_ui_ResourceManager__LoadSeb(undefined8 param_1)",
           "line": 107349,
-          "offset": 4227136,
+          "offset": 4227179,
           "source_hash": "9eecb2dfebecb32d6836612bfb94826386cce32d49ce8ae6fead269308a71687",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/kairo.c",
@@ -2344,7 +2344,7 @@
         {
           "excerpt": "\tpublic static Seb LoadSeb(byte[] src) { }",
           "line": 174713,
-          "offset": 6275095,
+          "offset": 6275114,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2353,7 +2353,7 @@
         {
           "excerpt": "\tpublic static Seb LoadSeb(InputStream stream) { }",
           "line": 174716,
-          "offset": 6275190,
+          "offset": 6275209,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2368,7 +2368,7 @@
         {
           "excerpt": "\u2026ORY\u0000RESCOM_SEB_RANK_GLORY\u0000FRISAVEB_FRIEND_HISTORY\u0000TSY\u0000VALUE_STATUSY\u0000ObjecSY\u0000VALUE_QUALITY\u0000SYSSAVEI_QUALITY\u0000VALUE_QUARITY\u0000TWY\u0000ObjecWY\u0000VALU\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 244449,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -2377,7 +2377,7 @@
         {
           "excerpt": "\tinternal static int[] ObjecSY; // 0x2D8",
           "line": 275656,
-          "offset": 9730919,
+          "offset": 9730942,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2386,7 +2386,7 @@
         {
           "excerpt": "\tinternal static int[] ObjecSY;",
           "line": 747,
-          "offset": 18625,
+          "offset": 18648,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -2401,7 +2401,7 @@
         {
           "excerpt": "\u2026Run\u0000NetPageZibun\u0000NetPageBackZibun\u0000NetPageOnZibun\u0000DrawKairokun\u0000Drawn\u0000ObjecUpDown\u0000ScratchpadKeyDown\u0000OnTouchKeyDown\u0000OnKeyDown\u0000ItemRaikyakuRn\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 263787,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -2410,7 +2410,7 @@
         {
           "excerpt": "\tinternal static int[] ObjecUpDown; // 0x2F0",
           "line": 275659,
-          "offset": 9731052,
+          "offset": 9731075,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2419,7 +2419,7 @@
         {
           "excerpt": "\tinternal static int[] ObjecUpDown;",
           "line": 753,
-          "offset": 18740,
+          "offset": 18763,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -2434,7 +2434,7 @@
         {
           "excerpt": "\u2026exPX\u0000VALUE_STATUSX\u0000TX\u0000TWX\u0000ObjecWX\u0000FukiWX\u0000ObjecZX\u0000T_X\u0000VIEW_X\u0000CameraX\u0000ObjecX\u0000plusFaceX\u0000FormPageX\u0000HumanAverageX\u0000bgX\u0000CameraZenkaiX\u0000DebugKumiX\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 243663,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -2443,7 +2443,7 @@
         {
           "excerpt": "\tinternal static int[] ObjecX; // 0x298",
           "line": 275648,
-          "offset": 9730593,
+          "offset": 9730616,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2452,7 +2452,7 @@
         {
           "excerpt": "\tinternal static int[] ObjecX;",
           "line": 731,
-          "offset": 18347,
+          "offset": 18370,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -2467,7 +2467,7 @@
         {
           "excerpt": "\u2026RITY\u0000TWY\u0000ObjecWY\u0000VALUE_STATUSXY\u0000ObjecZY\u0000T_Y\u0000VIEW_Y\u0000CameraY\u0000MenuSubY\u0000ObjecY\u0000FormPageY\u0000HumanAverageY\u0000bgY\u0000CameraZenkaiY\u0000DebugKumiY\u0000FormBackY\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 244565,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -2476,7 +2476,7 @@
         {
           "excerpt": "\tinternal static int[] ObjecY; // 0x2A0",
           "line": 275649,
-          "offset": 9730633,
+          "offset": 9730656,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2485,7 +2485,7 @@
         {
           "excerpt": "\tinternal static int[] ObjecY;",
           "line": 733,
-          "offset": 18381,
+          "offset": 18404,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -2500,7 +2500,7 @@
         {
           "excerpt": "\u2026VALUE_YESNOX\u0000HumanPX\u0000HumanDexPX\u0000VALUE_STATUSX\u0000TX\u0000TWX\u0000ObjecWX\u0000FukiWX\u0000ObjecZX\u0000T_X\u0000VIEW_X\u0000CameraX\u0000ObjecX\u0000plusFaceX\u0000FormPageX\u0000HumanAverageX\u0000b\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 243636,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -2509,7 +2509,7 @@
         {
           "excerpt": "\tinternal static int[] ObjecZX; // 0x2C8",
           "line": 275654,
-          "offset": 9730837,
+          "offset": 9730860,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2518,7 +2518,7 @@
         {
           "excerpt": "\tinternal static int[] ObjecZX;",
           "line": 743,
-          "offset": 18555,
+          "offset": 18578,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -2533,7 +2533,7 @@
         {
           "excerpt": "\u2026E_QUALITY\u0000SYSSAVEI_QUALITY\u0000VALUE_QUARITY\u0000TWY\u0000ObjecWY\u0000VALUE_STATUSXY\u0000ObjecZY\u0000T_Y\u0000VIEW_Y\u0000CameraY\u0000MenuSubY\u0000ObjecY\u0000FormPageY\u0000HumanAverageY\u0000bg\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 244529,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -2542,7 +2542,7 @@
         {
           "excerpt": "\tinternal static int[] ObjecZY; // 0x2D0",
           "line": 275655,
-          "offset": 9730878,
+          "offset": 9730901,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2551,7 +2551,7 @@
         {
           "excerpt": "\tinternal static int[] ObjecZY;",
           "line": 745,
-          "offset": 18590,
+          "offset": 18613,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -2566,7 +2566,7 @@
         {
           "excerpt": "// Function: Method_form_GameForm_RenderGameScreen",
           "line": 4669,
-          "offset": 205912,
+          "offset": 205946,
           "source_hash": "19af9b427031643115f78962e487a2afb246ca485e34e70d1d44285a036aeb48",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
@@ -2575,7 +2575,7 @@
         {
           "excerpt": "undefined8 Method_form_GameForm_RenderGameScreen(long param_1,long param_2,long param_3)",
           "line": 4673,
-          "offset": 206083,
+          "offset": 206115,
           "source_hash": "19af9b427031643115f78962e487a2afb246ca485e34e70d1d44285a036aeb48",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/Method.c",
@@ -2584,7 +2584,7 @@
         {
           "excerpt": "    FUN_00db0bbc(PTR_Method_form_GameForm_RenderGameScreen_01fc0d30);",
           "line": 15579,
-          "offset": 701814,
+          "offset": 701856,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -2593,7 +2593,7 @@
         {
           "excerpt": "    puVar3 = PTR_Method_form_GameForm_RenderGameScreen_01fc0d30;",
           "line": 15594,
-          "offset": 702705,
+          "offset": 702743,
           "source_hash": "71f024502b154e7140882a787259a64c2e614dbcc806ffdfcc7ac78c5b999126",
           "source_kind": "c",
           "source_path": "game-dev-story-mod_Dumped/Categorized_Code/Global/form.c",
@@ -2602,7 +2602,7 @@
         {
           "excerpt": "\u2026\u0000HumanWidthNearDistan\u0000GetNumLen\u0000GameCrossTen\u0000AddSenden\u0000captchaSheen\u0000RenderGameScreen\u0000ResetOffscreen\u0000InitOffscreen\u0000offscreen\u0000AddAnken\u0000Zyuc\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 262719,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -2611,7 +2611,7 @@
         {
           "excerpt": "\tpublic bool RenderGameScreen(Graphics g, Offscreen offscreen) { }",
           "line": 276312,
-          "offset": 9759760,
+          "offset": 9759773,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2620,7 +2620,7 @@
         {
           "excerpt": "\tpublic bool RenderGameScreen(Graphics g, Offscreen offscreen)",
           "line": 2442,
-          "offset": 58773,
+          "offset": 58786,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -2635,7 +2635,7 @@
         {
           "excerpt": "\tpublic const int SP_BLEND = 10;",
           "line": 175207,
-          "offset": 6291253,
+          "offset": 6291271,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2650,7 +2650,7 @@
         {
           "excerpt": "\tpublic const int SP_COLOR = 11;",
           "line": 175208,
-          "offset": 6291286,
+          "offset": 6291304,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2665,7 +2665,7 @@
         {
           "excerpt": "\tpublic const int SP_END = 12;",
           "line": 175209,
-          "offset": 6291319,
+          "offset": 6291337,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2680,7 +2680,7 @@
         {
           "excerpt": "\tpublic const int SP_FRAME_NO = 0;",
           "line": 175197,
-          "offset": 6290935,
+          "offset": 6290953,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2695,7 +2695,7 @@
         {
           "excerpt": "\tprivate const int BSP_HEIGHT = 32;",
           "line": 173233,
-          "offset": 6228664,
+          "offset": 6228684,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2704,7 +2704,7 @@
         {
           "excerpt": "\tpublic const int SP_H = 5;",
           "line": 175202,
-          "offset": 6291087,
+          "offset": 6291105,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2719,7 +2719,7 @@
         {
           "excerpt": "\tpublic const int SP_REVERS_U = 8;",
           "line": 175205,
-          "offset": 6291183,
+          "offset": 6291201,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2734,7 +2734,7 @@
         {
           "excerpt": "\tpublic const int SP_REVERS_V = 9;",
           "line": 175206,
-          "offset": 6291218,
+          "offset": 6291236,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2749,7 +2749,7 @@
         {
           "excerpt": "\tpublic const int SP_TEX_ID = 1;",
           "line": 175198,
-          "offset": 6290970,
+          "offset": 6290988,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2764,7 +2764,7 @@
         {
           "excerpt": "\tpublic const int SP_TRANS_X = 6;",
           "line": 175203,
-          "offset": 6291115,
+          "offset": 6291133,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2779,7 +2779,7 @@
         {
           "excerpt": "\tpublic const int SP_TRANS_Y = 7;",
           "line": 175204,
-          "offset": 6291149,
+          "offset": 6291167,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2794,7 +2794,7 @@
         {
           "excerpt": "\tpublic const int SP_U = 2;",
           "line": 175199,
-          "offset": 6291003,
+          "offset": 6291021,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2809,7 +2809,7 @@
         {
           "excerpt": "\tpublic const int SP_V = 3;",
           "line": 175200,
-          "offset": 6291031,
+          "offset": 6291049,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2824,7 +2824,7 @@
         {
           "excerpt": "\tprivate const int BSP_WIDTH = 32;",
           "line": 173232,
-          "offset": 6228629,
+          "offset": 6228649,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2833,7 +2833,7 @@
         {
           "excerpt": "\tpublic const int SP_W = 4;",
           "line": 175201,
-          "offset": 6291059,
+          "offset": 6291077,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2848,7 +2848,7 @@
         {
           "excerpt": "\u2026eS_\u0000defFriSaveS_\u0000defInstallSaveS_\u0000defSysSaveS_\u0000VALUE_YESNOX_\u0000qCamX_\u0000camX_\u0000buildDownX_\u0000YesNoX_\u0000titleY_\u0000saveScrollY_\u0000scrollY_\u0000qCamY_\u0000camY_\u0000\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 245377,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -2857,7 +2857,7 @@
         {
           "excerpt": "\tprivate int camX_; // 0xEC",
           "line": 275468,
-          "offset": 9723092,
+          "offset": 9723105,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2866,7 +2866,7 @@
         {
           "excerpt": "\tprivate int camX_;",
           "line": 371,
-          "offset": 11811,
+          "offset": 11824,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",
@@ -2881,7 +2881,7 @@
         {
           "excerpt": "\u2026amX_\u0000camX_\u0000buildDownX_\u0000YesNoX_\u0000titleY_\u0000saveScrollY_\u0000scrollY_\u0000qCamY_\u0000camY_\u0000sunY_\u0000buildDownY_\u0000value__\u0000isJa_\u0000rewardBanana_\u0000lastTopFormChara_\u2026",
           "line": 6740,
-          "offset": 217505,
+          "offset": 245440,
           "source_hash": "b56428f18c4eacc4767efd93aa31cb9423451e2b9dc9054acbde0b7f9dabfe79",
           "source_kind": "binary",
           "source_path": "game-dev-story-mod_Dumped/DummyDll/Assembly-CSharp.dll",
@@ -2890,7 +2890,7 @@
         {
           "excerpt": "\tprivate int camY_; // 0xF0",
           "line": 275469,
-          "offset": 9723120,
+          "offset": 9723133,
           "source_hash": "bcdd145720a0124c641c6b80d959cca0ad2810e04147400f9003e96310c40074",
           "source_kind": "csharp",
           "source_path": "game-dev-story-mod_Dumped/dump.cs",
@@ -2899,7 +2899,7 @@
         {
           "excerpt": "\tprivate int camY_;",
           "line": 373,
-          "offset": 11834,
+          "offset": 11847,
           "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
           "source_kind": "csharp",
           "source_path": "knowledge/csharp/primary/form/GameForm.cs",

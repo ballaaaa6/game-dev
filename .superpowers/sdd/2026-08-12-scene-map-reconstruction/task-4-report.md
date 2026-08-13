@@ -59,3 +59,11 @@ I checked the generated JSON and the status split is consistent:
 - unknown: `blend`, `color`, `end`
 
 The main limitation is scope, not implementation: the contract is still intentionally bounded to literal text evidence and does not claim a universal world/camera transform.
+
+## Fix round 1
+
+The first implementation stored the containing line start as the offset for every hit. This has been corrected so each `SourceRef.offset` is now the exact byte offset of the match within the file, calculated as:
+
+`line_start_offset + len(prefix_before_match.encode("utf-8", errors="replace"))`
+
+I added a regression test with two `GetSprites` hits on one line containing a UTF-8 character between them, which proves the offsets are distinct and byte-accurate rather than line-anchored.

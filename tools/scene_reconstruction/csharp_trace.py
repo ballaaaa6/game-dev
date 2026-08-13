@@ -138,6 +138,10 @@ def _bounded_excerpt(line: str, match_start: int, match_end: int) -> str:
     return snippet
 
 
+def _match_byte_offset(line: str, match_start: int, *, encoding: str = "utf-8") -> int:
+    return len(line[:match_start].encode(encoding, errors="replace"))
+
+
 def _source_kind(path: Path) -> str:
     suffix = path.suffix.lower()
     if suffix == ".cs":
@@ -151,6 +155,14 @@ def _source_kind(path: Path) -> str:
     if suffix == ".dll":
         return "binary"
     return suffix.lstrip(".") or "text"
+
+
+def _source_path_string(path: Path, root: Path) -> str:
+    resolved = path.resolve()
+    try:
+        return resolved.relative_to(root).as_posix()
+    except ValueError:
+        return resolved.as_posix()
 
 
 def _load_trace_files(roots: Sequence[Path | str], workspace: Path | str | None = None) -> tuple[_FileTraceData, ...]:
@@ -174,7 +186,7 @@ def _load_trace_files(roots: Sequence[Path | str], workspace: Path | str | None 
             for line in text.splitlines(keepends=True):
                 line_offsets.append(line_offset)
                 line_offset += len(line.encode("utf-8", errors="replace"))
-            rel_path = candidate.resolve().relative_to(root).as_posix() if candidate.is_absolute() else candidate.as_posix()
+            rel_path = _source_path_string(candidate, root)
             files.append(
                 _FileTraceData(
                     path=candidate,
@@ -209,7 +221,7 @@ def _trace_many_symbols(
                 continue
             for match in aggregate.finditer(line):
                 symbol = group_to_symbol[match.lastgroup or ""]
-                offset = file_entry.line_offsets[line_number - 1]
+                offset = file_entry.line_offsets[line_number - 1] + _match_byte_offset(line, match.start())
                 dedupe_key = (symbol, file_entry.rel_path, line_number, offset, match.start())
                 if dedupe_key in seen:
                     continue

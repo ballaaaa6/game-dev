@@ -1,5 +1,6 @@
 import unittest
 from pathlib import Path
+import tempfile
 
 from tools.scene_reconstruction.csharp_trace import build_seb_semantics_contract, trace_symbol
 
@@ -34,6 +35,17 @@ class CSharpTraceTests(unittest.TestCase):
             self.assertLessEqual(len(ref.excerpt), 140)
             self.assertTrue(ref.source_path)
             self.assertIsNotNone(ref.source_hash)
+
+    def test_trace_uses_exact_byte_offsets_for_multiple_hits_on_one_line(self):
+        root = Path(tempfile.mkdtemp())
+        path = root / "fixture.cs"
+        path.write_text("GetSprites α GetSprites\n", encoding="utf-8")
+
+        result = trace_symbol("GetSprites", [root])
+
+        self.assertEqual(result.status, "verified")
+        self.assertEqual([ref.offset for ref in result.source_refs], [0, len("GetSprites α ".encode("utf-8"))])
+        self.assertNotEqual(result.source_refs[0].offset, result.source_refs[1].offset)
 
     def test_semantics_contract_keeps_field_categories_separate(self):
         contract = build_seb_semantics_contract(TRACE_ROOTS)
