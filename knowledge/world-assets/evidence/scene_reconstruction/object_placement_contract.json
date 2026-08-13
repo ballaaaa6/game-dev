@@ -154,6 +154,13 @@
   "evidence": [
     {
       "file": "knowledge/csharp/primary/form/GameForm.cs",
+      "line": 771,
+      "needle": "internal static int[] OfficeObjecList;",
+      "source_hash": "804a44e39f559d5235a7bb21e28b9aafc7c184053aaf451e836ac106cb59b01f",
+      "status": "verified"
+    },
+    {
+      "file": "knowledge/csharp/primary/form/GameForm.cs",
       "function": "AddObjec",
       "line": 30043,
       "needle": "public int AddObjec(int TSyurui, int TX, int TY, int TCX, int TCY, int TWX, int TWY, int TSY)",
@@ -817,8 +824,8 @@
   "status": "unknown",
   "summary": {
     "candidate_lineage_count": 3,
+    "classification": "asset_identity_verified_placement_unknown",
     "fixture_object_count": 3,
-    "status": "asset_identity_verified_placement_unknown",
     "unknown_floor_snapshot": true,
     "verified_asset_count": 3,
     "verified_lineage_count": 1

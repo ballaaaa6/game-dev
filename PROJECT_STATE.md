@@ -9,6 +9,7 @@
 - Task 1 structural C# inventory, Task 2 deep semantic slices, Task 3 canonical schema, Task 4 SimulationCore, Task 5 OfficeRuntime adapter migration, Task 6 dashboard canonical projection/provenance, Task 7 continuous scheduler และ Task 8 final verification/report เสร็จแล้วและตรวจผ่าน
 - Task 4 scene-map reconstruction semantics contract เสร็จแล้ว: เพิ่ม deterministic C#/C/assembly text-trace helper, SEB consumer-boundary evidence contract และ report ที่ระบุ crop/translation/selector/object-base/camera/depth แยกจากกัน
 - Task 5 object-placement contract เสร็จแล้ว: current page/reception-desk-chair fixture stays adapter-only, asset identity is verified, and original room/object placement remains unknown because no persisted/generated floor0 room-state record was found
+- Task 5 fix round 1: added OfficeObjecList as the opening provenance anchor and renamed the summary classification so no contract field named `status` carries a non-approved value
 - implementation ทำแบบ inline execution บนสาย `main`; exported OfficeRuntime ใช้ SimulationCore เป็น state owner และมี compatibility projections
 - dashboard อ่าน canonical snapshot จาก SimulationCore และ source-free semantic evidence projection ที่โหลดจาก `runtime/office/evidence/`; ไม่มีการ import raw C# ใน browser
 - dashboard เริ่ม scheduler ภายในเองที่ interval `160ms`; ไม่มี Play/Pause/Step/Reset หรือ speed control สำหรับ simulation

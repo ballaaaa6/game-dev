@@ -580,6 +580,7 @@ def build_object_placement_contract() -> ObjectPlacementContract:
     )
 
     evidence = (
+        _source_ref(GAMEFORM_CS, "internal static int[] OfficeObjecList;", function=None),
         _source_ref(GAMEFORM_CS, "public int AddObjec(int TSyurui, int TX, int TY, int TCX, int TCY, int TWX, int TWY, int TSY)", function="AddObjec"),
         _source_ref(GAMEFORM_CS, "public unsafe void CallHikkosi(int TOffice, int TMode, bool isLoad = false)", function="CallHikkosi"),
         _source_ref(GAMEFORM_CS, "public void CallPCChange(int TOffice, int TPC)", function="CallPCChange"),
@@ -617,7 +618,7 @@ def build_object_placement_contract() -> ObjectPlacementContract:
         "verified_lineage_count": sum(1 for record in candidate_records if record["status"] == "verified"),
         "candidate_lineage_count": sum(1 for record in candidate_records if record["status"] == "candidate"),
         "unknown_floor_snapshot": floor0_snapshot["status"] == "unknown",
-        "status": "asset_identity_verified_placement_unknown",
+        "classification": "asset_identity_verified_placement_unknown",
     }
 
     return ObjectPlacementContract(

@@ -51,3 +51,12 @@ No persisted or generated `floor0` room-state record was found, so the contract 
 The main guardrail held: verified asset identity was not promoted into verified original placement.
 
 The only open limitation is evidentiary, not implementation-related. The workspace still lacks a persisted or generated floor snapshot that ties these three fixtures back to an original room-state record, so placement remains unknown by design.
+
+## Fix round 1
+
+Review feedback closed in this round:
+
+- added `OfficeObjecList` as the opening provenance anchor in the evidence walk, with source ref and line-level proof from `GameForm.cs`;
+- renamed the summary label to `classification` so no field named `status` now carries a non-approved value;
+- added a recursive test that checks every `status` field in the contract tree stays within `verified`, `candidate`, or `unknown`;
+- added a regression assertion that the generated evidence explicitly includes `OfficeObjecList`.
