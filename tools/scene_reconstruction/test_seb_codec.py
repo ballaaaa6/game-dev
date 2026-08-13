@@ -59,6 +59,22 @@ class SebCodecTests(unittest.TestCase):
         self.assertEqual(parsed.groups[0].parsed_complete_count, 0)
         self.assertEqual(parsed.status, "candidate")
 
+    def test_trailing_bytes_are_candidate_not_complete(self):
+        trailing = self.complete_fixture + b"\xaa\xbb"
+
+        parsed = parse_seb_bytes(trailing, "fixture/floor0.seb")
+        comparison = compare_seb_sources(
+            [
+                SebCandidate("sprite", "sprites/floor0.seb", self.truncated_fixture),
+                SebCandidate("apk", "apk::assets/floor0.seb", trailing),
+            ]
+        )
+
+        self.assertEqual(parsed.status, "candidate")
+        self.assertEqual(parsed.partial_tail, b"\xaa\xbb")
+        self.assertEqual(comparison.outcome, "no_full_payload_found")
+        self.assertIsNone(comparison.best_complete)
+
     def test_compact_selector_is_explicitly_not_format0(self):
         parsed = parse_seb_bytes(b"\x80\x00\x01\x00\x00", "fixture/compact.seb")
 
@@ -70,7 +86,7 @@ class SebCodecTests(unittest.TestCase):
         candidates = [
             SebCandidate("sprite", "sprites/floor0.seb", self.truncated_fixture),
             SebCandidate("archive", "apk::assets/floor0.seb", self.truncated_fixture),
-            SebCandidate("extracted", "extracted/floor0.seb", self.complete_fixture),
+            SebCandidate("apk", "apk::assets/floor0.seb", self.complete_fixture),
             SebCandidate("zip", "zip::assets/floor0.seb", None),
             SebCandidate("evidence", "phase1/floor0.seb", None, read_error="bad evidence"),
         ]
@@ -82,7 +98,18 @@ class SebCodecTests(unittest.TestCase):
             ["byte-identical", "byte-identical", "distinct", "absent", "unreadable"],
         )
         self.assertEqual(comparison.outcome, "recovered_full_payload")
-        self.assertEqual(comparison.best_complete.source_ref, "extracted/floor0.seb")
+        self.assertEqual(comparison.best_complete.source_ref, "apk::assets/floor0.seb")
+
+    def test_current_complete_sprite_does_not_recover_from_truncated_archive(self):
+        comparison = compare_seb_sources(
+            [
+                SebCandidate("sprite", "sprites/floor0.seb", self.complete_fixture),
+                SebCandidate("apk", "apk::assets/floor0.seb", self.truncated_fixture),
+            ]
+        )
+
+        self.assertEqual(comparison.outcome, "not_needed")
+        self.assertIsNone(comparison.best_complete)
 
     def test_audit_stages_only_a_longer_archive_payload(self):
         root = Path(tempfile.mkdtemp())
@@ -119,6 +146,40 @@ class SebCodecTests(unittest.TestCase):
         staged = root / record.staged_payload["path"]
         self.assertEqual(staged.read_bytes(), self.complete_fixture)
         self.assertIn(hashlib.sha256(self.complete_fixture).hexdigest(), staged.as_posix())
+
+    def test_audit_does_not_stage_incomplete_or_trailing_archive_payload(self):
+        for label, archive_payload in (
+            ("incomplete", self.truncated_fixture),
+            ("trailing", self.complete_fixture + b"\xaa\xbb"),
+        ):
+            with self.subTest(label=label):
+                root = Path(tempfile.mkdtemp())
+                (root / "APK_Toolkit").mkdir()
+                (root / "game-dev-story-mod_Sprites" / "office").mkdir(parents=True)
+                evidence = root / "knowledge" / "world-assets" / "evidence" / "scene_reconstruction"
+                evidence.mkdir(parents=True)
+                (root / "game-dev-story-mod_Sprites" / "office" / "floor0.seb").write_bytes(self.truncated_fixture)
+                with ZipFile(root / "APK_Toolkit" / "game-dev-story-mod.apk", "w") as archive:
+                    archive.writestr("assets/office/floor0.seb", archive_payload)
+                (root / "APK_Toolkit" / "game-dev-story-mod.zip").write_bytes(
+                    (root / "APK_Toolkit" / "game-dev-story-mod.apk").read_bytes()
+                )
+                inventory_path = evidence / "source_inventory.json"
+                inventory_path.write_text(
+                    json.dumps(
+                        {
+                            "schema": "scene-source-inventory-v1",
+                            "relations": {"floor0": {"all_seb": ["game-dev-story-mod_Sprites/office/floor0.seb"]}},
+                        }
+                    ),
+                    encoding="utf-8",
+                )
+
+                audit = build_seb_audit(root, inventory_path=inventory_path)
+
+                self.assertEqual(audit.floors[0].outcome, "no_full_payload_found")
+                self.assertIsNone(audit.floors[0].staged_payload)
+                self.assertFalse((evidence / "reextract").exists())
 
 
 if __name__ == "__main__":

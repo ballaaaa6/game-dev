@@ -130,7 +130,7 @@ def _staged_payload(root: Path, comparison: SebComparison) -> dict | None:
     best = comparison.best_complete
     if comparison.outcome not in {"recovered_full_payload", "recovered_different_payload"} or best is None:
         return None
-    if best.source_kind not in {"apk", "zip", "fresh"} or best.parsed is None:
+    if best.source_kind not in {"apk", "zip", "fresh"} or best.parsed is None or best.parsed.status != "verified":
         return None
     source_data = next(
         item.parsed for item in comparison.candidates if item.source_ref == best.source_ref and item.parsed is not None

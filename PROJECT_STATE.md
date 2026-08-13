@@ -18,7 +18,7 @@
 
 ## สิ่งที่ตรวจสอบแล้ว
 
-- Task 2 SEB codec/audit tests ผ่าน `6/6`; suite ของ Task 1+2 ผ่าน `11/11`; build audit และ `py_compile` ผ่าน; source/extraction file hashes `1,881` รายการตรงกับ Task 1 inventory
+- Task 2 fix round 1 closes trailing-byte/recovery/staging gates: codec/audit tests ผ่าน `9/9`; suite ของ Task 1+2 ผ่าน `14/14`; build audit และ `py_compile` ผ่าน; source/extraction file hashes `1,881` รายการตรงกับ Task 1 inventory
 - C# primary corpus มี 85 `.cs` files และ `Assembly-CSharp.csproj`; source hash ตรงกับ relocation manifest ก่อนย้าย
 - C# coverage/semantic checker compile ผ่าน และอ้างอิง path ภายใน workspace ใหม่
 - structural inventory contract ผ่าน `3/3`; build/check ผ่านด้วย `types=14`, `fields=926`, `methods=257`

@@ -261,10 +261,14 @@ def parse_seb_bytes(data: bytes, source_ref: str) -> SebFile:
         status = "unknown"
     elif tail_shortfall:
         status = "candidate"
+    elif len(data) > expected_bytes:
+        # Format-0 consumes no bytes beyond the declared group records.  Keep
+        # an observed suffix, but do not promote this non-exact payload to a
+        # complete recovery candidate.
+        status = "candidate"
+        partial_tail = data[expected_bytes:]
     else:
         status = "verified"
-        if len(data) > expected_bytes:
-            partial_tail = data[expected_bytes:]
     return SebFile(
         source_ref=source_ref,
         size_bytes=len(data),
@@ -375,19 +379,24 @@ def compare_seb_sources(candidates: Iterable[SebCandidate]) -> SebComparison:
             )
         )
 
-    complete = [item for item in results if item.parsed and item.parsed.status == "verified"]
     current = next((item for item in results if item.source_kind == "sprite" and item.parsed), None)
-    best_complete = next((item for item in complete if item.classification == "distinct"), complete[0] if complete else None)
-    if not complete:
-        outcome = "no_full_payload_found"
-    elif current and current.parsed and current.parsed.status == "verified" and all(
-        item.classification != "distinct" for item in results
-    ):
-        outcome = "not_needed"
-    elif current and current.parsed and current.parsed.status != "verified" and best_complete:
+    recovery_complete = [
+        item
+        for item in results
+        if item.source_kind in {"apk", "zip", "archive", "fresh"}
+        and item.classification == "distinct"
+        and item.parsed
+        and item.parsed.status == "verified"
+    ]
+    best_complete = recovery_complete[0] if recovery_complete else None
+    if best_complete and current and current.parsed and current.parsed.status != "verified":
         current_bytes = next(candidate.data for candidate in candidate_list if candidate.source_ref == current.source_ref)
         complete_bytes = next(candidate.data for candidate in candidate_list if candidate.source_ref == best_complete.source_ref)
         outcome = "recovered_full_payload" if complete_bytes.startswith(current_bytes) else "recovered_different_payload"
-    else:
+    elif best_complete:
         outcome = "recovered_different_payload"
+    elif current and current.parsed and current.parsed.status == "verified":
+        outcome = "not_needed"
+    else:
+        outcome = "no_full_payload_found"
     return SebComparison(tuple(results), outcome, best_complete)

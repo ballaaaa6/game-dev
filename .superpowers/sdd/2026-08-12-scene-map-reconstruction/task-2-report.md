@@ -73,3 +73,46 @@ OK: 1881 source/extraction file hashes match source_inventory.json
 ## Concern
 
 The direct archive/extraction audit establishes that the four-byte shortfall is not repaired by any named `floor*.seb` payload present in the APK, ZIP, or extraction root. The original source payload may be embedded inside a Unity bundle under a hashed `assets/bin/Data` member; resolving that nested provenance requires a separately evidenced bundle/TextAsset extraction path. Until then, the source limitation remains `candidate`, not `verified`.
+
+## Fix round 1 — recovery gate hardening
+
+### Changed files
+
+- `tools/scene_reconstruction/seb_codec.py`
+- `tools/scene_reconstruction/build_seb_audit.py`
+- `tools/scene_reconstruction/test_seb_codec.py`
+- `knowledge/world-assets/evidence/scene_reconstruction/seb_audit.json` (rebuilt; content result remains unchanged)
+
+### Fixes
+
+1. A format-0 payload with bytes beyond its declared record structure is now `candidate`, preserving the suffix in `partial_tail`, instead of `verified`. It cannot qualify as a complete candidate.
+2. Recovery selection now accepts only a `distinct`, `verified` payload from an archive or fresh source. A complete current sprite plus a distinct truncated archive payload produces `not_needed` and has no `best_complete` recovery candidate.
+3. The staging guard now independently requires `best.parsed.status == "verified"`, in addition to the recovery outcome and archive/fresh source type.
+
+### Added behavior coverage
+
+- trailing format-0 bytes produce `candidate` and `no_full_payload_found`;
+- a complete sprite plus a truncated archive payload does not report recovery;
+- incomplete and trailing-byte archive payloads produce no staged file;
+- the existing positive longer complete archive staging case remains covered.
+
+### Verification commands and output
+
+```text
+python -m unittest discover -s tools/scene_reconstruction -p 'test_seb_codec.py' -v
+Ran 9 tests in 0.037s
+OK
+
+python -m unittest discover -s tools/scene_reconstruction -p 'test_*.py' -v
+Ran 14 tests in 0.209s
+OK
+
+python tools/scene_reconstruction/build_seb_audit.py
+[OK] Audited 21 floor SEB files: {'no_full_payload_found': 21}
+
+python -m py_compile tools/scene_reconstruction/seb_codec.py tools/scene_reconstruction/build_seb_audit.py tools/scene_reconstruction/test_seb_codec.py
+exit 0
+
+source/read-only hash check against source_inventory.json
+OK: 1881 source/extraction hashes unchanged; 21 floor SEBs retain four-byte shortfalls
+```

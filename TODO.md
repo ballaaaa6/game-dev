@@ -25,6 +25,7 @@
 ## Scene-map reconstruction
 
 - [x] Audit every discovered `floor*.seb`, preserve four-byte partial tails, and conditionally stage only a verified complete archive candidate
+- [x] Reject trailing-byte and incomplete archive payloads from recovery and staging
 - [ ] Establish nested Unity bundle/TextAsset provenance before treating the four-byte SEB shortfall as a source limitation
 
 ## Dashboard
