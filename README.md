@@ -1,36 +1,32 @@
-# C#-first Virtual Game Office
+# Social Dev C# clean-room reset
 
-Workspace สำหรับสร้าง deterministic simulation ของ office และ dashboard โดยยึดหลักฐาน C# จาก Cpp2IL เป็น discovery input แล้วแยก runtime ที่เขียนใหม่ออกจาก source/evidence อย่างชัดเจน
+Workspace สำหรับจัดระเบียบและสร้างระบบใหม่จาก Social Dev โดยยึด C#/APK/asset guide เป็นหลักฐาน แล้วแยก source, evidence, derived model และ runtime ออกจากกันอย่างชัดเจน
 
 ## โครงสร้างปัจจุบัน
 
-- `knowledge/` — หลักฐานที่จัดตามความหมาย: baseline, world assets, characters, language, reverse-engineering และ C# corpus
-- `runtime/office/` — office scene/actor runtime แบบจำลองต่อเนื่อง
-- `runtime/dashboard/` — task system และ dashboard interaction
-- `tools/` — evidence checkers, reverse-engineering builders และ maintenance utilities
-- `docs/` — roadmap, guides, references และ archive ของแผนเก่า
+- `knowledge/social-dev/` — active Social Dev evidence, candidate schemas และ provenance gates
+- `knowledge/baseline/`, `knowledge/characters/`, `knowledge/language/`, `knowledge/reorganization/`, `knowledge/csharp/`, `knowledge/reverse-engineering/` และ `knowledge/world-assets/` — legacy/historical evidence ที่ถูกกั้น ไม่ใช่ source ใหม่
+- `runtime/social-dev/` — active runtime boundary ที่จะสร้างจาก Social Dev contracts
+- `runtime/office/` และ `runtime/dashboard/` — legacy runtime ที่หยุดรับ semantics ใหม่
+- `tools/social-dev/` — active Social Dev inventory/validation tools
+- `tools/` — active Social Dev tools only; legacy tools อยู่ใน `archive/pre-social-reset/tools/`
+- `docs/` — Social Dev roadmap/reports และเอกสารเก่าที่ถูก freeze
 - `archive/` — legacy tools และแนวคิด AI integration ที่ยังไม่เปิดใช้งาน
 
 ## แหล่งข้อมูลที่ห้ามแก้
 
-- `game-dev-story-mod_Sprites/`
-- `game-dev-story-mod_Dumped/`
-- `game-dev-story-mod_Extracted/`
-- `APK_Toolkit/`
-- `ghidra_11.0.1_PUBLIC/`
-- `viewer/`
+- `social dev/` — Social Dev source inputs, read-only
+- `archive/pre-social-reset/root-sources/` — archived GameDev source/extraction roots, APK toolkit, Ghidra bundle และ viewer
 
-`knowledge/csharp/primary/` คือ C# evidence ชุดใหม่ที่ใช้เป็นหลักในการอ่าน control flow; `Assembly-CSharp/` ที่ผู้ใช้ลบแล้วจะไม่ถูกสร้างกลับ และ DLL ที่อยู่ใน dump เป็นคนละ input จึงยังเก็บไว้ตามเดิม
+`knowledge/social-dev/evidence/` คือ Social Dev evidence boundary ชุดใหม่; `knowledge/csharp/primary/` เป็น legacy GameDev corpus ที่ถูก freeze และ `Assembly-CSharp/` จะไม่ถูกสร้างกลับ
 
 ## จุดเริ่มต้นสำหรับ session ถัดไป
 
-อ่าน [AGENTS.md](AGENTS.md), [PROJECT_STATE.md](PROJECT_STATE.md), [TODO.md](TODO.md) แล้วดู [Roadmap 2.0](docs/roadmap/Roadmap_2.0_CSharp_First.md)
+อ่าน [AGENTS.md](AGENTS.md), [PROJECT_STATE.md](PROJECT_STATE.md), [TODO.md](TODO.md) แล้วดู [Social Dev roadmap](docs/roadmap/Roadmap_SocialDev_CSharp_Reset.md)
 
 คำสั่งตรวจสอบหลัก:
 
 ```powershell
-python -m unittest discover -s knowledge/characters/tests -p "test_*.py" -v
-python -m unittest discover -s tools/reverse-engineering/tests -p "test_*.py" -v
-node runtime/office/tests/test_wave5_runtime.js
-node runtime/dashboard/tests/test_wave6_task_system.js
+python -B tools/social-dev/stage_data_package.py
+python -B tools/social-dev/build_legacy_reference_scan.py
 ```

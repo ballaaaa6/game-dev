@@ -1,6 +1,29 @@
 # Project State
 
-## สถานะปัจจุบัน
+## สถานะปัจจุบัน — Social Dev clean-room reset
+
+- เปลี่ยน authority ใหม่เป็น Social Dev; GameDev/Virtual Game Office ถูกกั้นเป็น legacy boundary ตาม `archive/pre-social-reset/legacy_manifest.json`
+- ขยาย legacy manifest ให้ครอบคลุม historical knowledge `31` ไฟล์ / `3,197,523` bytes, historical guides `1` ไฟล์, legacy viewer `67` ไฟล์ และ archived maintenance `4` ไฟล์
+- จัด active data store ใหม่ที่ `knowledge/social-dev/data/csharp_update/`: staged C# data `44` ไฟล์ / `437,881` bytes พร้อม hash manifest; source ใน `social dev/` ยัง read-only
+- ย้าย legacy C#/reverse-engineering/maintenance tools `124` ไฟล์ / `1,833,851` bytes ไป `archive/pre-social-reset/tools/`; active `tools/` เหลือ Social Dev tools
+- เก็บกวาด root สำเร็จ: ย้าย GameDev source/extraction, APK toolkit, Ghidra, viewer และ `.superpowers` รวม `6,419` ไฟล์ / `3,766,761,367` bytes ไป `archive/pre-social-reset/`; root เหลือเฉพาะโครง Social Dev และ shared metadata
+- R0 provenance pass เสร็จ: fingerprint RAR, APK, asset ZIP, C# update และ VGO_Core แล้ว โดย source/extraction roots ยัง read-only; มีเพียง organized data copy และ legacy-tool archive ที่จัดการแยกออกมา
+- C# RAR baseline ถูก extract เป็น evidence ที่ `knowledge/social-dev/evidence/csharp_raw_20260813/`; ไม่ execute decompiled C# โดยตรง
+- เทียบ C# update ด้วย canonical path แล้ว: `exact_match=4980`, `modified=588`, `update_only=586`
+- สร้าง Social Dev structural inventory แล้ว: inputs `72`, types `82`, fields `3430`, methods `1685`, fingerprint `1b2f9396f2768545d4f719022fb1b116df0de9a5347fb46337a8417e1257093a`
+- candidate diff ยืนยันว่า update ลบ `Cpp2ILHelpers.NoteDecompilerIssue` ใน 60 gameplay/lifecycle files (`16699 → 0`) แต่ `//IL_...` annotations ยังเท่าเดิม `29030`; structural counts ของ raw/update เท่ากัน จึงจัดเป็น textual cleanup ไม่ใช่ semantic repair
+- marker-only normalization ยืนยัน `60` files เป็น byte-equivalent หลังตัดเฉพาะ marker lines, `12` files exact อยู่แล้ว และ `0` files มี content change นอกเหนือจาก marker; ใช้ RAR เป็น provenance anchor ต่อไป
+- สร้าง candidate schema จากหลักฐานแล้ว: DataManager registry `43` typed arrays / data classes `44` / data fields `1112`; runtime entity candidate `14` types / `919` fields / `30` lifecycle hooks / `21` relation candidates โดยทุก semantic status ยัง `unknown`
+- สร้าง load-contract candidates แล้ว: registry `41` รายการจับคู่กับ `Load(StringArrayStream)` ได้, `2` รายการยังไม่มี loader ที่จับได้; field/load alignment ได้ `38` candidate, `3` count mismatch และ `3` Load missing จึงยังไม่สร้าง production model จากตำแหน่งคอลัมน์
+- asset/APK inventory ผ่าน read-only gate: ZIP `3566` members, asset index `3542` rows, `zip_exact=3542`, APK source entries `3508` present / `34` missing (misc text payloads), APK fingerprint ตรง และ pack map `25/25 roundtrip_exact`
+- extract เฉพาะ evidence text/index จาก ZIP แล้ว `114` files; DataManager registry cross-check กับ xls ได้ English `43/43` และ Japanese `43/43`, เหลือ English extras `Exclusion.txt`, `softkey.txt`, `text.txt` ที่ยังไม่ promote
+- จัด boundary เบื้องต้นแล้ว: `data`/`game`/`game.routeSearch`/`main` เป็น candidate evidence; `form` เป็น presentation; `KairoEngine`/`Dependencies` เป็น engine/dependency
+- `VGO_Core` ถูกจัดเป็น derived architecture draft เท่านั้น เพราะยังมี mocked loader, placeholder movement และ save/load ไม่ครบ
+- สร้าง VGO disposition manifest แล้ว: `5` ไฟล์ / `11,647` bytes ถูกติดสถานะ `derived_draft_not_promoted`; ห้ามใช้ `baseSpeed`/`isSpecialBody` เป็น schema จนกว่าจะมี source provenance
+- active-reference scan หลัง root cleanup: อ่านไฟล์ข้อความ `5,820` ไฟล์ พบ `3,774` matches ใน `57` ไฟล์; intentional documentation `355`, legacy artifacts `3,419`, active dependency `0` — reference gate ผ่าน
+- `runtime/social-dev/` ถูกสร้างเป็น boundary ว่างสำหรับ contract-first runtime; `runtime/office` และ `runtime/dashboard` ถูก freeze เป็น legacy
+
+## ประวัติ baseline เดิม (GameDev legacy)
 
 - Scene-map reconstruction Task 2 SEB audit เสร็จแล้ว: พบ floor SEB 21 logical files ที่ shortfall 4 bytes เท่ากัน; ไม่มี direct named payload ใน APK/ZIP/extracted ที่ complete จึงได้ผล `no_full_payload_found` ทั้งหมด และไม่มี reextract payload ถูก stage
 - จัดระเบียบ workspace ตามแนวทาง C#-first clean reconstruction เสร็จแล้ว
@@ -77,23 +100,35 @@
 - `runtime/office/app/continuous_scheduler.js` และ `runtime/office/tests/test_continuous_scheduler.js` — internal continuous tick driver and lifecycle tests (local-only)
 - `runtime/office/README.md` และ `runtime/office/reports/simulation_core_architecture.md` — implementation architecture/handoff docs
 - `knowledge/reverse-engineering/evidence/corpus/` — canonical corpus/index/views
-- `tools/scene_reconstruction/csharp_trace.py` และ `tools/scene_reconstruction/build_seb_semantics_contract.py` — deterministic SEB consumer-boundary trace helper and contract builder
+- `archive/pre-social-reset/tools/scene_reconstruction/csharp_trace.py` และ `archive/pre-social-reset/tools/scene_reconstruction/build_seb_semantics_contract.py` — frozen deterministic SEB evidence tools
 - `knowledge/world-assets/evidence/scene_reconstruction/seb_semantics_contract.json` — SEB semantics evidence contract
-- `tools/scene_reconstruction/build_object_placement_contract.py` และ `tools/scene_reconstruction/test_object_placement.py` — object-placement lineage classifier and tests
+- `archive/pre-social-reset/tools/scene_reconstruction/build_object_placement_contract.py` และ `archive/pre-social-reset/tools/scene_reconstruction/test_object_placement.py` — frozen object-placement lineage classifier and tests
 - `knowledge/world-assets/evidence/scene_reconstruction/object_placement_contract.json` — object-placement provenance contract
 - `.superpowers/sdd/2026-08-12-scene-map-reconstruction/task-4-report.md` — task 4 report and self-review
 - `.superpowers/sdd/2026-08-12-scene-map-reconstruction/task-5-report.md` — task 5 report and self-review
-- `tools/csharp-evidence/` — C# checkers
-- `tools/maintenance/workspace_layout.py` — snapshot/relocation guard
+- `archive/pre-social-reset/tools/csharp-evidence/` — frozen C# checkers
+- `archive/pre-social-reset/tools/maintenance/workspace_layout.py` — frozen snapshot/relocation guard
 - `knowledge/reorganization/relocation_manifest.before.json` และ `relocation_manifest.after.json` — relocation boundary
+- `knowledge/social-dev/data/csharp_update/` และ `knowledge/social-dev/data/data_package_manifest.json` — active organized Social Dev data package
+- `archive/pre-social-reset/tools/` — archived legacy tools; ห้าม import กลับเข้า active runtime
+- `archive/pre-social-reset/root-sources/` — archived GameDev roots, APK toolkit, Ghidra และ viewer
+- `archive/pre-social-reset/.superpowers/` — archived historical task plans
 - `runtime/office/` และ `runtime/dashboard/` — deterministic runtime adapters
 - `docs/roadmap/Roadmap_2.0_CSharp_First.md` — roadmap ที่ใช้งานอยู่
 - `docs/superpowers/specs/2026-08-12-csharp-semantic-inventory-simulation-core-design.md` — design spec ของงานรอบถัดไป
 - `docs/superpowers/plans/2026-08-12-csharp-semantic-inventory-simulation-core.md` — implementation plan ที่ผ่านการ self-review
 
-## งานถัดไป
+## งานถัดไป — Social Dev
 
-1. หากต้องการยืนยัน source limitation ให้สร้าง evidence-first nested Unity bundle/TextAsset provenance audit โดยไม่แก้ extraction roots
-1. คง compatibility projections สำหรับ providers/renderer เดิม โดยไม่สร้าง state owner ซ้ำ
-2. ทำ live backend/auth/multi-user sync เป็น adapter แยกจาก core เมื่อ scope พร้อม
-3. ค่อยเชื่อม task assignment จริงและ LLM/backend หลัง simulation baseline ผ่าน contract tests
+1. ตรวจ 588 modified files โดยเริ่มจาก `data`, `game`, `game.routeSearch` และ `main`
+2. ปิด `Load`/field alignment mismatches แล้วแยก semantic contracts ของ DataManager, BaseData, Player, Staff, Room และ save/load โดยติดสถานะ provenance ทุก field
+3. ตรวจ assembly guide และ APK metadata ต่อเพื่อยืนยัน asset selectors/relationships; ตอนนี้มีเพียง identity/roundtrip gate ยังไม่ใช่ selector promotion
+4. สร้าง canonical Social Dev schema และ runtime contracts ใต้ `runtime/social-dev/`
+5. รักษา active `tools/social-dev` ให้แยกจาก legacy archive; reference gate ผ่านแล้วด้วย `active_dependency=0`
+6. เมื่อ contract tests และ reference gate ผ่าน ค่อยเสนอ cutover และขออนุมัติลบ legacy แบบถาวร
+
+## งานเดิมที่ถูก freeze
+
+- nested Unity bundle/TextAsset audit เดิมอยู่ใน legacy scope
+- compatibility projections ของ office เดิมไม่ใช่ Social Dev state owner
+- backend/auth/multi-user และ LLM รอจนกว่า Social Dev baseline จะผ่าน contract tests
