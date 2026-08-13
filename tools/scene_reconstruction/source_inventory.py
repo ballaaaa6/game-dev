@@ -81,20 +81,22 @@ def _fixture_candidates(root, actual, aliases):
     return next((path for path in candidates if path.exists()), None)
 
 
-def _env_paths(root):
+def _env_declarations(root):
     env = root / "APK_Toolkit" / ".last_extraction.env"
     if not env.exists():
         env = root / ".last_extraction.env"
     if not env.exists():
         return []
-    paths = []
+    declarations = []
     for line in env.read_text(encoding="utf-8").splitlines():
         if "=" not in line or not line.strip() or line.lstrip().startswith("#"):
             continue
-        _, value = line.split("=", 1)
-        path = Path(value.strip())
-        paths.append(path if path.is_absolute() else root / path)
-    return paths
+        key, value = line.split("=", 1)
+        raw_value = value
+        path = Path(raw_value.strip())
+        resolved = path if path.is_absolute() else root / path
+        declarations.append((key, raw_value, resolved))
+    return declarations
 
 
 def _floor_entries(root, source_paths, archives):
@@ -157,7 +159,8 @@ def build_source_inventory(fixtures=None, extra_paths=None):
                     child_record = _record(child, root)
                     records[child_record["path"]] = child_record
 
-    for path in _env_paths(root):
+    declarations = _env_declarations(root)
+    for _, _, path in declarations:
         path = within_workspace(root, path)
         if path.exists() and path not in source_paths:
             source_paths.append(path)
@@ -197,5 +200,13 @@ def build_source_inventory(fixtures=None, extra_paths=None):
         archives={key: archives[key] for key in sorted(archives)},
         floor_ids=floor_ids,
         relations=relations,
-        declared_paths=sorted(relative_path(root, path) for path in _env_paths(root)),
+        declared_paths={
+            key: {
+                "key": key,
+                "raw_value": raw_value,
+                "normalized_path": relative_path(root, path),
+                "resolved_path": str(within_workspace(root, path)),
+            }
+            for key, raw_value, path in sorted(declarations)
+        },
     )

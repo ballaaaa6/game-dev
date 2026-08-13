@@ -17180,13 +17180,38 @@
     "candidate",
     "unknown"
   ],
-  "declared_paths": [
-    "APK_Toolkit/game-dev-story-mod.apk",
-    "game-dev-story-mod",
-    "game-dev-story-mod_Dumped",
-    "game-dev-story-mod_Extracted",
-    "game-dev-story-mod_Sprites"
-  ],
+  "declared_paths": {
+    "APK_BASE": {
+      "key": "APK_BASE",
+      "normalized_path": "game-dev-story-mod",
+      "raw_value": "game-dev-story-mod",
+      "resolved_path": "D:\\antigravity\\test open ai\\game-dev-story-mod"
+    },
+    "APK_PATH": {
+      "key": "APK_PATH",
+      "normalized_path": "APK_Toolkit/game-dev-story-mod.apk",
+      "raw_value": "D:\\antigravity\\test open ai\\APK_Toolkit\\game-dev-story-mod.apk",
+      "resolved_path": "D:\\antigravity\\test open ai\\APK_Toolkit\\game-dev-story-mod.apk"
+    },
+    "DUMP_OUT": {
+      "key": "DUMP_OUT",
+      "normalized_path": "game-dev-story-mod_Dumped",
+      "raw_value": "D:\\antigravity\\test open ai\\game-dev-story-mod_Dumped",
+      "resolved_path": "D:\\antigravity\\test open ai\\game-dev-story-mod_Dumped"
+    },
+    "OUT_FOLDER": {
+      "key": "OUT_FOLDER",
+      "normalized_path": "game-dev-story-mod_Extracted",
+      "raw_value": "D:\\antigravity\\test open ai\\game-dev-story-mod_Extracted",
+      "resolved_path": "D:\\antigravity\\test open ai\\game-dev-story-mod_Extracted"
+    },
+    "SPRITE_OUT": {
+      "key": "SPRITE_OUT",
+      "normalized_path": "game-dev-story-mod_Sprites",
+      "raw_value": "D:\\antigravity\\test open ai\\game-dev-story-mod_Sprites",
+      "resolved_path": "D:\\antigravity\\test open ai\\game-dev-story-mod_Sprites"
+    }
+  },
   "files": {
     "APK_Toolkit/game-dev-story-mod.apk": {
       "kind": "file",

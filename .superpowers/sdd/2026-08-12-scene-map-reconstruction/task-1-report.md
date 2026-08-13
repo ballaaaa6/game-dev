@@ -56,3 +56,33 @@ This was the expected failure because the new interfaces were absent.
 - `tools/scene_reconstruction/test_source_inventory.py`
 - `knowledge/world-assets/evidence/scene_reconstruction/source_inventory.json`
 - `.superpowers/sdd/2026-08-12-scene-map-reconstruction/task-1-report.md`
+
+## Fix round 1: preserve `.last_extraction.env` declarations
+
+Changed `source_inventory.py` so `declared_paths` is keyed by the original env key. Each record now preserves `key`, exact `raw_value`, `normalized_path`, and `resolved_path`; values such as the absolute `APK_PATH` and the non-path `APK_BASE` declaration are no longer ambiguous or discarded. Added `test_preserves_extraction_env_keys_and_raw_declarations`.
+
+Test command and output:
+
+```text
+python -m unittest discover -s tools/scene_reconstruction -p 'test_source_inventory.py' -v
+Ran 5 tests in 0.174s
+OK
+```
+
+Rebuild and verification command results:
+
+```text
+python tools/scene_reconstruction/build_source_inventory.py
+source_hashes_unchanged True source_files 2005
+declared_keys ['APK_BASE', 'APK_PATH', 'DUMP_OUT', 'OUT_FOLDER', 'SPRITE_OUT']
+apk_raw_value D:\antigravity\test open ai\APK_Toolkit\game-dev-story-mod.apk
+apk_normalized_path APK_Toolkit/game-dev-story-mod.apk
+apk_resolved_path D:\antigravity\test open ai\APK_Toolkit\game-dev-story-mod.apk
+python -m unittest discover -s tools/scene_reconstruction -p 'test_*.py' -v
+Ran 5 tests in 0.159s
+OK
+python -m compileall -q tools/scene_reconstruction
+git diff --check
+```
+
+The source-content hash comparison remained unchanged for all `2005` files across the rebuild. No source/extraction root was modified.

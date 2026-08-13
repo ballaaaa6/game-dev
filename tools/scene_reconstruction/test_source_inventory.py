@@ -70,6 +70,15 @@ class SourceInventoryTests(unittest.TestCase):
         with self.assertRaises(WorkspacePathError):
             build_source_inventory(root, extra_paths=[root.parent / "outside.bin"])
 
+    def test_preserves_extraction_env_keys_and_raw_declarations(self):
+        root = self.make_fixture()
+        inventory = build_source_inventory(root)
+        declaration = inventory.declared_paths["APK_PATH"]
+        self.assertEqual(declaration["key"], "APK_PATH")
+        self.assertEqual(declaration["raw_value"], "apk/game-dev-story-mod.apk")
+        self.assertEqual(declaration["normalized_path"], "apk/game-dev-story-mod.apk")
+        self.assertTrue(declaration["resolved_path"].endswith("\\apk\\game-dev-story-mod.apk"))
+
 
 if __name__ == "__main__":
     unittest.main()
