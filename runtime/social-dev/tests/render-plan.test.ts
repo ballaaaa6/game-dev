@@ -6,7 +6,6 @@ describe("Phase 3C integrated render plan", () => {
   it("contains the unified native room placements", () => {
     const projection = buildSceneProjection(loadRuntimeCatalogs());
     expect(projection.sceneMode).toBe("floor00");
-    expect(projection.renderObjects).toEqual([]);
     expect(projection.structuralFacilities.map((facility) => facility.objectId)).toEqual(["furniture:0", "furniture:0"]);
     expect(projection.nativeInitialObjects.map((object) => `${object.objectId}@${object.cell[0]}:${object.cell[1]}`)).toEqual([
       "furniture:3@2:4",

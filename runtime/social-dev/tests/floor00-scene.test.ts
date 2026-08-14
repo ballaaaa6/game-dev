@@ -38,7 +38,6 @@ describe("floor00 native bootstrap scene", () => {
     expect(projection.mapHeight).toBe(14);
     expect(projection.mapCells).toHaveLength(196);
     expect(projection.cells).toHaveLength(100);
-    expect(projection.renderObjects).toHaveLength(0);
     expect(projection.nativeInitialObjects.map((object) => `${object.objectId}@${object.cell[0]}:${object.cell[1]}`)).toEqual([
       "furniture:3@2:4",
       "furniture:3@3:4",

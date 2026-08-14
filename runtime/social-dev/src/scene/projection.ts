@@ -31,17 +31,6 @@ export interface SceneMapCellProjection {
 
 export type SceneMapWallProjection = ExtensionWallPiece;
 
-export interface VerifiedObjectProjection {
-  readonly id: string;
-  readonly cell: Cell;
-  readonly label: string;
-  readonly selector: string;
-  readonly selectorId: number;
-  readonly evidenceBinding: string;
-  readonly bindingStatus: string;
-  readonly renderStatus: string;
-}
-
 export interface VerifiedNativeInitialObjectProjection {
   readonly id: string;
   readonly objectId: string;
@@ -113,7 +102,6 @@ export interface SceneProjection {
   readonly floorResolutionMode: string;
   readonly floorMetadataFilename: string;
   readonly extensionWalls: readonly SceneMapWallProjection[];
-  readonly renderObjects: readonly VerifiedObjectProjection[];
   readonly structuralFacilities: readonly VerifiedStructuralFacilityProjection[];
   readonly nativeInitialObjects: readonly VerifiedNativeInitialObjectProjection[];
   readonly sceneAssets: readonly SceneAssetProjection[];
@@ -245,7 +233,6 @@ export function buildSceneProjection(
   }));
   const extensionWalls: SceneMapWallProjection[] = runtimeRoom.extensionWalls.map((wall) => ({ ...wall }));
 
-  const renderObjects: VerifiedObjectProjection[] = [];
   const structuralFacilities: VerifiedStructuralFacilityProjection[] = [];
   const nativeInitialObjects: VerifiedNativeInitialObjectProjection[] = [];
   const sceneAssets: SceneAssetProjection[] = [];
@@ -305,7 +292,6 @@ export function buildSceneProjection(
     floorResolutionMode: floorRender?.resolutionMode ?? runtimeRoom.assets.floor.resolutionMode ?? "exact_native_floor_table_resolution",
     floorMetadataFilename: floorRender?.metadataFilename ?? runtimeRoom.assets.floor.metadataFilename ?? runtimeRoom.assets.floor.filename ?? "",
     extensionWalls,
-    renderObjects,
     structuralFacilities,
     nativeInitialObjects,
     sceneAssets,

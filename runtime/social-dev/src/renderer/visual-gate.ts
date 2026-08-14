@@ -207,17 +207,6 @@ function drawableCards(
       status: asset.status,
     });
   }
-  for (const object of projection.renderObjects) {
-    cards.push({
-      id: object.id,
-      kind: "render_object",
-      roomId: projection.sceneId,
-      cell: object.cell,
-      assetId: null,
-      renderPass: "object-chip-primary",
-      status: object.renderStatus,
-    });
-  }
   for (const facility of projection.structuralFacilities) {
     cards.push({
       id: facility.id,
@@ -395,9 +384,8 @@ export function buildVisualGateSnapshot(
   for (const asset of projection.sceneAssets) {
     if (asset.runtimeAssetId) requiredRuntimeAssets.add(asset.runtimeAssetId);
   }
-  for (const object of [...projection.renderObjects, ...projection.nativeInitialObjects]) {
-    const objectId = "objectId" in object ? object.objectId : object.id.split("@")[0];
-    const display = furnitureFrameForScene(objectId, state.frame, projection.sceneMode);
+  for (const object of projection.nativeInitialObjects) {
+    const display = furnitureFrameForScene(object.objectId, state.frame, projection.sceneMode);
     if (display?.imageAssetId) requiredRuntimeAssets.add(display.imageAssetId);
     if (display?.subImageAssetId) requiredRuntimeAssets.add(display.subImageAssetId);
   }
@@ -603,7 +591,6 @@ export function buildVisualGateSnapshot(
       : JSON.stringify(floor00ActualFurniture) === JSON.stringify(floor00ExpectedFurniture)
         && JSON.stringify(floor00ActualActors) === JSON.stringify(floor00ExpectedActors)
         && floor00DisplayActorPositionsPass
-        && projection.renderObjects.length === 0
         ? "pass"
         : "blocked_by_evidence";
   const rawOverlayStatus: VisualGateCheckStatus = projection.sceneId !== "room:17" || !rawOverlayEnabled
@@ -805,7 +792,7 @@ export function buildVisualGateSnapshot(
       status: floor00BootstrapStatus,
       details: projection.sceneMode !== "floor00"
         ? "not a Floor00 bootstrap projection"
-        : `${floor00ActualFurniture.length}/${floor00ExpectedFurniture.length} native furniture instances; ${floor00ActualActors.length}/${floor00ExpectedActors.length} static display actors; legacy render objects=${projection.renderObjects.length}`,
+        : `${floor00ActualFurniture.length}/${floor00ExpectedFurniture.length} native furniture instances; ${floor00ActualActors.length}/${floor00ExpectedActors.length} static display actors`,
     },
     raw_room_overlay: {
       status: rawOverlayStatus,

@@ -566,10 +566,6 @@ function objectChipPrimaryDrawables(
   visibility?: VisibilityTracker | null,
 ): WorldDrawable[] {
   const drawables: WorldDrawable[] = [];
-  const nativeDoorActive = projection.sceneAssets.some(
-    (asset) => asset.role === "door" && asset.status === "approved_native_coordinate_composition",
-  );
-
   for (const facility of projection.structuralFacilities) {
     const cell = [facility.anchor[0], facility.anchor[1]] as const;
     drawables.push({
@@ -578,29 +574,6 @@ function objectChipPrimaryDrawables(
       key: `structural:${facility.id}`,
       cell,
       draw: () => drawStructuralFacilityAtAnchor(context, facility, camera, assets, diagnostics, visibility),
-    });
-  }
-
-  for (const object of projection.renderObjects) {
-    if (object.id === "furniture:1" && nativeDoorActive) {
-      continue;
-    }
-    const cell = [object.cell[0], object.cell[1]] as const;
-    drawables.push({
-      depth: cellDepth(cell),
-      layer: 2,
-      key: `object:${object.id}:${cell[0]}:${cell[1]}`,
-      cell,
-      draw: () => drawFurnitureAtCell(
-        context,
-        { id: object.id, label: object.label, cell },
-        projection.sceneMode,
-        camera,
-        frameNumber,
-        assets,
-        diagnostics,
-        visibility,
-      ),
     });
   }
 
