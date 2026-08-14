@@ -16,3 +16,11 @@ ghidra_11.0.1_PUBLIC/
 # Local helper scripts kept outside version control
 Auto_Annotator.py
 Smart_Compressor.py
+
+# Repository allowlist: keep only the documented root files above
+/*
+!/.gitignore
+!/AGENTS.md
+!/PROJECT_STATE.md
+!/README.md
+!/TODO.md
