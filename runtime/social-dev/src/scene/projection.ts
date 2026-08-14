@@ -128,50 +128,12 @@ function rawTypeLabel(rawTypes: readonly RawObjectType[], rawType: number): stri
   return rawTypes.find((candidate) => candidate.raw_type === rawType)?.source_constant?.name ?? `RAW_TYPE_${rawType}`;
 }
 
-function cellFromBinding(binding: { readonly cell?: unknown }): Cell | null {
-  if (Array.isArray(binding.cell) && binding.cell.length === 2 && binding.cell.every((value) => typeof value === "number")) {
-    return [binding.cell[0], binding.cell[1]] as const;
-  }
-  if (typeof binding.cell === "object" && binding.cell !== null) {
-    const cell = binding.cell as { x?: unknown; y?: unknown };
-    if (typeof cell.x === "number" && typeof cell.y === "number") {
-      return [cell.x, cell.y] as const;
-    }
-  }
-  return null;
-}
-
 function objectById(catalogs: RuntimeCatalogs, id: string): ObjectRecord {
   const object = catalogs.objects.objects.find((candidate) => candidate.id === id);
   if (!object) {
     throw new Error(`ObjectCatalog is missing ${id}`);
   }
   return object;
-}
-
-function verifiedObject(
-  catalogs: RuntimeCatalogs,
-  id: string,
-  cell: Cell,
-  binding: string,
-  bindingStatus: string,
-  renderStatus: string,
-): VerifiedObjectProjection {
-  const object = objectById(catalogs, id);
-  const selector = object.selectors.seb_;
-  if (!selector || selector.resolution_status !== "resolved") {
-    throw new Error(`Object selector for ${id} is not resolved`);
-  }
-  return {
-    id,
-    cell,
-    label: object.name.values.English,
-    selector: selector.filename ?? `seb_${selector.id}`,
-    selectorId: selector.id,
-    evidenceBinding: binding,
-    bindingStatus,
-    renderStatus,
-  };
 }
 
 function verifiedStructuralFacility(
@@ -257,7 +219,6 @@ export function buildSceneProjection(
     throw new Error(`RoomSceneRuntime source record is missing ${roomId}`);
   }
   const isMainDisplay = roomId === "room:0" && runtimeRoom.context === "main_display";
-  const isLegacyDisplaySlice = isMainDisplay && sceneMode === "display-slice-01";
   const rawOverlay = roomId === "room:17" && runtimeRoom.context === "main_display"
     ? buildRoomRawOverlay(catalogs.roomRScene, sourceRoom)
     : null;
@@ -288,94 +249,42 @@ export function buildSceneProjection(
   const structuralFacilities: VerifiedStructuralFacilityProjection[] = [];
   const nativeInitialObjects: VerifiedNativeInitialObjectProjection[] = [];
   const sceneAssets: SceneAssetProjection[] = [];
-  if (isLegacyDisplaySlice) {
-    for (const binding of catalogs.strictClosure.native_initial_bindings) {
-      if (!Array.isArray(binding.cell) || binding.cell.length !== 2) {
-        throw new Error(`Strict native binding ${binding.object_id} has no cell`);
-      }
-      const cell: Cell = [binding.cell[0], binding.cell[1]];
-      nativeInitialObjects.push({
-        id: `${binding.object_id}@${cell[0]}:${cell[1]}`,
-        objectId: binding.object_id,
-        furnitureDataId: binding.furniture_data_id,
-        cell,
-        label: binding.name,
-        rawType: binding.raw_type,
-        nativeStatus: binding.native_status,
-        selectorFlag: binding.selector_flag.name,
-        scanOrder: binding.scan_order,
-      });
+  if (roomId === "room:0" && sceneMode === "floor00") {
+    for (const facility of catalogs.floor00.structural_facilities) {
+      structuralFacilities.push(verifiedStructuralFacility(catalogs, facility));
     }
-    for (const placement of catalogs.render3c.placements) {
-      if (placement.role !== "object") {
-        sceneAssets.push(sceneAssetProjection(placement, placement.role === "floor" ? floorRender : undefined));
-        continue;
-      }
-      const cell = placementCell(placement);
-      if (!cell || !placement.object_id) {
-        continue;
-      }
-      renderObjects.push(
-        verifiedObject(
-          catalogs,
-          placement.object_id,
-          cell,
-          placement.evidence_binding,
-          placement.binding_status ?? "unknown",
-          placement.status,
-        ),
-      );
-    }
-    if (!scene?.type4_fixture?.anchor || !renderObjects.some((object) => object.id === "furniture:0")) {
-      throw new Error("Phase3C render contract does not contain the verified furniture:0 anchor");
-    }
-    if (!scene?.door?.cells[0]) {
-      throw new Error("SceneCatalog does not contain the verified raw door cell");
-    }
-    for (const binding of catalogs.objects.scene_bindings) {
-      const cell = cellFromBinding(binding);
-      if (cell && binding.status !== "verified") {
-        throw new Error(`Unexpected unverified scene binding ${binding.id}`);
-      }
-    }
-  } else {
-    if (roomId === "room:0" && sceneMode === "floor00") {
-      for (const facility of catalogs.floor00.structural_facilities) {
-        structuralFacilities.push(verifiedStructuralFacility(catalogs, facility));
-      }
-    }
-    for (const binding of runtimeRoom.nativeBindings) {
-      nativeInitialObjects.push({
-        id: `${binding.object_id}@${binding.cell[0]}:${binding.cell[1]}`,
-        objectId: binding.object_id,
-        furnitureDataId: binding.furniture_data_id,
-        cell: [binding.cell[0], binding.cell[1]],
-        label: binding.object_id,
-        rawType: binding.raw_type,
-        nativeStatus: binding.native_status,
-        selectorFlag: binding.selector_flag.name,
-        scanOrder: binding.scan_order,
-      });
-    }
-    for (const asset of Object.values(runtimeRoom.assets)) {
-      sceneAssets.push({
-        id: `scene:${roomId}/${asset.role}`,
-        role: asset.role,
-        cell: asset.cell,
-        rawSelectorId: asset.rawSelectorId,
-        runtimeAssetId: asset.runtimeAssetId,
-        filename: asset.filename,
-        status: asset.runtimeAssetId
-          ? asset.role === "floor" ? "approved_room_selector_asset" : asset.compositionStatus
-          : "blocked_runtime_asset_not_promoted",
-        sourceResolutionStatus: asset.sourceStatus,
-        runtimeResolutionStatus: asset.runtimeStatus,
-        floorResolutionMode: asset.resolutionMode,
-        metadataFilename: asset.metadataFilename,
-        cellScope: asset.cellScope,
-        nativeCoordinate: asset.nativeCoordinate,
-      });
-    }
+  }
+  for (const binding of runtimeRoom.nativeBindings) {
+    nativeInitialObjects.push({
+      id: `${binding.object_id}@${binding.cell[0]}:${binding.cell[1]}`,
+      objectId: binding.object_id,
+      furnitureDataId: binding.furniture_data_id,
+      cell: [binding.cell[0], binding.cell[1]],
+      label: binding.object_id,
+      rawType: binding.raw_type,
+      nativeStatus: binding.native_status,
+      selectorFlag: binding.selector_flag.name,
+      scanOrder: binding.scan_order,
+    });
+  }
+  for (const asset of Object.values(runtimeRoom.assets)) {
+    sceneAssets.push({
+      id: `scene:${roomId}/${asset.role}`,
+      role: asset.role,
+      cell: asset.cell,
+      rawSelectorId: asset.rawSelectorId,
+      runtimeAssetId: asset.runtimeAssetId,
+      filename: asset.filename,
+      status: asset.runtimeAssetId
+        ? asset.role === "floor" ? "approved_room_selector_asset" : asset.compositionStatus
+        : "blocked_runtime_asset_not_promoted",
+      sourceResolutionStatus: asset.sourceStatus,
+      runtimeResolutionStatus: asset.runtimeStatus,
+      floorResolutionMode: asset.resolutionMode,
+      metadataFilename: asset.metadataFilename,
+      cellScope: asset.cellScope,
+      nativeCoordinate: asset.nativeCoordinate,
+    });
   }
 
   return {

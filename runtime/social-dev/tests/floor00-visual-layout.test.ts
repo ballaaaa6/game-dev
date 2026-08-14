@@ -109,8 +109,9 @@ describe("floor00 visual layout contract", () => {
       catalogs.floor00VisualLayout.wood_wall.backward_offset,
     );
 
-    const legacy = buildSceneProjection(catalogs, "room:0", { sceneMode: "display-slice-01" });
-    expect(legacy.presentationLayout).toBeNull();
+    const main = buildSceneProjection(catalogs);
+    expect(main.sceneMode).toBe("floor00");
+    expect(main.presentationLayout?.status).toBe("approved_floor00_visual_layout");
   });
 
   it("passes dedicated visual checks for the approved floor00 layout", () => {
@@ -125,10 +126,8 @@ describe("floor00 visual layout contract", () => {
 
   it("moves the foreground wall split with the approved floor00 wall offset", () => {
     const catalogs = loadRuntimeCatalogs();
-    const floor00 = buildSceneProjection(catalogs, "room:0", { sceneMode: "floor00" });
-    const legacy = buildSceneProjection(catalogs, "room:0", { sceneMode: "display-slice-01" });
+    const main = buildSceneProjection(catalogs);
 
-    expect(resolveForegroundWallCells(floor00, catalogs)).toEqual([[9, 7], [9, 8]]);
-    expect(resolveForegroundWallCells(legacy, catalogs)).toEqual([[8, 7], [8, 8]]);
+    expect(resolveForegroundWallCells(main, catalogs)).toEqual([[9, 7], [9, 8]]);
   });
 });

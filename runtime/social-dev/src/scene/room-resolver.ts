@@ -27,7 +27,7 @@ export type RoomPlacementKind =
   | "native_instance";
 
 export type RoomSceneContext = "main_display" | "persistent_room" | "addition_floor_preview";
-export type SceneProjectionMode = "display-slice-01" | "floor00";
+export type SceneProjectionMode = "floor00";
 export type RoomEnvironmentScope = "native_main_14x14_outer_map" | "native_room_topology_only";
 
 export interface RoomSceneResolveOptions {
@@ -403,7 +403,9 @@ export function resolveRoomScene(
     wall: resolveAsset(catalogs, room, "wall", displayIds),
     door: resolveAsset(catalogs, room, "door", displayIds),
   } as const;
-  const presentationLayout = roomId === "room:0" && options?.sceneMode === "floor00"
+  const presentationLayout = roomId === "room:0"
+    && topology.context === "main_display"
+    && topology.nativeFloorValue === 0
     ? resolveFloor00VisualLayout(
       catalogs.floor00VisualLayout,
       catalogs.defaultMap,
