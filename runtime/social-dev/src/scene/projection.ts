@@ -250,7 +250,7 @@ export function buildSceneProjection(
   options?: RoomSceneResolveOptions,
 ): SceneProjection {
   const runtimeRoom = resolveRoomScene(catalogs, roomId, options);
-  const sceneMode = options?.sceneMode ?? "display-slice-01";
+  const sceneMode = options?.sceneMode ?? "floor00";
   const scene = catalogs.scene.scenes.find((candidate) => candidate.id === roomId);
   const sourceRoom = catalogs.roomSceneRuntime.rooms.find((candidate) => candidate.room_key === roomId);
   if (!sourceRoom) {

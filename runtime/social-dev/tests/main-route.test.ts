@@ -45,4 +45,12 @@ describe("unified main runtime route", () => {
     expect(route.initialTicks).toBe(0);
     expect(route.sceneOptions.sceneMode).toBe("floor00");
   });
+
+  it("uses floor00 for the main projection when no scene query is supplied", () => {
+    const projection = buildSceneProjection(loadRuntimeCatalogs());
+
+    expect(projection.sceneMode).toBe("floor00");
+    expect(projection.roomContext).toBe("main_display");
+    expect(projection.nativeFloorValue).toBe(0);
+  });
 });
