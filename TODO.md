@@ -135,7 +135,7 @@
 - [x] Pin the native `furniture:3` desk/computer and its `chair_00` subcomposition to static frame `0` in every scene mode; keep actor animation separate
 - [x] Make the evidence regression suite non-mutating so timestamped pre-runtime contracts cannot drift the metadata baseline during tests
 - [x] Implement the approved floor00-only visual layout contract: remove marked glass zones, extend/shift the wood wall, preserve layer order, move the foreground split with the wall offset, and pass deterministic browser visual verification
-- [ ] Cut over all current approved Social Dev data and capabilities into the single main floor00 runtime and remove redundant production route branches
+- [x] Cut over all current approved Social Dev data and capabilities into the single main floor00 runtime and remove redundant production route branches
 - [ ] Expand beyond the unified main floor00 runtime only after deterministic and browser visual gates remain stable
 - [x] Permanently delete the legacy archive after cutover gates passed (2026-08-14)
 

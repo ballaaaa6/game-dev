@@ -8,12 +8,12 @@ The user-approved legacy archive `archive/pre-social-reset/` was permanently rem
 
 The runtime now has a runtime-approved native content catalog, a native lifecycle/assembly contract, all-room selector assets, an evidence-backed resolver, explicit native direction mapping, generic native wall/door composition for all 18 rooms, and nine ordered render passes. It separates the 14x14 MapChip topology from the 10x10 ObjChip occupancy grid and never infers MapChip or FurnitureData identity from ObjChip. Browser smoke covers room:0 through room:17 with ready assets, zero unresolved entries, zero console errors/warnings, and native wall/door draw traces. The historical visual baseline is intentionally preserved by an explicit comparison policy; it is not silently replaced.
 
-## Latest Update — Unified main floor00 runtime cutover
+## Latest Verified Update — Unified main floor00 runtime cutover
 
-The production runtime is being consolidated into one main route. The root URL now resolves through a fixed `floor00` / `main_display` / `nativeFloor=0` policy, while the in-page RoomData selector retains access to all 18 room records and the complete current catalog data. The legacy `display-slice-01` projection branch, production scene/context query routing, legacy render-object list, and comparison-mode UI wording have been removed from active runtime code. Historical evidence, contracts, catalog identifiers, and asset-package paths remain intact for provenance and verification.
+The production runtime is consolidated into one main route. The root URL now resolves through a fixed `floor00` / `main_display` / `nativeFloor=0` policy, while the in-page RoomData selector retains access to all 18 room records and the complete current catalog data. The legacy `display-slice-01` projection branch, production scene/context query routing, legacy render-object list, and comparison-mode UI wording have been removed from active runtime code. Historical evidence, contracts, catalog identifiers, and asset-package paths remain intact for provenance and verification.
 
-- Focused route, projection, visual-gate, room-overlay, asset, and floor00 tests pass; TypeScript typecheck passes.
-- Full Vitest, production build, browser smoke, and final state update remain the next verification gate for this cutover.
+- Verification: full Vitest `25/25` files / `79/79` tests, TypeScript typecheck, production build, pre-runtime closure (`21` items, `13` verified, `0` deferred, `2` quarantined), and `git diff --check` pass.
+- Browser smoke at `http://127.0.0.1:4173/?auto=0` reports `room:0 · floor00`, `18` selectable rooms, visual gate `pass`, `6/6` approved furniture asset draws, zero browser warnings/errors, and byte-identical fixed-frame screenshots with SHA-256 `02283c7d6dd4d5d98e2bc927b71d760b8c1135c4c9ccf5a366486f3d9266881d`. The existing healthy Vite server on port `4173` was reused.
 - The unresolved red/black prop remains excluded and the raw floor `5` → selector/data `85/floor_09.png` → rendered `floor_05.png` alias remains unchanged.
 
 ## Latest Verified Update — Approved floor00 visual layout alignment
