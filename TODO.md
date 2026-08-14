@@ -2,7 +2,7 @@
 
 ## Social Dev clean-room reset
 
-- [x] Establish Social Dev as the source of truth and create the GameDev legacy boundary
+- [x] Establish Social Dev as the sole source of truth
 - [x] Fingerprint the RAR, APK, asset ZIP, and C# update
 - [x] Extract the RAR as read-only evidence under `knowledge/social-dev/evidence/`
 - [x] Compare the C# baseline/update by canonical path: `4980` exact, `588` modified, `586` update-only
@@ -22,10 +22,10 @@
 - [x] Create the detailed Phase 0 plan for system extraction, dependency graphs, source slices, and validation gates
 - [x] Create the detailed Phase 1 plan for first-slice data extraction, raw-row retention, locale cross-checks, and review gates
 - [x] Expand the legacy boundary to cover historical knowledge, guides, viewer, and shared maintenance without deleting evidence
-- [x] Move GameDev knowledge, Office/Dashboard runtime, and old documentation out of the active tree into `archive/pre-social-reset/`, leaving only Social Dev active
+- [x] Remove the historical GameDev knowledge, Office/Dashboard runtime, and old documentation from the workspace
 - [x] Stage `44` C# data files under `knowledge/social-dev/data/csharp_update/` with a hash manifest while keeping the source read-only
-- [x] Move legacy C#/reverse-engineering/maintenance tools out of active `tools/` into `archive/pre-social-reset/tools/`
-- [x] Clean the root by moving GameDev source/extraction, APK toolkit, Ghidra, viewer, and `.superpowers` into `archive/pre-social-reset/` without deleting data
+- [x] Remove legacy C#/reverse-engineering/maintenance tools from the active workspace
+- [x] Remove GameDev source/extraction, APK toolkit, Ghidra, viewer, and historical task data
 - [x] Scan active references after root cleanup: `5820` files, `3774` matches, `active_dependency=0`
 - [x] Inspect and disposition the semantic diff of `44` `data` files, `23` `game` files, `2` route-search files, and `3` lifecycle files; `12` exact and `60` marker-only after normalization, with decompiler bodies quarantined
 - [x] Create canonical Social Dev data/entity/save contracts with provenance statuses under `runtime/social-dev/evidence/`
@@ -123,52 +123,33 @@
 - [x] Track X/A UI/event/text/APK provenance boundary — classify 21 non-actor families, 34 Unity TextAsset gaps, and one unresolved selector without inventing consumers
 - [x] Runtime metadata lookup integration — expose lazy asset/family/selector/FurnitureData lookup through the typed runtime catalog API
 - [x] Final asset metadata completion gate — pass the deterministic catalog/readiness audit and record all remaining explicit boundaries
-- [ ] Implement and gate the native `floor00` NewGame bootstrap scene as a separate comparison mode before any default cutover
-- [ ] Expand beyond `display-slice-01` only after deterministic and browser visual gates remain stable
-- [ ] Request approval before deleting the legacy archive, and delete it only after cutover gates pass
+- [x] Implement and gate the native `floor00` NewGame bootstrap scene as a separate comparison mode before any default cutover
+- [x] Reconstruct floor00 native per-cell compositing and occlusion semantics; keep the verified nine-pass names but close the actual clip/depth behavior, including late object passes and foreground walls
+- [x] Render the six native floor00 FurnitureData instances as visible native compositions and verify final canvas pixels rather than draw-attempt counts
+- [x] Derive floor00 static actor display cells from native standing/usable/passable-cell evidence and verify all three actors remain inside the playable room grid
+- [x] Add a fixed-camera visual-visibility gate for furniture, actors, extension walls, door, tree/garden, and foreground occlusion before calling floor00 gameplay fidelity complete
+- [x] Decode and render every selected `wall_00.seb` layer with native crop/offset semantics; keep the thin wall layer visible and verify 30 floor00 wall draws
+- [x] Re-audit floor00 operation-level default-map composition: MapChip/ObjChip coordinate spaces, `wall_00`/`wall_ex` crop-cell pairing, both type-4 anchors, static direct furniture, and geometry-aware visual gates
+- [x] Promote the two live `big_base00` facility-pad visuals from raw type-4 anchors with explicit MapChip visual anchors and static frame-0 rendering
+- [x] Exclude the additional red/black gameplay prop from the approved floor00 bootstrap subset until its saved FurnitureData/selector is proven; do not guess or add it
+- [x] Pin the native `furniture:3` desk/computer and its `chair_00` subcomposition to static frame `0` in every scene mode; keep actor animation separate
+- [x] Make the evidence regression suite non-mutating so timestamped pre-runtime contracts cannot drift the metadata baseline during tests
+- [x] Implement the approved floor00-only visual layout contract: remove marked glass zones, extend/shift the wood wall, preserve layer order, move the foreground split with the wall offset, and pass deterministic browser visual verification
+- [ ] Cut over all current approved Social Dev data and capabilities into the single main floor00 runtime and remove redundant production route branches
+- [ ] Expand beyond the unified main floor00 runtime only after deterministic and browser visual gates remain stable
+- [x] Permanently delete the legacy archive after cutover gates passed (2026-08-14)
 
-## Legacy GameDev baseline — frozen
+## Historical work removed
 
-- [x] Move/delete empty legacy directories so only current categories remain
-- [x] Remove caches created by tests/compilation after checking explicit targets
-- [x] Write `archive/pre-social-reset/knowledge/reorganization/relocation_manifest.after.json`
-- [x] Update `PROJECT_STATE.md` after final verification
-- [x] Run relocation comparison, path scan, full tests, and browser smoke
-
-## Legacy C#-first Simulation Core — frozen
-
-- [x] Lock the gameplay-critical C# slice and write the inventory/Simulation Core design spec
-- [x] Review the written spec and split it into an implementation plan before editing code
-- [x] Choose how to execute the implementation plan before editing code (inline execution on `main`)
-- [x] Build the class/method/field structural inventory for the gameplay-critical C# slice
-- [ ] Separate state, transition, timer, movement, scene, actor, and event contracts from the evidence
-- [x] Build the bounded semantic-claims table while allowing `unknown`/`raw_only` statuses with provenance
-- [x] Design and verify the canonical simulation schema without coupling it to decompiled object layout
-- [x] Build the deterministic SimulationCore reducer/tick/snapshot/digest with collision/event/bubble contracts
-- [x] Build the deterministic tick loop that continuously simulates the office without playback controls
-- [x] Connect scene/actor state to the legacy `archive/pre-social-reset/runtime/office/` through Core-backed adapter contracts
-- [ ] Connect real task assignment and LLM only after the simulation baseline passes contract tests
-
-## Legacy scene-map reconstruction — frozen
-
-- [x] Audit every discovered `floor*.seb`, preserve four-byte partial tails, and conditionally stage only a verified complete archive candidate
-- [x] Reject trailing-byte and incomplete archive payloads from recovery and staging
-- [x] Trace SEB consumer-boundary semantics with deterministic C#/C/assembly evidence and keep crop/translation/selector/object-base/camera/depth separate
-- [ ] Establish nested Unity bundle/TextAsset provenance before treating the four-byte SEB shortfall as a source limitation
-
-## Legacy dashboard — frozen
-
-- [x] Show actor state, task state, scene, event log, and evidence/provenance on one page
-- [x] Add a live UI state stream while preserving the deterministic replay/debug snapshot
-- [ ] Place backend/auth/multi-user sync behind an adapter boundary separate from the simulation core
+The former GameDev/Virtual Office corpus, legacy runtime, extraction roots, and historical task archive were permanently removed from the workspace after the Social Dev cutover. They are not valid inputs for current work.
 
 ## Do Not Do During This Stage
 
 - Do not recreate `Assembly-CSharp/`
 - Do not modify source roots or execute decompiled C# as production runtime
 - Do not convert `unknown` into a semantic name without verifiable evidence
-- Do not delete existing evidence; if it is unused, move it to the archive while preserving provenance
+- Do not delete active Social Dev evidence or source roots; preserve current provenance under the active evidence boundaries
 
-## Frozen History
+## Current history policy
 
-Corpus intelligence, TypeScript-port, and old roadmap details are stored under `archive/pre-social-reset/docs/`; use the current roadmaps under `docs/` as the active guide.
+Use the current Social Dev roadmaps under `docs/` and active evidence under `knowledge/social-dev/`. Removed historical GameDev material must not be recreated.

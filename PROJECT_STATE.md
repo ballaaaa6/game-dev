@@ -1,12 +1,73 @@
 # Project State
 
-## Current Status — Asset metadata catalog closure and runtime query integration are complete with explicit promotion boundaries
+## Repository Cleanup — Historical GameDev Archive Removed
+
+The user-approved legacy archive `archive/pre-social-reset/` was permanently removed on 2026-08-14. It contained 8,195 files across 802 directories (approximately 10.9 GB). The active project now contains Social Dev evidence, runtime, tools, and the separate inactive `archive/future-ai/` directory only. The removed corpus is not a valid source for future work and must not be recreated.
+
+## Current Status — Asset metadata and native floor00 composition closure are complete; one live prop is explicitly excluded
 
 The runtime now has a runtime-approved native content catalog, a native lifecycle/assembly contract, all-room selector assets, an evidence-backed resolver, explicit native direction mapping, generic native wall/door composition for all 18 rooms, and nine ordered render passes. It separates the 14x14 MapChip topology from the 10x10 ObjChip occupancy grid and never infers MapChip or FurnitureData identity from ObjChip. Browser smoke covers room:0 through room:17 with ready assets, zero unresolved entries, zero console errors/warnings, and native wall/door draw traces. The historical visual baseline is intentionally preserved by an explicit comparison policy; it is not silently replaced.
 
-## Next Work — Native `floor00` bootstrap scene
+## Latest Update — Unified main floor00 runtime cutover
 
-The next planned runtime slice is the explicit `floor00`/`room:0` NewGame bootstrap. It will remain separate from the historical `display-slice-01` baseline until a new visual comparison is approved. The planned native quantities are `196` MapChip cells, `100` ObjChip cells, `6` initial FurnitureData instances (`3× furniture:3`, `furniture:12`, `furniture:26`, `furniture:56`), and `3` initial actors (`StaffData 0–2`) entering through door cell `(8,4)` at the closed AddStaff position. The literal `floor_00.png` is not substituted; `room:0` keeps its approved `floorImgId_=5` / `floor_05.png` render policy.
+The production runtime is being consolidated into one main route. The root URL now resolves through a fixed `floor00` / `main_display` / `nativeFloor=0` policy, while the in-page RoomData selector retains access to all 18 room records and the complete current catalog data. The legacy `display-slice-01` projection branch, production scene/context query routing, legacy render-object list, and comparison-mode UI wording have been removed from active runtime code. Historical evidence, contracts, catalog identifiers, and asset-package paths remain intact for provenance and verification.
+
+- Focused route, projection, visual-gate, room-overlay, asset, and floor00 tests pass; TypeScript typecheck passes.
+- Full Vitest, production build, browser smoke, and final state update remain the next verification gate for this cutover.
+- The unresolved red/black prop remains excluded and the raw floor `5` → selector/data `85/floor_09.png` → rendered `floor_05.png` alias remains unchanged.
+
+## Latest Verified Update — Approved floor00 visual layout alignment
+
+The user-approved floor00 presentation policy is now implemented as `runtime/social-dev/evidence/floor00_visual_layout_contract.json`. It is scoped only to `room:0` with `scene_mode=floor00`, preserves the native evidence contracts, removes the eight marked glass trigger cells, renders the approved 9-cell glass scope with a continuous `[4,7]`–`[4,11]` side strip, extends the upper wood wall to `[9,1]`, shifts the side wall by exactly `[1,0]`, and moves the foreground wall split to `[9,7]`/`[9,8]` with layer order `0 → 1` retained.
+
+- The legacy `display-slice-01` projection and non-floor00 room paths remain unmodified by the presentation override.
+- The dedicated visual gate passes layout identity, glass removal/continuity, wall alignment, foreground occlusion order, final-pixel visibility, and asset lifecycle checks. Browser console errors and warnings are empty.
+- Two fixed-frame browser captures are byte-identical with SHA-256 `02283c7d6dd4d5d98e2bc927b71d760b8c1135c4c9ccf5a366486f3d9266881d`. The gate record is stored at `knowledge/social-dev/evidence/floor00_visual_layout_browser_gate_20260814.json`.
+- Verification: Vitest `24/24` files / `75/75` tests, TypeScript typecheck, production build, and browser gate pass. The existing healthy Vite server on port `4173` was reused.
+
+## Current Boundary — One gameplay prop still lacks a closed binding
+
+The floor00 operation-level audit is now closed for the verified bootstrap subset. The remaining red/black room prop seen in the live save capture does not have a closed FurnitureData/selector binding, so it is deliberately excluded from the NewGame bootstrap by user decision. It must not be guessed or added later without a proven live-state trace. The raw RoomData, MapChip, ObjChip, and SEB evidence remains authoritative.
+
+## Latest Verified Update — Native computer is static
+
+The reported computer flicker was traced to the default `display-slice-01` route passing the simulation frame into native `furniture:3`. Its `desk_00.seb` records change both the source crop and destination offset at frames `1/2`, which made the computer appear to flip or move even though the real room prop is static. `furnitureFrameForScene` now pins only native `furniture:3` (desk/computer plus its `chair_00` subcomposition) to frame `0` in every scene mode; actor animation and other furniture frame behavior remain unchanged.
+
+- Regression: `runtime/social-dev/tests/display-assets.test.ts` now requires `furniture:3` frame/subframe `0` and source crops `desk=0`, `chair=60` for both `floor00` and `display-slice-01`.
+- Verification: Vitest `23/23` files / `65/65` tests, typecheck, production build, and `git diff --check` pass. Browser `floor00` screenshots remain byte-identical across 350 ms (`f417028e969ff2b57a67957a9b1c22f734391caf4d44e012bfb7496e0fa08198`) with visual gate pass and no console errors/warnings.
+
+## Latest ADB Gameplay Evidence — Real game capture collected
+
+ADB is connected to `emulator-5554`; the foreground activity is `net.kairosoft.android.snsdev_en/main.Main`. Captures are stored under `knowledge/social-dev/evidence/adb-gameplay-20260814/`: one baseline PNG, eight consecutive burst frames, and contact sheets focused on the room objects. The real gameplay burst shows the red direct-image equipment crop is byte-identical across all eight frames, while staff sprites and speech/work indicators change. The desk/monitor/chair composition remains spatially stable in the observed burst. This confirms that the current web-side computer flicker is not native furniture animation evidence; it must be traced as an incorrect frame, crop, duplicate draw, or render-route issue. No runtime source was changed during the ADB observation.
+
+The longer camera sweep confirms two visible `big_base00`-family facility pads, three desk/computer/chair compositions, three promoted direct props, one door gap, and the 15-cell wooden wall structure. The two facility pads correspond to the two raw `type 4` anchors and are now rendered as separate static structural compositions with explicit MapChip visual anchors `[4,5]` and `[7,5]`. The sweep also shows one additional red/black room prop that does not match the three promoted direct PNGs, so its live FurnitureData/save-state binding remains unresolved and must not be guessed.
+
+## Latest Verified Update — Layered wall SEB fidelity and deterministic verification
+
+The floor00 wall renderer now follows the native `ObjChip.DrawWall → AppData.DrawSeb(frame, lineNo=-1)` semantics. The strict closure and native scene assembly contracts retain every selected `wall_00.seb` layer: 15 room wall cells × 2 layers = 30 wall sprite draws, including the 2px thin layer with its verified source crop and `destination_y=-34`. The older `sprite_records` field remains a layer-0 compatibility view; the runtime prefers `sprite_layers` and preserves layer order `0 → 1`.
+
+- The floor00 route is asset-ready gated: it does not paint a fallback room while approved PNG/SEB assets are unavailable. Structural pads, native furniture, native wall frames, and the fixed actor display cells are deterministic; two consecutive browser screenshots share SHA-256 `f417028e969ff2b57a67957a9b1c22f734391caf4d44e012bfb7496e0fa08198`.
+- Final browser smoke at `?scene=floor00&auto=0` reports visual gate `pass`, `2` structural facility draws, `6/6` furniture asset draws, `3` actor asset draws, `30` wall layer draws, final visibility `pass`, and `occluded_ids=[]`; browser warnings/errors are empty. The screenshot is stored at `knowledge/social-dev/evidence/adb-gameplay-20260814/floor00-web-final-20260814.jpg`.
+- The generated evidence chain was rebuilt after the floor00 structural-facility and static-frame changes: 23 Vitest files / 65 tests pass, `npm run typecheck`, `npm run build`, `python tools/social-dev/test_pre_runtime_closure.py`, and `git diff --check` pass. `test_pre_runtime_closure.py` validates without rewriting timestamped contracts, so the baseline input hash remains reproducible.
+- The native source boundary remains explicit: the room floor selector `5` is unresolved in the source table, so the approved runtime policy renders `floor_05.png` while retaining selector/data metadata `85/floor_09.png`. This is a fixed, documented alias—not inferred from the screenshot.
+
+## Completed Work — Native `floor00` bootstrap scene
+
+The native `floor00`/`room:0` NewGame bootstrap is implemented and gated as an explicit comparison route. The runtime uses `196` MapChip cells, `100` ObjChip cells, `6` initial FurnitureData instances (`3× furniture:3`, `furniture:12`, `furniture:26`, `furniture:56`), and exactly `3` initial actors (`StaffData 0–2`) entering through door cell `(8,4)` at the closed AddStaff position. The literal `floor_00.png` is not substituted; `room:0` keeps its approved `floorImgId_=5` / `floor_05.png` render policy. The historical `display-slice-01` route and screenshots remain unchanged.
+
+- The runtime contract is `runtime/social-dev/evidence/floor00_scene_contract.json`; the loader cross-checks its bootstrap, topology, raw ObjChip histogram, native furniture matrix, door null-FurnitureData binding, and three-actor spawn fixture against the existing catalogs.
+- `?scene=floor00&auto=0` projects the native 14×14 MapChip, separate 10×10 ObjChip occupancy, native wall/door, two raw type-4 structural facilities, six exact FurnitureData instances, and three static actors reserved at verified raw type-0 cells `[4,6]`, `[5,6]`, and `[7,6]`. It omits selector-only `furniture:2`/`furniture:5`, the unresolved live red/black prop, and the door surrogate from this mode. The native co-located `[8,4]` spawn remains preserved in the evidence contract.
+- Visible diagnostics expose the scene mode, `196/100/6/3` counts, FurnitureData IDs/cells, door cell with `FurnitureData=null`, static display cells, floor alias policy, native furniture draw count, nine-pass render trace, and visual-gate status. The floor00 route does not advance the living simulation; the legacy route keeps the approved behavior trace unchanged.
+- Verification passes: `npm run typecheck`, Vitest `23/23` files and `65/65` tests, `npm run build`, `python tools/social-dev/test_pre_runtime_closure.py`, browser static `floor00` frame-0 visual gate, deterministic screenshot comparison, zero browser console errors/warnings, and `git diff --check`. The existing local Vite server on port `4173` was reused and was not started or stopped by this task.
+
+## Completed Work — Native floor00 compositing, collision, and visibility closure
+
+The floor00 comparison route now closes the native visual composition instead of relying on draw-attempt counts. The renderer commits the MapChip/floor underlay before room content, draws the pale `wall_01.png` extension boundary above the underlay, composes rear `ObjChip.DrawWall`/door pixels before the two static structural facility pads and six native FurnitureData instances, keeps the three static display actors on verified empty walkable cells, and draws the lower foreground wall cells `[8,7]` and `[8,8]` after actors. The nine native pass identifiers remain visible in the trace while their logical per-cell order is enforced by the floor00 render-composition contract.
+
+- `floor00_scene_contract.json` now records the approved logical order, native row traversal (`y` ascending then `x` descending), rear/foreground wall split, boundary-wall collision policy, both raw type-4 facility footprints, their explicit MapChip visual anchors, and the source basis. The loader and floor00 tests reject drift in these values.
+- Native collision classification is explicit: raw type `0` is empty walkable, type `5` is the traversable entry door, unbound placement/desk slots remain reservable, installed furniture/footprints are blocked, and boundary walls are non-passable. No raw ObjChip value is promoted to FurnitureData identity.
+- `?scene=floor00&auto=0` passes the fixed-camera final-pixel gate: both structural facility IDs, six furniture IDs, three actor IDs, the tree, all extension-wall sprites, all room wall frames, and the door retain final canvas pixels; `occluded_ids=[]`. Browser diagnostics show `2` structural facility draws, `6/6` furniture asset draws, `0` fallbacks, `3` approved actor asset draws, and `Visual gate pass`.
+- Verification after this closure: `npm run typecheck`, full Vitest `23/23` files and `65/65` tests, `npm run build`, `python tools/social-dev/test_pre_runtime_closure.py`, `git diff --check`, and browser reload/capture with zero reported final-visibility occlusions. The existing Vite server on port `4173` was reused and was not started or stopped by this task.
 
 - The native Room.floor_ connection is now closed in `knowledge/social-dev/evidence/native_room_floor_usage_catalog.json` and `runtime/social-dev/evidence/native_room_floor_usage_contract.json`. Native evidence proves the boolean selector `floor == 0 → MAPCHIP_ARRAY[0]` / `floor != 0 → MAPCHIP_ARRAY[1]`, with `floor_0` materialized as `14×14` (`196` cells) and `floor_nonzero` as `4×4` (`16` cells); the old `1×16` presentation shape was corrected to the native row shape.
 - The constructor usage catalog records `8` direct `new Room(...)` call sites across the main display, persistent player-room, and addition-floor preview paths, and connects all `18` RoomData keys without treating RoomData as the source of Room.floor_. The runtime resolver and projection accept explicit `nativeFloorValue`/context options; the browser query paths are `?nativeFloor=0&context=persistent_room` and `?nativeFloor=1&context=addition_floor_preview`.
@@ -108,14 +169,9 @@ The next planned runtime slice is the explicit `floor00`/`room:0` NewGame bootst
 - Authoritative evidence: `phase1d_closure.json`, `phase1d_passmap_fixture.json`, `phase1d_route_fixture.json`, `asset_selector_contract.json`, `staff_semantics_contract.json`, and `phase1d_closure_validation.json`; the test runner is `tools/social-dev/test_phase1d_closure.py`.
 - The Phase 1D closure package remains the authority for the native/passability/route/selector gates consumed by SceneCatalog.
 
-- Social Dev is now the authority; GameDev/Virtual Game Office is isolated behind the legacy boundary in `archive/pre-social-reset/legacy_manifest.json`.
-- The legacy manifest covers `31` historical-knowledge files / `3,197,523` bytes, `1` historical guide, `67` legacy-viewer files, and `4` archived-maintenance files.
-- GameDev knowledge was moved out of the active tree into `archive/pre-social-reset/knowledge/`: `1,558` files / `7,137,105,531` bytes; `knowledge/` now contains only `social-dev/`.
-- The GameDev Office/Dashboard runtime was moved to `archive/pre-social-reset/runtime/`: `72` files / `2,632,765` bytes; `runtime/` now contains only `social-dev/`.
-- GameDev guides, references, plans, and specs were moved to `archive/pre-social-reset/docs/`: `18` files / `543,160` bytes; `docs/` now contains Social Dev roadmaps/reports.
+- Social Dev is the sole active authority; the former GameDev/Virtual Office corpus was permanently removed after the cutover gates passed.
 - The active data store was reorganized at `knowledge/social-dev/data/csharp_update/`: `44` staged C# data files / `437,881` bytes with a hash manifest; the source under `social dev/` remains read-only.
-- Legacy C#/reverse-engineering/maintenance/root tools were moved to `archive/pre-social-reset/tools/`: `126` files / `1,852,511` bytes; active `tools/` now contains Social Dev tools.
-- Root cleanup succeeded: GameDev source/extraction, APK toolkit, Ghidra, viewer, and `.superpowers` were moved to `archive/pre-social-reset/`: `6,419` files / `3,766,761,367` bytes; the root now contains only the Social Dev structure and shared metadata.
+- Legacy C#/reverse-engineering/maintenance/root tools and historical task data were removed; active `tools/` contains Social Dev tools only.
 - The R0 provenance pass is complete: the RAR, APK, asset ZIP, and C# update were fingerprinted; original source/extraction roots remain read-only; the derived `VGO_Core` scaffold was removed and was never promoted to runtime.
 - The C# RAR baseline was extracted as evidence at `knowledge/social-dev/evidence/csharp_raw_20260813/`; decompiled C# is not executed directly.
 - The C# update was compared by canonical path: `exact_match=4980`, `modified=588`, `update_only=586`.
@@ -155,29 +211,14 @@ The next planned runtime slice is the explicit `floor00`/`room:0` NewGame bootst
 - The route fixture authority has status `pass`: the path is built from real RoomData and filter probes confirm occupied type-2/type-4 false/type-6; no runtime catalog has been written yet.
 - The active-reference scan after root cleanup read `5,820` text files and found `3,774` matches in `57` files; intentional documentation `355`, legacy artifacts `3,419`, active dependency `0` — reference gate passed.
 - The post-VGO-removal reference scan covered `5,787` active text files and found `209` matches with `active_dependencies=0`; no VGO source/tool remains in the active tree.
-- `runtime/social-dev/` is the active contract-first runtime boundary with an approved binary subset under `runtime/social-dev/assets/display-slice-01/`; the old Office/Dashboard was moved to `archive/pre-social-reset/runtime/` and frozen as legacy.
+- `runtime/social-dev/` is the active contract-first runtime boundary with an approved binary subset under `runtime/social-dev/assets/display-slice-01/`; the old Office/Dashboard is deleted and no longer participates in the project.
 - The product target is locked: preserve the original scene, original characters, and visible living logic; remove player-facing gameplay that is not required for display.
 - A data-readiness roadmap was created for `display-slice-01`: field provenance, loader review, selector validation, scene contract, living trace, and runtime-readiness gates.
 - The next active-slice work follows `SceneCatalog → ObjectCatalog → ActorCatalog → deterministic fixtures → TypeScript runtime core`; do not return to runtime creation before the canonical evidence contract.
 
-## Historical Baseline (GameDev legacy)
+## Removed Historical Baseline
 
-- Scene-map reconstruction Task 2 SEB audit is complete: `21` logical floor SEB files were found with the same four-byte shortfall; no complete direct named payload was found in the APK/ZIP/extraction, so all results are `no_full_payload_found` and no re-extracted payload was staged.
-- The workspace was reorganized according to the C#-first clean-reconstruction approach.
-- The first semantic-inventory scope was locked to the gameplay-critical C# slice; runtime implementation continued locally only.
-- The C# semantic-inventory and Simulation Core design spec passed written-spec review.
-- Task 1 structural C# inventory, Task 2 deep semantic slices, Task 3 canonical schema, Task 4 SimulationCore, Task 5 OfficeRuntime adapter migration, Task 6 dashboard canonical projection/provenance, Task 7 continuous scheduler, and Task 8 final verification/report are complete and verified.
-- Task 4 scene-map reconstruction semantics contract is complete: deterministic C#/C/assembly text-trace helper, SEB consumer-boundary evidence contract, and a report separating crop/translation/selector/object-base/camera/depth were added.
-- Task 5 object-placement contract is complete: the current page/reception-desk-chair fixture remains adapter-only, asset identity is verified, and original room/object placement remains unknown because no persisted/generated floor0 room-state record was found.
-- Task 5 fix round 1 added OfficeObjecList as the opening provenance anchor and renamed the summary classification so no contract field named `status` carries a non-approved value.
-- Implementation was performed by inline execution on `main`; exported OfficeRuntime uses SimulationCore as the state owner and provides compatibility projections.
-- The old dashboard reads the canonical snapshot from SimulationCore and the source-free semantic-evidence projection loaded from `archive/pre-social-reset/runtime/office/evidence/`; raw C# is not imported into the browser.
-- The dashboard starts its own scheduler at a `160ms` interval; there are no Play/Pause/Step/Reset or speed controls for the simulation.
-- The old C# evidence set is at `archive/pre-social-reset/knowledge/csharp/primary/` and is separated from runtime.
-- The old baseline, world assets, characters, language, and reverse-engineering material are under `archive/pre-social-reset/knowledge/`.
-- The old deterministic office runtime is at `archive/pre-social-reset/runtime/office/`; the old dashboard/task runtime is at `archive/pre-social-reset/runtime/dashboard/`.
-- The current roadmaps are under `docs/`; old plans are in `archive/pre-social-reset/docs/`, and inactive AI ideas are in `archive/future-ai/`.
-- `Assembly-CSharp/`, `Phases/`, and the old root C# corpus are not in the workspace and must not be recreated.
+The former GameDev/Virtual Office baseline and its source, runtime, tools, and task records were deleted with the legacy archive. Only current Social Dev evidence and contracts may be used.
 
 ## Verified Checks
 
@@ -189,7 +230,7 @@ The next planned runtime slice is the explicit `floor00`/`room:0` NewGame bootst
 - The inventory input boundary has `11` files: `5` primary files and `data/*.cs`; the latest structural fingerprint is `24e14f6e7beea8521406aee64e946803c257e5e7c537bc92450ca50ef29207da`.
 - The latest semantic fingerprint is `c67de72477df0273f68764f5c02d0a23993ab7ca28c291fda0bb93512ff002ae`; there are `18` bounded access edges.
 - Gameplay field claims have statuses `verified=8`, `raw_only=10`, `assembly_fallback_bounded_slice_required=3`; method claims include `DoEvent` as an assembly fallback.
-- The simulation schema test passed, and the Wave 5 contract passed `20/20`; the `simulation-core-v1` contract artifact is in `archive/pre-social-reset/runtime/office/evidence/`.
+- Historical simulation-core checks belonged to the deleted legacy project and are not part of the active Social Dev verification set.
 - SimulationCore tests passed for spawn/move/arrival, blocked collision, invalid-command immutability, deterministic digest/subscriber behavior, and bubble expiry.
 - Wave 5 runtime regression passed `11` scenarios after the facade migration; Wave 6 task-system tests passed `18` scenarios.
 - The dashboard canonical snapshot/evidence contract passed `12/12`; `app.js` syntax check passed; browser script order was verified as schema → core → runtime.
@@ -207,11 +248,11 @@ The next planned runtime slice is the explicit `floor00`/`room:0` NewGame bootst
 
 ## Key Decisions
 
-- Use `archive/pre-social-reset/knowledge/csharp/primary/` as the primary legacy discovery/control-flow evidence; never execute decompiled C# directly.
+- Use only the current Social Dev evidence boundary for discovery and control-flow evidence; never execute decompiled C# directly.
 - The Social Dev web runtime uses TypeScript + Vite + Canvas 2D + DOM/CSS; the core is UI-framework independent, and the browser runs only compiled JavaScript from promoted catalogs/contracts.
 - Use recovered C/assembly and evidence contracts as semantic validators when C# contains decompiler artifacts or remains `unknown`.
 - The initial runtime is a continuous deterministic simulation without time-acceleration/stop controls; add LLM/task backend later.
-- Keep legacy tools and old roadmaps in the archive instead of deleting them to preserve provenance.
+- Keep current evidence and source roots read-only; historical GameDev material has been intentionally deleted and must not be recreated.
 
 ## Known Limitations
 
@@ -229,32 +270,7 @@ The next planned runtime slice is the explicit `floor00`/`room:0` NewGame bootst
 
 ## Important Files
 
-- `archive/pre-social-reset/knowledge/csharp/primary/` — legacy C# discovery evidence
-- `archive/pre-social-reset/knowledge/csharp/coverage/` — legacy coverage reports
-- `archive/pre-social-reset/knowledge/csharp/evidence/semantic_inventory/` — legacy structural inventory artifacts
-- `archive/pre-social-reset/runtime/office/evidence/semantic_inventory_runtime.json` — legacy source-free status/provenance projection
-- `archive/pre-social-reset/runtime/office/app/simulation_schema.js` — legacy canonical state/command/event constructors
-- `archive/pre-social-reset/runtime/office/evidence/simulation_core_contract.json` — legacy schema boundary contract
-- `archive/pre-social-reset/runtime/office/app/simulation_core.js` — legacy deterministic reducer/tick/snapshot/digest module
-- `archive/pre-social-reset/runtime/office/app/runtime.js` — legacy Core-backed OfficeRuntime compatibility facade
-- `archive/pre-social-reset/runtime/office/app/app.js` and `archive/pre-social-reset/runtime/office/app/index.html` — legacy dashboard projection
-- `archive/pre-social-reset/runtime/office/app/continuous_scheduler.js` and `archive/pre-social-reset/runtime/office/tests/test_continuous_scheduler.js` — legacy tick driver and tests
-- `archive/pre-social-reset/runtime/office/README.md` and reports — legacy implementation architecture/handoff docs
-- `archive/pre-social-reset/knowledge/reverse-engineering/evidence/corpus/` — legacy canonical corpus/index/views
-- `archive/pre-social-reset/tools/scene_reconstruction/csharp_trace.py` and `archive/pre-social-reset/tools/scene_reconstruction/build_seb_semantics_contract.py` — frozen deterministic SEB evidence tools
-- `archive/pre-social-reset/knowledge/world-assets/evidence/scene_reconstruction/seb_semantics_contract.json` — legacy SEB semantics evidence contract
-- `archive/pre-social-reset/tools/scene_reconstruction/build_object_placement_contract.py` and `archive/pre-social-reset/tools/scene_reconstruction/test_object_placement.py` — frozen object-placement lineage classifier and tests
-- `archive/pre-social-reset/knowledge/world-assets/evidence/scene_reconstruction/object_placement_contract.json` — legacy object-placement provenance evidence
-- `archive/pre-social-reset/.superpowers/sdd/2026-08-12-scene-map-reconstruction/task-4-report.md` — task 4 report and self-review
-- `archive/pre-social-reset/.superpowers/sdd/2026-08-12-scene-map-reconstruction/task-5-report.md` — task 5 report and self-review
-- `archive/pre-social-reset/tools/csharp-evidence/` — frozen C# checkers
-- `archive/pre-social-reset/tools/maintenance/workspace_layout.py` — frozen snapshot/relocation guard
-- `archive/pre-social-reset/knowledge/reorganization/relocation_manifest.before.json` and `relocation_manifest.after.json` — relocation boundary
 - `knowledge/social-dev/data/csharp_update/` and `knowledge/social-dev/data/data_package_manifest.json` — active organized Social Dev data package
-- `archive/pre-social-reset/tools/` — archived legacy tools; do not import them back into active runtime
-- `archive/pre-social-reset/root-sources/` — archived GameDev roots, APK toolkit, Ghidra, and viewer
-- `archive/pre-social-reset/.superpowers/` — archived historical task plans
-- `archive/pre-social-reset/runtime/office/` and `archive/pre-social-reset/runtime/dashboard/` — frozen deterministic runtime adapters
 - `runtime/social-dev/package.json`, `runtime/social-dev/tsconfig.json`, and `runtime/social-dev/vite.config.ts` — active Vite/TypeScript runtime scaffold
 - `runtime/social-dev/src/catalog/` — approved-contract loader, native ID lookup bridge, and type boundary
 - `tools/social-dev/build_native_room_floor_closure.py` and `tools/social-dev/test_native_room_floor_closure.py` — deterministic native `Room.floor_` call-site/array catalog builder and regression gate
@@ -306,9 +322,6 @@ The next planned runtime slice is the explicit `floor00`/`room:0` NewGame bootst
 - `knowledge/social-dev/evidence/phase3c_visual_gate_v2.json`, `phase3c_visual_gate_v2_room0_frame0.png`, `phase3c_visual_gate_v2_room0_frame1.png`, `phase3c_visual_gate_v2_room0_frame2.png`, and `phase3c_visual_gate_v2_room17_raw_overlay.png` — superseded structural visual gate evidence retained for provenance
 - `tools/social-dev/build_phase3c_visual_gate_v2.py` and `tools/social-dev/test_phase3c_visual_gate_v2.py` — deterministic visual-gate builder and content-addressed screenshot regression gate
 - `docs/roadmap/Roadmap_SocialDev_Phase2B_ObjectCatalog.md` — completed Phase 2B implementation plan and closure record
-- `archive/pre-social-reset/docs/roadmap/Roadmap_2.0_CSharp_First.md` — historical roadmap
-- `archive/pre-social-reset/docs/superpowers/specs/2026-08-12-csharp-semantic-inventory-simulation-core-design.md` — historical design spec
-- `archive/pre-social-reset/docs/superpowers/plans/2026-08-12-csharp-semantic-inventory-simulation-core.md` — historical implementation plan
 
 ## Next Work — Social Dev
 
@@ -318,8 +331,7 @@ The asset-metadata workstream is complete for the supplied package. Future work 
 
 The full human character layer is ready for metadata lookup, native action selection, decoded frame composition, and lazy pixel rendering. The bounded `display_asset_manifest` remains intentionally unchanged; the separate character asset contract is the authority for all `141` StaffData image bindings. Remaining character work is limited to separate HelperData/avatar/event-only asset packages and any future scene that chooses to spawn the full catalog.
 
-## Frozen Previous Work
+## Previous Work Boundary
 
-- The old nested Unity bundle/TextAsset audit remains in legacy scope.
-- The old office compatibility projections are not the Social Dev state owner.
+- Historical GameDev/Office material is deleted and is not a source for current work.
 - Backend/auth/multi-user and LLM work waits until the Social Dev baseline passes contract tests.
