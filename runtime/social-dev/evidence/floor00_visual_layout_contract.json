@@ -1,0 +1,60 @@
+{
+  "schema_version": "social-dev-floor00-visual-layout-contract-v1",
+  "package": "social-dev-floor00-visual-layout",
+  "status": "pass",
+  "semantic_status": "approved_for_runtime_contract",
+  "catalog_id": "floor00-visual-layout",
+  "scene_ref": {
+    "id": "room:0",
+    "scene_mode": "floor00"
+  },
+  "refs": {
+    "floor00_scene": "runtime/social-dev/evidence/floor00_scene_contract.json",
+    "default_map": "runtime/social-dev/evidence/default_map_chip_contract.json",
+    "native_scene_assembly": "runtime/social-dev/evidence/native_scene_assembly_contract.json",
+    "strict_closure": "runtime/social-dev/evidence/phase3c_strict_closure_contract.json"
+  },
+  "glass": {
+    "source_asset_id": "map:chip/wall_01.png",
+    "frame_ids_by_group": {
+      "horizontal_frame_0": "0",
+      "vertical_frame_1": "1"
+    },
+    "native_trigger_cells_by_group": {
+      "horizontal_frame_0": [[2, 5], [3, 5], [4, 5], [7, 9], [8, 9]],
+      "vertical_frame_1": [[4, 5], [4, 6], [8, 9], [8, 10], [8, 11]]
+    },
+    "removed_trigger_cells": [[2, 5], [3, 5], [4, 5], [4, 6], [7, 9], [8, 9], [8, 10], [8, 11]],
+    "final_trigger_cells_by_group": {
+      "horizontal_frame_0": [[5, 5], [6, 5], [7, 5], [8, 5]],
+      "vertical_frame_1": [[4, 7], [4, 8], [4, 9], [4, 10], [4, 11]]
+    },
+    "strip_axis": "map_y",
+    "strip_start": [4, 7],
+    "strip_end": [4, 11]
+  },
+  "wood_wall": {
+    "source_asset_id": "asset:01_GAME_PACKS/chip/wall_00.png",
+    "source_seb_asset_id": "asset:01_GAME_PACKS/chip/wall_00.seb",
+    "native_cells_by_frame": {
+      "horizontal_frame_0": [[1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1]],
+      "vertical_frame_1": [[8, 1], [8, 2], [8, 3], [8, 5], [8, 6], [8, 7], [8, 8]]
+    },
+    "final_cells_by_frame": {
+      "horizontal_frame_0": [[1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1], [9, 1]],
+      "vertical_frame_1": [[9, 1], [9, 2], [9, 3], [9, 5], [9, 6], [9, 7], [9, 8]]
+    },
+    "moved_group": "green_circled_side",
+    "backward_offset": [1, 0],
+    "layer_order": [0, 1]
+  },
+  "alignment": {
+    "upper_edge_cells": [[8, 1], [9, 1]],
+    "left_edge_cells": [[9, 1], [9, 2]],
+    "expected_screen_delta": { "x": 0, "y": 0 }
+  },
+  "determinism": {
+    "algorithm": "stable-json-sha256 excluding contract_hash",
+    "content_hash": "floor00-visual-layout-v1|room:0|glass-remove:2,5;3,5;4,5;4,6;7,9;8,9;8,10;8,11|glass-strip:4,7-4,11|wood-shift:1,0|wood-extend:9,1"
+  }
+}
