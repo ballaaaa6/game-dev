@@ -1,5 +1,9 @@
 import { describe, expect, it } from "vitest";
 import { loadRuntimeCatalogs, validateFloor00VisualLayoutContract } from "../src/catalog/load-contracts";
+import { createInitialState } from "../src/core/simulation";
+import { resolveForegroundWallCells } from "../src/renderer/canvas-renderer";
+import { buildSceneProjection } from "../src/scene/projection";
+import { buildVisualGateSnapshot } from "../src/renderer/visual-gate";
 
 describe("floor00 visual layout contract", () => {
   it("loads the approved floor00 presentation policy", () => {
@@ -88,5 +92,43 @@ describe("floor00 visual layout contract", () => {
       catalogs.floor00,
       catalogs.nativeAssembly,
     )).toThrow("out-of-bounds");
+  });
+
+  it("projects only the approved floor00 glass and wood scopes", () => {
+    const catalogs = loadRuntimeCatalogs();
+    const projection = buildSceneProjection(catalogs, "room:0", { sceneMode: "floor00" });
+
+    expect(projection.presentationLayout?.status).toBe("approved_floor00_visual_layout");
+    expect(projection.presentationLayout?.removedGlassCells).toEqual(
+      catalogs.floor00VisualLayout.glass.removed_trigger_cells,
+    );
+    expect(projection.presentationLayout?.finalGlassCellsByGroup).toEqual(
+      catalogs.floor00VisualLayout.glass.final_trigger_cells_by_group,
+    );
+    expect(projection.presentationLayout?.backwardOffset).toEqual(
+      catalogs.floor00VisualLayout.wood_wall.backward_offset,
+    );
+
+    const legacy = buildSceneProjection(catalogs, "room:0", { sceneMode: "display-slice-01" });
+    expect(legacy.presentationLayout).toBeNull();
+  });
+
+  it("passes dedicated visual checks for the approved floor00 layout", () => {
+    const catalogs = loadRuntimeCatalogs();
+    const projection = buildSceneProjection(catalogs, "room:0", { sceneMode: "floor00" });
+    const snapshot = buildVisualGateSnapshot(projection, createInitialState(catalogs), catalogs, null);
+
+    expect(snapshot.checks.floor00_visual_layout.status).toBe("pass");
+    expect(snapshot.checks.floor00_glass_continuity.status).toBe("pass");
+    expect(snapshot.checks.floor00_wall_alignment.status).toBe("pass");
+  });
+
+  it("moves the foreground wall split with the approved floor00 wall offset", () => {
+    const catalogs = loadRuntimeCatalogs();
+    const floor00 = buildSceneProjection(catalogs, "room:0", { sceneMode: "floor00" });
+    const legacy = buildSceneProjection(catalogs, "room:0", { sceneMode: "display-slice-01" });
+
+    expect(resolveForegroundWallCells(floor00, catalogs)).toEqual([[9, 7], [9, 8]]);
+    expect(resolveForegroundWallCells(legacy, catalogs)).toEqual([[8, 7], [8, 8]]);
   });
 });

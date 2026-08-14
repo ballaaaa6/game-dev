@@ -1,0 +1,57 @@
+{
+  "schema_version": "social-dev-floor00-visual-layout-browser-gate-v1",
+  "status": "pass",
+  "semantic_status": "deterministic_floor00_browser_visual_gate",
+  "captured_at": "2026-08-14T19:44:00+07:00",
+  "url": "http://127.0.0.1:4173/?scene=floor00&auto=0",
+  "fixed_frame": 0,
+  "scene": {
+    "id": "room:0",
+    "mode": "floor00",
+    "presentation_layout": "floor00-visual-layout"
+  },
+  "layout": {
+    "removed_glass_trigger_cells": [[2, 5], [3, 5], [4, 5], [4, 6], [7, 9], [8, 9], [8, 10], [8, 11]],
+    "final_glass_trigger_cells": {
+      "horizontal_frame_0": [[5, 5], [6, 5], [7, 5], [8, 5]],
+      "vertical_frame_1": [[4, 7], [4, 8], [4, 9], [4, 10], [4, 11]]
+    },
+    "wood_backward_offset": [1, 0],
+    "foreground_wall_cells": [[9, 7], [9, 8]],
+    "wall_layer_order": [0, 1]
+  },
+  "visual_gate": {
+    "status": "pass",
+    "required_assets_loaded": "pass",
+    "floor00_visual_layout": "pass",
+    "floor00_glass_continuity": "pass",
+    "floor00_wall_alignment": "pass",
+    "floor00_wall_door_order": "pass",
+    "floor00_final_pixel_visibility": "pass",
+    "final_visibility_occluded_ids": []
+  },
+  "render": {
+    "extension_wall_pieces": 18,
+    "wall_layer_draws": 32,
+    "furniture_asset_draws": 6,
+    "structural_facility_draws": 2,
+    "actor_asset_draws": 3,
+    "fallback_marker_draws": 0
+  },
+  "browser_console": {
+    "errors": [],
+    "warnings": []
+  },
+  "determinism": {
+    "screenshot_sha256_a": "02283c7d6dd4d5d98e2bc927b71d760b8c1135c4c9ccf5a366486f3d9266881d",
+    "screenshot_sha256_b": "02283c7d6dd4d5d98e2bc927b71d760b8c1135c4c9ccf5a366486f3d9266881d",
+    "identical": true
+  },
+  "verification": {
+    "vitest_files": 24,
+    "vitest_tests": 75,
+    "typecheck": "pass",
+    "production_build": "pass",
+    "server": "reused healthy Vite process on 127.0.0.1:4173"
+  }
+}
