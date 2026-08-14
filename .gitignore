@@ -12,3 +12,7 @@ viewer/
 
 # Ghidra installation and project database (large generated binary data)
 ghidra_11.0.1_PUBLIC/
+
+# Local helper scripts kept outside version control
+Auto_Annotator.py
+Smart_Compressor.py

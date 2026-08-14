@@ -123,6 +123,7 @@
 - [x] Track X/A UI/event/text/APK provenance boundary — classify 21 non-actor families, 34 Unity TextAsset gaps, and one unresolved selector without inventing consumers
 - [x] Runtime metadata lookup integration — expose lazy asset/family/selector/FurnitureData lookup through the typed runtime catalog API
 - [x] Final asset metadata completion gate — pass the deterministic catalog/readiness audit and record all remaining explicit boundaries
+- [ ] Implement and gate the native `floor00` NewGame bootstrap scene as a separate comparison mode before any default cutover
 - [ ] Expand beyond `display-slice-01` only after deterministic and browser visual gates remain stable
 - [ ] Request approval before deleting the legacy archive, and delete it only after cutover gates pass
 
