@@ -14,6 +14,7 @@ The production runtime is consolidated into one main route. The root URL now res
 
 - Verification: full Vitest `25/25` files / `79/79` tests, TypeScript typecheck, production build, pre-runtime closure (`21` items, `13` verified, `0` deferred, `2` quarantined), and `git diff --check` pass.
 - Browser smoke at `http://127.0.0.1:4173/?auto=0` reports `room:0 · floor00`, `18` selectable rooms, visual gate `pass`, `6/6` approved furniture asset draws, zero browser warnings/errors, and byte-identical fixed-frame screenshots with SHA-256 `02283c7d6dd4d5d98e2bc927b71d760b8c1135c4c9ccf5a366486f3d9266881d`. The existing healthy Vite server on port `4173` was reused.
+- Git cleanup: `main` is now the only local branch; the two pre-reset corpus branches were deleted. The detached legacy worktree remains untouched because it contains untracked corpus artifacts.
 - The unresolved red/black prop remains excluded and the raw floor `5` → selector/data `85/floor_09.png` → rendered `floor_05.png` alias remains unchanged.
 
 ## Latest Verified Update — Approved floor00 visual layout alignment
