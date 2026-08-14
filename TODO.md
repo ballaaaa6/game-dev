@@ -2,55 +2,151 @@
 
 ## Social Dev clean-room reset
 
-- [x] กำหนด Social Dev เป็น source of truth และสร้าง legacy boundary สำหรับ GameDev
-- [x] fingerprint RAR, APK, asset ZIP, C# update และ VGO_Core
-- [x] extract RAR เป็น read-only evidence ใต้ `knowledge/social-dev/evidence/`
-- [x] เทียบ C# baseline/update ด้วย canonical path: `4980` exact, `588` modified, `586` update-only
-- [x] สร้าง Social Dev structural inventory: `72` inputs, `82` types, `3430` fields, `1685` methods
-- [x] วัด candidate diff: update ลด decompiler issue markers `16699 → 0` แต่ยังมี IL annotations `29030` และยังไม่ใช่ buildable verdict
-- [x] ตรวจ marker-only equivalence: `60` cleanup-only, `12` exact, `0` content changes beyond markers
-- [x] สร้าง candidate data registry: `43` DataManager arrays, `44` data types, `1112` fields
-- [x] สร้าง candidate runtime boundary: `14` key entities, `919` fields, `30` lifecycle hooks, `21` relation candidates
-- [x] สร้าง load-contract candidate: `41` registry loaders, `2` loader-missing; field/load alignment `38` candidate, `3` mismatch, `3` missing
-- [x] ทำ read-only asset/APK consistency gate: `3542` ZIP rows exact, `3508` APK entries present, `34` misc text payloads unresolved, `25/25` pack roundtrip exact
-- [x] extract เฉพาะ index/assembly guide/xls evidence `114` files และ cross-check DataManager กับภาษา English/Japanese `43/43`
-- [x] แยก `data`, `game`, `game.routeSearch`, `main`, `form`, engine/dependency และ VGO_Core ตาม boundary contract
-- [x] ทำ VGO_Core disposition manifest: `5` derived files, ทั้งหมด `not_promoted`
-- [x] ขยาย legacy boundary ให้ครอบคลุม historical knowledge, guides, viewer และ shared maintenance โดยไม่ลบ evidence
-- [x] stage C# data `44` ไฟล์ไป `knowledge/social-dev/data/csharp_update/` พร้อม hash manifest โดยรักษา source read-only
-- [x] ย้าย legacy C#/reverse-engineering/maintenance tools ออกจาก active `tools/` ไป `archive/pre-social-reset/tools/`
-- [x] เก็บกวาด root: ย้าย GameDev source/extraction, APK toolkit, Ghidra, viewer และ `.superpowers` ไป `archive/pre-social-reset/` โดยไม่ลบข้อมูล
-- [x] สแกน active references หลัง root cleanup: `5820` ไฟล์, `3774` matches, `active_dependency=0`
-- [ ] ตรวจ semantic diff ของ `data` 44 ไฟล์, `game` 23 ไฟล์, route-search 2 ไฟล์ และ lifecycle 3 ไฟล์
-- [ ] สร้าง canonical Social Dev data/entity/save contracts พร้อม provenance statuses
-- [x] สร้าง read-only asset validation manifest จาก assembly guide/APK/index
-- [ ] ยืนยัน selector/semantic relationship ของ asset ก่อน promote เข้า runtime
-- [ ] สร้าง runtime contracts ใต้ `runtime/social-dev/`
-- [x] decouple Social Dev inventory tool จาก `tools/csharp-evidence` ด้วย local active parser
-- [x] ตัด GameDev dependency ออกจาก active tree และทำ scan ซ้ำ: gate ผ่าน (`active_dependency=0`)
-- [ ] ขออนุมัติและลบ legacy archive หลัง cutover gates ผ่านเท่านั้น
+- [x] Establish Social Dev as the source of truth and create the GameDev legacy boundary
+- [x] Fingerprint the RAR, APK, asset ZIP, and C# update
+- [x] Extract the RAR as read-only evidence under `knowledge/social-dev/evidence/`
+- [x] Compare the C# baseline/update by canonical path: `4980` exact, `588` modified, `586` update-only
+- [x] Build the Social Dev structural inventory: `72` inputs, `82` types, `3430` fields, `1685` methods
+- [x] Measure the candidate diff: the update removes decompiler issue markers `16699 → 0`, but retains `29030` IL annotations and is not a buildable verdict
+- [x] Verify marker-only equivalence: `60` cleanup-only, `12` exact, `0` content changes beyond markers
+- [x] Build the candidate data registry: `43` DataManager arrays, `44` data types, `1112` fields
+- [x] Build the candidate runtime boundary: `14` key entities, `919` fields, `30` lifecycle hooks, `21` relation candidates
+- [x] Build the load-contract candidate: `41` registry loaders, `2` loader-missing; field/load alignment has `38` candidates, `3` mismatches, and `3` missing loads
+- [x] Run the read-only asset/APK consistency gate: `3542` ZIP rows exact, `3508` APK entries present, `34` miscellaneous text payloads unresolved, `25/25` pack roundtrip exact
+- [x] Extract only index/assembly-guide/XLS evidence: `114` files, with DataManager cross-checked against English/Japanese `43/43`
+- [x] Separate `data`, `game`, `game.routeSearch`, `main`, `form`, and engine/dependency boundaries according to the boundary contract
+- [x] Remove `social dev/VGO_Core/` and the unpromoted scaffold inventory from the active source
+- [x] Survey the C# systems required for scene, character, and living logic and classify them as `keep/adapt/defer/cut`
+- [x] Write the system survey and rewrite roadmap in the order extraction → contracts → core → renderer
+- [x] Lock the web stack: TypeScript + Vite + Canvas 2D + DOM/CSS; Python is extraction-only
+- [x] Create the detailed Phase 0 plan for system extraction, dependency graphs, source slices, and validation gates
+- [x] Create the detailed Phase 1 plan for first-slice data extraction, raw-row retention, locale cross-checks, and review gates
+- [x] Expand the legacy boundary to cover historical knowledge, guides, viewer, and shared maintenance without deleting evidence
+- [x] Move GameDev knowledge, Office/Dashboard runtime, and old documentation out of the active tree into `archive/pre-social-reset/`, leaving only Social Dev active
+- [x] Stage `44` C# data files under `knowledge/social-dev/data/csharp_update/` with a hash manifest while keeping the source read-only
+- [x] Move legacy C#/reverse-engineering/maintenance tools out of active `tools/` into `archive/pre-social-reset/tools/`
+- [x] Clean the root by moving GameDev source/extraction, APK toolkit, Ghidra, viewer, and `.superpowers` into `archive/pre-social-reset/` without deleting data
+- [x] Scan active references after root cleanup: `5820` files, `3774` matches, `active_dependency=0`
+- [x] Inspect and disposition the semantic diff of `44` `data` files, `23` `game` files, `2` route-search files, and `3` lifecycle files; `12` exact and `60` marker-only after normalization, with decompiler bodies quarantined
+- [x] Create canonical Social Dev data/entity/save contracts with provenance statuses under `runtime/social-dev/evidence/`
+- [x] Create the read-only asset validation manifest from the assembly guide/APK/index
+- [x] Verify asset selector/semantic relationships for parsed FurnitureData/StaffData before promoting them into runtime
+- [x] Create runtime contracts under `runtime/social-dev/` for data, entities, save snapshots, and pre-runtime closure
+- [x] Decouple the Social Dev inventory tool from `tools/csharp-evidence` with a local active parser
+- [x] Remove the GameDev dependency from the active tree and rescan: gate passed (`active_dependency=0`)
+- [x] Build the machine-readable system inventory/dependency graph and source-slice manifest; validation passed with `82/3430/1685`, `7` slices, and `missing=0`
+- [x] Select the first-slice data candidate: room `0`, furniture `1/2/5`, staff `0–4`, job `4`, and skill candidate `1` from loader-aware `StaffData.skill_`
+- [x] Build first-slice candidate/validation evidence: `22` records, `0` missing, `6` candidate links; historical semantic status is retained and active closure is recorded separately
+- [x] Write the Phase 1 extraction report and add the first-slice package generator/test
+- [x] Plan Phase 1B scene/behavior extraction in `docs/roadmap/Roadmap_SocialDev_Phase1B_SceneBehavior.md`
+- [x] Extract machine-readable scene/behavior candidates: RoomData grid, furniture projection, Staff constants/transitions, and loader-aware Job/Skill links
+- [x] Verify Phase 1B: `22` parsed records, room `10×10`, source slices `13+15`, `7` transitions, `8` review items, structural status `pass`
+- [x] Plan the Phase 1C scene-semantics review in `docs/roadmap/Roadmap_SocialDev_Phase1C_SceneSemantics.md`
+- [x] Build scene-semantics review/validation: `12` source slices, `9` observations, `103` FurnitureData IDs, `13` non-empty `passMap_` records; the historical route blocker was superseded by the Phase 1D closure package
+- [x] Plan the Phase 1D native-semantics closure in `docs/roadmap/Roadmap_SocialDev_Phase1D_NativeSemantics.md`
+- [x] Build native-semantics evidence/validation from the current APK and pin the APK hash; the previous candidate package was superseded by the authoritative Phase 1D closure
+- [x] Close `objMap → ObjChip.type_`, door relation, `GetStandingPositions`, the bounded furniture-placement model, and the Astar 4-neighbor policy from native evidence
+- [x] Rebuild the Phase 1C package/report so it no longer retains the old map-assignment and 8-neighbor conclusions
+- [x] Close the remaining Phase 0 blocking review queue outside Phase 1D with the Pre-runtime Closure Sweep: loader semantics, decompiler bodies, Player/AppData split, and state labels outside the living-scene slice
+- [x] Verify map-code → ObjChip semantics and the bounded room-placement model from native/C evidence
+- [x] Normalize `IsPassable` boolean semantics and the null-furniture fallback with the FurnitureData type-4 fixture and explicit binding policy
+- [x] Extract the FurnitureData type-4 non-empty `passMap_` candidate and verify the native consumer window in ObjChip
+- [x] Inspect native/assembly evidence for `Room.InitObjChips` to close the raw map-code assignment gap
+- [x] Verify that Astar uses 4-neighbor cardinal movement
+- [x] Verify the Astar goal filter before creating a route path
+- [x] Create one route fixture after passMap normalization and the goal filter pass
+- [x] Verify asset selectors (`seb_`, `img_`, `subSeb_`) and animation selectors before promoting the catalog
+- [x] Verify numeric staff state/move/flag labels and `StaffData.skill_ → SkillData` lookup/effect semantics within the living-scene slice
+- [x] Complete the concrete display slice: the original room/staff/furniture candidates plus one route fixture
+- [x] Extract the data/loader/selector/constant/transition package for the core display systems under Phase 1D evidence
+- [x] Create canonical contracts and deterministic fixtures before writing runtime implementation
+- [x] Plan Phase 2A for the canonical `SceneCatalog` from `RoomData(0)` with acceptance gates
+- [x] Build and validate the canonical `SceneCatalog` contract/fixture from `RoomData(0)` and the Phase 1D authority
+- [x] Verify SceneCatalog provenance: locale rows, source slices, native methods, APK hash, and input manifest
+- [x] Plan Phase 2B `ObjectCatalog` contract, fixture, provenance, and acceptance gates
+- [x] Build and validate the canonical `ObjectCatalog` from the SceneCatalog contract: `29/29` checks, `4` objects, `7` raw types, `3` bindings, and `8` resolved selectors
+- [x] Verify ObjectCatalog provenance: `11` source slices, `17` manifest inputs, pinned APK/asset ZIP hashes, locale rows, and selector asset-index identity
+- [x] Add a deterministic ObjectCatalog builder/test and run Phase 1D, SceneCatalog, native-semantics, and semantics-review regression gates
+- [x] Plan Phase 2C `ActorCatalog` with static identity, selector, relation, behavior-profile, spawn-boundary, and acceptance gates
+- [x] Build `ActorCatalog` from the ObjectCatalog contract: `35/35` checks, `5` actors, `5` portrait selectors, and `8` wait/typing selectors
+- [x] Build the full source-derived character metadata catalog: `141` StaffData, `19` HelperData, `30` JobData, `36` SkillData, compact runtime projection, selector provenance, and ActorState boundary
+- [x] Build the shared character capability layer: four family profiles, one human profile bound to all `141` StaffData records, separate HelperData handling, explicit action/direction selector maps, lazy resolver/spawn plan, and deferred/fallback statuses for source gaps
+- [x] Close the full human character asset package: promote `105` PNGs and `35` SEBs byte-for-byte, decode `48` layers / `334` frame records, preserve `30` no-texture control records, and bind the package to all `141` StaffData image selectors
+- [x] Expose every native human SEB filename through the shared capability layer: `16` native action groups covering all `35` selectors, with unsupported directions returning explicit no-selector status
+- [x] Integrate lazy full-character image/frame resolution into the generic Canvas renderer and visual gate without replacing the bounded `display_asset_manifest`
+- [x] Write the full-character asset roadmap and runtime closure report with source/runtime hash, lazy-loading, scope-boundary, and verification acceptance gates
+- [x] Create the display-slice scope contract for `room:0`, furniture `0/1/2/5`, actors `0–4`, and the route/living trace boundary
+- [x] Close a deterministic source-bounded actor spawn fixture for three actors through the verified `room:0` door cell
+- [x] Create the camera/coordinate, actor behavior, and fixed-tick contracts before starting the runtime core
+- [x] Lock the display/runtime readiness gate for the original scene, characters, and living logic
+- [x] Complete the Phase 2C data/asset/behavior readiness package for `display-slice-01`
+- [x] Complete the single Pre-runtime Closure Sweep for Phase 0–1C: `21/21` review items closed, `0` open/pending/blocking items, Phase 1C formally superseded by Phase 1D
+- [x] Create the Vite/TypeScript runtime scaffold after the Phase 2C readiness gate
+- [x] Build the first vertical slice: one room, camera, 3–5 characters, route/animation/interaction that is visible on screen
+- [x] Build the deterministic living-state core and renderer under `runtime/social-dev/`
+- [x] Add screenshot and behavior-trace gates before expanding scope
+- [x] Implement the separate PNG/SEB asset gate and promote only the validated runtime subset; keep unresolved compositions explicitly blocked
+- [x] Close the source-backed OPT logical reconstructions for `door_03 → door_02`, `desk_00`, and `chair_02`; promote the resulting `furniture:1` / `furniture:5` subset
+- [x] Replace approved actor/world placeholders with selector-backed frame rendering while retaining fallbacks for blocked assets
+- [x] Write the detailed Phase 3A recovery/quarantine plan and acceptance gates
+- [x] Phase 3A — Validate the variable-piece `chair_00.opt` reconstruction, approve `furniture:2`, and update the asset gate/manifest deterministically
+- [x] Re-extract the selected `chair_00`–`chair_04` PNG/OPT/SEB triplets through the pinned APK loader path and verify `15/15` byte-exact matches against the supplied asset ZIP
+- [x] Compare the supplied `2.4.9`, `2.5.0`, and `2.5.1` APKs through the chip loader path; verify identical 333-entry plaintext packs, identical chair triplets, and stable variable-piece reconstruction for `chair_00`/`chair_01`
+- [x] Phase 3B — Close native room floor/wall/door identity, coordinate placement, footprint, camera, and draw order for `room:0`; retain the source-unresolved floor selector and record selector/data `85/floor_09.png` while keeping the approved `furniture:2` composition separate from native room binding
+- [x] Phase 3B recovery — Reproduce the floor selector `5` across RoomData, ZIP, APK, Unity `chip` TextAsset, decrypted pack, native loader path, asset index, and available alternate packages; pass `22/22` checks as `source_limited_unresolved`, then borrow selector/data `85/floor_09.png` while rendering the complete `floor_05.png` asset without relabeling it as recovered provenance
+- [x] Phase 3C bounded render contract — Integrate the evidence-bounded placements into Canvas, preserve explicit fallbacks/blockers, and verify contract-backed coordinate/draw-pass projections
+- [x] Enforce the single room-floor composition across the default-map contract, asset loading, and MapChip projection (`5 → 85/floor_09.png` selector/data + `floor_05.png` pixels); retain `23/floor_05.png` as provenance-only native lookup data
+- [x] Phase 3C browser gate — Capture frame `6`/`136` candidate screenshots, verify the deterministic trace/digest, and pass the zero-console-error/zero-warning gate without changing the historical baseline
+- [x] Build the native-faithful full content registry first: `43` DataManager arrays, `3,693` raw data rows, `3,542` source/derived assets, `3,192` resource selectors, raw-row provenance, locale fallback resolution, and namespaced native IDs
+- [x] Build the native content connection graph: data records → selector fields → `img.inf`/`seb.inf` → source/derived assets → C# consumers → lifecycle phases; retain unresolved and decompiler-ambiguous edges explicitly
+- [x] Build the complete RoomData catalog for `room:0`–`room:17`: decoded `objMap`/`objDir`, `1,800` ObjChip cells, raw type counts, door cells, selector references, source row hashes, and separate MapChip linkage policy
+- [x] Recover and catalog the native `Room.FLOOR_IMAGE_ID_ARRAY` for every RoomData row: `18/18` floor-image links resolve to source selectors/assets, and the shared MapChip topology contract is linked without inferring it from the 10x10 ObjChip grids
+- [x] Close the native `Room.floor_ → MAPCHIP_ARRAY` connection: catalog all direct constructor call sites, materialize the verified `14×14` floor-0 and `4×4` nonzero rows, expose context-aware runtime selection, reject invalid nonzero `14×14` requests, keep non-main outer MapChip scope absent, and smoke-test both display and preview URLs
+- [x] Build the runtime resolver bridge over the native content registry and full room catalog before promoting additional renderer assets: 18 rooms, 1,800 raw cells, 18 shared MapChip links, exact room selector assets, and explicit room:0 native bindings
+- [x] Wave 3 asset promotion — separate logical OPT reconstruction from physical runtime PNG loading; promote 34 bounded runtime binaries and validate every frame rectangle against the loaded PNG
+- [x] Wave 4 render topology — execute the nine native render passes explicitly, draw MapChip extension walls in their declared pass, and remove the global cross-pass sort
+- [x] Wave 5 room runtime — add all-room selector UI, room-scene runtime resolution, raw direction preservation, and no ObjChip→FurnitureData inference
+- [x] Item 6 — build the Room R (`room:17`) raw scene fixture, runtime contract, and diagnostic overlay from the native 10x10 ObjChip grid; preserve raw values and do not invent FurnitureData bindings
+- [x] Item 7 — add the deterministic visual gate, frame `0/1/2` room:0 capture, Room R overlay capture, asset-bound checks, pass-order checks, drawable metadata checks, furniture fallback diagnostics, and content-addressed screenshot evidence
+- [x] Phase 3C strict evidence/runtime closure — unified native content catalog, lifecycle/assembly contract, explicit two-grid resolver, native direction mapping, all-room wall/door composition, render trace, and browser gate are closed
+- [x] Native direction-vector closure — verified `GetDirectionVector`, reverse table, and static vector construction from native disassembly; raw values remain preserved alongside translated labels/vectors
+- [x] Per-room wall/door composition closure — generic native `ObjChip.DrawWall` predicates, SEB records, coordinates, door binding, and exact room selector PNGs are connected for rooms 0–17
+- [x] Phase 3C comparison-policy approval — historical baseline is explicitly preserved; the active runtime does not overwrite it
+- [x] AM-0 asset metadata baseline — freeze input hashes, 3,542 indexed asset rows, native catalog counts, current runtime subset counts, known exceptions, and repeatable verification commands
+- [x] AM-1 asset coverage matrix — classify every indexed asset, selector, data-field relation, runtime manifest entry, and orphan/unresolved record
+- [x] AM-2 family taxonomy and provenance matrix — close the asset-family vocabulary and per-row provenance/status model for all 3,542 rows across 27 families and 78 subfamilies
+- [x] AM-3 selector/data-field semantics matrix — document all 3,192 selectors and 1,063 fields, including selector-bearing calls, sentinels, consumer methods, and deferred scope
+- [x] AM-4 composition and geometry catalog — close 47 compositions and 3,546 geometry rows with zero runtime geometry gaps
+- [x] AM-5 usage/lifecycle/placement matrix — connect all 3,542 assets to usage, lifecycle, placement, family boundaries, and runtime query status
+- [x] Track W furniture/world metadata — close 103 FurnitureData rows, 18 rooms, and six native initial instances
+- [x] Track H human/helper/avatar metadata — close 141 StaffData, 19 HelperData, 105 human images, 35 human animations, and explicit avatar/event boundaries
+- [x] Track X/A UI/event/text/APK provenance boundary — classify 21 non-actor families, 34 Unity TextAsset gaps, and one unresolved selector without inventing consumers
+- [x] Runtime metadata lookup integration — expose lazy asset/family/selector/FurnitureData lookup through the typed runtime catalog API
+- [x] Final asset metadata completion gate — pass the deterministic catalog/readiness audit and record all remaining explicit boundaries
+- [ ] Expand beyond `display-slice-01` only after deterministic and browser visual gates remain stable
+- [ ] Request approval before deleting the legacy archive, and delete it only after cutover gates pass
 
 ## Legacy GameDev baseline — frozen
 
-- [x] ย้าย/ลบ empty legacy directories ให้เหลือเฉพาะหมวดปัจจุบัน
-- [x] ลบ cache ที่สร้างจาก test/compile โดยตรวจ target แบบ explicit
-- [x] เขียน `knowledge/reorganization/relocation_manifest.after.json`
-- [x] อัปเดต `PROJECT_STATE.md` หลัง final verification
-- [x] รัน relocation comparison, path scan, full tests และ browser smoke
+- [x] Move/delete empty legacy directories so only current categories remain
+- [x] Remove caches created by tests/compilation after checking explicit targets
+- [x] Write `archive/pre-social-reset/knowledge/reorganization/relocation_manifest.after.json`
+- [x] Update `PROJECT_STATE.md` after final verification
+- [x] Run relocation comparison, path scan, full tests, and browser smoke
 
 ## Legacy C#-first Simulation Core — frozen
 
-- [x] ล็อก gameplay-critical C# slice และเขียน design spec ของ inventory/Simulation Core
-- [x] review written spec และแตก implementation plan ก่อนแก้โค้ด
-- [x] เลือกวิธี execute implementation plan ก่อนแก้โค้ด (inline execution บน `main`)
-- [x] ทำ structural inventory class/method/field ของ gameplay-critical C# slice
-- [ ] แยก state, transition, timer, movement, scene, actor และ event contracts จากหลักฐาน
-- [x] สร้าง bounded semantic claims table โดยให้สถานะ `unknown`/`raw_only` อยู่ได้และมี provenance ต่อค่า
-- [x] ออกแบบและตรวจ canonical simulation schema ที่ไม่ผูกกับ decompiled object layout
-- [x] ทำ deterministic SimulationCore reducer/tick/snapshot/digest พร้อม collision/event/bubble contracts
-- [x] ทำ deterministic tick loop ที่จำลอง office ต่อเนื่องโดยไม่มี playback controls
-- [x] เชื่อม scene/actor state เข้ากับ `runtime/office/` ผ่าน Core-backed adapter contracts
-- [ ] ค่อยเชื่อม task assignment จริงและ LLM หลัง simulation baseline ผ่าน contract tests
+- [x] Lock the gameplay-critical C# slice and write the inventory/Simulation Core design spec
+- [x] Review the written spec and split it into an implementation plan before editing code
+- [x] Choose how to execute the implementation plan before editing code (inline execution on `main`)
+- [x] Build the class/method/field structural inventory for the gameplay-critical C# slice
+- [ ] Separate state, transition, timer, movement, scene, actor, and event contracts from the evidence
+- [x] Build the bounded semantic-claims table while allowing `unknown`/`raw_only` statuses with provenance
+- [x] Design and verify the canonical simulation schema without coupling it to decompiled object layout
+- [x] Build the deterministic SimulationCore reducer/tick/snapshot/digest with collision/event/bubble contracts
+- [x] Build the deterministic tick loop that continuously simulates the office without playback controls
+- [x] Connect scene/actor state to the legacy `archive/pre-social-reset/runtime/office/` through Core-backed adapter contracts
+- [ ] Connect real task assignment and LLM only after the simulation baseline passes contract tests
 
 ## Legacy scene-map reconstruction — frozen
 
@@ -61,17 +157,17 @@
 
 ## Legacy dashboard — frozen
 
-- [x] แสดง actor state, task state, scene, event log และ evidence/provenance ในหน้าเดียว
-- [x] เพิ่ม live UI state stream โดยยังรักษา deterministic replay/debug snapshot
-- [ ] วาง backend/auth/multi-user sync เป็น adapter boundary แยกจาก simulation core
+- [x] Show actor state, task state, scene, event log, and evidence/provenance on one page
+- [x] Add a live UI state stream while preserving the deterministic replay/debug snapshot
+- [ ] Place backend/auth/multi-user sync behind an adapter boundary separate from the simulation core
 
-## ห้ามทำในช่วงนี้
+## Do Not Do During This Stage
 
-- อย่าสร้าง `Assembly-CSharp/` กลับ
-- อย่าแก้ source roots หรือ execute decompiled C# เป็น production runtime
-- อย่าเปลี่ยน `unknown` เป็น semantic name โดยไม่มี evidence ที่ตรวจสอบได้
-- อย่าลบ evidence เดิม; ถ้าไม่ใช้ให้ย้ายไป archive พร้อมรักษา provenance
+- Do not recreate `Assembly-CSharp/`
+- Do not modify source roots or execute decompiled C# as production runtime
+- Do not convert `unknown` into a semantic name without verifiable evidence
+- Do not delete existing evidence; if it is unused, move it to the archive while preserving provenance
 
-## ประวัติที่ freeze แล้ว
+## Frozen History
 
-รายละเอียด corpus intelligence, TypeScript port และ roadmap เก่าเก็บอยู่ใน `docs/archive/`; ให้ใช้ roadmap ปัจจุบันใน `docs/roadmap/` เป็นตัวนำ
+Corpus intelligence, TypeScript-port, and old roadmap details are stored under `archive/pre-social-reset/docs/`; use the current roadmaps under `docs/` as the active guide.

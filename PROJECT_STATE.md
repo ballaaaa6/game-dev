@@ -1,134 +1,321 @@
 # Project State
 
-## สถานะปัจจุบัน — Social Dev clean-room reset
+## Current Status — Asset metadata catalog closure and runtime query integration are complete with explicit promotion boundaries
 
-- เปลี่ยน authority ใหม่เป็น Social Dev; GameDev/Virtual Game Office ถูกกั้นเป็น legacy boundary ตาม `archive/pre-social-reset/legacy_manifest.json`
-- ขยาย legacy manifest ให้ครอบคลุม historical knowledge `31` ไฟล์ / `3,197,523` bytes, historical guides `1` ไฟล์, legacy viewer `67` ไฟล์ และ archived maintenance `4` ไฟล์
-- จัด active data store ใหม่ที่ `knowledge/social-dev/data/csharp_update/`: staged C# data `44` ไฟล์ / `437,881` bytes พร้อม hash manifest; source ใน `social dev/` ยัง read-only
-- ย้าย legacy C#/reverse-engineering/maintenance tools `124` ไฟล์ / `1,833,851` bytes ไป `archive/pre-social-reset/tools/`; active `tools/` เหลือ Social Dev tools
-- เก็บกวาด root สำเร็จ: ย้าย GameDev source/extraction, APK toolkit, Ghidra, viewer และ `.superpowers` รวม `6,419` ไฟล์ / `3,766,761,367` bytes ไป `archive/pre-social-reset/`; root เหลือเฉพาะโครง Social Dev และ shared metadata
-- R0 provenance pass เสร็จ: fingerprint RAR, APK, asset ZIP, C# update และ VGO_Core แล้ว โดย source/extraction roots ยัง read-only; มีเพียง organized data copy และ legacy-tool archive ที่จัดการแยกออกมา
-- C# RAR baseline ถูก extract เป็น evidence ที่ `knowledge/social-dev/evidence/csharp_raw_20260813/`; ไม่ execute decompiled C# โดยตรง
-- เทียบ C# update ด้วย canonical path แล้ว: `exact_match=4980`, `modified=588`, `update_only=586`
-- สร้าง Social Dev structural inventory แล้ว: inputs `72`, types `82`, fields `3430`, methods `1685`, fingerprint `1b2f9396f2768545d4f719022fb1b116df0de9a5347fb46337a8417e1257093a`
-- candidate diff ยืนยันว่า update ลบ `Cpp2ILHelpers.NoteDecompilerIssue` ใน 60 gameplay/lifecycle files (`16699 → 0`) แต่ `//IL_...` annotations ยังเท่าเดิม `29030`; structural counts ของ raw/update เท่ากัน จึงจัดเป็น textual cleanup ไม่ใช่ semantic repair
-- marker-only normalization ยืนยัน `60` files เป็น byte-equivalent หลังตัดเฉพาะ marker lines, `12` files exact อยู่แล้ว และ `0` files มี content change นอกเหนือจาก marker; ใช้ RAR เป็น provenance anchor ต่อไป
-- สร้าง candidate schema จากหลักฐานแล้ว: DataManager registry `43` typed arrays / data classes `44` / data fields `1112`; runtime entity candidate `14` types / `919` fields / `30` lifecycle hooks / `21` relation candidates โดยทุก semantic status ยัง `unknown`
-- สร้าง load-contract candidates แล้ว: registry `41` รายการจับคู่กับ `Load(StringArrayStream)` ได้, `2` รายการยังไม่มี loader ที่จับได้; field/load alignment ได้ `38` candidate, `3` count mismatch และ `3` Load missing จึงยังไม่สร้าง production model จากตำแหน่งคอลัมน์
-- asset/APK inventory ผ่าน read-only gate: ZIP `3566` members, asset index `3542` rows, `zip_exact=3542`, APK source entries `3508` present / `34` missing (misc text payloads), APK fingerprint ตรง และ pack map `25/25 roundtrip_exact`
-- extract เฉพาะ evidence text/index จาก ZIP แล้ว `114` files; DataManager registry cross-check กับ xls ได้ English `43/43` และ Japanese `43/43`, เหลือ English extras `Exclusion.txt`, `softkey.txt`, `text.txt` ที่ยังไม่ promote
-- จัด boundary เบื้องต้นแล้ว: `data`/`game`/`game.routeSearch`/`main` เป็น candidate evidence; `form` เป็น presentation; `KairoEngine`/`Dependencies` เป็น engine/dependency
-- `VGO_Core` ถูกจัดเป็น derived architecture draft เท่านั้น เพราะยังมี mocked loader, placeholder movement และ save/load ไม่ครบ
-- สร้าง VGO disposition manifest แล้ว: `5` ไฟล์ / `11,647` bytes ถูกติดสถานะ `derived_draft_not_promoted`; ห้ามใช้ `baseSpeed`/`isSpecialBody` เป็น schema จนกว่าจะมี source provenance
-- active-reference scan หลัง root cleanup: อ่านไฟล์ข้อความ `5,820` ไฟล์ พบ `3,774` matches ใน `57` ไฟล์; intentional documentation `355`, legacy artifacts `3,419`, active dependency `0` — reference gate ผ่าน
-- `runtime/social-dev/` ถูกสร้างเป็น boundary ว่างสำหรับ contract-first runtime; `runtime/office` และ `runtime/dashboard` ถูก freeze เป็น legacy
+The runtime now has a runtime-approved native content catalog, a native lifecycle/assembly contract, all-room selector assets, an evidence-backed resolver, explicit native direction mapping, generic native wall/door composition for all 18 rooms, and nine ordered render passes. It separates the 14x14 MapChip topology from the 10x10 ObjChip occupancy grid and never infers MapChip or FurnitureData identity from ObjChip. Browser smoke covers room:0 through room:17 with ready assets, zero unresolved entries, zero console errors/warnings, and native wall/door draw traces. The historical visual baseline is intentionally preserved by an explicit comparison policy; it is not silently replaced.
 
-## ประวัติ baseline เดิม (GameDev legacy)
+- The native Room.floor_ connection is now closed in `knowledge/social-dev/evidence/native_room_floor_usage_catalog.json` and `runtime/social-dev/evidence/native_room_floor_usage_contract.json`. Native evidence proves the boolean selector `floor == 0 → MAPCHIP_ARRAY[0]` / `floor != 0 → MAPCHIP_ARRAY[1]`, with `floor_0` materialized as `14×14` (`196` cells) and `floor_nonzero` as `4×4` (`16` cells); the old `1×16` presentation shape was corrected to the native row shape.
+- The constructor usage catalog records `8` direct `new Room(...)` call sites across the main display, persistent player-room, and addition-floor preview paths, and connects all `18` RoomData keys without treating RoomData as the source of Room.floor_. The runtime resolver and projection accept explicit `nativeFloorValue`/context options; the browser query paths are `?nativeFloor=0&context=persistent_room` and `?nativeFloor=1&context=addition_floor_preview`.
+- Native policy boundaries are explicit: floor values `2–5` select the same nonzero row because native selection is boolean; nonzero `14×14` requests are rejected; the existing 14×14 extension-wall predicates are never applied to a 4×4 topology. The approved floor alias remains unchanged: source selector/data `85/floor_09.png`, rendered pixels `floor_05.png`.
+- The final native environment policy is explicit: only `main_display` receives the native `14×14` outer MapChip scope; `persistent_room` and `addition_floor_preview` remain `4×4` room topology only. No synthetic garden, road, or outer map is promoted when the native constructor does not provide one.
+- The topology closure gates pass: the deterministic Python package test, all `18` Vitest files / `48` tests, TypeScript typecheck, production Vite build, and browser smoke for both the original `room:0` display and the native nonzero preview (zero console errors/warnings; visual gate pass).
 
-- Scene-map reconstruction Task 2 SEB audit เสร็จแล้ว: พบ floor SEB 21 logical files ที่ shortfall 4 bytes เท่ากัน; ไม่มี direct named payload ใน APK/ZIP/extracted ที่ complete จึงได้ผล `no_full_payload_found` ทั้งหมด และไม่มี reextract payload ถูก stage
-- จัดระเบียบ workspace ตามแนวทาง C#-first clean reconstruction เสร็จแล้ว
-- ขอบเขต semantic inventory รอบแรกถูกล็อกไว้ที่ gameplay-critical C# slice; runtime implementation ทำต่อแบบ local-only
-- design spec ของ C# semantic inventory และ Simulation Core ผ่าน written-spec review แล้ว
-- Task 1 structural C# inventory, Task 2 deep semantic slices, Task 3 canonical schema, Task 4 SimulationCore, Task 5 OfficeRuntime adapter migration, Task 6 dashboard canonical projection/provenance, Task 7 continuous scheduler และ Task 8 final verification/report เสร็จแล้วและตรวจผ่าน
-- Task 4 scene-map reconstruction semantics contract เสร็จแล้ว: เพิ่ม deterministic C#/C/assembly text-trace helper, SEB consumer-boundary evidence contract และ report ที่ระบุ crop/translation/selector/object-base/camera/depth แยกจากกัน
-- Task 5 object-placement contract เสร็จแล้ว: current page/reception-desk-chair fixture stays adapter-only, asset identity is verified, and original room/object placement remains unknown because no persisted/generated floor0 room-state record was found
-- Task 5 fix round 1: added OfficeObjecList as the opening provenance anchor and renamed the summary classification so no contract field named `status` carries a non-approved value
-- implementation ทำแบบ inline execution บนสาย `main`; exported OfficeRuntime ใช้ SimulationCore เป็น state owner และมี compatibility projections
-- dashboard อ่าน canonical snapshot จาก SimulationCore และ source-free semantic evidence projection ที่โหลดจาก `runtime/office/evidence/`; ไม่มีการ import raw C# ใน browser
-- dashboard เริ่ม scheduler ภายในเองที่ interval `160ms`; ไม่มี Play/Pause/Step/Reset หรือ speed control สำหรับ simulation
-- หลักฐาน C# ชุดใหม่อยู่ที่ `knowledge/csharp/primary/` และถูกแยกจาก runtime แล้ว
-- baseline, world assets, characters, language และ reverse-engineering อยู่ใต้ `knowledge/`
-- deterministic office runtime อยู่ที่ `runtime/office/`; dashboard/task runtime อยู่ที่ `runtime/dashboard/`
-- roadmap ปัจจุบันอยู่ที่ `docs/roadmap/`; แผนเก่าและแนวคิด AI ที่ยังไม่เปิดใช้งานอยู่ใน `docs/archive/` และ `archive/future-ai/`
-- `Assembly-CSharp/`, `Phases/` และ root C# corpus เดิมไม่อยู่ใน workspace และไม่ถูกสร้างกลับ
+- Item 6 is implemented for Room R (`room:17`): the raw fixture preserves all `100` ObjChip cells, raw type/direction values, the door at `(8,3)`, and `0` native FurnitureData bindings. The runtime exposes it through `room_r_scene_contract.json` and a diagnostic-only raw overlay; native wall/door composition is supplied separately by the closed all-room assembly contract.
+- Item 7 is superseded by the completed `phase3d_all_room_assembly_gate`: room:0 frame `0/1/2` retains the existing frame/asset/furniture evidence, Room R cross-checks `100/100` overlay cells, and all 18 rooms pass the same native composition, asset, metadata, and trace gates.
+- The gate also exposed and fixed a real direct-image fallback bug: native furniture frames with `source_status=pass_native_img_asset` but no `runtime_status` are now accepted as approved runtime images. The renderer diagnostics and content-addressed screenshots record the corrected result.
 
-## สิ่งที่ตรวจสอบแล้ว
+- The Pre-runtime Closure Sweep is complete for the historical Phase 0 through Phase 1C review boundary. Its active authority is `runtime/social-dev/evidence/pre_runtime_closure_contract.json` with status `pass` / `closed_before_runtime`.
+- AM-0 of the asset-metadata completion roadmap is complete. The deterministic baseline is `knowledge/social-dev/evidence/asset_metadata_baseline.json`, its non-runtime contract is `runtime/social-dev/evidence/asset_metadata_baseline_contract.json`, and the report is `docs/reports/social-dev_asset_metadata_baseline.md`. It freezes the 3,542-row asset index, 3,542 native assets, 3,192 selectors, 3,693 data rows, source hashes, current contract counts, verification commands, and six explicit exceptions. The baseline builder/test pass and all ten pre-existing native/character/room/display gates pass.
+- AM-1 is complete as a coverage audit. `knowledge/social-dev/evidence/asset_metadata_coverage.json` contains all 3,542 indexed assets, 3,192 selectors, 1,063 catalog fields, 523 data-selector relations, 250 consumer edges, 43 lifecycle edges, and 197 runtime manifest asset entries. `asset_metadata_orphan_report.json` separates 3,231 currently unreferenced catalog rows, 1 unresolved selector (`lineup_layout/bg.seb`), 88 explicit `-1` sentinels, 11 helper selector-scope gaps, and 1,055 fields needing semantic classification; no indexed/native or runtime manifest identity mismatch remains.
+- AM-2 is complete. `asset_family_taxonomy.json` assigns all 3,542 rows to 27 stable structural families and 78 extension-based subfamilies with explicit lineage and runtime policy; no asset remains unclassified.
+- AM-3 is complete. `asset_selector_usage_matrix.json` closes 3,192 selector records and `data_field_semantics_matrix.json` classifies all 1,063 catalog fields, including the eight selector-bearing fields, sentinel policy, consumer methods, lifecycle status, and nine deferred selector-scope fields.
+- AM-4 is complete. `asset_composition_catalog.json` contains 47 composition entries and `asset_geometry_catalog.json` contains 3,546 geometry rows; all 186 runtime-relevant rows have zero runtime geometry gaps, while source-limited/catalog-only geometry remains explicitly labeled.
+- Track W is complete. `furniture_asset_metadata.json` records all 103 FurnitureData rows, selector status, composition/geometry references, 18 rooms, six native instances, and four native-bound FurnitureData IDs without inferring identity from ObjChip values.
+- Track H is complete for its declared boundaries. `character_visual_asset_metadata.json` records 141 StaffData, 19 HelperData, 105 unique human images, 35 human animations, 284 avatar-body rows, 509 avatar-head rows, and 72 event-visual rows; helper pixel gaps and avatar/event runtime promotion boundaries remain explicit.
+- AM-5 is complete. `asset_usage_lifecycle_placement_matrix.json` connects all 3,542 rows to 3,495 usage edges, 43 lifecycle edges, 27 families, 21 non-actor-family boundaries, placement status, and runtime query status. It preserves the 34 Unity TextAsset/APK provenance gap instead of guessing a nested mapping.
+- Track X/A is complete for current evidence. `asset_surface_provenance.json` records UI/event/text/config/data/platform family boundaries, ZIP/APK identity status, 25 exact pack round-trips, the 34 Unity TextAsset gap, and the one unresolved `lineup_layout/bg.seb` selector. No screen/event consumer contract is invented.
+- Runtime metadata lookup is integrated through `runtime/social-dev/evidence/asset_metadata_runtime_manifest.json` and `runtime/social-dev/src/catalog/asset-metadata.ts`: 186 explicit runtime rows are lazy-queryable by asset ID, selector key, family, or FurnitureData ID while the native 3,542-asset/3,192-selector catalog remains available for evidence lookup.
+- The final audit is `knowledge/social-dev/evidence/asset_metadata_completion_gate.json`, `runtime/social-dev/evidence/asset_metadata_completion_contract.json`, and `docs/reports/social-dev_asset_metadata_completion.md`. It passes 13 completion checks and distinguishes complete catalog metadata from the 186-row runtime promotion surface.
+- Final verification passes: all 21 targeted Python metadata/native gates, `npm run typecheck`, Vitest `18/18` files and `48/48` tests, `npm run build`, and `git diff --check`. Runtime source-import scanning reports no archive/APK/C#/knowledge-root imports in `runtime/social-dev/src`; remaining knowledge-root imports are test-only historical evidence fixtures.
+- A native-faithful content registry and connection graph were added before any renderer changes. The registry covers `43` DataManager arrays, `43` staged data types, `3,693` raw data rows, `3,542` indexed source/derived assets, `3,192` `img.inf`/`seb.inf` selector records, `523` data-to-selector edges, `250` C# consumer edges, and `43` lifecycle edges; deterministic validation passes.
+- The full character metadata catalog is now implemented at `runtime/social-dev/evidence/character_metadata_contract.json`: `141` StaffData records, `19` separate HelperData records, `30` JobData records, and `36` SkillData records. All StaffData image selectors resolve to `105` unique human assets; runtime metadata is compact while field-level provenance remains in the evidence fixture. Mutable actor state remains owned by `ActorState` and is created lazily.
+- The shared character capability layer is now implemented at `runtime/social-dev/evidence/character_capability_contract.json`: four explicit family profiles, one shared `human-staff-v1` profile bound to all `141` StaffData records (including special/assistant templates), a separate `helper-record-v1`, and reserved avatar/event-only boundaries. The runtime `character-resolver.ts` resolves every staff/helper template lazily, including `16` filename-derived native action groups covering all `35` human SEB selectors. Native human `wait`, `move`, and `typing` are closed in four directions, talk/work/equipment fallbacks and deferred actions remain explicit, and unsupported native directions return a visible no-selector status.
+- The full human character asset package is now closed separately from the bounded world/display manifest at `runtime/social-dev/evidence/character_asset_manifest.json`: `105` PNGs and `35` SEBs are promoted byte-for-byte, decoded into `48` layers / `334` records with `30` explicit no-texture control records, and bound to all `141` StaffData image selectors. `runtime/social-dev/src/assets/character-assets.ts` provides lazy image loading and frame selection; Canvas and the visual gate use the generic path for any approved character outside the five-actor display slice. The browser imports generated contracts and promoted assets only; it does not parse source binaries or recovered C#.
+- The registry preserves native DataManager IDs, resource selector IDs, archive-relative asset identities, raw rows/selector lines, locale fallback resolution, `-1` sentinels, and derived-asset provenance. `runtime/social-dev/evidence/native_content_catalog.json` promotes that identity graph to the runtime boundary with `3,693` records, `3,542` assets, `3,192` selectors, and all consumer/lifecycle edges; decoded fields retain their source status and are not renamed by inference.
+- The runtime ID bridge is callable through `runtime/social-dev/src/catalog/native-content.ts`: data records, selector keys, asset IDs, and all bidirectional connection edges resolve from `RuntimeCatalogs` without reopening source roots or guessing an identity.
+- A complete RoomData catalog now covers `room:0` through `room:17` with `1,800` decoded 10x10 ObjChip cells, native `objMap`/`objDir`, raw type counts, door cells, floor/wall/door references, and source row hashes. All `18/18` `floorImgId_` values resolve through the native `Room.FLOOR_IMAGE_ID_ARRAY` (`11` entries), and every room links the shared MapChip contract without inferring topology from ObjChip.
+- The native connection graph records `RoomData.floorImgId_` as `Room.FLOOR_IMAGE_ID_ARRAY[index] → chip/img selector`, including `room:0` index `5 → selector 23 → floor_05.png` and `room:17` index `9 → selector 85 → floor_09.png`. The runtime resolver consumes the full catalog, preserves raw ObjChip direction values, and exposes the native vector/reverse mapping verified from `libil2cpp.so`: `0→(0,1)`, `1→(0,-1)`, `2→(1,0)`, `3→(-1,0)` with reverse table `[1,0,3,2]`.
+- The closure matrix covers `21/21` historical review items: `13 verified`, `6 derived`, and `2 quarantine`; `open_items=0`, `pending_review_items=0`, and `blocking_items_remaining=0`.
+- Canonical pre-runtime contracts are `knowledge/social-dev/evidence/load_contract_closure.json`, `knowledge/social-dev/evidence/semantic_review_closure.json`, `knowledge/social-dev/evidence/phase1_supersession.json`, `runtime/social-dev/evidence/data_contract.json`, `runtime/social-dev/evidence/entity_contract.json`, and `runtime/social-dev/evidence/save_contract.json`.
+- Original candidate evidence retains its historical `pending_review`/`unknown` labels for provenance; the closure matrix is the current lifecycle authority and prevents those historical candidates from being treated as active blockers.
+- The repeatable closure gate is `python tools/social-dev/test_pre_runtime_closure.py`; it passed with `21` closed items and no blocking items remaining.
+- The semantic diff disposition covers all `72` declared files (`44` data, `23` game, `2` route-search, `3` lifecycle): `12` exact and `60` marker-only after normalization. Decompiler bodies remain quarantined and are not copied into runtime.
+- The first Vite/TypeScript display runtime is implemented under `runtime/social-dev/`: contract loader, deterministic fixed-tick core, route/event trace, room projection, Canvas renderer, DOM/CSS diagnostics, and browser fixture controls.
+- The deterministic behavior trace remains valid at frame `136` (`idle → move → arrive → work_or_equipment → talk`, talk markers at `20/70/110`, `talk_end` at `130`, digest `1fe49b91bd27c5fa`). The original screenshot baseline and behavior trace remain `knowledge/social-dev/evidence/display_slice_01_screenshot_baseline.png` and `knowledge/social-dev/evidence/display_slice_01_behavior_trace.json`; the previous strict screenshot is retained only as superseded provenance.
+- Phase 3C strict closure is materialized in `knowledge/social-dev/evidence/phase3c_strict_closure.json`, `runtime/social-dev/evidence/phase3c_strict_closure_contract.json`, and `knowledge/social-dev/evidence/phase3c_strict_closure_validation.json`; the strict builder/test passes `10/10` checks. Package hash is `7a7073f27e72ed87509080ac7f2526736a476101794a2ce012aaddb872a3dbd5`; runtime strict-contract hash is `451634318765b2f99c456435ec2a83d21f4b0fec2e18904f62b6d288370677e1`. The package records the native `ObjChip.DrawWall` RVA `0x12C0698`, wall/door predicates, exact room cells, source sprite rectangles, `Room.PlaceDoor` null-FurnitureData binding, and the native initial FurnitureData bindings.
+- The native wall/door and initial-furniture evidence is present in contracts and assets, and the Canvas now realizes the two-grid topology: `Room(14,14,0,roomData_[0])` supplies the MapChip floor while `RoomData.objMap_` remains the 10x10 ObjChip occupancy grid. The default visual uses the source-backed exterior chips, the boundary wall/door bindings, and native actor spawn coordinates. Selector-only `furniture:2`/`furniture:5` remain separate from the native room:0 bootstrap; no identity is inferred for those two.
+- The default visual floor composition is explicit rather than strict provenance: raw selector `5` remains source-unresolved, selector/data identity is borrowed from `85/floor_09.png`, and the rendered pixels use the complete source-backed `floor_05.png` asset. The runtime loader cross-checks the borrowed selector/data record against `room_placement_contract.json`, pins the floor05 render hash, and keeps the composition clearly marked as borrowed rather than recovered native selector identity; there is one fixed policy, not a selectable fallback or hybrid mode.
+- The display asset gate is now `knowledge/social-dev/evidence/display_asset_gate.json`: status `pass` / `approved_for_runtime_subset`, with `18` approved entries, `0` blocked entries, and `34` promoted runtime binaries. Four OPT-derived logical PNGs are materialized under the runtime boundary, and every manifest frame rectangle is checked against the physical runtime PNG actually loaded by the browser.
+- The supplied Gemini explanation was reconciled against native source: selector flags are correct, but `TryPlace` is not the bootstrap; the verified chain is `AppData.NewGame → Room(14,14,0,roomData_[0]) → PlaceDesk → FLAG_INIT_PLACE scan`, with raw door type `5` handled separately. No source/data loss was found for the scoped default layout.
+- `knowledge/social-dev/evidence/phase3c_visual_fidelity_gate.json` and its screenshots are retained as superseded evidence: they prove the old runtime was visible and deterministic, but not that it matches the native default map. The native-map acceptance gate is now closed by `phase3d_all_room_assembly_gate`; the historical baseline remains unchanged.
+- `knowledge/social-dev/evidence/phase3c_visual_gate_v2.json` and `runtime/social-dev/evidence/phase3c_visual_gate_v2_contract.json` remain superseded provenance for the earlier room:0/Room R structural gate. The active closure artifact is `knowledge/social-dev/evidence/phase3d_all_room_assembly_gate.json` and its runtime counterpart; it records `18/18` room composition and browser gates as pass.
+- Phase 3A is closed as `approved`: the variable-piece OPT reconstruction consumes the exact `chair_00.opt` payload and its `[1, 2, 1]` piece-count cells without speculative bytes. The closure reason is `chair_00_opt_variable_piece_reconstruction_verified`.
+- Phase 3A evidence is `knowledge/social-dev/evidence/phase3a_asset_composition_source_audit.json`, `knowledge/social-dev/evidence/phase3a_asset_composition_closure.json`, and `docs/reports/social-dev_phase3a_asset_composition_report.md`; the current stable audit hash is `77efba7c386cac9bed2d9944b84b984fa07bf411605f23cfa42834d7cbc91689`, and the closure hash is `1bddc93c4e08c8b4dba149ad7ace2e55d75ff4155be673d396b59dc72a2063b8`.
+- The pinned APK was re-extracted through the `JarInflater` length-prefix path for `chair_00` through `chair_04`: all `15` PNG/OPT/SEB outputs are complete and match the supplied asset ZIP byte-for-byte. The extraction audit is `knowledge/social-dev/evidence/phase3a_apk_probe/chair_extraction_audit.json` with stable hash `50db4ec9b0017f13e7697efabaf52ad635ee14448fc84884df93b5b2217540c7`; the extracted triplets are retained under `knowledge/social-dev/evidence/phase3a_apk_probe/chair_entries/`.
+- The APK probe confirms the same source bytes across the selected chair assets; the variable-piece parser now validates `chair_00`/`chair_01` with `[1, 2, 1]` cells, `chair_02`/`chair_03` with `[1, 1, 1]`, and `chair_04` with `[1, 2, 0]`. Runtime promotion uses only the source-backed outputs accepted by the Phase 3A closure.
+- A three-version comparison now covers the supplied `2.4.9`, `2.5.0`, and `2.5.1` APKs. All three decrypt to the same `333`-entry chip pack plaintext and all `15` selected chair outputs are byte-identical across versions and match the supplied ZIP. The comparison audit is `knowledge/social-dev/evidence/phase3a_apk_probe/chair_version_comparison.json` with stable hash `255e0e34960511341d50450c42c1a7eee6fd30f50e4b2014974d581addf7a892`.
+- The three-version result rules out an extraction/container or version-specific asset-loss explanation. The same bytes are sufficient after validating the variable-piece OPT grammar; no alternate payload is required, and compile-time erasure is not supported as the direct cause.
+- Three historical non-authoritative `chair_00` visual variants remain for comparison: source-backed approximations, a complete `chair_02` substitute, and a hybrid. The variant audit is `knowledge/social-dev/evidence/phase3a_apk_probe/chair_variants/chair_00_variant_audit.json` with stable hash `a9312268c349b03057b774a8ac5b88b204e711c7e6476ee8743501f7e9e9473b`; they are superseded by the exact source-backed reconstruction for runtime.
+- A structure comparison across `chair_00`–`chair_04` confirms one shared SEB animation scaffold (same one-layer/three-frame layout, source rectangles, and destination offsets; chair-specific `image_id` only) but different PNG dimensions and OPT crop/offset geometry. The audit is `knowledge/social-dev/evidence/phase3a_apk_probe/chair_structure_comparison.json` with stable hash `703863d1f12dd6626ada56b7e6e51ef583e08a276bad6e66e539b10a1704784c`.
+- The exact `chair_00` reconstruction audit is `knowledge/social-dev/evidence/phase3a_apk_probe/chair_00_reconstruction_audit.json` with stable hash `68fa8a46ba92d8dfa9e6f7bace73f00e1ec391dd21ba0f2d75455d04b7a87c18`: `411/411` OPT payloads pass the variable-piece parser, `89/89` available derived logical references match pixel-for-pixel, and `chair_00` reconstructs from its original bytes with pixel SHA-256 `23d8e732fa2000f18f8fd9649b5fbe2b190d95aff86475b8befd09cfbe8afeef`.
+- `runtime/social-dev/evidence/display_asset_manifest.json` is `pass` / `approved_for_runtime_subset` with the approved actor/world subset plus native wall/door binaries. The adapter renders the approved human SEB crops, verified source-backed world chips, and strict native wall/door records; selector-only furniture remains outside the room projection. The runtime imports no archive, APK, C#, or unapproved binary.
+- The OPT codec gate now proves exact pixel reconstruction for `chair_00`, `desk_00`, `chair_02`, `chair_04`, and the `door_03 → door_02` selector composition. The source bytes were not repaired or padded; the parser was corrected to model variable-piece cells. Asset-gate, adapter, and build checks pass without changing the historical placeholder baseline evidence.
+- Phase 3B is closed for the native `room:0` placement contract: validation passes `20/20` checks, with native initialization order, raw map assignment, door `(8,4)`, type-4 footprint/passability, coordinate/camera boundaries, selector classification, and source-bounded draw order captured in a deterministic package.
+- Phase 3B artifacts are `knowledge/social-dev/evidence/phase3b_room_placement_source_audit.json`, `knowledge/social-dev/evidence/phase3b_room_placement_fixture.json`, `knowledge/social-dev/evidence/phase3b_room_placement_validation.json`, and `runtime/social-dev/evidence/room_placement_contract.json`; the builder/test are `tools/social-dev/build_phase3b_room_placement.py` and `tools/social-dev/test_phase3b_room_placement.py`.
+- The Phase 3B package was re-materialized against the approved Phase 3A closure. The current contract hash is `b3992838276e00e6e381bb526c794283fee8d19a861143634dc0686bab646505`; `furniture:2` is approved as a display composition but remains unbound to a native room:0 FurnitureData placement. The floor selector remains source-unresolved because `chip/img.inf` has no id `5` entry; the fixed runtime policy borrows selector/data `85/floor_09.png` while rendering the valid `floor_05.png` asset. The strict Phase 3C package supersedes the earlier Phase 3B evidence-only boundary for wall/door runtime composition.
+- The Phase 3B floor recovery pass is complete with `22/22` checks and semantic status `source_limited_unresolved_recovery_complete`. Its artifacts are `knowledge/social-dev/evidence/phase3b_floor_recovery_source_audit.json`, `knowledge/social-dev/evidence/phase3b_floor_recovery_fixture.json`, `knowledge/social-dev/evidence/phase3b_floor_recovery_validation.json`, and `docs/reports/social-dev_phase3b_floor_recovery_report.md`; the builder/test are `tools/social-dev/build_phase3b_floor_recovery.py` and `tools/social-dev/test_phase3b_floor_recovery.py`.
+- Recovery conclusion: `RoomData(0).floorImgId_=5`, the supplied ZIP `chip/img.inf`, and the decrypted current APK `chip/img.inf` agree that id `5` has no authoritative filename. The APK scan found exactly one `chip` TextAsset across `1147` data entries and parsed a complete `333`-record pack; APK/ZIP `img.inf` is byte-identical with SHA-256 `5f37934c43bc86c3139d7415f1ae2c9315b4aef7bc81746b95db558a077e5310`. `floor_05.png` exists as an asset mapped to selector `23`, not selector `5`; the fixed runtime policy borrows selector/data `85/floor_09.png` while rendering the valid floor05 asset, preserving source status `unresolved` and exposing no alternate fallback/hybrid mode.
+- Recovery hashes are source audit `88be12fe9e756b1abb33d6a2131d0638f343ef59922dd566acfee713320b1780`, fixture `9d7a5b29cefc6b3b9acffb03f773cc3ab1d597535fc482596327ed79a0099585`, and validation `48cd954b42f6c8e51803aebde4375bff122aac763a24bccd54d44379bee423b1`. The floor05 render asset is SHA-256 `be6572af9df60f5ed00eb0ab0e7d4dd95ba08749d7ec88b027a8ae5b3896c08c`; the fixed floor09 selector/data borrowing is an explicit product decision, not recovered source provenance.
+- The runtime loader now requires the approved room-placement, Phase 3C render, strict closure, room-scene asset, room-scene runtime, native direction, native content catalog, and native scene assembly contracts. It validates 18 rooms, 23 exact room selector assets, 18 shared MapChip links, explicit room:0 native bindings, no ObjChip→FurnitureData inference, native direction mapping, 18/18 wall/door compositions, the nine-pass renderer order, and the render trace schema. Runtime typecheck, tests, production build, Python gates, and browser smoke pass.
+- Wave 3/4/5 implementation artifacts are `runtime/social-dev/evidence/native_content_catalog.json`, `runtime/social-dev/evidence/native_scene_assembly_contract.json`, `runtime/social-dev/evidence/phase3d_all_room_assembly_gate_contract.json`, `runtime/social-dev/evidence/room_scene_runtime_contract.json`, `runtime/social-dev/evidence/native_direction_contract.json`, `runtime/social-dev/src/scene/room-resolver.ts`, and `runtime/social-dev/src/renderer/canvas-renderer.ts`. The room selector exposes all 18 rooms and the resolver connects every selector to a runtime asset and native composition record.
+- The Wave 3/4/5 implementation report is `docs/reports/social-dev_waves_3_4_5_runtime_report.md`; it records the logical/physical asset boundary, full native lifecycle/assembly bridge, all-room resolver flow, nine-pass renderer topology, render trace, and final verification output.
+- The Phase 3C comparison policy is closed: the historical baseline remains preserved and the active runtime is not written over it. Any future visual replacement is a new explicit product decision, not a hidden acceptance gap. Completed 3A/3B records remain authoritative.
 
-- Task 2 fix round 1 closes trailing-byte/recovery/staging gates: codec/audit tests ผ่าน `9/9`; suite ของ Task 1+2 ผ่าน `14/14`; build audit และ `py_compile` ผ่าน; source/extraction file hashes `1,881` รายการตรงกับ Task 1 inventory
-- C# primary corpus มี 85 `.cs` files และ `Assembly-CSharp.csproj`; source hash ตรงกับ relocation manifest ก่อนย้าย
-- C# coverage/semantic checker compile ผ่าน และอ้างอิง path ภายใน workspace ใหม่
-- structural inventory contract ผ่าน `3/3`; build/check ผ่านด้วย `types=14`, `fields=926`, `methods=257`
-- semantic slice contract ผ่าน `5/5`; รวม C# evidence tests `8/8`
-- inventory input boundary มี 11 ไฟล์: primary 5 ไฟล์และ `data/*.cs`; structural fingerprint ล่าสุดคือ `24e14f6e7beea8521406aee64e946803c257e5e7c537bc92450ca50ef29207da`
-- semantic fingerprint ล่าสุดคือ `c67de72477df0273f68764f5c02d0a23993ab7ca28c291fda0bb93512ff002ae`; bounded access edges 18 รายการ
-- gameplay field claims มีสถานะ `verified=8`, `raw_only=10`, `assembly_fallback_bounded_slice_required=3`; method claims มี `DoEvent` เป็น assembly fallback
-- Simulation schema test ผ่าน และ Wave 5 contract ผ่าน `20/20`; `simulation-core-v1` contract artifact ถูกสร้างไว้ใน `runtime/office/evidence/`
-- SimulationCore test ผ่าน: spawn/move/arrival, blocked collision, invalid-command immutability, deterministic digest/subscriber และ bubble expiry
-- Wave 5 runtime regression ผ่าน `11` scenarios หลัง migrate facade; Wave 6 task system ผ่าน `18` scenarios
-- Dashboard canonical snapshot/evidence contract ผ่าน `12/12`; `app.js` syntax check ผ่าน; browser script order ตรวจว่า schema → core → runtime
-- Continuous scheduler test ผ่าน `2` scenarios; `app.js` และ scheduler syntax check ผ่าน
-- Python office/dashboard contracts ผ่านรวม `32/32`
-- final regression ผ่าน: C# evidence `8/8`, characters `5/5`, reverse-engineering `214/214`, maintenance `4/4`, office Python `20/20`, dashboard Python `12/12`; Node schema/core/scheduler/office/dashboard tests ผ่านทั้งหมด
-- character tests ผ่าน `5/5`
-- reverse-engineering suite ผ่าน `214/214`; corpus A0/A1 checks และ A2 canonical `--check` ผ่าน
-- office runtime ผ่าน Node `11` scenarios และ Python Wave 5 contract `20/20`
-- dashboard runtime ผ่าน Node `18` scenarios และ Python contract `12`
-- maintenance tests ผ่าน `4/4`; Python compile checks ผ่าน; browser smoke ผ่าน: READY/tick เดินเอง `96 → 101` ในประมาณ `700ms`, canvas `600x800`, diagnostics มี `simulation-core-v1`/evidence, task create/assign ผ่าน, ไม่มี console error/warning และ server ที่เปิดทดสอบถูกปิดแล้ว
-- relocation comparison ผ่าน: logical members ครบและ protected roots มี file count/bytes เท่าเดิม
-- cache/temp ที่สร้างระหว่างทดสอบถูกล้างแล้ว และไม่มี local server ค้าง
-- source roots เดิมยังถูกเก็บไว้แบบ read-only; dumped `Assembly-CSharp.dll` ยังอยู่ใน dump ตามเดิม
+- Phase 2C is complete: the canonical ActorCatalog contract is `pass` / `approved_for_runtime_contract`, its validation passed `35/35` checks, and the readiness package passed `12/12` checks.
+- The actor slice contains `5` StaffData records (`0–4`), `1` JobData record (`4`), `1` SkillData record (`1`), `5` resolved human image selectors (`86–90`), and `8` resolved wait/typing selectors (`10–13` / `23–26`).
+- The bounded living-scene profile contains `35` source constants, `3` route mappings, `4` transition/timing records, and the selected SkillData type `10` / effect index `8` / value `150` / passive flag `1` contract.
+- Canonical artifacts are `runtime/social-dev/evidence/actor_catalog_contract.json`, `knowledge/social-dev/evidence/actor_catalog_fixture.json`, `knowledge/social-dev/evidence/actor_catalog_validation.json`, and `knowledge/social-dev/evidence/display_slice_contract.json`; the builder/test are `tools/social-dev/build_actor_catalog.py` and `tools/social-dev/test_actor_catalog.py`.
+- ActorCatalog provenance includes `25` manifest inputs and `15` source slices. Stable hashes are fixture `322b68ea77f0c5567ba6470ae63e70fa95e689e104b9e7c87973611a1967f553`, contract `1268382df3f052096c2f648688d08feb0d38f868e4772a8ace1d2c97207c7a14`, and input `f58dc7f973388c5b63ad3d22f32da4951f3a13ea305b90484e488246c2a8090f`.
+- The Phase 2C readiness package adds `knowledge/social-dev/evidence/actor_spawn_fixture.json`, `knowledge/social-dev/evidence/actor_spawn_validation.json`, `runtime/social-dev/evidence/actor_spawn_contract.json`, `runtime/social-dev/evidence/camera_coordinate_contract.json`, `runtime/social-dev/evidence/actor_behavior_contract.json`, and `runtime/social-dev/evidence/tick_order_contract.json`; its builder/test are `tools/social-dev/build_phase2c_readiness.py` and `tools/social-dev/test_phase2c_readiness.py`.
+- The readiness package closes a source-bounded spawn fixture for `3` actors through `room:0` door `(8,4)`, producing position `(280,-31)`, `alpha_=0`, `speed_=3`, and `objIndex_=(8,4)` without inventing free cells. Stable hashes are spawn contract `5e8d0e7cffbcbf1145acbf976a7d1f568a098bef138b8fdc2af69f501f09abd6`, camera/coordinate `094429870c590de4253d9ef0986a7c969a00cf42c624f9b495535848d1726663`, behavior `3af31b5781833a204ce59a4e1b26b0191445d7ecb5856454d13179b3c13de91f`, and tick `d0fc4c8afc2834ee94494f9ad4d9abdce3a6b04c15974959863d609e3f5f1fad`.
+- The Phase 2C implementation report is `docs/reports/social-dev_phase2c_actor_catalog_report.md`; the Vite/TypeScript core and renderer have not been created before this gate.
 
-## การตัดสินใจสำคัญ
+- Phase 2B is complete: the canonical ObjectCatalog contract is `pass` / `approved_for_runtime_contract`, and its validation passed `29/29` checks.
+- The locked display slice contains `4` FurnitureData records (`0,1,2,5`), `7` raw ObjChip types (`0..6`), `3` scene bindings, `8` resolved selectors, and `4` explicit `-1` selector sentinels.
+- Canonical artifacts are `runtime/social-dev/evidence/object_catalog_contract.json`, `knowledge/social-dev/evidence/object_catalog_fixture.json`, and `knowledge/social-dev/evidence/object_catalog_validation.json`; the builder/test are `tools/social-dev/build_object_catalog.py` and `tools/social-dev/test_object_catalog.py`.
+- The type-4 anchor at `(4,2)` is a verified `FurnitureData(0)` fixture with a `9`-cell footprint and the closed `3×3` passability matrix. The door at `(8,4)` is retained as a raw type-5 binding with installed flag `1`; its FurnitureData(1) identity remains a selector candidate because native `Room.PlaceDoor` passes `FurnitureData=null`.
+- Selector identity (`seb_`/`subSeb_`/`img_`) remains indexed and provenance-backed. The bounded gate closes direct `big_base00`, `door_03 → door_02`, `desk_00`, `chair_02`, and now `chair_00` compositions; native room floor/wall/door placement was deferred at the Phase 2B boundary and is now covered by the Phase 3B contract.
+- ObjectCatalog provenance is closed against the approved SceneCatalog/Phase 1D authority, `11` source slices, `17` manifest inputs, the pinned APK, and the asset ZIP. Stable hashes are fixture `9eb615bcabe36d31c04f39821a38361cda828f1bebd5ad082c267db21f8cca3d`, contract `2608e809a7769dd98eb5ff64ae5514a9998cd063abe80f51cf4335446bb1dd14`, and input `bed8ef38c1c4b26123232fef6597fce706146958138a07d6274c28786fac8c39`.
+- The Phase 2B implementation report is `docs/reports/social-dev_phase2b_object_catalog_report.md`; the next active contract is `ActorCatalog`.
 
-- ใช้ `knowledge/csharp/primary/` เป็น discovery/control-flow evidence หลัก ไม่ execute decompiled C# โดยตรง
-- ใช้ recovered C/assembly และ evidence contracts เป็น semantic validator เมื่อ C# มี decompiler artifact หรือยังเป็น `unknown`
-- runtime ช่วงแรกเป็น deterministic simulation ต่อเนื่อง ไม่มีปุ่มเร่งเวลา/หยุด และค่อยต่อ LLM/task backend ภายหลัง
-- เก็บ legacy tools และ roadmap เก่าไว้ใน archive แทนการลบทิ้ง เพื่อรักษา provenance
+- Phase 2A is complete with the canonical `SceneCatalog` from `RoomData(0)`; contract status is `pass` / `approved_for_runtime_contract`, and fixture and validation status are `pass`.
+- SceneCatalog validation passed `22/22` checks: scene `room:0`, locale names `Floor A` / `フロアA`, grid `10×10`, door type `5` at `(8,4)`, the type-4 footprint has `9` cells, and the route has `2` steps.
+- Canonical artifacts are at `runtime/social-dev/evidence/scene_catalog_contract.json`, `knowledge/social-dev/evidence/scene_catalog_fixture.json`, and `knowledge/social-dev/evidence/scene_catalog_validation.json`; the builder/test files are `tools/social-dev/build_scene_catalog.py` and `tools/social-dev/test_scene_catalog.py`.
+- Phase 2A provenance is complete: `4` RoomData/FurnitureData English/Japanese row hashes, `11` selected C# source slices, `9` native methods, and a pinned APK hash; input hash `eb23e06212000bb77b86653e41f71291d4b8273a63df191378faafa876d615d2`.
+- Stable hashes: fixture `980de8e1d972c0f3d32db6e14c6a0fe3396bd995ccc3b805c0cb356e459871e3`, contract `4f1fcf0665e72b6144dc3109c3b563670439018b6e5114b2ce9087ae467e80a9`.
+- Phase 2A intentionally deferred full object-to-furniture placement and visual-asset promotion at that phase boundary; Phase 2C later closed camera/coordinate, bounded behavior, and fixed-tick readiness, and Phase 3 now implements the TypeScript runtime with explicit asset placeholders.
+- Plan/report details are in `docs/roadmap/Roadmap_SocialDev_Phase2A_SceneCatalog.md` and `docs/reports/social-dev_phase2a_scene_catalog_report.md`.
 
-## Known limitations
+- The Phase 1D engineering loop is complete: closure validation passed `18/18` checks, the route fixture has `2` steps, and unresolved selectors are `0`; authoritative status is `closed_for_phase2_entry`. The later Pre-runtime Closure Sweep formally reconciles the historical Phase 0–1C candidate queues to this authority.
+- The real type-4 fixture is closed from the `RoomData(0)` anchor `(x=4,y=2)` plus `FurnitureData(0)` (`Huge World`, type `4`, passMap `9×9`); the verified `IsPassable` matrix is `[[true,false,false],[true,false,false],[true,true,true]]`, and zero-cell/all-nonzero probes pass.
+- Native Astar neighbor admission and the public goal filter are verified: occupied type-2, `IsPassable=false` type-3/4, and type-6 are rejected; the real route is `(8,4) → (7,4) → (6,4)` with RoomData-row/native/APK provenance; equipment goal `(8,5)` uses `objDir=0 → direction 7`.
+- The selector contract is closed from the real ZIP for parsed `103` FurnitureData rows and `141` StaffData rows in both English/Japanese: `seb_`, `img_`, and `subSeb_` (including sentinel `-1`) all resolve, and human typing/wait `seb` selectors resolve.
+- The required staff living-scene contract is closed: state/move/flag constants, route-flag dispatch, bounded stay-home/equipment/talk transitions, talk-timing markers, typing/wait animation (`23–26` / `10–13`), and selected `SkillData(1)` type `10`, `effects_[8]=[150]`, and passive flag.
+- Authoritative evidence: `phase1d_closure.json`, `phase1d_passmap_fixture.json`, `phase1d_route_fixture.json`, `asset_selector_contract.json`, `staff_semantics_contract.json`, and `phase1d_closure_validation.json`; the test runner is `tools/social-dev/test_phase1d_closure.py`.
+- The Phase 1D closure package remains the authority for the native/passability/route/selector gates consumed by SceneCatalog.
 
-- APK/ZIP มี Unity data members ชื่อ hash และไม่มี direct `floor*.seb`; การตามหา TextAsset ที่ฝังอยู่ต้องใช้ bundle provenance evidence เพิ่มเติม จึงยังไม่ยืนยันว่า shortfall เป็น source limitation แท้หรือ nested-extraction defect
-- semantic names ของ numeric states และบาง branch ยังต้องยืนยันจาก C#/C/assembly หลายหลักฐาน ไม่ควรเดาเมื่อ evidence ยังขัดกัน
-- C# decompiler body ของ raw arrays หลายตัวไม่แสดงชื่อ field โดยตรง; access edges รอบนี้จึงใช้ bounded reverse-engineering claims ที่มี provenance ไม่ใช่การอ้างว่า C# body parse ได้ครบ
-- `HumanMode`, `HumanState`, `HumanAnime`, `EventMode` และ numeric message/graph labels ยังไม่ถูก promote เป็น product semantics
-- scheduler เป็น wall-clock driver ของ UI เท่านั้น; logical tick/snapshot/digest ยัง deterministic และไม่มี visible stop/pause/speed path
-- `CoreOfficeRuntime` เป็น exported facade ที่ delegate mutation ไปยัง core; old provider contracts และ renderer projections ยังทำงานผ่าน API เดิม
-- C# corpus ยังเป็นหลักฐานจาก decompiler ไม่ใช่ buildable runtime; project อ้างอิง output ภายนอกและยังไม่มี compile verdict
-- office/dashboard ปัจจุบันเป็น deterministic adapter baseline ยังไม่ใช่เกมเต็มและยังไม่มี LLM, backend, auth หรือ multi-user sync
+- Social Dev is now the authority; GameDev/Virtual Game Office is isolated behind the legacy boundary in `archive/pre-social-reset/legacy_manifest.json`.
+- The legacy manifest covers `31` historical-knowledge files / `3,197,523` bytes, `1` historical guide, `67` legacy-viewer files, and `4` archived-maintenance files.
+- GameDev knowledge was moved out of the active tree into `archive/pre-social-reset/knowledge/`: `1,558` files / `7,137,105,531` bytes; `knowledge/` now contains only `social-dev/`.
+- The GameDev Office/Dashboard runtime was moved to `archive/pre-social-reset/runtime/`: `72` files / `2,632,765` bytes; `runtime/` now contains only `social-dev/`.
+- GameDev guides, references, plans, and specs were moved to `archive/pre-social-reset/docs/`: `18` files / `543,160` bytes; `docs/` now contains Social Dev roadmaps/reports.
+- The active data store was reorganized at `knowledge/social-dev/data/csharp_update/`: `44` staged C# data files / `437,881` bytes with a hash manifest; the source under `social dev/` remains read-only.
+- Legacy C#/reverse-engineering/maintenance/root tools were moved to `archive/pre-social-reset/tools/`: `126` files / `1,852,511` bytes; active `tools/` now contains Social Dev tools.
+- Root cleanup succeeded: GameDev source/extraction, APK toolkit, Ghidra, viewer, and `.superpowers` were moved to `archive/pre-social-reset/`: `6,419` files / `3,766,761,367` bytes; the root now contains only the Social Dev structure and shared metadata.
+- The R0 provenance pass is complete: the RAR, APK, asset ZIP, and C# update were fingerprinted; original source/extraction roots remain read-only; the derived `VGO_Core` scaffold was removed and was never promoted to runtime.
+- The C# RAR baseline was extracted as evidence at `knowledge/social-dev/evidence/csharp_raw_20260813/`; decompiled C# is not executed directly.
+- The C# update was compared by canonical path: `exact_match=4980`, `modified=588`, `update_only=586`.
+- The Social Dev structural inventory is complete: `72` inputs, `82` types, `3430` fields, `1685` methods, fingerprint `1b2f9396f2768545d4f719022fb1b116df0de9a5347fb46337a8417e1257093a`.
+- The candidate diff confirms that the update removes `Cpp2ILHelpers.NoteDecompilerIssue` from `60` gameplay/lifecycle files (`16699 → 0`) while `//IL_...` annotations remain `29030`; raw/update structural counts match, so this is textual cleanup rather than semantic repair.
+- Marker-only normalization confirms `60` files are byte-equivalent after removing only marker lines, `12` are already exact, and `0` contain content changes beyond markers; the RAR remains the provenance anchor.
+- The evidence-based candidate schema is complete: DataManager registry `43` typed arrays / `44` data classes / `1112` data fields; runtime-entity candidate `14` types / `919` fields / `30` lifecycle hooks / `21` relation candidates, with every semantic status still `unknown`.
+- Load-contract candidates are complete: `41` registry entries match `Load(StringArrayStream)`, `2` still have no captured loader; field/load alignment has `38` candidates, `3` count mismatches, and `3` missing loads, so no production model is built from column positions.
+- The asset/APK inventory passed the read-only gate: ZIP `3566` members, asset index `3542` rows, `zip_exact=3542`, APK source entries `3508` present / `34` missing (miscellaneous text payloads), matching APK fingerprint, and `25/25` pack-map roundtrip exact.
+- Only evidence text/index was extracted from the ZIP: `114` files; the DataManager registry cross-check against XLS passed English `43/43` and Japanese `43/43`, with English extras `Exclusion.txt`, `softkey.txt`, and `text.txt` not promoted.
+- The initial boundary is set: `data`/`game`/`game.routeSearch`/`main` are candidate evidence; `form` is presentation; `KairoEngine`/`Dependencies` are engine/dependency.
+- `social dev/VGO_Core/` was removed: `5` files / `11,647` bytes, along with the scaffold inventory tools; only the historical removal record remains.
+- The C# system boundary for new work was surveyed: `DataManager`/data registry, `Room`/scene, `ObjChip`/occupancy, `Staff`/living state, `Astar`/route, the `Player`/`AppData` subset, clock/tick, and visible event/text; `Player`, `AppData`, `DataManager`, `Staff`, and `Astar` must be rewritten as separate contracts rather than ported wholesale.
+- The report `docs/reports/social-dev_csharp_system_survey.md` and roadmap `docs/roadmap/Roadmap_SocialDev_CSharp_Rewrite.md` were created, ordering the work as system extraction → normalized data → contracts → deterministic core → renderer.
+- The web-app direction is locked as TypeScript source + Vite build + Canvas 2D scene renderer + DOM/CSS UI; Python is extraction/validation-only and there is no runtime package scaffold yet.
+- The first plan is `docs/roadmap/Roadmap_SocialDev_Phase0_SystemExtraction.md`: create a machine-readable system inventory, dependency graph, source-slice manifest, and review queue before creating the Vite/TypeScript scaffold.
+- Phase 0 has started: `csharp_system_inventory.json`, `csharp_dependency_graph.json`, `csharp_source_slice_manifest.json`, `csharp_semantic_review_queue.json`, and `csharp_extraction_validation.json` were created; structural validation passed with `types=82`, `fields=3430`, `methods=1685`, `systems=11`, `edges=14`, `slices=7`, `review_items=6`.
+- All `7` source slices resolve to the type/method/field/constant catalogs (`missing=0`). The historical extraction artifact retains `pending_review` with `5` original blocking labels; the active Pre-runtime Closure Sweep closes those items without promoting damaged evidence.
+- The Phase 0 generator/test files were added at `tools/social-dev/build_csharp_system_extraction.py` and `tools/social-dev/test_csharp_system_extraction.py`; tests pass.
+- The Phase 1 plan is `docs/roadmap/Roadmap_SocialDev_Phase1_FirstSliceData.md`; it requires raw rows, locale cross-checks, loader boundaries, and provenance before creating a canonical runtime contract.
+- The first-slice data candidate is evidence-based: `RoomData(0)`, `FurnitureData(1,2,5)`, `StaffData(0–4)`, `JobData(4)`, and loader-aware `SkillData(1)`, totaling `22` records; the previous skill selection `0` was corrected after parsing array framing.
+- `knowledge/social-dev/evidence/first_slice_data_candidate.json` and `first_slice_data_validation.json` were created; validation passed with `types=5`, `records=22`, `missing=0`, `links=6`, `review_items=5`.
+- The generator/test files `tools/social-dev/build_first_slice_data_candidate.py` and `tools/social-dev/test_first_slice_data_candidate.py` were added; tests pass and the candidate package remains historical evidence under the active closure authority.
+- The Phase 1 report is `docs/reports/social-dev_phase1_first_slice_data_report.md`; `StaffData.jobId_ → JobData(4)` is only an `order_candidate`, while `skill_`, room state/placement, array semantics, and asset selectors are not promoted.
+- Phase 1B was planned at `docs/roadmap/Roadmap_SocialDev_Phase1B_SceneBehavior.md`; loader-aware scene/behavior extraction was built from `StringArrayStream` plus field/load evidence without executing C# as runtime.
+- `scene_data_candidate.json`, `staff_behavior_candidate.json`, and `scene_behavior_validation.json` were created; structural validation passed: `22` parsed records, RoomData `objMap_/objDir_` `10×10`, scene/behavior source slices `13/15`, `7` transition candidates, and `8` review items.
+- Phase 1B confirmed the raw door-code candidate `(x=8,y=4,value=5)` and derived `JobData(4)` / `SkillData(1)` from selected staff; both remain candidate links rather than product relations.
+- Phase 1B did not create a route path or room placement/passability contract; map-code semantics, asset selectors, numeric state labels, decompiler bodies, skill lookup, and animation selectors remain in the review queue.
+- Phase 1C was planned at `docs/roadmap/Roadmap_SocialDev_Phase1C_SceneSemantics.md` to close scene semantic gates before creating the canonical catalog/runtime.
+- `scene_semantics_review.json` and `scene_semantics_validation.json` were created; validation passed with `12` source slices, `9` observations, `103` FurnitureData IDs, `13` non-empty `passMap_` records, `6` route-goal candidates, and `6` review items.
+- Phase 1D native evidence was built from the current APK: `scene_native_semantics.json` / `scene_native_semantics_validation.json`; the old package is candidate evidence and the new closure package is authoritative, pinned to the same APK SHA-256.
+- Native IL2CPP confirms that `Room.InitObjChips` passes `objMap[y][x]` directly as `ObjChip.type_` and that the flat index is `x + y * width`; raw door `5` therefore closes the map-code assignment/door relation.
+- Native `GetStandingPositions` closes the four-point deterministic formula; `ObjChip.PlaceObj`/`Room.PlaceDesk`/`AppData.NewGame` close the bounded furniture-placement model, with initial selection using `FLAG_INIT_DESK=16384` and `FLAG_INIT_PLACE=32768`.
+- Native `Astar.AddNeighbor` confirms cardinal 4-neighbor movement only; the old 8-neighbor candidate is superseded and the Phase 1C package was rebuilt accordingly.
+- All `103/103` FurnitureData rows were checked in English/Japanese; parse errors/missing locales are `0`; selected Door/Desk/Graphics Workstation (`1/2/5`) have empty `passMap_` arrays while type `4` has `13` non-empty passMap candidates.
+- `ObjChip.IsPassable` boolean normalization is closed in the authoritative fixture: the 3×3 window uses `dx_ + dy_ * 3 + 4`, a zero cell returns `true`, and all nine nonzero cells return `false`; the null-furniture branch is closed within the fixture by explicit FurnitureData binding without guessing fallback selector identity.
+- The route fixture authority has status `pass`: the path is built from real RoomData and filter probes confirm occupied type-2/type-4 false/type-6; no runtime catalog has been written yet.
+- The active-reference scan after root cleanup read `5,820` text files and found `3,774` matches in `57` files; intentional documentation `355`, legacy artifacts `3,419`, active dependency `0` — reference gate passed.
+- The post-VGO-removal reference scan covered `5,787` active text files and found `209` matches with `active_dependencies=0`; no VGO source/tool remains in the active tree.
+- `runtime/social-dev/` is the active contract-first runtime boundary with an approved binary subset under `runtime/social-dev/assets/display-slice-01/`; the old Office/Dashboard was moved to `archive/pre-social-reset/runtime/` and frozen as legacy.
+- The product target is locked: preserve the original scene, original characters, and visible living logic; remove player-facing gameplay that is not required for display.
+- A data-readiness roadmap was created for `display-slice-01`: field provenance, loader review, selector validation, scene contract, living trace, and runtime-readiness gates.
+- The next active-slice work follows `SceneCatalog → ObjectCatalog → ActorCatalog → deterministic fixtures → TypeScript runtime core`; do not return to runtime creation before the canonical evidence contract.
 
-## ไฟล์สำคัญ
+## Historical Baseline (GameDev legacy)
 
-- `knowledge/csharp/primary/` — C# discovery evidence
-- `knowledge/csharp/coverage/` — coverage reports ที่ได้จาก input ใหม่
-- `knowledge/csharp/evidence/semantic_inventory/` — local structural inventory artifacts (ยังไม่ publish)
-- `runtime/office/evidence/semantic_inventory_runtime.json` — local source-free status/provenance projection (ยังไม่ publish)
-- `runtime/office/app/simulation_schema.js` — canonical state/command/event constructors and validators (local-only)
-- `runtime/office/evidence/simulation_core_contract.json` — schema boundary contract (local-only)
-- `runtime/office/app/simulation_core.js` — deterministic reducer/tick/snapshot/digest module (local-only)
-- `runtime/office/app/runtime.js` — Core-backed OfficeRuntime compatibility facade (local-only)
-- `runtime/office/app/app.js` และ `runtime/office/app/index.html` — dashboard canonical projection/evidence panel (local-only)
-- `runtime/office/app/continuous_scheduler.js` และ `runtime/office/tests/test_continuous_scheduler.js` — internal continuous tick driver and lifecycle tests (local-only)
-- `runtime/office/README.md` และ `runtime/office/reports/simulation_core_architecture.md` — implementation architecture/handoff docs
-- `knowledge/reverse-engineering/evidence/corpus/` — canonical corpus/index/views
-- `archive/pre-social-reset/tools/scene_reconstruction/csharp_trace.py` และ `archive/pre-social-reset/tools/scene_reconstruction/build_seb_semantics_contract.py` — frozen deterministic SEB evidence tools
-- `knowledge/world-assets/evidence/scene_reconstruction/seb_semantics_contract.json` — SEB semantics evidence contract
-- `archive/pre-social-reset/tools/scene_reconstruction/build_object_placement_contract.py` และ `archive/pre-social-reset/tools/scene_reconstruction/test_object_placement.py` — frozen object-placement lineage classifier and tests
-- `knowledge/world-assets/evidence/scene_reconstruction/object_placement_contract.json` — object-placement provenance contract
-- `.superpowers/sdd/2026-08-12-scene-map-reconstruction/task-4-report.md` — task 4 report and self-review
-- `.superpowers/sdd/2026-08-12-scene-map-reconstruction/task-5-report.md` — task 5 report and self-review
+- Scene-map reconstruction Task 2 SEB audit is complete: `21` logical floor SEB files were found with the same four-byte shortfall; no complete direct named payload was found in the APK/ZIP/extraction, so all results are `no_full_payload_found` and no re-extracted payload was staged.
+- The workspace was reorganized according to the C#-first clean-reconstruction approach.
+- The first semantic-inventory scope was locked to the gameplay-critical C# slice; runtime implementation continued locally only.
+- The C# semantic-inventory and Simulation Core design spec passed written-spec review.
+- Task 1 structural C# inventory, Task 2 deep semantic slices, Task 3 canonical schema, Task 4 SimulationCore, Task 5 OfficeRuntime adapter migration, Task 6 dashboard canonical projection/provenance, Task 7 continuous scheduler, and Task 8 final verification/report are complete and verified.
+- Task 4 scene-map reconstruction semantics contract is complete: deterministic C#/C/assembly text-trace helper, SEB consumer-boundary evidence contract, and a report separating crop/translation/selector/object-base/camera/depth were added.
+- Task 5 object-placement contract is complete: the current page/reception-desk-chair fixture remains adapter-only, asset identity is verified, and original room/object placement remains unknown because no persisted/generated floor0 room-state record was found.
+- Task 5 fix round 1 added OfficeObjecList as the opening provenance anchor and renamed the summary classification so no contract field named `status` carries a non-approved value.
+- Implementation was performed by inline execution on `main`; exported OfficeRuntime uses SimulationCore as the state owner and provides compatibility projections.
+- The old dashboard reads the canonical snapshot from SimulationCore and the source-free semantic-evidence projection loaded from `archive/pre-social-reset/runtime/office/evidence/`; raw C# is not imported into the browser.
+- The dashboard starts its own scheduler at a `160ms` interval; there are no Play/Pause/Step/Reset or speed controls for the simulation.
+- The old C# evidence set is at `archive/pre-social-reset/knowledge/csharp/primary/` and is separated from runtime.
+- The old baseline, world assets, characters, language, and reverse-engineering material are under `archive/pre-social-reset/knowledge/`.
+- The old deterministic office runtime is at `archive/pre-social-reset/runtime/office/`; the old dashboard/task runtime is at `archive/pre-social-reset/runtime/dashboard/`.
+- The current roadmaps are under `docs/`; old plans are in `archive/pre-social-reset/docs/`, and inactive AI ideas are in `archive/future-ai/`.
+- `Assembly-CSharp/`, `Phases/`, and the old root C# corpus are not in the workspace and must not be recreated.
+
+## Verified Checks
+
+- Task 2 fix round 1 closes trailing-byte/recovery/staging gates: codec/audit tests passed `9/9`; the Task 1+2 suite passed `14/14`; build audit and `py_compile` passed; source/extraction file hashes for `1,881` items match the Task 1 inventory.
+- The primary C# corpus has `85` `.cs` files and `Assembly-CSharp.csproj`; source hashes match the relocation manifest from before the move.
+- The C# coverage/semantic checker compiles and references paths inside the new workspace.
+- The structural inventory contract passed `3/3`; build/check passed with `types=14`, `fields=926`, `methods=257`.
+- The semantic-slice contract passed `5/5`; C# evidence tests total `8/8`.
+- The inventory input boundary has `11` files: `5` primary files and `data/*.cs`; the latest structural fingerprint is `24e14f6e7beea8521406aee64e946803c257e5e7c537bc92450ca50ef29207da`.
+- The latest semantic fingerprint is `c67de72477df0273f68764f5c02d0a23993ab7ca28c291fda0bb93512ff002ae`; there are `18` bounded access edges.
+- Gameplay field claims have statuses `verified=8`, `raw_only=10`, `assembly_fallback_bounded_slice_required=3`; method claims include `DoEvent` as an assembly fallback.
+- The simulation schema test passed, and the Wave 5 contract passed `20/20`; the `simulation-core-v1` contract artifact is in `archive/pre-social-reset/runtime/office/evidence/`.
+- SimulationCore tests passed for spawn/move/arrival, blocked collision, invalid-command immutability, deterministic digest/subscriber behavior, and bubble expiry.
+- Wave 5 runtime regression passed `11` scenarios after the facade migration; Wave 6 task-system tests passed `18` scenarios.
+- The dashboard canonical snapshot/evidence contract passed `12/12`; `app.js` syntax check passed; browser script order was verified as schema → core → runtime.
+- Continuous-scheduler tests passed `2` scenarios; `app.js` and scheduler syntax checks passed.
+- Python office/dashboard contracts passed `32/32` in total.
+- Final regression passed: C# evidence `8/8`, characters `5/5`, reverse-engineering `214/214`, maintenance `4/4`, office Python `20/20`, dashboard Python `12/12`; all Node schema/core/scheduler/office/dashboard tests passed.
+- Character tests passed `5/5`.
+- The reverse-engineering suite passed `214/214`; corpus A0/A1 checks and the A2 canonical `--check` passed.
+- The office runtime passed `11` Node scenarios and the Python Wave 5 contract `20/20`.
+- The dashboard runtime passed `18` Node scenarios and Python contract `12`.
+- Maintenance tests passed `4/4`; Python compile checks passed; browser smoke passed: READY/tick advanced automatically from `96 → 101` in about `700ms`, canvas `600x800`, diagnostics contained `simulation-core-v1`/evidence, task create/assign passed, there were no console errors/warnings, and the test server was stopped.
+- Relocation comparison passed: logical members are complete and protected roots have the same file counts/bytes.
+- Test-created cache/temp files were cleaned and no local server remains.
+- The original source roots remain read-only; the dumped `Assembly-CSharp.dll` remains in the dump as before.
+
+## Key Decisions
+
+- Use `archive/pre-social-reset/knowledge/csharp/primary/` as the primary legacy discovery/control-flow evidence; never execute decompiled C# directly.
+- The Social Dev web runtime uses TypeScript + Vite + Canvas 2D + DOM/CSS; the core is UI-framework independent, and the browser runs only compiled JavaScript from promoted catalogs/contracts.
+- Use recovered C/assembly and evidence contracts as semantic validators when C# contains decompiler artifacts or remains `unknown`.
+- The initial runtime is a continuous deterministic simulation without time-acceleration/stop controls; add LLM/task backend later.
+- Keep legacy tools and old roadmaps in the archive instead of deleting them to preserve provenance.
+
+## Known Limitations
+
+- The floor selector `RoomData(0).floorImgId_=5` has no direct authoritative `chip/img.inf` row. The fixed runtime policy is explicit and closed: selector/data alias `85/floor_09.png` supplies metadata while the approved render pixels come from `floor_05.png`; source provenance remains marked separately.
+- Rooms 1–17 have no native initial FurnitureData instance bindings in the recovered `AppData.NewGame` bootstrap evidence. The closed runtime result is to render their raw ObjChip topology plus native wall/door composition and leave unbound furniture slots empty; no FurnitureData identity is inferred.
+- The production bundle is intentionally large because the complete runtime content catalog is embedded for queryable native IDs; Vite reports a non-blocking chunk-size warning. The catalog is present for future calls and is not a semantic blocker.
+- The APK/ZIP contains Unity data members named by hashes and no direct `floor*.seb`; locating embedded TextAssets requires additional bundle-provenance evidence, so it is not yet proven whether the shortfall is a true source limitation or a nested-extraction defect.
+- Semantic names for numeric states and some branches still require multiple C#/C/assembly evidence sources; do not guess while evidence conflicts.
+- Several C# decompiler bodies for raw arrays do not show field names directly; the current access edges therefore use bounded reverse-engineering claims with provenance rather than claiming complete C# body parsing.
+- `HumanMode`, `HumanState`, `HumanAnime`, `EventMode`, and numeric message/graph labels have not been promoted to product semantics.
+- The scheduler is only a wall-clock UI driver; logical tick/snapshot/digest behavior remains deterministic and has no visible stop/pause/speed path.
+- `CoreOfficeRuntime` is an exported facade that delegates mutation to the core; old provider contracts and renderer projections still operate through the existing API.
+- The C# corpus is decompiler evidence, not a buildable runtime; the project references external outputs and has no compile verdict.
+- The current office/dashboard is a deterministic adapter baseline, not a complete game, and has no LLM, backend, auth, or multi-user sync.
+
+## Important Files
+
+- `archive/pre-social-reset/knowledge/csharp/primary/` — legacy C# discovery evidence
+- `archive/pre-social-reset/knowledge/csharp/coverage/` — legacy coverage reports
+- `archive/pre-social-reset/knowledge/csharp/evidence/semantic_inventory/` — legacy structural inventory artifacts
+- `archive/pre-social-reset/runtime/office/evidence/semantic_inventory_runtime.json` — legacy source-free status/provenance projection
+- `archive/pre-social-reset/runtime/office/app/simulation_schema.js` — legacy canonical state/command/event constructors
+- `archive/pre-social-reset/runtime/office/evidence/simulation_core_contract.json` — legacy schema boundary contract
+- `archive/pre-social-reset/runtime/office/app/simulation_core.js` — legacy deterministic reducer/tick/snapshot/digest module
+- `archive/pre-social-reset/runtime/office/app/runtime.js` — legacy Core-backed OfficeRuntime compatibility facade
+- `archive/pre-social-reset/runtime/office/app/app.js` and `archive/pre-social-reset/runtime/office/app/index.html` — legacy dashboard projection
+- `archive/pre-social-reset/runtime/office/app/continuous_scheduler.js` and `archive/pre-social-reset/runtime/office/tests/test_continuous_scheduler.js` — legacy tick driver and tests
+- `archive/pre-social-reset/runtime/office/README.md` and reports — legacy implementation architecture/handoff docs
+- `archive/pre-social-reset/knowledge/reverse-engineering/evidence/corpus/` — legacy canonical corpus/index/views
+- `archive/pre-social-reset/tools/scene_reconstruction/csharp_trace.py` and `archive/pre-social-reset/tools/scene_reconstruction/build_seb_semantics_contract.py` — frozen deterministic SEB evidence tools
+- `archive/pre-social-reset/knowledge/world-assets/evidence/scene_reconstruction/seb_semantics_contract.json` — legacy SEB semantics evidence contract
+- `archive/pre-social-reset/tools/scene_reconstruction/build_object_placement_contract.py` and `archive/pre-social-reset/tools/scene_reconstruction/test_object_placement.py` — frozen object-placement lineage classifier and tests
+- `archive/pre-social-reset/knowledge/world-assets/evidence/scene_reconstruction/object_placement_contract.json` — legacy object-placement provenance evidence
+- `archive/pre-social-reset/.superpowers/sdd/2026-08-12-scene-map-reconstruction/task-4-report.md` — task 4 report and self-review
+- `archive/pre-social-reset/.superpowers/sdd/2026-08-12-scene-map-reconstruction/task-5-report.md` — task 5 report and self-review
 - `archive/pre-social-reset/tools/csharp-evidence/` — frozen C# checkers
 - `archive/pre-social-reset/tools/maintenance/workspace_layout.py` — frozen snapshot/relocation guard
-- `knowledge/reorganization/relocation_manifest.before.json` และ `relocation_manifest.after.json` — relocation boundary
-- `knowledge/social-dev/data/csharp_update/` และ `knowledge/social-dev/data/data_package_manifest.json` — active organized Social Dev data package
-- `archive/pre-social-reset/tools/` — archived legacy tools; ห้าม import กลับเข้า active runtime
-- `archive/pre-social-reset/root-sources/` — archived GameDev roots, APK toolkit, Ghidra และ viewer
+- `archive/pre-social-reset/knowledge/reorganization/relocation_manifest.before.json` and `relocation_manifest.after.json` — relocation boundary
+- `knowledge/social-dev/data/csharp_update/` and `knowledge/social-dev/data/data_package_manifest.json` — active organized Social Dev data package
+- `archive/pre-social-reset/tools/` — archived legacy tools; do not import them back into active runtime
+- `archive/pre-social-reset/root-sources/` — archived GameDev roots, APK toolkit, Ghidra, and viewer
 - `archive/pre-social-reset/.superpowers/` — archived historical task plans
-- `runtime/office/` และ `runtime/dashboard/` — deterministic runtime adapters
-- `docs/roadmap/Roadmap_2.0_CSharp_First.md` — roadmap ที่ใช้งานอยู่
-- `docs/superpowers/specs/2026-08-12-csharp-semantic-inventory-simulation-core-design.md` — design spec ของงานรอบถัดไป
-- `docs/superpowers/plans/2026-08-12-csharp-semantic-inventory-simulation-core.md` — implementation plan ที่ผ่านการ self-review
+- `archive/pre-social-reset/runtime/office/` and `archive/pre-social-reset/runtime/dashboard/` — frozen deterministic runtime adapters
+- `runtime/social-dev/package.json`, `runtime/social-dev/tsconfig.json`, and `runtime/social-dev/vite.config.ts` — active Vite/TypeScript runtime scaffold
+- `runtime/social-dev/src/catalog/` — approved-contract loader, native ID lookup bridge, and type boundary
+- `tools/social-dev/build_native_room_floor_closure.py` and `tools/social-dev/test_native_room_floor_closure.py` — deterministic native `Room.floor_` call-site/array catalog builder and regression gate
+- `knowledge/social-dev/evidence/native_room_floor_usage_catalog.json`, `runtime/social-dev/evidence/native_room_floor_usage_contract.json`, and `docs/reports/social-dev_room_floor_topology_closure.md` — native floor selector, dimensions, usage paths, and explicit topology boundary
+- `runtime/social-dev/evidence/character_metadata_contract.json` and `runtime/social-dev/evidence/character_capability_contract.json` — full static character catalog plus shared family/action capability contract
+- `runtime/social-dev/src/catalog/character-resolver.ts` — lazy template, action selector, and spawn-plan resolver for StaffData/HelperData
+- `tools/social-dev/build_asset_metadata_baseline.py` and `tools/social-dev/test_asset_metadata_baseline.py` — deterministic AM-0 input/hash/count baseline builder and gate
+- `tools/social-dev/build_asset_metadata_coverage.py` and `tools/social-dev/test_asset_metadata_coverage.py` — AM-1 per-asset/selector/field/relation/runtime-entry coverage matrix and orphan audit
+- `knowledge/social-dev/evidence/asset_metadata_baseline.json`, `runtime/social-dev/evidence/asset_metadata_baseline_contract.json`, and `docs/reports/social-dev_asset_metadata_baseline.md` — frozen AM-0 snapshot
+- `knowledge/social-dev/evidence/asset_metadata_coverage.json`, `knowledge/social-dev/evidence/asset_metadata_orphan_report.json`, `runtime/social-dev/evidence/asset_metadata_coverage_contract.json`, and `docs/reports/social-dev_asset_metadata_coverage.md` — AM-1 coverage and gap artifacts
+- `tools/social-dev/build_asset_family_taxonomy.py`, `tools/social-dev/build_asset_selector_usage_matrix.py`, `tools/social-dev/build_asset_composition_geometry.py`, and `tools/social-dev/build_asset_usage_lifecycle_placement.py` — AM-2 through AM-5 deterministic builders
+- `knowledge/social-dev/evidence/asset_family_taxonomy.json`, `asset_selector_usage_matrix.json`, `data_field_semantics_matrix.json`, `asset_composition_catalog.json`, `asset_geometry_catalog.json`, and `asset_usage_lifecycle_placement_matrix.json` — complete family, selector, field, composition, geometry, and usage evidence
+- `tools/social-dev/build_furniture_asset_metadata.py` and `tools/social-dev/build_character_visual_asset_metadata.py` — Track W/H builders and gates
+- `knowledge/social-dev/evidence/furniture_asset_metadata.json`, `character_visual_asset_metadata.json`, `runtime/social-dev/evidence/furniture_asset_metadata_contract.json`, and `runtime/social-dev/evidence/character_visual_asset_metadata_contract.json` — world/character metadata contracts
+- `tools/social-dev/build_asset_surface_provenance.py` and `tools/social-dev/build_asset_metadata_completion_gate.py` — Track X/A provenance and final audit builders
+- `knowledge/social-dev/evidence/asset_surface_provenance.json`, `knowledge/social-dev/evidence/asset_metadata_completion_gate.json`, `runtime/social-dev/evidence/asset_surface_provenance_contract.json`, `runtime/social-dev/evidence/asset_metadata_completion_contract.json`, and `docs/reports/social-dev_asset_surface_provenance.md` — source boundary and final completion artifacts
+- `runtime/social-dev/src/catalog/asset-metadata.ts` and `runtime/social-dev/evidence/asset_metadata_runtime_manifest.json` — stable runtime metadata query surface
+- `runtime/social-dev/src/catalog/floor-resolution.ts` and `runtime/social-dev/evidence/default_map_chip_contract.json` — single explicit floor09 selector/data plus floor05 render composition
+- `runtime/social-dev/src/core/` — deterministic state, fixed tick, route, event, and digest implementation
+- `runtime/social-dev/src/assets/display-assets.ts` — approved manifest loader, frame selector, browser image adapter, and single floor05 render binding
+- `runtime/social-dev/src/scene/` and `runtime/social-dev/src/renderer/` — room projection, coordinates, Canvas, and DOM/CSS presentation
+- `runtime/social-dev/tests/` — deterministic, contract, route, and browser-trace gates
+- `tools/social-dev/build_display_asset_gate.py` and `tools/social-dev/test_display_asset_gate.py` — source-bounded SEB/PNG gate and regression checks
+- `tools/social-dev/build_phase3a_asset_composition.py` and `tools/social-dev/test_phase3a_asset_composition.py` — Phase 3A source audit, quarantine closure, and deterministic checks
+- `tools/social-dev/build_phase3a_chair_00_reconstruction.py` and `tools/social-dev/test_phase3a_chair_00_reconstruction.py` — exact variable-piece `chair_00` logical reconstruction, crop-map evidence, and full-pack/reference validation
+- `tools/social-dev/extract_phase3a_chairs_from_apk.py` and `tools/social-dev/test_phase3a_apk_chair_extraction.py` — APK loader-path chair extraction, ZIP byte comparison, and semantic checks
+- `tools/social-dev/compare_phase3a_chair_apk_versions.py` and `tools/social-dev/test_phase3a_chair_apk_versions.py` — three-version APK pack/triplet comparison and semantic regression gate
+- `tools/social-dev/build_phase3a_chair_00_variants.py` and `tools/social-dev/test_phase3a_chair_00_variants.py` — non-authoritative chair_00 approximation previews and boundary checks
+- `tools/social-dev/compare_phase3a_chair_structures.py` and `tools/social-dev/test_phase3a_chair_structures.py` — cross-chair PNG/OPT/SEB pattern comparison and regression gate
+- `tools/social-dev/opt_codec.py` and `tools/social-dev/test_opt_codec.py` — evidence-backed OPT parser, logical reconstruction, and pixel-match checks
+- `knowledge/social-dev/evidence/display_asset_gate.json`, `runtime/social-dev/evidence/display_asset_manifest.json`, and `docs/reports/social-dev_display_asset_gate.md` — asset promotion evidence and runtime subset contract
+- `knowledge/social-dev/evidence/phase3a_asset_composition_source_audit.json`, `knowledge/social-dev/evidence/phase3a_asset_composition_closure.json`, and `docs/reports/social-dev_phase3a_asset_composition_report.md` — Phase 3A closure evidence
+- `knowledge/social-dev/evidence/phase3b_room_placement_source_audit.json`, `knowledge/social-dev/evidence/phase3b_room_placement_fixture.json`, `knowledge/social-dev/evidence/phase3b_room_placement_validation.json`, and `runtime/social-dev/evidence/room_placement_contract.json` — Phase 3B native room-placement contract
+- `tools/social-dev/build_phase3b_room_placement.py` and `tools/social-dev/test_phase3b_room_placement.py` — Phase 3B deterministic builder and regression gate
+- `docs/reports/social-dev_phase3b_room_placement_report.md` — Phase 3B closure report
+- `knowledge/social-dev/evidence/phase3a_apk_probe/chair_extraction_audit.json` and `knowledge/social-dev/evidence/phase3a_apk_probe/chair_entries/` — pinned-APK chair triplet extraction evidence
+- `knowledge/social-dev/evidence/phase3a_apk_probe/chair_version_comparison.json` — `2.4.9`/`2.5.0`/`2.5.1` chair pack comparison evidence
+- `knowledge/social-dev/evidence/phase3a_apk_probe/chair_variants/` — three derived chair_00 previews, comparison sheet, and variant audit
+- `knowledge/social-dev/evidence/phase3a_apk_probe/chair_structure_comparison.json` — shared animation scaffold and per-chair geometry comparison
+- `knowledge/social-dev/evidence/phase3a_apk_probe/chair_00_reconstruction_audit.json` and `knowledge/social-dev/evidence/phase3a_apk_probe/derived_previews/chair_00.logical.png` — exact source-backed `chair_00` reconstruction and pixel proof
+- `docs/roadmap/Roadmap_SocialDev_Phase3A_AssetComposition.md` — detailed Phase 3A recovery/quarantine plan, evidence matrix, and acceptance gates
+- `docs/reports/social-dev_phase3_display_runtime_report.md` — bounded Phase 3 display runtime and Phase 3C gate report
+- `knowledge/social-dev/evidence/display_slice_01_screenshot_baseline.png` and `display_slice_01_behavior_trace.json` — historical browser gate evidence
+- `knowledge/social-dev/evidence/phase3c_browser_visual_gate.json`, `phase3c_candidate_frame_6.png`, and `phase3c_candidate_frame_136.png` — Phase 3C browser visual evidence
+- `knowledge/social-dev/evidence/phase3c_render_fixture.json`, `phase3c_render_validation.json`, and `runtime/social-dev/evidence/phase3c_render_contract.json` — Phase 3C render-contract evidence
+- `knowledge/social-dev/evidence/phase3c_strict_closure.json`, `phase3c_strict_closure_validation.json`, and `runtime/social-dev/evidence/phase3c_strict_closure_contract.json` — strict native wall/door and initial-furniture closure evidence
+- `knowledge/social-dev/evidence/phase3c_strict_browser_visual_gate.json` and `phase3c_strict_browser_smoke_frame_136.png` — superseded strict native browser smoke evidence retained for provenance
+- `knowledge/social-dev/evidence/phase3c_visual_fidelity_gate.json`, `phase3c_default_entry_smoke_frame_0.jpg`, and `phase3c_visual_fidelity_smoke_frame_136.jpg` — superseded image-level default-entry/frame-136 browser evidence; native-map acceptance is covered by the active `phase3d_all_room_assembly_gate`
+- `knowledge/social-dev/evidence/phase3c_visual_gate_v2.json`, `phase3c_visual_gate_v2_room0_frame0.png`, `phase3c_visual_gate_v2_room0_frame1.png`, `phase3c_visual_gate_v2_room0_frame2.png`, and `phase3c_visual_gate_v2_room17_raw_overlay.png` — superseded structural visual gate evidence retained for provenance
+- `tools/social-dev/build_phase3c_visual_gate_v2.py` and `tools/social-dev/test_phase3c_visual_gate_v2.py` — deterministic visual-gate builder and content-addressed screenshot regression gate
+- `docs/roadmap/Roadmap_SocialDev_Phase2B_ObjectCatalog.md` — completed Phase 2B implementation plan and closure record
+- `archive/pre-social-reset/docs/roadmap/Roadmap_2.0_CSharp_First.md` — historical roadmap
+- `archive/pre-social-reset/docs/superpowers/specs/2026-08-12-csharp-semantic-inventory-simulation-core-design.md` — historical design spec
+- `archive/pre-social-reset/docs/superpowers/plans/2026-08-12-csharp-semantic-inventory-simulation-core.md` — historical implementation plan
 
-## งานถัดไป — Social Dev
+## Next Work — Social Dev
 
-1. ตรวจ 588 modified files โดยเริ่มจาก `data`, `game`, `game.routeSearch` และ `main`
-2. ปิด `Load`/field alignment mismatches แล้วแยก semantic contracts ของ DataManager, BaseData, Player, Staff, Room และ save/load โดยติดสถานะ provenance ทุก field
-3. ตรวจ assembly guide และ APK metadata ต่อเพื่อยืนยัน asset selectors/relationships; ตอนนี้มีเพียง identity/roundtrip gate ยังไม่ใช่ selector promotion
-4. สร้าง canonical Social Dev schema และ runtime contracts ใต้ `runtime/social-dev/`
-5. รักษา active `tools/social-dev` ให้แยกจาก legacy archive; reference gate ผ่านแล้วด้วย `active_dependency=0`
-6. เมื่อ contract tests และ reference gate ผ่าน ค่อยเสนอ cutover และขออนุมัติลบ legacy แบบถาวร
+The requested native assembly/connection closure is complete. The runtime is ready for later user-directed content changes through the native record, selector, asset, room, and render-trace IDs. The historical baseline remains intentionally preserved; a future baseline replacement would be a separate explicit product decision.
 
-## งานเดิมที่ถูก freeze
+The asset-metadata workstream is complete for the supplied package. Future work is deliberately user-directed: add a screen/event consumer contract before promoting any of the 21 non-actor families, close the 34 Unity TextAsset/APK gaps if the nested source becomes available, resolve `lineup_layout/bg.seb` if its target is recovered, or expand the runtime manifest beyond the current 186 explicit rows.
 
-- nested Unity bundle/TextAsset audit เดิมอยู่ใน legacy scope
-- compatibility projections ของ office เดิมไม่ใช่ Social Dev state owner
-- backend/auth/multi-user และ LLM รอจนกว่า Social Dev baseline จะผ่าน contract tests
+The full human character layer is ready for metadata lookup, native action selection, decoded frame composition, and lazy pixel rendering. The bounded `display_asset_manifest` remains intentionally unchanged; the separate character asset contract is the authority for all `141` StaffData image bindings. Remaining character work is limited to separate HelperData/avatar/event-only asset packages and any future scene that chooses to spawn the full catalog.
+
+## Frozen Previous Work
+
+- The old nested Unity bundle/TextAsset audit remains in legacy scope.
+- The old office compatibility projections are not the Social Dev state owner.
+- Backend/auth/multi-user and LLM work waits until the Social Dev baseline passes contract tests.
