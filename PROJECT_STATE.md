@@ -52,6 +52,16 @@ V8. Backend, persistence, authentication, cloud integrations, deployment,
 emulator/ADB, and network integration remain unopened. No next phase is
 authorized without an explicit user request.
 
+## R0 Cpp2IL corpus and recovery-mode audit — complete (2026-08-17)
+
+- Pinned APK, libil2cpp.so, global-metadata.dat, and C# RAR identity: `MATCH`.
+- Independent corpus: 5,568 files, 5,504 C# files, 64 project files, 3 zero-byte C# files, and 55,358,557 C# bytes.
+- Accepted primary method baseline: 41,229 methods; 33,552 CLEAN (81.38%); 4,012 NATIVE_LIFT_REQUIRED (9.73%); readable without native lifting 83.21%. The raw lexical declaration index is 43,103 and is retained separately for traceability.
+- Historical invocation was recovered with high confidence: Cpp2IL forced Unity `2022.3.62`, followed by `ilspycmd 11.0.0.9375`. A local fresh `Cpp2IL 2022.1.0` rerun against the pinned native inputs produced IL recovery DLLs, Diffable C#, and ISIL evidence.
+- Fresh high-level C# improvement: `0`; method-dump improvement: `0`; intermediate-representation improvement: `14`. Zero-byte files are classified as exporter/generated-type loss, and the metadata/static-data recovery pass is justified.
+- Final measured recommendation: `HYBRID` — retain the existing C# skeleton and use fresh ISIL/native/static-data evidence selectively. The R0 package is under `knowledge/brain/acceptance/r0-cpp2il-audit/`.
+- Stop boundary: no V8/V8R continuation and no C# repair started. The next authorized boundary is `R1_CORE_CSHARP_REPAIR`, not started.
+
 ## Current Status — K4.1 targeted visual closure complete (2026-08-17)
 
 ## Git-visible current gate

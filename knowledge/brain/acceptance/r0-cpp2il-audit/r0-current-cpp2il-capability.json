@@ -1,0 +1,100 @@
+{
+  "capabilities": {
+    "diffable_csharp_signatures": true,
+    "fresh_high_level_csharp_is_authoritative": false,
+    "isil_native_disassembly_and_basic_blocks": true,
+    "managed_dll_il_recovery": true,
+    "metadata_and_rva_diagnostics": true,
+    "separate_method_dump": false
+  },
+  "commands": {
+    "diffable_cs": "\"D:\\antigravity\\kairosoft\\new\\Clean_Workspace\\test\\APK_Toolkit\\Cpp2IL_Dev\\Cpp2IL.exe\" --force-binary-path \"knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so\" --force-metadata-path \"knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat\" --force-unity-version \"2022.3.62\" --output-as diffable-cs --output-to \"C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\"",
+    "dll_il_recovery": "\"D:\\antigravity\\kairosoft\\new\\Clean_Workspace\\test\\APK_Toolkit\\Cpp2IL_Dev\\Cpp2IL.exe\" --force-binary-path \"knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so\" --force-metadata-path \"knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat\" --force-unity-version \"2022.3.62\" --output-as dll_il_recovery --output-to \"C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\dll_il_recovery\"",
+    "isil": "\"D:\\antigravity\\kairosoft\\new\\Clean_Workspace\\test\\APK_Toolkit\\Cpp2IL_Dev\\Cpp2IL.exe\" --force-binary-path \"knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so\" --force-metadata-path \"knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat\" --force-unity-version \"2022.3.62\" --output-as isil --output-to \"C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\isil\""
+  },
+  "fresh_output_manifests": {
+    "diffable_cs": {
+      "file_count": 5733,
+      "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs",
+      "selected_file_hashes": {
+        "DiffableCs/Assembly-CSharp/game/Staff.cs": {
+          "bytes": 19574,
+          "sha256": "24769b450bc3cf47bc875a7ef35976e0e02bd3d0a68a5a192b51179145e02aac"
+        },
+        "DiffableCs/KairoLibrary/kairo/unity/ui/Graphics.cs": {
+          "bytes": 36915,
+          "sha256": "6cc6ed4a32f280c58c29a54f5b546ea3c2869a826a7a9f15b251a62000a0d44b"
+        },
+        "DiffableCs/KairoLibrary/kairo/unity/util/Language.cs": {
+          "bytes": 14304,
+          "sha256": "c6fe48f1156d744826b831c9e22e335eebd982baff8ddfb4d38889fd43e1c7fc"
+        }
+      },
+      "total_bytes": 9020625,
+      "tree_sha256": "d016143ca58b1c762f598032c1e296d993293f4388e931bbc896f9b475e97789"
+    },
+    "dll_il_recovery": {
+      "file_count": 64,
+      "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\dll_il_recovery",
+      "selected_file_hashes": {
+        "Assembly-CSharp.dll": {
+          "bytes": 7686656,
+          "sha256": "4d13729b7bb189b3824ff311fe0121e8f582ff4448161d1b7ce42790440850bf"
+        },
+        "KairoLibrary.dll": {
+          "bytes": 6536704,
+          "sha256": "847b917d6331729557b44099ae10d771099daaffd5873abd9e508c4d4016343a"
+        }
+      },
+      "total_bytes": 20737536,
+      "tree_sha256": "588907ccdc70644d873f1b488862e21d22ba31fcff3f661c0180debef99b52d5"
+    },
+    "isil": {
+      "file_count": 6682,
+      "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\isil",
+      "selected_file_hashes": {
+        "IsilDump/Assembly-CSharp/game/Staff.txt": {
+          "bytes": 1400743,
+          "sha256": "89b2a26eb27dccfd72d3eb3008977e326f3683a8ad23627ea7d8b815bc5b4600"
+        },
+        "IsilDump/Assembly-CSharp/game/routeSearch/Astar.txt": {
+          "bytes": 157143,
+          "sha256": "14326c24700246199d978411e79f7092a3c4c5da2331a139c0e2e9846d977e8b"
+        },
+        "IsilDump/Assembly-CSharp/main/AppData.txt": {
+          "bytes": 3681828,
+          "sha256": "5d27b4c8706ab6b3c87dcfde3b848392a0276df15e397c8a33aa1e1fc7d20f2e"
+        }
+      },
+      "total_bytes": 354831812,
+      "tree_sha256": "3a208f9f67f8fc754416c073ef52ccef2f18dad06397b8ccdc03dee227edd0a6"
+    }
+  },
+  "interpretation": "This local Cpp2IL build can reproduce richer intermediate/native evidence, but its Diffable C# output is predominantly signature/stub oriented and does not replace the old ILSpy C# corpus as the high-level starting point.",
+  "processors_observed": [
+    "attributeanalyzer",
+    "attributeinjector",
+    "callanalyzer",
+    "nativemethoddetector",
+    "stablenamer",
+    "deobfmap"
+  ],
+  "schema_version": "r0-cpp2il-current-capability-v1",
+  "supported_output_formats_observed": [
+    "dummydll",
+    "dll_default",
+    "dll_empty",
+    "dll_throw_null",
+    "dll_il_recovery",
+    "diffable-cs",
+    "isil",
+    "wasmmappings",
+    "wasm_name_section"
+  ],
+  "tool": {
+    "local_only": true,
+    "path": "D:\\antigravity\\kairosoft\\new\\Clean_Workspace\\test\\APK_Toolkit\\Cpp2IL_Dev\\Cpp2IL.exe",
+    "sha256": "c2a02dfafce811062a541b3d6a9f160a3eec26f0c8d85ffba248fdcd50612b75",
+    "version": "Cpp2IL 2022.1.0"
+  }
+}

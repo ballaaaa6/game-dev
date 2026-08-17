@@ -39,6 +39,19 @@
     "v8": "PASS_V8_LIVE_ROOM0_VISUAL_RECONSTRUCTION"
   },
   "next_authorized_phase": "NONE_WITHOUT_EXPLICIT_AUTHORIZATION",
+  "latest_completed_audit": {
+    "name": "R0_CPP2IL_CORPUS_AND_RECOVERY_MODE_AUDIT",
+    "status": "COMPLETE",
+    "decision": "HYBRID",
+    "source_identity": "MATCH",
+    "fresh_cpp2il_rerun": true,
+    "accepted_method_count": 41229,
+    "raw_lexical_method_declaration_count": 43103,
+    "package_report": "knowledge/brain/acceptance/r0-cpp2il-audit/R0_CPP2IL_CORPUS_AUDIT.md",
+    "next_authorized_boundary": "R1_CORE_CSHARP_REPAIR",
+    "next_phase_started": false,
+    "stop": true
+  },
   "key_k4_1_artifacts": [
     "knowledge/brain/acceptance/k4-1/final-validation.json",
     "knowledge/brain/acceptance/k4-1/K4_1_CLOSURE_REPORT.md",

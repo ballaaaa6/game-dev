@@ -22,6 +22,14 @@
 - [x] Update the V8 acceptance package, `CURRENT_STATE.json`, `PROJECT_STATE.md`, and `TASK_LEDGER.jsonl`; audit an explicit staging allowlist, commit the accepted result, and push `main`.
 - [x] Close with `PASS_V8_LIVE_ROOM0_VISUAL_RECONSTRUCTION`; stop without opening V9 or backend/persistence/integration/deployment work.
 
+## R0 Cpp2IL corpus and recovery-mode audit — closed (2026-08-17)
+
+- [x] Verify the pinned APK, native library, metadata, and C# archive identities; extract the archive in an isolated read-only workspace.
+- [x] Recover and record the historical Cpp2IL/ILSpy invocation and versions; rerun local Cpp2IL against the pinned native inputs and preserve the richest recovery outputs.
+- [x] Measure the accepted corpus baseline, per-method quality, required core classes, zero-byte/generated loss, static-data evidence, compile blockers, and old-versus-fresh recovery comparison.
+- [x] Close with the measured `HYBRID` recommendation: retain the old C# skeleton and use fresh ISIL/native/static-data evidence selectively.
+- [x] Stop at R0. No V8/V8R continuation or C# repair was started; `R1_CORE_CSHARP_REPAIR` remains the next explicitly authorized boundary.
+
 ## K3 targeted missing-link closure — closed (2026-08-16)
 
 - [x] Read the bounded K3 queue and close `K3-GAP-FLOOR-DIRECT-SELECTOR` with the native `RoomData.floorImgId_` → `Room.FLOOR_IMAGE_ID_ARRAY` → `chip/img.inf` chain, preserving the runtime compatibility alias and MapChip pixels.

@@ -1,0 +1,28 @@
+{
+  "confidence": "HIGH",
+  "cpp2il_binary": {
+    "exists": true,
+    "path": "D:\\antigravity\\kairosoft\\new\\Clean_Workspace\\test\\APK_Toolkit\\Cpp2IL_Dev\\Cpp2IL.exe",
+    "reported_version": "Cpp2IL 2022.1.0",
+    "sha256": "c2a02dfafce811062a541b3d6a9f160a3eec26f0c8d85ffba248fdcd50612b75"
+  },
+  "cpp2il_command": "Cpp2IL_Dev\\Cpp2IL.exe --force-binary-path <libil2cpp.so> --force-metadata-path <global-metadata.dat> --force-unity-version \"2022.3.62\" --output-as dll_il_recovery --output-to <Cpp2IL_Output_IL>",
+  "evidence": [
+    "04_Auto_C_Sharp_Decompiler.bat",
+    "RecompileAll.ps1"
+  ],
+  "force_unity_version": "2022.3.62",
+  "ilspycmd": {
+    "exists": true,
+    "path": "C:\\Users\\WINDOW XI\\.dotnet\\tools\\ilspycmd.exe",
+    "reported_version": "ilspycmd 11.0.0.9375",
+    "sha256": "c8ad8b34238a7eb5b4cf95ed7e2e433c2d52aed0f99dc64dfc99a0456d471312"
+  },
+  "old_invocation_unknown": false,
+  "old_outputs": [
+    "dll_il_recovery",
+    "ILSpy project C# export"
+  ],
+  "postprocess_command": "ilspycmd <each generated DLL> -p -o 1_Click_CSharp_Code",
+  "schema_version": "r0-cpp2il-old-invocation-analysis-v1"
+}

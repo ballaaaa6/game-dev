@@ -1,0 +1,48 @@
+{
+  "categories": {
+    "CFG_GOTO_IL_CORRUPTION": {
+      "affected_method_count": 3260,
+      "description": "Recovered goto IL labels and unresolved control flow prevent treating affected bodies as authoritative high-level C#.",
+      "resolution": "Future CFG reconstruction from ISIL/native basic blocks.",
+      "severity": "HIGH",
+      "signal_occurrences": 38840
+    },
+    "CPP2IL_HELPER_DEPENDENCY": {
+      "affected_method_count": 6956,
+      "description": "Cpp2ILHelpers.NoteDecompilerIssue calls are diagnostic recovery markers and are not product logic.",
+      "resolution": "Strip only after the underlying method has been repaired or replaced from evidence.",
+      "severity": "MEDIUM",
+      "signal_occurrences": 107054
+    },
+    "MISSING_FRAMEWORK_AND_ZERO_BYTE_TYPES": {
+      "affected_method_count": 0,
+      "description": "The corpus includes three zero-byte C# artifacts and references Unity/framework types not present as a buildable project reference set.",
+      "resolution": "Restore only evidence-backed generated type shells and supply the correct Unity 2022.3.62 reference assemblies during a later authorized repair phase.",
+      "severity": "LOW",
+      "signal_occurrences": 3
+    },
+    "MISSING_STATIC_DATA_ARRAYS": {
+      "affected_method_count": 110,
+      "description": "RuntimeFieldHandle/InitializeArray sites depend on compiler-generated static blobs that the old corpus does not represent faithfully.",
+      "resolution": "Reusable metadata default-value, relocation, and source-asset static-data reconstruction pass.",
+      "severity": "MEDIUM",
+      "signal_occurrences": 1382
+    },
+    "TYPE_EROSION_SYNTAX": {
+      "affected_method_count": 8407,
+      "description": "Cpp2IL emitted object-typed temporaries and IL stack type mismatches that are not compile-safe C# semantics.",
+      "resolution": "Future AST/type-inference repair, validated against native/ISIL evidence.",
+      "severity": "HIGH",
+      "signal_occurrences": 289878
+    }
+  },
+  "compile_attempt_reason": "No compile was attempted: this R0 audit does not authorize C# repair, and the recovered corpus lacks the Unity/framework reference set required for a meaningful build verdict.",
+  "compile_attempted": false,
+  "inventory_context": {
+    "raw_lexical_method_declarations": 43103,
+    "total_methods": 41229,
+    "zero_byte_cs": 3
+  },
+  "measurement_basis": "Signal occurrence counts are retained from the raw lexical index; primary method totals use the accepted same-identity baseline.",
+  "schema_version": "r0-cpp2il-compile-blockers-v1"
+}

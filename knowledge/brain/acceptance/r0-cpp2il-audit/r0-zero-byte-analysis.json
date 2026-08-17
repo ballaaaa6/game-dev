@@ -1,0 +1,229 @@
+{
+  "conclusion": "Zero-byte C# files are exporter artifacts or generated-type loss, not evidence that the corresponding native/metadata types contain no code. Fresh analysis recovers type/method/field evidence; static array values still require the metadata/default-data/relocation pass.",
+  "files": [
+    {
+      "bytes": 0,
+      "classification": "RECOVERABLE_FROM_FRESH_ANALYSIS",
+      "evidence": {
+        "fresh": [
+          {
+            "bytes": 195857,
+            "lines": 2406,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\Assembly-CSharp\\_PrivateImplementationDetails_.cs",
+            "sha256": "cde2e73070789b80a7653442f066dec57eb7c4e9fddf3b128daba52906105f16"
+          },
+          {
+            "bytes": 1343,
+            "lines": 33,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\Assembly-CSharp-firstpass\\_PrivateImplementationDetails_.cs",
+            "sha256": "b1c5f84e43c143da730fde0c5f9872a222e9019d3d0a96ec2dda7da1ef84c829"
+          },
+          {
+            "bytes": 515,
+            "lines": 19,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\Firebase.Platform\\_PrivateImplementationDetails_.cs",
+            "sha256": "0df3b5e1eb61fc79539452b2f48e12285b027114cb4a769b6ec5e7cff9bff559"
+          },
+          {
+            "bytes": 134429,
+            "lines": 1675,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\KairoLibrary\\_PrivateImplementationDetails_.cs",
+            "sha256": "9a29755130fac640409cf15f85552729aaf9912f3dde03bfa6a33bc559feb068"
+          },
+          {
+            "bytes": 30768,
+            "lines": 404,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\Mono.Security\\_PrivateImplementationDetails_.cs",
+            "sha256": "10972eee1912823d586a9ca7fe860ca2623cc98dd473a5c092395c5cbac1ce6e"
+          },
+          {
+            "bytes": 692379,
+            "lines": 7455,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\mscorlib\\_PrivateImplementationDetails_.cs",
+            "sha256": "42e630ebdd375a9235d5cfd0fa22e6540b9170ce13a51c082ce0f430f15712fa"
+          },
+          {
+            "bytes": 8731,
+            "lines": 164,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\Newtonsoft.Json\\_PrivateImplementationDetails_.cs",
+            "sha256": "d85ce65fc846eb8a28a7a8c2bf5c346145f16f1f8c72408a362e1a329dedccef"
+          },
+          {
+            "bytes": 8584,
+            "lines": 154,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\System\\_PrivateImplementationDetails_.cs",
+            "sha256": "74a9b6ecb160256e6906f0fb054a19fd3ba6db0e88795091cd8db26c67468138"
+          },
+          {
+            "bytes": 57274,
+            "lines": 609,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\System.Core\\_PrivateImplementationDetails_.cs",
+            "sha256": "2dfeeeb4d3e9b1f71ae5667a5e81cb266cd38c0503778a59c5cc9ca89bedcd68"
+          },
+          {
+            "bytes": 8453,
+            "lines": 134,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\System.Data\\_PrivateImplementationDetails_.cs",
+            "sha256": "d2a22d4bf7f7b7881147a47273a71bf5bc1b2573cb316fb549a6d9ee8cd7300d"
+          },
+          {
+            "bytes": 45484,
+            "lines": 603,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\System.Xml\\_PrivateImplementationDetails_.cs",
+            "sha256": "a51cbaa0dae64d24f92a9b2544c1f9cba82122a83ed3435a9b89da7d8b0a7f9e"
+          },
+          {
+            "bytes": 175,
+            "lines": 11,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\Tapjoy\\_PrivateImplementationDetails_.cs",
+            "sha256": "c208543f7178b2866802cd38f73e9daf2bab23d86e4e46d584feff988dc509fd"
+          },
+          {
+            "bytes": 1160,
+            "lines": 33,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\UnityEngine.CoreModule\\_PrivateImplementationDetails_.cs",
+            "sha256": "0446a2cacc34d974ecc49f68fd39e5a5d6abbcd0c9789ce50dec588399e4957a"
+          },
+          {
+            "bytes": 175,
+            "lines": 11,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\UnityEngine.IMGUIModule\\_PrivateImplementationDetails_.cs",
+            "sha256": "c208543f7178b2866802cd38f73e9daf2bab23d86e4e46d584feff988dc509fd"
+          },
+          {
+            "bytes": 643,
+            "lines": 21,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\UnityEngine.Purchasing.Security\\_PrivateImplementationDetails_.cs",
+            "sha256": "e700c761ec0cdabf591e8a00e8d155116484e695f6cc6d862a7705961937d3f7"
+          },
+          {
+            "bytes": 175,
+            "lines": 11,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\UnityEngine.Purchasing.Stores\\_PrivateImplementationDetails_.cs",
+            "sha256": "c208543f7178b2866802cd38f73e9daf2bab23d86e4e46d584feff988dc509fd"
+          },
+          {
+            "bytes": 463,
+            "lines": 18,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\UnityEngine.UI\\_PrivateImplementationDetails_.cs",
+            "sha256": "e53c0827f158ea330b55ecec75fc15c808673b976d4a8825d204f21cfd369636"
+          },
+          {
+            "bytes": 451,
+            "lines": 18,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\UnityEngine.UIElementsModule\\_PrivateImplementationDetails_.cs",
+            "sha256": "81057939c5aeb7d2d244e1c2e2860d69abe5eb7499fd1bc95799f00335e4d45e"
+          }
+        ],
+        "metadata": {
+          "available": true,
+          "graphics_method_records": 300,
+          "language_method_records": 84,
+          "private_field_examples": [
+            "Field$<PrivateImplementationDetails>.000FD2A889747E8BC79B8D22F9A28EC4445A374CBE12BF319A202054EE673660",
+            "Field$<PrivateImplementationDetails>.005F90760410B0D587BF567FAD1522E7D5B5F1EF0FCCC12B7508AD2A6E6443E3",
+            "Field$<PrivateImplementationDetails>.00CD06722CAB6938ADF7E52A67799539B70A2010E498EDDDF319EB1F53CFA93F",
+            "Field$<PrivateImplementationDetails>.01FCFF0D7AF7BD72CB110DCCDE8D30DC92B5C9CF0C9114CA0F66BA21EC21A1A7",
+            "Field$<PrivateImplementationDetails>.0436ABA74E390D512E3213E3A4167E98011C591AC02B9D90543DCFC145D71E96"
+          ],
+          "private_implementation_field_records": 684,
+          "private_implementation_method_records": 8,
+          "private_method_examples": [
+            "<PrivateImplementationDetails>$$ComputeStringHash",
+            "<PrivateImplementationDetails>$$ComputeStringHash",
+            "<PrivateImplementationDetails>$$ComputeStringHash",
+            "<PrivateImplementationDetails>$$ComputeStringHash",
+            "<PrivateImplementationDetails>$$ComputeStringHash"
+          ],
+          "script_json": "knowledge\\sources\\phase3a_apk_probe\\il2cpp_dump\\script.json"
+        }
+      },
+      "file": "-PrivateImplementationDetails-.cs",
+      "reason": "The old exporter emitted a zero-byte compiler-generated container, while current metadata exposes RuntimeFieldHandle-backed private fields and generated string-hash methods; fresh Diffable C# also emits the generated type with static-array-size structs."
+    },
+    {
+      "bytes": 0,
+      "classification": "EXPORTER_LOSS",
+      "evidence": {
+        "fresh": [
+          {
+            "bytes": 36915,
+            "lines": 1070,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\KairoLibrary\\kairo\\unity\\ui\\Graphics.cs",
+            "sha256": "6cc6ed4a32f280c58c29a54f5b546ea3c2869a826a7a9f15b251a62000a0d44b"
+          },
+          {
+            "bytes": 2787,
+            "lines": 61,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\UnityEngine.CoreModule\\UnityEngine\\Graphics.cs",
+            "sha256": "6e8d4e9f46b15ab9267122d0d50c1205c3d7f6912a65fce99dc6f3d991989c9e"
+          }
+        ],
+        "metadata": {
+          "available": true,
+          "graphics_method_records": 300,
+          "language_method_records": 84,
+          "private_field_examples": [
+            "Field$<PrivateImplementationDetails>.000FD2A889747E8BC79B8D22F9A28EC4445A374CBE12BF319A202054EE673660",
+            "Field$<PrivateImplementationDetails>.005F90760410B0D587BF567FAD1522E7D5B5F1EF0FCCC12B7508AD2A6E6443E3",
+            "Field$<PrivateImplementationDetails>.00CD06722CAB6938ADF7E52A67799539B70A2010E498EDDDF319EB1F53CFA93F",
+            "Field$<PrivateImplementationDetails>.01FCFF0D7AF7BD72CB110DCCDE8D30DC92B5C9CF0C9114CA0F66BA21EC21A1A7",
+            "Field$<PrivateImplementationDetails>.0436ABA74E390D512E3213E3A4167E98011C591AC02B9D90543DCFC145D71E96"
+          ],
+          "private_implementation_field_records": 684,
+          "private_implementation_method_records": 8,
+          "private_method_examples": [
+            "<PrivateImplementationDetails>$$ComputeStringHash",
+            "<PrivateImplementationDetails>$$ComputeStringHash",
+            "<PrivateImplementationDetails>$$ComputeStringHash",
+            "<PrivateImplementationDetails>$$ComputeStringHash",
+            "<PrivateImplementationDetails>$$ComputeStringHash"
+          ],
+          "script_json": "knowledge\\sources\\phase3a_apk_probe\\il2cpp_dump\\script.json"
+        }
+      },
+      "file": "kairo.unity.ui/Graphics.cs",
+      "reason": "kairo.unity.ui.Graphics is present in metadata and the fresh Diffable C# output contains a nonzero type skeleton with fields, methods, and offsets; the old file was empty."
+    },
+    {
+      "bytes": 0,
+      "classification": "EXPORTER_LOSS",
+      "evidence": {
+        "fresh": [
+          {
+            "bytes": 14304,
+            "lines": 416,
+            "path": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\diffable-cs\\DiffableCs\\KairoLibrary\\kairo\\unity\\util\\Language.cs",
+            "sha256": "c6fe48f1156d744826b831c9e22e335eebd982baff8ddfb4d38889fd43e1c7fc"
+          }
+        ],
+        "metadata": {
+          "available": true,
+          "graphics_method_records": 300,
+          "language_method_records": 84,
+          "private_field_examples": [
+            "Field$<PrivateImplementationDetails>.000FD2A889747E8BC79B8D22F9A28EC4445A374CBE12BF319A202054EE673660",
+            "Field$<PrivateImplementationDetails>.005F90760410B0D587BF567FAD1522E7D5B5F1EF0FCCC12B7508AD2A6E6443E3",
+            "Field$<PrivateImplementationDetails>.00CD06722CAB6938ADF7E52A67799539B70A2010E498EDDDF319EB1F53CFA93F",
+            "Field$<PrivateImplementationDetails>.01FCFF0D7AF7BD72CB110DCCDE8D30DC92B5C9CF0C9114CA0F66BA21EC21A1A7",
+            "Field$<PrivateImplementationDetails>.0436ABA74E390D512E3213E3A4167E98011C591AC02B9D90543DCFC145D71E96"
+          ],
+          "private_implementation_field_records": 684,
+          "private_implementation_method_records": 8,
+          "private_method_examples": [
+            "<PrivateImplementationDetails>$$ComputeStringHash",
+            "<PrivateImplementationDetails>$$ComputeStringHash",
+            "<PrivateImplementationDetails>$$ComputeStringHash",
+            "<PrivateImplementationDetails>$$ComputeStringHash",
+            "<PrivateImplementationDetails>$$ComputeStringHash"
+          ],
+          "script_json": "knowledge\\sources\\phase3a_apk_probe\\il2cpp_dump\\script.json"
+        }
+      },
+      "file": "kairo.unity.util/Language.cs",
+      "reason": "kairo.unity.util.Language is present in metadata and the fresh Diffable C# output contains a nonzero type skeleton with fields, methods, and offsets; the old file was empty."
+    }
+  ],
+  "schema_version": "r0-cpp2il-zero-byte-analysis-v1",
+  "zero_byte_cs_count": 3
+}

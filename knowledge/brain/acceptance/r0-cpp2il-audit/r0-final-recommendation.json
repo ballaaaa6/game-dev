@@ -1,0 +1,19 @@
+{
+  "basis": {
+    "accepted_method_count": 41229,
+    "fresh_csharp_improved_count": 0,
+    "fresh_rerun": true,
+    "intermediate_representation_improved_count": 14,
+    "raw_lexical_method_declaration_count": 43103,
+    "source_identity": "MATCH",
+    "static_data_pass_justified": true,
+    "zero_byte_files": 3
+  },
+  "decision": "HYBRID",
+  "decision_statement": "Keep the existing C# corpus as the high-level skeleton, but use the fresh Cpp2IL ISIL/native intermediate representation and metadata/static-data evidence selectively for degraded methods. Do not replace the corpus with fresh Diffable C# output.",
+  "measurement_basis": "Accepted same-identity corpus baseline with raw lexical issue index retained for traceability.",
+  "next_authorized_boundary": "R1_CORE_CSHARP_REPAIR",
+  "schema_version": "r0-cpp2il-final-recommendation-v1",
+  "started_next_phase": false,
+  "stop": true
+}
