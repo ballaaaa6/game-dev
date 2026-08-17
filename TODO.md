@@ -1,5 +1,16 @@
 # TODO
 
+## R1 whole-corpus ownership index and repair queue — closed (2026-08-17)
+
+- [x] Read the pinned R1 task and complete the source identity gate for the APK, C# archive, libil2cpp, and global-metadata inputs.
+- [x] Build the assembly-first DummyDll inventory, exact ownership taxonomy, namespace/path exception records, and explicit scripting-assembly boundary rows.
+- [x] Build overload-safe stable type/method identities with metadata tokens, RVAs, source matches, quality classes, verification statuses, and repair dispositions.
+- [x] Index the full read-only C# corpus and fresh ISIL evidence without editing or executing recovered C#.
+- [x] Build owned type/call/field/static-data dependency edges, external edges, SCCs, layers, and ownership bridges.
+- [x] Emit a deterministic resumable local package under artifacts/r1-whole-corpus-index/ and the compact accepted package under knowledge/brain/acceptance/r1-whole-corpus-index/.
+- [x] Validate exact repair-queue coverage, unique IDs, graph references, core-nine anchors, source hashes, artifact manifest, builder --check, and the standalone R1 validator.
+- [x] Close R1 with PASS_R1_WHOLE_CORPUS_INDEX and stop before R2_CORE_CSHARP_REPAIR. No C# repair, native lifting, runtime, Unity, integration, persistence, backend, deployment, or source-root mutation was performed.
+
 ## K4/K4.1 whole visual assembly brain closure — closed (2026-08-17)
 
 - [x] Read the pasted K4 contract and preserve its inline-only, evidence-only, no-V8, no-server, no-emulator, no-network, no-pixel-tuning boundary.

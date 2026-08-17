@@ -1,0 +1,42 @@
+{
+  "builder_version": "r1-whole-corpus-index-builder-v1",
+  "read_only_sources": true,
+  "resume_boundary": "source_cache",
+  "schema_version": "r1-whole-corpus-index-v1",
+  "stages": [
+    {
+      "stage": "source_gate",
+      "status": "PASS"
+    },
+    {
+      "record_count": 5504,
+      "stage": "source_cache",
+      "status": "PASS"
+    },
+    {
+      "method_count": 62884,
+      "stage": "metadata_catalog",
+      "status": "PASS",
+      "type_count": 8309
+    },
+    {
+      "assembly_count": 114,
+      "stage": "ownership_catalog",
+      "status": "PASS"
+    },
+    {
+      "stage": "method_catalog",
+      "status": "PASS",
+      "target_method_count": 8678
+    },
+    {
+      "owned_call_edge_count": 9392,
+      "stage": "dependency_graph",
+      "status": "PASS"
+    },
+    {
+      "stage": "validation",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "comparison_note": "R1 counts are DummyDll metadata identity counts; R0 counts remain the accepted source baseline and are shown for comparison.",
+  "core_count": 9,
+  "core_names": [
+    "AppData",
+    "Astar",
+    "FurnitureData",
+    "GameForm",
+    "Node",
+    "ObjChip",
+    "Player",
+    "Room",
+    "Staff"
+  ],
+  "pass": true,
+  "rows": [
+    {
+      "core_name": "AppData",
+      "metadata_aliases": [
+        "<>c+AppData"
+      ],
+      "metadata_identity_gap": true,
+      "metadata_identity_gap_reason": "DummyDll exposes only a compiler-generated nested alias for this R0 source anchor; the alias is excluded from the owned method catalog by the compiler-generated policy.",
+      "metadata_type_match_count": 1,
+      "pass": true,
+      "r0_accepted_method_count": 329,
+      "r0_file_path": "main/AppData.cs",
+      "r1_isil_available_count": 0,
+      "r1_metadata_method_count": 0,
+      "r1_quality_counts": {},
+      "r1_source_present_count": 0
+    },
+    {
+      "core_name": "Astar",
+      "metadata_aliases": [],
+      "metadata_identity_gap": false,
+      "metadata_identity_gap_reason": null,
+      "metadata_type_match_count": 1,
+      "pass": true,
+      "r0_accepted_method_count": 10,
+      "r0_file_path": "game.routeSearch/Astar.cs",
+      "r1_isil_available_count": 9,
+      "r1_metadata_method_count": 9,
+      "r1_quality_counts": {
+        "CLEAN": 2,
+        "NATIVE_LIFT_REQUIRED": 7
+      },
+      "r1_source_present_count": 8
+    },
+    {
+      "core_name": "FurnitureData",
+      "metadata_aliases": [],
+      "metadata_identity_gap": false,
+      "metadata_identity_gap_reason": null,
+      "metadata_type_match_count": 1,
+      "pass": true,
+      "r0_accepted_method_count": 20,
+      "r0_file_path": "data/FurnitureData.cs",
+      "r1_isil_available_count": 21,
+      "r1_metadata_method_count": 21,
+      "r1_quality_counts": {
+        "CFG_REPAIR": 4,
+        "CLEAN": 4,
+        "NATIVE_LIFT_REQUIRED": 11,
+        "TYPE_REPAIR": 2
+      },
+      "r1_source_present_count": 20
+    },
+    {
+      "core_name": "GameForm",
+      "metadata_aliases": [
+        "<EnumerateForms>d__23+GameForm"
+      ],
+      "metadata_identity_gap": true,
+      "metadata_identity_gap_reason": "DummyDll exposes only a compiler-generated nested alias for this R0 source anchor; the alias is excluded from the owned method catalog by the compiler-generated policy.",
+      "metadata_type_match_count": 1,
+      "pass": true,
+      "r0_accepted_method_count": 94,
+      "r0_file_path": "form/GameForm.cs",
+      "r1_isil_available_count": 0,
+      "r1_metadata_method_count": 0,
+      "r1_quality_counts": {},
+      "r1_source_present_count": 0
+    },
+    {
+      "core_name": "Node",
+      "metadata_aliases": [],
+      "metadata_identity_gap": false,
+      "metadata_identity_gap_reason": null,
+      "metadata_type_match_count": 5,
+      "pass": true,
+      "r0_accepted_method_count": 3,
+      "r0_file_path": "game.routeSearch/Node.cs",
+      "r1_isil_available_count": 3,
+      "r1_metadata_method_count": 13,
+      "r1_quality_counts": {
+        "CFG_REPAIR": 1,
+        "CLEAN": 6,
+        "NATIVE_LIFT_REQUIRED": 5,
+        "TYPE_REPAIR": 1
+      },
+      "r1_source_present_count": 13
+    },
+    {
+      "core_name": "ObjChip",
+      "metadata_aliases": [],
+      "metadata_identity_gap": false,
+      "metadata_identity_gap_reason": null,
+      "metadata_type_match_count": 1,
+      "pass": true,
+      "r0_accepted_method_count": 51,
+      "r0_file_path": "game/ObjChip.cs",
+      "r1_isil_available_count": 0,
+      "r1_metadata_method_count": 52,
+      "r1_quality_counts": {
+        "CFG_REPAIR": 7,
+        "CLEAN": 11,
+        "NATIVE_LIFT_REQUIRED": 29,
+        "SOURCE_LIMITED": 3,
+        "TYPE_REPAIR": 2
+      },
+      "r1_source_present_count": 51
+    },
+    {
+      "core_name": "Player",
+      "metadata_aliases": [],
+      "metadata_identity_gap": false,
+      "metadata_identity_gap_reason": null,
+      "metadata_type_match_count": 1,
+      "pass": true,
+      "r0_accepted_method_count": 232,
+      "r0_file_path": "game/Player.cs",
+      "r1_isil_available_count": 226,
+      "r1_metadata_method_count": 227,
+      "r1_quality_counts": {
+        "CFG_REPAIR": 30,
+        "CLEAN": 28,
+        "NATIVE_LIFT_REQUIRED": 137,
+        "SOURCE_LIMITED": 1,
+        "TYPE_REPAIR": 31
+      },
+      "r1_source_present_count": 223
+    },
+    {
+      "core_name": "Room",
+      "metadata_aliases": [],
+      "metadata_identity_gap": false,
+      "metadata_identity_gap_reason": null,
+      "metadata_type_match_count": 1,
+      "pass": true,
+      "r0_accepted_method_count": 117,
+      "r0_file_path": "game/Room.cs",
+      "r1_isil_available_count": 118,
+      "r1_metadata_method_count": 118,
+      "r1_quality_counts": {
+        "CFG_REPAIR": 12,
+        "CLEAN": 11,
+        "NATIVE_LIFT_REQUIRED": 91,
+        "TYPE_REPAIR": 4
+      },
+      "r1_source_present_count": 117
+    },
+    {
+      "core_name": "Staff",
+      "metadata_aliases": [],
+      "metadata_identity_gap": false,
+      "metadata_identity_gap_reason": null,
+      "metadata_type_match_count": 1,
+      "pass": true,
+      "r0_accepted_method_count": 205,
+      "r0_file_path": "game/Staff.cs",
+      "r1_isil_available_count": 208,
+      "r1_metadata_method_count": 208,
+      "r1_quality_counts": {
+        "CFG_REPAIR": 31,
+        "CLEAN": 59,
+        "NATIVE_LIFT_REQUIRED": 87,
+        "SOURCE_LIMITED": 2,
+        "STATIC_DATA_REPAIR": 11,
+        "TYPE_REPAIR": 18
+      },
+      "r1_source_present_count": 207
+    }
+  ],
+  "schema_version": "r1-whole-corpus-index-v1"
+}

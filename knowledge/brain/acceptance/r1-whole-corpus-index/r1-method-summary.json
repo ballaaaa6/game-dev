@@ -1,0 +1,62 @@
+{
+  "authority": "DummyDll metadata methods in GAME_FIRST_PARTY and KAIRO_ENGINE types, excluding COMPILER_GENERATED types",
+  "counts_by_assembly": {
+    "Assembly-CSharp": 3081,
+    "KairoLibrary": 5597
+  },
+  "counts_by_ownership": {
+    "GAME_FIRST_PARTY": 3081,
+    "KAIRO_ENGINE": 5597
+  },
+  "counts_by_quality_class": {
+    "CFG_REPAIR": 1902,
+    "CLEAN": 2126,
+    "NATIVE_BOUNDARY": 178,
+    "NATIVE_LIFT_REQUIRED": 3337,
+    "SOURCE_LIMITED": 755,
+    "STATIC_DATA_REPAIR": 16,
+    "TYPE_REPAIR": 364
+  },
+  "counts_by_repair_disposition": {
+    "AUTO_STATIC_DATA_REPAIR": 16,
+    "AUTO_TYPE_REPAIR": 364,
+    "CFG_REPAIR": 1902,
+    "EXTERNAL_BOUNDARY": 178,
+    "ISIL_ASSISTED_REPAIR": 3001,
+    "NATIVE_LIFT": 336,
+    "SOURCE_LIMITED": 755,
+    "VERIFY_ONLY": 2126
+  },
+  "counts_by_verification_status": {
+    "BASELINE_READABLE": 2126,
+    "EXTERNAL_BOUNDARY": 178,
+    "NEEDS_REPAIR": 5619,
+    "SOURCE_LIMITED": 755
+  },
+  "identity_material": [
+    "source APK SHA-256",
+    "assembly name",
+    "declaring type full name",
+    "method name",
+    "method generic arity",
+    "return type",
+    "ordered parameter types"
+  ],
+  "isil_available_count": 5970,
+  "metadata_total_method_count": 62884,
+  "metadata_total_type_count": 8309,
+  "method_id_unique": true,
+  "native_available_count": 5970,
+  "r0_source_baseline": {
+    "accepted_method_count": 41229,
+    "authority_note": "R0 source baseline is retained for quality signals and is not substituted for R1 metadata identity.",
+    "raw_lexical_method_declaration_count": 43103,
+    "source_identity": "MATCH"
+  },
+  "repaired_body_count": 0,
+  "schema_version": "r1-whole-corpus-index-v1",
+  "source_body_present_count": 6388,
+  "source_present_count": 6819,
+  "target_method_count": 8678,
+  "target_type_count": 557
+}

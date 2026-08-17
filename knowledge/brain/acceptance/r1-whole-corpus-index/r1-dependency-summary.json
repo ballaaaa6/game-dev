@@ -1,0 +1,13 @@
+{
+  "bridge_count": 35,
+  "external_edge_count": 87175,
+  "field_edge_count": 8769,
+  "max_dependency_layer": 13,
+  "owned_call_edge_count": 9392,
+  "owned_method_count": 8678,
+  "owned_type_count": 557,
+  "recursive_scc_count": 407,
+  "scc_count": 8656,
+  "static_data_edge_count": 9067,
+  "type_edge_count": 700
+}

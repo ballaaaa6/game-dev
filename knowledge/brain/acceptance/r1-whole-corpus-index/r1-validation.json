@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "artifact_manifest_match": true,
+    "artifact_root_present": true,
+    "call_refs_valid": true,
+    "external_refs_valid": true,
+    "field_refs_valid": true,
+    "graph_nonempty": true,
+    "jsonl_sorted": true,
+    "method_contract_valid": true,
+    "method_ids_unique": true,
+    "ownership_values_valid": true,
+    "pinned_hashes_match": true,
+    "queue_exact": true,
+    "required_files_present": true,
+    "source_gate_pass": true,
+    "stored_validation_pass": true,
+    "type_ids_unique": true
+  },
+  "counts": {
+    "call_edges": 9392,
+    "external_edges": 87175,
+    "field_edges": 8769,
+    "fields": 40615,
+    "methods": 8678,
+    "queue": 8678,
+    "sccs": 8656,
+    "static_data_edges": 9067,
+    "type_edges": 700,
+    "types": 8309
+  },
+  "failed_checks": [],
+  "schema_version": "r1-whole-corpus-index-v1",
+  "status": "PASS"
+}

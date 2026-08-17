@@ -1,0 +1,14 @@
+{
+  "core_nine": "PASS",
+  "decision": "PASS_R1_WHOLE_CORPUS_INDEX",
+  "dependency_graph": "PASS",
+  "method_identity_catalog": "PASS",
+  "next_authorized_boundary": "R2_CORE_CSHARP_REPAIR",
+  "ownership_index": "PASS",
+  "repair_queue": "PASS",
+  "repaired_csharp_bodies": false,
+  "runtime_or_unity_work": false,
+  "schema_version": "r1-whole-corpus-index-v1",
+  "source_identity": "MATCH",
+  "stop_before_next_phase": true
+}

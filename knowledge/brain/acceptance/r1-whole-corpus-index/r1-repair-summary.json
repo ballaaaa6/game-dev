@@ -1,0 +1,49 @@
+{
+  "disposition_contract": {
+    "CFG_REPAIR": "CFG_REPAIR",
+    "CLEAN": "VERIFY_ONLY",
+    "NATIVE_BOUNDARY": "EXTERNAL_BOUNDARY",
+    "NATIVE_LIFT_REQUIRED": "ISIL_ASSISTED_REPAIR when ISIL exists, otherwise NATIVE_LIFT",
+    "SOURCE_LIMITED": "SOURCE_LIMITED",
+    "STATIC_DATA_REPAIR": "AUTO_STATIC_DATA_REPAIR",
+    "TYPE_REPAIR": "AUTO_TYPE_REPAIR"
+  },
+  "native_available_for_native_required_count": 2994,
+  "native_required_count": 3337,
+  "priority_counts": {
+    "0": 3337,
+    "1": 2282,
+    "2": 755,
+    "3": 2304
+  },
+  "quality_class_counts": {
+    "CFG_REPAIR": 1902,
+    "CLEAN": 2126,
+    "NATIVE_BOUNDARY": 178,
+    "NATIVE_LIFT_REQUIRED": 3337,
+    "SOURCE_LIMITED": 755,
+    "STATIC_DATA_REPAIR": 16,
+    "TYPE_REPAIR": 364
+  },
+  "queue_id_unique": true,
+  "queue_method_count": 8678,
+  "repair_disposition_counts": {
+    "AUTO_STATIC_DATA_REPAIR": 16,
+    "AUTO_TYPE_REPAIR": 364,
+    "CFG_REPAIR": 1902,
+    "EXTERNAL_BOUNDARY": 178,
+    "ISIL_ASSISTED_REPAIR": 3001,
+    "NATIVE_LIFT": 336,
+    "SOURCE_LIMITED": 755,
+    "VERIFY_ONLY": 2126
+  },
+  "repaired_body_count": 0,
+  "schema_version": "r1-whole-corpus-index-v1",
+  "source_limited_count": 755,
+  "verification_status_counts": {
+    "BASELINE_READABLE": 2126,
+    "EXTERNAL_BOUNDARY": 178,
+    "NEEDS_REPAIR": 5619,
+    "SOURCE_LIMITED": 755
+  }
+}

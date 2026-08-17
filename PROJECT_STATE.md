@@ -1,16 +1,32 @@
 # Project State
 
-## Current Status — V8 live Room0 visual reconstruction complete (2026-08-17)
+## Current Status — R1 whole-corpus index complete (2026-08-17)
 
 ## Git-visible current gate
 
-- `current_phase`: `V8`
-- `status`: `PASS_V8_LIVE_ROOM0_VISUAL_RECONSTRUCTION`
-- `V8`: `PASS`
+- `current_phase`: `R1_WHOLE_CORPUS_INDEX`
+- `status`: `PASS_R1_WHOLE_CORPUS_INDEX`
+- `R1`: `PASS`
+- `V8`: `PASS (prior completed phase)`
 - `live_room0`: `true`
 - `autonomous_no_task_living`: `true`
 - `required_visual_fallback_count`: `0`
-- `next_authorized_phase`: `NONE_WITHOUT_EXPLICIT_AUTHORIZATION`
+- `next_authorized_phase`: `R2_CORE_CSHARP_REPAIR`
+- `next_phase_started`: `false`
+
+## R1 whole-corpus ownership index and repair queue — complete (2026-08-17)
+
+- Pinned APK, C# archive, libil2cpp, and global-metadata identities: MATCH.
+- The source gate measured 5,568 files, 5,504 C# files, 64 project files, 55,358,557 C# bytes, and retained all three zero-byte C# files.
+- DummyDll authority indexed 64 assemblies, 8,309 types, 62,884 metadata methods, and 40,615 fields. The owned non-generated target catalog contains 557 types and 8,678 methods: 3,081 GAME_FIRST_PARTY and 5,597 KAIRO_ENGINE.
+- The exact taxonomy is GAME_FIRST_PARTY, KAIRO_ENGINE, UNITY_BOUNDARY, DOTNET_FRAMEWORK, THIRD_PARTY, COMPILER_GENERATED, and SOURCE_LIMITED_OWNERSHIP; assembly authority exceptions are recorded for namespace/path mismatches.
+- Stable method identity uses the pinned APK hash, assembly, declaring type, method name, generic arity, return type, and ordered parameter types, with deterministic metadata-token disambiguation only for duplicate metadata identities.
+- Quality, verification, and disposition are separate. The queue covers all 8,678 target methods exactly once, with zero repaired C# bodies.
+- The graph contains 9,392 owned call edges, 87,175 external/unresolved edges, 8,769 field edges, 9,067 static-data edges, 8,656 SCCs, and 407 recursive SCCs. Fresh ISIL contains 6,682 files and 62,943 method blocks; 5,970 target methods have native/ISIL availability.
+- Core-nine validation is PASS; AppData and GameForm are explicit DummyDll compiler-generated identity gaps, not silently promoted aliases.
+- Validation passed with the standalone validator, builder --check, source identity checks, deterministic ordering/manifest checks, and git diff --check.
+- Heavy artifacts are local-only under artifacts/r1-whole-corpus-index/. The compact accepted package is under knowledge/brain/acceptance/r1-whole-corpus-index/.
+- STOP before R2. No C# repair, native lifting, runtime, Unity, V8/V8R, emulator, integration, persistence, backend, deployment, or source-root mutation was performed.
 
 V8 was explicitly authorized in the user request. The prompt was read completely
 before the Sol pack was extracted and inspected. The Sol pack was treated as a

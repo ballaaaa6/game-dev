@@ -1,0 +1,145 @@
+{
+  "artifact_root": "artifacts\\r1-whole-corpus-index",
+  "builder_version": "r1-whole-corpus-index-builder-v1",
+  "file_count": 25,
+  "files": [
+    {
+      "bytes": 5077,
+      "path": "R1_WHOLE_CORPUS_INDEX_REPORT.md",
+      "sha256": "1aa220f5ae334ecc9bdfe72e66feae5fc2757edffc22aa480f00456e0a0b9ef6"
+    },
+    {
+      "bytes": 85007,
+      "path": "assembly-catalog.json",
+      "sha256": "5f2d6aa83e4300b9ada0f77da2a22d51d1d57c25a196aa6263c45f9883c58889"
+    },
+    {
+      "bytes": 4889,
+      "path": "bridge-summary.json",
+      "sha256": "3b0b28264ec245b956729a12d0cd99b15cb3caec364f15a9ddf03b92cc7fc5f7"
+    },
+    {
+      "bytes": 5150134,
+      "path": "call-edges.jsonl",
+      "record_count": 9392,
+      "sha256": "e726afe3c60d058a569aea8916d9884c2d7e4c9f1d0efea20926ddf151ac1907"
+    },
+    {
+      "bytes": 857,
+      "path": "checkpoint-ledger.json",
+      "sha256": "dee8d76a58810b56e161c968f24cf86dea0251d7ca93bf6ec72739d01cff6f6a"
+    },
+    {
+      "bytes": 5603,
+      "path": "core-nine-validation.json",
+      "sha256": "28d4851e0c3894f2cade8f17253bae8c6a34978b646dd1c7a1484eb317fc9d03"
+    },
+    {
+      "bytes": 1550879,
+      "path": "dependency-layers.jsonl",
+      "record_count": 8656,
+      "sha256": "477e68c492be0d836c1342f76dc1b4d661cfabf7a454a9269ba21679e24eae60"
+    },
+    {
+      "bytes": 316,
+      "path": "dependency-summary.json",
+      "sha256": "3a5b4ec2d371268c0491ad4b2decd25c9354fbbb02b667b17f5e0ce681e7aa08"
+    },
+    {
+      "bytes": 45173603,
+      "path": "external-edges.jsonl",
+      "record_count": 87175,
+      "sha256": "08d2fe0d97c3463c6fe4ea5159a37f77f419721adb7a5ad3df26d081ea4269ee"
+    },
+    {
+      "bytes": 18966171,
+      "path": "field-catalog.jsonl",
+      "record_count": 40615,
+      "sha256": "e5425374e78014d799e1d820f4d5699d63ae37ecfa6879c4d450beac34aefcf3"
+    },
+    {
+      "bytes": 3905446,
+      "path": "field-edges.jsonl",
+      "record_count": 8769,
+      "sha256": "dd5f3beed4c50b2fd26f81f78ee4d9bef61e11dd7a7b3bff251c170458adbaf9"
+    },
+    {
+      "bytes": 226,
+      "path": "isil-summary.json",
+      "sha256": "8505207baafebfefe1e42d1592bcd684c0b3ad9c1f0545957705d84a93d2e6e4"
+    },
+    {
+      "bytes": 31987552,
+      "path": "method-catalog.jsonl",
+      "record_count": 8678,
+      "sha256": "e071e0af79aef1dee04e8a9e30211ce37c727968dd96959e10fb7f62f0035f62"
+    },
+    {
+      "bytes": 1796,
+      "path": "method-summary.json",
+      "sha256": "26a26ac734febc311b4f3da8dca0008f8b5a219909e8f2d7994828452f54397f"
+    },
+    {
+      "bytes": 302214,
+      "path": "ownership-summary.json",
+      "sha256": "ab310730e6e8f91e443b2e1ee55baf9a7cfacf47189e9f559aa57a6e9f000813"
+    },
+    {
+      "bytes": 4748273,
+      "path": "repair-queue.jsonl",
+      "record_count": 8678,
+      "sha256": "a7e57ccef1d1dfb87c9a8b2fde1c6076003b638f486d6584827c4ee9251dbafd"
+    },
+    {
+      "bytes": 1335,
+      "path": "repair-summary.json",
+      "sha256": "ba877d5eaa53bd601f5194c13fc761d3a737668114665c41884eb33d4a96bb5e"
+    },
+    {
+      "bytes": 2872208,
+      "path": "scc-summary.json",
+      "sha256": "e0ccbf9bdfb749dfaf02ffcfdc0939add7d3e486b9236c5116435eafcbcbc374"
+    },
+    {
+      "bytes": 95701795,
+      "path": "source-cache.json",
+      "sha256": "c4b71854e593a1291332a256b8990a2f213e3326b700e26338dad928a18ab8e7"
+    },
+    {
+      "bytes": 1098987,
+      "path": "source-file-manifest.json",
+      "sha256": "24c5dc1222dee5c196aed024a9346534f294f77101cc3448b4606688495dd760"
+    },
+    {
+      "bytes": 5754,
+      "path": "source-gate.json",
+      "sha256": "840209da910b43f0bb59b1836f4415b114c3baed042fe975ebd49c1aaa7abb76"
+    },
+    {
+      "bytes": 2971473,
+      "path": "static-data-edges.jsonl",
+      "record_count": 9067,
+      "sha256": "a69a94c21271486b2d677a658da87afbd1de7642526ff7639ffa60cbd70c938e"
+    },
+    {
+      "bytes": 7339487,
+      "path": "type-catalog.jsonl",
+      "record_count": 8309,
+      "sha256": "6efa73fd8d39383c85ec098b4f12142a032acfafd7e6bea500ff1500c9e5f460"
+    },
+    {
+      "bytes": 271393,
+      "path": "type-edges.jsonl",
+      "record_count": 700,
+      "sha256": "e8cea6ef220437c196ee678fd073adeee60a7ef5f9979aaa5140e9530b3f01e1"
+    },
+    {
+      "bytes": 789,
+      "path": "validation.json",
+      "sha256": "84577ddecf7e8370d1426e8b0166284bdd5acc09b223c77526c7812da8aa3976"
+    }
+  ],
+  "schema_version": "r1-whole-corpus-index-v1",
+  "self_excluded_from_tree": true,
+  "tree_sha256": "a428c0fbfebe78d391b052c44417807038eb23edc2b460b51aa86ce63aee00b1"
+}
