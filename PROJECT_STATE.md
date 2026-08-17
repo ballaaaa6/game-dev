@@ -14,6 +14,7 @@
 - `required_visual_fallback_count`: `0`
 - `next_authorized_phase`: `R2_AUTOMATED_WHOLE_CORPUS_REPAIR`
 - `next_phase_started`: `false`
+- `R1.5.1`: `PASS_R1_5_1_STATE_AND_CLOSURE_SYNC`
 
 ## R1.5 metadata identity reconciliation and repair-universe correction — complete (2026-08-17)
 
@@ -22,13 +23,13 @@
 - Corrected canonical metadata contains 64 metadata-present assemblies, 8,373 types, 62,945 methods, and 40,668 fields. The corrected target universe is 641 types and 10,827 methods: 198 GAME_FIRST_PARTY types / 4,547 methods and 443 KAIRO_ENGINE types / 6,280 methods. The complete queue covers every target method exactly once; repaired C# bodies remain `0`.
 - All 64 assemblies were compared with the independent alternate dump: canonical/alternate totals are 8,373/8,372 types and 62,945/62,943 methods. Discrepancies are explicit: 25 DUMPER_VERSION_DIFFERENCE, 1 GENERATED_TYPE_NAMING_DIFFERENCE, 35 REPRESENTATION_DIFFERENCE, and 3 MATCH rows for both type and method comparisons.
 - Core-nine identity is PASS, including normal `main.AppData`, normal `form.GameForm`, and `game.routeSearch.Node` with 3 methods. Ownership, source/R0/ISIL joins, and compiler-generated exclusion were rebuilt after the metadata correction.
-- The corrected dependency split is explicit: 13,512 owned-resolved calls, 8,668 external-resolved calls, 104,306 owned-unresolved calls, 5,306 ambiguous calls, 4,151 owned-resolved fields, 1,978 external-resolved fields, 18,246 owned-unresolved fields, 8,549 ambiguous fields, 10,801 SCCs, 348 recursive SCCs, largest SCC 4 methods, and 19 dependency layers.
+- The corrected dependency split is explicit: calls are 13,512 resolved-owned, 8,668 resolved-external, 104,306 owned-unresolved, 5,306 ambiguous, and 0 source-limited; fields are 4,151 resolved-owned, 1,978 resolved-external, 18,246 owned-unresolved, 8,549 ambiguous, and 0 source-limited. The compact R1.5.1 validation summary is `knowledge/brain/acceptance/r1-5-metadata-reconciliation/r1-5-1-dependency-split-summary.json`; unresolved edges remain distinct from external-resolved edges. SCCs: 10,801; recursive SCCs: 348; largest SCC: 4 methods; dependency layers: 19.
 - Deterministic rerun, builder validation, source gate, alternate reconciliation, core identity, queue coverage, dependency split, and no-body-repair gates pass. R2, native lifting, runtime/Unity, integrations, persistence/backend, deployment, and source-root mutation remain outside this phase.
 - Heavy corrected catalogs are local-only under `artifacts/r1-5-metadata-reconciliation/`. The compact accepted package and report are under `knowledge/brain/acceptance/r1-5-metadata-reconciliation/`.
 
 ## R1 whole-corpus ownership index and repair queue — complete (2026-08-17)
 
-The R1 architecture remains accepted, but its pre-R1.5 canonical metadata counts, IDs, repair queue, and graph are explicitly `SUPERSEDED_BY_R1_5_METADATA_RECONCILIATION` because of the confirmed metadata table first-row defect. Future repair work must consume only the corrected R1.5 queue.
+The R1 architecture remains retained as historical evidence, but its pre-R1.5 canonical metadata counts, IDs, repair queue, and graph are explicitly `SUPERSEDED_BY_R1_5` (`SUPERSEDED_BY_R1_5_METADATA_RECONCILIATION`) because of the confirmed metadata table first-row defect. The old 8,678-method repair universe is not active; future repair work must consume only the corrected R1.5 queue.
 
 - Pinned APK, C# archive, libil2cpp, and global-metadata identities: MATCH.
 - The source gate measured 5,568 files, 5,504 C# files, 64 project files, 55,358,557 C# bytes, and retained all three zero-byte C# files.
@@ -36,11 +37,17 @@ The R1 architecture remains accepted, but its pre-R1.5 canonical metadata counts
 - The exact taxonomy is GAME_FIRST_PARTY, KAIRO_ENGINE, UNITY_BOUNDARY, DOTNET_FRAMEWORK, THIRD_PARTY, COMPILER_GENERATED, and SOURCE_LIMITED_OWNERSHIP; assembly authority exceptions are recorded for namespace/path mismatches.
 - Stable method identity uses the pinned APK hash, assembly, declaring type, method name, generic arity, return type, and ordered parameter types, with deterministic metadata-token disambiguation only for duplicate metadata identities.
 - Quality, verification, and disposition are separate. The queue covers all 8,678 target methods exactly once, with zero repaired C# bodies.
-- The graph contains 9,392 owned call edges, 87,175 external/unresolved edges, 8,769 field edges, 9,067 static-data edges, 8,656 SCCs, and 407 recursive SCCs. Fresh ISIL contains 6,682 files and 62,943 method blocks; 5,970 target methods have native/ISIL availability.
+- The historical graph contains 9,392 owned call edges, 87,175 external/unresolved edges, 8,769 field edges, 9,067 static-data edges, 8,656 SCCs, and 407 recursive SCCs. These pre-R1.5 counts are retained for audit only and are `SUPERSEDED_BY_R1_5`. Fresh ISIL contains 6,682 files and 62,943 method blocks; 5,970 target methods have native/ISIL availability.
 - Core-nine validation is PASS; AppData and GameForm are explicit DummyDll compiler-generated identity gaps, not silently promoted aliases.
 - Validation passed with the standalone validator, builder --check, source identity checks, deterministic ordering/manifest checks, and git diff --check.
 - Heavy artifacts are local-only under artifacts/r1-whole-corpus-index/. The compact accepted package is under knowledge/brain/acceptance/r1-whole-corpus-index/.
 - STOP before R2. No C# repair, native lifting, runtime, Unity, V8/V8R, emulator, integration, persistence, backend, deployment, or source-root mutation was performed.
+
+## R1.5.1 state and closure synchronization — complete (2026-08-17)
+
+- The active canonical Twin universe is the corrected R1.5 universe: 641 types and 10,827 methods, with 198 GAME_FIRST_PARTY / 4,547 methods and 443 KAIRO_ENGINE / 6,280 methods; the complete repair queue is 10,827 and repaired C# bodies remain 0.
+- The old R1 result and its 8,678-method universe remain retained for audit history only and are marked `SUPERSEDED_BY_R1_5`.
+- Closure validation passed for JSON/JSONL parsing, corrected state/count consistency, explicit R1 supersession, exact next phase `R2_AUTOMATED_WHOLE_CORPUS_REPAIR`, graph split reconciliation, and `git diff --check`. No R2, C# repair, runtime/V8/Unity/Unity-MCP, or source-root work was started.
 
 V8 was explicitly authorized in the user request. The prompt was read completely
 before the Sol pack was extracted and inspected. The Sol pack was treated as a

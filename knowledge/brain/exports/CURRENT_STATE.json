@@ -17,6 +17,24 @@
     "SkillData": 36,
     "FurnitureData": 103
   },
+  "canonical_twin": {
+    "authority": "R1_5_METADATA_RECONCILIATION",
+    "status": "ACTIVE_CORRECTED_R1_5_UNIVERSE",
+    "type_count": 641,
+    "method_count": 10827,
+    "repair_queue_count": 10827,
+    "ownership": {
+      "GAME_FIRST_PARTY": {
+        "type_count": 198,
+        "method_count": 4547
+      },
+      "KAIRO_ENGINE": {
+        "type_count": 443,
+        "method_count": 6280
+      }
+    },
+    "old_r1_repair_universe_active": false
+  },
   "visual_readiness": {
     "reachable": 49,
     "visible": 42,
@@ -40,6 +58,15 @@
     "r1": "PASS_R1_WHOLE_CORPUS_INDEX",
     "r1_5": "PASS_R1_5_METADATA_IDENTITY_RECONCILIATION_AND_REPAIR_UNIVERSE_CORRECTION_CLOSED"
   },
+  "closure_sync": {
+    "phase": "R1_5_1_STATE_AND_CLOSURE_SYNC",
+    "status": "PASS_R1_5_1_STATE_AND_CLOSURE_SYNC",
+    "canonical_phase": "R1_5_METADATA_RECONCILIATION",
+    "old_r1_status": "SUPERSEDED_BY_R1_5",
+    "dependency_split_summary": "knowledge/brain/acceptance/r1-5-metadata-reconciliation/r1-5-1-dependency-split-summary.json",
+    "next_authorized_phase": "R2_AUTOMATED_WHOLE_CORPUS_REPAIR",
+    "next_phase_started": false
+  },
   "next_authorized_phase": "R2_AUTOMATED_WHOLE_CORPUS_REPAIR",
   "ready_for_next_phase": false,
   "latest_completed_audit": {
@@ -49,13 +76,34 @@
     "source_identity": "MATCH",
     "metadata_type_count": 8373,
     "metadata_method_count": 62945,
+    "metadata_field_count": 40668,
     "target_type_count": 641,
     "target_method_count": 10827,
+    "twin_type_count": 641,
+    "twin_method_count": 10827,
+    "twin_repair_queue_count": 10827,
+    "twin_ownership": {
+      "GAME_FIRST_PARTY": {
+        "type_count": 198,
+        "method_count": 4547
+      },
+      "KAIRO_ENGINE": {
+        "type_count": 443,
+        "method_count": 6280
+      }
+    },
     "owned_call_edge_count": 13512,
     "external_resolved_call_edge_count": 8668,
     "owned_unresolved_call_edge_count": 104306,
     "ambiguous_call_edge_count": 5306,
+    "source_limited_call_edge_count": 0,
+    "owned_resolved_field_edge_count": 4151,
+    "external_resolved_field_edge_count": 1978,
+    "owned_unresolved_field_edge_count": 18246,
+    "ambiguous_field_edge_count": 8549,
+    "source_limited_field_edge_count": 0,
     "field_edge_count": 6129,
+    "dependency_split_summary": "knowledge/brain/acceptance/r1-5-metadata-reconciliation/r1-5-1-dependency-split-summary.json",
     "scc_count": 10801,
     "recursive_scc_count": 348,
     "repair_queue_count": 10827,
@@ -101,7 +149,10 @@
     "validation": "PASS",
     "next_phase_started": false,
     "stop": true,
-    "supersession": "SUPERSEDED_BY_R1_5_METADATA_RECONCILIATION"
+    "historical_only": true,
+    "active_repair_universe": false,
+    "supersession": "SUPERSEDED_BY_R1_5",
+    "supersession_detail": "SUPERSEDED_BY_R1_5_METADATA_RECONCILIATION"
   },
   "r1_5": {
     "source_gate": "PASS",
@@ -112,6 +163,19 @@
     "metadata_field_count": 40668,
     "target_type_count": 641,
     "target_method_count": 10827,
+    "twin_type_count": 641,
+    "twin_method_count": 10827,
+    "twin_repair_queue_count": 10827,
+    "twin_ownership": {
+      "GAME_FIRST_PARTY": {
+        "type_count": 198,
+        "method_count": 4547
+      },
+      "KAIRO_ENGINE": {
+        "type_count": 443,
+        "method_count": 6280
+      }
+    },
     "repair_queue_count": 10827,
     "owned_call_edge_count": 13512,
     "external_resolved_call_edge_count": 8668,
@@ -123,6 +187,31 @@
     "owned_unresolved_field_edge_count": 18246,
     "ambiguous_field_edge_count": 8549,
     "unresolved_field_edge_count": 26795,
+    "call_edge_split": {
+      "RESOLVED_OWNED": 13512,
+      "RESOLVED_EXTERNAL": 8668,
+      "OWNED_UNRESOLVED": 104306,
+      "AMBIGUOUS": 5306,
+      "SOURCE_LIMITED": 0,
+      "total": 131792
+    },
+    "field_edge_split": {
+      "RESOLVED_OWNED": 4151,
+      "RESOLVED_EXTERNAL": 1978,
+      "OWNED_UNRESOLVED": 18246,
+      "AMBIGUOUS": 8549,
+      "SOURCE_LIMITED": 0,
+      "total": 32924
+    },
+    "combined_dependency_split": {
+      "RESOLVED_OWNED": 17663,
+      "RESOLVED_EXTERNAL": 10646,
+      "OWNED_UNRESOLVED": 122552,
+      "AMBIGUOUS": 13855,
+      "SOURCE_LIMITED": 0,
+      "total": 164716
+    },
+    "dependency_split_summary": "knowledge/brain/acceptance/r1-5-metadata-reconciliation/r1-5-1-dependency-split-summary.json",
     "field_edge_count": 6129,
     "static_data_edge_count": 13463,
     "scc_count": 10801,

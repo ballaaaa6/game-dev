@@ -2843,7 +2843,7 @@ def write_compact_package(
             "core_nine": "PASS" if core_validation["pass"] else "FAIL",
             "repaired_csharp_bodies": False,
             "runtime_or_unity_work": False,
-            "next_authorized_boundary": "R2_CORE_CSHARP_REPAIR",
+            "next_authorized_boundary": "R2_AUTOMATED_WHOLE_CORPUS_REPAIR",
             "stop_before_next_phase": True,
         },
     )

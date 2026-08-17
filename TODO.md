@@ -20,7 +20,16 @@ The pre-R1.5 R1 metadata universe remains retained for audit history but is supe
 - [x] Build owned type/call/field/static-data dependency edges, external edges, SCCs, layers, and ownership bridges.
 - [x] Emit a deterministic resumable local package under artifacts/r1-whole-corpus-index/ and the compact accepted package under knowledge/brain/acceptance/r1-whole-corpus-index/.
 - [x] Validate exact repair-queue coverage, unique IDs, graph references, core-nine anchors, source hashes, artifact manifest, builder --check, and the standalone R1 validator.
-- [x] Close R1 with PASS_R1_WHOLE_CORPUS_INDEX and stop before R2_CORE_CSHARP_REPAIR. No C# repair, native lifting, runtime, Unity, integration, persistence, backend, deployment, or source-root mutation was performed.
+- [x] Close R1 with PASS_R1_WHOLE_CORPUS_INDEX and stop before the superseding `R2_AUTOMATED_WHOLE_CORPUS_REPAIR` boundary. No C# repair, native lifting, runtime, Unity, integration, persistence, backend, deployment, or source-root mutation was performed.
+
+## R1.5.1 state and closure synchronization — closed (2026-08-17)
+
+- [x] Synchronize `CURRENT_STATE.json`, `PROJECT_STATE.md`, `TODO.md`, and `TASK_LEDGER.jsonl` to the accepted R1.5 metadata identity, Twin universe, repair queue, graph split, and closure status.
+- [x] Add the compact R1.5.1 dependency split summary with separate resolved-owned, resolved-external, owned-unresolved, ambiguous, and source-limited call and field counts; do not merge unresolved edges into external-resolved edges.
+- [x] Mark the historical R1 result `SUPERSEDED_BY_R1_5` without deleting its evidence.
+- [x] Validate JSON/JSONL parsing, state/count consistency, supersession, exact next phase, graph totals, and `git diff --check`; stop here.
+
+Next authorized work is `R2_AUTOMATED_WHOLE_CORPUS_REPAIR` across the whole corpus; core-only repair is not the active next phase.
 
 ## K4/K4.1 whole visual assembly brain closure — closed (2026-08-17)
 

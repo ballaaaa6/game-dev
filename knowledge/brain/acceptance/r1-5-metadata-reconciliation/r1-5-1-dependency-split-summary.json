@@ -1,0 +1,56 @@
+{
+  "schema_version": "r1.5.1-dependency-split-summary-v1",
+  "phase": "R1_5_METADATA_RECONCILIATION",
+  "closure_sync": "R1_5_1_STATE_AND_CLOSURE_SYNC",
+  "status": "PASS",
+  "authority": {
+    "accepted_dependency_summary": "knowledge/brain/acceptance/r1-5-metadata-reconciliation/r1-5-dependency-summary.json",
+    "accepted_unresolved_edge_summary": "knowledge/brain/acceptance/r1-5-metadata-reconciliation/r1-5-unresolved-edge-summary.json",
+    "heavy_artifact_root": "artifacts/r1-5-metadata-reconciliation"
+  },
+  "canonical_call_split": {
+    "RESOLVED_OWNED": 13512,
+    "RESOLVED_EXTERNAL": 8668,
+    "OWNED_UNRESOLVED": 104306,
+    "AMBIGUOUS": 5306,
+    "SOURCE_LIMITED": 0,
+    "total": 131792
+  },
+  "canonical_field_split": {
+    "RESOLVED_OWNED": 4151,
+    "RESOLVED_EXTERNAL": 1978,
+    "OWNED_UNRESOLVED": 18246,
+    "AMBIGUOUS": 8549,
+    "SOURCE_LIMITED": 0,
+    "total": 32924
+  },
+  "canonical_dependency_split": {
+    "RESOLVED_OWNED": 17663,
+    "RESOLVED_EXTERNAL": 10646,
+    "OWNED_UNRESOLVED": 122552,
+    "AMBIGUOUS": 13855,
+    "SOURCE_LIMITED": 0,
+    "total": 164716
+  },
+  "heavy_artifact_line_counts": {
+    "call-edges.jsonl": 13512,
+    "external-resolved-call-edges.jsonl": 8668,
+    "owned-unresolved-call-edges.jsonl": 104306,
+    "ambiguous-call-edges.jsonl": 5306,
+    "source-limited-call-edges.jsonl": 0,
+    "field-edges.jsonl": 6129,
+    "unresolved-field-edges.jsonl": 26795
+  },
+  "accepted_reconciliation": {
+    "unresolved_field_count": 26795,
+    "external_edge_union_count": 145075,
+    "external_edge_union_formula": "RESOLVED_EXTERNAL call + OWNED_UNRESOLVED call + AMBIGUOUS call + OWNED_UNRESOLVED field + AMBIGUOUS field",
+    "split_totals_reconcile": true,
+    "unresolved_is_not_external_resolved": true
+  },
+  "boundary": {
+    "repaired_csharp_bodies": 0,
+    "r2_started": false,
+    "next_authorized_phase": "R2_AUTOMATED_WHOLE_CORPUS_REPAIR"
+  }
+}
