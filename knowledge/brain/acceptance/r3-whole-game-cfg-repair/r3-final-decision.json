@@ -1,0 +1,23 @@
+{
+  "acceptance_token": "PASS_R3_WHOLE_GAME_CFG_REPAIR_CLOSED",
+  "active_cfg_rows": 2856,
+  "canonical_start_universe": {
+    "methods": 10827,
+    "queue": 10827,
+    "target_types": 641
+  },
+  "decision": "PASS_WITH_EXPLICIT_CFG_DEFERRAL",
+  "deferred_r3_cfg_rows": 2856,
+  "identity_resolved": 2572,
+  "identity_unresolved": 62,
+  "native_body_lift": "NO",
+  "negative_fixtures_rejected": 5,
+  "next_authorized_boundary": "R4 native/ISIL semantic lift",
+  "original_source_changed": "NO",
+  "policy_basis": "No R3 family met the semantic and graph-equivalence gates. R3 permits closure with explicit deferral only because every active CFG row is classified and has an evidence bundle; no source change is authorized.",
+  "r2_identity_blockers": 2634,
+  "repaired_r3_rows": 0,
+  "schema_version": "r3-final-decision-v1",
+  "status": "PASS",
+  "stop_after_r3": true
+}

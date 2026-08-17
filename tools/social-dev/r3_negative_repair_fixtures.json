@@ -1,0 +1,73 @@
+{
+  "canonical_status": "REJECT_ALL_SOURCE_CHANGES",
+  "fixtures": [
+    {
+      "declaring_type": "kairo.unity.system.KairoBase",
+      "failure_modes": [
+        "DECLARATION_RENAMED_BUT_OLD_IDENTIFIER_CONSUMER_REMAINS",
+        "DECLARING_TYPE_INFERRED_AS_LOCAL_TYPE_WITHOUT_PROOF"
+      ],
+      "method_id": "r1-method_b7bb8c72de11a0cbde59ed2a14e57cd3",
+      "method_name": "GetColumnType",
+      "required_r3_gate": [
+        "changed identifier must bind at every former use",
+        "local type must be proven from ISIL/metadata/dataflow, never copied from declaring type"
+      ]
+    },
+    {
+      "declaring_type": "kairo.unity.system.KairoBase",
+      "failure_modes": [
+        "DECLARATION_RENAMED_BUT_OLD_IDENTIFIER_CONSUMER_REMAINS",
+        "DECLARING_TYPE_INFERRED_AS_LOCAL_TYPE_WITHOUT_PROOF"
+      ],
+      "method_id": "r1-method_4b9cafdd1bbb13bc43470eefa4761bd4",
+      "method_name": "ConnectMigrationCheck",
+      "required_r3_gate": [
+        "Roslyn symbol binding before/after",
+        "no orphan identifiers",
+        "type evidence required"
+      ]
+    },
+    {
+      "declaring_type": "kairo.unity.ui.TextLayout",
+      "failure_modes": [
+        "DECLARING_TYPE_INFERRED_AS_LOCAL_TYPE_WITHOUT_PROOF"
+      ],
+      "method_id": "r1-method_f3a703cf8ca9f9ce50c89317bc1f0aee",
+      "method_name": "AddRuby",
+      "required_r3_gate": [
+        "ISIL/local-flow evidence for each restored local type",
+        "no syntax-only success criterion"
+      ]
+    },
+    {
+      "declaring_type": "kairo.unity.util.Profiler",
+      "failure_modes": [
+        "DECLARATION_RENAMED_BUT_OLD_IDENTIFIER_CONSUMER_REMAINS",
+        "DECLARING_TYPE_INFERRED_AS_LOCAL_TYPE_WITHOUT_PROOF"
+      ],
+      "method_id": "r1-method_6cdd92c75cfa6c8e898199ad1982bd01",
+      "method_name": "BeginSample",
+      "required_r3_gate": [
+        "semantic diagnostics on touched nodes must not worsen",
+        "identifier/dataflow equivalence proof"
+      ]
+    },
+    {
+      "declaring_type": "kairo.unity.util.ResourceLoader",
+      "failure_modes": [
+        "DECLARATION_RENAMED_BUT_OLD_IDENTIFIER_CONSUMER_REMAINS",
+        "UNPROVEN_INVARIANT_GENERIC_CAST_REMOVAL"
+      ],
+      "method_id": "r1-method_f88f97832b8bd2cd6989bd50fd3be64a",
+      "method_name": "StartLoading",
+      "required_r3_gate": [
+        "generic conversion must be proven by Roslyn type system",
+        "no cast-chain deletion by textual simplification",
+        "no orphan identifier"
+      ]
+    }
+  ],
+  "schema_version": "r3-negative-repair-fixtures-v1",
+  "source": "user-provided Google/Gemini R2 pack"
+}

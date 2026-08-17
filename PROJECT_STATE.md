@@ -1,6 +1,26 @@
 # Project State
 
-## Current Status — R2 automated whole-corpus repair closed (2026-08-18)
+## Current Status — R3 whole-game CFG repair closed (2026-08-18)
+
+## R3 whole-game CFG repair — complete
+
+- `status`: `PASS_R3_WHOLE_GAME_CFG_REPAIR_CLOSED` with decision `PASS_WITH_EXPLICIT_CFG_DEFERRAL`.
+- The canonical R3 profiler reproduced the corrected R1.5/R2 universe: 641 target types, 10,827 methods/queue rows, 2,634 R2 identity blockers, and 2,856 active CFG rows (2,708 direct plus 148 exact source-body identity recoveries).
+- All 2,634 identity blockers are root-cause counted: 2,572 routed with exact source-body or ISIL identity evidence and 62 explicitly remain blocked. No first-overload or declaring-type guess was used.
+- Every active CFG row has a local evidence bundle with exact source body/hash, R0/R1.5 signals, ISIL facts, callers/callees, field/static references, accepted evidence references, and Roslyn diagnostic availability. Observed families and risks are recorded in `knowledge/brain/acceptance/r3-whole-game-cfg-repair/r3-cfg-family-summary.json`.
+- The Roslyn-only family-first transformer library and strict planner authorize zero canaries because semantic binding and graph-equivalence proof are unavailable for this external-reference corpus. `OTHER_CFG` remains explicitly ineligible for generic cleanup.
+- All five mandatory negative fixtures reject; the second canonical profiler run reproduces all compact indexes and all 2,856 bundle hashes. The graph delta is zero, the original source roots remain read-only, and no native body lift, Unity, V8/web, runtime, integration, persistence, or backend work was started.
+- Compact acceptance evidence and the report are under `knowledge/brain/acceptance/r3-whole-game-cfg-repair/`; heavy bundles remain local-only under `artifacts/r3-preflight/`.
+- Next authorized boundary is `R4_NATIVE_ISIL_SEMANTIC_LIFT`; R4 is not started.
+
+## Git-visible current gate
+
+- `current_phase`: `R3_WHOLE_GAME_CFG_REPAIR`
+- `status`: `PASS_R3_WHOLE_GAME_CFG_REPAIR_CLOSED`
+- `next_authorized_phase`: `R4_NATIVE_ISIL_SEMANTIC_LIFT`
+- `next_phase_started`: `false`
+
+## R2 automated whole-corpus repair closed (2026-08-18)
 
 ## R2 automated whole-corpus repair — complete
 
@@ -16,9 +36,9 @@
 
 ## Accepted baseline — R1.5 metadata reconciliation complete (2026-08-17)
 
-## Git-visible current gate
+## R2 accepted baseline gate
 
-- `current_phase`: `R2_AUTOMATED_WHOLE_CORPUS_REPAIR`
+- `current_phase`: `R2_AUTOMATED_WHOLE_CORPUS_REPAIR` (historical accepted baseline)
 - `status`: `PASS_R2_AUTOMATED_WHOLE_CORPUS_REPAIR_CLOSED`
 - `R1.5`: `PASS`
 - `R1`: `PASS — superseded by corrected R1.5 metadata identities`

@@ -1,0 +1,82 @@
+{
+  "blocked_identity_start": 2634,
+  "minimum_root_cause_vocabulary": [
+    "SOURCE_FILE_MISSING",
+    "SOURCE_METHOD_NOT_LOCATED",
+    "OVERLOAD_OR_SOURCE_AMBIGUITY",
+    "CONSTRUCTOR_REPRESENTATION",
+    "ACCESSOR_EVENT_REPRESENTATION",
+    "NESTED_OR_COMPILER_GENERATED_TYPE_IDENTITY",
+    "GENERIC_IDENTITY_NORMALIZATION",
+    "BYREF_REF_OUT_NORMALIZATION",
+    "BODY_HASH_DRIFT",
+    "ROSLYN_SYMBOL_AMBIGUITY",
+    "METADATA_SOURCE_SIGNATURE_DISAGREEMENT",
+    "SOURCE_LIMITED"
+  ],
+  "recovery_counts": {
+    "ISIL_IDENTITY_RECOVERED": 2155,
+    "SOURCE_BODY_IDENTITY_RECOVERED": 417,
+    "UNRESOLVED": 62
+  },
+  "resolved_total": 2572,
+  "root_cause_counts": {
+    "ACCESSOR_EVENT_REPRESENTATION": 0,
+    "BODY_HASH_DRIFT": 0,
+    "BYREF_REF_OUT_NORMALIZATION": 7,
+    "CONSTRUCTOR_REPRESENTATION": 86,
+    "GENERIC_IDENTITY_NORMALIZATION": 98,
+    "METADATA_SOURCE_SIGNATURE_DISAGREEMENT": 100,
+    "NESTED_OR_COMPILER_GENERATED_TYPE_IDENTITY": 126,
+    "OVERLOAD_OR_SOURCE_AMBIGUITY": 0,
+    "ROSLYN_SYMBOL_AMBIGUITY": 0,
+    "SOURCE_FILE_MISSING": 308,
+    "SOURCE_LIMITED": 3,
+    "SOURCE_METHOD_NOT_LOCATED": 1906
+  },
+  "routing": [
+    {
+      "count": 150,
+      "mapping": "EXACT_R1_5_LINE_SPAN_BODY_HASH",
+      "r3_status": "BASELINE_READABLE"
+    },
+    {
+      "count": 148,
+      "mapping": "EXACT_R1_5_LINE_SPAN_BODY_HASH",
+      "r3_status": "DEFER_CFG_UNPROVEN"
+    },
+    {
+      "count": 10,
+      "mapping": "EXACT_R1_5_LINE_SPAN_BODY_HASH",
+      "r3_status": "DEFER_MECHANICAL_UNPROVEN"
+    },
+    {
+      "count": 109,
+      "mapping": "EXACT_R1_5_LINE_SPAN_BODY_HASH",
+      "r3_status": "DEFER_R4_NATIVE"
+    },
+    {
+      "count": 4,
+      "mapping": "METHOD_BODY_NOT_LOCATED",
+      "r3_status": "BLOCKED_IDENTITY"
+    },
+    {
+      "count": 7,
+      "mapping": "METHOD_BODY_NOT_LOCATED",
+      "r3_status": "DEFER_R4_NATIVE"
+    },
+    {
+      "count": 59,
+      "mapping": "NO_CANONICAL_LINE_SPAN",
+      "r3_status": "BLOCKED_IDENTITY"
+    },
+    {
+      "count": 2147,
+      "mapping": "NO_CANONICAL_LINE_SPAN",
+      "r3_status": "DEFER_R4_NATIVE"
+    }
+  ],
+  "schema_version": "r3-identity-recovery-summary-v1",
+  "source_bodies_changed": false,
+  "unresolved_total": 62
+}

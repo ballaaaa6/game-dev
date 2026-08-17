@@ -1,0 +1,22 @@
+{
+  "acceptance_token": "PASS_R3_WHOLE_GAME_CFG_REPAIR_CLOSED",
+  "checks": {
+    "active_cfg_accounted": true,
+    "canonical_method_universe": true,
+    "canonical_target_types": true,
+    "cfg_evidence_bundles_complete": true,
+    "deterministic_replay": true,
+    "graph_delta_zero": true,
+    "identity_resolution_accounted": true,
+    "method_status_universe": true,
+    "negative_fixtures_5_of_5_rejected": true,
+    "no_native_lift": true,
+    "original_source_unchanged": true,
+    "r2_blocked_identity_accounted": true,
+    "source_gate_pass": true,
+    "transformer_plan_pass": true
+  },
+  "failed_checks": [],
+  "schema_version": "r3-validation-v1",
+  "status": "PASS"
+}

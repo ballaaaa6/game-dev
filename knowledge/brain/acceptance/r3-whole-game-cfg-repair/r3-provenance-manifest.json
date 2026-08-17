@@ -1,0 +1,83 @@
+{
+  "accepted_r3_source_changes": [],
+  "canonical_inputs": {
+    "artifacts\\r1-5-metadata-reconciliation\\method-catalog.jsonl": "c3cd95a383af7ac906bca36f3727eca79a40b6d8f61ad1dabe8720da20e7ffca",
+    "artifacts\\r1-5-metadata-reconciliation\\repair-queue.jsonl": "f01ffb6f2eb17bf9eafc79b23395f2656ab27e40721450e21a948f290a203a86",
+    "artifacts\\r2-reference-twin\\queue\\r2-method-status-after.jsonl": "656ee765801928be2a84c02d54d89ef680eb4a52c598c94c028081e35239ca02",
+    "tools\\social-dev\\r3_cfg_transformers.py": "6514b72a36c624703bf492e31382b09ff933e08ce924bd9126d9663590e0d8d6",
+    "tools\\social-dev\\r3_negative_repair_fixtures.diff": "493db58e3d418d089ad096582ab41781419f6d25d32919e9238c9b05b14a903d",
+    "tools\\social-dev\\r3_negative_repair_fixtures.json": "62865334b821af050b475d90a8222c000a97d5cc55a1588ae9e665eb1d6297f9",
+    "tools\\social-dev\\r3_prework_probe.py": "65c7de890698df5b4055fadd362b1408517d43c32388334219faa316d0eb26d0",
+    "tools\\social-dev\\twin-repair\\TwinRepair.Core\\R3CfgTransformers.cs": "b5db867d21013d0a16b9cfa97f90c3ac26a618057cc2fa5922e64ca77e12453c"
+  },
+  "deterministic_replay": {
+    "bundle_count_first": 2856,
+    "bundle_count_second": 2856,
+    "bundle_hashes_match": true,
+    "index_matches": {
+      "r3-blocked-identity.jsonl": true,
+      "r3-canonical-prework.json": true,
+      "r3-cfg-family-summary.json": true,
+      "r3-cfg-profile.jsonl": true,
+      "r3-identity-recovery-summary.json": true,
+      "r3-method-status.jsonl": true,
+      "r3-source-gate.json": true
+    },
+    "status": "PASS"
+  },
+  "evidence_pack": {
+    "entry_sha256": {
+      "R3_PREWORK_EVIDENCE_PACK/PACK_MANIFEST.json": "43de622e22e49b3ef40207de65c8dd2b52d10155a53e5b3f4cce4ec36cd36fb8",
+      "R3_PREWORK_EVIDENCE_PACK/R3_WHOLE_GAME_CFG_REPAIR_PROMPT.txt": "0dfb27bb0cedb1cfa2bb8e234803e201ced0e7153407dcd7aec444206b0fded4",
+      "R3_PREWORK_EVIDENCE_PACK/README.md": "a471ef21aa440c22eb85c0c4d540251d1c13e7fa95645f24c85f9b0b715966e2",
+      "R3_PREWORK_EVIDENCE_PACK/analysis/google-r2-defects-for-r3.json": "89ede15d799259d2c2c8f6810cf57bf02e738290a0cc094acb5588abc4c51cc0",
+      "R3_PREWORK_EVIDENCE_PACK/analysis/google-r2-negative-repair-fixtures.json": "62865334b821af050b475d90a8222c000a97d5cc55a1588ae9e665eb1d6297f9",
+      "R3_PREWORK_EVIDENCE_PACK/analysis/r3-core-nine-advisory.json": "93d5ed764b676fab659e84ea75882b120265607c3554524aa182eeaaabdb7d97",
+      "R3_PREWORK_EVIDENCE_PACK/analysis/r3-family-representatives.json": "eebb78b16585431ed90d48dbfe0fc137129937339c7e340b653e3d9f6e4f833a",
+      "R3_PREWORK_EVIDENCE_PACK/analysis/r3-prework-summary.json": "5fcc1f49132fc502c05a17a963237f2c6a9dcca8a6caa6dad0c23d0545cf5286",
+      "R3_PREWORK_EVIDENCE_PACK/canonical-snapshot/R2_CANONICAL_SNAPSHOT.json": "eb7315fab75dc77daa3cf3b014219fd76cf5752c6d8e586045dd3bec7e2f24b2",
+      "R3_PREWORK_EVIDENCE_PACK/docs/R3_PREWORK_STRATEGY.md": "3c57b26d21d5e35412ad32affadc77b7f74b729b41bc98bf0668d0b0042dfb8d",
+      "R3_PREWORK_EVIDENCE_PACK/negative/google-r2-rejected-repairs.diff": "493db58e3d418d089ad096582ab41781419f6d25d32919e9238c9b05b14a903d",
+      "R3_PREWORK_EVIDENCE_PACK/tools/r3_prework_probe.py": "b2b0d728ca49347575f6751098b28bc43e500c85d18dcc14ba9ef89a5c33a73b"
+    },
+    "path": "D:\\downloads\\R3_PREWORK_EVIDENCE_PACK.zip",
+    "sha256": "a28ffa35e779e26a5ef879b372794c7ceb55e612db06a32b76b562e815b520e0"
+  },
+  "native_lift_started": false,
+  "r3_preflight": {
+    "blocked_identity_index_sha256": "8db46097b3c766378a105626f1598d8cd93d82c1c9e0a6b88d208dd6a4c40f00",
+    "evidence_bundle_count": 2856,
+    "evidence_bundle_root": "D:\\antigravity\\test open ai\\artifacts\\r3-preflight\\canonical-rerun-1\\bundles",
+    "method_status_index": "D:\\antigravity\\test open ai\\artifacts\\r3-preflight\\canonical-rerun-1\\r3-method-status.jsonl",
+    "method_status_index_sha256": "4f630d2da0bcff6f22666404f608cd2ae2aa1fcc4127c034659adc4b86f4bec8",
+    "profile_index": "D:\\antigravity\\test open ai\\artifacts\\r3-preflight\\canonical-rerun-1\\r3-cfg-profile.jsonl",
+    "profile_index_sha256": "d79158adbdd647dd7128796be82e4d7d7ca37dfd9d63609605f2ce549f7515ad",
+    "source_body_changes": false
+  },
+  "schema_version": "r3-provenance-manifest-v1",
+  "source_gate": {
+    "approved_r2_repair_files": [
+      {
+        "after_file_sha256": "08ef1bc82e71c1bebb5083df3f8685a0137201a6137c287d37cb73e5884c7bfa",
+        "baseline_sha256": "cb01231c918d2801d618ad4729234a846ad2b3e27434b4e1044ebd1e39de9bb2",
+        "relative_path": "kairo.unity.graphics/MeshManager.cs"
+      },
+      {
+        "after_file_sha256": "2e2e775106200279dc71a960844acb837c3b2305f6476def0003e4bef51f3314",
+        "baseline_sha256": "d1f113741731383808ffa42ca0ca7a81384c2b5bbc8a2ed5a35635bdf3f59af5",
+        "relative_path": "kairo.unity.ui/Bundle.cs"
+      },
+      {
+        "after_file_sha256": "2833a725714345da451974176ac317d0c56d2dcb0e9f6d280ce436eb06d3474f",
+        "baseline_sha256": "f26cf722fe7958d99853c414ca00eb88e93af99063f8fcde313b6b9d90fb1c19",
+        "relative_path": "kairo.unity.util/FieldInitializer.cs"
+      }
+    ],
+    "original_source_read_only": true,
+    "pinned_inputs_match": true,
+    "source_manifest_mismatches": [],
+    "status": "PASS",
+    "twin_unapproved_mismatches": []
+  },
+  "status": "PASS"
+}

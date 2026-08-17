@@ -1,0 +1,35 @@
+{
+  "blocked_identity_count": 2634,
+  "canonical_method_count": 10827,
+  "canonical_queue_count": 10827,
+  "canonical_target_types": 641,
+  "cfg_family_summary": "D:\\antigravity\\test open ai\\artifacts\\r3-preflight\\canonical-rerun-1\\r3-cfg-family-summary.json",
+  "evidence_bundle_count": 2856,
+  "exact_mapping_required": true,
+  "fallback_mapping_is_diagnostic_only": true,
+  "identity_summary": "D:\\antigravity\\test open ai\\artifacts\\r3-preflight\\canonical-rerun-1\\r3-identity-recovery-summary.json",
+  "native_body_lift_started": false,
+  "r2_direct_cfg_count": 2708,
+  "r2_status_counts": {
+    "BASELINE_READABLE": 2327,
+    "BLOCKED_IDENTITY": 2634,
+    "DEFER_R2_UNPROVEN_MECHANICAL": 442,
+    "DEFER_R3_CFG": 2708,
+    "DEFER_R4_NATIVE": 2674,
+    "REPAIRED_CSHARP": 4,
+    "SOURCE_LIMITED": 38
+  },
+  "r3_active_cfg_count": 2856,
+  "r3_status_counts": {
+    "BASELINE_READABLE": 2477,
+    "BLOCKED_IDENTITY": 63,
+    "DEFER_CFG_UNPROVEN": 2856,
+    "DEFER_MECHANICAL_UNPROVEN": 452,
+    "DEFER_R4_NATIVE": 4937,
+    "REPAIRED_CSHARP_R2": 4,
+    "SOURCE_LIMITED": 38
+  },
+  "schema_version": "r3-canonical-prework-v1",
+  "source_gate": "D:\\antigravity\\test open ai\\artifacts\\r3-preflight\\canonical-rerun-1\\r3-source-gate.json",
+  "status": "PASS"
+}

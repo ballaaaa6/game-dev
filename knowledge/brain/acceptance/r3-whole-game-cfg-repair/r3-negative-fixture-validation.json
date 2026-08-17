@@ -1,0 +1,89 @@
+{
+  "diff_section_count": 4,
+  "fixture_count": 5,
+  "rejected_count": 5,
+  "results": [
+    {
+      "declaring_type": "kairo.unity.system.KairoBase",
+      "failure_modes": [
+        "DECLARATION_RENAMED_BUT_OLD_IDENTIFIER_CONSUMER_REMAINS",
+        "DECLARING_TYPE_INFERRED_AS_LOCAL_TYPE_WITHOUT_PROOF"
+      ],
+      "method_id": "r1-method_b7bb8c72de11a0cbde59ed2a14e57cd3",
+      "method_name": "GetColumnType",
+      "reject_reasons": [
+        "LOCAL_TYPE_GUESSED_FROM_DECLARING_TYPE",
+        "ORPHAN_OR_RENAMED_IDENTIFIER",
+        "SEMANTIC_PROOF_REQUIRED"
+      ],
+      "semantic_proof_present": false,
+      "status": "REJECT"
+    },
+    {
+      "declaring_type": "kairo.unity.system.KairoBase",
+      "failure_modes": [
+        "DECLARATION_RENAMED_BUT_OLD_IDENTIFIER_CONSUMER_REMAINS",
+        "DECLARING_TYPE_INFERRED_AS_LOCAL_TYPE_WITHOUT_PROOF"
+      ],
+      "method_id": "r1-method_4b9cafdd1bbb13bc43470eefa4761bd4",
+      "method_name": "ConnectMigrationCheck",
+      "reject_reasons": [
+        "LOCAL_TYPE_GUESSED_FROM_DECLARING_TYPE",
+        "ORPHAN_OR_RENAMED_IDENTIFIER",
+        "SEMANTIC_PROOF_REQUIRED"
+      ],
+      "semantic_proof_present": false,
+      "status": "REJECT"
+    },
+    {
+      "declaring_type": "kairo.unity.ui.TextLayout",
+      "failure_modes": [
+        "DECLARING_TYPE_INFERRED_AS_LOCAL_TYPE_WITHOUT_PROOF"
+      ],
+      "method_id": "r1-method_f3a703cf8ca9f9ce50c89317bc1f0aee",
+      "method_name": "AddRuby",
+      "reject_reasons": [
+        "LOCAL_TYPE_GUESSED_FROM_DECLARING_TYPE",
+        "SEMANTIC_PROOF_REQUIRED"
+      ],
+      "semantic_proof_present": false,
+      "status": "REJECT"
+    },
+    {
+      "declaring_type": "kairo.unity.util.Profiler",
+      "failure_modes": [
+        "DECLARATION_RENAMED_BUT_OLD_IDENTIFIER_CONSUMER_REMAINS",
+        "DECLARING_TYPE_INFERRED_AS_LOCAL_TYPE_WITHOUT_PROOF"
+      ],
+      "method_id": "r1-method_6cdd92c75cfa6c8e898199ad1982bd01",
+      "method_name": "BeginSample",
+      "reject_reasons": [
+        "LOCAL_TYPE_GUESSED_FROM_DECLARING_TYPE",
+        "ORPHAN_OR_RENAMED_IDENTIFIER",
+        "SEMANTIC_PROOF_REQUIRED"
+      ],
+      "semantic_proof_present": false,
+      "status": "REJECT"
+    },
+    {
+      "declaring_type": "kairo.unity.util.ResourceLoader",
+      "failure_modes": [
+        "DECLARATION_RENAMED_BUT_OLD_IDENTIFIER_CONSUMER_REMAINS",
+        "UNPROVEN_INVARIANT_GENERIC_CAST_REMOVAL"
+      ],
+      "method_id": "r1-method_f88f97832b8bd2cd6989bd50fd3be64a",
+      "method_name": "StartLoading",
+      "reject_reasons": [
+        "ORPHAN_OR_RENAMED_IDENTIFIER",
+        "SEMANTIC_PROOF_REQUIRED",
+        "UNPROVEN_INVARIANT_GENERIC_CONVERSION"
+      ],
+      "semantic_proof_present": false,
+      "status": "REJECT"
+    }
+  ],
+  "schema_version": "r3-negative-fixture-validation-v1",
+  "source_mutation_performed": false,
+  "status": "PASS",
+  "syntax_only_is_rejected": true
+}

@@ -1,5 +1,17 @@
 # TODO
 
+## R3 whole-game CFG repair — closed (2026-08-18)
+
+- [x] Read the attached R3 prework evidence pack and treat advisory Google/Gemini counts as non-canonical.
+- [x] Reverify the pinned inputs, read-only source manifest, and approved R2 Twin provenance against the corrected 641-type / 10,827-method universe.
+- [x] Recover and classify all 2,634 R2 identity blockers with explicit root causes; route 2,572 and retain 62 as explicit blockers.
+- [x] Profile all 2,856 active CFG rows into the canonical family/risk taxonomy and create complete local evidence bundles.
+- [x] Add and pass the mandatory five negative-repair fixtures; keep syntax-only, guessed-type, orphan-identifier, and unproven generic-cast edits rejected.
+- [x] Add the Roslyn-only family-first transformer library and strict planner; authorize zero canaries because semantic and graph-equivalence proof is unavailable.
+- [x] Reproduce the profiler deterministically, retain a zero graph delta, publish the compact acceptance package, and close with `PASS_R3_WHOLE_GAME_CFG_REPAIR_CLOSED`.
+
+Next authorized work is `R4_NATIVE_ISIL_SEMANTIC_LIFT`; do not start R4, R5, V8/web, Unity, integrations, persistence, backend, or deployment work in this phase.
+
 ## R2 automated whole-corpus repair — closed (2026-08-18)
 
 - [x] Read `R2_PREWORK_EVIDENCE_PACK.zip` and retain its queue/source profiles as advisory prework only.
@@ -11,7 +23,7 @@
 - [x] Reindex the Twin conservatively, reconcile the R1.5.1 call/field split with zero graph delta, and emit the complete 10,827-row R2 status universe.
 - [x] Publish the compact acceptance package under `knowledge/brain/acceptance/r2-automated-whole-corpus-repair/` and close with `PASS_R2_AUTOMATED_WHOLE_CORPUS_REPAIR_CLOSED`.
 
-Next authorized work is `R3_WHOLE_GAME_CFG_REPAIR`; do not start R3, R4, R5, V8, Unity, or backend work in this phase.
+R3 was the next authorized boundary and is now closed above; R4 remains unopened.
 
 ## R1.5 metadata identity reconciliation and repair-universe correction — closed (2026-08-17)
 

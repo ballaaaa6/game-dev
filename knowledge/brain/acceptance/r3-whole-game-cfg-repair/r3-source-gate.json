@@ -1,0 +1,68 @@
+{
+  "identity_mismatches": [],
+  "original_source_read_only": true,
+  "pinned_inputs": {
+    "apk": {
+      "actual_sha256": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
+      "expected_sha256": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
+      "match": true,
+      "path": "D:\\antigravity\\test open ai\\sources\\raw\\Social_Dev_Story_v2.5.1.apk"
+    },
+    "global_metadata": {
+      "actual_sha256": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579",
+      "expected_sha256": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579",
+      "match": true,
+      "path": "D:\\antigravity\\test open ai\\knowledge\\sources\\phase3a_apk_probe\\raw\\global-metadata.dat"
+    },
+    "libil2cpp": {
+      "actual_sha256": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a",
+      "expected_sha256": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a",
+      "match": true,
+      "path": "D:\\antigravity\\test open ai\\knowledge\\sources\\phase3a_apk_probe\\raw\\libil2cpp.so"
+    },
+    "rar": {
+      "actual_sha256": "a50a442491e422c20699a9ca4266e794d215bff29248d3edd24c41f42a57f903",
+      "expected_sha256": "a50a442491e422c20699a9ca4266e794d215bff29248d3edd24c41f42a57f903",
+      "match": true,
+      "path": "D:\\antigravity\\test open ai\\sources\\raw\\1_Click_CSharp_Code.rar"
+    }
+  },
+  "r2_twin": {
+    "approved_r2_repair_files": [
+      {
+        "after_file_sha256": "08ef1bc82e71c1bebb5083df3f8685a0137201a6137c287d37cb73e5884c7bfa",
+        "baseline_sha256": "cb01231c918d2801d618ad4729234a846ad2b3e27434b4e1044ebd1e39de9bb2",
+        "relative_path": "kairo.unity.graphics/MeshManager.cs"
+      },
+      {
+        "after_file_sha256": "2e2e775106200279dc71a960844acb837c3b2305f6476def0003e4bef51f3314",
+        "baseline_sha256": "d1f113741731383808ffa42ca0ca7a81384c2b5bbc8a2ed5a35635bdf3f59af5",
+        "relative_path": "kairo.unity.ui/Bundle.cs"
+      },
+      {
+        "after_file_sha256": "2833a725714345da451974176ac317d0c56d2dcb0e9f6d280ce436eb06d3474f",
+        "baseline_sha256": "f26cf722fe7958d99853c414ca00eb88e93af99063f8fcde313b6b9d90fb1c19",
+        "relative_path": "kairo.unity.util/FieldInitializer.cs"
+      }
+    ],
+    "baseline_manifest_file_count": 442,
+    "baseline_mismatches": [],
+    "provenance_count": 4,
+    "provenance_file": "D:\\antigravity\\test open ai\\artifacts\\r2-reference-twin\\provenance\\r2-type-canary-001.jsonl"
+  },
+  "schema_version": "r3-source-gate-v1",
+  "source_root": {
+    "csharp_bytes": 55358557,
+    "csharp_files": 5504,
+    "manifest_file_count": 5568,
+    "mismatches": [],
+    "zero_byte_csharp_files": [
+      "-PrivateImplementationDetails-.cs",
+      "kairo.unity.ui/Graphics.cs",
+      "kairo.unity.util/Language.cs"
+    ]
+  },
+  "source_root_path": "D:\\antigravity\\test open ai\\knowledge\\sources\\csharp_raw_20260813\\1_Click_CSharp_Code",
+  "status": "PASS",
+  "twin_root_path": "D:\\antigravity\\test open ai\\artifacts\\r2-reference-twin"
+}

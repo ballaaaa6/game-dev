@@ -1,0 +1,18 @@
+{
+  "batch_id": "r3-no-write-explicit-deferral-001",
+  "checks": {
+    "all_cfg_rows_evidence_bundled": true,
+    "negative_fixtures_pass": true,
+    "no_unproven_canary": true,
+    "semantic_proof_required": true
+  },
+  "deferred_cfg_count": 2856,
+  "files_changed": [],
+  "native_body_lift_started": false,
+  "planned_repair_eligible": 0,
+  "provenance_count": 0,
+  "repaired_count": 0,
+  "schema_version": "r3-batch-summary-v1",
+  "source_mutation_performed": false,
+  "status": "PASS"
+}

@@ -1,0 +1,62 @@
+--- /mnt/data/r2_google_pack/reference_twin_tree/baseline/kairo.unity.system/KairoBase.cs	2026-08-18 00:07:14.000000000 +0000
++++ /mnt/data/r2_google_pack/reference_twin_tree/source/kairo.unity.system/KairoBase.cs	2026-08-18 00:07:18.000000000 +0000
+@@ -14304,7 +14304,7 @@
+ 			{
+ 				string text = column.Trim();
+ 				Cpp2ILHelpers.NoteDecompilerIssue("Unmanaged memory load: [27E4A98]");
+-				object obj = 0;
++				kairo.unity.system.KairoBase localTarget = 0;
+ 				if (table == (string)obj)
+ 				{
+ 					Cpp2ILHelpers.NoteDecompilerIssue("Unmanaged memory load: [27D5878]");
+@@ -18728,7 +18728,7 @@
+ 		//IL_0195: Expected I8, but got I4
+ 		//IL_0187: Expected I8, but got I4
+ 		Cpp2ILHelpers.NoteDecompilerIssue("Unmanaged memory load: [27CFC58]");
+-		object obj = 0;
++		kairo.unity.system.KairoBase localTarget = 0;
+ 		object obj2 = obj;
+ 		Cpp2ILHelpers.NoteDecompilerIssue("Unmanaged memory load: [v72 @ X0_v6+B8]");
+ 		object obj3 = 0;
+--- /mnt/data/r2_google_pack/reference_twin_tree/baseline/kairo.unity.ui/TextLayout.cs	2026-08-18 00:07:16.000000000 +0000
++++ /mnt/data/r2_google_pack/reference_twin_tree/source/kairo.unity.ui/TextLayout.cs	2026-08-18 00:07:18.000000000 +0000
+@@ -12728,7 +12728,7 @@
+ 			if (ruby != null)
+ 			{
+ 				Cpp2ILHelpers.NoteDecompilerIssue("Unmanaged memory load: [27E1E58]");
+-				object obj = 0;
++				kairo.unity.ui.TextLayout localTarget = 0;
+ 				string text2 = ruby.Trim();
+ 				obj2 = new object();
+ 				if (obj2 != null && text != null)
+--- /mnt/data/r2_google_pack/reference_twin_tree/baseline/kairo.unity.util/Profiler.cs	2026-08-18 00:07:16.000000000 +0000
++++ /mnt/data/r2_google_pack/reference_twin_tree/source/kairo.unity.util/Profiler.cs	2026-08-18 00:07:18.000000000 +0000
+@@ -741,7 +741,7 @@
+ 		//IL_05c9: Expected I, but got O
+ 		//IL_02a5: Expected O, but got I8
+ 		Cpp2ILHelpers.NoteDecompilerIssue("Unmanaged memory load: [27E0930]");
+-		object obj = 0;
++		kairo.unity.util.Profiler localTarget = 0;
+ 		object obj2 = obj;
+ 		Cpp2ILHelpers.NoteDecompilerIssue("Unmanaged memory load: [v386 @ X0_v36+B8]");
+ 		object obj3 = 0;
+--- /mnt/data/r2_google_pack/reference_twin_tree/baseline/kairo.unity.util/ResourceLoader.cs	2026-08-18 00:07:16.000000000 +0000
++++ /mnt/data/r2_google_pack/reference_twin_tree/source/kairo.unity.util/ResourceLoader.cs	2026-08-18 00:07:18.000000000 +0000
+@@ -633,7 +633,7 @@
+ 		bool flag2 = tasks_ == null;
+ 		List<object>.Enumerator enumerator = (List<object>.Enumerator)0;
+ 		List<object>.Enumerator enumerator2 = (List<object>.Enumerator)0;
+-		object obj = 0;
++		kairo.unity.util.ResourceLoader localTarget = 0;
+ 		OutOfMemoryException ex = (OutOfMemoryException)43601920;
+ 		if (!flag2)
+ 		{
+@@ -645,7 +645,7 @@
+ 			object obj4 = 0;
+ 			Cpp2ILHelpers.NoteDecompilerIssue("Unmanaged memory load: [27E33F8]");
+ 			object obj5 = 0;
+-			List<object>.Enumerator enumerator3 = ((List<object>)(object)tasks_).GetEnumerator();
++			List<object>.Enumerator enumerator3 = ((List<object>)tasks_).GetEnumerator();
+ 			obj = 0;
+ 			ex = (OutOfMemoryException)43601920;
+ 			bool flag4 = default(bool);

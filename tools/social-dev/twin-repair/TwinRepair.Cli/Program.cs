@@ -29,6 +29,7 @@ public static class Program
                 "verify" => RepairFactory.Verify(options.ArtifactRoot, options.SourceRoot, options.OutRoot, options.BatchId),
                 "reindex" => RepairFactory.Reindex(options.ArtifactRoot, options.SourceRoot, options.OutRoot),
                 "report" => RepairFactory.Report(options.ArtifactRoot, options.SourceRoot, options.OutRoot),
+                "r3-selftest" => R3CfgTransformers.SelfTest(),
                 _ => Unknown(command)
             };
         }
@@ -87,6 +88,7 @@ public static class Program
         Console.WriteLine("verify replays an accepted batch and checks provenance, hashes, and status coverage");
         Console.WriteLine("reindex conservatively reindexes the Twin and reconciles the accepted graph split");
         Console.WriteLine("report  summarizes the R2 local reports");
+        Console.WriteLine("r3-selftest  runs the Roslyn-only R3 transformer proof sentinel");
     }
 }
 

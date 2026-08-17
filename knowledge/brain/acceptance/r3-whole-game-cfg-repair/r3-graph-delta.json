@@ -1,0 +1,48 @@
+{
+  "checks": {
+    "graph_split_reconciles": true,
+    "native_body_lift_started": false,
+    "no_guessed_graph_edges": true,
+    "no_source_mutation": true,
+    "reindex_required": false
+  },
+  "graph_after": {
+    "canonical_call_split.AMBIGUOUS": 5306,
+    "canonical_call_split.OWNED_UNRESOLVED": 104306,
+    "canonical_call_split.RESOLVED_EXTERNAL": 8668,
+    "canonical_call_split.RESOLVED_OWNED": 13512,
+    "canonical_call_split.SOURCE_LIMITED": 0,
+    "canonical_field_split.AMBIGUOUS": 8549,
+    "canonical_field_split.OWNED_UNRESOLVED": 18246,
+    "canonical_field_split.RESOLVED_EXTERNAL": 1978,
+    "canonical_field_split.RESOLVED_OWNED": 4151,
+    "canonical_field_split.SOURCE_LIMITED": 0
+  },
+  "graph_before": {
+    "canonical_call_split.AMBIGUOUS": 5306,
+    "canonical_call_split.OWNED_UNRESOLVED": 104306,
+    "canonical_call_split.RESOLVED_EXTERNAL": 8668,
+    "canonical_call_split.RESOLVED_OWNED": 13512,
+    "canonical_call_split.SOURCE_LIMITED": 0,
+    "canonical_field_split.AMBIGUOUS": 8549,
+    "canonical_field_split.OWNED_UNRESOLVED": 18246,
+    "canonical_field_split.RESOLVED_EXTERNAL": 1978,
+    "canonical_field_split.RESOLVED_OWNED": 4151,
+    "canonical_field_split.SOURCE_LIMITED": 0
+  },
+  "graph_delta": {
+    "canonical_call_split.AMBIGUOUS": 0,
+    "canonical_call_split.OWNED_UNRESOLVED": 0,
+    "canonical_call_split.RESOLVED_EXTERNAL": 0,
+    "canonical_call_split.RESOLVED_OWNED": 0,
+    "canonical_call_split.SOURCE_LIMITED": 0,
+    "canonical_field_split.AMBIGUOUS": 0,
+    "canonical_field_split.OWNED_UNRESOLVED": 0,
+    "canonical_field_split.RESOLVED_EXTERNAL": 0,
+    "canonical_field_split.RESOLVED_OWNED": 0,
+    "canonical_field_split.SOURCE_LIMITED": 0
+  },
+  "interpretation": "R3 performed no accepted source mutation; the accepted R2 graph split is retained unchanged and no guessed edges are emitted.",
+  "schema_version": "r3-graph-delta-v1",
+  "status": "PASS"
+}

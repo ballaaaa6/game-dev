@@ -1,0 +1,276 @@
+{
+  "accepted_repair_count": 0,
+  "active_cfg_count": 2856,
+  "families": {
+    "DECOMPILER_TYPE_CFG_DAMAGE": {
+      "active_count": 177,
+      "cfg_signature": {
+        "after": "same exits, calls, field/static references, and protected regions",
+        "before": "canonical source CFG plus exact ISIL control-transfer facts",
+        "conservation_required": true
+      },
+      "deterministic_replay": [
+        "replay the same evidence bundle and require byte-identical plan output",
+        "replay the Roslyn SyntaxNode rewrite and require identical normalized source"
+      ],
+      "forbidden": [
+        "object-temporary replacement by declaring type"
+      ],
+      "implemented": false,
+      "isil_facts": [
+        "unique method-block selection",
+        "control-transfer sequence",
+        "branch targets and protected-region facts"
+      ],
+      "negative_fixtures": [],
+      "positive_fixtures": [],
+      "preconditions": [
+        "type/data-flow proof independent of CFG normalization"
+      ],
+      "reason_counts": {
+        "EXACT_ISIL_SELECTION_REQUIRED": 17,
+        "SEMANTIC_BINDING_PROOF_UNAVAILABLE": 160
+      },
+      "rewrite": "deferred; no proven transformer"
+    },
+    "LOCAL_GOTO_BRANCH_CFG": {
+      "active_count": 62,
+      "cfg_signature": {
+        "after": "same exits, calls, field/static references, and protected regions",
+        "before": "canonical source CFG plus exact ISIL control-transfer facts",
+        "conservation_required": true
+      },
+      "deterministic_replay": [
+        "replay the same evidence bundle and require byte-identical plan output",
+        "replay the Roslyn SyntaxNode rewrite and require identical normalized source"
+      ],
+      "forbidden": [
+        "multiple incoming gotos",
+        "indirect or computed branch targets",
+        "protected-region boundary changes",
+        "syntax-only or visual graph improvement"
+      ],
+      "implemented": true,
+      "isil_facts": [
+        "unique method-block selection",
+        "control-transfer sequence",
+        "branch targets and protected-region facts"
+      ],
+      "negative_fixtures": [
+        "tools/social-dev/r3_negative_repair_fixtures.json"
+      ],
+      "positive_fixtures": [
+        "Roslyn self-test"
+      ],
+      "preconditions": [
+        "exact R1.5 source identity and body hash",
+        "unique ISIL signature selection and branch-target facts",
+        "Roslyn semantic binding proof before and after",
+        "graph-equivalence proof for every control transfer"
+      ],
+      "reason_counts": {
+        "EXACT_ISIL_SELECTION_REQUIRED": 7,
+        "SEMANTIC_BINDING_PROOF_UNAVAILABLE": 55
+      },
+      "rewrite": "Roslyn SyntaxNode rewrite of a proven redundant immediate label/goto only"
+    },
+    "LOOP_CFG_COLLAPSE": {
+      "active_count": 18,
+      "cfg_signature": {
+        "after": "same exits, calls, field/static references, and protected regions",
+        "before": "canonical source CFG plus exact ISIL control-transfer facts",
+        "conservation_required": true
+      },
+      "deterministic_replay": [
+        "replay the same evidence bundle and require byte-identical plan output",
+        "replay the Roslyn SyntaxNode rewrite and require identical normalized source"
+      ],
+      "forbidden": [
+        "loop reconstruction from goto count alone",
+        "unknown break/continue targets"
+      ],
+      "implemented": false,
+      "isil_facts": [
+        "unique method-block selection",
+        "control-transfer sequence",
+        "branch targets and protected-region facts"
+      ],
+      "negative_fixtures": [],
+      "positive_fixtures": [],
+      "preconditions": [
+        "exact loop header, back-edge, exit, and dominance proof"
+      ],
+      "reason_counts": {
+        "EXACT_ISIL_SELECTION_REQUIRED": 18
+      },
+      "rewrite": "deferred; no proven transformer"
+    },
+    "OTHER_CFG": {
+      "active_count": 714,
+      "cfg_signature": {
+        "after": "same exits, calls, field/static references, and protected regions",
+        "before": "canonical source CFG plus exact ISIL control-transfer facts",
+        "conservation_required": true
+      },
+      "deterministic_replay": [
+        "replay the same evidence bundle and require byte-identical plan output",
+        "replay the Roslyn SyntaxNode rewrite and require identical normalized source"
+      ],
+      "forbidden": [
+        "generic remove-goto or generic CFG cleanup"
+      ],
+      "implemented": false,
+      "isil_facts": [
+        "unique method-block selection",
+        "control-transfer sequence",
+        "branch targets and protected-region facts"
+      ],
+      "negative_fixtures": [],
+      "positive_fixtures": [],
+      "preconditions": [
+        "new family specification and independent equivalence proof"
+      ],
+      "reason_counts": {
+        "EXACT_ISIL_SELECTION_REQUIRED": 15,
+        "SEMANTIC_BINDING_PROOF_UNAVAILABLE": 699
+      },
+      "rewrite": "forbidden in R3"
+    },
+    "STRUCTURED_CONTROL_SUSPECT": {
+      "active_count": 10,
+      "cfg_signature": {
+        "after": "same exits, calls, field/static references, and protected regions",
+        "before": "canonical source CFG plus exact ISIL control-transfer facts",
+        "conservation_required": true
+      },
+      "deterministic_replay": [
+        "replay the same evidence bundle and require byte-identical plan output",
+        "replay the Roslyn SyntaxNode rewrite and require identical normalized source"
+      ],
+      "forbidden": [
+        "treating a suspect classification as a repair authorization"
+      ],
+      "implemented": false,
+      "isil_facts": [
+        "unique method-block selection",
+        "control-transfer sequence",
+        "branch targets and protected-region facts"
+      ],
+      "negative_fixtures": [],
+      "positive_fixtures": [],
+      "preconditions": [
+        "structured-control hypothesis plus native control-flow proof"
+      ],
+      "reason_counts": {
+        "SEMANTIC_BINDING_PROOF_UNAVAILABLE": 10
+      },
+      "rewrite": "deferred; no proven transformer"
+    },
+    "SWITCH_OR_JUMP_TABLE_COLLAPSE": {
+      "active_count": 1858,
+      "cfg_signature": {
+        "after": "same exits, calls, field/static references, and protected regions",
+        "before": "canonical source CFG plus exact ISIL control-transfer facts",
+        "conservation_required": true
+      },
+      "deterministic_replay": [
+        "replay the same evidence bundle and require byte-identical plan output",
+        "replay the Roslyn SyntaxNode rewrite and require identical normalized source"
+      ],
+      "forbidden": [
+        "case ordering guesses",
+        "fall-through inference without ISIL proof"
+      ],
+      "implemented": false,
+      "isil_facts": [
+        "unique method-block selection",
+        "control-transfer sequence",
+        "branch targets and protected-region facts"
+      ],
+      "negative_fixtures": [],
+      "positive_fixtures": [],
+      "preconditions": [
+        "complete jump-table case mapping and default-target proof"
+      ],
+      "reason_counts": {
+        "EXACT_ISIL_SELECTION_REQUIRED": 1,
+        "SEMANTIC_BINDING_PROOF_UNAVAILABLE": 1857
+      },
+      "rewrite": "deferred; no proven transformer"
+    },
+    "SWITCH_STRUCTURAL_DAMAGE": {
+      "active_count": 5,
+      "cfg_signature": {
+        "after": "same exits, calls, field/static references, and protected regions",
+        "before": "canonical source CFG plus exact ISIL control-transfer facts",
+        "conservation_required": true
+      },
+      "deterministic_replay": [
+        "replay the same evidence bundle and require byte-identical plan output",
+        "replay the Roslyn SyntaxNode rewrite and require identical normalized source"
+      ],
+      "forbidden": [
+        "switch reconstruction from syntax shape alone"
+      ],
+      "implemented": false,
+      "isil_facts": [
+        "unique method-block selection",
+        "control-transfer sequence",
+        "branch targets and protected-region facts"
+      ],
+      "negative_fixtures": [],
+      "positive_fixtures": [],
+      "preconditions": [
+        "Roslyn switch structure and ISIL jump-table equivalence"
+      ],
+      "reason_counts": {
+        "SEMANTIC_BINDING_PROOF_UNAVAILABLE": 5
+      },
+      "rewrite": "deferred; no proven transformer"
+    },
+    "TYPE_EROSION_PLUS_HEAVY_GOTO": {
+      "active_count": 12,
+      "cfg_signature": {
+        "after": "same exits, calls, field/static references, and protected regions",
+        "before": "canonical source CFG plus exact ISIL control-transfer facts",
+        "conservation_required": true
+      },
+      "deterministic_replay": [
+        "replay the same evidence bundle and require byte-identical plan output",
+        "replay the Roslyn SyntaxNode rewrite and require identical normalized source"
+      ],
+      "forbidden": [
+        "declaring-type substitution",
+        "identifier renaming without binding"
+      ],
+      "implemented": false,
+      "isil_facts": [
+        "unique method-block selection",
+        "control-transfer sequence",
+        "branch targets and protected-region facts"
+      ],
+      "negative_fixtures": [],
+      "positive_fixtures": [],
+      "preconditions": [
+        "separate local-type proof and complete CFG proof"
+      ],
+      "reason_counts": {
+        "EXACT_ISIL_SELECTION_REQUIRED": 2,
+        "SEMANTIC_BINDING_PROOF_UNAVAILABLE": 10
+      },
+      "rewrite": "deferred; no proven transformer"
+    }
+  },
+  "negative_fixtures_must_pass_before_canary": true,
+  "planned_eligible_count": 0,
+  "reason_counts": {
+    "EXACT_ISIL_SELECTION_REQUIRED": 60,
+    "SEMANTIC_BINDING_PROOF_UNAVAILABLE": 2796
+  },
+  "rewrite_engine": "TwinRepair.Core.R3CfgTransformers",
+  "rewrite_mode": "Roslyn SyntaxNode; no regex or text splice",
+  "schema_version": "r3-transformer-summary-v1",
+  "semantic_proof_required": true,
+  "source_mutation_performed": false,
+  "status": "PASS"
+}

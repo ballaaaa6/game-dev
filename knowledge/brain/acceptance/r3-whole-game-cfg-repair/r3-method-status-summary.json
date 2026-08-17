@@ -1,0 +1,27 @@
+{
+  "active_cfg_evidence_bundle_count": 2856,
+  "allowed_statuses": [
+    "BASELINE_READABLE",
+    "BLOCKED_IDENTITY",
+    "DEFER_CFG_UNPROVEN",
+    "DEFER_MECHANICAL_UNPROVEN",
+    "DEFER_R4_NATIVE",
+    "REPAIRED_CSHARP_R2",
+    "SOURCE_LIMITED"
+  ],
+  "exactly_one_final_status_per_method": true,
+  "method_count": 10827,
+  "schema_version": "r3-method-status-summary-v1",
+  "status": "PASS",
+  "status_counts": {
+    "BASELINE_READABLE": 2477,
+    "BLOCKED_IDENTITY": 63,
+    "DEFER_CFG_UNPROVEN": 2856,
+    "DEFER_MECHANICAL_UNPROVEN": 452,
+    "DEFER_R4_NATIVE": 4937,
+    "REPAIRED_CSHARP_R2": 4,
+    "SOURCE_LIMITED": 38
+  },
+  "status_jsonl_sha256": "4f630d2da0bcff6f22666404f608cd2ae2aa1fcc4127c034659adc4b86f4bec8",
+  "unique_method_ids": 10827
+}
