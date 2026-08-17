@@ -1,0 +1,3576 @@
+{
+  "actual_table_probes": [
+    {
+      "assembly": "Assembly-CSharp-firstpass.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 9,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 11,
+      "table": "Field"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 16,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Assembly-CSharp-firstpass.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Assembly-CSharp.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Assembly-CSharp.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 271,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Assembly-CSharp.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4719,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Assembly-CSharp.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6966,
+      "table": "Field"
+    },
+    {
+      "assembly": "Assembly-CSharp.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 133,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Assembly-CSharp.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "Assembly-CSharp.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 99,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Assembly-CSharp.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 22,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Assembly-CSharp.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 59,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "Assembly-CSharp.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "Firebase.App.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Firebase.App.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 40,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Firebase.App.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 310,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Firebase.App.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 120,
+      "table": "Field"
+    },
+    {
+      "assembly": "Firebase.App.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 44,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Firebase.App.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 13,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "Firebase.App.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 18,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Firebase.App.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 14,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Firebase.App.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 28,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "Firebase.Messaging.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Firebase.Messaging.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 23,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Firebase.Messaging.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 189,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Firebase.Messaging.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 66,
+      "table": "Field"
+    },
+    {
+      "assembly": "Firebase.Messaging.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 24,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Firebase.Messaging.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "Firebase.Messaging.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 11,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Firebase.Messaging.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 9,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Firebase.Messaging.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "Firebase.Platform.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Firebase.Platform.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 39,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Firebase.Platform.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 132,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Firebase.Platform.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 69,
+      "table": "Field"
+    },
+    {
+      "assembly": "Firebase.Platform.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 41,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Firebase.Platform.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "Firebase.Platform.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 15,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Firebase.Platform.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 16,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Firebase.Platform.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 8,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "Firebase.Platform.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 11,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "Il2CppDummyDll.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Il2CppDummyDll.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Il2CppDummyDll.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Il2CppDummyDll.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 10,
+      "table": "Field"
+    },
+    {
+      "assembly": "Il2CppDummyDll.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 12,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "KairoLibrary.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "KairoLibrary.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 645,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "KairoLibrary.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6771,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "KairoLibrary.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4389,
+      "table": "Field"
+    },
+    {
+      "assembly": "KairoLibrary.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 125,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "KairoLibrary.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 20,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "KairoLibrary.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 357,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "KairoLibrary.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 113,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "KairoLibrary.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 99,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "KairoLibrary.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 79,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "Mono.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Mono.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 85,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Mono.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 510,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Mono.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 618,
+      "table": "Field"
+    },
+    {
+      "assembly": "Mono.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 48,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Mono.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "Mono.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 23,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Mono.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 39,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Mono.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "mscorlib.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "mscorlib.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1705,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "mscorlib.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 12996,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "mscorlib.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7233,
+      "table": "Field"
+    },
+    {
+      "assembly": "mscorlib.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 19,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "mscorlib.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 155,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "mscorlib.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 361,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "mscorlib.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 567,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "mscorlib.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 752,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "mscorlib.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 522,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "Newtonsoft.Json.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Newtonsoft.Json.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 305,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Newtonsoft.Json.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2330,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Newtonsoft.Json.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1013,
+      "table": "Field"
+    },
+    {
+      "assembly": "Newtonsoft.Json.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 169,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Newtonsoft.Json.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 57,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "Newtonsoft.Json.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 89,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Newtonsoft.Json.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 95,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Newtonsoft.Json.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 100,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "Newtonsoft.Json.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 89,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "Purchasing.Common.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Purchasing.Common.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 9,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Purchasing.Common.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 36,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Purchasing.Common.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 15,
+      "table": "Field"
+    },
+    {
+      "assembly": "Purchasing.Common.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 16,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Purchasing.Common.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Purchasing.Common.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Purchasing.Common.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "System.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "System.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 10,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "System.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 17,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "System.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "Field"
+    },
+    {
+      "assembly": "System.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 14,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "System.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "System.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "System.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 653,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "System.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3286,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "System.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1187,
+      "table": "Field"
+    },
+    {
+      "assembly": "System.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 87,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "System.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 45,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "System.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 343,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "System.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 247,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "System.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 153,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "System.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 919,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "System.Data.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "System.Data.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 238,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "System.Data.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3284,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "System.Data.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1185,
+      "table": "Field"
+    },
+    {
+      "assembly": "System.Data.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 160,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "System.Data.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 8,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "System.Data.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 37,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "System.Data.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 72,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "System.Data.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 71,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "System.Data.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 52,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "System.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "System.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 719,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "System.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4534,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "System.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3316,
+      "table": "Field"
+    },
+    {
+      "assembly": "System.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 237,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "System.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 46,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "System.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 228,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "System.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 274,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "System.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 235,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "System.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 22,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "System.Drawing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "System.Drawing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 11,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "System.Drawing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 67,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "System.Drawing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 198,
+      "table": "Field"
+    },
+    {
+      "assembly": "System.Drawing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 14,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "System.Drawing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "System.Drawing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "System.Drawing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "System.Numerics.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "System.Numerics.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 13,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "System.Numerics.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 150,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "System.Numerics.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 34,
+      "table": "Field"
+    },
+    {
+      "assembly": "System.Numerics.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 35,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "System.Numerics.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "System.Numerics.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "System.Numerics.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "System.Numerics.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "System.Runtime.Serialization.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "System.Runtime.Serialization.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "System.Runtime.Serialization.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "System.Runtime.Serialization.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "Field"
+    },
+    {
+      "assembly": "System.Runtime.Serialization.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 8,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "System.Runtime.Serialization.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "System.Xml.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "System.Xml.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 669,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "System.Xml.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6663,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "System.Xml.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3736,
+      "table": "Field"
+    },
+    {
+      "assembly": "System.Xml.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 114,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "System.Xml.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "System.Xml.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 142,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "System.Xml.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 336,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "System.Xml.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 70,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "System.Xml.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "System.Xml.Linq.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "System.Xml.Linq.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 38,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "System.Xml.Linq.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 228,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "System.Xml.Linq.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 94,
+      "table": "Field"
+    },
+    {
+      "assembly": "System.Xml.Linq.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 38,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "System.Xml.Linq.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "System.Xml.Linq.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "System.Xml.Linq.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 15,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "System.Xml.Linq.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 14,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "System.Xml.Linq.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "Tapjoy.Android.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Tapjoy.Android.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Tapjoy.Android.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 62,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Tapjoy.Android.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "Field"
+    },
+    {
+      "assembly": "Tapjoy.Android.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 9,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Tapjoy.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Tapjoy.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 63,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Tapjoy.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 475,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Tapjoy.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 121,
+      "table": "Field"
+    },
+    {
+      "assembly": "Tapjoy.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 25,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Tapjoy.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 36,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Tapjoy.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 9,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Tapjoy.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 18,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "Unity.Services.Core.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Unity.Services.Core.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 12,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 24,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 12,
+      "table": "Field"
+    },
+    {
+      "assembly": "Unity.Services.Core.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 26,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Unity.Services.Core.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Unity.Services.Core.Configuration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 8,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "Unity.Services.Core.Device.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Unity.Services.Core.Device.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Device.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 22,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Device.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "Field"
+    },
+    {
+      "assembly": "Unity.Services.Core.Device.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Device.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Unity.Services.Core.Device.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "Unity.Services.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Unity.Services.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 11,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 26,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 14,
+      "table": "Field"
+    },
+    {
+      "assembly": "Unity.Services.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 16,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Unity.Services.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Unity.Services.Core.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Unity.Services.Core.Environments.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Unity.Services.Core.Environments.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Environments.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Environments.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Field"
+    },
+    {
+      "assembly": "Unity.Services.Core.Environments.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Environments.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Unity.Services.Core.Environments.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "Unity.Services.Core.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Unity.Services.Core.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 62,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 164,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 92,
+      "table": "Field"
+    },
+    {
+      "assembly": "Unity.Services.Core.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 48,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "Unity.Services.Core.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 11,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Unity.Services.Core.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 15,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Unity.Services.Core.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 26,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "Unity.Services.Core.Internal.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 35,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "Unity.Services.Core.Registration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Unity.Services.Core.Registration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Registration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 47,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Registration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 29,
+      "table": "Field"
+    },
+    {
+      "assembly": "Unity.Services.Core.Registration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 39,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Registration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Unity.Services.Core.Registration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Unity.Services.Core.Registration.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "Unity.Services.Core.Scheduler.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Unity.Services.Core.Scheduler.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 9,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Scheduler.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 29,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Scheduler.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 18,
+      "table": "Field"
+    },
+    {
+      "assembly": "Unity.Services.Core.Scheduler.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 16,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Scheduler.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "Unity.Services.Core.Scheduler.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "Unity.Services.Core.Scheduler.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "Unity.Services.Core.Scheduler.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "Unity.Services.Core.Scheduler.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "Unity.Services.Core.Telemetry.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Unity.Services.Core.Telemetry.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Telemetry.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 10,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Telemetry.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "Field"
+    },
+    {
+      "assembly": "Unity.Services.Core.Telemetry.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 12,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Telemetry.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "Unity.Services.Core.Threading.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "Unity.Services.Core.Threading.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Threading.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Threading.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "Unity.Services.Core.Threading.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.AndroidJNIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.AndroidJNIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 26,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.AndroidJNIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 523,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.AndroidJNIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 77,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.AndroidJNIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 42,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.AndroidJNIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.AndroidJNIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.AndroidJNIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.AndroidJNIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.AndroidJNIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 47,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "UnityEngine.AnimationModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.AnimationModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 30,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.AnimationModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 60,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.AnimationModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 74,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.AnimationModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 35,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.AnimationModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 9,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.AnimationModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.AnimationModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.AnimationModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 9,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.AudioModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.AudioModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 17,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.AudioModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 47,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.AudioModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 27,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.AudioModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 32,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.AudioModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.AudioModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.AudioModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.AudioModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.CoreModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.CoreModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 642,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.CoreModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2478,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.CoreModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2055,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.CoreModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 114,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.CoreModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 61,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.CoreModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 197,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.CoreModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 99,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.CoreModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 90,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.CoreModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 143,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "UnityEngine.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.GridModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.GridModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.GridModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.ImageConversionModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.ImageConversionModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.ImageConversionModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 24,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.ImageConversionModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 15,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.ImageConversionModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.ImageConversionModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.ImageConversionModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "UnityEngine.IMGUIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.IMGUIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 48,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.IMGUIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 758,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.IMGUIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 433,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.IMGUIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 69,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.IMGUIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 11,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.IMGUIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 17,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.IMGUIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.InputLegacyModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.InputLegacyModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 13,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.InputLegacyModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 82,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.InputLegacyModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 56,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.InputLegacyModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 22,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.InputLegacyModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.InputLegacyModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.JSONSerializeModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.JSONSerializeModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.JSONSerializeModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.JSONSerializeModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 8,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.JSONSerializeModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "UnityEngine.Physics2DModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.Physics2DModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.Physics2DModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.Physics2DModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.Physics2DModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 18,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.Physics2DModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.PhysicsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.PhysicsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 11,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.PhysicsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.PhysicsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 59,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.PhysicsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 19,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.PhysicsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.PropertiesModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.PropertiesModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 105,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.PropertiesModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 267,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.PropertiesModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 91,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.PropertiesModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 56,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.PropertiesModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 44,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.PropertiesModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 52,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.PropertiesModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 54,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.PropertiesModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 32,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.PropertiesModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 90,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleMacosStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleMacosStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleMacosStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 10,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleMacosStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleMacosStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleMacosStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 10,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.AppleStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 75,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 275,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 152,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 38,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 14,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 20,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 9,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 21,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 142,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 54,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 25,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Security.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.SecurityCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.SecurityCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.SecurityCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 29,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.SecurityCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 18,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.SecurityCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 8,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.SecurityCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Stores.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Stores.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 241,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Stores.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 882,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Stores.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 655,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Stores.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 111,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Stores.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Stores.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 77,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Stores.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 19,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Stores.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 112,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.Stores.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 16,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.WinRTCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.WinRTCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.WinRTCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 15,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.WinRTCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 9,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.WinRTCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.WinRTCore.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.WinRTStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.WinRTStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.WinRTStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.Purchasing.WinRTStub.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.SharedInternalsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.SharedInternalsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 29,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.SharedInternalsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 61,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.SharedInternalsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 37,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.SharedInternalsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 13,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.SharedInternalsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 13,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.SpriteShapeModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.SpriteShapeModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.SpriteShapeModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreFontEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreFontEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 24,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreFontEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 115,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreFontEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 137,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreFontEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 23,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreFontEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreFontEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 12,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreFontEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreFontEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreTextEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreTextEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 68,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreTextEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 472,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreTextEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 924,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreTextEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 59,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreTextEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreTextEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreTextEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 16,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreTextEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.TextCoreTextEngineModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 6,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "UnityEngine.TextRenderingModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.TextRenderingModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 13,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.TextRenderingModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 47,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.TextRenderingModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 74,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.TextRenderingModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 36,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.TextRenderingModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.TextRenderingModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.TextRenderingModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.TextRenderingModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.TilemapModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.TilemapModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.TilemapModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.UI.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.UI.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 187,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.UI.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1804,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.UI.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 812,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.UI.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 120,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.UI.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 15,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.UI.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 77,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.UI.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 73,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.UI.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 160,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.UI.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 15,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "UnityEngine.UIElementsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.UIElementsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1092,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.UIElementsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 7486,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.UIElementsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 4242,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.UIElementsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 168,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.UIElementsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 377,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.UIElementsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 400,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.UIElementsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 342,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.UIElementsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 230,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.UIElementsModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 197,
+      "table": "GenericParam"
+    },
+    {
+      "assembly": "UnityEngine.UIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.UIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 10,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.UIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 99,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.UIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 14,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.UIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 41,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.UIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.UIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.UIModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 14,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 118,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 92,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 27,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "TypeSpec"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "NestedClass"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 5,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 3,
+      "table": "InterfaceImpl"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Assembly"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 2,
+      "table": "TypeDef"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 11,
+      "table": "MethodDef"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "Field"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 9,
+      "table": "TypeRef"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "PropertyMap"
+    },
+    {
+      "assembly": "UnityEngine.UnityWebRequestWWWModule.dll",
+      "first_row_indexed_as_local_zero": true,
+      "first_row_preserved": true,
+      "row_count": 1,
+      "table": "InterfaceImpl"
+    }
+  ],
+  "builder_sha256": "0c9a7e4337c8453393bd37bff032407b679911b0bf3dbb34c45844da294a8e4a",
+  "checks": {
+    "all_actual_table_probes_preserve_first_row": true,
+    "bracket_indexing_source_proves_zero_based": true,
+    "current_table_row_slice_bug_removed": true,
+    "current_uses_full_table_sequence": true,
+    "dnfile_version": "0.18.0",
+    "get_with_row_index_source_proves_one_based": true,
+    "previous_table_row_slice_bug_present": true,
+    "probe_preserves_first_real_row": true,
+    "source_gate_pass": true,
+    "transition_audit_pass": true
+  },
+  "dnfile_api_source": {
+    "ClrMetaDataTable.__getitem__": "def __getitem__(self, index: int) -> RowType:\n        return self.rows[index]",
+    "ClrMetaDataTable.get_with_row_index": "def get_with_row_index(self, row_index: int) -> RowType:\n        \"\"\"\n        fetch the row with the given row index.\n        remember: row indices, at least those encoded within a .NET file, are 1-based.\n        so, you should prefer to use this method when you get a reference to a row.\n        use `__getitem__` when you want 0-based indexing.\n        \"\"\"\n        return self[row_index - 1]"
+  },
+  "required_invariant": {
+    "clr_rid_mdtableindex_row_index_metadata_token_low_rid": "1-based",
+    "conversion_policy": "explicit enumerate(start=1) or row_index; never sentinel compensation",
+    "local_python_table_position": "0-based"
+  },
+  "schema_version": "r1.5-metadata-reader-audit-v1",
+  "status": "PASS",
+  "transition_audit": [
+    {
+      "boundary": "Assembly",
+      "contract": "table_rows sequence 0-based; assembly identity uses rows[0]",
+      "status": "PASS"
+    },
+    {
+      "boundary": "TypeDef",
+      "contract": "local enumerate(start=1); TypeDef RID/token is 1-based",
+      "status": "PASS"
+    },
+    {
+      "boundary": "MethodDef",
+      "contract": "local enumerate(start=1); MethodList row_index remains 1-based",
+      "status": "PASS"
+    },
+    {
+      "boundary": "Field",
+      "contract": "local enumerate(start=1); FieldList row_index remains 1-based",
+      "status": "PASS"
+    },
+    {
+      "boundary": "TypeRef",
+      "contract": "local enumerate(start=1); coded TypeRef index is 1-based",
+      "status": "PASS"
+    },
+    {
+      "boundary": "TypeSpec",
+      "contract": "local enumerate(start=1); coded TypeSpec index is 1-based",
+      "status": "PASS"
+    },
+    {
+      "boundary": "NestedClass",
+      "contract": "child/parent row_index used as true 1-based RIDs",
+      "status": "PASS"
+    },
+    {
+      "boundary": "PropertyMap",
+      "contract": "Parent row_index used as true TypeDef RID; list length is not reindexed",
+      "status": "PASS"
+    },
+    {
+      "boundary": "InterfaceImpl",
+      "contract": "Class row_index used as true TypeDef RID",
+      "status": "PASS"
+    },
+    {
+      "boundary": "GenericParam",
+      "contract": "Owner row_index used as true TypeDef/MethodDef RID",
+      "status": "PASS"
+    },
+    {
+      "boundary": "metadata_token",
+      "contract": "low RID is emitted from explicit local start=1 indexes",
+      "status": "PASS"
+    },
+    {
+      "boundary": "metadata_index",
+      "contract": "stored index is explicit 1-based CLR RID, not list position",
+      "status": "PASS"
+    }
+  ]
+}

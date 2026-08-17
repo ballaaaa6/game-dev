@@ -31,8 +31,9 @@ DEFAULT_ISIL_ROOT = Path(
 )
 DEFAULT_OUT = ROOT / "artifacts/r1-whole-corpus-index"
 DEFAULT_ACCEPTED = ROOT / "knowledge/brain/acceptance/r1-whole-corpus-index"
-BUILDER_VERSION = "r1-whole-corpus-index-builder-v1"
-SCHEMA_VERSION = "r1-whole-corpus-index-v1"
+BUILDER_VERSION = "r1.5-metadata-reconciliation-builder-v1"
+SCHEMA_VERSION = "r1.5-metadata-reconciliation-v1"
+SOURCE_CACHE_VERSION = "r1.5-source-cache-v2"
 SCRIPTING_ASSEMBLY_MEMBER = "assets/bin/Data/ScriptingAssemblies.json"
 EXPECTED_HASHES = {
     "apk": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
@@ -59,6 +60,17 @@ DISPOSITIONS = (
     "CFG_REPAIR", "ISIL_ASSISTED_REPAIR", "NATIVE_LIFT",
     "EXTERNAL_BOUNDARY", "SOURCE_LIMITED",
 )
+CORE_IDENTITY = {
+    "AppData": ("Assembly-CSharp", "main.AppData"),
+    "GameForm": ("Assembly-CSharp", "form.GameForm"),
+    "Player": ("Assembly-CSharp", "game.Player"),
+    "Room": ("Assembly-CSharp", "game.Room"),
+    "ObjChip": ("Assembly-CSharp", "game.ObjChip"),
+    "Staff": ("Assembly-CSharp", "game.Staff"),
+    "FurnitureData": ("Assembly-CSharp", "data.FurnitureData"),
+    "Astar": ("Assembly-CSharp", "game.routeSearch.Astar"),
+    "Node": ("Assembly-CSharp", "game.routeSearch.Node"),
+}
 TYPE_DECL_RE = re.compile(r"\b(class|struct|enum|interface|record)\s+([A-Za-z_]\w*(?:\x60\d+)?)")
 NAMESPACE_RE = re.compile(r"\bnamespace\s+([A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*)")
 CONTROL_NAMES = {
@@ -124,10 +136,19 @@ def load_jsonl(path: Path) -> list[dict[str, Any]]:
         return [json.loads(line) for line in stream if line.strip()]
 
 def table_rows(table: Any) -> list[Any]:
+    """Return every dnfile metadata row in native 0-based sequence order.
+
+    ``ClrMetaDataTable`` bracket access is 0-based, while CLR RID and
+    ``row_index`` references are 1-based.  Local enumeration below converts
+    the returned sequence to explicit 1-based metadata indexes; RID-bearing
+    references continue to use their own ``row_index`` values.  Slicing with
+    ``table[1:]`` would silently discard the first real metadata row and shift
+    every locally enumerated RID.
+    """
     if table is None:
         return []
     try:
-        return list(table[1:])
+        return list(table)
     except (TypeError, IndexError):
         return []
 
@@ -196,6 +217,75 @@ def normalize_signature_text(value: str) -> str:
 
 def normalize_type_name(value: str) -> str:
     return re.sub(r"\s+", "", value.strip().replace("/", "+"))
+
+
+CSHARP_TYPE_ALIASES = {
+    "bool": "System.Boolean",
+    "byte": "System.Byte",
+    "sbyte": "System.SByte",
+    "char": "System.Char",
+    "decimal": "System.Decimal",
+    "double": "System.Double",
+    "float": "System.Single",
+    "int": "System.Int32",
+    "long": "System.Int64",
+    "nint": "System.IntPtr",
+    "nuint": "System.UIntPtr",
+    "object": "System.Object",
+    "short": "System.Int16",
+    "string": "System.String",
+    "uint": "System.UInt32",
+    "ulong": "System.UInt64",
+    "ushort": "System.UInt16",
+    "void": "System.Void",
+}
+
+
+def loose_type_name(value: str) -> str:
+    """Normalize C# and metadata type spellings for overload matching."""
+    value = value.strip().replace("global::", "").replace("+", ".")
+    byref = bool(re.match(r"^(?:ref|out|in)\s+", value))
+    value = re.sub(r"^(?:ref|out|in)\s+", "", value)
+    value = normalize_type_name(value)
+    compact_byref = re.match(
+        r"^(?:ref|out|in)(?=(?:bool|byte|char|decimal|double|float|int|long|nint|nuint|object|short|string|uint|ulong|ushort|[A-Z]))",
+        value,
+    )
+    if compact_byref:
+        byref = True
+        value = value[compact_byref.end():]
+    value = re.sub(r"^(?:class|valuetype)", "", value)
+    for alias, canonical in CSHARP_TYPE_ALIASES.items():
+        value = re.sub(
+            rf"(?<![A-Za-z0-9_])(?:System\.)?{re.escape(alias)}(?![A-Za-z0-9_])",
+            canonical,
+            value,
+        )
+    # Compare the terminal type names while retaining generic/array shape.
+    value = re.sub(r"(?:[A-Za-z_]\w*\.)+([A-Za-z_]\w*)", r"\1", value)
+    value = re.sub(r"`\d+", "", value)
+    if byref and not value.endswith("&"):
+        value += "&"
+    return CSHARP_TYPE_ALIASES.get(value, value)
+
+
+def source_parameter_types(value: str) -> list[str]:
+    """Extract parameter types without using method names as overload keys."""
+    result: list[str] = []
+    for parameter in split_top_level(value):
+        parameter = re.sub(r"^\s*(?:\[[^\]]*\]\s*)+", "", parameter)
+        parameter = parameter.split("=", 1)[0].strip()
+        byref = bool(re.match(r"^(?:ref|out|in)\s+", parameter))
+        parameter = re.sub(
+            r"\b(?:this|ref|out|in|params|scoped|readonly)\b\s*", "", parameter
+        ).strip()
+        if not parameter:
+            continue
+        tokens = parameter.split()
+        type_text = " ".join(tokens[:-1]) if len(tokens) > 1 else tokens[0]
+        normalized = loose_type_name(type_text)
+        result.append(normalized + "&" if byref and not normalized.endswith("&") else normalized)
+    return result
 
 
 class MetadataReader:
@@ -1079,6 +1169,7 @@ def source_method_records(path: Path) -> tuple[list[dict[str, Any]], list[dict[s
         parameter_count = count_parameters(parameter_text)
         if not parameter_text.strip():
             parameter_count = 0
+        parameter_types = source_parameter_types(parameter_text)
         declaration_end = close_paren + 1
         body_open = masked.find("{", declaration_end)
         semicolon = masked.find(";", declaration_end)
@@ -1146,6 +1237,7 @@ def source_method_records(path: Path) -> tuple[list[dict[str, Any]], list[dict[s
                 "method_name": normalized_name,
                 "declared_name": name,
                 "parameter_count": parameter_count,
+                "parameter_types": parameter_types,
                 "line": line_number(starts, line_start),
                 "line_end": line_number(starts, body_close if body_close is not None else close_paren),
                 "body_kind": body_kind,
@@ -1535,13 +1627,28 @@ def method_quality_and_match(
         if row["method_name"] == method["method_name"]
         and row["parameter_count"] == method["parameter_count"]
     ]
-    source_match = candidates[0] if candidates else None
     if len(candidates) > 1:
-        candidates.sort(key=lambda row: (row["relative_file"], row["line"]))
-        source_match = candidates[0]
-        match_status = "AMBIGUOUS_DETERMINISTIC_FIRST"
+        typed_candidates = [
+            row for row in candidates
+            if len(row.get("parameter_types", [])) == len(method.get("parameter_types", []))
+            and all(
+                loose_type_name(left) == loose_type_name(right)
+                for left, right in zip(
+                    row.get("parameter_types", []), method.get("parameter_types", [])
+                )
+            )
+        ]
+        if typed_candidates:
+            candidates = typed_candidates
+        else:
+            candidates = []
+            match_status = "AMBIGUOUS_SOURCE_KEY"
+    source_match = candidates[0] if len(candidates) == 1 else None
+    if len(candidates) > 1:
+        match_status = "AMBIGUOUS_SOURCE_KEY"
     if source_match is None:
-        match_status = "MISSING"
+        if match_status != "AMBIGUOUS_SOURCE_KEY":
+            match_status = "MISSING"
 
     r0_row = None
     if source_match is not None:
@@ -1801,14 +1908,43 @@ def build_dependency_graph(
         return candidates, resolution
 
     call_edges: list[dict[str, Any]] = []
+    external_resolved_call_edges: list[dict[str, Any]] = []
+    owned_unresolved_call_edges: list[dict[str, Any]] = []
+    ambiguous_call_edges: list[dict[str, Any]] = []
+    source_limited_call_edges: list[dict[str, Any]] = []
     external_edges: list[dict[str, Any]] = []
     field_edges: list[dict[str, Any]] = []
+    unresolved_field_edges: list[dict[str, Any]] = []
     static_data_edges: list[dict[str, Any]] = []
     for method in method_catalog:
         owner = type_by_id[method["declaring_type_id"]]
         for call in method.get("source_calls", []):
             candidates, resolution = resolve_method(owner, call)
-            if candidates:
+            source_limited = method.get("source_match_status") in {
+                "MISSING", "AMBIGUOUS_SOURCE_KEY",
+            } or method.get("quality_class") == "SOURCE_LIMITED"
+            if len(candidates) > 1:
+                ambiguous = {
+                    "edge_id": stable_id("r1-ambiguous-call", method["method_id"], call["qualified_name"], call["line"]),
+                    "source_method_id": method["method_id"],
+                    "source_type_id": method["declaring_type_id"],
+                    "source_ownership": method["ownership"],
+                    "target_method_id": None,
+                    "target_type": call.get("qualifier") or owner["full_name"],
+                    "target_ownership": "SOURCE_LIMITED_OWNERSHIP",
+                    "target_ref": f"{call.get('qualified_name', call['name'])}/{call['argument_count']}",
+                    "candidate_method_ids": sorted(row["method_id"] for row in candidates),
+                    "source_file": method.get("source_file"),
+                    "source_line": call["line"],
+                    "resolution": resolution,
+                    "call_edge_class": "AMBIGUOUS_CALL",
+                    "external_kind": "AMBIGUOUS_CALL",
+                }
+                ambiguous_call_edges.append(ambiguous)
+                external_edges.append(dict(ambiguous, edge_id=stable_id(
+                    "r1-external-edge", method["method_id"], "ambiguous", call["qualified_name"], call["line"]
+                )))
+            elif len(candidates) == 1:
                 candidate = sorted(candidates, key=lambda row: row["method_id"])[0]
                 candidate_owner = type_by_id.get(candidate["declaring_type_id"])
                 if candidate["method_id"] in owned_method_ids:
@@ -1826,48 +1962,76 @@ def build_dependency_graph(
                             "call_name": call["qualified_name"],
                             "argument_count": call["argument_count"],
                             "resolution": resolution,
+                            "call_edge_class": "OWNED_RESOLVED_CALL",
                             "cross_ownership": bool(candidate_owner and candidate_owner["ownership"] != method["ownership"]),
                         }
                     )
                 else:
-                    external_edges.append(
-                        {
-                            "edge_id": stable_id("r1-external-edge", method["method_id"], candidate["method_id"], call["line"]),
-                            "source_method_id": method["method_id"],
-                            "source_type_id": method["declaring_type_id"],
-                            "source_ownership": method["ownership"],
-                            "target_method_id": candidate["method_id"],
-                            "target_type": candidate["declaring_type"],
-                            "target_ownership": candidate_owner["ownership"] if candidate_owner else "SOURCE_LIMITED_OWNERSHIP",
-                            "target_ref": f"{candidate['declaring_type']}::{candidate['method_name']}{candidate['normalized_signature']}",
-                            "source_file": method.get("source_file"),
-                            "source_line": call["line"],
-                            "resolution": resolution,
-                            "external_kind": "METADATA_BOUNDARY",
-                        }
-                    )
-            else:
-                external_edges.append(
-                    {
-                        "edge_id": stable_id("r1-external-edge", method["method_id"], call["qualified_name"], call["line"]),
+                    external_resolved = {
+                        "edge_id": stable_id("r1-external-resolved-call", method["method_id"], candidate["method_id"], call["line"]),
                         "source_method_id": method["method_id"],
                         "source_type_id": method["declaring_type_id"],
                         "source_ownership": method["ownership"],
-                        "target_method_id": None,
-                        "target_type": call.get("qualifier") or owner["full_name"],
-                        "target_ownership": "SOURCE_LIMITED_OWNERSHIP",
-                        "target_ref": f"{call.get('qualified_name', call['name'])}/{call['argument_count']}",
+                        "target_method_id": candidate["method_id"],
+                        "target_type": candidate["declaring_type"],
+                        "target_ownership": candidate_owner["ownership"] if candidate_owner else "SOURCE_LIMITED_OWNERSHIP",
+                        "target_ref": f"{candidate['declaring_type']}::{candidate['method_name']}{candidate['normalized_signature']}",
                         "source_file": method.get("source_file"),
                         "source_line": call["line"],
                         "resolution": resolution,
-                        "external_kind": "UNRESOLVED_SOURCE_CALL",
+                        "call_edge_class": "EXTERNAL_RESOLVED_CALL",
+                        "external_kind": "METADATA_BOUNDARY",
                     }
-                )
+                    external_resolved_call_edges.append(external_resolved)
+                    external_edges.append(external_resolved)
+            else:
+                call_class = "SOURCE_LIMITED_CALL" if source_limited else "OWNED_UNRESOLVED_CALL"
+                unresolved = {
+                    "edge_id": stable_id("r1-unresolved-call", method["method_id"], call["qualified_name"], call["line"]),
+                    "source_method_id": method["method_id"],
+                    "source_type_id": method["declaring_type_id"],
+                    "source_ownership": method["ownership"],
+                    "target_method_id": None,
+                    "target_type": call.get("qualifier") or owner["full_name"],
+                    "target_ownership": "SOURCE_LIMITED_OWNERSHIP",
+                    "target_ref": f"{call.get('qualified_name', call['name'])}/{call['argument_count']}",
+                    "source_file": method.get("source_file"),
+                    "source_line": call["line"],
+                    "resolution": resolution,
+                    "call_edge_class": call_class,
+                    "external_kind": call_class,
+                }
+                if call_class == "SOURCE_LIMITED_CALL":
+                    source_limited_call_edges.append(unresolved)
+                else:
+                    owned_unresolved_call_edges.append(unresolved)
+                external_edges.append(unresolved)
         for field_name in sorted(set(method.get("field_read_names", []) + method.get("field_write_names", []))):
             candidates = fields_by_type_name.get((method["declaring_type_id"], field_name), [])
             if not candidates:
                 candidates = fields_by_name.get(field_name, [])
-            if candidates:
+            if len(candidates) > 1:
+                unresolved = {
+                    "edge_id": stable_id("r1-ambiguous-field", method["method_id"], field_name),
+                    "source_method_id": method["method_id"],
+                    "source_type_id": method["declaring_type_id"],
+                    "source_ownership": method["ownership"],
+                    "field_id": None,
+                    "field_owner_type_id": None,
+                    "field_ownership": "SOURCE_LIMITED_OWNERSHIP",
+                    "field_name": field_name,
+                    "access": "read_write" if field_name in method.get("field_read_names", []) and field_name in method.get("field_write_names", []) else (
+                        "write" if field_name in method.get("field_write_names", []) else "read"
+                    ),
+                    "resolution": "AMBIGUOUS_FIELD_REFERENCE",
+                    "field_edge_class": "AMBIGUOUS_FIELD",
+                    "candidate_field_ids": sorted(row["field_id"] for row in candidates),
+                }
+                unresolved_field_edges.append(unresolved)
+                external_edges.append(dict(unresolved, edge_id=stable_id(
+                    "r1-external-field", method["method_id"], "ambiguous", field_name
+                ), external_kind="AMBIGUOUS_FIELD"))
+            elif len(candidates) == 1:
                 field = sorted(candidates, key=lambda row: row["field_id"])[0]
                 access = "read_write" if field_name in method.get("field_read_names", []) and field_name in method.get("field_write_names", []) else (
                     "write" if field_name in method.get("field_write_names", []) else "read"
@@ -1884,25 +2048,33 @@ def build_dependency_graph(
                         "field_name": field["field_name"],
                         "access": access,
                         "resolution": "FIELD_METADATA",
+                        "field_edge_class": (
+                            "OWNED_RESOLVED_FIELD"
+                            if field["ownership"] in {"GAME_FIRST_PARTY", "KAIRO_ENGINE"}
+                            else "EXTERNAL_RESOLVED_FIELD"
+                        ),
                     }
                 )
             else:
-                external_edges.append(
-                    {
-                        "edge_id": stable_id("r1-external-field", method["method_id"], field_name),
-                        "source_method_id": method["method_id"],
-                        "source_type_id": method["declaring_type_id"],
-                        "source_ownership": method["ownership"],
-                        "target_method_id": None,
-                        "target_type": method["declaring_type"],
-                        "target_ownership": "SOURCE_LIMITED_OWNERSHIP",
-                        "target_ref": f"field:{field_name}",
-                        "source_file": method.get("source_file"),
-                        "source_line": method.get("source_line"),
-                        "resolution": "UNRESOLVED_FIELD_REFERENCE",
-                        "external_kind": "UNRESOLVED_FIELD",
-                    }
-                )
+                field_class = "SOURCE_LIMITED_FIELD" if source_limited else "OWNED_UNRESOLVED_FIELD"
+                unresolved = {
+                    "edge_id": stable_id("r1-unresolved-field", method["method_id"], field_name),
+                    "source_method_id": method["method_id"],
+                    "source_type_id": method["declaring_type_id"],
+                    "source_ownership": method["ownership"],
+                    "field_id": None,
+                    "field_owner_type_id": None,
+                    "field_ownership": "SOURCE_LIMITED_OWNERSHIP",
+                    "field_name": field_name,
+                    "access": "read_write" if field_name in method.get("field_read_names", []) and field_name in method.get("field_write_names", []) else (
+                        "write" if field_name in method.get("field_write_names", []) else "read"
+                    ),
+                    "resolution": "UNRESOLVED_FIELD_REFERENCE",
+                    "field_edge_class": field_class,
+                    "external_kind": field_class,
+                }
+                unresolved_field_edges.append(unresolved)
+                external_edges.append(unresolved)
         for static_ref in sorted(set(method.get("static_data_refs", []))):
             static_data_edges.append(
                 {
@@ -1923,8 +2095,13 @@ def build_dependency_graph(
         return [values[key] for key in sorted(values)]
 
     call_edges = dedupe(call_edges)
+    external_resolved_call_edges = dedupe(external_resolved_call_edges)
+    owned_unresolved_call_edges = dedupe(owned_unresolved_call_edges)
+    ambiguous_call_edges = dedupe(ambiguous_call_edges)
+    source_limited_call_edges = dedupe(source_limited_call_edges)
     external_edges = dedupe(external_edges)
     field_edges = dedupe(field_edges)
+    unresolved_field_edges = dedupe(unresolved_field_edges)
     static_data_edges = dedupe(static_data_edges)
 
     adjacency: dict[str, list[str]] = {method_id: [] for method_id in sorted(owned_method_ids)}
@@ -2052,6 +2229,8 @@ def build_dependency_graph(
     bridge_counts: Counter[tuple[str, str, str]] = Counter()
     for edge in call_edges:
         bridge_counts[(edge["caller_ownership"], edge["callee_ownership"], "call")] += 1
+    for edge in external_resolved_call_edges:
+        bridge_counts[(edge["source_ownership"], edge["target_ownership"], "external_call")] += 1
     for edge in type_edges:
         bridge_counts[(edge["source_ownership"], edge["target_ownership"], edge["edge_type"])] += 1
     for edge in field_edges:
@@ -2068,8 +2247,13 @@ def build_dependency_graph(
     return {
         "type_edges": type_edges,
         "call_edges": call_edges,
+        "external_resolved_call_edges": external_resolved_call_edges,
+        "owned_unresolved_call_edges": owned_unresolved_call_edges,
+        "ambiguous_call_edges": ambiguous_call_edges,
+        "source_limited_call_edges": source_limited_call_edges,
         "external_edges": external_edges,
         "field_edges": field_edges,
+        "unresolved_field_edges": unresolved_field_edges,
         "static_data_edges": static_data_edges,
         "scc_summary": scc_summary,
         "dependency_layers": dependency_layers,
@@ -2081,8 +2265,28 @@ def build_dependency_graph(
             }),
             "type_edge_count": len(type_edges),
             "owned_call_edge_count": len(call_edges),
+            "external_resolved_call_edge_count": len(external_resolved_call_edges),
+            "owned_unresolved_call_edge_count": len(owned_unresolved_call_edges),
+            "ambiguous_call_edge_count": len(ambiguous_call_edges),
+            "source_limited_call_edge_count": len(source_limited_call_edges),
             "external_edge_count": len(external_edges),
             "field_edge_count": len(field_edges),
+            "owned_resolved_field_edge_count": sum(
+                row.get("field_edge_class") == "OWNED_RESOLVED_FIELD" for row in field_edges
+            ),
+            "external_resolved_field_edge_count": sum(
+                row.get("field_edge_class") == "EXTERNAL_RESOLVED_FIELD" for row in field_edges
+            ),
+            "unresolved_field_edge_count": len(unresolved_field_edges),
+            "ambiguous_field_edge_count": sum(
+                row.get("field_edge_class") == "AMBIGUOUS_FIELD" for row in unresolved_field_edges
+            ),
+            "owned_unresolved_field_edge_count": sum(
+                row.get("field_edge_class") == "OWNED_UNRESOLVED_FIELD" for row in unresolved_field_edges
+            ),
+            "source_limited_field_edge_count": sum(
+                row.get("field_edge_class") == "SOURCE_LIMITED_FIELD" for row in unresolved_field_edges
+            ),
             "static_data_edge_count": len(static_data_edges),
             "scc_count": len(scc_summary),
             "recursive_scc_count": sum(row["self_recursive"] for row in scc_summary),
@@ -2096,13 +2300,18 @@ def summarize_methods(method_catalog: list[dict[str, Any]], metadata: MetadataRe
     def grouped(key: str) -> dict[str, int]:
         return dict(sorted(Counter(row[key] for row in method_catalog).items()))
 
+    target_type_count = sum(
+        row["ownership"] in {"GAME_FIRST_PARTY", "KAIRO_ENGINE"}
+        and not row["compiler_generated"]
+        for row in metadata.types
+    )
     return {
         "schema_version": SCHEMA_VERSION,
         "authority": "DummyDll metadata methods in GAME_FIRST_PARTY and KAIRO_ENGINE types, excluding COMPILER_GENERATED types",
         "metadata_total_method_count": len(metadata.methods),
         "metadata_total_type_count": len(metadata.types),
         "target_method_count": len(method_catalog),
-        "target_type_count": len({row["declaring_type_id"] for row in method_catalog}),
+        "target_type_count": target_type_count,
         "method_id_unique": len({row["method_id"] for row in method_catalog}) == len(method_catalog),
         "counts_by_ownership": grouped("ownership"),
         "counts_by_quality_class": grouped("quality_class"),
@@ -2205,13 +2414,16 @@ def core_nine_validation(method_catalog: list[dict[str, Any]], metadata: Metadat
     ]
     rows: list[dict[str, Any]] = []
     for name in core_names:
+        expected_assembly, expected_full_name = CORE_IDENTITY.get(name, (None, None))
         methods = [
             row for row in method_catalog
-            if row["declaring_type"].rsplit("+", 1)[-1].rsplit(".", 1)[-1].split(chr(96), 1)[0] == name
+            if row["assembly"] == expected_assembly
+            and row["declaring_type"] == expected_full_name
         ]
         type_rows = [
             row for row in metadata.types
-            if row["short_name"].split(chr(96), 1)[0] == name
+            if row["assembly"] == expected_assembly
+            and row["full_name"] == expected_full_name
         ]
         quality_counts = dict(sorted(Counter(row["quality_class"] for row in methods).items()))
         compiler_aliases = [
@@ -2275,6 +2487,33 @@ def validate_in_memory(
     } | {"SOURCE_LIMITED_OWNERSHIP"}
     checks["type_ids_unique"] = len({row["type_id"] for row in metadata.types}) == len(metadata.types)
     checks["method_ids_unique"] = len({row["method_id"] for row in method_catalog}) == len(method_catalog)
+    checks["type_token_rid_alignment"] = all(
+        int(row["metadata_token"], 16) & 0x00FFFFFF == row["metadata_index"]
+        for row in metadata.types
+    )
+    checks["method_token_rid_alignment"] = all(
+        int(row["metadata_token"], 16) & 0x00FFFFFF == row["metadata_index"]
+        for row in metadata.methods
+    )
+    checks["field_token_rid_alignment"] = all(
+        int(row["metadata_token"], 16) & 0x00FFFFFF == row["metadata_index"]
+        for row in metadata.fields
+    )
+    checks["method_declaring_type_refs"] = all(
+        row["declaring_type_id"] in metadata.type_by_id
+        for row in metadata.methods
+    )
+    checks["field_declaring_type_refs"] = all(
+        row["declaring_type_id"] in metadata.type_by_id
+        for row in metadata.fields
+    )
+    checks["type_method_counts_reconciled"] = all(
+        row["metadata_method_count"] == sum(
+            method["declaring_type_id"] == row["type_id"]
+            for method in metadata.methods
+        )
+        for row in metadata.types
+    )
     checks["method_queue_exact"] = (
         len(queue) == len(method_catalog)
         and {row["method_id"] for row in queue} == {row["method_id"] for row in method_catalog}
@@ -2307,9 +2546,32 @@ def validate_in_memory(
         row["source_method_id"] in method_ids
         for row in graph["external_edges"]
     )
+    checks["classified_call_refs"] = all(
+        row["source_method_id"] in method_ids
+        and (
+            row.get("target_method_id") is None
+            or row["target_method_id"] in set(metadata.method_by_id)
+        )
+        for key in (
+            "external_resolved_call_edges", "owned_unresolved_call_edges",
+            "ambiguous_call_edges", "source_limited_call_edges",
+        )
+        for row in graph[key]
+    )
+    checks["classified_field_refs"] = all(
+        row["source_method_id"] in method_ids
+        for row in graph["unresolved_field_edges"]
+    )
     checks["deterministic_sort_contract"] = (
         method_catalog == sorted(method_catalog, key=lambda row: row["method_id"])
-        and graph["call_edges"] == sorted(graph["call_edges"], key=lambda row: row["edge_id"])
+        and all(
+            graph[key] == sorted(graph[key], key=lambda row: row["edge_id"])
+            for key in (
+                "call_edges", "external_resolved_call_edges", "owned_unresolved_call_edges",
+                "ambiguous_call_edges", "source_limited_call_edges", "field_edges",
+                "unresolved_field_edges", "external_edges", "static_data_edges",
+            )
+        )
     )
     checks["core_nine_pass"] = core_validation["pass"]
     return {
@@ -2325,6 +2587,11 @@ def validate_in_memory(
             "call_edges": len(graph["call_edges"]),
             "external_edges": len(graph["external_edges"]),
             "field_edges": len(graph["field_edges"]),
+            "external_resolved_call_edges": len(graph["external_resolved_call_edges"]),
+            "owned_unresolved_call_edges": len(graph["owned_unresolved_call_edges"]),
+            "ambiguous_call_edges": len(graph["ambiguous_call_edges"]),
+            "source_limited_call_edges": len(graph["source_limited_call_edges"]),
+            "unresolved_field_edges": len(graph["unresolved_field_edges"]),
             "sccs": len(graph["scc_summary"]),
         },
     }
@@ -2336,6 +2603,8 @@ def artifact_file_manifest(root: Path) -> dict[str, Any]:
         if not path.is_file() or path.name == "artifact-manifest.json":
             continue
         relative = path.relative_to(root).as_posix()
+        if relative == "accepted" or relative.startswith("accepted/"):
+            continue
         record = {
             "path": relative,
             "bytes": path.stat().st_size,
@@ -2411,6 +2680,7 @@ def write_report(
         "## 6. Owned dependency graph",
         "",
         f"The graph contains {dependency_summary['owned_call_edge_count']:,} owned call edges, {dependency_summary['type_edge_count']:,} metadata type edges, {dependency_summary['field_edge_count']:,} field edges, and {dependency_summary['external_edge_count']:,} explicit external or unresolved edges.",
+        f"R1.5 call split: {dependency_summary.get('external_resolved_call_edge_count', 0):,} external-resolved, {dependency_summary.get('owned_unresolved_call_edge_count', 0):,} owned-unresolved, {dependency_summary.get('ambiguous_call_edge_count', 0):,} ambiguous, and {dependency_summary.get('source_limited_call_edge_count', 0):,} source-limited.",
         f"It contains {dependency_summary['scc_count']:,} method SCCs, {dependency_summary['recursive_scc_count']:,} recursive SCCs, and a maximum dependency layer of {dependency_summary['max_dependency_layer']:,}.",
         f"Ownership bridges are recorded in {dependency_summary['bridge_count']:,} bridge classes.",
         "",
@@ -2474,14 +2744,21 @@ def write_artifacts(
     dump_json(source_gate_path, gate)
     dump_json(out / "source-file-manifest.json", source_manifest)
     dump_json(out / "source-cache.json", source_cache)
+    dump_json(out / "source-cache-version.json", {"version": SOURCE_CACHE_VERSION})
     dump_json(out / "assembly-catalog.json", assemblies)
     dump_jsonl(out / "type-catalog.jsonl", metadata.types)
     dump_jsonl(out / "field-catalog.jsonl", metadata.fields)
+    dump_jsonl(out / "metadata-method-catalog.jsonl", metadata.methods)
     dump_jsonl(out / "method-catalog.jsonl", method_catalog)
     dump_jsonl(out / "repair-queue.jsonl", queue)
     dump_jsonl(out / "type-edges.jsonl", graph["type_edges"])
     dump_jsonl(out / "call-edges.jsonl", graph["call_edges"])
+    dump_jsonl(out / "external-resolved-call-edges.jsonl", graph["external_resolved_call_edges"])
+    dump_jsonl(out / "owned-unresolved-call-edges.jsonl", graph["owned_unresolved_call_edges"])
+    dump_jsonl(out / "ambiguous-call-edges.jsonl", graph["ambiguous_call_edges"])
+    dump_jsonl(out / "source-limited-call-edges.jsonl", graph["source_limited_call_edges"])
     dump_jsonl(out / "field-edges.jsonl", graph["field_edges"])
+    dump_jsonl(out / "unresolved-field-edges.jsonl", graph["unresolved_field_edges"])
     dump_jsonl(out / "external-edges.jsonl", graph["external_edges"])
     dump_jsonl(out / "static-data-edges.jsonl", graph["static_data_edges"])
     dump_jsonl(out / "dependency-layers.jsonl", graph["dependency_layers"])
@@ -2610,6 +2887,28 @@ def validate_local_artifacts(out: Path) -> dict[str, Any]:
         scc = load_json(out / "scc-summary.json")
         stored_manifest = load_json(out / "artifact-manifest.json")
         stored_validation = load_json(out / "validation.json")
+        r15_files = [
+            "metadata-method-catalog.jsonl",
+            "external-resolved-call-edges.jsonl",
+            "owned-unresolved-call-edges.jsonl",
+            "ambiguous-call-edges.jsonl",
+            "source-limited-call-edges.jsonl",
+            "unresolved-field-edges.jsonl",
+        ]
+        is_r15 = gate.get("schema_version") == "r1.5-metadata-reconciliation-v1"
+        checks["r15_classification_files_present"] = (
+            not is_r15 or all((out / name).is_file() for name in r15_files)
+        )
+        classified_edges = {
+            name: load_jsonl(out / name)
+            for name in r15_files
+            if (out / name).is_file()
+        }
+        metadata_methods = (
+            load_jsonl(out / "metadata-method-catalog.jsonl")
+            if (out / "metadata-method-catalog.jsonl").is_file()
+            else []
+        )
     except Exception as error:
         return {
             "schema_version": SCHEMA_VERSION,
@@ -2629,6 +2928,12 @@ def validate_local_artifacts(out: Path) -> dict[str, Any]:
         checks["pinned_hashes_match"] = False
     checks["type_ids_unique"] = len({row["type_id"] for row in types}) == len(types)
     checks["method_ids_unique"] = len({row["method_id"] for row in methods}) == len(methods)
+    if is_r15:
+        checks["metadata_method_catalog_count"] = len(metadata_methods) == sum(
+            row.get("metadata_method_count", 0) or 0
+            for row in json.load((out / "assembly-catalog.json").open(encoding="utf-8"))
+            if row.get("metadata_present")
+        )
     checks["queue_exact"] = (
         len(queue) == len(methods)
         and {row["method_id"] for row in queue} == {row["method_id"] for row in methods}
@@ -2648,6 +2953,29 @@ def validate_local_artifacts(out: Path) -> dict[str, Any]:
     )
     checks["field_refs_valid"] = all(row["source_method_id"] in method_ids for row in field_edges)
     checks["external_refs_valid"] = all(row["source_method_id"] in method_ids for row in external_edges)
+    if is_r15:
+        metadata_method_ids = {row["method_id"] for row in metadata_methods}
+        checks["classified_call_refs_valid"] = all(
+            row["source_method_id"] in method_ids
+            and (
+                row.get("target_method_id") is None
+                or row["target_method_id"] in (method_ids | metadata_method_ids)
+            )
+            for name, rows in classified_edges.items()
+            if "call" in name
+            for row in rows
+        )
+        checks["classified_field_refs_valid"] = all(
+            row["source_method_id"] in method_ids
+            for name, rows in classified_edges.items()
+            if "field" in name
+            for row in rows
+        )
+        checks["classified_edge_sort_contract"] = all(
+            rows == sorted(rows, key=lambda row: row["edge_id"])
+            for rows in classified_edges.values()
+            if rows and "edge_id" in rows[0]
+        )
     checks["graph_nonempty"] = bool(type_edges and call_edges and field_edges and scc)
     checks["stored_validation_pass"] = stored_validation.get("status") == "PASS"
     recomputed_manifest = artifact_file_manifest(out)
@@ -2691,11 +3019,20 @@ def run_build(
     source_cache_path = out / "source-cache.json"
     if resume and source_cache_path.is_file():
         source_cache = load_json(source_cache_path)
+        source_cache_version_path = out / "source-cache-version.json"
+        source_cache_version_matches = (
+            source_cache_version_path.is_file()
+            and load_json(source_cache_version_path).get("version") == SOURCE_CACHE_VERSION
+        )
         manifest_by_path = {row["relative_path"]: row["sha256"] for row in source_manifest}
         cache_matches = all(
             manifest_by_path.get(path) == payload.get("sha256")
             for path, payload in source_cache.items()
-        ) and len(source_cache) == len(manifest_by_path)
+        ) and source_cache_version_matches and len(source_cache) == len(manifest_by_path) and all(
+            "parameter_types" in method
+            for payload in source_cache.values()
+            for method in payload.get("methods", [])
+        )
         if cache_matches:
             source_methods_by_type, source_methods_by_name = index_source_cache(source_cache)
         else:

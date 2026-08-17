@@ -1,0 +1,254 @@
+{
+  "canonical_summary": {
+    "ambiguous_call_edge_count": 5306,
+    "ambiguous_field_edge_count": 8549,
+    "bridge_count": 35,
+    "external_edge_count": 145075,
+    "external_resolved_call_edge_count": 8668,
+    "external_resolved_field_edge_count": 1978,
+    "field_edge_count": 6129,
+    "max_dependency_layer": 19,
+    "owned_call_edge_count": 13512,
+    "owned_method_count": 10827,
+    "owned_resolved_field_edge_count": 4151,
+    "owned_type_count": 590,
+    "owned_unresolved_call_edge_count": 104306,
+    "owned_unresolved_field_edge_count": 18246,
+    "recursive_scc_count": 348,
+    "scc_count": 10801,
+    "source_limited_call_edge_count": 0,
+    "source_limited_field_edge_count": 0,
+    "static_data_edge_count": 13463,
+    "type_edge_count": 735,
+    "unresolved_field_edge_count": 26795
+  },
+  "dependency_layer_count": 20,
+  "largest_scc_ids": [
+    "r1-scc_845de9a6a792afcd3a07b3799b8f4016",
+    "r1-scc_bcf38c35ea2b287597df603c11af84fb"
+  ],
+  "largest_scc_method_count": 4,
+  "max_dependency_layer": 19,
+  "ownership_bridges": [
+    {
+      "count": 1,
+      "edge_kind": "field",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "COMPILER_GENERATED"
+    },
+    {
+      "count": 1,
+      "edge_kind": "external_call",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "DOTNET_FRAMEWORK"
+    },
+    {
+      "count": 1,
+      "edge_kind": "field",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "DOTNET_FRAMEWORK"
+    },
+    {
+      "count": 1,
+      "edge_kind": "inheritance",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "DOTNET_FRAMEWORK"
+    },
+    {
+      "count": 1,
+      "edge_kind": "interface",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "DOTNET_FRAMEWORK"
+    },
+    {
+      "count": 1,
+      "edge_kind": "call",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "GAME_FIRST_PARTY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "field",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "GAME_FIRST_PARTY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "inheritance",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "GAME_FIRST_PARTY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "call",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "KAIRO_ENGINE"
+    },
+    {
+      "count": 1,
+      "edge_kind": "field",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "KAIRO_ENGINE"
+    },
+    {
+      "count": 1,
+      "edge_kind": "inheritance",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "KAIRO_ENGINE"
+    },
+    {
+      "count": 1,
+      "edge_kind": "interface",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "KAIRO_ENGINE"
+    },
+    {
+      "count": 1,
+      "edge_kind": "external_call",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "THIRD_PARTY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "field",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "THIRD_PARTY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "interface",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "THIRD_PARTY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "external_call",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "UNITY_BOUNDARY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "field",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "UNITY_BOUNDARY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "inheritance",
+      "source_ownership": "GAME_FIRST_PARTY",
+      "target_ownership": "UNITY_BOUNDARY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "field",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "COMPILER_GENERATED"
+    },
+    {
+      "count": 1,
+      "edge_kind": "inheritance",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "COMPILER_GENERATED"
+    },
+    {
+      "count": 1,
+      "edge_kind": "external_call",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "DOTNET_FRAMEWORK"
+    },
+    {
+      "count": 1,
+      "edge_kind": "field",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "DOTNET_FRAMEWORK"
+    },
+    {
+      "count": 1,
+      "edge_kind": "inheritance",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "DOTNET_FRAMEWORK"
+    },
+    {
+      "count": 1,
+      "edge_kind": "interface",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "DOTNET_FRAMEWORK"
+    },
+    {
+      "count": 1,
+      "edge_kind": "field",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "GAME_FIRST_PARTY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "call",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "KAIRO_ENGINE"
+    },
+    {
+      "count": 1,
+      "edge_kind": "field",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "KAIRO_ENGINE"
+    },
+    {
+      "count": 1,
+      "edge_kind": "inheritance",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "KAIRO_ENGINE"
+    },
+    {
+      "count": 1,
+      "edge_kind": "interface",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "KAIRO_ENGINE"
+    },
+    {
+      "count": 1,
+      "edge_kind": "inheritance",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "SOURCE_LIMITED_OWNERSHIP"
+    },
+    {
+      "count": 1,
+      "edge_kind": "interface",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "SOURCE_LIMITED_OWNERSHIP"
+    },
+    {
+      "count": 1,
+      "edge_kind": "field",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "THIRD_PARTY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "external_call",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "UNITY_BOUNDARY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "field",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "UNITY_BOUNDARY"
+    },
+    {
+      "count": 1,
+      "edge_kind": "inheritance",
+      "source_ownership": "KAIRO_ENGINE",
+      "target_ownership": "UNITY_BOUNDARY"
+    }
+  ],
+  "required_bridge_metrics": {
+    "game_to_kairo_calls": 1786,
+    "kairo_to_game_calls": 0,
+    "native_available_target_methods": 10772,
+    "owned_to_dotnet_edges": 10241,
+    "owned_to_native_edges": 0,
+    "owned_to_third_party_edges": 250,
+    "owned_to_unity_edges": 661
+  },
+  "schema_version": "r1.5-dependency-summary-v1"
+}

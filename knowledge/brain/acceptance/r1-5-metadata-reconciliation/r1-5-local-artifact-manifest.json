@@ -1,0 +1,236 @@
+{
+  "alternate_generated_manifest": [
+    {
+      "path": "analysis/codex-metadata-reader-defect.json",
+      "sha256": "1ed4347ed3ca6192f0f46f9a663a95f6d1f3cb03c98ad829737f53f933fadc89",
+      "size_bytes": 1600
+    },
+    {
+      "path": "analysis/google-r1-defects.json",
+      "sha256": "5416b52c78ba6f08c2c387f7cb52f58bdaf33841f5838beb890083d86b1ad69a",
+      "size_bytes": 17101
+    },
+    {
+      "path": "analysis/r15-reconciliation-summary.json",
+      "sha256": "9888e6bfbc70312a3fa84a045ab7f17a9d6b2cc9a17e7a88ec735c7dad57f011",
+      "size_bytes": 6107
+    },
+    {
+      "path": "analysis/r15-source-gate.json",
+      "sha256": "328816ca011ebd06f2867c31ace261a090f3617a6eccb6275bc9796d68cf604c",
+      "size_bytes": 1496
+    },
+    {
+      "path": "corrected-google/google-r1-core-identity-bridge.json",
+      "sha256": "6d7b740f9f7683f566f43c0883cf1fac85489504641045f3d8318dba71d478a4",
+      "size_bytes": 540815
+    },
+    {
+      "path": "corrected-google/google-r1-corrected-assembly-catalog.json",
+      "sha256": "6d09dd15fb940facd5d1fc743c0b521c163cbed612958c466176abb2b9724804",
+      "size_bytes": 18680
+    },
+    {
+      "path": "corrected-google/google-r1-corrected-method-metadata.jsonl",
+      "sha256": "a537d5963323b017b45ae6c0be79a343d4cb2666fd41244f86facf5a5b4e1723",
+      "size_bytes": 38127629
+    },
+    {
+      "path": "corrected-google/google-r1-corrected-type-metadata.jsonl",
+      "sha256": "3d5ba4a87b94de17884c8383e1a32adccf93be04a725a8240741241502ce638a",
+      "size_bytes": 3266988
+    }
+  ],
+  "alternate_heavy_root": "D:\\antigravity\\test open ai\\artifacts\\r1-5-metadata-reconciliation-alternate",
+  "canonical_artifact_manifest": {
+    "artifact_root": "D:\\antigravity\\test open ai\\artifacts\\r1-5-metadata-reconciliation",
+    "builder_version": "r1.5-metadata-reconciliation-builder-v1",
+    "file_count": 32,
+    "files": [
+      {
+        "bytes": 5091,
+        "path": "R1_WHOLE_CORPUS_INDEX_REPORT.md",
+        "sha256": "d9f53eeda79f6d609f8c3dbc33becead20d0645064472679c088c83ea93acbf7"
+      },
+      {
+        "bytes": 3583993,
+        "path": "ambiguous-call-edges.jsonl",
+        "record_count": 5306,
+        "sha256": "41bcd648a3d688e5bf8015f109a2fbd4ebb1f52e2a41aff43272376f90c886d0"
+      },
+      {
+        "bytes": 86128,
+        "path": "assembly-catalog.json",
+        "sha256": "96b7c07454487e7bb1985999b7aefccef1cdb281deb3a496279dc440a96d6e7a"
+      },
+      {
+        "bytes": 4886,
+        "path": "bridge-summary.json",
+        "sha256": "0563b68bd7180e96aba3cf9f24f99bf3822557daf945a08dac7a705b723f7f59"
+      },
+      {
+        "bytes": 7952500,
+        "path": "call-edges.jsonl",
+        "record_count": 13512,
+        "sha256": "c593c281f087de78f8cbd2ca40119c82c3189eb118477fd23e6ac36d13b48d60"
+      },
+      {
+        "bytes": 873,
+        "path": "checkpoint-ledger.json",
+        "sha256": "17e4f7daf091ba6990f6b1474e497a4354fcfae0cee79de4e0f0cadab240279b"
+      },
+      {
+        "bytes": 5386,
+        "path": "core-nine-validation.json",
+        "sha256": "6bcf6a28a95d3783738f7e970173dcb560c3345bc0007d8895c397fb453d63a9"
+      },
+      {
+        "bytes": 1934078,
+        "path": "dependency-layers.jsonl",
+        "record_count": 10801,
+        "sha256": "f13f108c589cb3dd2cd9f8e07c2112d170ff3e34ed2482d6565ba51a20be1e6c"
+      },
+      {
+        "bytes": 741,
+        "path": "dependency-summary.json",
+        "sha256": "252ec32b064c3a5158f65d5e1246b27131bee389cab24f26d1f305df4f20ffb8"
+      },
+      {
+        "bytes": 83513571,
+        "path": "external-edges.jsonl",
+        "record_count": 145075,
+        "sha256": "f7e79c6a03df691c34bb2cc0a65dc142a61fd46fb3c3686ab629f991b08fa944"
+      },
+      {
+        "bytes": 5417818,
+        "path": "external-resolved-call-edges.jsonl",
+        "record_count": 8668,
+        "sha256": "7435d083e7958e7ccdaa7073ec76a3fa42d502a4d76c7b37840a09905da8631f"
+      },
+      {
+        "bytes": 19240667,
+        "path": "field-catalog.jsonl",
+        "record_count": 40668,
+        "sha256": "07038b4c2e964061f9c6af7c67e50451fdff26b00931017ccdd3c2135049c139"
+      },
+      {
+        "bytes": 3006220,
+        "path": "field-edges.jsonl",
+        "record_count": 6129,
+        "sha256": "d2621de22a361b22f1e5aedb7efdac23feea693ad1cbf44b9bd72cfbc5ccacb6"
+      },
+      {
+        "bytes": 226,
+        "path": "isil-summary.json",
+        "sha256": "8505207baafebfefe1e42d1592bcd684c0b3ad9c1f0545957705d84a93d2e6e4"
+      },
+      {
+        "bytes": 50383519,
+        "path": "metadata-method-catalog.jsonl",
+        "record_count": 62945,
+        "sha256": "ada36e0b6fff6e1c80975a4f1338797a6c8fa9fa81a20e5934921f01298bfaf4"
+      },
+      {
+        "bytes": 44892887,
+        "path": "method-catalog.jsonl",
+        "record_count": 10827,
+        "sha256": "c3cd95a383af7ac906bca36f3727eca79a40b6d8f61ad1dabe8720da20e7ffca"
+      },
+      {
+        "bytes": 1691,
+        "path": "method-summary.json",
+        "sha256": "41274cdf189ed547e832fdcbfcc6f6f56b9969f7c44fcb063bb9bfe0de0f99da"
+      },
+      {
+        "bytes": 57993325,
+        "path": "owned-unresolved-call-edges.jsonl",
+        "record_count": 104306,
+        "sha256": "eeca304627c07c17354437a9abb8c49197ce20233e2727e10611e407941f4bb2"
+      },
+      {
+        "bytes": 317872,
+        "path": "ownership-summary.json",
+        "sha256": "d70dff587d0c1a4e863fe81cd3838be0fedfa2468d3d5f6b975168e61a17ecbe"
+      },
+      {
+        "bytes": 5966666,
+        "path": "repair-queue.jsonl",
+        "record_count": 10827,
+        "sha256": "f01ffb6f2eb17bf9eafc79b23395f2656ab27e40721450e21a948f290a203a86"
+      },
+      {
+        "bytes": 1226,
+        "path": "repair-summary.json",
+        "sha256": "b1660e18c5c8ed415fd9d9643346af02e485354954d2d5ae83a92192e5faa3d1"
+      },
+      {
+        "bytes": 3583461,
+        "path": "scc-summary.json",
+        "sha256": "8b2f5664f07fb4fa2407c5f45734fa6db3326b369b01e0f39356552d2b09ad61"
+      },
+      {
+        "bytes": 40,
+        "path": "source-cache-version.json",
+        "sha256": "cd7d2745e25b3bef0d9f382ef1eae2016c28d4eceb592e1ae776173fe0015617"
+      },
+      {
+        "bytes": 98894256,
+        "path": "source-cache.json",
+        "sha256": "61a000e30413977bcf818de56460e552cf522c2cbac791c828014195fc019949"
+      },
+      {
+        "bytes": 1098987,
+        "path": "source-file-manifest.json",
+        "sha256": "24c5dc1222dee5c196aed024a9346534f294f77101cc3448b4606688495dd760"
+      },
+      {
+        "bytes": 5768,
+        "path": "source-gate.json",
+        "sha256": "bbe2b6aea23b36a4036314a47b6634ece2a2a64a3830360f847b9aff19dff8e8"
+      },
+      {
+        "bytes": 0,
+        "path": "source-limited-call-edges.jsonl",
+        "record_count": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 4408079,
+        "path": "static-data-edges.jsonl",
+        "record_count": 13463,
+        "sha256": "2122a44d3bc4c89288ee7661c0b5c5d0543461dda9a0177ad03396eca21e5691"
+      },
+      {
+        "bytes": 7303398,
+        "path": "type-catalog.jsonl",
+        "record_count": 8373,
+        "sha256": "9026c8f653918983bbb51d6a15d0f5e0bf88716cc1e9709d1061d215e04a27bc"
+      },
+      {
+        "bytes": 280591,
+        "path": "type-edges.jsonl",
+        "record_count": 735,
+        "sha256": "b391f1c1ca7b49011cf0c1e0cccf2466b8d21aeaa74613b644e43a806ad3a6f4"
+      },
+      {
+        "bytes": 16241624,
+        "path": "unresolved-field-edges.jsonl",
+        "record_count": 26795,
+        "sha256": "f30239eb3e4bc2eec48287dfaebb25c26729432df2e5b94347fdc2f824848088"
+      },
+      {
+        "bytes": 1301,
+        "path": "validation.json",
+        "sha256": "029720dc8001a0e623a36f21fcbb360abf89858a583813891fed1a93d5084b77"
+      }
+    ],
+    "schema_version": "r1.5-metadata-reconciliation-v1",
+    "self_excluded_from_tree": true,
+    "tree_sha256": "0e4831a968b032733f5c679991a21bf6a7487eda5439140f2201ac91fe36140c"
+  },
+  "canonical_heavy_root": "D:\\antigravity\\test open ai\\artifacts\\r1-5-metadata-reconciliation",
+  "evidence_pack_zip_sha256": "925dfbe31acfc481c3f1d01192c47cacec219f81e2642aab7fa1c058fa9d6433",
+  "repeat_artifact_tree_sha256": "0e4831a968b032733f5c679991a21bf6a7487eda5439140f2201ac91fe36140c",
+  "repeat_heavy_root": "D:\\antigravity\\test open ai\\artifacts\\r1-5-metadata-reconciliation-repeat",
+  "schema_version": "r1.5-local-artifact-manifest-v1"
+}

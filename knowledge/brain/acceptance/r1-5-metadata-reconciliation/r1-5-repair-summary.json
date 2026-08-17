@@ -1,0 +1,60 @@
+{
+  "canonical_summary": {
+    "disposition_contract": {
+      "CFG_REPAIR": "CFG_REPAIR",
+      "CLEAN": "VERIFY_ONLY",
+      "NATIVE_BOUNDARY": "EXTERNAL_BOUNDARY",
+      "NATIVE_LIFT_REQUIRED": "ISIL_ASSISTED_REPAIR when ISIL exists, otherwise NATIVE_LIFT",
+      "SOURCE_LIMITED": "SOURCE_LIMITED",
+      "STATIC_DATA_REPAIR": "AUTO_STATIC_DATA_REPAIR",
+      "TYPE_REPAIR": "AUTO_TYPE_REPAIR"
+    },
+    "native_available_for_native_required_count": 4980,
+    "native_required_count": 4997,
+    "priority_counts": {
+      "0": 4997,
+      "1": 3312,
+      "2": 41,
+      "3": 2477
+    },
+    "quality_class_counts": {
+      "CFG_REPAIR": 2856,
+      "CLEAN": 2477,
+      "NATIVE_LIFT_REQUIRED": 4997,
+      "SOURCE_LIMITED": 41,
+      "STATIC_DATA_REPAIR": 27,
+      "TYPE_REPAIR": 429
+    },
+    "queue_id_unique": true,
+    "queue_method_count": 10827,
+    "repair_disposition_counts": {
+      "AUTO_STATIC_DATA_REPAIR": 27,
+      "AUTO_TYPE_REPAIR": 429,
+      "CFG_REPAIR": 2856,
+      "ISIL_ASSISTED_REPAIR": 4997,
+      "SOURCE_LIMITED": 41,
+      "VERIFY_ONLY": 2477
+    },
+    "repaired_body_count": 0,
+    "schema_version": "r1.5-metadata-reconciliation-v1",
+    "source_limited_count": 41,
+    "verification_status_counts": {
+      "BASELINE_READABLE": 2477,
+      "NEEDS_REPAIR": 8309,
+      "SOURCE_LIMITED": 41
+    }
+  },
+  "metadata_total_method_count": 62945,
+  "metadata_total_type_count": 8373,
+  "queue_covers_target_exactly": true,
+  "repaired_body_count": 0,
+  "schema_version": "r1.5-repair-summary-v1",
+  "source_match_status_counts": {
+    "AMBIGUOUS_SOURCE_KEY": 174,
+    "EXACT_TYPE": 8619,
+    "MISSING": 2032,
+    "SHORT_TYPE": 2
+  },
+  "target_method_count": 10827,
+  "target_type_count": 641
+}

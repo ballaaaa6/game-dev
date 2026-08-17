@@ -1,0 +1,34 @@
+{
+  "call_counts": {
+    "ambiguous_calls": 5306,
+    "external_resolved_calls": 8668,
+    "owned_unresolved_calls": 104306,
+    "source_limited_calls": 0
+  },
+  "classification_vocabularies": {
+    "calls": [
+      "OWNED_RESOLVED_CALL",
+      "EXTERNAL_RESOLVED_CALL",
+      "OWNED_UNRESOLVED_CALL",
+      "AMBIGUOUS_CALL",
+      "SOURCE_LIMITED_CALL"
+    ],
+    "fields": [
+      "OWNED_RESOLVED_FIELD",
+      "EXTERNAL_RESOLVED_FIELD",
+      "OWNED_UNRESOLVED_FIELD",
+      "AMBIGUOUS_FIELD",
+      "SOURCE_LIMITED_FIELD"
+    ]
+  },
+  "external_edge_union_count": 145075,
+  "field_counts": {
+    "ambiguous_fields": 8549,
+    "external_resolved_fields": 1978,
+    "owned_resolved_fields": 4151,
+    "owned_unresolved_fields": 18246,
+    "source_limited_fields": 0,
+    "unresolved_fields": 26795
+  },
+  "schema_version": "r1.5-unresolved-edge-summary-v1"
+}

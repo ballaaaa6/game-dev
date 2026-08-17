@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "alternate_raw_hashes": true,
+    "alternate_reconciliation_classified": true,
+    "builder_validation": true,
+    "core_identity": true,
+    "dependency_split_measured": true,
+    "determinism": true,
+    "metadata_reader_audit": true,
+    "no_repaired_bodies": true,
+    "queue_complete": true,
+    "repeat_builder_validation": true,
+    "source_gate": true
+  },
+  "counts": {
+    "alternate_methods": 62943,
+    "alternate_types": 8372,
+    "canonical_metadata_methods": 62945,
+    "canonical_target_methods": 10827,
+    "canonical_types": 8373
+  },
+  "failed_checks": [],
+  "schema_version": "r1.5-validation-v1",
+  "status": "PASS"
+}

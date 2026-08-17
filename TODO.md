@@ -1,6 +1,17 @@
 # TODO
 
+## R1.5 metadata identity reconciliation and repair-universe correction — closed (2026-08-17)
+
+- [x] Read and unpack `R1_5_METADATA_RECONCILIATION_EVIDENCE_PACK.zip`; verify the pinned project source identities and retain only raw alternate dump/script/DummyDll evidence as cross-check inputs.
+- [x] Confirm and fix the dnfile metadata table first-row defect (`table[1:]` versus the full 0-based table sequence), then audit RID/token/list conversions.
+- [x] Rebuild the canonical whole-corpus metadata/type/method/field catalogs, ownership taxonomy, source/R0/ISIL joins, compiler-generated exclusions, complete 641-type / 10,827-method target universe, repair queue, and dependency graph.
+- [x] Reconcile all 64 metadata-present assemblies against the alternate dump with explicit MATCH, REPRESENTATION_DIFFERENCE, DUMPER_VERSION_DIFFERENCE, and GENERATED_TYPE_NAMING_DIFFERENCE classifications; close the core-nine identity gate with Node = 3 methods.
+- [x] Measure explicit resolved/unresolved/ambiguous call and field splits, validate deterministic rerun and artifact manifests, and confirm zero repaired C# bodies.
+- [x] Mark the pre-R1.5 R1 counts, IDs, repair queue, and graph `SUPERSEDED_BY_R1_5_METADATA_RECONCILIATION`; publish the compact package under `knowledge/brain/acceptance/r1-5-metadata-reconciliation/` and stop before `R2_AUTOMATED_WHOLE_CORPUS_REPAIR`.
+
 ## R1 whole-corpus ownership index and repair queue — closed (2026-08-17)
+
+The pre-R1.5 R1 metadata universe remains retained for audit history but is superseded by the corrected R1.5 metadata identities and queue. Do not use its counts, IDs, repair queue, or graph for future repair work.
 
 - [x] Read the pinned R1 task and complete the source identity gate for the APK, C# archive, libil2cpp, and global-metadata inputs.
 - [x] Build the assembly-first DummyDll inventory, exact ownership taxonomy, namespace/path exception records, and explicit scripting-assembly boundary rows.

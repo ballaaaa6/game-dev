@@ -1,20 +1,34 @@
 # Project State
 
-## Current Status — R1 whole-corpus index complete (2026-08-17)
+## Current Status — R1.5 metadata reconciliation complete (2026-08-17)
 
 ## Git-visible current gate
 
-- `current_phase`: `R1_WHOLE_CORPUS_INDEX`
-- `status`: `PASS_R1_WHOLE_CORPUS_INDEX`
-- `R1`: `PASS`
+- `current_phase`: `R1_5_METADATA_RECONCILIATION`
+- `status`: `PASS_R1_5_METADATA_IDENTITY_RECONCILIATION_AND_REPAIR_UNIVERSE_CORRECTION_CLOSED`
+- `R1.5`: `PASS`
+- `R1`: `PASS — superseded by corrected R1.5 metadata identities`
 - `V8`: `PASS (prior completed phase)`
 - `live_room0`: `true`
 - `autonomous_no_task_living`: `true`
 - `required_visual_fallback_count`: `0`
-- `next_authorized_phase`: `R2_CORE_CSHARP_REPAIR`
+- `next_authorized_phase`: `R2_AUTOMATED_WHOLE_CORPUS_REPAIR`
 - `next_phase_started`: `false`
 
+## R1.5 metadata identity reconciliation and repair-universe correction — complete (2026-08-17)
+
+- Pinned source identity and the attached alternate evidence-pack hashes pass. The evidence pack is `D:/downloads/R1_5_METADATA_RECONCILIATION_EVIDENCE_PACK.zip`; its raw `dump.cs`, `script.json`, and selected DummyDll files are retained as cross-check evidence only. Original Google-derived catalogs remain non-canonical.
+- The dnfile contract was confirmed: bracket table indexing is 0-based while RID lookup is 1-based. The old `table[1:]` path discarded the first real metadata row; the corrected builder now consumes the full table sequence and audits every RID/token/list conversion.
+- Corrected canonical metadata contains 64 metadata-present assemblies, 8,373 types, 62,945 methods, and 40,668 fields. The corrected target universe is 641 types and 10,827 methods: 198 GAME_FIRST_PARTY types / 4,547 methods and 443 KAIRO_ENGINE types / 6,280 methods. The complete queue covers every target method exactly once; repaired C# bodies remain `0`.
+- All 64 assemblies were compared with the independent alternate dump: canonical/alternate totals are 8,373/8,372 types and 62,945/62,943 methods. Discrepancies are explicit: 25 DUMPER_VERSION_DIFFERENCE, 1 GENERATED_TYPE_NAMING_DIFFERENCE, 35 REPRESENTATION_DIFFERENCE, and 3 MATCH rows for both type and method comparisons.
+- Core-nine identity is PASS, including normal `main.AppData`, normal `form.GameForm`, and `game.routeSearch.Node` with 3 methods. Ownership, source/R0/ISIL joins, and compiler-generated exclusion were rebuilt after the metadata correction.
+- The corrected dependency split is explicit: 13,512 owned-resolved calls, 8,668 external-resolved calls, 104,306 owned-unresolved calls, 5,306 ambiguous calls, 4,151 owned-resolved fields, 1,978 external-resolved fields, 18,246 owned-unresolved fields, 8,549 ambiguous fields, 10,801 SCCs, 348 recursive SCCs, largest SCC 4 methods, and 19 dependency layers.
+- Deterministic rerun, builder validation, source gate, alternate reconciliation, core identity, queue coverage, dependency split, and no-body-repair gates pass. R2, native lifting, runtime/Unity, integrations, persistence/backend, deployment, and source-root mutation remain outside this phase.
+- Heavy corrected catalogs are local-only under `artifacts/r1-5-metadata-reconciliation/`. The compact accepted package and report are under `knowledge/brain/acceptance/r1-5-metadata-reconciliation/`.
+
 ## R1 whole-corpus ownership index and repair queue — complete (2026-08-17)
+
+The R1 architecture remains accepted, but its pre-R1.5 canonical metadata counts, IDs, repair queue, and graph are explicitly `SUPERSEDED_BY_R1_5_METADATA_RECONCILIATION` because of the confirmed metadata table first-row defect. Future repair work must consume only the corrected R1.5 queue.
 
 - Pinned APK, C# archive, libil2cpp, and global-metadata identities: MATCH.
 - The source gate measured 5,568 files, 5,504 C# files, 64 project files, 55,358,557 C# bytes, and retained all three zero-byte C# files.

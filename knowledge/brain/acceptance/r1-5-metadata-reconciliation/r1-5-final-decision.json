@@ -1,0 +1,19 @@
+{
+  "alternate_cross_check": "PASS",
+  "core_nine": "PASS",
+  "decision": "PASS_R1_5_METADATA_IDENTITY_RECONCILIATION_AND_REPAIR_UNIVERSE_CORRECTION_CLOSED",
+  "dependency_split": "PASS",
+  "determinism": "PASS",
+  "metadata_reader": "PASS",
+  "native_lifting": false,
+  "next_recommended_phase": "R2_AUTOMATED_WHOLE_CORPUS_REPAIR",
+  "ownership": "PASS",
+  "r2_started": false,
+  "repair_queue": "PASS",
+  "repaired_csharp_bodies": false,
+  "runtime_or_unity_work": false,
+  "schema_version": "r1.5-final-decision-v1",
+  "source_identity": "MATCH",
+  "stop_before_next_phase": true,
+  "v8_changed": false
+}
