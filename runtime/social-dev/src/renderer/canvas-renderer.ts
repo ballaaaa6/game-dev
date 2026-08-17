@@ -1,9 +1,10 @@
 import type { CameraCoordinateContract } from "../catalog/types";
 import type { RuntimeCatalogs } from "../catalog/load-contracts";
 import type { SimulationState } from "../core/types";
-import { actorDisplayFrame, furnitureFrameForScene, type LoadedDisplayAssets } from "../assets/display-assets";
+import { actorDisplayFrame, furnitureDisplayFrame, furnitureFrameForScene, type LoadedDisplayAssets } from "../assets/display-assets";
 import {
   characterDisplayFrame,
+  characterDisplayFrameForSelector,
   characterFrameRecordAssetId,
   getCachedCharacterImage,
 } from "../assets/character-assets";
@@ -17,6 +18,9 @@ import {
   emptyFinalVisibilityDiagnostics,
   type VisibilityTracker,
 } from "./visibility";
+import { compileV8Room0Commands, type V8RoomCommand, type V8RoomCommandPlan } from "../v8/command-compiler";
+import { isDrawableFukidashi } from "../v8/fukidashi";
+import type { V8LiveSnapshot, V8VisualStaff } from "../v8/contracts";
 
 const ACTOR_COLORS = ["#66c4ff", "#ff9e76", "#a78bfa", "#72dfae", "#f7d26d"] as const;
 
@@ -541,6 +545,443 @@ function drawFurnitureAtCell(
   }
 }
 
+function drawV8FurniturePartAtPoint(
+  context: CanvasRenderingContext2D,
+  objectId: string,
+  point: { readonly x: number; readonly y: number },
+  cell: readonly [number, number],
+  frameNumber: number,
+  part: "main" | "sub",
+  assets: LoadedDisplayAssets | null,
+  diagnostics: MutableRenderDiagnostics,
+  visibility?: VisibilityTracker | null,
+  traceId = objectId,
+): boolean {
+  const display = furnitureDisplayFrame(objectId, frameNumber);
+  const record = part === "main" ? display?.frame : display?.subFrame;
+  const assetId = part === "main" ? display?.imageAssetId : display?.subImageAssetId;
+  const image = assetId ? assets?.images.get(assetId) : undefined;
+  const fits = Boolean(
+    record
+    && image
+    && record.source_x >= 0
+    && record.source_y >= 0
+    && record.width > 0
+    && record.height > 0
+    && record.source_x + record.width <= (image.naturalWidth || image.width)
+    && record.source_y + record.height <= (image.naturalHeight || image.height),
+  );
+  if (!record || !image || !fits) {
+    diagnostics.render_trace.push({
+      pass_id: "object-chip-primary",
+      native_method: "ObjChip.Draw",
+      source_id: traceId,
+      asset_id: assetId ?? null,
+      cell: [cell[0], cell[1]],
+      status: "pending_approved_furniture_asset",
+    });
+    return false;
+  }
+  context.save();
+  context.imageSmoothingEnabled = false;
+  context.drawImage(
+    image,
+    record.source_x,
+    record.source_y,
+    record.width,
+    record.height,
+    point.x + record.destination_x,
+    point.y + record.destination_y,
+    record.width,
+    record.height,
+  );
+  context.restore();
+  visibility?.drawImage(traceId, image, {
+    source_x: record.source_x,
+    source_y: record.source_y,
+    source_width: record.width,
+    source_height: record.height,
+    destination_x: point.x + record.destination_x,
+    destination_y: point.y + record.destination_y,
+    width: record.width,
+    height: record.height,
+  });
+  diagnostics.render_trace.push({
+    pass_id: "object-chip-primary",
+    native_method: "ObjChip.Draw",
+    source_id: traceId,
+    asset_id: assetId ?? null,
+    cell: [cell[0], cell[1]],
+    status: part === "main" ? "approved_furniture_asset_draw" : "approved_furniture_subframe_draw",
+  });
+  return true;
+}
+
+function drawV8Staff(
+  context: CanvasRenderingContext2D,
+  staff: V8VisualStaff,
+  camera: CameraCoordinateContract,
+  catalogs: RuntimeCatalogs,
+  assets: LoadedDisplayAssets | null,
+  diagnostics: MutableRenderDiagnostics,
+  visibility?: VisibilityTracker | null,
+  passId: "avatar-primary" | "object-chip-primary" = "avatar-primary",
+): void {
+  const point = actorToCanvas(staff.world, camera);
+  const frame = characterDisplayFrameForSelector(
+    catalogs,
+    staff.actorId,
+    staff.action,
+    staff.direction,
+    staff.selectorId,
+    staff.frame,
+  );
+  if (!staff.visible) {
+    diagnostics.render_trace.push({
+      pass_id: passId,
+      native_method: "Staff.Draw skipped alpha/state guard",
+      source_id: staff.actorId,
+      asset_id: frame?.imageAssetId ?? null,
+      cell: [staff.cell[0], staff.cell[1]],
+      status: "staff_not_visible",
+    });
+    return;
+  }
+  const images = frame
+    ? frame.records.map((record) => ({ record, assetId: characterFrameRecordAssetId(record, frame.imageAssetId) }))
+    : [];
+  const ready = Boolean(frame && images.length > 0 && images.every(({ assetId }) => Boolean(assetId && getCachedCharacterImage(assetId))));
+  if (ready && frame) {
+    context.save();
+    context.globalAlpha = Math.max(0, Math.min(255, staff.alpha)) / 255;
+    context.fillStyle = "rgba(0, 0, 0, 0.30)";
+    context.beginPath();
+    context.ellipse(point.x, point.y + 16, 15, 5, 0, 0, Math.PI * 2);
+    context.fill();
+    context.imageSmoothingEnabled = false;
+    for (const { record, assetId } of images) {
+      const image = assetId ? getCachedCharacterImage(assetId) : undefined;
+      if (!image) continue;
+      context.drawImage(
+        image,
+        record.source_x,
+        record.source_y,
+        record.width,
+        record.height,
+        point.x + record.destination_x,
+        point.y + record.destination_y,
+        record.width,
+        record.height,
+      );
+      visibility?.drawImage(staff.actorId, image, {
+        source_x: record.source_x,
+        source_y: record.source_y,
+        source_width: record.width,
+        source_height: record.height,
+        destination_x: point.x + record.destination_x,
+        destination_y: point.y + record.destination_y,
+        width: record.width,
+        height: record.height,
+      });
+    }
+    context.restore();
+    diagnostics.render_trace.push({
+      pass_id: passId,
+      native_method: "Staff.Draw",
+      source_id: staff.actorId,
+      asset_id: frame.imageAssetId,
+      cell: [staff.cell[0], staff.cell[1]],
+      status: "approved_full_catalog_character_draw",
+    });
+  } else {
+    diagnostics.render_trace.push({
+      pass_id: passId,
+      native_method: "Staff.Draw",
+      source_id: staff.actorId,
+      asset_id: frame?.imageAssetId ?? null,
+      cell: [staff.cell[0], staff.cell[1]],
+      status: frame ? "pending_full_catalog_character_asset" : "unresolved_full_catalog_character_selector",
+    });
+  }
+  if (isDrawableFukidashi(staff.fukidashi)) {
+    const payload = staff.fukidashi;
+    const bubbleX = point.x + 18;
+    // Staff.DrawFukidashi_ passes the Staff position plus offsetY with the
+    // native y-minus-20 anchor; the local bubble chrome extends above that
+    // anchor without changing the source-backed placement.
+    const fukidashiAnchorY = point.y + payload.offsetY - 20;
+    const bubbleY = fukidashiAnchorY - 26;
+    context.save();
+    context.globalAlpha = 1;
+    context.font = "11px ui-sans-serif, system-ui, sans-serif";
+    const width = Math.max(70, Math.min(190, context.measureText(payload.text).width + 22));
+    roundedRect(context, bubbleX, bubbleY, width, 28, 8);
+    context.fillStyle = "rgba(245, 250, 255, 0.96)";
+    context.fill();
+    context.fillStyle = "#1a2738";
+    context.textAlign = "left";
+    context.textBaseline = "middle";
+    context.fillText(payload.text, bubbleX + 10, bubbleY + 14);
+    context.restore();
+    diagnostics.render_trace.push({
+      pass_id: passId === "object-chip-primary" ? "object-chip-primary" : "avatar-secondary",
+      native_method: "Staff.DrawFukidashi_",
+      source_id: `${staff.actorId}:fukidashi:${payload.id}`,
+      asset_id: null,
+      cell: [staff.cell[0], staff.cell[1]],
+      status: "approved_fukidashi_payload_draw",
+    });
+  }
+}
+
+function liveFurnitureFrame(
+  state: SimulationState,
+  objectId: string,
+  cell: readonly [number, number],
+): number {
+  const furnitureDataId = Number(objectId.split(":")[1]);
+  const furniture = state.living.room.furniture.find((item) =>
+    item.furnitureDataId === furnitureDataId
+    && item.cell[0] === cell[0]
+    && item.cell[1] === cell[1]
+    && !item.removed,
+  );
+  return furniture?.useFrame ?? 0;
+}
+
+function v8PrimaryDrawables(
+  context: CanvasRenderingContext2D,
+  projection: SceneProjection,
+  plan: V8RoomCommandPlan,
+  state: SimulationState,
+  camera: CameraCoordinateContract,
+  assets: LoadedDisplayAssets | null,
+  catalogs: RuntimeCatalogs,
+  diagnostics: MutableRenderDiagnostics,
+  visibility?: VisibilityTracker | null,
+): WorldDrawable[] {
+  const commands = plan.passes.find((pass) => pass.id === "object-chip-primary")?.commands ?? [];
+  const drawables: WorldDrawable[] = [];
+  for (const command of commands) {
+    if (!command.cell) continue;
+    const cell = [command.cell[0], command.cell[1]] as const;
+    if (command.kind === "structural_facility") {
+      const facility = projection.structuralFacilities.find((candidate) => candidate.id === command.id);
+      if (!facility) continue;
+      drawables.push({
+        depth: cellDepth(cell),
+        layer: command.layer,
+        key: command.id,
+        cell,
+        draw: () => drawStructuralFacilityAtAnchor(context, facility, camera, assets, diagnostics, visibility),
+      });
+      continue;
+    }
+    if (command.kind === "furniture" && command.objectId) {
+      const nestedWorkstation = command.objectId === "furniture:3"
+        ? plan.passes
+            .find((pass) => pass.id === "object-chip-primary")
+            ?.commands.find((candidate) => candidate.kind === "workstation" && candidate.cell?.[0] === cell[0] && candidate.cell?.[1] === cell[1])
+        : undefined;
+      const nestedAtCell = Boolean(nestedWorkstation);
+      const deskDrawnInWorkstation = nestedWorkstation?.workstation?.rawDirection === 3;
+      if (deskDrawnInWorkstation) continue;
+      drawables.push({
+        depth: cellDepth(cell),
+        layer: command.layer,
+        key: command.id,
+        cell,
+        draw: () => {
+          diagnostics.furniture_draw_attempts += 1;
+          diagnostics.furniture_draw_attempt_ids.push(command.id);
+          const frame = liveFurnitureFrame(state, command.objectId!, cell);
+          if (drawV8FurniturePartAtPoint(
+            context,
+            command.objectId!,
+            objectToCanvas(cell, camera),
+            cell,
+            frame,
+            "main",
+            assets,
+            diagnostics,
+            visibility,
+            command.id,
+          )) {
+            diagnostics.furniture_asset_draws += 1;
+          }
+          if (!nestedAtCell && command.objectId === "furniture:3") {
+            if (drawV8FurniturePartAtPoint(
+              context,
+              command.objectId,
+              objectToCanvas(cell, camera),
+              cell,
+              0,
+              "sub",
+              assets,
+              diagnostics,
+              visibility,
+              `${command.id}:sub`,
+            )) {
+              diagnostics.furniture_subframe_draws += 1;
+            }
+          }
+        },
+      });
+      continue;
+    }
+    if (command.kind === "workstation" && command.workstation) {
+      const workstation = command.workstation;
+      const staffCommand = workstation.commands.find((item) => item.kind === "staff");
+      const nestedStaff = staffCommand
+        ? state.v8?.staffs.find((candidate) => candidate.actorId === staffCommand.id)
+        : undefined;
+      if (!nestedStaff) continue;
+      drawables.push({
+        depth: cellDepth(cell),
+        layer: command.layer,
+        key: command.id,
+        cell,
+        draw: () => {
+          const point = objectToCanvas(cell, camera);
+          for (const item of workstation.commands) {
+            if (item.kind === "furniture") {
+              // Raw direction 2 keeps the desk in the enclosing primary
+              // object command; only raw direction 3 emits it at the native
+              // post-Staff position.
+              if (workstation.rawDirection !== 3) continue;
+              diagnostics.furniture_draw_attempts += 1;
+              const deskVisibilityId = `furniture:3@${cell[0]}:${cell[1]}`;
+              diagnostics.furniture_draw_attempt_ids.push(deskVisibilityId);
+              const frame = liveFurnitureFrame(state, "furniture:3", cell);
+              if (drawV8FurniturePartAtPoint(
+                context,
+                "furniture:3",
+                point,
+                cell,
+                frame,
+                "main",
+                assets,
+                diagnostics,
+                visibility,
+                deskVisibilityId,
+              )) {
+                diagnostics.furniture_asset_draws += 1;
+              }
+              continue;
+            }
+            if (item.kind === "chair") {
+              if (drawV8FurniturePartAtPoint(
+                context,
+                "furniture:3",
+                point,
+                cell,
+                item.frame ?? 0,
+                "sub",
+                assets,
+                diagnostics,
+                visibility,
+                `${command.id}:chair:${item.frame ?? 0}`,
+              )) {
+                diagnostics.furniture_subframe_draws += 1;
+              }
+              continue;
+            }
+            drawV8Staff(context, nestedStaff, camera, catalogs, assets, diagnostics, visibility, "object-chip-primary");
+          }
+        },
+      });
+      continue;
+    }
+  }
+  return drawables;
+}
+
+function v8AvatarDrawables(
+  context: CanvasRenderingContext2D,
+  plan: V8RoomCommandPlan,
+  camera: CameraCoordinateContract,
+  catalogs: RuntimeCatalogs,
+  assets: LoadedDisplayAssets | null,
+  diagnostics: MutableRenderDiagnostics,
+  visibility?: VisibilityTracker | null,
+): WorldDrawable[] {
+  const commands = plan.passes.find((pass) => pass.id === "avatar-primary")?.commands ?? [];
+  return commands
+    .filter((command): command is V8RoomCommand & { readonly staff: V8VisualStaff; readonly cell: readonly [number, number] } => Boolean(command.staff && command.cell))
+    .map((command) => ({
+      depth: cellDepth(command.cell),
+      layer: command.layer,
+      key: command.id,
+      cell: command.cell,
+      draw: () => drawV8Staff(context, command.staff, camera, catalogs, assets, diagnostics, visibility),
+    }));
+}
+
+function renderV8Room0(
+  context: CanvasRenderingContext2D,
+  projection: SceneProjection,
+  state: SimulationState,
+  camera: CameraCoordinateContract,
+  assets: LoadedDisplayAssets | null,
+  catalogs: RuntimeCatalogs,
+  diagnostics: MutableRenderDiagnostics,
+  visibility: VisibilityTracker | null,
+): void {
+  if (!state.v8) throw new Error("V8 Room0 render requires V8 visual state");
+  const plan = compileV8Room0Commands(catalogs, projection, state.v8);
+  const foregroundWallCells = resolveForegroundWallCells(projection, catalogs);
+  const wallDrawables = objectChipWallDrawables(
+    context,
+    projection,
+    camera,
+    assets,
+    diagnostics,
+    visibility,
+    foregroundWallCells,
+  );
+  const primaryDrawables = v8PrimaryDrawables(context, projection, plan, state, camera, assets, catalogs, diagnostics, visibility);
+  const avatarDrawablesV8 = v8AvatarDrawables(context, plan, camera, catalogs, assets, diagnostics, visibility);
+  for (const pass of plan.passes) {
+    diagnostics.render_trace.push({
+      pass_id: pass.id,
+      native_method: pass.id,
+      source_id: `pass:${projection.sceneId}:${pass.id}`,
+      asset_id: null,
+      cell: null,
+      status: "pass_enter",
+    });
+    let drawables: readonly WorldDrawable[] = [];
+    switch (pass.id) {
+      case "map-extension-floor":
+        drawMapImages(context, projection, camera, assets, false, diagnostics, "map-chip", visibility);
+        drawMapImages(context, projection, camera, assets, true, diagnostics, "map-floor", visibility);
+        drawables = sortedDrawables(mapExtensionWallDrawables(context, projection, camera, assets, diagnostics, visibility));
+        break;
+      case "object-chip-primary":
+        drawables = sortedDrawables([...wallDrawables, ...primaryDrawables]);
+        break;
+      case "avatar-primary":
+        drawables = sortedDrawables(avatarDrawablesV8);
+        break;
+      case "object-chip-late":
+        drawables = sortedDrawables(nativeSceneDrawables(
+          context,
+          projection,
+          camera,
+          assets,
+          "object-chip-late",
+          diagnostics,
+          visibility,
+          foregroundWallCells,
+        ));
+        break;
+      default:
+        break;
+    }
+    for (const drawable of drawables) drawable.draw();
+  }
+}
+
 function sortedDrawables(drawables: readonly WorldDrawable[]): WorldDrawable[] {
   const withCells = drawables.every((drawable) => Boolean(drawable.cell));
   if (withCells) {
@@ -880,7 +1321,11 @@ function floor00RequiredVisibilityIds(projection: SceneProjection, state: Simula
   for (const object of projection.nativeInitialObjects) {
     required.push(`${object.objectId}@${object.cell[0]}:${object.cell[1]}`);
   }
-  required.push(...Object.keys(state.actors).sort());
+  if (state.v8) {
+    required.push(...state.v8.staffs.filter((staff) => staff.visible).map((staff) => staff.actorId).sort());
+  } else {
+    required.push(...Object.keys(state.actors).sort());
+  }
   const tree = projection.mapCells.find((cell) => cell.cell[0] === 3 && cell.cell[1] === 8);
   if (tree) {
     required.push(`mapcell:${projection.sceneId}:3:8`);
@@ -956,6 +1401,16 @@ export function renderScene(
   }
 
   drawWorldBackground(context, canvas, assets);
+  if (state.v8 && catalogs && projection.sceneMode === "floor00" && projection.sceneId === "room:0") {
+    renderV8Room0(context, projection, state, camera, assets, catalogs, diagnostics, visibility);
+    if (rawOverlayEnabled && projection.rawOverlay) {
+      drawRawRoomOverlay(context, projection.rawOverlay, camera);
+    }
+    diagnostics.final_visibility = visibility?.finish(floor00RequiredVisibilityIds(projection, state))
+      ?? emptyFinalVisibilityDiagnostics();
+    canvas.dataset.renderDiagnostics = JSON.stringify(diagnostics);
+    return diagnostics;
+  }
   const passPlan = createRenderPassPlan(projection);
   for (const pass of passPlan) {
     diagnostics.render_trace.push({

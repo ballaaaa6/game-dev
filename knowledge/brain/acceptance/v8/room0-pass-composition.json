@@ -1,0 +1,67 @@
+{
+  "schema_version": "social-dev-v8-room0-pass-composition-v1",
+  "status": "PASS",
+  "route": {
+    "plain_path": "/",
+    "room_id": "room:0",
+    "scene_mode": "floor00",
+    "bootstrap": "AppData.NewGame -> RoomData[0] -> three live Staff"
+  },
+  "canonical_bootstrap": {
+    "staff_count": 3,
+    "spawn_cell": [8, 4],
+    "spawn_world": { "x": 280, "y": -31 },
+    "desk_cells": [[2, 4], [3, 4], [6, 4]],
+    "equipment_cells": [[8, 5], [8, 6], [2, 7]],
+    "structural_facility_cells": [[4, 2], [7, 2]],
+    "door": { "cell": [8, 4], "raw_type": 5, "furniture_data_id": null }
+  },
+  "native_passes": [
+    "map-extension-floor",
+    "map-chip",
+    "object-chip-primary",
+    "object-chip-wall",
+    "avatar-primary",
+    "avatar-secondary",
+    "object-chip-late-preview",
+    "object-chip-late",
+    "map-floor"
+  ],
+  "composition": {
+    "underlay_first": true,
+    "row_order": "y_ascending_x_descending",
+    "rear_wall_and_door_before_live_objects": true,
+    "foreground_wall_after_live_objects": true,
+    "door_visual_is_fixed": true,
+    "required_fallback_markers": 0
+  },
+  "browser_frame_35": {
+    "route": "http://127.0.0.1:4173/?auto=0&initialTicks=35",
+    "visual_gate": "pass",
+    "furniture_draw_attempts": 6,
+    "approved_furniture_asset_draws": 6,
+    "chair_subframe_draws": 5,
+    "furniture_fallbacks": 0,
+    "required_visibility": "63/63",
+    "occluded_required_ids": [],
+    "render_pass_entries": 9,
+    "unresolved_selectors": [],
+    "console_errors_and_warnings": []
+  },
+  "test_evidence": {
+    "file": "runtime/social-dev/tests/v8-live-room0.test.ts",
+    "cases": [
+      "compiles all nine native passes with live nested workstation ownership",
+      "keeps both native FurnitureData(3) directional interleaves exact"
+    ],
+    "result": "PASS"
+  },
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+    "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json",
+    "knowledge/brain/acceptance/k4/room-draw-pass-recipe.json",
+    "knowledge/brain/acceptance/k4-1/room0-workstation-pass-interleave.json",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs"
+  ]
+}

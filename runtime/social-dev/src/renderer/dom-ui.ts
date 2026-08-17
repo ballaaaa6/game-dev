@@ -157,9 +157,12 @@ export function renderRuntimeUi(
       cell: actor.cell,
       lifecycle: actor.lifecycle,
       talkFrame: actor.talkFrame,
+      direction: actor.facing,
+      alpha: actor.alpha,
       animationMode: actor.animation.mode,
       selectorId: actor.animation.selectorId,
     })),
+    v8: state.v8 ?? null,
     visualGate: {
       status: visualGate.gate_status,
       frameChecks: visualGate.frame_checks,
@@ -182,7 +185,7 @@ export function renderRuntimeUi(
     const name = element("span", "actor-name");
     name.textContent = actor.name;
     const detail = element("span", "actor-detail");
-    detail.textContent = `${actor.id} · cell ${actor.cell.join(",")}`;
+    detail.textContent = `${actor.id} · cell ${actor.cell.join(",")} · ${actor.facing} · selector ${actor.animation.selectorId} · α${actor.alpha}`;
     copy.append(name, detail);
     const status = element("span", "actor-state");
     status.textContent = actor.lifecycle;
@@ -226,7 +229,7 @@ export function renderRuntimeUi(
     ? " Room R raw overlay is diagnostic-only; raw cells are not FurnitureData instances."
     : "";
   const floor00Notice = sceneMode === "floor00"
-    ? " Floor00 uses the native NewGame bootstrap: 14×14 MapChip, 10×10 ObjChip, six native furniture instances, and three static actors reserved in verified empty cells for map inspection."
+    ? " Floor00 uses the native NewGame bootstrap: 14×14 MapChip, 10×10 ObjChip, six native furniture instances, and three live Staff actors entering through the canonical door."
     : "";
   const floor00Furniture = sceneMode === "floor00"
     ? catalogs.floor00.native_initial_furniture
@@ -254,6 +257,8 @@ export function renderRuntimeUi(
     ["Floor00 bootstrap", `${catalogs.floor00.map.map_chip_cells} MapChip · ${catalogs.floor00.map.obj_chip_cells} ObjChip · ${catalogs.floor00.native_initial_furniture.length} furniture · ${catalogs.floor00.actors.length} actors`],
     ["Floor00 furniture", floor00Furniture],
     ["Floor00 door", floor00Door],
+    ["V8 live Room0", state.v8 ? `${state.v8.staffs.length} Staff · ${state.v8.fukidashi.length} Fukidashi · ${state.v8.diagnostics.unresolvedSelectors.length} unresolved` : "inactive"],
+    ["V8 render passes", state.v8?.diagnostics.renderPasses.join(" → ") ?? "inactive"],
     ["Native furniture cards", String(visualGate.drawable_cards.filter((card) => card.kind === "native_initial_object").length)],
     ["Direction", catalogs.nativeAssembly.direction.status],
     ["Visual gate", visualGate.gate_status],

@@ -1,0 +1,30 @@
+{
+  "schema_version": "social-dev-v8-equipment-visual-timeline-v1",
+  "status": "PASS",
+  "source_cadence": {
+    "frame20": { "left_selector": 8, "right_selector": 7 },
+    "frame40": { "left_selector": 16, "right_selector": 15 },
+    "frame60": { "left_selector": 12, "right_selector": 11 },
+    "frame70": { "completion": true, "return_to_living_runtime": true }
+  },
+  "projection_contract": {
+    "direction_rule": "even directional selectors use the left/right equipment pair",
+    "selector_resolution": "characterDisplayFrameForSelector",
+    "product_task_mutation": false
+  },
+  "test_evidence": {
+    "file": "runtime/social-dev/tests/v8-live-room0.test.ts",
+    "case": "projects the exact even-direction equipment selector cadence",
+    "result": "PASS"
+  },
+  "regression_evidence": {
+    "i0_scenario": "S2",
+    "i0_result": "PASS",
+    "full_suite_result": "PASS"
+  },
+  "source_refs": [
+    "knowledge/brain/acceptance/k4/equipment-composition-recipe.json",
+    "knowledge/fixtures/accepted/runtime/character_capability_contract.json",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs"
+  ]
+}

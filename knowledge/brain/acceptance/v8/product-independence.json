@@ -1,0 +1,28 @@
+{
+  "schema_version": "social-dev-v8-product-independence-v1",
+  "status": "PASS",
+  "contract": {
+    "living_runtime_owns_product_task": true,
+    "visual_projection_is_read_only": true,
+    "talk_task": "RUNNING",
+    "use_equipment_task": "RUNNING",
+    "stay_home_task": "RUNNING"
+  },
+  "evidence": {
+    "v8_test": "keeps product task state independent while visual phases run",
+    "i1_cases": [
+      "I1: TALK remains RUNNING during the visual invitation and bubble lifecycle",
+      "I1: TALK completion is owned by the canonical living runtime"
+    ],
+    "i2_cases": [
+      "I2: USE_EQUIPMENT remains RUNNING during selector projection",
+      "I2: STAY_HOME remains RUNNING during fade and return projection"
+    ],
+    "result": "PASS"
+  },
+  "source_refs": [
+    "runtime/social-dev/src/app/runtime.ts",
+    "runtime/social-dev/src/v8/live-runtime.ts",
+    "runtime/social-dev/src/core/living-runtime.ts"
+  ]
+}

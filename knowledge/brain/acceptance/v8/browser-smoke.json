@@ -1,0 +1,55 @@
+{
+  "schema_version": "social-dev-v8-browser-smoke-v1",
+  "status": "PASS",
+  "server": {
+    "url": "http://127.0.0.1:4173",
+    "repository": "D:/antigravity/test open ai/runtime/social-dev",
+    "pid": 106864,
+    "action": "reused_existing_healthy_repository_server",
+    "process_started_by_task": false,
+    "process_cleaned_by_task": false
+  },
+  "routes": [
+    {
+      "route": "/",
+      "scene": "floorA / room:0 / floor00",
+      "visual_gate": "pass",
+      "assets_ready": true,
+      "source_ready": true,
+      "staff_count": 3,
+      "fallback_markers": 0,
+      "unresolved_selectors": [],
+      "title_login_or_tutorial": false,
+      "console_errors_and_warnings": []
+    },
+    {
+      "route": "/?auto=0",
+      "frame": 0,
+      "visual_gate": "pass",
+      "staff_hidden_at_spawn": 3,
+      "fallback_markers": 0,
+      "unresolved_selectors": [],
+      "console_errors_and_warnings": []
+    },
+    {
+      "route": "/?auto=0&initialTicks=35",
+      "frame": 35,
+      "visual_gate": "pass",
+      "staff_visible": 3,
+      "furniture_draw_attempts": 6,
+      "chair_subframe_draws": 5,
+      "required_visibility": "63/63",
+      "occluded_required_ids": [],
+      "fallback_markers": 0,
+      "unresolved_selectors": [],
+      "console_errors_and_warnings": []
+    }
+  ],
+  "live_observation": {
+    "frame": 493,
+    "active_fukidashi": { "id": 24, "text": "Yes, yes...", "source": "invitation" },
+    "invitation_outcome": "accepted",
+    "visual_gate": "pass",
+    "console_errors_and_warnings": []
+  }
+}

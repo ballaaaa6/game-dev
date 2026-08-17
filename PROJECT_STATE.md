@@ -1,5 +1,57 @@
 # Project State
 
+## Current Status — V8 live Room0 visual reconstruction complete (2026-08-17)
+
+## Git-visible current gate
+
+- `current_phase`: `V8`
+- `status`: `PASS_V8_LIVE_ROOM0_VISUAL_RECONSTRUCTION`
+- `V8`: `PASS`
+- `live_room0`: `true`
+- `autonomous_no_task_living`: `true`
+- `required_visual_fallback_count`: `0`
+- `next_authorized_phase`: `NONE_WITHOUT_EXPLICIT_AUTHORIZATION`
+
+V8 was explicitly authorized in the user request. The prompt was read completely
+before the Sol pack was extracted and inspected. The Sol pack was treated as a
+detailed implementation hypothesis and reconciled against the current runtime,
+the canonical K4/K4.1 brain and artifacts, and pinned local C# evidence. All
+nine Sol findings are classified `CONFIRMED_CURRENT_GAP`; none are
+`SUPERSEDED_BY_LOCAL_STATE` or `CORRECTED_AFTER_LOCAL_INSPECTION`. The complete
+record is `knowledge/brain/acceptance/v8/gap-classification.json`.
+
+The live runtime now boots Room0 directly at `/`, projects the source-backed
+three-Staff autonomous living scene, composes the native nine-pass draw order,
+uses the complete human character catalog, applies source-backed alpha and
+direction selectors, renders both native workstation interleaves, projects
+Fukidashi payload/lifetime guards and the exact equipment selector cadence, and
+keeps product task state owned by the canonical LivingRuntime. Required visual
+fallbacks, unresolved selectors, and duplicate workstation Staff draws are zero.
+
+V8 implementation files are under `runtime/social-dev/src/v8/`, with the live
+runtime/compositor integration in the existing app, renderer, visual-gate, and
+scene-mask files. Regression coverage is in
+`runtime/social-dev/tests/v8-live-room0.test.ts`. Acceptance artifacts and the
+closure report are under `knowledge/brain/acceptance/v8/`.
+
+Verification passed: typecheck; Vitest (`49` files / `323` tests); production
+build; K2 unified brain; K4 visual closure; K4.1 targeted closure; V7; I1; I2;
+and `git diff --check`. The K2/K4/K4.1 validators passed before the V8 state
+transition with zero blocking source-limited, source-missing, and
+heuristic/assumed findings.
+
+Browser smoke reused the healthy repository Vite server at
+`http://127.0.0.1:4173` and recorded no console errors or warnings. `/`,
+`/?auto=0`, and `/?auto=0&initialTicks=35` passed; the deterministic frame-35
+route reached 63/63 required visibility with zero occlusion, zero fallback
+markers, and zero unresolved selectors. A live observation reached the
+accepted invitation path and displayed the native English Fukidashi payload.
+
+Source roots, canonical brain bytes, and generated packs remain unchanged by
+V8. Backend, persistence, authentication, cloud integrations, deployment,
+emulator/ADB, and network integration remain unopened. No next phase is
+authorized without an explicit user request.
+
 ## Current Status — K4.1 targeted visual closure complete (2026-08-17)
 
 ## Git-visible current gate

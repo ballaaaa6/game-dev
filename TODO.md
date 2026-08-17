@@ -10,10 +10,17 @@
 - [x] Run deterministic queries A–G, K4/K4.1 artifact validation, K2/native/runtime regressions, typecheck, full Vitest (48 files / 314 tests), source-hash recheck, generated-pack byte-stability, and `git diff --check`.
 - [x] Close with PASS_K4_1_TARGETED_CLOSURE_READY_FOR_V8; V8 remains NOT_STARTED and is not started by this task.
 
-## Next authorized major phase — V8 (not started)
+## V8 live Room0 reconstruction — closed (2026-08-17)
 
-- [ ] Begin V8 only after a separate explicit user authorization; the K4.1 readiness gate does not authorize implementation by itself.
-- [ ] Preserve `blocking_source_limited_count = 0`, `source_missing_count = 0`, `heuristic_or_assumed_count = 0`, and `ready_for_v8 = true` at the V8 entry boundary.
+- [x] Begin V8 under the explicit user authorization in the V8 implementation request.
+- [x] Read `V8_Targeted_Implementation_Prompt.txt` completely, extract and inspect `V8_Sol_Implementation_Pack.zip`, and reconcile every Sol finding against local code, canonical K4/K4.1 artifacts, and pinned C# evidence.
+- [x] Classify all nine Sol findings as `CONFIRMED_CURRENT_GAP`, `SUPERSEDED_BY_LOCAL_STATE`, or `CORRECTED_AFTER_LOCAL_INSPECTION`; record the result under `knowledge/brain/acceptance/v8/`.
+- [x] Implement the live Room0 bootstrap, autonomous no-task Staff projection, exact direction/selector authority, alpha lifecycle, full character catalog, native nine-pass compositor, and source-backed workstation interleaves.
+- [x] Implement and verify native Fukidashi payload/lifetime guards, invitation timing, equipment visual cadence, fixed door visual, and product-task independence.
+- [x] Pass browser smoke on `/`, `/?auto=0`, and `/?auto=0&initialTicks=35`, with zero fallback markers, unresolved selectors, required occlusion, and console errors/warnings.
+- [x] Pass typecheck, full Vitest (`49` files / `323` tests), production build, K2/K4/K4.1 validators, V7, I1, I2, and `git diff --check`.
+- [x] Update the V8 acceptance package, `CURRENT_STATE.json`, `PROJECT_STATE.md`, and `TASK_LEDGER.jsonl`; audit an explicit staging allowlist, commit the accepted result, and push `main`.
+- [x] Close with `PASS_V8_LIVE_ROOM0_VISUAL_RECONSTRUCTION`; stop without opening V9 or backend/persistence/integration/deployment work.
 
 ## K3 targeted missing-link closure — closed (2026-08-16)
 

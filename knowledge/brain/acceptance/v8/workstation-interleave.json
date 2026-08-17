@@ -1,0 +1,40 @@
+{
+  "schema_version": "social-dev-v8-workstation-interleave-v1",
+  "status": "PASS",
+  "authority": "knowledge/brain/acceptance/k4-1/workstation-native-cfg.json",
+  "preview_false_live_path": true,
+  "directional_sequences": {
+    "raw_direction_3": [
+      { "kind": "furniture", "role": "desk_primary" },
+      { "kind": "chair", "role": "chair_sub", "frame": 1 },
+      { "kind": "staff", "role": "installed_staff" },
+      { "kind": "chair", "role": "chair_foreground", "frame": 2 }
+    ],
+    "raw_direction_2": [
+      { "kind": "chair", "role": "chair_sub", "frame": 0 },
+      { "kind": "staff", "role": "installed_staff" },
+      { "kind": "furniture", "role": "desk_primary" }
+    ]
+  },
+  "browser_evidence": {
+    "route": "http://127.0.0.1:4173/?auto=0&initialTicks=35",
+    "visual_gate": "pass",
+    "raw_direction_3_desk_cell": [2, 4],
+    "raw_direction_2_desk_cells": [[3, 4], [6, 4]],
+    "nested_staff_draws": ["actor:staff:0", "actor:staff:1", "actor:staff:2"],
+    "duplicate_staff_draws": 0,
+    "chair_subframe_draws": 5,
+    "furniture_fallbacks": 0
+  },
+  "test_evidence": {
+    "file": "runtime/social-dev/tests/v8-live-room0.test.ts",
+    "case": "keeps both native FurnitureData(3) directional interleaves exact",
+    "result": "PASS"
+  },
+  "source_refs": [
+    "knowledge/brain/acceptance/k4-1/workstation-native-cfg.json",
+    "knowledge/brain/acceptance/k4-1/room0-workstation-pass-interleave.json",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:Draw(FurnitureData,bool)",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Draw"
+  ]
+}

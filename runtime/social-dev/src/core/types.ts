@@ -1,5 +1,6 @@
 import type { RuntimeCatalogs } from "../catalog/load-contracts";
 import type { LivingSnapshot } from "./living/types";
+import type { V8LiveSnapshot } from "../v8/contracts";
 
 export type Cell = readonly [number, number];
 export type Lifecycle = "spawned" | "idle" | "move" | "work" | "talk";
@@ -19,7 +20,7 @@ export interface ActorState {
   readonly alpha: number;
   readonly speed: number;
   readonly lifecycle: Lifecycle;
-  readonly facing: "left" | "right";
+  readonly facing: "left" | "right" | "up" | "down";
   readonly route: readonly Cell[];
   readonly routeCursor: number;
   readonly talkFrame: number | null;
@@ -46,6 +47,8 @@ export interface SimulationState {
   readonly selectedActorId: string | null;
   readonly tickOperations: readonly string[];
   readonly living: LivingSnapshot;
+  /** Present only for the authorized V8 live Room0 route. */
+  readonly v8?: V8LiveSnapshot;
   readonly digest: string;
 }
 

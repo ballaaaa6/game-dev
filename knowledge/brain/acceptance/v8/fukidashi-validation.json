@@ -1,0 +1,43 @@
+{
+  "schema_version": "social-dev-v8-fukidashi-validation-v1",
+  "status": "PASS",
+  "payload_shape": ["id", 40, "delay", "offsetY"],
+  "pools": {
+    "invitation_opening": [25, 26, 27, 28, 29, 68],
+    "invitation_response": [22, 23, 24],
+    "invitation_busy": [44, 45, 46],
+    "autonomous_initiator": [30, 31, 32, 33, 34],
+    "autonomous_target": [35, 36, 37, 38, 39, 40, 41, 42, 43]
+  },
+  "lifecycle": {
+    "lifetime": 40,
+    "delay_guard": true,
+    "lifetime_guard": true,
+    "draw_guard": true,
+    "anchor_formula": "world_y + offsetY - 20",
+    "localization": "English"
+  },
+  "browser_evidence": {
+    "route": "http://127.0.0.1:4173/",
+    "observed_frame": 493,
+    "visual_gate": "pass",
+    "active_payload": { "id": 24, "lifetime": 5, "delay": 0, "offsetY": 0, "source": "invitation", "text": "Yes, yes..." },
+    "invitation": { "frame": 95, "initiatorId": 1, "targetId": 2, "outcome": "accepted" },
+    "fallback_markers": 0,
+    "unresolved_selectors": [],
+    "console_errors_and_warnings": []
+  },
+  "test_evidence": {
+    "file": "runtime/social-dev/tests/v8-live-room0.test.ts",
+    "cases": [
+      "implements the native Fukidashi payload and lifetime guards",
+      "projects source-backed invitation timing, pools, and deterministic payloads"
+    ],
+    "result": "PASS"
+  },
+  "source_refs": [
+    "knowledge/brain/acceptance/k4-1/fukidashi-payload-closure.json",
+    "knowledge/brain/acceptance/k4-1/fukidashi-localization-catalog.json",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs"
+  ]
+}

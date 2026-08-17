@@ -1,11 +1,11 @@
 {
   "project": "Social Dev clean-room runtime",
-  "current_phase": "K4.1",
-  "status": "PASS_K4_1_TARGETED_CLOSURE_READY_FOR_V8",
+  "current_phase": "V8",
+  "status": "PASS_V8_LIVE_ROOM0_VISUAL_RECONSTRUCTION",
   "brain_revision": "k4-visual-assembly-r2",
   "current_branch": "main",
   "ready_for_v8": true,
-  "v8": "NOT_STARTED",
+  "v8": "PASS",
   "canonical_brain": {
     "path": "knowledge/brain/sqlite/social_dev_brain.sqlite",
     "sha256": "65df23f6a222472f7cc401589ea6fa0d226406be2900070702817bc16759f9d1",
@@ -24,15 +24,21 @@
     "source_missing": 0,
     "heuristic_or_assumed": 0
   },
-  "latest_completed_phases": ["K2", "K2.5", "K3", "K4", "K4.1"],
+  "latest_completed_phases": ["K2", "K2.5", "K3", "K4", "K4.1", "V8"],
   "latest_validation": {
     "typecheck": "PASS",
-    "vitest": "PASS — 48 files / 314 tests",
+    "vitest": "PASS — 49 files / 323 tests",
+    "build": "PASS",
     "k2": "PASS",
     "k4": "PASS",
-    "k4_1": "PASS"
+    "k4_1": "PASS",
+    "v7": "PASS",
+    "i1": "PASS",
+    "i2": "PASS",
+    "browser_smoke": "PASS",
+    "v8": "PASS_V8_LIVE_ROOM0_VISUAL_RECONSTRUCTION"
   },
-  "next_authorized_phase": "V8",
+  "next_authorized_phase": "NONE_WITHOUT_EXPLICIT_AUTHORIZATION",
   "key_k4_1_artifacts": [
     "knowledge/brain/acceptance/k4-1/final-validation.json",
     "knowledge/brain/acceptance/k4-1/K4_1_CLOSURE_REPORT.md",
@@ -40,6 +46,19 @@
     "knowledge/brain/acceptance/k4-1/fukidashi-payload-closure.json",
     "knowledge/brain/acceptance/k4-1/room0-door-action-vs-visual-contract.json",
     "knowledge/brain/acceptance/k4-1/workstation-native-cfg.json"
+  ],
+  "key_v8_artifacts": [
+    "knowledge/brain/acceptance/v8/v8-final-validation.json",
+    "knowledge/brain/acceptance/v8/V8_CLOSURE_REPORT.md",
+    "knowledge/brain/acceptance/v8/gap-classification.json",
+    "knowledge/brain/acceptance/v8/room0-pass-composition.json",
+    "knowledge/brain/acceptance/v8/staff-visual-state.json",
+    "knowledge/brain/acceptance/v8/workstation-interleave.json",
+    "knowledge/brain/acceptance/v8/fukidashi-validation.json",
+    "knowledge/brain/acceptance/v8/equipment-visual-timeline.json",
+    "knowledge/brain/acceptance/v8/door-home-fade.json",
+    "knowledge/brain/acceptance/v8/product-independence.json",
+    "knowledge/brain/acceptance/v8/browser-smoke.json"
   ],
   "three_blocker_closure": {
     "Room0 door visual": "NO_DISTINCT_VISUAL",
@@ -54,6 +73,16 @@
     "network": false,
     "server": false,
     "emulator_adb": false,
-    "live_app": false
+    "live_app": false,
+    "runtime_code_changed_by_v8": true,
+    "source_roots_changed_by_v8": false,
+    "generated_packs_unchanged_by_v8": true,
+    "server_reused_for_v8": true,
+    "backend": false,
+    "persistence": false,
+    "auth": false,
+    "cloud": false,
+    "deployment": false,
+    "subagents": false
   }
 }

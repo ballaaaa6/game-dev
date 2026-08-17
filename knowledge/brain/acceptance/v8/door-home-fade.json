@@ -1,0 +1,35 @@
+{
+  "schema_version": "social-dev-v8-door-home-fade-v1",
+  "status": "PASS",
+  "door_contract": {
+    "cell": [8, 4],
+    "raw_type": 5,
+    "furniture_data_id": null,
+    "asset": "door_01",
+    "animation": false,
+    "entry_spawn_world": { "x": 280, "y": -31 }
+  },
+  "alpha_contract": {
+    "spawn": { "alpha": 0, "visible": false, "lifecycle": "spawned" },
+    "fade_in": { "increment": 25, "terminal_alpha": 255 },
+    "fade_out": { "increment": -25, "terminal_alpha": 0 },
+    "wait_back_of_door_hidden": true
+  },
+  "browser_evidence": {
+    "initial_route": "http://127.0.0.1:4173/?auto=0",
+    "initial_frame": 0,
+    "initial_staff_count": 3,
+    "initial_hidden_staff": 3,
+    "live_route": "http://127.0.0.1:4173/?auto=0&initialTicks=35",
+    "live_frame": 35,
+    "live_visible_staff": 3,
+    "visual_gate": "pass",
+    "fallback_markers": 0,
+    "console_errors_and_warnings": []
+  },
+  "source_refs": [
+    "knowledge/brain/acceptance/k4-1/room0-door-action-vs-visual-contract.json",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs"
+  ]
+}

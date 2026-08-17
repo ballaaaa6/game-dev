@@ -1,6 +1,12 @@
 import { loadRuntimeCatalogs, type RuntimeCatalogs } from "../catalog/load-contracts";
 import { loadDisplayAssets, type DisplayAssetStatus, type LoadedDisplayAssets } from "../assets/display-assets";
-import { characterDisplayFrame, preloadCharacterFrameImages } from "../assets/character-assets";
+import {
+  characterDisplayFrame,
+  characterDisplayFrameForSelector,
+  characterFrameAssetIds,
+  getCachedCharacterImage,
+  preloadCharacterFrameImages,
+} from "../assets/character-assets";
 import { resolveCharacter } from "../catalog/character-resolver";
 import { createLivingRuntime } from "../core/living/runtime";
 import { projectLivingStaffs } from "../core/living/projection";
@@ -13,6 +19,8 @@ import { createRuntimeUi, renderRuntimeUi, type RuntimeUiElements } from "../ren
 import { buildVisualGateSnapshot, type VisualGateSnapshot } from "../renderer/visual-gate";
 import { buildSceneProjection, type SceneProjection } from "../scene/projection";
 import { parseMainRuntimeRoute } from "./main-route";
+import { createV8LiveRuntime, type V8LiveRuntime } from "../v8/live-runtime";
+import type { V8LiveSnapshot } from "../v8/contracts";
 
 export interface SocialDevRuntimeController {
   readonly catalogs: RuntimeCatalogs;
@@ -24,6 +32,7 @@ export interface SocialDevRuntimeController {
   readonly step: (count?: number) => SimulationState;
   readonly selectActor: (actorId: string | null) => SimulationState;
   readonly getVisualGateSnapshot: () => VisualGateSnapshot;
+  readonly getV8Snapshot: () => V8LiveSnapshot;
   readonly stop: () => void;
 }
 
@@ -42,13 +51,34 @@ function stateFromLiving(
   sceneId: string,
   activeMainDisplay: boolean,
   selectedActorId: string | null,
+  v8: V8LiveSnapshot | undefined,
 ): SimulationState {
   const eventLog = living.traces.slice(-96).map(runtimeEventFromTrace);
   const events = living.traces.slice(-24).map(runtimeEventFromTrace);
+  const baseActors = activeMainDisplay ? projectLivingStaffs(catalogs, living.staffs) : {};
+  const actors = Object.fromEntries(Object.values(baseActors).map((actor) => {
+    const visual = v8?.staffs.find((candidate) => candidate.actorId === actor.id);
+    if (!visual) return [actor.id, actor] as const;
+    return [actor.id, {
+      ...actor,
+      cell: [visual.cell[0], visual.cell[1]] as const,
+      position: { ...visual.world },
+      alpha: visual.alpha,
+      lifecycle: visual.lifecycle === "home" ? "idle" : visual.lifecycle,
+      facing: visual.direction,
+      route: visual.route.map((cell) => [cell[0], cell[1]] as const),
+      talkFrame: visual.action === "talk" ? visual.frame : null,
+      animation: {
+        mode: visual.action === "typing" || visual.action === "talk" ? "typing" as const : "wait" as const,
+        frame: visual.frame,
+        selectorId: visual.selectorId,
+      },
+    }] as const;
+  }));
   const { digest: _digest, ...withoutDigest } = {
     frame: living.frame,
     sceneId,
-    actors: activeMainDisplay ? projectLivingStaffs(catalogs, living.staffs) : {},
+    actors,
     events,
     eventLog,
     selectedActorId,
@@ -56,6 +86,7 @@ function stateFromLiving(
       ? ["LivingRuntime.snapshot", "DashboardRuntime.publish"]
       : ["LivingRuntime.tick", "AssignmentAdapter.observeLiving", "DashboardRuntime.publish"],
     living,
+    v8,
     digest: "",
   };
   return withDigest(withoutDigest);
@@ -74,7 +105,15 @@ function render(
   assets: LoadedDisplayAssets | null,
   assetStatus: DisplayAssetStatus,
   rawOverlayEnabled: boolean,
+  onAsyncAssetsReady?: () => void,
 ): VisualGateSnapshot {
+  const pendingCharacterPreloads: Promise<unknown>[] = [];
+  const preloadCharacterFrame = (frame: ReturnType<typeof characterDisplayFrame>): void => {
+    if (!frame) return;
+    const hasUncachedAsset = characterFrameAssetIds(frame).some((assetId) => !getCachedCharacterImage(assetId));
+    if (!hasUncachedAsset) return;
+    pendingCharacterPreloads.push(preloadCharacterFrameImages(frame).catch(() => undefined));
+  };
   if (assets) {
     for (const actor of Object.values(state.actors)) {
       try {
@@ -82,15 +121,27 @@ function render(
         const imageAssetId = resolved.imageSelector?.asset?.asset_id;
         if (imageAssetId && !assets.images.has(imageAssetId) && !assets.mapImages.has(imageAssetId)) {
           const genericFrame = characterDisplayFrame(catalogs, actor.id, actor.animation.mode, actor.facing, actor.animation.frame);
-          if (genericFrame) {
-            void preloadCharacterFrameImages(genericFrame).catch(() => undefined);
-          }
+          preloadCharacterFrame(genericFrame);
         }
       } catch {
         // The bounded scene may contain only approved ActorCatalog records;
         // missing full-catalog metadata must remain a renderer fallback.
       }
     }
+    if (state.v8) {
+      for (const staff of state.v8.staffs) {
+        try {
+          const frame = characterDisplayFrameForSelector(catalogs, staff.actorId, staff.action, staff.direction, staff.selectorId, staff.frame);
+          preloadCharacterFrame(frame);
+        } catch {
+          // The visual gate records selector/asset evidence; rendering never
+          // invents a fallback marker for a missing full-catalog character.
+        }
+      }
+    }
+  }
+  if (pendingCharacterPreloads.length > 0 && onAsyncAssetsReady) {
+    void Promise.all(pendingCharacterPreloads).then(onAsyncAssetsReady);
   }
   const renderDiagnostics = renderScene(canvas, projection, state, catalogs.camera, assets, rawOverlayEnabled, catalogs);
   const visualGate = buildVisualGateSnapshot(projection, state, catalogs, assets, rawOverlayEnabled, renderDiagnostics);
@@ -109,11 +160,13 @@ export function createSocialDevRuntime(root: HTMLElement): SocialDevRuntimeContr
     throw new Error(`Unknown RoomData room ${requestedRoomId}`);
   }
   const living = createLivingRuntime(catalogs, { initialStaffDataIds: [0, 1, 2] });
+  const v8Runtime: V8LiveRuntime = createV8LiveRuntime(catalogs, living.snapshot());
   const dashboard = createDashboardRuntime(living);
   let activeRoomId = requestedRoomId;
   let projection = buildSceneProjection(catalogs, activeRoomId, sceneOptions);
   let dashboardSnapshot = dashboard.getSnapshot();
-  let state = stateFromLiving(catalogs, dashboardSnapshot.living, activeRoomId, activeRoomId === "room:0" && projection.roomContext === "main_display", null);
+  let v8Snapshot = v8Runtime.snapshot();
+  let state = stateFromLiving(catalogs, dashboardSnapshot.living, activeRoomId, activeRoomId === "room:0" && projection.roomContext === "main_display", null, v8Snapshot);
   let displayAssets: LoadedDisplayAssets | null = null;
   let assetStatus: DisplayAssetStatus = "loading";
   let visualGateSnapshot: VisualGateSnapshot;
@@ -146,13 +199,15 @@ export function createSocialDevRuntime(root: HTMLElement): SocialDevRuntimeContr
       displayAssets,
       assetStatus,
       rawOverlayEnabled,
+      () => renderCurrent(),
     );
     return visualGateSnapshot;
   };
 
   dashboard.subscribe((nextSnapshot) => {
     dashboardSnapshot = nextSnapshot;
-    state = stateFromLiving(catalogs, nextSnapshot.living, activeRoomId, activeMainDisplay(), state.selectedActorId);
+    v8Snapshot = v8Runtime.advance(nextSnapshot.living);
+    state = stateFromLiving(catalogs, nextSnapshot.living, activeRoomId, activeMainDisplay(), state.selectedActorId, v8Snapshot);
     if (state.selectedActorId && !state.actors[state.selectedActorId]) {
       state = selectActorState(state, null);
     }
@@ -173,7 +228,7 @@ export function createSocialDevRuntime(root: HTMLElement): SocialDevRuntimeContr
     }
     activeRoomId = roomId;
     projection = buildSceneProjection(catalogs, activeRoomId, sceneOptions);
-    state = stateFromLiving(catalogs, dashboardSnapshot.living, activeRoomId, activeMainDisplay(), null);
+    state = stateFromLiving(catalogs, dashboardSnapshot.living, activeRoomId, activeMainDisplay(), null, v8Snapshot);
     renderCurrent();
     return projection;
   };
@@ -219,6 +274,7 @@ export function createSocialDevRuntime(root: HTMLElement): SocialDevRuntimeContr
     step,
     selectActor,
     getVisualGateSnapshot: () => visualGateSnapshot,
+    getV8Snapshot: () => v8Snapshot,
     stop: () => {
       if (timer !== undefined) {
         window.clearInterval(timer);

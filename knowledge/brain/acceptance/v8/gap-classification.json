@@ -1,0 +1,84 @@
+{
+  "schema_version": "social-dev-v8-gap-classification-v1",
+  "status": "PASS",
+  "authority_policy": "The Sol pack is an implementation hypothesis. Current repository code, canonical K4/K4.1 artifacts, and pinned local source evidence are authoritative.",
+  "baseline": {
+    "commit": "d8340270958a55380c39af3d9709fbe647372d76",
+    "brain_revision": "k4-visual-assembly-r2",
+    "current_phase": "K4.1",
+    "status": "PASS_K4_1_TARGETED_CLOSURE_READY_FOR_V8"
+  },
+  "inputs": {
+    "prompt": {
+      "path": "D:/downloads/V8_Targeted_Implementation_Prompt.txt",
+      "sha256": "652CE3C94C9D711DC6A8CB83D0FEA6DA1D7D2B8FBD4B0AAF41D872D3C81D02A0"
+    },
+    "sol_pack": {
+      "path": "D:/downloads/V8_Sol_Implementation_Pack.zip",
+      "sha256": "662309AD358D882D5633E3546AAD6D93647575A5749D7330AC19A8C9FBD7C077",
+      "extracted_and_inspected": true
+    },
+    "sol_gap_source": "V8_Current_Implementation_Gaps.json"
+  },
+  "findings": [
+    {
+      "id": "V8-GAP-PROJECTION-DIRECTION",
+      "classification": "CONFIRMED_CURRENT_GAP",
+      "local_evidence": "The baseline living projection hard-coded right-facing wait/typing output.",
+      "resolution": "V8LiveRuntime and direction.ts project the prompt-authoritative raw 0/1/2/3 left/right/down/up mapping and selector tables."
+    },
+    {
+      "id": "V8-GAP-FUKIDASHI-STATE",
+      "classification": "CONFIRMED_CURRENT_GAP",
+      "local_evidence": "Baseline LivingRuntime retained talk visual events but not the selected canonical Fukidashi payload.",
+      "resolution": "V8 fukidashi state stores semantic ID, lifetime, delay, offsetY, source, and English localization with native guards."
+    },
+    {
+      "id": "V8-GAP-INVITATION-TIMELINE",
+      "classification": "CONFIRMED_CURRENT_GAP",
+      "local_evidence": "Baseline invitation arrival moved directly into stand-talking without a visual invitation timeline.",
+      "resolution": "V8LiveRuntime adds frame-20 opening and frame-60 response/busy projection on top of the unchanged canonical living runtime."
+    },
+    {
+      "id": "V8-GAP-EQUIPMENT-POSE",
+      "classification": "CONFIRMED_CURRENT_GAP",
+      "local_evidence": "Baseline equipment behavior emitted traces but did not project the exact frame-20/40/60 selector cadence.",
+      "resolution": "V8 projects the source-backed 7/8, 15/16, and 11/12 selector phases and keeps frame-70 completion in LivingRuntime."
+    },
+    {
+      "id": "V8-GAP-ALPHA",
+      "classification": "CONFIRMED_CURRENT_GAP",
+      "local_evidence": "Baseline FADE flags existed, but audited runtime output did not expose the native alpha progression and hidden-state guard.",
+      "resolution": "V8 applies the source +25/-25 alpha cadence, keeps WAIT_BACK_OF_DOOR hidden, and makes the Room.AddStaff alpha-zero bootstrap visible through the live entry path."
+    },
+    {
+      "id": "V8-GAP-WORKSTATION-INTERLEAVE",
+      "classification": "CONFIRMED_CURRENT_GAP",
+      "local_evidence": "The generic furniture and actor paths could not express K4.1 type-2 nested Staff ordering or suppress duplicate Staff draws.",
+      "resolution": "The V8 command compiler and workstation compiler encode both raw direction 2 and raw direction 3 native interleaves through preview=false ownership."
+    },
+    {
+      "id": "V8-GAP-LIVE-COMPOSITOR",
+      "classification": "CONFIRMED_CURRENT_GAP",
+      "local_evidence": "The baseline renderer retained pass labels while using comparison-view merged underlay/wall operations for the display path.",
+      "resolution": "The Room0 V8 branch owns the nine pass identities, underlay-first order, native row traversal, live nested workstations, and final visibility diagnostics."
+    },
+    {
+      "id": "V8-GAP-PLACEHOLDER-VISUALS",
+      "classification": "CONFIRMED_CURRENT_GAP",
+      "local_evidence": "The baseline default renderer contained route/ring diagnostics, fallback actor markers, and a talk-frame placeholder.",
+      "resolution": "The V8 Room0 compositor uses full catalog character assets and localized Fukidashi payloads; route/ring/raw diagnostics remain opt-in or outside the V8 branch."
+    },
+    {
+      "id": "V8-GAP-BOUNDED-DISPLAY-MANIFEST",
+      "classification": "CONFIRMED_CURRENT_GAP",
+      "local_evidence": "The accepted bounded display manifest exposed only wait/typing actors and froze floor00 furniture frame 0.",
+      "resolution": "V8 lazily resolves the full character selector catalog and composes source-backed live FurnitureData subframes without expanding the accepted static manifest."
+    }
+  ],
+  "classification_counts": {
+    "CONFIRMED_CURRENT_GAP": 9,
+    "SUPERSEDED_BY_LOCAL_STATE": 0,
+    "CORRECTED_AFTER_LOCAL_INSPECTION": 0
+  }
+}

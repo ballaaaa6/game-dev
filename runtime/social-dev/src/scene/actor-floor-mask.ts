@@ -44,6 +44,10 @@ export function evaluateActorFloorContainment(
   cell: Cell,
   projection: Pick<SceneProjection, "cells" | "mapCells">,
   camera: CameraCoordinateContract,
+  options: {
+    readonly allowEntryDoor?: boolean;
+    readonly allowInstalledFurniture?: boolean;
+  } = {},
 ): ActorFloorContainmentResult {
   const foot = actorToCanvas(cellToActorWorld(cell, camera), camera);
   const placement = placementForCell(projection.cells, cell);
@@ -56,13 +60,26 @@ export function evaluateActorFloorContainment(
       reason: "actor_cell_missing_from_objchip_projection",
     };
   }
-  if (!placement.passable || placement.collisionKind !== "empty_walkable") {
+  const occupiedByInstalledFurniture = options.allowInstalledFurniture === true
+    && placement.collisionKind === "installed_furniture";
+  const occupiedByEntryDoor = options.allowEntryDoor === true
+    && placement.collisionKind === "entry_door";
+  if ((!placement.passable || placement.collisionKind !== "empty_walkable") && !occupiedByInstalledFurniture && !occupiedByEntryDoor) {
     return {
       status: "blocked",
       cell,
       foot,
       containingCells: [],
       reason: `actor_cell_not_empty_walkable:${placement.collisionKind}`,
+    };
+  }
+  if (occupiedByEntryDoor) {
+    return {
+      status: "pass",
+      cell,
+      foot,
+      containingCells: [],
+      reason: "actor_at_native_entry_door",
     };
   }
   const containingCells = floorCells(projection)

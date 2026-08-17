@@ -177,3 +177,29 @@ export function characterDisplayFrame(
     records: selectCharacterAnimationRecords(animation, frame),
   };
 }
+
+/** Resolve a source-backed selector directly for native phase poses. */
+export function characterDisplayFrameForSelector(
+  catalogs: RuntimeCatalogs,
+  characterId: string,
+  action: string,
+  direction: "right" | "left" | "up" | "down",
+  selectorId: number,
+  frame = 0,
+): CharacterDisplayFrame | null {
+  const resolved = resolveCharacter(catalogs, characterId);
+  const imageAssetId = resolved.imageSelector?.asset?.asset_id;
+  const image = imageAssetId ? getCharacterImageAsset(imageAssetId) : null;
+  const animation = getCharacterAnimation(selectorId);
+  if (!imageAssetId || !image || !animation) return null;
+  return {
+    characterId,
+    action,
+    direction,
+    selectorId,
+    imageAssetId,
+    imageRuntimePath: image.runtime_path,
+    animation,
+    records: selectCharacterAnimationRecords(animation, frame),
+  };
+}

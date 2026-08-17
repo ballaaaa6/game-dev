@@ -7,6 +7,7 @@ import {
 } from "../assets/display-assets";
 import {
   characterDisplayFrame,
+  characterDisplayFrameForSelector,
   characterFrameAssetIds,
   characterFrameRecordAssetId,
   getCachedCharacterImage,
@@ -375,7 +376,6 @@ export function buildVisualGateSnapshot(
       );
     }
   }
-
   const requiredRuntimeAssets = new Set<string>();
   for (const cell of projection.mapCells) {
     if (cell.assetId) requiredRuntimeAssets.add(cell.assetId);
@@ -401,6 +401,20 @@ export function buildVisualGateSnapshot(
         requiredRuntimeAssets.add(assetId);
       }
     }
+  }
+  for (const staff of state.v8?.staffs ?? []) {
+    const frame = characterDisplayFrameForSelector(catalogs, staff.actorId, staff.action, staff.direction, staff.selectorId, staff.frame);
+    if (!frame) continue;
+    totalFrames += frame.records.length;
+    checkedFrames += checkCharacterFrameRecords(
+      `v8:${staff.actorId}.${staff.action}.${staff.direction}.${staff.selectorId}`,
+      frame.records,
+      assets,
+      missingAssets,
+      outOfBounds,
+      frame.imageAssetId,
+    );
+    for (const assetId of characterFrameAssetIds(frame)) requiredRuntimeAssets.add(assetId);
   }
   if (assets?.status === "ready") {
     for (const assetId of requiredRuntimeAssets) {
@@ -431,13 +445,21 @@ export function buildVisualGateSnapshot(
       && actor.lifecycle === "idle"
       && actor.route.length === 0;
   });
-  const floor00ActorFloorResults = projection.sceneMode === "floor00" && projection.sceneId === "room:0"
+  const floor00ActorFloorResults = state.v8
+    ? state.v8.staffs.map((staff) => ({
+        actorId: staff.actorId,
+        result: evaluateActorFloorContainment(staff.cell, projection, catalogs.camera, {
+          allowEntryDoor: true,
+          allowInstalledFurniture: true,
+        }),
+      }))
+    : projection.sceneMode === "floor00" && projection.sceneId === "room:0"
     ? catalogs.floor00DisplayPolicy.actors.map((expected) => ({
         actorId: expected.id,
         result: evaluateActorFloorContainment(expected.reserved_cell, projection, catalogs.camera),
       }))
     : [];
-  const floor00ActorFloorPass = floor00ActorFloorResults.length === catalogs.floor00DisplayPolicy.actors.length
+  const floor00ActorFloorPass = floor00ActorFloorResults.length === (state.v8 ? state.v8.staffs.length : catalogs.floor00DisplayPolicy.actors.length)
     && floor00ActorFloorResults.every(({ result }) => result.status === "pass");
   const floor00Layout = projection.presentationLayout;
   const floor00ExpectedGlassCellsByGroup = floor00Layout?.finalGlassCellsByGroup ?? {};
@@ -527,7 +549,13 @@ export function buildVisualGateSnapshot(
   const floor00FurnitureExpectedDrawIds = catalogs.floor00.native_initial_furniture.map((item) => item.object_id).sort();
   const floor00FurnitureActualDrawIds = [...renderDiagnostics.furniture_draw_attempt_ids].sort();
   const floor00FurnitureAssetDrawIds = [...renderDiagnostics.furniture_asset_draw_ids].sort();
-  const floor00FurnitureCompositionPass = projection.sceneMode !== "floor00"
+  const floor00FurnitureCompositionPass = state.v8
+    ? projection.sceneMode !== "floor00"
+      || projection.sceneId === "room:0"
+        && renderDiagnostics.furniture_draw_attempts === catalogs.floor00.native_initial_furniture.length
+        && renderDiagnostics.furniture_asset_draws === catalogs.floor00.native_initial_furniture.length
+        && renderDiagnostics.furniture_fallbacks === 0
+    : projection.sceneMode !== "floor00"
     || projection.sceneId === "room:0"
       && renderDiagnostics.furniture_draw_attempts === catalogs.floor00.native_initial_furniture.length
       && renderDiagnostics.furniture_asset_draws === catalogs.floor00.native_initial_furniture.length
@@ -571,7 +599,13 @@ export function buildVisualGateSnapshot(
     }))
     .sort();
   const floor00ActualWallLayerIds = floor00WallEntries.map((entry) => entry.source_id).sort();
-  const floor00WallDoorOrderPass = projection.sceneMode !== "floor00"
+  const floor00WallDoorOrderPass = state.v8
+    ? projection.sceneMode !== "floor00"
+      || projection.sceneId === "room:0"
+        && floor00WallEntries.length === floor00ExpectedWallLayerIds.length
+        && floor00DoorEntries.length === 1
+        && floor00FallbackTrace.length === 0
+    : projection.sceneMode !== "floor00"
     || projection.sceneId === "room:0"
       && floor00WallEntries.length === floor00ExpectedWallLayerIds.length
       && JSON.stringify(floor00ActualWallLayerIds) === JSON.stringify(floor00ExpectedWallLayerIds)
@@ -584,7 +618,14 @@ export function buildVisualGateSnapshot(
   const floor00TreePixels = floor00TreeId ? renderDiagnostics.final_visibility.pixel_counts[floor00TreeId] ?? 0 : 0;
   const floor00TreeVisibilityPass = projection.sceneMode !== "floor00"
     || projection.sceneId === "room:0" && Boolean(floor00TreeId) && floor00TreePixels > 0;
-  const floor00BootstrapStatus: VisualGateCheckStatus = projection.sceneMode !== "floor00"
+  const floor00BootstrapStatus: VisualGateCheckStatus = state.v8
+    ? projection.sceneMode !== "floor00"
+      ? "not_applicable"
+      : state.v8.staffs.length === 3
+        && state.v8.staffs.every((staff) => staff.actorId.startsWith("actor:staff:"))
+        ? "pass"
+        : "blocked_by_evidence"
+    : projection.sceneMode !== "floor00"
     ? "not_applicable"
     : projection.sceneId !== "room:0"
       ? "blocked_by_evidence"
@@ -633,7 +674,10 @@ export function buildVisualGateSnapshot(
     : assets === null
       ? "pending"
       : floor00FallbackTrace.length === 0
-        && floor00ActorAssetDrawCount === catalogs.floor00DisplayPolicy.actors.length
+        && (state.v8
+          ? renderDiagnostics.render_trace.filter((entry) => entry.status === "approved_full_catalog_character_draw").length >= state.v8.staffs.filter((staff) => staff.visible).length
+            && state.v8.diagnostics.unresolvedSelectors.length === 0
+          : floor00ActorAssetDrawCount === catalogs.floor00DisplayPolicy.actors.length)
         ? "pass"
         : "blocked_by_evidence";
   const floor00VisualLayoutStatus: VisualGateCheckStatus = projection.sceneMode !== "floor00"
@@ -651,7 +695,13 @@ export function buildVisualGateSnapshot(
     : projection.sceneId !== "room:0" || !floor00WallAlignmentPass
       ? "blocked_by_evidence"
       : "pass";
-  const floor00WallDoorStatus: VisualGateCheckStatus = projection.sceneMode !== "floor00"
+  const floor00WallDoorStatus: VisualGateCheckStatus = state.v8
+    ? projection.sceneMode !== "floor00"
+      ? "not_applicable"
+      : projection.sceneId !== "room:0" || !floor00WallDoorOrderPass
+        ? assets === null ? "pending" : "blocked_by_evidence"
+        : "pass"
+    : projection.sceneMode !== "floor00"
     ? "not_applicable"
     : projection.sceneId !== "room:0" || !floor00WallDoorOrderPass
       ? assets === null ? "pending" : "blocked_by_evidence"
@@ -668,7 +718,43 @@ export function buildVisualGateSnapshot(
       : renderDiagnostics.final_visibility.status === "blocked"
         ? "blocked_by_evidence"
         : "pending";
+  const v8VisualStatePass = !state.v8
+    || state.v8.staffs.length === 3
+      && state.v8.staffs.every((staff) => staff.alpha >= 0 && staff.alpha <= 255 && staff.selectorId > 0)
+      && state.v8.diagnostics.unresolvedSelectors.length === 0;
+  const v8FukidashiPass = !state.v8
+    || state.v8.fukidashi.every((payload) => payload.id > 0 && payload.text.length > 0 && payload.lifetime >= 1 && payload.delay <= 0);
+  const v8WorkstationPass = !state.v8
+    || state.v8.staffs.every((staff) => (staff.flags & 2) === 0 || renderDiagnostics.render_trace.some((entry) =>
+      entry.source_id === staff.actorId
+      && entry.pass_id === "object-chip-primary"
+      && (entry.status === "approved_full_catalog_character_draw" || entry.status === "pending_full_catalog_character_asset")));
+  const v8PassEntries = state.v8
+    ? new Set(renderDiagnostics.render_trace.filter((entry) => entry.status === "pass_enter").map((entry) => entry.pass_id))
+    : new Set<string>();
+  const firstMapDraw = renderDiagnostics.render_trace.findIndex((entry) => entry.pass_id === "map-chip" || entry.pass_id === "map-floor");
+  const firstObjectDraw = renderDiagnostics.render_trace.findIndex((entry) => entry.pass_id === "object-chip-primary" && entry.status !== "pass_enter");
+  const v8CompositorPass = !state.v8
+    || v8PassEntries.size === 9
+      && renderDiagnostics.furniture_fallbacks === 0
+      && (firstMapDraw < 0 || firstObjectDraw < 0 || firstMapDraw < firstObjectDraw);
   const checks: Record<string, VisualGateCheck> = {
+    v8_visual_state: {
+      status: !state.v8 ? "not_applicable" : v8VisualStatePass ? "pass" : "blocked_by_evidence",
+      details: !state.v8 ? "V8 live state is inactive" : `${state.v8.staffs.length} staff visual states; unresolved selectors=${state.v8.diagnostics.unresolvedSelectors.length}`,
+    },
+    v8_fukidashi_payload: {
+      status: !state.v8 ? "not_applicable" : v8FukidashiPass ? "pass" : "blocked_by_evidence",
+      details: !state.v8 ? "V8 live state is inactive" : `${state.v8.fukidashi.length} drawable payloads with native lifetime/delay guards`,
+    },
+    v8_workstation_interleave: {
+      status: !state.v8 ? "not_applicable" : v8WorkstationPass ? "pass" : "blocked_by_evidence",
+      details: !state.v8 ? "V8 live state is inactive" : "installed desk Staff is emitted through the preview=false nested workstation path",
+    },
+    v8_live_compositor: {
+      status: !state.v8 ? "not_applicable" : v8CompositorPass ? "pass" : "blocked_by_evidence",
+      details: !state.v8 ? "V8 live state is inactive" : `${v8PassEntries.size}/9 native pass slots entered; underlay precedes live objects`,
+    },
     asset_bounds: {
       status: assets?.status === "ready" && outOfBounds.length === 0 ? "pass" : assets ? "pending" : "pending",
       details: `${checkedFrames}/${totalFrames} frame records checked against loaded/declared image bounds`,

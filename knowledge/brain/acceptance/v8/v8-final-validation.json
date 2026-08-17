@@ -1,0 +1,71 @@
+{
+  "schema_version": "social-dev-v8-final-validation-v1",
+  "status": "PASS",
+  "final_token": "PASS_V8_LIVE_ROOM0_VISUAL_RECONSTRUCTION",
+  "current_phase": "V8",
+  "end_state": {
+    "current_phase": "V8",
+    "live_room0": true,
+    "autonomous_no_task_living": true,
+    "required_visual_fallback_count": 0,
+    "workstation_interleave": "PASS",
+    "fukidashi": "PASS",
+    "equipment_visual": "PASS",
+    "door_home_fade": "PASS",
+    "product_task_independence": "PASS",
+    "browser_smoke": "PASS",
+    "V7_regression": "PASS"
+  },
+  "gates": {
+    "V8-A_authority_reconciliation": { "status": "PASS", "evidence": "gap-classification.json; all nine Sol findings classified CONFIRMED_CURRENT_GAP" },
+    "V8-B_room0_bootstrap": { "status": "PASS", "evidence": "room0-pass-composition.json; browser-smoke.json" },
+    "V8-C_staff_visual_state": { "status": "PASS", "evidence": "staff-visual-state.json" },
+    "V8-D_workstation_interleave": { "status": "PASS", "evidence": "workstation-interleave.json" },
+    "V8-E_fukidashi": { "status": "PASS", "evidence": "fukidashi-validation.json" },
+    "V8-F_equipment_visual": { "status": "PASS", "evidence": "equipment-visual-timeline.json" },
+    "V8-G_door_home_fade": { "status": "PASS", "evidence": "door-home-fade.json" },
+    "V8-H_product_independence": { "status": "PASS", "evidence": "product-independence.json" },
+    "V8-I_browser_and_regression": { "status": "PASS", "evidence": "browser-smoke.json; final validation commands" },
+    "V8-J_closure": { "status": "PASS", "evidence": "CURRENT_STATE.json; PROJECT_STATE.md; TODO.md; TASK_LEDGER.jsonl; explicit staging audit; commit and push to main" }
+  },
+  "regression": {
+    "typecheck": "PASS",
+    "vitest": "PASS — 49 files / 323 tests",
+    "build": "PASS",
+    "k2_unified_brain": "PASS_K2_UNIFIED_WHOLE_GAME_BRAIN_AND_RUNTIME_PACK_CLOSED",
+    "k4_visual_closure": "PASS_K4_ARTIFACT_VALIDATION_SOURCE_LIMITED reachable=49 visible=42 blocking_source_limited=0 heuristic_or_assumed=0",
+    "k4_1_targeted_closure": "PASS_K4_1_TARGETED_VALIDATION blocking_source_limited=0 source_missing=0 heuristic_or_assumed=0 ready_for_v8=true v8=NOT_STARTED",
+    "v7": "PASS",
+    "i1": "PASS",
+    "i2": "PASS",
+    "diff_check": "PASS"
+  },
+  "inputs": {
+    "prompt_sha256": "652CE3C94C9D711DC6A8CB83D0FEA6DA1D7D2B8FBD4B0AAF41D872D3C81D02A0",
+    "sol_pack_sha256": "662309AD358D882D5633E3546AAD6D93647575A5749D7330AC19A8C9FBD7C077"
+  },
+  "boundaries": {
+    "source_roots_changed": false,
+    "canonical_brain_rewritten": false,
+    "backend": false,
+    "persistence": false,
+    "auth": false,
+    "cloud": false,
+    "deployment": false,
+    "emulator_adb": false,
+    "network_integration": false,
+    "subagents": false
+  },
+  "artifacts": [
+    "knowledge/brain/acceptance/v8/gap-classification.json",
+    "knowledge/brain/acceptance/v8/room0-pass-composition.json",
+    "knowledge/brain/acceptance/v8/staff-visual-state.json",
+    "knowledge/brain/acceptance/v8/workstation-interleave.json",
+    "knowledge/brain/acceptance/v8/fukidashi-validation.json",
+    "knowledge/brain/acceptance/v8/equipment-visual-timeline.json",
+    "knowledge/brain/acceptance/v8/door-home-fade.json",
+    "knowledge/brain/acceptance/v8/product-independence.json",
+    "knowledge/brain/acceptance/v8/browser-smoke.json",
+    "knowledge/brain/acceptance/v8/V8_CLOSURE_REPORT.md"
+  ]
+}

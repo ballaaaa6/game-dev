@@ -1,0 +1,39 @@
+{
+  "schema_version": "social-dev-v8-staff-visual-state-v1",
+  "status": "PASS",
+  "direction_authority": {
+    "raw0": { "direction": "left", "wait": 11, "typing": 24, "move": 2 },
+    "raw1": { "direction": "right", "wait": 10, "typing": 23, "move": 1 },
+    "raw2": { "direction": "down", "wait": 13, "typing": 26, "move": 4 },
+    "raw3": { "direction": "up", "wait": 12, "typing": 25, "move": 3 }
+  },
+  "alpha_contract": {
+    "initial": { "route": "http://127.0.0.1:4173/?auto=0", "frame": 0, "alpha": 0, "visible": false, "cell": [8, 4] },
+    "live_frame35": { "alpha": 255, "visible_count": 3 },
+    "fade_in_increment": 25,
+    "fade_out_increment": -25,
+    "wait_back_of_door_hidden": true
+  },
+  "browser_evidence": {
+    "plain_route": "http://127.0.0.1:4173/",
+    "visual_gate": "pass",
+    "staff_count": 3,
+    "fallback_markers": 0,
+    "unresolved_selectors": [],
+    "approved_full_catalog_draws": 3
+  },
+  "test_evidence": {
+    "file": "runtime/social-dev/tests/v8-live-room0.test.ts",
+    "cases": [
+      "uses the exact raw direction and selector authority",
+      "runs all three live Staff paths from the door to desk with alpha, full selectors, and no unresolved draws"
+    ],
+    "result": "PASS"
+  },
+  "source_refs": [
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:UpdateAlpha",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:Draw",
+    "knowledge/fixtures/accepted/runtime/character_asset_manifest.json",
+    "knowledge/fixtures/accepted/runtime/character_capability_contract.json"
+  ]
+}
