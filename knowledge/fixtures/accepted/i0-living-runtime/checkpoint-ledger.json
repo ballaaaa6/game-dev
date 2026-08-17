@@ -1,0 +1,122 @@
+{
+  "schema_version": "social-dev-i0-checkpoint-ledger-v1",
+  "status": "PASS_I0_CHECKPOINTS_CLOSED",
+  "checkpoints": [
+    {
+      "id": "I0.PRE",
+      "status": "PASS",
+      "token": "PASS_PRE_I0_BASELINE_GREEN",
+      "evidence": [
+        "baseline.json",
+        "source-reverification.json",
+        "r0-contract-hash-lock.json"
+      ]
+    },
+    {
+      "id": "I0.0",
+      "status": "PASS",
+      "token": "PASS_I0_0_RUNTIME_FOUNDATION",
+      "evidence": [
+        "runtime-module-migration.json",
+        "canonical-runtime-catalog-manifest.json"
+      ]
+    },
+    {
+      "id": "I0.1",
+      "status": "PASS",
+      "token": "PASS_I0_1_AUTHORITATIVE_STATE",
+      "evidence": [
+        "contract-consumption-map.json"
+      ]
+    },
+    {
+      "id": "I0.2",
+      "status": "PASS",
+      "token": "PASS_I0_2_MOVEMENT_ROUTE_ARRIVAL",
+      "evidence": [
+        "transition-traces/S1.jsonl",
+        "native-implementation-spotchecks.json"
+      ]
+    },
+    {
+      "id": "I0.3",
+      "status": "PASS",
+      "token": "PASS_I0_3_SPAWN_DESK_WORK",
+      "evidence": [
+        "transition-traces/S1.jsonl",
+        "scenario-results.json"
+      ]
+    },
+    {
+      "id": "I0.4",
+      "status": "PASS",
+      "token": "PASS_I0_4_TICK_RNG_AUTONOMY",
+      "evidence": [
+        "tick-rng-closure.json",
+        "deterministic-rng-replay.json"
+      ]
+    },
+    {
+      "id": "I0.5",
+      "status": "PASS",
+      "token": "PASS_I0_5_EQUIPMENT_LOOP",
+      "evidence": [
+        "transition-traces/S2.jsonl",
+        "transition-traces/S6.jsonl"
+      ]
+    },
+    {
+      "id": "I0.6",
+      "status": "PASS",
+      "token": "PASS_I0_6_TALK_LOOP",
+      "evidence": [
+        "transition-traces/S3.jsonl"
+      ]
+    },
+    {
+      "id": "I0.7",
+      "status": "PASS",
+      "token": "PASS_I0_7_HP_RECOVERY_HOME",
+      "evidence": [
+        "transition-traces/S4.jsonl",
+        "native-implementation-spotchecks.json"
+      ]
+    },
+    {
+      "id": "I0.8",
+      "status": "PASS",
+      "token": "PASS_I0_8_PLANNING_BOUNDARY",
+      "evidence": [
+        "transition-traces/S8.jsonl",
+        "transition-traces/S9.jsonl"
+      ]
+    },
+    {
+      "id": "I0.9",
+      "status": "PASS",
+      "token": "PASS_I0_9_INTERRUPTION_CLEANUP",
+      "evidence": [
+        "transition-traces/S2.jsonl",
+        "transition-traces/S7.jsonl"
+      ]
+    },
+    {
+      "id": "I0.10",
+      "status": "PASS",
+      "token": "PASS_I0_10_S1_S10_ACCEPTANCE",
+      "evidence": [
+        "scenario-results.json",
+        "deterministic-rng-replay.json"
+      ]
+    },
+    {
+      "id": "I0.FINAL",
+      "status": "PASS",
+      "token": "PASS_I0_ORIGINAL_LIVING_CORE_RUNTIME_IMPLEMENTED_S1_S10_CLOSED",
+      "evidence": [
+        "validation.json",
+        "implementation-manifest.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "social-dev-i1-multi-agent-conflict-contract-v1",
+  "status": "PASS_I1_9_MULTI_AGENT_CONFLICT_CLEANUP",
+  "rules": [
+    "two explicit AgentBindings may target two distinct Staff",
+    "one active non-terminal task per Agent/Staff",
+    "duplicate task ID -> TASK_ALREADY_EXISTS",
+    "duplicate external agent or Staff binding -> AGENT_BINDING_CONFLICT",
+    "second active task -> ACTIVE_TASK_CONFLICT",
+    "unbind with active task -> ACTIVE_TASK_PREVENTS_UNBIND",
+    "terminal historical TaskRecord is stable",
+    "no queue, fairness, random selection, or auto reassignment"
+  ],
+  "cross_mutation": "Event/task lookup is keyed by explicit external IDs and binding; task A cannot change task B or another Staff."
+}

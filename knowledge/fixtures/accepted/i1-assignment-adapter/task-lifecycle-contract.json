@@ -1,0 +1,19 @@
+{
+  "schema_version": "social-dev-i1-task-lifecycle-contract-v1",
+  "status": "PASS_I1_7_TASK_LIFECYCLE",
+  "transitions": [
+    "no record -> IDLE_NO_TASK",
+    "IDLE_NO_TASK -> ASSIGNED via assign_task",
+    "ASSIGNED -> RUNNING via start_task",
+    "ASSIGNED -> COMPLETED via complete_task",
+    "ASSIGNED -> FAILED via fail_task",
+    "ASSIGNED -> CANCELLED via cancel_task",
+    "RUNNING -> COMPLETED via complete_task",
+    "RUNNING -> FAILED via fail_task",
+    "RUNNING -> CANCELLED via cancel_task"
+  ],
+  "terminal_statuses": ["COMPLETED", "FAILED", "CANCELLED"],
+  "invalid_transitions": "rejected with INVALID_TASK_TRANSITION; no PAUSED status in I1",
+  "living_invariants": ["terminal commands do not delete Staff", "terminal commands do not destroy desks", "terminal commands do not mutate HP", "assignment does not force desk/state/home/equipment/talk"],
+  "ownership": "product task identity is retained in historical TaskRecord; active bridge set is removed exactly once on terminal command"
+}

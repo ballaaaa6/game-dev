@@ -1,0 +1,35 @@
+{
+  "blend_modes": {
+    "color": "RGB multiply by blend color",
+    "grayscale": "0.299R + 0.587G + 0.114B",
+    "light": "RGB add/clamp",
+    "none": "identity",
+    "proof_class": "COMPATIBILITY_REIMPLEMENTATION"
+  },
+  "color": {
+    "default_state": "0xFF000000 treated as identity sentinel for the selected V1–V6 command surface",
+    "explicit_color": "straight-alpha RGB multiplication and alpha multiplication",
+    "packing": "AARRGGBB",
+    "proof_class": "COMPATIBILITY_REIMPLEMENTATION"
+  },
+  "gpu_boundary": {
+    "exact_shader_rounding": "SOURCE_LIMITED",
+    "native_rva": "0x1C10388",
+    "premultiplication": "straight-alpha compatibility rule"
+  },
+  "render_modes": {
+    "add": "same bounded channel sum with native ratios",
+    "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+    "replace": "source*sourceRatio + destination*destinationRatio",
+    "rounding": "Math.round",
+    "subtract": "source*sourceRatio - destination*destinationRatio clamped at zero"
+  },
+  "schema_version": "social-dev-visual-port-v7-blend-alpha-contract-v1",
+  "staff_alpha": {
+    "proof_class": "PROVEN",
+    "selected_fixture": "alpha=128",
+    "state_scope": "push/pop around Staff SEB commands",
+    "v6_command": "PushRenderMode(ADD, alpha, 255-alpha)"
+  },
+  "status": "pass_static"
+}

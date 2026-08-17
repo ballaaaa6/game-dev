@@ -1,0 +1,2 @@
+{"scenarioId":"A6","step":1,"event":"living_interruption_observed","reason":"low_hp_home_path","productStatus":"RUNNING","livingState":"STATE_STAY_HOME"}
+{"scenarioId":"A6","step":2,"event":"living_resumed_observed","reason":"baseline_living_resumed","productStatus":"RUNNING","livingState":"STATE_WORK"}

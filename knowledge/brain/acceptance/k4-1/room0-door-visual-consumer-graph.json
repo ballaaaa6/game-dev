@@ -1,0 +1,85 @@
+{
+  "consumers": [
+    {
+      "condition": "raw type == 5",
+      "consumer": "Room.Draw -> ObjChip.DrawWall",
+      "result": "fixed door SEB/image baseline",
+      "rva": "0x12C0698"
+    },
+    {
+      "consumer": "ObjChip.DrawWall dynamic FurnitureData overlay",
+      "guard": "furnitureData_ == null -> cbz bypass",
+      "result": "unreachable for Room0 door because furnitureData is null"
+    },
+    {
+      "consumer": "ObjChip.Update type-5 action",
+      "result": "reservation/frame/workFloat/fade/action state only",
+      "rva": "0x12BED80"
+    },
+    {
+      "consumer": "ObjChip.StartAction",
+      "result": "writes action state; does not create a separate Room0 FurnitureData draw consumer",
+      "rva": "0x12C0520"
+    }
+  ],
+  "native_anchors": [
+    {
+      "address": "0x12C0784",
+      "mnemonic": "cmp",
+      "op_str": "w11, #5"
+    },
+    {
+      "address": "0x12C0794",
+      "mnemonic": "mov",
+      "op_str": "w1, #2"
+    },
+    {
+      "address": "0x12C07A4",
+      "mnemonic": "bl",
+      "op_str": "#0x1c5bc08"
+    },
+    {
+      "address": "0x12C08A4",
+      "mnemonic": "bl",
+      "op_str": "#0x125bb88"
+    },
+    {
+      "address": "0x12C08A8",
+      "mnemonic": "ldr",
+      "op_str": "x8, [x20, #0x20]"
+    },
+    {
+      "address": "0x12C08AC",
+      "mnemonic": "cbz",
+      "op_str": "x8, #0x12c0cfc"
+    },
+    {
+      "address": "0x12C08B0",
+      "mnemonic": "ldr",
+      "op_str": "w8, [x8, #0x24]"
+    },
+    {
+      "address": "0x12C08B4",
+      "mnemonic": "cmp",
+      "op_str": "w8, #5"
+    }
+  ],
+  "room0_input": {
+    "cell": [
+      8,
+      4
+    ],
+    "furniture_data": null,
+    "installed_flag": 1,
+    "raw_type": 5
+  },
+  "schema_version": "social-dev-k4-1-room0-door-visual-consumer-graph-v1",
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:door",
+    "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0].door",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:PlaceDoor",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:DrawWall/Update/StartAction",
+    "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12C0698/0x12BED80/0x12C0520"
+  ],
+  "status": "PROVEN_CANONICAL"
+}

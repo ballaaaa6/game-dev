@@ -1,0 +1,8 @@
+{
+  "schema_version": "social-dev-i1-assignment-event-contract-v1",
+  "status": "PASS_I1_6_ASSIGNMENT_EVENTS",
+  "event_categories": ["agent_bound", "agent_unbound", "task_assigned", "task_started", "task_progressed", "task_completed", "task_failed", "task_cancelled", "original_context_enter", "original_context_exit", "living_interruption_observed", "living_resumed_observed", "command_rejected"],
+  "fields": ["sequence", "commandId", "externalAgentId", "externalTaskId", "staffId", "productStatusBefore", "productStatusAfter", "livingStateAtEvent", "livingMoveModeAtEvent", "livingFrame", "bridgeMode", "reason", "code", "originalContextOwned"],
+  "determinism": "sequence-based; no wall-clock field; full LivingTrace is not duplicated",
+  "bridge_c_note": "original_context_enter/exit events identify the adapter overlay context and set originalContextOwned=false; they do not claim native Develop or Planning entry."
+}

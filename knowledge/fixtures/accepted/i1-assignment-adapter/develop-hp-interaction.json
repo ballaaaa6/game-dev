@@ -1,0 +1,13 @@
+{
+  "schema_version": "social-dev-i1-develop-hp-interaction-v1",
+  "status": "PASS_I1_3_DEVELOP_HP_INTERACTION",
+  "hp_field": { "field": "Staff.hp_", "offset": "0xE8", "native_reads": ["UpdateDevelop state 6", "Staff.Update ordinary low-HP guard outside state12"] },
+  "develop_path": [
+    { "condition": "developState=6 and hp < 1", "native": "call 0x12D9CF0 / ChangeStateToDown", "meaning": "Develop-specific down/failure branch" },
+    { "condition": "developState=6 and stepFinished_ != 0", "native": "call 0x12D9C48 / ChangeStateToWait", "meaning": "Develop-specific completion/wait branch" },
+    { "condition": "Staff.OnAttacked", "source": "Staff.cs:7250", "writes": ["developState_=6", "HP clamp to zero when depleted"], "meaning": "active Develop combat interaction" },
+    { "condition": "Staff.OnFinishDevelop", "source": "Staff.cs:7108-7140", "writes": ["original hp = max(1, clone hp)", "original aura copied"], "meaning": "result copy into original Staff" }
+  ],
+  "ordinary_living_relation": "Staff.Update state12 returns immediately to UpdateDevelop before UpdateRecoveryHp and office low-HP door routing. Product tasks therefore must not force ordinary HP semantics through STATE_DEVELOP.",
+  "product_policy": "Bridge C leaves HP entirely under LivingRuntime; terminal product commands do not mutate it."
+}

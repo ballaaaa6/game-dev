@@ -1,0 +1,34 @@
+{
+  "alpha": {
+    "deterministic_fixture_fade": "V6 alpha step +25 per selected step",
+    "proof_class": "CALL-FLOW-PROVEN",
+    "selected_v7_fixture": 128,
+    "spawn": 0
+  },
+  "boundary": "V7 closes only deterministic selected frame/action fixtures; it does not copy legacy browser timing or claim complete live cadence.",
+  "schema_version": "social-dev-visual-port-v7-staff-cadence-contract-v1",
+  "selected_fixture": {
+    "action": "wait",
+    "actor_ids": [
+      "actor:staff:0",
+      "actor:staff:1",
+      "actor:staff:2"
+    ],
+    "direction": "right",
+    "frame": 0,
+    "proof_class": "PROVEN"
+  },
+  "source_intervals": {
+    "frame_reset_on_action_change": true,
+    "frame_reset_on_direction_change": true,
+    "proof_class": "CALL-FLOW-PROVEN",
+    "typing": 3,
+    "wait": 1
+  },
+  "status": "pass_static",
+  "unknowns": [
+    "complete native Staff.Update cadence",
+    "hidden initial SEB before first draw",
+    "gameplay route/talk/work cadence"
+  ]
+}

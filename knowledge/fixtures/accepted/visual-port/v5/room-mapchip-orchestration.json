@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "phase": "V5",
+  "status": "PASS_STATIC_MAPCHIP_ORCHESTRATION",
+  "owner": "RoomV5",
+  "adapter": "runtime/social-dev/src/v4/map-chip.ts",
+  "map_chip_lifecycle": [
+    "Room.InitMapChips selects native topology by Room.floor_.",
+    "Room.Draw invokes DrawExtentionFloor before Draw.",
+    "Room.Draw invokes DrawFloor in the final native slot.",
+    "The same integer Camera offset is forwarded to every child adapter.",
+    "MapChip raw indices resolve through default_map_chip_contract.json; no filename lookup is used."
+  ],
+  "topology_fixtures": {
+    "floor_0": {"dimensions": [14, 14], "raw_cells": 196, "visible_floor_window": "x=5..9, y=5..8", "visible_cell_count": 20},
+    "floor_nonzero": {"dimensions": [4, 4], "raw_cells": 16, "raw_index": 1, "runtime_selector": 85}
+  },
+  "extension_triggers": {
+    "vertical_frame_1": [[4, 5], [4, 6], [8, 9], [8, 10], [8, 11]],
+    "horizontal_frame_0": [[2, 5], [3, 5], [4, 5], [7, 9], [8, 9]],
+    "local_piece_count": 2,
+    "seb_selector": 63,
+    "proof": "NATIVE-CODE-PROVEN"
+  },
+  "selector_table": {"0": -1, "1": 85, "2": 10, "3": 11, "4": 12, "5": 13, "6": 14, "7": 15, "8": 105, "9": 154, "10": 155, "11": 156},
+  "floor_alias_policy": {
+    "roomdata_floor_img_id": 5,
+    "native_floor_table_selector": 23,
+    "runtime_selector": 85,
+    "render_filename": "floor_05.png",
+    "status": "COMPATIBILITY-POLICY"
+  },
+  "production_boundary": "V5 consumes the V4 adapter and does not alter the production scene renderer."
+}

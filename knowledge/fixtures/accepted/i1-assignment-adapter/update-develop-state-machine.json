@@ -1,0 +1,29 @@
+{
+  "schema_version": "social-dev-i1-update-develop-state-machine-v1",
+  "status": "PASS_I1_3_MINIMAL_DEVELOP_STATE_MACHINE",
+  "domain": { "field": "Staff.developState_", "offset": "0x188", "dispatch": "10-way native table", "ordinary_staff_state": "Staff.state_ at 0x70 must be 12 before Staff.Update calls UpdateDevelop" },
+  "states_0_to_9": {
+    "0": "ready/entry animation",
+    "1": "entry timing",
+    "2": "movement/step entry",
+    "3": "active progress/attack branch",
+    "4": "step timing/attack branch",
+    "5": "common wait/post branch",
+    "6": "HP/finish/down decision branch",
+    "7": "common wait/post branch",
+    "8": "action/animation branch",
+    "9": "common terminal animation branch"
+  },
+  "extended_values_observed": {
+    "10": "DevelopForm enemy interruption temporary state",
+    "state_7": "down/death animation condition in Staff source",
+    "source_note": "Values outside the native 0..9 table are handled by surrounding form/native branches; they are retained as source facts, not product statuses."
+  },
+  "entry_and_exit": [
+    { "entry": "ReadyToDevelop", "source": "Staff.cs:5758", "writes": ["developState_=0", "sebId_=1"] },
+    { "entry": "OnStartStep", "source": "Staff.cs:5769", "writes": ["frame2_=0", "stepFinished_=false", "developState_=3 when HP/condition permits"] },
+    { "exit": "OnFinishDevelop", "source": "Staff.cs:7108", "writes": ["stepFinished_=true", "ChangeStateToWait", "original HP/aura result copy"] },
+    { "exit": "DevelopForm step clear", "source": "DevelopForm.cs:4304-4318", "writes": ["clone developState_=8", "DevelopForm state=11"] }
+  ],
+  "source_limit": "The indirect managed dispatcher and the exact Staff.state=12 call site remain partly damaged; this does not block the truthful product-only bridge."
+}

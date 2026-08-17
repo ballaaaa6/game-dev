@@ -1,0 +1,191 @@
+{
+  "schema_version": "social-dev-k3-furniture-visual-closure-v1",
+  "gap_id": "K3-GAP-FURNITURE-VISUAL",
+  "status": "CLOSED",
+  "namespaces": {
+    "data_row_id": "DATA_ROW_ID:data:FurnitureData:26",
+    "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:27",
+    "furniture_data_id": "FURNITURE_DATA_ID:26",
+    "seb_selector_id": "SEB_SELECTOR_ID:21",
+    "sub_seb_selector_id": "SEB_SELECTOR_ID:-1",
+    "image_selector_id": "IMAGE_SELECTOR_ID:106",
+    "sprite_frame_id": "SPRITE_FRAME_ID:furniture:26:0",
+    "image_asset_id": "asset:01_GAME_PACKS/chip/old_printer.png",
+    "seb_asset_id": "asset:01_GAME_PACKS/chip/equip.seb"
+  },
+  "source_row": {
+    "row_id": "data:furniture:26",
+    "table_id": "data:FurnitureData",
+    "native_id": 26,
+    "row_index": 27,
+    "raw_columns": [
+      "26",
+      "Old Printer",
+      "2",
+      "1",
+      "180",
+      "1000",
+      "0",
+      "2",
+      "1",
+      "7",
+      "21",
+      "-1",
+      "106",
+      "1",
+      "4",
+      "1",
+      "32784",
+      "0",
+      "65",
+      "3",
+      "490",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    "fields": {
+      "id_": 26,
+      "name_": "Old Printer",
+      "category_": 2,
+      "type_": 1,
+      "seb_": 21,
+      "subSeb_": -1,
+      "img_": 106,
+      "paramType_": 1,
+      "paramValue_": 4,
+      "paramTarget_": 1,
+      "flag_": 32784,
+      "recovery_": 0,
+      "buildTime_": 65
+    },
+    "english_row_sha256": "48f80e4db1e0ca6b5a5cbb404da69ffc56d8dce7286bd90334ece01f67a3cdc1",
+    "japanese_row_sha256": "11c2e5aa18137f9d4d877ca03adc3f64356323e94199288bbcdc0693a62f34fc"
+  },
+  "native_field_layout": {
+    "FurnitureData.Load": {
+      "rva": "0x1218B04",
+      "flag_": "0x14",
+      "type_": "0x24",
+      "seb_": "0x40",
+      "subSeb_": "0x44",
+      "img_": "0x48",
+      "buildTime_": "0x5C"
+    },
+    "ObjChip": {
+      "furnitureData_": "0x20",
+      "type_": "0x18",
+      "frame_": "0x60",
+      "sebFrame_": "0x80"
+    }
+  },
+  "native_visual_chain": [
+    {
+      "method": "ObjChip.PlaceObj",
+      "rva": "0x12C4308",
+      "operation": "stores FurnitureData pointer and zeros frame_ and sebFrame_",
+      "source": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12C4340-0x12C4348"
+    },
+    {
+      "method": "ObjChip.Draw(Graphics,ofx,ofy,FurnitureData,bool)",
+      "rva": "0x12C166C",
+      "condition": "FurnitureData.type_ == OBJ_TYPE_EQUIP (1)",
+      "operation": "dispatches the type-1 furniture branch",
+      "source": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12C1904-0x12C191C"
+    },
+    {
+      "method": "ObjChip.Draw",
+      "rva": "0x12C166C",
+      "operation": "loads FurnitureData.img_ at 0x48 and primary seb_ at 0x40 through ResourceManager.img[]/seb[]; the selected initial content record resolves the image layer directly",
+      "resource_manager_fields": {
+        "img": "0x10",
+        "seb": "0x18"
+      },
+      "source": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12C2C38-0x12C2CB4"
+    },
+    {
+      "method": "Seb.GetSprite",
+      "rva": "0x1C5BC08",
+      "operation": "resolves the selected SEB frame when the type-1 path uses the companion",
+      "source": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12C2B00-0x12C2B14"
+    },
+    {
+      "method": "AppData.DrawSeb",
+      "rva": "0x125BB88",
+      "operation": "draws the resolved image/SEB content with the selected frame",
+      "source": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12C2C0C-0x12C2C2C"
+    }
+  ],
+  "conditions": {
+    "raw_type": 1,
+    "object_type_namespace": "FURNITURE_DATA_ID:26/type:OBJ_TYPE_EQUIP:1",
+    "flag_value": 32784,
+    "flag_hex": "0x8010",
+    "set_flags": [
+      "FLAG_ATTRIBUTE",
+      "FLAG_INIT_PLACE"
+    ],
+    "absent_animation_flags": [
+      "FLAG_ANIME_ALWAYS",
+      "FLAG_ANIME_USE",
+      "FLAG_ANIME_GAUGE_MAX"
+    ],
+    "secondary_seb": "SEB_SELECTOR_ID:-1",
+    "initial_frame": "SPRITE_FRAME_ID:furniture:26:0",
+    "initial_frame_source": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12C4344-0x12C4348"
+  },
+  "accepted_frame_record": {
+    "start_frame": 0,
+    "image_selector_id": "IMAGE_SELECTOR_ID:106",
+    "source_x": 0,
+    "source_y": 0,
+    "width": 23,
+    "height": 26,
+    "destination": [
+      -11,
+      -23
+    ],
+    "source_asset_id": "asset:01_GAME_PACKS/chip/old_printer.png",
+    "source_asset_sha256": "56A41237B773BC61CA54B49F76FF7ABFB8979AEF8D94DE08F79B39DE51E5BDC0",
+    "proof": "pass_native_img_asset"
+  },
+  "selector_resources": {
+    "image": {
+      "selector_key": "ref:chip:img:106",
+      "source_file": "01_GAME_PACKS/chip/img.inf",
+      "source_row": 103,
+      "raw_line": "106\told_printer.png,bin",
+      "asset_id": "asset:01_GAME_PACKS/chip/old_printer.png",
+      "sha256": "56A41237B773BC61CA54B49F76FF7ABFB8979AEF8D94DE08F79B39DE51E5BDC0",
+      "size_bytes": 1139,
+      "dimensions": [
+        23,
+        26
+      ]
+    },
+    "seb": {
+      "selector_key": "ref:chip:seb:21",
+      "source_file": "01_GAME_PACKS/chip/seb.inf",
+      "source_row": 18,
+      "raw_line": "21\tequip.seb",
+      "asset_id": "asset:01_GAME_PACKS/chip/equip.seb",
+      "sha256": "8430BF0E74D4F97360A7AE538977197A2E19EB0758EE525014939683CCF98D0C",
+      "size_bytes": 48
+    }
+  },
+  "provenance": [
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/FurnitureData.cs:95-164",
+    "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:FurnitureData.Load/ObjChip.PlaceObj/ObjChip.Draw",
+    "knowledge/fixtures/accepted/runtime/display_asset_manifest.json:furniture:26",
+    "knowledge/fixtures/accepted/native_content_registry.json:ref:chip:img:106/ref:chip:seb:21"
+  ],
+  "flag_table": {
+    "FLAG_ANIME_ALWAYS": 2,
+    "FLAG_ANIME_USE": 4,
+    "FLAG_ANIME_GAUGE_MAX": 8,
+    "FLAG_ATTRIBUTE": 16,
+    "FLAG_INIT_PLACE": 32768
+  }
+}

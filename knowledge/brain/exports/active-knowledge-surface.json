@@ -1,0 +1,27 @@
+{
+  "active_layers": [
+    "pinned_source",
+    "accepted_evidence",
+    "k2_brain",
+    "generated_data_pack",
+    "generated_runtime_pack",
+    "generated_visual_pack",
+    "implementation",
+    "acceptance"
+  ],
+  "active_runtime_pack": "knowledge/generated/original-runtime-pack/runtime-pack.json",
+  "runtime_pack_mirror": "runtime/social-dev/generated/original-runtime-pack.json",
+  "brain_revision": "k2-unified-brain-r1",
+  "implementation_blockers": [],
+  "production_runtime_entrypoint": "runtime/social-dev/src/catalog/load-original-runtime-pack.ts",
+  "retained_non_active_layers": [
+    "historical",
+    "superseded",
+    "candidate",
+    "source_limited",
+    "product_policy"
+  ],
+  "schema_version": "social-dev-k2-active-knowledge-surface-v1",
+  "single_generated_pack": true,
+  "status": "pass"
+}

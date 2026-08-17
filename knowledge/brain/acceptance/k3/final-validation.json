@@ -1,0 +1,102 @@
+{
+  "schema_version": "social-dev-k3-targeted-final-validation-v1",
+  "status": "pass",
+  "final_validation_token": "PASS_K3_TARGETED_MISSING_LINK_CLOSURE_CLOSED",
+  "gap_statuses": {
+    "K3-GAP-FLOOR-DIRECT-SELECTOR": "CLOSED",
+    "K3-GAP-FURNITURE-VISUAL": "CLOSED",
+    "K3-GAP-CANDIDATE-EDGES": "CLOSED"
+  },
+  "candidate_audit": {
+    "total": 185,
+    "confirmed": 1,
+    "rejected": 184,
+    "unresolved": 0,
+    "every_record_has_evidence": true
+  },
+  "regressions": {
+    "floor_query": "pass",
+    "furniture_query": "pass",
+    "candidate_query": "pass",
+    "namespace_query": "pass",
+    "legacy_runtime_boundary": "pass",
+    "k2_original_data_preserved": true,
+    "k2_runtime_pixels_changed": false,
+    "v8_started": false
+  },
+  "regression_evidence": {
+    "k2": {
+      "status": "PASS",
+      "command": "python tools/social-dev/test_k2_unified_brain.py",
+      "final_token": "PASS_K2_UNIFIED_WHOLE_GAME_BRAIN_AND_RUNTIME_PACK_CLOSED",
+      "artifact": "knowledge/brain/acceptance/k2/final-validation.json"
+    },
+    "k2_5_baseline": {
+      "status": "PASS_K2_5_CANONICAL_KNOWLEDGE_PROMOTION_AND_LEGACY_DISTILLATION_CLOSED",
+      "final_token": "PASS_K2_5_CANONICAL_KNOWLEDGE_PROMOTION_AND_LEGACY_DISTILLATION_CLOSED",
+      "semantic_delta_before_k3": 0,
+      "artifact": "knowledge/brain/acceptance/k2-5-cleanup/final-validation.json",
+      "semantic_delta_artifact": "knowledge/brain/acceptance/k2-5-cleanup/semantic-delta.json",
+      "legacy_offline_artifact": "knowledge/brain/acceptance/k2-5-cleanup/legacy-offline-test.json",
+      "legacy_active_dependency": false
+    },
+    "native_registry": {
+      "status": "PASS",
+      "command": "python tools/social-dev/test_native_content_registry.py",
+      "artifact": "knowledge/fixtures/accepted/native_content_registry.json"
+    },
+    "native_catalog": {
+      "status": "PASS",
+      "command": "python tools/social-dev/test_native_content_catalog.py",
+      "artifact": "knowledge/fixtures/accepted/runtime/native_content_catalog.json"
+    },
+    "native_floor": {
+      "status": "PASS",
+      "command": "python tools/social-dev/test_native_room_floor_closure.py",
+      "artifact": "knowledge/fixtures/accepted/runtime/default_map_chip_contract.json"
+    },
+    "display_gate": {
+      "status": "PASS",
+      "command": "python tools/social-dev/test_display_asset_gate.py",
+      "artifact": "knowledge/fixtures/accepted/runtime/display_asset_manifest.json"
+    },
+    "runtime": {
+      "typecheck": "PASS",
+      "typecheck_command": "npm run typecheck",
+      "vitest": "PASS 48 files / 314 tests",
+      "vitest_command": "npm test",
+      "runtime_pixels_changed": false
+    },
+    "original_data": {
+      "status": "PASS",
+      "artifact": "knowledge/data/original/sqlite/social_dev_original_data.sqlite",
+      "sha256": "9d561f7d5708c73b6b8a80acca10681f0323ec5a001145ed9c63215987d79d37",
+      "source_root_mutated": false
+    }
+  },
+  "semantic_scope": {
+    "closed_gap_count": 3,
+    "closed_gap_ids": [
+      "K3-GAP-FLOOR-DIRECT-SELECTOR",
+      "K3-GAP-FURNITURE-VISUAL",
+      "K3-GAP-CANDIDATE-EDGES"
+    ],
+    "only_these_gaps_changed": true,
+    "legacy_active_dependency": false,
+    "runtime_pixel_change": false
+  },
+  "artifact_layout": {
+    "acceptance_root": "knowledge/brain/acceptance/k3",
+    "runtime_contract_root": "knowledge/fixtures/accepted/runtime",
+    "queue": "knowledge/gaps/k3-gap-queue.json",
+    "canonical_brain": "knowledge/brain/sqlite/social_dev_brain.sqlite"
+  },
+  "required_boundaries": {
+    "network": false,
+    "subagents": false,
+    "local_server": false,
+    "deployment": false,
+    "persistence_backend": false,
+    "mapchip_pixel_modification": false
+  }
+}

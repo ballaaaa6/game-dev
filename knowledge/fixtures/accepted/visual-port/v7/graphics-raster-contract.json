@@ -1,0 +1,153 @@
+{
+  "operations": [
+    {
+      "inputs": [],
+      "native_rva": "0x1C07C74",
+      "operation": "ResetRender",
+      "output": "deterministic V7 initial state",
+      "proof_class": "PROVEN",
+      "remaining_uncertainty": "Native LinearFilter field is zero-initialized rather than explicitly reset.",
+      "state_transition": "clip=null, flip=0, scale=100, render=replace(255,0), blend=none"
+    },
+    {
+      "inputs": [
+        "image",
+        "dx",
+        "dy",
+        "sx",
+        "sy",
+        "width",
+        "height"
+      ],
+      "native_rva": "0x1C0EF98",
+      "operation": "DrawImage crop",
+      "output": "V7 nearest/linear compatibility sample",
+      "proof_class": "PROVEN",
+      "remaining_uncertainty": "Final _drawBitmap sampler/rounding is unavailable.",
+      "state_transition": "records source and equal-size destination rectangles"
+    },
+    {
+      "inputs": [
+        "image",
+        "dx",
+        "dy",
+        "width",
+        "height",
+        "sx",
+        "sy",
+        "swidth",
+        "sheight"
+      ],
+      "native_rva": "0x1C0F0C8",
+      "operation": "DrawScaledImage",
+      "output": "V7 deterministic resample",
+      "proof_class": "PROVEN",
+      "remaining_uncertainty": "GPU interpolation exactness is compatibility-reimplemented.",
+      "state_transition": "records independent source/destination geometry"
+    },
+    {
+      "inputs": [
+        "x",
+        "y",
+        "width",
+        "height",
+        "push"
+      ],
+      "native_rva": "0x1C08694",
+      "operation": "ClipRect",
+      "output": "surface and explicit clip culling",
+      "proof_class": "PROVEN",
+      "remaining_uncertainty": "Transformed native matrices are not selected in V5/V6 commands.",
+      "state_transition": "intersection uses max-left/top and min-right/bottom"
+    },
+    {
+      "inputs": [
+        "rect",
+        "matrix"
+      ],
+      "native_rva": "0x1C085E8",
+      "operation": "GetTransRect",
+      "output": "deterministic polygon clip/affine sample",
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "remaining_uncertainty": "Selected native scene commands carry identity transforms only.",
+      "state_transition": "V7 accepts an explicit transform fixture"
+    },
+    {
+      "inputs": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "native_rva": "0x1C1B54C",
+      "operation": "SetFlipMode",
+      "output": "deterministic orientation",
+      "proof_class": "PROVEN",
+      "remaining_uncertainty": "Native final pixels for modes 4/5 remain source-limited.",
+      "state_transition": "horizontal/vertical center flips; 4/5 explicit compatibility rotations"
+    },
+    {
+      "inputs": [
+        "percent"
+      ],
+      "native_rva": "0x1C07C6C",
+      "operation": "Scale",
+      "output": "deterministic transformed bounds",
+      "proof_class": "PROVEN",
+      "remaining_uncertainty": "No selected room command uses non-100 scale.",
+      "state_transition": "scale about command center"
+    },
+    {
+      "inputs": [
+        "AARRGGBB"
+      ],
+      "native_rva": "0x1C09D60",
+      "operation": "SetColor",
+      "output": "straight-alpha channel modulation",
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "remaining_uncertainty": "Native shader color interpretation is unavailable.",
+      "state_transition": "explicit tint/alpha only; default 0xFF000000 is V7 identity sentinel"
+    },
+    {
+      "inputs": [
+        "operator",
+        "sourceRatio",
+        "destinationRatio"
+      ],
+      "native_rva": "0x1C07C74",
+      "operation": "SetRenderMode",
+      "output": "deterministic byte-rounded blend",
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "remaining_uncertainty": "Native premultiplication and shader rounding are unavailable.",
+      "state_transition": "replace/add/subtract channel equations"
+    },
+    {
+      "inputs": [
+        "enable"
+      ],
+      "native_rva": "0x1C1C0BC",
+      "operation": "LinearFilter",
+      "output": "deterministic sampling mode",
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "remaining_uncertainty": "Exact native sampler state is source-limited.",
+      "state_transition": "nearest when false; bilinear center sampling when true"
+    }
+  ],
+  "schema_version": "social-dev-visual-port-v7-graphics-raster-contract-v1",
+  "selected_scene_dispatch": {
+    "room_passes": 9,
+    "selected_room": "room:0",
+    "source_contracts": [
+      "V1 Seb/Image",
+      "V2 Graphics",
+      "V3 ResourceManager",
+      "V4 object/map",
+      "V5 Room",
+      "V6 Staff"
+    ],
+    "staff_pass": "avatar-primary"
+  },
+  "status": "pass_static"
+}

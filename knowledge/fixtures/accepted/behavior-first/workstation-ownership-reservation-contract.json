@@ -1,0 +1,138 @@
+{
+  "contention": {
+    "equipment": "GotoEquip checks GetUsersNum() <= 0",
+    "fairness": "not proven",
+    "talk": "GotoTalk uses flags and colleagueId_ but does not call ReserveUse"
+  },
+  "desk_creation": {
+    "flag_name": "FurnitureData.FLAG_INIT_DESK",
+    "furniture_flag": 16384,
+    "method": "Room.PlaceDesk",
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+      "line": 7916,
+      "note": "Desk seed selection.",
+      "source_sha256": "c10c33769dddcb6d8e24bf209fa55c6513eb89ef3bd8f9685e2c0c53698bfc72",
+      "symbol": "bool flag2 = ((BaseData)obj12).Check(16384);"
+    },
+    "slot_type": 2
+  },
+  "desk_ownership": [
+    {
+      "field": "Staff.deskId_",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+        "line": 6061,
+        "note": "Staff-to-desk ownership field.",
+        "source_sha256": "c10c33769dddcb6d8e24bf209fa55c6513eb89ef3bd8f9685e2c0c53698bfc72",
+        "symbol": "staff.deskId_ = id;"
+      },
+      "write": "Room.AddStaff assigns GetStaffEmptyObjTypeOf(2).GetId()"
+    },
+    {
+      "field": "ObjChip.staffId_",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+        "line": 6062,
+        "note": "Desk-to-staff ownership field.",
+        "source_sha256": "c10c33769dddcb6d8e24bf209fa55c6513eb89ef3bd8f9685e2c0c53698bfc72",
+        "symbol": "staffEmptyObjTypeOf.staffId_ = staff.id_;"
+      },
+      "write": "Room.AddStaff writes staff.id_"
+    },
+    {
+      "field": "ObjChip.staffs_",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 1840,
+        "note": "Occupancy list maintenance.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "objChip5.AddStaff(this);"
+      },
+      "write": "Staff.Update adds/removes based on current cell"
+    }
+  ],
+  "native_refs": [
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned desk lookup.",
+      "rva": "0x12CF178",
+      "symbol": "Room.GetStaffEmptyObjTypeOf"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned reservation count.",
+      "rva": "0x12C4A70",
+      "symbol": "ObjChip.GetUsersNum"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned desk placement.",
+      "rva": "0x12CEFC8",
+      "symbol": "Room.PlaceDesk"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned staff placement.",
+      "rva": "0x12CEB2C",
+      "symbol": "Room.AddStaff"
+    }
+  ],
+  "new_staff_placement": {
+    "door": "ObjChip type 5",
+    "hp_normalization": {
+      "loaded": "ClampHpMax",
+      "new": "RecoverHpMax"
+    },
+    "initial_reservation": true,
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+      "line": 6033,
+      "note": "Staff ingress reservation.",
+      "source_sha256": "c10c33769dddcb6d8e24bf209fa55c6513eb89ef3bd8f9685e2c0c53698bfc72",
+      "symbol": "objChip.ReserveUse(staff);"
+    }
+  },
+  "reservation_lifecycle": [
+    {
+      "list": "reservedStaffs_",
+      "operation": "ReserveUse",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+        "line": 11258,
+        "note": "Add reservation.",
+        "source_sha256": "7ff9eff4252d218ae35df5bc4b72fb618be37434192431cbbde30301686c1663",
+        "symbol": "public void ReserveUse(Staff staff)"
+      }
+    },
+    {
+      "effect": "remove reservation; increment useNum_ capped 99; add use point stock",
+      "operation": "OnUseComplate",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+        "line": 11263,
+        "note": "Completion.",
+        "source_sha256": "7ff9eff4252d218ae35df5bc4b72fb618be37434192431cbbde30301686c1663",
+        "symbol": "public void OnUseComplate(Staff staff)"
+      }
+    },
+    {
+      "effect": "notify reserved staff; desk user receives OnDeskDestroyed",
+      "operation": "RemoveObj",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+        "line": 10971,
+        "note": "Destruction cleanup.",
+        "source_sha256": "7ff9eff4252d218ae35df5bc4b72fb618be37434192431cbbde30301686c1663",
+        "symbol": "OnDeskDestroyed();"
+      }
+    }
+  ],
+  "schema_version": "social-dev-behavior-first-workstation-ownership-reservation-v1",
+  "status": "pass_with_source_limits",
+  "unknowns": [
+    "Exact GetStaffEmptyObjTypeOf predicate and desk vacancy rule.",
+    "Exact GetUsersNum implementation and whether reservation list is the sole count.",
+    "Exact OnArriveGoal side effects for into/out-of-equipment and sitting."
+  ]
+}

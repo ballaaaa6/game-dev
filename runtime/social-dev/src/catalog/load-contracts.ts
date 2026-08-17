@@ -1,30 +1,4 @@
-import actorCatalogJson from "../../evidence/actor_catalog_contract.json";
-import actorBehaviorJson from "../../evidence/actor_behavior_contract.json";
-import actorSpawnJson from "../../evidence/actor_spawn_contract.json";
-import cameraCoordinateJson from "../../evidence/camera_coordinate_contract.json";
-import characterCapabilityJson from "../../evidence/character_capability_contract.json";
-import characterAssetManifestJson from "../../evidence/character_asset_manifest.json";
-import characterMetadataJson from "../../evidence/character_metadata_contract.json";
-import displayAssetManifestJson from "../../evidence/display_asset_manifest.json";
-import objectCatalogJson from "../../evidence/object_catalog_contract.json";
-import preRuntimeClosureJson from "../../evidence/pre_runtime_closure_contract.json";
-import phase3cRenderJson from "../../evidence/phase3c_render_contract.json";
-import roomPlacementJson from "../../evidence/room_placement_contract.json";
-import sceneCatalogJson from "../../evidence/scene_catalog_contract.json";
-import strictClosureJson from "../../evidence/phase3c_strict_closure_contract.json";
-import tickOrderJson from "../../evidence/tick_order_contract.json";
-import defaultMapChipJson from "../../evidence/default_map_chip_contract.json";
-import roomSceneRuntimeJson from "../../evidence/room_scene_runtime_contract.json";
-import nativeDirectionJson from "../../evidence/native_direction_contract.json";
-import roomSceneAssetManifestJson from "../../evidence/room_scene_asset_manifest.json";
-import roomRSceneJson from "../../evidence/room_r_scene_contract.json";
-import nativeContentCatalogJson from "../../evidence/native_content_catalog.json";
-import nativeSceneAssemblyJson from "../../evidence/native_scene_assembly_contract.json";
-import nativeRoomFloorUsageJson from "../../evidence/native_room_floor_usage_contract.json";
-import assetMetadataRuntimeManifestJson from "../../evidence/asset_metadata_runtime_manifest.json";
-import floor00SceneJson from "../../evidence/floor00_scene_contract.json";
-import floor00DisplayPolicyJson from "../../evidence/floor00_display_policy.json";
-import floor00VisualLayoutJson from "../../evidence/floor00_visual_layout_contract.json";
+import { k2RuntimePack } from "./load-original-runtime-pack";
 import type {
   ActorBehaviorContract,
   ActorCatalogContract,
@@ -307,6 +281,35 @@ export function validateFloor00VisualLayoutContract(
 }
 
 export function loadRuntimeCatalogs(): RuntimeCatalogs {
+  const {
+    actorCatalogJson,
+    actorBehaviorJson,
+    actorSpawnJson,
+    cameraCoordinateJson,
+    characterCapabilityJson,
+    characterAssetManifestJson,
+    characterMetadataJson,
+    displayAssetManifestJson,
+    objectCatalogJson,
+    preRuntimeClosureJson,
+    phase3cRenderJson,
+    roomPlacementJson,
+    sceneCatalogJson,
+    strictClosureJson,
+    tickOrderJson,
+    defaultMapChipJson,
+    roomSceneRuntimeJson,
+    nativeDirectionJson,
+    roomSceneAssetManifestJson,
+    roomRSceneJson,
+    nativeContentCatalogJson,
+    nativeSceneAssemblyJson,
+    nativeRoomFloorUsageJson,
+    assetMetadataRuntimeManifestJson,
+    floor00SceneJson,
+    floor00DisplayPolicyJson,
+    floor00VisualLayoutJson,
+  } = k2RuntimePack;
   const scene = requireApproved<SceneCatalogContract>(sceneCatalogJson, "SceneCatalog");
   const objects = requireApproved<ObjectCatalogContract>(objectCatalogJson, "ObjectCatalog");
   const actors = requireApproved<ActorCatalogContract>(actorCatalogJson, "ActorCatalog");

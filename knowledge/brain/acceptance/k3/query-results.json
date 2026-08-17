@@ -1,0 +1,73 @@
+{
+  "schema_version": "social-dev-k3-targeted-query-results-v1",
+  "status": "pass",
+  "queries": {
+    "Q3_floor_selector_closure": {
+      "status": "pass",
+      "inputs": [
+        "ROOM_DATA_ID:0",
+        "ROOMDATA_FLOOR_IMAGE_INDEX:5",
+        "NATIVE_INDIRECTION_INDEX:5"
+      ],
+      "result": "IMAGE_SELECTOR_ID:23 -> asset:01_GAME_PACKS/chip/floor_05.png",
+      "hops": [
+        "load floorImgId_ as NATIVE_INDIRECTION_INDEX",
+        "zero MapChip image id selects Room.FLOOR_IMAGE_ID_ARRAY[index]",
+        "stores IMAGE_SELECTOR_ID:23",
+        "indexes the chip image selector table and draws the resolved image"
+      ],
+      "gaps": []
+    },
+    "Q3_furnituredata26_visual": {
+      "status": "pass",
+      "inputs": [
+        "FURNITURE_DATA_ID:26",
+        "SEB_SELECTOR_ID:21",
+        "IMAGE_SELECTOR_ID:106"
+      ],
+      "result": "SPRITE_FRAME_ID:furniture:26:0 -> asset:01_GAME_PACKS/chip/old_printer.png",
+      "hops": [
+        "stores FurnitureData pointer and zeros frame_ and sebFrame_",
+        "dispatches the type-1 furniture branch",
+        "loads FurnitureData.img_ at 0x48 and primary seb_ at 0x40 through ResourceManager.img[]/seb[]; the selected initial content record resolves the image layer directly",
+        "resolves the selected SEB frame when the type-1 path uses the companion",
+        "draws the resolved image/SEB content with the selected frame"
+      ],
+      "gaps": []
+    },
+    "Q3_candidate_edge_classification": {
+      "status": "pass",
+      "candidate_count": 185,
+      "classification_counts": {
+        "CONFIRMED": 1,
+        "REJECTED": 184
+      },
+      "unresolved_count": 0,
+      "deterministic_order": "subject_id,predicate,edge_id",
+      "gaps": []
+    },
+    "Q3_namespace_safety": {
+      "status": "pass",
+      "required_namespaces": [
+        "DATA_ROW_ID",
+        "DATA_ROW_INDEX",
+        "ROOM_DATA_ID",
+        "FURNITURE_DATA_ID",
+        "ROOMDATA_FLOOR_IMAGE_INDEX",
+        "NATIVE_INDIRECTION_INDEX",
+        "IMAGE_SELECTOR_ID",
+        "SEB_SELECTOR_ID",
+        "ASSET_ID",
+        "SPRITE_FRAME_ID",
+        "COMPATIBILITY_ALIAS_ID"
+      ],
+      "naked_integer_claims": 0
+    },
+    "Q3_legacy_runtime_boundary": {
+      "status": "pass",
+      "legacy_active_dependency": false,
+      "runtime_pixel_change": false,
+      "runtime_alias_preserved": true
+    }
+  }
+}

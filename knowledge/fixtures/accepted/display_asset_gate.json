@@ -1,0 +1,2960 @@
+{
+  "schema_version": "social-dev-display-asset-gate-v1",
+  "package": "display-slice-01",
+  "status": "pass",
+  "semantic_status": "approved_for_runtime_subset",
+  "generated_at_utc": "2026-08-16T11:27:39Z",
+  "phase3a": {
+    "target": "furniture:2",
+    "status": "approved",
+    "reason_code": "chair_00_opt_variable_piece_reconstruction_verified",
+    "runtime_promotion": "approved"
+  },
+  "scope": {
+    "approved": [
+      "selected staff source PNGs for source ids 0-4",
+      "human wait_right/typing_right SEB frame records",
+      "furniture:0 big_base00 direct SEB-to-PNG composition",
+      "furniture:1 door_03 SEB with door_02 OPT logical reconstruction",
+      "furniture:5 desk_00 plus chair_02 OPT logical reconstruction",
+      "room wall_00 native DrawWall coordinate composition",
+      "room door_01/door_02 native DrawWall coordinate composition",
+      "native room:0 initial FurnitureData bindings for furniture:3/12/26/56",
+      "furniture:2 desk_00 plus chair_00 OPT logical reconstruction"
+    ],
+    "blocked": []
+  },
+  "source_archives": {
+    "asset_zip": {
+      "path": "sources/raw/Social_Dev_Story_v2.5.1_ASSETS_ONLY_WITH_ASSEMBLY_GUIDE.zip",
+      "sha256": "C4B6AC1B6603EB8E2D7AC78E7DD3B8BFFB40B7C30FE036CB644BEA701087B283"
+    },
+    "apk": {
+      "path": "D:\\antigravity\\test open ai\\sources/raw/Social_Dev_Story_v2.5.1.apk",
+      "sha256": "FA0E9E3A843732258FC05B2611A8E0F5BE6F7E95F2141A53F31FB082322FE2BF"
+    }
+  },
+  "source_refs": [
+    {
+      "path": "knowledge/sources/asset_guide_20260813/00_INDEX/ASSET_INDEX.json",
+      "sha256": "d4ddbce6417d80b16b7d788fc53585a05b5aa050f9aa980b1b7c922a351aad05"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/asset_selector_contract.json",
+      "sha256": "7096ad95140632c8070a9787324f47d9e148b1e1a75af3c775c951b06ffb2425"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/actor_catalog_fixture.json",
+      "sha256": "484f013cea9370d32ce1b5501caa0b0f380c03bd891474e68bc91a8d1b8bf6d6"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/scene_catalog_fixture.json",
+      "sha256": "f235d68bb2057dc69add1650615dacbfe15712e9ddf0f7844e2b7fb8fc151b37"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/object_catalog_fixture.json",
+      "sha256": "ca59615f3856f83b6be25fa2d2197a6092cb48c084c5fe9b14d16e36c19a95d5"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/phase3c_strict_closure.json",
+      "sha256": "34d36891d3b7c8de54a4bf13a37d100c06804a7c19900b9d9e8717639c694488"
+    }
+  ],
+  "seb_format": {
+    "header_bytes": 8,
+    "record_bytes": 20,
+    "record_format": ">HHHHhhhhHH",
+    "source_policy": "SEB records are parsed as evidence; runtime consumes only the approved manifest frame records."
+  },
+  "entries": [
+    {
+      "id": "actor-sprite:0",
+      "kind": "human_actor_frame_source",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "actor_source_id": 0,
+        "image_selector_id": 86,
+        "image_asset_id": "asset:01_GAME_PACKS/human/chara86.png",
+        "image_asset_member": "01_GAME_PACKS/human/chara86.png",
+        "image_size": {
+          "width": 270,
+          "height": 60
+        },
+        "animations": {
+          "wait": {
+            "selector_id": 10,
+            "filename": "wait_right.seb",
+            "asset_id": "asset:01_GAME_PACKS/human/wait_right.seb",
+            "frame_bound": 20,
+            "global_frame_count": 20,
+            "records": [
+              {
+                "start_frame": 0,
+                "image_id": 0,
+                "source_x": 0,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 10,
+                "image_id": 0,
+                "source_x": 30,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 19,
+                "image_id": 0,
+                "source_x": 30,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              }
+            ],
+            "binding": "human_seb_records_with_selected_staff_img_",
+            "status": "approved_for_runtime_subset"
+          },
+          "typing": {
+            "selector_id": 23,
+            "filename": "typing_right.seb",
+            "asset_id": "asset:01_GAME_PACKS/human/typing_right.seb",
+            "frame_bound": 20,
+            "global_frame_count": 20,
+            "records": [
+              {
+                "start_frame": 0,
+                "image_id": 0,
+                "source_x": 120,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 10,
+                "image_id": 0,
+                "source_x": 240,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 19,
+                "image_id": 0,
+                "source_x": 240,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              }
+            ],
+            "binding": "human_seb_records_with_selected_staff_img_",
+            "status": "approved_for_runtime_subset"
+          }
+        },
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "actor-sprite:1",
+      "kind": "human_actor_frame_source",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "actor_source_id": 1,
+        "image_selector_id": 87,
+        "image_asset_id": "asset:01_GAME_PACKS/human/chara87.png",
+        "image_asset_member": "01_GAME_PACKS/human/chara87.png",
+        "image_size": {
+          "width": 270,
+          "height": 60
+        },
+        "animations": {
+          "wait": {
+            "selector_id": 10,
+            "filename": "wait_right.seb",
+            "asset_id": "asset:01_GAME_PACKS/human/wait_right.seb",
+            "frame_bound": 20,
+            "global_frame_count": 20,
+            "records": [
+              {
+                "start_frame": 0,
+                "image_id": 0,
+                "source_x": 0,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 10,
+                "image_id": 0,
+                "source_x": 30,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 19,
+                "image_id": 0,
+                "source_x": 30,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              }
+            ],
+            "binding": "human_seb_records_with_selected_staff_img_",
+            "status": "approved_for_runtime_subset"
+          },
+          "typing": {
+            "selector_id": 23,
+            "filename": "typing_right.seb",
+            "asset_id": "asset:01_GAME_PACKS/human/typing_right.seb",
+            "frame_bound": 20,
+            "global_frame_count": 20,
+            "records": [
+              {
+                "start_frame": 0,
+                "image_id": 0,
+                "source_x": 120,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 10,
+                "image_id": 0,
+                "source_x": 240,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 19,
+                "image_id": 0,
+                "source_x": 240,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              }
+            ],
+            "binding": "human_seb_records_with_selected_staff_img_",
+            "status": "approved_for_runtime_subset"
+          }
+        },
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "actor-sprite:2",
+      "kind": "human_actor_frame_source",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "actor_source_id": 2,
+        "image_selector_id": 88,
+        "image_asset_id": "asset:01_GAME_PACKS/human/chara88.png",
+        "image_asset_member": "01_GAME_PACKS/human/chara88.png",
+        "image_size": {
+          "width": 270,
+          "height": 60
+        },
+        "animations": {
+          "wait": {
+            "selector_id": 10,
+            "filename": "wait_right.seb",
+            "asset_id": "asset:01_GAME_PACKS/human/wait_right.seb",
+            "frame_bound": 20,
+            "global_frame_count": 20,
+            "records": [
+              {
+                "start_frame": 0,
+                "image_id": 0,
+                "source_x": 0,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 10,
+                "image_id": 0,
+                "source_x": 30,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 19,
+                "image_id": 0,
+                "source_x": 30,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              }
+            ],
+            "binding": "human_seb_records_with_selected_staff_img_",
+            "status": "approved_for_runtime_subset"
+          },
+          "typing": {
+            "selector_id": 23,
+            "filename": "typing_right.seb",
+            "asset_id": "asset:01_GAME_PACKS/human/typing_right.seb",
+            "frame_bound": 20,
+            "global_frame_count": 20,
+            "records": [
+              {
+                "start_frame": 0,
+                "image_id": 0,
+                "source_x": 120,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 10,
+                "image_id": 0,
+                "source_x": 240,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 19,
+                "image_id": 0,
+                "source_x": 240,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              }
+            ],
+            "binding": "human_seb_records_with_selected_staff_img_",
+            "status": "approved_for_runtime_subset"
+          }
+        },
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "actor-sprite:3",
+      "kind": "human_actor_frame_source",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "actor_source_id": 3,
+        "image_selector_id": 89,
+        "image_asset_id": "asset:01_GAME_PACKS/human/chara89.png",
+        "image_asset_member": "01_GAME_PACKS/human/chara89.png",
+        "image_size": {
+          "width": 270,
+          "height": 60
+        },
+        "animations": {
+          "wait": {
+            "selector_id": 10,
+            "filename": "wait_right.seb",
+            "asset_id": "asset:01_GAME_PACKS/human/wait_right.seb",
+            "frame_bound": 20,
+            "global_frame_count": 20,
+            "records": [
+              {
+                "start_frame": 0,
+                "image_id": 0,
+                "source_x": 0,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 10,
+                "image_id": 0,
+                "source_x": 30,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 19,
+                "image_id": 0,
+                "source_x": 30,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              }
+            ],
+            "binding": "human_seb_records_with_selected_staff_img_",
+            "status": "approved_for_runtime_subset"
+          },
+          "typing": {
+            "selector_id": 23,
+            "filename": "typing_right.seb",
+            "asset_id": "asset:01_GAME_PACKS/human/typing_right.seb",
+            "frame_bound": 20,
+            "global_frame_count": 20,
+            "records": [
+              {
+                "start_frame": 0,
+                "image_id": 0,
+                "source_x": 120,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 10,
+                "image_id": 0,
+                "source_x": 240,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 19,
+                "image_id": 0,
+                "source_x": 240,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              }
+            ],
+            "binding": "human_seb_records_with_selected_staff_img_",
+            "status": "approved_for_runtime_subset"
+          }
+        },
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "actor-sprite:4",
+      "kind": "human_actor_frame_source",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "actor_source_id": 4,
+        "image_selector_id": 90,
+        "image_asset_id": "asset:01_GAME_PACKS/human/chara90.png",
+        "image_asset_member": "01_GAME_PACKS/human/chara90.png",
+        "image_size": {
+          "width": 270,
+          "height": 60
+        },
+        "animations": {
+          "wait": {
+            "selector_id": 10,
+            "filename": "wait_right.seb",
+            "asset_id": "asset:01_GAME_PACKS/human/wait_right.seb",
+            "frame_bound": 20,
+            "global_frame_count": 20,
+            "records": [
+              {
+                "start_frame": 0,
+                "image_id": 0,
+                "source_x": 0,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 10,
+                "image_id": 0,
+                "source_x": 30,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 19,
+                "image_id": 0,
+                "source_x": 30,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -14,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              }
+            ],
+            "binding": "human_seb_records_with_selected_staff_img_",
+            "status": "approved_for_runtime_subset"
+          },
+          "typing": {
+            "selector_id": 23,
+            "filename": "typing_right.seb",
+            "asset_id": "asset:01_GAME_PACKS/human/typing_right.seb",
+            "frame_bound": 20,
+            "global_frame_count": 20,
+            "records": [
+              {
+                "start_frame": 0,
+                "image_id": 0,
+                "source_x": 120,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 10,
+                "image_id": 0,
+                "source_x": 240,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              },
+              {
+                "start_frame": 19,
+                "image_id": 0,
+                "source_x": 240,
+                "source_y": 30,
+                "width": 30,
+                "height": 30,
+                "destination_x": -15,
+                "destination_y": -30,
+                "flags": 0,
+                "reserved": 0,
+                "source_asset_slot": "selected_staff_img_",
+                "source_size": {
+                  "width": 270,
+                  "height": 60
+                },
+                "source_status": "pass"
+              }
+            ],
+            "binding": "human_seb_records_with_selected_staff_img_",
+            "status": "approved_for_runtime_subset"
+          }
+        },
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "human-animation:wait:direction-0",
+      "kind": "human_seb_frame_definition",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "selector_id": 10,
+        "filename": "wait_right.seb",
+        "asset_id": "asset:01_GAME_PACKS/human/wait_right.seb",
+        "frame_bound": 20,
+        "global_frame_count": 20,
+        "records": [
+          {
+            "start_frame": 0,
+            "image_id": 0,
+            "source_x": 0,
+            "source_y": 30,
+            "width": 30,
+            "height": 30,
+            "destination_x": -14,
+            "destination_y": -30,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_slot": "selected_staff_img_",
+            "source_size": {
+              "width": 270,
+              "height": 60
+            },
+            "source_status": "pass"
+          },
+          {
+            "start_frame": 10,
+            "image_id": 0,
+            "source_x": 30,
+            "source_y": 30,
+            "width": 30,
+            "height": 30,
+            "destination_x": -14,
+            "destination_y": -30,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_slot": "selected_staff_img_",
+            "source_size": {
+              "width": 270,
+              "height": 60
+            },
+            "source_status": "pass"
+          },
+          {
+            "start_frame": 19,
+            "image_id": 0,
+            "source_x": 30,
+            "source_y": 30,
+            "width": 30,
+            "height": 30,
+            "destination_x": -14,
+            "destination_y": -30,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_slot": "selected_staff_img_",
+            "source_size": {
+              "width": 270,
+              "height": 60
+            },
+            "source_status": "pass"
+          }
+        ],
+        "binding": "human_seb_records_with_selected_staff_img_",
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "human-animation:typing:direction-0",
+      "kind": "human_seb_frame_definition",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "selector_id": 23,
+        "filename": "typing_right.seb",
+        "asset_id": "asset:01_GAME_PACKS/human/typing_right.seb",
+        "frame_bound": 20,
+        "global_frame_count": 20,
+        "records": [
+          {
+            "start_frame": 0,
+            "image_id": 0,
+            "source_x": 120,
+            "source_y": 30,
+            "width": 30,
+            "height": 30,
+            "destination_x": -15,
+            "destination_y": -30,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_slot": "selected_staff_img_",
+            "source_size": {
+              "width": 270,
+              "height": 60
+            },
+            "source_status": "pass"
+          },
+          {
+            "start_frame": 10,
+            "image_id": 0,
+            "source_x": 240,
+            "source_y": 30,
+            "width": 30,
+            "height": 30,
+            "destination_x": -15,
+            "destination_y": -30,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_slot": "selected_staff_img_",
+            "source_size": {
+              "width": 270,
+              "height": 60
+            },
+            "source_status": "pass"
+          },
+          {
+            "start_frame": 19,
+            "image_id": 0,
+            "source_x": 240,
+            "source_y": 30,
+            "width": 30,
+            "height": 30,
+            "destination_x": -15,
+            "destination_y": -30,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_slot": "selected_staff_img_",
+            "source_size": {
+              "width": 270,
+              "height": 60
+            },
+            "source_status": "pass"
+          }
+        ],
+        "binding": "human_seb_records_with_selected_staff_img_",
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "object-frame:furniture:0",
+      "kind": "chip_object_frame_definition",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "object_id": "furniture:0",
+        "name": "Huge World",
+        "seb_selector_id": 11,
+        "seb_asset_member": "01_GAME_PACKS/chip/big_base00.seb",
+        "seb_asset_id": "asset:01_GAME_PACKS/chip/big_base00.seb",
+        "header": {
+          "layer_count": 1,
+          "global_frame_count": 1,
+          "record_count": 1,
+          "frame_bound": 1
+        },
+        "records": [
+          {
+            "start_frame": 0,
+            "image_id": 18,
+            "source_x": 0,
+            "source_y": 0,
+            "width": 120,
+            "height": 61,
+            "destination_x": -40,
+            "destination_y": -21,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "big_base00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/big_base00.png",
+            "source_size": {
+              "width": 120,
+              "height": 61
+            },
+            "source_status": "pass",
+            "runtime_asset_member": "01_GAME_PACKS/chip/big_base00.png",
+            "runtime_asset_id": "asset:01_GAME_PACKS/chip/big_base00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 61
+            },
+            "runtime_status": "pass_physical_png"
+          }
+        ],
+        "composition_issues": [],
+        "source_compositions": [
+          {
+            "image_id": 18,
+            "source_asset_member": "01_GAME_PACKS/chip/big_base00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/big_base00.png",
+            "source_size": {
+              "width": 120,
+              "height": 61
+            },
+            "opt_status": "not_present"
+          }
+        ],
+        "sub_composition": null,
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "object-frame:furniture:1",
+      "kind": "chip_object_frame_definition",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "object_id": "furniture:1",
+        "name": "Door",
+        "seb_selector_id": 9,
+        "seb_asset_member": "01_GAME_PACKS/chip/door_03.seb",
+        "seb_asset_id": "asset:01_GAME_PACKS/chip/door_03.seb",
+        "header": {
+          "layer_count": 1,
+          "global_frame_count": 2,
+          "record_count": 2,
+          "frame_bound": 2
+        },
+        "records": [
+          {
+            "start_frame": 0,
+            "image_id": 16,
+            "source_x": 0,
+            "source_y": 0,
+            "width": 13,
+            "height": 31,
+            "destination_x": 0,
+            "destination_y": -26,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "door_02.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/door_02.png",
+            "source_size": {
+              "width": 26,
+              "height": 31
+            },
+            "source_status": "pass_opt_logical",
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/door_02.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/door_02.png",
+            "runtime_size": {
+              "width": 26,
+              "height": 31
+            },
+            "runtime_status": "pass_derived_opt_png",
+            "opt_asset_member": "01_GAME_PACKS/chip/door_02.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/door_02.opt",
+            "logical_source_size": {
+              "width": 26,
+              "height": 31
+            }
+          },
+          {
+            "start_frame": 1,
+            "image_id": 16,
+            "source_x": 13,
+            "source_y": 0,
+            "width": 13,
+            "height": 31,
+            "destination_x": 23,
+            "destination_y": -23,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "door_02.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/door_02.png",
+            "source_size": {
+              "width": 26,
+              "height": 31
+            },
+            "source_status": "pass_opt_logical",
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/door_02.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/door_02.png",
+            "runtime_size": {
+              "width": 26,
+              "height": 31
+            },
+            "runtime_status": "pass_derived_opt_png",
+            "opt_asset_member": "01_GAME_PACKS/chip/door_02.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/door_02.opt",
+            "logical_source_size": {
+              "width": 26,
+              "height": 31
+            }
+          }
+        ],
+        "composition_issues": [],
+        "source_compositions": [
+          {
+            "image_id": 16,
+            "source_asset_member": "01_GAME_PACKS/chip/door_02.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/door_02.png",
+            "source_size": {
+              "width": 13,
+              "height": 31
+            },
+            "opt_asset_member": "01_GAME_PACKS/chip/door_02.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/door_02.opt",
+            "opt_status": "pass",
+            "logical_size": {
+              "width": 26,
+              "height": 31
+            },
+            "logical_pixel_sha256": "94811eb5d4b55342652c985c849f93d7ac643797b8eef9624bbbed0c936ff97b",
+            "opt_issues": [],
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/door_02.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/door_02.png",
+            "runtime_size": {
+              "width": 26,
+              "height": 31
+            },
+            "runtime_status": "pass_derived_opt_png"
+          }
+        ],
+        "sub_composition": null,
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "object-frame:furniture:2",
+      "kind": "chip_object_frame_definition",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "object_id": "furniture:2",
+        "name": "Desk",
+        "seb_selector_id": 1,
+        "seb_asset_member": "01_GAME_PACKS/chip/desk_00.seb",
+        "seb_asset_id": "asset:01_GAME_PACKS/chip/desk_00.seb",
+        "header": {
+          "layer_count": 1,
+          "global_frame_count": 3,
+          "record_count": 3,
+          "frame_bound": 3
+        },
+        "records": [
+          {
+            "start_frame": 0,
+            "image_id": 3,
+            "source_x": 0,
+            "source_y": 0,
+            "width": 60,
+            "height": 32,
+            "destination_x": -9,
+            "destination_y": -13,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "desk_00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+            "source_size": {
+              "width": 120,
+              "height": 32
+            },
+            "source_status": "pass_opt_logical",
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 32
+            },
+            "runtime_status": "pass_derived_opt_png",
+            "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+            "logical_source_size": {
+              "width": 120,
+              "height": 32
+            }
+          },
+          {
+            "start_frame": 1,
+            "image_id": 3,
+            "source_x": 60,
+            "source_y": 0,
+            "width": 60,
+            "height": 32,
+            "destination_x": -10,
+            "destination_y": -13,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "desk_00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+            "source_size": {
+              "width": 120,
+              "height": 32
+            },
+            "source_status": "pass_opt_logical",
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 32
+            },
+            "runtime_status": "pass_derived_opt_png",
+            "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+            "logical_source_size": {
+              "width": 120,
+              "height": 32
+            }
+          },
+          {
+            "start_frame": 2,
+            "image_id": 3,
+            "source_x": 60,
+            "source_y": 0,
+            "width": 60,
+            "height": 32,
+            "destination_x": -26,
+            "destination_y": -6,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "desk_00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+            "source_size": {
+              "width": 120,
+              "height": 32
+            },
+            "source_status": "pass_opt_logical",
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 32
+            },
+            "runtime_status": "pass_derived_opt_png",
+            "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+            "logical_source_size": {
+              "width": 120,
+              "height": 32
+            }
+          }
+        ],
+        "composition_issues": [],
+        "source_compositions": [
+          {
+            "image_id": 3,
+            "source_asset_member": "01_GAME_PACKS/chip/desk_00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+            "source_size": {
+              "width": 24,
+              "height": 51
+            },
+            "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+            "opt_status": "pass",
+            "logical_size": {
+              "width": 120,
+              "height": 32
+            },
+            "logical_pixel_sha256": "46707c4c651480c84721cc9a9d7a1d3a9a23eb6a8238e0dc8c81654c2f49ec47",
+            "opt_issues": [],
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 32
+            },
+            "runtime_status": "pass_derived_opt_png"
+          }
+        ],
+        "sub_composition": {
+          "selector_id": 3,
+          "filename": "chair_00.seb",
+          "asset_id": "asset:01_GAME_PACKS/chip/chair_00.seb",
+          "asset_member": "01_GAME_PACKS/chip/chair_00.seb",
+          "header": {
+            "layer_count": 1,
+            "global_frame_count": 3,
+            "record_count": 3,
+            "frame_bound": 3
+          },
+          "records": [
+            {
+              "start_frame": 0,
+              "image_id": 4,
+              "source_x": 60,
+              "source_y": 0,
+              "width": 60,
+              "height": 32,
+              "destination_x": 0,
+              "destination_y": -15,
+              "flags": 0,
+              "reserved": 0,
+              "source_asset_member": "chair_00.png",
+              "source_asset_id": "asset:01_GAME_PACKS/chip/chair_00.png",
+              "source_size": {
+                "width": 180,
+                "height": 32
+              },
+              "source_status": "pass_opt_logical",
+              "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_size": {
+                "width": 180,
+                "height": 32
+              },
+              "runtime_status": "pass_derived_opt_png",
+              "opt_asset_member": "01_GAME_PACKS/chip/chair_00.opt",
+              "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_00.opt",
+              "logical_source_size": {
+                "width": 180,
+                "height": 32
+              }
+            },
+            {
+              "start_frame": 1,
+              "image_id": 4,
+              "source_x": 0,
+              "source_y": 0,
+              "width": 60,
+              "height": 32,
+              "destination_x": -20,
+              "destination_y": -11,
+              "flags": 0,
+              "reserved": 0,
+              "source_asset_member": "chair_00.png",
+              "source_asset_id": "asset:01_GAME_PACKS/chip/chair_00.png",
+              "source_size": {
+                "width": 180,
+                "height": 32
+              },
+              "source_status": "pass_opt_logical",
+              "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_size": {
+                "width": 180,
+                "height": 32
+              },
+              "runtime_status": "pass_derived_opt_png",
+              "opt_asset_member": "01_GAME_PACKS/chip/chair_00.opt",
+              "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_00.opt",
+              "logical_source_size": {
+                "width": 180,
+                "height": 32
+              }
+            },
+            {
+              "start_frame": 2,
+              "image_id": 4,
+              "source_x": 120,
+              "source_y": 0,
+              "width": 60,
+              "height": 32,
+              "destination_x": -20,
+              "destination_y": -11,
+              "flags": 0,
+              "reserved": 0,
+              "source_asset_member": "chair_00.png",
+              "source_asset_id": "asset:01_GAME_PACKS/chip/chair_00.png",
+              "source_size": {
+                "width": 180,
+                "height": 32
+              },
+              "source_status": "pass_opt_logical",
+              "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_size": {
+                "width": 180,
+                "height": 32
+              },
+              "runtime_status": "pass_derived_opt_png",
+              "opt_asset_member": "01_GAME_PACKS/chip/chair_00.opt",
+              "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_00.opt",
+              "logical_source_size": {
+                "width": 180,
+                "height": 32
+              }
+            }
+          ],
+          "composition_issues": [],
+          "source_compositions": [
+            {
+              "image_id": 4,
+              "source_asset_member": "01_GAME_PACKS/chip/chair_00.png",
+              "source_asset_id": "asset:01_GAME_PACKS/chip/chair_00.png",
+              "source_size": {
+                "width": 34,
+                "height": 15
+              },
+              "opt_asset_member": "01_GAME_PACKS/chip/chair_00.opt",
+              "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_00.opt",
+              "opt_status": "pass",
+              "logical_size": {
+                "width": 180,
+                "height": 32
+              },
+              "logical_pixel_sha256": "23d8e732fa2000f18f8fd9649b5fbe2b190d95aff86475b8befd09cfbe8afeef",
+              "opt_issues": [],
+              "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_size": {
+                "width": 180,
+                "height": 32
+              },
+              "runtime_status": "pass_derived_opt_png"
+            }
+          ]
+        },
+        "status": "approved_for_runtime_subset",
+        "phase3a_closure": {
+          "status": "approved",
+          "reason_code": "chair_00_opt_variable_piece_reconstruction_verified"
+        }
+      }
+    },
+    {
+      "id": "object-frame:furniture:5",
+      "kind": "chip_object_frame_definition",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "object_id": "furniture:5",
+        "name": "Graphics Workstation",
+        "seb_selector_id": 1,
+        "seb_asset_member": "01_GAME_PACKS/chip/desk_00.seb",
+        "seb_asset_id": "asset:01_GAME_PACKS/chip/desk_00.seb",
+        "header": {
+          "layer_count": 1,
+          "global_frame_count": 3,
+          "record_count": 3,
+          "frame_bound": 3
+        },
+        "records": [
+          {
+            "start_frame": 0,
+            "image_id": 3,
+            "source_x": 0,
+            "source_y": 0,
+            "width": 60,
+            "height": 32,
+            "destination_x": -9,
+            "destination_y": -13,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "desk_00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+            "source_size": {
+              "width": 120,
+              "height": 32
+            },
+            "source_status": "pass_opt_logical",
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 32
+            },
+            "runtime_status": "pass_derived_opt_png",
+            "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+            "logical_source_size": {
+              "width": 120,
+              "height": 32
+            }
+          },
+          {
+            "start_frame": 1,
+            "image_id": 3,
+            "source_x": 60,
+            "source_y": 0,
+            "width": 60,
+            "height": 32,
+            "destination_x": -10,
+            "destination_y": -13,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "desk_00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+            "source_size": {
+              "width": 120,
+              "height": 32
+            },
+            "source_status": "pass_opt_logical",
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 32
+            },
+            "runtime_status": "pass_derived_opt_png",
+            "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+            "logical_source_size": {
+              "width": 120,
+              "height": 32
+            }
+          },
+          {
+            "start_frame": 2,
+            "image_id": 3,
+            "source_x": 60,
+            "source_y": 0,
+            "width": 60,
+            "height": 32,
+            "destination_x": -26,
+            "destination_y": -6,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "desk_00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+            "source_size": {
+              "width": 120,
+              "height": 32
+            },
+            "source_status": "pass_opt_logical",
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 32
+            },
+            "runtime_status": "pass_derived_opt_png",
+            "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+            "logical_source_size": {
+              "width": 120,
+              "height": 32
+            }
+          }
+        ],
+        "composition_issues": [],
+        "source_compositions": [
+          {
+            "image_id": 3,
+            "source_asset_member": "01_GAME_PACKS/chip/desk_00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+            "source_size": {
+              "width": 24,
+              "height": 51
+            },
+            "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+            "opt_status": "pass",
+            "logical_size": {
+              "width": 120,
+              "height": 32
+            },
+            "logical_pixel_sha256": "46707c4c651480c84721cc9a9d7a1d3a9a23eb6a8238e0dc8c81654c2f49ec47",
+            "opt_issues": [],
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 32
+            },
+            "runtime_status": "pass_derived_opt_png"
+          }
+        ],
+        "sub_composition": {
+          "selector_id": 44,
+          "filename": "chair_02.seb",
+          "asset_id": "asset:01_GAME_PACKS/chip/chair_02.seb",
+          "asset_member": "01_GAME_PACKS/chip/chair_02.seb",
+          "header": {
+            "layer_count": 1,
+            "global_frame_count": 3,
+            "record_count": 3,
+            "frame_bound": 3
+          },
+          "records": [
+            {
+              "start_frame": 0,
+              "image_id": 112,
+              "source_x": 60,
+              "source_y": 0,
+              "width": 60,
+              "height": 32,
+              "destination_x": 0,
+              "destination_y": -15,
+              "flags": 0,
+              "reserved": 0,
+              "source_asset_member": "chair_02.png",
+              "source_asset_id": "asset:01_GAME_PACKS/chip/chair_02.png",
+              "source_size": {
+                "width": 180,
+                "height": 32
+              },
+              "source_status": "pass_opt_logical",
+              "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_02.png",
+              "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_02.png",
+              "runtime_size": {
+                "width": 180,
+                "height": 32
+              },
+              "runtime_status": "pass_derived_opt_png",
+              "opt_asset_member": "01_GAME_PACKS/chip/chair_02.opt",
+              "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_02.opt",
+              "logical_source_size": {
+                "width": 180,
+                "height": 32
+              }
+            },
+            {
+              "start_frame": 1,
+              "image_id": 112,
+              "source_x": 0,
+              "source_y": 0,
+              "width": 60,
+              "height": 32,
+              "destination_x": -20,
+              "destination_y": -11,
+              "flags": 0,
+              "reserved": 0,
+              "source_asset_member": "chair_02.png",
+              "source_asset_id": "asset:01_GAME_PACKS/chip/chair_02.png",
+              "source_size": {
+                "width": 180,
+                "height": 32
+              },
+              "source_status": "pass_opt_logical",
+              "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_02.png",
+              "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_02.png",
+              "runtime_size": {
+                "width": 180,
+                "height": 32
+              },
+              "runtime_status": "pass_derived_opt_png",
+              "opt_asset_member": "01_GAME_PACKS/chip/chair_02.opt",
+              "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_02.opt",
+              "logical_source_size": {
+                "width": 180,
+                "height": 32
+              }
+            },
+            {
+              "start_frame": 2,
+              "image_id": 112,
+              "source_x": 120,
+              "source_y": 0,
+              "width": 60,
+              "height": 32,
+              "destination_x": -20,
+              "destination_y": -11,
+              "flags": 0,
+              "reserved": 0,
+              "source_asset_member": "chair_02.png",
+              "source_asset_id": "asset:01_GAME_PACKS/chip/chair_02.png",
+              "source_size": {
+                "width": 180,
+                "height": 32
+              },
+              "source_status": "pass_opt_logical",
+              "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_02.png",
+              "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_02.png",
+              "runtime_size": {
+                "width": 180,
+                "height": 32
+              },
+              "runtime_status": "pass_derived_opt_png",
+              "opt_asset_member": "01_GAME_PACKS/chip/chair_02.opt",
+              "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_02.opt",
+              "logical_source_size": {
+                "width": 180,
+                "height": 32
+              }
+            }
+          ],
+          "composition_issues": [],
+          "source_compositions": [
+            {
+              "image_id": 112,
+              "source_asset_member": "01_GAME_PACKS/chip/chair_02.png",
+              "source_asset_id": "asset:01_GAME_PACKS/chip/chair_02.png",
+              "source_size": {
+                "width": 14,
+                "height": 41
+              },
+              "opt_asset_member": "01_GAME_PACKS/chip/chair_02.opt",
+              "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_02.opt",
+              "opt_status": "pass",
+              "logical_size": {
+                "width": 180,
+                "height": 32
+              },
+              "logical_pixel_sha256": "caf40e4a94974d85520fae1eb06f93a615af76dd11973118185598fafbf7dcde",
+              "opt_issues": [],
+              "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_02.png",
+              "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_02.png",
+              "runtime_size": {
+                "width": 180,
+                "height": 32
+              },
+              "runtime_status": "pass_derived_opt_png"
+            }
+          ]
+        },
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "scene:room:0/floor",
+      "role": "floor",
+      "image_id": 5,
+      "filename": "floor_09.png",
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_09.png",
+      "asset_member": "01_GAME_PACKS/chip/floor_09.png",
+      "status": "approved_for_runtime_subset",
+      "resolution_mode": "explicit_user_approved_alias",
+      "source_resolution_status": "unresolved",
+      "fallback_selector_id": 85,
+      "fallback_reason_code": "user_approved_runtime_alias",
+      "blocked_reason": "Source chip/img.inf id 5 remains unresolved; floor_09.png is promoted only as the explicit runtime fallback."
+    },
+    {
+      "id": "scene:room:0/wall",
+      "role": "wall",
+      "image_id": 6,
+      "filename": "wall_00.png",
+      "asset_id": "asset:01_GAME_PACKS/chip/wall_00.png",
+      "asset_member": "01_GAME_PACKS/chip/wall_00.png",
+      "seb_asset_id": "asset:01_GAME_PACKS/chip/wall_00.seb",
+      "seb_asset_member": "01_GAME_PACKS/chip/wall_00.seb",
+      "status": "approved_for_runtime_subset",
+      "source_resolution_status": "resolved",
+      "native_coordinate_composition": {
+        "raw_selector_id": 6,
+        "filename": "wall_00.png",
+        "seb_selector_id": 5,
+        "seb_filename": "wall_00.seb",
+        "status": "verified_native_coordinate_composition",
+        "anchor_formula": {
+          "x": "ofx + (x + y) * 20",
+          "y": "ofy + (y - x) * 10 + 9"
+        },
+        "native_predicate": {
+          "vertical_frame_1": "type_ != 5 && y >= 1 && y < objMapHeight - 1 && x == objMapWidth - 2",
+          "horizontal_frame_0": "x >= 1 && y == 1 && x < objMapWidth - 1 && type_ != 5"
+        },
+        "cells_by_frame": {
+          "vertical_frame_1": [
+            [
+              8,
+              1
+            ],
+            [
+              8,
+              2
+            ],
+            [
+              8,
+              3
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              7
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "horizontal_frame_0": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              8,
+              1
+            ]
+          ]
+        },
+        "sprite_records": {
+          "vertical_frame_1": {
+            "start_frame": 1,
+            "image_id": 6,
+            "source_x": 72,
+            "source_y": 0,
+            "width": 24,
+            "height": 43,
+            "destination_x": 0,
+            "destination_y": -24,
+            "flags": 0,
+            "reserved": 0
+          },
+          "horizontal_frame_0": {
+            "start_frame": 0,
+            "image_id": 6,
+            "source_x": 48,
+            "source_y": 0,
+            "width": 24,
+            "height": 43,
+            "destination_x": -4,
+            "destination_y": -24,
+            "flags": 0,
+            "reserved": 0
+          }
+        },
+        "sprite_layers": {
+          "vertical_frame_1": [
+            {
+              "layer": 0,
+              "layer_record_index": 1,
+              "start_frame": 1,
+              "image_id": 6,
+              "image_id_raw": 6,
+              "source_x": 72,
+              "source_y": 0,
+              "width": 24,
+              "height": 43,
+              "destination_x": 0,
+              "destination_y": -24,
+              "flags": 0,
+              "reserved": 0,
+              "frame_status": "in_header_frame_bound"
+            },
+            {
+              "layer": 1,
+              "layer_record_index": 1,
+              "start_frame": 1,
+              "image_id": 6,
+              "image_id_raw": 6,
+              "source_x": 90,
+              "source_y": 0,
+              "width": 2,
+              "height": 43,
+              "destination_x": -2,
+              "destination_y": -34,
+              "flags": 0,
+              "reserved": 0,
+              "frame_status": "in_header_frame_bound"
+            }
+          ],
+          "horizontal_frame_0": [
+            {
+              "layer": 0,
+              "layer_record_index": 0,
+              "start_frame": 0,
+              "image_id": 6,
+              "image_id_raw": 6,
+              "source_x": 48,
+              "source_y": 0,
+              "width": 24,
+              "height": 43,
+              "destination_x": -4,
+              "destination_y": -24,
+              "flags": 0,
+              "reserved": 0,
+              "frame_status": "in_header_frame_bound"
+            },
+            {
+              "layer": 1,
+              "layer_record_index": 0,
+              "start_frame": 0,
+              "image_id": 6,
+              "image_id_raw": 6,
+              "source_x": 52,
+              "source_y": 0,
+              "width": 2,
+              "height": 43,
+              "destination_x": 20,
+              "destination_y": -34,
+              "flags": 0,
+              "reserved": 0,
+              "frame_status": "in_header_frame_bound"
+            }
+          ]
+        },
+        "draw_semantics": {
+          "native_method": "ObjChip.DrawWall -> AppData.DrawSeb(frame, lineNo=-1)",
+          "selected_frame_policy": "draw every SEB record whose start_frame equals the ObjChip wall frame",
+          "layer_order": [
+            0,
+            1
+          ],
+          "first_layer_compatibility_records": "sprite_records retains layer 0 for older readers; runtime must prefer sprite_layers"
+        },
+        "source_asset": {
+          "png_member": "01_GAME_PACKS/chip/wall_00.png",
+          "seb_member": "01_GAME_PACKS/chip/wall_00.seb",
+          "png_sha256": "cbd7c73a38d041cafc330471cbab58b081c9c1c5ca4826e39e7f44d0a282d06c",
+          "seb_sha256": "826c1b65b9a3d506e39a7d7d68e1d69505faf3883884c305929ad9e5d4e5efd4"
+        },
+        "source_note": "The wall PNG/SEB pair is promoted only after the native draw predicate and source rectangles are recorded; the ZIP hash is captured below and the PNG hash is filled from the pinned asset index."
+      },
+      "strict_closure_ref": "knowledge/fixtures/accepted/phase3c_strict_closure.json"
+    },
+    {
+      "id": "scene:room:0/door",
+      "role": "door",
+      "image_id": 7,
+      "filename": "door_01.png",
+      "asset_id": "asset:01_GAME_PACKS/chip/door_01.png",
+      "asset_member": "01_GAME_PACKS/chip/door_01.png",
+      "seb_asset_id": "asset:01_GAME_PACKS/chip/door_02.seb",
+      "seb_asset_member": "01_GAME_PACKS/chip/door_02.seb",
+      "status": "approved_for_runtime_subset",
+      "source_resolution_status": "resolved",
+      "native_coordinate_composition": {
+        "raw_selector_id": 7,
+        "filename": "door_01.png",
+        "seb_selector_id": 6,
+        "seb_filename": "door_02.seb",
+        "status": "verified_native_coordinate_composition",
+        "cell": [
+          8,
+          4
+        ],
+        "raw_type": 5,
+        "anchor": {
+          "x": 240,
+          "y": -31
+        },
+        "sprite_record": {
+          "start_frame": 0,
+          "image_id": 7,
+          "source_x": 0,
+          "source_y": 0,
+          "width": 13,
+          "height": 31,
+          "destination_x": 0,
+          "destination_y": -24,
+          "flags": 0,
+          "reserved": 0
+        },
+        "native_binding": {
+          "FurnitureData": null,
+          "installed_flag": 1,
+          "status": "Room.PlaceDoor_null_furniture_data"
+        },
+        "source_asset": {
+          "png_member": "01_GAME_PACKS/chip/door_01.png",
+          "seb_member": "01_GAME_PACKS/chip/door_02.seb",
+          "png_sha256": "196198c9ee093f7f234060868434f9547e56bd020e57acebf4b2285848281569",
+          "seb_sha256": "b5f847648313e61c266f8c65061ced423b0bb4308e5216618b4c3d4cac93c302"
+        }
+      },
+      "strict_closure_ref": "knowledge/fixtures/accepted/phase3c_strict_closure.json"
+    },
+    {
+      "id": "native-initial-frame:furniture:3",
+      "kind": "native_initial_furniture_frame_definition",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "object_id": "furniture:3",
+        "furniture_data_id": 3,
+        "name": "Wooden Desk",
+        "raw_type": 2,
+        "seb_selector_id": 1,
+        "sub_seb_selector_id": 3,
+        "img_selector_id": 148,
+        "img_filename": "desk_09.png",
+        "selector_flag": "FLAG_INIT_DESK",
+        "native_status": "approved_native_initial_binding",
+        "display_mode": "native_selector_composition",
+        "seb_asset_member": "01_GAME_PACKS/chip/desk_00.seb",
+        "seb_asset_id": "asset:01_GAME_PACKS/chip/desk_00.seb",
+        "header": {
+          "layer_count": 1,
+          "global_frame_count": 3,
+          "record_count": 3,
+          "frame_bound": 3
+        },
+        "records": [
+          {
+            "start_frame": 0,
+            "image_id": 3,
+            "source_x": 0,
+            "source_y": 0,
+            "width": 60,
+            "height": 32,
+            "destination_x": -9,
+            "destination_y": -13,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "desk_00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+            "source_size": {
+              "width": 120,
+              "height": 32
+            },
+            "source_status": "pass_opt_logical",
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 32
+            },
+            "runtime_status": "pass_derived_opt_png",
+            "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+            "logical_source_size": {
+              "width": 120,
+              "height": 32
+            }
+          },
+          {
+            "start_frame": 1,
+            "image_id": 3,
+            "source_x": 60,
+            "source_y": 0,
+            "width": 60,
+            "height": 32,
+            "destination_x": -10,
+            "destination_y": -13,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "desk_00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+            "source_size": {
+              "width": 120,
+              "height": 32
+            },
+            "source_status": "pass_opt_logical",
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 32
+            },
+            "runtime_status": "pass_derived_opt_png",
+            "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+            "logical_source_size": {
+              "width": 120,
+              "height": 32
+            }
+          },
+          {
+            "start_frame": 2,
+            "image_id": 3,
+            "source_x": 60,
+            "source_y": 0,
+            "width": 60,
+            "height": 32,
+            "destination_x": -26,
+            "destination_y": -6,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "desk_00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+            "source_size": {
+              "width": 120,
+              "height": 32
+            },
+            "source_status": "pass_opt_logical",
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 32
+            },
+            "runtime_status": "pass_derived_opt_png",
+            "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+            "logical_source_size": {
+              "width": 120,
+              "height": 32
+            }
+          }
+        ],
+        "composition_issues": [],
+        "source_compositions": [
+          {
+            "image_id": 3,
+            "source_asset_member": "01_GAME_PACKS/chip/desk_00.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+            "source_size": {
+              "width": 24,
+              "height": 51
+            },
+            "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+            "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+            "opt_status": "pass",
+            "logical_size": {
+              "width": 120,
+              "height": 32
+            },
+            "logical_pixel_sha256": "46707c4c651480c84721cc9a9d7a1d3a9a23eb6a8238e0dc8c81654c2f49ec47",
+            "opt_issues": [],
+            "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+            "runtime_size": {
+              "width": 120,
+              "height": 32
+            },
+            "runtime_status": "pass_derived_opt_png"
+          }
+        ],
+        "sub_composition": {
+          "selector_id": 3,
+          "filename": "chair_00.seb",
+          "asset_id": "asset:01_GAME_PACKS/chip/chair_00.seb",
+          "asset_member": "01_GAME_PACKS/chip/chair_00.seb",
+          "header": {
+            "layer_count": 1,
+            "global_frame_count": 3,
+            "record_count": 3,
+            "frame_bound": 3
+          },
+          "records": [
+            {
+              "start_frame": 0,
+              "image_id": 4,
+              "source_x": 60,
+              "source_y": 0,
+              "width": 60,
+              "height": 32,
+              "destination_x": 0,
+              "destination_y": -15,
+              "flags": 0,
+              "reserved": 0,
+              "source_asset_member": "chair_00.png",
+              "source_asset_id": "asset:01_GAME_PACKS/chip/chair_00.png",
+              "source_size": {
+                "width": 180,
+                "height": 32
+              },
+              "source_status": "pass_opt_logical",
+              "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_size": {
+                "width": 180,
+                "height": 32
+              },
+              "runtime_status": "pass_derived_opt_png",
+              "opt_asset_member": "01_GAME_PACKS/chip/chair_00.opt",
+              "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_00.opt",
+              "logical_source_size": {
+                "width": 180,
+                "height": 32
+              }
+            },
+            {
+              "start_frame": 1,
+              "image_id": 4,
+              "source_x": 0,
+              "source_y": 0,
+              "width": 60,
+              "height": 32,
+              "destination_x": -20,
+              "destination_y": -11,
+              "flags": 0,
+              "reserved": 0,
+              "source_asset_member": "chair_00.png",
+              "source_asset_id": "asset:01_GAME_PACKS/chip/chair_00.png",
+              "source_size": {
+                "width": 180,
+                "height": 32
+              },
+              "source_status": "pass_opt_logical",
+              "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_size": {
+                "width": 180,
+                "height": 32
+              },
+              "runtime_status": "pass_derived_opt_png",
+              "opt_asset_member": "01_GAME_PACKS/chip/chair_00.opt",
+              "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_00.opt",
+              "logical_source_size": {
+                "width": 180,
+                "height": 32
+              }
+            },
+            {
+              "start_frame": 2,
+              "image_id": 4,
+              "source_x": 120,
+              "source_y": 0,
+              "width": 60,
+              "height": 32,
+              "destination_x": -20,
+              "destination_y": -11,
+              "flags": 0,
+              "reserved": 0,
+              "source_asset_member": "chair_00.png",
+              "source_asset_id": "asset:01_GAME_PACKS/chip/chair_00.png",
+              "source_size": {
+                "width": 180,
+                "height": 32
+              },
+              "source_status": "pass_opt_logical",
+              "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_size": {
+                "width": 180,
+                "height": 32
+              },
+              "runtime_status": "pass_derived_opt_png",
+              "opt_asset_member": "01_GAME_PACKS/chip/chair_00.opt",
+              "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_00.opt",
+              "logical_source_size": {
+                "width": 180,
+                "height": 32
+              }
+            }
+          ],
+          "composition_issues": [],
+          "source_compositions": [
+            {
+              "image_id": 4,
+              "source_asset_member": "01_GAME_PACKS/chip/chair_00.png",
+              "source_asset_id": "asset:01_GAME_PACKS/chip/chair_00.png",
+              "source_size": {
+                "width": 34,
+                "height": 15
+              },
+              "opt_asset_member": "01_GAME_PACKS/chip/chair_00.opt",
+              "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_00.opt",
+              "opt_status": "pass",
+              "logical_size": {
+                "width": 180,
+                "height": 32
+              },
+              "logical_pixel_sha256": "23d8e732fa2000f18f8fd9649b5fbe2b190d95aff86475b8befd09cfbe8afeef",
+              "opt_issues": [],
+              "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+              "runtime_size": {
+                "width": 180,
+                "height": 32
+              },
+              "runtime_status": "pass_derived_opt_png"
+            }
+          ]
+        },
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "native-initial-frame:furniture:12",
+      "kind": "native_initial_furniture_frame_definition",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "object_id": "furniture:12",
+        "furniture_data_id": 12,
+        "name": "Trash Can",
+        "raw_type": 1,
+        "seb_selector_id": 21,
+        "sub_seb_selector_id": -1,
+        "img_selector_id": 109,
+        "img_filename": "garbage_can.png",
+        "selector_flag": "FLAG_INIT_PLACE",
+        "native_status": "approved_native_initial_binding",
+        "display_mode": "native_type1_direct_img",
+        "seb_asset_member": "01_GAME_PACKS/chip/equip.seb",
+        "seb_asset_id": "asset:01_GAME_PACKS/chip/equip.seb",
+        "header": {
+          "layer_count": 1,
+          "global_frame_count": 1,
+          "record_count": 1,
+          "frame_bound": 1
+        },
+        "records": [
+          {
+            "start_frame": 0,
+            "image_id": 109,
+            "source_x": 0,
+            "source_y": 0,
+            "width": 24,
+            "height": 22,
+            "destination_x": -12,
+            "destination_y": -19,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "01_GAME_PACKS/chip/garbage_can.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/garbage_can.png",
+            "source_size": {
+              "width": 24,
+              "height": 22
+            },
+            "source_status": "pass_native_img_asset"
+          }
+        ],
+        "composition_issues": [],
+        "source_compositions": [
+          {
+            "image_id": 109,
+            "source_asset_member": "01_GAME_PACKS/chip/garbage_can.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/garbage_can.png",
+            "source_size": {
+              "width": 24,
+              "height": 22
+            },
+            "opt_status": "not_required_native_type1_img"
+          }
+        ],
+        "sub_composition": null,
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "native-initial-frame:furniture:26",
+      "kind": "native_initial_furniture_frame_definition",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "object_id": "furniture:26",
+        "furniture_data_id": 26,
+        "name": "Old Printer",
+        "raw_type": 1,
+        "seb_selector_id": 21,
+        "sub_seb_selector_id": -1,
+        "img_selector_id": 106,
+        "img_filename": "old_printer.png",
+        "selector_flag": "FLAG_INIT_PLACE",
+        "native_status": "approved_native_initial_binding",
+        "display_mode": "native_type1_direct_img",
+        "seb_asset_member": "01_GAME_PACKS/chip/equip.seb",
+        "seb_asset_id": "asset:01_GAME_PACKS/chip/equip.seb",
+        "header": {
+          "layer_count": 1,
+          "global_frame_count": 1,
+          "record_count": 1,
+          "frame_bound": 1
+        },
+        "records": [
+          {
+            "start_frame": 0,
+            "image_id": 106,
+            "source_x": 0,
+            "source_y": 0,
+            "width": 23,
+            "height": 26,
+            "destination_x": -11,
+            "destination_y": -23,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "01_GAME_PACKS/chip/old_printer.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/old_printer.png",
+            "source_size": {
+              "width": 23,
+              "height": 26
+            },
+            "source_status": "pass_native_img_asset"
+          }
+        ],
+        "composition_issues": [],
+        "source_compositions": [
+          {
+            "image_id": 106,
+            "source_asset_member": "01_GAME_PACKS/chip/old_printer.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/old_printer.png",
+            "source_size": {
+              "width": 23,
+              "height": 26
+            },
+            "opt_status": "not_required_native_type1_img"
+          }
+        ],
+        "sub_composition": null,
+        "status": "approved_for_runtime_subset"
+      }
+    },
+    {
+      "id": "native-initial-frame:furniture:56",
+      "kind": "native_initial_furniture_frame_definition",
+      "status": "approved_for_runtime_subset",
+      "source": {
+        "object_id": "furniture:56",
+        "furniture_data_id": 56,
+        "name": "Calendar",
+        "raw_type": 1,
+        "seb_selector_id": 21,
+        "sub_seb_selector_id": -1,
+        "img_selector_id": 127,
+        "img_filename": "calendar.png",
+        "selector_flag": "FLAG_INIT_PLACE",
+        "native_status": "approved_native_initial_binding",
+        "display_mode": "native_type1_direct_img",
+        "seb_asset_member": "01_GAME_PACKS/chip/equip.seb",
+        "seb_asset_id": "asset:01_GAME_PACKS/chip/equip.seb",
+        "header": {
+          "layer_count": 1,
+          "global_frame_count": 1,
+          "record_count": 1,
+          "frame_bound": 1
+        },
+        "records": [
+          {
+            "start_frame": 0,
+            "image_id": 127,
+            "source_x": 0,
+            "source_y": 0,
+            "width": 24,
+            "height": 28,
+            "destination_x": -12,
+            "destination_y": -25,
+            "flags": 0,
+            "reserved": 0,
+            "source_asset_member": "01_GAME_PACKS/chip/calendar.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/calendar.png",
+            "source_size": {
+              "width": 24,
+              "height": 28
+            },
+            "source_status": "pass_native_img_asset"
+          }
+        ],
+        "composition_issues": [],
+        "source_compositions": [
+          {
+            "image_id": 127,
+            "source_asset_member": "01_GAME_PACKS/chip/calendar.png",
+            "source_asset_id": "asset:01_GAME_PACKS/chip/calendar.png",
+            "source_size": {
+              "width": 24,
+              "height": 28
+            },
+            "opt_status": "not_required_native_type1_img"
+          }
+        ],
+        "sub_composition": null,
+        "status": "approved_for_runtime_subset"
+      }
+    }
+  ],
+  "promoted_assets": [
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/big_base00.png",
+      "asset_member": "01_GAME_PACKS/chip/big_base00.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/big_base00.png",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "big_base00.png",
+      "extension": ".png",
+      "bytes": 2075,
+      "sha256": "d014ea295888b3f1a1b12498f03eacd67dfaa761f7183e31abf660e2ac431657",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 120,
+      "height": 61,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/big_base00.seb",
+      "asset_member": "01_GAME_PACKS/chip/big_base00.seb",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/big_base00.seb",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "big_base00.seb",
+      "extension": ".seb",
+      "bytes": 28,
+      "sha256": "e0fa6811b40aa57cf2608f00c487d457c05437e07f173eba8b6bebd14c8823c7",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/calendar.png",
+      "asset_member": "01_GAME_PACKS/chip/calendar.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/calendar.png",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "calendar.png",
+      "extension": ".png",
+      "bytes": 980,
+      "sha256": "a8036e21042f64c785e7e3cd199b5b6886b8c5b9526edba41fc2cf7a43db6b56",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 24,
+      "height": 28,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/chair_00.opt",
+      "asset_member": "01_GAME_PACKS/chip/chair_00.opt",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/chair_00.opt",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "chair_00.opt",
+      "extension": ".opt",
+      "bytes": 63,
+      "sha256": "5cf124773282b1693210853c6fb04a35426a55d04b08cccb61daa4b8f7454f0a",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/chair_00.png",
+      "asset_member": "01_GAME_PACKS/chip/chair_00.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/chair_00.png",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "chair_00.png",
+      "extension": ".png",
+      "bytes": 517,
+      "sha256": "234d25900ecff341a6ee9385a691ddc633c41a3f0c6d917080839a9e5d571efc",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 34,
+      "height": 15,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/chair_00.seb",
+      "asset_member": "01_GAME_PACKS/chip/chair_00.seb",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/chair_00.seb",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "chair_00.seb",
+      "extension": ".seb",
+      "bytes": 68,
+      "sha256": "ab4f7100c3019782b53b591931cfd1a76d3b089669926802723311c61bdf6bcb",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/chair_02.opt",
+      "asset_member": "01_GAME_PACKS/chip/chair_02.opt",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/chair_02.opt",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "chair_02.opt",
+      "extension": ".opt",
+      "bytes": 49,
+      "sha256": "03a6dcd0c3c2a3af59d6a570a86cfe0e130580e7d47b85d6bf996c3d4ae859f6",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/chair_02.png",
+      "asset_member": "01_GAME_PACKS/chip/chair_02.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/chair_02.png",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "chair_02.png",
+      "extension": ".png",
+      "bytes": 835,
+      "sha256": "9f0ae9ded666993c8c4908bf96d6b64fd11d61067dcdc6e5b9eeeae78f573a93",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 14,
+      "height": 41,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/chair_02.seb",
+      "asset_member": "01_GAME_PACKS/chip/chair_02.seb",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/chair_02.seb",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "chair_02.seb",
+      "extension": ".seb",
+      "bytes": 68,
+      "sha256": "b471fb53882b813443978792de18f632461975522de5a30b8d5dfaf80e61d57a",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+      "asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/desk_00.opt",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "desk_00.opt",
+      "extension": ".opt",
+      "bytes": 34,
+      "sha256": "9dc7673a63331bdcfbd72da2494b2fed7163355d97ad2695433546c28645d10a",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+      "asset_member": "01_GAME_PACKS/chip/desk_00.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/desk_00.png",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "desk_00.png",
+      "extension": ".png",
+      "bytes": 1162,
+      "sha256": "497136d17921fead289f19be7585b5c245d59a111fea8d830b05ae9784f60fa3",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 24,
+      "height": 51,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/desk_00.seb",
+      "asset_member": "01_GAME_PACKS/chip/desk_00.seb",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/desk_00.seb",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "desk_00.seb",
+      "extension": ".seb",
+      "bytes": 68,
+      "sha256": "249b1b10e317398b2caa0ed9385d7fe1e039769d65029c265479fcf16d18b48e",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/door_01.png",
+      "asset_member": "01_GAME_PACKS/chip/door_01.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/door_01.png",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "door_01.png",
+      "extension": ".png",
+      "bytes": 436,
+      "sha256": "196198c9ee093f7f234060868434f9547e56bd020e57acebf4b2285848281569",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 13,
+      "height": 31,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/door_02.opt",
+      "asset_member": "01_GAME_PACKS/chip/door_02.opt",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/door_02.opt",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "door_02.opt",
+      "extension": ".opt",
+      "bytes": 19,
+      "sha256": "54bba38fae84ee9e42dde54a3b61766cd8c8f0a89590fb9150b2c118b107e04a",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/door_02.png",
+      "asset_member": "01_GAME_PACKS/chip/door_02.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/door_02.png",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "door_02.png",
+      "extension": ".png",
+      "bytes": 490,
+      "sha256": "a0253c022dd98e6e56e4dd4772aeb078152b4e18456e273e68599bca6117dd62",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 13,
+      "height": 31,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/door_02.seb",
+      "asset_member": "01_GAME_PACKS/chip/door_02.seb",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/door_02.seb",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "door_02.seb",
+      "extension": ".seb",
+      "bytes": 28,
+      "sha256": "b5f847648313e61c266f8c65061ced423b0bb4308e5216618b4c3d4cac93c302",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/door_03.seb",
+      "asset_member": "01_GAME_PACKS/chip/door_03.seb",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/door_03.seb",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "door_03.seb",
+      "extension": ".seb",
+      "bytes": 48,
+      "sha256": "7fbe5b05e137d98faba5d61facb879afd5acd193b8917d35e39ac539f04376f7",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/equip.seb",
+      "asset_member": "01_GAME_PACKS/chip/equip.seb",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/equip.seb",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "equip.seb",
+      "extension": ".seb",
+      "bytes": 48,
+      "sha256": "8430bf0e74d4f97360a7ae538977197a2e19eb0758ee525014939683ccf98d0c",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_09.png",
+      "asset_member": "01_GAME_PACKS/chip/floor_09.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/floor_09.png",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "floor_09.png",
+      "extension": ".png",
+      "bytes": 906,
+      "sha256": "cc960abb36b882bc771837a82c20563c11399456f21aa08ff87a033d2b543184",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 80,
+      "height": 39,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/garbage_can.png",
+      "asset_member": "01_GAME_PACKS/chip/garbage_can.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/garbage_can.png",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "garbage_can.png",
+      "extension": ".png",
+      "bytes": 758,
+      "sha256": "8d41bfd21f189b971486f45a6832701eb9ccfd89ebe92eaba604ed96fc05f98d",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 24,
+      "height": 22,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/old_printer.png",
+      "asset_member": "01_GAME_PACKS/chip/old_printer.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/old_printer.png",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "old_printer.png",
+      "extension": ".png",
+      "bytes": 1139,
+      "sha256": "56a41237b773bc61ca54b49f76ff7abfb8979aef8d94de08f79b39de51e5bdc0",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 23,
+      "height": 26,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/wall_00.png",
+      "asset_member": "01_GAME_PACKS/chip/wall_00.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/wall_00.png",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "wall_00.png",
+      "extension": ".png",
+      "bytes": 698,
+      "sha256": "cbd7c73a38d041cafc330471cbab58b081c9c1c5ca4826e39e7f44d0a282d06c",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 96,
+      "height": 43,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/wall_00.seb",
+      "asset_member": "01_GAME_PACKS/chip/wall_00.seb",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/chip/wall_00.seb",
+      "kind": "original_pack_asset",
+      "pack": "chip",
+      "original_name": "wall_00.seb",
+      "extension": ".seb",
+      "bytes": 172,
+      "sha256": "826c1b65b9a3d506e39a7d7d68e1d69505faf3883884c305929ad9e5d4e5efd4",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/human/chara86.png",
+      "asset_member": "01_GAME_PACKS/human/chara86.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/human/chara86.png",
+      "kind": "original_pack_asset",
+      "pack": "human",
+      "original_name": "chara86.png",
+      "extension": ".png",
+      "bytes": 1463,
+      "sha256": "b7cf3ea022c24e7a1388f03ee7b77d9c4e9d0ef00079f6f10ae71433e977acc8",
+      "semantic_role": "Human/character sprite graphics and animation definitions.",
+      "width": 270,
+      "height": 60,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/human/chara87.png",
+      "asset_member": "01_GAME_PACKS/human/chara87.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/human/chara87.png",
+      "kind": "original_pack_asset",
+      "pack": "human",
+      "original_name": "chara87.png",
+      "extension": ".png",
+      "bytes": 1429,
+      "sha256": "c97225a3453f342a125789d65e9f16f9770ea183edaa147753255ff18723e6a4",
+      "semantic_role": "Human/character sprite graphics and animation definitions.",
+      "width": 270,
+      "height": 60,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/human/chara88.png",
+      "asset_member": "01_GAME_PACKS/human/chara88.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/human/chara88.png",
+      "kind": "original_pack_asset",
+      "pack": "human",
+      "original_name": "chara88.png",
+      "extension": ".png",
+      "bytes": 1458,
+      "sha256": "4c5464556ebd6570585557a3e316426e63bcc89fe8b260c17f50de7b81065e8a",
+      "semantic_role": "Human/character sprite graphics and animation definitions.",
+      "width": 270,
+      "height": 60,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/human/chara89.png",
+      "asset_member": "01_GAME_PACKS/human/chara89.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/human/chara89.png",
+      "kind": "original_pack_asset",
+      "pack": "human",
+      "original_name": "chara89.png",
+      "extension": ".png",
+      "bytes": 1463,
+      "sha256": "7e838d5604424e2a50aae21a0ad00a74d49974d4975ad1a0c092fce3dfe6a855",
+      "semantic_role": "Human/character sprite graphics and animation definitions.",
+      "width": 270,
+      "height": 60,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/human/chara90.png",
+      "asset_member": "01_GAME_PACKS/human/chara90.png",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/human/chara90.png",
+      "kind": "original_pack_asset",
+      "pack": "human",
+      "original_name": "chara90.png",
+      "extension": ".png",
+      "bytes": 1411,
+      "sha256": "ed8a558544982cee122d366d7372ef514f0767f927255721787410bcda411c70",
+      "semantic_role": "Human/character sprite graphics and animation definitions.",
+      "width": 270,
+      "height": 60,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/human/typing_right.seb",
+      "asset_member": "01_GAME_PACKS/human/typing_right.seb",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/human/typing_right.seb",
+      "kind": "original_pack_asset",
+      "pack": "human",
+      "original_name": "typing_right.seb",
+      "extension": ".seb",
+      "bytes": 68,
+      "sha256": "8d21183941845ed90bd5327be74070b2e5d138ff4b7af4d1204421bec4f8fd4b",
+      "semantic_role": "Human/character sprite graphics and animation definitions."
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/human/wait_right.seb",
+      "asset_member": "01_GAME_PACKS/human/wait_right.seb",
+      "runtime_path": "assets/display-slice-01/01_GAME_PACKS/human/wait_right.seb",
+      "kind": "original_pack_asset",
+      "pack": "human",
+      "original_name": "wait_right.seb",
+      "extension": ".seb",
+      "bytes": 68,
+      "sha256": "d07f5e65a576e54394e6780a250cd5fa5c84eef5369b39373e185afc9d82314a",
+      "semantic_role": "Human/character sprite graphics and animation definitions."
+    },
+    {
+      "asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+      "asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+      "runtime_path": "assets/display-slice-01/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+      "kind": "derived_opt_reconstruction",
+      "pack": "chip",
+      "original_name": "chair_00.png",
+      "extension": ".png",
+      "bytes": 674,
+      "sha256": "f4e57d09be83c1f53faeb90b6ff779d43b96a1b669387e19e72d075718197b9b",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 180,
+      "height": 32,
+      "mode": "RGBA",
+      "provenance": {
+        "source_asset_id": "asset:01_GAME_PACKS/chip/chair_00.png",
+        "source_asset_member": "01_GAME_PACKS/chip/chair_00.png",
+        "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_00.opt",
+        "opt_asset_member": "01_GAME_PACKS/chip/chair_00.opt",
+        "reconstruction_status": "pass",
+        "logical_pixel_sha256": "23d8e732fa2000f18f8fd9649b5fbe2b190d95aff86475b8befd09cfbe8afeef"
+      }
+    },
+    {
+      "asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_02.png",
+      "asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_02.png",
+      "runtime_path": "assets/display-slice-01/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_02.png",
+      "kind": "derived_opt_reconstruction",
+      "pack": "chip",
+      "original_name": "chair_02.png",
+      "extension": ".png",
+      "bytes": 887,
+      "sha256": "9b56ccb8980f57e97cd10af6b258010afeeea2f194f5b0fd26ddd59d18c94b4d",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 180,
+      "height": 32,
+      "mode": "RGBA",
+      "provenance": {
+        "source_asset_id": "asset:01_GAME_PACKS/chip/chair_02.png",
+        "source_asset_member": "01_GAME_PACKS/chip/chair_02.png",
+        "opt_asset_id": "asset:01_GAME_PACKS/chip/chair_02.opt",
+        "opt_asset_member": "01_GAME_PACKS/chip/chair_02.opt",
+        "reconstruction_status": "pass",
+        "logical_pixel_sha256": "caf40e4a94974d85520fae1eb06f93a615af76dd11973118185598fafbf7dcde"
+      }
+    },
+    {
+      "asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+      "asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+      "runtime_path": "assets/display-slice-01/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+      "kind": "derived_opt_reconstruction",
+      "pack": "chip",
+      "original_name": "desk_00.png",
+      "extension": ".png",
+      "bytes": 1141,
+      "sha256": "fb752e60c2a4f79485f87f7525cb519d19988a8da91f821cb595831856b81445",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 120,
+      "height": 32,
+      "mode": "RGBA",
+      "provenance": {
+        "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+        "source_asset_member": "01_GAME_PACKS/chip/desk_00.png",
+        "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+        "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+        "reconstruction_status": "pass",
+        "logical_pixel_sha256": "46707c4c651480c84721cc9a9d7a1d3a9a23eb6a8238e0dc8c81654c2f49ec47"
+      }
+    },
+    {
+      "asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/door_02.png",
+      "asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/door_02.png",
+      "runtime_path": "assets/display-slice-01/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/door_02.png",
+      "kind": "derived_opt_reconstruction",
+      "pack": "chip",
+      "original_name": "door_02.png",
+      "extension": ".png",
+      "bytes": 435,
+      "sha256": "b5221fad619b4d315af6589227e6204679107381a78be3d26cd34354d7925f4a",
+      "semantic_role": "World/environment chips: furniture, floors, walls, buildings, objects, decorations, facilities and map props.",
+      "width": 26,
+      "height": 31,
+      "mode": "RGBA",
+      "provenance": {
+        "source_asset_id": "asset:01_GAME_PACKS/chip/door_02.png",
+        "source_asset_member": "01_GAME_PACKS/chip/door_02.png",
+        "opt_asset_id": "asset:01_GAME_PACKS/chip/door_02.opt",
+        "opt_asset_member": "01_GAME_PACKS/chip/door_02.opt",
+        "reconstruction_status": "pass",
+        "logical_pixel_sha256": "94811eb5d4b55342652c985c849f93d7ac643797b8eef9624bbbed0c936ff97b"
+      }
+    }
+  ],
+  "counts": {
+    "entries": 18,
+    "approved": 18,
+    "blocked": 0,
+    "by_status": {
+      "approved_for_runtime_subset": 18
+    },
+    "promoted_binary_assets": 34
+  },
+  "determinism": {
+    "algorithm": "stable-json-sha256 excluding generated_at_utc and content_hash",
+    "content_hash": "a9b5b2f9076dc3f05fde9ab64d88f96ef5dea27fd467ec045025d2fb2472dd08"
+  }
+}

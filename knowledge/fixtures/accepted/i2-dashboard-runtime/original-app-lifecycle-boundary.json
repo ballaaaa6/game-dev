@@ -1,0 +1,93 @@
+{
+  "schema": "i2-original-app-lifecycle-boundary-v1",
+  "status": "PASS_I2_ORIGINAL_APP_BOUNDARY",
+  "classification": {
+    "APP_LOOP": [
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/Main.cs",
+        "line": 444,
+        "symbol": "Main.OnUpdate"
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/Main.cs",
+        "line": 1203,
+        "symbol": "Main.OnDraw"
+      },
+      {
+        "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+        "symbol": "FormManagerBase.Execute / FormManagerBase.OnDraw"
+      }
+    ],
+    "FORM_INPUT": [
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/FormManager.cs",
+        "line": 601,
+        "symbol": "FormManager.Updated"
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/GameForm.cs",
+        "line": 858,
+        "symbol": "GameForm.Update"
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs",
+        "line": 5593,
+        "symbol": "SubForm.Update"
+      }
+    ],
+    "HIGH_LEVEL_COMMAND": [
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs",
+        "line": 23161,
+        "symbol": "UpdateDevelopStart -> Player.StartPlanning"
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Player.cs",
+        "line": 6912,
+        "symbol": "Player.StartPlanning"
+      }
+    ],
+    "MODEL_UPDATE": [
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+        "line": 1066,
+        "symbol": "Room.Update -> Staff.Update -> ObjChip.Update"
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Player.cs",
+        "line": 13388,
+        "symbol": "Player.Update"
+      }
+    ],
+    "DRAW_PROJECTION": [
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/GameForm.cs",
+        "line": 4472,
+        "symbol": "GameForm.Draw"
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+        "line": 1246,
+        "symbol": "Room.Draw"
+      }
+    ],
+    "SAVE_SIDE_EFFECT": [
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/AppData.cs",
+        "line": 35620,
+        "symbol": "AppData.ReserveAutoSave"
+      }
+    ],
+    "CUT_PLAYER_UI": [
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/DevelopForm.cs",
+        "symbol": "original planning/develop UI"
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs",
+        "symbol": "original menu/window/input surfaces"
+      }
+    ]
+  },
+  "conclusion": "Original app-loop and model/draw boundaries are reference evidence only. The production web runtime owns one I0 LivingRuntime and does not execute the C# app layer."
+}

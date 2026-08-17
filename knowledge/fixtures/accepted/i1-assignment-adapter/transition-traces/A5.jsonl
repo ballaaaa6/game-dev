@@ -1,0 +1,2 @@
+{"scenarioId":"A5","step":1,"event":"living_interruption_observed","reason":"talk_detour","productStatus":"RUNNING","livingState":"STATE_TALK"}
+{"scenarioId":"A5","step":2,"event":"living_resumed_observed","reason":"baseline_living_resumed","productStatus":"RUNNING","livingState":"STATE_WORK"}

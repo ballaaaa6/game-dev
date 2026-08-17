@@ -1,0 +1,48 @@
+{
+  "queries": [
+    {
+      "gap_count": 0,
+      "hop_count": 9,
+      "query_id": "Q1_staffdata_to_render",
+      "status": "pass"
+    },
+    {
+      "gap_count": 1,
+      "hop_count": 8,
+      "query_id": "Q2_furnituredata_to_render",
+      "status": "source_limited"
+    },
+    {
+      "gap_count": 0,
+      "hop_count": 8,
+      "query_id": "Q3_room_to_mapchip_objchip",
+      "status": "pass"
+    },
+    {
+      "gap_count": 0,
+      "hop_count": 4,
+      "query_id": "Q4_hp_home",
+      "status": "pass"
+    },
+    {
+      "gap_count": 1,
+      "hop_count": 4,
+      "query_id": "Q5_floor_id_domains",
+      "status": "pass"
+    },
+    {
+      "gap_count": 0,
+      "hop_count": 6,
+      "query_id": "Q6_source_to_implementation_test",
+      "status": "pass"
+    },
+    {
+      "gap_count": 0,
+      "hop_count": 4,
+      "query_id": "Q7_product_isolation",
+      "status": "pass"
+    }
+  ],
+  "schema_version": "social-dev-k2-acceptance-matrix-v1",
+  "status": "pass"
+}

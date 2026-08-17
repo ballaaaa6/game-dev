@@ -1,0 +1,24 @@
+{
+  "blocking_source_limited": [],
+  "coverage": {
+    "blocking_source_limited_count": 0,
+    "heuristic_or_assumed_count": 0,
+    "no_distinct_visual_count": 8,
+    "not_reachable_count": 2,
+    "proven_canonical_count": 39,
+    "proven_not_canonical_count": 2,
+    "proven_promoted_count": 46,
+    "reachable_consumer_count": 49,
+    "source_limited_count": 0,
+    "source_missing_count": 0,
+    "visible_consumer_count": 42
+  },
+  "final_token": "PASS_K4_1_TARGETED_CLOSURE_READY_FOR_V8",
+  "heuristic_or_assumed_count": 0,
+  "ready_for_v8": true,
+  "required_next_step": "V8 may begin only as a separate explicitly authorized phase; it remains NOT_STARTED.",
+  "schema_version": "social-dev-k4-1-v8-readiness-v1",
+  "source_missing_count": 0,
+  "status": "READY",
+  "v8_scope": "NOT_STARTED"
+}

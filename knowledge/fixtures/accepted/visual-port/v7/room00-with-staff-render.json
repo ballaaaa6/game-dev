@@ -1,0 +1,46 @@
+{
+  "action": "wait",
+  "camera": [
+    0,
+    0
+  ],
+  "commands": 142,
+  "compatibility_assumptions": [
+    "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+    "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+    "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+    "Out-of-bounds source samples are transparent.",
+    "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+    "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+    "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+  ],
+  "dimensions": {
+    "height": 600,
+    "width": 980
+  },
+  "direction": "right",
+  "draw_count": 142,
+  "events": 791,
+  "frame": 0,
+  "nontransparent_bounds": {
+    "height": 385,
+    "width": 698,
+    "x": 282,
+    "y": 174
+  },
+  "phase": "V6",
+  "pixel_sha256": "950a2478e1daa84d47fd89b7927271d913a5ef75f0e05e0b889bdbfae54c16b4",
+  "png_path": "knowledge/fixtures/accepted/visual-port/v7/previews/room00-with-staff.png",
+  "png_sha256": "f5c2db1052ee55b6256208b164107bc123f58634f533ce621f46871acb60c1cd",
+  "room_key": "room:0",
+  "schema_version": "social-dev-visual-port-v7-room00-with-staff-render-v1",
+  "skipped_draw_count": 0,
+  "staff_actor_ids": [
+    "actor:staff:0",
+    "actor:staff:1",
+    "actor:staff:2"
+  ],
+  "status": "pass_static",
+  "traces": 127,
+  "v6_manifest_sha256": "1e2b1d47922f8e274bfdf40a5c1c9aff85780441ad244f92de641e5cc5de1e7a"
+}

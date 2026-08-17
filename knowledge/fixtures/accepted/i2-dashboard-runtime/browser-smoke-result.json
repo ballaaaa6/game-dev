@@ -1,0 +1,45 @@
+{
+  "schema": "i2-browser-smoke-result-v1",
+  "status": "PASS_PRODUCT_UI_SMOKE_ONLY",
+  "server": {
+    "url": "http://127.0.0.1:4173/",
+    "process": "pre-existing healthy Vite process reused",
+    "started_by_task": false
+  },
+  "clean_boot": {
+    "url": "http://127.0.0.1:4173/?auto=0",
+    "frame": 0,
+    "canvas_visible": true,
+    "dashboard_visible": true,
+    "unbound_staff_visible": true,
+    "console_errors": [],
+    "uncaught_promise_errors": []
+  },
+  "product_flow": {
+    "bind": true,
+    "assign": true,
+    "start": true,
+    "progress_42": true,
+    "product_frame_before": 0,
+    "product_frame_after": 0,
+    "conflict_code_visible": "AGENT_BINDING_CONFLICT"
+  },
+  "scheduler_flow": {
+    "url": "http://127.0.0.1:4173/?auto=1",
+    "frame_before": 0,
+    "frame_after": 4,
+    "canvas_visible": true,
+    "dashboard_visible": true,
+    "console_errors": [],
+    "uncaught_promise_errors": []
+  },
+  "terminal_controls": {
+    "complete": "COMPLETED",
+    "cancel": "CANCELLED",
+    "fail": "FAILED",
+    "two_agent_cards": 3,
+    "history_visible": true
+  },
+  "visual_artifact_policy": "PRODUCT_UI_SMOKE_ONLY",
+  "visual_gate_observation": "blocked_by_evidence after assets; Canvas remained visible and no console/runtime errors were observed"
+}

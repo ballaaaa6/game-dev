@@ -1,0 +1,2203 @@
+{
+  "class": "Staff",
+  "class_dump_ref": {
+    "dump_sha256": "4487cba6916e159afefec2cd1a9ecf0d12d05b2d76126e7099a5d35323967eb2",
+    "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+    "note": "Pinned arm64 IL2CPP field layout.",
+    "symbol": "Staff"
+  },
+  "counts": {
+    "dump_aligned": 103,
+    "missing_dump_offsets": 0,
+    "records": 103,
+    "source_mutable_fields": 97
+  },
+  "fields": [
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220711,
+        "modifiers": [
+          "static",
+          "readonly",
+          "string[]"
+        ],
+        "offset": "0x0"
+      },
+      "group": "other_staff_runtime",
+      "mutable": false,
+      "name": "STATE_STR",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 56
+      },
+      "static": true,
+      "status": "source_and_dump_aligned",
+      "type": "string[]"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220736,
+        "modifiers": [
+          "static",
+          "readonly",
+          "string[]"
+        ],
+        "offset": "0x10"
+      },
+      "group": "other_staff_runtime",
+      "mutable": false,
+      "name": "MOVE_MODE_STR",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 106
+      },
+      "static": true,
+      "status": "source_and_dump_aligned",
+      "type": "string[]"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220769,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x10"
+      },
+      "group": "identity_and_presentation",
+      "mutable": true,
+      "name": "id_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 172
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220818,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x100"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "auraGauge_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 270
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220819,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x104"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "auraType_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 272
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220820,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x108"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "planningRate_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 274
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220821,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x10C"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "evolutionItemStates_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 276
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220822,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x110"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "planQuality_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 278
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220823,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x114"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "oldPlanningRate_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 280
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220824,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x118"
+      },
+      "group": "hp_and_recovery",
+      "mutable": true,
+      "name": "recoveryEffectFrame_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 282
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220825,
+        "modifiers": [
+          "FastVector"
+        ],
+        "offset": "0x120"
+      },
+      "group": "staff_data_and_progression",
+      "mutable": true,
+      "name": "masterJobIdList_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 284
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "FastVector"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220826,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x128"
+      },
+      "group": "staff_data_and_progression",
+      "mutable": true,
+      "name": "uniqueId_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 286
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220827,
+        "modifiers": [
+          "int[]"
+        ],
+        "offset": "0x130"
+      },
+      "group": "speech_and_effects",
+      "mutable": true,
+      "name": "itemEffectParams_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 288
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int[]"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220828,
+        "modifiers": [
+          "object[]"
+        ],
+        "offset": "0x138"
+      },
+      "group": "speech_and_effects",
+      "mutable": true,
+      "name": "fukidashi_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 290
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "object[]"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220835,
+        "modifiers": [
+          "ExLong"
+        ],
+        "offset": "0x140"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "planningElapsedTime_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 304
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "ExLong"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220836,
+        "modifiers": [
+          "ExLong"
+        ],
+        "offset": "0x148"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "planningTotalElapsedTime_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 306
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "ExLong"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220837,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x150"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "evolvedCount_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 308
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220838,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x154"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "proposalChoiceCount_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 310
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220839,
+        "modifiers": [
+          "ExInt"
+        ],
+        "offset": "0x158"
+      },
+      "group": "staff_data_and_progression",
+      "mutable": true,
+      "name": "cost_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 312
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "ExInt"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220840,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x160"
+      },
+      "group": "staff_data_and_progression",
+      "mutable": true,
+      "name": "skillId_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 314
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220841,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x164"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "targetQualityPoint_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 316
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220842,
+        "modifiers": [
+          "int[]"
+        ],
+        "offset": "0x168"
+      },
+      "group": "identity_and_presentation",
+      "mutable": true,
+      "name": "lastDrawPos_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 318
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int[]"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220843,
+        "modifiers": [
+          "Node"
+        ],
+        "offset": "0x170"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "lastNode_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 320
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "Node"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220844,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x178"
+      },
+      "group": "timers_and_flags",
+      "mutable": true,
+      "name": "moveFrame_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 322
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220845,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x17C"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "attackCharge_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 324
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220767,
+        "modifiers": [
+          "static",
+          "AppData"
+        ],
+        "offset": "0x18"
+      },
+      "group": "other_staff_runtime",
+      "mutable": true,
+      "name": "apdat_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 168
+      },
+      "static": true,
+      "status": "source_and_dump_aligned",
+      "type": "AppData"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220770,
+        "modifiers": [
+          "StaffData"
+        ],
+        "offset": "0x18"
+      },
+      "group": "staff_data_and_progression",
+      "mutable": true,
+      "name": "staffData_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 174
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "StaffData"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220846,
+        "modifiers": [
+          "Enemy"
+        ],
+        "offset": "0x180"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "enemy_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 326
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "Enemy"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220847,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x188"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "developState_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 328
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220848,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x18C"
+      },
+      "group": "timers_and_flags",
+      "mutable": true,
+      "name": "frame2_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 330
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220849,
+        "modifiers": [
+          "bool"
+        ],
+        "offset": "0x190"
+      },
+      "group": "timers_and_flags",
+      "mutable": true,
+      "name": "stepFinished_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 332
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "bool"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220850,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x194"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "auraTime_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 334
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220851,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x198"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "bodyStateTime_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 336
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220852,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x19C"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "power_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 338
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220853,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x1A0"
+      },
+      "group": "identity_and_presentation",
+      "mutable": true,
+      "name": "attack_frame_frame_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 340
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220854,
+        "modifiers": [
+          "Staff"
+        ],
+        "offset": "0x1A8"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "original_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 342
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "Staff"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220855,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x1B0"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "developStateBackup_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 344
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220856,
+        "modifiers": [
+          "bool"
+        ],
+        "offset": "0x1B4"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "isFukidashiCaller_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 346
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "bool"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220857,
+        "modifiers": [
+          "bool"
+        ],
+        "offset": "0x1B5"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "isProduceBug_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 348
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "bool"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220858,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x1B8"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "developStaffId_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 350
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220859,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x1BC"
+      },
+      "group": "hp_and_recovery",
+      "mutable": true,
+      "name": "damagedFrame_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 352
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220860,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x1C0"
+      },
+      "group": "social_and_meeting",
+      "mutable": true,
+      "name": "meetingPointGauge_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 354
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220861,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x1C4"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "ideaPoint_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 356
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220862,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x1C8"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "egg_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 358
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220863,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x1CC"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "originalUnipueId_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 360
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220864,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x1D0"
+      },
+      "group": "social_and_meeting",
+      "mutable": true,
+      "name": "lastMeetingPoint_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 362
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220865,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x1D4"
+      },
+      "group": "social_and_meeting",
+      "mutable": true,
+      "name": "meetingPointFrame_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 364
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220866,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x1D8"
+      },
+      "group": "social_and_meeting",
+      "mutable": true,
+      "name": "reservedSebId_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 366
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220867,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x1DC"
+      },
+      "group": "other_staff_runtime",
+      "mutable": true,
+      "name": "waitingBackOfDoorFrame_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 368
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220876,
+        "modifiers": [
+          "int[]"
+        ],
+        "offset": "0x1E0"
+      },
+      "group": "speech_and_effects",
+      "mutable": true,
+      "name": "fukidashi__",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 386
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int[]"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220768,
+        "modifiers": [
+          "static",
+          "DataManager"
+        ],
+        "offset": "0x20"
+      },
+      "group": "other_staff_runtime",
+      "mutable": true,
+      "name": "dataMan_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 170
+      },
+      "static": true,
+      "status": "source_and_dump_aligned",
+      "type": "DataManager"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220771,
+        "modifiers": [
+          "int[]"
+        ],
+        "offset": "0x20"
+      },
+      "group": "staff_data_and_progression",
+      "mutable": true,
+      "name": "params_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 176
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int[]"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220772,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x28"
+      },
+      "group": "staff_data_and_progression",
+      "mutable": true,
+      "name": "level_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 178
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220868,
+        "modifiers": [
+          "static",
+          "readonly",
+          "float"
+        ],
+        "offset": "0x28"
+      },
+      "group": "other_staff_runtime",
+      "mutable": false,
+      "name": "root5_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 370
+      },
+      "static": true,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220773,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x2C"
+      },
+      "group": "staff_data_and_progression",
+      "mutable": true,
+      "name": "exp_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 180
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220869,
+        "modifiers": [
+          "static",
+          "readonly",
+          "int[][]"
+        ],
+        "offset": "0x30"
+      },
+      "group": "other_staff_runtime",
+      "mutable": false,
+      "name": "ATTACK_POWER_PARAM_RATIO_TABLE",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 372
+      },
+      "static": true,
+      "status": "source_and_dump_aligned",
+      "type": "int[][]"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220774,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x30"
+      },
+      "group": "staff_data_and_progression",
+      "mutable": true,
+      "name": "expStock_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 182
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220775,
+        "modifiers": [
+          "float"
+        ],
+        "offset": "0x34"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "x_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 184
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220870,
+        "modifiers": [
+          "static",
+          "int[]"
+        ],
+        "offset": "0x38"
+      },
+      "group": "other_staff_runtime",
+      "mutable": true,
+      "name": "tempParam_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 374
+      },
+      "static": true,
+      "status": "source_and_dump_aligned",
+      "type": "int[]"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220776,
+        "modifiers": [
+          "float"
+        ],
+        "offset": "0x38"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "y_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 186
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220777,
+        "modifiers": [
+          "float"
+        ],
+        "offset": "0x3C"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "vx_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 188
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220875,
+        "modifiers": [
+          "static",
+          "readonly",
+          "int[]"
+        ],
+        "offset": "0x40"
+      },
+      "group": "other_staff_runtime",
+      "mutable": false,
+      "name": "WAIT_SEB_ARRAY",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 384
+      },
+      "static": true,
+      "status": "source_and_dump_aligned",
+      "type": "int[]"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220778,
+        "modifiers": [
+          "float"
+        ],
+        "offset": "0x40"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "vy_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 190
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220779,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x44"
+      },
+      "group": "other_staff_runtime",
+      "mutable": true,
+      "name": "expendStep_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 192
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220780,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x48"
+      },
+      "group": "other_staff_runtime",
+      "mutable": true,
+      "name": "nextLvExp_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 194
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220781,
+        "modifiers": [
+          "float"
+        ],
+        "offset": "0x4C"
+      },
+      "group": "identity_and_presentation",
+      "mutable": true,
+      "name": "ofx_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 196
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220782,
+        "modifiers": [
+          "float"
+        ],
+        "offset": "0x50"
+      },
+      "group": "identity_and_presentation",
+      "mutable": true,
+      "name": "ofy_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 198
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220783,
+        "modifiers": [
+          "float"
+        ],
+        "offset": "0x54"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "dx_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 200
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220784,
+        "modifiers": [
+          "float"
+        ],
+        "offset": "0x58"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "dy_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 202
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220785,
+        "modifiers": [
+          "float"
+        ],
+        "offset": "0x5C"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "dx2_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 204
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220786,
+        "modifiers": [
+          "float"
+        ],
+        "offset": "0x60"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "dy2_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 206
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220787,
+        "modifiers": [
+          "float"
+        ],
+        "offset": "0x64"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "speed_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 208
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220788,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x68"
+      },
+      "group": "timers_and_flags",
+      "mutable": true,
+      "name": "sebFrame_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 210
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220789,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x6C"
+      },
+      "group": "timers_and_flags",
+      "mutable": true,
+      "name": "sebFrameInterval_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 212
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220790,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x70"
+      },
+      "group": "state_and_dispatch",
+      "mutable": true,
+      "name": "state_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 214
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220791,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x74"
+      },
+      "group": "state_and_dispatch",
+      "mutable": true,
+      "name": "sebId_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 216
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220792,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x78"
+      },
+      "group": "state_and_dispatch",
+      "mutable": true,
+      "name": "processStep_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 218
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220793,
+        "modifiers": [
+          "float"
+        ],
+        "offset": "0x7C"
+      },
+      "group": "other_staff_runtime",
+      "mutable": true,
+      "name": "accel_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 220
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "float"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220712,
+        "modifiers": [
+          "static",
+          "readonly",
+          "string[]"
+        ],
+        "offset": "0x8"
+      },
+      "group": "other_staff_runtime",
+      "mutable": false,
+      "name": "DEVELOP_STATE_STR",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 58
+      },
+      "static": true,
+      "status": "source_and_dump_aligned",
+      "type": "string[]"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220794,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x80"
+      },
+      "group": "identity_and_presentation",
+      "mutable": true,
+      "name": "scale_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 222
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220795,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x84"
+      },
+      "group": "timers_and_flags",
+      "mutable": true,
+      "name": "frame_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 224
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220796,
+        "modifiers": [
+          "FastVector"
+        ],
+        "offset": "0x88"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "route_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 226
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "FastVector"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220797,
+        "modifiers": [
+          "Room"
+        ],
+        "offset": "0x90"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "room_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 228
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "Room"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220798,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0x98"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "floor_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 230
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220799,
+        "modifiers": [
+          "Vector2D"
+        ],
+        "offset": "0xA0"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "objIndex_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 232
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "Vector2D"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220800,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xA8"
+      },
+      "group": "state_and_dispatch",
+      "mutable": true,
+      "name": "moveMode_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 234
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220801,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xAC"
+      },
+      "group": "timers_and_flags",
+      "mutable": true,
+      "name": "flag_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 236
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220802,
+        "modifiers": [
+          "Vector2D"
+        ],
+        "offset": "0xB0"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "oldIndex_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 238
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "Vector2D"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220803,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xB8"
+      },
+      "group": "movement_and_room",
+      "mutable": true,
+      "name": "deskId_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 240
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220804,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xBC"
+      },
+      "group": "social_and_meeting",
+      "mutable": true,
+      "name": "colleagueId_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 242
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220805,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xC0"
+      },
+      "group": "state_and_dispatch",
+      "mutable": true,
+      "name": "oldState_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 244
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220806,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xC4"
+      },
+      "group": "state_and_dispatch",
+      "mutable": true,
+      "name": "oldSebId_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 246
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "public",
+      "dump": {
+        "access": "public",
+        "dump_line": 220807,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xC8"
+      },
+      "group": "identity_and_presentation",
+      "mutable": true,
+      "name": "alpha_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 248
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220808,
+        "modifiers": [
+          "string"
+        ],
+        "offset": "0xD0"
+      },
+      "group": "identity_and_presentation",
+      "mutable": true,
+      "name": "firstName_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 250
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "string"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220809,
+        "modifiers": [
+          "string"
+        ],
+        "offset": "0xD8"
+      },
+      "group": "identity_and_presentation",
+      "mutable": true,
+      "name": "lastName_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 252
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "string"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220810,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xE0"
+      },
+      "group": "timers_and_flags",
+      "mutable": true,
+      "name": "typingFrame_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 254
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220811,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xE4"
+      },
+      "group": "timers_and_flags",
+      "mutable": true,
+      "name": "talkFrame_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 256
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220812,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xE8"
+      },
+      "group": "hp_and_recovery",
+      "mutable": true,
+      "name": "hp_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 258
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220813,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xEC"
+      },
+      "group": "staff_data_and_progression",
+      "mutable": true,
+      "name": "jobId_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 260
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220814,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xF0"
+      },
+      "group": "hp_and_recovery",
+      "mutable": true,
+      "name": "frameToStartRecovery_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 262
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220815,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xF4"
+      },
+      "group": "hp_and_recovery",
+      "mutable": true,
+      "name": "frameToHideHpGauge_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 264
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220816,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xF8"
+      },
+      "group": "hp_and_recovery",
+      "mutable": true,
+      "name": "recoveryHpStock_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 266
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    },
+    {
+      "access": "private",
+      "dump": {
+        "access": "private",
+        "dump_line": 220817,
+        "modifiers": [
+          "int"
+        ],
+        "offset": "0xFC"
+      },
+      "group": "planning_and_development",
+      "mutable": true,
+      "name": "planningEndDelayFrame_",
+      "source": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 268
+      },
+      "static": false,
+      "status": "source_and_dump_aligned",
+      "type": "int"
+    }
+  ],
+  "missing_dump_offsets": [],
+  "notes": [
+    "Offsets are IL2CPP instance offsets from the pinned dump, not C# managed layout assumptions.",
+    "The dump closes storage and native method addresses; it does not close the damaged high-level Staff.Update dispatch body."
+  ],
+  "schema_version": "social-dev-behavior-first-staff-field-inventory-v1",
+  "source_boundary": "All mutable Staff declarations were matched against the pinned dump; static readonly and const labels are retained only where they explain behavior.",
+  "status": "pass"
+}

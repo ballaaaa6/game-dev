@@ -1,0 +1,30 @@
+{
+  "schema_version": "social-dev-visual-port-v6-room00-actor-bootstrap-v1",
+  "status": "pass_static",
+  "scene": "room:0",
+  "bootstrap": {
+    "entrypoint": "AppData.NewGame",
+    "room_data_key": "data:room:0",
+    "room_constructor": {"width": 14, "height": 14, "floor": 0, "is_preview": false},
+    "initial_staff_count": 3,
+    "door_cell": [8, 4],
+    "native_spawn_preserved": true
+  },
+  "actors": [
+    {"actor_id": "actor:staff:0", "source_staff_id": 0, "insertion_index": 0, "cell": [8, 4], "world": [280, -31], "image_selector_id": 86, "initial_alpha": 0},
+    {"actor_id": "actor:staff:1", "source_staff_id": 1, "insertion_index": 1, "cell": [8, 4], "world": [280, -31], "image_selector_id": 87, "initial_alpha": 0},
+    {"actor_id": "actor:staff:2", "source_staff_id": 2, "insertion_index": 2, "cell": [8, 4], "world": [280, -31], "image_selector_id": 88, "initial_alpha": 0}
+  ],
+  "display_fixture_policy": {
+    "action": "wait",
+    "direction": "right",
+    "frame": 0,
+    "alpha": 255,
+    "note": "The visible static fixture is an explicit presentation state; it does not rewrite the native alpha-zero spawn contract."
+  },
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/actor_spawn_contract.json",
+    "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+    "sources/raw/1_Click_CSharp_Code update/game/Room.cs:5594-5764"
+  ]
+}

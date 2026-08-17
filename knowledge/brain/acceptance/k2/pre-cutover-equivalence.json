@@ -1,0 +1,9 @@
+{
+  "compatibility_alias_preserved": true,
+  "contract_value_delta": 0,
+  "runtime_value_delta": 0,
+  "schema_version": "social-dev-k2-pre-cutover-equivalence-v1",
+  "source_contracts_repackaged_without_semantic_change": true,
+  "status": "pass",
+  "visual_value_delta": 0
+}

@@ -1,0 +1,3956 @@
+{
+  "schema_version": "social-dev-k3-candidate-edge-classification-v1",
+  "gap_id": "K3-GAP-CANDIDATE-EDGES",
+  "status": "CLOSED",
+  "candidate_count": 185,
+  "classification_counts": {
+    "CONFIRMED": 1,
+    "REJECTED": 184
+  },
+  "records": [
+    {
+      "edge_id": "edge:fb33c6d664cf8e95037aea37",
+      "claim_id": "edge-claim:2b2fef0cb442135b7187634c",
+      "subject_id": "data:furniture:0",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:0",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:1",
+        "furniture_data_id": "FURNITURE_DATA_ID:0"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:ab3c571b38dbeaef8d554e2a",
+      "claim_id": "edge-claim:a014e1feaf369a9ab0453b57",
+      "subject_id": "data:furniture:0",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:0",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:1",
+        "furniture_data_id": "FURNITURE_DATA_ID:0"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:6e7bd3a32427d05448125c14",
+      "claim_id": "edge-claim:ea433609ff20850c1d4fe065",
+      "subject_id": "data:furniture:1",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:1",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:2",
+        "furniture_data_id": "FURNITURE_DATA_ID:1"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:236916d462c9a0831653c9e1",
+      "claim_id": "edge-claim:80bb7a8d760c693987c2c5f5",
+      "subject_id": "data:furniture:1",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:1",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:2",
+        "furniture_data_id": "FURNITURE_DATA_ID:1"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:8f127bcab866b0f8391e6326",
+      "claim_id": "edge-claim:89e9714f35b28f9ba97f73ec",
+      "subject_id": "data:furniture:100",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:100",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:101",
+        "furniture_data_id": "FURNITURE_DATA_ID:100"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:97787b5570f325f88de11547",
+      "claim_id": "edge-claim:c216408366d72578f9ce23a6",
+      "subject_id": "data:furniture:100",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:100",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:101",
+        "furniture_data_id": "FURNITURE_DATA_ID:100"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:2e725ffad7e33d30683973d4",
+      "claim_id": "edge-claim:7a11b874a6d005d5407e7bb9",
+      "subject_id": "data:furniture:101",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:101",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:102",
+        "furniture_data_id": "FURNITURE_DATA_ID:101"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:e7f1269db95662d8045da892",
+      "claim_id": "edge-claim:4d493df8a7961d5f502183db",
+      "subject_id": "data:furniture:101",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:101",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:102",
+        "furniture_data_id": "FURNITURE_DATA_ID:101"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:b0789fd50128f1084722510c",
+      "claim_id": "edge-claim:a82cd91c955e12eb36a8e2f6",
+      "subject_id": "data:furniture:102",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:102",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:103",
+        "furniture_data_id": "FURNITURE_DATA_ID:102"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:b9f2d4e85ba4d11ebe9a0bc5",
+      "claim_id": "edge-claim:780ed11984cb75befee2f2f2",
+      "subject_id": "data:furniture:102",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:102",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:103",
+        "furniture_data_id": "FURNITURE_DATA_ID:102"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:2e52df0e826d08422ac39104",
+      "claim_id": "edge-claim:26dd72865fbcdc992a3c3878",
+      "subject_id": "data:furniture:12",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:12",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:13",
+        "furniture_data_id": "FURNITURE_DATA_ID:12"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:a5a24ddbbf845ac2b7b84673",
+      "claim_id": "edge-claim:4d9bcf09e353071b60ecaa97",
+      "subject_id": "data:furniture:12",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:12",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:13",
+        "furniture_data_id": "FURNITURE_DATA_ID:12"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:7a92ba2ecae2c06eaf0ed163",
+      "claim_id": "edge-claim:2efad6ff23f86a595b5798d2",
+      "subject_id": "data:furniture:13",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:13",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:14",
+        "furniture_data_id": "FURNITURE_DATA_ID:13"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:0431a368add608882e07d7bb",
+      "claim_id": "edge-claim:ff60348f91ea6c28e5c3b2fc",
+      "subject_id": "data:furniture:13",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:13",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:14",
+        "furniture_data_id": "FURNITURE_DATA_ID:13"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:bd7f3ec32df9f63e86f41035",
+      "claim_id": "edge-claim:d3df84f80fcf677de68bceb9",
+      "subject_id": "data:furniture:14",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:14",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:15",
+        "furniture_data_id": "FURNITURE_DATA_ID:14"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:a6ccf5ad5be566e7e96f777e",
+      "claim_id": "edge-claim:9a03b33207fe4d2c376907ad",
+      "subject_id": "data:furniture:14",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:14",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:15",
+        "furniture_data_id": "FURNITURE_DATA_ID:14"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:39db45c8dfeeba31a1a39343",
+      "claim_id": "edge-claim:09a4ecf4548e68500398e6c8",
+      "subject_id": "data:furniture:15",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:15",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:16",
+        "furniture_data_id": "FURNITURE_DATA_ID:15"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:05eb7a3329e6efb3f7267bde",
+      "claim_id": "edge-claim:c292b57d30b6cdfa79936327",
+      "subject_id": "data:furniture:15",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:15",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:16",
+        "furniture_data_id": "FURNITURE_DATA_ID:15"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:e143390d6ec387b5cc54f1c8",
+      "claim_id": "edge-claim:a54189a61d358169b030ea5e",
+      "subject_id": "data:furniture:16",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:16",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:17",
+        "furniture_data_id": "FURNITURE_DATA_ID:16"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:dff32f7ccbf744d4146471b8",
+      "claim_id": "edge-claim:328b523b5f92a9b908140b9f",
+      "subject_id": "data:furniture:16",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:16",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:17",
+        "furniture_data_id": "FURNITURE_DATA_ID:16"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:0298fd5c9e58d2a02d942ac9",
+      "claim_id": "edge-claim:d293df525099e7d6bcd1d147",
+      "subject_id": "data:furniture:17",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:17",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:18",
+        "furniture_data_id": "FURNITURE_DATA_ID:17"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:7e023d8c3c263ea90e6578d0",
+      "claim_id": "edge-claim:9ef57b4a78171ecd89ece030",
+      "subject_id": "data:furniture:17",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:17",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:18",
+        "furniture_data_id": "FURNITURE_DATA_ID:17"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:e2b20c3fd1020a77fabd93af",
+      "claim_id": "edge-claim:2c6cf73e88e9bf42765e8ef0",
+      "subject_id": "data:furniture:18",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:18",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:19",
+        "furniture_data_id": "FURNITURE_DATA_ID:18"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:d8f5b7e5bb00fc350629476b",
+      "claim_id": "edge-claim:fdabe97127b538f5b94bd249",
+      "subject_id": "data:furniture:18",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:18",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:19",
+        "furniture_data_id": "FURNITURE_DATA_ID:18"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:869ed07b5557fae0327e5928",
+      "claim_id": "edge-claim:2c1c8fac59b5936c087b3973",
+      "subject_id": "data:furniture:19",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:19",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:20",
+        "furniture_data_id": "FURNITURE_DATA_ID:19"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:704e63a9e16b56024d89de06",
+      "claim_id": "edge-claim:4fe15b9c9435491cf8c92e9d",
+      "subject_id": "data:furniture:19",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:19",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:20",
+        "furniture_data_id": "FURNITURE_DATA_ID:19"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:615557ee395fc9bcadea95b6",
+      "claim_id": "edge-claim:3fd51d6b0cefa0e17a966774",
+      "subject_id": "data:furniture:20",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:20",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:21",
+        "furniture_data_id": "FURNITURE_DATA_ID:20"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:fd3ce79d41729a1165ae27ae",
+      "claim_id": "edge-claim:dd9e83e134870cd9f4fb611a",
+      "subject_id": "data:furniture:20",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:20",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:21",
+        "furniture_data_id": "FURNITURE_DATA_ID:20"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:c81fc03ed479c7322411884c",
+      "claim_id": "edge-claim:c49fb43b0d7f3799e56295c5",
+      "subject_id": "data:furniture:22",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:22",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:23",
+        "furniture_data_id": "FURNITURE_DATA_ID:22"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:d9556f33b7fe75899537bfb0",
+      "claim_id": "edge-claim:e13c776eb9747d8f8f59e78d",
+      "subject_id": "data:furniture:22",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:22",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:23",
+        "furniture_data_id": "FURNITURE_DATA_ID:22"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:22c2b1b6b09a3b045172ff6f",
+      "claim_id": "edge-claim:6daf97fa27cc1b7d04179d43",
+      "subject_id": "data:furniture:24",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:24",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:25",
+        "furniture_data_id": "FURNITURE_DATA_ID:24"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:35b9b7e4457bbf2a7934207e",
+      "claim_id": "edge-claim:82bf8a24664c7dda4bb9c9a2",
+      "subject_id": "data:furniture:24",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:24",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:25",
+        "furniture_data_id": "FURNITURE_DATA_ID:24"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:40fb6807172eaa9c9f0502d7",
+      "claim_id": "edge-claim:d19099d19992eec8a76a3f2b",
+      "subject_id": "data:furniture:25",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:25",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:26",
+        "furniture_data_id": "FURNITURE_DATA_ID:25"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:6497e6c0e799782e8ca4bf37",
+      "claim_id": "edge-claim:503d55dddd0fa0c0c9fa2ce4",
+      "subject_id": "data:furniture:25",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:25",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:26",
+        "furniture_data_id": "FURNITURE_DATA_ID:25"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:4fdc9d54ce9419332f98831f",
+      "claim_id": "edge-claim:8bc0cf0426e1dab234398bfa",
+      "subject_id": "data:furniture:26",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:26",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:27",
+        "furniture_data_id": "FURNITURE_DATA_ID:26"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:2f10d16d0390287029168604",
+      "claim_id": "edge-claim:615a56798bd304600169015d",
+      "subject_id": "data:furniture:26",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:26",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:27",
+        "furniture_data_id": "FURNITURE_DATA_ID:26"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:4b6f2da3088f60c876715527",
+      "claim_id": "edge-claim:673a4d01df39d8992b99f324",
+      "subject_id": "data:furniture:27",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:27",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:28",
+        "furniture_data_id": "FURNITURE_DATA_ID:27"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:f1e3f6be858ca88459b9d6b9",
+      "claim_id": "edge-claim:ee02b5a009b6390aaabeba8d",
+      "subject_id": "data:furniture:27",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:27",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:28",
+        "furniture_data_id": "FURNITURE_DATA_ID:27"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:9c502f758cfb0cad06a8be79",
+      "claim_id": "edge-claim:eda9807bda047b682d976584",
+      "subject_id": "data:furniture:28",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:28",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:29",
+        "furniture_data_id": "FURNITURE_DATA_ID:28"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:c146d5b6a0056c305bb8b8b1",
+      "claim_id": "edge-claim:1bc5bd3e0717ebd78ff416f3",
+      "subject_id": "data:furniture:28",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:28",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:29",
+        "furniture_data_id": "FURNITURE_DATA_ID:28"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:ee617d5aa479b03a88a00446",
+      "claim_id": "edge-claim:2948a9338e6e29935b9443a4",
+      "subject_id": "data:furniture:29",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:29",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:30",
+        "furniture_data_id": "FURNITURE_DATA_ID:29"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:e8e95a9015ae4699319799b5",
+      "claim_id": "edge-claim:efe506f439a3b4d63f653d53",
+      "subject_id": "data:furniture:29",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:29",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:30",
+        "furniture_data_id": "FURNITURE_DATA_ID:29"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:cfe112a83ebc3016494367ea",
+      "claim_id": "edge-claim:2dddf6c6648e6a592fb134c8",
+      "subject_id": "data:furniture:30",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:30",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:31",
+        "furniture_data_id": "FURNITURE_DATA_ID:30"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:5350f0cca22b46333965457f",
+      "claim_id": "edge-claim:3415fdd03e65a865af6ece2f",
+      "subject_id": "data:furniture:30",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:30",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:31",
+        "furniture_data_id": "FURNITURE_DATA_ID:30"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:f2e4c86cf7520da2649dcf9c",
+      "claim_id": "edge-claim:5de4c8cae89b6e6d8d42268f",
+      "subject_id": "data:furniture:31",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:31",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:32",
+        "furniture_data_id": "FURNITURE_DATA_ID:31"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:f111da913fb1c59a8ac32a52",
+      "claim_id": "edge-claim:0d6a4090524ff16782726ba6",
+      "subject_id": "data:furniture:31",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:31",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:32",
+        "furniture_data_id": "FURNITURE_DATA_ID:31"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:4762ecee678a3a45f87caccd",
+      "claim_id": "edge-claim:d13e26a5527b69a6a24ae142",
+      "subject_id": "data:furniture:32",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:32",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:33",
+        "furniture_data_id": "FURNITURE_DATA_ID:32"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:95eb6bada6730d46e629057f",
+      "claim_id": "edge-claim:c3ba882070bb93cbaf47fefa",
+      "subject_id": "data:furniture:32",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:32",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:33",
+        "furniture_data_id": "FURNITURE_DATA_ID:32"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:88b8e9b4ee268cc797a5d213",
+      "claim_id": "edge-claim:ee0df15c256bff8b859fceab",
+      "subject_id": "data:furniture:33",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:33",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:34",
+        "furniture_data_id": "FURNITURE_DATA_ID:33"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:b96bc5e9db7c8ca0094091ba",
+      "claim_id": "edge-claim:cd03368136b0ab18ca6c5616",
+      "subject_id": "data:furniture:33",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:33",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:34",
+        "furniture_data_id": "FURNITURE_DATA_ID:33"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:2fad01e721e5bb2a2eb2cf56",
+      "claim_id": "edge-claim:9fdb8e21dbeb4d8a5a374432",
+      "subject_id": "data:furniture:34",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:34",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:35",
+        "furniture_data_id": "FURNITURE_DATA_ID:34"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:9cc326726467aa5552a9288a",
+      "claim_id": "edge-claim:cc508a8b7b06a3af12ed81a0",
+      "subject_id": "data:furniture:34",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:34",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:35",
+        "furniture_data_id": "FURNITURE_DATA_ID:34"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:6b68732840f2f9c613d95c0e",
+      "claim_id": "edge-claim:909a6f34fb31ef53595039a8",
+      "subject_id": "data:furniture:35",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:35",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:36",
+        "furniture_data_id": "FURNITURE_DATA_ID:35"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:a37b504a222ff7eec13c107f",
+      "claim_id": "edge-claim:589494535704cf4b7793d2ce",
+      "subject_id": "data:furniture:35",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:35",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:36",
+        "furniture_data_id": "FURNITURE_DATA_ID:35"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:3277ea5eed2f5d6d2a6a5a85",
+      "claim_id": "edge-claim:1ed143f17b6650406fcdff3a",
+      "subject_id": "data:furniture:36",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:36",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:37",
+        "furniture_data_id": "FURNITURE_DATA_ID:36"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:af9850bc6a6b9e70f67ef7d9",
+      "claim_id": "edge-claim:78903c78c701b3c16edcdb81",
+      "subject_id": "data:furniture:36",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:36",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:37",
+        "furniture_data_id": "FURNITURE_DATA_ID:36"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:07e1513410ff6cf244dc75a8",
+      "claim_id": "edge-claim:c6c94effb154b413e3c99b3c",
+      "subject_id": "data:furniture:37",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:37",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:38",
+        "furniture_data_id": "FURNITURE_DATA_ID:37"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:af4ca9ce5c4acfe56e61195a",
+      "claim_id": "edge-claim:fb7306e6b064cfa17870c134",
+      "subject_id": "data:furniture:37",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:37",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:38",
+        "furniture_data_id": "FURNITURE_DATA_ID:37"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:4124042c49d34427729bb8cf",
+      "claim_id": "edge-claim:948bf7ad8adc82f6402ddbdb",
+      "subject_id": "data:furniture:38",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:38",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:39",
+        "furniture_data_id": "FURNITURE_DATA_ID:38"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:3c31c21f8c2c84c3a1f6c4d7",
+      "claim_id": "edge-claim:1f9c4a5976e2d34a437e7b9a",
+      "subject_id": "data:furniture:38",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:38",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:39",
+        "furniture_data_id": "FURNITURE_DATA_ID:38"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:9a77bc1eaa6d05e5fb4cceef",
+      "claim_id": "edge-claim:ad2d8844fabf9514c7039787",
+      "subject_id": "data:furniture:40",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:40",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:41",
+        "furniture_data_id": "FURNITURE_DATA_ID:40"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:9ac46d39b9ba748af5c54ad6",
+      "claim_id": "edge-claim:45740e64f446e9d5e56fdb71",
+      "subject_id": "data:furniture:40",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:40",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:41",
+        "furniture_data_id": "FURNITURE_DATA_ID:40"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:bb132a2dd16c05720ede7fd5",
+      "claim_id": "edge-claim:8366b66343df71d526bf9d4b",
+      "subject_id": "data:furniture:41",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:41",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:42",
+        "furniture_data_id": "FURNITURE_DATA_ID:41"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:710b46afc725c1564f325f38",
+      "claim_id": "edge-claim:42a60b32cb228f8efabea2ad",
+      "subject_id": "data:furniture:41",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:41",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:42",
+        "furniture_data_id": "FURNITURE_DATA_ID:41"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:c9188469a34a724119ada344",
+      "claim_id": "edge-claim:27e0d54ce25e3ed714cdb3f5",
+      "subject_id": "data:furniture:42",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:42",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:43",
+        "furniture_data_id": "FURNITURE_DATA_ID:42"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:501bd9ec18634e37852440bc",
+      "claim_id": "edge-claim:497ee1431c4bbde7f830484b",
+      "subject_id": "data:furniture:42",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:42",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:43",
+        "furniture_data_id": "FURNITURE_DATA_ID:42"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:0f2799c8d3fd062a8c9201f4",
+      "claim_id": "edge-claim:a894d3fe5306a09d73e149c6",
+      "subject_id": "data:furniture:43",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:43",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:44",
+        "furniture_data_id": "FURNITURE_DATA_ID:43"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:04430adaa04b9c29c8de75d0",
+      "claim_id": "edge-claim:49b6466943e52e17a69e7915",
+      "subject_id": "data:furniture:43",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:43",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:44",
+        "furniture_data_id": "FURNITURE_DATA_ID:43"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:75ba2cb32d03610053e0643c",
+      "claim_id": "edge-claim:3f3bf22210cdec0f92ae188f",
+      "subject_id": "data:furniture:44",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:44",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:45",
+        "furniture_data_id": "FURNITURE_DATA_ID:44"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:fa5c59106f9b3f7507b405c8",
+      "claim_id": "edge-claim:749610ad11f1de7bb2a410db",
+      "subject_id": "data:furniture:44",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:44",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:45",
+        "furniture_data_id": "FURNITURE_DATA_ID:44"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:730420aa628b33bcd271a757",
+      "claim_id": "edge-claim:af5ceff7bab1ebae40122d80",
+      "subject_id": "data:furniture:45",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:45",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:46",
+        "furniture_data_id": "FURNITURE_DATA_ID:45"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:4b58f3b18e9dbfc7d6130b6d",
+      "claim_id": "edge-claim:64667c83c14fe8214d2135cb",
+      "subject_id": "data:furniture:45",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:45",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:46",
+        "furniture_data_id": "FURNITURE_DATA_ID:45"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:bdd9b7e363297e7d74f37ae9",
+      "claim_id": "edge-claim:ea46dedda9710d14867baf5b",
+      "subject_id": "data:furniture:46",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:46",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:47",
+        "furniture_data_id": "FURNITURE_DATA_ID:46"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:5abc42f3920d0f4462e01a5d",
+      "claim_id": "edge-claim:f6a4f64bc996ca94d8020d04",
+      "subject_id": "data:furniture:46",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:46",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:47",
+        "furniture_data_id": "FURNITURE_DATA_ID:46"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:4b2c11ec9027a794caaa1184",
+      "claim_id": "edge-claim:c5bd9e3bf5704012e3f2103b",
+      "subject_id": "data:furniture:48",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:48",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:49",
+        "furniture_data_id": "FURNITURE_DATA_ID:48"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:82dd46a01d38710ca89bf866",
+      "claim_id": "edge-claim:529fe68f21281107a380ec62",
+      "subject_id": "data:furniture:48",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:48",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:49",
+        "furniture_data_id": "FURNITURE_DATA_ID:48"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:1d5af51bb62eaec516336fa1",
+      "claim_id": "edge-claim:fd07476464c49553a127f241",
+      "subject_id": "data:furniture:50",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:50",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:51",
+        "furniture_data_id": "FURNITURE_DATA_ID:50"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:eae17e6fa26fca91325938e8",
+      "claim_id": "edge-claim:0cf0538c92d550c2e7b89b7e",
+      "subject_id": "data:furniture:50",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:50",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:51",
+        "furniture_data_id": "FURNITURE_DATA_ID:50"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:c8742f85f2d48ed77db8ad30",
+      "claim_id": "edge-claim:f8a58c55adc2621ebf4dd57e",
+      "subject_id": "data:furniture:51",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:51",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:52",
+        "furniture_data_id": "FURNITURE_DATA_ID:51"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:c90835ace5c2c9444b216bf5",
+      "claim_id": "edge-claim:9aec5ffb686aac80708a5eed",
+      "subject_id": "data:furniture:51",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:51",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:52",
+        "furniture_data_id": "FURNITURE_DATA_ID:51"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:454b261c75cfb5f5c1736765",
+      "claim_id": "edge-claim:8516e9867441b3df75dc9207",
+      "subject_id": "data:furniture:52",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:52",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:53",
+        "furniture_data_id": "FURNITURE_DATA_ID:52"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:43260831e73b3ab59d007fe2",
+      "claim_id": "edge-claim:2204c2a9e4b04750497aaaa6",
+      "subject_id": "data:furniture:52",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:52",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:53",
+        "furniture_data_id": "FURNITURE_DATA_ID:52"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:f799b06239387943c153d157",
+      "claim_id": "edge-claim:2d2762e055eef290b4a10f69",
+      "subject_id": "data:furniture:53",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:53",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:54",
+        "furniture_data_id": "FURNITURE_DATA_ID:53"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:0ee9f9b74a6e7b0ef4e87f0c",
+      "claim_id": "edge-claim:c0afffc76b854dfe52f607c1",
+      "subject_id": "data:furniture:53",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:53",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:54",
+        "furniture_data_id": "FURNITURE_DATA_ID:53"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:55db7a46b259f23be6ae43dd",
+      "claim_id": "edge-claim:c2c05d35871a62429d33a7be",
+      "subject_id": "data:furniture:54",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:54",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:55",
+        "furniture_data_id": "FURNITURE_DATA_ID:54"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:91b0d65002a46aadc4578cbd",
+      "claim_id": "edge-claim:dc259bdfc49d2e432099515d",
+      "subject_id": "data:furniture:54",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:54",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:55",
+        "furniture_data_id": "FURNITURE_DATA_ID:54"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:1d8ed58321d2de48f36ac25e",
+      "claim_id": "edge-claim:d25f84a54326601b8d9b5774",
+      "subject_id": "data:furniture:56",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:56",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:57",
+        "furniture_data_id": "FURNITURE_DATA_ID:56"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:891b4fe6c453620d2f256403",
+      "claim_id": "edge-claim:e3be6150ed2d72e7afe072ae",
+      "subject_id": "data:furniture:56",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:56",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:57",
+        "furniture_data_id": "FURNITURE_DATA_ID:56"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:698f93778a48362628ac1743",
+      "claim_id": "edge-claim:ec086e666f7e696029b4cbff",
+      "subject_id": "data:furniture:57",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:57",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:58",
+        "furniture_data_id": "FURNITURE_DATA_ID:57"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:9b4061c1cec27eed8e42af4b",
+      "claim_id": "edge-claim:09ca9d497916bd8527c3d4a5",
+      "subject_id": "data:furniture:57",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:57",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:58",
+        "furniture_data_id": "FURNITURE_DATA_ID:57"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:c8f3563a0c609446ce421424",
+      "claim_id": "edge-claim:69cb8858fe7cc51cba153566",
+      "subject_id": "data:furniture:58",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:58",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:59",
+        "furniture_data_id": "FURNITURE_DATA_ID:58"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:482a90d037114b6ba5dcab9d",
+      "claim_id": "edge-claim:44b7d131e90b51281f758c57",
+      "subject_id": "data:furniture:58",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:58",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:59",
+        "furniture_data_id": "FURNITURE_DATA_ID:58"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:0bdf8487a97b6b002e039cf0",
+      "claim_id": "edge-claim:cc9d34842c7725c9d698c770",
+      "subject_id": "data:furniture:59",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:59",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:60",
+        "furniture_data_id": "FURNITURE_DATA_ID:59"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:2633a73fd2b86e6cea6ec29c",
+      "claim_id": "edge-claim:581333ffd962ae533d84bbcd",
+      "subject_id": "data:furniture:59",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:59",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:60",
+        "furniture_data_id": "FURNITURE_DATA_ID:59"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:6c57def4ccd17d782fec6b31",
+      "claim_id": "edge-claim:483dd9f722732b721bdd5fce",
+      "subject_id": "data:furniture:60",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:60",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:61",
+        "furniture_data_id": "FURNITURE_DATA_ID:60"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:886a72d480eaf30125a81e4f",
+      "claim_id": "edge-claim:ec719138f0820dbe62b6a69f",
+      "subject_id": "data:furniture:60",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:60",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:61",
+        "furniture_data_id": "FURNITURE_DATA_ID:60"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:e1111922b7c6f83a256b7b52",
+      "claim_id": "edge-claim:a683493a4e969eb02e765c14",
+      "subject_id": "data:furniture:61",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:61",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:62",
+        "furniture_data_id": "FURNITURE_DATA_ID:61"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:0122494a2dab4eaa57b2d650",
+      "claim_id": "edge-claim:730ac0b8d0a943fbe643f475",
+      "subject_id": "data:furniture:61",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:61",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:62",
+        "furniture_data_id": "FURNITURE_DATA_ID:61"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:f4e78d17587fc2cb400952a8",
+      "claim_id": "edge-claim:8d9b8912bc284006d4211996",
+      "subject_id": "data:furniture:62",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:62",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:63",
+        "furniture_data_id": "FURNITURE_DATA_ID:62"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:0b63bba98b3a5187a54635e0",
+      "claim_id": "edge-claim:2fa76c471819c9f0e5721c76",
+      "subject_id": "data:furniture:62",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:62",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:63",
+        "furniture_data_id": "FURNITURE_DATA_ID:62"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:f93e59d0b1b5137c7c712525",
+      "claim_id": "edge-claim:3d39f8beed02c991e358f79d",
+      "subject_id": "data:furniture:63",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:63",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:64",
+        "furniture_data_id": "FURNITURE_DATA_ID:63"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:ad579045599bc0ed05f18119",
+      "claim_id": "edge-claim:490d53fda86dd1ebce54686b",
+      "subject_id": "data:furniture:63",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:63",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:64",
+        "furniture_data_id": "FURNITURE_DATA_ID:63"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:bcec0a657924f01cf9853e92",
+      "claim_id": "edge-claim:df0bdce4048eebb6de77e770",
+      "subject_id": "data:furniture:64",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:64",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:65",
+        "furniture_data_id": "FURNITURE_DATA_ID:64"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:32a425d4dfaf309be482a5d4",
+      "claim_id": "edge-claim:b4afec7a1b50f6a939e385c0",
+      "subject_id": "data:furniture:64",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:64",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:65",
+        "furniture_data_id": "FURNITURE_DATA_ID:64"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:13092d15f966c9f92abf8d88",
+      "claim_id": "edge-claim:69519b63f483330d57875eca",
+      "subject_id": "data:furniture:65",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:65",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:66",
+        "furniture_data_id": "FURNITURE_DATA_ID:65"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:e1867d91d025b7ee5b167c2a",
+      "claim_id": "edge-claim:e70c722870ebaea7e81c2f99",
+      "subject_id": "data:furniture:65",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:65",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:66",
+        "furniture_data_id": "FURNITURE_DATA_ID:65"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:5ee34dbcac05a6c168ff78bc",
+      "claim_id": "edge-claim:4f3506376f9f09fc7ba381cf",
+      "subject_id": "data:furniture:66",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:66",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:67",
+        "furniture_data_id": "FURNITURE_DATA_ID:66"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:bb931ebcc81221c5af6cb5c2",
+      "claim_id": "edge-claim:564720eb661c7e8e8c61be98",
+      "subject_id": "data:furniture:66",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:66",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:67",
+        "furniture_data_id": "FURNITURE_DATA_ID:66"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:0b46f54f62f0fe7e943c6147",
+      "claim_id": "edge-claim:9fdf83e418b82c3a22fa0e78",
+      "subject_id": "data:furniture:67",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:67",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:68",
+        "furniture_data_id": "FURNITURE_DATA_ID:67"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:f76766ca32caf52c75087415",
+      "claim_id": "edge-claim:e4d7ee8d81f17e5a745ae100",
+      "subject_id": "data:furniture:67",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:67",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:68",
+        "furniture_data_id": "FURNITURE_DATA_ID:67"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:10f3b093a94db8d4896b3ba8",
+      "claim_id": "edge-claim:a276ee8900e73426dc075fce",
+      "subject_id": "data:furniture:70",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:70",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:71",
+        "furniture_data_id": "FURNITURE_DATA_ID:70"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:1d3e6a66490e45e73ada2ccf",
+      "claim_id": "edge-claim:b43674c5f34285979572182b",
+      "subject_id": "data:furniture:70",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:70",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:71",
+        "furniture_data_id": "FURNITURE_DATA_ID:70"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:cfe4adec26a69ad12de7bf85",
+      "claim_id": "edge-claim:77e5130925fac76c5c37751f",
+      "subject_id": "data:furniture:71",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:71",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:72",
+        "furniture_data_id": "FURNITURE_DATA_ID:71"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:d73d84a894854d55c45be593",
+      "claim_id": "edge-claim:e31538326c799828eec3705c",
+      "subject_id": "data:furniture:71",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:71",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:72",
+        "furniture_data_id": "FURNITURE_DATA_ID:71"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:01049dcec19e702f35a529eb",
+      "claim_id": "edge-claim:ae1e3b65e164952a55147c2f",
+      "subject_id": "data:furniture:72",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:72",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:73",
+        "furniture_data_id": "FURNITURE_DATA_ID:72"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:671c01878202376054d0592c",
+      "claim_id": "edge-claim:ffafb656624d67095c58b1ba",
+      "subject_id": "data:furniture:72",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:72",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:73",
+        "furniture_data_id": "FURNITURE_DATA_ID:72"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:94806586d4fc6d9a09daa50b",
+      "claim_id": "edge-claim:9d88b2f20cce291ff6e4f2a0",
+      "subject_id": "data:furniture:73",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:73",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:74",
+        "furniture_data_id": "FURNITURE_DATA_ID:73"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:2357dd86c6fe3824523508f8",
+      "claim_id": "edge-claim:2e25317f505960e4e71c9041",
+      "subject_id": "data:furniture:73",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:73",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:74",
+        "furniture_data_id": "FURNITURE_DATA_ID:73"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:90d56cb30812515c49cae999",
+      "claim_id": "edge-claim:4f59ea38a1b45d0dd597bf9d",
+      "subject_id": "data:furniture:74",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:74",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:75",
+        "furniture_data_id": "FURNITURE_DATA_ID:74"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:af7aa5a546adc7d66544430e",
+      "claim_id": "edge-claim:638e2e9fa21b2b05fb8fb040",
+      "subject_id": "data:furniture:74",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:74",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:75",
+        "furniture_data_id": "FURNITURE_DATA_ID:74"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:6b864bbe519b4e16359ef782",
+      "claim_id": "edge-claim:fe7d2cd39bb0e3a5b7d4abf5",
+      "subject_id": "data:furniture:75",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:75",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:76",
+        "furniture_data_id": "FURNITURE_DATA_ID:75"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:0e7ae05d570b5b4744ef6818",
+      "claim_id": "edge-claim:6bc93c1d14adc77ae53ce9e5",
+      "subject_id": "data:furniture:75",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:75",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:76",
+        "furniture_data_id": "FURNITURE_DATA_ID:75"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:697b53a6fc78fb87fd18670d",
+      "claim_id": "edge-claim:b8142037a40aefa18b8943d4",
+      "subject_id": "data:furniture:76",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:76",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:77",
+        "furniture_data_id": "FURNITURE_DATA_ID:76"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:1750d1a6e378386016ef7934",
+      "claim_id": "edge-claim:7d3b6e5bf906f581554565d6",
+      "subject_id": "data:furniture:76",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:76",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:77",
+        "furniture_data_id": "FURNITURE_DATA_ID:76"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:6c9916c73cb70a477eec2aed",
+      "claim_id": "edge-claim:5c7e26ca79ab6ad8dd0243a7",
+      "subject_id": "data:furniture:77",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:77",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:78",
+        "furniture_data_id": "FURNITURE_DATA_ID:77"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:ddec92184bd8da9cc78afaee",
+      "claim_id": "edge-claim:4ef6eaa823ddccd46e1fc119",
+      "subject_id": "data:furniture:77",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:77",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:78",
+        "furniture_data_id": "FURNITURE_DATA_ID:77"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:89d46ea8d0c962104f281735",
+      "claim_id": "edge-claim:b23437e0688a06514368ca1a",
+      "subject_id": "data:furniture:78",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:78",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:79",
+        "furniture_data_id": "FURNITURE_DATA_ID:78"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:d43515a75bec57d7624f6f5f",
+      "claim_id": "edge-claim:3c093618cb43b36ae8bd6397",
+      "subject_id": "data:furniture:78",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:78",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:79",
+        "furniture_data_id": "FURNITURE_DATA_ID:78"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:476a42fa4540b8b5d371998e",
+      "claim_id": "edge-claim:855d9cd9e017e32687541a59",
+      "subject_id": "data:furniture:80",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:80",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:81",
+        "furniture_data_id": "FURNITURE_DATA_ID:80"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:4c5c0c9892e0f98247f79182",
+      "claim_id": "edge-claim:a42d56c19e19152c9a5f5431",
+      "subject_id": "data:furniture:80",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:80",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:81",
+        "furniture_data_id": "FURNITURE_DATA_ID:80"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:26777b6697b6d8e7bffb092e",
+      "claim_id": "edge-claim:378b26dd8e423f17d6cfc7fe",
+      "subject_id": "data:furniture:81",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:81",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:82",
+        "furniture_data_id": "FURNITURE_DATA_ID:81"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:cb1dc7a294cfddf149466f81",
+      "claim_id": "edge-claim:60b44579ca9899bbd26511e9",
+      "subject_id": "data:furniture:81",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:81",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:82",
+        "furniture_data_id": "FURNITURE_DATA_ID:81"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:f9293d04fd80b0017132dfb0",
+      "claim_id": "edge-claim:e94802b818c295114414dc87",
+      "subject_id": "data:furniture:82",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:82",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:83",
+        "furniture_data_id": "FURNITURE_DATA_ID:82"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:b18ea6b0140fc6ecbffc35f2",
+      "claim_id": "edge-claim:65b4ffbbd647e034207651e1",
+      "subject_id": "data:furniture:82",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:82",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:83",
+        "furniture_data_id": "FURNITURE_DATA_ID:82"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:fc562e1b0ee1e195eb4723d8",
+      "claim_id": "edge-claim:0a15fe4621cdd38cde11dbb4",
+      "subject_id": "data:furniture:83",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:83",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:84",
+        "furniture_data_id": "FURNITURE_DATA_ID:83"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:04c5a5e6852dd98d869b1856",
+      "claim_id": "edge-claim:a2129223b3fce51c8392d9c2",
+      "subject_id": "data:furniture:83",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:83",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:84",
+        "furniture_data_id": "FURNITURE_DATA_ID:83"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:085e3c23cf6ba9fe6e65fa01",
+      "claim_id": "edge-claim:c726c0dbf19136869586cd77",
+      "subject_id": "data:furniture:86",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:86",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:87",
+        "furniture_data_id": "FURNITURE_DATA_ID:86"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:4b813d2b6f94cc328f74e7f2",
+      "claim_id": "edge-claim:4ff147feade1880cbdf04131",
+      "subject_id": "data:furniture:86",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:86",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:87",
+        "furniture_data_id": "FURNITURE_DATA_ID:86"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:983e5a285b11fce2b1fe79b9",
+      "claim_id": "edge-claim:acf192c2f6fa7718a820eec9",
+      "subject_id": "data:furniture:87",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:87",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:88",
+        "furniture_data_id": "FURNITURE_DATA_ID:87"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:1b79ce78ba73805d6a4f638d",
+      "claim_id": "edge-claim:0ab419f1b238d4afec03aeab",
+      "subject_id": "data:furniture:87",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:87",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:88",
+        "furniture_data_id": "FURNITURE_DATA_ID:87"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:845c38f9f576893278046e23",
+      "claim_id": "edge-claim:92098346ca7e79506e49c079",
+      "subject_id": "data:furniture:90",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:90",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:91",
+        "furniture_data_id": "FURNITURE_DATA_ID:90"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:4276c177d876dff280b4fc14",
+      "claim_id": "edge-claim:37fb85f4a5e4da70bafaad84",
+      "subject_id": "data:furniture:90",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:90",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:91",
+        "furniture_data_id": "FURNITURE_DATA_ID:90"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:99d15c992289eb37fb910d0e",
+      "claim_id": "edge-claim:270bb3f70547e538706475ac",
+      "subject_id": "data:furniture:91",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:91",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:92",
+        "furniture_data_id": "FURNITURE_DATA_ID:91"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:a6a827f98830ec2d2c2b375f",
+      "claim_id": "edge-claim:a068b2eeec7a9b8d2b04a913",
+      "subject_id": "data:furniture:91",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:91",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:92",
+        "furniture_data_id": "FURNITURE_DATA_ID:91"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:cb0d68ceeb4c2b90de958833",
+      "claim_id": "edge-claim:f3067d838ab71dc28c0e772d",
+      "subject_id": "data:furniture:92",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:92",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:93",
+        "furniture_data_id": "FURNITURE_DATA_ID:92"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:16cf91f9b107a401586f2aa3",
+      "claim_id": "edge-claim:9b9c35504f7061780ad6d9ff",
+      "subject_id": "data:furniture:92",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:92",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:93",
+        "furniture_data_id": "FURNITURE_DATA_ID:92"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:e1cd65da598bc7c3583269e7",
+      "claim_id": "edge-claim:c4568bf225db4d494b893a94",
+      "subject_id": "data:furniture:93",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:93",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:94",
+        "furniture_data_id": "FURNITURE_DATA_ID:93"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:d087fdccc7c5ef50ad2b8b0f",
+      "claim_id": "edge-claim:4bb82dd63ce5f177e95a1ffd",
+      "subject_id": "data:furniture:93",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:93",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:94",
+        "furniture_data_id": "FURNITURE_DATA_ID:93"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:b4c029ed433f6cd16941f37d",
+      "claim_id": "edge-claim:eb298f34676b42b45dc6718e",
+      "subject_id": "data:furniture:94",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:94",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:95",
+        "furniture_data_id": "FURNITURE_DATA_ID:94"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:63bc08b72f0cb4010bc6db56",
+      "claim_id": "edge-claim:ccc7d238e88af5d7aa0215e2",
+      "subject_id": "data:furniture:94",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:94",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:95",
+        "furniture_data_id": "FURNITURE_DATA_ID:94"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:5939505e7c510050bbd45c4e",
+      "claim_id": "edge-claim:328060be769ecc6611ec8222",
+      "subject_id": "data:furniture:95",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:95",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:96",
+        "furniture_data_id": "FURNITURE_DATA_ID:95"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:ab95ff122673dcbe60d7ab1c",
+      "claim_id": "edge-claim:9b4866b0f14d6a0aa9186c9a",
+      "subject_id": "data:furniture:95",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:95",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:96",
+        "furniture_data_id": "FURNITURE_DATA_ID:95"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:2e10709b68b505ea180416de",
+      "claim_id": "edge-claim:19169ac1c5b8a390bfd49916",
+      "subject_id": "data:furniture:96",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:96",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:97",
+        "furniture_data_id": "FURNITURE_DATA_ID:96"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:d70f9dbfa9c94bf7fe64206b",
+      "claim_id": "edge-claim:e39098008bf5ea729ce7fa2b",
+      "subject_id": "data:furniture:96",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:96",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:97",
+        "furniture_data_id": "FURNITURE_DATA_ID:96"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:c0b2834841e72d8f7b672eff",
+      "claim_id": "edge-claim:a02bc69f52bcf27e62137a9c",
+      "subject_id": "data:furniture:97",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:97",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:98",
+        "furniture_data_id": "FURNITURE_DATA_ID:97"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:18556371b137197f45e120c1",
+      "claim_id": "edge-claim:ed79bf97b324f4b27862353d",
+      "subject_id": "data:furniture:97",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:97",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:98",
+        "furniture_data_id": "FURNITURE_DATA_ID:97"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:993b62e32eb2dbe58059c3e1",
+      "claim_id": "edge-claim:13fd641b0a35d3b20a87c482",
+      "subject_id": "data:furniture:98",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:98",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:99",
+        "furniture_data_id": "FURNITURE_DATA_ID:98"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:dca725498bd7de3221860439",
+      "claim_id": "edge-claim:8faac5f284d87c18c5590fe3",
+      "subject_id": "data:furniture:98",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:98",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:99",
+        "furniture_data_id": "FURNITURE_DATA_ID:98"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:b514b3b41b8cd8f60697913e",
+      "claim_id": "edge-claim:52d3677f10380ad324cd1a3a",
+      "subject_id": "data:furniture:99",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:99",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:100",
+        "furniture_data_id": "FURNITURE_DATA_ID:99"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:4f5c1778c2c378e63e975afc",
+      "claim_id": "edge-claim:86f3ff668f682873f25a5cbb",
+      "subject_id": "data:furniture:99",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:FurnitureData:99",
+        "data_row_index": "DATA_ROW_INDEX:data:FurnitureData:100",
+        "furniture_data_id": "FURNITURE_DATA_ID:99"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:02c3bb4875038088d73793ac",
+      "claim_id": "edge-claim:f4ce7daa0c50fedcb36c7d2e",
+      "subject_id": "data:helper:0",
+      "predicate": "data_selector",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:0",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:1"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:bbb2ac4bc11e67bab1daae85",
+      "claim_id": "edge-claim:02176b15042a826b48d20c3b",
+      "subject_id": "data:helper:0",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "None",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "The generated None object is an absent selector relation caused by an authoritative -1 sentinel; it is not a semantic target.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:0",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:1"
+      },
+      "object_namespace": "ABSENT_SELECTOR_SENTINEL:-1"
+    },
+    {
+      "edge_id": "edge:22b7ef9c65690154abac2436",
+      "claim_id": "edge-claim:af26703b7aea8096f52f0ae4",
+      "subject_id": "data:helper:10",
+      "predicate": "data_selector",
+      "object_id": "ref:human:img:132",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:10",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:11"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:132"
+    },
+    {
+      "edge_id": "edge:7796664cf949a6601687c8ec",
+      "claim_id": "edge-claim:5423938d4f0b6ed96480e39a",
+      "subject_id": "data:helper:10",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "ref:human:img:132",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:10",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:11"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:132"
+    },
+    {
+      "edge_id": "edge:bf146b4b726f7624110b0ad2",
+      "claim_id": "edge-claim:9c626be887d4efb00f9972f6",
+      "subject_id": "data:helper:11",
+      "predicate": "data_selector",
+      "object_id": "ref:human:img:133",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:11",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:12"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:133"
+    },
+    {
+      "edge_id": "edge:2ec1041da97ff37a4bc51c44",
+      "claim_id": "edge-claim:c8f7b0d96f07ba11acad042c",
+      "subject_id": "data:helper:11",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "ref:human:img:133",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:11",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:12"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:133"
+    },
+    {
+      "edge_id": "edge:86504f5b6f1697e176bc6cca",
+      "claim_id": "edge-claim:728eae85e5929037ecba30cb",
+      "subject_id": "data:helper:12",
+      "predicate": "data_selector",
+      "object_id": "ref:human:img:134",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:12",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:13"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:134"
+    },
+    {
+      "edge_id": "edge:667646104dd2762e2dab3848",
+      "claim_id": "edge-claim:14675026ac932ff991ff6114",
+      "subject_id": "data:helper:12",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "ref:human:img:134",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:12",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:13"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:134"
+    },
+    {
+      "edge_id": "edge:3a170afa029adb1693141b24",
+      "claim_id": "edge-claim:30508fbe598464cfdcd98cd2",
+      "subject_id": "data:helper:13",
+      "predicate": "data_selector",
+      "object_id": "ref:human:img:135",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:13",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:14"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:135"
+    },
+    {
+      "edge_id": "edge:0ae322c4911a2bca0ace0792",
+      "claim_id": "edge-claim:3d2147379a9af2277c28d42c",
+      "subject_id": "data:helper:13",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "ref:human:img:135",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:13",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:14"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:135"
+    },
+    {
+      "edge_id": "edge:e9c08dd92fc50740ba093f82",
+      "claim_id": "edge-claim:a4131d1dd1ba3ede6cf89b4c",
+      "subject_id": "data:helper:14",
+      "predicate": "data_selector",
+      "object_id": "ref:human:img:136",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:14",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:15"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:136"
+    },
+    {
+      "edge_id": "edge:258d372decbab978e19f5dfa",
+      "claim_id": "edge-claim:4bddc1470d479aa776420f55",
+      "subject_id": "data:helper:14",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "ref:human:img:136",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:14",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:15"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:136"
+    },
+    {
+      "edge_id": "edge:633ec56d523cee2dd69ac7c7",
+      "claim_id": "edge-claim:0182c86dc219b2aaeb94f0fb",
+      "subject_id": "data:helper:15",
+      "predicate": "data_selector",
+      "object_id": "ref:human:img:137",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:15",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:16"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:137"
+    },
+    {
+      "edge_id": "edge:2a88d0a71aa7b1588e31a278",
+      "claim_id": "edge-claim:0c1d8dc052efbf05274de226",
+      "subject_id": "data:helper:15",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "ref:human:img:137",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:15",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:16"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:137"
+    },
+    {
+      "edge_id": "edge:37c6d1b456ac7e5efc77a71f",
+      "claim_id": "edge-claim:2ed2a8de00231f6c8c6f82ab",
+      "subject_id": "data:helper:16",
+      "predicate": "data_selector",
+      "object_id": "ref:human:img:138",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:16",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:17"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:138"
+    },
+    {
+      "edge_id": "edge:d7eb28f26bd00a5654c99d27",
+      "claim_id": "edge-claim:f6d79090113c962d8d0b1818",
+      "subject_id": "data:helper:16",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "ref:human:img:138",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:16",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:17"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:138"
+    },
+    {
+      "edge_id": "edge:57e1cad75a5c88a6e6ba07c5",
+      "claim_id": "edge-claim:f00b152409b555439af12fea",
+      "subject_id": "data:helper:17",
+      "predicate": "data_selector",
+      "object_id": "ref:human:img:139",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:17",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:18"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:139"
+    },
+    {
+      "edge_id": "edge:02b8b82a043ceed05f874c90",
+      "claim_id": "edge-claim:09af61f08841e32c744dca8f",
+      "subject_id": "data:helper:17",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "ref:human:img:139",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:17",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:18"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:139"
+    },
+    {
+      "edge_id": "edge:72111c349170e5766667ccf3",
+      "claim_id": "edge-claim:428de3a2acab214ca786aab4",
+      "subject_id": "data:helper:18",
+      "predicate": "data_selector",
+      "object_id": "ref:human:img:140",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:18",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:19"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:140"
+    },
+    {
+      "edge_id": "edge:1d9b2025921e9999c867774c",
+      "claim_id": "edge-claim:a4be28cd4f022fcb0257eb7f",
+      "subject_id": "data:helper:18",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "ref:human:img:140",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:18",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:19"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:140"
+    },
+    {
+      "edge_id": "edge:14065a7156adc8b62df1196a",
+      "claim_id": "edge-claim:37ccad5b290caaa8fd654aa4",
+      "subject_id": "data:helper:8",
+      "predicate": "data_selector",
+      "object_id": "ref:human:img:130",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:8",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:9"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:130"
+    },
+    {
+      "edge_id": "edge:07f14b87708777af1d354c16",
+      "claim_id": "edge-claim:1f8d4ce5fb72659bbc6df2ed",
+      "subject_id": "data:helper:8",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "ref:human:img:130",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:8",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:9"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:130"
+    },
+    {
+      "edge_id": "edge:ebd58356a9d8ca718f721def",
+      "claim_id": "edge-claim:0228b00f711be62683fa5f08",
+      "subject_id": "data:helper:9",
+      "predicate": "data_selector",
+      "object_id": "ref:human:img:131",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:9",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:10"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:131"
+    },
+    {
+      "edge_id": "edge:2688428c695819079d06194c",
+      "claim_id": "edge-claim:8ea260bda3be04588cf2d294",
+      "subject_id": "data:helper:9",
+      "predicate": "selector_asset_and_companion",
+      "object_id": "ref:human:img:131",
+      "authority_before": "native_content_registry",
+      "classification": "REJECTED",
+      "reason": "HelperData.img_ is a STAFF_DATA_ID consumed by Staff.CreateStaff; the generated direct human IMAGE_SELECTOR_ID is in the wrong namespace.",
+      "evidence": [
+        "knowledge/fixtures/accepted/native_content_connection_graph.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421"
+      ],
+      "subject_namespaces": {
+        "data_row_id": "DATA_ROW_ID:data:HelperData:9",
+        "data_row_index": "DATA_ROW_INDEX:data:HelperData:10"
+      },
+      "object_namespace": "IMAGE_SELECTOR_ID:131"
+    },
+    {
+      "edge_id": "edge:c2faf5fc4a8ffd21d3fb7474",
+      "claim_id": "edge-claim:4dd3d2c93e183d4e6c958cf9",
+      "subject_id": "game:Staff:0",
+      "predicate": "moves_on_route",
+      "object_id": "game.routeSearch.Astar",
+      "authority_before": "accepted_closure",
+      "classification": "CONFIRMED",
+      "reason": "Staff.SearchRoute contains the direct Astar.SearchRoute call, with pinned native Staff.SearchRoute and Astar.SearchRoute RVAs retained as corroboration.",
+      "evidence": [
+        "knowledge/fixtures/accepted/behavior-first/staff-state-machine.json:Staff.SearchRoute@0x12D5A6C",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game.routeSearch/Astar.cs:SearchRoute",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:10463-10517"
+      ]
+    }
+  ],
+  "corrected_chains": [
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:10",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:11",
+      "helper_img_value": "STAFF_DATA_ID:132",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:132",
+      "staff_data_id": "STAFF_DATA_ID:132",
+      "staff_img_value": "IMAGE_SELECTOR_ID:96",
+      "correct_selector": "ref:human:img:96",
+      "wrong_selector": "ref:human:img:132",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:10",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:11",
+      "helper_img_value": "STAFF_DATA_ID:132",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:132",
+      "staff_data_id": "STAFF_DATA_ID:132",
+      "staff_img_value": "IMAGE_SELECTOR_ID:96",
+      "correct_selector": "ref:human:img:96",
+      "wrong_selector": "ref:human:img:132",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:11",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:12",
+      "helper_img_value": "STAFF_DATA_ID:133",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:133",
+      "staff_data_id": "STAFF_DATA_ID:133",
+      "staff_img_value": "IMAGE_SELECTOR_ID:97",
+      "correct_selector": "ref:human:img:97",
+      "wrong_selector": "ref:human:img:133",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:11",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:12",
+      "helper_img_value": "STAFF_DATA_ID:133",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:133",
+      "staff_data_id": "STAFF_DATA_ID:133",
+      "staff_img_value": "IMAGE_SELECTOR_ID:97",
+      "correct_selector": "ref:human:img:97",
+      "wrong_selector": "ref:human:img:133",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:12",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:13",
+      "helper_img_value": "STAFF_DATA_ID:134",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:134",
+      "staff_data_id": "STAFF_DATA_ID:134",
+      "staff_img_value": "IMAGE_SELECTOR_ID:98",
+      "correct_selector": "ref:human:img:98",
+      "wrong_selector": "ref:human:img:134",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:12",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:13",
+      "helper_img_value": "STAFF_DATA_ID:134",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:134",
+      "staff_data_id": "STAFF_DATA_ID:134",
+      "staff_img_value": "IMAGE_SELECTOR_ID:98",
+      "correct_selector": "ref:human:img:98",
+      "wrong_selector": "ref:human:img:134",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:13",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:14",
+      "helper_img_value": "STAFF_DATA_ID:135",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:135",
+      "staff_data_id": "STAFF_DATA_ID:135",
+      "staff_img_value": "IMAGE_SELECTOR_ID:99",
+      "correct_selector": "ref:human:img:99",
+      "wrong_selector": "ref:human:img:135",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:13",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:14",
+      "helper_img_value": "STAFF_DATA_ID:135",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:135",
+      "staff_data_id": "STAFF_DATA_ID:135",
+      "staff_img_value": "IMAGE_SELECTOR_ID:99",
+      "correct_selector": "ref:human:img:99",
+      "wrong_selector": "ref:human:img:135",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:14",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:15",
+      "helper_img_value": "STAFF_DATA_ID:136",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:136",
+      "staff_data_id": "STAFF_DATA_ID:136",
+      "staff_img_value": "IMAGE_SELECTOR_ID:100",
+      "correct_selector": "ref:human:img:100",
+      "wrong_selector": "ref:human:img:136",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:14",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:15",
+      "helper_img_value": "STAFF_DATA_ID:136",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:136",
+      "staff_data_id": "STAFF_DATA_ID:136",
+      "staff_img_value": "IMAGE_SELECTOR_ID:100",
+      "correct_selector": "ref:human:img:100",
+      "wrong_selector": "ref:human:img:136",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:15",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:16",
+      "helper_img_value": "STAFF_DATA_ID:137",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:137",
+      "staff_data_id": "STAFF_DATA_ID:137",
+      "staff_img_value": "IMAGE_SELECTOR_ID:101",
+      "correct_selector": "ref:human:img:101",
+      "wrong_selector": "ref:human:img:137",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:15",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:16",
+      "helper_img_value": "STAFF_DATA_ID:137",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:137",
+      "staff_data_id": "STAFF_DATA_ID:137",
+      "staff_img_value": "IMAGE_SELECTOR_ID:101",
+      "correct_selector": "ref:human:img:101",
+      "wrong_selector": "ref:human:img:137",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:16",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:17",
+      "helper_img_value": "STAFF_DATA_ID:138",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:138",
+      "staff_data_id": "STAFF_DATA_ID:138",
+      "staff_img_value": "IMAGE_SELECTOR_ID:102",
+      "correct_selector": "ref:human:img:102",
+      "wrong_selector": "ref:human:img:138",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:16",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:17",
+      "helper_img_value": "STAFF_DATA_ID:138",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:138",
+      "staff_data_id": "STAFF_DATA_ID:138",
+      "staff_img_value": "IMAGE_SELECTOR_ID:102",
+      "correct_selector": "ref:human:img:102",
+      "wrong_selector": "ref:human:img:138",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:17",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:18",
+      "helper_img_value": "STAFF_DATA_ID:139",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:139",
+      "staff_data_id": "STAFF_DATA_ID:139",
+      "staff_img_value": "IMAGE_SELECTOR_ID:103",
+      "correct_selector": "ref:human:img:103",
+      "wrong_selector": "ref:human:img:139",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:17",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:18",
+      "helper_img_value": "STAFF_DATA_ID:139",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:139",
+      "staff_data_id": "STAFF_DATA_ID:139",
+      "staff_img_value": "IMAGE_SELECTOR_ID:103",
+      "correct_selector": "ref:human:img:103",
+      "wrong_selector": "ref:human:img:139",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:18",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:19",
+      "helper_img_value": "STAFF_DATA_ID:140",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:140",
+      "staff_data_id": "STAFF_DATA_ID:140",
+      "staff_img_value": "IMAGE_SELECTOR_ID:104",
+      "correct_selector": "ref:human:img:104",
+      "wrong_selector": "ref:human:img:140",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:18",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:19",
+      "helper_img_value": "STAFF_DATA_ID:140",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:140",
+      "staff_data_id": "STAFF_DATA_ID:140",
+      "staff_img_value": "IMAGE_SELECTOR_ID:104",
+      "correct_selector": "ref:human:img:104",
+      "wrong_selector": "ref:human:img:140",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:8",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:9",
+      "helper_img_value": "STAFF_DATA_ID:130",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:130",
+      "staff_data_id": "STAFF_DATA_ID:130",
+      "staff_img_value": "IMAGE_SELECTOR_ID:94",
+      "correct_selector": "ref:human:img:94",
+      "wrong_selector": "ref:human:img:130",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:8",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:9",
+      "helper_img_value": "STAFF_DATA_ID:130",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:130",
+      "staff_data_id": "STAFF_DATA_ID:130",
+      "staff_img_value": "IMAGE_SELECTOR_ID:94",
+      "correct_selector": "ref:human:img:94",
+      "wrong_selector": "ref:human:img:130",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:9",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:10",
+      "helper_img_value": "STAFF_DATA_ID:131",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:131",
+      "staff_data_id": "STAFF_DATA_ID:131",
+      "staff_img_value": "IMAGE_SELECTOR_ID:95",
+      "correct_selector": "ref:human:img:95",
+      "wrong_selector": "ref:human:img:131",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    },
+    {
+      "helper_data_id": "DATA_ROW_ID:data:HelperData:9",
+      "helper_row_index": "DATA_ROW_INDEX:data:HelperData:10",
+      "helper_img_value": "STAFF_DATA_ID:131",
+      "staff_data_row_id": "DATA_ROW_ID:data:StaffData:131",
+      "staff_data_id": "STAFF_DATA_ID:131",
+      "staff_img_value": "IMAGE_SELECTOR_ID:95",
+      "correct_selector": "ref:human:img:95",
+      "wrong_selector": "ref:human:img:131",
+      "status": "CONFIRMED_CORRECTED_CHAIN",
+      "source_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+        "knowledge/fixtures/accepted/native_content_connection_graph.json"
+      ]
+    }
+  ],
+  "source_proof": {
+    "helper_load": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs:126-131",
+    "helper_to_staff": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs:198481-198485",
+    "staff_create": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:416-421",
+    "staff_route": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:10463-10517",
+    "astar_route": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game.routeSearch/Astar.cs:SearchRoute",
+    "native_route": "knowledge/fixtures/accepted/behavior-first/staff-state-machine.json:Staff.SearchRoute@0x12D5A6C",
+    "graph": "knowledge/fixtures/accepted/native_content_connection_graph.json"
+  },
+  "namespace_policy": {
+    "direct_helper_values_130_140": "REJECTED as human IMAGE_SELECTOR_ID claims",
+    "helper_img_field": "STAFF_DATA_ID",
+    "staff_img_field": "IMAGE_SELECTOR_ID in human scope",
+    "naked_integer_objects": false
+  }
+}

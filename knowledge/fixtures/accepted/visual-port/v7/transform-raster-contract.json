@@ -1,0 +1,29 @@
+{
+  "flip_modes": {
+    "both": "u=1-u and v=1-v",
+    "horizontal": "u=1-u",
+    "none": "identity",
+    "rotate_left": "compatibility -90 degrees",
+    "rotate_right": "compatibility +90 degrees",
+    "vertical": "v=1-v"
+  },
+  "matrix_order": "scale about pivot, then rotate about pivot, then inverse-map destination pixel centers",
+  "pivot": "destination rectangle center unless an explicit fixture pivot is supplied",
+  "schema_version": "social-dev-visual-port-v7-transform-raster-contract-v1",
+  "selected_scene": {
+    "proof_class": "PROVEN",
+    "room00": "identity transform only",
+    "staff": "identity transform only"
+  },
+  "source_limit": "Native modes 4/5 are branch-proven but final backend orientation pixels are unavailable; the selected complete room does not use them.",
+  "status": "pass_static",
+  "transformed_fixture": {
+    "clip": "same affine polygon contract",
+    "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+    "rotation_degrees": 15,
+    "scale": [
+      1.25,
+      0.75
+    ]
+  }
+}

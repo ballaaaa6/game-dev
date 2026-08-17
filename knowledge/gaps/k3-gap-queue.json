@@ -1,0 +1,53 @@
+{
+  "gaps": [
+    {
+      "authority": "source_evidence",
+      "blocks": "none",
+      "gap_id": "K3-GAP-FLOOR-DIRECT-SELECTOR",
+      "missing_predicate": "authoritative_img_inf_mapping",
+      "queue": "K3_GAP_QUEUE",
+      "source_refs": [
+        "RoomData.floorImgId_=5",
+        "native_room_floor_usage_contract.json"
+      ],
+      "status": "CLOSED",
+      "subject_id": "ROOMDATA_FLOOR_IMAGE_INDEX:5",
+      "suggested_next_step": "Closed by K3 targeted source/native evidence.",
+      "closure_artifact": "knowledge/fixtures/accepted/runtime/k3_floor_selector_closure.json",
+      "original_subject_id": "selector:floor:5"
+    },
+    {
+      "authority": "source_evidence",
+      "blocks": "none",
+      "gap_id": "K3-GAP-FURNITURE-VISUAL",
+      "missing_predicate": "visual_selector_frame_closure",
+      "queue": "K3_GAP_QUEUE",
+      "source_refs": [
+        "FurnitureData.cs",
+        "asset selector evidence"
+      ],
+      "status": "CLOSED",
+      "subject_id": "FURNITURE_DATA_ID:26",
+      "suggested_next_step": "Closed by K3 targeted source/native evidence.",
+      "closure_artifact": "knowledge/fixtures/accepted/runtime/k3_furniture_visual_closure.json",
+      "original_subject_id": "data:FurnitureData:26"
+    },
+    {
+      "authority": "native_content_registry",
+      "blocks": "none",
+      "gap_id": "K3-GAP-CANDIDATE-EDGES",
+      "missing_predicate": "native_or_source_claim_confirmation",
+      "queue": "K3_GAP_QUEUE",
+      "source_refs": [
+        "native_content_connection_graph.json"
+      ],
+      "status": "CLOSED",
+      "subject_id": "semantic-edge-candidates",
+      "suggested_next_step": "Closed by K3 targeted source/native evidence.",
+      "closure_artifact": "knowledge/fixtures/accepted/runtime/k3_candidate_edge_classification.json",
+      "original_subject_id": "semantic-edge-candidates"
+    }
+  ],
+  "schema_version": "social-dev-k2-k3-gap-queue-v1",
+  "status": "pass"
+}

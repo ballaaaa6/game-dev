@@ -1,0 +1,41 @@
+{
+  "schema_version": "social-dev-i1-assignment-adapter-baseline-v1",
+  "status": "PASS_I1_0_BASELINE",
+  "checkpoint_token": "PASS_I1_0_BASELINE",
+  "frozen_source_identity": "PASS_SOURCE_IDENTITY",
+  "verification": {
+    "i0_independent_acceptance": "PASS_I0_ORIGINAL_LIVING_CORE_RUNTIME_IMPLEMENTED_S1_S10_CLOSED",
+    "i0_scenarios": {
+      "S1": "PASS",
+      "S2": "PASS",
+      "S3": "PASS",
+      "S4": "PASS",
+      "S5": "PASS",
+      "S6": "PASS",
+      "S7": "PASS",
+      "S8": "PASS",
+      "S9": "PASS",
+      "S10": "PASS"
+    },
+    "vitest": "46 files / 296 tests passed",
+    "typecheck": "PASS",
+    "production_build": "PASS",
+    "g0_g1": "PASS_GAME_KNOWLEDGE_G0_G1_REGRESSION",
+    "g1_5": "PASS_CANONICAL_KB_INTEGRITY_AND_STATIC_BLOCKERS_CLOSED",
+    "living_core": "PASS_ORIGINAL_LIVING_CORE_CLOSED",
+    "behavior_first": "pass_with_source_limits / 118 checks",
+    "data_dependency": "pass / 2432 checks",
+    "r0": "PASS_CANONICAL_RUNTIME_CONTRACT_FREEZE_READY_FOR_IMPLEMENTATION",
+    "git_diff_check": "PASS"
+  },
+  "mutation_policy": "I1 adds only product/assignment and evidence/report surfaces; I0 living and frozen R0 contracts are not rewritten.",
+  "offline_boundary": [
+    "inline execution only",
+    "no server",
+    "no browser",
+    "no emulator or ADB",
+    "no network",
+    "no backend or LLM",
+    "no subagents"
+  ]
+}

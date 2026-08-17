@@ -1,0 +1,13 @@
+{
+  "schema_version": "social-dev-i1-original-development-completion-chain-v1",
+  "status": "PASS_I1_2_COMPLETION_CHAIN",
+  "chain": [
+    { "owner": "Staff.UpdateDevelop", "action": "native state 6 reads HP/stepFinished and selects finish/down calls", "evidence": "libil2cpp.so RVA 0x12D4398; HP offset 0xE8; stepFinished offset 0x190" },
+    { "owner": "DevelopForm", "action": "iterates cloned staffs and calls Staff.OnFinishDevelop", "evidence": "DevelopForm.cs:8135" },
+    { "owner": "Staff.OnFinishDevelop", "action": "sets stepFinished_, ChangeStateToWait(), copies original hp clamped to at least 1 and aura", "evidence": "Staff.cs:7108-7140; native RVA 0x12D9FF8" },
+    { "owner": "DevelopForm", "action": "step clear resets participating clone animation/body and developState_=8, then ChangeState(11) on DevelopForm", "evidence": "DevelopForm.cs:4304-4318 and 8697-8749" },
+    { "owner": "PRODUCT_REPLACEMENT_BOUNDARY", "action": "I1 terminal commands only close the product overlay; they do not call this native result/economy chain", "evidence": "assignment-bridge-decision.json" }
+  ],
+  "desk_ownership": "I1 does not alter canonical desk ownership; original clone completion is not treated as a product desk mutation.",
+  "source_limit": "The exact damaged native form exit caller for Staff.state 12 is not claimed beyond the generic ChangeState writer and observed DevelopForm completion calls."
+}

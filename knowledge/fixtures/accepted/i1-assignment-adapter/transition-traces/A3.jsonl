@@ -1,0 +1,2 @@
+{"scenarioId":"A3","step":1,"event":"original_context_enter","productStatus":"ASSIGNED","productAfter":"ASSIGNED","bridgeMode":"PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING","originalContextOwned":false}
+{"scenarioId":"A3","step":2,"event":"task_started","productStatus":"RUNNING","livingState":"STATE_WORK","assertion":"overlay start exactly once"}

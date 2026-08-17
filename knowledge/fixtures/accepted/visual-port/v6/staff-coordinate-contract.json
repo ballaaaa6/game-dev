@@ -1,0 +1,29 @@
+{
+  "schema_version": "social-dev-visual-port-v6-staff-coordinate-contract-v1",
+  "status": "pass_static",
+  "coordinate_owner": "Room.AddStaff -> Staff.SetPos -> Staff.Draw(ofx,ofy)",
+  "spawn_formula": {
+    "x": "(door_x + door_y) * 20 + 40",
+    "y": "(door_y - door_x) * 10 + 9",
+    "door_cell": [8, 4],
+    "world_position": [280, -31]
+  },
+  "camera": {
+    "transform": "screen = world + integer camera offset",
+    "default_offset": [0, 0],
+    "example_offset": [7, -4],
+    "example_screen_position": [287, -35]
+  },
+  "sprite_anchor": {
+    "formula": "screen position + Seb Sprite.TransX/TransY",
+    "wait_right_frame_0": {"destination_offset": [-14, -30], "final_destination_default_camera": [266, -61]},
+    "typing_right_frame_0": {"destination_offset": [-15, -30], "final_destination_default_camera": [265, -61]}
+  },
+  "prohibited_sources": ["browser screenshot coordinates", "manual character coordinates bypassing StaffV6", "free-cell spawn inference"],
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/actor_spawn_contract.json",
+    "knowledge/fixtures/accepted/runtime/room_placement_contract.json",
+    "sources/raw/1_Click_CSharp_Code update/game/Room.cs:5594-5764",
+    "sources/raw/1_Click_CSharp_Code update/game/Staff.cs:9404-9408"
+  ]
+}

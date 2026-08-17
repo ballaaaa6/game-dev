@@ -1,0 +1,177 @@
+{
+  "brain_revision_after": "k4-visual-assembly-r2",
+  "brain_revision_before": "k4-visual-assembly-r1",
+  "canonical_database_after": {
+    "brain_revision": "k4-visual-assembly-r2",
+    "k3_status": "CLOSED",
+    "k4_status": "CLOSED",
+    "path": "knowledge/brain/sqlite/social_dev_brain.sqlite",
+    "sha256": "65df23f6a222472f7cc401589ea6fa0d226406be2900070702817bc16759f9d1",
+    "size_bytes": 174022656,
+    "status": "K4_CLOSED_VISUAL_ASSEMBLY",
+    "tables": {
+      "canonical_entities": 21900,
+      "canonical_facts": 22076,
+      "derived_artifacts": 42,
+      "rejected_edges": 185,
+      "semantic_edges": 5433,
+      "source_limited_edges": 0,
+      "verified_edges": 5246
+    }
+  },
+  "canonical_database_before": {
+    "brain_revision": "k4-visual-assembly-r1",
+    "k3_status": "CLOSED",
+    "k4_status": "SOURCE_LIMITED",
+    "path": "knowledge/brain/sqlite/social_dev_brain.sqlite",
+    "sha256": "6647dcc9de1dce58f5596228359512f20ee2967e54be6f47166d7056f4525205",
+    "size_bytes": 173940736,
+    "status": "K4_SOURCE_LIMITED",
+    "tables": {
+      "canonical_entities": 21899,
+      "canonical_facts": 22072,
+      "derived_artifacts": 32,
+      "rejected_edges": 185,
+      "semantic_edges": 5429,
+      "source_limited_edges": 0,
+      "verified_edges": 5242
+    }
+  },
+  "canonical_facts_added": [
+    {
+      "entity_id": "ROOM_DATA_ID:0",
+      "fact_id": "fact:k4:ROOM_DATA_ID:0|k4_room0_bootstrap_visual_assembly",
+      "note": "Room0 bootstrap topology, native floor chain, explicit furniture bindings and actor spawn are source/native-backed.",
+      "predicate": "k4_room0_bootstrap_visual_assembly"
+    },
+    {
+      "entity_id": "ROOM_DATA_ID:0",
+      "fact_id": "fact:k4:ROOM_DATA_ID:0|k4_wall_closed_frame_layers",
+      "note": "Room0 wall predicates, cells, SEB layers, crops and offsets are closed; door action progression remains separate.",
+      "predicate": "k4_wall_closed_frame_layers"
+    },
+    {
+      "entity_id": "ROOM_DATA_ID:0",
+      "fact_id": "fact:k4:ROOM_DATA_ID:0|k4_door_closed_baseline",
+      "note": "Room0 closed door baseline is canonical; action timeline is explicitly source-limited.",
+      "predicate": "k4_door_closed_baseline"
+    },
+    {
+      "entity_id": "STAFF_VISUAL_PROFILE:human-staff-v1",
+      "fact_id": "fact:k4:STAFF_VISUAL_PROFILE:human-staff-v1|k4_action_selector_and_fallback_map",
+      "note": "Human action selectors, translated directions and explicit fallback policy are promoted without inventing deferred selectors.",
+      "predicate": "k4_action_selector_and_fallback_map"
+    },
+    {
+      "entity_id": "STAFF_METHOD:UseEquip",
+      "fact_id": "fact:k4:STAFF_METHOD:UseEquip|k4_equipment_visual_timeline",
+      "note": "Native equipment frame gates, selectors, start/completion calls and return-to-desk are promoted.",
+      "predicate": "k4_equipment_visual_timeline"
+    },
+    {
+      "entity_id": "ROOM_METHOD:Draw",
+      "fact_id": "fact:k4:ROOM_METHOD:Draw|k4_room_draw_pass_graph",
+      "note": "The exact nine-pass Room.Draw graph and Room0 occlusion topology are promoted.",
+      "predicate": "k4_room_draw_pass_graph"
+    },
+    {
+      "entity_id": "OPT_SEB_EXECUTION_MODEL:logical-v1",
+      "fact_id": "fact:k4:OPT_SEB_EXECUTION_MODEL:logical-v1|k4_logical_frame_layer_execution",
+      "note": "Accepted OPT/SEB selector, frame, layer, crop and native offset execution is promoted; exact V7 pixels remain outside K4.",
+      "predicate": "k4_logical_frame_layer_execution"
+    },
+    {
+      "entity_id": "STAFF_METHOD:Talk",
+      "fact_id": "fact:k4:STAFF_METHOD:Talk|k4_fukidashi_payload_closure",
+      "note": "Exact autonomous/invitation Fukidashi pools, random bounds, localization rows, storage/lifetime/offset/draw semantics, and partner cleanup are pinned-source-backed.",
+      "predicate": "k4_fukidashi_payload_closure"
+    },
+    {
+      "entity_id": "STAFF_METHOD:Talk",
+      "fact_id": "fact:k4:STAFF_METHOD:Talk|k4_autonomous_talk_timeline",
+      "note": "Autonomous Talk frame gates, speaker roles, and completion/cleanup calls are pinned native-backed.",
+      "predicate": "k4_autonomous_talk_timeline"
+    },
+    {
+      "entity_id": "ROOM_DATA_ID:0",
+      "fact_id": "fact:k4:ROOM_DATA_ID:0|k4_door_action_vs_visual_contract",
+      "note": "Room0 null-FurnitureData DrawWall proof closes the visual boundary; action/update/fade state is retained separately without invented door frames.",
+      "predicate": "k4_door_action_vs_visual_contract"
+    },
+    {
+      "entity_id": "ROOM_DATA_ID:0",
+      "fact_id": "fact:k4:ROOM_DATA_ID:0|k4_workstation_type2_live_interleave",
+      "note": "Room0 live type-2 native draw order, preview separation, direction fixtures, and duplicate Staff guard are pinned-source-backed.",
+      "predicate": "k4_workstation_type2_live_interleave"
+    }
+  ],
+  "heuristic_or_assumed_added": 0,
+  "mapchip_pixel_change": false,
+  "runtime_pixel_change": false,
+  "schema_version": "social-dev-k4-1-semantic-delta-v1",
+  "scope": "K4.1 targeted visual blocker closure only; no product/living policy change",
+  "source_limited_not_promoted": [],
+  "status": "closed",
+  "verified_edges_added": [
+    {
+      "edge_id": "edge-k4:953a42334db6c21fa595",
+      "object_id": "ROOM0_BOOTSTRAP_VISUAL_RECIPE:0",
+      "predicate": "assembled_as",
+      "subject_id": "ROOM_DATA_ID:0"
+    },
+    {
+      "edge_id": "edge-k4:8b5e15361d58c493c562",
+      "object_id": "ROOM0_WALL_DOOR_ASSEMBLY_RECIPE:0",
+      "predicate": "uses_wall_door_recipe",
+      "subject_id": "ROOM_DATA_ID:0"
+    },
+    {
+      "edge_id": "edge-k4:df92fad82eefd7b145a1",
+      "object_id": "HUMAN_ACTION_SELECTOR_MAP:v6",
+      "predicate": "uses_selector_map",
+      "subject_id": "STAFF_VISUAL_PROFILE:human-staff-v1"
+    },
+    {
+      "edge_id": "edge-k4:472882a4482d60fbcd70",
+      "object_id": "EQUIPMENT_VISUAL_TIMELINE:UseEquip",
+      "predicate": "executes_visual_timeline",
+      "subject_id": "STAFF_METHOD:UseEquip"
+    },
+    {
+      "edge_id": "edge-k4:d53e8bc04ab4215b132c",
+      "object_id": "ROOM_DRAW_PASS_GRAPH:room0-nine-pass",
+      "predicate": "uses_pass_graph",
+      "subject_id": "ROOM_METHOD:Draw"
+    },
+    {
+      "edge_id": "edge-k4:a33f3cd600b7d488f577",
+      "object_id": "ACCEPTED_OPT_SEB_COMPOSITION_CATALOG:v1",
+      "predicate": "resolves_frame_layers",
+      "subject_id": "OPT_SEB_EXECUTION_MODEL:logical-v1"
+    },
+    {
+      "edge_id": "edge-k4-1:7d514b53019f8fc54867",
+      "object_id": "FUKIDASHI_PAYLOAD_CLOSURE:Staff.Talk",
+      "predicate": "uses_fukidashi_payload",
+      "subject_id": "STAFF_METHOD:Talk"
+    },
+    {
+      "edge_id": "edge-k4-1:c1942aa7d98175a9bfca",
+      "object_id": "FUKIDASHI_LOCALIZATION_CATALOG:22-46-68",
+      "predicate": "uses_localization_catalog",
+      "subject_id": "STAFF_METHOD:Talk"
+    },
+    {
+      "edge_id": "edge-k4-1:bfad340b60bcc55ed57e",
+      "object_id": "ROOM0_DOOR_ACTION_VS_VISUAL:0",
+      "predicate": "has_action_vs_visual_contract",
+      "subject_id": "ROOM_DATA_ID:0"
+    },
+    {
+      "edge_id": "edge-k4-1:a66e4f5690ef3373a7e8",
+      "object_id": "WORKSTATION_LIVE_INTERLEAVE:room0-type2",
+      "predicate": "uses_workstation_live_interleave",
+      "subject_id": "ROOM_DATA_ID:0"
+    }
+  ]
+}

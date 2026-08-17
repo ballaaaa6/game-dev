@@ -1,0 +1,86 @@
+{
+  "action_state": {
+    "fade_flags": [
+      "FLAG_FADE_OUT",
+      "FLAG_FADE_IN"
+    ],
+    "frame_seed": 15,
+    "policy": "record state/action independently; do not invent door frames",
+    "start_action": "0x12C0520",
+    "update": "0x12BED80"
+  },
+  "blocking": false,
+  "classification": "REPRODUCED_WITH_CORRECTION",
+  "conclusion": "Room0 raw type-5 door remains on the fixed DrawWall door frame because FurnitureData is null; native action/update/fade state changes are real but do not select a distinct visible door timeline through the Room0 consumer path.",
+  "consumer_graph": "knowledge/brain/acceptance/k4-1/room0-door-visual-consumer-graph.json",
+  "native_proof": {
+    "DrawWall": "0x12C0698",
+    "dynamic_overlay_type_check": "0x12C08B0/0x12C08B4",
+    "fixed_door_draw": "0x12C07A4/0x12C08A4",
+    "furnitureData_null_guard": "0x12C08A8/0x12C08AC",
+    "raw_type_branch": "0x12C0784"
+  },
+  "research_findings": [
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "The autonomous Talk frame-20/frame-70 pools and field-handle relocation chain",
+      "finding_id": "talk.autonomous-pools"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "Invite opening, busy/reject, and response pools plus random bounds",
+      "finding_id": "talk.invitation-pools"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "EN/JA resource rows, language path, storage, timing, offset, lifetime, draw, and cleanup",
+      "finding_id": "talk.localization-and-lifecycle"
+    },
+    {
+      "classification": "REJECTED_BY_SOURCE",
+      "finding": "Treat 0x27D7E40 as an autonomous Talk pool",
+      "finding_id": "talk.extra-handle-0x27D7E40"
+    },
+    {
+      "classification": "REPRODUCED_WITH_CORRECTION",
+      "finding": "Promote a separate Room0 door animation frame timeline",
+      "finding_id": "door.distinct-visual-animation-timeline"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "Room0 null-FurnitureData DrawWall path is static while action state remains separate",
+      "finding_id": "door.null-furnituredata-consumer"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "Desk/chair/Staff.Draw live type-2 ordering and installed ownership guard",
+      "finding_id": "workstation.type2-live-order"
+    },
+    {
+      "classification": "REPRODUCED_WITH_CORRECTION",
+      "finding": "Treat preview=true Draw as the live normal Room0 path",
+      "finding_id": "workstation.preview-is-live"
+    }
+  ],
+  "schema_version": "social-dev-k4-1-room0-door-action-vs-visual-contract-v1",
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:door",
+    "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0].door",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:PlaceDoor",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:DrawWall/Update/StartAction",
+    "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12C0698/0x12BED80/0x12C0520"
+  ],
+  "status": "NO_DISTINCT_VISUAL",
+  "visual_baseline": {
+    "cell": [
+      8,
+      4
+    ],
+    "frame": 0,
+    "furnitureData": null,
+    "image": "door_01.png",
+    "installed_flag": 1,
+    "raw_type": 5,
+    "seb": "door_02.seb"
+  }
+}

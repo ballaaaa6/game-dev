@@ -1,0 +1,14 @@
+{
+  "schema": "i2-dashboard-app-update-contract-v1",
+  "status": "PASS",
+  "file": "runtime/social-dev/src/app/runtime.ts",
+  "order": [
+    "committed DashboardRuntime snapshot",
+    "SimulationState projection from same LivingSnapshot",
+    "Canvas render",
+    "existing runtime DOM render",
+    "dashboard DOM render"
+  ],
+  "same_frame_assertion": "state.living.frame === dashboardSnapshot.living.frame",
+  "legacy_simulation": "not used by production update path"
+}

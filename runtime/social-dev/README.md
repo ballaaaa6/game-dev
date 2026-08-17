@@ -18,8 +18,8 @@ Raw decompiled C# and source/extraction roots remain evidence only. The browser 
 ```text
 runtime/social-dev/
   assets/         promoted source binaries from the approved display subset
-  evidence/       approved contracts and provenance
-                  display asset manifest and frame records
+  generated/      generated original runtime pack mirror
+  (contracts)     approved contracts live under knowledge/fixtures/accepted/runtime/
   src/assets/     manifest validation, image loading, and frame selection
   src/catalog/    contract types and runtime boundary checks
   src/core/       immutable state, fixed ticks, routes, events, digest
@@ -51,7 +51,7 @@ The unified main scene includes:
 
 ## Native floor00 main scene
 
-`floor00` is the native `AppData.NewGame → roomData_[0] → Room.floor_=0` bootstrap, not the literal `floor_00.png` texture. The runtime uses the exact native dimensions and initial bindings from `evidence/floor00_scene_contract.json`:
+`floor00` is the native `AppData.NewGame → roomData_[0] → Room.floor_=0` bootstrap, not the literal `floor_00.png` texture. The runtime uses the exact native dimensions and initial bindings from `knowledge/fixtures/accepted/runtime/floor00_scene_contract.json`:
 
 - `14×14` shared `MapChip` topology (`196` cells);
 - `10×10` raw `ObjChip` topology (`100` cells);
@@ -75,21 +75,21 @@ npm run build
 npm run dev
 ```
 
-The deterministic browser fixture uses `http://127.0.0.1:4173/?auto=0`. The screenshot and behavior-trace evidence are stored under `knowledge/social-dev/evidence/`.
-The asset gate is `knowledge/social-dev/evidence/display_asset_gate.json`; the runtime imports only `evidence/display_asset_manifest.json` and the exact binaries under `assets/display-slice-01/`.
+The deterministic browser fixture uses `http://127.0.0.1:4173/?auto=0`. The screenshot and behavior-trace evidence are stored under `knowledge/fixtures/accepted/`.
+The asset gate is `knowledge/fixtures/accepted/display_asset_gate.json`; the runtime imports only the generated pack facade and the exact binaries under `assets/display-slice-01/`.
 
 The single floor policy is `raw 5 → selector/metadata 85/floor_09.png → render floor_05.png`. The `floor_05.png` asset is complete and remains the actual rendered image; `floor_09.png` supplies the borrowed selector/data identity. The composition is explicitly labeled synthetic because the original `img.inf` binding for raw id `5` remains unresolved.
 
 ## Native Room.floor_ topology
 
-`evidence/native_room_floor_usage_contract.json` is the runtime bridge for the native `Room.floor_` selector. It records the direct constructor call sites and the exact native dimensions:
+`knowledge/fixtures/accepted/runtime/native_room_floor_usage_contract.json` is the runtime bridge for the native `Room.floor_` selector. It records the direct constructor call sites and the exact native dimensions:
 
 - `floor == 0` selects `MAPCHIP_ARRAY[0]` and the full `14×14` topology;
 - `floor != 0` selects `MAPCHIP_ARRAY[1]` and the native `4×4` preview topology;
 - `RoomData.floorImgId_` remains an independent `FLOOR_IMAGE_ID_ARRAY` lookup;
 - the resolver rejects a nonzero floor requested at `14×14` instead of expanding the native `4×4` row.
 
-The native environment scope is also fixed in the retained contract evidence:
+The native environment scope is also fixed in the retained contract evidence under `knowledge/fixtures/accepted/runtime/`:
 
 | Runtime context | Native topology | Outer MapChip scope |
 |---|---|---|

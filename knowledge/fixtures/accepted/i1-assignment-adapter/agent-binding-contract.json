@@ -1,0 +1,8 @@
+{
+  "schema_version": "social-dev-i1-agent-binding-contract-v1",
+  "status": "PASS_I1_5_AGENT_BINDING",
+  "fields": { "externalAgentId": "string unique", "staffId": "explicit existing LivingRuntime Staff id" },
+  "cardinality": ["one external agent maps to one Staff", "one Staff has at most one active external agent", "bind does not mutate living", "dashboard/backend chooses the Staff explicitly"],
+  "rejections": ["AGENT_BINDING_CONFLICT", "STAFF_NOT_FOUND", "ACTIVE_TASK_PREVENTS_UNBIND"],
+  "scheduler_policy": "none; no automatic Staff choice, queue, fairness, or reassignment"
+}

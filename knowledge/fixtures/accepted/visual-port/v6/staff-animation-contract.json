@@ -1,0 +1,35 @@
+{
+  "schema_version": "social-dev-visual-port-v6-staff-animation-contract-v1",
+  "status": "pass_static",
+  "selected_animation": {
+    "human_seb_ids": [1, 2, 3, 4, 10, 11, 12, 13, 23, 24, 25, 26],
+    "frame_bound": 20,
+    "layer_policy": "all decoded layers in native layer order",
+    "frame_zero_policy": "explicit fixture frame 0",
+    "frame_modulo": "floor-safe non-negative integer modulo Seb.getMaxFrame()"
+  },
+  "intervals": {
+    "typing": {"frames_per_tick": 3, "proof": "SOURCE-DATA-PROVEN", "source_ref": "Staff.cs:10309-10320"},
+    "talk": {"frames_per_tick": 3, "source_action": "typing", "proof": "SOURCE-DATA-PROVEN"},
+    "wait": {"frames_per_tick": 1, "proof": "STATIC-INFERRED from native wait frame contract; exact update cadence deferred"},
+    "move": {"frames_per_tick": 1, "proof": "STATIC-INFERRED; exact update cadence deferred"}
+  },
+  "alpha": {
+    "room_add_staff_initial": 0,
+    "fade_in_step": 25,
+    "fade_in_cap": 255,
+    "zero_alpha_draw": "skip",
+    "partial_alpha_render_mode": "GraphicsOperation.ADD(alpha, 255-alpha)",
+    "source_ref": "Staff.cs:4590-4620"
+  },
+  "transition_policy": {
+    "reserved_seb_switch": "represented by StaffAnimationV6 API but not exercised by the static fixture",
+    "exact_native_tick_cadence": "DEFER_TO_V7",
+    "gameplay_update": "OUT_OF_SCOPE_GAMEPLAY"
+  },
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/character_asset_manifest.json",
+    "sources/raw/1_Click_CSharp_Code update/game/Staff.cs:9410-9467",
+    "sources/raw/1_Click_CSharp_Code update/game/Staff.cs:10309-10407"
+  ]
+}

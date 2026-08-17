@@ -1,0 +1,1 @@
+{"scenarioId":"A2","step":1,"event":"task_assigned","productStatus":"ASSIGNED","livingState":"STATE_WORK","livingMoveMode":"MOVE_MODE_STAY","assertion":"assignment does not mutate living"}

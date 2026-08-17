@@ -1,0 +1,96 @@
+{
+  "baseline": {
+    "v1": "pass",
+    "v2": "pass_static",
+    "v3": "pass",
+    "v4": "pass_static",
+    "v5": "pass_static",
+    "v5_command_sha256": "0b8132b8ab45eda3d8bb344e65304e0c4d32717a9638c2789efd9223d9df5d60",
+    "v5_manifest_sha256": "48a1827c94c15394d38e872b243c398d8c6e6f47b66099bf26b44f22ee79e047",
+    "v6": "pass_static",
+    "v6_manifest_sha256": "1e2b1d47922f8e274bfdf40a5c1c9aff85780441ad244f92de641e5cc5de1e7a"
+  },
+  "command_manifest_hashes": {
+    "v5": "48a1827c94c15394d38e872b243c398d8c6e6f47b66099bf26b44f22ee79e047",
+    "v6": "1e2b1d47922f8e274bfdf40a5c1c9aff85780441ad244f92de641e5cc5de1e7a"
+  },
+  "compatibility_raster_assumptions": [
+    "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+    "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+    "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+    "Out-of-bounds source samples are transparent.",
+    "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+    "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+    "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+  ],
+  "golden_fixture_manifest_sha256": "2c938a021fc0db3bdf6cbd33e44591867a73f76b24247a5d743bc2ebcbc403fc",
+  "golden_fixture_results_sha256": "f1df56e72c594c5f869e5be9239040343c1324c2151075e986b0f1a48bffc27b",
+  "graphics_contract_sha256": "b77d6cc0ae48e597ac68252f9917e08c3a7b766971e9d9bb887289fb545f6b6d",
+  "production_renderer_changed": false,
+  "proof_classifications": {
+    "compatibility_backend_pixels": "COMPATIBILITY_REIMPLEMENTATION",
+    "floor_selector_alias": "PRODUCT_POLICY",
+    "selected_command_stream": "PROVEN",
+    "source_geometry": "PROVEN",
+    "staff_cadence": "SOURCE_LIMITED"
+  },
+  "residual_differences": [
+    {
+      "class": "deterministic_repeat",
+      "id": "repeated-room00-structural",
+      "proof_class": "PROVEN",
+      "result": {
+        "changedPixelCount": 0,
+        "changedRegion": null,
+        "height": 600,
+        "identical": true,
+        "maxChannelError": 0,
+        "meanChannelError": 0,
+        "width": 980
+      }
+    },
+    {
+      "class": "deterministic_repeat",
+      "id": "repeated-room00-with-staff",
+      "proof_class": "PROVEN",
+      "result": {
+        "changedPixelCount": 0,
+        "changedRegion": null,
+        "height": 600,
+        "identical": true,
+        "maxChannelError": 0,
+        "meanChannelError": 0,
+        "width": 980
+      }
+    },
+    {
+      "class": "expected_selected_content_delta",
+      "difference_class": "C_COMPATIBILITY_BACKEND_DIFFERENCE",
+      "id": "room00-structural-vs-room00-with-staff",
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "result": {
+        "changedPixelCount": 830,
+        "changedRegion": {
+          "height": 30,
+          "width": 30,
+          "x": 708,
+          "y": 199
+        },
+        "height": 600,
+        "identical": false,
+        "maxChannelError": 255,
+        "meanChannelError": 169.96897590361445,
+        "width": 980
+      }
+    }
+  ],
+  "room00_structural_png_sha256": "b55d701ba74bd6212701a6623d5de667d824c00c604bfebfc2d416f7d5fd447a",
+  "room00_with_staff_png_sha256": "f5c2db1052ee55b6256208b164107bc123f58634f533ce621f46871acb60c1cd",
+  "schema_version": "social-dev-visual-port-v7-fidelity-manifest-v1",
+  "status": "PASS_STATIC_FIDELITY",
+  "unknowns_ref": "knowledge/fixtures/accepted/visual-port/v7/unknowns.json",
+  "v8_readiness": {
+    "entry": "NO",
+    "reason": "Starter-room semantic correction is frozen for review; V8 is intentionally not started."
+  }
+}

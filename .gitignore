@@ -1,14 +1,24 @@
 # Local extraction/runtime caches
 __pycache__/
+**/__pycache__/
 *.py[cod]
+**/*.py[cod]
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+coverage/
+.vite/
+.cache/
+*.log
 APK_Toolkit/.last_extraction.env
 
 # Raw APK/ZIP inputs and extracted source trees
 APK_Toolkit/
-game-dev-story-mod_Extracted/
-game-dev-story-mod_Sprites/
-game-dev-story-mod_Dumped/
 viewer/
+sources/
+knowledge/sources/
+legacy/
 
 # Ghidra installation and project database (large generated binary data)
 ghidra_11.0.1_PUBLIC/
@@ -17,10 +27,165 @@ ghidra_11.0.1_PUBLIC/
 Auto_Annotator.py
 Smart_Compressor.py
 
-# Repository allowlist: keep only the documented root files above
+# Original archives, native binaries, metadata, local databases, and captures
+*.apk
+*.rar
+*.zip
+*.so
+libil2cpp.so
+global-metadata.dat
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.dmp
+
+# Repository allowlist: publish the lightweight live project mirror only
 /*
 !/.gitignore
 !/AGENTS.md
 !/PROJECT_STATE.md
 !/README.md
 !/TODO.md
+
+# Active runtime source, tests, configuration, and intentionally promoted assets
+!/runtime/
+runtime/*
+!/runtime/social-dev/
+runtime/social-dev/*
+!/runtime/social-dev/src/
+runtime/social-dev/src/*
+!/runtime/social-dev/src/**
+!/runtime/social-dev/tests/
+runtime/social-dev/tests/*
+!/runtime/social-dev/tests/**
+!/runtime/social-dev/assets/
+!/runtime/social-dev/assets/**
+!/runtime/social-dev/index.html
+!/runtime/social-dev/package.json
+!/runtime/social-dev/package-lock.json
+!/runtime/social-dev/README.md
+!/runtime/social-dev/tsconfig.json
+!/runtime/social-dev/vite.config.ts
+!/runtime/social-dev/generated/
+runtime/social-dev/generated/*
+!/runtime/social-dev/generated/original-runtime-pack.manifest.json
+
+# Active extraction/build/validation tools
+!/tools/
+!/tools/social-dev/
+!/tools/social-dev/**
+
+# Canonical brain schemas, manifests, compact exports, and reconciliation metadata
+!/knowledge/
+knowledge/*
+!/knowledge/brain/
+!/knowledge/brain/**
+knowledge/brain/sqlite/
+knowledge/brain/exports/duplicate-content-map.json
+!/knowledge/data/
+knowledge/data/*
+knowledge/data/original/
+!/knowledge/generated/
+knowledge/generated/*
+!/knowledge/generated/contracts/
+!/knowledge/generated/contracts/**
+knowledge/generated/original-data-pack/*
+!/knowledge/generated/original-data-pack/README.md
+!/knowledge/generated/original-data-pack/manifest.json
+!/knowledge/generated/original-data-pack/schema.json
+knowledge/generated/original-runtime-pack/*
+!/knowledge/generated/original-runtime-pack/manifest.json
+knowledge/generated/original-visual-pack/*
+!/knowledge/generated/original-visual-pack/manifest.json
+!/knowledge/gaps/
+!/knowledge/gaps/**
+
+# Accepted contracts: keep lightweight active families and exclude known forensic-heavy collections
+!/knowledge/fixtures/
+!/knowledge/fixtures/manifest.json
+!/knowledge/fixtures/accepted/
+knowledge/fixtures/accepted/csharp_inventory/
+knowledge/fixtures/accepted/csharp_update_inventory/
+knowledge/fixtures/accepted/data-dependency/
+knowledge/fixtures/accepted/g1_5/
+knowledge/fixtures/accepted/i0-living-runtime/*
+!/knowledge/fixtures/accepted/i0-living-runtime/*.json
+knowledge/fixtures/accepted/living-core-closure/
+knowledge/fixtures/accepted/runtime-contract-freeze/
+knowledge/fixtures/accepted/runtime/*
+!/knowledge/fixtures/accepted/runtime/entity_contract.json
+!/knowledge/fixtures/accepted/runtime/camera_coordinate_contract.json
+!/knowledge/fixtures/accepted/runtime/default_map_chip_contract.json
+!/knowledge/fixtures/accepted/runtime/display_asset_manifest.json
+!/knowledge/fixtures/accepted/runtime/floor00_scene_contract.json
+!/knowledge/fixtures/accepted/runtime/floor00_seb_contract.json
+!/knowledge/fixtures/accepted/runtime/k3_candidate_edge_classification.json
+!/knowledge/fixtures/accepted/runtime/k3_floor_selector_closure.json
+!/knowledge/fixtures/accepted/runtime/k3_furniture_visual_closure.json
+!/knowledge/fixtures/accepted/runtime/native_direction_contract.json
+!/knowledge/fixtures/accepted/runtime/native_room_floor_usage_contract.json
+!/knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json
+!/knowledge/fixtures/accepted/runtime/room_scene_asset_manifest.json
+!/knowledge/fixtures/accepted/runtime/room_scene_runtime_contract.json
+knowledge/fixtures/accepted/visual-port/*
+knowledge/fixtures/accepted/visual-port/first-visible-transition/
+knowledge/fixtures/accepted/visual-port/mapchip-forensic/
+knowledge/fixtures/accepted/visual-port/starter-room-correction/
+knowledge/fixtures/accepted/visual-port/starter-room-reintegration/
+!/knowledge/fixtures/accepted/visual-port/v5/
+!/knowledge/fixtures/accepted/visual-port/v5/*.json
+!/knowledge/fixtures/accepted/visual-port/v6/
+!/knowledge/fixtures/accepted/visual-port/v6/*.json
+!/knowledge/fixtures/accepted/visual-port/v7/
+!/knowledge/fixtures/accepted/visual-port/v7/*.json
+knowledge/fixtures/accepted/visual-port/v7/previews/
+!/knowledge/fixtures/accepted/behavior-first/
+knowledge/fixtures/accepted/behavior-first/*
+!/knowledge/fixtures/accepted/behavior-first/*.json
+!/knowledge/fixtures/accepted/i1-assignment-adapter/
+knowledge/fixtures/accepted/i1-assignment-adapter/*
+!/knowledge/fixtures/accepted/i1-assignment-adapter/*.json
+!/knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/
+!/knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/*.jsonl
+!/knowledge/fixtures/accepted/i2-dashboard-runtime/
+knowledge/fixtures/accepted/i2-dashboard-runtime/*
+!/knowledge/fixtures/accepted/i2-dashboard-runtime/*.json
+
+# Project reports, roadmaps, phase handoffs, and persistent state
+!/docs/
+docs/*
+!/docs/Phases/
+!/docs/Phases/**
+!/docs/reports/
+!/docs/reports/**
+!/docs/roadmap/
+!/docs/roadmap/**
+!/docs/state/
+!/docs/state/**
+
+# Re-assert generated/cache exclusions after the active-tool and brain allow rules
+**/*.py[cod]
+tools/social-dev/__pycache__/
+knowledge/brain/acceptance/k2-5-cleanup/*
+!/knowledge/brain/acceptance/k2-5-cleanup/final-validation.json
+!/knowledge/brain/acceptance/k2-5-cleanup/semantic-delta.json
+
+# Top-level accepted artifacts are opt-in so bulk catalogs do not enter Git accidentally
+knowledge/fixtures/accepted/*.json
+knowledge/fixtures/accepted/*.png
+knowledge/fixtures/accepted/*.jpg
+knowledge/fixtures/accepted/*.jpeg
+!/knowledge/fixtures/accepted/asset_composition_catalog.json
+!/knowledge/fixtures/accepted/asset_metadata_completion_gate.json
+!/knowledge/fixtures/accepted/display_asset_gate.json
+!/knowledge/fixtures/accepted/furniture_asset_metadata.json
+!/knowledge/fixtures/accepted/native_room_floor_usage_catalog.json
+knowledge/fixtures/accepted/i0-living-runtime/scenario-results.json
+
+# Historical acceptance captures with machine-local command/path noise
+knowledge/brain/acceptance/k2/baseline.json
+knowledge/brain/acceptance/k2/post-cutover-regression-matrix.json
+knowledge/brain/acceptance/k2/source-reverification.json
+knowledge/brain/reconciliation/reference-normalization.json
+knowledge/fixtures/accepted/i2-dashboard-runtime/validation.json

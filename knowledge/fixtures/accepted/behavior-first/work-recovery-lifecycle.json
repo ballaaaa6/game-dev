@@ -1,0 +1,111 @@
+{
+  "lifecycle": [
+    {
+      "inputs": [
+        "FLAG_SITTING",
+        "frame_",
+        "flag_",
+        "GetHpRatio()"
+      ],
+      "output": "typing/equipment/talk/sleep decision",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 2954,
+        "note": "Autonomous work handler; timing gates damaged.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "private void UpdateWork()"
+      },
+      "stage": "desk_work",
+      "state": "STATE_WORK"
+    },
+    {
+      "frames": [
+        20,
+        40,
+        60,
+        70
+      ],
+      "output": "OnUseComplate; optional recovery stock; GotoDesk",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 2931,
+        "note": "Use completion recovery stock.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "if (furnitureData_.recovery_ >= 1)"
+      },
+      "stage": "equipment_use",
+      "state": "STATE_USE_EQUIPMENT"
+    },
+    {
+      "frames": {
+        "per_stock": 1,
+        "start_delay": 20
+      },
+      "output": "RecoverHp(1); stock decremented",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 1203,
+        "note": "Recovery stock tick.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "if (--frameToStartRecovery_ <= 0 && recoveryHpStock_ >= 1)"
+      },
+      "stage": "delayed_recovery",
+      "state": "normal_update_tick"
+    },
+    {
+      "guard": "GetHpRatio() <= 5",
+      "output": "door target; move mode 10",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 1561,
+        "note": "Low HP door guard.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "if (hpRatio <= 5 && state_ != 2 && state_ != 13)"
+      },
+      "stage": "low_hp_exit",
+      "state": "STATE_MOVE"
+    },
+    {
+      "output": "door reservation; state 11; move mode 3",
+      "per_tick": "RecoverHp(1)",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 2090,
+        "note": "Stay-home branch.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "private void UpdateStayHome()"
+      },
+      "return_guard": "GetHpRatio() >= 40",
+      "stage": "home_recovery",
+      "state": "STATE_STAY_HOME"
+    }
+  ],
+  "native_refs": [
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned recovery helper.",
+      "rva": "0x12D2C8C",
+      "symbol": "Staff.UpdateRecoveryHp"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned work helper.",
+      "rva": "0x12D4A7C",
+      "symbol": "Staff.UpdateWork"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned home helper.",
+      "rva": "0x12D59F4",
+      "symbol": "Staff.UpdateStayHome"
+    }
+  ],
+  "ordinary_work_hp_drain": {
+    "finding": "No direct drain write is present in the readable Staff source search; do not model a decrement without native tracing.",
+    "search": "RecoverHp(-, hp_ -=, hp_--",
+    "status": "UNKNOWN"
+  },
+  "schema_version": "social-dev-behavior-first-work-recovery-lifecycle-v1",
+  "source_limit": "Exact cadence modulo arithmetic and the sleeping flag's stock-add frequency are damaged.",
+  "status": "pass_with_source_limits"
+}

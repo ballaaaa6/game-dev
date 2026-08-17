@@ -1,0 +1,42 @@
+{
+  "schema_version": "social-dev-visual-port-v6-room00-with-staff-manifest-v1",
+  "status": "pass_static",
+  "artifact_kind": "deterministic_integrated_command_manifest_summary",
+  "runtime_factory": "createV6RoomStaffPreview({ roomKey: 'room:0', action: 'wait', direction: 'right', frame: 0, alpha: 255 })",
+  "room_key": "room:0",
+  "data_key": "data:room:0",
+  "camera_offset": [0, 0],
+  "pass_order": ["map-extension-floor", "map-chip", "object-chip-primary", "object-chip-wall", "avatar-primary", "avatar-secondary", "object-chip-late-preview", "object-chip-late", "map-floor"],
+  "baseline_v5": {"commands": 74, "traces": 59, "events": 788, "pass_count": 9, "manifest_sha256": "4418a7c8a81a705d46a6eefc2a72e635f5e6108d83e4067dc0d638942f39f788"},
+  "integrated_v6": {
+    "staff_actor_ids": ["actor:staff:0", "actor:staff:1", "actor:staff:2"],
+    "action": "wait",
+    "direction": "right",
+    "frame": 0,
+    "image_selector_ids": [86, 87, 88],
+    "seb_selector_id": 10,
+    "resource_group": "resHuman_",
+    "room_pass": "avatar-primary",
+    "pass_index": 4,
+    "commands": 77,
+    "traces": 62,
+    "events": 791,
+    "sha256": "bfab918ef5ea04512da380b4d5134c4b02d1d7ca29fd9c6fb47d7b4e40944142"
+  },
+  "proof_labels": {
+    "staff_image_selector": "SOURCE-DATA-PROVEN",
+    "human_seb_selector": "SOURCE-DATA-PROVEN",
+    "frame_state": "CALL-FLOW-PROVEN",
+    "placement": "SOURCE-DATA-PROVEN",
+    "room_pass_order": "NATIVE-CODE-PROVEN",
+    "live_staff_to_avatar_relation": "SOURCE-LIMITED"
+  },
+  "policy": {
+    "room_v5_semantics_mutated": false,
+    "production_cutover": false,
+    "gameplay": false,
+    "server_or_live_proof": false,
+    "exact_pixels": "DEFERRED_TO_V7"
+  },
+  "full_manifest_source": "runtime/social-dev/src/v6/manifest.ts"
+}

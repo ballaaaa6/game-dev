@@ -1,0 +1,1238 @@
+{
+  "records": [
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.0",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "reconcile prior closure/candidate artifacts and read pinned sources",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS_WITH_SOURCE_LIMITS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.1",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "parse Staff instance/static mutable fields against dump offsets",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [
+        "direct source branch or record classification"
+      ],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.2",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "parse state/move/flag constants and native method table",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [
+        "direct source branch or record classification"
+      ],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.3",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "trace readable Update direct guards and indirect dispatch boundaries",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS_WITH_SOURCE_LIMITS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.4",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "search exact HP/condition names and identify HP writes/reads",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS_WITH_SOURCE_LIMITS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.5",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "trace max formula, thresholds, recovery stock and setter paths",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [
+        "direct source branch or record classification"
+      ],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.6",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "trace work, sleep and recovery lifecycle; preserve unknown drain",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS_WITH_SOURCE_LIMITS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.7",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "trace stay-home/door return contract",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS_WITH_SOURCE_LIMITS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.8",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "trace equipment selection/use/completion",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [
+        "direct source branch or record classification"
+      ],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.9",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "trace workstation ownership and desk creation",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [
+        "direct source branch or record classification"
+      ],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.10",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "classify all FurnitureData records using source consumers",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [
+        "direct source branch or record classification"
+      ],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.11",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "reconcile passMap/standing/cardinal route/arrival contracts",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.12",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "trace talk target, invite, timing and cleanup",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS_WITH_SOURCE_LIMITS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [
+        "direct source branch or record classification"
+      ],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.13",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "trace idle autonomy decisions and contention reservations",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS_WITH_SOURCE_LIMITS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.14",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "map dashboard task-assignment data inputs",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [
+        "direct source branch or record classification"
+      ],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.15",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "map behavior-visible actions to canonical Staff fields",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS_WITH_SOURCE_LIMITS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [
+        "direct source branch or record classification"
+      ],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.16",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "define canonical living model and preserve unknowns",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS_WITH_SOURCE_LIMITS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.17",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "define dashboard preservation boundary and forbidden changes",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "continue static trace",
+      "Status": "PASS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation"
+      ],
+      "Unknowns closed": [
+        "direct source branch or record classification"
+      ],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.18",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "run static coverage and regression checks",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "write state and handoff",
+      "Status": "PASS",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation",
+        "behavior-first static coverage >=35",
+        "no renderer/MapChip/V8 change"
+      ],
+      "Unknowns closed": [],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    },
+    {
+      "Behavior transitions": [
+        "low HP -> door",
+        "stay home -> recover -> door return",
+        "work -> typing/equipment/talk/sleep",
+        "route head -> arrival"
+      ],
+      "Checkpoint": "BF.19",
+      "Constants": [
+        "Staff state/move/flag constants",
+        "StaffData.PARAM_HP",
+        "ObjChip type/direction/flags",
+        "FurnitureData flags/types"
+      ],
+      "Data records": [
+        "StaffData 0-4 / JobData 4 / SkillData 1",
+        "FurnitureData 103"
+      ],
+      "Fields": [
+        "Staff fields",
+        "state/mode/flag fields",
+        "HP/recovery fields",
+        "room/ObjChip ownership fields"
+      ],
+      "Furniture relationships": [
+        "type 2 workstation",
+        "type 1/4 equipment candidates",
+        "recovery_ -> recovery stock",
+        "passMap_ -> native IsPassable"
+      ],
+      "HP/condition findings": [
+        "hp_ authoritative",
+        "PARAM_HP=5",
+        "no Staff stamina_/energy_/fatigue_/condition_",
+        "ordinary work drain unknown"
+      ],
+      "Methods": "update state/handoff and stop before visual work",
+      "Native RVAs": [
+        "0x12D2EC8",
+        "0x12D2C8C",
+        "0x12C4AB8",
+        "0x12CB448",
+        "0x110EBF0"
+      ],
+      "Next": "STOP; no visual work or renderer cutover",
+      "Status": "STOP_NO_VISUAL_CUTOVER",
+      "Tests": [
+        "source read",
+        "pinned dump read",
+        "static JSON validation",
+        "behavior-first static coverage >=35",
+        "no renderer/MapChip/V8 change"
+      ],
+      "Unknowns closed": [],
+      "Unknowns remaining": [
+        "damaged indirect dispatch",
+        "ordinary work HP drain",
+        "GetStaffEmptyObjTypeOf predicate",
+        "GetUsersNum exact semantics",
+        "OnArriveGoal mapping"
+      ]
+    }
+  ],
+  "required_stop_literals": {
+    "Emulator_ADB_live_server_network": "NO",
+    "MapChip_changed": "NO",
+    "Production_renderer_changed": "NO",
+    "Subagents": "NO",
+    "V8_started": "NO",
+    "Visual_work_performed": "NO"
+  },
+  "schema_version": "social-dev-behavior-first-checkpoint-ledger-v1",
+  "status": "pass_with_source_limits"
+}

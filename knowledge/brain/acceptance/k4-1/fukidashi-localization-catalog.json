@@ -1,0 +1,419 @@
+{
+  "entries": [
+    {
+      "apk_physical_line": {
+        "en": 4545,
+        "ja": 4545
+      },
+      "english": "Yeees",
+      "enum_name": "HAAI",
+      "id": 22,
+      "japanese": "はーい",
+      "locale_key": "1420-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1420-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1420-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4546,
+        "ja": 4546
+      },
+      "english": "What could it be?",
+      "enum_name": "NANIKANA",
+      "id": 23,
+      "japanese": "何かな？",
+      "locale_key": "1421-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1421-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1421-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4547,
+        "ja": 4547
+      },
+      "english": "Yes, yes...",
+      "enum_name": "HAIHAI",
+      "id": 24,
+      "japanese": "はいはい",
+      "locale_key": "1422-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1422-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1422-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4548,
+        "ja": 4548
+      },
+      "english": "Hey, listen...",
+      "enum_name": "NENE",
+      "id": 25,
+      "japanese": "ねぇねぇ",
+      "locale_key": "1423-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1423-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1423-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4549,
+        "ja": 4549
+      },
+      "english": "Umm...",
+      "enum_name": "ANOO",
+      "id": 26,
+      "japanese": "あのー",
+      "locale_key": "1424-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1424-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1424-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4550,
+        "ja": 4550
+      },
+      "english": "Is now a good time?",
+      "enum_name": "IMA_DAIJOUBU",
+      "id": 27,
+      "japanese": "いま大丈夫？",
+      "locale_key": "1425-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1425-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1425-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4551,
+        "ja": 4551
+      },
+      "english": "Sorry",
+      "enum_name": "SUIMASEN",
+      "id": 28,
+      "japanese": "すいません",
+      "locale_key": "1426-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1426-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1426-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4552,
+        "ja": 4552
+      },
+      "english": "Hey you",
+      "enum_name": "CHIMICHIMI",
+      "id": 29,
+      "japanese": "チミチミ",
+      "locale_key": "1427-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1427-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1427-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4553,
+        "ja": 4553
+      },
+      "english": "About this...",
+      "enum_name": "KOREGASA",
+      "id": 30,
+      "japanese": "これがさぁ",
+      "locale_key": "1428-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1428-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1428-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4554,
+        "ja": 4554
+      },
+      "english": "In that case...",
+      "enum_name": "SOREDESA",
+      "id": 31,
+      "japanese": "それでさぁ",
+      "locale_key": "1429-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1429-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1429-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4555,
+        "ja": 4555
+      },
+      "english": "And then...",
+      "enum_name": "DESA",
+      "id": 32,
+      "japanese": "でさぁ",
+      "locale_key": "1430-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1430-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1430-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4556,
+        "ja": 4556
+      },
+      "english": "...",
+      "enum_name": "PERAPERA",
+      "id": 33,
+      "japanese": "ペラペラ",
+      "locale_key": "1431-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1431-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1431-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4557,
+        "ja": 4557
+      },
+      "english": "By the way...",
+      "enum_name": "TOKORODE",
+      "id": 34,
+      "japanese": "ところで",
+      "locale_key": "1432-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1432-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1432-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4558,
+        "ja": 4558
+      },
+      "english": "Hmm",
+      "enum_name": "HUMUHUMU",
+      "id": 35,
+      "japanese": "ふむふむ",
+      "locale_key": "1433-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1433-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1433-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4559,
+        "ja": 4559
+      },
+      "english": "Yep yep",
+      "enum_name": "UNUN",
+      "id": 36,
+      "japanese": "うんうん",
+      "locale_key": "1434-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1434-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1434-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4560,
+        "ja": 4560
+      },
+      "english": "Of course!",
+      "enum_name": "NARUHODO",
+      "id": 37,
+      "japanese": "なるほど！",
+      "locale_key": "1435-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1435-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1435-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4561,
+        "ja": 4561
+      },
+      "english": "Huh?",
+      "enum_name": "EE",
+      "id": 38,
+      "japanese": "えぇ！",
+      "locale_key": "1436-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1436-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1436-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4562,
+        "ja": 4562
+      },
+      "english": "Amazing!",
+      "enum_name": "SUGOI",
+      "id": 39,
+      "japanese": "すごい！",
+      "locale_key": "1437-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1437-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1437-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4563,
+        "ja": 4563
+      },
+      "english": "As expected!",
+      "enum_name": "SASUGA",
+      "id": 40,
+      "japanese": "さすが！",
+      "locale_key": "1438-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1438-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1438-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4564,
+        "ja": 4564
+      },
+      "english": "Wow!",
+      "enum_name": "WOW",
+      "id": 41,
+      "japanese": "わーぉ",
+      "locale_key": "1439-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1439-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1439-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4565,
+        "ja": 4565
+      },
+      "english": "Hmm...",
+      "enum_name": "HUUN",
+      "id": 42,
+      "japanese": "ふーん",
+      "locale_key": "1440-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1440-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1440-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4566,
+        "ja": 4566
+      },
+      "english": "I dunno...",
+      "enum_name": "UUN",
+      "id": 43,
+      "japanese": "うーん…",
+      "locale_key": "1441-1&1548-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1441-1&1548-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1441-1&1548-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4567,
+        "ja": 4567
+      },
+      "english": "I'm busy",
+      "enum_name": "IMA_ISOGASHII",
+      "id": 44,
+      "japanese": "今忙しい",
+      "locale_key": "1442-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1442-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1442-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4568,
+        "ja": 4568
+      },
+      "english": "Sorry...",
+      "enum_name": "GOMENNE",
+      "id": 45,
+      "japanese": "ごめんね",
+      "locale_key": "1443-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1443-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1443-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4569,
+        "ja": 4569
+      },
+      "english": "Later!",
+      "enum_name": "MATA_ATODE",
+      "id": 46,
+      "japanese": "またあとで！",
+      "locale_key": "1444-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1444-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1444-1"
+      ]
+    },
+    {
+      "apk_physical_line": {
+        "en": 4589,
+        "ja": 4589
+      },
+      "english": "...",
+      "enum_name": "MUGON",
+      "id": 68,
+      "japanese": "…",
+      "locale_key": "1464-1",
+      "source_refs": [
+        "APK:assets/bin/Data/3e011607c70476647900e67699290733:1464-1",
+        "APK:assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d:1464-1"
+      ]
+    }
+  ],
+  "language_path": {
+    "AppData.DrawFukidashi": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/AppData.cs:DrawFukidashi(Graphics,FUKIDASHI,int,int)",
+    "AppData.FUKIDASHI_TEXT": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/AppData.cs:FUKIDASHI_TEXT",
+    "Language.ENGLISH": 1,
+    "Language.JAPANESE": 0,
+    "Language.LT": "0x1BC85D0",
+    "Language.LoadLanguagePack": "0x1BCA85C",
+    "Language.SetTextTable": "0x1BC61B0"
+  },
+  "schema_version": "social-dev-k4-1-fukidashi-localization-catalog-v1",
+  "source_identity": {
+    "apk": "sources/raw/Social_Dev_Story_v2.5.1.apk",
+    "apk_sha256": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
+    "language_entries": {
+      "en": "assets/bin/Data/3e011607c70476647900e67699290733",
+      "ja": "assets/bin/Data/9fc588dea0f2b6e42901e4267689ad9d"
+    },
+    "raw_entry_sha256": {
+      "en": "2b19fdbafac7346e40d7910645e1a4402f6ce8cfbb0a9cbca30d91f1924c7196",
+      "ja": "7588aa84f6d97f5db23f12459f2e54ad1e5a623151173da717e1e87b8a375a94"
+    },
+    "textasset_header_bytes": 180,
+    "utf8_bom_offset": 180
+  },
+  "status": "PROVEN_CANONICAL"
+}

@@ -1,0 +1,252 @@
+{
+  "effect_and_gauge_owners": [
+    {
+      "method": "DrawFukidashi",
+      "native_rva": "0x12C3E28",
+      "owner": "ObjChip",
+      "status": "PROVEN_CANONICAL"
+    },
+    {
+      "method": "DrawStaffHpGauge",
+      "owner": "ObjChip",
+      "status": "PROVEN_CANONICAL"
+    },
+    {
+      "method": "DrawUsePointGauge",
+      "owner": "ObjChip",
+      "status": "PROVEN_CANONICAL"
+    },
+    {
+      "method": "DrawStaffMeetingPointGauge",
+      "owner": "ObjChip",
+      "status": "PROVEN_CANONICAL"
+    },
+    {
+      "methods": [
+        "DrawFukidashi",
+        "DrawFukidashi_"
+      ],
+      "owner": "Staff",
+      "payload_boundary": "talk-composition-recipe.json",
+      "status": "PROVEN_CANONICAL"
+    }
+  ],
+  "occlusion": {
+    "avatar_primary_between_object_primary_and_object_late": true,
+    "cell_order": "row_y_ascending_then_x_descending",
+    "door_cell": [
+      8,
+      4
+    ],
+    "foreground_occlusion_is_not_a_global_sort": true,
+    "foreground_wall_cells": [
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "rear_wall_cells": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        8,
+        6
+      ]
+    ],
+    "underlay_before_objects": true
+  },
+  "passes": [
+    {
+      "native_method": "MapChip.DrawExtentionFloor",
+      "pass_id": "map-extension-floor",
+      "source": "shared MapChip extension wall contract"
+    },
+    {
+      "native_method": "MapChip.Draw",
+      "pass_id": "map-chip",
+      "source": "selected Room.floor_ topology"
+    },
+    {
+      "native_method": "ObjChip.Draw",
+      "pass_id": "object-chip-primary",
+      "source": "explicit FurnitureData instances only"
+    },
+    {
+      "native_method": "ObjChip.DrawWall",
+      "pass_id": "object-chip-wall",
+      "source": "wall predicate and raw door type 5"
+    },
+    {
+      "native_method": "Avatar.Draw",
+      "pass_id": "avatar-primary",
+      "source": "actor catalog"
+    },
+    {
+      "native_method": "Avatar.DrawSecondary",
+      "pass_id": "avatar-secondary",
+      "source": "actor catalog"
+    },
+    {
+      "native_method": "ObjChip.DrawLatePreview",
+      "pass_id": "object-chip-late-preview",
+      "source": "native pass slot"
+    },
+    {
+      "native_method": "ObjChip.DrawLate",
+      "pass_id": "object-chip-late",
+      "source": "native pass slot"
+    },
+    {
+      "native_method": "MapChip.DrawFloor",
+      "pass_id": "map-floor",
+      "source": "floor culling contract"
+    }
+  ],
+  "recipe_id": "ROOM_DRAW_PASS_GRAPH:room0-nine-pass",
+  "room0_logical_composition": {
+    "door_cell": [
+      8,
+      4
+    ],
+    "foreground_wall_cells": [
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "logical_order": [
+      "background",
+      "map-chip-and-map-floor-underlay",
+      "map-extension-floor-pale-boundary",
+      "object-chip-wall-rear-door-and-wall",
+      "object-chip-primary-native-furniture",
+      "avatar-primary-static-floor00-display-actors",
+      "object-chip-late-foreground-wall",
+      "diagnostic-overlay"
+    ],
+    "native_cell_order": "row_y_ascending_then_x_descending",
+    "native_pass_slots_preserved": true,
+    "rear_wall_cells": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        8,
+        6
+      ]
+    ],
+    "source_basis": [
+      "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json",
+      "knowledge/fixtures/accepted/runtime/default_map_chip_contract.json",
+      "knowledge/fixtures/accepted/runtime/display_asset_manifest.json",
+      "knowledge/fixtures/accepted/runtime/room_placement_contract.json",
+      "knowledge/fixtures/accepted/adb-gameplay-20260814/analysis.md",
+      "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+      "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs"
+    ],
+    "status": "approved_native_runtime_composition",
+    "underlay_committed_before_objects": true,
+    "wall_boundary_asset": "wall_01.png",
+    "wall_boundary_collision": "boundary_wall_not_passable"
+  },
+  "schema_version": "social-dev-k4-room-draw-pass-recipe-v1",
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:render_passes",
+    "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:render_composition",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Room.Draw",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:ObjChip.Draw/DrawWall/DrawFukidashi/gauges",
+    "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:Room.Draw@0x12CBB80"
+  ],
+  "status": "PROVEN_CANONICAL"
+}

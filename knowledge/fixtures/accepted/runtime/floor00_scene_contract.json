@@ -1,0 +1,227 @@
+{
+  "schema_version": "social-dev-floor00-scene-contract-v1",
+  "package": "floor00-native-bootstrap",
+  "status": "pass",
+  "semantic_status": "approved_for_runtime_contract",
+  "catalog_id": "floor00-native-bootstrap",
+  "scene_ref": {
+    "id": "room:0"
+  },
+  "bootstrap": {
+    "entrypoint": "AppData.NewGame",
+    "room_data_key": "data:room:0",
+    "room_constructor": {
+      "width": 14,
+      "height": 14,
+      "floor": 0,
+      "is_preview": false
+    },
+    "place_desk_argument": 0,
+    "initial_staff_count": 3
+  },
+  "map": {
+    "map_chip_variant": "floor_0",
+    "map_chip_width": 14,
+    "map_chip_height": 14,
+    "map_chip_cells": 196,
+    "obj_chip_width": 10,
+    "obj_chip_height": 10,
+    "obj_chip_cells": 100,
+    "raw_type_counts": {
+      "0": 31,
+      "1": 8,
+      "2": 6,
+      "3": 16,
+      "4": 2,
+      "5": 1,
+      "6": 36
+    }
+  },
+  "native_initial_furniture": [
+    {
+      "object_id": "furniture:3",
+      "furniture_data_id": 3,
+      "cell": [2, 4],
+      "raw_type": 2,
+      "selector_flag": "FLAG_INIT_DESK",
+      "scan_order": 0
+    },
+    {
+      "object_id": "furniture:3",
+      "furniture_data_id": 3,
+      "cell": [3, 4],
+      "raw_type": 2,
+      "selector_flag": "FLAG_INIT_DESK",
+      "scan_order": 1
+    },
+    {
+      "object_id": "furniture:3",
+      "furniture_data_id": 3,
+      "cell": [6, 4],
+      "raw_type": 2,
+      "selector_flag": "FLAG_INIT_DESK",
+      "scan_order": 2
+    },
+    {
+      "object_id": "furniture:12",
+      "furniture_data_id": 12,
+      "cell": [8, 5],
+      "raw_type": 1,
+      "selector_flag": "FLAG_INIT_PLACE",
+      "scan_order": 0
+    },
+    {
+      "object_id": "furniture:26",
+      "furniture_data_id": 26,
+      "cell": [8, 6],
+      "raw_type": 1,
+      "selector_flag": "FLAG_INIT_PLACE",
+      "scan_order": 1
+    },
+    {
+      "object_id": "furniture:56",
+      "furniture_data_id": 56,
+      "cell": [2, 7],
+      "raw_type": 1,
+      "selector_flag": "FLAG_INIT_PLACE",
+      "scan_order": 2
+    }
+  ],
+  "structural_facilities": [
+    {
+      "object_id": "furniture:0",
+      "anchor": [4, 2],
+      "map_anchor": [4, 5],
+      "raw_type": 4,
+      "footprint_cells": [
+        [3, 1], [4, 1], [5, 1],
+        [3, 2], [4, 2], [5, 2],
+        [3, 3], [4, 3], [5, 3]
+      ],
+      "seb_selector_id": 11,
+      "seb_filename": "big_base00.seb",
+      "image_asset_id": "asset:01_GAME_PACKS/chip/big_base00.png",
+      "sprite_record": {
+        "start_frame": 0,
+        "image_id": 18,
+        "source_x": 0,
+        "source_y": 0,
+        "width": 120,
+        "height": 61,
+        "destination_x": -40,
+        "destination_y": -21,
+        "flags": 0,
+        "reserved": 0
+      },
+      "render_policy": "static_single_frame_structural_composition"
+    },
+    {
+      "object_id": "furniture:0",
+      "anchor": [7, 2],
+      "map_anchor": [7, 5],
+      "raw_type": 4,
+      "footprint_cells": [
+        [6, 1], [7, 1], [8, 1],
+        [6, 2], [7, 2], [8, 2],
+        [6, 3], [7, 3], [8, 3]
+      ],
+      "seb_selector_id": 11,
+      "seb_filename": "big_base00.seb",
+      "image_asset_id": "asset:01_GAME_PACKS/chip/big_base00.png",
+      "sprite_record": {
+        "start_frame": 0,
+        "image_id": 18,
+        "source_x": 0,
+        "source_y": 0,
+        "width": 120,
+        "height": 61,
+        "destination_x": -40,
+        "destination_y": -21,
+        "flags": 0,
+        "reserved": 0
+      },
+      "render_policy": "static_single_frame_structural_composition"
+    }
+  ],
+  "door": {
+    "cell": [8, 4],
+    "raw_type": 5,
+    "installed_flag": 1,
+    "furniture_data": null
+  },
+  "render_composition": {
+    "status": "approved_native_runtime_composition",
+    "native_pass_slots_preserved": true,
+    "native_cell_order": "row_y_ascending_then_x_descending",
+    "logical_order": [
+      "background",
+      "map-chip-and-map-floor-underlay",
+      "map-extension-floor-pale-boundary",
+      "object-chip-wall-rear-door-and-wall",
+      "object-chip-primary-native-furniture",
+      "avatar-primary-static-floor00-display-actors",
+      "object-chip-late-foreground-wall",
+      "diagnostic-overlay"
+    ],
+    "rear_wall_cells": [
+      [1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1],
+      [8, 2], [8, 3], [8, 5], [8, 6]
+    ],
+    "door_cell": [8, 4],
+    "foreground_wall_cells": [[8, 7], [8, 8]],
+    "underlay_committed_before_objects": true,
+    "wall_boundary_asset": "wall_01.png",
+    "wall_boundary_collision": "boundary_wall_not_passable",
+    "source_basis": [
+      "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json",
+      "knowledge/fixtures/accepted/runtime/default_map_chip_contract.json",
+      "knowledge/fixtures/accepted/runtime/display_asset_manifest.json",
+      "knowledge/fixtures/accepted/runtime/room_placement_contract.json",
+      "knowledge/fixtures/accepted/adb-gameplay-20260814/analysis.md",
+      "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+      "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs"
+    ]
+  },
+  "actors": [
+    {
+      "id": "actor:staff:0",
+      "source_staff_id": 0,
+      "spawn_cell": [8, 4],
+      "initial_position": [280, -31]
+    },
+    {
+      "id": "actor:staff:1",
+      "source_staff_id": 1,
+      "spawn_cell": [8, 4],
+      "initial_position": [280, -31]
+    },
+    {
+      "id": "actor:staff:2",
+      "source_staff_id": 2,
+      "spawn_cell": [8, 4],
+      "initial_position": [280, -31]
+    }
+  ],
+  "exclusions": [
+    "Do not infer FurnitureData identity from raw ObjChip type or occupancy.",
+    "Do not draw selector-only furniture:2 or furniture:5 without a native cell binding.",
+    "Do not promote the raw type-4 structural anchors to FurnitureData; draw the verified furniture:0 SEB composition once at each native anchor.",
+    "Do not fan the three native initial actors out from the verified door entry position in the native spawn contract.",
+    "The separate floor00_display_policy may reserve verified empty walkable cells for a static presentation without changing native spawn evidence.",
+    "Exclude the additional red/black live-game prop from this bootstrap until its FurnitureData/selector binding is proven; do not infer or substitute an asset."
+  ],
+  "refs": {
+    "native_scene_assembly": "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json",
+    "native_room_floor_usage": "knowledge/fixtures/accepted/runtime/native_room_floor_usage_contract.json",
+    "actor_spawn": "knowledge/fixtures/accepted/runtime/actor_spawn_contract.json",
+    "strict_closure": "knowledge/fixtures/accepted/runtime/phase3c_strict_closure_contract.json",
+    "room_scene_runtime": "knowledge/fixtures/accepted/runtime/room_scene_runtime_contract.json",
+    "display_assets": "knowledge/fixtures/accepted/runtime/display_asset_manifest.json",
+    "display_policy": "knowledge/fixtures/accepted/runtime/floor00_display_policy.json"
+  },
+  "determinism": {
+    "algorithm": "sha256(seed)",
+    "hash_basis": "floor00-native-bootstrap-v2|room:0|196|100|6|3|structural-facilities:2|map-anchors:4,5;7,5|static-frame:0",
+    "content_hash": "0bd360d63a8cf2881607f907eb2bb5c616ccc94a009ece42f74ec59bbf717c5b"
+  }
+}

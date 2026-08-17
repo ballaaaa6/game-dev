@@ -1,0 +1,16 @@
+{
+  "authority_policy": "Candidates are classified only from direct source/native evidence; rejected claims remain in the revision history and are not active facts.",
+  "candidate_edge_count": 0,
+  "edge_count": 5433,
+  "k3_candidate_classification_counts": {
+    "CONFIRMED": 1,
+    "REJECTED": 184
+  },
+  "k4_visual_assembly_revision": "k4-visual-assembly-r2",
+  "k4_visual_assembly_status": "CLOSED",
+  "rejected_edge_count": 185,
+  "schema_version": "social-dev-k4-semantic-edge-graph-v1",
+  "status": "closed",
+  "unresolved_edge_count": 0,
+  "verified_edge_count": 5246
+}

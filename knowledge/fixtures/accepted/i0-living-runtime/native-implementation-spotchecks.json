@@ -1,0 +1,141 @@
+{
+  "schema_version": "social-dev-i0-native-implementation-spotchecks-v1",
+  "status": "PASS_REVALIDATED_PINNED_NATIVE_TARGETS",
+  "revalidation_scope": "targeted native/data anchors only; no broad binary rescan",
+  "source_identity": {
+    "apk": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
+    "libil2cpp": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a",
+    "metadata": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579",
+    "dump": "4487cba6916e159afefec2cd1a9ecf0d12d05b2d76126e7099a5d35323967eb2"
+  },
+  "checks": [
+    {
+      "method": "Staff.UpdateWork",
+      "rva": "0x12D4A7C",
+      "predicates": [
+        "frame_%20==0",
+        "Random(101)<41 typing",
+        "sleep<=25 when ratio<=99",
+        "equipment<21",
+        "talk<=10"
+      ],
+      "implementation": "runtime.ts#updateWork",
+      "status": "PASS"
+    },
+    {
+      "method": "Staff.Update",
+      "rva": "0x12D2EC8",
+      "predicates": [
+        "frame_%200==0",
+        "max(1,trunc(maxHp*5/100))",
+        "frameToStartRecovery=20",
+        "clear sleeping"
+      ],
+      "implementation": "runtime.ts#updateRecovery",
+      "status": "PASS"
+    },
+    {
+      "method": "Staff.UseEquip",
+      "rva": "0x12D4DEC",
+      "predicates": [
+        "frame<20",
+        "frame==40 StartAction",
+        "frame>=60 action",
+        "frame>=70 completion",
+        "recovery stock only when hp<max"
+      ],
+      "implementation": "runtime.ts#updateUseEquip",
+      "status": "PASS"
+    },
+    {
+      "method": "Staff.Talk",
+      "rva": "0x12D5588",
+      "predicates": [
+        "frame==20",
+        "frame==70 invited",
+        "frame==110 Lib.Random(0,4)",
+        "frame>=130 cleanup"
+      ],
+      "implementation": "runtime.ts#updateTalk",
+      "status": "PASS"
+    },
+    {
+      "method": "Staff.GotoEquip",
+      "rva": "0x12D6540",
+      "predicates": [
+        "AppData.Random(2)",
+        "candidate count draw",
+        "reserved count gate",
+        "ReserveUse"
+      ],
+      "implementation": "runtime.ts#gotoEquipFor",
+      "status": "PASS"
+    },
+    {
+      "method": "Staff.GotoTalk",
+      "rva": "0x12D6600",
+      "predicates": [
+        "room staff vector candidate",
+        "sitting/work/flag guards",
+        "bilateral relation",
+        "TO_STAFF"
+      ],
+      "implementation": "runtime.ts#gotoTalkFor",
+      "status": "PASS"
+    },
+    {
+      "method": "Staff.UpdateStayHome",
+      "rva": "0x12D59F4",
+      "predicates": [
+        "RecoverHp(1)",
+        "ratio>=40",
+        "door return",
+        "GotoDesk"
+      ],
+      "implementation": "runtime.ts#updateStayHome",
+      "status": "PASS"
+    },
+    {
+      "method": "Staff.GotoDesk",
+      "rva": "0x12D58EC",
+      "predicates": [
+        "valid desk",
+        "route clear",
+        "fade-in after door",
+        "invalid wander"
+      ],
+      "implementation": "runtime.ts#gotoDeskFor",
+      "status": "PASS"
+    },
+    {
+      "method": "Staff.UpdateMove",
+      "rva": "0x12D57AC",
+      "predicates": [
+        "route-head consumption",
+        "arrival dispatch only when empty"
+      ],
+      "implementation": "runtime.ts#updateMove",
+      "status": "PASS"
+    },
+    {
+      "method": "Staff.OnArriveNextNode",
+      "rva": "0x12D8184",
+      "predicates": [
+        "store last node",
+        "remove route head",
+        "OnArriveGoal when empty"
+      ],
+      "implementation": "movement.ts#onArriveNextNode",
+      "status": "PASS"
+    },
+    {
+      "method": "Staff.OnArriveGoal",
+      "rva": "0x12D8420",
+      "predicates": [
+        "11 explicit move modes"
+      ],
+      "implementation": "runtime.ts#handleArrival",
+      "status": "PASS"
+    }
+  ]
+}

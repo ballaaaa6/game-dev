@@ -1,0 +1,26 @@
+{
+  "schema": "i2-dashboard-api-contract-v1",
+  "status": "PASS",
+  "commands": [
+    "bindAgent",
+    "unbindAgent",
+    "assignTask",
+    "startTask",
+    "updateTaskProgress",
+    "completeTask",
+    "failTask",
+    "cancelTask",
+    "execute"
+  ],
+  "queries": [
+    "getSnapshot",
+    "getDashboardReadModel",
+    "getStaffRoster",
+    "getBindings",
+    "getTasks",
+    "getEvents",
+    "getLastCommandResult"
+  ],
+  "subscription": "subscribe(listener) returns disposer",
+  "error_codes": "I1 AssignmentErrorCode meanings preserved"
+}

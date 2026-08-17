@@ -1,0 +1,31 @@
+{
+  "schema": "i2-unknowns-v1",
+  "status": "KNOWN_BOUNDARIES_ONLY",
+  "items": [
+    {
+      "topic": "backend/auth/multi-user",
+      "status": "deferred",
+      "impact": "none on in-process I2 acceptance"
+    },
+    {
+      "topic": "fairness/queue/auto-reassign",
+      "status": "not implemented by scope",
+      "impact": "none; one active task per Agent/Staff remains"
+    },
+    {
+      "topic": "product persistence",
+      "status": "deferred",
+      "impact": "session is intentionally ephemeral"
+    },
+    {
+      "topic": "original C# execution",
+      "status": "not executed",
+      "impact": "source evidence only"
+    },
+    {
+      "topic": "visual gate",
+      "status": "existing evidence gate reports blocked_by_evidence after assets",
+      "impact": "Canvas smoke remains visible; no I2 semantic renderer change"
+    }
+  ]
+}

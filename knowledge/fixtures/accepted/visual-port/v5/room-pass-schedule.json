@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "phase": "V5",
+  "status": "PASS_STATIC_NATIVE_DRAW_ORDER",
+  "execution_mode": "INLINE_STATIC_ONLY",
+  "source": "knowledge/fixtures/accepted/runtime/room_placement_contract.json",
+  "native_order_preserved": true,
+  "passes": [
+    {"index": 0, "pass_id": "map-extension-floor", "owner": "MapChip", "method": "DrawExtentionFloor", "depth_role": "map extension under room objects", "grid_traversal": "y ascending, x descending", "predicate": "closed V4 extension trigger sets", "resource_family": "SEB 63 / source image 2", "proof": "NATIVE-CODE-PROVEN"},
+    {"index": 1, "pass_id": "map-chip", "owner": "MapChip", "method": "Draw", "depth_role": "map boundary", "grid_traversal": "y ascending, x descending", "predicate": "Room.floor_ >= 1 boundary path; floor_ < 1 no-draw boundary", "resource_family": "SEB 2 and optional SEB 7", "proof": "NATIVE-CODE-PROVEN"},
+    {"index": 2, "pass_id": "object-chip-primary", "owner": "ObjChip", "method": "Draw", "depth_role": "primary object/furniture", "grid_traversal": "y ascending, x descending", "predicate": "explicit native binding or room:0 structural facility", "resource_family": "FurnitureData SEB/image selectors", "proof": "CALL-FLOW-PROVEN"},
+    {"index": 3, "pass_id": "object-chip-wall", "owner": "ObjChip", "method": "DrawWall", "depth_role": "rear wall and door", "grid_traversal": "y ascending, x descending", "predicate": "closed wall predicates plus raw type 5 door", "resource_family": "wall SEB 5 / door SEB 6", "proof": "NATIVE-CODE-PROVEN"},
+    {"index": 4, "pass_id": "avatar-primary", "owner": "Avatar", "method": "Draw", "depth_role": "actor primary", "grid_traversal": "empty V5 slot", "predicate": "Staff/Avatar deferred to V6", "resource_family": "not synthesized", "proof": "SOURCE-LIMITED"},
+    {"index": 5, "pass_id": "avatar-secondary", "owner": "Avatar", "method": "DrawSecondary", "depth_role": "actor secondary", "grid_traversal": "empty V5 slot", "predicate": "Staff/Avatar deferred to V6", "resource_family": "not synthesized", "proof": "SOURCE-LIMITED"},
+    {"index": 6, "pass_id": "object-chip-late-preview", "owner": "ObjChip", "method": "DrawLatePreview", "depth_role": "late preview", "grid_traversal": "empty selected fixture slot", "predicate": "generic preview branch source-limited", "resource_family": "not synthesized", "proof": "SOURCE-LIMITED"},
+    {"index": 7, "pass_id": "object-chip-late", "owner": "ObjChip", "method": "DrawLate", "depth_role": "foreground wall occlusion", "grid_traversal": "y ascending, x descending", "predicate": "foreground cells [8,7] and [8,8] only", "resource_family": "wall SEB 5", "proof": "CALL-FLOW-PROVEN"},
+    {"index": 8, "pass_id": "map-floor", "owner": "MapChip", "method": "DrawFloor", "depth_role": "floor/map underlay after native late slots", "grid_traversal": "y ascending, x descending", "predicate": "native floor culling window and mapped raw indices", "resource_family": "direct map image selectors", "proof": "NATIVE-CODE-PROVEN"}
+  ],
+  "ordering": {
+    "comparator": "y ascending, x descending, layer ascending, key stable",
+    "do_not_y_sort_across_passes": true,
+    "foreground_cells": [[8, 7], [8, 8]],
+    "door_cell": [8, 4]
+  },
+  "runtime_implementation": "runtime/social-dev/src/v5/room.ts:PASS_SCHEDULE"
+}

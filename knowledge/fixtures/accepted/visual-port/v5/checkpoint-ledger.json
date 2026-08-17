@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "phase": "V5",
+  "title": "Original Room / RoomData orchestration and static room command preview",
+  "execution_mode": "INLINE_STATIC_ONLY",
+  "started_at": "2026-08-15",
+  "status": "PASS_STATIC",
+  "production_renderer_changed": false,
+  "source_roots_executed": false,
+  "network_used": false,
+  "local_server_started": false,
+  "emulator_or_adb_used": false,
+  "live_app_observation_used": false,
+  "screenshot_used_as_proof": false,
+  "v6_started": false,
+  "checkpoints": [
+    {
+      "id": "V5.0",
+      "status": "PASS",
+      "scope": "Baseline gate before Room implementation",
+      "verification": [
+        "Focused V1/V2/V3/V4 regression suites passed",
+        "Full Vitest passed: 40 files, 160 tests",
+        "TypeScript typecheck and production build passed",
+        "Existing V1/V3/asset/scene/floor/render/closure Python gates passed",
+        "Existing JSON validation, Python compilation, and git diff check passed"
+      ],
+      "next_checkpoint": "V5.1"
+    },
+    {
+      "id": "V5.1-V5.4",
+      "status": "PASS",
+      "scope": "Room / RoomData native surface, initialization, map topology, and floor selection",
+      "evidence": [
+        "room-native-map.json",
+        "room-init-contract.json",
+        "roomdata-topology.json",
+        "room-map-topology-contract.json"
+      ],
+      "next_checkpoint": "V5.5-V5.9"
+    },
+    {
+      "id": "V5.5-V5.9",
+      "status": "PASS",
+      "scope": "Room-owned pass schedule, orchestration, ordering, camera boundary, and static preview",
+      "evidence": [
+        "room-pass-schedule.json",
+        "room-mapchip-orchestration.json",
+        "room-objchip-orchestration.json",
+        "room-camera-boundary.json",
+        "room-command-parity-results.json"
+      ],
+      "next_checkpoint": "V5.10-V5.13"
+    },
+    {
+      "id": "V5.10-V5.13",
+      "status": "PASS",
+      "scope": "18-room fixture matrix, RoomV5 implementation, room:0 static scene, and preview harness",
+      "evidence": [
+        "room-fixture-manifest.json",
+        "room-furniture-orchestration.json",
+        "room00-static-scene.json",
+        "room-command-parity-results.json"
+      ],
+      "next_checkpoint": "V5.14-V5.15"
+    },
+    {
+      "id": "V5.14-V5.15",
+      "status": "PASS_STATIC_STOP_BEFORE_V6",
+      "scope": "Parity, regressions, source boundary, unknown policy, and final phase handoff",
+      "evidence": [
+        "room-command-parity-results.json",
+        "unknowns.json",
+        "docs/Phases/VisualPort/V5_PARITY_REPORT.md",
+        "docs/Phases/VisualPort/V5_PROGRESS.md"
+      ],
+      "stop_condition": "Stop after V5.15. No gameplay, Staff/Avatar, V6 investigation, production cutover, server, emulator, ADB, live app, or network evidence is in scope."
+    }
+  ]
+}

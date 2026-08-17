@@ -1,0 +1,153 @@
+{
+  "edges": [
+    {
+      "confidence": "source_backed_with_source_limit",
+      "from": "any_non_meeting_non_develop_state",
+      "id": "update-special-dispatch",
+      "move_mode": null,
+      "to": [
+        "STATE_MEETING",
+        "STATE_DEVELOP",
+        "state_handler_selected_by_indirect_dispatch"
+      ]
+    },
+    {
+      "confidence": "source_backed",
+      "from": "any_state_except_move_and_stay_home",
+      "id": "low-hp-door-escape",
+      "move_mode": "MOVE_MODE_GO_TO_DOOR",
+      "to": "STATE_MOVE"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "STATE_STAY_HOME",
+      "id": "stay-home-recovery-return",
+      "move_mode": "MOVE_MODE_GOTO_DESK",
+      "to": "STATE_WAIT_BACK_OF_DOOR"
+    },
+    {
+      "confidence": "source_backed_with_cadence_limit",
+      "from": "STATE_WORK",
+      "id": "work-to-typing",
+      "move_mode": null,
+      "to": "STATE_WORK_with_FLAG_TYPING"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "STATE_WORK",
+      "id": "work-to-equipment",
+      "move_mode": "MOVE_MODE_GOTO_EQUIPMENT",
+      "to": "STATE_MOVE"
+    },
+    {
+      "confidence": "source_backed_with_selection_limit",
+      "from": "STATE_WORK",
+      "id": "work-to-talk",
+      "move_mode": "MOVE_MODE_TO_STAFF",
+      "to": "STATE_MOVE"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "STATE_TALK_or_STATE_INVITE_TO_TALK",
+      "id": "talk-finish",
+      "move_mode": "MOVE_MODE_GOTO_DESK",
+      "to": "desk_goal"
+    },
+    {
+      "confidence": "source_backed_with_goal-dispatch_limit",
+      "from": "STATE_MOVE",
+      "id": "arrival-consumes-route",
+      "move_mode": null,
+      "to": "OnArriveGoal_or_next_node"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "equipment_use_or_reserved",
+      "id": "equipment-destroyed",
+      "move_mode": null,
+      "to": "STATE_WAIT"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "desk_user",
+      "id": "desk-destroyed",
+      "move_mode": "MOVE_MODE_WANDER",
+      "to": "STATE_WANDER"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "talking_or_invited",
+      "id": "colleague-removed",
+      "move_mode": null,
+      "to": "STATE_WAIT"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "STATE_NORMAL",
+      "kind": "state"
+    },
+    {
+      "id": "STATE_MOVE",
+      "kind": "state"
+    },
+    {
+      "id": "STATE_WORK",
+      "kind": "state"
+    },
+    {
+      "id": "STATE_USE_EQUIPMENT",
+      "kind": "state"
+    },
+    {
+      "id": "STATE_TALK",
+      "kind": "state"
+    },
+    {
+      "id": "STATE_INVITE_TO_TALK",
+      "kind": "state"
+    },
+    {
+      "id": "STATE_WAIT_BACK_OF_DOOR",
+      "kind": "state"
+    },
+    {
+      "id": "STATE_STAY_HOME",
+      "kind": "state"
+    },
+    {
+      "id": "STATE_WAIT",
+      "kind": "state"
+    },
+    {
+      "id": "STATE_WANDER",
+      "kind": "state"
+    },
+    {
+      "id": "route_search",
+      "kind": "movement"
+    },
+    {
+      "id": "door",
+      "kind": "room_resource"
+    },
+    {
+      "id": "desk",
+      "kind": "workstation"
+    },
+    {
+      "id": "equipment",
+      "kind": "furniture"
+    },
+    {
+      "id": "colleague",
+      "kind": "staff"
+    }
+  ],
+  "schema_version": "social-dev-behavior-first-staff-transition-graph-v1",
+  "status": "pass_with_source_limits",
+  "unresolved_edges": [
+    "Exact moveMode-to-OnArriveGoal handler bodies.",
+    "Exact full Update dispatcher mapping for states 0, 3, 4, 5, 6, 7, 8, 9, 10, 11 and 13."
+  ]
+}

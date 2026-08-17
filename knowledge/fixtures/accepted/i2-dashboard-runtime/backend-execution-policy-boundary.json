@@ -1,0 +1,9 @@
+{
+  "schema": "i2-backend-execution-policy-boundary-v1",
+  "status": "BACKEND_DEFERRED",
+  "backend_connected": false,
+  "llm_connected": false,
+  "auth_or_multi_user": false,
+  "running_meaning": "product task lifecycle only",
+  "living_autonomy": "continues from I0 scheduler regardless of product status"
+}

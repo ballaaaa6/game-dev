@@ -1,0 +1,41 @@
+{
+  "schema_version": "social-dev-visual-port-v6-staff-command-parity-results-v1",
+  "status": "pass_static",
+  "comparison_boundary": "deterministic command/state parity only; native pixels are not claimed",
+  "fixture_count": 12,
+  "fields_checked": [
+    "StaffData ID",
+    "action",
+    "direction",
+    "SEB ID",
+    "frame",
+    "TexId",
+    "U/V/W/H",
+    "TransX/TransY",
+    "ReverseU/ReverseV",
+    "blend/color/alpha",
+    "world position",
+    "camera offset",
+    "final destination",
+    "Room pass",
+    "command count/order"
+  ],
+  "results": {
+    "wait": {"right": {"seb_id": 10, "frame": 0, "image_selector_id": 86, "tex_id": 0, "command_count": 1}, "left": {"seb_id": 11, "frame": 0, "image_selector_id": 86, "tex_id": 0, "command_count": 1}, "up": {"seb_id": 12, "frame": 0, "image_selector_id": 86, "tex_id": 0, "command_count": 1}, "down": {"seb_id": 13, "frame": 0, "image_selector_id": 86, "tex_id": 0, "command_count": 1}},
+    "move": {"right": {"seb_id": 1, "frame": 0, "image_selector_id": 86, "tex_id": 0, "command_count": 1}, "left": {"seb_id": 2, "frame": 0, "image_selector_id": 86, "tex_id": 0, "command_count": 1}, "up": {"seb_id": 3, "frame": 0, "image_selector_id": 86, "tex_id": 0, "command_count": 1}, "down": {"seb_id": 4, "frame": 0, "image_selector_id": 86, "tex_id": 0, "command_count": 1}},
+    "typing": {"right": {"seb_id": 23, "frame": 0, "image_selector_id": 86, "tex_id": 0, "command_count": 1}, "left": {"seb_id": 24, "frame": 0, "image_selector_id": 86, "tex_id": 0, "command_count": 1}, "up": {"seb_id": 25, "frame": 0, "image_selector_id": 86, "tex_id": 0, "command_count": 1}, "down": {"seb_id": 26, "frame": 0, "image_selector_id": 86, "tex_id": 0, "command_count": 1}}
+  },
+  "all_staff_draws": {
+    "group_id": "resHuman_",
+    "room_pass": "avatar-primary",
+    "world_position": [280, -31],
+    "camera_offset": [0, 0],
+    "screen_anchor": "world + camera offset",
+    "three_actor_wait_right_command_count": 3
+  },
+  "determinism": {
+    "algorithm": "stable-json-sha256",
+    "integrated_manifest_sha256": "bfab918ef5ea04512da380b4d5134c4b02d1d7ca29fd9c6fb47d7b4e40944142"
+  },
+  "pixel_status": "DEFERRED_TO_V7"
+}

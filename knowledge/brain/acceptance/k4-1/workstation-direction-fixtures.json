@@ -1,0 +1,123 @@
+{
+  "fixtures": [
+    {
+      "FurnitureData": 3,
+      "cell": [
+        2,
+        4
+      ],
+      "direction": "DIRECTION_DOWN",
+      "live_sequence": [
+        {
+          "native": "0x12C1C70",
+          "operation": "desk primary Seb/AppData.DrawSeb",
+          "order": 0,
+          "owner": "ObjChip.Draw type-2 inner"
+        },
+        {
+          "guard": "staffId_ != -1",
+          "native": "0x12C1E38",
+          "operation": "chair subSeb ResourceManager.DrawSeb",
+          "order": 1,
+          "owner": "ObjChip.Draw type-2 inner",
+          "seb_frame": 1
+        },
+        {
+          "guard": "installed outer path; Staff flags bit 2 filter",
+          "native": "0x12C1ED4 -> 0x12DABA8",
+          "operation": "Staff.Draw offset overload",
+          "order": 2,
+          "owner": "ObjChip.staffs_"
+        },
+        {
+          "guard": "staffId_ != -1",
+          "native": "0x12C26DC",
+          "operation": "late chair subSeb foreground ResourceManager.DrawSeb",
+          "order": 3,
+          "owner": "ObjChip.Draw type-2 inner",
+          "seb_frame": 2
+        }
+      ],
+      "raw_direction": 3,
+      "raw_type": 2
+    },
+    {
+      "FurnitureData": 3,
+      "cell": [
+        3,
+        4
+      ],
+      "direction": "DIRECTION_UP",
+      "live_sequence": [
+        {
+          "guard": "staffId_ != -1",
+          "native": "0x12C2460",
+          "operation": "chair subSeb ResourceManager.DrawSeb",
+          "order": 0,
+          "owner": "ObjChip.Draw type-2 inner",
+          "seb_frame": 0
+        },
+        {
+          "guard": "installed outer path; Staff flags bit 2 filter",
+          "native": "0x12C2510 -> 0x12DABA8",
+          "operation": "Staff.Draw offset overload",
+          "order": 1,
+          "owner": "ObjChip.staffs_"
+        },
+        {
+          "native": "0x12C1C70",
+          "operation": "desk primary Seb/AppData.DrawSeb",
+          "order": 2,
+          "owner": "ObjChip.Draw type-2 inner"
+        }
+      ],
+      "raw_direction": 2,
+      "raw_type": 2
+    },
+    {
+      "FurnitureData": 3,
+      "cell": [
+        6,
+        4
+      ],
+      "direction": "DIRECTION_UP",
+      "live_sequence": [
+        {
+          "guard": "staffId_ != -1",
+          "native": "0x12C2460",
+          "operation": "chair subSeb ResourceManager.DrawSeb",
+          "order": 0,
+          "owner": "ObjChip.Draw type-2 inner",
+          "seb_frame": 0
+        },
+        {
+          "guard": "installed outer path; Staff flags bit 2 filter",
+          "native": "0x12C2510 -> 0x12DABA8",
+          "operation": "Staff.Draw offset overload",
+          "order": 1,
+          "owner": "ObjChip.staffs_"
+        },
+        {
+          "native": "0x12C1C70",
+          "operation": "desk primary Seb/AppData.DrawSeb",
+          "order": 2,
+          "owner": "ObjChip.Draw type-2 inner"
+        }
+      ],
+      "raw_direction": 2,
+      "raw_type": 2
+    }
+  ],
+  "furniture_data": {
+    "id": 3,
+    "seb_": 1,
+    "subSeb_": 3,
+    "type_": 2
+  },
+  "schema_version": "social-dev-k4-1-workstation-direction-fixtures-v1",
+  "source_refs": [
+    "knowledge/fixtures/accepted/furniture_asset_metadata.json:furniture_data_id 3",
+    "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0].object_cells"
+  ],
+  "status": "PROVEN_CANONICAL"
+}

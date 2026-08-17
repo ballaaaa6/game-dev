@@ -1,0 +1,37 @@
+{
+  "schema_version": "csharp-semantic-inventory-targets-v1",
+  "primary_files": [
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/BaseData.cs",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/DataManager.cs",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Player.cs",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/AppData.cs"
+  ],
+  "structural_globs": [
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/*.cs",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/*.cs",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game.routeSearch/*.cs",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/*.cs"
+  ],
+  "deep_symbols": [
+    "BaseData",
+    "DataManager",
+    "Player",
+    "Staff",
+    "Room",
+    "AppData",
+    "MapChip",
+    "ObjChip",
+    "Develop",
+    "Proposal",
+    "Meeting",
+    "GameRecord"
+  ],
+  "field_groups": {},
+  "supporting_evidence_roots": [
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/kairo.unity.io",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/kairo.unity.util"
+  ]
+}

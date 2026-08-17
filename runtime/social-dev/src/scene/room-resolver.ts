@@ -1,4 +1,4 @@
-import displayAssetManifestJson from "../../evidence/display_asset_manifest.json";
+import { displayAssetManifestJson } from "../catalog/load-original-runtime-pack";
 import type {
   DefaultMapChipContract,
   NativeRoomFloorTopologyVariant,

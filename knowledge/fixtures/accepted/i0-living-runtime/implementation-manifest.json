@@ -1,0 +1,83 @@
+{
+  "schema_version": "social-dev-i0-implementation-manifest-v1",
+  "status": "PASS_I0_IMPLEMENTATION",
+  "modules": [
+    "runtime/social-dev/src/core/living/constants.ts",
+    "runtime/social-dev/src/core/living/types.ts",
+    "runtime/social-dev/src/core/living/catalog.ts",
+    "runtime/social-dev/src/core/living/rng.ts",
+    "runtime/social-dev/src/core/living/trace.ts",
+    "runtime/social-dev/src/core/living/astar.ts",
+    "runtime/social-dev/src/core/living/movement.ts",
+    "runtime/social-dev/src/core/living/furniture.ts",
+    "runtime/social-dev/src/core/living/room.ts",
+    "runtime/social-dev/src/core/living/staff.ts",
+    "runtime/social-dev/src/core/living/planning.ts",
+    "runtime/social-dev/src/core/living/runtime.ts",
+    "runtime/social-dev/src/core/living/projection.ts",
+    "runtime/social-dev/src/core/living/scenario-runner.ts"
+  ],
+  "scenarios": [
+    {
+      "id": "S1",
+      "status": "PASS",
+      "assertions": 4
+    },
+    {
+      "id": "S2",
+      "status": "PASS",
+      "assertions": 4
+    },
+    {
+      "id": "S3",
+      "status": "PASS",
+      "assertions": 5
+    },
+    {
+      "id": "S4",
+      "status": "PASS",
+      "assertions": 4
+    },
+    {
+      "id": "S5",
+      "status": "PASS",
+      "assertions": 3
+    },
+    {
+      "id": "S6",
+      "status": "PASS",
+      "assertions": 3
+    },
+    {
+      "id": "S7",
+      "status": "PASS",
+      "assertions": 4
+    },
+    {
+      "id": "S8",
+      "status": "PASS",
+      "assertions": 3
+    },
+    {
+      "id": "S9",
+      "status": "PASS",
+      "assertions": 3
+    },
+    {
+      "id": "S10",
+      "status": "PASS",
+      "assertions": 2
+    }
+  ],
+  "constraints": {
+    "inline_only": true,
+    "browser": false,
+    "network": false,
+    "server": false,
+    "emulator": false,
+    "v8": false,
+    "mapchip_changed": false,
+    "renderer_changed": false,
+    "product_policy_implemented": false
+  }
+}

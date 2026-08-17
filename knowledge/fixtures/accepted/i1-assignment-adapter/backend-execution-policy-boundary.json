@@ -1,0 +1,8 @@
+{
+  "schema_version": "social-dev-i1-backend-execution-policy-boundary-v1",
+  "status": "PRODUCT_POLICY_PENDING_AFTER_I1",
+  "implemented": false,
+  "I1_rule": "Living interruptions do not mutate product task status automatically.",
+  "deferred_questions": ["home behavior", "equipment detour", "talk detour", "desk destruction", "offline agent", "backend failure", "manual pause", "CONTINUE/PAUSE/SLOW/WAIT_FOR_AVAILABLE policy"],
+  "forbidden_in_I1": ["AI work", "LLM execution", "backend pause", "network", "server", "task scheduler"]
+}

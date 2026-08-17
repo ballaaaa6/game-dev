@@ -1,0 +1,165 @@
+{
+  "schema_version": "social-dev-camera-coordinate-contract-v1",
+  "package": "social-dev-camera-coordinate-contract",
+  "status": "pass",
+  "semantic_status": "approved_for_runtime_contract",
+  "catalog_id": "display-slice-01",
+  "scene_ref": {
+    "id": "room:0",
+    "contract": {
+      "path": "knowledge/fixtures/accepted/runtime/scene_catalog_contract.json",
+      "sha256": "c0fd13773ba79590dcea2c010a2b53af81fa3af9e1f35090372b94dcc727aa94",
+      "status": "pass",
+      "semantic_status": "approved_for_runtime_contract"
+    }
+  },
+  "coordinate_system": {
+    "grid": {
+      "width": 10,
+      "height": 10,
+      "row_axis": "y",
+      "column_axis": "x",
+      "flat_index": "x + y * width",
+      "status": "verified"
+    },
+    "cell_origin": {
+      "x": "(x + y) * 20 + 20",
+      "y": "(y - x) * 10 + 18",
+      "status": "verified_source_formula"
+    },
+    "standing_positions": {
+      "base": {
+        "x": "(x + y) * 20",
+        "y": "(y - x) * 10"
+      },
+      "offsets": [
+        [
+          34,
+          25
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          34,
+          11
+        ],
+        [
+          6,
+          25
+        ]
+      ],
+      "door_fixture_values": [
+        [
+          274,
+          -15
+        ],
+        [
+          246,
+          -29
+        ],
+        [
+          274,
+          -29
+        ],
+        [
+          246,
+          -15
+        ]
+      ],
+      "status": "verified_native_formula"
+    },
+    "actor_spawn_position": {
+      "formula": "(x + y) * 20 + 40, (y - x) * 10 + 9",
+      "door_fixture_values": [
+        280,
+        -31
+      ],
+      "status": "verified_source_bounded"
+    }
+  },
+  "camera": {
+    "transform": "screen = world + offset",
+    "offset_units": "screen pixels in the original integer draw coordinate space",
+    "fixture_offset": [
+      0,
+      0
+    ],
+    "fixture_scale": 1,
+    "fixture_status": "explicit_runtime_fixture_input",
+    "source_boundary": "Room.Draw(Graphics, ofx, ofy, drawMode) forwards ofx/ofy to scene draw calls; the original UI's dynamic viewport policy is not inferred."
+  },
+  "draw_offset_contract": {
+    "room_draw_parameters": [
+      "ofx",
+      "ofy"
+    ],
+    "actor_draw_parameters": [
+      "ofx",
+      "ofy"
+    ],
+    "status": "verified_boundary"
+  },
+  "provenance": {
+    "source_slices": [
+      {
+        "type": "Room",
+        "file": "sources/raw/1_Click_CSharp_Code update/game/Room.cs",
+        "line_start": 6168,
+        "line_end": 6227,
+        "purpose": "Room grid-index to screen-coordinate formulas",
+        "file_sha256": "e8c8916c12f2902898c0de6ce8aa59f8ca0c738dd5c482aa64919b775d90662f",
+        "slice_sha256": "b44aaa556c6b005e38459c0bbdda4e4daf79ed6b9e6d6744752f44368aac4d25",
+        "expected_file_sha256": "e8c8916c12f2902898c0de6ce8aa59f8ca0c738dd5c482aa64919b775d90662f",
+        "hash_status": "pass",
+        "status": "evidence_only"
+      },
+      {
+        "type": "Room",
+        "file": "sources/raw/1_Click_CSharp_Code update/game/Room.cs",
+        "line_start": 1165,
+        "line_end": 1215,
+        "purpose": "Room.Draw consumes explicit camera offsets",
+        "file_sha256": "e8c8916c12f2902898c0de6ce8aa59f8ca0c738dd5c482aa64919b775d90662f",
+        "slice_sha256": "14a9704a7f7978e0bf5174a6f7c0bd54e33985f5fb0b6bbbc8d137cde51a93ae",
+        "expected_file_sha256": "e8c8916c12f2902898c0de6ce8aa59f8ca0c738dd5c482aa64919b775d90662f",
+        "hash_status": "pass",
+        "status": "evidence_only"
+      },
+      {
+        "type": "Staff",
+        "file": "sources/raw/1_Click_CSharp_Code update/game/Staff.cs",
+        "line_start": 7051,
+        "line_end": 7084,
+        "purpose": "Staff.Draw forwards the camera offsets to the actor draw path",
+        "file_sha256": "9eaf34d6fad6265f69d6b10ca9b3c5baa60f1ad932e4ca7059c7c131292f9d37",
+        "slice_sha256": "61c16a5b7e95a1800604109d26911aed7f951028d5f57e94242e3c6aa5ab77df",
+        "expected_file_sha256": "9eaf34d6fad6265f69d6b10ca9b3c5baa60f1ad932e4ca7059c7c131292f9d37",
+        "hash_status": "pass",
+        "status": "evidence_only"
+      },
+      {
+        "type": "ObjChip",
+        "file": "sources/raw/1_Click_CSharp_Code update/game/ObjChip.cs",
+        "line_start": 10419,
+        "line_end": 10578,
+        "purpose": "ObjChip.GetStandingPositions deterministic four-point formula",
+        "file_sha256": "49ed2d780cddcc6cfda40de07206da59b54d5be5d0bfcb6ff03f479877d13947",
+        "slice_sha256": "1b9d936f87ff3b3e77723241bbe84e5a3fb696f9b97385117b60186b175d79a1",
+        "expected_file_sha256": "49ed2d780cddcc6cfda40de07206da59b54d5be5d0bfcb6ff03f479877d13947",
+        "hash_status": "pass",
+        "status": "evidence_only"
+      }
+    ],
+    "source_policy": "C# and native artifacts are evidence inputs only; they are not runtime imports."
+  },
+  "limits": [
+    "This contract closes coordinate formulas and the camera-offset interface, not a claim about an original default viewport size.",
+    "Sprite crop, scale, alpha composition and draw ordering remain renderer contracts."
+  ],
+  "determinism": {
+    "algorithm": "stable-json-sha256 excluding generated_at_utc and contract_hash",
+    "contract_hash": "87f35ffd01788c959e1c367c52c6d803f6e457bb423cfda8a91e17314e2a42ed"
+  }
+}

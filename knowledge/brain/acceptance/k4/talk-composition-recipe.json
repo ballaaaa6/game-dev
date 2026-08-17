@@ -1,0 +1,561 @@
+{
+  "autonomous_talk": {
+    "frame_20": {
+      "AddFukidashi": {
+        "delay": 0,
+        "native": "0x12D5664 -> 0x12D3C50",
+        "offsetY": 0
+      },
+      "guard_native": [
+        "frame == 20",
+        "tbz bit 3 falls through only when bit 8 is clear"
+      ],
+      "pool": {
+        "default_data_index": 139832,
+        "default_value_entry_index": 7726,
+        "encoded_usage": "0x80000007",
+        "field_ref_index": 3,
+        "field_ref_type_index": 8513,
+        "handle": "0x27D7E48",
+        "private_field_index": 18306,
+        "private_local_field_index": 3,
+        "private_type_index": 2620,
+        "relocated_array_va": "0x288A948",
+        "role": "talk frame20",
+        "usage_kind": 4,
+        "values": [
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      "random": {
+        "bound": 101,
+        "condition": "random <= 100",
+        "native_call": "0x12D5624 -> AppData.Random"
+      },
+      "speaker_role": "initiator Staff.Talk while FLAG_INVITED_TALK bit 8 is clear"
+    },
+    "frame_70": {
+      "AddFukidashi": {
+        "delay": 0,
+        "native": "0x12D56B8 -> 0x12D3C50",
+        "offsetY": 0
+      },
+      "guard_native": [
+        "frame == 70",
+        "tbz bit 3 skips when bit 8 is clear"
+      ],
+      "pool": {
+        "default_data_index": 147624,
+        "default_value_entry_index": 7777,
+        "encoded_usage": "0x8000006D",
+        "field_ref_index": 54,
+        "field_ref_type_index": 8513,
+        "handle": "0x27D7E50",
+        "private_field_index": 18357,
+        "private_local_field_index": 54,
+        "private_type_index": 2620,
+        "relocated_array_va": "0x288AAE0",
+        "role": "talk frame70",
+        "usage_kind": 4,
+        "values": [
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43
+        ]
+      },
+      "random": {
+        "native_array_call": "0x12D3CA4",
+        "selection": "array overload AppData.Random(length)"
+      },
+      "speaker_role": "invited/target Staff.Talk while FLAG_INVITED_TALK bit 8 is set"
+    }
+  },
+  "blocking": false,
+  "classification": "REPRODUCED_EXACT",
+  "cleanup": {
+    "effect": "frame_=0; colleagueId_=-1; clear invited/reserved flags; state WAIT",
+    "method": "OnColleagueRemoved",
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 10910,
+      "note": "Partner removal cleanup.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "public void OnColleagueRemoved()"
+    }
+  },
+  "csharp_proof": {
+    "array_overload_random": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:line 12524",
+    "draw": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:line 12854",
+    "field": "fukidashi__",
+    "field_offsets": {
+      "FUKI_DELAY": 2,
+      "FUKI_END_": 4,
+      "FUKI_FRAME": 1,
+      "FUKI_ID": 0,
+      "FUKI_OFFSET_Y": 3
+    },
+    "single_overload_storage": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:line 12621",
+    "update": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:line 12690"
+  },
+  "fukidashi": {
+    "blocking": false,
+    "closure_artifact": "knowledge/brain/acceptance/k4-1/fukidashi-payload-closure.json",
+    "known": {
+      "invocation_frames": [
+        20,
+        70
+      ],
+      "native_static_field_handles": [
+        "0x27D7E20",
+        "0x27D7E28",
+        "0x27D7E30",
+        "0x27D7E48",
+        "0x27D7E50"
+      ],
+      "pools": [
+        {
+          "default_data_index": 147312,
+          "default_value_entry_index": 7766,
+          "encoded_usage": "0x80000057",
+          "field_ref_index": 43,
+          "field_ref_type_index": 8513,
+          "handle": "0x27D7E20",
+          "private_field_index": 18346,
+          "private_local_field_index": 43,
+          "private_type_index": 2620,
+          "relocated_array_va": "0x288AA88",
+          "role": "invite busy/reject",
+          "usage_kind": 4,
+          "values": [
+            44,
+            45,
+            46
+          ]
+        },
+        {
+          "default_data_index": 156896,
+          "default_value_entry_index": 7826,
+          "encoded_usage": "0x800000CF",
+          "field_ref_index": 103,
+          "field_ref_type_index": 8513,
+          "handle": "0x27D7E28",
+          "private_field_index": 18406,
+          "private_local_field_index": 103,
+          "private_type_index": 2620,
+          "relocated_array_va": "0x288AC68",
+          "role": "invite opening",
+          "usage_kind": 4,
+          "values": [
+            25,
+            26,
+            27,
+            28,
+            29,
+            68
+          ]
+        },
+        {
+          "default_data_index": 160504,
+          "default_value_entry_index": 7945,
+          "encoded_usage": "0x800001BD",
+          "field_ref_index": 222,
+          "field_ref_type_index": 8513,
+          "handle": "0x27D7E30",
+          "private_field_index": 18525,
+          "private_local_field_index": 222,
+          "private_type_index": 2620,
+          "relocated_array_va": "0x288B020",
+          "role": "invite response",
+          "usage_kind": 4,
+          "values": [
+            22,
+            23,
+            24
+          ]
+        },
+        {
+          "default_data_index": 139832,
+          "default_value_entry_index": 7726,
+          "encoded_usage": "0x80000007",
+          "field_ref_index": 3,
+          "field_ref_type_index": 8513,
+          "handle": "0x27D7E48",
+          "private_field_index": 18306,
+          "private_local_field_index": 3,
+          "private_type_index": 2620,
+          "relocated_array_va": "0x288A948",
+          "role": "talk frame20",
+          "usage_kind": 4,
+          "values": [
+            30,
+            31,
+            32,
+            33,
+            34
+          ]
+        },
+        {
+          "default_data_index": 147624,
+          "default_value_entry_index": 7777,
+          "encoded_usage": "0x8000006D",
+          "field_ref_index": 54,
+          "field_ref_type_index": 8513,
+          "handle": "0x27D7E50",
+          "private_field_index": 18357,
+          "private_local_field_index": 54,
+          "private_type_index": 2620,
+          "relocated_array_va": "0x288AAE0",
+          "role": "talk frame70",
+          "usage_kind": 4,
+          "values": [
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43
+          ]
+        }
+      ],
+      "selection": "array overload calls AppData.Random(length), then single overload",
+      "storage": "[id,40,delay,offsetY]"
+    },
+    "status": "PROVEN_CANONICAL"
+  },
+  "invitation": {
+    "frame_60_busy_or_reject": {
+      "native": "0x12D5560",
+      "pool": {
+        "default_data_index": 147312,
+        "default_value_entry_index": 7766,
+        "encoded_usage": "0x80000057",
+        "field_ref_index": 43,
+        "field_ref_type_index": 8513,
+        "handle": "0x27D7E20",
+        "private_field_index": 18346,
+        "private_local_field_index": 43,
+        "private_type_index": 2620,
+        "relocated_array_va": "0x288AA88",
+        "role": "invite busy/reject",
+        "usage_kind": 4,
+        "values": [
+          44,
+          45,
+          46
+        ]
+      },
+      "random": {
+        "bound": 101,
+        "busy_threshold": 10
+      },
+      "speaker_role": "target invitation response"
+    },
+    "frame_60_response": {
+      "native": "0x12D53E0",
+      "pool": {
+        "default_data_index": 160504,
+        "default_value_entry_index": 7945,
+        "encoded_usage": "0x800001BD",
+        "field_ref_index": 222,
+        "field_ref_type_index": 8513,
+        "handle": "0x27D7E30",
+        "private_field_index": 18525,
+        "private_local_field_index": 222,
+        "private_type_index": 2620,
+        "relocated_array_va": "0x288B020",
+        "role": "invite response",
+        "usage_kind": 4,
+        "values": [
+          22,
+          23,
+          24
+        ]
+      },
+      "speaker_role": "target invitation response"
+    },
+    "opening_frame_20": {
+      "native": "0x12D522C",
+      "pool": {
+        "default_data_index": 156896,
+        "default_value_entry_index": 7826,
+        "encoded_usage": "0x800000CF",
+        "field_ref_index": 103,
+        "field_ref_type_index": 8513,
+        "handle": "0x27D7E28",
+        "private_field_index": 18406,
+        "private_local_field_index": 103,
+        "private_type_index": 2620,
+        "relocated_array_va": "0x288AC68",
+        "role": "invite opening",
+        "usage_kind": 4,
+        "values": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          68
+        ]
+      },
+      "speaker_role": "initiator inviting target"
+    }
+  },
+  "localization": {
+    "catalog": "knowledge/brain/acceptance/k4-1/fukidashi-localization-catalog.json",
+    "ids": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      68
+    ]
+  },
+  "native_execution": {
+    "ObjChip.DrawFukidashi": "0x12C3E28",
+    "Staff.AddFukidashi_": "0x12D3C50",
+    "Staff.DrawFukidashi": "0x12DDAE4",
+    "Staff.DrawFukidashi_single": "0x12DDCA4",
+    "Staff.InviteStaffToTalk": "0x12D5090",
+    "Staff.OnInvitedTalk": "0x12D6378",
+    "Staff.Talk": "0x12D5588"
+  },
+  "native_proof": {
+    "Staff.AddFukidashi_array": "0x12D3C50",
+    "Staff.AddFukidashi_single": "0x12DDA90",
+    "Staff.InviteStaffToTalk": "0x12D5090",
+    "Staff.Talk": "0x12D5588"
+  },
+  "payload_storage_and_lifetime": {
+    "add_single": {
+      "busy_guard": "existing frame_lifetime > 0 refuses replacement",
+      "ref": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:AddFukidashi_(FUKIDASHI,int,int)",
+      "writes": {
+        "delay": "argument",
+        "frame_lifetime": 40,
+        "id": 0,
+        "offsetY": "argument"
+      }
+    },
+    "cleanup": {
+      "behavior": "frame_=0; colleagueId_=-1; clear invited/reserved flags; state WAIT",
+      "ref": "knowledge/fixtures/accepted/behavior-first/talk-social-contract.json:partner_cleanup"
+    },
+    "draw": {
+      "guards": [
+        "frame_lifetime > 0",
+        "delay <= 0"
+      ],
+      "owner": "AppData.DrawFukidashi",
+      "position": "staff position plus offsetY, y minus 20",
+      "ref": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:DrawFukidashi_()"
+    },
+    "field": "Staff.fukidashi__",
+    "indices": {
+      "delay": 2,
+      "frame_lifetime": 1,
+      "id": 0,
+      "offsetY": 3
+    },
+    "update": {
+      "behavior": "decrement delay; when delay <= 0 decrement frame_lifetime and reset delay to 0",
+      "ref": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:UpdateFukidashi_()"
+    }
+  },
+  "recipe_id": "TALK_COMPOSITION_RECIPE:Staff.Talk",
+  "research_findings": [
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "The autonomous Talk frame-20/frame-70 pools and field-handle relocation chain",
+      "finding_id": "talk.autonomous-pools"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "Invite opening, busy/reject, and response pools plus random bounds",
+      "finding_id": "talk.invitation-pools"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "EN/JA resource rows, language path, storage, timing, offset, lifetime, draw, and cleanup",
+      "finding_id": "talk.localization-and-lifecycle"
+    },
+    {
+      "classification": "REJECTED_BY_SOURCE",
+      "finding": "Treat 0x27D7E40 as an autonomous Talk pool",
+      "finding_id": "talk.extra-handle-0x27D7E40"
+    },
+    {
+      "classification": "REPRODUCED_WITH_CORRECTION",
+      "finding": "Promote a separate Room0 door animation frame timeline",
+      "finding_id": "door.distinct-visual-animation-timeline"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "Room0 null-FurnitureData DrawWall path is static while action state remains separate",
+      "finding_id": "door.null-furnituredata-consumer"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "Desk/chair/Staff.Draw live type-2 ordering and installed ownership guard",
+      "finding_id": "workstation.type2-live-order"
+    },
+    {
+      "classification": "REPRODUCED_WITH_CORRECTION",
+      "finding": "Treat preview=true Draw as the live normal Room0 path",
+      "finding_id": "workstation.preview-is-live"
+    }
+  ],
+  "roles": {
+    "initiator": {
+      "guards": [
+        "target not null",
+        "target != self",
+        "target flags do not include 0x840",
+        "target flag mask 6 equals sitting",
+        "target state == STATE_WORK",
+        "standing/use cell is not type 6"
+      ],
+      "method": "GotoTalk",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 3262,
+        "note": "Random colleague selection and bilateral flags.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "private void GotoTalk()"
+      },
+      "target_selection": "one AppData.Random(staffs_.Length) staff id",
+      "writes": [
+        "initiator FLAG_RESERVED_TALK",
+        "target FLAG_RESERVED_TALK",
+        "target FLAG_INVITED_TALK",
+        "colleagueId_ both sides",
+        "initiator state MOVE",
+        "initiator move mode TO_STAFF"
+      ]
+    },
+    "partner_cleanup": {
+      "effect": "frame_=0; colleagueId_=-1; clear invited/reserved flags; state WAIT",
+      "method": "OnColleagueRemoved",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 10910,
+        "note": "Partner removal cleanup.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "public void OnColleagueRemoved()"
+      }
+    },
+    "target": {
+      "guards": [
+        "colleagueId_ is valid",
+        "frame >=20",
+        "frame >=60 branch can select talk goal type 0"
+      ],
+      "method": "InviteStaffToTalk",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 2359,
+        "note": "Invitation timing and target callback.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "private void InviteStaffToTalk()"
+      },
+      "writes": [
+        "state MOVE",
+        "move mode TO_STAND_TALKING",
+        "target OnInvitedTalk"
+      ]
+    }
+  },
+  "schema_version": "social-dev-k4-1-fukidashi-payload-closure-v1",
+  "selection_and_pose": {
+    "arrival_pose": {
+      "INVITE_FRAME_20": "reverse direction + 6",
+      "INVITE_FRAME_GT_40": "reverse direction + 10",
+      "TO_BACK_OF_CHAIR": {
+        "move_mode": 9,
+        "selector": "reverse direction + wait base",
+        "state": 7
+      },
+      "TO_STAND_TALKING": {
+        "move_mode": 8,
+        "selector": "talk selector = typing selector by translated direction",
+        "state": 6
+      }
+    },
+    "bilateral_writes": [
+      "initiator FLAG_RESERVED_TALK",
+      "target FLAG_RESERVED_TALK",
+      "target FLAG_INVITED_TALK",
+      "colleagueId_ both sides",
+      "initiator state MOVE",
+      "initiator move mode TO_STAFF"
+    ],
+    "initiator_guards": [
+      "target not null",
+      "target != self",
+      "target flags do not include 0x840",
+      "target flag mask 6 equals sitting",
+      "target state == STATE_WORK",
+      "standing/use cell is not type 6"
+    ],
+    "invitation_writes": [
+      "state MOVE",
+      "move mode TO_STAND_TALKING",
+      "target OnInvitedTalk"
+    ],
+    "target_selection": "one AppData.Random(staffs_.Length) staff id"
+  },
+  "source_refs": [
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:Staff.Talk/InviteStaffToTalk/AddFukidashi_/UpdateFukidashi_/DrawFukidashi_",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/AppData.cs:FUKIDASHI enum/FUKIDASHI_TEXT/DrawFukidashi",
+    "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12D5588/0x12D5090/0x12D3C50/0x12DDA90",
+    "knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat:default-value and RuntimeFieldHandle relocation chain",
+    "sources/raw/Social_Dev_Story_v2.5.1.apk:language TextAssets"
+  ],
+  "status": "PROVEN_CANONICAL",
+  "timing": {
+    "frame_110": "AddMeetingPointGauge(Lib.Random(0,4))",
+    "frame_130_or_more": "clear flags and colleagueId_; GotoDesk",
+    "frame_20": "optional bubble",
+    "frame_70": "optional bubble",
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 2297,
+      "note": "Talk completion.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "if (num >= 130)"
+    }
+  }
+}

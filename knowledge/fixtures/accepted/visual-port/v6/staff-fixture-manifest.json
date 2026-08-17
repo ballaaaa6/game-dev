@@ -1,0 +1,32 @@
+{
+  "schema_version": "social-dev-visual-port-v6-staff-fixture-manifest-v1",
+  "status": "pass_static",
+  "fixture_policy": "selected deterministic command fixtures; no browser coordinates and no native pixel claim",
+  "selected_staff": [
+    {"source_staff_id": 0, "actor_id": "actor:staff:0", "image_selector_id": 86, "room_spawn": true},
+    {"source_staff_id": 1, "actor_id": "actor:staff:1", "image_selector_id": 87, "room_spawn": true},
+    {"source_staff_id": 2, "actor_id": "actor:staff:2", "image_selector_id": 88, "room_spawn": true},
+    {"source_staff_id": 3, "actor_id": "staff:3", "image_selector_id": 89, "room_spawn": false},
+    {"source_staff_id": 100, "actor_id": "staff:100", "image_selector_id": 65, "room_spawn": false, "variant": true}
+  ],
+  "action_direction_fixtures": [
+    {"source_staff_id": 0, "action": "wait", "direction": "right", "frame": 0, "image_id": 86, "seb_id": 10, "tex_id": 0, "u": 0, "v": 30, "w": 30, "h": 30, "trans_x": -14, "trans_y": -30, "reverse_u": 0, "reverse_v": 0, "blend": 0, "color": null, "alpha": 255, "world": [280, -31], "screen": [280, -31], "room_pass": "avatar-primary"},
+    {"source_staff_id": 0, "action": "wait", "direction": "left", "frame": 0, "image_id": 86, "seb_id": 11, "tex_id": 0, "u": 0, "v": 0, "w": 30, "h": 30, "trans_x": -16, "trans_y": -30, "reverse_u": 1, "reverse_v": 0, "blend": 0, "color": null, "alpha": 255, "world": [280, -31], "screen": [280, -31], "room_pass": "avatar-primary"},
+    {"source_staff_id": 0, "action": "wait", "direction": "up", "frame": 0, "image_id": 86, "seb_id": 12, "tex_id": 0, "u": 0, "v": 0, "w": 30, "h": 30, "trans_x": -14, "trans_y": -30, "reverse_u": 0, "reverse_v": 0, "blend": 0, "color": null, "alpha": 255, "world": [280, -31], "screen": [280, -31], "room_pass": "avatar-primary"},
+    {"source_staff_id": 0, "action": "wait", "direction": "down", "frame": 0, "image_id": 86, "seb_id": 13, "tex_id": 0, "u": 0, "v": 30, "w": 30, "h": 30, "trans_x": -16, "trans_y": -30, "reverse_u": 1, "reverse_v": 0, "blend": 0, "color": null, "alpha": 255, "world": [280, -31], "screen": [280, -31], "room_pass": "avatar-primary"},
+    {"source_staff_id": 0, "action": "move", "direction": "right", "frame": 0, "image_id": 86, "seb_id": 1, "tex_id": 0, "u": 0, "v": 30, "w": 30, "h": 30, "trans_x": -14, "trans_y": -30, "reverse_u": 0, "reverse_v": 0, "blend": 0, "color": null, "alpha": 255, "world": [280, -31], "screen": [280, -31], "room_pass": "avatar-primary"},
+    {"source_staff_id": 0, "action": "move", "direction": "left", "frame": 0, "image_id": 86, "seb_id": 2, "tex_id": 0, "u": 0, "v": 0, "w": 30, "h": 30, "trans_x": -15, "trans_y": -30, "reverse_u": 1, "reverse_v": 0, "blend": 0, "color": null, "alpha": 255, "world": [280, -31], "screen": [280, -31], "room_pass": "avatar-primary"},
+    {"source_staff_id": 0, "action": "move", "direction": "up", "frame": 0, "image_id": 86, "seb_id": 3, "tex_id": 0, "u": 0, "v": 0, "w": 30, "h": 30, "trans_x": -15, "trans_y": -30, "reverse_u": 0, "reverse_v": 0, "blend": 0, "color": null, "alpha": 255, "world": [280, -31], "screen": [280, -31], "room_pass": "avatar-primary"},
+    {"source_staff_id": 0, "action": "move", "direction": "down", "frame": 0, "image_id": 86, "seb_id": 4, "tex_id": 0, "u": 0, "v": 30, "w": 30, "h": 30, "trans_x": -15, "trans_y": -30, "reverse_u": 1, "reverse_v": 0, "blend": 0, "color": null, "alpha": 255, "world": [280, -31], "screen": [280, -31], "room_pass": "avatar-primary"},
+    {"source_staff_id": 0, "action": "typing", "direction": "right", "frame": 0, "image_id": 86, "seb_id": 23, "tex_id": 0, "u": 120, "v": 30, "w": 30, "h": 30, "trans_x": -15, "trans_y": -30, "reverse_u": 0, "reverse_v": 0, "blend": 0, "color": null, "alpha": 255, "world": [280, -31], "screen": [280, -31], "room_pass": "avatar-primary"},
+    {"source_staff_id": 0, "action": "typing", "direction": "left", "frame": 0, "image_id": 86, "seb_id": 24, "tex_id": 0, "u": 120, "v": 0, "w": 30, "h": 30, "trans_x": -15, "trans_y": -30, "reverse_u": 1, "reverse_v": 0, "blend": 0, "color": null, "alpha": 255, "world": [280, -31], "screen": [280, -31], "room_pass": "avatar-primary"},
+    {"source_staff_id": 0, "action": "typing", "direction": "up", "frame": 0, "image_id": 86, "seb_id": 25, "tex_id": 0, "u": 120, "v": 0, "w": 30, "h": 30, "trans_x": -15, "trans_y": -30, "reverse_u": 0, "reverse_v": 0, "blend": 0, "color": null, "alpha": 255, "world": [280, -31], "screen": [280, -31], "room_pass": "avatar-primary"},
+    {"source_staff_id": 0, "action": "typing", "direction": "down", "frame": 0, "image_id": 86, "seb_id": 26, "tex_id": 0, "u": 120, "v": 30, "w": 30, "h": 30, "trans_x": -16, "trans_y": -30, "reverse_u": 1, "reverse_v": 0, "blend": 0, "color": null, "alpha": 255, "world": [280, -31], "screen": [280, -31], "room_pass": "avatar-primary"}
+  ],
+  "unsupported": [{"source_staff_id": 0, "action": "fly_away", "direction": "right", "seb_id": null, "status": "deferred"}],
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/character_capability_contract.json",
+    "knowledge/fixtures/accepted/runtime/character_asset_manifest.json",
+    "knowledge/fixtures/accepted/runtime/actor_spawn_contract.json"
+  ]
+}

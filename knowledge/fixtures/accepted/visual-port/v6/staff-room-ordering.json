@@ -1,0 +1,41 @@
+{
+  "schema_version": "social-dev-visual-port-v6-staff-room-ordering-v1",
+  "status": "pass_static",
+  "native_pass_order": [
+    "map-extension-floor",
+    "map-chip",
+    "object-chip-primary",
+    "object-chip-wall",
+    "avatar-primary",
+    "avatar-secondary",
+    "object-chip-late-preview",
+    "object-chip-late",
+    "map-floor"
+  ],
+  "staff_insertion": {
+    "pass_id": "avatar-primary",
+    "pass_index": 4,
+    "input_count": 3,
+    "relation": "object-chip-wall < StaffV6 < avatar-secondary < object-chip-late-preview < object-chip-late < map-floor",
+    "proof": "PASS_STATIC",
+    "native_relation_status": "SOURCE-LIMITED",
+    "reason": "The native contract proves the slot and order; the damaged Room.Draw body does not prove a general live Staff-to-Avatar call relationship."
+  },
+  "occlusion": {
+    "rear_wall_before_staff": true,
+    "foreground_wall_after_staff": true,
+    "late_preview_and_late_commands_after_staff": true,
+    "global_cross_pass_sort": false,
+    "local_ordering": "row_y_ascending_then_x_descending_then_layer_then_stable_key"
+  },
+  "command_counts": {
+    "v5_baseline": {"commands": 74, "traces": 59, "events": 788},
+    "v6_room00_wait_right_three_staff": {"commands": 77, "traces": 62, "events": 791}
+  },
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:render_passes",
+    "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:render_composition",
+    "runtime/social-dev/src/v5/room.ts:draw",
+    "runtime/social-dev/src/v6/staff-room-integrator.ts"
+  ]
+}

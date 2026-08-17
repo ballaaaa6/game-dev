@@ -1,0 +1,104 @@
+{
+  "native_execution": {
+    "frame_gates": [
+      {
+        "frame": 20,
+        "frame_advance": "even frames only",
+        "selector_branch": {
+          "otherwise": 8,
+          "x_greater_than_target": 7
+        }
+      },
+      {
+        "frame": 40,
+        "frame_advance": "even frames only",
+        "selector_branch": {
+          "otherwise": 16,
+          "x_greater_than_target": 15
+        },
+        "side_effect": "ObjChip.StartAction(0,id_)"
+      },
+      {
+        "frame": 60,
+        "frame_advance": "every frame",
+        "selector_branch": {
+          "otherwise": 12,
+          "x_greater_than_target": 11
+        }
+      },
+      {
+        "frame": 70,
+        "side_effect": "ObjChip.OnUseComplate; optional recovery stock; GotoDesk"
+      }
+    ],
+    "method": "Staff.UseEquip",
+    "native_calls": {
+      "ObjChip.OnUseComplate": "0x12C0158",
+      "ObjChip.StartAction": "0x12C0520",
+      "Room.GetObjChip": "0x12CE2E4",
+      "Room.GetXbyIndex": "0x12CF558",
+      "Staff.GotoDesk": "0x12D58EC"
+    },
+    "rva": "0x12D4DEC",
+    "target_field": "objIndex_"
+  },
+  "reachable_room0_equipment": [
+    {
+      "cell": [
+        8,
+        5
+      ],
+      "furniture_data_id": 12,
+      "img_selector_id": 109,
+      "initial_composition_id": "native_initial_object:furniture:12",
+      "name": "Trash Can",
+      "seb_selector_id": 21,
+      "subSeb_selector_id": -1,
+      "type": 1
+    },
+    {
+      "cell": [
+        8,
+        6
+      ],
+      "furniture_data_id": 26,
+      "img_selector_id": 106,
+      "initial_composition_id": "native_initial_object:furniture:26",
+      "name": "Old Printer",
+      "seb_selector_id": 21,
+      "subSeb_selector_id": -1,
+      "type": 1
+    },
+    {
+      "cell": [
+        2,
+        7
+      ],
+      "furniture_data_id": 56,
+      "img_selector_id": 127,
+      "initial_composition_id": "native_initial_object:furniture:56",
+      "name": "Calendar",
+      "seb_selector_id": 21,
+      "subSeb_selector_id": -1,
+      "type": 1
+    }
+  ],
+  "recipe_id": "EQUIPMENT_COMPOSITION_RECIPE:Staff.UseEquip",
+  "reservation_and_recovery": {
+    "completion": "recovery_ >= 1 adds recovery stock; it does not directly write hp_",
+    "reservation": "ObjChip.reservedStaffs_",
+    "selection_types": [
+      1,
+      4
+    ]
+  },
+  "schema_version": "social-dev-k4-equipment-composition-recipe-v1",
+  "source_refs": [
+    "knowledge/fixtures/accepted/behavior-first/equipment-behavior-contract.json",
+    "knowledge/fixtures/accepted/furniture_asset_metadata.json:furniture_data_id 12/26/56",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:Staff.GotoEquip/UseEquip",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:ReserveUse/OnUseComplate",
+    "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:Staff.UseEquip@0x12D4DEC"
+  ],
+  "status": "PROVEN_CANONICAL"
+}

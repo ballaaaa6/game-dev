@@ -1,0 +1,26 @@
+{
+  "schema_version": "social-dev-i1-assignment-bridge-decision-v1",
+  "status": "PASS_I1_4_BRIDGE_DECISION",
+  "checkpoint_token": "PASS_I1_4_BRIDGE_DECISION",
+  "selected_bridge": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+  "alternatives_rejected": [
+    { "bridge": "ORIGINAL_DEVELOP_BRIDGE", "reason": "Rejected: Develop payload is proposal/step/content/economy-specific; developStaffId_ is a clone-vector index; Staff.state=12 caller and exact form/native entry are not fully reproducible; Develop suppresses ordinary living detours and has separate HP/interruption rules." },
+    { "bridge": "ORIGINAL_PLANNING_BRIDGE", "reason": "Rejected: Planning is a player-wide preparatory phase with parameterless StartPlanning and every-room Staff participation; it has no arbitrary task identity and external progress is not planningRate/planQuality." }
+  ],
+  "original_evidence": ["original-work-regime-matrix.json", "original-development-start-chain.json", "update-develop-native-map.json", "develop-interruption-contract.json", "g1_5/planning-command-boundary-native.json"],
+  "product_rationale": "An arbitrary external task needs truthful external IDs and lifecycle state without inventing original proposal/content IDs or driving Staff like a puppet. The overlay preserves I0 autonomous office life and keeps product truth separate.",
+  "behavioral_consequences": {
+    "no_task": "I0 baseline living",
+    "assigned": "I0 baseline living; no StartPlanning/STATE_DEVELOP/GotoDesk call",
+    "running": "product RUNNING plus whatever I0 living state is observed",
+    "terminal": "product terminal; baseline living remains and no Staff/desk/HP mutation occurs",
+    "interruptions": "observations only; no automatic pause/fail/cancel"
+  },
+  "fields_mutated_in_original_living_core": [],
+  "fields_never_mutated_by_product_layer": ["x", "y", "hp", "state", "moveMode", "flags", "deskId", "route", "equipment reservation", "talk relation", "home state", "planningRate", "planQuality", "developState_"],
+  "start_mapping": "AssignmentAdapter -> ProductTaskOverlayBridge.enter; no native LivingRuntime write",
+  "completion_mapping": "ProductTaskOverlayBridge.exit if active -> terminal TaskRecord; no native result/economy chain",
+  "cancel_mapping": "same safe overlay exit -> CANCELLED",
+  "implementation_usability": "PASS; no original bridge facade is required for Bridge C",
+  "source_limits": "Exact original Develop state12 writer caller and full indirect sub-state semantics remain documented but are not claimed as product semantics."
+}

@@ -1,0 +1,66 @@
+{
+  "edges": [
+    {
+      "from": "StaffData.PARAM_HP",
+      "kind": "index_semantics",
+      "to": "Staff.GetHpRatio"
+    },
+    {
+      "from": "JobData.params_",
+      "kind": "job_hp_component",
+      "to": "Staff max formula"
+    },
+    {
+      "from": "FurnitureData.recovery_",
+      "guard": "recovery_ >= 1",
+      "kind": "use-complete stock",
+      "to": "Staff.recoveryHpStock_"
+    },
+    {
+      "delay_frames": 20,
+      "from": "Staff.recoveryHpStock_",
+      "kind": "delayed stock consumption",
+      "to": "Staff.UpdateRecoveryHp"
+    },
+    {
+      "from": "Staff.UpdateRecoveryHp",
+      "kind": "RecoverHp(1)",
+      "to": "Staff.hp_"
+    },
+    {
+      "from": "Staff.UpdateStayHome",
+      "kind": "RecoverHp(1)",
+      "to": "Staff.hp_"
+    },
+    {
+      "from": "Staff.hp_",
+      "kind": "low_hp_guard",
+      "threshold": "<=5%",
+      "to": "Staff.Update"
+    },
+    {
+      "from": "Staff.hp_",
+      "kind": "read_only_consumer",
+      "to": "UI HP consumers"
+    }
+  ],
+  "nodes": [
+    "Staff.hp_",
+    "StaffData.PARAM_HP",
+    "JobData.params_",
+    "Staff.GetHpRatio",
+    "Staff.Update",
+    "Staff.UpdateWork",
+    "Staff.UpdateRecoveryHp",
+    "Staff.UpdateStayHome",
+    "FurnitureData.recovery_",
+    "UI HP consumers"
+  ],
+  "schema_version": "social-dev-behavior-first-hp-read-write-graph-v1",
+  "status": "pass_with_source_limits",
+  "unresolved": [
+    "ordinary work HP drain write site",
+    "exact sleeping-to-stock cadence",
+    "full combat/event HP semantics outside living scene"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "blocking_unknowns": [],
+  "items": [
+    {
+      "affected_fixtures": [
+        "all raster fixtures"
+      ],
+      "blocking": false,
+      "future_evidence": "Static backend source or an explicitly authorized native fixture.",
+      "id": "V7-U01",
+      "known_contract": "Source/destination/state/clip command contract is recovered.",
+      "missing_original_detail": "No static shader/backend source or framebuffer is available.",
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "question": "What exact _drawBitmap shader sampling and premultiplied-alpha result does native Graphics produce?",
+      "replacement_choice": "Deterministic nearest/bilinear straight-alpha byte raster rules.",
+      "safe_reason": "Preserves recovered observable command contract and is isolated from production renderer.",
+      "status": "COMPATIBILITY_REIMPLEMENTATION"
+    },
+    {
+      "affected_fixtures": [
+        "graphics.transformed_draw"
+      ],
+      "blocking": false,
+      "future_evidence": "Selected SEB/Room command with proven matrix state.",
+      "id": "V7-U02",
+      "known_contract": "GetTransRect native boundary is pinned.",
+      "missing_original_detail": "Selected V5/V6 commands carry no non-identity matrix payload.",
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "question": "What exact transformed clip rectangle reaches the backend for non-identity native matrices?",
+      "replacement_choice": "Explicit affine polygon clip fixture.",
+      "safe_reason": "No selected complete room geometry depends on the fixture-only transform.",
+      "status": "COMPATIBILITY_REIMPLEMENTATION"
+    },
+    {
+      "affected_fixtures": [
+        "graphics.selected_horizontal_flip"
+      ],
+      "blocking": false,
+      "future_evidence": "Static pixel-level matrix/backend proof.",
+      "id": "V7-U03",
+      "known_contract": "Branch calls RotateTemporary(-90 degrees) in the pinned binary.",
+      "missing_original_detail": "Native branch is known, final backend orientation is not.",
+      "proof_class": "SOURCE_LIMITED",
+      "question": "What are native final pixels for flip modes 4 and 5?",
+      "replacement_choice": "Explicit compatibility orientations for isolated tests only.",
+      "safe_reason": "Complete room:0+Staff uses no modes 4/5.",
+      "status": "SOURCE_LIMITED"
+    },
+    {
+      "blocking": false,
+      "id": "V7-U04",
+      "policy": "Selected room:0+Staff command IDs use only proven direct/group-local images; unused branches remain deferred.",
+      "proof_class": "SOURCE_LIMITED",
+      "question": "Which selected paths use atlas/custom/optimized image blocks?",
+      "status": "UNKNOWN_NONBLOCKING"
+    },
+    {
+      "blocking": false,
+      "id": "V7-U05",
+      "policy": "Selected fixtures carry no proven depth payload; anchor/depth wrappers remain deferred.",
+      "proof_class": "SOURCE_LIMITED",
+      "question": "What native depth/anchor payload affects selected SEBs?",
+      "status": "SOURCE_LIMITED"
+    },
+    {
+      "blocking": false,
+      "id": "V7-U06",
+      "policy": "Selected frame/action fixtures are deterministic; live gameplay timing is out of scope.",
+      "proof_class": "SOURCE_LIMITED",
+      "question": "What is the full live Staff.Update cadence?",
+      "status": "SOURCE_LIMITED"
+    },
+    {
+      "blocking": false,
+      "id": "V7-U07",
+      "policy": "Historical screenshots are secondary only and no geometry is tuned from them.",
+      "proof_class": "SOURCE_LIMITED",
+      "question": "Does historical screenshot context differ from the static room command output?",
+      "status": "UNKNOWN_NONBLOCKING"
+    }
+  ],
+  "schema_version": "social-dev-visual-port-v7-unknowns-v1",
+  "status": "pass_static_nonblocking_unknowns"
+}

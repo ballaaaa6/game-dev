@@ -1,0 +1,6 @@
+{
+  "retention": "No source/evidence deletion in K2; parallel views remain queryable with explicit status.",
+  "retired": [],
+  "schema_version": "social-dev-k2-retired-active-views-v1",
+  "status": "pass"
+}

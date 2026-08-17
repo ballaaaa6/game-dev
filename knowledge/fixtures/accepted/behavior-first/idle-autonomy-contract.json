@@ -1,0 +1,53 @@
+{
+  "decision_order": [
+    "if not sitting: GotoDesk",
+    "if no management/planning flags and cadence gate: typing attempt",
+    "if no reserved/typing flags and cadence gate: GotoEquip with random <21",
+    "if still no reserved/typing flags and cadence gate: GotoTalk with random <=10",
+    "if HP ratio <=99 and cadence gate: FLAG_SLEEPING with random <=25",
+    "typingFrame_ decrements and OnEndTyping clears typing at completion"
+  ],
+  "probability_bounds": {
+    "bubble": "random <=50 or <=30 at related branch",
+    "equipment_attempt": "random <21",
+    "sleep_flag_attempt": "random <=25",
+    "talk_attempt": "random <=10",
+    "typing_attempt": "random 0..100 >=41 starts typing in the readable branch; exact gate cadence unknown"
+  },
+  "refs": [
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+      "line": 1066,
+      "note": "Staff-first tick order.",
+      "source_sha256": "c10c33769dddcb6d8e24bf209fa55c6513eb89ef3bd8f9685e2c0c53698bfc72",
+      "symbol": "public void Update()"
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 2954,
+      "note": "Autonomous choices.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "private void UpdateWork()"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned room tick.",
+      "rva": "0x12CB9E8",
+      "symbol": "Room.Update"
+    }
+  ],
+  "schema_version": "social-dev-behavior-first-idle-autonomy-contract-v1",
+  "source_limit": "Magic multiply modulo gates are not reliable decompiler output; preserve branch probabilities only as bounded observations.",
+  "status": "pass_with_source_limits",
+  "tick_owner": "Room.Update loops Staff.Update before ObjChip.Update",
+  "visible_actions": [
+    "walk",
+    "sit/work",
+    "type",
+    "use equipment",
+    "talk",
+    "sleep/recovery",
+    "leave for door",
+    "return from home"
+  ]
+}

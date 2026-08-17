@@ -1,0 +1,43 @@
+{
+  "schema": "i2-current-web-runtime-integration-map-v1",
+  "status": "PASS_I2_WEB_RUNTIME_OWNER_MAP",
+  "entrypoint": {
+    "file": "runtime/social-dev/src/main.ts",
+    "owner": "createSocialDevRuntime(root)"
+  },
+  "production_owners": [
+    {
+      "file": "runtime/social-dev/src/app/runtime.ts",
+      "owner": "createLivingRuntime once; createDashboardRuntime once; one wall-clock interval"
+    },
+    {
+      "file": "runtime/social-dev/src/product/dashboard/runtime.ts",
+      "owner": "DashboardRuntime + AssignmentAdapter + combined snapshot + subscription publication"
+    },
+    {
+      "file": "runtime/social-dev/src/product/assignment/adapter.ts",
+      "owner": "I1 product task lifecycle and living observation"
+    },
+    {
+      "file": "runtime/social-dev/src/renderer/canvas-renderer.ts",
+      "owner": "existing Canvas semantic renderer; unchanged by I2"
+    },
+    {
+      "file": "runtime/social-dev/src/product/dashboard/ui.ts",
+      "owner": "DOM/CSS product control surface"
+    }
+  ],
+  "legacy_compatibility": {
+    "file": "runtime/social-dev/src/core/simulation.ts",
+    "status": "not imported by production app runtime; retained for existing simulation tests and legacy facade compatibility"
+  },
+  "counts": {
+    "production_create_living_runtime_calls": 1,
+    "production_intervals": 1
+  },
+  "hidden_owner_checks": {
+    "second_living_runtime": "not found in production app path",
+    "second_scheduler": "not found in production app path",
+    "synthetic_simulation_owner": "not used for the production scheduler"
+  }
+}

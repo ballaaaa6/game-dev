@@ -1,0 +1,78 @@
+{
+  "schema_version": "social-dev-visual-port-v6-staff-native-map-v1",
+  "status": "pass_static",
+  "scope": "Bounded Staff visual surface only; gameplay and exact pixels remain outside scope.",
+  "resource_group": {
+    "id": "resHuman_",
+    "kind": "staff_and_human_characters",
+    "ownership": ["img", "seb"],
+    "source_index": "01_GAME_PACKS/human/img.inf + seb.inf",
+    "proof": "SOURCE-DATA-PROVEN",
+    "runtime": "ResourceManagerV3 -> V4ResourceManager -> StaffV6"
+  },
+  "native_methods": [
+    {
+      "class": "game.Staff",
+      "method": "Draw",
+      "rva": "0x12DA6A0; 0x12DABA8; 0x12DAC24; 0x12DAC4C; 0x12DA710",
+      "source_ref": "sources/raw/1_Click_CSharp_Code update/game/Staff.cs:7006-7500",
+      "status": "resolved_overload_family",
+      "visual_contract": "alpha gate, resHuman_ lookup, StaffData.img_, SEB frame, AppData.DrawSeb"
+    },
+    {
+      "class": "game.Staff",
+      "method": "DrawStaff",
+      "rva": "0x12DB258; 0x12DB328; 0x12DB48C",
+      "source_ref": "sources/raw/1_Click_CSharp_Code update/game/Staff.cs:7724-8246",
+      "status": "resolved_overload_family",
+      "visual_contract": "SEB sprite composition through shared AppData draw surface"
+    },
+    {
+      "class": "game.Staff",
+      "method": "ChangeSeb",
+      "rva": "0x12DB250",
+      "source_ref": "sources/raw/1_Click_CSharp_Code update/game/Staff.cs:7719-7722",
+      "status": "source_backed_state_write"
+    },
+    {
+      "class": "game.Staff",
+      "method": "SetPos",
+      "rva": "0x12DC3D0",
+      "source_ref": "sources/raw/1_Click_CSharp_Code update/game/Staff.cs:9404-9408",
+      "status": "source_backed_position_write"
+    },
+    {
+      "class": "game.Staff",
+      "method": "AdvanceSebFrame",
+      "rva": "0x12D8E30",
+      "source_ref": "sources/raw/1_Click_CSharp_Code update/game/Staff.cs:9410-9467",
+      "status": "frame_modulo_visible; exact native cadence source_limited"
+    },
+    {
+      "class": "game.Staff",
+      "method": "OnStartTyping/OnEndTyping",
+      "rva": "native method map",
+      "source_ref": "Staff.cs:10309-10407",
+      "status": "source_backed_selector_formula",
+      "formula": "typing = reverseDirection + 23; wait = reverseDirection + 10"
+    },
+    {
+      "class": "game.Room",
+      "method": "Draw",
+      "rva": "0x12CBB80",
+      "source_ref": "native_scene_assembly_contract.json:render_passes",
+      "status": "nine_pass_order_proven; live Staff-to-Avatar relation source_limited"
+    }
+  ],
+  "implementation_boundary": {
+    "path": "runtime/social-dev/src/v6/",
+    "uses": ["ResourceManagerV3", "V1 Seb/Sprite", "V2 GraphicsCompatibility", "RoomV5"],
+    "does_not_import": ["production renderer", "decompiled C#", "gameplay simulation"],
+    "pixel_parity": "DEFERRED_TO_V7"
+  },
+  "limitations": [
+    "Staff.Init body and initial hidden SEB assignment are not promoted from damaged decompilation.",
+    "StaffV6 preview actions are explicit deterministic fixture inputs, not inferred gameplay transitions.",
+    "Native raster/compositor output is not claimed."
+  ]
+}

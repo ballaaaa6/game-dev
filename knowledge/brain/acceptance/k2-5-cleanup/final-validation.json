@@ -1,0 +1,39 @@
+{
+  "schema_version": "social-dev-k2-5-final-validation-v1",
+  "status": "PASS_K2_5_CANONICAL_KNOWLEDGE_PROMOTION_AND_LEGACY_DISTILLATION_CLOSED",
+  "final_token": "PASS_K2_5_CANONICAL_KNOWLEDGE_PROMOTION_AND_LEGACY_DISTILLATION_CLOSED",
+  "checks": {
+    "knowledge_social_dev_absent": true,
+    "runtime_evidence_absent": true,
+    "legacy_offline_pass": true,
+    "old_namespace_offline_pass": true,
+    "archive_verification_pass": true,
+    "fixture_promotion_pass": true,
+    "runtime_mirror_pass": true,
+    "reference_scan_pass": true,
+    "regression_pass": true,
+    "cleanup_pass": true,
+    "canonical_db_present": true,
+    "gap_queue_count_three": true,
+    "no_k3_v8_integrations_deployment": true,
+    "source_roots_preserved": true,
+    "git_diff_check": true
+  },
+  "acceptance": {
+    "k2_upstream": "PASS_K2_UNIFIED_WHOLE_GAME_BRAIN_AND_RUNTIME_PACK_CLOSED",
+    "semantic_delta": 0,
+    "legacy_required_references": 0,
+    "old_namespace_paths_absent": true,
+    "source_roots_preserved": true
+  },
+  "scope_boundary": {
+    "k3": "NOT_STARTED",
+    "v8": "NOT_STARTED",
+    "integrations": "NOT_STARTED",
+    "deployment": "NOT_STARTED",
+    "persistence": "NOT_STARTED",
+    "backend_ai": "NOT_STARTED",
+    "network": false,
+    "subagents": false
+  }
+}

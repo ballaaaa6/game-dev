@@ -1,0 +1,31 @@
+{
+  "dashboard_only_changes": [
+    "task assignment inputs",
+    "management labels and read-only field presentation",
+    "dashboard adapters that call existing APIs without changing autonomous ownership"
+  ],
+  "forbidden_in_this_phase": [
+    "visual correction",
+    "V8",
+    "production renderer cutover",
+    "MapChip changes",
+    "APK/game launch",
+    "ADB/emulator",
+    "live server/network/browser automation",
+    "source-root edits"
+  ],
+  "preserve": [
+    "Staff.Update and its native RVA",
+    "Room.Update tick order",
+    "ObjChip reservation lists and completion cleanup",
+    "FurnitureData type/recovery/passMap semantics",
+    "Astar route goal flags and cardinal neighbors",
+    "existing V1-V7 runtime behavior and evidence"
+  ],
+  "proof": [
+    "No runtime or renderer path was modified by this phase.",
+    "Evidence is kept under knowledge/fixtures/accepted/behavior-first and reports under docs/Phases/Behavior."
+  ],
+  "schema_version": "social-dev-behavior-first-dashboard-preservation-boundary-v1",
+  "status": "pass"
+}

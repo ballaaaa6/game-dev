@@ -1,10 +1,74 @@
 # TODO
 
+## K4/K4.1 whole visual assembly brain closure — closed (2026-08-17)
+
+- [x] Read the pasted K4 contract and preserve its inline-only, evidence-only, no-V8, no-server, no-emulator, no-network, no-pixel-tuning boundary.
+- [x] Build the Room0 bootstrap, floor/map, wall/door, generic furniture, workstation, Staff, equipment, talk, Room.Draw, and OPT/SEB visual assembly recipes from accepted source/native evidence.
+- [x] Enumerate every reachable visual consumer with the required status vocabulary and deterministic coverage metrics: 49 reachable, 42 visible, 0 blocking SOURCE_LIMITED, 0 SOURCE_MISSING, and 0 heuristic/assumed.
+- [x] Promote the independently reproduced K4.1 facts/edges into canonical brain revision k4-visual-assembly-r2; preserve the corrected Room0 door result as NO_DISTINCT_VISUAL and the exact talk/workstation results as PROVEN_CANONICAL.
+- [x] Independently close `room0.door.action-timeline`, `staff.talk.fukidashi-payload`, and `workstation.live-interleave` from pinned source/native evidence; classify all research findings only as REPRODUCED_EXACT, REPRODUCED_WITH_CORRECTION, or REJECTED_BY_SOURCE.
+- [x] Run deterministic queries A–G, K4/K4.1 artifact validation, K2/native/runtime regressions, typecheck, full Vitest (48 files / 314 tests), source-hash recheck, generated-pack byte-stability, and `git diff --check`.
+- [x] Close with PASS_K4_1_TARGETED_CLOSURE_READY_FOR_V8; V8 remains NOT_STARTED and is not started by this task.
+
+## Next authorized major phase — V8 (not started)
+
+- [ ] Begin V8 only after a separate explicit user authorization; the K4.1 readiness gate does not authorize implementation by itself.
+- [ ] Preserve `blocking_source_limited_count = 0`, `source_missing_count = 0`, `heuristic_or_assumed_count = 0`, and `ready_for_v8 = true` at the V8 entry boundary.
+
+## K3 targeted missing-link closure — closed (2026-08-16)
+
+- [x] Read the bounded K3 queue and close `K3-GAP-FLOOR-DIRECT-SELECTOR` with the native `RoomData.floorImgId_` → `Room.FLOOR_IMAGE_ID_ARRAY` → `chip/img.inf` chain, preserving the runtime compatibility alias and MapChip pixels.
+- [x] Close `K3-GAP-FURNITURE-VISUAL` for `FurnitureData:26` with raw row, native `ObjChip`/`FurnitureData` dispatch, exact image/SEB selectors, initial frame, conditions, and accepted resource bytes.
+- [x] Classify all `185` semantic-edge candidates exactly (`1 CONFIRMED`, `184 REJECTED`, `0 UNRESOLVED`), correct the HelperData `STAFF_DATA_ID` namespace chain, and promote only source/native-backed facts and edges.
+- [x] Regenerate the K3 queue, canonical brain exports/graph, accepted runtime closure contracts, K3 acceptance artifacts, evidence manifest, and closure report; pass K2, native-content, runtime typecheck, and full Vitest regressions with `PASS_K3_TARGETED_MISSING_LINK_CLOSURE_CLOSED`.
+- [x] Keep V8, integrations, deployment, persistence/backend work, network research, emulator/ADB/live app, local server, subagents, and MapChip pixel modification outside this bounded phase.
+
+## K2.5 canonical knowledge promotion and legacy distillation — closed (2026-08-16)
+
+- [x] Promote the canonical K2 brain, original data, generated views, accepted fixtures, source identities, and K3 gap queue into the final active topology.
+- [x] Distill historical/preflight/visual evidence into `legacy/`, preserve the old G1.5 database byte-for-byte, and verify the archive manifest/checksums and reopened ZIP members.
+- [x] Remove the active `knowledge/social-dev/` and `runtime/social-dev/evidence/` namespaces and route runtime pack consumption through the generated mirror facade.
+- [x] Pass the reversible legacy-offline and old-namespace-offline regressions, including K2/R0/I0/I1/I2, visual/MapChip, full Vitest, typecheck, build, query smoke, and K3-gap read smoke.
+- [x] Record pre-existing failures separately, preserve source roots, remove only rebuildable caches, and close with `PASS_K2_5_CANONICAL_KNOWLEDGE_PROMOTION_AND_LEGACY_DISTILLATION_CLOSED`.
+- [x] Stop the bounded K3 closure here; do not start V8, integrations, deployment, persistence, or backend AI without a new user-directed phase.
+
+## Runtime I0 original living core
+
+- [x] Execute I0.0–I0.10 inline: replace the synthetic living trace with the canonical Staff/Room/ObjChip runtime, preserve the visual projection boundary, implement movement/arrival, desk/work, tick/RNG autonomy, equipment/talk/HP/home, planning, interruption cleanup, and close S1–S10 with deterministic evidence (`PASS_I0_ORIGINAL_LIVING_CORE_RUNTIME_IMPLEMENTED_S1_S10_CLOSED`).
+- [ ] Keep V8, MapChip/Renderer changes, save compatibility, emulator/server proof, and dashboard/product policy outside this phase; start any expansion only from a new user-directed gate.
+
+## Runtime R0 canonical contract freeze
+
+- [x] Execute R0 inline/static-only: audit the existing runtime against the accepted G1.5/living-core evidence, freeze the actor/Room/Furniture/movement/state/tick/RNG/HP/work/interruption/visual/product/save contracts, generate ten scenario fixtures, pass the independent validation and regressions, and stop before I0
+
+## Game-scoped static knowledge base G0/G1
+
+- [x] Build and verify the canonical Social Dev Story v2.5.1 game-scoped static knowledge base from the pinned APK/native/metadata/dump, raw C# Tier-A scope, bounded dependencies, data spine, assets, graphs, canonical SQLite/JSONL claims, reconciliation reports, and Q1–Q14 query demonstrations.
+- [x] Preserve old/new claims separately with explicit `CONFIRMED`, `UPGRADED`, `SUPERSEDED`, `CONFLICT`, `SOURCE_LIMITED`, and `UNCHANGED_ACCEPTED` statuses; retain the unresolved floor selector `5` conflict without overwriting either source claim.
+- [x] Stop at `PARTIAL_GAME_SCOPED_STATIC_KNOWLEDGE_G0_G1_SOURCE_LIMITED`; do not begin runtime implementation, V8, MapChip correction, Renderer cutover, save implementation, or live/emulator verification from this run.
+- [x] G1.5 static closure completed: native DataManager dispatch is closed at `43/43`, XLS source/decoder provenance is verified, all four core counts include `SkillData`, native `Staff.hp_` accesses are integrated, and the planning boundary is source-backed. Remaining semantic reader limits, floor selector `5` visual work, dashboard policy, and runtime work remain explicitly deferred.
+
+## Behavior-first Staff living-system forensic phase
+
+- [x] Execute BF.0–BF.19 inline/static-only: reconcile prior evidence, inventory pinned Staff fields/offsets, close source-backed HP/recovery/home/equipment/workstation/movement/talk/idle contracts, classify all 103 FurnitureData records, define the dashboard preservation boundary, write the required evidence/reports, pass 118 static checks, and stop before visual work/V8
+
+## Staff/job/skill/status/furniture data-dependency forensic phase
+
+- [x] Execute DD.0–DD.20 inline/static-only: close the pinned data authority chain, retain 141/30/36/103 source catalogues with English/Japanese raw provenance, recover native job formulas and Staff skill/parameter/HP dependencies, separate saved/transient/derived/PRODUCT_POLICY schemas, classify work/skill/furniture/passMap effects and unknowns, write 21 JSON contracts plus 10 reports and a handoff, pass 2432 static checks plus BF/Phase 1D/V1/V3/V7 regressions, and stop before runtime implementation, visual correction, renderer/MapChip changes, or V8
+
+## First-visible starter-state forensic gate
+
+- [x] Execute the first-visible transition recovery: recover the start-game caller, event-0 interpreter path, bootstrap mutation timeline, and native draw-entry predicate; reclassify FS-U01–FS-U06 with the remaining post-event queue/stable Staff pose blocker; stop before previews, full reintegration, and V8
+
+## Starter-room layered reintegration gate
+
+- [x] Execute RI.0–RI.11 inline/static-only, one visual layer at a time, and stop before V8
+
 ## Social Dev clean-room reset
 
 - [x] Establish Social Dev as the sole source of truth
 - [x] Fingerprint the RAR, APK, asset ZIP, and C# update
-- [x] Extract the RAR as read-only evidence under `knowledge/social-dev/evidence/`
+- [x] Extract the RAR as read-only evidence under `knowledge/fixtures/accepted/`
 - [x] Compare the C# baseline/update by canonical path: `4980` exact, `588` modified, `586` update-only
 - [x] Build the Social Dev structural inventory: `72` inputs, `82` types, `3430` fields, `1685` methods
 - [x] Measure the candidate diff: the update removes decompiler issue markers `16699 → 0`, but retains `29030` IL annotations and is not a buildable verdict
@@ -15,7 +79,7 @@
 - [x] Run the read-only asset/APK consistency gate: `3542` ZIP rows exact, `3508` APK entries present, `34` miscellaneous text payloads unresolved, `25/25` pack roundtrip exact
 - [x] Extract only index/assembly-guide/XLS evidence: `114` files, with DataManager cross-checked against English/Japanese `43/43`
 - [x] Separate `data`, `game`, `game.routeSearch`, `main`, `form`, and engine/dependency boundaries according to the boundary contract
-- [x] Remove `social dev/VGO_Core/` and the unpromoted scaffold inventory from the active source
+- [x] Remove `sources/raw/VGO_Core/` and the unpromoted scaffold inventory from the active source
 - [x] Survey the C# systems required for scene, character, and living logic and classify them as `keep/adapt/defer/cut`
 - [x] Write the system survey and rewrite roadmap in the order extraction → contracts → core → renderer
 - [x] Lock the web stack: TypeScript + Vite + Canvas 2D + DOM/CSS; Python is extraction-only
@@ -23,12 +87,12 @@
 - [x] Create the detailed Phase 1 plan for first-slice data extraction, raw-row retention, locale cross-checks, and review gates
 - [x] Expand the legacy boundary to cover historical knowledge, guides, viewer, and shared maintenance without deleting evidence
 - [x] Remove the historical GameDev knowledge, Office/Dashboard runtime, and old documentation from the workspace
-- [x] Stage `44` C# data files under `knowledge/social-dev/data/csharp_update/` with a hash manifest while keeping the source read-only
+- [x] Stage `44` C# data files under `knowledge/sources/data/csharp_update/` with a hash manifest while keeping the source read-only
 - [x] Remove legacy C#/reverse-engineering/maintenance tools from the active workspace
 - [x] Remove GameDev source/extraction, APK toolkit, Ghidra, viewer, and historical task data
 - [x] Scan active references after root cleanup: `5820` files, `3774` matches, `active_dependency=0`
 - [x] Inspect and disposition the semantic diff of `44` `data` files, `23` `game` files, `2` route-search files, and `3` lifecycle files; `12` exact and `60` marker-only after normalization, with decompiler bodies quarantined
-- [x] Create canonical Social Dev data/entity/save contracts with provenance statuses under `runtime/social-dev/evidence/`
+- [x] Create canonical Social Dev data/entity/save contracts with provenance statuses under `knowledge/fixtures/accepted/runtime/`
 - [x] Create the read-only asset validation manifest from the assembly guide/APK/index
 - [x] Verify asset selector/semantic relationships for parsed FurnitureData/StaffData before promoting them into runtime
 - [x] Create runtime contracts under `runtime/social-dev/` for data, entities, save snapshots, and pre-runtime closure
@@ -136,6 +200,21 @@
 - [x] Make the evidence regression suite non-mutating so timestamped pre-runtime contracts cannot drift the metadata baseline during tests
 - [x] Implement the approved floor00-only visual layout contract: remove marked glass zones, extend/shift the wood wall, preserve layer order, move the foreground split with the wall offset, and pass deterministic browser visual verification
 - [x] Cut over all current approved Social Dev data and capabilities into the single main floor00 runtime and remove redundant production route branches
+- [x] Complete Phase V0 original visual subsystem audit: class/method dispositions, native RVA bridge, resource groups, visual dependency/call/data-flow evidence, gameplay cut list, decompiler gaps, runtime comparison, and V0–V9 port plan; keep runtime unchanged
+- [x] Complete Phase V1 core visual recovery for the selected evidence scope through inline execution: SEB/Image/ResourceManager contracts, native/parity evidence, reports, and full verification are green; deferred and unknown branches remain explicit
+- [x] Complete V2 native Graphics surface, static/native call-flow recovery, semantic command/state recovery, and additive Seb/ResourceManager composition boundary; exact raster parity remains explicitly deferred at `_drawBitmap`
+- [x] Normalize the V2 static gate to `PASS_STATIC`, accept V3 entry, and defer exact framebuffer/shader/filter/alpha/clip/blend/primitive/depth/anchor/rotated-pixel output to V7; preserve the historical blocked/deferred record and use static-only evidence
+- [x] Complete V3 original resource-group ownership, sparse `img[]`/`seb[]` indexing, INF binding, same-group TexId proof, real fixtures, and isolated compatibility-layer verification; V3 is PASS and V4 is ready for group/original-ID resource requests but not started
+- [x] Complete Phase V4 MapChip, ObjChip, FurnitureData visual binding, minimum Camera transform, local ordering, static fixture matrix, command parity, focused regressions, and final V4.11 gate; stop before V5 and keep exact pixels deferred to V7
+- [x] Execute Phase V5 Room / RoomData / full static scene orchestration inline-only and static-only; stop before V6 with a truthful `PASS_STATIC` handoff
+- [x] Execute Phase V6 Staff / StaffData / human animation / room integration as an isolated static-only layer; preserve the native `avatar-primary` seam, record source-limited Staff.Init/Room linkage, and stop before V7 with a truthful `PASS_STATIC` handoff
+- [x] Execute Phase V7 static raster compatibility, golden fixtures, deterministic room:0 renders, pixel-diff classification, and final fidelity gates; stop before V8
+- [x] Execute Phase V7.5 visual acceptance: generate the required deterministic PNG previews and contact sheet from the existing V1–V7 contracts, inspect them, record selector/command/source hashes and visual issues, and stop before V8
+- [x] Historical starter-room semantic correction pass — superseded/revoked by the MapChip forensic gate; retain its outputs as secondary context and keep V8 frozen
+- [x] Execute MapChip forensic recovery gate — audit direct OPT/alpha/dimensions/anchors/selectors, pass MC.0–MC.15 after the isolated V7 alpha correction, and freeze full-room integration and V8
+- [x] Execute Living-Core final closure — verify v2.5.1 hashes and close LC-1 through LC-6 with static native contracts, deterministic fixtures, regression tests, and an explicit dashboard `PRODUCT_POLICY_PENDING` boundary
+- [x] Execute I1 assignment adapter — close original no-task/planning/develop boundaries, select Bridge C, implement product-only task lifecycle/read model, pass A1–A12 and frozen regressions, and stop before dashboard/backend integration
+- [x] Execute I2 dashboard runtime/API/control surface — integrate one production LivingRuntime with one DashboardRuntime/AssignmentAdapter/scheduler, add explicit binding bootstrap, combined deterministic snapshot/subscription model, DOM/CSS product controls, D1–D14 traces, browser smoke, and full regression closure (`PASS_I2_DASHBOARD_RUNTIME_API_AND_CONTROL_SURFACE_CLOSED`); stop before I3/backend/auth/persistence
 - [ ] Expand beyond the unified main floor00 runtime only after deterministic and browser visual gates remain stable
 - [x] Permanently delete the legacy archive after cutover gates passed (2026-08-14)
 
@@ -145,11 +224,30 @@ The former GameDev/Virtual Office corpus, legacy runtime, extraction roots, and 
 
 ## Do Not Do During This Stage
 
+The current stage is the completed K4.1-to-V8 handoff. Do not start V8,
+visual reconstruction, renderer changes, pixel tuning, emulator/ADB/live-app
+work, server/backend/cloud work, integrations, persistence, or reverse
+engineering without a separate user-directed phase.
+
+## Historical K2 Unified Whole-Game Brain — complete (2026-08-16)
+
+- [x] Read the primary K2 execution contract and required companion guide completely before repository changes.
+- [x] Complete K2.PRE source re-verification, preflight delta audit, authority hash lock, and supported baseline matrix.
+- [x] Complete K2.0–K2.FINAL in order, preserving the old G1.5 database and stopping at `PASS_K2_UNIFIED_WHOLE_GAME_BRAIN_AND_RUNTIME_PACK_CLOSED`.
+- [x] Do not start K3, V8, Cloudflare, Oracle, persistence, backend AI, deployment, or any work outside K2.
+
 - Do not recreate `Assembly-CSharp/`
 - Do not modify source roots or execute decompiled C# as production runtime
 - Do not convert `unknown` into a semantic name without verifiable evidence
-- Do not delete active Social Dev evidence or source roots; preserve current provenance under the active evidence boundaries
+- Do not delete active Social Dev evidence or source roots; preserve current provenance under `knowledge/brain`, `knowledge/generated`, `knowledge/fixtures/accepted`, and `knowledge/sources`.
 
 ## Current history policy
 
-Use the current Social Dev roadmaps under `docs/` and active evidence under `knowledge/social-dev/`. Removed historical GameDev material must not be recreated.
+K2.5 canonical knowledge promotion and legacy distillation is closed,
+followed by the bounded K3 targeted missing-link closure and the K4/K4.1
+whole visual assembly closure. Use the canonical brain under `knowledge/brain`,
+accepted fixtures under `knowledge/fixtures/accepted`, generated packs under
+`knowledge/generated`, and read-only sources under `knowledge/sources`.
+Historical material is under `legacy/`; it is not an active dependency. K4.1
+is ready for an explicitly authorized V8 phase; V8, integrations, deployment,
+and persistence/backend work remain not started.

@@ -17,7 +17,7 @@
 - Do not infer FurnitureData identity, change collision rules, promote the unresolved red/black prop, or modify rooms 1–17.
 - Keep the nine native render-pass identifiers and the existing asset lifecycle gate unchanged.
 - Write new project-owned prose, comments, tests, contracts, and reports in English.
-- Put generated screenshots/JSON under `knowledge/social-dev/evidence/`; do not create generated artifacts at the repository root.
+- Put generated screenshots/JSON under `knowledge/fixtures/accepted/`; do not create generated artifacts at the repository root.
 
 ---
 
@@ -25,7 +25,7 @@
 
 | File | Responsibility |
 | --- | --- |
-| `runtime/social-dev/evidence/floor00_visual_layout_contract.json` | Concrete floor00-only glass/wood presentation policy and provenance references. |
+| `knowledge/fixtures/accepted/runtime/floor00_visual_layout_contract.json` | Concrete floor00-only glass/wood presentation policy and provenance references. |
 | `runtime/social-dev/src/catalog/types.ts` | Type boundary for the new contract. |
 | `runtime/social-dev/src/catalog/load-contracts.ts` | Import and cross-validate the contract against native map/assembly/floor00 contracts. |
 | `runtime/social-dev/src/scene/extension-wall.ts` | Reuse native wall frame validation while resolving an explicit trigger-cell override. |
@@ -103,7 +103,7 @@ Add `readonly presentationLayout: Floor00VisualLayoutProjection | null` to `Reso
 ### Task 1: Add and validate the presentation contract
 
 **Files:**
-- Create: `runtime/social-dev/evidence/floor00_visual_layout_contract.json`
+- Create: `knowledge/fixtures/accepted/runtime/floor00_visual_layout_contract.json`
 - Modify: `runtime/social-dev/src/catalog/types.ts`
 - Modify: `runtime/social-dev/src/catalog/load-contracts.ts`
 - Create: `runtime/social-dev/tests/floor00-visual-layout.test.ts`
@@ -181,7 +181,7 @@ Expected: PASS with the contract loaded and all invalid-contract tests rejected 
 
 ```powershell
 git add runtime/social-dev/src/catalog/types.ts runtime/social-dev/src/catalog/load-contracts.ts runtime/social-dev/tests/floor00-visual-layout.test.ts
-git add -f runtime/social-dev/evidence/floor00_visual_layout_contract.json
+git add -f knowledge/fixtures/accepted/runtime/floor00_visual_layout_contract.json
 git commit -m "feat: add floor00 visual layout contract"
 ```
 
@@ -357,8 +357,8 @@ git commit -m "test: gate floor00 visual wall alignment"
 ### Task 4: Run full verification, capture evidence, and update state
 
 **Files:**
-- Create: `knowledge/social-dev/evidence/floor00-visual-layout-20260814.png` (generated screenshot)
-- Create: `knowledge/social-dev/evidence/floor00-visual-layout-20260814.json` (generated visual-gate snapshot)
+- Create: `knowledge/fixtures/accepted/floor00-visual-layout-20260814.png` (generated screenshot)
+- Create: `knowledge/fixtures/accepted/floor00-visual-layout-20260814.json` (generated visual-gate snapshot)
 - Modify: `PROJECT_STATE.md`
 - Modify: `TODO.md` if the matching user-directed item changes status
 
@@ -404,7 +404,7 @@ Open:
 http://127.0.0.1:4173/?scene=floor00&auto=0
 ```
 
-Capture two screenshots without advancing the static scene. Read `canvas.dataset.renderDiagnostics` and the visible visual-gate diagnostics. Save the screenshot and JSON under `knowledge/social-dev/evidence/` with the exact filenames listed above. Confirm:
+Capture two screenshots without advancing the static scene. Read `canvas.dataset.renderDiagnostics` and the visible visual-gate diagnostics. Save the screenshot and JSON under `knowledge/fixtures/accepted/` with the exact filenames listed above. Confirm:
 
 - the blue-left, purple, and blue-right glass zones are absent;
 - the upper wood wall is continuous;

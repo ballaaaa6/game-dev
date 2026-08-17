@@ -1,0 +1,34 @@
+{
+  "destination_rect": {
+    "negative_coordinates": "accepted and clipped against surface",
+    "proof_class": "PROVEN",
+    "semantics": "DrawImage uses equal source/destination size; DrawScaledImage preserves independent destination size"
+  },
+  "linear": {
+    "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+    "rounding": "Math.round per channel",
+    "rule": "four-neighbor bilinear interpolation around source pixel centers"
+  },
+  "native_boundary": {
+    "native_rva": "0x1C10388",
+    "no_half_pixel_correction": true,
+    "status": "backend_pixels_unavailable"
+  },
+  "nearest": {
+    "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+    "rounding": "floor(sample + 0.5)",
+    "rule": "source pixel center nearest with transparent out-of-bounds samples"
+  },
+  "schema_version": "social-dev-visual-port-v7-sampling-contract-v1",
+  "source_bounds": {
+    "negative_source": "transparent where sample is outside source image",
+    "out_of_bounds": "transparent",
+    "proof_class": "COMPATIBILITY_REIMPLEMENTATION"
+  },
+  "source_rect": {
+    "integer_conversion": "selected integer values remain exact",
+    "proof_class": "PROVEN",
+    "semantics": "source x/y plus width/height are preserved from GraphicsCommand"
+  },
+  "status": "pass_static"
+}

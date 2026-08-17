@@ -1,0 +1,202 @@
+{
+  "namespaces": [
+    {
+      "description": "Canonical source/data row identity; retains table type and native row identity",
+      "domain": "original_data",
+      "naked_integer_allowed": false,
+      "namespace_id": "DATA_ROW_ID",
+      "status": "active"
+    },
+    {
+      "description": "Canonical source/data row index; retains table type and one-based source row index",
+      "domain": "original_data",
+      "naked_integer_allowed": false,
+      "namespace_id": "DATA_ROW_INDEX",
+      "status": "active"
+    },
+    {
+      "description": "StaffData numeric identity; never a naked integer",
+      "domain": "original_data",
+      "naked_integer_allowed": false,
+      "namespace_id": "STAFF_DATA_ID",
+      "status": "active"
+    },
+    {
+      "description": "JobData numeric identity; never a naked integer",
+      "domain": "original_data",
+      "naked_integer_allowed": false,
+      "namespace_id": "JOB_DATA_ID",
+      "status": "active"
+    },
+    {
+      "description": "SkillData numeric identity; never a naked integer",
+      "domain": "original_data",
+      "naked_integer_allowed": false,
+      "namespace_id": "SKILL_DATA_ID",
+      "status": "active"
+    },
+    {
+      "description": "FurnitureData numeric identity; never a naked integer",
+      "domain": "original_data",
+      "naked_integer_allowed": false,
+      "namespace_id": "FURNITURE_DATA_ID",
+      "status": "active"
+    },
+    {
+      "description": "RoomData numeric identity; never a naked integer",
+      "domain": "original_data",
+      "naked_integer_allowed": false,
+      "namespace_id": "ROOM_DATA_ID",
+      "status": "active"
+    },
+    {
+      "description": "Room constructor floor argument",
+      "domain": "native_argument",
+      "naked_integer_allowed": false,
+      "namespace_id": "ROOM_FLOOR_ARGUMENT",
+      "status": "active"
+    },
+    {
+      "description": "RoomData.floorImgId_ array/index identity",
+      "domain": "original_data",
+      "naked_integer_allowed": false,
+      "namespace_id": "ROOMDATA_FLOOR_IMAGE_INDEX",
+      "status": "active"
+    },
+    {
+      "description": "Native array/indirection index",
+      "domain": "native_argument",
+      "naked_integer_allowed": false,
+      "namespace_id": "NATIVE_INDIRECTION_INDEX",
+      "status": "active"
+    },
+    {
+      "description": "img.inf/image selector identity",
+      "domain": "asset_selector",
+      "naked_integer_allowed": false,
+      "namespace_id": "IMAGE_SELECTOR_ID",
+      "status": "active"
+    },
+    {
+      "description": "seb/sub-seb selector identity",
+      "domain": "asset_selector",
+      "naked_integer_allowed": false,
+      "namespace_id": "SEB_SELECTOR_ID",
+      "status": "active"
+    },
+    {
+      "description": "Canonical asset identity",
+      "domain": "asset",
+      "naked_integer_allowed": false,
+      "namespace_id": "ASSET_ID",
+      "status": "active"
+    },
+    {
+      "description": "Decoded sprite identity",
+      "domain": "asset",
+      "naked_integer_allowed": false,
+      "namespace_id": "SPRITE_ID",
+      "status": "active"
+    },
+    {
+      "description": "Decoded sprite frame identity",
+      "domain": "asset",
+      "naked_integer_allowed": false,
+      "namespace_id": "SPRITE_FRAME_ID",
+      "status": "active"
+    },
+    {
+      "description": "Explicit runtime compatibility alias",
+      "domain": "compatibility",
+      "naked_integer_allowed": false,
+      "namespace_id": "COMPATIBILITY_ALIAS_ID",
+      "status": "active"
+    },
+    {
+      "description": "Product-only agent identity",
+      "domain": "product",
+      "naked_integer_allowed": false,
+      "namespace_id": "PRODUCT_AGENT_ID",
+      "status": "active"
+    },
+    {
+      "description": "Product-only task identity",
+      "domain": "product",
+      "naked_integer_allowed": false,
+      "namespace_id": "PRODUCT_TASK_ID",
+      "status": "active"
+    },
+    {
+      "description": "Product-to-original binding identity",
+      "domain": "product",
+      "naked_integer_allowed": false,
+      "namespace_id": "PRODUCT_BINDING_ID",
+      "status": "active"
+    },
+    {
+      "description": "Canonical type identity",
+      "domain": "code",
+      "naked_integer_allowed": false,
+      "namespace_id": "TYPE_ID",
+      "status": "active"
+    },
+    {
+      "description": "Canonical method identity",
+      "domain": "code",
+      "naked_integer_allowed": false,
+      "namespace_id": "METHOD_ID",
+      "status": "active"
+    },
+    {
+      "description": "Canonical field identity",
+      "domain": "code",
+      "naked_integer_allowed": false,
+      "namespace_id": "FIELD_ID",
+      "status": "active"
+    },
+    {
+      "description": "Canonical scene identity",
+      "domain": "scene",
+      "naked_integer_allowed": false,
+      "namespace_id": "SCENE_ID",
+      "status": "active"
+    },
+    {
+      "description": "Room instance identity",
+      "domain": "scene",
+      "naked_integer_allowed": false,
+      "namespace_id": "ROOM_INSTANCE_ID",
+      "status": "active"
+    },
+    {
+      "description": "Artifact instance identity",
+      "domain": "artifact",
+      "naked_integer_allowed": false,
+      "namespace_id": "ARTIFACT_ID",
+      "status": "active"
+    },
+    {
+      "description": "Byte-content identity",
+      "domain": "artifact",
+      "naked_integer_allowed": false,
+      "namespace_id": "BLOB_SHA256",
+      "status": "active"
+    },
+    {
+      "description": "Generated runtime contract identity",
+      "domain": "implementation",
+      "naked_integer_allowed": false,
+      "namespace_id": "RUNTIME_CONTRACT_ID",
+      "status": "active"
+    },
+    {
+      "description": "Acceptance test identity",
+      "domain": "acceptance",
+      "naked_integer_allowed": false,
+      "namespace_id": "TEST_ID",
+      "status": "active"
+    }
+  ],
+  "schema_version": "social-dev-k2-id-namespaces-v1",
+  "status": "pass"
+}

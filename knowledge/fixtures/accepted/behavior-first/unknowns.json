@@ -1,0 +1,106 @@
+{
+  "policy": "Unknown means no inferred value. Unknowns block claims that require them but do not block this source-limited behavior handoff.",
+  "schema_version": "social-dev-behavior-first-unknowns-v1",
+  "status": "tracked",
+  "unknowns": [
+    {
+      "area": "Staff.Update",
+      "blocked_now": true,
+      "evidence_limit": "decompiler indirect jump",
+      "id": "BF-U01",
+      "impact": "Cannot claim a complete autonomous state machine.",
+      "next_allowed_evidence": "pinned native disassembly/Ghidra or cleaner source",
+      "question": "Which direct handler is selected for every state value?"
+    },
+    {
+      "area": "HP",
+      "blocked_now": true,
+      "evidence_limit": "no readable hp decrement / RecoverHp(-) write; native body not traced in this static pass",
+      "id": "BF-U02",
+      "impact": "Cannot model work HP drain cadence.",
+      "next_allowed_evidence": "native Update/UpdateWork body trace",
+      "question": "Is ordinary living work charged by an HP drain not visible in readable C#?"
+    },
+    {
+      "area": "Recovery",
+      "blocked_now": true,
+      "evidence_limit": "damaged modulo branch in Update",
+      "id": "BF-U03",
+      "impact": "Only delay and per-stock recovery are closed.",
+      "next_allowed_evidence": "native branch trace",
+      "question": "What exact cadence adds stock when FLAG_SLEEPING is set?"
+    },
+    {
+      "area": "Workstation",
+      "blocked_now": true,
+      "evidence_limit": "damaged C# body",
+      "id": "BF-U04",
+      "impact": "Desk assignment fairness/vacancy cannot be claimed.",
+      "next_allowed_evidence": "native method trace",
+      "question": "What exact predicate does GetStaffEmptyObjTypeOf use?"
+    },
+    {
+      "area": "Contention",
+      "blocked_now": true,
+      "evidence_limit": "native-pinned method with damaged C# body",
+      "id": "BF-U05",
+      "impact": "Queue/fairness and simultaneous use remain unknown.",
+      "next_allowed_evidence": "native method trace",
+      "question": "Does GetUsersNum include active users, reservations, or both?"
+    },
+    {
+      "area": "Movement",
+      "blocked_now": true,
+      "evidence_limit": "indirect jump in C#",
+      "id": "BF-U06",
+      "impact": "Arrival state mapping is incomplete.",
+      "next_allowed_evidence": "native method trace",
+      "question": "What are the exact OnArriveGoal side effects for each move mode?"
+    },
+    {
+      "area": "Movement",
+      "blocked_now": true,
+      "evidence_limit": "damaged C# body",
+      "id": "BF-U07",
+      "impact": "Use-cell semantics are bounded but not fully closed.",
+      "next_allowed_evidence": "native method trace",
+      "question": "What is the exact GetDirectionVector mapping and type-4 parent policy?"
+    },
+    {
+      "area": "Social",
+      "blocked_now": true,
+      "evidence_limit": "damaged indirect jump",
+      "id": "BF-U08",
+      "impact": "Meeting animation/arrival lifecycle incomplete.",
+      "next_allowed_evidence": "native method trace",
+      "question": "What does the full UpdateMeeting processStep dispatch do?"
+    },
+    {
+      "area": "Data",
+      "blocked_now": true,
+      "evidence_limit": "damaged GetSkill body",
+      "id": "BF-U09",
+      "impact": "Selected skill is verified, lookup algorithm is not.",
+      "next_allowed_evidence": "native method trace or cleaner source",
+      "question": "How does Staff.GetSkill resolve DataManager records in every save/load path?"
+    },
+    {
+      "area": "FurnitureData",
+      "blocked_now": true,
+      "evidence_limit": "no source consumer ties names/sprites to rest/social roles",
+      "id": "BF-U10",
+      "impact": "Only explicit type/recovery behavior is promoted.",
+      "next_allowed_evidence": "additional source-backed call sites",
+      "question": "Which type-1/type-4 records have social/rest semantics beyond recovery_?"
+    },
+    {
+      "area": "Dashboard",
+      "blocked_now": false,
+      "evidence_limit": "task explicitly defers visual work",
+      "id": "BF-U11",
+      "impact": "Dashboard change boundary remains behavioral and API-level only.",
+      "next_allowed_evidence": "later dashboard audit",
+      "question": "What exact current widget-to-field mapping should be retained after the visual cut?"
+    }
+  ]
+}

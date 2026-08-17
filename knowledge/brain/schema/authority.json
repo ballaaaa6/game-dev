@@ -1,0 +1,26 @@
+{
+  "asset_priority": [
+    "asset_bytes_inf_seb_opt",
+    "extraction",
+    "visual_closure",
+    "compatibility_alias",
+    "screenshot"
+  ],
+  "data_priority": [
+    "original_data_bytes",
+    "loader_native",
+    "report"
+  ],
+  "product_policy": "Product facts are namespaced separately and never mutate original game facts.",
+  "schema_version": "social-dev-k2-authority-policy-v1",
+  "source_priority": [
+    "pinned_native",
+    "metadata",
+    "intact_csharp",
+    "accepted_closure",
+    "damaged_csharp",
+    "implementation",
+    "screenshot"
+  ],
+  "status": "pass"
+}

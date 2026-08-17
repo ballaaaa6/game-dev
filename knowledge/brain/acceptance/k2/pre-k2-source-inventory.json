@@ -1,0 +1,11 @@
+{
+  "artifact_count": 7556,
+  "broken_reference_count": 1280,
+  "compact_sha256": "12b1c858a4ca20c9c810140ab1a1be74834e644a01e5224ca933b24d62874a3e",
+  "directory_count": 1458,
+  "duplicate_group_count": 152,
+  "preflight_manifest_sha256": "1bab13cfb1f0d83823ef6ff82982b91fce9180a6e2488eb830c8e782dfb7ac9b",
+  "schema_version": "social-dev-k2-pre-source-inventory-v1",
+  "semantic_overlap_candidate_count": 10,
+  "status": "pass"
+}

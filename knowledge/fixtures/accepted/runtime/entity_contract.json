@@ -1,0 +1,239 @@
+{
+  "schema_version": "social-dev-entity-contract-v1",
+  "package": "social-dev-entity-contract",
+  "status": "pass",
+  "semantic_status": "approved_for_runtime_contract",
+  "catalog_id": "display-slice-01",
+  "ownership_rule": "Simulation owns state; renderer consumes snapshots/effects and cannot mutate state.",
+  "entities": [
+    {
+      "id": "WorldContext",
+      "status": "derived",
+      "responsibility": "Own the mutable scene, actor/object collections, deterministic clock and event queue.",
+      "source_boundary": [
+        "AppData",
+        "Player",
+        "Main"
+      ],
+      "fields": [
+        "scene_ref",
+        "actors",
+        "objects",
+        "clock",
+        "event_queue",
+        "presentation_effects"
+      ]
+    },
+    {
+      "id": "SceneState",
+      "status": "verified",
+      "responsibility": "Room grid, raw object type layer, object bindings and camera input.",
+      "source_boundary": [
+        "Room",
+        "RoomData",
+        "Camera"
+      ],
+      "fields": [
+        "scene_ref",
+        "grid",
+        "object_layer",
+        "actor_layer",
+        "camera_offset"
+      ]
+    },
+    {
+      "id": "ObjectState",
+      "status": "verified",
+      "responsibility": "Occupancy, footprint, passability, standing positions and bounded interaction state.",
+      "source_boundary": [
+        "ObjChip",
+        "FurnitureData"
+      ],
+      "fields": [
+        "object_id",
+        "raw_type",
+        "furniture_ref",
+        "position",
+        "direction",
+        "passability",
+        "occupancy"
+      ]
+    },
+    {
+      "id": "ActorState",
+      "status": "verified",
+      "responsibility": "Mutable visible Staff state, position, route, animation and talk/bubble effects.",
+      "source_boundary": [
+        "Staff",
+        "StaffData",
+        "JobData",
+        "SkillData"
+      ],
+      "fields": [
+        "actor_id",
+        "staff_ref",
+        "position",
+        "state",
+        "move_mode",
+        "route",
+        "animation",
+        "talk"
+      ]
+    },
+    {
+      "id": "RouteService",
+      "status": "verified",
+      "responsibility": "Cardinal grid neighbors, goal filters and deterministic route output.",
+      "source_boundary": [
+        "Astar",
+        "Node",
+        "Room"
+      ],
+      "fields": [
+        "grid",
+        "neighbor_policy",
+        "goal_filter",
+        "route_fixture"
+      ]
+    },
+    {
+      "id": "Clock",
+      "status": "derived",
+      "responsibility": "Logical tick/frame progression and timer inputs; wall-clock access stays outside the core.",
+      "source_boundary": [
+        "Player",
+        "Room",
+        "Staff"
+      ],
+      "fields": [
+        "tick_index",
+        "frame",
+        "logical_time"
+      ]
+    },
+    {
+      "id": "EventQueue",
+      "status": "deferred",
+      "responsibility": "Visible delayed events only; no gameplay/management event graph is promoted.",
+      "source_boundary": [
+        "DelayEvent",
+        "EventData",
+        "TalkData"
+      ],
+      "fields": [
+        "sequence",
+        "due_tick",
+        "event_type",
+        "payload"
+      ]
+    },
+    {
+      "id": "PresentationEffects",
+      "status": "derived",
+      "responsibility": "Render-facing alpha, animation, bubble and camera effects without mutating simulation state.",
+      "source_boundary": [
+        "Room",
+        "Staff",
+        "ObjChip",
+        "Main"
+      ],
+      "fields": [
+        "alpha",
+        "sprite_selector",
+        "frame",
+        "bubble",
+        "camera_offset"
+      ]
+    }
+  ],
+  "player_appdata_decision": {
+    "status": "derived",
+    "decision": "Do not port Player or AppData wholesale. Split only the bounded responsibilities listed above.",
+    "evidence": [
+      {
+        "type": "Player",
+        "path": "sources/raw/1_Click_CSharp_Code update/game/Player.cs",
+        "sha256": "4e42c7f40ac6c984c729fdea21ae1048ecfb2120538d03bf4501e53a55f3289e",
+        "purpose": "lifecycle/time/room/staff evidence",
+        "status": "evidence_only"
+      },
+      {
+        "type": "AppData",
+        "path": "sources/raw/1_Click_CSharp_Code update/KairoEngine/main/AppData.cs",
+        "sha256": "04b0ae97383e0c345b87ac9a18d73fd40fb5592434443f27921fb99394d81bd4",
+        "purpose": "world/bootstrap facade evidence",
+        "status": "evidence_only"
+      }
+    ]
+  },
+  "decompiler_body_policy": [
+    {
+      "method": "DataManager.Load",
+      "status": "quarantine",
+      "policy": "Use registry/reader evidence; write a fresh loader from the closed data contract.",
+      "source": {
+        "type": "DataManager",
+        "path": "sources/raw/1_Click_CSharp_Code update/data/DataManager.cs",
+        "sha256": "a2d8a91270b907b322198bf191c72a4628a736fb8b9595a8993719b6883eb661",
+        "purpose": "loader body contains decompiler artifacts",
+        "status": "evidence_only"
+      }
+    },
+    {
+      "method": "Room.Update",
+      "status": "quarantine",
+      "policy": "Use the verified update-order observation; implement a new deterministic loop.",
+      "source": {
+        "type": "Room",
+        "path": "sources/raw/1_Click_CSharp_Code update/game/Room.cs",
+        "sha256": "e8c8916c12f2902898c0de6ce8aa59f8ca0c738dd5c482aa64919b775d90662f",
+        "purpose": "update-order and lifecycle evidence",
+        "status": "evidence_only"
+      }
+    },
+    {
+      "method": "Staff.Update",
+      "status": "quarantine",
+      "policy": "Use bounded transition/tick contracts; do not copy the damaged body.",
+      "source": {
+        "type": "Staff",
+        "path": "sources/raw/1_Click_CSharp_Code update/game/Staff.cs",
+        "sha256": "9eaf34d6fad6265f69d6b10ca9b3c5baa60f1ad932e4ca7059c7c131292f9d37",
+        "purpose": "state/movement/animation evidence",
+        "status": "evidence_only"
+      }
+    },
+    {
+      "method": "Astar.SearchRoute",
+      "status": "quarantine",
+      "policy": "Implement a new route service from the native cardinal-neighbor and goal-filter contract.",
+      "source": {
+        "type": "Astar",
+        "path": "sources/raw/1_Click_CSharp_Code update/game.routeSearch/Astar.cs",
+        "sha256": "c49a91f6490683e87deb9f5729f9e90ac0d21a4d1cf5d2d1d891c34e1fec17ec",
+        "purpose": "route constants and native policy evidence",
+        "status": "evidence_only"
+      }
+    }
+  ],
+  "upstream_contracts": [
+    {
+      "path": "knowledge/fixtures/accepted/runtime/actor_behavior_contract.json",
+      "sha256": "01efb0d0f84071bc357bbba7ac69f4a54f40a6d39d75d2da504bb59e1224b918",
+      "content_hash": "1a81e2b61047a4dbe28f16d740351e41de83dc08f4ce7a7e414ce685f7bdc9d9"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/camera_coordinate_contract.json",
+      "sha256": "0bb4603ecbea2bf380124523de8368c4062237f0c4cf92ed3f69439ed2d5ac67",
+      "content_hash": "fdf9930c926c8b155948c05ad3e0ee965a8903e07f9420d96299d85f421cdf3d"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/tick_order_contract.json",
+      "sha256": "d15d3d4453d02a1471bea907d5a400ff708b12ce8e10cb30c963f8feee9a7bfa",
+      "content_hash": "901c260d516f3707a866ea5396bfbce0d2b1bde94d880c942303b295bbd1ca09"
+    }
+  ],
+  "open_blocking_items": [],
+  "generated_at_utc": "2026-08-16T11:27:43Z",
+  "content_hash": "e094b63376724fbd3b63e57a1689ace9f9fe1a7b7276c09bea18a36e0d003b75"
+}

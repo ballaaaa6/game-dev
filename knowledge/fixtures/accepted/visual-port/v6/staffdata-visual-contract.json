@@ -1,0 +1,54 @@
+{
+  "schema_version": "social-dev-visual-port-v6-staffdata-visual-contract-v1",
+  "status": "pass_static",
+  "catalog_id": "character-metadata-full",
+  "record_kind": "staff_data_template",
+  "counts": {
+    "staff_records": 141,
+    "asset_bindings": 141,
+    "human_images": 105,
+    "human_animations": 35
+  },
+  "load_order": [
+    "id_",
+    "lastName_",
+    "firstName_",
+    "sortId_",
+    "img_",
+    "rank_",
+    "jobId_",
+    "favorite_",
+    "hobby_",
+    "defParams_",
+    "employmentFukidashi_",
+    "dismissalFukidashi_",
+    "area_",
+    "extraRate_",
+    "flag_",
+    "evolveMaxNum_",
+    "cost_",
+    "skill_",
+    "hitRate_",
+    "bonusTerms_",
+    "bonusRate_"
+  ],
+  "visual_selector_rule": {
+    "source_field": "StaffData.img_",
+    "runtime_field": "render.image_selector.id",
+    "asset_binding_field": "staff_bindings[].image_selector_id",
+    "must_match": true,
+    "filename_authority": "native numeric selector and manifest only; filenames are descriptive evidence"
+  },
+  "selected_records": [
+    {"source_id": 0, "record_id": "staff:0", "name": "10s Female", "image_selector_id": 86, "status": "verified"},
+    {"source_id": 1, "record_id": "staff:1", "name": "10s Male", "image_selector_id": 87, "status": "verified"},
+    {"source_id": 2, "record_id": "staff:2", "name": "20s Female", "image_selector_id": 88, "status": "verified"},
+    {"source_id": 3, "record_id": "staff:3", "name": "20s Male", "image_selector_id": 89, "status": "verified"},
+    {"source_id": 100, "record_id": "staff:100", "name": "Tudoor Refrigerator", "image_selector_id": 65, "status": "verified", "variant_note": "metadata-only selector fixture; not inserted into room:0 actor bootstrap"}
+  ],
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/character_metadata_contract.json",
+    "knowledge/fixtures/accepted/runtime/character_asset_manifest.json",
+    "sources/raw/1_Click_CSharp_Code update/data/StaffData.cs:Load"
+  ]
+}

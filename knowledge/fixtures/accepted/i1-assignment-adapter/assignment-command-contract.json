@@ -1,0 +1,18 @@
+{
+  "schema_version": "social-dev-i1-assignment-command-contract-v1",
+  "status": "PASS_I1_6_ASSIGNMENT_ADAPTER_API",
+  "commands": [
+    { "type": "bind_agent", "arguments": ["externalAgentId", "staffId"] },
+    { "type": "unbind_agent", "arguments": ["externalAgentId"] },
+    { "type": "assign_task", "arguments": ["externalTaskId", "externalAgentId", "label?"] },
+    { "type": "start_task", "arguments": ["externalTaskId"] },
+    { "type": "complete_task", "arguments": ["externalTaskId", "reason?"] },
+    { "type": "fail_task", "arguments": ["externalTaskId", "reason?"] },
+    { "type": "cancel_task", "arguments": ["externalTaskId", "reason?"] },
+    { "type": "update_task_progress", "arguments": ["externalTaskId", "externalProgress"] }
+  ],
+  "forbidden_arguments": ["x", "y", "route", "walkFrame", "hp", "moveMode", "talkTarget", "equipmentTarget", "homeCommand", "animationFrame"],
+  "command_result": ["accepted", "code", "eventSequence", "agent", "task"],
+  "high_level_calls_only": ["ProductTaskOverlayBridge.enter", "ProductTaskOverlayBridge.exit", "LivingRuntime.snapshot", "LivingRuntime.tick is owned by the caller"],
+  "raw_living_mutators_exposed": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "social-dev-visual-port-v6-human-action-selector-map-v1",
+  "status": "pass_static",
+  "profile": "human-staff-v1",
+  "direction_order": ["right", "left", "up", "down"],
+  "actions": {
+    "wait": {"right": 10, "left": 11, "up": 12, "down": 13},
+    "move": {"right": 1, "left": 2, "up": 3, "down": 4},
+    "typing": {"right": 23, "left": 24, "up": 25, "down": 26},
+    "talk": {"source_action": "typing", "right": 23, "left": 24, "up": 25, "down": 26},
+    "work": {"fallback_action": "wait", "right": 10, "left": 11, "up": 12, "down": 13},
+    "equipment": {"fallback_action": "wait", "right": 10, "left": 11, "up": 12, "down": 13},
+    "sit_down": {"fallback_action": "wait", "right": 10, "left": 11, "up": 12, "down": 13},
+    "meeting": {"fallback_action": "wait", "right": 10, "left": 11, "up": 12, "down": 13},
+    "invite_to_talk": {"fallback_action": "wait", "right": 10, "left": 11, "up": 12, "down": 13},
+    "wander": {"fallback_action": "move", "right": 1, "left": 2, "up": 3, "down": 4},
+    "stay_home": {"fallback_action": "wait", "right": 10, "left": 11, "up": 12, "down": 13},
+    "fly_away": {"status": "deferred", "selector": null}
+  },
+  "native_actions": {
+    "chara_sample00": 0,
+    "walk": {"right": 1, "left": 2, "up": 3, "down": 4},
+    "wait": {"right": 10, "left": 11, "up": 12, "down": 13},
+    "typing": {"right": 23, "left": 24, "up": 25, "down": 26},
+    "banzai": {"right": 19, "down": 20},
+    "eieio": {"right": 21, "down": 22},
+    "head": 100
+  },
+  "resolution_policy": {
+    "lookup": "capability profile action -> selector_by_direction -> original resHuman_ numeric ID",
+    "unsupported_action": "explicit deferred/unsupported result; no invented filename or silent fallback",
+    "asset_loading": "lazy_by_selector",
+    "source_code_imports": false
+  },
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/character_capability_contract.json",
+    "knowledge/fixtures/accepted/runtime/character_asset_manifest.json",
+    "knowledge/fixtures/accepted/staff_semantics_contract.json"
+  ]
+}

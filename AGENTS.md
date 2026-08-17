@@ -34,9 +34,9 @@ This rule is the default for every task in this workspace and every future sessi
 
 - Base conclusions on the current source/extraction and code evidence; do not infer the meaning of anything that remains `unknown`.
 - Keep the existing source roots read-only.
-- Put generated evidence for the active Social Dev project under `knowledge/social-dev/evidence`, runtime contracts under `runtime/social-dev/evidence`, and reports/roadmaps under `docs/`.
+- Put generated evidence for the active Social Dev project under `knowledge/fixtures/accepted`, runtime contracts under `knowledge/fixtures/accepted/runtime`, canonical brain artifacts under `knowledge/brain`, rebuildable outputs under `knowledge/generated`, source/extraction roots under `knowledge/sources`, K3 gap bookkeeping under `knowledge/gaps`, and reports/roadmaps under `docs/`.
 - Do not create generated JSON/PNG/report files at the root.
-- `knowledge/social-dev/evidence/` is the primary C# discovery evidence for the active project; legacy C# evidence remains under `archive/pre-social-reset/knowledge/`; do not recreate `Assembly-CSharp/`.
+- `knowledge/sources/` is the read-only C# discovery/source boundary for the active project. Accepted contracts and regression fixtures live under `knowledge/fixtures/accepted`; historical material is retained only under `legacy/`. The removed legacy corpus must not be recreated. Do not recreate `Assembly-CSharp/`.
 - Keep evidence separate from runtime: use decompiled/C# evidence to analyze and create contracts, but do not execute it directly in the web runtime.
 
 ## Local Development Server Lifecycle
@@ -45,3 +45,46 @@ This rule is the default for every task in this workspace and every future sessi
 - Reuse a healthy server already running for the repository; do not rely on automatic fallback ports.
 - Track every process started during the task and stop its process tree after verification unless the user explicitly asks to keep it running.
 - Do not terminate Codex-owned `mcp/server.mjs`, `node_repl`, or processes under `OpenAI\Codex\runtimes`.
+
+## Current history policy
+
+Use the canonical brain/database at `knowledge/brain/sqlite/social_dev_brain.sqlite`, generated packs under `knowledge/generated/`, accepted fixtures under `knowledge/fixtures/accepted/`, and read-only sources under `knowledge/sources/`. Historical K2/G1.5/visual material is under `legacy/` and is not an active runtime, test, build, or query dependency. K2.5, K3, K4, and K4.1 are closed; K4.1 is ready for a future explicitly authorized V8 phase, while V8, integrations, deployment, and persistence/backend work are not started.
+
+## Git Closure Policy
+
+After every user-authorized phase/task that reaches an accepted terminal state:
+
+1. Run the required validation gates.
+2. Update `knowledge/brain/exports/CURRENT_STATE.json`.
+3. Append one compact milestone record to `docs/state/TASK_LEDGER.jsonl`.
+4. Update `PROJECT_STATE.md` and `TODO.md` when the current status or next boundary changes.
+5. Inspect `git status` and stage with an explicit allowlist mindset.
+6. Audit staged file count, size, file types, and largest files.
+7. Commit the completed phase.
+8. Push the current `main` branch to the existing configured remote.
+
+Mandatory rules:
+
+- An accepted completed goal normally receives a commit and push to `main`.
+- Failed, intermediate, or experimental work stays local unless the user explicitly requests a checkpoint publish.
+- Never force-push or rewrite remote history merely to make a phase appear clean.
+- Never use `git add .` blindly while forensic or local-only roots are present.
+- Never commit original APK/RAR/source ZIP archives, extracted C#, `libil2cpp.so`, `global-metadata.dat`, raw game-source vaults, bulk original assets, `node_modules`, `dist`, caches, or temporary forensic output.
+- Preserve read-only local forensic source roots.
+- Small provenance/hash manifests are allowed when intentionally part of project evidence.
+- Runtime-required promoted product assets and contracts may be committed when intentionally part of the product and reasonably sized.
+- If a push is rejected because the remote advanced, do not force-push; fetch and report the divergence before any merge or rebase.
+- If authentication is unavailable, keep the validated local commit and report `PUSH_BLOCKED_AUTH` with its commit SHA.
+- Do not start the next phase merely because a push succeeded.
+- A phase prompt may override automatic commit/push only when the user explicitly says not to commit or push.
+
+## Future Session Startup
+
+Before substantive work, read at minimum:
+
+- `AGENTS.md`
+- `knowledge/brain/exports/CURRENT_STATE.json`
+- `PROJECT_STATE.md`
+- `TODO.md`
+
+Inspect the latest Git commit and history when needed to understand the shared repository baseline.

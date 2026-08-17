@@ -1,0 +1,107 @@
+{
+  "accepted_authority": [
+    "phase1d_closure native room/route/passability facts",
+    "staff_semantics_contract bounded living-scene slice",
+    "pinned dump field offsets/RVAs",
+    "readable C# direct branches"
+  ],
+  "method": "Re-read status/semantic_status, inspect source/dump references, and promote only claims independently rechecked in this phase.",
+  "records": [
+    {
+      "artifact": "phase1d_closure.json",
+      "current_use": "Use as authority for native scene/route facts.",
+      "path": "knowledge/fixtures/accepted/phase1d_closure.json",
+      "prior_status": "pass / closed_for_phase2_entry",
+      "scope": "native room/object/passability/route closure; Staff broad update explicitly limited",
+      "treatment": "accept"
+    },
+    {
+      "artifact": "phase1d_passmap_fixture.json",
+      "current_use": "Reconcile into movement/furniture passability contract.",
+      "path": "knowledge/fixtures/accepted/phase1d_passmap_fixture.json",
+      "prior_status": "pass",
+      "scope": "passMap 3x3 behavior fixture",
+      "treatment": "accept"
+    },
+    {
+      "artifact": "phase1d_route_fixture.json",
+      "current_use": "Reconcile into movement target contract.",
+      "path": "knowledge/fixtures/accepted/phase1d_route_fixture.json",
+      "prior_status": "pass",
+      "scope": "Astar cardinal route and goal filters",
+      "treatment": "accept"
+    },
+    {
+      "artifact": "asset_selector_contract.json",
+      "current_use": "Behavior phase uses only data identity, not renderer changes.",
+      "path": "knowledge/fixtures/accepted/asset_selector_contract.json",
+      "prior_status": "pass",
+      "scope": "selector identity and sentinel policy",
+      "treatment": "accept"
+    },
+    {
+      "artifact": "staff_semantics_contract.json",
+      "current_use": "Promote direct source-backed facts; keep stated limitations.",
+      "path": "knowledge/fixtures/accepted/staff_semantics_contract.json",
+      "prior_status": "pass",
+      "scope": "states/modes/flags/talk/typing/selected skill slice",
+      "treatment": "accept_bounded"
+    },
+    {
+      "artifact": "phase1d_closure_validation.json",
+      "current_use": "Use as regression evidence.",
+      "path": "knowledge/fixtures/accepted/phase1d_closure_validation.json",
+      "prior_status": "pass / closed_for_phase2_entry",
+      "scope": "validation of prior closure",
+      "treatment": "accept"
+    },
+    {
+      "artifact": "staff_behavior_candidate.json",
+      "current_use": "Reverify each claim against current source/dump; unresolved items stay unknown.",
+      "path": "knowledge/fixtures/accepted/staff_behavior_candidate.json",
+      "prior_status": "candidate / pending_review",
+      "scope": "historical behavior candidates, including numeric labels and damaged Update",
+      "treatment": "do_not_promote_wholesale"
+    },
+    {
+      "artifact": "scene_behavior_validation.json",
+      "current_use": "Does not close autonomous lifecycle.",
+      "path": "knowledge/fixtures/accepted/scene_behavior_validation.json",
+      "prior_status": "pass / pending_review",
+      "scope": "candidate validation shell",
+      "treatment": "accept_as_candidate_only"
+    },
+    {
+      "artifact": "scene_semantics_review.json",
+      "current_use": "No automatic promotion.",
+      "path": "knowledge/fixtures/accepted/scene_semantics_review.json",
+      "prior_status": "candidate / pending_review",
+      "scope": "semantic review queue",
+      "treatment": "candidate_only"
+    },
+    {
+      "artifact": "scene_native_semantics.json",
+      "current_use": "Promote only the native facts rechecked here.",
+      "path": "knowledge/fixtures/accepted/scene_native_semantics.json",
+      "prior_status": "candidate / pending_fixture_review",
+      "scope": "native raw objMap/object placement claims",
+      "treatment": "accept_bounded"
+    },
+    {
+      "artifact": "scene_native_semantics_validation.json",
+      "current_use": "No behavior authority beyond cited facts.",
+      "path": "knowledge/fixtures/accepted/scene_native_semantics_validation.json",
+      "prior_status": "pass / pending_fixture_review",
+      "scope": "validation shell for native semantics",
+      "treatment": "accept_bounded"
+    }
+  ],
+  "rejected_shortcuts": [
+    "Do not promote Staff.Update as a complete algorithm",
+    "Do not infer FurnitureData identity from raw ObjChip topology",
+    "Do not infer rest/social roles from names or sprites",
+    "Do not treat historical candidate status as proof"
+  ],
+  "schema_version": "social-dev-behavior-first-prior-evidence-reconciliation-v1",
+  "status": "pass_with_source_limits"
+}

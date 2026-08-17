@@ -1,0 +1,10 @@
+{
+  "schema_version": "social-dev-k2-original-runtime-pack-mirror-manifest-v1",
+  "status": "PASS_BYTE_IDENTICAL_GENERATED_MIRROR",
+  "canonical_path": "knowledge/generated/original-runtime-pack/runtime-pack.json",
+  "mirror_path": "runtime/social-dev/generated/original-runtime-pack.json",
+  "canonical_sha256": "e7abff5ae6725530cb337a54f30706a76d51359721f594d9ca2dffab09cefb9f",
+  "mirror_sha256": "e7abff5ae6725530cb337a54f30706a76d51359721f594d9ca2dffab09cefb9f",
+  "byte_identical": true,
+  "source_refs_sha256": "2b8c27e8000dac64824e8587db068cd328d97a14719d84d9aa6575c5b36ed643"
+}

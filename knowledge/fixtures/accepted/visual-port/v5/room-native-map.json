@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "phase": "V5",
+  "status": "PASS_STATIC_NATIVE_SURFACE",
+  "execution_mode": "INLINE_STATIC_ONLY",
+  "source_boundary": {
+    "authoritative_sources": [
+      "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+      "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/RoomData.cs",
+      "knowledge/fixtures/accepted/visual-port/native-method-map.json",
+      "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json",
+      "knowledge/fixtures/accepted/runtime/room_scene_runtime_contract.json",
+      "knowledge/fixtures/accepted/runtime/native_room_floor_usage_contract.json"
+    ],
+    "source_roots_read_only": true,
+    "source_roots_executed": false
+  },
+  "room_methods": [
+    {
+      "symbol": "Room.InitMapChips",
+      "rva": "0x12CB1F4",
+      "source_role": "construct MapChip array from native MAPCHIP_ARRAY selected by Room.floor_",
+      "reads": ["Room.floor_", "MAPCHIP_ARRAY[0]", "MAPCHIP_ARRAY[1]", "MapChip[]"],
+      "writes": ["Room.mapChips_"],
+      "runtime_implementation": "runtime/social-dev/src/v5/room.ts:buildMapChips",
+      "proof": "CALL-FLOW-PROVEN"
+    },
+    {
+      "symbol": "Room.InitObjChips",
+      "rva": "0x12CB448",
+      "source_role": "construct one raw ObjChip per RoomData.objMap_ / objDir_ cell",
+      "reads": ["RoomData.objMap_", "RoomData.objDir_", "Room.width_", "Room.height_"],
+      "writes": ["Room.objChips_"],
+      "runtime_implementation": "runtime/social-dev/src/v5/room.ts:buildObjChips",
+      "proof": "CALL-FLOW-PROVEN"
+    },
+    {
+      "symbol": "Room.SetupBigChipsParent",
+      "rva": "0x12CB864",
+      "source_role": "room-owned structural facility parent setup",
+      "reads": ["RoomData object grid", "room:0 structural facility contract"],
+      "writes": ["structural facility command bindings"],
+      "runtime_implementation": "runtime/social-dev/src/v5/room-data.ts:structuralFacilitiesFor",
+      "proof": "SOURCE-DATA-PROVEN"
+    },
+    {
+      "symbol": "Room.PlaceDoor",
+      "rva": "0x12CB5E8",
+      "source_role": "raw type 5 door placement and installed flag",
+      "reads": ["ObjChip.rawType", "RoomData.doorImgId_"],
+      "writes": ["FurnitureData null", "installed flag 1"],
+      "runtime_implementation": "runtime/social-dev/src/v5/room.ts:doorCells and object-wall pass",
+      "proof": "NATIVE-CODE-PROVEN"
+    },
+    {
+      "symbol": "Room.Draw",
+      "rva": "0x12CBB80",
+      "source_role": "room-owned nine-slot visual pass orchestration",
+      "reads": ["ofx_", "ofy_", "mapChips_", "objChips_", "Staffs_"],
+      "writes": ["draw command order"],
+      "runtime_implementation": "runtime/social-dev/src/v5/room.ts:draw",
+      "proof": "CALL-FLOW-PROVEN"
+    }
+  ],
+  "child_methods": [
+    {"symbol": "MapChip.Draw", "rva": "0x12A1B24", "runtime_adapter": "runtime/social-dev/src/v4/map-chip.ts:drawMapChipBoundary", "proof": "NATIVE-CODE-PROVEN"},
+    {"symbol": "MapChip.DrawFloor", "rva": "0x12A1F38", "runtime_adapter": "runtime/social-dev/src/v4/map-chip.ts:drawMapFloor", "proof": "NATIVE-CODE-PROVEN"},
+    {"symbol": "MapChip.DrawExtentionFloor", "rva": "0x12A20F4", "runtime_adapter": "runtime/social-dev/src/v4/map-chip.ts:drawMapExtension", "proof": "NATIVE-CODE-PROVEN"},
+    {"symbol": "ObjChip.DrawWall", "rva": "0x12C0698", "runtime_adapter": "runtime/social-dev/src/v4/obj-chip.ts:drawObjChipWall", "proof": "NATIVE-CODE-PROVEN"},
+    {"symbol": "ObjChip.Draw overloads", "rva": "0x12C0E00;0x12C1664;0x12C166C;0x12C5188", "runtime_adapter": "runtime/social-dev/src/v4/obj-chip.ts:drawObjChipPrimary", "proof": "CALL-FLOW-PROVEN"}
+  ],
+  "roomdata_field_contract": {
+    "RoomData.objMap_": "raw 10x10 object type grid",
+    "RoomData.objDir_": "raw 10x10 direction grid",
+    "RoomData.floorImgId_": "native floor image table index; not a direct runtime image selector",
+    "RoomData.wallImgId_": "room wall image selector",
+    "RoomData.doorImgId_": "room door image selector",
+    "Room.floor_": "constructor topology selector; independent from RoomData.floorImgId_"
+  },
+  "closure": {
+    "roomdata_constructor_identity": "CLOSED",
+    "room_map_and_object_initialization": "CLOSED",
+    "room_draw_pass_ownership": "CLOSED_FOR_SELECTED_STATIC_SCOPE",
+    "staff_avatar_rendering": "DEFERRED_TO_V6",
+    "generic_gameplay_and_interaction": "OUT_OF_SCOPE"
+  }
+}

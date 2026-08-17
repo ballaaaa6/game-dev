@@ -1,0 +1,3331 @@
+{
+  "schema_version": "social-dev-native-room-floor-usage-catalog-v1",
+  "package": "social-dev-native-room-floor-usage-closure",
+  "status": "pass",
+  "semantic_status": "native_room_floor_connection_closed",
+  "apk": {
+    "path": "sources/raw/Social_Dev_Story_v2.5.1.apk",
+    "sha256": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf"
+  },
+  "native_artifacts": {
+    "metadata": {
+      "path": "knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat",
+      "sha256": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579"
+    },
+    "binary": {
+      "path": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so",
+      "sha256": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a"
+    },
+    "method_evidence": {
+      "room_static_constructor": {
+        "class": "Room",
+        "method": ".cctor",
+        "rva": "0x12D20C4",
+        "file_offset": "0x12CE0C4",
+        "end_rva_exclusive": "0x12D22F0",
+        "claim": "Creates MAPCHIP_ARRAY outer length 2, with inner lengths 196 and 16, and initializes the image tables.",
+        "byte_length": 556,
+        "byte_sha256": "f1a1e34a483d93a66e8c5fe0d4fdf033180585d203b0fb6d5ac8e4658246ea84",
+        "source_status": "verified_current_apk_native_method_boundary"
+      },
+      "room_init_map_chips": {
+        "class": "Room",
+        "method": "InitMapChips",
+        "rva": "0x12CB1F4",
+        "file_offset": "0x12C71F4",
+        "end_rva_exclusive": "0x12CB434",
+        "claim": "Computes floor != 0, selects MAPCHIP_ARRAY[0/1], allocates width*height MapChips, and reads the selected row by flat index.",
+        "byte_length": 576,
+        "byte_sha256": "def9cd1a7ca5fec80fe4ac59929193c3f6158dd47801f24426543ff42d6a7380",
+        "source_status": "verified_current_apk_native_method_boundary"
+      },
+      "map_chip_draw": {
+        "class": "MapChip",
+        "method": "Draw",
+        "rva": "0x12A1B24",
+        "file_offset": "0x129DB24",
+        "end_rva_exclusive": "0x12A1DA0",
+        "claim": "Reads Room.floor_ at object offset 0x38 and skips the upper-floor draw branch when floor < 1.",
+        "byte_length": 636,
+        "byte_sha256": "52df53c51bb22bd86c872840c955d5e81f81e6880593fc1c787450d448978044",
+        "source_status": "verified_current_apk_native_method_boundary"
+      },
+      "map_chip_draw_floor": {
+        "class": "MapChip",
+        "method": "DrawFloor",
+        "rva": "0x12A1F38",
+        "file_offset": "0x129DF38",
+        "end_rva_exclusive": "0x12A20F0",
+        "claim": "Draws the RoomData-selected floor image inside the native 14x14 floor-image culling region.",
+        "byte_length": 440,
+        "byte_sha256": "3b06678e72722ee400ebe2a2b05eb13270e3f66621de7b8a14bb9cb083b46841",
+        "source_status": "verified_current_apk_native_method_boundary"
+      },
+      "map_chip_draw_extension_floor": {
+        "class": "MapChip",
+        "method": "DrawExtentionFloor",
+        "rva": "0x12A20F4",
+        "file_offset": "0x129E0F4",
+        "end_rva_exclusive": "0x12A2A08",
+        "claim": "Draws the extension-wall/side composition using the MapChip cell and Room dimensions.",
+        "byte_length": 2324,
+        "byte_sha256": "5911924175b238180d54ff6e58ec4c1094eb097db20e8fb0aa04d2bab0bb0143",
+        "source_status": "verified_current_apk_native_method_boundary"
+      }
+    }
+  },
+  "native_static_arrays": {
+    "MAPCHIP_ARRAY": {
+      "outer_length": 2,
+      "selection_expression": "MAPCHIP_ARRAY[floor != 0 ? 1 : 0]",
+      "variants": {
+        "floor_0": {
+          "native_index": 0,
+          "floor_predicate": "floor == 0",
+          "length": 196,
+          "width": 14,
+          "height": 14,
+          "rows": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              9,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              5,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              7,
+              6,
+              6,
+              11,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              2,
+              4,
+              5,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              2,
+              3,
+              7,
+              6,
+              11,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              2,
+              3,
+              8,
+              8,
+              5,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              5,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              7,
+              6,
+              10,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "metadata_offset": "0x466F08",
+          "metadata_hash": "14A062795563410982268B6CA13A257B4DF04977027ECB9A691630DA5C3A7577",
+          "selector_edges": [
+            {
+              "flat_index": 0,
+              "cell": [
+                0,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 1,
+              "cell": [
+                1,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 2,
+              "cell": [
+                2,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 3,
+              "cell": [
+                3,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 4,
+              "cell": [
+                4,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 5,
+              "cell": [
+                5,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 6,
+              "cell": [
+                6,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 7,
+              "cell": [
+                7,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 8,
+              "cell": [
+                8,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 9,
+              "cell": [
+                9,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 10,
+              "cell": [
+                10,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 11,
+              "cell": [
+                11,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 12,
+              "cell": [
+                12,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 13,
+              "cell": [
+                13,
+                0
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 14,
+              "cell": [
+                0,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 15,
+              "cell": [
+                1,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 16,
+              "cell": [
+                2,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 17,
+              "cell": [
+                3,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 18,
+              "cell": [
+                4,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 19,
+              "cell": [
+                5,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 20,
+              "cell": [
+                6,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 21,
+              "cell": [
+                7,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 22,
+              "cell": [
+                8,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 23,
+              "cell": [
+                9,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 24,
+              "cell": [
+                10,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 25,
+              "cell": [
+                11,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 26,
+              "cell": [
+                12,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 27,
+              "cell": [
+                13,
+                1
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 28,
+              "cell": [
+                0,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 29,
+              "cell": [
+                1,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 30,
+              "cell": [
+                2,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 31,
+              "cell": [
+                3,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 32,
+              "cell": [
+                4,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 33,
+              "cell": [
+                5,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 34,
+              "cell": [
+                6,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 35,
+              "cell": [
+                7,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 36,
+              "cell": [
+                8,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 37,
+              "cell": [
+                9,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 38,
+              "cell": [
+                10,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 39,
+              "cell": [
+                11,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 40,
+              "cell": [
+                12,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 41,
+              "cell": [
+                13,
+                2
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 42,
+              "cell": [
+                0,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 43,
+              "cell": [
+                1,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 44,
+              "cell": [
+                2,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 45,
+              "cell": [
+                3,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 46,
+              "cell": [
+                4,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 47,
+              "cell": [
+                5,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 48,
+              "cell": [
+                6,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 49,
+              "cell": [
+                7,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 50,
+              "cell": [
+                8,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 51,
+              "cell": [
+                9,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 52,
+              "cell": [
+                10,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 53,
+              "cell": [
+                11,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 54,
+              "cell": [
+                12,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 55,
+              "cell": [
+                13,
+                3
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 56,
+              "cell": [
+                0,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 57,
+              "cell": [
+                1,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 58,
+              "cell": [
+                2,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 59,
+              "cell": [
+                3,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 60,
+              "cell": [
+                4,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 61,
+              "cell": [
+                5,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 62,
+              "cell": [
+                6,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 63,
+              "cell": [
+                7,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 64,
+              "cell": [
+                8,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 65,
+              "cell": [
+                9,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 66,
+              "cell": [
+                10,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 67,
+              "cell": [
+                11,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 68,
+              "cell": [
+                12,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 69,
+              "cell": [
+                13,
+                4
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 70,
+              "cell": [
+                0,
+                5
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 71,
+              "cell": [
+                1,
+                5
+              ],
+              "raw_map_index": 9,
+              "selector_id": 154,
+              "filename": "road_edge_00.png",
+              "asset_id": "map:chip/road_edge_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 72,
+              "cell": [
+                2,
+                5
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 73,
+              "cell": [
+                3,
+                5
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 74,
+              "cell": [
+                4,
+                5
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 75,
+              "cell": [
+                5,
+                5
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 76,
+              "cell": [
+                6,
+                5
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 77,
+              "cell": [
+                7,
+                5
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 78,
+              "cell": [
+                8,
+                5
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 79,
+              "cell": [
+                9,
+                5
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 80,
+              "cell": [
+                10,
+                5
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 81,
+              "cell": [
+                11,
+                5
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 82,
+              "cell": [
+                12,
+                5
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 83,
+              "cell": [
+                13,
+                5
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 84,
+              "cell": [
+                0,
+                6
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 85,
+              "cell": [
+                1,
+                6
+              ],
+              "raw_map_index": 5,
+              "selector_id": 13,
+              "filename": "road_00.png",
+              "asset_id": "map:chip/road_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 86,
+              "cell": [
+                2,
+                6
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 87,
+              "cell": [
+                3,
+                6
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 88,
+              "cell": [
+                4,
+                6
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 89,
+              "cell": [
+                5,
+                6
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 90,
+              "cell": [
+                6,
+                6
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 91,
+              "cell": [
+                7,
+                6
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 92,
+              "cell": [
+                8,
+                6
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 93,
+              "cell": [
+                9,
+                6
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 94,
+              "cell": [
+                10,
+                6
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 95,
+              "cell": [
+                11,
+                6
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 96,
+              "cell": [
+                12,
+                6
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 97,
+              "cell": [
+                13,
+                6
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 98,
+              "cell": [
+                0,
+                7
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 99,
+              "cell": [
+                1,
+                7
+              ],
+              "raw_map_index": 7,
+              "selector_id": 15,
+              "filename": "road_02.png",
+              "asset_id": "map:chip/road_02.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 100,
+              "cell": [
+                2,
+                7
+              ],
+              "raw_map_index": 6,
+              "selector_id": 14,
+              "filename": "road_01.png",
+              "asset_id": "map:chip/road_01.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 101,
+              "cell": [
+                3,
+                7
+              ],
+              "raw_map_index": 6,
+              "selector_id": 14,
+              "filename": "road_01.png",
+              "asset_id": "map:chip/road_01.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 102,
+              "cell": [
+                4,
+                7
+              ],
+              "raw_map_index": 11,
+              "selector_id": 156,
+              "filename": "road_03.png",
+              "asset_id": "map:chip/road_03.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 103,
+              "cell": [
+                5,
+                7
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 104,
+              "cell": [
+                6,
+                7
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 105,
+              "cell": [
+                7,
+                7
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 106,
+              "cell": [
+                8,
+                7
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 107,
+              "cell": [
+                9,
+                7
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 108,
+              "cell": [
+                10,
+                7
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 109,
+              "cell": [
+                11,
+                7
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 110,
+              "cell": [
+                12,
+                7
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 111,
+              "cell": [
+                13,
+                7
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 112,
+              "cell": [
+                0,
+                8
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 113,
+              "cell": [
+                1,
+                8
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 114,
+              "cell": [
+                2,
+                8
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 115,
+              "cell": [
+                3,
+                8
+              ],
+              "raw_map_index": 4,
+              "selector_id": 12,
+              "filename": "turf_01.png",
+              "asset_id": "map:chip/turf_01.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 116,
+              "cell": [
+                4,
+                8
+              ],
+              "raw_map_index": 5,
+              "selector_id": 13,
+              "filename": "road_00.png",
+              "asset_id": "map:chip/road_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 117,
+              "cell": [
+                5,
+                8
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 118,
+              "cell": [
+                6,
+                8
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 119,
+              "cell": [
+                7,
+                8
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 120,
+              "cell": [
+                8,
+                8
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 121,
+              "cell": [
+                9,
+                8
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 122,
+              "cell": [
+                10,
+                8
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 123,
+              "cell": [
+                11,
+                8
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 124,
+              "cell": [
+                12,
+                8
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 125,
+              "cell": [
+                13,
+                8
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 126,
+              "cell": [
+                0,
+                9
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 127,
+              "cell": [
+                1,
+                9
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 128,
+              "cell": [
+                2,
+                9
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 129,
+              "cell": [
+                3,
+                9
+              ],
+              "raw_map_index": 3,
+              "selector_id": 11,
+              "filename": "turf_00.png",
+              "asset_id": "map:chip/turf_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 130,
+              "cell": [
+                4,
+                9
+              ],
+              "raw_map_index": 7,
+              "selector_id": 15,
+              "filename": "road_02.png",
+              "asset_id": "map:chip/road_02.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 131,
+              "cell": [
+                5,
+                9
+              ],
+              "raw_map_index": 6,
+              "selector_id": 14,
+              "filename": "road_01.png",
+              "asset_id": "map:chip/road_01.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 132,
+              "cell": [
+                6,
+                9
+              ],
+              "raw_map_index": 11,
+              "selector_id": 156,
+              "filename": "road_03.png",
+              "asset_id": "map:chip/road_03.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 133,
+              "cell": [
+                7,
+                9
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 134,
+              "cell": [
+                8,
+                9
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 135,
+              "cell": [
+                9,
+                9
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 136,
+              "cell": [
+                10,
+                9
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 137,
+              "cell": [
+                11,
+                9
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 138,
+              "cell": [
+                12,
+                9
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 139,
+              "cell": [
+                13,
+                9
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 140,
+              "cell": [
+                0,
+                10
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 141,
+              "cell": [
+                1,
+                10
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 142,
+              "cell": [
+                2,
+                10
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 143,
+              "cell": [
+                3,
+                10
+              ],
+              "raw_map_index": 3,
+              "selector_id": 11,
+              "filename": "turf_00.png",
+              "asset_id": "map:chip/turf_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 144,
+              "cell": [
+                4,
+                10
+              ],
+              "raw_map_index": 8,
+              "selector_id": 105,
+              "filename": "turf_02.png",
+              "asset_id": "map:chip/turf_02.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 145,
+              "cell": [
+                5,
+                10
+              ],
+              "raw_map_index": 8,
+              "selector_id": 105,
+              "filename": "turf_02.png",
+              "asset_id": "map:chip/turf_02.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 146,
+              "cell": [
+                6,
+                10
+              ],
+              "raw_map_index": 5,
+              "selector_id": 13,
+              "filename": "road_00.png",
+              "asset_id": "map:chip/road_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 147,
+              "cell": [
+                7,
+                10
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 148,
+              "cell": [
+                8,
+                10
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 149,
+              "cell": [
+                9,
+                10
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 150,
+              "cell": [
+                10,
+                10
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 151,
+              "cell": [
+                11,
+                10
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 152,
+              "cell": [
+                12,
+                10
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 153,
+              "cell": [
+                13,
+                10
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 154,
+              "cell": [
+                0,
+                11
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 155,
+              "cell": [
+                1,
+                11
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 156,
+              "cell": [
+                2,
+                11
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 157,
+              "cell": [
+                3,
+                11
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 158,
+              "cell": [
+                4,
+                11
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 159,
+              "cell": [
+                5,
+                11
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 160,
+              "cell": [
+                6,
+                11
+              ],
+              "raw_map_index": 5,
+              "selector_id": 13,
+              "filename": "road_00.png",
+              "asset_id": "map:chip/road_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 161,
+              "cell": [
+                7,
+                11
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 162,
+              "cell": [
+                8,
+                11
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 163,
+              "cell": [
+                9,
+                11
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 164,
+              "cell": [
+                10,
+                11
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 165,
+              "cell": [
+                11,
+                11
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 166,
+              "cell": [
+                12,
+                11
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 167,
+              "cell": [
+                13,
+                11
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 168,
+              "cell": [
+                0,
+                12
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 169,
+              "cell": [
+                1,
+                12
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 170,
+              "cell": [
+                2,
+                12
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 171,
+              "cell": [
+                3,
+                12
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 172,
+              "cell": [
+                4,
+                12
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 173,
+              "cell": [
+                5,
+                12
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 174,
+              "cell": [
+                6,
+                12
+              ],
+              "raw_map_index": 7,
+              "selector_id": 15,
+              "filename": "road_02.png",
+              "asset_id": "map:chip/road_02.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 175,
+              "cell": [
+                7,
+                12
+              ],
+              "raw_map_index": 6,
+              "selector_id": 14,
+              "filename": "road_01.png",
+              "asset_id": "map:chip/road_01.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 176,
+              "cell": [
+                8,
+                12
+              ],
+              "raw_map_index": 10,
+              "selector_id": 155,
+              "filename": "road_edge_01.png",
+              "asset_id": "map:chip/road_edge_01.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 177,
+              "cell": [
+                9,
+                12
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 178,
+              "cell": [
+                10,
+                12
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 179,
+              "cell": [
+                11,
+                12
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 180,
+              "cell": [
+                12,
+                12
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 181,
+              "cell": [
+                13,
+                12
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 182,
+              "cell": [
+                0,
+                13
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 183,
+              "cell": [
+                1,
+                13
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 184,
+              "cell": [
+                2,
+                13
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 185,
+              "cell": [
+                3,
+                13
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 186,
+              "cell": [
+                4,
+                13
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 187,
+              "cell": [
+                5,
+                13
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 188,
+              "cell": [
+                6,
+                13
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 189,
+              "cell": [
+                7,
+                13
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 190,
+              "cell": [
+                8,
+                13
+              ],
+              "raw_map_index": 2,
+              "selector_id": 10,
+              "filename": "ground_00.png",
+              "asset_id": "map:chip/ground_00.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 191,
+              "cell": [
+                9,
+                13
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 192,
+              "cell": [
+                10,
+                13
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 193,
+              "cell": [
+                11,
+                13
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 194,
+              "cell": [
+                12,
+                13
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 195,
+              "cell": [
+                13,
+                13
+              ],
+              "raw_map_index": 0,
+              "selector_id": -1,
+              "filename": null,
+              "asset_id": null,
+              "status": "resolved_raw_index"
+            }
+          ],
+          "dimension_policy": "native_constructor_width_times_height_must_equal_length",
+          "status": "verified_native_topology"
+        },
+        "floor_nonzero": {
+          "native_index": 1,
+          "floor_predicate": "floor != 0",
+          "length": 16,
+          "width": 4,
+          "height": 4,
+          "rows": [
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ]
+          ],
+          "metadata_offset": "0x46A3F8",
+          "metadata_hash": "98F790EE3951F22E0FD44B7C95E258EC05EF746C8852BA98A1516F25F1890980",
+          "selector_edges": [
+            {
+              "flat_index": 0,
+              "cell": [
+                0,
+                0
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 1,
+              "cell": [
+                1,
+                0
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 2,
+              "cell": [
+                2,
+                0
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 3,
+              "cell": [
+                3,
+                0
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 4,
+              "cell": [
+                0,
+                1
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 5,
+              "cell": [
+                1,
+                1
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 6,
+              "cell": [
+                2,
+                1
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 7,
+              "cell": [
+                3,
+                1
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 8,
+              "cell": [
+                0,
+                2
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 9,
+              "cell": [
+                1,
+                2
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 10,
+              "cell": [
+                2,
+                2
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 11,
+              "cell": [
+                3,
+                2
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 12,
+              "cell": [
+                0,
+                3
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 13,
+              "cell": [
+                1,
+                3
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 14,
+              "cell": [
+                2,
+                3
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            },
+            {
+              "flat_index": 15,
+              "cell": [
+                3,
+                3
+              ],
+              "raw_map_index": 1,
+              "selector_id": 85,
+              "filename": "floor_05.png",
+              "asset_id": "map:chip/floor_05.png",
+              "status": "resolved_raw_index"
+            }
+          ],
+          "dimension_policy": "native_constructor_width_times_height_must_equal_length",
+          "status": "verified_native_topology"
+        }
+      }
+    },
+    "MAPCHIP_IMAGE_ID_ARRAY": {
+      "values": [
+        -1,
+        0,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        105,
+        154,
+        155,
+        156
+      ],
+      "length": 12,
+      "metadata_offset": "0x46A440"
+    },
+    "FLOOR_IMAGE_ID_ARRAY": {
+      "values": [
+        0,
+        19,
+        20,
+        21,
+        22,
+        23,
+        82,
+        83,
+        84,
+        85,
+        95
+      ],
+      "length": 11,
+      "metadata_offset": "0x467878"
+    }
+  },
+  "room_constructor_callsites": [
+    {
+      "call_id": "room-ctor:sources/raw/1_Click_CSharp_Code update/form/SubForm.cs:125618:2",
+      "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm.cs",
+      "file_sha256": "1113554dcef8c605cf1a3febe56f2676b1f3563874565cac291294a11c9265bf",
+      "line_start": 125618,
+      "line_end": 125618,
+      "source_text": "new Room(4, 4, 1, roomData, isPreview: true)",
+      "arguments": {
+        "width": 4,
+        "height": 4,
+        "floor": 1,
+        "roomdata_expression": "roomData",
+        "is_preview": true
+      },
+      "roomdata_id": null,
+      "roomdata_id_status": "dynamic_or_unresolved_expression",
+      "topology_variant": "floor_nonzero",
+      "topology_native_index": 1,
+      "topology_dimension_status": "verified_native_dimensions",
+      "usage_role": "addition_floor_preview"
+    },
+    {
+      "call_id": "room-ctor:sources/raw/1_Click_CSharp_Code update/form/SubForm.cs:126477:3",
+      "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm.cs",
+      "file_sha256": "1113554dcef8c605cf1a3febe56f2676b1f3563874565cac291294a11c9265bf",
+      "line_start": 126477,
+      "line_end": 126477,
+      "source_text": "new Room(4, 4, 1, roomData3, isPreview: true)",
+      "arguments": {
+        "width": 4,
+        "height": 4,
+        "floor": 1,
+        "roomdata_expression": "roomData3",
+        "is_preview": true
+      },
+      "roomdata_id": null,
+      "roomdata_id_status": "dynamic_or_unresolved_expression",
+      "topology_variant": "floor_nonzero",
+      "topology_native_index": 1,
+      "topology_dimension_status": "verified_native_dimensions",
+      "usage_role": "addition_floor_preview"
+    },
+    {
+      "call_id": "room-ctor:sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/InitAdditionFloor.cs:143:1",
+      "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/InitAdditionFloor.cs",
+      "file_sha256": "5a9bc6ba9edb2a8c872f0dc5980113d39f2d5718f33c7f85a7682c153fb9753b",
+      "line_start": 143,
+      "line_end": 143,
+      "source_text": "new Room(4, 4, 1, roomData, isPreview: true)",
+      "arguments": {
+        "width": 4,
+        "height": 4,
+        "floor": 1,
+        "roomdata_expression": "roomData",
+        "is_preview": true
+      },
+      "roomdata_id": null,
+      "roomdata_id_status": "dynamic_or_unresolved_expression",
+      "topology_variant": "floor_nonzero",
+      "topology_native_index": 1,
+      "topology_dimension_status": "verified_native_dimensions",
+      "usage_role": "addition_floor_preview"
+    },
+    {
+      "call_id": "room-ctor:sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/SubForm.cs:125578:2",
+      "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/SubForm.cs",
+      "file_sha256": "10c28d0acd60ba69cd1fbeca362813ecc7070cdc99cc665519b389c3b1cc7617",
+      "line_start": 125578,
+      "line_end": 125578,
+      "source_text": "new Room(4, 4, 1, roomData, isPreview: true)",
+      "arguments": {
+        "width": 4,
+        "height": 4,
+        "floor": 1,
+        "roomdata_expression": "roomData",
+        "is_preview": true
+      },
+      "roomdata_id": null,
+      "roomdata_id_status": "dynamic_or_unresolved_expression",
+      "topology_variant": "floor_nonzero",
+      "topology_native_index": 1,
+      "topology_dimension_status": "verified_native_dimensions",
+      "usage_role": "addition_floor_preview"
+    },
+    {
+      "call_id": "room-ctor:sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/SubForm.cs:126437:3",
+      "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/SubForm.cs",
+      "file_sha256": "10c28d0acd60ba69cd1fbeca362813ecc7070cdc99cc665519b389c3b1cc7617",
+      "line_start": 126437,
+      "line_end": 126437,
+      "source_text": "new Room(4, 4, 1, roomData3, isPreview: true)",
+      "arguments": {
+        "width": 4,
+        "height": 4,
+        "floor": 1,
+        "roomdata_expression": "roomData3",
+        "is_preview": true
+      },
+      "roomdata_id": null,
+      "roomdata_id_status": "dynamic_or_unresolved_expression",
+      "topology_variant": "floor_nonzero",
+      "topology_native_index": 1,
+      "topology_dimension_status": "verified_native_dimensions",
+      "usage_role": "addition_floor_preview"
+    },
+    {
+      "call_id": "room-ctor:sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/UpdateAdditionFloor.cs:765:1",
+      "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/UpdateAdditionFloor.cs",
+      "file_sha256": "14f48bc84b7d5fad42da0f84a857ebcc8b7b683b4167f99b2bcad20cdfe22cf7",
+      "line_start": 765,
+      "line_end": 765,
+      "source_text": "new Room(4, 4, 1, roomData3, isPreview: true)",
+      "arguments": {
+        "width": 4,
+        "height": 4,
+        "floor": 1,
+        "roomdata_expression": "roomData3",
+        "is_preview": true
+      },
+      "roomdata_id": null,
+      "roomdata_id_status": "dynamic_or_unresolved_expression",
+      "topology_variant": "floor_nonzero",
+      "topology_native_index": 1,
+      "topology_dimension_status": "verified_native_dimensions",
+      "usage_role": "addition_floor_preview"
+    },
+    {
+      "call_id": "room-ctor:sources/raw/1_Click_CSharp_Code update/game/Player.cs:4389:1",
+      "file": "sources/raw/1_Click_CSharp_Code update/game/Player.cs",
+      "file_sha256": "4e42c7f40ac6c984c729fdea21ae1048ecfb2120538d03bf4501e53a55f3289e",
+      "line_start": 4389,
+      "line_end": 4389,
+      "source_text": "new Room(4, 4, 0, roomData, isPreview: false)",
+      "arguments": {
+        "width": 4,
+        "height": 4,
+        "floor": 0,
+        "roomdata_expression": "roomData",
+        "is_preview": false
+      },
+      "roomdata_id": null,
+      "roomdata_id_status": "dynamic_or_unresolved_expression",
+      "topology_variant": "floor_0",
+      "topology_native_index": 0,
+      "topology_dimension_status": "not_proven_or_mismatched",
+      "usage_role": "persistent_player_room"
+    },
+    {
+      "call_id": "room-ctor:sources/raw/1_Click_CSharp_Code update/KairoEngine/main/AppData.cs:13813:1",
+      "file": "sources/raw/1_Click_CSharp_Code update/KairoEngine/main/AppData.cs",
+      "file_sha256": "04b0ae97383e0c345b87ac9a18d73fd40fb5592434443f27921fb99394d81bd4",
+      "line_start": 13813,
+      "line_end": 13813,
+      "source_text": "new Room(14, 14, 0, roomData_[0], isPreview: false)",
+      "arguments": {
+        "width": 14,
+        "height": 14,
+        "floor": 0,
+        "roomdata_expression": "roomData_[0]",
+        "is_preview": false
+      },
+      "roomdata_id": 0,
+      "roomdata_id_status": "explicit_roomdata_index",
+      "topology_variant": "floor_0",
+      "topology_native_index": 0,
+      "topology_dimension_status": "verified_native_dimensions",
+      "usage_role": "main_map_bootstrap"
+    }
+  ],
+  "parameterized_usage": [
+    {
+      "usage_id": "player-add-room",
+      "roomdata_ids": [
+        "room:0",
+        "room:1",
+        "room:2",
+        "room:3",
+        "room:4",
+        "room:5",
+        "room:6",
+        "room:7",
+        "room:8",
+        "room:9",
+        "room:10",
+        "room:11",
+        "room:12",
+        "room:13",
+        "room:14",
+        "room:15",
+        "room:16",
+        "room:17"
+      ],
+      "roomdata_id_status": "parameterized_native_roomdata_argument",
+      "room_floor_value": 0,
+      "topology_variant": "floor_0",
+      "width": 4,
+      "height": 4,
+      "is_preview": false,
+      "callers": [
+        {
+          "file": "sources/raw/1_Click_CSharp_Code update/game/Player.cs",
+          "line": 4389,
+          "method": "Player.AddRoom"
+        }
+      ],
+      "status": "verified_native_constructor_dimensions"
+    },
+    {
+      "usage_id": "addition-floor-preview",
+      "roomdata_ids": [
+        "room:0",
+        "room:1",
+        "room:2",
+        "room:3",
+        "room:4",
+        "room:5",
+        "room:6",
+        "room:7",
+        "room:8",
+        "room:9",
+        "room:10",
+        "room:11",
+        "room:12",
+        "room:13",
+        "room:14",
+        "room:15",
+        "room:16",
+        "room:17"
+      ],
+      "roomdata_id_status": "selected_preview_vector_element_dynamic_id",
+      "room_floor_value": 1,
+      "topology_variant": "floor_nonzero",
+      "width": 4,
+      "height": 4,
+      "is_preview": true,
+      "callers": [
+        {
+          "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm.cs",
+          "lines": [
+            125618,
+            126477
+          ]
+        },
+        {
+          "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/SubForm.cs",
+          "lines": [
+            125578,
+            126437
+          ]
+        },
+        {
+          "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/InitAdditionFloor.cs",
+          "line": 143
+        },
+        {
+          "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/UpdateAdditionFloor.cs",
+          "line": 765
+        }
+      ],
+      "status": "verified_native_constructor_dimensions"
+    },
+    {
+      "usage_id": "main-display-map",
+      "roomdata_ids": [
+        "room:0"
+      ],
+      "roomdata_id_status": "explicit_roomdata_index",
+      "room_floor_value": 0,
+      "topology_variant": "floor_0",
+      "width": 14,
+      "height": 14,
+      "is_preview": false,
+      "callers": [
+        {
+          "file": "sources/raw/1_Click_CSharp_Code update/KairoEngine/main/AppData.cs",
+          "line": 13813,
+          "method": "AppData.NewGame"
+        }
+      ],
+      "status": "verified_native_constructor_dimensions"
+    }
+  ],
+  "coverage": {
+    "roomdata_catalog_rows": [
+      "room:0",
+      "room:1",
+      "room:2",
+      "room:3",
+      "room:4",
+      "room:5",
+      "room:6",
+      "room:7",
+      "room:8",
+      "room:9",
+      "room:10",
+      "room:11",
+      "room:12",
+      "room:13",
+      "room:14",
+      "room:15",
+      "room:16",
+      "room:17"
+    ],
+    "roomdata_rows_with_floor_image_links": [
+      "room:0",
+      "room:1",
+      "room:2",
+      "room:3",
+      "room:4",
+      "room:5",
+      "room:6",
+      "room:7",
+      "room:8",
+      "room:9",
+      "room:10",
+      "room:11",
+      "room:12",
+      "room:13",
+      "room:14",
+      "room:15",
+      "room:16",
+      "room:17"
+    ],
+    "roomdata_to_room_floor_direct_mapping": "not_a_native_field_relationship",
+    "roomdata_to_room_floor_policy": "RoomData is passed as an argument; Room.floor_ is supplied by the Room constructor call site.",
+    "full_14x14_native_path": "room:0 main display and any floor==0 map construction with width=14,height=14",
+    "native_4x4_nonzero_path": "floor!=0 construction with width=4,height=4, including addition-floor preview",
+    "unsupported_combinations": [
+      "floor!=0 with width=14,height=14: MAPCHIP_ARRAY[1] has only 16 values and native InitMapChips cannot supply 196 cells",
+      "floor values 2/3/4/5 as distinct topology variants: native selection is boolean floor!=0, not a per-number array index"
+    ],
+    "status": "closed_explicit_native_dimension_policy"
+  },
+  "source_refs": {
+    "room_constructor": {
+      "file": "sources/raw/1_Click_CSharp_Code update/game/Room.cs",
+      "lines": "149-176",
+      "claim": "Room receives width, height, floor, RoomData, and isPreview as separate constructor inputs."
+    },
+    "init_map_chips": {
+      "file": "sources/raw/1_Click_CSharp_Code update/game/Room.cs",
+      "lines": "208-453",
+      "claim": "Readable decompiler body is damaged; native method is authoritative for array selection and dimensions."
+    },
+    "player_add_room": {
+      "file": "sources/raw/1_Click_CSharp_Code update/game/Player.cs",
+      "line": 4389,
+      "claim": "Persistent Player.AddRoom constructs Room(4,4,0,roomData,false)."
+    },
+    "main_display": {
+      "file": "sources/raw/1_Click_CSharp_Code update/KairoEngine/main/AppData.cs",
+      "line": 13813,
+      "claim": "AppData.NewGame constructs Room(14,14,0,roomData_[0],false)."
+    },
+    "addition_preview": {
+      "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm.cs",
+      "lines": "126414-126477",
+      "claim": "Addition-floor preview selects a dynamic RoomData and constructs Room(4,4,1,roomData3,true)."
+    }
+  },
+  "runtime_policy": {
+    "roomdata_is_interior_catalog_key": true,
+    "room_floor_is_constructor_key": true,
+    "mapchip_never_inferred_from_objchip": true,
+    "floor_image_table_is_independent_from_mapchip_topology": true,
+    "nonzero_topology_requires_4x4_native_dimensions": true,
+    "unsupported_dimension_combinations_are_rejected": true,
+    "raw_native_floor_value_is_preserved": true,
+    "environment_scope": {
+      "main_display": {
+        "topology": "floor_0",
+        "dimensions": "14x14",
+        "outer_mapchip": "native"
+      },
+      "persistent_room": {
+        "topology": "floor_0",
+        "dimensions": "4x4",
+        "outer_mapchip": "not_present"
+      },
+      "addition_floor_preview": {
+        "topology": "floor_nonzero",
+        "dimensions": "4x4",
+        "outer_mapchip": "not_present"
+      },
+      "non_main_outer_mapchip_policy": "no_synthetic_14x14_promotion"
+    }
+  },
+  "content_hash": "91d009764eb7628cd28061e0e34c4c8ca4875fa421bbbc0d7eaa20176d358a88"
+}

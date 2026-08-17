@@ -1,0 +1,135 @@
+{
+  "classification": "REPRODUCED_EXACT",
+  "directional_sequences": {
+    "DIRECTION_DOWN_3": [
+      {
+        "native": "0x12C1C70",
+        "operation": "desk primary Seb/AppData.DrawSeb",
+        "order": 0,
+        "owner": "ObjChip.Draw type-2 inner"
+      },
+      {
+        "guard": "staffId_ != -1",
+        "native": "0x12C1E38",
+        "operation": "chair subSeb ResourceManager.DrawSeb",
+        "order": 1,
+        "owner": "ObjChip.Draw type-2 inner",
+        "seb_frame": 1
+      },
+      {
+        "guard": "installed outer path; Staff flags bit 2 filter",
+        "native": "0x12C1ED4 -> 0x12DABA8",
+        "operation": "Staff.Draw offset overload",
+        "order": 2,
+        "owner": "ObjChip.staffs_"
+      },
+      {
+        "guard": "staffId_ != -1",
+        "native": "0x12C26DC",
+        "operation": "late chair subSeb foreground ResourceManager.DrawSeb",
+        "order": 3,
+        "owner": "ObjChip.Draw type-2 inner",
+        "seb_frame": 2
+      }
+    ],
+    "DIRECTION_UP_2": [
+      {
+        "guard": "staffId_ != -1",
+        "native": "0x12C2460",
+        "operation": "chair subSeb ResourceManager.DrawSeb",
+        "order": 0,
+        "owner": "ObjChip.Draw type-2 inner",
+        "seb_frame": 0
+      },
+      {
+        "guard": "installed outer path; Staff flags bit 2 filter",
+        "native": "0x12C2510 -> 0x12DABA8",
+        "operation": "Staff.Draw offset overload",
+        "order": 1,
+        "owner": "ObjChip.staffs_"
+      },
+      {
+        "native": "0x12C1C70",
+        "operation": "desk primary Seb/AppData.DrawSeb",
+        "order": 2,
+        "owner": "ObjChip.Draw type-2 inner"
+      }
+    ]
+  },
+  "duplicate_staff_guard": {
+    "installed_outer": "0x12C108C tbz",
+    "principle": "live installed path does not also execute the uninstalled outer Staff loop",
+    "staff_loop": "0x12C1ED4 or 0x12C2510"
+  },
+  "live_normal": {
+    "Room.Draw": "0x12CBB80",
+    "callsite": "0x12C10C4",
+    "inner_overload": "0x12C166C",
+    "installed_guard": "0x12C1088 -> 0x12C108C; installed true bypasses outer uninstalled Staff loop",
+    "outer_overload": "0x12C0E00",
+    "preview": false
+  },
+  "preview_paths": [
+    {
+      "callsite": "0x12CC234",
+      "owner": "Room.Draw floor-select type-2",
+      "preview": true
+    },
+    {
+      "callsite": "0x12CE81C -> 0x12CE824",
+      "owner": "Room.DrawObjPreview",
+      "preview": true
+    }
+  ],
+  "research_findings": [
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "The autonomous Talk frame-20/frame-70 pools and field-handle relocation chain",
+      "finding_id": "talk.autonomous-pools"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "Invite opening, busy/reject, and response pools plus random bounds",
+      "finding_id": "talk.invitation-pools"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "EN/JA resource rows, language path, storage, timing, offset, lifetime, draw, and cleanup",
+      "finding_id": "talk.localization-and-lifecycle"
+    },
+    {
+      "classification": "REJECTED_BY_SOURCE",
+      "finding": "Treat 0x27D7E40 as an autonomous Talk pool",
+      "finding_id": "talk.extra-handle-0x27D7E40"
+    },
+    {
+      "classification": "REPRODUCED_WITH_CORRECTION",
+      "finding": "Promote a separate Room0 door animation frame timeline",
+      "finding_id": "door.distinct-visual-animation-timeline"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "Room0 null-FurnitureData DrawWall path is static while action state remains separate",
+      "finding_id": "door.null-furnituredata-consumer"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "Desk/chair/Staff.Draw live type-2 ordering and installed ownership guard",
+      "finding_id": "workstation.type2-live-order"
+    },
+    {
+      "classification": "REPRODUCED_WITH_CORRECTION",
+      "finding": "Treat preview=true Draw as the live normal Room0 path",
+      "finding_id": "workstation.preview-is-live"
+    }
+  ],
+  "schema_version": "social-dev-k4-1-room0-workstation-pass-interleave-v1",
+  "source_refs": [
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:Draw(FurnitureData,bool)",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Draw/DrawObjPreview",
+    "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12C166C/0x12C0E00/0x12CBB80/0x12CE824",
+    "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:native_initial_furniture",
+    "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0].object_cells"
+  ],
+  "status": "PROVEN_CANONICAL"
+}

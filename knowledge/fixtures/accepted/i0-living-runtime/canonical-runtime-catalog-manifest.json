@@ -1,0 +1,34 @@
+{
+  "schema_version": "social-dev-i0-canonical-runtime-catalog-manifest-v1",
+  "status": "PASS_CANONICAL_RUNTIME_CATALOG_READY",
+  "catalog_path": "knowledge/fixtures/accepted/runtime/i0-runtime-catalog.json",
+  "catalog_sha256": "78e55aa1ce8ad06072da0518b5c71b35f1843569c4024e181b867b5098b1cba5",
+  "source_hashes": {
+    "StaffData": "2d6ef889d86580bcd512c579785ebb5ddb40bc947e3fdc4298a20114d16eee5c",
+    "JobData": "9cedcc5a09c9406d1b6c6bd4784cd41e5d39472cee0144b90014c27e38eb8ae9",
+    "SkillData": "b035bc19da9f0b6711510e5d5b175cdeb4632822be2a354a7702f097c72577cf",
+    "FurnitureData": "338d0599e9e9c8bf117d5e0e7f4bec54cb9877615fa8a04a59f4e66339757603",
+    "StaffParameters": "49c483606690dd3608c650787fb6546b6398b1d7f72562d91a6e15bce65ddbe1",
+    "JobParameters": "70191c23ceeb98109c6a19bdc73a8073ade59189cf1e5931735085742d30ffd7",
+    "RoomRuntime": "469086eb7048ef8a3d6578e603a9c310968a4157822622b631f71c659ae14173",
+    "NativeAssembly": "5597ee4658cc6570ed42d3a668bd4f75ad3dfb5eaae8958f29c66eea7cdeaa7e",
+    "Floor00": "5fb4369970c93e2a636adf8a911b3b25d0f1d85a37bcbf88da6310b1ec4cdc35",
+    "R0Fixtures": "a58085a604c18fe61ad00bf75f48e17a93fdc533ce6276e1e2a5139f3ba24634"
+  },
+  "counts": {
+    "StaffData": 141,
+    "JobData": 30,
+    "SkillData": 36,
+    "FurnitureData": 103,
+    "RoomData": 18
+  },
+  "required_relations": {
+    "staff0_job": 4,
+    "staff0_skill": 1,
+    "staff0_max_hp_level0": 108,
+    "furniture18_type": 1,
+    "furniture18_recovery": 10
+  },
+  "room_source": "knowledge/fixtures/accepted/runtime/room_scene_runtime_contract.json",
+  "fabricated_rows": 0
+}

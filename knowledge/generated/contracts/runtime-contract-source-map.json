@@ -1,0 +1,166 @@
+{
+  "schema_version": "social-dev-k2-runtime-contract-source-map-v1",
+  "source_refs": {
+    "actorBehaviorJson": {
+      "path": "knowledge/fixtures/accepted/runtime/actor_behavior_contract.json",
+      "sha256": "299567c24af1386699c9721392c9de1b6aa920cfdc729ba9453214952d082991"
+    },
+    "actorCatalogJson": {
+      "path": "knowledge/fixtures/accepted/runtime/actor_catalog_contract.json",
+      "sha256": "30f59ab61b0c90c3345a4c490ce350c6680389f7c8ffcfdca6c1da178c0f056e"
+    },
+    "actorSpawnJson": {
+      "path": "knowledge/fixtures/accepted/runtime/actor_spawn_contract.json",
+      "sha256": "f234cfbba8b2d1ea520d44b8345cf072b83dcb0938f8730bf96624b1510df2b1"
+    },
+    "assetMetadataRuntimeManifestJson": {
+      "path": "knowledge/fixtures/accepted/runtime/asset_metadata_runtime_manifest.json",
+      "sha256": "8eadc7ae4e77f8f52e3f769b94d2d5b46d8e1c02a8e167cf67240d6e7dda6768"
+    },
+    "cameraCoordinateJson": {
+      "path": "knowledge/fixtures/accepted/runtime/camera_coordinate_contract.json",
+      "sha256": "3fc8a715e0d0e3587a15e37919db41f89f0f788cb4a5aed3036fb97348b70609"
+    },
+    "characterAssetManifestJson": {
+      "path": "knowledge/fixtures/accepted/runtime/character_asset_manifest.json",
+      "sha256": "52610de1374918acb8b312a85a0b55c5df881f721da961854cc3b7e705af8fd1"
+    },
+    "characterCapabilityJson": {
+      "path": "knowledge/fixtures/accepted/runtime/character_capability_contract.json",
+      "sha256": "0039cf40e659cebf428f4957681ee816de27c5d942f1e6c88268dc74f44a763b"
+    },
+    "characterMetadataJson": {
+      "path": "knowledge/fixtures/accepted/runtime/character_metadata_contract.json",
+      "sha256": "53c31c81d67fc82b493900d8a6152ce9d5ee1a9ebed1f0342f9e5360ce4c931c"
+    },
+    "defaultMapChipJson": {
+      "path": "knowledge/fixtures/accepted/runtime/default_map_chip_contract.json",
+      "sha256": "83f5a5805560be9365f7a72a03d7974aa6d77cf19c2d8a719494a971241dc55f"
+    },
+    "displayAssetManifestJson": {
+      "path": "knowledge/fixtures/accepted/runtime/display_asset_manifest.json",
+      "sha256": "254624a2bffbcb91ec4477781f448635730cc70cfaacb80f574aa94d708f1901"
+    },
+    "fixtureManifestV1Json": {
+      "path": "knowledge/fixtures/accepted/visual-port/v1/fixture-manifest.json",
+      "sha256": "6b5de851fe58de4097aa472b8d0a817c76bb2c455fb737961450961e055a29ca"
+    },
+    "fixtureManifestV3Json": {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/fixture-manifest.json",
+      "sha256": "18971351447e72161a298c32a260669c86ada76bc7b012bd84e9b9f78268bea1"
+    },
+    "fixtureManifestV4Json": {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/fixture-manifest.json",
+      "sha256": "6bc1ee06948882816cbf94b801c394c9c925724d340a5f9aa0ef638d23ef1625"
+    },
+    "floor00DisplayPolicyJson": {
+      "path": "knowledge/fixtures/accepted/runtime/floor00_display_policy.json",
+      "sha256": "fc3f37dba55b32171dfbfd5bb3629ee5108f2914a39bf67a03b57bb6c5572d23"
+    },
+    "floor00SceneJson": {
+      "path": "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+      "sha256": "50264d3ea62420096c5ff3cd5e8e0ab40dbee70db1a4fc41ee079fa36c9d8e6e"
+    },
+    "floor00VisualLayoutJson": {
+      "path": "knowledge/fixtures/accepted/runtime/floor00_visual_layout_contract.json",
+      "sha256": "78e95a408420fe1bf8fab801ad792e564442d1d4f23f69ac6607b24123279311"
+    },
+    "groupMapV3Json": {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/resource-group-map.json",
+      "sha256": "852c4b5f5a258ec358a02faa1154b211d97cf805c18cb4e890d54428e1117ef9"
+    },
+    "i0RuntimeCatalogJson": {
+      "path": "knowledge/fixtures/accepted/runtime/i0-runtime-catalog.json",
+      "sha256": "68729febd6955949fb90aec0e86528c202b3ef5cf5c70a20462b6983186e7dc9"
+    },
+    "imageOptContractV1Json": {
+      "path": "knowledge/fixtures/accepted/visual-port/v1/image-opt-contract.json",
+      "sha256": "773f3a5e636c3a4728333f4b43684730363683cb09ded4fa1e0c690074393bb0"
+    },
+    "imgIndexV3Json": {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/img-index-contract.json",
+      "sha256": "d9e7a8085baa1f72d58f1943f357b2a82f268a7ad9073dd5bccfc4033a445ced"
+    },
+    "nativeContentCatalogJson": {
+      "path": "knowledge/fixtures/accepted/runtime/native_content_catalog.json",
+      "sha256": "bd5c54bf32e9f78545122ecda68f2a8ced3611748f18285f4a02a27371876bd3"
+    },
+    "nativeDirectionJson": {
+      "path": "knowledge/fixtures/accepted/runtime/native_direction_contract.json",
+      "sha256": "1221e7a9e7ee24d93b81471ec1ce253d20a7fea36b713668b119b9c866cee352"
+    },
+    "nativeRoomFloorUsageJson": {
+      "path": "knowledge/fixtures/accepted/runtime/native_room_floor_usage_contract.json",
+      "sha256": "e8dde522e0ed9587535d2c7aa9495d703f02b23dd96425e1f482c4141269a838"
+    },
+    "nativeSceneAssemblyJson": {
+      "path": "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json",
+      "sha256": "47f9204a15acd5dcd9c213adc7a8de65dfac5f641b0e8a53782e15bfbff2b167"
+    },
+    "objectCatalogJson": {
+      "path": "knowledge/fixtures/accepted/runtime/object_catalog_contract.json",
+      "sha256": "d50fd4d64b5df1a1bafd850692e8a01c1f7ecf3153f37188566446cb89cd7e20"
+    },
+    "packInventoryV3Json": {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/pack-inventory.json",
+      "sha256": "182d77d898be38bcebdd70f1ef51f6681f3b12dae32c180ae2d6cc20f5682232"
+    },
+    "phase3cRenderJson": {
+      "path": "knowledge/fixtures/accepted/runtime/phase3c_render_contract.json",
+      "sha256": "e1eb1d721c1277b96b5fbae26d78354f1f6915baf11c5bd0b5a2c9673f652097"
+    },
+    "preRuntimeClosureJson": {
+      "path": "knowledge/fixtures/accepted/runtime/pre_runtime_closure_contract.json",
+      "sha256": "765071cc3e608ec489ff18b59fd91e954b918e12825dfc1c2021cdbdec2bf1b3"
+    },
+    "rasterFixtureManifestV2Json": {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/raster-fixture-manifest.json",
+      "sha256": "f3f9638127b2e4e10b48b7312463d86081c159f07d094fcb9feb76f6ea088f32"
+    },
+    "resourceLookupContractV1Json": {
+      "path": "knowledge/fixtures/accepted/visual-port/v1/resource-lookup-contract.json",
+      "sha256": "745e610d4bec1f765c3ec659470cf4caa24bfe08823da27991c2561f88ee4d29"
+    },
+    "roomPlacementJson": {
+      "path": "knowledge/fixtures/accepted/runtime/room_placement_contract.json",
+      "sha256": "1e990a5c69aecdd434b15c11e9c6a62f8d8b715a064e8fe9ca32f86a22b4aa2f"
+    },
+    "roomRSceneJson": {
+      "path": "knowledge/fixtures/accepted/runtime/room_r_scene_contract.json",
+      "sha256": "1c349ffcc52d40f7fc5da68cd443cdeeeff27fa56bde00c2d812d6693ee92bfe"
+    },
+    "roomSceneAssetManifestJson": {
+      "path": "knowledge/fixtures/accepted/runtime/room_scene_asset_manifest.json",
+      "sha256": "90cea26dd1ee3e2ca44636ff03fc8cb49e6bc7c430647b511bc4beae24d88b57"
+    },
+    "roomSceneRuntimeJson": {
+      "path": "knowledge/fixtures/accepted/runtime/room_scene_runtime_contract.json",
+      "sha256": "9316ac18b4689a6ed0428898b55f023451842d7daa59c476ea49bcf86018d18a"
+    },
+    "sceneCatalogJson": {
+      "path": "knowledge/fixtures/accepted/runtime/scene_catalog_contract.json",
+      "sha256": "02f83744511d2d43089d8a6a494d6bdfbc27240130ea051a06c928c9257294c8"
+    },
+    "sebCatalogJson": {
+      "path": "knowledge/fixtures/accepted/seb_catalog.json",
+      "sha256": "18d0bf26c59a2fdd2eddefa4dda98d73deb58ac9699b797bcc092d3419fa88e2"
+    },
+    "sebContractV1Json": {
+      "path": "knowledge/fixtures/accepted/visual-port/v1/seb-contract.json",
+      "sha256": "d6d2cd9f9da01dd7eb296768720ebb82b6f89619eb34b4edf16273c895093324"
+    },
+    "sebIndexV3Json": {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/seb-index-contract.json",
+      "sha256": "1bf208891c8efbf2c833b64ee2ccf5295b37dd3e4f82f7053ce21569a44a3236"
+    },
+    "strictClosureJson": {
+      "path": "knowledge/fixtures/accepted/runtime/phase3c_strict_closure_contract.json",
+      "sha256": "cb86fc34c5a23b955c440868fb3861b6441586b4602822a4c40d9e63a532b2bd"
+    },
+    "tickOrderJson": {
+      "path": "knowledge/fixtures/accepted/runtime/tick_order_contract.json",
+      "sha256": "9c0f43b41dce26fd4229514677a5a0fbb3e444f2f7be408d89ea52ca2809c2c5"
+    }
+  },
+  "status": "pass"
+}

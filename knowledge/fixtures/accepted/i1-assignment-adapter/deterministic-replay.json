@@ -1,0 +1,10 @@
+{
+  "schema_version": "social-dev-i1-deterministic-replay-v1",
+  "status": "PASS_I1_11_DETERMINISTIC_REPLAY",
+  "inputs": ["same I0 initial snapshot", "same explicit bindings", "same assignment command sequence", "same app/lib RNG replay", "same living tick schedule"],
+  "byte_identical_outputs": ["AssignmentEvent JSONL", "TaskRecord final state", "DashboardReadModel", "Living transition digest"],
+  "wall_clock": "excluded",
+  "digest_algorithm": "FNV-1a 64 over stable sorted-key JSON",
+  "replay_digest": "22e5573f2b65d339",
+  "proof": "The focused Vitest A12 scenario compares stableStringify(buildA12()) twice and passes."
+}

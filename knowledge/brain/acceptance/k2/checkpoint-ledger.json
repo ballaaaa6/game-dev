@@ -1,0 +1,209 @@
+{
+  "checkpoints": [
+    {
+      "checkpoint": "K2.PRE",
+      "outputs": [
+        "knowledge/brain/acceptance/k2/baseline.json",
+        "knowledge/brain/acceptance/k2/checkpoint-ledger.json",
+        "knowledge/brain/acceptance/k2/pre-k2-source-inventory.json",
+        "knowledge/brain/acceptance/k2/preflight-current-delta.json",
+        "knowledge/brain/acceptance/k2/source-reverification.json",
+        "knowledge/brain/acceptance/k2/upstream-authority-hash-lock.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "baseline": "pass",
+        "preflight_delta": "pass_with_recorded_evidence_drift",
+        "source_reverification": "pass",
+        "status": "pass"
+      }
+    },
+    {
+      "checkpoint": "K2.0",
+      "outputs": [
+        "knowledge/brain/schema/authority.json",
+        "knowledge/brain/schema/k2-unified-brain-v2.sql",
+        "knowledge/brain/sqlite/social_dev_brain.sqlite",
+        "knowledge/brain/acceptance/k2/legacy-g1-5-preservation.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "old_db_unchanged": true,
+        "status": "pass"
+      }
+    },
+    {
+      "checkpoint": "K2.1",
+      "outputs": [
+        "knowledge/brain/reconciliation/reference-normalization.json",
+        "knowledge/brain/acceptance/k2/artifact-registry.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "artifacts": 7556,
+        "references": 1280,
+        "status": "pass"
+      }
+    },
+    {
+      "checkpoint": "K2.2",
+      "outputs": [
+        "knowledge/brain/schema/id-namespaces.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "identity_count": 3697,
+        "namespace_count": 26,
+        "status": "pass"
+      }
+    },
+    {
+      "checkpoint": "K2.3",
+      "outputs": [
+        "knowledge/brain/reconciliation/family-ingestion.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "family_count": 12,
+        "status": "pass"
+      }
+    },
+    {
+      "checkpoint": "K2.4",
+      "outputs": [
+        "knowledge/brain/reconciliation/entity-resolution.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "alias_count": 7,
+        "product_mutation_edges": 0,
+        "status": "pass"
+      }
+    },
+    {
+      "checkpoint": "K2.5",
+      "outputs": [
+        "knowledge/brain/graphs/semantic-edges.json",
+        "knowledge/brain/reconciliation/reconciliation-status.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "native_graph_edges": 5412,
+        "status": "pass",
+        "total_edges": 5425
+      }
+    },
+    {
+      "checkpoint": "K2.6",
+      "outputs": [
+        "knowledge/brain/exports/data-pack-manifest.json",
+        "knowledge/generated/original-data-pack/data.json",
+        "knowledge/generated/original-data-pack/manifest.json",
+        "knowledge/generated/original-data-pack/schema.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "rows": 3693,
+        "status": "pass",
+        "tables": 43
+      }
+    },
+    {
+      "checkpoint": "K2.7",
+      "outputs": [
+        "knowledge/generated/contracts/runtime-contract-source-map.json",
+        "knowledge/generated/original-runtime-pack/manifest.json",
+        "knowledge/generated/original-runtime-pack/runtime-pack.json",
+        "runtime/social-dev/generated/original-runtime-pack.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "contract_count": 40,
+        "status": "pass"
+      }
+    },
+    {
+      "checkpoint": "K2.8",
+      "outputs": [
+        "knowledge/generated/contracts/visual-contract-source-map.json",
+        "knowledge/generated/original-visual-pack/manifest.json",
+        "knowledge/generated/original-visual-pack/visual-pack.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "status": "pass",
+        "visual_edges": 36,
+        "visual_nodes": 29
+      }
+    },
+    {
+      "checkpoint": "K2.9",
+      "outputs": [
+        "knowledge/brain/acceptance/acceptance-matrix.json",
+        "knowledge/brain/acceptance/query-results.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "query_count": 7,
+        "source_limited_queries": 1,
+        "status": "pass"
+      }
+    },
+    {
+      "checkpoint": "K2.10",
+      "outputs": [
+        "knowledge/generated/contracts/runtime-cutover-contract.json",
+        "knowledge/brain/acceptance/k2/runtime-pack-cutover-scan.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "direct_json_import_files": [],
+        "status": "pass"
+      }
+    },
+    {
+      "checkpoint": "K2.11",
+      "outputs": [
+        "knowledge/brain/acceptance/k2/post-cutover-regression-matrix.json",
+        "knowledge/brain/acceptance/k2/pre-cutover-equivalence.json",
+        "knowledge/brain/acceptance/k2/runtime-value-delta.json",
+        "knowledge/brain/acceptance/k2/visual-value-delta.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "regressions": "pass",
+        "status": "pass"
+      }
+    },
+    {
+      "checkpoint": "K2.12",
+      "outputs": [
+        "knowledge/brain/exports/active-knowledge-surface.json",
+        "knowledge/brain/exports/duplicate-content-map.json",
+        "knowledge/brain/exports/k3-gap-queue.json",
+        "knowledge/brain/exports/production-distillation-candidates.json",
+        "knowledge/brain/exports/retired-active-views.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "implementation_blockers": 0,
+        "k3_gaps": 3,
+        "status": "pass"
+      }
+    },
+    {
+      "checkpoint": "K2.FINAL",
+      "outputs": [
+        "knowledge/brain/acceptance/k2/final-validation.json"
+      ],
+      "status": "pass",
+      "validation": {
+        "status": "pass",
+        "validator": "PASS_K2_UNIFIED_WHOLE_GAME_BRAIN_AND_RUNTIME_PACK_CLOSED"
+      }
+    }
+  ],
+  "companion_guide_sha256": "7da012a4f46e9302e7185f7478d5c20601f9b3c3402922aa24b9ddff753dabec",
+  "contract": "K2_Unified_Whole_Game_Brain_Full_Consolidation_One_Goal_Prompt.txt",
+  "schema_version": "social-dev-k2-unified-checkpoint-ledger-v1"
+}

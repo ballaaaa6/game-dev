@@ -1,0 +1,342 @@
+{
+  "fixtures": [
+    {
+      "category": "asset",
+      "command_hash": "a3f635252d0f53c3faee2754f6c19b1334a34543270e0c26f2e6706307676699",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "floor.direct_image",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/floor-direct_image.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "runtime/social-dev/assets/room-scene/01_GAME_PACKS/chip/floor_05.png",
+        "knowledge/fixtures/accepted/phase3b_floor_recovery_fixture.json"
+      ]
+    },
+    {
+      "category": "asset",
+      "command_hash": "22d3c4518886869cecaaed8c8f55534fd0e646ad346a13b25f1cff9f1ebe9963",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "wall.seb",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/wall-seb.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/wall_00.seb",
+        "knowledge/fixtures/accepted/visual-port/v2/draw-image-contract.json"
+      ]
+    },
+    {
+      "category": "asset",
+      "command_hash": "ed9f48eac17acf4bda8e8fca913ef5d9f467a8b14557c201a208d3dcb3adaf27",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "door.seb",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/door-seb.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/door_02.seb",
+        "knowledge/fixtures/accepted/visual-port/v2/draw-image-contract.json"
+      ]
+    },
+    {
+      "category": "asset",
+      "command_hash": "22e90fa263d4fc3f9343b52887f4651bc9a2c38a36e70ae44412c215f18b0da4",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "furniture.3_desk_chair",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/furniture-3_desk_chair.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/desk_00.seb",
+        "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/chair_00.seb",
+        "knowledge/fixtures/accepted/visual-port/v4/furniture-visual-binding.json"
+      ]
+    },
+    {
+      "category": "asset",
+      "command_hash": "920b34d4c20400edfb13a236669c86bffc75b10b7ba4eeaf28de70ef1089b500",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "furniture.12",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/furniture-12.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/equip.seb",
+        "knowledge/fixtures/accepted/visual-port/v5/room-furniture-orchestration.json"
+      ]
+    },
+    {
+      "category": "asset",
+      "command_hash": "6d345f61f4ba244b15773ffee2374ca3405a30b5da0c8df709fc1beaf45b7abc",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "furniture.26",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/furniture-26.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/equip.seb",
+        "knowledge/fixtures/accepted/visual-port/v5/room-furniture-orchestration.json"
+      ]
+    },
+    {
+      "category": "asset",
+      "command_hash": "56fcb0f303dadf062f087ac4cc028952e3fd88fd3914b09e6a278c6ab992f1b2",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "furniture.56",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/furniture-56.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/equip.seb",
+        "knowledge/fixtures/accepted/visual-port/v5/room-furniture-orchestration.json"
+      ]
+    },
+    {
+      "category": "staff",
+      "command_hash": "eb38bab15c0cb574174d2da7253f3db392c919177ead9c915ee7a36628187138",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "staff.0_wait_right",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/staff-0_wait_right.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "runtime/social-dev/assets/character-catalog/01_GAME_PACKS/human/wait_right.seb",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-animation-contract.json"
+      ]
+    },
+    {
+      "category": "staff",
+      "command_hash": "7b527ede4d6d345440d7a06be5b57a434c227debd7d98c2d89dd653c8484cf5b",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "staff.0_wait_left",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/staff-0_wait_left.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "runtime/social-dev/assets/character-catalog/01_GAME_PACKS/human/wait_left.seb",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-animation-contract.json"
+      ]
+    },
+    {
+      "category": "staff",
+      "command_hash": "cc665bee7022da97d8c1112507b52e3979262ecba9939b3bca390d6aadd41b77",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "staff.0_typing_right",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/staff-0_typing_right.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "runtime/social-dev/assets/character-catalog/01_GAME_PACKS/human/typing_right.seb",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-animation-contract.json"
+      ]
+    },
+    {
+      "category": "graphics",
+      "command_hash": "43411a1722367d84f59e1c59d594e55f0451bee8a0aa94f6c0d9d08ec26dc8a1",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "graphics.selected_horizontal_flip",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/graphics-selected_horizontal_flip.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "knowledge/fixtures/accepted/visual-port/v2/draw-image-contract.json"
+      ]
+    },
+    {
+      "category": "staff",
+      "command_hash": "f5e08e8ab1f25658e6b27b3cbd4af6e777861beb8b5d6efa49ff525bea84c5c8",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "staff.alpha_128",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/staff-alpha_128.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "knowledge/fixtures/accepted/visual-port/v6/staff-animation-contract.json",
+        "knowledge/fixtures/accepted/visual-port/v6/unknowns.json"
+      ]
+    },
+    {
+      "category": "graphics",
+      "command_hash": "ca45202b8c8e42f34061f25dcbc94308805ade173b2d6481e90e99e8b5237a45",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "graphics.clipped_draw",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/graphics-clipped_draw.png",
+      "output_size": [
+        360,
+        220
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "knowledge/fixtures/accepted/visual-port/v2/clip-contract.json"
+      ]
+    },
+    {
+      "category": "graphics",
+      "command_hash": "{\"clip\":{\"height\":39,\"width\":80,\"x\":96,\"y\":72},\"command\":{\"destination\":{\"height\":39,\"width\":80,\"x\":96,\"y\":72},\"image\":{\"height\":39,\"id\":\"resChip_:image:85\",\"width\":80},\"kind\":\"draw-image\",\"source\":{\"height\":39,\"width\":80,\"x\":0,\"y\":0},\"state\":{\"blendColor\":0,\"blendMode\":0,\"blendModeDepth\":0,\"clip\":null,\"clipDepth\":0,\"color\":-16777216,\"flipMode\":0,\"linearFilter\":false,\"renderMode\":{\"destinationRatio\":0,\"isReplace\":true,\"operator\":0,\"sourceRatio\":255},\"renderModeDepth\":0,\"scalePercent\":100}},\"transform\":{\"pivot\":{\"x\":136,\"y\":91.5},\"rotationDegrees\":15,\"scaleX\":1.25,\"scaleY\":0.75},\"writes\":2924}",
+      "compatibility_assumptions": [
+        "Default V2 color 0xFF000000 is treated as an identity sentinel because selected V5/V6 commands do not set a tint color.",
+        "Raster output uses straight-alpha RGBA byte channels; native premultiplication and shader rounding are unavailable.",
+        "Nearest sampling uses source pixel centers; linear filtering uses four-neighbor bilinear interpolation.",
+        "Out-of-bounds source samples are transparent.",
+        "Clip rectangles are evaluated against the transformed world pixel center; transformed fixture clips use convex polygons.",
+        "Flip modes 1–3 are center flips; modes 4–5 use explicit compatibility rotations and are not selected by room:0+Staff.",
+        "All output PNGs use deterministic filter-zero scanlines and stored DEFLATE blocks."
+      ],
+      "fixture_id": "graphics.transformed_draw",
+      "output_png": "knowledge/fixtures/accepted/visual-port/v7/previews/graphics-transformed_draw.png",
+      "output_size": [
+        240,
+        200
+      ],
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "source_refs": [
+        "knowledge/fixtures/accepted/visual-port/v2/graphics-static-recovery.json"
+      ]
+    }
+  ],
+  "proof_policy": "Source/format/command identity remains separate from compatibility backend pixel output.",
+  "required_fixture_count": 14,
+  "schema_version": "social-dev-visual-port-v7-golden-fixture-manifest-v1",
+  "status": "pass_static"
+}

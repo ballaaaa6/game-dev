@@ -1,0 +1,1 @@
+{"scenarioId":"A1","step":1,"event":"agent_bound","productStatus":"IDLE_NO_TASK","livingState":"STATE_WORK","livingMoveMode":"MOVE_MODE_STAY","externalTaskId":null,"assertion":"baseline living continues without spontaneous task"}

@@ -1,0 +1,11 @@
+{
+  "candidates": [
+    {
+      "classification": "production_runtime_pack",
+      "path": "runtime/social-dev/generated/original-runtime-pack.json",
+      "source_of_truth": "K2 brain + accepted contracts"
+    }
+  ],
+  "schema_version": "social-dev-k2-production-distillation-candidates-v1",
+  "status": "pass"
+}

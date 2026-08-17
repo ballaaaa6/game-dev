@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "phase": "V5",
+  "status": "PASS_STATIC_OBJCHIP_ORCHESTRATION",
+  "owner": "RoomV5",
+  "adapter": "runtime/social-dev/src/v4/obj-chip.ts",
+  "objchip_lifecycle": [
+    "Room.InitObjChips creates one raw ObjChip identity per RoomData grid cell.",
+    "Primary Draw receives explicit FurnitureData bindings only.",
+    "DrawWall runs in the rear slot for all non-foreground cells and the raw type 5 door.",
+    "DrawLate runs only for [8,7] and [8,8].",
+    "Rooms without native bindings remain topology-only and emit no invented furniture."
+  ],
+  "room00_wall_contract": {
+    "wall_image_selector": 6,
+    "door_image_selector": 7,
+    "wall_seb_selector": 5,
+    "door_seb_selector": 6,
+    "vertical_frame_1_cells": [[8, 1], [8, 2], [8, 3], [8, 5], [8, 6], [8, 7], [8, 8]],
+    "horizontal_frame_0_cells": [[1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1]],
+    "door_cell": [8, 4],
+    "door_installed_flag": 1,
+    "door_furniture_data": null
+  },
+  "ordering": {
+    "objchip_grid": [10, 10],
+    "traversal": "row_y_ascending_then_x_descending",
+    "foreground_cells": [[8, 7], [8, 8]],
+    "native_draw_order_is_not_replaced_by_global_y_sort": true
+  },
+  "proof": "NATIVE-CODE-PROVEN_FOR_SELECTED_ROOM00_PREDICATES"
+}

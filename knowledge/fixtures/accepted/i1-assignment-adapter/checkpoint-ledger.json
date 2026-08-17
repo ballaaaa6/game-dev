@@ -1,0 +1,21 @@
+{
+  "schema_version": "social-dev-i1-checkpoint-ledger-v1",
+  "status": "PASS_I1_ASSIGNMENT_ADAPTER_NO_TASK_RUNNING_LIFECYCLE_CLOSED",
+  "checkpoints": [
+    { "checkpoint": "I1.PRE", "status": "PASS", "source_targets_read": ["AGENTS.md", "PROJECT_STATE.md", "TODO.md", "pasted-text-1.txt"], "next": "I1.0" },
+    { "checkpoint": "I1.0", "status": "PASS_I1_0_BASELINE", "source_targets_read": ["pinned artifacts", "I0/R0 evidence"], "native_methods": [], "runtime_files_changed": [], "evidence_added": ["baseline.json", "i0-hash-lock.json", "source-reverification.json"], "remaining_semantic_gaps": ["Develop UI/native caller source limit"], "next": "I1.1" },
+    { "checkpoint": "I1.1", "status": "PASS_I1_1_ORIGINAL_WORK_REGIMES", "source_targets_read": ["Staff.cs", "Player.cs", "Room.cs", "Develop.cs", "DevelopForm.cs", "SubForm.cs"], "regime_findings": ["no-task autonomous", "planning is player-wide", "develop is separate"], "next": "I1.2" },
+    { "checkpoint": "I1.2", "status": "PASS_I1_2_ORIGINAL_DEVELOP_ASSIGNMENT_CHAIN", "native_methods": ["Staff.Update", "Develop.Init", "Staff.ReadyToDevelop", "Staff.OnFinishDevelop"], "fields_closed": ["developState_", "developStateBackup_", "developStaffId_", "Develop.staffs_", "DevelopForm.develop_"], "next": "I1.3" },
+    { "checkpoint": "I1.3", "status": "PASS_I1_3_MINIMAL_DEVELOP_SEMANTICS", "native_methods": ["0x12D2EC8", "0x12D3D48", "0x12D4A7C", "0x12D9FF8"], "fields_closed": ["0x70", "0xE8", "0x188", "0x18C", "0x190", "0x1B0", "0x1B8"], "next": "I1.4" },
+    { "checkpoint": "I1.4", "status": "PASS_I1_4_BRIDGE_DECISION", "bridge_decision_status": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING", "next": "I1.5" },
+    { "checkpoint": "I1.5", "status": "PASS_I1_5_PRODUCT_STATE_SEPARATION", "runtime_files_changed": ["runtime/social-dev/src/product/assignment/types.ts"], "next": "I1.6" },
+    { "checkpoint": "I1.6", "status": "PASS_I1_6_ASSIGNMENT_ADAPTER_API", "runtime_files_changed": ["runtime/social-dev/src/product/assignment/*.ts"], "focused_tests": ["i1-assignment-adapter.test.ts"], "next": "I1.7" },
+    { "checkpoint": "I1.7", "status": "PASS_I1_7_TASK_LIFECYCLE", "evidence_added": ["task-lifecycle-contract.json"], "next": "I1.8" },
+    { "checkpoint": "I1.8", "status": "PASS_I1_8_INTERRUPTION_RETENTION", "evidence_added": ["living-interruption-product-state-contract.json"], "next": "I1.9" },
+    { "checkpoint": "I1.9", "status": "PASS_I1_9_MULTI_AGENT_CONFLICT_CLEANUP", "evidence_added": ["multi-agent-conflict-contract.json"], "next": "I1.10" },
+    { "checkpoint": "I1.10", "status": "PASS_I1_10_DASHBOARD_READ_MODEL", "evidence_added": ["dashboard-read-model-contract.json"], "next": "I1.11" },
+    { "checkpoint": "I1.11", "status": "PASS_I1_11_DETERMINISTIC_ACCEPTANCE_SCENARIOS", "focused_tests": ["A1-A12"], "evidence_added": ["scenario-results.json", "transition-traces/A1.jsonl through A12.jsonl"], "next": "I1.12" },
+    { "checkpoint": "I1.12", "status": "PASS_I1_12_FULL_ACCEPTANCE", "focused_tests": ["Vitest", "typecheck", "build", "offline Python acceptance"], "I0_regressions": "PASS", "remaining_semantic_gaps": "nonblocking source/product questions only", "implementation_blockers": 0, "next": "I1.FINAL" },
+    { "checkpoint": "I1.FINAL", "status": "PASS_I1_ASSIGNMENT_ADAPTER_NO_TASK_RUNNING_LIFECYCLE_CLOSED", "next": "stop; wait for explicit I2 direction" }
+  ]
+}

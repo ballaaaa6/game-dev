@@ -1,0 +1,17 @@
+{
+  "schema_version": "social-dev-i1-product-task-model-v1",
+  "status": "PASS_I1_5_PRODUCT_STATE_SEPARATION",
+  "entities": {
+    "AgentBinding": ["externalAgentId", "staffId", "boundSequence"],
+    "TaskRecord": ["externalTaskId", "externalAgentId", "staffId", "status", "label", "externalProgress", "bridgeMode", "bridgeContextOwned", "createdSequence", "assignedSequence", "startedSequence", "terminalSequence", "terminalReason"],
+    "TaskStatus": ["ASSIGNED", "RUNNING", "COMPLETED", "FAILED", "CANCELLED"],
+    "AssignmentAdapterState": ["bindings", "tasks", "activeBridgeTaskIds", "events"]
+  },
+  "separation": {
+    "external_ids": "product-only; absent from LivingStaff and canonical I0 snapshots",
+    "task_status": "separate from StaffState",
+    "external_progress": "separate from planningRate, planQuality, developState_, and develop gauge",
+    "save_boundary": "no original Staff save schema or I0 snapshot field is changed"
+  },
+  "no_task": "No TaskRecord means IDLE_NO_TASK in the read model; UNASSIGNED is not stored as a fake task."
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "social-dev-i1-update-develop-native-map-v1",
+  "status": "PASS_I1_3_MINIMAL_DEVELOP_SEMANTICS",
+  "native_method": { "symbol": "Staff.UpdateDevelop", "rva": "0x12D3D48", "develop_state_offset": "0x188", "table_base": "0x636660", "table_width": 10 },
+  "states": [
+    { "id": 0, "target": "0x12D3ECC", "reads": ["frame2_ 0x18C", "state_ 0x70", "sebId_ 0x74"], "writes": ["developState_ 0x188", "frame2_", "sebId_"], "actions": ["initial animation/entry branch", "common animation update"], "exit": "native branch condition; exact indirect sub-action source-limited", "next": "developState-dependent", "confidence": "native_dataflow_with_managed_damage" },
+    { "id": 1, "target": "0x12D3F68", "reads": ["frame2_ 0x18C", "sebId_ 0x74"], "writes": ["frame2_", "sebId_", "developState_ 0x188"], "actions": ["entry animation timing"], "exit": "frame2 threshold", "next": "developState-dependent", "confidence": "native_dataflow_with_managed_damage" },
+    { "id": 2, "target": "0x12D4150", "reads": ["x_ 0x4C", "y_ 0x50", "frame2_ 0x18C"], "writes": ["state_ 0x70", "sebId_ 0x74", "developState_=3"], "calls": ["0x12D8FA0 DecidePower", "0x12D8E30 animation helper"], "exit": "movement/entry boundary", "next": "3", "confidence": "native_dataflow" },
+    { "id": 3, "target": "0x12D420C", "reads": ["flag_ 0xAC", "progress/gauge 0x17C", "pointer 0x180", "developState_ 0x188"], "writes": ["progress/gauge", "developState_=3 on branch completion"], "calls": ["0x12D8B80", "0x12D9570 ShootBug", "0x12D9820 Attack"], "exit": "gauge/step branch", "next": "3/4/6 depending combat state", "confidence": "native_dataflow_with_managed_damage" },
+    { "id": 4, "target": "0x12D4288", "reads": ["frame2_ 0x18C", "progress/gauge 0x17C", "isProduceBug_ 0x1B5"], "writes": ["frame2_", "progress/gauge", "isProduceBug_"], "actions": ["step animation/attack timing"], "exit": "frame2 threshold 0x15", "next": "common post", "confidence": "native_dataflow" },
+    { "id": 5, "target": "0x12D464C", "reads": ["developState_ 0x188", "sebId_ 0x74"], "writes": ["animation/frame fields"], "actions": ["common post-dispatch and animation advance"], "exit": "frame/update path", "next": "same or form-controlled", "confidence": "native_dataflow" },
+    { "id": 6, "target": "0x12D4398", "reads": ["frame2_ 0x18C", "hp_ 0xE8", "stepFinished_ 0x190", "flag_ 0xAC"], "writes": ["frame2_", "developState_ 0x188"], "calls": ["0x12D9CF0 ChangeStateToDown", "0x12D9C48 ChangeStateToWait"], "actions": ["HP/down branch", "finish branch", "resume/next-step branch"], "exit": "hp < 1, stepFinished, or flag branch", "next": "down/wait/step continuation", "confidence": "native_dataflow" },
+    { "id": 7, "target": "0x12D464C", "reads": ["developState_ 0x188", "sebId_ 0x74"], "writes": ["animation/frame fields"], "actions": ["common post-dispatch"], "exit": "common update", "next": "form-controlled", "confidence": "native_dataflow" },
+    { "id": 8, "target": "0x12D43EC", "reads": ["frame2_ 0x18C", "developState_ 0x188"], "writes": ["frame2_", "developState_"], "actions": ["animation/action branch"], "exit": "branch-specific frame threshold", "next": "common post or next develop state", "confidence": "native_dataflow_with_managed_damage" },
+    { "id": 9, "target": "0x12D44AC", "reads": ["developState_ 0x188", "sebId_ 0x74"], "writes": ["animation/frame fields"], "calls": ["0x12D8E30"], "actions": ["terminal/common animation branch"], "exit": "common update", "next": "form-controlled", "confidence": "native_dataflow_with_managed_damage" }
+  ],
+  "bridge_relevance": "This table is an original Develop/combat animation and progress context. It is not a general external task executor and is not entered by the I1 product overlay."
+}

@@ -1,0 +1,38 @@
+{
+  "authority": [
+    "Staff",
+    "Room",
+    "ObjChip",
+    "StaffData",
+    "JobData",
+    "SkillData",
+    "FurnitureData",
+    "pinned native route/passMap methods"
+  ],
+  "life_loop": [
+    "spawn at door",
+    "desk assignment",
+    "work/typing",
+    "equipment use",
+    "talk/social",
+    "HP low -> door/home",
+    "recovery -> return",
+    "save/load preservation"
+  ],
+  "not_authority": [
+    "dashboard labels alone",
+    "asset names/sprites",
+    "renderer state",
+    "MapChip geometry",
+    "historical candidate claims without recheck"
+  ],
+  "preserve": [
+    "source-backed numeric labels and offsets",
+    "native RVAs",
+    "reservation and route semantics",
+    "unknowns as unknown"
+  ],
+  "schema_version": "social-dev-behavior-first-canonical-staff-life-model-v1",
+  "status": "pass_with_source_limits",
+  "unknowns_ref": "unknowns.json"
+}

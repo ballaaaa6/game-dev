@@ -2,33 +2,74 @@ import { loadRuntimeCatalogs, type RuntimeCatalogs } from "../catalog/load-contr
 import { loadDisplayAssets, type DisplayAssetStatus, type LoadedDisplayAssets } from "../assets/display-assets";
 import { characterDisplayFrame, preloadCharacterFrameImages } from "../assets/character-assets";
 import { resolveCharacter } from "../catalog/character-resolver";
-import { applyFloor00DisplayPolicy, createInitialState, stepSimulation } from "../core/simulation";
+import { createLivingRuntime } from "../core/living/runtime";
+import { projectLivingStaffs } from "../core/living/projection";
+import type { LivingSnapshot } from "../core/living/types";
 import { withDigest } from "../core/digest";
-import type { SimulationState } from "../core/types";
+import type { RuntimeEvent, SimulationState } from "../core/types";
+import { createDashboardRuntime, createDashboardUi, renderDashboardUi, type DashboardRuntime, type DashboardRuntimeSnapshot, type DashboardUiElements } from "../product/dashboard";
 import { renderScene } from "../renderer/canvas-renderer";
 import { createRuntimeUi, renderRuntimeUi, type RuntimeUiElements } from "../renderer/dom-ui";
 import { buildVisualGateSnapshot, type VisualGateSnapshot } from "../renderer/visual-gate";
 import { buildSceneProjection, type SceneProjection } from "../scene/projection";
 import { parseMainRuntimeRoute } from "./main-route";
-import type { RoomSceneContext, SceneProjectionMode } from "../scene/room-resolver";
 
 export interface SocialDevRuntimeController {
   readonly catalogs: RuntimeCatalogs;
   readonly projection: SceneProjection;
+  readonly dashboard: DashboardRuntime;
   readonly selectRoom: (roomId: string) => SceneProjection;
   readonly getState: () => SimulationState;
+  readonly getDashboardSnapshot: () => DashboardRuntimeSnapshot;
   readonly step: (count?: number) => SimulationState;
   readonly selectActor: (actorId: string | null) => SimulationState;
   readonly getVisualGateSnapshot: () => VisualGateSnapshot;
   readonly stop: () => void;
 }
 
+function runtimeEventFromTrace(trace: LivingSnapshot["traces"][number]): RuntimeEvent {
+  return {
+    tick: trace.tick,
+    type: trace.event,
+    actorIds: trace.staffId === null ? [] : [`actor:staff:${trace.staffId}`],
+    frame: trace.tick,
+  };
+}
+
+function stateFromLiving(
+  catalogs: RuntimeCatalogs,
+  living: LivingSnapshot,
+  sceneId: string,
+  activeMainDisplay: boolean,
+  selectedActorId: string | null,
+): SimulationState {
+  const eventLog = living.traces.slice(-96).map(runtimeEventFromTrace);
+  const events = living.traces.slice(-24).map(runtimeEventFromTrace);
+  const { digest: _digest, ...withoutDigest } = {
+    frame: living.frame,
+    sceneId,
+    actors: activeMainDisplay ? projectLivingStaffs(catalogs, living.staffs) : {},
+    events,
+    eventLog,
+    selectedActorId,
+    tickOperations: living.frame === 0
+      ? ["LivingRuntime.snapshot", "DashboardRuntime.publish"]
+      : ["LivingRuntime.tick", "AssignmentAdapter.observeLiving", "DashboardRuntime.publish"],
+    living,
+    digest: "",
+  };
+  return withDigest(withoutDigest);
+}
+
 function render(
   canvas: HTMLCanvasElement,
   ui: RuntimeUiElements,
+  dashboardUi: DashboardUiElements,
   catalogs: RuntimeCatalogs,
   projection: SceneProjection,
   state: SimulationState,
+  dashboard: DashboardRuntime,
+  dashboardSnapshot: DashboardRuntimeSnapshot,
   selectActor: (actorId: string | null) => SimulationState,
   assets: LoadedDisplayAssets | null,
   assetStatus: DisplayAssetStatus,
@@ -54,6 +95,7 @@ function render(
   const renderDiagnostics = renderScene(canvas, projection, state, catalogs.camera, assets, rawOverlayEnabled, catalogs);
   const visualGate = buildVisualGateSnapshot(projection, state, catalogs, assets, rawOverlayEnabled, renderDiagnostics);
   renderRuntimeUi(ui, state, catalogs, (actorId) => selectActor(actorId), assetStatus, visualGate, projection.sceneMode, rawOverlayEnabled);
+  renderDashboardUi(dashboardUi, dashboardSnapshot, { execute: (command) => dashboard.execute(command) });
   return visualGate;
 }
 
@@ -66,9 +108,12 @@ export function createSocialDevRuntime(root: HTMLElement): SocialDevRuntimeContr
   if (!catalogs.roomSceneRuntime.rooms.some((room) => room.room_key === requestedRoomId)) {
     throw new Error(`Unknown RoomData room ${requestedRoomId}`);
   }
+  const living = createLivingRuntime(catalogs, { initialStaffDataIds: [0, 1, 2] });
+  const dashboard = createDashboardRuntime(living);
   let activeRoomId = requestedRoomId;
   let projection = buildSceneProjection(catalogs, activeRoomId, sceneOptions);
-  let state = createRoomState(catalogs, activeRoomId, projection.roomContext, projection.sceneMode);
+  let dashboardSnapshot = dashboard.getSnapshot();
+  let state = stateFromLiving(catalogs, dashboardSnapshot.living, activeRoomId, activeRoomId === "room:0" && projection.roomContext === "main_display", null);
   let displayAssets: LoadedDisplayAssets | null = null;
   let assetStatus: DisplayAssetStatus = "loading";
   let visualGateSnapshot: VisualGateSnapshot;
@@ -80,13 +125,42 @@ export function createSocialDevRuntime(root: HTMLElement): SocialDevRuntimeContr
     (roomId) => handleRoomSelection(roomId),
     catalogs.roomSceneRuntime.rooms.map((room) => ({ id: room.room_key, name: room.native.name })),
   );
+  const dashboardUi = createDashboardUi(root, { execute: (command) => dashboard.execute(command) });
   const canvas = root.querySelector<HTMLCanvasElement>("#scene-canvas");
   if (!canvas) {
     throw new Error("Runtime canvas is missing");
   }
 
+  const activeMainDisplay = (): boolean => activeRoomId === "room:0" && projection.roomContext === "main_display";
+  const renderCurrent = (): VisualGateSnapshot => {
+    visualGateSnapshot = render(
+      canvas,
+      ui,
+      dashboardUi,
+      catalogs,
+      projection,
+      state,
+      dashboard,
+      dashboardSnapshot,
+      selectActor,
+      displayAssets,
+      assetStatus,
+      rawOverlayEnabled,
+    );
+    return visualGateSnapshot;
+  };
+
+  dashboard.subscribe((nextSnapshot) => {
+    dashboardSnapshot = nextSnapshot;
+    state = stateFromLiving(catalogs, nextSnapshot.living, activeRoomId, activeMainDisplay(), state.selectedActorId);
+    if (state.selectedActorId && !state.actors[state.selectedActorId]) {
+      state = selectActorState(state, null);
+    }
+    renderCurrent();
+  });
+
   handleSelection = (actorId) => {
-    state = selectActor(actorId);
+    selectActor(actorId);
   };
 
   handleRoomSelection = (roomId) => {
@@ -99,8 +173,8 @@ export function createSocialDevRuntime(root: HTMLElement): SocialDevRuntimeContr
     }
     activeRoomId = roomId;
     projection = buildSceneProjection(catalogs, activeRoomId, sceneOptions);
-    state = createRoomState(catalogs, activeRoomId, projection.roomContext, projection.sceneMode);
-    visualGateSnapshot = render(canvas, ui, catalogs, projection, state, selectActor, displayAssets, assetStatus, rawOverlayEnabled);
+    state = stateFromLiving(catalogs, dashboardSnapshot.living, activeRoomId, activeMainDisplay(), null);
+    renderCurrent();
     return projection;
   };
 
@@ -111,7 +185,7 @@ export function createSocialDevRuntime(root: HTMLElement): SocialDevRuntimeContr
 
   const selectActor = (actorId: string | null): SimulationState => {
     state = selectActorState(state, actorId);
-    visualGateSnapshot = render(canvas, ui, catalogs, projection, state, selectActor, displayAssets, assetStatus, rawOverlayEnabled);
+    renderCurrent();
     return state;
   };
 
@@ -119,33 +193,29 @@ export function createSocialDevRuntime(root: HTMLElement): SocialDevRuntimeContr
     if (!Number.isInteger(count) || count < 0) {
       throw new Error("Runtime step count must be a non-negative integer");
     }
-    for (let index = 0; index < count; index += 1) {
-      if (projection.sceneMode !== "floor00" && state.sceneId === "room:0" && projection.roomContext === "main_display") {
-        state = stepSimulation(state, catalogs);
-      }
-    }
-    visualGateSnapshot = render(canvas, ui, catalogs, projection, state, selectActor, displayAssets, assetStatus, rawOverlayEnabled);
+    if (count === 0) renderCurrent();
+    else dashboard.step(count);
     return state;
   };
 
   const initialTicks = route.initialTicks;
-  if (projection.sceneMode !== "floor00" && activeRoomId === "room:0" && projection.roomContext === "main_display" && Number.isInteger(initialTicks) && initialTicks > 0) {
-    for (let index = 0; index < initialTicks; index += 1) {
-      state = stepSimulation(state, catalogs);
-    }
+  if (Number.isInteger(initialTicks) && initialTicks > 0) {
+    dashboard.step(initialTicks);
   }
-  visualGateSnapshot = render(canvas, ui, catalogs, projection, state, selectActor, displayAssets, assetStatus, rawOverlayEnabled);
+  if (initialTicks === 0) renderCurrent();
   // The wall-clock driver only requests fixed logical steps. The core itself
   // never reads time, uses randomness, or mutates from the renderer/UI.
-  const timer = !route.auto || projection.sceneMode === "floor00" ? undefined : window.setInterval(() => step(1), 150);
+  const timer = !route.auto ? undefined : window.setInterval(() => step(1), 150);
 
   const controller: SocialDevRuntimeController = {
     catalogs,
     get projection() {
       return projection;
     },
+    dashboard,
     selectRoom,
     getState: () => state,
+    getDashboardSnapshot: () => dashboard.getSnapshot(),
     step,
     selectActor,
     getVisualGateSnapshot: () => visualGateSnapshot,
@@ -153,6 +223,7 @@ export function createSocialDevRuntime(root: HTMLElement): SocialDevRuntimeContr
       if (timer !== undefined) {
         window.clearInterval(timer);
       }
+      dashboard.dispose();
     },
   };
   (window as Window & { __SOCIAL_DEV_RUNTIME__?: SocialDevRuntimeController }).__SOCIAL_DEV_RUNTIME__ = controller;
@@ -160,34 +231,13 @@ export function createSocialDevRuntime(root: HTMLElement): SocialDevRuntimeContr
     .then((loaded) => {
       displayAssets = loaded;
       assetStatus = loaded.status;
-      visualGateSnapshot = render(canvas, ui, catalogs, projection, state, selectActor, displayAssets, assetStatus, rawOverlayEnabled);
+      renderCurrent();
     })
     .catch(() => {
       assetStatus = "fallback";
-      visualGateSnapshot = render(canvas, ui, catalogs, projection, state, selectActor, displayAssets, assetStatus, rawOverlayEnabled);
+      renderCurrent();
     });
   return controller;
-}
-
-function createRoomState(
-  catalogs: RuntimeCatalogs,
-  roomId: string,
-  context: RoomSceneContext = "main_display",
-  sceneMode: SceneProjectionMode = "floor00",
-): SimulationState {
-  const base = createInitialState(catalogs);
-  if (roomId === "room:0" && context === "main_display") {
-    return sceneMode === "floor00" ? applyFloor00DisplayPolicy(base, catalogs) : base;
-  }
-  const { digest: _digest, ...withoutDigest } = base;
-  return withDigest({
-    ...withoutDigest,
-    sceneId: roomId,
-    actors: {},
-    events: [],
-    eventLog: [],
-    selectedActorId: null,
-  });
 }
 
 function selectActorState(

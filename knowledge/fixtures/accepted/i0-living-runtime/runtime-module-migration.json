@@ -1,0 +1,17 @@
+{
+  "schema_version": "social-dev-i0-runtime-module-migration-v1",
+  "status": "PASS_SYNTHETIC_LIVING_OWNER_REPLACED",
+  "superseded_legacy_owner": "runtime/social-dev/src/core/simulation.ts#updateLivingTrace",
+  "authoritative_owner": "runtime/social-dev/src/core/living",
+  "projection_boundary": "runtime/social-dev/src/core/living/projection.ts",
+  "retained_compatibility_surface": [
+    "SimulationState.actors",
+    "ActorState"
+  ],
+  "prohibited_owners": [
+    "renderer",
+    "UI",
+    "dashboard",
+    "product-policy"
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "schema_version": "social-dev-default-map-chip-contract-v1",
+  "package": "social-dev-default-map-chip-contract",
+  "status": "pass",
+  "semantic_status": "approved_for_runtime_contract",
+  "catalog_id": "display-slice-01",
+  "scene_ref": "room:0",
+  "room": {
+    "width": 14,
+    "height": 14,
+    "floor": 0,
+    "room_data_floor_img_id": 5,
+    "native_floor_img_selector": 23,
+    "native_floor_filename": "floor_05.png",
+    "resolved_floor_img_selector": 85,
+    "resolved_floor_filename": "floor_05.png",
+    "resolved_floor_metadata_filename": "floor_09.png",
+    "floor_resolution_status": "explicit_fallback_with_floor05_render_asset",
+    "wall_img_selector": 6,
+    "wall_filename": "wall_00.png",
+    "door_img_selector": 7,
+    "door_filename": "door_01.png",
+    "door_cell": [8, 4]
+  },
+  "native_static_arrays": {
+    "map_chip_image_id_array": {
+      "values": [-1, 0, 10, 11, 12, 13, 14, 15, 105, 154, 155, 156],
+      "element_type": "int32",
+      "length": 12,
+      "metadata_offset": "0x46A440",
+      "metadata_hash": "9B0304F1108914CEF072830A33773E511CB017F05DECC0A29D30B9E63B8973BB"
+    },
+    "floor_image_id_array": {
+      "values": [0, 19, 20, 21, 22, 23, 82, 83, 84, 85, 95],
+      "element_type": "int32",
+      "length": 11,
+      "metadata_offset": "0x467878",
+      "metadata_hash": "2A4181A72504BAB3345E427ABC26886C58162778EEB5AB4E6EEC5097271BF679"
+    },
+    "map_chip_array_by_floor": {
+      "floor_0": {
+        "length": 196,
+        "rows": [
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [2, 9, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+          [2, 5, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+          [2, 7, 6, 6, 11, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+          [2, 2, 2, 4, 5, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+          [2, 2, 2, 3, 7, 6, 11, 1, 1, 0, 0, 0, 0, 0],
+          [2, 2, 2, 3, 8, 8, 5, 1, 1, 0, 0, 0, 0, 0],
+          [2, 2, 2, 2, 2, 2, 5, 1, 1, 0, 0, 0, 0, 0],
+          [2, 2, 2, 2, 2, 2, 7, 6, 10, 0, 0, 0, 0, 0],
+          [2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0]
+        ],
+        "metadata_offset": "0x466F08",
+        "metadata_hash": "14A062795563410982268B6CA13A257B4DF04977027ECB9A691630DA5C3A7577"
+      },
+      "floor_nonzero": {
+        "length": 16,
+        "rows": [
+          [1, 1, 1, 1],
+          [1, 1, 1, 1],
+          [1, 1, 1, 1],
+          [1, 1, 1, 1]
+        ],
+        "metadata_offset": "0x46A3F8",
+        "metadata_hash": "98F790EE3951F22E0FD44B7C95E258EC05EF746C8852BA98A1516F25F1890980"
+      }
+    }
+  },
+  "raw_index_to_selector": {
+    "0": {"selector_id": -1, "filename": null, "asset_id": null, "meaning": "empty_map_cell_native_background"},
+    "1": {"selector_id": 85, "filename": "floor_05.png", "asset_id": "map:chip/floor_05.png", "meaning": "room_floor_with_floor05_pixels_and_floor09_selector_data"},
+    "2": {"selector_id": 10, "filename": "ground_00.png", "asset_id": "map:chip/ground_00.png", "meaning": "outside_ground"},
+    "3": {"selector_id": 11, "filename": "turf_00.png", "asset_id": "map:chip/turf_00.png", "meaning": "outside_turf"},
+    "4": {"selector_id": 12, "filename": "turf_01.png", "asset_id": "map:chip/turf_01.png", "meaning": "outside_tree_and_hedge"},
+    "5": {"selector_id": 13, "filename": "road_00.png", "asset_id": "map:chip/road_00.png", "meaning": "outside_walkway"},
+    "6": {"selector_id": 14, "filename": "road_01.png", "asset_id": "map:chip/road_01.png", "meaning": "outside_walkway_edge"},
+    "7": {"selector_id": 15, "filename": "road_02.png", "asset_id": "map:chip/road_02.png", "meaning": "outside_walkway_edge"},
+    "8": {"selector_id": 105, "filename": "turf_02.png", "asset_id": "map:chip/turf_02.png", "meaning": "outside_turf_variant"},
+    "9": {"selector_id": 154, "filename": "road_edge_00.png", "asset_id": "map:chip/road_edge_00.png", "meaning": "outside_walkway_corner"},
+    "10": {"selector_id": 155, "filename": "road_edge_01.png", "asset_id": "map:chip/road_edge_01.png", "meaning": "outside_walkway_corner"},
+    "11": {"selector_id": 156, "filename": "road_03.png", "asset_id": "map:chip/road_03.png", "meaning": "outside_walkway_detail"}
+  },
+  "floor_selector_remap": {
+    "raw_room_data_floor_id": 5,
+    "native_table_index": 5,
+    "native_image_selector": 23,
+    "native_filename": "floor_05.png",
+    "source_status": "native_lookup_candidate_only",
+    "runtime_selector_id": 85,
+    "runtime_filename": "floor_09.png",
+    "runtime_resolution_status": "explicit_fallback",
+    "runtime_resolution_mode": "explicit_user_approved_alias",
+    "runtime_reason_code": "user_approved_runtime_alias",
+    "runtime_decision": "The unresolved raw floor selector 5 uses floor_09.png as an explicit runtime alias; source mapping remains unresolved.",
+    "runtime_render_filename": "floor_05.png",
+    "runtime_render_asset_sha256": "be6572af9df60f5ed00eb0ab0e7d4dd95ba08749d7ec88b027a8ae5b3896c08c",
+    "runtime_render_resolution_mode": "explicit_user_approved_visual_asset_with_runtime_selector_alias",
+    "runtime_render_source_status": "synthetic_not_native_recovery",
+    "runtime_render_reason_code": "user_approved_visual_asset_with_runtime_selector_alias",
+    "runtime_render_decision": "Use floor_05.png for rendered pixels while retaining selector/data identity 85/floor_09.png; do not present this as native recovery.",
+    "note": "The RoomData scalar is an index into FLOOR_IMAGE_ID_ARRAY; the native table candidate 23/floor_05.png is retained for provenance, while runtime selector/data uses the explicit 85/floor_09.png alias and renders the valid floor_05.png asset."
+  },
+  "extension_wall": {
+    "seb_selector_id": 63,
+    "seb_filename": "wall_ex.seb",
+    "source_image_selector_id": 2,
+    "source_image_filename": "wall_01.png",
+    "frame_records": {
+      "0": {"source_x": 52, "source_y": 0, "width": 20, "height": 43, "destination_x": 0, "destination_y": -33},
+      "1": {"source_x": 72, "source_y": 0, "width": 20, "height": 43, "destination_x": 20, "destination_y": -33},
+      "2": {"source_x": 48, "source_y": 0, "width": 24, "height": 43, "destination_x": -4, "destination_y": -33},
+      "3": {"source_x": 72, "source_y": 0, "width": 24, "height": 43, "destination_x": 20, "destination_y": -33}
+    },
+    "native_predicates": {
+      "vertical_frame_1": [[4, 5], [4, 6], [8, 9], [8, 10], [8, 11]],
+      "horizontal_frame_0": [[2, 5], [3, 5], [4, 5], [7, 9], [8, 9]]
+    },
+    "frame_usage": {
+      "0": {"floor00_status": "selected_horizontal_extension_triggers", "native_method": "MapChip.DrawExtentionFloor:GetSprite(0,0)"},
+      "1": {"floor00_status": "selected_vertical_extension_triggers", "native_method": "MapChip.DrawExtentionFloor:GetSprite(1,0)"},
+      "2": {"floor00_status": "retained_not_selected_by_floor00_extension_path", "native_method": "SEB frame record retained for alternate/native callers"},
+      "3": {"floor00_status": "retained_not_selected_by_floor00_extension_path", "native_method": "SEB frame record retained for alternate/native callers"}
+    },
+    "composition_groups": {
+      "vertical_frame_1": {
+        "frame_id": "1",
+        "trigger_cells": [[4, 5], [4, 6], [8, 9], [8, 10], [8, 11]],
+        "native_method": "MapChip.DrawExtentionFloor:GetSprite(1,0)+DrawSeb(frame=1) x2",
+        "draw_call_count": 2,
+        "piece_offsets": [{"x": 20, "y": -1}, {"x": 40, "y": 9}],
+        "offset_basis": "native call position relative to MapChip origin; y uses -1 then +10 and x uses +20 then +20+sprite_width",
+        "continuity": "two frame-1 crops are adjacent in native call space"
+      },
+      "horizontal_frame_0": {
+        "frame_id": "0",
+        "trigger_cells": [[2, 5], [3, 5], [4, 5], [7, 9], [8, 9]],
+        "native_method": "MapChip.DrawExtentionFloor:GetSprite(0,0)+DrawSeb(frame=0) x2",
+        "draw_call_count": 2,
+        "piece_offsets": [{"x": 20, "y": -1}, {"x": 4, "y": 9}],
+        "offset_basis": "native call position relative to MapChip origin; x second piece is 20 + (4 - sprite_width) for the 20px frame-0 crop",
+        "continuity": "two frame-0 crops overlap at the native four-pixel seam"
+      }
+    }
+  },
+  "draw_contract": {
+    "map_chip_origin": {"x": "ofx + (x + y) * 40", "y": "ofy + (y - x) * 20"},
+    "map_image_anchor": "draw top-left at origin_y + 39 - image_height; preserve native PNG dimensions",
+    "native_pass_order": ["MapChip.DrawExtentionFloor", "MapChip.Draw", "ObjChip.Draw", "ObjChip.DrawWall", "Avatar.Draw", "MapChip.DrawFloor"],
+    "floor_image_culling": {
+      "native_method": "MapChip.DrawFloor@0x12A1F38",
+      "room_dimensions": [14, 14],
+      "x_inclusive": [5, 9],
+      "y_inclusive": [5, 8],
+      "predicate": "x >= ((width - 4) >> 1) && x <= (((width - 4) >> 1) + 4) && y >= ((height - 4) >> 1) && y < (((height - 4) >> 1) + 4)",
+      "source_status": "verified_native_arm64_disassembly"
+    },
+    "object_grid_is_separate": true,
+    "object_grid_size": [10, 10]
+  },
+  "source_assets": {
+    "asset_root": "runtime/social-dev/assets/source-social-dev/chip",
+    "asset_zip_sha256": "c4b6ac1b6603eb8e2d7ac78e7dd3b8bffb40b7c30fe036cb644bea701087b283",
+    "files": {
+      "floor_05.png": {"runtime_path": "assets/source-social-dev/chip/floor_05.png", "width": 80, "height": 39, "sha256": "be6572af9df60f5ed00eb0ab0e7d4dd95ba08749d7ec88b027a8ae5b3896c08c"},
+      "floor_09.png": {"runtime_path": "assets/source-social-dev/chip/floor_09.png", "width": 80, "height": 39, "sha256": "cc960abb36b882bc771837a82c20563c11399456f21aa08ff87a033d2b543184"},
+      "floor_00.png": {"runtime_path": "assets/source-social-dev/chip/floor_00.png", "width": 80, "height": 39, "sha256": "7724062cabe0385f0131c812c74ec3ad4425e0d123d0a18abf9d752bd3d056bb"},
+      "under_floor.png": {"runtime_path": "assets/source-social-dev/chip/under_floor.png", "width": 80, "height": 37, "sha256": "39363dcfd8d20614bdd86104db2682dbac349127b13672d8d1667bbb0597e966"},
+      "ground_00.png": {"runtime_path": "assets/source-social-dev/chip/ground_00.png", "width": 80, "height": 40, "sha256": "cfe67f80918ed7847b6508c5be7ae10bee716051ef1c77844cf51a0263afd7c6"},
+      "turf_00.png": {"runtime_path": "assets/source-social-dev/chip/turf_00.png", "width": 80, "height": 50, "sha256": "a8a3dbca8a3d7409e7c88384da3653c99a139adbaf5eef984144f35231b1b734"},
+      "turf_01.png": {"runtime_path": "assets/source-social-dev/chip/turf_01.png", "width": 80, "height": 94, "sha256": "9c28d325fb6113a59683dcfedb4ae1f6fe00b7d73e1c802307ac707273af7004"},
+      "turf_02.png": {"runtime_path": "assets/source-social-dev/chip/turf_02.png", "width": 80, "height": 50, "sha256": "8c1ab69446a526504236a7a14236749cd9f8facf07489162ef71e56c8a75538e"},
+      "road_00.png": {"runtime_path": "assets/source-social-dev/chip/road_00.png", "width": 80, "height": 42, "sha256": "a04fa6fa51110c17de3046cd6597997d6c3d39507b46ab01f78b318e238f2f21"},
+      "road_01.png": {"runtime_path": "assets/source-social-dev/chip/road_01.png", "width": 80, "height": 42, "sha256": "db432f251f33e1b9d01ce0fcfbcb6a9b1b3b5260b18fa2605987bb9b31ae5508"},
+      "road_02.png": {"runtime_path": "assets/source-social-dev/chip/road_02.png", "width": 80, "height": 42, "sha256": "bdb1983c6cb697e613d790c263702d4ddbe17df1625dddec715ecf32ca99f6fe"},
+      "road_03.png": {"runtime_path": "assets/source-social-dev/chip/road_03.png", "width": 80, "height": 60, "sha256": "ebc9bc8df71f06814f70d3da2055513193dabc9ca2f0eea5fd6f0e641e4005ff"},
+      "road_edge_00.png": {"runtime_path": "assets/source-social-dev/chip/road_edge_00.png", "width": 80, "height": 60, "sha256": "eb160db9df4f9bd91492bc6d5b35812e734376c0faac252d6dc88f80a4ff08a0"},
+      "road_edge_01.png": {"runtime_path": "assets/source-social-dev/chip/road_edge_01.png", "width": 80, "height": 60, "sha256": "49bdb30f9329d68144088d14a11add2c00fbfba2266cbe457c1f57eb0ed3af45"},
+      "wall_01.png": {"runtime_path": "assets/source-social-dev/chip/wall_01.png", "width": 96, "height": 43, "sha256": "ad06888341650eb828abf373b238d48b1f96e4007c2eec0fd7dd3c8a69b9b022"},
+      "door_01.png": {"runtime_path": "assets/source-social-dev/chip/door_01.png", "width": 13, "height": 31, "sha256": "196198c9ee093f7f234060868434f9547e56bd020e57acebf4b2285848281569"}
+    },
+    "ambient_assets": {
+      "day_back_00.png": {"runtime_path": "assets/source-social-dev/game/day_back_00.png", "width": 60, "height": 720, "sha256": "d96dae58e492444ea9f4ca129217e7846b8416de0744684a718662e447e187cd"}
+    }
+  },
+  "provenance": {
+    "source_files": [
+      {"file": "sources/raw/1_Click_CSharp_Code update/game/Room.cs", "lines": "149-453", "claim": "Room constructs 14x14 MapChip grid and selects map table by floor != 0."},
+      {"file": "sources/raw/1_Click_CSharp_Code update/game/MapChip.cs", "lines": "52-405", "claim": "MapChip projection, native image anchor and extension-wall predicates."},
+      {"file": "sources/raw/1_Click_CSharp_Code update/KairoEngine/main/AppData.cs", "lines": "1200-1264", "claim": "Source selector names for the resolved chip IDs."}
+    ],
+    "native_artifacts": [
+      {"file": "knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat", "offsets": ["0x466F08", "0x467878", "0x46A3F8", "0x46A440"], "claim": "Exact static int arrays initialized by game.Room..cctor."},
+      {"file": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so", "methods": ["Room..cctor@0x12D20C4", "Room.InitMapChips@0x12CB1F4", "MapChip.DrawFloor@0x12A1F38", "MapChip.DrawExtentionFloor@0x12A20F4"], "claim": "Native lookup order and map draw predicates."}
+    ],
+    "assembly_guide": "knowledge/sources/asset_guide_20260813/05_ASSEMBLY_GUIDE/09_WORLD_CHIP_ASSEMBLY.md"
+  },
+  "determinism": {
+    "algorithm": "stable-json-sha256 excluding contract_hash",
+    "contract_hash": "c819147b236b2dc3e3887ab33e38998db4bf2da0d156cf9076c545852001d756"
+  }
+}

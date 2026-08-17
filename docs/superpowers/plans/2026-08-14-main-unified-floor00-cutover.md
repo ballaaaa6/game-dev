@@ -199,7 +199,7 @@ Run:
 
     rg -n "display-slice-01|scene=floor00|nativeFloor=|context=persistent_room|context=addition_floor_preview|renderObjects" runtime/social-dev/src runtime/social-dev/tests runtime/social-dev/README.md README.md
 
-Classify each match as retained provenance/contract data or unreachable production route code. Do not delete files under knowledge/social-dev/evidence/, runtime/social-dev/evidence/, or runtime/social-dev/assets/ solely because a filename contains the historical display-slice label.
+Classify each match as retained provenance/contract data or unreachable production route code. Do not delete files under knowledge/fixtures/accepted/, knowledge/fixtures/accepted/runtime/, or runtime/social-dev/assets/ solely because a filename contains the historical display-slice label.
 
 - [ ] Step 2: Write documentation/state regression expectations.
 
@@ -231,7 +231,7 @@ Expected: remaining historical labels are limited to retained evidence/tests who
 ### Task 6: Run full verification and browser smoke
 
 **Files:**
-- Verify: runtime/social-dev package, knowledge/social-dev/evidence/, and the final git diff.
+- Verify: runtime/social-dev package, knowledge/fixtures/accepted/, and the final git diff.
 - Update PROJECT_STATE.md and TODO.md with the exact observed verification results and final status.
 
 **Interfaces:**
@@ -271,4 +271,4 @@ Verify the page reports floor00, room room:0, all current catalog/room counts, v
 
 - [ ] Step 5: Clean up only task-started processes and record evidence.
 
-If this task started Vite or browser tooling, stop its process tree after verification. Do not terminate Codex-owned processes. Store generated evidence under knowledge/social-dev/evidence/, update PROJECT_STATE.md/TODO.md with exact observed counts and hashes, inspect the final diff, and report any remaining explicit boundary instead of claiming completion without evidence.
+If this task started Vite or browser tooling, stop its process tree after verification. Do not terminate Codex-owned processes. Store generated evidence under knowledge/fixtures/accepted/, update PROJECT_STATE.md/TODO.md with exact observed counts and hashes, inspect the final diff, and report any remaining explicit boundary instead of claiming completion without evidence.

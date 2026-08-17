@@ -1,0 +1,63 @@
+{
+  "schema_version": "social-dev-i1-source-reverification-v1",
+  "status": "PASS_I1_SOURCE_TARGETS_REVERIFIED",
+  "pinned_sources": {
+    "apk": { "path": "sources/raw/Social_Dev_Story_v2.5.1.apk", "sha256": "FA0E9E3A843732258FC05B2611A8E0F5BE6F7E95F2141A53F31FB082322FE2BF" },
+    "libil2cpp": { "path": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so", "sha256": "364893401FCF7FC2380AE64291783EDF7B95EECEA4775041C3F4C8C081B4D54A" },
+    "metadata": { "path": "knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat", "sha256": "F65F3A00675F35CFA28FEF53C37ED7A2DC01E143B6D59C6014A286FA84E4A579" },
+    "dump": { "path": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs", "sha256": "4487CBA6916E159AFEFEC2CD1A9ECF0D12D05B2D76126E7099A5D35323967EB2" },
+    "csharp_rar": { "path": "sources/raw/1_Click_CSharp_Code.rar", "sha256": "A50A442491E422C20699A9CA4266E794D215BFF29248D3EDD24C41F42A57F903" }
+  },
+  "csharp_targets": [
+    { "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs", "symbols": ["Update", "UpdateWork", "UpdatePlanning2", "ReadyToDevelop", "UpdateDevelop", "OnFinishDevelop", "OnAttacked", "ChangeState", "OnStartPlanning", "OnEndPlanning"], "status": "located_and_read" },
+    { "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Develop.cs", "symbols": ["Init", "staffs_", "step_", "params_"], "status": "located_and_read" },
+    { "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/DevelopForm.cs", "symbols": ["Init", "develop_", "StartDebug", "OnFinishDevelop", "OnEnemyAttack", "Deserialize"], "status": "located_and_read" },
+    { "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs", "symbols": ["UpdateDevelopStart", "StartPlanning"], "status": "located_and_read" },
+    { "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Player.cs", "symbols": ["StartPlanning", "UpdatePlanning", "IsCompletedPlanning"], "status": "located_and_read" },
+    { "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs", "symbols": ["OnStartPlanning", "UpdatePlanning", "OnEndPlanning", "GetCloneStaffsVector", "AddStaff"], "status": "located_and_read" }
+  ],
+  "native_targets": {
+    "Staff.Update": {
+      "rva": "0x12D2EC8",
+      "state_field_offset": "0x70",
+      "state12_compare": "cmp w8,#0xc at 0x12D3010",
+      "state12_call": "bl 0x12D3D48 at 0x12D301C",
+      "ordinary_recovery_call": "0x12D2C8C is in the bypassed non-state12 block",
+      "result": "STATE_DEVELOP takes the native UpdateDevelop return path before ordinary recovery and low-HP office dispatch."
+    },
+    "Staff.UpdateDevelop": {
+      "rva": "0x12D3D48",
+      "develop_state_offset": "0x188",
+      "jump_table_base": "0x636660",
+      "jump_table_entries": 10,
+      "targets": {
+        "0": "0x12D3ECC",
+        "1": "0x12D3F68",
+        "2": "0x12D4150",
+        "3": "0x12D420C",
+        "4": "0x12D4288",
+        "5": "0x12D464C",
+        "6": "0x12D4398",
+        "7": "0x12D464C",
+        "8": "0x12D43EC",
+        "9": "0x12D44AC"
+      }
+    },
+    "Staff.UpdatePlanning2": { "rva": "0x12D6B5C" },
+    "Staff.OnStartPlanning": { "rva": "0x12DCC98" },
+    "Staff.OnEndPlanning": { "rva": "0x12DCEE4" },
+    "Staff.OnFinishDevelop": { "rva": "0x12D9FF8" },
+    "Staff.ChangeState": { "rva": "0x12D3CDC", "write": "str w1,[x0,#0x70]", "state12_writer_status": "generic writer confirmed; no source-backed caller with argument 12 recovered" },
+    "Staff.develop_fields": {
+      "developState_": "0x188",
+      "frame2_": "0x18C",
+      "stepFinished_": "0x190",
+      "power_": "0x19C",
+      "developStateBackup_": "0x1B0",
+      "isFukidashiCaller_": "0x1B4",
+      "isProduceBug_": "0x1B5",
+      "developStaffId_": "0x1B8"
+    }
+  },
+  "source_limit": "The managed source has a damaged indirect Develop dispatch and does not expose a recovered Staff.ChangeState(12) caller. The native generic Staff.ChangeState writer, DevelopForm/Develop ownership, clone/index assignment, progress fields, HP branch, interruption backup, and completion calls are closed enough to reject Develop as a truthful arbitrary external-task bridge."
+}

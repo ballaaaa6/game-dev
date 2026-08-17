@@ -1,0 +1,21 @@
+{
+  "schema_version": "social-dev-i1-original-development-start-chain-v1",
+  "status": "PASS_I1_2_ORIGINAL_DEVELOP_ASSIGNMENT_CHAIN",
+  "checkpoint_token": "PASS_I1_2_ORIGINAL_DEVELOP_ASSIGNMENT_CHAIN",
+  "chain": [
+    { "step": 1, "classification": "ORIGINAL_PLAYER_UI", "owner": "form.SubForm.UpdateDevelopStart / form.DevelopForm", "evidence": "SubForm.cs method around line 22901; DevelopForm.cs Init around line 1617" },
+    { "step": 2, "classification": "ORIGINAL_COMMAND_TRANSLATION", "owner": "form.SubForm", "evidence": "UI start paths call parameterless Player.StartPlanning after proposal cleanup; no external payload is present" },
+    { "step": 3, "classification": "ORIGINAL_PROJECT_MODEL", "owner": "game.Develop / form.DevelopForm.develop_", "evidence": "Develop.cs fields step_, params_, oldParams_, paramFrames_, staffs_; DevelopForm.cs field develop_ and Deserialize new Develop at line 26782" },
+    { "step": 4, "classification": "ORIGINAL_LIVING_CORE", "owner": "game.Player -> game.Room -> game.Staff", "evidence": "Player.StartPlanning -> Room.OnStartPlanning -> every room Staff.OnStartPlanning; planning evidence is source-backed" },
+    { "step": 5, "classification": "ORIGINAL_WORK_EXECUTION", "owner": "Develop.GetCloneStaffsVector / Staff.ReadyToDevelop / Staff.UpdateDevelop", "evidence": "Develop.cs lines 230 and 370-409; Staff.cs lines 5758-5783; native UpdateDevelop RVA 0x12D3D48" },
+    { "step": 6, "classification": "ORIGINAL_RESULT_ECONOMY", "owner": "DevelopForm step clear / result flow", "evidence": "DevelopForm.cs lines 4304-4318 and 8135; excluded from I1" },
+    { "step": 7, "classification": "PRODUCT_REPLACEMENT_BOUNDARY", "owner": "I1 AssignmentAdapter", "evidence": "Product overlay owns external task identity/lifecycle only; native Develop UI/economy is not invoked" }
+  ],
+  "chain_closure": {
+    "planning_entry": "closed",
+    "develop_owner": "closed as DevelopForm.develop_ / Develop object",
+    "staff_clone_selection": "closed as room clone vector order",
+    "native_update": "closed",
+    "external_arbitrary_payload": "not present; source-limited and rejected as a bridge input"
+  }
+}

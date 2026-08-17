@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "phase": "V5",
+  "status": "PASS_STATIC_NO_BLOCKING_UNKNOWNS",
+  "execution_mode": "INLINE_STATIC_ONLY",
+  "unknowns": [
+    {"id":"MAPCOORD-ALT-EXT","status":"SOURCE_LIMITED_NONBLOCKING","selected_scope":"closed V4 extension trigger cells and local piece order","deferred":"unproven alternate extension branches","reason":"not required by the selected Room.Draw static fixture"},
+    {"id":"MAPDRAW-ROOM-MODE","status":"CLOSED_IN_V5","selected_scope":"main_display, persistent_room, and addition_floor_preview topology contexts","deferred":"dynamic modes outside the approved native floor arrays","reason":"floor selection and dimension rejection are explicit"},
+    {"id":"OBJDIRECTION-ASSET","status":"SOURCE_LIMITED_NONBLOCKING","selected_scope":"raw direction validation and preserved direction field","deferred":"generic direction-specific furniture asset selection","reason":"no unproven asset inference is emitted"},
+    {"id":"OBJDRAW-GENERAL-BRANCH","status":"SOURCE_LIMITED_NONBLOCKING","selected_scope":"explicit native bindings, door, walls, and room:0 structural facility","deferred":"generic object/effect/preview branches","reason":"selected static room scope is closed without synthesizing them"},
+    {"id":"OBJDRAW-WALL-ALT","status":"CLOSED_IN_V5_FOR_SELECTED_PREDICATES","selected_scope":"all 18 native wall/door coordinate predicates; room:0 command fixture","deferred":"unselected alternate resource families","reason":"native assembly contract closes the selected wall/door cells"},
+    {"id":"FURN-CATALOGUE-DRAW","status":"OUT_OF_SCOPE_NONBLOCKING","selected_scope":"world composition via explicit FurnitureData bindings","deferred":"catalogue UI FurnitureData.Draw body","reason":"the V5 target is Room-owned world orchestration"},
+    {"id":"CAMERA-VIEWPORT","status":"OUT_OF_SCOPE_NONBLOCKING","selected_scope":"integer ofx_/ofy_ forwarding","deferred":"viewport clamp, easing, and live camera state","reason":"static command parity requires only the recovered offset boundary"},
+    {"id":"ORDER-ROOM-FULL","status":"CLOSED_IN_V5","selected_scope":"native nine-slot Room.Draw order and local row/column ordering","deferred":"actor ordering within V6 Staff/Avatar slots","reason":"actor slots remain empty and explicitly deferred"}
+  ],
+  "blocking_unknown_count": 0,
+  "policy": "No unknown is promoted to a runtime behavior without source or fixture evidence."
+}

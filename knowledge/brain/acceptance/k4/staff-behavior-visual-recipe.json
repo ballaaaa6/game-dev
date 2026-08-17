@@ -1,0 +1,825 @@
+{
+  "autonomous_visual_branches": {
+    "equipment": "equipment-specific native phase recipe is in equipment-composition-recipe.json",
+    "hp_home_return": "low-HP door escape, hidden WAIT_BACK_OF_DOOR, STAY_HOME recovery, and GotoDesk return are source/native-backed",
+    "movement": "move selector 1/2/3/4 by translated direction; route fields and arrival modes remain source/native-backed",
+    "talk": "talk pose reuses typing selectors; Fukidashi payload is separately source-limited",
+    "wander": "wander falls back to move selector 1/2/3/4; OnArriveGoal mode 2 selects directional wander SEB",
+    "work": "work/sit state has no separate selector; typing is explicit selector 23/24/25/26 when FLAG_TYPING is on"
+  },
+  "bootstrap_actor_visual_bindings": [
+    {
+      "id": "actor:staff:0",
+      "initial_position": [
+        280,
+        -31
+      ],
+      "selector_policy": "human action selector map resolves wait/move/typing by translated direction",
+      "source_staff_id": 0,
+      "spawn_cell": [
+        8,
+        4
+      ],
+      "visual_status": "accepted_floor00_static_display_actor"
+    },
+    {
+      "id": "actor:staff:1",
+      "initial_position": [
+        280,
+        -31
+      ],
+      "selector_policy": "human action selector map resolves wait/move/typing by translated direction",
+      "source_staff_id": 1,
+      "spawn_cell": [
+        8,
+        4
+      ],
+      "visual_status": "accepted_floor00_static_display_actor"
+    },
+    {
+      "id": "actor:staff:2",
+      "initial_position": [
+        280,
+        -31
+      ],
+      "selector_policy": "human action selector map resolves wait/move/typing by translated direction",
+      "source_staff_id": 2,
+      "spawn_cell": [
+        8,
+        4
+      ],
+      "visual_status": "accepted_floor00_static_display_actor"
+    }
+  ],
+  "directions": {
+    "fixture_examples": [
+      {
+        "raw_direction": 0,
+        "resolved_direction": "left",
+        "reverse_direction": 1,
+        "typing_selector": 24,
+        "wait_selector": 11
+      },
+      {
+        "raw_direction": 1,
+        "resolved_direction": "right",
+        "reverse_direction": 0,
+        "typing_selector": 23,
+        "wait_selector": 10
+      },
+      {
+        "raw_direction": 2,
+        "resolved_direction": "down",
+        "reverse_direction": 3,
+        "typing_selector": 26,
+        "wait_selector": 13
+      },
+      {
+        "raw_direction": 3,
+        "resolved_direction": "up",
+        "reverse_direction": 2,
+        "typing_selector": 25,
+        "wait_selector": 12
+      }
+    ],
+    "proof": "NATIVE-CODE-PROVEN",
+    "raw_domain": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "raw_values": {
+      "0": {
+        "human_selector_direction": "left",
+        "label": "DIRECTION_RIGHT",
+        "reverse": 1,
+        "vector": [
+          0,
+          1
+        ]
+      },
+      "1": {
+        "human_selector_direction": "right",
+        "label": "DIRECTION_LEFT",
+        "reverse": 0,
+        "vector": [
+          0,
+          -1
+        ]
+      },
+      "2": {
+        "human_selector_direction": "down",
+        "label": "DIRECTION_UP",
+        "reverse": 3,
+        "vector": [
+          1,
+          0
+        ]
+      },
+      "3": {
+        "human_selector_direction": "up",
+        "label": "DIRECTION_DOWN",
+        "reverse": 2,
+        "vector": [
+          -1,
+          0
+        ]
+      }
+    },
+    "reverse_table": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "schema_version": "social-dev-visual-port-v6-staff-direction-contract-v1",
+    "selector_formulas": {
+      "move": "native capability selector_by_direction; no browser coordinate derivation",
+      "typing": "reverseDirection + 23",
+      "wait": "reverseDirection + 10"
+    },
+    "source_refs": [
+      "knowledge/fixtures/accepted/runtime/native_direction_contract.json",
+      "sources/raw/1_Click_CSharp_Code update/game/Staff.cs:10309-10407",
+      "sources/raw/1_Click_CSharp_Code update/game/ObjChip.cs:10644-10997"
+    ],
+    "status": "pass_static"
+  },
+  "initial_live_selector_boundary": {
+    "no_invented_selector": true,
+    "reason": "The accepted Room0 bootstrap displays the three initial actors through the static actor binding; Staff.Init's direct sebId_ write is not a distinct promoted visual consumer.",
+    "status": "NO_DISTINCT_VISUAL"
+  },
+  "move_modes": [
+    {
+      "name": "MOVE_MODE_STAY",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 0
+    },
+    {
+      "name": "MOVE_MODE_GOTO_EQUIPMENT",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 1
+    },
+    {
+      "name": "MOVE_MODE_WANDER",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 2
+    },
+    {
+      "name": "MOVE_MODE_GOTO_DESK",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 3
+    },
+    {
+      "name": "MOVE_MODE_INTO_EQUIPMENT",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 4
+    },
+    {
+      "name": "MOVE_MODE_OUTOF_EQUIPMENT",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 5
+    },
+    {
+      "name": "MOVE_MODE_SIT_DOWN",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 6
+    },
+    {
+      "name": "MOVE_MODE_TO_STAFF",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 7
+    },
+    {
+      "name": "MOVE_MODE_TO_STAND_TALKING",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 8
+    },
+    {
+      "name": "MOVE_MODE_TO_BACK_OF_CHAIR",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 9
+    },
+    {
+      "name": "MOVE_MODE_GO_TO_DOOR",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 10
+    },
+    {
+      "name": "MOVE_MODE_GO_HOME",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 11
+    }
+  ],
+  "native_draw": {
+    "Staff.AdvanceSebFrame": "0x12D8E30",
+    "Staff.Draw": "0x12DA6A0",
+    "Staff.Draw_full": "0x12DA710",
+    "Staff.Draw_offset_overload": "0x12DABA8",
+    "Staff.UpdateAlpha": "0x12D3A40",
+    "alpha_policy": "fade-out decrements by 25 to zero; fade-in increments by 25 to 255",
+    "state_11_draw_policy": "Staff.Draw skips WAIT_BACK_OF_DOOR"
+  },
+  "recipe_id": "STAFF_BEHAVIOR_VISUAL_RECIPE:human-staff-v1",
+  "schema_version": "social-dev-k4-staff-behavior-visual-recipe-v1",
+  "selector_map": {
+    "actions": {
+      "equipment": {
+        "down": 13,
+        "fallback_action": "wait",
+        "left": 11,
+        "right": 10,
+        "up": 12
+      },
+      "fly_away": {
+        "selector": null,
+        "status": "deferred"
+      },
+      "invite_to_talk": {
+        "down": 13,
+        "fallback_action": "wait",
+        "left": 11,
+        "right": 10,
+        "up": 12
+      },
+      "meeting": {
+        "down": 13,
+        "fallback_action": "wait",
+        "left": 11,
+        "right": 10,
+        "up": 12
+      },
+      "move": {
+        "down": 4,
+        "left": 2,
+        "right": 1,
+        "up": 3
+      },
+      "sit_down": {
+        "down": 13,
+        "fallback_action": "wait",
+        "left": 11,
+        "right": 10,
+        "up": 12
+      },
+      "stay_home": {
+        "down": 13,
+        "fallback_action": "wait",
+        "left": 11,
+        "right": 10,
+        "up": 12
+      },
+      "talk": {
+        "down": 26,
+        "left": 24,
+        "right": 23,
+        "source_action": "typing",
+        "up": 25
+      },
+      "typing": {
+        "down": 26,
+        "left": 24,
+        "right": 23,
+        "up": 25
+      },
+      "wait": {
+        "down": 13,
+        "left": 11,
+        "right": 10,
+        "up": 12
+      },
+      "wander": {
+        "down": 4,
+        "fallback_action": "move",
+        "left": 2,
+        "right": 1,
+        "up": 3
+      },
+      "work": {
+        "down": 13,
+        "fallback_action": "wait",
+        "left": 11,
+        "right": 10,
+        "up": 12
+      }
+    },
+    "direction_order": [
+      "right",
+      "left",
+      "up",
+      "down"
+    ],
+    "native_actions": {
+      "banzai": {
+        "down": 20,
+        "right": 19
+      },
+      "chara_sample00": 0,
+      "eieio": {
+        "down": 22,
+        "right": 21
+      },
+      "head": 100,
+      "typing": {
+        "down": 26,
+        "left": 24,
+        "right": 23,
+        "up": 25
+      },
+      "wait": {
+        "down": 13,
+        "left": 11,
+        "right": 10,
+        "up": 12
+      },
+      "walk": {
+        "down": 4,
+        "left": 2,
+        "right": 1,
+        "up": 3
+      }
+    },
+    "profile": "human-staff-v1",
+    "resolution_policy": {
+      "asset_loading": "lazy_by_selector",
+      "lookup": "capability profile action -> selector_by_direction -> original resHuman_ numeric ID",
+      "source_code_imports": false,
+      "unsupported_action": "explicit deferred/unsupported result; no invented filename or silent fallback"
+    },
+    "schema_version": "social-dev-visual-port-v6-human-action-selector-map-v1",
+    "source_refs": [
+      "knowledge/fixtures/accepted/runtime/character_capability_contract.json",
+      "knowledge/fixtures/accepted/runtime/character_asset_manifest.json",
+      "knowledge/fixtures/accepted/staff_semantics_contract.json"
+    ],
+    "status": "pass_static"
+  },
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:actors",
+    "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json",
+    "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json",
+    "knowledge/fixtures/accepted/behavior-first/staff-state-machine.json",
+    "knowledge/fixtures/accepted/living-core-closure/staff-native-authority-map.json:Staff.Draw/AdvanceSebFrame/UpdateAlpha",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:Staff.OnStartTyping/OnEndTyping/GotoDesk",
+    "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:Staff.Draw/AdvanceSebFrame/UpdateAlpha"
+  ],
+  "states": [
+    {
+      "name": "STATE_NORMAL",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 0
+    },
+    {
+      "name": "STATE_MEETING",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 1
+    },
+    {
+      "name": "STATE_MOVE",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 2
+    },
+    {
+      "name": "STATE_SIT_DOWN",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 3
+    },
+    {
+      "name": "STATE_WORK",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 4
+    },
+    {
+      "name": "STATE_USE_EQUIPMENT",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 5
+    },
+    {
+      "name": "STATE_TALK",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 6
+    },
+    {
+      "name": "STATE_INVITE_TO_TALK",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 7
+    },
+    {
+      "name": "STATE_FLY_AWAY",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 8
+    },
+    {
+      "name": "STATE_WAIT",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 9
+    },
+    {
+      "name": "STATE_WANDER",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 10
+    },
+    {
+      "name": "STATE_WAIT_BACK_OF_DOOR",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 11
+    },
+    {
+      "name": "STATE_DEVELOP",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 12
+    },
+    {
+      "name": "STATE_STAY_HOME",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 13
+    }
+  ],
+  "status": "PROVEN_CANONICAL",
+  "transitions": [
+    {
+      "confidence": "source_backed_with_source_limit",
+      "from": "any_non_meeting_non_develop_state",
+      "guard_or_trigger": "Staff.Update returns to UpdateMeeting for state 1 and UpdateDevelop for state 12; the remaining dispatch is an unresolved indirect jump.",
+      "id": "update-special-dispatch",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 1303,
+          "note": "Broad update entry point; body contains damaged indirect dispatch.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "public unsafe void Update()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D2EC8",
+          "symbol": "Staff.Update"
+        }
+      ],
+      "to": [
+        "STATE_MEETING",
+        "STATE_DEVELOP",
+        "state_handler_selected_by_indirect_dispatch"
+      ]
+    },
+    {
+      "confidence": "source_backed",
+      "from": "any_state_except_move_and_stay_home",
+      "guard_or_trigger": "GetHpRatio() <= 5",
+      "id": "low-hp-door-escape",
+      "move_mode": "MOVE_MODE_GO_TO_DOOR",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 1561,
+          "note": "Low-HP guard clears route and targets the door.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "if (hpRatio <= 5 && state_ != 2 && state_ != 13)"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native entry.",
+          "rva": "0x12D2EC8",
+          "symbol": "Staff.Update"
+        }
+      ],
+      "to": "STATE_MOVE"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "STATE_STAY_HOME",
+      "guard_or_trigger": "UpdateStayHome recovers one HP and GetHpRatio() >= 40",
+      "id": "stay-home-recovery-return",
+      "move_mode": "MOVE_MODE_GOTO_DESK",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 2090,
+          "note": "Stay-home recovery and door reservation.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "private void UpdateStayHome()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D59F4",
+          "symbol": "Staff.UpdateStayHome"
+        }
+      ],
+      "to": "STATE_WAIT_BACK_OF_DOOR"
+    },
+    {
+      "confidence": "source_backed_with_cadence_limit",
+      "from": "STATE_WORK",
+      "guard_or_trigger": "UpdateWork sitting branch and random decision; typingFrame_=100",
+      "id": "work-to-typing",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 2954,
+          "note": "Typing/equipment/talk decisions; modulo gate is decompiler-damaged.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "private void UpdateWork()"
+        },
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 11326,
+          "note": "Typing flag and frame setup.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "private void OnStartTyping()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D4A7C",
+          "symbol": "Staff.UpdateWork"
+        }
+      ],
+      "to": "STATE_WORK_with_FLAG_TYPING"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "STATE_WORK",
+      "guard_or_trigger": "random type 1 or 4 candidate, GetUsersNum() <= 0",
+      "id": "work-to-equipment",
+      "move_mode": "MOVE_MODE_GOTO_EQUIPMENT",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 3308,
+          "note": "Equipment target and reservation.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "private void GotoEquip()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D6540",
+          "symbol": "Staff.GotoEquip"
+        }
+      ],
+      "to": "STATE_MOVE"
+    },
+    {
+      "confidence": "source_backed_with_selection_limit",
+      "from": "STATE_WORK",
+      "guard_or_trigger": "random colleague is sitting/work, usable standing cell, flags permit talk",
+      "id": "work-to-talk",
+      "move_mode": "MOVE_MODE_TO_STAFF",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 3262,
+          "note": "Talk candidate and bilateral flags.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "private void GotoTalk()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D6600",
+          "symbol": "Staff.GotoTalk"
+        }
+      ],
+      "to": "STATE_MOVE"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "STATE_TALK_or_STATE_INVITE_TO_TALK",
+      "guard_or_trigger": "Talk frame >= 130; clears invited/reserved flags and colleagueId_",
+      "id": "talk-finish",
+      "move_mode": "MOVE_MODE_GOTO_DESK",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 2297,
+          "note": "Talk completion timing.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "if (num >= 130)"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D5588",
+          "symbol": "Staff.Talk"
+        }
+      ],
+      "to": "desk_goal"
+    },
+    {
+      "confidence": "source_backed_with_goal-dispatch_limit",
+      "from": "STATE_MOVE",
+      "guard_or_trigger": "OnArriveNextNode removes route head; empty route dispatches OnArriveGoal",
+      "id": "arrival-consumes-route",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 5535,
+          "note": "Route consumption and arrival callbacks.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "private unsafe void OnArriveNextNode(int goalX, int goalY)"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D8184",
+          "symbol": "Staff.OnArriveNextNode"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Goal handler remains indirect in C#.",
+          "rva": "0x12D8420",
+          "symbol": "Staff.OnArriveGoal"
+        }
+      ],
+      "to": "OnArriveGoal_or_next_node"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "equipment_use_or_reserved",
+      "guard_or_trigger": "OnEquipDestroyed clears frame and selects wait animation/state",
+      "id": "equipment-destroyed",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 10567,
+          "note": "Equipment destruction recovery.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "public void OnEquipDestroyed()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12DC408",
+          "symbol": "Staff.OnEquipDestroyed"
+        }
+      ],
+      "to": "STATE_WAIT"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "desk_user",
+      "guard_or_trigger": "OnDeskDestroyed clears deskId_",
+      "id": "desk-destroyed",
+      "move_mode": "MOVE_MODE_WANDER",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 10694,
+          "note": "Desk destruction fallback.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "public void OnDeskDestroyed()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12DC4B0",
+          "symbol": "Staff.OnDeskDestroyed"
+        }
+      ],
+      "to": "STATE_WANDER"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "talking_or_invited",
+      "guard_or_trigger": "OnColleagueRemoved clears colleagueId_ and talk flags",
+      "id": "colleague-removed",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 10910,
+          "note": "Social contention cleanup.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "public void OnColleagueRemoved()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12DC6D8",
+          "symbol": "Staff.OnColleagueRemoved"
+        }
+      ],
+      "to": "STATE_WAIT"
+    }
+  ],
+  "visible_action_map": {
+    "actions": [
+      {
+        "action": "idle_wait",
+        "fields": [
+          "state_",
+          "sebId_",
+          "frame_"
+        ],
+        "source": "Staff state labels and wait/fallback methods",
+        "state": [
+          0,
+          9,
+          10
+        ]
+      },
+      {
+        "action": "walk_to_target",
+        "fields": [
+          "route_",
+          "objIndex_",
+          "moveMode_",
+          "x_",
+          "y_",
+          "dx_",
+          "dy_"
+        ],
+        "move_modes": [
+          1,
+          3,
+          7,
+          8,
+          10
+        ],
+        "source": "Staff.SearchRoute/Move/OnArriveNextNode",
+        "state": [
+          2
+        ]
+      },
+      {
+        "action": "sit_and_work",
+        "fields": [
+          "deskId_",
+          "flag_",
+          "frame_"
+        ],
+        "source": "Staff.UpdateWork and Room desk ownership",
+        "state": [
+          3,
+          4
+        ]
+      },
+      {
+        "action": "typing",
+        "fields": [
+          "typingFrame_",
+          "sebFrameInterval_",
+          "sebId_"
+        ],
+        "flags": [
+          16
+        ],
+        "source": "Staff.OnStartTyping/OnEndTyping",
+        "state": [
+          4
+        ]
+      },
+      {
+        "action": "use_equipment",
+        "fields": [
+          "objIndex_",
+          "frame_",
+          "recoveryHpStock_"
+        ],
+        "source": "Staff.UseEquip and FurnitureData.recovery_",
+        "state": [
+          5
+        ]
+      },
+      {
+        "action": "talk",
+        "fields": [
+          "colleagueId_",
+          "talkFrame_",
+          "meetingPointGauge_"
+        ],
+        "flags": [
+          4,
+          8
+        ],
+        "source": "Staff.GotoTalk/InviteStaffToTalk/Talk",
+        "state": [
+          6,
+          7
+        ]
+      },
+      {
+        "action": "low_hp_leave_and_home_recovery",
+        "fields": [
+          "hp_",
+          "state_",
+          "moveMode_",
+          "recoveryHpStock_",
+          "frameToStartRecovery_"
+        ],
+        "source": "Staff.Update low-HP guard/UpdateStayHome",
+        "state": [
+          2,
+          11,
+          13
+        ]
+      }
+    ],
+    "renderer_boundary": "This map describes behavior-visible actions only. It does not authorize a renderer, MapChip, V8, emulator, or screenshot change.",
+    "schema_version": "social-dev-behavior-first-visible-action-map-v1",
+    "status": "pass_with_source_limits"
+  }
+}

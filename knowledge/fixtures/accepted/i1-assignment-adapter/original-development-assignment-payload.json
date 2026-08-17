@@ -1,0 +1,21 @@
+{
+  "schema_version": "social-dev-i1-original-development-assignment-payload-v1",
+  "status": "PASS_I1_2_PAYLOAD_BOUNDARY",
+  "project_identity": {
+    "fields": ["Develop.step_", "Develop.params_", "Develop.oldParams_", "Develop.paramFrames_", "Proposal/GameRecord-derived params"],
+    "external_task_id": "absent",
+    "content_id": "not safely recoverable as an arbitrary product input"
+  },
+  "assigned_staff": {
+    "owner": "Develop.staffs_",
+    "source": "Room.GetCloneStaffsVector()",
+    "identity": "clone-vector index, not recovered runtime Staff.id, StaffData.id, or external agent ID",
+    "field": "Staff.developStaffId_",
+    "offset": "0x1B8",
+    "source_lines": ["game/Develop.cs:370", "game/Staff.cs:350", "form/DevelopForm.cs:2322"]
+  },
+  "staff_initialization": ["ReadyToDevelop sets developState_=0", "Develop/DevelopForm sets draw x/y and seb fields", "OnStartStep sets frame2_=0, stepFinished_=false and ordinarily enters developState_=3"],
+  "progress_fields": ["developState_", "frame2_", "power_", "attackCharge_", "auraTime_", "stepFinished_", "Develop.paramFrames_", "Develop.params_"],
+  "flags_and_state": ["Staff.state==12 is the native UpdateDevelop dispatch", "developState_ is a separate sub-state domain", "enemy interruption uses developStateBackup_ and temporary developState_=10"],
+  "payload_result": "Original Develop payload is a game-specific proposal/step/clone context. It is not used as an external product task payload."
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "social-dev-native-direction-contract-v1",
+  "package": "social-dev-native-direction",
+  "status": "pass",
+  "semantic_status": "approved_for_runtime_contract",
+  "direction_semantics_status": "closed_native_vector_mapping",
+  "native_field": "ObjChip.direction_ (assigned from RoomData.objDir_)",
+  "raw_domain": [0, 1, 2, 3],
+  "raw_values": {
+    "0": { "label": "DIRECTION_RIGHT", "vector": [0, 1], "reverse": 1 },
+    "1": { "label": "DIRECTION_LEFT", "vector": [0, -1], "reverse": 0 },
+    "2": { "label": "DIRECTION_UP", "vector": [1, 0], "reverse": 3 },
+    "3": { "label": "DIRECTION_DOWN", "vector": [-1, 0], "reverse": 2 }
+  },
+  "native_trace": {
+    "draw_method": "ObjChip.Draw",
+    "vector_method": "ObjChip.GetDirectionVector",
+    "reverse_method": "ObjChip.GetReverseDirection",
+    "vector_rva": "0x12C4754",
+    "reverse_rva": "0x12C47D4",
+    "static_constructor_rva": "0x12C59DC",
+    "direction_field_offset": "0x48",
+    "reverse_table_rodata_rva": "0x617F70",
+    "reverse_table": [1, 0, 3, 2],
+    "static_vectors": [[0, 1], [0, -1], [1, 0], [-1, 0]],
+    "binary": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so",
+    "binary_evidence_status": "reviewed_native_disassembly",
+    "source_status": "native_binary_mapping_closed; decompiler method body retained as provenance only",
+    "source_refs": [
+      "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:10644-10770",
+      "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:10997",
+      "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:rva=0x12C4754",
+      "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:rva=0x12C47D4",
+      "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:rva=0x12C59DC"
+    ]
+  },
+  "runtime_policy": {
+    "preserve_raw_direction": true,
+    "expose_native_label_and_vector": true,
+    "rotation_is_allowed": false,
+    "directional_asset_selection_is_allowed": false,
+    "unresolved_status": "closed_native_mapping"
+  },
+  "determinism": {
+    "algorithm": "stable-json-sha256",
+    "content_hash": "native-direction-vector-map-v2"
+  }
+}

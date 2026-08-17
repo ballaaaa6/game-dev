@@ -1,0 +1,60 @@
+{
+  "destruction": {
+    "operation": "RemoveObj notifies reserved staff via OnEquipDestroyed",
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 10924,
+      "note": "Equipment removal cleanup.",
+      "source_sha256": "7ff9eff4252d218ae35df5bc4b72fb618be37434192431cbbde30301686c1663",
+      "symbol": "staff.OnEquipDestroyed();"
+    }
+  },
+  "hp_effect": "FurnitureData.recovery_ >= 1 adds that many recovery stock units after use completion; it does not directly write hp_.",
+  "reservation": {
+    "operation": "ObjChip.ReserveUse(this)",
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 11258,
+      "note": "Explicit reservation list.",
+      "source_sha256": "7ff9eff4252d218ae35df5bc4b72fb618be37434192431cbbde30301686c1663",
+      "symbol": "public void ReserveUse(Staff staff)"
+    },
+    "storage": "ObjChip.reservedStaffs_"
+  },
+  "schema_version": "social-dev-behavior-first-equipment-contract-v1",
+  "selection": {
+    "random_choice": "AppData.Random(2)",
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 3308,
+      "note": "Equipment selection and reservation.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "private void GotoEquip()"
+    },
+    "reservation_guard": "GetUsersNum() <= 0",
+    "types": [
+      1,
+      4
+    ]
+  },
+  "source_limit": "Exact animation direction/selector semantics and GetUsersNum body are native-pinned but decompiler-damaged in C#.",
+  "status": "pass_with_source_limits",
+  "use_timeline": [
+    {
+      "action": "movement/animation gate passes",
+      "frame": 20
+    },
+    {
+      "action": "ObjChip.StartAction(0, id_)",
+      "frame": 40
+    },
+    {
+      "action": "use animation phase",
+      "frame": 60
+    },
+    {
+      "action": "ObjChip.OnUseComplate(this); optional recovery stock; GotoDesk",
+      "frame": 70
+    }
+  ]
+}

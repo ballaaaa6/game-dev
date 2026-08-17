@@ -23,7 +23,7 @@ The native contracts and raw scene evidence remain authoritative for topology, r
 
 ### 1. Use a floor00-only visual layout contract
 
-Create `runtime/social-dev/evidence/floor00_visual_layout_contract.json`. It will reference the existing native scene and asset contracts and contain concrete, deterministic cell arrays for:
+Create `knowledge/fixtures/accepted/runtime/floor00_visual_layout_contract.json`. It will reference the existing native scene and asset contracts and contain concrete, deterministic cell arrays for:
 
 - glass extension pieces to remove in the left blue zone, purple panel zone, and right blue zone;
 - the remaining glass trigger cells that form the long side strip;
@@ -106,7 +106,7 @@ The raw native contracts remain the source of truth for evidence. The new contra
 
 ### Create
 
-- `runtime/social-dev/evidence/floor00_visual_layout_contract.json` — deterministic presentation override and provenance references.
+- `knowledge/fixtures/accepted/runtime/floor00_visual_layout_contract.json` — deterministic presentation override and provenance references.
 
 ### Modify
 
@@ -120,7 +120,7 @@ The raw native contracts remain the source of truth for evidence. The new contra
 
 ### Generated evidence
 
-After implementation, store browser screenshots and visual-gate output under `knowledge/social-dev/evidence/` using the existing Social Dev evidence boundary. Do not create generated PNG/JSON artifacts at the repository root.
+After implementation, store browser screenshots and visual-gate output under `knowledge/fixtures/accepted/` using the existing Social Dev evidence boundary. Do not create generated PNG/JSON artifacts at the repository root.
 
 ## Acceptance criteria
 

@@ -1,6 +1,8 @@
-import manifestJson from "../../evidence/display_asset_manifest.json";
-import defaultMapChipJson from "../../evidence/default_map_chip_contract.json";
-import roomSceneAssetManifestJson from "../../evidence/room_scene_asset_manifest.json";
+import {
+  displayAssetManifestJson as manifestJson,
+  defaultMapChipJson,
+  roomSceneAssetManifestJson,
+} from "../catalog/load-original-runtime-pack";
 import { resolveFloorRender, type FloorRenderResolution } from "../catalog/floor-resolution";
 
 export { resolveRuntimeMapFilename } from "../catalog/floor-resolution";

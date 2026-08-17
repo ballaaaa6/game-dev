@@ -1,0 +1,432 @@
+{
+  "dispatch_limit": "Update and OnArriveGoal contain damaged indirect jumps. The contract retains the native RVAs and closes only readable direct branches.",
+  "move_modes": [
+    {
+      "name": "MOVE_MODE_STAY",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 0
+    },
+    {
+      "name": "MOVE_MODE_GOTO_EQUIPMENT",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 1
+    },
+    {
+      "name": "MOVE_MODE_WANDER",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 2
+    },
+    {
+      "name": "MOVE_MODE_GOTO_DESK",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 3
+    },
+    {
+      "name": "MOVE_MODE_INTO_EQUIPMENT",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 4
+    },
+    {
+      "name": "MOVE_MODE_OUTOF_EQUIPMENT",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 5
+    },
+    {
+      "name": "MOVE_MODE_SIT_DOWN",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 6
+    },
+    {
+      "name": "MOVE_MODE_TO_STAFF",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 7
+    },
+    {
+      "name": "MOVE_MODE_TO_STAND_TALKING",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 8
+    },
+    {
+      "name": "MOVE_MODE_TO_BACK_OF_CHAIR",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 9
+    },
+    {
+      "name": "MOVE_MODE_GO_TO_DOOR",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 10
+    },
+    {
+      "name": "MOVE_MODE_GO_HOME",
+      "semantic_status": "source_label_and_route_mapping",
+      "value": 11
+    }
+  ],
+  "native_refs": [
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Broad update.",
+      "rva": "0x12D2EC8",
+      "symbol": "Staff.Update"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Movement handler.",
+      "rva": "0x12D57AC",
+      "symbol": "Staff.UpdateMove"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Arrival goal handler.",
+      "rva": "0x12D8420",
+      "symbol": "Staff.OnArriveGoal"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Route wrapper.",
+      "rva": "0x12D5A6C",
+      "symbol": "Staff.SearchRoute"
+    }
+  ],
+  "schema_version": "social-dev-behavior-first-staff-state-machine-v1",
+  "states": [
+    {
+      "name": "STATE_NORMAL",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 0
+    },
+    {
+      "name": "STATE_MEETING",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 1
+    },
+    {
+      "name": "STATE_MOVE",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 2
+    },
+    {
+      "name": "STATE_SIT_DOWN",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 3
+    },
+    {
+      "name": "STATE_WORK",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 4
+    },
+    {
+      "name": "STATE_USE_EQUIPMENT",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 5
+    },
+    {
+      "name": "STATE_TALK",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 6
+    },
+    {
+      "name": "STATE_INVITE_TO_TALK",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 7
+    },
+    {
+      "name": "STATE_FLY_AWAY",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 8
+    },
+    {
+      "name": "STATE_WAIT",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 9
+    },
+    {
+      "name": "STATE_WANDER",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 10
+    },
+    {
+      "name": "STATE_WAIT_BACK_OF_DOOR",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 11
+    },
+    {
+      "name": "STATE_DEVELOP",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 12
+    },
+    {
+      "name": "STATE_STAY_HOME",
+      "semantic_status": "source_label_and_dispatch_evidence",
+      "value": 13
+    }
+  ],
+  "status": "pass_with_source_limits",
+  "transitions": [
+    {
+      "confidence": "source_backed_with_source_limit",
+      "from": "any_non_meeting_non_develop_state",
+      "guard_or_trigger": "Staff.Update returns to UpdateMeeting for state 1 and UpdateDevelop for state 12; the remaining dispatch is an unresolved indirect jump.",
+      "id": "update-special-dispatch",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 1303,
+          "note": "Broad update entry point; body contains damaged indirect dispatch.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "public unsafe void Update()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D2EC8",
+          "symbol": "Staff.Update"
+        }
+      ],
+      "to": [
+        "STATE_MEETING",
+        "STATE_DEVELOP",
+        "state_handler_selected_by_indirect_dispatch"
+      ]
+    },
+    {
+      "confidence": "source_backed",
+      "from": "any_state_except_move_and_stay_home",
+      "guard_or_trigger": "GetHpRatio() <= 5",
+      "id": "low-hp-door-escape",
+      "move_mode": "MOVE_MODE_GO_TO_DOOR",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 1561,
+          "note": "Low-HP guard clears route and targets the door.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "if (hpRatio <= 5 && state_ != 2 && state_ != 13)"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native entry.",
+          "rva": "0x12D2EC8",
+          "symbol": "Staff.Update"
+        }
+      ],
+      "to": "STATE_MOVE"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "STATE_STAY_HOME",
+      "guard_or_trigger": "UpdateStayHome recovers one HP and GetHpRatio() >= 40",
+      "id": "stay-home-recovery-return",
+      "move_mode": "MOVE_MODE_GOTO_DESK",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 2090,
+          "note": "Stay-home recovery and door reservation.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "private void UpdateStayHome()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D59F4",
+          "symbol": "Staff.UpdateStayHome"
+        }
+      ],
+      "to": "STATE_WAIT_BACK_OF_DOOR"
+    },
+    {
+      "confidence": "source_backed_with_cadence_limit",
+      "from": "STATE_WORK",
+      "guard_or_trigger": "UpdateWork sitting branch and random decision; typingFrame_=100",
+      "id": "work-to-typing",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 2954,
+          "note": "Typing/equipment/talk decisions; modulo gate is decompiler-damaged.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "private void UpdateWork()"
+        },
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 11326,
+          "note": "Typing flag and frame setup.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "private void OnStartTyping()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D4A7C",
+          "symbol": "Staff.UpdateWork"
+        }
+      ],
+      "to": "STATE_WORK_with_FLAG_TYPING"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "STATE_WORK",
+      "guard_or_trigger": "random type 1 or 4 candidate, GetUsersNum() <= 0",
+      "id": "work-to-equipment",
+      "move_mode": "MOVE_MODE_GOTO_EQUIPMENT",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 3308,
+          "note": "Equipment target and reservation.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "private void GotoEquip()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D6540",
+          "symbol": "Staff.GotoEquip"
+        }
+      ],
+      "to": "STATE_MOVE"
+    },
+    {
+      "confidence": "source_backed_with_selection_limit",
+      "from": "STATE_WORK",
+      "guard_or_trigger": "random colleague is sitting/work, usable standing cell, flags permit talk",
+      "id": "work-to-talk",
+      "move_mode": "MOVE_MODE_TO_STAFF",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 3262,
+          "note": "Talk candidate and bilateral flags.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "private void GotoTalk()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D6600",
+          "symbol": "Staff.GotoTalk"
+        }
+      ],
+      "to": "STATE_MOVE"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "STATE_TALK_or_STATE_INVITE_TO_TALK",
+      "guard_or_trigger": "Talk frame >= 130; clears invited/reserved flags and colleagueId_",
+      "id": "talk-finish",
+      "move_mode": "MOVE_MODE_GOTO_DESK",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 2297,
+          "note": "Talk completion timing.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "if (num >= 130)"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D5588",
+          "symbol": "Staff.Talk"
+        }
+      ],
+      "to": "desk_goal"
+    },
+    {
+      "confidence": "source_backed_with_goal-dispatch_limit",
+      "from": "STATE_MOVE",
+      "guard_or_trigger": "OnArriveNextNode removes route head; empty route dispatches OnArriveGoal",
+      "id": "arrival-consumes-route",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 5535,
+          "note": "Route consumption and arrival callbacks.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "private unsafe void OnArriveNextNode(int goalX, int goalY)"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12D8184",
+          "symbol": "Staff.OnArriveNextNode"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Goal handler remains indirect in C#.",
+          "rva": "0x12D8420",
+          "symbol": "Staff.OnArriveGoal"
+        }
+      ],
+      "to": "OnArriveGoal_or_next_node"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "equipment_use_or_reserved",
+      "guard_or_trigger": "OnEquipDestroyed clears frame and selects wait animation/state",
+      "id": "equipment-destroyed",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 10567,
+          "note": "Equipment destruction recovery.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "public void OnEquipDestroyed()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12DC408",
+          "symbol": "Staff.OnEquipDestroyed"
+        }
+      ],
+      "to": "STATE_WAIT"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "desk_user",
+      "guard_or_trigger": "OnDeskDestroyed clears deskId_",
+      "id": "desk-destroyed",
+      "move_mode": "MOVE_MODE_WANDER",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 10694,
+          "note": "Desk destruction fallback.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "public void OnDeskDestroyed()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12DC4B0",
+          "symbol": "Staff.OnDeskDestroyed"
+        }
+      ],
+      "to": "STATE_WANDER"
+    },
+    {
+      "confidence": "source_backed",
+      "from": "talking_or_invited",
+      "guard_or_trigger": "OnColleagueRemoved clears colleagueId_ and talk flags",
+      "id": "colleague-removed",
+      "refs": [
+        {
+          "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+          "line": 10910,
+          "note": "Social contention cleanup.",
+          "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+          "symbol": "public void OnColleagueRemoved()"
+        },
+        {
+          "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+          "note": "Pinned native method.",
+          "rva": "0x12DC6D8",
+          "symbol": "Staff.OnColleagueRemoved"
+        }
+      ],
+      "to": "STATE_WAIT"
+    }
+  ]
+}

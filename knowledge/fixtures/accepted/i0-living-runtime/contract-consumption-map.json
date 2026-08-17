@@ -1,0 +1,120 @@
+{
+  "schema_version": "social-dev-i0-contract-consumption-map-v1",
+  "status": "PASS_R0_CONTRACTS_CONSUMED_READ_ONLY",
+  "contracts": [
+    {
+      "id": "room-runtime-contract",
+      "consumers": [
+        "room.ts",
+        "astar.ts",
+        "runtime.ts"
+      ]
+    },
+    {
+      "id": "actor-runtime-contract",
+      "consumers": [
+        "types.ts",
+        "runtime.ts",
+        "projection.ts"
+      ]
+    },
+    {
+      "id": "staff-state-machine-contract",
+      "consumers": [
+        "constants.ts",
+        "runtime.ts",
+        "movement.ts"
+      ]
+    },
+    {
+      "id": "movement-route-contract",
+      "consumers": [
+        "astar.ts",
+        "movement.ts",
+        "runtime.ts"
+      ]
+    },
+    {
+      "id": "furniture-instance-contract",
+      "consumers": [
+        "furniture.ts",
+        "room.ts",
+        "runtime.ts"
+      ]
+    },
+    {
+      "id": "rng-autonomy-contract",
+      "consumers": [
+        "rng.ts",
+        "runtime.ts"
+      ]
+    },
+    {
+      "id": "tick-order-contract-v2",
+      "consumers": [
+        "runtime.ts",
+        "simulation.ts"
+      ]
+    },
+    {
+      "id": "hp-recovery-home-runtime-contract",
+      "consumers": [
+        "catalog.ts",
+        "runtime.ts"
+      ]
+    },
+    {
+      "id": "work-planning-runtime-contract",
+      "consumers": [
+        "planning.ts",
+        "runtime.ts"
+      ]
+    },
+    {
+      "id": "interruption-resume-contract",
+      "consumers": [
+        "runtime.ts"
+      ]
+    },
+    {
+      "id": "visual-projection-boundary",
+      "consumers": [
+        "projection.ts",
+        "simulation.ts"
+      ]
+    },
+    {
+      "id": "product-policy-boundary",
+      "consumers": [
+        "runtime-module-migration.json"
+      ]
+    },
+    {
+      "id": "save-boundary-contract",
+      "consumers": [
+        "runtime-module-migration.json"
+      ]
+    },
+    {
+      "id": "runtime-scenario-fixtures",
+      "consumers": [
+        "scenario-runner.ts"
+      ]
+    },
+    {
+      "id": "runtime-contract-manifest",
+      "consumers": [
+        "catalog.ts",
+        "contract-consumption-map.json"
+      ]
+    },
+    {
+      "id": "runtime-contract-validation",
+      "consumers": [
+        "test_i0_living_runtime.py"
+      ]
+    }
+  ],
+  "source_roots_imported_by_browser_runtime": false,
+  "raw_csharp_executed_by_browser_runtime": false
+}

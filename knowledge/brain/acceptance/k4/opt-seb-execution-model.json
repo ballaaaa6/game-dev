@@ -1,0 +1,48 @@
+{
+  "logical_execution": {
+    "composition_catalog_status": "pass",
+    "composition_count": {
+      "character_seb_compositions": 35,
+      "composition_entries": 47,
+      "direct_runtime_entries": 197,
+      "display_actor_seb_compositions": 2,
+      "furniture_object_compositions": 4,
+      "logical_reconstructions": 4,
+      "native_initial_object_compositions": 4,
+      "runtime_entries_with_composition": 43
+    },
+    "crop_and_offset": "use accepted source rectangles and native destination offsets; do not recenter or normalize",
+    "floor00_explicit_asset_count": 8,
+    "floor00_seb_contract_status": "pass",
+    "layer_order": "SEB layer index ascending; wall layer 0 then thin layer 1 are both required",
+    "opt_policy": "accepted logical OPT reconstructions supply geometry only; no new pixels are created by K4",
+    "record_selection": "select every SEB record whose start_frame equals the current object/staff frame"
+  },
+  "model_id": "OPT_SEB_EXECUTION_MODEL:logical-v1",
+  "native_call_boundary": {
+    "pixel_backend": {
+      "blocking": false,
+      "deferred_to": "V7 exact raster/framebuffer compatibility",
+      "reason": "K4 closes selector/frame/layer execution, not shader/premultiplied pixel parity.",
+      "status": "PROVEN_NOT_CANONICAL"
+    },
+    "proven": [
+      "Seb.GetSprite resolves frame records.",
+      "AppData.DrawSeb and ResourceManager.DrawSeb receive the selected composition.",
+      "Staff full draw uses the same selector/frame path."
+    ]
+  },
+  "room_runtime_contract": {
+    "asset_manifest_status": "pass",
+    "status": "pass"
+  },
+  "schema_version": "social-dev-k4-opt-seb-execution-model-v1",
+  "source_refs": [
+    "knowledge/fixtures/accepted/asset_composition_catalog.json",
+    "knowledge/fixtures/accepted/runtime/floor00_seb_contract.json",
+    "knowledge/fixtures/accepted/runtime/room_scene_runtime_contract.json",
+    "knowledge/fixtures/accepted/runtime/room_scene_asset_manifest.json",
+    "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:Seb.GetSprite/AppData.DrawSeb/ResourceManager.DrawSeb"
+  ],
+  "status": "PROVEN_CANONICAL"
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "phase": "V5",
+  "status": "PASS_STATIC_ROOM_INIT",
+  "constructor_sequence": [
+    {"index": 0, "method": "Room.InitMapChips", "result": "map chips selected from Room.floor_ topology variant"},
+    {"index": 1, "method": "Room.InitObjChips", "result": "100 raw ObjChip identities from RoomData.objMap_ / objDir_"},
+    {"index": 2, "method": "Room.SetupBigChipsParent", "result": "room:0 structural facility bindings retained"},
+    {"index": 3, "method": "Room.PlaceDoor", "result": "raw type 5 door cell installed with FurnitureData null and installed flag 1"},
+    {"index": 4, "method": "Room.PlaceDesk / PlaceObj", "result": "only explicit native FurnitureData bindings materialized"}
+  ],
+  "grid_contract": {
+    "room_count": 18,
+    "obj_map_width": 10,
+    "obj_map_height": 10,
+    "obj_dir_width": 10,
+    "obj_dir_height": 10,
+    "chips_per_room": 100,
+    "cell_key": "objchip:<roomKey>:<x>:<y>",
+    "raw_identity_fields": ["cell", "rawType", "rawDirection"],
+    "source": "knowledge/fixtures/accepted/runtime/room_scene_runtime_contract.json"
+  },
+  "room00_bindings": [
+    {"object_id": "furniture:3", "furniture_data_id": 3, "raw_type": 2, "cells": [[2, 4], [3, 4], [6, 4]]},
+    {"object_id": "furniture:12", "furniture_data_id": 12, "raw_type": 1, "cells": [[8, 5]]},
+    {"object_id": "furniture:26", "furniture_data_id": 26, "raw_type": 1, "cells": [[8, 6]]},
+    {"object_id": "furniture:56", "furniture_data_id": 56, "raw_type": 1, "cells": [[2, 7]]}
+  ],
+  "room00_structural_facilities": {
+    "object_id": "furniture:0",
+    "raw_type": 4,
+    "anchors": [[4, 2], [7, 2]],
+    "map_anchors": [[4, 5], [7, 5]],
+    "footprint": "3x3 per facility",
+    "seb_selector": 11,
+    "image_selector": 18,
+    "source": "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json"
+  },
+  "negative_inference_rules": [
+    "Raw ObjChip type does not imply FurnitureData identity.",
+    "FurnitureData is emitted only from explicit native binding records or the room:0 structural facility contract.",
+    "Rooms 1-17 have zero native furniture bindings in the constructor evidence and remain topology-only in V5."
+  ]
+}

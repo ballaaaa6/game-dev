@@ -1,0 +1,7 @@
+{
+  "schema": "i2-dashboard-deterministic-replay-v1",
+  "status": "PASS",
+  "left_digest": "d6f5f83ffb05f073",
+  "right_digest": "d6f5f83ffb05f073",
+  "wall_clock_fields": []
+}

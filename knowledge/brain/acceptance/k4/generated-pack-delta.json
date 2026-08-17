@@ -1,0 +1,61 @@
+{
+  "data_pack_changed": false,
+  "generated_pack_policy": "K4.1 adds acceptance evidence and canonical brain facts; original packs remain byte-stable.",
+  "packs_after": {
+    "data": {
+      "path": "knowledge/generated/original-data-pack/data.json",
+      "role": "original data pack",
+      "sha256": "aeed9c864b2dea751d52264b062901aa6d4a09e9a185bf67b451dce22bdc260d",
+      "size_bytes": 8863235
+    },
+    "runtime": {
+      "path": "knowledge/generated/original-runtime-pack/runtime-pack.json",
+      "role": "original runtime pack",
+      "sha256": "e7abff5ae6725530cb337a54f30706a76d51359721f594d9ca2dffab09cefb9f",
+      "size_bytes": 22738362
+    },
+    "runtime_mirror": {
+      "path": "runtime/social-dev/generated/original-runtime-pack.json",
+      "role": "original runtime_mirror pack",
+      "sha256": "e7abff5ae6725530cb337a54f30706a76d51359721f594d9ca2dffab09cefb9f",
+      "size_bytes": 22738362
+    },
+    "visual": {
+      "path": "knowledge/generated/original-visual-pack/visual-pack.json",
+      "role": "original visual pack",
+      "sha256": "976a66edb4732ffa3bc9da307882241b45d7340367a860c27788f990fc3f23cd",
+      "size_bytes": 2093438
+    }
+  },
+  "packs_before": {
+    "data": {
+      "path": "knowledge/generated/original-data-pack/data.json",
+      "role": "original data pack",
+      "sha256": "aeed9c864b2dea751d52264b062901aa6d4a09e9a185bf67b451dce22bdc260d",
+      "size_bytes": 8863235
+    },
+    "runtime": {
+      "path": "knowledge/generated/original-runtime-pack/runtime-pack.json",
+      "role": "original runtime pack",
+      "sha256": "e7abff5ae6725530cb337a54f30706a76d51359721f594d9ca2dffab09cefb9f",
+      "size_bytes": 22738362
+    },
+    "runtime_mirror": {
+      "path": "runtime/social-dev/generated/original-runtime-pack.json",
+      "role": "original runtime_mirror pack",
+      "sha256": "e7abff5ae6725530cb337a54f30706a76d51359721f594d9ca2dffab09cefb9f",
+      "size_bytes": 22738362
+    },
+    "visual": {
+      "path": "knowledge/generated/original-visual-pack/visual-pack.json",
+      "role": "original visual pack",
+      "sha256": "976a66edb4732ffa3bc9da307882241b45d7340367a860c27788f990fc3f23cd",
+      "size_bytes": 2093438
+    }
+  },
+  "runtime_mirror_changed": false,
+  "runtime_pack_changed": false,
+  "schema_version": "social-dev-k4-1-generated-pack-delta-v1",
+  "status": "pass",
+  "visual_pack_changed": false
+}

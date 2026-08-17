@@ -1,0 +1,14 @@
+{
+  "schema": "i2-scheduler-integration-contract-v1",
+  "status": "PASS",
+  "file": "runtime/social-dev/src/app/runtime.ts",
+  "driver": "one window.setInterval at 150ms when route.auto is enabled",
+  "logical_order": [
+    "LivingRuntime.tick exactly once",
+    "AssignmentAdapter.observeLiving exactly once",
+    "DashboardRuntime publication",
+    "Canvas and DOM render from committed snapshot"
+  ],
+  "commands_tick_living": false,
+  "initial_ticks": "route initialTicks uses DashboardRuntime.step and the same order"
+}

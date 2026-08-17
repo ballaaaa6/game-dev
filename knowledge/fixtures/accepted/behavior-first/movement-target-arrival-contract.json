@@ -1,0 +1,145 @@
+{
+  "goal_flag_mapping": [
+    {
+      "astar_flag": 2,
+      "flag_name": "GOAL_IS_EQUIP",
+      "move_mode": 1,
+      "name": "MOVE_MODE_GOTO_EQUIPMENT"
+    },
+    {
+      "astar_flag": 1,
+      "flag_name": "GOAL_IS_DESK",
+      "move_mode": 3,
+      "name": "MOVE_MODE_GOTO_DESK"
+    },
+    {
+      "astar_flag": 4,
+      "flag_name": "GOAL_IS_STAFF",
+      "move_mode": 7,
+      "name": "MOVE_MODE_TO_STAFF"
+    },
+    {
+      "astar_flag": 0,
+      "flag_name": "default/pass-goal path",
+      "move_mode": 8,
+      "name": "MOVE_MODE_TO_STAND_TALKING",
+      "status": "source_limited"
+    },
+    {
+      "astar_flag": 0,
+      "flag_name": "default/door path",
+      "move_mode": 10,
+      "name": "MOVE_MODE_GO_TO_DOOR",
+      "status": "source_limited"
+    }
+  ],
+  "movement_loop": [
+    {
+      "effect": "derive current cell/use target and call Astar",
+      "method": "SearchRoute",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 5174,
+        "note": "C# body damaged after goal selection; mapping retained.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "private void SearchRoute()"
+      }
+    },
+    {
+      "effect": "set dx/dy, speed, direction animation",
+      "method": "ReadyToNextNode",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 5281,
+        "note": "Direction setup; body damaged.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "private void ReadyToNextNode()"
+      }
+    },
+    {
+      "effect": "advance x/y toward route head and call OnArriveNextNode",
+      "method": "Move",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 5446,
+        "note": "Movement step.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "private void Move()"
+      }
+    },
+    {
+      "effect": "remove route head; continue or OnArriveGoal",
+      "method": "OnArriveNextNode",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 5535,
+        "note": "Arrival and route consumption.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "private unsafe void OnArriveNextNode(int goalX, int goalY)"
+      }
+    },
+    {
+      "effect": "indirect moveMode dispatch",
+      "method": "OnArriveGoal",
+      "ref": {
+        "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+        "note": "Native entry; exact handler mapping unresolved.",
+        "rva": "0x12D8420",
+        "symbol": "Staff.OnArriveGoal"
+      }
+    }
+  ],
+  "route_algorithm": {
+    "goal_filter": "desk/equipment/staff flags; occupied desk and blocked type 3/4/6 are filtered as closed by native evidence",
+    "neighbors": "cardinal only",
+    "refs": [
+      "knowledge/fixtures/accepted/phase1d_route_fixture.json",
+      {
+        "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+        "note": "Pinned native route search.",
+        "rva": "0x110EBF0",
+        "symbol": "Astar._searchRoute"
+      },
+      {
+        "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+        "note": "Pinned cardinal neighbor connection.",
+        "rva": "0x110F248",
+        "symbol": "Astar.AddNeighbor"
+      }
+    ]
+  },
+  "schema_version": "social-dev-behavior-first-movement-target-arrival-contract-v1",
+  "source_limit": "The native route/standing contracts are closed; per-move-mode arrival side effects remain source-limited.",
+  "standing_positions": {
+    "formula": "baseX=(ix+iy)*20; baseY=(iy-ix)*10",
+    "positions": [
+      {
+        "ordinal": 0,
+        "x": "+34",
+        "y": "+25"
+      },
+      {
+        "ordinal": 1,
+        "x": "+6",
+        "y": "+11"
+      },
+      {
+        "ordinal": 2,
+        "x": "+34",
+        "y": "+11"
+      },
+      {
+        "ordinal": 3,
+        "x": "+6",
+        "y": "+25"
+      }
+    ],
+    "ref": {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned native standing positions.",
+      "rva": "0x12C4868",
+      "symbol": "ObjChip.GetStandingPositions"
+    }
+  },
+  "status": "pass_with_source_limits"
+}

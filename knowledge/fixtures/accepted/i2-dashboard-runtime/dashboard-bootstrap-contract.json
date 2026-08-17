@@ -1,0 +1,14 @@
+{
+  "schema": "i2-dashboard-bootstrap-contract-v1",
+  "status": "PASS",
+  "initial_staff_data_ids": [
+    0,
+    1,
+    2
+  ],
+  "initial_bindings": 0,
+  "initial_tasks": 0,
+  "binding_policy": "explicit externalAgentId + staffId only",
+  "auto_bind": false,
+  "unbound_roster": "source-backed LivingRuntime Staff entries are visible before binding"
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": "social-dev-i0-r0-contract-hash-lock-v1",
+  "status": "PASS_PRE_I0_IMMUTABLE_LOCK",
+  "phase": "I0.PRE",
+  "source_contract_directory": "knowledge/fixtures/accepted/runtime-contract-freeze",
+  "entry_count": 25,
+  "entries": [
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/actor-runtime-contract.json",
+      "sha256": "f5f675b509b818c1c360001076e10e098af33bc84423257ab3d626b383a2bfd0",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/checkpoint-ledger.json",
+      "sha256": "c74aecde40a644e8af3f132e12fb3277ab95a32130b92f1129b0bc09a4effc67",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/furniture-instance-contract.json",
+      "sha256": "aca1cdd49c819f905c255b21405502a04fbbc86d2f5adbbe97e8a88040d4d973",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/hp-recovery-home-runtime-contract.json",
+      "sha256": "4c80f8cc8ab568287683fa088e5948a435f73c4defa9dfca0c6638c34da94331",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/interruption-resume-contract.json",
+      "sha256": "83e5412e3120c8ddb3a8ce38480d9d33ca97dd1e93555ddb74fddd971e5da038",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/movement-route-contract.json",
+      "sha256": "8bf0c22a4c7ff7d4e11b82c00c5a221c2ea1c80358caa781ee18058c84934ec8",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/product-policy-boundary.json",
+      "sha256": "17987ad1dfa99a8d27fddf38a5eba2c466bcc6bfc597b86f6f9240d3ce9d08bb",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/rng-autonomy-contract.json",
+      "sha256": "1e29276156eece8be9773301379dd5fbbe1e2be79ce1a9af7620c1421163bf11",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/room-runtime-contract.json",
+      "sha256": "2034279494eccb8eb8e6d1a5be3888991c3ab1a01744c37e403f9f43c1912c3b",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/runtime-contract-manifest.json",
+      "sha256": "17ab6c2868092971db91d5b061e9bc322cba42154812f0bb9b27f114da8356c9",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/runtime-contract-validation.json",
+      "sha256": "46e38cdc9616bcf955699539af71754a98d43c13400482fef353909a81766823",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/runtime-delta-matrix.json",
+      "sha256": "29e9147a7d7af1047a13ddf6b82d935fc0c5c78e8a83717c9550a9996aad811f",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/runtime-scenario-fixtures.json",
+      "sha256": "a58085a604c18fe61ad00bf75f48e17a93fdc533ce6276e1e2a5139f3ba24634",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/save-boundary-contract.json",
+      "sha256": "447ddf22e96cee4f44c325468d6afdb74ddb0b3feee5d9baa7bf60f14e538336",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/staff-state-machine-contract.json",
+      "sha256": "657ea7314ae4dc4abe5a1e06d750bb05e004580d29456377ec033d083f32c89e",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/tick-order-contract-v2.json",
+      "sha256": "cfcad8c0556e41528eff52e5e30e470cbb48118d15e62ed1faff21291a542cf3",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/visual-projection-boundary.json",
+      "sha256": "ba5c558cca44f542af590559d63f20d2b3743957d2f6eadd43c44e0aff67b9b9",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/work-planning-runtime-contract.json",
+      "sha256": "4aeed103bf0478ca9a3694f57e3f65bd6759f79864491d1dfac7ea5e6de5a8c9",
+      "kind": "r0_contract_or_manifest"
+    },
+    {
+      "path": "docs/Phases/Runtime/R0_ACTOR_ROOM_FURNITURE_CONTRACT.md",
+      "sha256": "d773adcdbe63931d43eadda9c9a0c5a5408165a5c0e3eef2e73a1bf262ab5d4e",
+      "kind": "r0_report"
+    },
+    {
+      "path": "docs/Phases/Runtime/R0_EXISTING_RUNTIME_DELTA_AUDIT.md",
+      "sha256": "3fa26f967f452478558fbb9224963fea3050e40645cd01b1fccd2fc5b440a5f8",
+      "kind": "r0_report"
+    },
+    {
+      "path": "docs/Phases/Runtime/R0_HP_WORK_INTERRUPTION_CONTRACT.md",
+      "sha256": "ae427554f7c5cebebc1be0e9f8db97c3424a03b5ad96d51699bdbc4101dca293",
+      "kind": "r0_report"
+    },
+    {
+      "path": "docs/Phases/Runtime/R0_MOVEMENT_STATE_TICK_RNG_CONTRACT.md",
+      "sha256": "b90c662f7fa8848ea9474b1414b0754ab699fe0e5643f7e9734708156e6a100e",
+      "kind": "r0_report"
+    },
+    {
+      "path": "docs/Phases/Runtime/R0_RUNTIME_CONTRACT_FREEZE.md",
+      "sha256": "3a6dafe242d1e4695fb2054be81f671895c47d7f5e6506b4da172e2c2aed403e",
+      "kind": "r0_report"
+    },
+    {
+      "path": "docs/Phases/Runtime/R0_SCENARIO_FIXTURES.md",
+      "sha256": "6e52ea6862776beae529bfc4275f566ac2c17fb3ab8d06310cd208680d21d6f0",
+      "kind": "r0_report"
+    },
+    {
+      "path": "docs/Phases/Runtime/R0_VISUAL_PRODUCT_SAVE_BOUNDARY.md",
+      "sha256": "3cf3d5ac510ea8f572ea1916f59efead12aa107a5473164e3895de7bf8fd36cb",
+      "kind": "r0_report"
+    }
+  ],
+  "validator_before_runtime": {
+    "builder": "PASS_CANONICAL_RUNTIME_CONTRACT_FREEZE_READY_FOR_IMPLEMENTATION",
+    "checks": 2183
+  },
+  "mutation_policy": "I0 may consume but must not rewrite any locked file; post-I0 verification compares every entry hash."
+}

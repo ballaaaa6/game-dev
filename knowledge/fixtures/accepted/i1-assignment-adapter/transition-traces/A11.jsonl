@@ -1,0 +1,1 @@
+{"scenarioId":"A11","step":1,"event":"command_rejected","code":"ACTIVE_TASK_CONFLICT","externalTaskId":"task-b","productStatus":"ASSIGNED","livingMutation":false,"queueCreated":false}

@@ -1,0 +1,70 @@
+{
+  "collision_policy": "Data entities, runtime actors, ObjChip objects, and product entities retain separate canonical namespaces.",
+  "product_bindings": [
+    {
+      "mutation_allowed": false,
+      "original_id": "data:StaffData:0",
+      "product_id": "product:agent:demo",
+      "relation": "observes"
+    },
+    {
+      "mutation_allowed": false,
+      "original_id": "data:StaffData:0",
+      "product_id": "product:task:demo",
+      "relation": "references"
+    }
+  ],
+  "resolved_aliases": [
+    [
+      "data:StaffData",
+      "StaffData",
+      "TYPE_ID",
+      "type:data.StaffData",
+      "verified_source_identity"
+    ],
+    [
+      "data:FurnitureData",
+      "FurnitureData",
+      "TYPE_ID",
+      "type:data.FurnitureData",
+      "verified_source_identity"
+    ],
+    [
+      "data:RoomData",
+      "RoomData",
+      "TYPE_ID",
+      "type:data.RoomData",
+      "verified_source_identity"
+    ],
+    [
+      "game:Staff",
+      "Staff runtime actor",
+      "TYPE_ID",
+      "type:game.Staff",
+      "runtime_binding_not_data_collision"
+    ],
+    [
+      "game:ObjChip",
+      "ObjChip runtime object",
+      "TYPE_ID",
+      "type:game.ObjChip",
+      "runtime_binding_not_data_collision"
+    ],
+    [
+      "product:agent:demo",
+      "Product demo agent",
+      "PRODUCT_AGENT_ID",
+      "product:agent:demo",
+      "product_namespace_separate"
+    ],
+    [
+      "product:task:demo",
+      "Product demo task",
+      "PRODUCT_TASK_ID",
+      "product:task:demo",
+      "product_namespace_separate"
+    ]
+  ],
+  "schema_version": "social-dev-k2-entity-resolution-v1",
+  "status": "pass"
+}

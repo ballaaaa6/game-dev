@@ -1,0 +1,16 @@
+{
+  "schema_version": "social-dev-i1-dashboard-read-model-contract-v1",
+  "status": "PASS_I1_10_DASHBOARD_READ_MODEL",
+  "agent_fields": ["externalAgentId", "staffId", "staffDataId", "task", "living", "availability"],
+  "task_fields": ["externalTaskId", "status", "label", "externalProgress", "bridgeMode", "terminalReason"],
+  "living_fields": ["state", "stateName", "moveMode", "moveModeName", "flags", "hp", "maxHp", "hpRatio", "deskId", "equipmentId", "colleagueId", "atHome", "planning", "developing", "livingDisplayStatus", "cell", "world", "routeLength", "livingFrame"],
+  "valid_combinations": [
+    "IDLE_NO_TASK + STATE_WORK",
+    "ASSIGNED + STATE_TALK",
+    "RUNNING + STATE_WORK",
+    "RUNNING + STATE_USE_EQUIPMENT",
+    "RUNNING + STATE_STAY_HOME",
+    "COMPLETED + baseline Staff state"
+  ],
+  "client_rule": "Clients read product status from task.status and original living state from living.state; neither is inferred from the other."
+}

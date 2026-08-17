@@ -1,0 +1,31 @@
+{
+  "schema": "i2-implementation-manifest-v1",
+  "status": "PASS",
+  "changed_files": [
+    "runtime/social-dev/src/product/dashboard/types.ts",
+    "runtime/social-dev/src/product/dashboard/runtime.ts",
+    "runtime/social-dev/src/product/dashboard/index.ts",
+    "runtime/social-dev/src/product/dashboard/ui.ts",
+    "runtime/social-dev/src/app/runtime.ts",
+    "runtime/social-dev/src/styles.css",
+    "runtime/social-dev/tests/i2-dashboard-runtime.test.ts",
+    "tools/social-dev/run_i2_dashboard_scenarios.ts",
+    "tools/social-dev/test_i2_dashboard_runtime.py",
+    "tools/social-dev/build_i2_dashboard_runtime_evidence.py"
+  ],
+  "production_ownership": {
+    "living_runtime_instances": 1,
+    "assignment_adapter_instances": 1,
+    "dashboard_runtime_instances": 1,
+    "scheduler_interval_owners": 1
+  },
+  "preserved_semantic_files": [
+    "runtime/social-dev/src/core/living/projection.ts",
+    "runtime/social-dev/src/renderer/canvas-renderer.ts",
+    "runtime/social-dev/src/scene",
+    "runtime/social-dev/src/v5",
+    "runtime/social-dev/src/v6",
+    "runtime/social-dev/src/v7"
+  ],
+  "legacy_simulation_status": "compatibility/test-only; not imported by production app runtime"
+}

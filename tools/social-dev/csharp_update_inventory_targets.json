@@ -1,0 +1,37 @@
+{
+  "schema_version": "csharp-semantic-inventory-targets-v1",
+  "primary_files": [
+    "sources/raw/1_Click_CSharp_Code update/data/BaseData.cs",
+    "sources/raw/1_Click_CSharp_Code update/data/DataManager.cs",
+    "sources/raw/1_Click_CSharp_Code update/game/Player.cs",
+    "sources/raw/1_Click_CSharp_Code update/game/Staff.cs",
+    "sources/raw/1_Click_CSharp_Code update/game/Room.cs",
+    "sources/raw/1_Click_CSharp_Code update/KairoEngine/main/AppData.cs"
+  ],
+  "structural_globs": [
+    "sources/raw/1_Click_CSharp_Code update/data/*.cs",
+    "sources/raw/1_Click_CSharp_Code update/game/*.cs",
+    "sources/raw/1_Click_CSharp_Code update/game.routeSearch/*.cs",
+    "sources/raw/1_Click_CSharp_Code update/KairoEngine/main/*.cs"
+  ],
+  "deep_symbols": [
+    "BaseData",
+    "DataManager",
+    "Player",
+    "Staff",
+    "Room",
+    "AppData",
+    "MapChip",
+    "ObjChip",
+    "Develop",
+    "Proposal",
+    "Meeting",
+    "GameRecord"
+  ],
+  "field_groups": {},
+  "supporting_evidence_roots": [
+    "sources/raw/1_Click_CSharp_Code update/form",
+    "sources/raw/1_Click_CSharp_Code update/KairoEngine",
+    "sources/raw/1_Click_CSharp_Code update/Dependencies"
+  ]
+}

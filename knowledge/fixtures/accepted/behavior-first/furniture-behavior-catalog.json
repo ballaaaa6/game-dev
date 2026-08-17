@@ -1,0 +1,2737 @@
+{
+  "classification_policy": {
+    "DOOR_RECORD": "type_ == 5; Room.GetDoorIndex scans ObjChip type 5; record identity is not inferred from raw map alone.",
+    "EQUIPMENT_NO_HP_EFFECT_PROVEN": "type_ in {1,4} and recovery_ == 0; targetable by GotoEquip but no HP recovery is proven.",
+    "RECOVERY_EQUIPMENT": "type_ in {1,4} and recovery_ >= 1; Staff.UseEquip adds recovery stock on completion.",
+    "REST/SOCIAL": "No FurnitureData record is promoted as REST or SOCIAL from names or sprites. Rest is the Staff stay-home lifecycle; social goals are pass chips.",
+    "WORKSTATION": "type_ == 2; Room.PlaceDesk and Staff desk ownership consume this class."
+  },
+  "counts": {
+    "by_interaction_class": {
+      "DOOR_RECORD": 1,
+      "EQUIPMENT_NO_HP_EFFECT_PROVEN": 43,
+      "RECOVERY_EQUIPMENT": 49,
+      "WORKSTATION": 10
+    },
+    "records": 103,
+    "source_package_records": 103
+  },
+  "records": [
+    {
+      "category": 5,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 8256,
+      "hp_recovery_on_use_complete": false,
+      "id": 0,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Huge World",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    },
+    {
+      "category": 5,
+      "equipment_candidate_for_GotoEquip": false,
+      "flag": 64,
+      "hp_recovery_on_use_complete": false,
+      "id": 1,
+      "interaction_class": "DOOR_RECORD",
+      "name": "Door",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 5,
+      "workstation": false
+    },
+    {
+      "category": 0,
+      "equipment_candidate_for_GotoEquip": false,
+      "flag": 33,
+      "hp_recovery_on_use_complete": false,
+      "id": 2,
+      "interaction_class": "WORKSTATION",
+      "name": "Desk",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 2,
+      "workstation": true
+    },
+    {
+      "category": 0,
+      "equipment_candidate_for_GotoEquip": false,
+      "flag": 16417,
+      "hp_recovery_on_use_complete": false,
+      "id": 3,
+      "interaction_class": "WORKSTATION",
+      "name": "Wooden Desk",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 2,
+      "workstation": true
+    },
+    {
+      "category": 0,
+      "equipment_candidate_for_GotoEquip": false,
+      "flag": 33,
+      "hp_recovery_on_use_complete": false,
+      "id": 4,
+      "interaction_class": "WORKSTATION",
+      "name": "Orange Crate",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 2,
+      "workstation": true
+    },
+    {
+      "category": 0,
+      "equipment_candidate_for_GotoEquip": false,
+      "flag": 33,
+      "hp_recovery_on_use_complete": false,
+      "id": 5,
+      "interaction_class": "WORKSTATION",
+      "name": "Graphics Workstation",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 2,
+      "workstation": true
+    },
+    {
+      "category": 0,
+      "equipment_candidate_for_GotoEquip": false,
+      "flag": 33,
+      "hp_recovery_on_use_complete": false,
+      "id": 6,
+      "interaction_class": "WORKSTATION",
+      "name": "Sound Workstation",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 2,
+      "workstation": true
+    },
+    {
+      "category": 0,
+      "equipment_candidate_for_GotoEquip": false,
+      "flag": 33,
+      "hp_recovery_on_use_complete": false,
+      "id": 7,
+      "interaction_class": "WORKSTATION",
+      "name": "Business Workstation",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 2,
+      "workstation": true
+    },
+    {
+      "category": 0,
+      "equipment_candidate_for_GotoEquip": false,
+      "flag": 33,
+      "hp_recovery_on_use_complete": false,
+      "id": 8,
+      "interaction_class": "WORKSTATION",
+      "name": "4-Screen Workstation",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 2,
+      "workstation": true
+    },
+    {
+      "category": 0,
+      "equipment_candidate_for_GotoEquip": false,
+      "flag": 33,
+      "hp_recovery_on_use_complete": false,
+      "id": 9,
+      "interaction_class": "WORKSTATION",
+      "name": "Food Desk",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 2,
+      "workstation": true
+    },
+    {
+      "category": 0,
+      "equipment_candidate_for_GotoEquip": false,
+      "flag": 33,
+      "hp_recovery_on_use_complete": false,
+      "id": 10,
+      "interaction_class": "WORKSTATION",
+      "name": "Mushroom Desk",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 2,
+      "workstation": true
+    },
+    {
+      "category": 0,
+      "equipment_candidate_for_GotoEquip": false,
+      "flag": 33,
+      "hp_recovery_on_use_complete": false,
+      "id": 11,
+      "interaction_class": "WORKSTATION",
+      "name": "Electronic Desk",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 2,
+      "workstation": true
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 32784,
+      "hp_recovery_on_use_complete": false,
+      "id": 12,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Trash Can",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 13,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Umbrella Stand",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 14,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Hangers",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 15,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Shoe Cupboard",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 16,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Bookshelf",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 17,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Locker Unit",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 18,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Refrigerator",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 10,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 19,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Model Toy",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 20,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Jar",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 20,
+      "hp_recovery_on_use_complete": false,
+      "id": 21,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Safe",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 22,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Barrel",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 20,
+      "hp_recovery_on_use_complete": false,
+      "id": 23,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Treasure Chest",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 272,
+      "hp_recovery_on_use_complete": false,
+      "id": 24,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Eerie Chasm",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 1,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 25,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Legendary Sword",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 32784,
+      "hp_recovery_on_use_complete": false,
+      "id": 26,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Old Printer",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 27,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Stereo Set",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 28,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Telephone",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 29,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Digital Piano",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 30,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Microphone",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 31,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Microwave",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 10,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 32,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Game Console",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 33,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Multi Printer",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 34,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Treadmill",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 35,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Shredder",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 36,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Capsule Toys",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 37,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Pinball",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 38,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Air Purifier",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 18,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 20,
+      "hp_recovery_on_use_complete": true,
+      "id": 39,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Rice Cooker",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 18,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 40,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Claw Crane",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 41,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Arcade Game",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 42,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "RC Plane",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 43,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Telescope",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 44,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Arcade Machine",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 45,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Analog TV",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 46,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Retro Arcade",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 20,
+      "hp_recovery_on_use_complete": true,
+      "id": 47,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Charcoal Brazier",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 39,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 48,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Arcade Dart Board",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 20,
+      "hp_recovery_on_use_complete": false,
+      "id": 49,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Soap Bubble Maker",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 50,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Goldfish Scooping",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 51,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Ticket Machine",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 152,
+      "hp_recovery_on_use_complete": true,
+      "id": 52,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Rocket",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 60,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 53,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Rocket",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": false,
+      "id": 54,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Comms Tower",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 2,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 4124,
+      "hp_recovery_on_use_complete": true,
+      "id": 55,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Kairobot",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 68,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 32784,
+      "hp_recovery_on_use_complete": true,
+      "id": 56,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Calendar",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 9,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 64,
+      "hp_recovery_on_use_complete": true,
+      "id": 57,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Water Cooler",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 9,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 58,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Stuffed Toy",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 9,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 59,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Whiteboard",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 10,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 60,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Fan",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 10,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 61,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Potted Plant",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 10,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 64,
+      "hp_recovery_on_use_complete": true,
+      "id": 62,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Vending Machine",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 10,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 63,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Drawing Workstation",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 12,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 64,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Marimo Tank",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 12,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 65,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Couch",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 13,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 66,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Hot Water",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 15,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 67,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Grandfather Clock",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 15,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 20,
+      "hp_recovery_on_use_complete": true,
+      "id": 68,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Globe",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 16,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 20,
+      "hp_recovery_on_use_complete": true,
+      "id": 69,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Gymball",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 18,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 70,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Water Tank",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 19,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 71,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Drums",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 20,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 72,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Fire Extinguisher",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 28,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 73,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Roses",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 21,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 64,
+      "hp_recovery_on_use_complete": true,
+      "id": 74,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Bonsai Plum Tree",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 21,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 64,
+      "hp_recovery_on_use_complete": true,
+      "id": 75,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Bonsai Maple",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 21,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 64,
+      "hp_recovery_on_use_complete": true,
+      "id": 76,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Bonsai Cherry Tree",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 21,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 64,
+      "hp_recovery_on_use_complete": true,
+      "id": 77,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Bonsai Pine",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 21,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 78,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Mushroom",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 27,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 22,
+      "hp_recovery_on_use_complete": true,
+      "id": 79,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Talking Bird",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 30,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 80,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Anime Figurine",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 33,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 81,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Lucky Cat",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 34,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 82,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Decorative Armor",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 36,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 83,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Knight's Armor",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 39,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 22,
+      "hp_recovery_on_use_complete": true,
+      "id": 84,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Inflatable Pool",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 42,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 20,
+      "hp_recovery_on_use_complete": true,
+      "id": 85,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Noodle Flume",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 45,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 86,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Balloon Seller",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 48,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 87,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Big Mushroom",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 51,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 20,
+      "hp_recovery_on_use_complete": true,
+      "id": 88,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Whitebait Fishing",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 54,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 542,
+      "hp_recovery_on_use_complete": true,
+      "id": 89,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Volcano",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 57,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 3,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 16,
+      "hp_recovery_on_use_complete": true,
+      "id": 90,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Building Diorama",
+      "passability": {
+        "nonzero_cells": 0,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 60,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 1,
+      "workstation": false
+    },
+    {
+      "category": 4,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 66,
+      "hp_recovery_on_use_complete": true,
+      "id": 91,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Nap Room",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 10,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    },
+    {
+      "category": 4,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 64,
+      "hp_recovery_on_use_complete": false,
+      "id": 92,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Server Room",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    },
+    {
+      "category": 4,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 64,
+      "hp_recovery_on_use_complete": false,
+      "id": 93,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Recording Studio",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    },
+    {
+      "category": 4,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 64,
+      "hp_recovery_on_use_complete": false,
+      "id": 94,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Meeting Room",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    },
+    {
+      "category": 4,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 66,
+      "hp_recovery_on_use_complete": true,
+      "id": 95,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Cafe Area",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 13,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    },
+    {
+      "category": 4,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 2112,
+      "hp_recovery_on_use_complete": true,
+      "id": 96,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Fun Farmyard",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 18,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    },
+    {
+      "category": 4,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 66,
+      "hp_recovery_on_use_complete": true,
+      "id": 97,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Fountain Statue",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 24,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    },
+    {
+      "category": 4,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 1088,
+      "hp_recovery_on_use_complete": true,
+      "id": 98,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Beautiful Aquarium",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 30,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    },
+    {
+      "category": 4,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 64,
+      "hp_recovery_on_use_complete": true,
+      "id": 99,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Japanese Garden",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 39,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    },
+    {
+      "category": 4,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 64,
+      "hp_recovery_on_use_complete": false,
+      "id": 100,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Supercomputer",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    },
+    {
+      "category": 4,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 66,
+      "hp_recovery_on_use_complete": false,
+      "id": 101,
+      "interaction_class": "EQUIPMENT_NO_HP_EFFECT_PROVEN",
+      "name": "Theme Park",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 0,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    },
+    {
+      "category": 4,
+      "equipment_candidate_for_GotoEquip": true,
+      "flag": 66,
+      "hp_recovery_on_use_complete": true,
+      "id": 102,
+      "interaction_class": "RECOVERY_EQUIPMENT",
+      "name": "Sally Prin's Room",
+      "passability": {
+        "nonzero_cells": 64,
+        "passMap_present": true,
+        "source_field": "FurnitureData.passMap_"
+      },
+      "recovery": 68,
+      "rest_semantics": "NOT_EXPLICIT_IN_STAFF_SOURCE",
+      "role_basis": [
+        "ObjChip.type_",
+        "FurnitureData.recovery_",
+        "Staff.GotoEquip selects type 1 or 4",
+        "Staff.UseEquip checks recovery_"
+      ],
+      "social_semantics": "NOT_A_FURNITURE_ROLE_IN_STAFF_SOURCE",
+      "source_name_preserved": true,
+      "type": 4,
+      "workstation": false
+    }
+  ],
+  "refs": [
+    {
+      "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+      "line": 107,
+      "note": "Recovery field.",
+      "source_sha256": "0058b26ca7c709f7698773aa95608145ead8460571f6e9e5b9f1dcfd53a24d06",
+      "symbol": "public int recovery_;"
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 3308,
+      "note": "Equipment target type filter.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "private void GotoEquip()"
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 2680,
+      "note": "Recovery stock on use completion.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "private void UseEquip()"
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 11368,
+      "note": "PassMap consumer entry.",
+      "source_sha256": "7ff9eff4252d218ae35df5bc4b72fb618be37434192431cbbde30301686c1663",
+      "symbol": "public bool IsPassable()"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned native passability consumer.",
+      "rva": "0x12C4AB8",
+      "symbol": "ObjChip.IsPassable"
+    }
+  ],
+  "schema_version": "social-dev-behavior-first-furniture-behavior-catalog-v1",
+  "status": "pass_with_source_limits"
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "social-dev-visual-port-v6-staff-direction-contract-v1",
+  "status": "pass_static",
+  "raw_domain": [0, 1, 2, 3],
+  "raw_values": {
+    "0": {"label": "DIRECTION_RIGHT", "vector": [0, 1], "reverse": 1, "human_selector_direction": "left"},
+    "1": {"label": "DIRECTION_LEFT", "vector": [0, -1], "reverse": 0, "human_selector_direction": "right"},
+    "2": {"label": "DIRECTION_UP", "vector": [1, 0], "reverse": 3, "human_selector_direction": "down"},
+    "3": {"label": "DIRECTION_DOWN", "vector": [-1, 0], "reverse": 2, "human_selector_direction": "up"}
+  },
+  "reverse_table": [1, 0, 3, 2],
+  "selector_formulas": {
+    "typing": "reverseDirection + 23",
+    "wait": "reverseDirection + 10",
+    "move": "native capability selector_by_direction; no browser coordinate derivation"
+  },
+  "fixture_examples": [
+    {"raw_direction": 0, "reverse_direction": 1, "resolved_direction": "left", "typing_selector": 24, "wait_selector": 11},
+    {"raw_direction": 1, "reverse_direction": 0, "resolved_direction": "right", "typing_selector": 23, "wait_selector": 10},
+    {"raw_direction": 2, "reverse_direction": 3, "resolved_direction": "down", "typing_selector": 26, "wait_selector": 13},
+    {"raw_direction": 3, "reverse_direction": 2, "resolved_direction": "up", "typing_selector": 25, "wait_selector": 12}
+  ],
+  "proof": "NATIVE-CODE-PROVEN",
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/native_direction_contract.json",
+    "sources/raw/1_Click_CSharp_Code update/game/Staff.cs:10309-10407",
+    "sources/raw/1_Click_CSharp_Code update/game/ObjChip.cs:10644-10997"
+  ]
+}

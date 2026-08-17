@@ -1,0 +1,28 @@
+{
+  "schema": "i2-dashboard-ui-contract-v1",
+  "status": "PASS",
+  "file": "runtime/social-dev/src/product/dashboard/ui.ts",
+  "surfaces": [
+    "unbound Staff roster",
+    "explicit bind form",
+    "agent cards",
+    "PRODUCT section",
+    "LIVING section",
+    "task progress",
+    "status controls",
+    "activity feed",
+    "task history",
+    "visible result code"
+  ],
+  "canvas": "existing Canvas remains outside the product dashboard panel",
+  "forbidden_controls": [
+    "Go Home",
+    "Talk",
+    "Use Printer",
+    "Move",
+    "Rest",
+    "Heal",
+    "equipment gameplay",
+    "planning gameplay"
+  ]
+}

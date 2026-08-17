@@ -1,0 +1,499 @@
+{
+  "schema": "i2-upstream-hash-lock-v1",
+  "status": "PASS_I2_UPSTREAM_HASH_LOCK",
+  "algorithm": "sha256_manifest_v1",
+  "source_identity": {
+    "schema_version": "social-dev-i0-source-reverification-v1",
+    "status": "PASS_SOURCE_IDENTITY",
+    "observed": {
+      "apk": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
+      "libil2cpp": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a",
+      "metadata": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579",
+      "dump": "4487cba6916e159afefec2cd1a9ecf0d12d05b2d76126e7099a5d35323967eb2",
+      "csharp_rar": "a50a442491e422c20699a9ca4266e794d215bff29248d3edd24c41f42a57f903"
+    },
+    "expected": {
+      "apk": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
+      "libil2cpp": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a",
+      "metadata": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579",
+      "dump": "4487cba6916e159afefec2cd1a9ecf0d12d05b2d76126e7099a5d35323967eb2",
+      "csharp_rar": "a50a442491e422c20699a9ca4266e794d215bff29248d3edd24c41f42a57f903"
+    },
+    "paths": {
+      "apk": "sources/raw/Social_Dev_Story_v2.5.1.apk",
+      "libil2cpp": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so",
+      "metadata": "knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat",
+      "dump": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "csharp_rar": "sources/raw/1_Click_CSharp_Code.rar"
+    },
+    "all_match": true,
+    "runtime_contract_package": {
+      "status": "not_present_as_archive",
+      "source": "knowledge/fixtures/accepted/runtime-contract-freeze"
+    }
+  },
+  "locked_roots": [
+    {
+      "path": "runtime/social-dev/src/core/living",
+      "file_count": 14,
+      "manifest_sha256": "3c8a882926eb09ca0091bccb907f21333bc7c0ba658847601ed505942d4e96d6",
+      "files": [
+        {
+          "path": "astar.ts",
+          "sha256": "67ab28d6cdb4b50ae9bdf5c90c0f37f146c9773fd01a41004286cd03d87cbadd"
+        },
+        {
+          "path": "catalog.ts",
+          "sha256": "724b2a874c079339551bbda3d7eb3e9c3ebee9e036e843a2e39183ca61d94559"
+        },
+        {
+          "path": "constants.ts",
+          "sha256": "7e6bc5f750de64b6b83c4974af07bb0704e3e27963d7cbb1c1f1cc57f082ac47"
+        },
+        {
+          "path": "furniture.ts",
+          "sha256": "183f0072cdf2251e4e108b8f163bb11da946232519f6354e3d92bea787a50517"
+        },
+        {
+          "path": "movement.ts",
+          "sha256": "f5c046244910bba6d632058925d0fa02b3841b68737570349df8a4f2f382a8b2"
+        },
+        {
+          "path": "planning.ts",
+          "sha256": "1131fcf2fbb074433af1647b157da4b8217ca6883f85ec67ceac6be91b606a21"
+        },
+        {
+          "path": "projection.ts",
+          "sha256": "bc75bfdc2845fae8b202d8308f4ee9d629eab3bc88526d0cc74d7c3a1ffdb58d"
+        },
+        {
+          "path": "rng.ts",
+          "sha256": "141436e9a431158fa7cc7f605d791a7e0ed0c16a992e8ffee8439fa35f60174c"
+        },
+        {
+          "path": "room.ts",
+          "sha256": "94ce75a56cb163da8328b9d8dc6789b595f83271d16f0c21afc8b8d84062b2bc"
+        },
+        {
+          "path": "runtime.ts",
+          "sha256": "67959b513341bf4e18b554523743fa20605190dd869f1c27231290ad8b50d5ab"
+        },
+        {
+          "path": "scenario-runner.ts",
+          "sha256": "ee4edb302f1f89781b33a47129559da3cee1d9e89d07dcba9dda13f4a5aeb35a"
+        },
+        {
+          "path": "staff.ts",
+          "sha256": "69bb837274f959119302275e0eeeb246f73329e6eb3e95f5e1e32f2383ad4546"
+        },
+        {
+          "path": "trace.ts",
+          "sha256": "c8f21541e1f201c6271cd7073f9718211bd0a21d172451101a13458b55957b86"
+        },
+        {
+          "path": "types.ts",
+          "sha256": "05be29a9b0ca8ac790bd671b161b0e66e817d732714a6af5e8fc21adc94dee41"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime",
+      "file_count": 24,
+      "manifest_sha256": "754ab221411f75f9b06e88f2f5e2349fda2edc0b10a069a47f1434a697654203",
+      "files": [
+        {
+          "path": "baseline.json",
+          "sha256": "223837360670584b4a1712f438087b0f7b906b3469ca2a085e4627e2e2aeb566"
+        },
+        {
+          "path": "canonical-runtime-catalog-manifest.json",
+          "sha256": "931427000d9ba64ebe6a00691665171c046c73652ef20bc8dbac255b8f89cf42"
+        },
+        {
+          "path": "checkpoint-ledger.json",
+          "sha256": "61729b5582854837f4ce5d866b4d987ce66a89dbe9cc7d79bfcfaddbac6ce91c"
+        },
+        {
+          "path": "contract-consumption-map.json",
+          "sha256": "abfd3ac6d6cfc0a13ba3e8104301bb68fe5a09702135d4a172d420f964308c5f"
+        },
+        {
+          "path": "deterministic-rng-replay.json",
+          "sha256": "9bbfbe2063aa817d199236b3de78e41f4285d176b50e8764dd665e80fbe89894"
+        },
+        {
+          "path": "implementation-manifest.json",
+          "sha256": "d62094b15073efc22a0e3d33a3a7be7ef26fb720d4791e9433c115f2d568175f"
+        },
+        {
+          "path": "native-implementation-spotchecks.json",
+          "sha256": "6f5c63feecefe27e4a1c3fc2271f3fb764f8a721ac3c179e89f3747107fe81d6"
+        },
+        {
+          "path": "r0-contract-hash-lock.json",
+          "sha256": "0d43e3f98060223ff10c839b7e2f3e599b5e70eae21dd8ab2ca0d4962206cccb"
+        },
+        {
+          "path": "runtime-module-migration.json",
+          "sha256": "abef45e564c90f8fc29d2f47fe55f2e2243f0ddcd267131c54476592feade92a"
+        },
+        {
+          "path": "scenario-results.json",
+          "sha256": "328c319956c33a0cc9177faad932a032f3a9bb30dcd6aede79c642f9e6fc4f19"
+        },
+        {
+          "path": "source-reverification.json",
+          "sha256": "463fffdca584f1c02ae8ef6018b51f538dd3372aaca09eac0e5530f88fdbefe5"
+        },
+        {
+          "path": "tick-rng-closure.json",
+          "sha256": "a919425ed4d640d1de413dbb9d69158cbb3c2c0bcc8e6e62dc87912ae17a6b8f"
+        },
+        {
+          "path": "transition-traces/S1.jsonl",
+          "sha256": "eb6d25059bce1acdaf272ac4fcce83e8daaf45e9d3e490d16fe86fe017ef0cb0"
+        },
+        {
+          "path": "transition-traces/S10.jsonl",
+          "sha256": "85f3df5e3ff9310b37a44b2b6a99ced02d8975e25f8888aaba6c72b15c3730b4"
+        },
+        {
+          "path": "transition-traces/S2.jsonl",
+          "sha256": "dce22b90b3359dbefa09a8387d5dd4a97aa6172657621337b11c94a02e4d653a"
+        },
+        {
+          "path": "transition-traces/S3.jsonl",
+          "sha256": "49357d93fd3ab875221941b78e069d0646d21b3d25b7723aa8363da0bf6c5ce0"
+        },
+        {
+          "path": "transition-traces/S4.jsonl",
+          "sha256": "ab231bd2358f0de352f7a1aaea724ec824b7878db4ea301a41aaeaa0f8b9673c"
+        },
+        {
+          "path": "transition-traces/S5.jsonl",
+          "sha256": "516e0b496209f765ccc8d3e164692ccd2d43210cb30a5d0a62d1ec16c09584e2"
+        },
+        {
+          "path": "transition-traces/S6.jsonl",
+          "sha256": "e53b82dfa464612804bfd4bc4b211fa9f34dd2a02360c5b7e177f901b8301899"
+        },
+        {
+          "path": "transition-traces/S7.jsonl",
+          "sha256": "a461e0507e9b79e0880f7ddf7e50d7fc0a183b42269c38e9e8ab284d5d868558"
+        },
+        {
+          "path": "transition-traces/S8.jsonl",
+          "sha256": "524028c042c40cf8d2d594c53134bf6a741b4472b1514847e8a6ee845acedda3"
+        },
+        {
+          "path": "transition-traces/S9.jsonl",
+          "sha256": "c178bbf1169bcc91f4ccd5b92970b712baf51e98b542281ca5a2f8f3bee6a3ec"
+        },
+        {
+          "path": "unknowns.json",
+          "sha256": "bc0ef86e09ee3bcad0367b484951bc0c128ac78cd38b08e461dc3cac7c715b6c"
+        },
+        {
+          "path": "validation.json",
+          "sha256": "1be48c2d26095cd0a79aa7050c787eb8193df9a7627360eacc695b8d28613224"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze",
+      "file_count": 18,
+      "manifest_sha256": "4d8ee5d4f136e41f59eebd5381f2f849b4514abd2a77d238924d68f3652014d9",
+      "files": [
+        {
+          "path": "actor-runtime-contract.json",
+          "sha256": "f5f675b509b818c1c360001076e10e098af33bc84423257ab3d626b383a2bfd0"
+        },
+        {
+          "path": "checkpoint-ledger.json",
+          "sha256": "c74aecde40a644e8af3f132e12fb3277ab95a32130b92f1129b0bc09a4effc67"
+        },
+        {
+          "path": "furniture-instance-contract.json",
+          "sha256": "aca1cdd49c819f905c255b21405502a04fbbc86d2f5adbbe97e8a88040d4d973"
+        },
+        {
+          "path": "hp-recovery-home-runtime-contract.json",
+          "sha256": "4c80f8cc8ab568287683fa088e5948a435f73c4defa9dfca0c6638c34da94331"
+        },
+        {
+          "path": "interruption-resume-contract.json",
+          "sha256": "83e5412e3120c8ddb3a8ce38480d9d33ca97dd1e93555ddb74fddd971e5da038"
+        },
+        {
+          "path": "movement-route-contract.json",
+          "sha256": "8bf0c22a4c7ff7d4e11b82c00c5a221c2ea1c80358caa781ee18058c84934ec8"
+        },
+        {
+          "path": "product-policy-boundary.json",
+          "sha256": "17987ad1dfa99a8d27fddf38a5eba2c466bcc6bfc597b86f6f9240d3ce9d08bb"
+        },
+        {
+          "path": "rng-autonomy-contract.json",
+          "sha256": "1e29276156eece8be9773301379dd5fbbe1e2be79ce1a9af7620c1421163bf11"
+        },
+        {
+          "path": "room-runtime-contract.json",
+          "sha256": "2034279494eccb8eb8e6d1a5be3888991c3ab1a01744c37e403f9f43c1912c3b"
+        },
+        {
+          "path": "runtime-contract-manifest.json",
+          "sha256": "17ab6c2868092971db91d5b061e9bc322cba42154812f0bb9b27f114da8356c9"
+        },
+        {
+          "path": "runtime-contract-validation.json",
+          "sha256": "46e38cdc9616bcf955699539af71754a98d43c13400482fef353909a81766823"
+        },
+        {
+          "path": "runtime-delta-matrix.json",
+          "sha256": "29e9147a7d7af1047a13ddf6b82d935fc0c5c78e8a83717c9550a9996aad811f"
+        },
+        {
+          "path": "runtime-scenario-fixtures.json",
+          "sha256": "a58085a604c18fe61ad00bf75f48e17a93fdc533ce6276e1e2a5139f3ba24634"
+        },
+        {
+          "path": "save-boundary-contract.json",
+          "sha256": "447ddf22e96cee4f44c325468d6afdb74ddb0b3feee5d9baa7bf60f14e538336"
+        },
+        {
+          "path": "staff-state-machine-contract.json",
+          "sha256": "657ea7314ae4dc4abe5a1e06d750bb05e004580d29456377ec033d083f32c89e"
+        },
+        {
+          "path": "tick-order-contract-v2.json",
+          "sha256": "cfcad8c0556e41528eff52e5e30e470cbb48118d15e62ed1faff21291a542cf3"
+        },
+        {
+          "path": "visual-projection-boundary.json",
+          "sha256": "ba5c558cca44f542af590559d63f20d2b3743957d2f6eadd43c44e0aff67b9b9"
+        },
+        {
+          "path": "work-planning-runtime-contract.json",
+          "sha256": "4aeed103bf0478ca9a3694f57e3f65bd6759f79864491d1dfac7ea5e6de5a8c9"
+        }
+      ]
+    },
+    {
+      "path": "runtime/social-dev/src/product/assignment",
+      "file_count": 8,
+      "manifest_sha256": "02542996397cd18bab39fa3de4b3e1b8fd39154a1406b9261f23918e4da646b1",
+      "files": [
+        {
+          "path": "adapter.ts",
+          "sha256": "e6813ffba55d3d5e0d2524a52e9ccc64b050020507449866269f6d1ceb4adf99"
+        },
+        {
+          "path": "bridge.ts",
+          "sha256": "93d475e8d3b5da2dafb84f2c79fcfbacc9d006f3b38ebca55c4ec2f62ad427de"
+        },
+        {
+          "path": "commands.ts",
+          "sha256": "8a7a1c83c9d0613aa362805208043e655b80b859e81f66e52f3211fb629bf84b"
+        },
+        {
+          "path": "events.ts",
+          "sha256": "06348f2549520ecee33d7b69df30b5d190b6c278bc034d4a5b409f76e322c591"
+        },
+        {
+          "path": "index.ts",
+          "sha256": "4990184b702f8a4b1fa8ced8c6bb04290f9cef4a93670b96e675a85b8c0782fc"
+        },
+        {
+          "path": "read-model.ts",
+          "sha256": "b0f6f8dad6f79a2cf05cd309a60011ef50d8609f6c95b35e4a0e87fa42407de7"
+        },
+        {
+          "path": "snapshot.ts",
+          "sha256": "3b43d5b724086277277221a72a3f6daa153b697421952883ac0ba67e0a24bcf0"
+        },
+        {
+          "path": "types.ts",
+          "sha256": "cb4401e179d0a4d17b1969734ac0bd0f131671e08fd3168a109a4a99a0d7fca1"
+        }
+      ]
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter",
+      "file_count": 39,
+      "manifest_sha256": "5a2d91a9a35a7ea7e2ccd0802ce2d657be031686550aa871c7bb009c5824376f",
+      "files": [
+        {
+          "path": "agent-binding-contract.json",
+          "sha256": "1da211387ca940d569cd63b5dfe59ceed658f71a96e50e10a2e96173dd151e53"
+        },
+        {
+          "path": "assignment-bridge-decision.json",
+          "sha256": "eb2307e84627ad9b1696ff56a1d8958d56a6d413150bbd41e93e5aa7b59996cb"
+        },
+        {
+          "path": "assignment-command-contract.json",
+          "sha256": "fa61d1217e87d1fb59b404a6423f5bf15846a12a72fa8dcc97926d51705d13d0"
+        },
+        {
+          "path": "assignment-event-contract.json",
+          "sha256": "c2e2c39532ed0d7baebf32e792b662df4fdfdf8224019e4783d5df991797d323"
+        },
+        {
+          "path": "backend-execution-policy-boundary.json",
+          "sha256": "314925a30f1b1945215a89ef96c7f0260d790e3415f6728d66a866f8ae266b0f"
+        },
+        {
+          "path": "baseline.json",
+          "sha256": "f2086dca3f4f6ad1ed93c0af09a35a8dd560923ce0affcd4170cf70ebed866a6"
+        },
+        {
+          "path": "checkpoint-ledger.json",
+          "sha256": "50d4f655f01bf7f5b294dae61914c4486cf17c59a5990d4632cbf43a24b4c2a1"
+        },
+        {
+          "path": "dashboard-read-model-contract.json",
+          "sha256": "e5d35a5230b399306193671fee19c545c10cf591c935fb93dcb034aa0789b58d"
+        },
+        {
+          "path": "deterministic-replay.json",
+          "sha256": "bef2933d2826908ef25434d0008f01ee01410b88844ae729818095200fdf3e37"
+        },
+        {
+          "path": "develop-hp-interaction.json",
+          "sha256": "3cde9d7dc32078d50893de9c5265ee36821475d6c37e652563e0060cd5244f49"
+        },
+        {
+          "path": "develop-interruption-contract.json",
+          "sha256": "31bfee6c46e754e734f0ceefc648f3d797454321f9da7b37e0cb7e7fe0f5d70d"
+        },
+        {
+          "path": "i0-hash-lock.json",
+          "sha256": "87cf5076a687c7ed402824d51e5c05980e11b77fdad15ab2e78727444233bb20"
+        },
+        {
+          "path": "implementation-manifest.json",
+          "sha256": "b7840efd978cd71e263546da54327eae6eaf5c8cea4f53ddeea3df88e7adbad8"
+        },
+        {
+          "path": "living-interruption-product-state-contract.json",
+          "sha256": "480f854b67e21a6003af7f9fc4fc302bb079847869976a351e36039f244de716"
+        },
+        {
+          "path": "multi-agent-conflict-contract.json",
+          "sha256": "7f5bc3f3e06f3d44e56382991aaeb2a89aff457256064026229fdf44f9f77911"
+        },
+        {
+          "path": "original-development-assignment-payload.json",
+          "sha256": "0c31e2ce668624f2ca2dbf6730d4f327a3ff260687ebf0bad0b3bc17a9d6b918"
+        },
+        {
+          "path": "original-development-completion-chain.json",
+          "sha256": "63f5e2d9861916e88447905112281881c6e8480b0e155b1362d530c14b564c23"
+        },
+        {
+          "path": "original-development-start-chain.json",
+          "sha256": "f467d828fe5df8d467865ce60f92398484227341590da71c4bd0fa8a88ccd604"
+        },
+        {
+          "path": "original-work-regime-matrix.json",
+          "sha256": "4d594e9cbc132da248bd12237f1821ca3f61d945677441cd5ce9cf77710be4cf"
+        },
+        {
+          "path": "product-task-model.json",
+          "sha256": "7e6292e104e4a648bbe84f9e4b9a0139cd499d483c70ca6e5664f209dca4ca73"
+        },
+        {
+          "path": "scenario-results.json",
+          "sha256": "d4270b851a2cc90a3cc98036b1f39e988fa76be4df84c022aedc0e5f1172e349"
+        },
+        {
+          "path": "source-reverification.json",
+          "sha256": "c672ccfc865c84be09b0852bf86e2d3cbbafe998ade210a7b8cc0bb11868c589"
+        },
+        {
+          "path": "task-lifecycle-contract.json",
+          "sha256": "a4120b2604c00c9b8eafa68d11b9c08611dbd6a9bef8e5467ca7b1eeedf4b1d7"
+        },
+        {
+          "path": "transition-traces/A1.jsonl",
+          "sha256": "28ee145134c6ad61f435a6226b32b805d42e31ee6884ae92e18da66b822b02f5"
+        },
+        {
+          "path": "transition-traces/A10.jsonl",
+          "sha256": "cbc6443a0dac3a377359a1cde979562ff16df94ed9e36e3989d6ad4cf3c79dab"
+        },
+        {
+          "path": "transition-traces/A11.jsonl",
+          "sha256": "6ba4499f42a6a28f48c4b599d3b5e5d2c9d3b8c973b9650273cb8b4faca1e361"
+        },
+        {
+          "path": "transition-traces/A12.jsonl",
+          "sha256": "f556f266e7cb7b999005460251f2d6648765bd53de3970eb3c1e8478b514ca94"
+        },
+        {
+          "path": "transition-traces/A2.jsonl",
+          "sha256": "700d0aa75da73e9e560a6c8e035678aeb2d82985c12296e1f64fe60f8d48760c"
+        },
+        {
+          "path": "transition-traces/A3.jsonl",
+          "sha256": "944de2fe2d7fe3c9406cffbab71f280b0f4c574e64d71775a34696751b333911"
+        },
+        {
+          "path": "transition-traces/A4.jsonl",
+          "sha256": "a6c0ebe7d33ef7fcac3d75e1923d0b8033f94b486583aeafee0c464fa10e8cbe"
+        },
+        {
+          "path": "transition-traces/A5.jsonl",
+          "sha256": "1786b92e921e7c52505bdda9deb8f5875b331726dcfd5d2b7276c6629bdc1082"
+        },
+        {
+          "path": "transition-traces/A6.jsonl",
+          "sha256": "84727ffcd55d41e70bdbbbe51ec8b11311a70153936257d246232ca96f2e7705"
+        },
+        {
+          "path": "transition-traces/A7.jsonl",
+          "sha256": "92955620d632ff809d3e0924c1c62400794650be7a16bd5db5f9066dfe45ec33"
+        },
+        {
+          "path": "transition-traces/A8.jsonl",
+          "sha256": "ef31585a5f762d95e0d0da292becb5b7b404eb2fc7a1f9737bace7dd928e0a9f"
+        },
+        {
+          "path": "transition-traces/A9.jsonl",
+          "sha256": "2815bf9918cf8febae41a669faa198c57ca3840b21c9040be2643948b5719222"
+        },
+        {
+          "path": "unknowns.json",
+          "sha256": "ff3909a3fa0cbbad85ba2eec0caf677790cbd66b53f87e3656970dd59f75d793"
+        },
+        {
+          "path": "update-develop-native-map.json",
+          "sha256": "4041c8716f7e37b4b528f94373e254e199d18b290d04ab9d468d82b40a42653a"
+        },
+        {
+          "path": "update-develop-state-machine.json",
+          "sha256": "50a8c6c1a63e878024efc6a9725dc96bb9553a9471c40b3559905902bb3d9c8e"
+        },
+        {
+          "path": "validation.json",
+          "sha256": "2917caba65fbc06a2ef393d5aa25ef8fc9cd1b44e76a253cc769127eb6eaae14"
+        }
+      ]
+    }
+  ],
+  "sanctioned_migrations": {
+    "runtime/social-dev/src/app/runtime.ts": {
+      "pre_i2_sha256": "dd87b01580ec251cea6df178741cc54f654668cb58d6a3b5e34728924829fae4",
+      "current_i2_sha256": "d1e65aca1f1f9a4da7183447404d5461d1973b0db8564c2b37363c0a5bcfa7a7",
+      "reason": "I2 production web integration replaces the audited legacy living-step owner while preserving the R0 semantic contracts and frozen semantic renderer roots."
+    }
+  },
+  "forbidden_runtime_semantic_roots": [
+    "runtime/social-dev/src/core/living/projection.ts",
+    "runtime/social-dev/src/scene",
+    "runtime/social-dev/src/renderer/canvas-renderer.ts",
+    "runtime/social-dev/src/v5",
+    "runtime/social-dev/src/v6",
+    "runtime/social-dev/src/v7"
+  ]
+}

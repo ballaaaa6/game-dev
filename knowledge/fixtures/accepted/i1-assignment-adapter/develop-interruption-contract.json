@@ -1,0 +1,17 @@
+{
+  "schema_version": "social-dev-i1-develop-interruption-contract-v1",
+  "status": "PASS_I1_3_DEVELOP_INTERRUPTION_CLASSIFIED",
+  "develop_specific_interruption": {
+    "owner": "DevelopForm.OnEnemyAttack",
+    "source": "DevelopForm.cs:14690-14731",
+    "writes": ["developStateBackup_ = 3 when current is 5, otherwise backup=current", "developState_=10"],
+    "restore": { "source": "DevelopForm.cs:11325-11356", "writes": ["developState_=developStateBackup_", "sebId_=25 when backup=3"] }
+  },
+  "ordinary_detours": {
+    "equipment": "not dispatched by Staff.Update while state=12",
+    "talk": "not dispatched by Staff.Update while state=12",
+    "home": "ordinary low-HP home guard is bypassed by the state12 early return",
+    "classification": "Develop owns a separate interruption model; exact all-state behavior is source-limited"
+  },
+  "i1_consequence": "Bridge A is rejected. Bridge C keeps I0 ordinary equipment/talk/home/desk observations available and never claims they are Develop semantics."
+}

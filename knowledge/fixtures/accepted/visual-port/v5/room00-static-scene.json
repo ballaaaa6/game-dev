@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "phase": "V5",
+  "status": "PASS_STATIC_ROOM00_SCENE",
+  "execution_mode": "INLINE_STATIC_ONLY",
+  "room": {
+    "room_key": "room:0",
+    "data_key": "data:room:0",
+    "name": "Floor A",
+    "room_floor": 0,
+    "floor_img_id": 5,
+    "wall_img_id": 6,
+    "door_img_id": 7,
+    "visual_scope": "full_static"
+  },
+  "topology": {"variant": "floor_0", "context": "main_display", "dimensions": [14, 14], "proof": "NATIVE-CODE-PROVEN"},
+  "initialization": ["InitMapChips", "InitObjChips", "SetupBigChipsParent", "PlaceDoor", "PlaceDesk/PlaceObj explicit bindings"],
+  "wall_and_door": {
+    "door_cell": [8, 4],
+    "door_raw_type": 5,
+    "door_installed_flag": 1,
+    "door_furniture_data": null,
+    "wall_cells_by_frame": {
+      "vertical_frame_1": [[8, 1], [8, 2], [8, 3], [8, 5], [8, 6], [8, 7], [8, 8]],
+      "horizontal_frame_0": [[1, 1], [2, 1], [3, 1], [4, 1], [5, 1], [6, 1], [7, 1], [8, 1]]
+    },
+    "foreground_wall_cells": [[8, 7], [8, 8]]
+  },
+  "furniture": {
+    "explicit_native_binding_count": 6,
+    "explicit_object_ids": ["furniture:3", "furniture:3", "furniture:3", "furniture:12", "furniture:26", "furniture:56"],
+    "structural_facility_count": 2,
+    "structural_facility_anchors": [[4, 2], [7, 2]],
+    "structural_facility_seb": 11,
+    "structural_facility_image": 18
+  },
+  "pass_order": ["map-extension-floor", "map-chip", "object-chip-primary", "object-chip-wall", "avatar-primary", "avatar-secondary", "object-chip-late-preview", "object-chip-late", "map-floor"],
+  "camera": {"offset": [0, 0], "identity_transform": true},
+  "floor_selector_policy": {"raw": 5, "native_table_selector": 23, "runtime_selector": 85, "render_filename": "floor_05.png", "status": "COMPATIBILITY-POLICY"},
+  "static_command_result": {
+    "commands": 74,
+    "traces": 59,
+    "events": 788,
+    "manifest_bytes": 193917,
+    "manifest_sha256": "4418a7c8a81a705d46a6eefc2a72e635f5e6108d83e4067dc0d638942f39f788",
+    "proof": "STATIC-COMMAND-PARITY"
+  },
+  "pixel_boundary": "No screenshot, framebuffer, emulator, or live-app observation is used as proof; exact raster parity remains outside V5."
+}

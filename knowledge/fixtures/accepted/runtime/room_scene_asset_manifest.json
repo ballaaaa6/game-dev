@@ -1,0 +1,899 @@
+{
+  "schema_version": "social-dev-room-scene-asset-manifest-v1",
+  "package": "social-dev-room-scene-assets",
+  "status": "pass",
+  "semantic_status": "approved_for_runtime_contract",
+  "catalog_ref": {
+    "path": "knowledge/fixtures/accepted/room_catalog_full.json",
+    "content_hash": "a840a6917af272133970c53910e3f3a937dd7a9c7863577f52fbebc4e16483e8"
+  },
+  "scope": "all exact RoomData floor/wall/door selector PNGs",
+  "assets": [
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/door_01.png",
+      "asset_member": "01_GAME_PACKS/chip/door_01.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/door_01.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData door selector PNG",
+      "original_name": "door_01.png",
+      "extension": ".png",
+      "bytes": 436,
+      "sha256": "196198c9ee093f7f234060868434f9547e56bd020e57acebf4b2285848281569",
+      "width": 13,
+      "height": 31,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/door_02.png",
+      "asset_member": "01_GAME_PACKS/chip/door_02.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/door_02.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData door selector PNG",
+      "original_name": "door_02.png",
+      "extension": ".png",
+      "bytes": 490,
+      "sha256": "a0253c022dd98e6e56e4dd4772aeb078152b4e18456e273e68599bca6117dd62",
+      "width": 13,
+      "height": 31,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/door_03.png",
+      "asset_member": "01_GAME_PACKS/chip/door_03.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/door_03.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData door selector PNG",
+      "original_name": "door_03.png",
+      "extension": ".png",
+      "bytes": 490,
+      "sha256": "b68289f186389dbd6e8185f6db829776c4ae531bf30804fb9ff0d2a744758618",
+      "width": 13,
+      "height": 31,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/door_04.png",
+      "asset_member": "01_GAME_PACKS/chip/door_04.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/door_04.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData door selector PNG",
+      "original_name": "door_04.png",
+      "extension": ".png",
+      "bytes": 389,
+      "sha256": "638f1180645327f06387902da39c23d0ea1f7b83c8842cc6df9fcd2d4c66bd02",
+      "width": 13,
+      "height": 31,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/door_05.png",
+      "asset_member": "01_GAME_PACKS/chip/door_05.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/door_05.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData door selector PNG",
+      "original_name": "door_05.png",
+      "extension": ".png",
+      "bytes": 448,
+      "sha256": "f44f8b3fc980434e768153da6d5ef99600b37f8d6ccb7cb27f5b85c7392cad60",
+      "width": 13,
+      "height": 31,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/door_06.png",
+      "asset_member": "01_GAME_PACKS/chip/door_06.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/door_06.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData door selector PNG",
+      "original_name": "door_06.png",
+      "extension": ".png",
+      "bytes": 475,
+      "sha256": "d0272baf4ff887b92da3993d1e62c5fb4186fe85676e6fee30ba40a62054c694",
+      "width": 13,
+      "height": 31,
+      "mode": "RGBA"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_00.png",
+      "asset_member": "01_GAME_PACKS/chip/floor_00.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/floor_00.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData floor selector PNG",
+      "original_name": "floor_00.png",
+      "extension": ".png",
+      "bytes": 689,
+      "sha256": "7724062cabe0385f0131c812c74ec3ad4425e0d123d0a18abf9d752bd3d056bb",
+      "width": 80,
+      "height": 39,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_01.png",
+      "asset_member": "01_GAME_PACKS/chip/floor_01.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/floor_01.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData floor selector PNG",
+      "original_name": "floor_01.png",
+      "extension": ".png",
+      "bytes": 604,
+      "sha256": "1328482684775c2cc7d8b4178f8ffcabf358ef99405bb835fb1b7264c83da177",
+      "width": 80,
+      "height": 39,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_02.png",
+      "asset_member": "01_GAME_PACKS/chip/floor_02.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/floor_02.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData floor selector PNG",
+      "original_name": "floor_02.png",
+      "extension": ".png",
+      "bytes": 870,
+      "sha256": "8f28129115350ddfd09c4961adfb01564d0624759fd7fd2fc1c7682db8d41a04",
+      "width": 80,
+      "height": 39,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_03.png",
+      "asset_member": "01_GAME_PACKS/chip/floor_03.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/floor_03.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData floor selector PNG",
+      "original_name": "floor_03.png",
+      "extension": ".png",
+      "bytes": 916,
+      "sha256": "cc8fa19d6bfd7fd9d5ae1b6b4cc2faf7ee84de3a02a8628db0495bc575dc129e",
+      "width": 80,
+      "height": 39,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_04.png",
+      "asset_member": "01_GAME_PACKS/chip/floor_04.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/floor_04.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData floor selector PNG",
+      "original_name": "floor_04.png",
+      "extension": ".png",
+      "bytes": 646,
+      "sha256": "8f78b664e27beb9f16d924f7b6029a6a3a233538fbb5a0cbe2f2842c1a1611aa",
+      "width": 80,
+      "height": 39,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_05.png",
+      "asset_member": "01_GAME_PACKS/chip/floor_05.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/floor_05.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData floor selector PNG",
+      "original_name": "floor_05.png",
+      "extension": ".png",
+      "bytes": 1000,
+      "sha256": "be6572af9df60f5ed00eb0ab0e7d4dd95ba08749d7ec88b027a8ae5b3896c08c",
+      "width": 80,
+      "height": 39,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_06.png",
+      "asset_member": "01_GAME_PACKS/chip/floor_06.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/floor_06.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData floor selector PNG",
+      "original_name": "floor_06.png",
+      "extension": ".png",
+      "bytes": 567,
+      "sha256": "9081feb0ef4adb540a52a4b81fccfc168420515832ba7a0a9bad4027cfee3c2d",
+      "width": 80,
+      "height": 39,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_07.png",
+      "asset_member": "01_GAME_PACKS/chip/floor_07.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/floor_07.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData floor selector PNG",
+      "original_name": "floor_07.png",
+      "extension": ".png",
+      "bytes": 945,
+      "sha256": "6b742526a12dd696dcc34d048c25f6731a0c842381ea61516d35d86b5df3c15b",
+      "width": 80,
+      "height": 39,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_08.png",
+      "asset_member": "01_GAME_PACKS/chip/floor_08.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/floor_08.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData floor selector PNG",
+      "original_name": "floor_08.png",
+      "extension": ".png",
+      "bytes": 717,
+      "sha256": "f1762e045d1778d5c60b9fb1c377190eb250e6af31d411540121b633609ea34a",
+      "width": 80,
+      "height": 39,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_09.png",
+      "asset_member": "01_GAME_PACKS/chip/floor_09.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/floor_09.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData floor selector PNG",
+      "original_name": "floor_09.png",
+      "extension": ".png",
+      "bytes": 906,
+      "sha256": "cc960abb36b882bc771837a82c20563c11399456f21aa08ff87a033d2b543184",
+      "width": 80,
+      "height": 39,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/wall_00.png",
+      "asset_member": "01_GAME_PACKS/chip/wall_00.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/wall_00.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData wall selector PNG",
+      "original_name": "wall_00.png",
+      "extension": ".png",
+      "bytes": 698,
+      "sha256": "cbd7c73a38d041cafc330471cbab58b081c9c1c5ca4826e39e7f44d0a282d06c",
+      "width": 96,
+      "height": 43,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/wall_01.png",
+      "asset_member": "01_GAME_PACKS/chip/wall_01.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/wall_01.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData wall selector PNG",
+      "original_name": "wall_01.png",
+      "extension": ".png",
+      "bytes": 688,
+      "sha256": "ad06888341650eb828abf373b238d48b1f96e4007c2eec0fd7dd3c8a69b9b022",
+      "width": 96,
+      "height": 43,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/wall_02.png",
+      "asset_member": "01_GAME_PACKS/chip/wall_02.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/wall_02.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData wall selector PNG",
+      "original_name": "wall_02.png",
+      "extension": ".png",
+      "bytes": 956,
+      "sha256": "f125fba117c950a4ffdb13c5d82f16a1294b881129f9738c232e4d34fc47c4a4",
+      "width": 96,
+      "height": 43,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/wall_03.png",
+      "asset_member": "01_GAME_PACKS/chip/wall_03.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/wall_03.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData wall selector PNG",
+      "original_name": "wall_03.png",
+      "extension": ".png",
+      "bytes": 885,
+      "sha256": "0212252d5360bdd564e62d56e819bd538a5cde7ea4e1382781883de0cbc5f004",
+      "width": 96,
+      "height": 43,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/wall_04.png",
+      "asset_member": "01_GAME_PACKS/chip/wall_04.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/wall_04.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData wall selector PNG",
+      "original_name": "wall_04.png",
+      "extension": ".png",
+      "bytes": 817,
+      "sha256": "b44873060f5b6bc351e2ba0893da1c831d3b5b1b299ee6ffe34df42865e2e0c8",
+      "width": 96,
+      "height": 43,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/wall_05.png",
+      "asset_member": "01_GAME_PACKS/chip/wall_05.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/wall_05.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData wall selector PNG",
+      "original_name": "wall_05.png",
+      "extension": ".png",
+      "bytes": 911,
+      "sha256": "69cdb5daba942aecc8e3b5bee893a90a5476828bf00a195587f090a04e5e043f",
+      "width": 96,
+      "height": 43,
+      "mode": "P"
+    },
+    {
+      "asset_id": "asset:01_GAME_PACKS/chip/wall_06.png",
+      "asset_member": "01_GAME_PACKS/chip/wall_06.png",
+      "runtime_path": "assets/room-scene/01_GAME_PACKS/chip/wall_06.png",
+      "kind": "room_selector_asset",
+      "pack": "chip",
+      "semantic_role": "RoomData wall selector PNG",
+      "original_name": "wall_06.png",
+      "extension": ".png",
+      "bytes": 905,
+      "sha256": "5871437886d1af4c052bdfd2717ab9d8efdd59f4e49d23d1852a76ce76d2f028",
+      "width": 96,
+      "height": 43,
+      "mode": "P"
+    }
+  ],
+  "rooms": [
+    {
+      "room_key": "room:0",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 5,
+          "native_selector_id": 23,
+          "filename": "floor_05.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_05.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 6,
+          "native_selector_id": null,
+          "filename": "wall_00.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_00.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 7,
+          "native_selector_id": null,
+          "filename": "door_01.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_01.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:1",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 0,
+          "native_selector_id": 0,
+          "filename": "floor_00.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_00.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 2,
+          "native_selector_id": null,
+          "filename": "wall_01.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_01.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 16,
+          "native_selector_id": null,
+          "filename": "door_02.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_02.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:2",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 1,
+          "native_selector_id": 19,
+          "filename": "floor_01.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_01.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 87,
+          "native_selector_id": null,
+          "filename": "wall_03.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_03.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 7,
+          "native_selector_id": null,
+          "filename": "door_01.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_01.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:3",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 2,
+          "native_selector_id": 20,
+          "filename": "floor_02.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_02.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 88,
+          "native_selector_id": null,
+          "filename": "wall_04.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_04.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 16,
+          "native_selector_id": null,
+          "filename": "door_02.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_02.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:4",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 3,
+          "native_selector_id": 21,
+          "filename": "floor_03.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_03.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 86,
+          "native_selector_id": null,
+          "filename": "wall_02.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_02.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 91,
+          "native_selector_id": null,
+          "filename": "door_04.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_04.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:5",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 7,
+          "native_selector_id": 83,
+          "filename": "floor_07.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_07.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 86,
+          "native_selector_id": null,
+          "filename": "wall_02.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_02.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 16,
+          "native_selector_id": null,
+          "filename": "door_02.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_02.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:6",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 6,
+          "native_selector_id": 82,
+          "filename": "floor_06.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_06.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 87,
+          "native_selector_id": null,
+          "filename": "wall_03.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_03.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 90,
+          "native_selector_id": null,
+          "filename": "door_03.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_03.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:7",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 0,
+          "native_selector_id": 0,
+          "filename": "floor_00.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_00.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 87,
+          "native_selector_id": null,
+          "filename": "wall_03.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_03.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 92,
+          "native_selector_id": null,
+          "filename": "door_05.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_05.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:8",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 1,
+          "native_selector_id": 19,
+          "filename": "floor_01.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_01.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 6,
+          "native_selector_id": null,
+          "filename": "wall_00.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_00.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 92,
+          "native_selector_id": null,
+          "filename": "door_05.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_05.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:9",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 2,
+          "native_selector_id": 20,
+          "filename": "floor_02.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_02.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 2,
+          "native_selector_id": null,
+          "filename": "wall_01.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_01.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 93,
+          "native_selector_id": null,
+          "filename": "door_06.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_06.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:10",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 3,
+          "native_selector_id": 21,
+          "filename": "floor_03.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_03.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 88,
+          "native_selector_id": null,
+          "filename": "wall_04.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_04.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 16,
+          "native_selector_id": null,
+          "filename": "door_02.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_02.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:11",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 4,
+          "native_selector_id": 22,
+          "filename": "floor_04.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_04.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 89,
+          "native_selector_id": null,
+          "filename": "wall_05.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_05.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 7,
+          "native_selector_id": null,
+          "filename": "door_01.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_01.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:12",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 5,
+          "native_selector_id": 23,
+          "filename": "floor_05.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_05.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 87,
+          "native_selector_id": null,
+          "filename": "wall_03.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_03.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 90,
+          "native_selector_id": null,
+          "filename": "door_03.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_03.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:13",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 6,
+          "native_selector_id": 82,
+          "filename": "floor_06.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_06.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 86,
+          "native_selector_id": null,
+          "filename": "wall_02.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_02.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 92,
+          "native_selector_id": null,
+          "filename": "door_05.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_05.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:14",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 7,
+          "native_selector_id": 83,
+          "filename": "floor_07.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_07.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 2,
+          "native_selector_id": null,
+          "filename": "wall_01.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_01.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 7,
+          "native_selector_id": null,
+          "filename": "door_01.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_01.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:15",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 8,
+          "native_selector_id": 84,
+          "filename": "floor_08.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_08.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 89,
+          "native_selector_id": null,
+          "filename": "wall_05.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_05.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 92,
+          "native_selector_id": null,
+          "filename": "door_05.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_05.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:16",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 9,
+          "native_selector_id": 85,
+          "filename": "floor_09.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_09.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 88,
+          "native_selector_id": null,
+          "filename": "wall_04.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_04.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 91,
+          "native_selector_id": null,
+          "filename": "door_04.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_04.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    },
+    {
+      "room_key": "room:17",
+      "assets": {
+        "floor": {
+          "raw_selector_id": 9,
+          "native_selector_id": 85,
+          "filename": "floor_09.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/floor_09.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved_by_native_floor_image_table"
+        },
+        "wall": {
+          "raw_selector_id": 94,
+          "native_selector_id": null,
+          "filename": "wall_06.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/wall_06.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        },
+        "door": {
+          "raw_selector_id": 93,
+          "native_selector_id": null,
+          "filename": "door_06.png",
+          "asset_id": "asset:01_GAME_PACKS/chip/door_06.png",
+          "runtime_status": "pass_promoted_room_selector_asset",
+          "source_status": "resolved"
+        }
+      }
+    }
+  ],
+  "counts": {
+    "rooms": 18,
+    "unique_selector_pngs": 23,
+    "floor_pngs": 10,
+    "wall_pngs": 7,
+    "door_pngs": 6
+  },
+  "runtime_policy": {
+    "source_code_imports": false,
+    "archive_imports": false,
+    "exact_selector_identity_preserved": true,
+    "native_coordinate_composition_not_implied": true
+  },
+  "determinism": {
+    "algorithm": "stable-json-sha256",
+    "content_hash": "de12357cd5a168c7e72ee93881e66bd9d84ae67d784194f33a0ab39e66fbb1a3"
+  }
+}

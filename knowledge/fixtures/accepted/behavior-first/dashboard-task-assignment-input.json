@@ -1,0 +1,104 @@
+{
+  "assignment_boundary": [
+    "dashboard may select staff/job/skill/furniture task inputs",
+    "dashboard may display HP/condition-like fields only through existing consumers",
+    "dashboard must not replace Staff.Update, Room.Update, ObjChip reservations, or native route contracts"
+  ],
+  "autonomous_authority": "Staff.Update/Room.Update/ObjChip reservations; dashboard is a consumer and explicit task-assignment surface.",
+  "inputs": [
+    {
+      "class": "StaffData",
+      "fields": [
+        "jobId_",
+        "defParams_",
+        "skill_",
+        "cost_",
+        "hitRate_",
+        "bonusTerms_",
+        "bonusRate_"
+      ],
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/StaffData.cs",
+        "line": 61,
+        "note": "StaffData declaration.",
+        "source_sha256": "3464f954f7b2b9e47a755c1dbd76eca218e216d3845b16ca9e558e3f528cf92a",
+        "symbol": "public int jobId_;"
+      },
+      "use": "Staff initialization and skill/job linkage"
+    },
+    {
+      "class": "JobData",
+      "fields": [
+        "type_",
+        "jobGroup_",
+        "maxLv_",
+        "speed_",
+        "params_",
+        "bonus_"
+      ],
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/JobData.cs",
+        "line": 49,
+        "note": "Job parameter data.",
+        "source_sha256": "f2501b9448eb1d94c6ed789c44728c4eb9820c8dfd249245ff29406b7a2d24b6",
+        "symbol": "public int[][] params_;"
+      },
+      "use": "GetJobParam and movement/work data"
+    },
+    {
+      "class": "SkillData",
+      "fields": [
+        "type_",
+        "scene_",
+        "target_",
+        "effects_",
+        "auraRates_",
+        "flag_"
+      ],
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 122,
+        "note": "Skill effect data.",
+        "source_sha256": "d9bbf06f28d3fc00723a74d7fd3b9142d0189339b450386b28543b77673fbd65",
+        "symbol": "public int[][] effects_;"
+      },
+      "use": "OnEndTyping selected skill effect"
+    },
+    {
+      "class": "FurnitureData",
+      "fields": [
+        "type_",
+        "recovery_",
+        "passMap_",
+        "flag_",
+        "paramType_",
+        "paramValue_"
+      ],
+      "ref": {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 113,
+        "note": "Furniture behavior data.",
+        "source_sha256": "0058b26ca7c709f7698773aa95608145ead8460571f6e9e5b9f1dcfd53a24d06",
+        "symbol": "public int[][] passMap_;"
+      },
+      "use": "workstation/equipment/passability inputs"
+    },
+    {
+      "class": "EventData",
+      "fields": [
+        "event constants"
+      ],
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/EventData.cs",
+        "line": 166,
+        "note": "Event/UI trigger vocabulary.",
+        "source_sha256": "9ac7ca52dfb3b44a2e64a28b6a35722ecef24dcc267e1203f02c742879863e80",
+        "symbol": "public const int EV_FIRST_DEVELOP_HP_DOWN = 87;"
+      },
+      "use": "event vocabulary only; not autonomous Staff tick authority"
+    }
+  ],
+  "schema_version": "social-dev-behavior-first-dashboard-task-assignment-input-v1",
+  "source_limit": "Exact current dashboard widget-to-field mapping is outside the autonomous source slice; only field semantics and existing UI consumers are retained.",
+  "status": "pass_with_source_limits"
+}

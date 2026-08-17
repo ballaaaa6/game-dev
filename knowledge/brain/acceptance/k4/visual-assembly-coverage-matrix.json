@@ -1,0 +1,841 @@
+{
+  "blocking_consumers": [],
+  "metrics": {
+    "blocking_source_limited_count": 0,
+    "heuristic_or_assumed_count": 0,
+    "no_distinct_visual_count": 8,
+    "not_reachable_count": 2,
+    "proven_canonical_count": 39,
+    "proven_not_canonical_count": 2,
+    "proven_promoted_count": 46,
+    "reachable_consumer_count": 49,
+    "source_limited_count": 0,
+    "source_missing_count": 0,
+    "visible_consumer_count": 42
+  },
+  "records": [
+    {
+      "blocking": false,
+      "consumer_id": "room0.bootstrap.entry",
+      "description": "AppData.NewGame -> RoomData:0 -> Room::.ctor -> initial native object/staff bindings",
+      "domain": "Room0 bootstrap",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:AppData.NewGame/Room::.ctor"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.floor.map-chip",
+      "description": "Room.floor_=0 selects the 14x14 floor_0 MapChip topology; RoomData.floorImgId_=5 resolves through native selector 23 to floor_05.png",
+      "domain": "Floor/map",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0].selectors.floor"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.map-extension-floor",
+      "description": "MapChip.DrawExtentionFloor is the first visible Room.Draw pass",
+      "domain": "Floor/map",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:render_passes[0]",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.wall.horizontal",
+      "description": "Horizontal frame-0 wall cells and both SEB layers",
+      "domain": "Wall/corner/join",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0].wall"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.wall.vertical",
+      "description": "Vertical frame-1 wall cells and both SEB layers",
+      "domain": "Wall/corner/join",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0].wall"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.door.closed",
+      "description": "Installed raw type-5 door at [8,4], closed frame-0 door_02.seb/door_01.png baseline",
+      "domain": "Door",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0].door"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.door.action-timeline",
+      "description": "Door open/close action after the native frame-15 seed and StartAction call",
+      "domain": "Door",
+      "evidence": [
+        "knowledge/brain/acceptance/k4-1/room0-door-action-vs-visual-contract.json",
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]",
+        "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:ObjChip.DrawWall@0x12C0698",
+        "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:Staff.OnArriveGoal@0x12D87CC/ObjChip.StartAction@0x12C0520"
+      ],
+      "heuristic_or_assumed": false,
+      "notes": "Corrected: native Room0 action/update/fade state is proven, but the null-FurnitureData DrawWall consumer has no distinct visual action timeline.",
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "NO_DISTINCT_VISUAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.furniture:3.cell-2-4",
+      "description": "Native initial furniture:3 composition at cell [2, 4]",
+      "domain": "Furniture",
+      "evidence": [
+        "knowledge/fixtures/accepted/asset_composition_catalog.json:native_initial_object:furniture:3",
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.furniture:3.cell-3-4",
+      "description": "Native initial furniture:3 composition at cell [3, 4]",
+      "domain": "Furniture",
+      "evidence": [
+        "knowledge/fixtures/accepted/asset_composition_catalog.json:native_initial_object:furniture:3",
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.furniture:3.cell-6-4",
+      "description": "Native initial furniture:3 composition at cell [6, 4]",
+      "domain": "Furniture",
+      "evidence": [
+        "knowledge/fixtures/accepted/asset_composition_catalog.json:native_initial_object:furniture:3",
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.furniture:12.cell-8-5",
+      "description": "Native initial furniture:12 composition at cell [8, 5]",
+      "domain": "Furniture",
+      "evidence": [
+        "knowledge/fixtures/accepted/asset_composition_catalog.json:native_initial_object:furniture:12",
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.furniture:26.cell-8-6",
+      "description": "Native initial furniture:26 composition at cell [8, 6]",
+      "domain": "Furniture",
+      "evidence": [
+        "knowledge/fixtures/accepted/asset_composition_catalog.json:native_initial_object:furniture:26",
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.furniture:56.cell-2-7",
+      "description": "Native initial furniture:56 composition at cell [2, 7]",
+      "domain": "Furniture",
+      "evidence": [
+        "knowledge/fixtures/accepted/asset_composition_catalog.json:native_initial_object:furniture:56",
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.structural-facility-0",
+      "description": "Structural facility SEB at map anchor [4, 5]",
+      "domain": "Furniture",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:structural_facilities",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room0.structural-facility-1",
+      "description": "Structural facility SEB at map anchor [7, 5]",
+      "domain": "Furniture",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:structural_facilities",
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "furniture.generic.objchip-draw",
+      "description": "Generic ObjChip FurnitureData dispatch, selector resolution, frame and layer execution",
+      "domain": "Furniture",
+      "evidence": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:ObjChip.Draw",
+        "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:ObjChip.Draw@0x12C166C"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "actor:staff:0.bootstrap-visual",
+      "description": "Accepted static Room0 display actor for source StaffData 0",
+      "domain": "Staff bootstrap",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/display_asset_manifest.json:actors",
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:actors"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "actor:staff:1.bootstrap-visual",
+      "description": "Accepted static Room0 display actor for source StaffData 1",
+      "domain": "Staff bootstrap",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/display_asset_manifest.json:actors",
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:actors"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "actor:staff:2.bootstrap-visual",
+      "description": "Accepted static Room0 display actor for source StaffData 2",
+      "domain": "Staff bootstrap",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/display_asset_manifest.json:actors",
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:actors"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.wait",
+      "description": "Wait selector 10/11/12/13 by translated direction",
+      "domain": "Staff visual resolver",
+      "evidence": [
+        "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.move",
+      "description": "Move selector 1/2/3/4 by translated direction",
+      "domain": "Staff visual resolver",
+      "evidence": [
+        "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.typing",
+      "description": "Typing selector 23/24/25/26 from FLAG_TYPING",
+      "domain": "Staff visual resolver",
+      "evidence": [
+        "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:OnStartTyping/OnEndTyping"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.work-no-typing",
+      "description": "Work state without typing has the explicit wait fallback and no distinct work selector",
+      "domain": "Staff visual resolver",
+      "evidence": [
+        "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "NO_DISTINCT_VISUAL",
+      "visible": false
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.equipment-fallback",
+      "description": "Equipment state outside its native UseEquip phase uses the explicit wait fallback",
+      "domain": "Staff visual resolver",
+      "evidence": [
+        "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "NO_DISTINCT_VISUAL",
+      "visible": false
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.sit-down",
+      "description": "Sit-down state uses the explicit wait fallback; sitting is a lifecycle flag/pose relation",
+      "domain": "Staff visual resolver",
+      "evidence": [
+        "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "NO_DISTINCT_VISUAL",
+      "visible": false
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.meeting-fallback",
+      "description": "Meeting state has the explicit wait fallback",
+      "domain": "Staff visual resolver",
+      "evidence": [
+        "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "NO_DISTINCT_VISUAL",
+      "visible": false
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.invite-fallback",
+      "description": "Invite-to-talk state has the explicit wait fallback",
+      "domain": "Staff visual resolver",
+      "evidence": [
+        "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "NO_DISTINCT_VISUAL",
+      "visible": false
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.wander",
+      "description": "Wander uses the explicit move fallback and native directional wander arrival branch",
+      "domain": "Movement/wander",
+      "evidence": [
+        "knowledge/fixtures/accepted/living-core-closure/on-arrive-goal-jump-table.json:WANDER",
+        "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.stay-home-hidden",
+      "description": "Stay-home state is alpha-hidden and has the explicit wait fallback",
+      "domain": "HP/home/return",
+      "evidence": [
+        "knowledge/fixtures/accepted/behavior-first/home-rest-contract.json",
+        "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "NO_DISTINCT_VISUAL",
+      "visible": false
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.fly-away",
+      "description": "Fly-away selector is deferred outside the normal Room0 autonomous slice",
+      "domain": "Staff visual resolver",
+      "evidence": [
+        "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json:actions.fly_away"
+      ],
+      "heuristic_or_assumed": false,
+      "notes": "Not a normal Room0 autonomous consumer in the accepted idle loop.",
+      "promotion_status": "NOT_PROMOTED",
+      "reachable": false,
+      "status": "NOT_REACHABLE",
+      "visible": false
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.develop",
+      "description": "Develop state is outside the accepted Room0 autonomous visible-action slice",
+      "domain": "Staff visual resolver",
+      "evidence": [
+        "knowledge/fixtures/accepted/behavior-first/staff-state-machine.json:states"
+      ],
+      "heuristic_or_assumed": false,
+      "notes": "No normal Room0 idle path promotes this state.",
+      "promotion_status": "NOT_PROMOTED",
+      "reachable": false,
+      "status": "NOT_REACHABLE",
+      "visible": false
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.movement-route-projection",
+      "description": "Cardinal route, target arrival, translated direction and movement selector projection",
+      "domain": "Movement/wander",
+      "evidence": [
+        "knowledge/fixtures/accepted/behavior-first/movement-target-arrival-contract.json",
+        "knowledge/fixtures/accepted/living-core-closure/on-arrive-goal-jump-table.json",
+        "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.hp-home-return-boundary",
+      "description": "Low HP door escape, hidden WAIT_BACK_OF_DOOR, stay-home recovery and GotoDesk return",
+      "domain": "HP/home/return",
+      "evidence": [
+        "knowledge/fixtures/accepted/behavior-first/home-rest-contract.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:Update/UpdateStayHome",
+        "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:Staff.UpdateStayHome@0x12D59F4"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.initial-live-seb-boundary",
+      "description": "Direct Staff.Init sebId assignment is not a distinct promoted consumer in the accepted bootstrap",
+      "domain": "Staff bootstrap",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:actors",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs:Init"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "NOT_PROMOTED",
+      "reachable": true,
+      "status": "NO_DISTINCT_VISUAL",
+      "visible": false
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.use-equip.timeline",
+      "description": "Native equipment animation phase selectors 7/8, 15/16 and 11/12 with completion at frame 70",
+      "domain": "Equipment",
+      "evidence": [
+        "knowledge/fixtures/accepted/behavior-first/equipment-behavior-contract.json",
+        "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:Staff.UseEquip@0x12D4DEC"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.talk.pose-and-timing",
+      "description": "Bilateral talk states, invitation pose selectors, typing-reused talk pose and frame 20/70/110/130 timing",
+      "domain": "Talk",
+      "evidence": [
+        "knowledge/fixtures/accepted/behavior-first/talk-social-contract.json",
+        "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:Staff.Talk@0x12D5588"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.talk.fukidashi-payload",
+      "description": "Fukidashi payload array IDs and payload-specific offset/position data",
+      "domain": "Talk",
+      "evidence": [
+        "knowledge/brain/acceptance/k4-1/fukidashi-localization-catalog.json",
+        "knowledge/brain/acceptance/k4-1/fukidashi-payload-closure.json",
+        "knowledge/fixtures/accepted/behavior-first/talk-social-contract.json",
+        "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs:AppData.FUKIDASHI",
+        "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:Staff.Talk@0x12D5588"
+      ],
+      "heuristic_or_assumed": false,
+      "notes": "Exact autonomous and invitation pools, random semantics, locale rows, bubble lifetime/offset, draw, and cleanup are source/native-backed.",
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "workstation.live-interleave",
+      "description": "Live desk primary, chair subSeb, Staff.Draw and chair foreground interleave",
+      "domain": "Workstation/sitting",
+      "evidence": [
+        "knowledge/brain/acceptance/k4-1/room0-workstation-pass-interleave.json",
+        "knowledge/brain/acceptance/k4-1/workstation-native-cfg.json",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:ObjChip.Draw",
+        "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:ObjChip.Draw(FurnitureData,bool)@0x12C166C",
+        "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:ObjChip.Draw@0x12C166C"
+      ],
+      "heuristic_or_assumed": false,
+      "notes": "Exact live type-2 direction-specific desk/chair/Staff.Draw ordering, preview separation, late chair guard, and duplicate Staff guard are source/native-backed.",
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "staff.native-draw-logical",
+      "description": "Staff Draw overloads, alpha gate, selector/frame and Seb.GetSprite/AppData.DrawSeb call chain",
+      "domain": "Staff draw",
+      "evidence": [
+        "knowledge/fixtures/accepted/living-core-closure/staff-native-authority-map.json:Staff.Draw",
+        "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:Staff.Draw@0x12DA6A0"
+      ],
+      "heuristic_or_assumed": false,
+      "notes": "Logical execution is proven; exact V7 pixel backend is outside K4.",
+      "promotion_status": "NOT_PROMOTED",
+      "reachable": true,
+      "status": "PROVEN_NOT_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room.draw.map-extension-floor",
+      "description": "Room.Draw pass map-extension-floor via MapChip.DrawExtentionFloor",
+      "domain": "Global Room.Draw/occlusion",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:render_passes",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Room.Draw"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room.draw.map-chip",
+      "description": "Room.Draw pass map-chip via MapChip.Draw",
+      "domain": "Global Room.Draw/occlusion",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:render_passes",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Room.Draw"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room.draw.object-chip-primary",
+      "description": "Room.Draw pass object-chip-primary via ObjChip.Draw",
+      "domain": "Global Room.Draw/occlusion",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:render_passes",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Room.Draw"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room.draw.object-chip-wall",
+      "description": "Room.Draw pass object-chip-wall via ObjChip.DrawWall",
+      "domain": "Global Room.Draw/occlusion",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:render_passes",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Room.Draw"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room.draw.avatar-primary",
+      "description": "Room.Draw pass avatar-primary via Avatar.Draw",
+      "domain": "Global Room.Draw/occlusion",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:render_passes",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Room.Draw"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room.draw.avatar-secondary",
+      "description": "Room.Draw pass avatar-secondary via Avatar.DrawSecondary",
+      "domain": "Global Room.Draw/occlusion",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:render_passes",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Room.Draw"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room.draw.object-chip-late-preview",
+      "description": "Room.Draw pass object-chip-late-preview via ObjChip.DrawLatePreview",
+      "domain": "Global Room.Draw/occlusion",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:render_passes",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Room.Draw"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room.draw.object-chip-late",
+      "description": "Room.Draw pass object-chip-late via ObjChip.DrawLate",
+      "domain": "Global Room.Draw/occlusion",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:render_passes",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Room.Draw"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room.draw.map-floor",
+      "description": "Room.Draw pass map-floor via MapChip.DrawFloor",
+      "domain": "Global Room.Draw/occlusion",
+      "evidence": [
+        "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:render_passes",
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Room.Draw"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "room.effects.gauge-ownership",
+      "description": "Native ObjChip ownership for Fukidashi, HP, use-point and meeting-point gauge draw calls",
+      "domain": "Global Room.Draw/occlusion",
+      "evidence": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:ObjChip draw effect owners"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "opt-seb.logical-execution",
+      "description": "Accepted OPT geometry, SEB frame/layer selection, crop/offset and resource draw chain",
+      "domain": "OPT/SEB execution",
+      "evidence": [
+        "knowledge/fixtures/accepted/asset_composition_catalog.json",
+        "knowledge/fixtures/accepted/runtime/floor00_seb_contract.json",
+        "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:Seb.GetSprite/AppData.DrawSeb"
+      ],
+      "heuristic_or_assumed": false,
+      "promotion_status": "PROMOTED_TO_CANONICAL_BRAIN",
+      "reachable": true,
+      "status": "PROVEN_CANONICAL",
+      "visible": true
+    },
+    {
+      "blocking": false,
+      "consumer_id": "opt-seb.pixel-backend",
+      "description": "Shader/premultiplied framebuffer parity for the native pixel backend",
+      "domain": "OPT/SEB execution",
+      "evidence": [
+        "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:native Graphics/_drawBitmap boundary"
+      ],
+      "heuristic_or_assumed": false,
+      "notes": "Deferred to V7 and nonblocking for K4 brain closure.",
+      "promotion_status": "NOT_PROMOTED",
+      "reachable": true,
+      "status": "PROVEN_NOT_CANONICAL",
+      "visible": true
+    }
+  ],
+  "required_domains": [
+    "Room0 bootstrap",
+    "Floor/map",
+    "Wall/corner/join",
+    "Door",
+    "Furniture",
+    "Workstation/sitting",
+    "Staff bootstrap",
+    "Staff visual resolver",
+    "Movement/wander",
+    "Equipment",
+    "Talk",
+    "HP/home/return",
+    "Global Room.Draw/occlusion",
+    "OPT/SEB execution"
+  ],
+  "required_status_vocabulary": [
+    "NOT_REACHABLE",
+    "NO_DISTINCT_VISUAL",
+    "PROVEN_CANONICAL",
+    "PROVEN_NOT_CANONICAL",
+    "SOURCE_LIMITED",
+    "SOURCE_MISSING"
+  ],
+  "schema_version": "social-dev-k4-visual-assembly-coverage-matrix-v1",
+  "status": "closed"
+}

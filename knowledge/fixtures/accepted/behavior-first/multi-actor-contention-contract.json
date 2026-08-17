@@ -1,0 +1,61 @@
+{
+  "fairness_and_queue": "UNKNOWN; no source-backed queue or fairness policy was found.",
+  "guards": [
+    "GotoEquip accepts usersNum <= 0",
+    "GotoTalk uses bilateral flags/colleagueId_ rather than furniture reservation",
+    "desk ownership is single staffId_ per desk chip"
+  ],
+  "operations": [
+    {
+      "effect": "append Staff",
+      "operation": "ReserveUse",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+        "line": 11258,
+        "note": "Reservation write.",
+        "source_sha256": "7ff9eff4252d218ae35df5bc4b72fb618be37434192431cbbde30301686c1663",
+        "symbol": "public void ReserveUse(Staff staff)"
+      }
+    },
+    {
+      "effect": "read reservation count",
+      "operation": "GetUsersNum",
+      "ref": {
+        "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+        "note": "Native reservation count.",
+        "rva": "0x12C4A70",
+        "symbol": "ObjChip.GetUsersNum"
+      }
+    },
+    {
+      "effect": "remove reservation; useNum_ capped at 99",
+      "operation": "OnUseComplate",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+        "line": 11269,
+        "note": "Completion cap.",
+        "source_sha256": "7ff9eff4252d218ae35df5bc4b72fb618be37434192431cbbde30301686c1663",
+        "symbol": "useNum_ = num;"
+      }
+    },
+    {
+      "effect": "notify all reserved Staff via OnEquipDestroyed",
+      "operation": "RemoveObj",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+        "line": 10924,
+        "note": "Destroy cleanup.",
+        "source_sha256": "7ff9eff4252d218ae35df5bc4b72fb618be37434192431cbbde30301686c1663",
+        "symbol": "staff.OnEquipDestroyed();"
+      }
+    }
+  ],
+  "reservation_state": "ObjChip.reservedStaffs_",
+  "schema_version": "social-dev-behavior-first-multi-actor-contention-contract-v1",
+  "status": "pass_with_source_limits",
+  "unknowns": [
+    "Whether GetUsersNum includes active users separately from reservations",
+    "Whether type 4 parent/child chips reserve at parent or child",
+    "Whether simultaneous talk targets are arbitrated beyond flags"
+  ]
+}

@@ -1,0 +1,2 @@
+{"scenarioId":"A10","step":1,"event":"task_started","externalAgentId":"agent-a","externalTaskId":"task-a","staffId":0,"productStatus":"RUNNING"}
+{"scenarioId":"A10","step":2,"event":"task_started","externalAgentId":"agent-b","externalTaskId":"task-b","staffId":1,"productStatus":"RUNNING","assertion":"independent event streams"}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "phase": "V5",
+  "status": "PASS_STATIC_TOPOLOGY",
+  "source": "knowledge/fixtures/accepted/runtime/native_room_floor_usage_contract.json",
+  "selection": {
+    "Room.floor_ == 0": {"variant": "floor_0", "native_array_index": 0, "dimensions": [14, 14], "contexts": ["main_display", "persistent_room"]},
+    "Room.floor_ != 0": {"variant": "floor_nonzero", "native_array_index": 1, "dimensions": [4, 4], "contexts": ["addition_floor_preview"]}
+  },
+  "approved_context_dimensions": {
+    "main_display": {"room_floor": 0, "width": 14, "height": 14},
+    "persistent_room": {"room_floor": 0, "width": 4, "height": 4},
+    "addition_floor_preview": {"room_floor": "nonzero", "width": 4, "height": 4}
+  },
+  "rejected_combinations": [
+    "floor_nonzero at 14x14",
+    "floor_0 at dimensions other than 4x4 or 14x14",
+    "main_display with nonzero floor",
+    "persistent_room with nonzero floor",
+    "addition_floor_preview with floor_0"
+  ],
+  "selector_separation": {
+    "Room.floor_": "selects MAPCHIP_ARRAY topology only",
+    "RoomData.floorImgId_": "resolves through native FLOOR_IMAGE_ID_ARRAY, then the explicit runtime alias policy",
+    "room0": {
+      "raw_roomdata_selector": 5,
+      "native_table_selector": 23,
+      "runtime_selector": 85,
+      "native_target_filename": "floor_05.png",
+      "status": "COMPATIBILITY-POLICY"
+    }
+  },
+  "runtime_implementation": "runtime/social-dev/src/v5/topology.ts",
+  "proof": "NATIVE-CODE-PROVEN"
+}

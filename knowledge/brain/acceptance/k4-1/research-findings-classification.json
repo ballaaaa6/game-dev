@@ -1,0 +1,52 @@
+{
+  "allowed_classifications": [
+    "REJECTED_BY_SOURCE",
+    "REPRODUCED_EXACT",
+    "REPRODUCED_WITH_CORRECTION"
+  ],
+  "authority": "independent pinned-source reproduction; research pack is not an authority",
+  "findings": [
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "The autonomous Talk frame-20/frame-70 pools and field-handle relocation chain",
+      "finding_id": "talk.autonomous-pools"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "Invite opening, busy/reject, and response pools plus random bounds",
+      "finding_id": "talk.invitation-pools"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "EN/JA resource rows, language path, storage, timing, offset, lifetime, draw, and cleanup",
+      "finding_id": "talk.localization-and-lifecycle"
+    },
+    {
+      "classification": "REJECTED_BY_SOURCE",
+      "finding": "Treat 0x27D7E40 as an autonomous Talk pool",
+      "finding_id": "talk.extra-handle-0x27D7E40"
+    },
+    {
+      "classification": "REPRODUCED_WITH_CORRECTION",
+      "finding": "Promote a separate Room0 door animation frame timeline",
+      "finding_id": "door.distinct-visual-animation-timeline"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "Room0 null-FurnitureData DrawWall path is static while action state remains separate",
+      "finding_id": "door.null-furnituredata-consumer"
+    },
+    {
+      "classification": "REPRODUCED_EXACT",
+      "finding": "Desk/chair/Staff.Draw live type-2 ordering and installed ownership guard",
+      "finding_id": "workstation.type2-live-order"
+    },
+    {
+      "classification": "REPRODUCED_WITH_CORRECTION",
+      "finding": "Treat preview=true Draw as the live normal Room0 path",
+      "finding_id": "workstation.preview-is-live"
+    }
+  ],
+  "schema_version": "social-dev-k4-1-research-findings-classification-v1",
+  "status": "closed"
+}

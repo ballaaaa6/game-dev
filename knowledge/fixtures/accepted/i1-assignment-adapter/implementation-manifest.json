@@ -1,0 +1,17 @@
+{
+  "schema_version": "social-dev-i1-implementation-manifest-v1",
+  "status": "PASS_I1_6_ASSIGNMENT_ADAPTER_IMPLEMENTED",
+  "bridge": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+  "files": [
+    { "path": "runtime/social-dev/src/product/assignment/types.ts", "role": "product entities, commands, events, read-model types" },
+    { "path": "runtime/social-dev/src/product/assignment/bridge.ts", "role": "high-level no-op living-preserving Bridge C" },
+    { "path": "runtime/social-dev/src/product/assignment/adapter.ts", "role": "deterministic lifecycle, conflicts, observation, snapshot" },
+    { "path": "runtime/social-dev/src/product/assignment/events.ts", "role": "sequence-based event construction" },
+    { "path": "runtime/social-dev/src/product/assignment/read-model.ts", "role": "product/living side-by-side projection" },
+    { "path": "runtime/social-dev/src/product/assignment/snapshot.ts", "role": "stable JSON and replay digest" },
+    { "path": "runtime/social-dev/src/product/assignment/index.ts", "role": "public product assignment exports" },
+    { "path": "runtime/social-dev/tests/i1-assignment-adapter.test.ts", "role": "focused API, lifecycle, interruption, A1-A12 tests" },
+    { "path": "tools/social-dev/test_i1_assignment_adapter.py", "role": "independent offline evidence and boundary acceptance" }
+  ],
+  "forbidden_changes": ["runtime/social-dev/src/core/living", "MapChip", "Renderer", "V8", "save", "server", "backend", "LLM"]
+}

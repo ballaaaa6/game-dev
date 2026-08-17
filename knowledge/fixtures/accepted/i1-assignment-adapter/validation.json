@@ -1,0 +1,38 @@
+{
+  "schema_version": "social-dev-i1-assignment-adapter-validation-v1",
+  "status": "PASS_I1_12_FULL_ACCEPTANCE",
+  "checkpoint_token": "PASS_I1_ASSIGNMENT_ADAPTER_NO_TASK_RUNNING_LIFECYCLE_CLOSED",
+  "forensic_checks": 17,
+  "bridge_checks": 6,
+  "product_checks": 8,
+  "lifecycle_checks": 11,
+  "interruption_checks": 7,
+  "multi_agent_checks": 8,
+  "read_model_checks": 7,
+  "determinism_checks": 5,
+  "regression_checks": 27,
+  "scenario_checks": 12,
+  "all_required_checks_pass": true,
+  "remaining_blockers": 0,
+  "regression_status": {
+    "I0_S1_S10": "PASS",
+    "G0_G1": "PASS",
+    "G1_5": "PASS",
+    "living_core": "PASS",
+    "behavior_first": "PASS",
+    "data_dependency": "PASS",
+    "R0_hashes": "UNCHANGED",
+    "Vitest": "PASS",
+    "typecheck": "PASS",
+    "build": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "boundary_status": {
+    "MapChip": "UNCHANGED",
+    "Renderer": "UNCHANGED",
+    "V8": "NOT_STARTED",
+    "save": "NOT_IMPLEMENTED",
+    "backend_llm_network_server": "NOT_IMPLEMENTED",
+    "subagents": "NOT_USED"
+  }
+}

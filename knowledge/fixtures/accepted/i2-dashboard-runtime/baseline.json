@@ -1,0 +1,72 @@
+{
+  "schema": "i2-baseline-v1",
+  "status": "PASS_I2_0_BASELINE",
+  "date": "2026-08-16",
+  "upstream": {
+    "G1.5": "PASS_G1_5_CANONICAL_KB_INTEGRITY_AND_STATIC_BLOCKERS_CLOSED",
+    "R0": "PASS_CANONICAL_RUNTIME_CONTRACT_FREEZE_READY_FOR_IMPLEMENTATION",
+    "I0": "PASS_I0_ORIGINAL_LIVING_CORE_RUNTIME_IMPLEMENTED_S1_S10_CLOSED",
+    "I1": "PASS_I1_ASSIGNMENT_ADAPTER_NO_TASK_RUNNING_LIFECYCLE_CLOSED"
+  },
+  "baseline_commands": [
+    {
+      "command": "python tools/social-dev/test_i1_assignment_adapter.py",
+      "status": "PASS",
+      "result": "PASS_I1_ASSIGNMENT_ADAPTER_NO_TASK_RUNNING_LIFECYCLE_CLOSED checks=88 scenarios=12"
+    },
+    {
+      "command": "python tools/social-dev/test_i0_living_runtime.py",
+      "status": "PASS",
+      "result": "PASS_I0_ORIGINAL_LIVING_CORE_RUNTIME_IMPLEMENTED_S1_S10_CLOSED"
+    },
+    {
+      "command": "python tools/social-dev/test_runtime_contract_freeze.py",
+      "status": "PASS",
+      "result": "PASS_CANONICAL_RUNTIME_CONTRACT_FREEZE_READY_FOR_IMPLEMENTATION"
+    },
+    {
+      "command": "python tools/social-dev/test_game_knowledge_g0_g1.py",
+      "status": "PASS",
+      "result": "PASS_GAME_KNOWLEDGE_G0_G1_REGRESSION"
+    },
+    {
+      "command": "python tools/social-dev/test_behavior_first_forensics.py",
+      "status": "PASS",
+      "result": "behavior_first_static_checks_passed checks=118 json=22 reports=11"
+    },
+    {
+      "command": "python tools/social-dev/test_data_dependency_forensics.py",
+      "status": "PASS",
+      "result": "data_dependency_static_checks_passed checks=2432 json=21 reports=10 handoffs=1 regressions=5"
+    },
+    {
+      "command": "python tools/social-dev/test_living_core_final_closure.py",
+      "status": "PASS",
+      "result": "PASS_ORIGINAL_LIVING_CORE_CLOSED (109 checks)"
+    },
+    {
+      "command": "npm test -- --run",
+      "status": "PASS",
+      "result": "47 files / 301 tests passed before I2"
+    },
+    {
+      "command": "npm run typecheck",
+      "status": "PASS"
+    },
+    {
+      "command": "npm run build",
+      "status": "PASS",
+      "result": "existing large-chunk warning only"
+    },
+    {
+      "command": "git diff --check",
+      "status": "PASS"
+    }
+  ],
+  "scope": {
+    "network": "none; localhost browser smoke only",
+    "subagents": "none",
+    "v8": "not started",
+    "source_roots": "read-only"
+  }
+}

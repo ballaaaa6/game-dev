@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "phase": "V5",
+  "status": "PASS_STATIC_COMMAND_PARITY",
+  "execution_mode": "INLINE_STATIC_ONLY",
+  "resource_group": "resChip_",
+  "room_key": "room:0",
+  "manifest": {
+    "commands": 74,
+    "traces": 59,
+    "events": 788,
+    "passes": 9,
+    "bytes": 193917,
+    "sha256": "4418a7c8a81a705d46a6eefc2a72e635f5e6108d83e4067dc0d638942f39f788"
+  },
+  "pass_results": [
+    {"pass_id":"map-extension-floor","input_count":196},
+    {"pass_id":"map-chip","input_count":196},
+    {"pass_id":"object-chip-primary","input_count":100},
+    {"pass_id":"object-chip-wall","input_count":98},
+    {"pass_id":"avatar-primary","input_count":0},
+    {"pass_id":"avatar-secondary","input_count":0},
+    {"pass_id":"object-chip-late-preview","input_count":0},
+    {"pass_id":"object-chip-late","input_count":2},
+    {"pass_id":"map-floor","input_count":196}
+  ],
+  "static_fixtures": [
+    {"id":"room00-door","expected":"raw type 5 at [8,4] uses door SEB 6 / image 7","observed":"trace selector role ObjChip.DrawWall:raw_type_5_door at [8,4]","status":"PASS","proof":"NATIVE-CODE-PROVEN"},
+    {"id":"room00-foreground","expected":"late wall slot contains [8,7] and [8,8] only","observed":"two foreground cells in object-chip-late","status":"PASS","proof":"CALL-FLOW-PROVEN"},
+    {"id":"room00-furniture","expected":"six explicit native bindings plus two structural facilities","observed":"direct image IDs 109, 106, 127; compound furniture:3; two SEB 11 facilities","status":"PASS","proof":"STATIC-COMMAND-PARITY"},
+    {"id":"room00-camera","expected":"integer offset [7,-3] adds to child destinations","observed":"all tested destinations shifted by [7,-3]","status":"PASS","proof":"CALL-FLOW-PROVEN"},
+    {"id":"room01-topology","expected":"floor_nonzero 4x4 and no furniture commands","observed":"4x4 map pass and zero object traces","status":"PASS","proof":"NATIVE-CODE-PROVEN"}
+  ],
+  "focused_test_run": {"command":"npm exec vitest -- run tests/v5-room.test.ts","files":1,"tests":27,"status":"PASS"},
+  "parity_boundary": {
+    "static_command_and_call_flow":"PASS",
+    "exact_native_framebuffer_pixels":"DEFERRED_TO_V7",
+    "live_app_or_emulator_observation":"OUT_OF_SCOPE",
+    "production_renderer_cutover":"NOT_PERFORMED"
+  }
+}

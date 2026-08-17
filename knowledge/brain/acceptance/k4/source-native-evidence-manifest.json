@@ -1,0 +1,366 @@
+{
+  "artifacts": [
+    {
+      "path": "knowledge/sources/source-manifest.json",
+      "role": "pinned source identity manifest",
+      "sha256": "b1d8c055473ca74f33059a826e01d86575012e32a93a8d6014acd6676f0e9dcd",
+      "size_bytes": 3407
+    },
+    {
+      "path": "sources/raw/Social_Dev_Story_v2.5.1.apk",
+      "role": "pinned APK",
+      "sha256": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
+      "size_bytes": 44936163
+    },
+    {
+      "path": "sources/raw/1_Click_CSharp_Code.rar",
+      "role": "pinned C# archive",
+      "sha256": "a50a442491e422c20699a9ca4266e794d215bff29248d3edd24c41f42a57f903",
+      "size_bytes": 7623345
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "role": "Staff C# source",
+      "sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "size_bytes": 596322
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+      "role": "Room C# source",
+      "sha256": "c10c33769dddcb6d8e24bf209fa55c6513eb89ef3bd8f9685e2c0c53698bfc72",
+      "size_bytes": 344390
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "role": "ObjChip C# source",
+      "sha256": "7ff9eff4252d218ae35df5bc4b72fb618be37434192431cbbde30301686c1663",
+      "size_bytes": 459942
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/FurnitureData.cs",
+      "role": "FurnitureData C# source",
+      "sha256": "b8923786f31bc9f449cc93a3c1e1b4157e7c6231194ee4112ccd2c6ea98a2854",
+      "size_bytes": 22398
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/TalkData.cs",
+      "role": "separate TalkData C# source",
+      "sha256": "700f91bc7cfae714cd610bcf48b7b83cbe70ee06316b23409ac7c7ae10ee7677",
+      "size_bytes": 11136
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/AppData.cs",
+      "role": "AppData C# source",
+      "sha256": "fc1f45d075d22388eee045c37ceb442517eb671598936ac25e828d0eaa46d3dc",
+      "size_bytes": 2093607
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/kairo.unity.util/Language.cs",
+      "role": "Language C# source",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so",
+      "role": "pinned native binary",
+      "sha256": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a",
+      "size_bytes": 43544840
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat",
+      "role": "pinned native metadata",
+      "sha256": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579",
+      "size_bytes": 7823472
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "role": "pinned IL2CPP dump",
+      "sha256": "4487cba6916e159afefec2cd1a9ecf0d12d05b2d76126e7099a5d35323967eb2",
+      "size_bytes": 16419217
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/stringliteral.json",
+      "role": "pinned native string literal catalog",
+      "sha256": "dc4ba18ad8642d63bfaa7ab8b2372224f40e57c16a1bc2c3aa5fa2ca6541a741",
+      "size_bytes": 1519056
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+      "role": "accepted Room0 source-derived contract",
+      "sha256": "5fb4369970c93e2a636adf8a911b3b25d0f1d85a37bcbf88da6310b1ec4cdc35",
+      "size_bytes": 7239
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json",
+      "role": "accepted native scene contract",
+      "sha256": "5597ee4658cc6570ed42d3a668bd4f75ad3dfb5eaae8958f29c66eea7cdeaa7e",
+      "size_bytes": 1189537
+    },
+    {
+      "path": "knowledge/fixtures/accepted/furniture_asset_metadata.json",
+      "role": "accepted furniture metadata",
+      "sha256": "866dd8a9aec58c1b784eb677ba19e0ffa1406be9598287b3dce6998722960fab",
+      "size_bytes": 550232
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/talk-social-contract.json",
+      "role": "accepted talk role contract",
+      "sha256": "a584e1e1386e35b91badf72937151faeb2babd2a48739d79861f66fa27b88ac3",
+      "size_bytes": 3145
+    }
+  ],
+  "authority_policy": {
+    "source_limited_policy": "unresolved values remain explicit; no fallback values are promoted",
+    "tier_a": "pinned native binary, metadata, dump, raw C# source, and source/resource identities",
+    "tier_b": "accepted source-derived contracts and decoded composition catalogs"
+  },
+  "k4_1_artifacts": [
+    "knowledge/brain/acceptance/k4-1/fukidashi-payload-closure.json",
+    "knowledge/brain/acceptance/k4-1/fukidashi-localization-catalog.json",
+    "knowledge/brain/acceptance/k4-1/autonomous-talk-timeline.json",
+    "knowledge/brain/acceptance/k4-1/room0-door-visual-consumer-graph.json",
+    "knowledge/brain/acceptance/k4-1/room0-door-action-vs-visual-contract.json",
+    "knowledge/brain/acceptance/k4-1/workstation-native-cfg.json",
+    "knowledge/brain/acceptance/k4-1/room0-workstation-pass-interleave.json",
+    "knowledge/brain/acceptance/k4-1/workstation-direction-fixtures.json",
+    "knowledge/brain/acceptance/k4-1/research-findings-classification.json"
+  ],
+  "native_anchor_catalog": {
+    "ObjChip.Draw": "0x12C166C",
+    "ObjChip.DrawWall": "0x12C0698",
+    "ObjChip.Draw_type2_inner": "0x12C166C",
+    "Room.Draw": "0x12CBB80",
+    "Room.DrawObjPreview": "0x12CE824",
+    "Staff.AddFukidashi_array": "0x12D3C50",
+    "Staff.AddFukidashi_single": "0x12DDA90",
+    "Staff.Draw": "0x12DA6A0",
+    "Staff.InviteStaffToTalk": "0x12D5090",
+    "Staff.OnArriveGoal": "0x12D8420",
+    "Staff.Talk": "0x12D5588",
+    "Staff.UseEquip": "0x12D4DEC"
+  },
+  "schema_version": "social-dev-k4-1-source-native-evidence-manifest-v1",
+  "source_hashes_before_build": [
+    {
+      "path": "knowledge/sources/source-manifest.json",
+      "role": "pinned source identity manifest",
+      "sha256": "b1d8c055473ca74f33059a826e01d86575012e32a93a8d6014acd6676f0e9dcd",
+      "size_bytes": 3407
+    },
+    {
+      "path": "sources/raw/Social_Dev_Story_v2.5.1.apk",
+      "role": "pinned APK",
+      "sha256": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
+      "size_bytes": 44936163
+    },
+    {
+      "path": "sources/raw/1_Click_CSharp_Code.rar",
+      "role": "pinned C# archive",
+      "sha256": "a50a442491e422c20699a9ca4266e794d215bff29248d3edd24c41f42a57f903",
+      "size_bytes": 7623345
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "role": "Staff C# source",
+      "sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "size_bytes": 596322
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+      "role": "Room C# source",
+      "sha256": "c10c33769dddcb6d8e24bf209fa55c6513eb89ef3bd8f9685e2c0c53698bfc72",
+      "size_bytes": 344390
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "role": "ObjChip C# source",
+      "sha256": "7ff9eff4252d218ae35df5bc4b72fb618be37434192431cbbde30301686c1663",
+      "size_bytes": 459942
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/FurnitureData.cs",
+      "role": "FurnitureData C# source",
+      "sha256": "b8923786f31bc9f449cc93a3c1e1b4157e7c6231194ee4112ccd2c6ea98a2854",
+      "size_bytes": 22398
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/TalkData.cs",
+      "role": "separate TalkData C# source",
+      "sha256": "700f91bc7cfae714cd610bcf48b7b83cbe70ee06316b23409ac7c7ae10ee7677",
+      "size_bytes": 11136
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/AppData.cs",
+      "role": "AppData C# source",
+      "sha256": "fc1f45d075d22388eee045c37ceb442517eb671598936ac25e828d0eaa46d3dc",
+      "size_bytes": 2093607
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/kairo.unity.util/Language.cs",
+      "role": "Language C# source",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so",
+      "role": "pinned native binary",
+      "sha256": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a",
+      "size_bytes": 43544840
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat",
+      "role": "pinned native metadata",
+      "sha256": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579",
+      "size_bytes": 7823472
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "role": "pinned IL2CPP dump",
+      "sha256": "4487cba6916e159afefec2cd1a9ecf0d12d05b2d76126e7099a5d35323967eb2",
+      "size_bytes": 16419217
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/stringliteral.json",
+      "role": "pinned native string literal catalog",
+      "sha256": "dc4ba18ad8642d63bfaa7ab8b2372224f40e57c16a1bc2c3aa5fa2ca6541a741",
+      "size_bytes": 1519056
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+      "role": "accepted Room0 source-derived contract",
+      "sha256": "5fb4369970c93e2a636adf8a911b3b25d0f1d85a37bcbf88da6310b1ec4cdc35",
+      "size_bytes": 7239
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json",
+      "role": "accepted native scene contract",
+      "sha256": "5597ee4658cc6570ed42d3a668bd4f75ad3dfb5eaae8958f29c66eea7cdeaa7e",
+      "size_bytes": 1189537
+    },
+    {
+      "path": "knowledge/fixtures/accepted/furniture_asset_metadata.json",
+      "role": "accepted furniture metadata",
+      "sha256": "866dd8a9aec58c1b784eb677ba19e0ffa1406be9598287b3dce6998722960fab",
+      "size_bytes": 550232
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/talk-social-contract.json",
+      "role": "accepted talk role contract",
+      "sha256": "a584e1e1386e35b91badf72937151faeb2babd2a48739d79861f66fa27b88ac3",
+      "size_bytes": 3145
+    }
+  ],
+  "source_hashes_rechecked_after_build": [
+    {
+      "path": "knowledge/sources/source-manifest.json",
+      "role": "pinned source identity manifest",
+      "sha256": "b1d8c055473ca74f33059a826e01d86575012e32a93a8d6014acd6676f0e9dcd",
+      "size_bytes": 3407
+    },
+    {
+      "path": "sources/raw/Social_Dev_Story_v2.5.1.apk",
+      "role": "pinned APK",
+      "sha256": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
+      "size_bytes": 44936163
+    },
+    {
+      "path": "sources/raw/1_Click_CSharp_Code.rar",
+      "role": "pinned C# archive",
+      "sha256": "a50a442491e422c20699a9ca4266e794d215bff29248d3edd24c41f42a57f903",
+      "size_bytes": 7623345
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "role": "Staff C# source",
+      "sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "size_bytes": 596322
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+      "role": "Room C# source",
+      "sha256": "c10c33769dddcb6d8e24bf209fa55c6513eb89ef3bd8f9685e2c0c53698bfc72",
+      "size_bytes": 344390
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "role": "ObjChip C# source",
+      "sha256": "7ff9eff4252d218ae35df5bc4b72fb618be37434192431cbbde30301686c1663",
+      "size_bytes": 459942
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/FurnitureData.cs",
+      "role": "FurnitureData C# source",
+      "sha256": "b8923786f31bc9f449cc93a3c1e1b4157e7c6231194ee4112ccd2c6ea98a2854",
+      "size_bytes": 22398
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/TalkData.cs",
+      "role": "separate TalkData C# source",
+      "sha256": "700f91bc7cfae714cd610bcf48b7b83cbe70ee06316b23409ac7c7ae10ee7677",
+      "size_bytes": 11136
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/AppData.cs",
+      "role": "AppData C# source",
+      "sha256": "fc1f45d075d22388eee045c37ceb442517eb671598936ac25e828d0eaa46d3dc",
+      "size_bytes": 2093607
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/kairo.unity.util/Language.cs",
+      "role": "Language C# source",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so",
+      "role": "pinned native binary",
+      "sha256": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a",
+      "size_bytes": 43544840
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat",
+      "role": "pinned native metadata",
+      "sha256": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579",
+      "size_bytes": 7823472
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "role": "pinned IL2CPP dump",
+      "sha256": "4487cba6916e159afefec2cd1a9ecf0d12d05b2d76126e7099a5d35323967eb2",
+      "size_bytes": 16419217
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/stringliteral.json",
+      "role": "pinned native string literal catalog",
+      "sha256": "dc4ba18ad8642d63bfaa7ab8b2372224f40e57c16a1bc2c3aa5fa2ca6541a741",
+      "size_bytes": 1519056
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+      "role": "accepted Room0 source-derived contract",
+      "sha256": "5fb4369970c93e2a636adf8a911b3b25d0f1d85a37bcbf88da6310b1ec4cdc35",
+      "size_bytes": 7239
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json",
+      "role": "accepted native scene contract",
+      "sha256": "5597ee4658cc6570ed42d3a668bd4f75ad3dfb5eaae8958f29c66eea7cdeaa7e",
+      "size_bytes": 1189537
+    },
+    {
+      "path": "knowledge/fixtures/accepted/furniture_asset_metadata.json",
+      "role": "accepted furniture metadata",
+      "sha256": "866dd8a9aec58c1b784eb677ba19e0ffa1406be9598287b3dce6998722960fab",
+      "size_bytes": 550232
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/talk-social-contract.json",
+      "role": "accepted talk role contract",
+      "sha256": "a584e1e1386e35b91badf72937151faeb2babd2a48739d79861f66fa27b88ac3",
+      "size_bytes": 3145
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "source_roots_read_only": true,
+  "status": "pass"
+}

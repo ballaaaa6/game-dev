@@ -1,0 +1,668 @@
+{
+  "queries": {
+    "Q1_staffdata_to_render": {
+      "brain_revision": "k2-unified-brain-r1",
+      "gaps": [],
+      "hops": [
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "data:StaffData:0",
+            "data:JobData:0"
+          ],
+          "from": "data:StaffData:0",
+          "relation": "has_job",
+          "source_refs": [
+            "K2:data:StaffData:0",
+            "K2:data:JobData:0"
+          ],
+          "to": "data:JobData:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "data:StaffData:0",
+            "data:SkillData:0"
+          ],
+          "from": "data:StaffData:0",
+          "relation": "has_skill",
+          "source_refs": [
+            "K2:data:StaffData:0",
+            "K2:data:SkillData:0"
+          ],
+          "to": "data:SkillData:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "data:StaffData:0",
+            "game:Staff:0"
+          ],
+          "from": "data:StaffData:0",
+          "relation": "binds_runtime_actor",
+          "source_refs": [
+            "K2:data:StaffData:0",
+            "K2:game:Staff:0"
+          ],
+          "to": "game:Staff:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "game:Staff:0",
+            "game.routeSearch.Astar"
+          ],
+          "from": "game:Staff:0",
+          "relation": "moves_on_route",
+          "source_refs": [
+            "K2:game:Staff:0",
+            "K2:game.routeSearch.Astar"
+          ],
+          "to": "game.routeSearch.Astar"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "game:Staff:0",
+            "IMAGE_SELECTOR_ID:23"
+          ],
+          "from": "game:Staff:0",
+          "relation": "selects",
+          "source_refs": [
+            "K2:game:Staff:0",
+            "K2:IMAGE_SELECTOR_ID:23"
+          ],
+          "to": "IMAGE_SELECTOR_ID:23"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "IMAGE_SELECTOR_ID:23",
+            "SEB_SELECTOR_ID:85"
+          ],
+          "from": "IMAGE_SELECTOR_ID:23",
+          "relation": "resolves",
+          "source_refs": [
+            "K2:IMAGE_SELECTOR_ID:23",
+            "K2:SEB_SELECTOR_ID:85"
+          ],
+          "to": "SEB_SELECTOR_ID:85"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "SEB_SELECTOR_ID:85",
+            "SPRITE_FRAME_ID:staff:0"
+          ],
+          "from": "SEB_SELECTOR_ID:85",
+          "relation": "frames",
+          "source_refs": [
+            "K2:SEB_SELECTOR_ID:85",
+            "K2:SPRITE_FRAME_ID:staff:0"
+          ],
+          "to": "SPRITE_FRAME_ID:staff:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "SPRITE_FRAME_ID:staff:0",
+            "runtime:scene-projection"
+          ],
+          "from": "SPRITE_FRAME_ID:staff:0",
+          "relation": "projects",
+          "source_refs": [
+            "K2:SPRITE_FRAME_ID:staff:0",
+            "K2:runtime:scene-projection"
+          ],
+          "to": "runtime:scene-projection"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "runtime:scene-projection",
+            "runtime:display-assets"
+          ],
+          "from": "runtime:scene-projection",
+          "relation": "renders",
+          "source_refs": [
+            "K2:runtime:scene-projection",
+            "K2:runtime:display-assets"
+          ],
+          "to": "runtime:display-assets"
+        }
+      ],
+      "query_id": "Q1_staffdata_to_render",
+      "status": "pass"
+    },
+    "Q2_furnituredata_to_render": {
+      "brain_revision": "k2-unified-brain-r1",
+      "gaps": [
+        "FurnitureData:26 visual selector/frame closure is not fully source-backed; keep SOURCE_LIMITED and queue a gap."
+      ],
+      "hops": [
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "data:FurnitureData:26",
+            "data:furniture:26"
+          ],
+          "from": "data:FurnitureData:26",
+          "relation": "source_row",
+          "source_refs": [
+            "K2:data:FurnitureData:26",
+            "K2:data:furniture:26"
+          ],
+          "to": "data:furniture:26"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "data:furniture:26",
+            "game:ObjChip:26"
+          ],
+          "from": "data:furniture:26",
+          "relation": "selects",
+          "source_refs": [
+            "K2:data:furniture:26",
+            "K2:game:ObjChip:26"
+          ],
+          "to": "game:ObjChip:26"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "game:ObjChip:26",
+            "game:Room:0"
+          ],
+          "from": "game:ObjChip:26",
+          "relation": "reserves",
+          "source_refs": [
+            "K2:game:ObjChip:26",
+            "K2:game:Room:0"
+          ],
+          "to": "game:Room:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "game:Room:0",
+            "game:Staff:0"
+          ],
+          "from": "game:Room:0",
+          "relation": "checks",
+          "source_refs": [
+            "K2:game:Room:0",
+            "K2:game:Staff:0"
+          ],
+          "to": "game:Staff:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "game:ObjChip:26",
+            "game:Staff:standing"
+          ],
+          "from": "game:ObjChip:26",
+          "relation": "standing_rule",
+          "source_refs": [
+            "K2:game:ObjChip:26",
+            "K2:game:Staff:standing"
+          ],
+          "to": "game:Staff:standing"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "game:ObjChip:26",
+            "SEB_SELECTOR_ID:26"
+          ],
+          "from": "game:ObjChip:26",
+          "relation": "asset_selector",
+          "source_refs": [
+            "K2:game:ObjChip:26",
+            "K2:SEB_SELECTOR_ID:26"
+          ],
+          "to": "SEB_SELECTOR_ID:26"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "SEB_SELECTOR_ID:26",
+            "ASSET_ID:01_GAME_PACKS/chip"
+          ],
+          "from": "SEB_SELECTOR_ID:26",
+          "relation": "asset",
+          "source_refs": [
+            "K2:SEB_SELECTOR_ID:26",
+            "K2:ASSET_ID:01_GAME_PACKS/chip"
+          ],
+          "to": "ASSET_ID:01_GAME_PACKS/chip"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "ASSET_ID:01_GAME_PACKS/chip",
+            "runtime:render-plan"
+          ],
+          "from": "ASSET_ID:01_GAME_PACKS/chip",
+          "relation": "render",
+          "source_refs": [
+            "K2:ASSET_ID:01_GAME_PACKS/chip",
+            "K2:runtime:render-plan"
+          ],
+          "to": "runtime:render-plan"
+        }
+      ],
+      "query_id": "Q2_furnituredata_to_render",
+      "status": "source_limited"
+    },
+    "Q3_room_to_mapchip_objchip": {
+      "brain_revision": "k2-unified-brain-r1",
+      "gaps": [],
+      "hops": [
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "data:RoomData:0",
+            "game:Room:0"
+          ],
+          "from": "data:RoomData:0",
+          "relation": "constructs",
+          "source_refs": [
+            "K2:data:RoomData:0",
+            "K2:game:Room:0"
+          ],
+          "to": "game:Room:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "game:Room:0",
+            "game:MapChip:0"
+          ],
+          "from": "game:Room:0",
+          "relation": "creates",
+          "source_refs": [
+            "K2:game:Room:0",
+            "K2:game:MapChip:0"
+          ],
+          "to": "game:MapChip:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "game:MapChip:0",
+            "MAPCHIP_GRID:14x14"
+          ],
+          "from": "game:MapChip:0",
+          "relation": "grid",
+          "source_refs": [
+            "K2:game:MapChip:0",
+            "K2:MAPCHIP_GRID:14x14"
+          ],
+          "to": "MAPCHIP_GRID:14x14"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "game:Room:0",
+            "game:ObjChip:0"
+          ],
+          "from": "game:Room:0",
+          "relation": "creates",
+          "source_refs": [
+            "K2:game:Room:0",
+            "K2:game:ObjChip:0"
+          ],
+          "to": "game:ObjChip:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "game:ObjChip:0",
+            "OBJCHIP_GRID:10x10"
+          ],
+          "from": "game:ObjChip:0",
+          "relation": "grid",
+          "source_refs": [
+            "K2:game:ObjChip:0",
+            "K2:OBJCHIP_GRID:10x10"
+          ],
+          "to": "OBJCHIP_GRID:10x10"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "game:Room:0",
+            "runtime:floor-wall-door-passes"
+          ],
+          "from": "game:Room:0",
+          "relation": "floor_wall_door",
+          "source_refs": [
+            "K2:game:Room:0",
+            "K2:runtime:floor-wall-door-passes"
+          ],
+          "to": "runtime:floor-wall-door-passes"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "runtime:floor-wall-door-passes",
+            "runtime:furniture-staff"
+          ],
+          "from": "runtime:floor-wall-door-passes",
+          "relation": "bootstraps",
+          "source_refs": [
+            "K2:runtime:floor-wall-door-passes",
+            "K2:runtime:furniture-staff"
+          ],
+          "to": "runtime:furniture-staff"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "runtime:furniture-staff",
+            "V7.5:room-assembly"
+          ],
+          "from": "runtime:furniture-staff",
+          "relation": "passes",
+          "source_refs": [
+            "K2:runtime:furniture-staff",
+            "K2:V7.5:room-assembly"
+          ],
+          "to": "V7.5:room-assembly"
+        }
+      ],
+      "query_id": "Q3_room_to_mapchip_objchip",
+      "status": "pass"
+    },
+    "Q4_hp_home": {
+      "brain_revision": "k2-unified-brain-r1",
+      "gaps": [],
+      "hops": [
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "data:StaffData:0",
+            "game:Staff.hp_"
+          ],
+          "from": "data:StaffData:0",
+          "relation": "hp_field",
+          "source_refs": [
+            "K2:data:StaffData:0",
+            "K2:game:Staff.hp_"
+          ],
+          "to": "game:Staff.hp_"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "game:Staff.hp_",
+            "runtime:staff-state"
+          ],
+          "from": "game:Staff.hp_",
+          "relation": "state_machine",
+          "source_refs": [
+            "K2:game:Staff.hp_",
+            "K2:runtime:staff-state"
+          ],
+          "to": "runtime:staff-state"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "runtime:staff-state",
+            "data:RoomData:0"
+          ],
+          "from": "runtime:staff-state",
+          "relation": "home_target",
+          "source_refs": [
+            "K2:runtime:staff-state",
+            "K2:data:RoomData:0"
+          ],
+          "to": "data:RoomData:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "data:RoomData:0",
+            "runtime:room:0"
+          ],
+          "from": "data:RoomData:0",
+          "relation": "home_render",
+          "source_refs": [
+            "K2:data:RoomData:0",
+            "K2:runtime:room:0"
+          ],
+          "to": "runtime:room:0"
+        }
+      ],
+      "query_id": "Q4_hp_home",
+      "status": "pass"
+    },
+    "Q5_floor_id_domains": {
+      "brain_revision": "k2-unified-brain-r1",
+      "gaps": [
+        "selector:floor:5 remains an unresolved direct selector claim and must not be collapsed with index 5 or alias 85."
+      ],
+      "hops": [
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "ROOM_FLOOR_ARGUMENT:0",
+            "game:Room:0"
+          ],
+          "from": "ROOM_FLOOR_ARGUMENT:0",
+          "relation": "constructs",
+          "source_refs": [
+            "K2:ROOM_FLOOR_ARGUMENT:0",
+            "K2:game:Room:0"
+          ],
+          "to": "game:Room:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "ROOMDATA_FLOOR_IMAGE_INDEX:5",
+            "IMAGE_SELECTOR_ID:23"
+          ],
+          "from": "ROOMDATA_FLOOR_IMAGE_INDEX:5",
+          "relation": "resolves_to",
+          "source_refs": [
+            "K2:ROOMDATA_FLOOR_IMAGE_INDEX:5",
+            "K2:IMAGE_SELECTOR_ID:23"
+          ],
+          "to": "IMAGE_SELECTOR_ID:23"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "IMAGE_SELECTOR_ID:23",
+            "ASSET_ID:floor_05"
+          ],
+          "from": "IMAGE_SELECTOR_ID:23",
+          "relation": "asset",
+          "source_refs": [
+            "K2:IMAGE_SELECTOR_ID:23",
+            "K2:ASSET_ID:floor_05"
+          ],
+          "to": "ASSET_ID:floor_05"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "COMPATIBILITY_ALIAS_ID:85",
+            "ASSET_ID:floor_09"
+          ],
+          "from": "COMPATIBILITY_ALIAS_ID:85",
+          "relation": "metadata_alias",
+          "source_refs": [
+            "K2:COMPATIBILITY_ALIAS_ID:85",
+            "K2:ASSET_ID:floor_09"
+          ],
+          "to": "ASSET_ID:floor_09"
+        }
+      ],
+      "query_id": "Q5_floor_id_domains",
+      "status": "pass"
+    },
+    "Q6_source_to_implementation_test": {
+      "brain_revision": "k2-unified-brain-r1",
+      "gaps": [],
+      "hops": [
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "SOURCE:RoomData.cs",
+            "ARTIFACT_ID:RoomData.cs"
+          ],
+          "from": "SOURCE:RoomData.cs",
+          "relation": "artifact",
+          "source_refs": [
+            "K2:SOURCE:RoomData.cs",
+            "K2:ARTIFACT_ID:RoomData.cs"
+          ],
+          "to": "ARTIFACT_ID:RoomData.cs"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "ARTIFACT_ID:RoomData.cs",
+            "CLAIM:roomdata-constructor"
+          ],
+          "from": "ARTIFACT_ID:RoomData.cs",
+          "relation": "claim",
+          "source_refs": [
+            "K2:ARTIFACT_ID:RoomData.cs",
+            "K2:CLAIM:roomdata-constructor"
+          ],
+          "to": "CLAIM:roomdata-constructor"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "CLAIM:roomdata-constructor",
+            "data:RoomData:0"
+          ],
+          "from": "CLAIM:roomdata-constructor",
+          "relation": "fact_edge",
+          "source_refs": [
+            "K2:CLAIM:roomdata-constructor",
+            "K2:data:RoomData:0"
+          ],
+          "to": "data:RoomData:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "data:RoomData:0",
+            "original-data-pack:data:RoomData"
+          ],
+          "from": "data:RoomData:0",
+          "relation": "pack",
+          "source_refs": [
+            "K2:data:RoomData:0",
+            "K2:original-data-pack:data:RoomData"
+          ],
+          "to": "original-data-pack:data:RoomData"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "original-data-pack:data:RoomData",
+            "runtime:v5/room-data.ts"
+          ],
+          "from": "original-data-pack:data:RoomData",
+          "relation": "implementation",
+          "source_refs": [
+            "K2:original-data-pack:data:RoomData",
+            "K2:runtime:v5/room-data.ts"
+          ],
+          "to": "runtime:v5/room-data.ts"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "runtime:v5/room-data.ts",
+            "TEST:v5-room"
+          ],
+          "from": "runtime:v5/room-data.ts",
+          "relation": "test",
+          "source_refs": [
+            "K2:runtime:v5/room-data.ts",
+            "K2:TEST:v5-room"
+          ],
+          "to": "TEST:v5-room"
+        }
+      ],
+      "query_id": "Q6_source_to_implementation_test",
+      "status": "pass"
+    },
+    "Q7_product_isolation": {
+      "brain_revision": "k2-unified-brain-r1",
+      "gaps": [],
+      "hops": [
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "PRODUCT_TASK_ID:demo",
+            "RUNNING"
+          ],
+          "from": "PRODUCT_TASK_ID:demo",
+          "relation": "status",
+          "source_refs": [
+            "K2:PRODUCT_TASK_ID:demo",
+            "K2:RUNNING"
+          ],
+          "to": "RUNNING"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "PRODUCT_TASK_ID:demo",
+            "data:StaffData:0"
+          ],
+          "from": "PRODUCT_TASK_ID:demo",
+          "relation": "observes",
+          "source_refs": [
+            "K2:PRODUCT_TASK_ID:demo",
+            "K2:data:StaffData:0"
+          ],
+          "to": "data:StaffData:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "PRODUCT_TASK_ID:demo",
+            "data:StaffData:0"
+          ],
+          "from": "PRODUCT_TASK_ID:demo",
+          "relation": "no_mutation",
+          "source_refs": [
+            "K2:PRODUCT_TASK_ID:demo",
+            "K2:data:StaffData:0"
+          ],
+          "to": "data:StaffData:0"
+        },
+        {
+          "authority": "namespaced_source_evidence",
+          "canonical_ids": [
+            "PRODUCT_AGENT_ID:demo",
+            "PRODUCT_BINDING_ID:demo"
+          ],
+          "from": "PRODUCT_AGENT_ID:demo",
+          "relation": "binds",
+          "source_refs": [
+            "K2:PRODUCT_AGENT_ID:demo",
+            "K2:PRODUCT_BINDING_ID:demo"
+          ],
+          "to": "PRODUCT_BINDING_ID:demo"
+        }
+      ],
+      "query_id": "Q7_product_isolation",
+      "status": "pass"
+    }
+  },
+  "schema_version": "social-dev-k2-query-acceptance-v1",
+  "status": "pass"
+}

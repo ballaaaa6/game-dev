@@ -1,0 +1,128 @@
+{
+  "schema_version": "social-dev-k3-evidence-manifest-v1",
+  "status": "pass",
+  "authority_policy": {
+    "tier_a": "pinned APK/native/metadata/raw data/resource bytes",
+    "tier_b": "existing source-derived accepted evidence",
+    "tier_c_d": "corroboration only for source-limited claims"
+  },
+  "source_artifacts": [
+    {
+      "path": "knowledge/fixtures/accepted/native_content_connection_graph.json",
+      "size_bytes": 2018508,
+      "sha256": "3d152afd4e3f991207b3214dd9dcdf89d2413b6b79d04cfd793640fb75af780d"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/native_content_registry.json",
+      "size_bytes": 12804180,
+      "sha256": "8e78d633007f15d6ecb5b52bc17dae12b48b47256fe986c94ae2e84230a50106"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/default_map_chip_contract.json",
+      "size_bytes": 13983,
+      "sha256": "027e22ece83bc66e3382305d538ea226127dd76a835a05aaf62a20e30e0920ec"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/display_asset_manifest.json",
+      "size_bytes": 86490,
+      "sha256": "8fa4b18da15c3f848dec0d06eb7f5836842d68d55304ab8aa94cadf6613825bd"
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/FurnitureData.cs",
+      "size_bytes": 22398,
+      "sha256": "b8923786f31bc9f449cc93a3c1e1b4157e7c6231194ee4112ccd2c6ea98a2854"
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/HelperData.cs",
+      "size_bytes": 37591,
+      "sha256": "09039b7293f76edea950ce69526d8f99dc5982e26b7b58dfc400996bfa78a07f"
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs",
+      "size_bytes": 13430165,
+      "sha256": "01c25b5383c662cbaacdc68acbeb34f236cc40e6f2769e07a1053c0fa5ac24eb"
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game.routeSearch/Astar.cs",
+      "size_bytes": 71646,
+      "sha256": "cb92349bd7b9cc5808c4be33186ced5280e958e28a45b5182574a908b4c6f76a"
+    },
+    {
+      "path": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "size_bytes": 596322,
+      "sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db"
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat",
+      "size_bytes": 7823472,
+      "sha256": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579"
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so",
+      "size_bytes": 43544840,
+      "sha256": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a"
+    },
+    {
+      "path": "knowledge/sources/phase3a_apk_probe/raw/manifest.json",
+      "size_bytes": 539,
+      "sha256": "cd0348298266bae91f3c84a7cef8e621d81a94d6d1d8c709c70e78d79ede3b38"
+    }
+  ],
+  "generated_artifacts": [
+    {
+      "path": "knowledge/brain/acceptance/k3/K3_CLOSURE_REPORT.md",
+      "size_bytes": 2278,
+      "sha256": "a45be479fb97fca41f45ea4721c42389848178b038a8cb54da7885fc69a3aaf0"
+    },
+    {
+      "path": "knowledge/brain/acceptance/k3/final-validation.json",
+      "size_bytes": 3817,
+      "sha256": "90d15a577fbb276dd5b5584b8dde80786bdbdc91f09026bb27f6f4f3ed323465"
+    },
+    {
+      "path": "knowledge/brain/acceptance/k3/gap-resolution.json",
+      "size_bytes": 1904,
+      "sha256": "70c62e1690153659849813a392638e24d0afbabbeafe87ebed794ff6471a7f6f"
+    },
+    {
+      "path": "knowledge/brain/acceptance/k3/query-results.json",
+      "size_bytes": 2444,
+      "sha256": "8f85de2294fb1be0fbf5ae9e7ca7c563299cfacf3107d6f74a5552eb605b686e"
+    },
+    {
+      "path": "knowledge/brain/exports/k3-gap-queue.json",
+      "size_bytes": 1987,
+      "sha256": "c9452a8822ee86635391d3cb4e3003cc6f0ea152109e180dcc48caae16e03ecc"
+    },
+    {
+      "path": "knowledge/brain/graphs/semantic-edges.json",
+      "size_bytes": 491,
+      "sha256": "edd12a848222ae5f0aeaec73664e015b3197163c054394bf50fb1c63153b56f8"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/k3_candidate_edge_classification.json",
+      "size_bytes": 185319,
+      "sha256": "513f764250fe80480dbaea25edf78c72941a9958300580bbe50da15941abeb49"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/k3_floor_selector_closure.json",
+      "size_bytes": 4315,
+      "sha256": "db953686fdaa92f007892163660bf80bc21557b3c2db8456488631f021f67466"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/k3_furniture_visual_closure.json",
+      "size_bytes": 6048,
+      "sha256": "bf978185d005d3598ba57c07e34fe962f95625fe0476ac06c137fe009ea07ff0"
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime/native_content_catalog.json",
+      "size_bytes": 9659293,
+      "sha256": "4ab6b19016379b3fa2d3ed394fcc9d8335eddcd503116ebaf241d11c79c4bfad"
+    },
+    {
+      "path": "knowledge/gaps/k3-gap-queue.json",
+      "size_bytes": 1987,
+      "sha256": "c9452a8822ee86635391d3cb4e3003cc6f0ea152109e180dcc48caae16e03ecc"
+    }
+  ]
+}

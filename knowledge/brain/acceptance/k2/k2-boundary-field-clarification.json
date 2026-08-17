@@ -1,0 +1,21 @@
+{
+  "schema_version": "social-dev-k2-boundary-field-clarification-v1",
+  "status": "pass",
+  "historical_file": "legacy/k2-preflight/k2-unified-brain/final-validation.json",
+  "historical_field": "forbidden_scope_started",
+  "historical_interpretation": "The historical array lists forbidden scopes that were confirmed not to have started; its name is ambiguous and is preserved unchanged only in legacy provenance.",
+  "active_fields": {
+    "forbidden_scope_work_started": false,
+    "forbidden_scope_status": "NOT_STARTED",
+    "forbidden_scope_names": [
+      "K3",
+      "V8",
+      "Cloudflare",
+      "Oracle",
+      "persistence",
+      "backend AI",
+      "deployment"
+    ]
+  },
+  "boundary": "K2 and K2.5 only. No K3, V8, integration, persistence, backend AI, deployment, emulator/ADB, network, or subagent work was started."
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "social-dev-i0-validation-v1",
+  "status": "PASS_I0_VALIDATION",
+  "final_token": "PASS_I0_ORIGINAL_LIVING_CORE_RUNTIME_IMPLEMENTED_S1_S10_CLOSED",
+  "scenario_status": "PASS",
+  "scenario_count": 10,
+  "scenario_ids": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S9",
+    "S10"
+  ],
+  "transition_trace_count": [
+    {
+      "id": "S1",
+      "count": 63
+    },
+    {
+      "id": "S2",
+      "count": 289
+    },
+    {
+      "id": "S3",
+      "count": 817
+    },
+    {
+      "id": "S4",
+      "count": 232
+    },
+    {
+      "id": "S5",
+      "count": 8
+    },
+    {
+      "id": "S6",
+      "count": 12
+    },
+    {
+      "id": "S7",
+      "count": 7
+    },
+    {
+      "id": "S8",
+      "count": 12
+    },
+    {
+      "id": "S9",
+      "count": 16
+    },
+    {
+      "id": "S10",
+      "count": 632
+    }
+  ]
+}

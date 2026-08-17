@@ -1,0 +1,16 @@
+{
+  "artifact_blob_count": 7370,
+  "artifact_instance_count": 7556,
+  "classification_counts": {
+    "CURRENT_ACTIVE_OTHER": 958,
+    "C_SHARP_ANALYSIS": 5549,
+    "GENERATED_RUNTIME_DATA": 266,
+    "IMAGE_BINARY": 459,
+    "RAW_SOURCE_BINARY": 8,
+    "UNKNOWN_GENERATION": 146,
+    "VISUAL_EVIDENCE": 170
+  },
+  "reference_count": 1280,
+  "schema_version": "social-dev-k2-artifact-registry-v1",
+  "status": "pass"
+}

@@ -1,0 +1,157 @@
+{
+  "checkpoints": [
+    {
+      "id": "V7.0",
+      "status": "PASS",
+      "summary": "V1–V6 baseline and static gates green; V7 initially absent."
+    },
+    {
+      "id": "V7.1",
+      "status": "PASS",
+      "summary": "Graphics contract consolidated from V2 and selected V5/V6 commands."
+    },
+    {
+      "id": "V7.2",
+      "status": "PASS",
+      "summary": "DrawImage crop/destination, clip, nearest/linear, and out-of-bounds compatibility rules closed."
+    },
+    {
+      "id": "V7.3",
+      "status": "PASS",
+      "summary": "Flip/scale/rotation compatibility rules and tests closed; selected room uses identity."
+    },
+    {
+      "id": "V7.4",
+      "status": "PASS",
+      "summary": "Color, alpha, render ratios, blend, and push/pop state fixtures closed."
+    },
+    {
+      "id": "V7.5",
+      "status": "PASS",
+      "summary": "Selected direct image/SEB paths closed; atlas/custom/optimized/depth branches remain non-selected."
+    },
+    {
+      "id": "V7.6",
+      "status": "PASS_STATIC_BOUNDARY",
+      "summary": "Selected Staff wait/typing cadence and frame 0 are deterministic; complete live cadence remains source-limited."
+    },
+    {
+      "id": "V7.7",
+      "status": "PASS",
+      "summary": "RasterCompatibilityV7 implemented additively with no production cutover."
+    },
+    {
+      "id": "V7.8",
+      "status": "PASS",
+      "summary": "14 golden fixture outputs are stable and source-referenced."
+    },
+    {
+      "id": "V7.9",
+      "status": "PASS",
+      "summary": "room:0 structural PNG b55d701ba74bd6212701a6623d5de667d824c00c604bfebfc2d416f7d5fd447a."
+    },
+    {
+      "id": "V7.10",
+      "status": "PASS",
+      "summary": "room:0 + Staff PNG f5c2db1052ee55b6256208b164107bc123f58634f533ce621f46871acb60c1cd."
+    },
+    {
+      "id": "V7.11",
+      "status": "PASS",
+      "summary": "Repeated render diff and room-vs-staff diff tooling generated."
+    },
+    {
+      "id": "V7.12",
+      "status": "PASS",
+      "summary": "Residual differences are classified; no screenshot tuning performed."
+    },
+    {
+      "id": "V7.13",
+      "status": "PASS",
+      "summary": "Fidelity manifest and nonblocking unknown ledger generated."
+    },
+    {
+      "id": "V7.14",
+      "status": "PASS",
+      "summary": "Static artifact generation, evidence validation, and final regression inputs are complete; V8 has not started."
+    }
+  ],
+  "execution_mode": "INLINE_EXECUTION_ONLY",
+  "outputs": {
+    "pixel_diff": {
+      "comparisons": [
+        {
+          "class": "deterministic_repeat",
+          "id": "repeated-room00-structural",
+          "proof_class": "PROVEN",
+          "result": {
+            "changedPixelCount": 0,
+            "changedRegion": null,
+            "height": 600,
+            "identical": true,
+            "maxChannelError": 0,
+            "meanChannelError": 0,
+            "width": 980
+          }
+        },
+        {
+          "class": "deterministic_repeat",
+          "id": "repeated-room00-with-staff",
+          "proof_class": "PROVEN",
+          "result": {
+            "changedPixelCount": 0,
+            "changedRegion": null,
+            "height": 600,
+            "identical": true,
+            "maxChannelError": 0,
+            "meanChannelError": 0,
+            "width": 980
+          }
+        },
+        {
+          "class": "expected_selected_content_delta",
+          "difference_class": "C_COMPATIBILITY_BACKEND_DIFFERENCE",
+          "id": "room00-structural-vs-room00-with-staff",
+          "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+          "result": {
+            "changedPixelCount": 830,
+            "changedRegion": {
+              "height": 30,
+              "width": 30,
+              "x": 708,
+              "y": 199
+            },
+            "height": 600,
+            "identical": false,
+            "maxChannelError": 255,
+            "meanChannelError": 169.96897590361445,
+            "width": 980
+          }
+        }
+      ],
+      "diff_png": {
+        "path": "knowledge/fixtures/accepted/visual-port/v7/previews/room00-structural-vs-staff.diff.png",
+        "sha256": "27312ff1aa3e84ddc5947db6bdf5a94360f76b3241d30987cb9c1de201d68c90"
+      },
+      "historical_comparison": {
+        "reason": "Historical screenshots are not used to derive geometry, resource identity, or acceptance pixels.",
+        "status": "SECONDARY_ONLY_NOT_AUTHORITATIVE",
+        "used": false
+      },
+      "schema_version": "social-dev-visual-port-v7-pixel-diff-results-v1",
+      "status": "pass_static"
+    },
+    "staff_png": {
+      "pngPath": "knowledge/fixtures/accepted/visual-port/v7/previews/room00-with-staff.png",
+      "pngSha256": "f5c2db1052ee55b6256208b164107bc123f58634f533ce621f46871acb60c1cd"
+    },
+    "structural_png": {
+      "pngPath": "knowledge/fixtures/accepted/visual-port/v7/previews/room00-structural.png",
+      "pngSha256": "b55d701ba74bd6212701a6623d5de667d824c00c604bfebfc2d416f7d5fd447a"
+    }
+  },
+  "schema_version": "social-dev-visual-port-v7-checkpoint-ledger-v1",
+  "static_only": true,
+  "status": "pass_static_fidelity",
+  "subagents": false
+}

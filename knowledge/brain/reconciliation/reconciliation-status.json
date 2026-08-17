@@ -1,0 +1,21 @@
+{
+  "conflicts": [
+    {
+      "canonical_policy": "do not collapse index 5, selector 23, alias 85",
+      "id": "floor:5",
+      "status": "resolved_by_namespaced_authority"
+    }
+  ],
+  "discrepancies": [
+    {
+      "guide_treatment": "guide describes the same explicit fallback but cannot make selector 5 authoritative",
+      "resolution": "retain separate namespaces and an unresolved direct-selector claim",
+      "source_evidence": "RoomData floorImgId_=5 is an index-domain value; runtime compatibility preserves metadata 85/floor_09 and renders floor_05",
+      "topic": "floor selector 5 vs compatibility selector/data 85"
+    }
+  ],
+  "schema_version": "social-dev-k2-reconciliation-status-v1",
+  "source_wins_over_guide_discrepancies": true,
+  "status": "pass_with_explicit_source_limited_claims",
+  "supersession_policy": "parallel purpose and explicit supersession are recorded; evidence is not deleted"
+}

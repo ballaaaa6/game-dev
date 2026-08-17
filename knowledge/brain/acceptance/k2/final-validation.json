@@ -1,0 +1,28 @@
+{
+    "final_validation_token":  "PASS_K2_UNIFIED_WHOLE_GAME_BRAIN_AND_RUNTIME_PACK_CLOSED",
+    "final_validator_precheck":  {
+                                     "command":  "python -B tools/social-dev/test_k2_unified_brain.py --pre-final",
+                                     "cwd":  ".",
+                                     "exit_code":  0,
+                                     "status":  "pass",
+                                     "stderr_tail":  "",
+                                     "stdout_tail":  "PASS_K2_UNIFIED_WHOLE_GAME_BRAIN_AND_RUNTIME_PACK_CLOSED\n"
+                                 },
+    "forbidden_scope_work_started":  false,
+    "old_g1_5_db_unchanged":  true,
+    "runtime_pack_path":  "runtime/social-dev/generated/original-runtime-pack.json",
+    "schema_version":  "social-dev-k2-final-validation-v1",
+    "scope":  "K2 only",
+    "v2_db_path":  "knowledge/brain/sqlite/social_dev_brain.sqlite",
+    "v2_db_sha256":  "6c8883a6f0bf8426d8ace702bbbedcd59e9b8b26aadd46dbf2965a2698b894be",
+    "forbidden_scope_names":  [
+                                  "K3",
+                                  "V8",
+                                  "Cloudflare",
+                                  "Oracle",
+                                  "persistence",
+                                  "backend AI",
+                                  "deployment"
+                              ],
+    "forbidden_scope_status":  "NOT_STARTED"
+}

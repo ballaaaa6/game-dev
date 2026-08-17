@@ -1,0 +1,909 @@
+{
+  "generic_native_model": {
+    "ObjChip.frame_offset": "0x60",
+    "ObjChip.furnitureData_offset": "0x20",
+    "ObjChip.sebFrame_offset": "0x80",
+    "ObjChip.type_offset": "0x18",
+    "PlaceObj": {
+      "initialization": "stores FurnitureData and zeros frame_/sebFrame_",
+      "rva": "0x12C4308"
+    },
+    "draw": {
+      "dispatch": "FurnitureData.type_ selects the native type branch",
+      "resource_path": "ResourceManager img/seb selector -> accepted composition record -> AppData.DrawSeb or direct image",
+      "rva": "0x12C166C"
+    },
+    "type_policy": {
+      "raw_type_without_explicit_binding": "never infer FurnitureData identity",
+      "type_1": "direct initial img_ record with SEB_SELECTOR_ID:21 action companion",
+      "type_2": "workstation compound composition with primary desk and subSeb chair",
+      "type_5": "door-owned ObjChip path; no FurnitureData object"
+    }
+  },
+  "model_id": "FURNITURE_EXECUTION_MODEL:objchip-v1",
+  "native_room0_instances": [
+    {
+      "cell": [
+        2,
+        4
+      ],
+      "composition_id": "native_initial_object:furniture:3",
+      "composition_status": "composition_closed_from_runtime_contract",
+      "fields": {
+        "flag_": 16417,
+        "img_": 148,
+        "recovery_": 0,
+        "seb_": 1,
+        "subSeb_": 3,
+        "type_": 2
+      },
+      "furniture_data_id": 3,
+      "name": "Wooden Desk",
+      "object_id": "furniture:3",
+      "raw_type": 2,
+      "records": [
+        {
+          "destination_x": -9,
+          "destination_y": -13,
+          "flags": 0,
+          "height": 32,
+          "image_id": 3,
+          "logical_source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+          "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+          "reserved": 0,
+          "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_size": {
+            "height": 32,
+            "width": 120
+          },
+          "runtime_status": "pass_derived_opt_png",
+          "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+          "source_asset_member": "desk_00.png",
+          "source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "source_status": "pass_opt_logical",
+          "source_x": 0,
+          "source_y": 0,
+          "start_frame": 0,
+          "width": 60
+        },
+        {
+          "destination_x": -10,
+          "destination_y": -13,
+          "flags": 0,
+          "height": 32,
+          "image_id": 3,
+          "logical_source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+          "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+          "reserved": 0,
+          "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_size": {
+            "height": 32,
+            "width": 120
+          },
+          "runtime_status": "pass_derived_opt_png",
+          "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+          "source_asset_member": "desk_00.png",
+          "source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "source_status": "pass_opt_logical",
+          "source_x": 60,
+          "source_y": 0,
+          "start_frame": 1,
+          "width": 60
+        },
+        {
+          "destination_x": -26,
+          "destination_y": -6,
+          "flags": 0,
+          "height": 32,
+          "image_id": 3,
+          "logical_source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+          "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+          "reserved": 0,
+          "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_size": {
+            "height": 32,
+            "width": 120
+          },
+          "runtime_status": "pass_derived_opt_png",
+          "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+          "source_asset_member": "desk_00.png",
+          "source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "source_status": "pass_opt_logical",
+          "source_x": 60,
+          "source_y": 0,
+          "start_frame": 2,
+          "width": 60
+        }
+      ],
+      "scan_order": 0,
+      "selector_flag": "FLAG_INIT_DESK"
+    },
+    {
+      "cell": [
+        3,
+        4
+      ],
+      "composition_id": "native_initial_object:furniture:3",
+      "composition_status": "composition_closed_from_runtime_contract",
+      "fields": {
+        "flag_": 16417,
+        "img_": 148,
+        "recovery_": 0,
+        "seb_": 1,
+        "subSeb_": 3,
+        "type_": 2
+      },
+      "furniture_data_id": 3,
+      "name": "Wooden Desk",
+      "object_id": "furniture:3",
+      "raw_type": 2,
+      "records": [
+        {
+          "destination_x": -9,
+          "destination_y": -13,
+          "flags": 0,
+          "height": 32,
+          "image_id": 3,
+          "logical_source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+          "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+          "reserved": 0,
+          "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_size": {
+            "height": 32,
+            "width": 120
+          },
+          "runtime_status": "pass_derived_opt_png",
+          "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+          "source_asset_member": "desk_00.png",
+          "source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "source_status": "pass_opt_logical",
+          "source_x": 0,
+          "source_y": 0,
+          "start_frame": 0,
+          "width": 60
+        },
+        {
+          "destination_x": -10,
+          "destination_y": -13,
+          "flags": 0,
+          "height": 32,
+          "image_id": 3,
+          "logical_source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+          "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+          "reserved": 0,
+          "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_size": {
+            "height": 32,
+            "width": 120
+          },
+          "runtime_status": "pass_derived_opt_png",
+          "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+          "source_asset_member": "desk_00.png",
+          "source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "source_status": "pass_opt_logical",
+          "source_x": 60,
+          "source_y": 0,
+          "start_frame": 1,
+          "width": 60
+        },
+        {
+          "destination_x": -26,
+          "destination_y": -6,
+          "flags": 0,
+          "height": 32,
+          "image_id": 3,
+          "logical_source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+          "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+          "reserved": 0,
+          "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_size": {
+            "height": 32,
+            "width": 120
+          },
+          "runtime_status": "pass_derived_opt_png",
+          "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+          "source_asset_member": "desk_00.png",
+          "source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "source_status": "pass_opt_logical",
+          "source_x": 60,
+          "source_y": 0,
+          "start_frame": 2,
+          "width": 60
+        }
+      ],
+      "scan_order": 1,
+      "selector_flag": "FLAG_INIT_DESK"
+    },
+    {
+      "cell": [
+        6,
+        4
+      ],
+      "composition_id": "native_initial_object:furniture:3",
+      "composition_status": "composition_closed_from_runtime_contract",
+      "fields": {
+        "flag_": 16417,
+        "img_": 148,
+        "recovery_": 0,
+        "seb_": 1,
+        "subSeb_": 3,
+        "type_": 2
+      },
+      "furniture_data_id": 3,
+      "name": "Wooden Desk",
+      "object_id": "furniture:3",
+      "raw_type": 2,
+      "records": [
+        {
+          "destination_x": -9,
+          "destination_y": -13,
+          "flags": 0,
+          "height": 32,
+          "image_id": 3,
+          "logical_source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+          "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+          "reserved": 0,
+          "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_size": {
+            "height": 32,
+            "width": 120
+          },
+          "runtime_status": "pass_derived_opt_png",
+          "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+          "source_asset_member": "desk_00.png",
+          "source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "source_status": "pass_opt_logical",
+          "source_x": 0,
+          "source_y": 0,
+          "start_frame": 0,
+          "width": 60
+        },
+        {
+          "destination_x": -10,
+          "destination_y": -13,
+          "flags": 0,
+          "height": 32,
+          "image_id": 3,
+          "logical_source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+          "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+          "reserved": 0,
+          "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_size": {
+            "height": 32,
+            "width": 120
+          },
+          "runtime_status": "pass_derived_opt_png",
+          "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+          "source_asset_member": "desk_00.png",
+          "source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "source_status": "pass_opt_logical",
+          "source_x": 60,
+          "source_y": 0,
+          "start_frame": 1,
+          "width": 60
+        },
+        {
+          "destination_x": -26,
+          "destination_y": -6,
+          "flags": 0,
+          "height": 32,
+          "image_id": 3,
+          "logical_source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+          "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+          "reserved": 0,
+          "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_size": {
+            "height": 32,
+            "width": 120
+          },
+          "runtime_status": "pass_derived_opt_png",
+          "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+          "source_asset_member": "desk_00.png",
+          "source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "source_status": "pass_opt_logical",
+          "source_x": 60,
+          "source_y": 0,
+          "start_frame": 2,
+          "width": 60
+        }
+      ],
+      "scan_order": 2,
+      "selector_flag": "FLAG_INIT_DESK"
+    },
+    {
+      "cell": [
+        8,
+        5
+      ],
+      "composition_id": "native_initial_object:furniture:12",
+      "composition_status": "composition_closed_from_runtime_contract",
+      "fields": {
+        "flag_": 32784,
+        "img_": 109,
+        "recovery_": 0,
+        "seb_": 21,
+        "subSeb_": -1,
+        "type_": 1
+      },
+      "furniture_data_id": 12,
+      "name": "Trash Can",
+      "object_id": "furniture:12",
+      "raw_type": 1,
+      "records": [
+        {
+          "destination_x": -12,
+          "destination_y": -19,
+          "flags": 0,
+          "height": 22,
+          "image_id": 109,
+          "reserved": 0,
+          "source_asset_id": "asset:01_GAME_PACKS/chip/garbage_can.png",
+          "source_asset_member": "01_GAME_PACKS/chip/garbage_can.png",
+          "source_size": {
+            "height": 22,
+            "width": 24
+          },
+          "source_status": "pass_native_img_asset",
+          "source_x": 0,
+          "source_y": 0,
+          "start_frame": 0,
+          "width": 24
+        }
+      ],
+      "scan_order": 0,
+      "selector_flag": "FLAG_INIT_PLACE"
+    },
+    {
+      "cell": [
+        8,
+        6
+      ],
+      "composition_id": "native_initial_object:furniture:26",
+      "composition_status": "composition_closed_from_runtime_contract",
+      "fields": {
+        "flag_": 32784,
+        "img_": 106,
+        "recovery_": 0,
+        "seb_": 21,
+        "subSeb_": -1,
+        "type_": 1
+      },
+      "furniture_data_id": 26,
+      "name": "Old Printer",
+      "object_id": "furniture:26",
+      "raw_type": 1,
+      "records": [
+        {
+          "destination_x": -11,
+          "destination_y": -23,
+          "flags": 0,
+          "height": 26,
+          "image_id": 106,
+          "reserved": 0,
+          "source_asset_id": "asset:01_GAME_PACKS/chip/old_printer.png",
+          "source_asset_member": "01_GAME_PACKS/chip/old_printer.png",
+          "source_size": {
+            "height": 26,
+            "width": 23
+          },
+          "source_status": "pass_native_img_asset",
+          "source_x": 0,
+          "source_y": 0,
+          "start_frame": 0,
+          "width": 23
+        }
+      ],
+      "scan_order": 1,
+      "selector_flag": "FLAG_INIT_PLACE"
+    },
+    {
+      "cell": [
+        2,
+        7
+      ],
+      "composition_id": "native_initial_object:furniture:56",
+      "composition_status": "composition_closed_from_runtime_contract",
+      "fields": {
+        "flag_": 32784,
+        "img_": 127,
+        "recovery_": 9,
+        "seb_": 21,
+        "subSeb_": -1,
+        "type_": 1
+      },
+      "furniture_data_id": 56,
+      "name": "Calendar",
+      "object_id": "furniture:56",
+      "raw_type": 1,
+      "records": [
+        {
+          "destination_x": -12,
+          "destination_y": -25,
+          "flags": 0,
+          "height": 28,
+          "image_id": 127,
+          "reserved": 0,
+          "source_asset_id": "asset:01_GAME_PACKS/chip/calendar.png",
+          "source_asset_member": "01_GAME_PACKS/chip/calendar.png",
+          "source_size": {
+            "height": 28,
+            "width": 24
+          },
+          "source_status": "pass_native_img_asset",
+          "source_x": 0,
+          "source_y": 0,
+          "start_frame": 0,
+          "width": 24
+        }
+      ],
+      "scan_order": 2,
+      "selector_flag": "FLAG_INIT_PLACE"
+    }
+  ],
+  "schema_version": "social-dev-k4-furniture-execution-model-v1",
+  "source_refs": [
+    "knowledge/fixtures/accepted/furniture_asset_metadata.json:furniture_data_id 3/12/26/56",
+    "knowledge/fixtures/accepted/asset_composition_catalog.json:native_initial_object compositions",
+    "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:native_initial_furniture",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:ObjChip.Draw/PlaceObj",
+    "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:ObjChip.Draw@0x12C166C"
+  ],
+  "status": "PROVEN_CANONICAL",
+  "structural_facilities": [
+    {
+      "anchor": [
+        4,
+        2
+      ],
+      "footprint_cells": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "image_asset_id": "asset:01_GAME_PACKS/chip/big_base00.png",
+      "map_anchor": [
+        4,
+        5
+      ],
+      "object_id": "furniture:0",
+      "raw_type": 4,
+      "render_policy": "static_single_frame_structural_composition",
+      "seb_filename": "big_base00.seb",
+      "seb_selector_id": 11,
+      "sprite_record": {
+        "destination_x": -40,
+        "destination_y": -21,
+        "flags": 0,
+        "height": 61,
+        "image_id": 18,
+        "reserved": 0,
+        "source_x": 0,
+        "source_y": 0,
+        "start_frame": 0,
+        "width": 120
+      }
+    },
+    {
+      "anchor": [
+        7,
+        2
+      ],
+      "footprint_cells": [
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ]
+      ],
+      "image_asset_id": "asset:01_GAME_PACKS/chip/big_base00.png",
+      "map_anchor": [
+        7,
+        5
+      ],
+      "object_id": "furniture:0",
+      "raw_type": 4,
+      "render_policy": "static_single_frame_structural_composition",
+      "seb_filename": "big_base00.seb",
+      "seb_selector_id": 11,
+      "sprite_record": {
+        "destination_x": -40,
+        "destination_y": -21,
+        "flags": 0,
+        "height": 61,
+        "image_id": 18,
+        "reserved": 0,
+        "source_x": 0,
+        "source_y": 0,
+        "start_frame": 0,
+        "width": 120
+      }
+    }
+  ],
+  "unique_initial_compositions": [
+    {
+      "cell": [
+        2,
+        4
+      ],
+      "composition_id": "native_initial_object:furniture:3",
+      "composition_status": "composition_closed_from_runtime_contract",
+      "fields": {
+        "flag_": 16417,
+        "img_": 148,
+        "recovery_": 0,
+        "seb_": 1,
+        "subSeb_": 3,
+        "type_": 2
+      },
+      "furniture_data_id": 3,
+      "name": "Wooden Desk",
+      "object_id": "furniture:3",
+      "raw_type": 2,
+      "records": [
+        {
+          "destination_x": -9,
+          "destination_y": -13,
+          "flags": 0,
+          "height": 32,
+          "image_id": 3,
+          "logical_source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+          "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+          "reserved": 0,
+          "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_size": {
+            "height": 32,
+            "width": 120
+          },
+          "runtime_status": "pass_derived_opt_png",
+          "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+          "source_asset_member": "desk_00.png",
+          "source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "source_status": "pass_opt_logical",
+          "source_x": 0,
+          "source_y": 0,
+          "start_frame": 0,
+          "width": 60
+        },
+        {
+          "destination_x": -10,
+          "destination_y": -13,
+          "flags": 0,
+          "height": 32,
+          "image_id": 3,
+          "logical_source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+          "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+          "reserved": 0,
+          "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_size": {
+            "height": 32,
+            "width": 120
+          },
+          "runtime_status": "pass_derived_opt_png",
+          "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+          "source_asset_member": "desk_00.png",
+          "source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "source_status": "pass_opt_logical",
+          "source_x": 60,
+          "source_y": 0,
+          "start_frame": 1,
+          "width": 60
+        },
+        {
+          "destination_x": -26,
+          "destination_y": -6,
+          "flags": 0,
+          "height": 32,
+          "image_id": 3,
+          "logical_source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "opt_asset_id": "asset:01_GAME_PACKS/chip/desk_00.opt",
+          "opt_asset_member": "01_GAME_PACKS/chip/desk_00.opt",
+          "reserved": 0,
+          "runtime_asset_id": "asset:derived/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_asset_member": "02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+          "runtime_size": {
+            "height": 32,
+            "width": 120
+          },
+          "runtime_status": "pass_derived_opt_png",
+          "source_asset_id": "asset:01_GAME_PACKS/chip/desk_00.png",
+          "source_asset_member": "desk_00.png",
+          "source_size": {
+            "height": 32,
+            "width": 120
+          },
+          "source_status": "pass_opt_logical",
+          "source_x": 60,
+          "source_y": 0,
+          "start_frame": 2,
+          "width": 60
+        }
+      ],
+      "scan_order": 0,
+      "selector_flag": "FLAG_INIT_DESK"
+    },
+    {
+      "cell": [
+        8,
+        5
+      ],
+      "composition_id": "native_initial_object:furniture:12",
+      "composition_status": "composition_closed_from_runtime_contract",
+      "fields": {
+        "flag_": 32784,
+        "img_": 109,
+        "recovery_": 0,
+        "seb_": 21,
+        "subSeb_": -1,
+        "type_": 1
+      },
+      "furniture_data_id": 12,
+      "name": "Trash Can",
+      "object_id": "furniture:12",
+      "raw_type": 1,
+      "records": [
+        {
+          "destination_x": -12,
+          "destination_y": -19,
+          "flags": 0,
+          "height": 22,
+          "image_id": 109,
+          "reserved": 0,
+          "source_asset_id": "asset:01_GAME_PACKS/chip/garbage_can.png",
+          "source_asset_member": "01_GAME_PACKS/chip/garbage_can.png",
+          "source_size": {
+            "height": 22,
+            "width": 24
+          },
+          "source_status": "pass_native_img_asset",
+          "source_x": 0,
+          "source_y": 0,
+          "start_frame": 0,
+          "width": 24
+        }
+      ],
+      "scan_order": 0,
+      "selector_flag": "FLAG_INIT_PLACE"
+    },
+    {
+      "cell": [
+        8,
+        6
+      ],
+      "composition_id": "native_initial_object:furniture:26",
+      "composition_status": "composition_closed_from_runtime_contract",
+      "fields": {
+        "flag_": 32784,
+        "img_": 106,
+        "recovery_": 0,
+        "seb_": 21,
+        "subSeb_": -1,
+        "type_": 1
+      },
+      "furniture_data_id": 26,
+      "name": "Old Printer",
+      "object_id": "furniture:26",
+      "raw_type": 1,
+      "records": [
+        {
+          "destination_x": -11,
+          "destination_y": -23,
+          "flags": 0,
+          "height": 26,
+          "image_id": 106,
+          "reserved": 0,
+          "source_asset_id": "asset:01_GAME_PACKS/chip/old_printer.png",
+          "source_asset_member": "01_GAME_PACKS/chip/old_printer.png",
+          "source_size": {
+            "height": 26,
+            "width": 23
+          },
+          "source_status": "pass_native_img_asset",
+          "source_x": 0,
+          "source_y": 0,
+          "start_frame": 0,
+          "width": 23
+        }
+      ],
+      "scan_order": 1,
+      "selector_flag": "FLAG_INIT_PLACE"
+    },
+    {
+      "cell": [
+        2,
+        7
+      ],
+      "composition_id": "native_initial_object:furniture:56",
+      "composition_status": "composition_closed_from_runtime_contract",
+      "fields": {
+        "flag_": 32784,
+        "img_": 127,
+        "recovery_": 9,
+        "seb_": 21,
+        "subSeb_": -1,
+        "type_": 1
+      },
+      "furniture_data_id": 56,
+      "name": "Calendar",
+      "object_id": "furniture:56",
+      "raw_type": 1,
+      "records": [
+        {
+          "destination_x": -12,
+          "destination_y": -25,
+          "flags": 0,
+          "height": 28,
+          "image_id": 127,
+          "reserved": 0,
+          "source_asset_id": "asset:01_GAME_PACKS/chip/calendar.png",
+          "source_asset_member": "01_GAME_PACKS/chip/calendar.png",
+          "source_size": {
+            "height": 28,
+            "width": 24
+          },
+          "source_status": "pass_native_img_asset",
+          "source_x": 0,
+          "source_y": 0,
+          "start_frame": 0,
+          "width": 24
+        }
+      ],
+      "scan_order": 2,
+      "selector_flag": "FLAG_INIT_PLACE"
+    }
+  ]
+}

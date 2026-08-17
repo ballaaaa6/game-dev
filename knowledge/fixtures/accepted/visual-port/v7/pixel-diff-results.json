@@ -1,0 +1,63 @@
+{
+  "comparisons": [
+    {
+      "class": "deterministic_repeat",
+      "id": "repeated-room00-structural",
+      "proof_class": "PROVEN",
+      "result": {
+        "changedPixelCount": 0,
+        "changedRegion": null,
+        "height": 600,
+        "identical": true,
+        "maxChannelError": 0,
+        "meanChannelError": 0,
+        "width": 980
+      }
+    },
+    {
+      "class": "deterministic_repeat",
+      "id": "repeated-room00-with-staff",
+      "proof_class": "PROVEN",
+      "result": {
+        "changedPixelCount": 0,
+        "changedRegion": null,
+        "height": 600,
+        "identical": true,
+        "maxChannelError": 0,
+        "meanChannelError": 0,
+        "width": 980
+      }
+    },
+    {
+      "class": "expected_selected_content_delta",
+      "difference_class": "C_COMPATIBILITY_BACKEND_DIFFERENCE",
+      "id": "room00-structural-vs-room00-with-staff",
+      "proof_class": "COMPATIBILITY_REIMPLEMENTATION",
+      "result": {
+        "changedPixelCount": 830,
+        "changedRegion": {
+          "height": 30,
+          "width": 30,
+          "x": 708,
+          "y": 199
+        },
+        "height": 600,
+        "identical": false,
+        "maxChannelError": 255,
+        "meanChannelError": 169.96897590361445,
+        "width": 980
+      }
+    }
+  ],
+  "diff_png": {
+    "path": "knowledge/fixtures/accepted/visual-port/v7/previews/room00-structural-vs-staff.diff.png",
+    "sha256": "27312ff1aa3e84ddc5947db6bdf5a94360f76b3241d30987cb9c1de201d68c90"
+  },
+  "historical_comparison": {
+    "reason": "Historical screenshots are not used to derive geometry, resource identity, or acceptance pixels.",
+    "status": "SECONDARY_ONLY_NOT_AUTHORITATIVE",
+    "used": false
+  },
+  "schema_version": "social-dev-visual-port-v7-pixel-diff-results-v1",
+  "status": "pass_static"
+}

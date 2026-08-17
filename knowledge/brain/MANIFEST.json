@@ -1,0 +1,100 @@
+{
+  "acceptance": {
+    "k2_5_cleanup": "knowledge/brain/acceptance/k2-5-cleanup",
+    "k2_proof": "knowledge/brain/acceptance/k2/final-validation.json",
+    "k2_token": "PASS_K2_UNIFIED_WHOLE_GAME_BRAIN_AND_RUNTIME_PACK_CLOSED",
+    "k3": "knowledge/brain/acceptance/k3",
+    "k4": "knowledge/brain/acceptance/k4",
+    "k4_1": "knowledge/brain/acceptance/k4-1",
+    "k4_1_report": "knowledge/brain/acceptance/k4-1/K4_1_CLOSURE_REPORT.md",
+    "k4_report": "knowledge/brain/acceptance/k4/K4_CLOSURE_REPORT.md",
+    "query_smoke": "knowledge/brain/acceptance/k2-5-cleanup/query-smoke.json",
+    "semantic_delta": "knowledge/brain/acceptance/k2-5-cleanup/semantic-delta.json"
+  },
+  "active_manifests": {
+    "data_pack_manifest": "knowledge/generated/original-data-pack/manifest.json",
+    "fixture_manifest": "knowledge/fixtures/manifest.json",
+    "gap_queue": "knowledge/gaps/k3-gap-queue.json",
+    "legacy_checksums": "legacy/SHA256SUMS.txt",
+    "legacy_manifest": "legacy/MANIFEST.json",
+    "runtime_mirror_manifest": "runtime/social-dev/generated/original-runtime-pack.manifest.json",
+    "runtime_pack_manifest": "knowledge/generated/original-runtime-pack/manifest.json",
+    "source_manifest": "knowledge/sources/source-manifest.json",
+    "visual_pack_manifest": "knowledge/generated/original-visual-pack/manifest.json"
+  },
+  "active_topology": {
+    "accepted_fixture_file_count": 682,
+    "brain_tree_excluding_this_manifest": {
+      "bytes": 190294390,
+      "file_count": 84,
+      "sha256": "fb72b63f33be5aab10a9b9665b92834a62deebb8a67893b9854c029bb3d4d418"
+    },
+    "k3_gap_count": 3,
+    "legacy_file_count": 476,
+    "source_manifest_entry_count": 11
+  },
+  "canonical_semantic_db": {
+    "brain_revision": "k4-visual-assembly-r2",
+    "path": "knowledge/brain/sqlite/social_dev_brain.sqlite",
+    "schema_version": "social-dev-k2-unified-brain-v2",
+    "sha256": "65df23f6a222472f7cc401589ea6fa0d226406be2900070702817bc16759f9d1",
+    "size_bytes": 174022656
+  },
+  "generated_authorities": {
+    "original_data_pack_manifest": "knowledge/generated/original-data-pack/manifest.json",
+    "original_runtime_pack": {
+      "byte_identical": true,
+      "canonical_path": "knowledge/generated/original-runtime-pack/runtime-pack.json",
+      "canonical_sha256": "e7abff5ae6725530cb337a54f30706a76d51359721f594d9ca2dffab09cefb9f",
+      "mirror_path": "runtime/social-dev/generated/original-runtime-pack.json",
+      "mirror_sha256": "e7abff5ae6725530cb337a54f30706a76d51359721f594d9ca2dffab09cefb9f"
+    },
+    "original_visual_pack_manifest": "knowledge/generated/original-visual-pack/manifest.json"
+  },
+  "k4": {
+    "blocking_source_limited_count": 0,
+    "final_token": "PASS_K4_1_TARGETED_CLOSURE_READY_FOR_V8",
+    "heuristic_or_assumed_count": 0,
+    "ready_for_v8": true,
+    "source_missing_count": 0,
+    "status": "CLOSED"
+  },
+  "k4_1": {
+    "blocking_source_limited_count": 0,
+    "final_token": "PASS_K4_1_TARGETED_CLOSURE_READY_FOR_V8",
+    "heuristic_or_assumed_count": 0,
+    "ready_for_v8": true,
+    "source_missing_count": 0,
+    "status": "CLOSED"
+  },
+  "manifest_hashes": {
+    "data_pack_manifest": "e9cb8d6c6aba8e1784abca3afdfbb2808c0b07c2cd34bb070fb9dcb7c859b387",
+    "fixture_manifest": "589924d122b4bd7c0c5277a81de8bd60bcfdbcf81d08aa6d7c9256f7684c915e",
+    "gap_queue": "c9452a8822ee86635391d3cb4e3003cc6f0ea152109e180dcc48caae16e03ecc",
+    "legacy_checksums": "ca94194b90073d1c22131b450b9ded4f52cc781d0a47d3e24516c1be43723f98",
+    "legacy_manifest": "fa7560587cb3d2172ee7b7cb3126818a2023b3bda6e2d2f7ce9afe98f8d0bea6",
+    "runtime_mirror_manifest": "8cdbc17da726c60e786579f28f4b1e012949051cac96be75f8186a7183706181",
+    "runtime_pack_manifest": "7f6d4a2f6d473a81518783bf1b8aeb03b2709227f178cef2aa6d5a6012eb5fa4",
+    "source_manifest": "b1d8c055473ca74f33059a826e01d86575012e32a93a8d6014acd6676f0e9dcd",
+    "visual_pack_manifest": "97c59729f6792910e57960365b448836608f8e3a2b982ff569341832471d3f6a"
+  },
+  "preserved_original_data": {
+    "byte_identical": true,
+    "canonical_path": "knowledge/data/original/sqlite/social_dev_original_data.sqlite",
+    "canonical_sha256": "9d561f7d5708c73b6b8a80acca10681f0323ec5a001145ed9c63215987d79d37",
+    "legacy_path": "legacy/old-g1-5/social_dev_game_knowledge.sqlite",
+    "legacy_sha256": "9d561f7d5708c73b6b8a80acca10681f0323ec5a001145ed9c63215987d79d37"
+  },
+  "schema_version": "social-dev-k2-5-brain-manifest-v1",
+  "scope": {
+    "deployment": "NOT_STARTED",
+    "integrations": "NOT_STARTED",
+    "k3": "CLOSED",
+    "k4": "CLOSED",
+    "k4_1": "CLOSED",
+    "network": false,
+    "subagents": false,
+    "v8": "NOT_STARTED"
+  },
+  "status": "K4_CLOSED_VISUAL_ASSEMBLY"
+}

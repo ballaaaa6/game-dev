@@ -1,0 +1,163 @@
+[
+  {
+    "height": 39,
+    "id": "resChip_:image:85",
+    "source_ref": "runtime/social-dev/assets/room-scene/01_GAME_PACKS/chip/floor_05.png",
+    "source_sha256": "be6572af9df60f5ed00eb0ab0e7d4dd95ba08749d7ec88b027a8ae5b3896c08c",
+    "width": 80
+  },
+  {
+    "height": 60,
+    "id": "resChip_:image:154",
+    "source_ref": "runtime/social-dev/assets/source-social-dev/chip/road_edge_00.png",
+    "source_sha256": "eb160db9df4f9bd91492bc6d5b35812e734376c0faac252d6dc88f80a4ff08a0",
+    "width": 80
+  },
+  {
+    "height": 40,
+    "id": "resChip_:image:10",
+    "source_ref": "runtime/social-dev/assets/source-social-dev/chip/ground_00.png",
+    "source_sha256": "cfe67f80918ed7847b6508c5be7ae10bee716051ef1c77844cf51a0263afd7c6",
+    "width": 80
+  },
+  {
+    "height": 42,
+    "id": "resChip_:image:13",
+    "source_ref": "runtime/social-dev/assets/source-social-dev/chip/road_00.png",
+    "source_sha256": "a04fa6fa51110c17de3046cd6597997d6c3d39507b46ab01f78b318e238f2f21",
+    "width": 80
+  },
+  {
+    "height": 60,
+    "id": "resChip_:image:156",
+    "source_ref": "runtime/social-dev/assets/source-social-dev/chip/road_03.png",
+    "source_sha256": "ebc9bc8df71f06814f70d3da2055513193dabc9ca2f0eea5fd6f0e641e4005ff",
+    "width": 80
+  },
+  {
+    "height": 42,
+    "id": "resChip_:image:14",
+    "source_ref": "runtime/social-dev/assets/source-social-dev/chip/road_01.png",
+    "source_sha256": "db432f251f33e1b9d01ce0fcfbcb6a9b1b3b5260b18fa2605987bb9b31ae5508",
+    "width": 80
+  },
+  {
+    "height": 42,
+    "id": "resChip_:image:15",
+    "source_ref": "runtime/social-dev/assets/source-social-dev/chip/road_02.png",
+    "source_sha256": "bdb1983c6cb697e613d790c263702d4ddbe17df1625dddec715ecf32ca99f6fe",
+    "width": 80
+  },
+  {
+    "height": 94,
+    "id": "resChip_:image:12",
+    "source_ref": "runtime/social-dev/assets/source-social-dev/chip/turf_01.png",
+    "source_sha256": "9c28d325fb6113a59683dcfedb4ae1f6fe00b7d73e1c802307ac707273af7004",
+    "width": 80
+  },
+  {
+    "height": 50,
+    "id": "resChip_:image:11",
+    "source_ref": "runtime/social-dev/assets/source-social-dev/chip/turf_00.png",
+    "source_sha256": "a8a3dbca8a3d7409e7c88384da3653c99a139adbaf5eef984144f35231b1b734",
+    "width": 80
+  },
+  {
+    "height": 50,
+    "id": "resChip_:image:105",
+    "source_ref": "runtime/social-dev/assets/source-social-dev/chip/turf_02.png",
+    "source_sha256": "8c1ab69446a526504236a7a14236749cd9f8facf07489162ef71e56c8a75538e",
+    "width": 80
+  },
+  {
+    "height": 60,
+    "id": "resChip_:image:155",
+    "source_ref": "runtime/social-dev/assets/source-social-dev/chip/road_edge_01.png",
+    "source_sha256": "49bdb30f9329d68144088d14a11add2c00fbfba2266cbe457c1f57eb0ed3af45",
+    "width": 80
+  },
+  {
+    "height": 43,
+    "id": "resChip_:image:2",
+    "source_ref": "runtime/social-dev/assets/room-scene/01_GAME_PACKS/chip/wall_01.png",
+    "source_sha256": "ad06888341650eb828abf373b238d48b1f96e4007c2eec0fd7dd3c8a69b9b022",
+    "width": 96
+  },
+  {
+    "height": 61,
+    "id": "resChip_:image:18",
+    "source_ref": "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/big_base00.png",
+    "source_sha256": "d014ea295888b3f1a1b12498f03eacd67dfaa761f7183e31abf660e2ac431657",
+    "width": 120
+  },
+  {
+    "height": 32,
+    "id": "resChip_:image:3",
+    "source_ref": "runtime/social-dev/assets/display-slice-01/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/desk_00.png",
+    "source_sha256": "fb752e60c2a4f79485f87f7525cb519d19988a8da91f821cb595831856b81445",
+    "width": 120
+  },
+  {
+    "height": 32,
+    "id": "resChip_:image:4",
+    "source_ref": "runtime/social-dev/assets/display-slice-01/02_DERIVED_READY_IMAGES/opt_reconstructed/chip/chair_00.png",
+    "source_sha256": "f4e57d09be83c1f53faeb90b6ff779d43b96a1b669387e19e72d075718197b9b",
+    "width": 180
+  },
+  {
+    "height": 22,
+    "id": "resChip_:image:109",
+    "source_ref": "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/garbage_can.png",
+    "source_sha256": "8d41bfd21f189b971486f45a6832701eb9ccfd89ebe92eaba604ed96fc05f98d",
+    "width": 24
+  },
+  {
+    "height": 26,
+    "id": "resChip_:image:106",
+    "source_ref": "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/old_printer.png",
+    "source_sha256": "56a41237b773bc61ca54b49f76ff7abfb8979aef8d94de08f79b39de51e5bdc0",
+    "width": 23
+  },
+  {
+    "height": 28,
+    "id": "resChip_:image:127",
+    "source_ref": "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/calendar.png",
+    "source_sha256": "a8036e21042f64c785e7e3cd199b5b6886b8c5b9526edba41fc2cf7a43db6b56",
+    "width": 24
+  },
+  {
+    "height": 43,
+    "id": "resChip_:image:6",
+    "source_ref": "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/wall_00.png",
+    "source_sha256": "cbd7c73a38d041cafc330471cbab58b081c9c1c5ca4826e39e7f44d0a282d06c",
+    "width": 96
+  },
+  {
+    "height": 31,
+    "id": "resChip_:image:7",
+    "source_ref": "runtime/social-dev/assets/display-slice-01/01_GAME_PACKS/chip/door_02.png",
+    "source_sha256": "a0253c022dd98e6e56e4dd4772aeb078152b4e18456e273e68599bca6117dd62",
+    "width": 13
+  },
+  {
+    "height": 60,
+    "id": "resHuman_:image:86",
+    "source_ref": "runtime/social-dev/assets/character-catalog/01_GAME_PACKS/human/chara00.png",
+    "source_sha256": "b63ef87b3ac3a6b7d05979cb8d25a4dd4dca1e955b5c28003ab9f7e89083e5b8",
+    "width": 270
+  },
+  {
+    "height": 60,
+    "id": "resHuman_:image:87",
+    "source_ref": "runtime/social-dev/assets/character-catalog/01_GAME_PACKS/human/chara01.png",
+    "source_sha256": "57f8b8b05e0c2c6625e15709bc05896f7e4819d080401966c5e109a7ea454df7",
+    "width": 270
+  },
+  {
+    "height": 60,
+    "id": "resHuman_:image:88",
+    "source_ref": "runtime/social-dev/assets/character-catalog/01_GAME_PACKS/human/chara02.png",
+    "source_sha256": "e90289a936c259bdc4483ca7be7732eabe73079c657ffe7a5d0fcbd3d71d7933",
+    "width": 270
+  }
+]

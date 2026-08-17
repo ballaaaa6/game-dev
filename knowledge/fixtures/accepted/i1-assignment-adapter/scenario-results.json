@@ -1,0 +1,21 @@
+{
+  "schema_version": "social-dev-i1-scenario-results-v1",
+  "status": "PASS_I1_11_DETERMINISTIC_ACCEPTANCE_SCENARIOS",
+  "checkpoint_token": "PASS_I1_11",
+  "scenarios": [
+    { "id": "A1", "status": "PASS", "assertions": ["bound agent has IDLE_NO_TASK", "baseline ticks reach ordinary living", "no task spontaneously appears"] },
+    { "id": "A2", "status": "PASS", "assertions": ["assign creates ASSIGNED", "living snapshot unchanged", "no planning/develop/desk mutation"] },
+    { "id": "A3", "status": "PASS", "assertions": ["ASSIGNED -> RUNNING", "overlay bridge enters once", "no raw Staff state write"] },
+    { "id": "A4", "status": "PASS", "assertions": ["equipment detour is observed", "task remains RUNNING", "task and binding survive return"] },
+    { "id": "A5", "status": "PASS", "assertions": ["talk detour is observed", "task remains RUNNING", "no duplicate start"] },
+    { "id": "A6", "status": "PASS", "assertions": ["low-HP home path is observed", "task remains RUNNING", "no PAUSED/FAILED/CANCELLED inference"] },
+    { "id": "A7", "status": "PASS", "assertions": ["RUNNING -> COMPLETED", "overlay exits once", "Staff/desk/HP snapshot preserved"] },
+    { "id": "A8", "status": "PASS", "assertions": ["ASSIGNED -> CANCELLED", "baseline living continues", "no forced home"] },
+    { "id": "A9", "status": "PASS", "assertions": ["RUNNING -> FAILED", "HP is not set to zero", "Staff remains present"] },
+    { "id": "A10", "status": "PASS", "assertions": ["two explicit bindings", "two independent tasks", "no cross-agent mutation"] },
+    { "id": "A11", "status": "PASS", "assertions": ["second active task rejected with ACTIVE_TASK_CONFLICT", "no queue", "no living mutation"] },
+    { "id": "A12", "status": "PASS", "assertions": ["same command sequence and replay produce byte-identical adapter/dashboard/living output", "wall-clock excluded"] }
+  ],
+  "focused_test": "runtime/social-dev/tests/i1-assignment-adapter.test.ts",
+  "trace_root": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces"
+}

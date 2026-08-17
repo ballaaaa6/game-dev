@@ -1,0 +1,59 @@
+{
+  "project": "Social Dev clean-room runtime",
+  "current_phase": "K4.1",
+  "status": "PASS_K4_1_TARGETED_CLOSURE_READY_FOR_V8",
+  "brain_revision": "k4-visual-assembly-r2",
+  "current_branch": "main",
+  "ready_for_v8": true,
+  "v8": "NOT_STARTED",
+  "canonical_brain": {
+    "path": "knowledge/brain/sqlite/social_dev_brain.sqlite",
+    "sha256": "65df23f6a222472f7cc401589ea6fa0d226406be2900070702817bc16759f9d1",
+    "size_bytes": 174022656
+  },
+  "canonical_counts": {
+    "StaffData": 141,
+    "JobData": 30,
+    "SkillData": 36,
+    "FurnitureData": 103
+  },
+  "visual_readiness": {
+    "reachable": 49,
+    "visible": 42,
+    "blocking_source_limited": 0,
+    "source_missing": 0,
+    "heuristic_or_assumed": 0
+  },
+  "latest_completed_phases": ["K2", "K2.5", "K3", "K4", "K4.1"],
+  "latest_validation": {
+    "typecheck": "PASS",
+    "vitest": "PASS — 48 files / 314 tests",
+    "k2": "PASS",
+    "k4": "PASS",
+    "k4_1": "PASS"
+  },
+  "next_authorized_phase": "V8",
+  "key_k4_1_artifacts": [
+    "knowledge/brain/acceptance/k4-1/final-validation.json",
+    "knowledge/brain/acceptance/k4-1/K4_1_CLOSURE_REPORT.md",
+    "knowledge/brain/acceptance/k4-1/research-findings-classification.json",
+    "knowledge/brain/acceptance/k4-1/fukidashi-payload-closure.json",
+    "knowledge/brain/acceptance/k4-1/room0-door-action-vs-visual-contract.json",
+    "knowledge/brain/acceptance/k4-1/workstation-native-cfg.json"
+  ],
+  "three_blocker_closure": {
+    "Room0 door visual": "NO_DISTINCT_VISUAL",
+    "autonomous talk/Fukidashi": "PROVEN_CANONICAL",
+    "workstation live interleave": "PROVEN_CANONICAL"
+  },
+  "boundary": {
+    "runtime_code_changed_by_k4_1": false,
+    "generated_packs_unchanged": true,
+    "source_roots_changed": false,
+    "mapchip_pixels_changed": false,
+    "network": false,
+    "server": false,
+    "emulator_adb": false,
+    "live_app": false
+  }
+}

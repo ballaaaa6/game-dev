@@ -1,0 +1,2795 @@
+{
+  "accepted_roots": [
+    "knowledge/fixtures/accepted/g1_5/",
+    "knowledge/fixtures/accepted/living-core-closure/",
+    "knowledge/fixtures/accepted/data-dependency/",
+    "knowledge/fixtures/accepted/behavior-first/",
+    "knowledge/fixtures/accepted/runtime-contract-freeze/",
+    "knowledge/fixtures/accepted/i0-living-runtime/",
+    "knowledge/fixtures/accepted/i1-assignment-adapter/",
+    "knowledge/fixtures/accepted/i2-dashboard-runtime/",
+    "knowledge/fixtures/accepted/visual-port/"
+  ],
+  "artifact_count": 555,
+  "policy": "These roots remain read-only authorities; generated K2 views may reference but never rewrite them.",
+  "records": [
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/behavior-visible-action-map.json",
+      "sha256": "7fd0179101953be72162973bd9180fab82fa585862a08ba9165e61bbd4f08984",
+      "size_bytes": 2357
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/canonical-staff-life-model.json",
+      "sha256": "31ae3d9f9f12762767266664926caf5fbb05f434048b2d7c01e5b061760751e6",
+      "size_bytes": 907
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/checkpoint-ledger.json",
+      "sha256": "097c6196de29ea28f0d1350dec93d65ba9ae9aded2ca1b44be599913a060cbee",
+      "size_bytes": 36580
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/dashboard-preservation-boundary.json",
+      "sha256": "0c31bf8c6c0665efaa96acc465f37b67e339261e456aec939f2a39f231ca719c",
+      "size_bytes": 1088
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/dashboard-task-assignment-input.json",
+      "sha256": "734dcd7708367f6610b9ac953ddbb58cac79487aab9406bc0c4e602498f2957d",
+      "size_bytes": 3625
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/equipment-behavior-contract.json",
+      "sha256": "1296509b2e0db90c4175f766e98f5ea6f9d42ea44eb312141fb640518ecc9052",
+      "size_bytes": 2153
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/furniture-behavior-catalog.json",
+      "sha256": "14440296e7d1a68f678598efcffe191a744bc22e35d76a31743404a4e2c726f1",
+      "size_bytes": 86546
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/home-rest-contract.json",
+      "sha256": "ea343753feb59e77b6f26c668be83f52c670c7861e61aea77fdbb46d83128e8a",
+      "size_bytes": 1782
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/hp-condition-contract.json",
+      "sha256": "f3dda8ead23491e1e0a470b6457b38b3225fbd5edbb20f9e6ddaaa0b7e36df40",
+      "size_bytes": 27991
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/hp-read-write-graph.json",
+      "sha256": "57f412f29118d547618e5a6a287d4770fdfa050b236c396f6b9489469a999d4e",
+      "size_bytes": 1607
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/idle-autonomy-contract.json",
+      "sha256": "11100ae9563c498d037de6ad5dfa3a8f2dae7a3e4a04c0ceb66884abd6941807",
+      "size_bytes": 2121
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/movement-target-arrival-contract.json",
+      "sha256": "a39e7d24d25049885d683000cc66b53d0e8ab5cac126e335467e798294ed6be5",
+      "size_bytes": 4726
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/multi-actor-contention-contract.json",
+      "sha256": "74f78567d96b2074933edf5b5eee704fbb20294209cb469ef67eedec4c392ab8",
+      "size_bytes": 2367
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/prior-evidence-reconciliation.json",
+      "sha256": "98979e053774d4c42ff7d87656a9d1c7d4b169a6fbe91658f509e3ba6f2a79d8",
+      "size_bytes": 4761
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/staff-field-inventory.json",
+      "sha256": "4591de31ab5fe6c7dc0a5ba0b068b4d855f2f3e08a1c7e24295918ef292b37d3",
+      "size_bytes": 57781
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/staff-state-constant-catalog.json",
+      "sha256": "1858ab50e7cb6d9967507e3a17c014d6a7cb0b995558651208cef0e48b2126b2",
+      "size_bytes": 30736
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/staff-state-machine.json",
+      "sha256": "2724c9e256e3fe644f607de19477153e1fdfef62403c51f7ae8352c5befa7d30",
+      "size_bytes": 15204
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/staff-transition-graph.json",
+      "sha256": "cde40d58ad4f58d52aa96df2a777bac9acb58f5db26cc70f0160e463556f68f5",
+      "size_bytes": 3654
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/talk-social-contract.json",
+      "sha256": "82acc5b231c009c2999ffe031ef86ec89924a85ec986cfc1841f2884b32b8fa6",
+      "size_bytes": 3193
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/unknowns.json",
+      "sha256": "09cae38590b021bee892aa31c38cc7f96744831da13f1249fdbcb6a18a75088d",
+      "size_bytes": 4384
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/work-recovery-lifecycle.json",
+      "sha256": "487130572f9801436d71e21388862cde22432f018f8ee38dc1d5bf39dc00c01c",
+      "size_bytes": 4002
+    },
+    {
+      "path": "knowledge/fixtures/accepted/behavior-first/workstation-ownership-reservation-contract.json",
+      "sha256": "644f1f80be133680558bb9d5b85ccf9d7726cc4c8635da49faa2a435bb975b2e",
+      "size_bytes": 5265
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/actor-furniture-dependency-contract.json",
+      "sha256": "defde944007a10689ee6e4ce04d29a515a24a76dd174c94b6f85542b4ad713da",
+      "size_bytes": 3431
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/canonical-actor-schema.json",
+      "sha256": "6dd964b18b2a8cc425808c6c2ac61a35d7c4b8c812b5638224b1b0acb5e3fcd7",
+      "size_bytes": 20351
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/canonical-furniture-schema.json",
+      "sha256": "24e78ddf535d8162c4866a90f445d196c0b9b2b7b10edfb45958f2de9a8c43c2",
+      "size_bytes": 6314
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/checkpoint-ledger.json",
+      "sha256": "362b959040bb9eda3263af7ef7231e358555d274ce8a75567cf9d94360ea6b0a",
+      "size_bytes": 4465
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/dashboard-task-adapter-contract.json",
+      "sha256": "a91b31db4cccfcd611028310f4bfd66f77d32cd53a8a541000ce36b55e5d9662",
+      "size_bytes": 2536
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/data-catalog-authority.json",
+      "sha256": "d42e4fdd0b6a886c34702e1eb7da0398220321bfed02557088ea1c07e9a0a87b",
+      "size_bytes": 19270
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/furniture-status-effect-contract.json",
+      "sha256": "c54f61a05efcdcee88fb978075adf282581c94574bc46e3967b3a8ff2917f698",
+      "size_bytes": 302200
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/hp-data-dependency-contract.json",
+      "sha256": "0b1f8a55a0b5ed10a601767b24a70332504609a468c0f812867db2136356cc69",
+      "size_bytes": 11828
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/job-level-parameter-contract.json",
+      "sha256": "1563bbd5fd9498c188bd958d8e3b841168c652d394aa6a51b30d3002f69bc433",
+      "size_bytes": 72517
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/jobdata-canonical-catalog.json",
+      "sha256": "62f5b7908193fd057f69bf14fd99bb43ce4f5fd060a39197f78bc39149fd3e6a",
+      "size_bytes": 722027
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/living-skill-effects-contract.json",
+      "sha256": "efe0401845cc20b436b02889fbce5ba88892cbea7d72356fb330de62787776df",
+      "size_bytes": 69168
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/original-staff-profile-catalog.json",
+      "sha256": "3c53a9d3167119dec5b13b08e9602d59eff2ef19daf13a98b206d8fac86874fb",
+      "size_bytes": 306375
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/skilldata-canonical-catalog.json",
+      "sha256": "f483e0aa90a856e88249c6727f9162309c34c8fd38addb385560daaeba4f8dd7",
+      "size_bytes": 878107
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/staff-derived-parameter-contract.json",
+      "sha256": "fa00344fc29ed78c64762f43f01376d011060bfba4eea878a944d09b01f282dc",
+      "size_bytes": 8797
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/staff-job-link-contract.json",
+      "sha256": "adbde03ec28ac1588c6f0f573a698bf3b392a0d5b40f43cc34828ab0a67fe89f",
+      "size_bytes": 107566
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/staff-parameter-vocabulary.json",
+      "sha256": "dd23d89d9004ab9a704d690ced0e91c444d2744393542df5b3b9d61fa086e786",
+      "size_bytes": 45506
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/staff-runtime-status-contract.json",
+      "sha256": "c91588466a5992774da4e2c58a27801bea32b1664a52dbcd3c57e2054768b550",
+      "size_bytes": 88163
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/staff-skill-link-contract.json",
+      "sha256": "edcbc3856eb0e10b594958ae6eec04087084944a5d6e851ddcb08f79bc9de8c7",
+      "size_bytes": 119218
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/staffdata-canonical-catalog.json",
+      "sha256": "c4de916e0bc7e5dc878463c331a29bc7f931ab3f2eb8e38d1735387d894bc44a",
+      "size_bytes": 4938020
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/unknowns.json",
+      "sha256": "ad118d334d55b08c33bd230b0b476c526996eb765aa5450a9835a369d3c0dbab",
+      "size_bytes": 3177
+    },
+    {
+      "path": "knowledge/fixtures/accepted/data-dependency/work-status-dependency-contract.json",
+      "sha256": "c2c619c23c1ee5b5660fb08f65f1af4e55213047ad53a29ae1fb7f9130aa5838",
+      "size_bytes": 17798
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/core-data-count-validation.json",
+      "sha256": "79405a8397c135250696d01ccdd680d5b02a0b2bcf4d8095ead958229910b5dc",
+      "size_bytes": 62540
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/data-manager-native-authority-map.json",
+      "sha256": "dea1836826c6463fd8647e73e68a5b6eb9c43c11b55cb78732c139592f7b7709",
+      "size_bytes": 45820
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/data-manager-slot-dispatch-native.json",
+      "sha256": "3b39e5db529cf2e07f451b4064e0fff2e4dbe23e2ddf38bd3cc6b2569710bc9a",
+      "size_bytes": 44471
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/gaps_classified.jsonl",
+      "sha256": "9f9b4d6ed38cdc7d1197aae56a8696d64a74bd644a6a879c4864509216e515cf",
+      "size_bytes": 3792
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/minimal-work-assignment-input-contract.json",
+      "sha256": "035105fd012e9add4edfefa63a5542835b4ed455ff98db6374900d5276e1e986",
+      "size_bytes": 2414
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/planning-command-boundary-native.json",
+      "sha256": "f09e14e3076555d6b0ef150a0c35b3fc0f8f6433d0926f9ebf4e9a0af1598496",
+      "size_bytes": 20959
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/staff-hp-native-field-access.json",
+      "sha256": "3465904611a050fbfb6baa0eb5700b6746b17052a4025801add8a9cdf0b1a874",
+      "size_bytes": 41366
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/Exclusion.txt",
+      "sha256": "e483b8499e6f940d1f61300b1827fb598e6b9d89bc0bbcc7d0d45a9357f12ecb",
+      "size_bytes": 168
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/area.txt",
+      "sha256": "bf804402448918ff8aaf4d9b9bf6ab98ded58f499466a84a668d103cd0059955",
+      "size_bytes": 423
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/avatarEvent.txt",
+      "sha256": "16fc8a3449daba35147c47fe3694bf8e4b93375964d2cbe692f633d463171cfc",
+      "size_bytes": 6973
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/avatarTalk.txt",
+      "sha256": "d4151bdec07bfb18a6fd0fe9f149d0e875adbc82849b0ea95733226870c5b98d",
+      "size_bytes": 1118
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/award.txt",
+      "sha256": "80cb2aa7fed1d52eb389be294b28e57f1e4c99fa427abc5e6281846192309418",
+      "size_bytes": 5151
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/company.txt",
+      "sha256": "c419c7e21bc900e45acba70faee77bbd840c94aadedc21ae78004d94549cb5ca",
+      "size_bytes": 8232
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/contentMatchList.txt",
+      "sha256": "c59dd6a52d50d25e0395d61a9d350985a2f801c02735ba6531b6ed83fd7442bf",
+      "size_bytes": 10336
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/downloadEvent.txt",
+      "sha256": "9cb6709535118de6e03ee6d35c52b08f125c9705155f314e4a044a76e5195b73",
+      "size_bytes": 3143
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/enemySkill.txt",
+      "sha256": "1f62a349c58a99875dfd05d075ccaf825477e9eb760fbb98ae4cfa77b2778aa3",
+      "size_bytes": 1026
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/event.txt",
+      "sha256": "68bf8addc44934d33647f0ad005a3a69d30277a02633dc26b15bd2b131a8328d",
+      "size_bytes": 8472
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/eventmessage.txt",
+      "sha256": "a26dfc8f1787d6049f128ba437950d961e348402540ad4e625069591c15d2353",
+      "size_bytes": 3484
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/favorite.txt",
+      "sha256": "d6a13cc1f9002e68f4ef5ee8c95a5fd8b4d7ea51a530eddcfaa8da0f328d05b7",
+      "size_bytes": 430
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/festival.txt",
+      "sha256": "13548b79cda83be311fb9c3723d5a4c3073bead65a42541e674117a67d77d6f5",
+      "size_bytes": 690
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/furniture.txt",
+      "sha256": "a0b6a20ab4dcfd8cc066f2f710446b5a568cbbba9d026200f8faf25c7d820322",
+      "size_bytes": 10682
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/gameDex.txt",
+      "sha256": "01c5c16f4e7c022018d71f38edeed7874dfc1990b230e673c8e7bf0c9072691d",
+      "size_bytes": 434
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/hardware.txt",
+      "sha256": "ade71d8157695a183357d92dd98bbfe6cec9900ffcabf0f080afda4f8cce0c14",
+      "size_bytes": 181
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/help.txt",
+      "sha256": "7d0d3d979102c01517309606f0ca82305ef39fbcf31da3851f35cff461fa7c02",
+      "size_bytes": 31
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/helper.txt",
+      "sha256": "caa25053ad44139e7a7afa9a5b20368a060ddd8444d90b0b8956f7ac0d244e78",
+      "size_bytes": 1420
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/history.txt",
+      "sha256": "1ef32283402993ff5c11fab6f31b70d89bbab755502ae98f6f149a637f949280",
+      "size_bytes": 19762
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/idea.txt",
+      "sha256": "f5bb470d05a743b6f2300f313854076e70983b61b904b140a580aaeb000a4d72",
+      "size_bytes": 28976
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/install.txt",
+      "sha256": "d2e4e989f12ee3be7b51d8aacb11129ab68fc44762abe1f75bb473e6bd0b824e",
+      "size_bytes": 3093
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/item.txt",
+      "sha256": "1778ddee7480e8d620e10b3d2091c9e82f671d936f061660d5ffd46364ce85e2",
+      "size_bytes": 9132
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/job.txt",
+      "sha256": "a81d07782c5640dfc54d44d451f0d0b9f78c3504bceb38eeac67b916225141aa",
+      "size_bytes": 3594
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/loginBonus.txt",
+      "sha256": "fe413d8f7c4a11ad5a6ce15b3d39eb3db13d509c66eea78686a65f61880d57b1",
+      "size_bytes": 670
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/mail.txt",
+      "sha256": "8baf8f279cf3eb0a5ce9d2eb9950e9b7649655caddf78899a375d28c4b6ec779",
+      "size_bytes": 63033
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/mailWord.txt",
+      "sha256": "7a1e4bd08c0f9e01ec50145b385c709ac28ef663a21e4ae04cafd5ba52d48534",
+      "size_bytes": 21272
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/management.txt",
+      "sha256": "2b4201e02820cac42691cb06c872af4ab6cd722da78f2c90f5cd163e615409bf",
+      "size_bytes": 1880
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/managementEvent.txt",
+      "sha256": "9110af76a17acdae2977ef5b3f42df5bb1555a8ae516523cb3a27c194dfb34a2",
+      "size_bytes": 1006
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/methodMatchList.txt",
+      "sha256": "fcbf918f320267b3306569fea3cf06563dd8911c848e758e9655f72a4232271f",
+      "size_bytes": 2589
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/news.txt",
+      "sha256": "e685a77ea6a8f32a3996e0620b0b54975c2f0cccff4ec832bd48e0cddd37720e",
+      "size_bytes": 30
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/platform.txt",
+      "sha256": "12162b79f997afcea0436d5c184dc7947bfae0451a02cfe6460aa3434142b3f8",
+      "size_bytes": 1709
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/platformContent.txt",
+      "sha256": "1b1edd8fd942dd5f5cbb264a33ee9623d5b501d493b3a4857ce3a9f55375c6de",
+      "size_bytes": 2341
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/prize.txt",
+      "sha256": "75e9155cf04dbe86485accb9fb3d45903654656224408eb997e7fd96e07d850f",
+      "size_bytes": 619
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/profile.txt",
+      "sha256": "fd99a614fc670b7dbd928278782e948c2f2bf3c74b2a315e99ee33f4bcb3eb99",
+      "size_bytes": 1088
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/releaseEvent.txt",
+      "sha256": "0c0b8b8c552dc01f6f52250200f0234dd29418ec29f70d507d7ef1f4939178dc",
+      "size_bytes": 1384
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/room.txt",
+      "sha256": "23c5f49961663426f46ee5a66483b4e9cece0683d957cd2f2f66eb98ec0218e8",
+      "size_bytes": 9123
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/roulette.txt",
+      "sha256": "78e3c33365607bd6254c01d72b0d3e97591a9c0f70b4056261eb11f23720064f",
+      "size_bytes": 1129
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/saleTask.txt",
+      "sha256": "5c95752846ce8258ec90a361e187d4e0867631c898459cd67568a8462fa7faaa",
+      "size_bytes": 1590
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/schedule.txt",
+      "sha256": "d7c23a6eeb4d50c95e612b15f2fafd0cd43e79f643942463ab2e512e3bf87165",
+      "size_bytes": 8061
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/scr.inf",
+      "sha256": "2d6f18c61c29acacaaa18f0435c3d489f8cc7324e5e13f77b047887fbefa4459",
+      "size_bytes": 605
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/skill.txt",
+      "sha256": "d2419aa6c21fd843b3279ca574705dd00445ad9c816ef60b9fc84a65ec2da06d",
+      "size_bytes": 7760
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/softkey.txt",
+      "sha256": "056c712a359880f6a53df7c42a97cdac697446e9706df09ae894f7150599a6fe",
+      "size_bytes": 170
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/staff.txt",
+      "sha256": "51a2391c18c6a9016b90cc98c9dcdd3a03752763af2535706f5494a6abf9e5e3",
+      "size_bytes": 17837
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/talk.txt",
+      "sha256": "1b9203d7b98e0444fbaec14e9792978ecb5a03a1e7f037fe76c102c4ac2fd763",
+      "size_bytes": 65736
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/text.txt",
+      "sha256": "dddb2c3fb242242085e0307d8bef3eb9a34d0634b6493634c90cedf93af939c7",
+      "size_bytes": 77234
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/todayEvent.txt",
+      "sha256": "c936da03175207ba98969dbc639ef24e3cf7680db748b3f56d770689e7c39110",
+      "size_bytes": 4054
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/English.lproj/trophy.txt",
+      "sha256": "02c6514945e74d3b82b5a7f7fe6ccec87459e33500262ce807967000a325776f",
+      "size_bytes": 5887
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/area.txt",
+      "sha256": "fdace16bf70befb498a6342b3b2d39a66e5f51fd5011bdb76f8f5c54c00b09ba",
+      "size_bytes": 431
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/avatarEvent.txt",
+      "sha256": "16fc8a3449daba35147c47fe3694bf8e4b93375964d2cbe692f633d463171cfc",
+      "size_bytes": 6973
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/avatarTalk.txt",
+      "sha256": "2af2a0bfe0f748a44754a2e66eb2aec9a51de6e786deaee27c741ac2f2d02305",
+      "size_bytes": 1318
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/award.txt",
+      "sha256": "9a529e89be6f228405d4c9fc9872ac887806a264cc7bfac3dd959f6e6dde5299",
+      "size_bytes": 7072
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/company.txt",
+      "sha256": "7af8c1e62a93c16892fa15ec126f31258085e95b1742e467b8377095ac73a793",
+      "size_bytes": 10838
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/contentMatchList.txt",
+      "sha256": "c59dd6a52d50d25e0395d61a9d350985a2f801c02735ba6531b6ed83fd7442bf",
+      "size_bytes": 10336
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/downloadEvent.txt",
+      "sha256": "171ed3472db81b937e0671ef866136d0105461b5866c7ad7edb90ecb60b6b2ec",
+      "size_bytes": 3722
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/enemySkill.txt",
+      "sha256": "a2a88b960c3e6e72fd73c28dcb286f014ce475e7281f19f57434644514e36bc7",
+      "size_bytes": 1055
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/event.txt",
+      "sha256": "68bf8addc44934d33647f0ad005a3a69d30277a02633dc26b15bd2b131a8328d",
+      "size_bytes": 8472
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/eventmessage.txt",
+      "sha256": "5237a92455231784c630b01079b2903dbff6cc732119a36cfed9bdc7f31c7498",
+      "size_bytes": 5826
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/favorite.txt",
+      "sha256": "cd7f2ea43e10b488651d7f93c8462b26665ed6cad760ed2301ac05576fcc5edf",
+      "size_bytes": 508
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/festival.txt",
+      "sha256": "13548b79cda83be311fb9c3723d5a4c3073bead65a42541e674117a67d77d6f5",
+      "size_bytes": 690
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/furniture.txt",
+      "sha256": "837b802f593ee6314e1aed4571d2f25011db7a0d6da6aa0dab7b10b4929f7a27",
+      "size_bytes": 11142
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/gameDex.txt",
+      "sha256": "efb3be7295cffe040218cadcab8652cfe0212db64efc404a21298e4fdacdfc84",
+      "size_bytes": 493
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/hardware.txt",
+      "sha256": "454d63edd12d0bb72af01d0773bb3ac81cf8564ae604d646b18f7146f2c3500e",
+      "size_bytes": 195
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/help.txt",
+      "sha256": "7d0d3d979102c01517309606f0ca82305ef39fbcf31da3851f35cff461fa7c02",
+      "size_bytes": 31
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/helper.txt",
+      "sha256": "51e29ca81551a68ee79d1c2f40d367189d75d09f8a150c50994567a1e6a7eac1",
+      "size_bytes": 1785
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/history.txt",
+      "sha256": "5c5f8a1e3bfde511434c7cc36bcb3d2bdffe5540026e0d3071119cc414536549",
+      "size_bytes": 24958
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/idea.txt",
+      "sha256": "52bbb58bc223db62057b5441b906479919a825a9eb5c003d857de3661b788252",
+      "size_bytes": 32053
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/install.txt",
+      "sha256": "dc667c53464139bd8600af9ebf9b881755bf2e6dc33285ae41b41f3f1ee58ece",
+      "size_bytes": 3318
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/item.txt",
+      "sha256": "d31949b6c8b410d163138bfe2f984c89062fa16feefb58fbbf16f42a4f2a7da6",
+      "size_bytes": 10223
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/job.txt",
+      "sha256": "d348a5062d3ab334c4e2412e5cbf6ad043087b4d009986e978ed37c7ed977698",
+      "size_bytes": 3946
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/loginBonus.txt",
+      "sha256": "fe413d8f7c4a11ad5a6ce15b3d39eb3db13d509c66eea78686a65f61880d57b1",
+      "size_bytes": 670
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/mail.txt",
+      "sha256": "9c1cad24c8bab5a924a69da2b3685d11ed088a53db8efd6e426911a0ffbb3354",
+      "size_bytes": 77083
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/mailWord.txt",
+      "sha256": "526d44ecc421f3b71ebf8d1d31b442aa78fc369576c402ccc26a49cccd8dda62",
+      "size_bytes": 34893
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/management.txt",
+      "sha256": "2514dae67fc23c4b60e9d10470bec912fb3df651790b7828063cc7ebf6446a71",
+      "size_bytes": 2067
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/managementEvent.txt",
+      "sha256": "870bdae782891b453a3d2880c49812b8389c3a92a3c96ebde7f695c771e60420",
+      "size_bytes": 1297
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/methodMatchList.txt",
+      "sha256": "fcbf918f320267b3306569fea3cf06563dd8911c848e758e9655f72a4232271f",
+      "size_bytes": 2589
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/news.txt",
+      "sha256": "e685a77ea6a8f32a3996e0620b0b54975c2f0cccff4ec832bd48e0cddd37720e",
+      "size_bytes": 30
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/platform.txt",
+      "sha256": "40089ef0926df53884c7666da3240d3d824e094bb926dc16f1354d7d33fd7992",
+      "size_bytes": 1810
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/platformContent.txt",
+      "sha256": "c7693118bb79c6bff0797f8ebd5894310ec7a2915868b71260e013198e59cdd5",
+      "size_bytes": 2671
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/prize.txt",
+      "sha256": "75e9155cf04dbe86485accb9fb3d45903654656224408eb997e7fd96e07d850f",
+      "size_bytes": 619
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/profile.txt",
+      "sha256": "58133527323baa8af85850435119b824b19b5d0fee828151598bd1c5d9515b30",
+      "size_bytes": 1262
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/releaseEvent.txt",
+      "sha256": "cd856d57ca442737b8e40cff4e72b642e6a9406a3efece96a6b812d29fd0bc3b",
+      "size_bytes": 1532
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/room.txt",
+      "sha256": "c7a12f3993c42c427beda19f55554fb1010eb2dbc9f85b4cdbf68598794b1b0e",
+      "size_bytes": 9177
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/roulette.txt",
+      "sha256": "78e3c33365607bd6254c01d72b0d3e97591a9c0f70b4056261eb11f23720064f",
+      "size_bytes": 1129
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/saleTask.txt",
+      "sha256": "5c95752846ce8258ec90a361e187d4e0867631c898459cd67568a8462fa7faaa",
+      "size_bytes": 1590
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/schedule.txt",
+      "sha256": "7230806a1415765ff22e89ca808826eebf7e70b24450083fd7bb15b208849f2e",
+      "size_bytes": 11882
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/scr.inf",
+      "sha256": "065f9377c0219976c57e7c134b784f6390f613ea4e68614f085fac1201b528e8",
+      "size_bytes": 595
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/skill.txt",
+      "sha256": "dfe0e6fa844ea7178732541ff6188b378ca7da187145e2fd1cfb4f34adc9c738",
+      "size_bytes": 9286
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/staff.txt",
+      "sha256": "bee9fdcab768bc0db51d2b2037d46891e801cbe923a703d0738e418626966f98",
+      "size_bytes": 21447
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/talk.txt",
+      "sha256": "702c0e3044712740394db59343f56568e70af007fa6be26e0a7002037d6c9bc7",
+      "size_bytes": 82943
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/todayEvent.txt",
+      "sha256": "e00bde2746883d18d04f3d77d4b9ade4851860bb70caae195aea40e8cce2f30d",
+      "size_bytes": 5079
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/Japanese.lproj/trophy.txt",
+      "sha256": "5e69735401354a0e52d52dc15bb670a491d992273edeb30d85b7daec7d7b7613",
+      "size_bytes": 6830
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoded/manifest.json",
+      "sha256": "d8fb5b93b05889019cbb4f58ba0b13687886de1f6c3898bb10691a4e3dca05cb",
+      "size_bytes": 4872313
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-decoder-contract.json",
+      "sha256": "090f128d6134c506c1174058f7cdde1fa740a88f479af42e004a48c480d19066",
+      "size_bytes": 4746
+    },
+    {
+      "path": "knowledge/fixtures/accepted/g1_5/xls-textasset-source-contract.json",
+      "sha256": "c415bfb5811d93936fa12feb694d78fbc7067f07ac089062ecb97d35a0cb02ee",
+      "size_bytes": 1782
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/baseline.json",
+      "sha256": "d44fb0163807a64c7a2b753b785c0f43a62c314ba4627aa51e7e0ff3a5a7310e",
+      "size_bytes": 2772
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/canonical-runtime-catalog-manifest.json",
+      "sha256": "efddc946a316f4a3578692c452ef2fec1ee7634c8b987ae53aabf742424cfe95",
+      "size_bytes": 1615
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/checkpoint-ledger.json",
+      "sha256": "61729b5582854837f4ce5d866b4d987ce66a89dbe9cc7d79bfcfaddbac6ce91c",
+      "size_bytes": 2815
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/contract-consumption-map.json",
+      "sha256": "abfd3ac6d6cfc0a13ba3e8104301bb68fe5a09702135d4a172d420f964308c5f",
+      "size_bytes": 2347
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/deterministic-rng-replay.json",
+      "sha256": "9bbfbe2063aa817d199236b3de78e41f4285d176b50e8764dd665e80fbe89894",
+      "size_bytes": 657
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/implementation-manifest.json",
+      "sha256": "d62094b15073efc22a0e3d33a3a7be7ef26fb720d4791e9433c115f2d568175f",
+      "size_bytes": 1915
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/native-implementation-spotchecks.json",
+      "sha256": "6f5c63feecefe27e4a1c3fc2271f3fb764f8a721ac3c179e89f3747107fe81d6",
+      "size_bytes": 3721
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/r0-contract-hash-lock.json",
+      "sha256": "e14c7fc439315685332d88dec7beb90d64f96c073aea283e8b72915e8034e140",
+      "size_bytes": 6305
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/runtime-module-migration.json",
+      "sha256": "abef45e564c90f8fc29d2f47fe55f2e2243f0ddcd267131c54476592feade92a",
+      "size_bytes": 536
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/scenario-results.json",
+      "sha256": "7b1672668b9f5f9d6ca09557c116a24f9a98b01bc961c25c4a530021dc7cfc73",
+      "size_bytes": 2062465
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/source-reverification.json",
+      "sha256": "fcca11bd014a225e5007c8fadc8b6cef49f14c4bdca4c511ecb8a55ab601ba41",
+      "size_bytes": 1552
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/tick-rng-closure.json",
+      "sha256": "a919425ed4d640d1de413dbb9d69158cbb3c2c0bcc8e6e62dc87912ae17a6b8f",
+      "size_bytes": 703
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/transition-traces/S1.jsonl",
+      "sha256": "eb6d25059bce1acdaf272ac4fcce83e8daaf45e9d3e490d16fe86fe017ef0cb0",
+      "size_bytes": 20293
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/transition-traces/S10.jsonl",
+      "sha256": "85f3df5e3ff9310b37a44b2b6a99ced02d8975e25f8888aaba6c72b15c3730b4",
+      "size_bytes": 187932
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/transition-traces/S2.jsonl",
+      "sha256": "dce22b90b3359dbefa09a8387d5dd4a97aa6172657621337b11c94a02e4d653a",
+      "size_bytes": 86541
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/transition-traces/S3.jsonl",
+      "sha256": "49357d93fd3ab875221941b78e069d0646d21b3d25b7723aa8363da0bf6c5ce0",
+      "size_bytes": 241504
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/transition-traces/S4.jsonl",
+      "sha256": "ab231bd2358f0de352f7a1aaea724ec824b7878db4ea301a41aaeaa0f8b9673c",
+      "size_bytes": 70445
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/transition-traces/S5.jsonl",
+      "sha256": "516e0b496209f765ccc8d3e164692ccd2d43210cb30a5d0a62d1ec16c09584e2",
+      "size_bytes": 2264
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/transition-traces/S6.jsonl",
+      "sha256": "e53b82dfa464612804bfd4bc4b211fa9f34dd2a02360c5b7e177f901b8301899",
+      "size_bytes": 3414
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/transition-traces/S7.jsonl",
+      "sha256": "a461e0507e9b79e0880f7ddf7e50d7fc0a183b42269c38e9e8ab284d5d868558",
+      "size_bytes": 2007
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/transition-traces/S8.jsonl",
+      "sha256": "524028c042c40cf8d2d594c53134bf6a741b4472b1514847e8a6ee845acedda3",
+      "size_bytes": 3472
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/transition-traces/S9.jsonl",
+      "sha256": "c178bbf1169bcc91f4ccd5b92970b712baf51e98b542281ca5a2f8f3bee6a3ec",
+      "size_bytes": 4697
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/unknowns.json",
+      "sha256": "bc0ef86e09ee3bcad0367b484951bc0c128ac78cd38b08e461dc3cac7c715b6c",
+      "size_bytes": 471
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i0-living-runtime/validation.json",
+      "sha256": "1be48c2d26095cd0a79aa7050c787eb8193df9a7627360eacc695b8d28613224",
+      "size_bytes": 876
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/agent-binding-contract.json",
+      "sha256": "1da211387ca940d569cd63b5dfe59ceed658f71a96e50e10a2e96173dd151e53",
+      "size_bytes": 588
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/assignment-bridge-decision.json",
+      "sha256": "eb2307e84627ad9b1696ff56a1d8958d56a6d413150bbd41e93e5aa7b59996cb",
+      "size_bytes": 2551
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/assignment-command-contract.json",
+      "sha256": "fa61d1217e87d1fb59b404a6423f5bf15846a12a72fa8dcc97926d51705d13d0",
+      "size_bytes": 1177
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/assignment-event-contract.json",
+      "sha256": "c2e2c39532ed0d7baebf32e792b662df4fdfdf8224019e4783d5df991797d323",
+      "size_bytes": 925
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/backend-execution-policy-boundary.json",
+      "sha256": "314925a30f1b1945215a89ef96c7f0260d790e3415f6728d66a866f8ae266b0f",
+      "size_bytes": 540
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/baseline.json",
+      "sha256": "f2086dca3f4f6ad1ed93c0af09a35a8dd560923ce0affcd4170cf70ebed866a6",
+      "size_bytes": 1367
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/checkpoint-ledger.json",
+      "sha256": "50d4f655f01bf7f5b294dae61914c4486cf17c59a5990d4632cbf43a24b4c2a1",
+      "size_bytes": 3370
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/dashboard-read-model-contract.json",
+      "sha256": "e5d35a5230b399306193671fee19c545c10cf591c935fb93dcb034aa0789b58d",
+      "size_bytes": 955
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/deterministic-replay.json",
+      "sha256": "bef2933d2826908ef25434d0008f01ee01410b88844ae729818095200fdf3e37",
+      "size_bytes": 633
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/develop-hp-interaction.json",
+      "sha256": "3cde9d7dc32078d50893de9c5265ee36821475d6c37e652563e0060cd5244f49",
+      "size_bytes": 1328
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/develop-interruption-contract.json",
+      "sha256": "31bfee6c46e754e734f0ceefc648f3d797454321f9da7b37e0cb7e7fe0f5d70d",
+      "size_bytes": 1013
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/i0-hash-lock.json",
+      "sha256": "f516c47e606664a09489b74d615b8c6516b48de6d67c38fe8d728be26b915b4a",
+      "size_bytes": 2103
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/implementation-manifest.json",
+      "sha256": "b7840efd978cd71e263546da54327eae6eaf5c8cea4f53ddeea3df88e7adbad8",
+      "size_bytes": 1462
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/living-interruption-product-state-contract.json",
+      "sha256": "480f854b67e21a6003af7f9fc4fc302bb079847869976a351e36039f244de716",
+      "size_bytes": 836
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/multi-agent-conflict-contract.json",
+      "sha256": "7f5bc3f3e06f3d44e56382991aaeb2a89aff457256064026229fdf44f9f77911",
+      "size_bytes": 743
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/original-development-assignment-payload.json",
+      "sha256": "0c31e2ce668624f2ca2dbf6730d4f327a3ff260687ebf0bad0b3bc17a9d6b918",
+      "size_bytes": 1473
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/original-development-completion-chain.json",
+      "sha256": "63f5e2d9861916e88447905112281881c6e8480b0e155b1362d530c14b564c23",
+      "size_bytes": 1417
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/original-development-start-chain.json",
+      "sha256": "f467d828fe5df8d467865ce60f92398484227341590da71c4bd0fa8a88ccd604",
+      "size_bytes": 2153
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/original-work-regime-matrix.json",
+      "sha256": "4d594e9cbc132da248bd12237f1821ca3f61d945677441cd5ce9cf77710be4cf",
+      "size_bytes": 2736
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/product-task-model.json",
+      "sha256": "7e6292e104e4a648bbe84f9e4b9a0139cd499d483c70ca6e5664f209dca4ca73",
+      "size_bytes": 1059
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/scenario-results.json",
+      "sha256": "1cc9338736174fd29139ee818a5f584e966f5c70e339694624294fd1541a6b21",
+      "size_bytes": 2040
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/source-reverification.json",
+      "sha256": "b9625012131e4b5f08a48364b8e992dd0c383c56b56f05b11c9e5b44778fc5a2",
+      "size_bytes": 4310
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/task-lifecycle-contract.json",
+      "sha256": "a4120b2604c00c9b8eafa68d11b9c08611dbd6a9bef8e5467ca7b1eeedf4b1d7",
+      "size_bytes": 1011
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/A1.jsonl",
+      "sha256": "28ee145134c6ad61f435a6226b32b805d42e31ee6884ae92e18da66b822b02f5",
+      "size_bytes": 230
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/A10.jsonl",
+      "sha256": "cbc6443a0dac3a377359a1cde979562ff16df94ed9e36e3989d6ad4cf3c79dab",
+      "size_bytes": 330
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/A11.jsonl",
+      "sha256": "6ba4499f42a6a28f48c4b599d3b5e5d2c9d3b8c973b9650273cb8b4faca1e361",
+      "size_bytes": 184
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/A12.jsonl",
+      "sha256": "f556f266e7cb7b999005460251f2d6648765bd53de3970eb3c1e8478b514ca94",
+      "size_bytes": 123
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/A2.jsonl",
+      "sha256": "700d0aa75da73e9e560a6c8e035678aeb2d82985c12296e1f64fe60f8d48760c",
+      "size_bytes": 189
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/A3.jsonl",
+      "sha256": "944de2fe2d7fe3c9406cffbab71f280b0f4c574e64d71775a34696751b333911",
+      "size_bytes": 347
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/A4.jsonl",
+      "sha256": "a6c0ebe7d33ef7fcac3d75e1923d0b8033f94b486583aeafee0c464fa10e8cbe",
+      "size_bytes": 309
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/A5.jsonl",
+      "sha256": "1786b92e921e7c52505bdda9deb8f5875b331726dcfd5d2b7276c6629bdc1082",
+      "size_bytes": 295
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/A6.jsonl",
+      "sha256": "84727ffcd55d41e70bdbbbe51ec8b11311a70153936257d246232ca96f2e7705",
+      "size_bytes": 305
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/A7.jsonl",
+      "sha256": "92955620d632ff809d3e0924c1c62400794650be7a16bd5db5f9066dfe45ec33",
+      "size_bytes": 286
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/A8.jsonl",
+      "sha256": "ef31585a5f762d95e0d0da292becb5b7b404eb2fc7a1f9737bace7dd928e0a9f",
+      "size_bytes": 149
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/transition-traces/A9.jsonl",
+      "sha256": "2815bf9918cf8febae41a669faa198c57ca3840b21c9040be2643948b5719222",
+      "size_bytes": 143
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/unknowns.json",
+      "sha256": "ff3909a3fa0cbbad85ba2eec0caf677790cbd66b53f87e3656970dd59f75d793",
+      "size_bytes": 838
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/update-develop-native-map.json",
+      "sha256": "4041c8716f7e37b4b528f94373e254e199d18b290d04ab9d468d82b40a42653a",
+      "size_bytes": 3736
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/update-develop-state-machine.json",
+      "sha256": "50a8c6c1a63e878024efc6a9725dc96bb9553a9471c40b3559905902bb3d9c8e",
+      "size_bytes": 1788
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i1-assignment-adapter/validation.json",
+      "sha256": "2917caba65fbc06a2ef393d5aa25ef8fc9cd1b44e76a253cc769127eb6eaae14",
+      "size_bytes": 1052
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/backend-execution-policy-boundary.json",
+      "sha256": "fc0cc06810770544a5846b7b27b7a9d62cf84a33b7c3b57b647cee5ecd628570",
+      "size_bytes": 319
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/baseline.json",
+      "sha256": "2f4f1c3a2ee3ee7f662e5bf0bc563b4d1a1f1d87e5bd91766f8c24b4da86deb4",
+      "size_bytes": 2430
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/browser-smoke-result.json",
+      "sha256": "4ec59194c344e5be4d19dd33198f345070fd582f8e331e98c01b11a30347ff8e",
+      "size_bytes": 1319
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/checkpoint-ledger.json",
+      "sha256": "08ebd95ea0056cfdc9fed292ae78c9e87319e2651bd1d00450e49dd74c9c08da",
+      "size_bytes": 667
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/current-web-runtime-integration-map.json",
+      "sha256": "15c90d1238dfb3c3ea8512498cc71dc029270633a11281172ef2720b486ffecb",
+      "size_bytes": 1607
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/dashboard-api-contract.json",
+      "sha256": "b84df2d35c31b6339900a1a3607f21b1449aa9d1db328d86dbd27942350e5254",
+      "size_bytes": 568
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/dashboard-app-update-contract.json",
+      "sha256": "79b36e222038397c90102beef2d805543ef0abaf83ff209750abf463d135c31a",
+      "size_bytes": 486
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/dashboard-bootstrap-contract.json",
+      "sha256": "1c243964d52471cee27dea315773a6d23011612bf8ea5c83b31fdffd3cd73438",
+      "size_bytes": 366
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/dashboard-error-contract.json",
+      "sha256": "ce0dd08cf8bae6097b65ca2a69d4ddff54bc4ec3edb45a5a57571ed764a1290b",
+      "size_bytes": 419
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/dashboard-runtime-contract.json",
+      "sha256": "c5deb3c378d4ea273950325aa12fb380be0a881ef996743c124b1f04b8292302",
+      "size_bytes": 555
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/dashboard-snapshot-contract.json",
+      "sha256": "895743fdcd9f9f03baddbeed17a952b6df0d44aa7d2ed58ab8cc87ecda088bc1",
+      "size_bytes": 648
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/dashboard-subscription-contract.json",
+      "sha256": "be1abf439481208926517efc2ea48197182d919b5303abfa59888549de834983",
+      "size_bytes": 425
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/dashboard-ui-contract.json",
+      "sha256": "6f1e202c079caed4e3c2382b0f8fa93c2a1a60dc6bb02682330948a51214b6fc",
+      "size_bytes": 642
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/deterministic-replay.json",
+      "sha256": "051d3a27f902cdfc85c0819168b1f98c869e0790203894db384d5ceebc26f566",
+      "size_bytes": 177
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/implementation-manifest.json",
+      "sha256": "0d4febad404e45b6f0f6e7af5a17c4ac6b2e95e3c75b56c97fe3c4d8642addd9",
+      "size_bytes": 1230
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/original-app-lifecycle-boundary.json",
+      "sha256": "275e63cad010d707daacf50ae9809aa77af6c7002f5c8ed0cb49ed57eff03d38",
+      "size_bytes": 3343
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/persistence-boundary.json",
+      "sha256": "3d9221fd2583da6ef2e7135b16fcfecd108e1afabb3b136963f7370a7c2dc8ae",
+      "size_bytes": 373
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/scenario-results.json",
+      "sha256": "3f58f5a7e1dc5422ba824c7a9c333792c28a6343b3ebd72c0392bc2a1ff77e2f",
+      "size_bytes": 13655
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/scheduler-integration-contract.json",
+      "sha256": "bf52861a659485d587200b59cd33e20e126a04a2349f9119ff3a2e646571b483",
+      "size_bytes": 539
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/source-reverification.json",
+      "sha256": "206167d275617f36b024c9e07f42ee0f54a98b442592c127530ad435009d64ab",
+      "size_bytes": 1796
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D1.jsonl",
+      "sha256": "e37730a9ac93d5b480456f9334f720c6f35a59a6b2678b6a7cc72e0552886305",
+      "size_bytes": 173
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D10.jsonl",
+      "sha256": "6b75a671257ca223b946fad17d3b13a0cda2db81ca03012e48417241f687dcdb",
+      "size_bytes": 342
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D11.jsonl",
+      "sha256": "5078c0f029a1bb79d3df25ed07886197099bd4793d77700ef2f9938af7d72196",
+      "size_bytes": 485
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D12.jsonl",
+      "sha256": "398ea328cc54715fd344b56cd4ea24cdd6e29c06f58cd390695103030c5fe6ee",
+      "size_bytes": 661
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D13.jsonl",
+      "sha256": "2686a5178451574aeed4209c0be6fff21cb717ffea0ba16036ebaa2bd893828c",
+      "size_bytes": 508
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D14.jsonl",
+      "sha256": "7723cd780dd655151bc1905f5f27c55876afeb4d11e36931940d00a43aee45fc",
+      "size_bytes": 535
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D2.jsonl",
+      "sha256": "4f214280ab0628cea02bf912e2687547fab0769772ae4aa1fa5520b0a29837b6",
+      "size_bytes": 249
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D3.jsonl",
+      "sha256": "e1b0176ed9de5056458729ee2f08f9382c1f9d23f2ccc7af0c2068ca5fcb8b35",
+      "size_bytes": 323
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D4.jsonl",
+      "sha256": "2d22a29e6ac23d53b96d2b0810cfa8380482e9075886d1db51d2db81b4e5c5ff",
+      "size_bytes": 395
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D5.jsonl",
+      "sha256": "1e80bf204096e45defe21349586b74b7a89da8482766a6f2234d5aeefe2d1eb2",
+      "size_bytes": 247
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D6.jsonl",
+      "sha256": "3012a057e38c22f445233879952001c34ef6740d2046c561096ba3e859dbeec0",
+      "size_bytes": 389
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D7.jsonl",
+      "sha256": "30524f8575d068ca6bc57fd385f995459b731c553833a310b47d8ae0da55f840",
+      "size_bytes": 381
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D8.jsonl",
+      "sha256": "64426dee87c12dc61c63575e71f798a5c39a92351e2d55e3dcce5905d7ba45f1",
+      "size_bytes": 813
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/transition-traces/D9.jsonl",
+      "sha256": "9316c00d5c72204b32953576bbd068058aa13bf1fb9656b5fc6b31f97e754658",
+      "size_bytes": 397
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/unknowns.json",
+      "sha256": "19edac056821b69364dfaa760c33c916db0825407eb7806b3d855df9d08942a7",
+      "size_bytes": 881
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/upstream-hash-lock.json",
+      "sha256": "74a359290e25599d12227c4629d1d21ba43206da0a3356786d67cfb46a6e0f24",
+      "size_bytes": 19919
+    },
+    {
+      "path": "knowledge/fixtures/accepted/i2-dashboard-runtime/validation.json",
+      "sha256": "523b224db154d9e074ed8299a86ad283ba0fa28f936b5d009ffe981e2ebe50b0",
+      "size_bytes": 8933
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/blocker-matrix.json",
+      "sha256": "b3a829987de415b33b8de3567b6d96d4f7fe41d153cdbdf3473a90b0f18ba33d",
+      "size_bytes": 3618
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/canonical-actor-schema-final.json",
+      "sha256": "11803b337225b6a5edd03734c0eaa527c9c71d29639004df362e32a00570e944",
+      "size_bytes": 4202
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/canonical-furniture-schema-final.json",
+      "sha256": "eb66824c19623bf0a9dd7563f03a30cf3be07d1b3596e20e1f916c8ccddd39bf",
+      "size_bytes": 3012
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/checkpoint-ledger.json",
+      "sha256": "6f4f0fd25711fb4e875f552fffdb9ed116dd18381642db5fb35bed8ac82345ac",
+      "size_bytes": 6477
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/complete-original-staff-life-loop.json",
+      "sha256": "195b306fbdf9c8396bc652fe0432cfb96716089645ff87f76f5d3c45d276e75f",
+      "size_bytes": 2413
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/dashboard-policy-deferred-boundary.json",
+      "sha256": "1f889d02f50c9e78d5560d89bc3aea240bd421238940d01aa8eed1d2dcd09672",
+      "size_bytes": 1478
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/desk-selection-fixtures.json",
+      "sha256": "f8483bdf423b6c91daa4d2ace20cc04226b8e812cbd3c00b49f20a2288133662",
+      "size_bytes": 2949
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/equipment-contention-contract.json",
+      "sha256": "7ea0bf1d02a799ac797203050d81bc457233cd8f055ebd88f95388cfd4e99ddd",
+      "size_bytes": 2372
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/equipment-user-count-contract.json",
+      "sha256": "a15b70e002775330fa69715eb0c5cb62505e77fe8c16c4ee3435f52248e645bb",
+      "size_bytes": 1413
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/furniture-exact-role-contract.json",
+      "sha256": "7c7cebd35f16c875ebc121ef8dc2e41c707edc9b0c1a0caf0832807f748ca7b4",
+      "size_bytes": 2366
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/furniture-living-role-catalog.json",
+      "sha256": "a532c536d51e46c9dc8fd41cbc36237c47efe12ef6c02485dd811bb6f656a2e6",
+      "size_bytes": 86769
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/hp-native-write-site-catalog.json",
+      "sha256": "6537fa2bdec0780590b10214c87691d4f2ec87165be0b261c5f9bf234f8009ac",
+      "size_bytes": 3269
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/living-core-scenario-fixtures.json",
+      "sha256": "b5fb3fe94a2076b6fcd8298de6612bbaf3084de19454225af297910107616784",
+      "size_bytes": 4938
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/on-arrive-goal-dispatch-contract.json",
+      "sha256": "f1998f34cd7ff18a43a0c01d9651f256acb135b224b8ddc769fe7526366e7a93",
+      "size_bytes": 5969
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/on-arrive-goal-jump-table.json",
+      "sha256": "d37d1714151a067696c53270c5f91053c0c41ca49b5c78f8ee2054cbf082e920",
+      "size_bytes": 4202
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/ordinary-work-hp-drain-contract.json",
+      "sha256": "604926ee912b04ca22983796bc2b070ef6a581a467145b1c89ac032a10859de6",
+      "size_bytes": 2060
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/original-task-to-living-core-boundary.json",
+      "sha256": "eb5308dfc97af2c1fcb2800b2b8a242d756841b1c44edd95b195bf4e6ed63e34",
+      "size_bytes": 1791
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/original-work-assignment-contract.json",
+      "sha256": "98f37f68dd83a7dbfb6993450fa9d07cea466e5335ae58031858f89195037c34",
+      "size_bytes": 4548
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/recovery-cadence-contract.json",
+      "sha256": "7330b77a6057774c7f875a5622dcb6cefc571b0feecd0b5e6c226698591fc65d",
+      "size_bytes": 1856
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/recovery-cadence-native-trace.json",
+      "sha256": "ad05866cfc5ab3ee146d8b5248f266a15b3fb9903d6f5c90b14072e8ee2d5ff2",
+      "size_bytes": 1933
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/staff-native-authority-map.json",
+      "sha256": "231f47ae4580a006df33d8bb98427c5da1af4cbc99d5701caa490f4d4a31df18",
+      "size_bytes": 19547
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/unknowns.json",
+      "sha256": "1eb32f83efead52fcab59656c8dbff22cdd449b762b9131497502e8605c91680",
+      "size_bytes": 1826
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/work-interruption-resume-contract.json",
+      "sha256": "554909879984eeb4e54333caba779a97cecb96e3209ff7bc4e0a4883f2fffb78",
+      "size_bytes": 2291
+    },
+    {
+      "path": "knowledge/fixtures/accepted/living-core-closure/workstation-vacancy-ownership-contract.json",
+      "sha256": "b86c684ebf50f00894f18588fb12f9d05109ad44904422706d62b26cc7d88338",
+      "size_bytes": 1898
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/actor-runtime-contract.json",
+      "sha256": "2aea66e70c06796ea9d610bc2ce957891c1d1fb163f369a1c191480fd601b7e4",
+      "size_bytes": 30409
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/checkpoint-ledger.json",
+      "sha256": "c74aecde40a644e8af3f132e12fb3277ab95a32130b92f1129b0bc09a4effc67",
+      "size_bytes": 6952
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/furniture-instance-contract.json",
+      "sha256": "4d21c978fe35cbba8bac3fcee57e84ed15dc2664c970e4a50b66a155a13f3e6d",
+      "size_bytes": 14907
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/hp-recovery-home-runtime-contract.json",
+      "sha256": "d7bebf343d1915b35f701d4421ad0e53294d4c1470f181fc146deda2915da727",
+      "size_bytes": 11521
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/interruption-resume-contract.json",
+      "sha256": "a43c6d608ea6b99d043062480b97d5365826e5684616372012ffaefbf855804e",
+      "size_bytes": 7271
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/movement-route-contract.json",
+      "sha256": "60cd4ce95faed3bc44fa40abef27abf9d0d1aefef825b4181d54fde9ca5922c5",
+      "size_bytes": 20404
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/product-policy-boundary.json",
+      "sha256": "6a6bd330b30aa5c691912085395af568ee51111eb25cba8ad961caf379318a00",
+      "size_bytes": 6962
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/rng-autonomy-contract.json",
+      "sha256": "66b45620c802f45b2284750b904e327127a9e23bcf11f0eb9079dcb9d77a0717",
+      "size_bytes": 10768
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/room-runtime-contract.json",
+      "sha256": "36be475c44f0473331c1f890e29e2505f160f438cb81a1d5baaf6990bb1a9773",
+      "size_bytes": 13025
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/runtime-contract-manifest.json",
+      "sha256": "0cc03e2dd4175285e97fa6d947663ab4c8f7fae24332910fc59bdb34f990fbab",
+      "size_bytes": 9225
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/runtime-contract-validation.json",
+      "sha256": "9f5fe3dfa7eb84af7d6419363586b35cdcf7b6f736d4a9b095a609cbde5d5b26",
+      "size_bytes": 4703
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/runtime-delta-matrix.json",
+      "sha256": "4e23050ce33436aec3f168295cd9fc082e45e0cc2bf085dad517de20d764ae7b",
+      "size_bytes": 176151
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/runtime-scenario-fixtures.json",
+      "sha256": "612fac1206b2ef99476833be2f018ff8af3470b6bdf151fe2a404f4ac93df340",
+      "size_bytes": 38625
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/save-boundary-contract.json",
+      "sha256": "5a8ba20edc1a2eab7a635d7c7e52553eb36196dd5db14b52261a8c09f9c93d67",
+      "size_bytes": 66702
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/staff-state-machine-contract.json",
+      "sha256": "6c910edede5bd08784c880974921a396f342b5cd8515ca30b9a809c0f1de0771",
+      "size_bytes": 25889
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/tick-order-contract-v2.json",
+      "sha256": "d40e5fbe685abf9aa05d3860b5efcfcd8e53bb4db2dd418627428f9c0f500d4b",
+      "size_bytes": 9351
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/visual-projection-boundary.json",
+      "sha256": "4d91022c998d72d2c06155e3886bc307a0f39837037dcf37b3cc279c084a0232",
+      "size_bytes": 7996
+    },
+    {
+      "path": "knowledge/fixtures/accepted/runtime-contract-freeze/work-planning-runtime-contract.json",
+      "sha256": "d24a6d98ed1eaf51ab8707436bcbd696602d967916af85ee9e22942bc3b75acb",
+      "size_bytes": 11804
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/class-disposition.json",
+      "sha256": "a335b9ad4c5c086126c451265883f65cc40da86aa3f6ee7e62dc607140151d78",
+      "size_bytes": 18951
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/checkpoint-ledger.json",
+      "sha256": "f2653a439825463d08e0bcdbd1b1c13b674323bb02364d5b1dda08cf02452cf7",
+      "size_bytes": 18359
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/corrected-command-manifest.json",
+      "sha256": "0c4f5811643ebd3a6063a32a83fb696a07cbce15d6f213ad90ba3d96c626bd35",
+      "size_bytes": 633
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/corrected-render.json",
+      "sha256": "0ffca579fa716d4be8d69e2c09e124271e693a289816945d6ae035fe3dc30575",
+      "size_bytes": 595
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/first-visible-door-contract.json",
+      "sha256": "44d6913ac1ce1c4a154f1ff2177ee22e78bbf236dcca16450fa2bf6a9d791922",
+      "size_bytes": 1331
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/first-visible-object-inventory.json",
+      "sha256": "7a0f730894e92602e16e1db868d55714328e9f3ad1968054c4d95272eca0a0a3",
+      "size_bytes": 8695
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/first-visible-scene-manifest.json",
+      "sha256": "af84b7f687e52d3326be2e697154f60b828e2a0bb9239c994059d2a98bf71a89",
+      "size_bytes": 1872
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/first-visible-semantic-diff.json",
+      "sha256": "a8b4d87c90118660e5d6c527786df7a60c47ffc93e9099de8a213cd9c32eb610",
+      "size_bytes": 2656
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/first-visible-staff-state.json",
+      "sha256": "3ceba5f174fe5ec862d8bf035b19a014022185ea2ecae57b95d31709275bf988",
+      "size_bytes": 2039
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/first-visible-state-flow.json",
+      "sha256": "746d8a9ca760b299068d42d3ae80328b3c0378fd8c9ed41919492d7628420edf",
+      "size_bytes": 2773
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/first-visible-wall-contract.json",
+      "sha256": "4986b1fd21a19c4794dac3e6627b1f406c94b059ddbba7d7cf5b5dd1c96317e6",
+      "size_bytes": 2119
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/previews/README.md",
+      "sha256": "da2242498e9a25de963bbbd508f1f77af53b38d0c010dfffa57738fecabb195c",
+      "size_bytes": 629
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/starter-equipment-contract.json",
+      "sha256": "2e1e968fdddadc889273db1db4fc1dcf2f8981e4f595ded784cbd7c91f4a17e0",
+      "size_bytes": 2053
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/starter-state-model.json",
+      "sha256": "e401819cd317b7e50efd0961a5fd6195210ce4aba00b92810cf86f2485477ba4",
+      "size_bytes": 4566
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/unknowns.json",
+      "sha256": "293cfa743fbd2ce177e13f2404091787e9e9a5eb708b3b3d98f00a9e20c4d9e8",
+      "size_bytes": 4351
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/workstation-contract.json",
+      "sha256": "6577d8d91fe944bc116366a16218687834a85752f4238687edf004ebbbe8101d",
+      "size_bytes": 2504
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-starter/workstation-orientation-contract.json",
+      "sha256": "d579d93a50bfb4d242f21ef9d4b791b744a285e56ea56fb4415455577c9a15c7",
+      "size_bytes": 1612
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/checkpoint-ledger.json",
+      "sha256": "23ba372c0e3201b3c43a7c844cbb12dd9d18cd966e02fbf272f6a845f32acea6",
+      "size_bytes": 6546
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/first-stable-boundary-contract.json",
+      "sha256": "69d6b0796498307d933d141f0aa8325475496ca6b421105f3eda0225a65f237d",
+      "size_bytes": 2222
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/first-visible-stable-manifest.json",
+      "sha256": "955125a06b59024cfeaf47fc8e7b913ce5d1009f81d51a27b5ee53e991fd0cf0",
+      "size_bytes": 2783
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/first-visible-transition-timeline.json",
+      "sha256": "da9a45382e02bc2bc602399dcca7ac06a63db4b4e7255ea606842ced12a3ef66",
+      "size_bytes": 3181
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/fs-unknown-closure.json",
+      "sha256": "3e12580a873500abef7c1b9f325a09ae6a3416e7a86c8abcf46fe2a3aeb4b726",
+      "size_bytes": 2272
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/fs-unknown-inventory.json",
+      "sha256": "d9c37228cf9391a74a12448752feec198c1cd023b01919211eff9215b6a47712",
+      "size_bytes": 4995
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/newgame-caller-contract.json",
+      "sha256": "119048ad1f819571f0a7c3b92e22f2f6f11003afeac5e576597c14bd74547eb0",
+      "size_bytes": 2167
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/previews/README.md",
+      "sha256": "d78c1c2ccb9e148ac4d4ae96cab6332c75d6a57163a9d2426ba678338e857e21",
+      "size_bytes": 485
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/starter-event-command-map.json",
+      "sha256": "0c50ee3af7b5e59caafed6ca81baefe34a84242c200dd6bdca62e22431ea57e5",
+      "size_bytes": 3188
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/starter-event-selection.json",
+      "sha256": "70f815c193a64c928c5942d289e639191a0f1a361bf613562d439ed470081313",
+      "size_bytes": 1962
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/starter-room-mutation-timeline.json",
+      "sha256": "d1f044dac0a156a1de48691dbf902eaec9fed779e4399899955b2d2ed9e574ea",
+      "size_bytes": 4771
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/starter-staff-transition.json",
+      "sha256": "6390f1773ba589cd32f00d979180c93cf7517cc8e3cd25987901624b0d1462f8",
+      "size_bytes": 1813
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/starter-wall-door-transition.json",
+      "sha256": "c444e86e7f01fe708e6a36aae6f188276d392efa74143bc61040523fd5e9b304",
+      "size_bytes": 964
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/startgame-control-flow.json",
+      "sha256": "609db40ec2c3d490cf98d0d592261f23b0d7bb430fd796875f37bdb9dcad4f83",
+      "size_bytes": 2199
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/first-visible-transition/unknowns.json",
+      "sha256": "4efc2a4061035b965b580bbda0409566c98d210d3b7a78306af65287405eec3b",
+      "size_bytes": 1796
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/checkpoint-ledger.json",
+      "sha256": "d83b1b2df7808ad5fe6e2de3d081bbfd746b63a11887c34f96274c427de2c096",
+      "size_bytes": 8583
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/contact-sheet.json",
+      "sha256": "dc8cb1d0988679a2c3824001980e44723a823309af7b25e922395d012e6ab36d",
+      "size_bytes": 596
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/mapchip-14x14-results.json",
+      "sha256": "9447f77fe158d98aa3d4d9daec26148cc966d0233280e1d861b52e87fd24aca7",
+      "size_bytes": 1468
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/mapchip-2x2-results.json",
+      "sha256": "3f7479533184caf97d154c0b1e853c680607bf07109f379dc4cdcd4a0ec97a5d",
+      "size_bytes": 728
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/mapchip-5x5-results.json",
+      "sha256": "374009d8615ce3ab6fa3b8849ddec63fb59532ae84a8153797b2bba79c2b771e",
+      "size_bytes": 838
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/mapchip-alpha-audit.json",
+      "sha256": "cb68d8d5e04621c96472e078e0d9c0edfed7f74c3132f16530734af1a5028fba",
+      "size_bytes": 6154
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/mapchip-dimension-anchor-audit.json",
+      "sha256": "9eed6ab9d590c3154720c0c31043c6129e2f68d580a3ee7d69a7159c45225e82",
+      "size_bytes": 8959
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/mapchip-opt-audit.json",
+      "sha256": "f16ffa6fb58569b81098b80b4c5cac71ee63f47711b3c48475960cdc04e9863e",
+      "size_bytes": 15054
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/mapchip-selector-inventory.json",
+      "sha256": "e5ae4cdef9b950636db815ee08ab5c816052e1798f4bd49396dde5f1b0c8483e",
+      "size_bytes": 39761
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/mapchip-selector-map.json",
+      "sha256": "c0cd6c95a8bd7cca3450903714f43795772fc99285e933546cfc0aa971b91bea",
+      "size_bytes": 83262
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/outer-vs-room-floor-ownership.json",
+      "sha256": "cdc2eebc8fcf41e6e2f46435fd73d46c8af1d8af21b1e6a64441b1cd981b0ed5",
+      "size_bytes": 710
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/MAPCHIP_FORENSIC_CONTACT_SHEET.png",
+      "sha256": "abf679231d1f438982423a61a7deb46b3ab6170e8d7091b0b94a12cdb5a1c000",
+      "size_bytes": 3380403
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/mapchip_14x14.png",
+      "sha256": "fb40142389fe963bba46a93a122f961dc21fe8a85d0abac75b1a68fd3d4ecaed",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/mapchip_14x14_alpha_mask.png",
+      "sha256": "2e174b2f9f7d2d696ff60e646649b760f5bda60f57bc2e8c7ddf86f8cbd652f5",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/mapchip_2x2.png",
+      "sha256": "9fdb7d21b353348277e5a1f54abc5d10b28196b8bde8bcdfd1ba7861219e95fb",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/mapchip_5x5.png",
+      "sha256": "fa0dac71d7eb106bc15085ce8977d49e17ae0542df7f2a39cf1b75b6cd7fe069",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/mapchip_selector_map.png",
+      "sha256": "80017f65bce5695895bdcb7b331ace3820c015dd4374b6c57fa82b8e77bec00b",
+      "size_bytes": 602561
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_floor_logical.png",
+      "sha256": "83d104ed067801cb0a1e249d9744566696c0593174764c7f8f6224adbd7b2b89",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_floor_native_contract.png",
+      "sha256": "83d104ed067801cb0a1e249d9744566696c0593174764c7f8f6224adbd7b2b89",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_floor_raw.png",
+      "sha256": "83d104ed067801cb0a1e249d9744566696c0593174764c7f8f6224adbd7b2b89",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_selector_10.png",
+      "sha256": "6375adf73595dfd288e1dcab4a65d97f48bfb89df74209ee2f442b9d2e7e2b90",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_selector_105.png",
+      "sha256": "3198af0015a61e9839e2bbc3c3ffce86799957690db48ac16c31bb69ef5bacb8",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_selector_11.png",
+      "sha256": "a08cf08714061326c019921570c00d3826aa0acc013e1d67696894434ae6a3cf",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_selector_12.png",
+      "sha256": "f15056c38fa4adfc0978bb7e25e2e1ba49a5397b0a314657151f4c823694e702",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_selector_13.png",
+      "sha256": "c4687e976b394c74ffe240c4442677473c5e7e927e84cae0c906e10787c0b3fa",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_selector_14.png",
+      "sha256": "155591dd4c866d33f789af10d092804376aceadb794aa2e51c81c30edbd02930",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_selector_15.png",
+      "sha256": "f81c40e6ee04909799f05a6e9dff9c73b8c759a68f9ce35c12bb61e85651acdb",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_selector_154.png",
+      "sha256": "26b7c7c4247c8472ae4b1a9376500aab4067a2fdbd845e662d3f79119999df3b",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_selector_155.png",
+      "sha256": "3f6f9d4190b566075aac9f0d413c3397b1136693b32d275371a6a9fd66e035a4",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_selector_156.png",
+      "sha256": "562976b41d754f3f2cd30903c421372f0637ec78702d3458af9577338efb0cf2",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/single_tile_selector_85.png",
+      "sha256": "83d104ed067801cb0a1e249d9744566696c0593174764c7f8f6224adbd7b2b89",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/two_tile_x.png",
+      "sha256": "47e3a32e6e373f700a5a16822df92b30e30f7a44de07c032b96261efe9854301",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/previews/two_tile_y.png",
+      "sha256": "faa3941103c053664f5e1a19552e6f92fa48776907914ab8fe26b41df8344fc4",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/root-cause.json",
+      "sha256": "2695cc527233e4b98a32570c51a883225710862bba3893d333595d51a2097f38",
+      "size_bytes": 1477
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/single-tile-results.json",
+      "sha256": "7890934bec5505550e681771213164327bf6fef48ee540253b82270811e96a3d",
+      "size_bytes": 11993
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/two-tile-seam-results.json",
+      "sha256": "f3a37e83a0e451c4488f3f883dd4350063979fe9b0c1f1b338494c157af8ab95",
+      "size_bytes": 1484
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/mapchip-forensic/unknowns.json",
+      "sha256": "0de92b9a684cb05b2fd3180b70565fde6a63a4013f1aa2f5190a11d8c7724669",
+      "size_bytes": 674
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/method-disposition.json",
+      "sha256": "a3a238ae9b38580677c3d1ab3e35d428753329b6ed1b92104f016eb394468937",
+      "size_bytes": 45893
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/native-method-map.json",
+      "sha256": "d3067b3d0f6024c48a8e5b6784c7fc8c2c74ddb98733c8a35623fa598255a477",
+      "size_bytes": 23154
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/resource-groups.json",
+      "sha256": "d677a4e7ea798b702a637c95a89a4d93fbbf3e572f651b64bbabce40f165a3a3",
+      "size_bytes": 11347
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/checkpoint-ledger.json",
+      "sha256": "752a2c7d0097c41284449e21f55a5b7bde5189adaa4ebe348894e7be11a650a1",
+      "size_bytes": 15298
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/corner-fixtures.json",
+      "sha256": "d01a87ddadb0c1ab66082a207aa5c6da796eb87cb6f6367b0a5bd5c6d64a2546",
+      "size_bytes": 12226
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/corrected-room-command-manifest.json",
+      "sha256": "9aeb4d4c6e86cebed5fcae6dbb6df33d827b5763f04278b677a2c931e8fa2c82",
+      "size_bytes": 439066
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/corrected-room-render.json",
+      "sha256": "731777ebbb7d80b465675aa97215d31b5ea76b5a70b9964354dd7196a32967aa",
+      "size_bytes": 997
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/corrected-room-with-staff-render.json",
+      "sha256": "7330883f6d0691cf70f80e1836bebefebf7bf6c5cdbc469f61daaa510ebd1bd8",
+      "size_bytes": 997
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/correction-artifacts.json",
+      "sha256": "e72b62b3c9fa22eee9186c4d5655b575407da15c6fa8b8cf2896012fa4c445fa",
+      "size_bytes": 4214
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/origin-coordinate-audit.json",
+      "sha256": "390101c595afe66c5291b7205e6288517ab01b7a2e26df01297b9696c68db9cd",
+      "size_bytes": 2208
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/outer-map-ownership.json",
+      "sha256": "4c8d647a3e759c2fdeba7c3d70c5e4e25d03a6f8aba58d2b6240445470a82037",
+      "size_bytes": 9416
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/previews/starter_room_before_after_contact_sheet.png",
+      "sha256": "276c954eb19b8db84fc281bd61bb14cdae1b2eb7609af7ceca1b4af495cd1073",
+      "size_bytes": 4705023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/previews/starter_room_floor_only.png",
+      "sha256": "3969af8ebc8ac20b0bc4d817494bfc9853e44de31551626a605d57d6f5628697",
+      "size_bytes": 2352843
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/previews/starter_room_furniture_structural_only.png",
+      "sha256": "ea8ada05b6820046ad8fcb8e5770aefeeedaa5b1b3241242a55837a0bd02abc6",
+      "size_bytes": 2352843
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/previews/starter_room_outer_map_only.png",
+      "sha256": "3eb041fd6016a5082ba8fdfb4b4c1b249c323573ee761975bf0d348dddc977cb",
+      "size_bytes": 2352843
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/previews/starter_room_structural_corrected.png",
+      "sha256": "b55d701ba74bd6212701a6623d5de667d824c00c604bfebfc2d416f7d5fd447a",
+      "size_bytes": 2352843
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/previews/starter_room_walls_corners_only.png",
+      "sha256": "74a0e665ff760cddfd28f65943db6a85619e3596d083f5324c4e3f66ed1e6619",
+      "size_bytes": 2352843
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/previews/starter_room_with_staff_corrected.png",
+      "sha256": "f5c2db1052ee55b6256208b164107bc123f58634f533ce621f46871acb60c1cd",
+      "size_bytes": 2352843
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/root-cause.json",
+      "sha256": "1915e2e98523893cd482fe83e307b3c6e2524665db2acfc1af4b12df9d685bf7",
+      "size_bytes": 2339
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/starter-floor-cell-map.json",
+      "sha256": "266e6767d967f62705cf56d2829e12eab56609340f157fc532c50a27945d8907",
+      "size_bytes": 95352
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/starter-room-identity.json",
+      "sha256": "1a1bb30fcea54af238d734c3d3c6553de89c29cbf7d5d53a12cb3ceb71da73f8",
+      "size_bytes": 7718
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/starter-room-semantic-diff.json",
+      "sha256": "d13d86d3d44844dc992901aee1a17007ea04d7d8e3f66975ce9d16c0428f3ee0",
+      "size_bytes": 2121
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/starter-room-topology.json",
+      "sha256": "87781a65fdff1b74612335cde6658c0b463f455b100bf14cc2f89da442ed5dea",
+      "size_bytes": 6372
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/unknowns.json",
+      "sha256": "b7cff56b0de2fa6a2981a6de085d45adc2065209578f82bd711c75a52b248015",
+      "size_bytes": 1312
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-correction/wall-connectivity-audit.json",
+      "sha256": "72b4a2f51a694d2f86af4156bcb4c900d08985c830e4ccb0f92908fa3f0e1e4d",
+      "size_bytes": 23861
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/checkpoint-ledger.json",
+      "sha256": "5829cdd3f74fb7489c285d605b1463370477b55678291821783bc55812955e78",
+      "size_bytes": 119199
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/coordinate-bridge-audit.json",
+      "sha256": "f24e485ad3341494354acaa55476c2d7e8e0aa2b0d7ee3565afc672cef1e679e",
+      "size_bytes": 1410
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/final-scene-manifest.json",
+      "sha256": "673082ab7bd21cacd23718baf98806e153f32726f1de40d6dc2669643dd27aeb",
+      "size_bytes": 10624
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/pass-membership-audit.json",
+      "sha256": "e32b1f56caf5d31c1993e36f8fe48e20aa2040237c5ce5e97a3e12b9491343a1",
+      "size_bytes": 5719
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/STARTER_ROOM_LAYERED_REINTEGRATION_CONTACT_SHEET.png",
+      "sha256": "61bc5b9e9ad992af8d4ff00de0f9299ec5be0f5236062c0a94ed2447fc9ca584",
+      "size_bytes": 1800563
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/layer_isolation_Staff.png",
+      "sha256": "02a3d9258a5ed13f9deff2320101cec3c5c65ad1fe8857be01948a30241af46c",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/layer_isolation_door.png",
+      "sha256": "b96f366643c344891cf518facd09a6b335853ebcb5d237add05dd5c34cde5465",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/layer_isolation_floor.png",
+      "sha256": "e525957f03d7ced6d042b30b5c57a8f1be9fa3be7e593a1bbb21229e5fb79216",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/layer_isolation_furniture.png",
+      "sha256": "c96a22dece503e3659f8700895c42a4aa92f5fe05a0d3d9e48962d01202634b3",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/layer_isolation_structural.png",
+      "sha256": "d60b355ed85b97d3c542227352b547f86b3db09ee103f43c726905b9521db43f",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/layer_isolation_walls.png",
+      "sha256": "419f110ac6af800927945584133c669e1ef7724e8fcf02f18a65b5af8d84dc36",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage0_mapchip_only.png",
+      "sha256": "fb40142389fe963bba46a93a122f961dc21fe8a85d0abac75b1a68fd3d4ecaed",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage1_floor_only.png",
+      "sha256": "e525957f03d7ced6d042b30b5c57a8f1be9fa3be7e593a1bbb21229e5fb79216",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage1_mapchip_plus_room_floor.png",
+      "sha256": "fb40142389fe963bba46a93a122f961dc21fe8a85d0abac75b1a68fd3d4ecaed",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage2_environment_plus_walls.png",
+      "sha256": "adbc7f977e14b7cfc26ce284e55ad1207a63e19bb634609172617247a6068479",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage2_wall_connectivity_overlay.png",
+      "sha256": "0a082ca2db6da33f66a7043d48562105d1c0fd8e3305b5aa5dc5c671611b4aad",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage2_walls_only.png",
+      "sha256": "419f110ac6af800927945584133c669e1ef7724e8fcf02f18a65b5af8d84dc36",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage3_door_only.png",
+      "sha256": "b96f366643c344891cf518facd09a6b335853ebcb5d237add05dd5c34cde5465",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage3_environment_walls_door.png",
+      "sha256": "5a9468f583258444b655a0aff6fbeae2ba5069dd8b7fb4322bdbeb600357b071",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage4_environment_plus_structural.png",
+      "sha256": "706b25d28875d452977c94f6d00443610d9e4d5798a0fb9154788083540a8390",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage4_structural_only.png",
+      "sha256": "d60b355ed85b97d3c542227352b547f86b3db09ee103f43c726905b9521db43f",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage5_furniture_only.png",
+      "sha256": "c96a22dece503e3659f8700895c42a4aa92f5fe05a0d3d9e48962d01202634b3",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage5_room_without_staff.png",
+      "sha256": "360a0ee328c451a6fc94585f365de96fe721c55d51db04609cc88d5173c27ca9",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage6_complete_room_with_staff.png",
+      "sha256": "95bd38298d3b2dce560bcb1e0b9845f9ac0079b2654d1ddecfebce41446d82c5",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/stage6_staff_only.png",
+      "sha256": "02a3d9258a5ed13f9deff2320101cec3c5c65ad1fe8857be01948a30241af46c",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/starter_room_final_structural.png",
+      "sha256": "360a0ee328c451a6fc94585f365de96fe721c55d51db04609cc88d5173c27ca9",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/previews/starter_room_final_with_staff.png",
+      "sha256": "95bd38298d3b2dce560bcb1e0b9845f9ac0079b2654d1ddecfebce41446d82c5",
+      "size_bytes": 3361023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/stage0-mapchip.json",
+      "sha256": "a79ad8cbd8a0ec47fc55c84ee65d3d5ca3c60b8434075e9425a5077088eb56e0",
+      "size_bytes": 2329
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/stage1-room-floor.json",
+      "sha256": "6abede1b476e706121175b508753fbf3ff3954b069d8ada5758e59b85242aab0",
+      "size_bytes": 2735
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/stage2-walls-corners.json",
+      "sha256": "110c52d143cf930848841f5f69f22bf7e76b70d05e3e89a9b6a1d0802b7c2a95",
+      "size_bytes": 23728
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/stage3-door.json",
+      "sha256": "cd4e66cdd7c323a061d2196255c14162967d0b18cdd66303089a0d94307df87b",
+      "size_bytes": 1485
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/stage4-structural.json",
+      "sha256": "546e98524dc76a429ece8ffbb47947e097489172f205fa7da0d02de91228b831",
+      "size_bytes": 2469
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/stage5-furniture.json",
+      "sha256": "c99b7bd5d1f9dc995e4c1b9df52c6c70ee3b6deccf97b101915b59f26e7c2a92",
+      "size_bytes": 4781
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/stage6-staff.json",
+      "sha256": "4e02f5580b28ebd986b3414d0fc77f37b71ae275947dd6331411ad09be7c28fc",
+      "size_bytes": 3586
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/unknowns.json",
+      "sha256": "d96db7bb35d62671678bec1b9ec594a54be5d1dedf54efcf87e203a8b25adf5c",
+      "size_bytes": 855
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/starter-room-reintegration/visual-acceptance.json",
+      "sha256": "2cefcd72cb09889e472d6b57d9f93701b9830585cbb573fd15c28062fd9e8cc8",
+      "size_bytes": 7219
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v1/fixture-manifest.json",
+      "sha256": "6b5de851fe58de4097aa472b8d0a817c76bb2c455fb737961450961e055a29ca",
+      "size_bytes": 3153
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v1/image-opt-contract.json",
+      "sha256": "773f3a5e636c3a4728333f4b43684730363683cb09ded4fa1e0c690074393bb0",
+      "size_bytes": 48257
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v1/native-recovery-map.json",
+      "sha256": "123a1f2fe037f52458b92ef5d4c36c0567b8f89ddfb07eb75169b2b725c557e1",
+      "size_bytes": 17356
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v1/parity-results.json",
+      "sha256": "9781a5c250eb4ecf364381810a5ed52dcc30f382cd55a44ada6a0fc0257e5859",
+      "size_bytes": 3877
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v1/resource-lookup-contract.json",
+      "sha256": "745e610d4bec1f765c3ec659470cf4caa24bfe08823da27991c2561f88ee4d29",
+      "size_bytes": 21167
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v1/seb-contract.json",
+      "sha256": "d6d2cd9f9da01dd7eb296768720ebb82b6f89619eb34b4edf16273c895093324",
+      "size_bytes": 74876
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v1/sprite-contract.json",
+      "sha256": "37fc5881e67d7c537af7a5e6c5ef598c53f2cb3144c5bed15dbcb51192a516f7",
+      "size_bytes": 5803
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v1/unknowns.json",
+      "sha256": "b4a30c962853628a87cd763ca84c28ca592804c567b8e5080e6291aec4d5a49c",
+      "size_bytes": 13473
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/clip-contract.json",
+      "sha256": "6a2df2e2af62a2cee631a4bb86731f4e8de6f690bc437da5ee1bd9fb57316c35",
+      "size_bytes": 1545
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/color-blend-contract.json",
+      "sha256": "93cc362068523539506a0080d1cf6a3b8277e867040ef7a667868b5366871a75",
+      "size_bytes": 1817
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/draw-image-contract.json",
+      "sha256": "7999828a898bf8c21cb895f67bf0c28f53f93e04d4f1153b74d88d2717402d37",
+      "size_bytes": 3217
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/graphics-method-contract.json",
+      "sha256": "f48e0f4e04089be01405ba4beb7cbc959320a3135acb3ca92bd3648cc10c06d8",
+      "size_bytes": 8718
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/graphics-state-contract.json",
+      "sha256": "35d00e4d9c0f98dff2122b3a9d430d6aaa0f625880d117d746a5eb9d3d168286",
+      "size_bytes": 3017
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/graphics-static-recovery.json",
+      "sha256": "09271f207db8a52e7b64c9f6a21e427a5900d469e5a6155e2197dc6805262853",
+      "size_bytes": 8121
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.4.9/development.png",
+      "sha256": "a6546f4dc59f283b0eb5d8094924be232b57aeea6859bd05c78b500726b74333",
+      "size_bytes": 281296
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.4.9/signed-v2.4.9-after-terms.png",
+      "sha256": "7095e3510a1d12556fb0be89af356512dca24685bd706bdf091e52272650c39f",
+      "size_bytes": 152255
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.4.9/signed-v2.4.9-comparison-after10-pull.png",
+      "sha256": "cdbdb07b370a16b7f987da755322134d749332a447d448ef8c26691a1c5f3b5e",
+      "size_bytes": 99679
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.4.9/signed-v2.4.9-comparison-after10s.png",
+      "sha256": "e00d0a91468d8a9850a52a99bcf87c0bc674fe894117ea25d03cbbc15843ab2e",
+      "size_bytes": 188680
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.4.9/signed-v2.4.9-comparison-launch.png",
+      "sha256": "5f21caabe1acb372c749bb18a69cb75ad72b9b02741aa95be8b4ec417be2939a",
+      "size_bytes": 181206
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.4.9/signed-v2.4.9-comparison-pull.png",
+      "sha256": "cdbdb07b370a16b7f987da755322134d749332a447d448ef8c26691a1c5f3b5e",
+      "size_bytes": 99679
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.4.9/signed-v2.4.9-posttransmit.png",
+      "sha256": "74a0ea395305e22ae0847878cb5cbc0622135ad0b55435254d7b3a2b378fd4f5",
+      "size_bytes": 161877
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.5.1/after-ok-diagnostic.png",
+      "sha256": "d0d75c32b82df63df5cef79a4072dab1c7f8abd045046eca95c18192491f011c",
+      "size_bytes": 1168038
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.5.1/after-ok.png",
+      "sha256": "f10b3e8633b63d345d4e8c0566bd29fb88d2f9addc6eab05d4f05f3d00b6f410",
+      "size_bytes": 614105
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.5.1/diagnostic.png",
+      "sha256": "1b4eebc518b455152d634f2f13ec7aa514be334e085719859494f750e833d56b",
+      "size_bytes": 193918
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.5.1/launch.png",
+      "sha256": "0325cc8773600c2911fb7782ce966d273de61dba68b87e650d80e9bb8e8880f2",
+      "size_bytes": 101506
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.5.1/patched-after-ok.png",
+      "sha256": "844f2940e35cbf6d86e23f9c5e46610c27a4e0dad96f658c14e59ccf40e54310",
+      "size_bytes": 613886
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.5.1/patched-launch-pull.png",
+      "sha256": "20564fccd39fbef5ad56d6bdfc96182f8d5811c44bff094085b4b6c8c8f124e8",
+      "size_bytes": 91288
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.5.1/patched-launch.png",
+      "sha256": "d23cbe80602d20656fe3de3f12382aa7957264b40ce591ffb8f853239812ab13",
+      "size_bytes": 172386
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-capture-2.5.1/state-seeded-launch.png",
+      "sha256": "39b02d3430a38ee5cd4522aaa0a0efac6f8ddfa72c94181284e9aac93d20f838",
+      "size_bytes": 614113
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/native-raster-map.json",
+      "sha256": "01db09542c5a830cbe1ba8a538afde2f920cb8ee14fcdb5c5db9586d24eebe83",
+      "size_bytes": 6094
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/pixel-parity-results.json",
+      "sha256": "9111204778ae465d8bd6fec1a8e9ea6cfde0e8e788ec2157bae81fed9c31b525",
+      "size_bytes": 2782
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/raster-fixture-manifest.json",
+      "sha256": "f3f9638127b2e4e10b48b7312463d86081c159f07d094fcb9feb76f6ea088f32",
+      "size_bytes": 4214
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/resource-draw-wrapper-contract.json",
+      "sha256": "d5868d3e0a3c5b1b7345e12dee82275b5da2e352a39c049c56d1d6dd1561a348",
+      "size_bytes": 4392
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/seb-raster-contract.json",
+      "sha256": "68b6a617b2990ba59cb61df02a504f7bb368f6285ff5dfd1a93a16f42ea9f19e",
+      "size_bytes": 2398
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/unknowns.json",
+      "sha256": "916751305c68d0e47b1b3f5a7f91092b849db3dff741604568abaf39c65180a5",
+      "size_bytes": 3398
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v2/v2-static-acceptance.json",
+      "sha256": "e3ebeef4d88869762cf40bc7a2d1b5dd24b1689553a1ceb16d29e7e62dcd9055",
+      "size_bytes": 1976
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/checkpoint-ledger.json",
+      "sha256": "39f53d4e4ccfcf5e75656ccbbd312b51e823af0430b42618452e6d685da1b7eb",
+      "size_bytes": 7346
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/fixture-manifest.json",
+      "sha256": "18971351447e72161a298c32a260669c86ada76bc7b012bd84e9b9f78268bea1",
+      "size_bytes": 101414
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/group-coverage.json",
+      "sha256": "5602aae35661b04e2ef5978ec53a7314ec10c38f3ad44740f76dce1a4fc8e384",
+      "size_bytes": 11138
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/image-seb-association.json",
+      "sha256": "8cbd6e2b1d5ab3a710dbc9aaf461d8c2bd58c89e7edd5ecdcd6f7a9c82dde626",
+      "size_bytes": 12440
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/img-index-contract.json",
+      "sha256": "d9e7a8085baa1f72d58f1943f357b2a82f268a7ad9073dd5bccfc4033a445ced",
+      "size_bytes": 540069
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/load-semantics.json",
+      "sha256": "2145ab9890afc52a3f1628196b954d78b13e2e6478a89966f22e86b15dc47ba7",
+      "size_bytes": 4189
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/native-recovery-map.json",
+      "sha256": "7e8049526b9cadaaeb3517e5d1791dbcaf4b35c8fb117c39d06e44836e23724d",
+      "size_bytes": 2677
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/pack-inventory.json",
+      "sha256": "182d77d898be38bcebdd70f1ef51f6681f3b12dae32c180ae2d6cc20f5682232",
+      "size_bytes": 966212
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/resource-group-map.json",
+      "sha256": "852c4b5f5a258ec358a02faa1154b211d97cf805c18cb4e890d54428e1117ef9",
+      "size_bytes": 204954
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/resource-manager-layout.json",
+      "sha256": "2c902d1ae91d8ce2099a91826d9433484db8a7cdd975524a31c618b3f917c47a",
+      "size_bytes": 3343
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/seb-index-contract.json",
+      "sha256": "1bf208891c8efbf2c833b64ee2ccf5295b37dd3e4f82f7053ce21569a44a3236",
+      "size_bytes": 239787
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v3/unknowns.json",
+      "sha256": "a35617b682d4dbc2b1a236092a09d0dc7b5ef846cde8e8e2a408aa7342648ea1",
+      "size_bytes": 8174
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/camera-boundary.json",
+      "sha256": "f2c16301f183eccb708467fae7dc077b599290fe06b47dcfbed76345018efced",
+      "size_bytes": 4126
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/checkpoint-ledger.json",
+      "sha256": "9178b1d393f6bd8b5b8ac845d389d669f367d88a61d911ed739a4bbec10c9087",
+      "size_bytes": 16251
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/command-parity-results.json",
+      "sha256": "acd357412ee33e3fd599db33ebc170d93ea10e9a78061ff10b5c1b9749b6e5f4",
+      "size_bytes": 5477
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/fixture-manifest.json",
+      "sha256": "6bc1ee06948882816cbf94b801c394c9c925724d340a5f9aa0ef638d23ef1625",
+      "size_bytes": 5853
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/furniture-visual-binding.json",
+      "sha256": "fba9fbfc45ede5e8e3d424c6d8127fae3b5ad250d40b6e72480d4e4f96a11aba",
+      "size_bytes": 8859
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/local-ordering-contract.json",
+      "sha256": "4462d9225305b569adecc9ec6ce73dc8cba6ae090ff7cf04b3ea0ee17ddf69de",
+      "size_bytes": 3761
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/mapchip-coordinate-contract.json",
+      "sha256": "1955ba55b83ccedaddd54750e85c92e0f7071b0cd9e3d841af15a9c66ed8630f",
+      "size_bytes": 3939
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/mapchip-draw-contract.json",
+      "sha256": "e403d1cb0635992f345d7e9532aa649c011a0cc10cae58e88f311f34038a22fe",
+      "size_bytes": 6076
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/mapchip-native-map.json",
+      "sha256": "2079b845a62e459b6464ad1e0acfc050f9c7a1b49ee3243d7ba8b2c1f17a05de",
+      "size_bytes": 5387
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/objchip-direction-contract.json",
+      "sha256": "1990a48dc83474991e3ca48321dcd3e097aa0aada4dbd3d2b93db90ffa2aedb4",
+      "size_bytes": 3720
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/objchip-draw-contract.json",
+      "sha256": "ab8a05b7976a7b519e6a2f542f39ad83a12a4ed9c651ba6aa76daaa6ed6155e5",
+      "size_bytes": 8293
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/objchip-native-map.json",
+      "sha256": "d16fb5e04ca15f53bde21cdbc3886c12a4c83d0ffd9c299d257e2c8d5aae51b9",
+      "size_bytes": 7133
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v4/unknowns.json",
+      "sha256": "7081c863efa4e60f439d40e9c6398d8654a903a6893a2c8e1600a5e3194ff0d6",
+      "size_bytes": 7898
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/checkpoint-ledger.json",
+      "sha256": "f45b69fd5362ac4606ac2a1f7a274fb3a97dea6528622c6019556180166a2983",
+      "size_bytes": 2786
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/room-camera-boundary.json",
+      "sha256": "7c198126d832249ff36c89ed635f2c4ebbd8d7640c46c4e4a72260bf0881ca5e",
+      "size_bytes": 828
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/room-command-parity-results.json",
+      "sha256": "28f31eb3fc6fd8ceb677d9f01e505fcee3e32f7e224bbde4db86ba7848c4a2c4",
+      "size_bytes": 2258
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/room-fixture-manifest.json",
+      "sha256": "3d97d2387003937d52ffe359b74848d15df8bf11908dcd888e03ba5d73d2c919",
+      "size_bytes": 1571
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/room-furniture-orchestration.json",
+      "sha256": "909796ebf0b964cf64e0b26a91c946db101ac75e4ac3c54b969b25f80ed88f76",
+      "size_bytes": 2149
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/room-init-contract.json",
+      "sha256": "619ff6f6c69b053faaf58cdc0c370bd2dd6c8da769955408dfd64db9005916c2",
+      "size_bytes": 2156
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/room-map-topology-contract.json",
+      "sha256": "beb916c768d8dadce20e241b9ef423a25f8eacd04501724d9f746ddb9d3f543e",
+      "size_bytes": 1477
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/room-mapchip-orchestration.json",
+      "sha256": "22ceb5393090bb710c1930500b84f2e0680af495cce8814125b44034802e7171",
+      "size_bytes": 1516
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/room-native-map.json",
+      "sha256": "edf3c75c28dc818fda09d713b15870ca0345d780dd7fb029cc01cb7a035b39a6",
+      "size_bytes": 4376
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/room-objchip-orchestration.json",
+      "sha256": "6e4e6d8f4c007c03ec56c2bb14656aaa1ce31c68ac3a6d6ef86a83fdea71d0cd",
+      "size_bytes": 1270
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/room-pass-schedule.json",
+      "sha256": "e730ba06fac54db2fa74b65940cb98bc8be827b7d537ea7cc8af05bfe36139e0",
+      "size_bytes": 3290
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/room00-static-scene.json",
+      "sha256": "c06847ee49a6187faea9b3eec0803f5dbe4a7d32c50c171643d02fe72772114b",
+      "size_bytes": 2143
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/roomdata-topology.json",
+      "sha256": "cd8d3db31fda7f0de4c3e1edd3ba415e21982a9e36470b0a078c72b67ece2135",
+      "size_bytes": 7293
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v5/unknowns.json",
+      "sha256": "37808ad2d80b7763229d14ceb92044f8d74d7bd09869b4f20be05d900703cd19",
+      "size_bytes": 2421
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/checkpoint-ledger.json",
+      "sha256": "36cbfda64ed130eddecefa1ab91bd32f6459d283412b7bd19cd0bb5948688c11",
+      "size_bytes": 3710
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/human-action-selector-map.json",
+      "sha256": "8487d82d65a32b546f6d7fbdf9c26de01b848396bbdcb335a5812fc339680ce1",
+      "size_bytes": 2047
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/room00-actor-bootstrap.json",
+      "sha256": "b4608aa499ef5c357fb6c2eb382343e54ae5ac285edf5e3b857a6b09b9c663af",
+      "size_bytes": 1364
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/room00-with-staff-manifest.json",
+      "sha256": "4d9bdf28e79cfaca6a0fc5f4aa7953168a7bcc2c785fcc62c7355bb7e944ea61",
+      "size_bytes": 1770
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/staff-animation-contract.json",
+      "sha256": "1bd7db2d6e5fdacadaf2020b5b8e92c68eae41df102416c95e289d2ae0e2145c",
+      "size_bytes": 1572
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/staff-command-parity-results.json",
+      "sha256": "739f68351900d1074f6f9b5e2bae7f743560ef4fa4961eb97217dcc0bc8ea324",
+      "size_bytes": 2179
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/staff-coordinate-contract.json",
+      "sha256": "59081fef03e5158bc240bfabfd443faf38154900c2d2a1fd64416d8eec000e6a",
+      "size_bytes": 1262
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/staff-direction-contract.json",
+      "sha256": "fd8e3cd31e140323c335bbbea79df45065624e774d3e2f3998c89854cd3f8add",
+      "size_bytes": 1599
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/staff-fixture-manifest.json",
+      "sha256": "57447a64ee9f9ea08ba3734c8f24aee809f1b069c702782564bf742079f06c2a",
+      "size_bytes": 5181
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/staff-native-map.json",
+      "sha256": "81f17f88cd307208739f7d34bb329610a0a60ddf8dfaa4f5cab4242e0baaa173",
+      "size_bytes": 3053
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/staff-room-ordering.json",
+      "sha256": "f0abd5de6bbe228ce3922d938f968b08744dd47fdb9196d960cfa72cf248f505",
+      "size_bytes": 1552
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/staffdata-visual-contract.json",
+      "sha256": "4afcae2782c441c5df15b82360a34906f07557a7842df0f28cb89f084f3919ea",
+      "size_bytes": 1929
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v6/unknowns.json",
+      "sha256": "27d5eee74748eef7600d0bfaa0ca290e95dd091173a4f599428ba4d12f5e6781",
+      "size_bytes": 1997
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/blend-alpha-contract.json",
+      "sha256": "d32fda8c0a1e244a8d8d65c6447d02534d46db11f20f4e80259088f9ed7dab85",
+      "size_bytes": 1295
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/checkpoint-ledger.json",
+      "sha256": "5d466082ff180b0234dc39b0570e031763be1a6a5c16da6395f03b3f7374fa57",
+      "size_bytes": 5106
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/fidelity-manifest.json",
+      "sha256": "772f5b2c1edd0849904e5f6688791613d06663c7bae2588162c0da117e6ab04b",
+      "size_bytes": 3877
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/golden-fixture-manifest.json",
+      "sha256": "24e98ebc081f40cf27d013efb452326efa1c9ebb7bb0fb523d52dcc391e3c7ef",
+      "size_bytes": 20548
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/golden-fixture-results.json",
+      "sha256": "e685a50e42f5d00a7a19117845c624948f34d2227a7f63d6f612f3fbaf5df3c1",
+      "size_bytes": 23833
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/graphics-raster-contract.json",
+      "sha256": "7d5f792d03223743850fd0421cb3e354c4b4bdc6f63e5d6f2bbaeca9920f0c22",
+      "size_bytes": 4660
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/pixel-diff-results.json",
+      "sha256": "ee862ee97122a1cfc70dc2dfa23ecaa09142ae3a471248c1e45283a2156a6249",
+      "size_bytes": 1811
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/door-seb.png",
+      "sha256": "f0d1a1d0d237fa296f69e355ee973238afabc94a94c0032421c27ca7cc4b417f",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/floor-direct_image.png",
+      "sha256": "ba243e35a05df863e8d5f1e10bf8e0191c6063202b491d789ac4075eeabee6b8",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/furniture-12.png",
+      "sha256": "a9188f4f5e3ee0e9338971c5a78eaf64b23cf0dbaf88f0d09484f8d929c34faa",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/furniture-26.png",
+      "sha256": "fc8e71ad97a650f5f16ca4ce5be1cf84927f38189b55a678baf6ba8d92fd5f30",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/furniture-3_desk_chair.png",
+      "sha256": "fa751a1afc149ff7c76204c08a7d6094aab55b70c5ab3c5e942ea1cfa8930642",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/furniture-56.png",
+      "sha256": "7f803211a2a6ff0f0467e770eab6963b254906ea9bfde8f323b60612883298a9",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/graphics-clipped_draw.png",
+      "sha256": "f1c0c47dfb9dd0044269a81bd86c26a47513e6c369ec29d1cd3e84e02e8d1365",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/graphics-selected_horizontal_flip.png",
+      "sha256": "74bc5966e8992a1b12310dbe404b718092c9c1ef4a2530ef09d023a2ea4e9038",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/graphics-transformed_draw.png",
+      "sha256": "55861a17683ea3f654d64f33990175bf503958ed9a2118ab22469bbe95418733",
+      "size_bytes": 192278
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/room00-structural-vs-staff.diff.png",
+      "sha256": "27312ff1aa3e84ddc5947db6bdf5a94360f76b3241d30987cb9c1de201d68c90",
+      "size_bytes": 2352843
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/room00-structural.png",
+      "sha256": "b55d701ba74bd6212701a6623d5de667d824c00c604bfebfc2d416f7d5fd447a",
+      "size_bytes": 2352843
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/room00-with-staff.png",
+      "sha256": "f5c2db1052ee55b6256208b164107bc123f58634f533ce621f46871acb60c1cd",
+      "size_bytes": 2352843
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/staff-0_typing_right.png",
+      "sha256": "9dcee15c64813966212f3e5f6b0dd26c29a7bfa99e7bec1ab1a6697ec501d322",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/staff-0_wait_left.png",
+      "sha256": "ca8713a728e29961a7d2ebbb12aa97bf9f75e6504c44f106dae6ea5d70389d66",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/staff-0_wait_right.png",
+      "sha256": "b0e788da838fb5ea7799f9f398d2bdd21b2edd5290559e1e19e05cc4c0cfed09",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/staff-alpha_128.png",
+      "sha256": "eb339f78c3b665db27baa7651d7f5a88b2e2cfc9f261aca6c8253fced4396a48",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/previews/wall-seb.png",
+      "sha256": "83022357a157a222bbe2fee2d49a0b03643792369bfc0f03d0c41f1c76b863b2",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/room00-structural-render.json",
+      "sha256": "8485298eedf49e05bc1014fad09e018a20c49f82e31d48027e536ba2a3c1ca9b",
+      "size_bytes": 1802
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/room00-with-staff-render.json",
+      "sha256": "fce4ce5b89b7c0beafca81ef6db7f62d66041f3d87e86e87d5ecea38d9bd6b6f",
+      "size_bytes": 1739
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/sampling-contract.json",
+      "sha256": "207ad481d62f04cf2797a82c6de379d9471bc461bbd9c391626181634091d6a3",
+      "size_bytes": 1263
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/selected-path-closure.json",
+      "sha256": "2e7fb080bd10f57ed1c263f1fb17d55a21ce2286ec588c130959e4709a1bc102",
+      "size_bytes": 2582
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/source-image-manifest.json",
+      "sha256": "4d1686a3cf5bad9e02c8dedcadb3dc3b8c3d6866fbab12e77a7a92af0d5a2b34",
+      "size_bytes": 5894
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/staff-cadence-contract.json",
+      "sha256": "a638df03e15651ef4a1ae87153f0cb54be0cfef198fd875f552788a86c8d99c0",
+      "size_bytes": 980
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/transform-raster-contract.json",
+      "sha256": "77c2a58c7b2310f489139ea449d250982f483d6c286f39eef17d0b4b6024e39a",
+      "size_bytes": 1023
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7/unknowns.json",
+      "sha256": "7152cfa437a0b414041e38bd3ae1117ddb5e2ee9ee8859b11be14cdd8dc0ee5a",
+      "size_bytes": 3763
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/V7_5_VISUAL_ACCEPTANCE_CONTACT_SHEET.png",
+      "sha256": "aaa0751e3f617bc57c0edea830c3ca3fbcd1ec6ccba9f0ed2a15989f9cee56e8",
+      "size_bytes": 36409203
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/clip_transform_preview.png",
+      "sha256": "8916532cd1af7a69ee430cac776b90b305bf42879c7472dbb36f67881f58961e",
+      "size_bytes": 2996013
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/door_preview.png",
+      "sha256": "f0d1a1d0d237fa296f69e355ee973238afabc94a94c0032421c27ca7cc4b417f",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/floor_preview.png",
+      "sha256": "ba243e35a05df863e8d5f1e10bf8e0191c6063202b491d789ac4075eeabee6b8",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/furniture_12_preview.png",
+      "sha256": "a9188f4f5e3ee0e9338971c5a78eaf64b23cf0dbaf88f0d09484f8d929c34faa",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/furniture_26_preview.png",
+      "sha256": "fc8e71ad97a650f5f16ca4ce5be1cf84927f38189b55a678baf6ba8d92fd5f30",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/furniture_3_preview.png",
+      "sha256": "fa751a1afc149ff7c76204c08a7d6094aab55b70c5ab3c5e942ea1cfa8930642",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/furniture_56_preview.png",
+      "sha256": "7f803211a2a6ff0f0467e770eab6963b254906ea9bfde8f323b60612883298a9",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/room00_structural.png",
+      "sha256": "574492baa161e195fabe16bb7848da2c392f5ad4102d8806a828e67648471b3d",
+      "size_bytes": 1229438
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/room00_with_staff.png",
+      "sha256": "3793515941d6dc6c10079cf20e1d0908f9c1b55619c9c0a97019908ebed9e6ff",
+      "size_bytes": 1229438
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/staff_alpha_preview.png",
+      "sha256": "d2e1ef291db0797a6765a92ee4f8144ab422013784dd67da0ce940ffba4a9d1a",
+      "size_bytes": 806808
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/staff_move_directions.png",
+      "sha256": "fad4b77939781e4cae8378d0ef64bb22773137ee9d4dddc7420412a800361755",
+      "size_bytes": 1075628
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/staff_typing_directions.png",
+      "sha256": "023e6c5edd9b398584618587ebc665564baa0ee6af382b8d52c78e5ee71f426c",
+      "size_bytes": 1075628
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/staff_wait_directions.png",
+      "sha256": "443ca3bb65758afca778473243ac6c3fca99e59ad68ebdd556ed5a0de615ccb0",
+      "size_bytes": 1075628
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/previews/wall_preview.png",
+      "sha256": "83022357a157a222bbe2fee2d49a0b03643792369bfc0f03d0c41f1c76b863b2",
+      "size_bytes": 317108
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/v7_5/visual-acceptance.json",
+      "sha256": "d66f3785a370b807033bcafbf52a6d966cad2f1e4f6dd09c68769c7cb07bbd98",
+      "size_bytes": 27714
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/visual-call-graph.json",
+      "sha256": "c508e1b27ec9a275e7a69a5a0f66899d118fd485ec9f9eefaf24ccbb48a71446",
+      "size_bytes": 14304
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/visual-data-flow.json",
+      "sha256": "654368b99f372972f3a14c4df30004525071ad5d613ba1e2fd2fb2af2c706dff",
+      "size_bytes": 9861
+    },
+    {
+      "path": "knowledge/fixtures/accepted/visual-port/visual-dependency-graph.json",
+      "sha256": "e6aa1cd5ba35d13df5f8da497ca801f33a950e722f604454f8c47c1836ed5bab",
+      "size_bytes": 13081
+    }
+  ],
+  "records_sha256": "edcce1de32ca2ecb629a2feabd2894e1617b140b2658fa682d848a7a27849a44",
+  "schema_version": "social-dev-k2-upstream-authority-hash-lock-v1",
+  "status": "pass"
+}

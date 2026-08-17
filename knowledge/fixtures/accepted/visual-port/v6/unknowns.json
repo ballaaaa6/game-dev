@@ -1,0 +1,49 @@
+{
+  "schema_version": "social-dev-visual-port-v6-unknowns-v1",
+  "status": "pass_static",
+  "items": [
+    {
+      "id": "V6-U01",
+      "question": "What hidden initial SEB does damaged Staff.Init assign before the first native draw?",
+      "status": "SOURCE_LIMITED",
+      "blocking": false,
+      "policy": "Use explicit wait/move/typing fixture action; do not invent an initial selector."
+    },
+    {
+      "id": "V6-U02",
+      "question": "What is the complete native Staff.Update cadence and transition timing?",
+      "status": "DEFER_TO_V7",
+      "blocking": false,
+      "policy": "V6 closes deterministic selected frame and source-visible intervals; exact native cadence is deferred."
+    },
+    {
+      "id": "V6-U03",
+      "question": "Does the general native Room.Draw call live Staff.Draw directly or through an Avatar relationship?",
+      "status": "SOURCE_LIMITED",
+      "blocking": false,
+      "policy": "The native avatar-primary slot and occlusion order are preserved; the live Staff-to-Avatar edge is not promoted."
+    },
+    {
+      "id": "V6-U04",
+      "question": "What is the exact scale_ sentinel behavior in every Staff.Draw branch?",
+      "status": "UNKNOWN_NONBLOCKING",
+      "blocking": false,
+      "policy": "V6 uses the explicit normal 100 percent command fixture; alternate scale branches remain isolated."
+    },
+    {
+      "id": "V6-U05",
+      "question": "What are the native compositor/shader pixels for Staff layers, alpha, blend, and clipping?",
+      "status": "DEFER_TO_V7",
+      "blocking": false,
+      "policy": "No pixel parity is claimed in V6."
+    },
+    {
+      "id": "V6-U06",
+      "question": "How do gameplay route, desk, talk, and work simulation branches affect Staff visuals?",
+      "status": "OUT_OF_SCOPE_GAMEPLAY",
+      "blocking": false,
+      "policy": "Do not reuse gameplay simulation as visual authority."
+    }
+  ],
+  "blocking_policy_result": "NO_BLOCKING_UNKNOWN_REMAINS_FOR_THE_SELECTED_STATIC_FIXTURE_SCOPE"
+}

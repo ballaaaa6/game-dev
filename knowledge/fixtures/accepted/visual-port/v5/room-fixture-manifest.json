@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "phase": "V5",
+  "status": "PASS_STATIC_FIXTURE_MATRIX",
+  "execution_mode": "INLINE_STATIC_ONLY",
+  "room_count": 18,
+  "room_matrix_source": "roomdata-topology.json",
+  "fixtures": [
+    {"id":"room00-full-static","room_key":"room:0","room_floor":0,"context":"main_display","dimensions":[14,14],"visual_scope":"full_static","native_bindings":6,"structural_facilities":2,"status":"PASS"},
+    {"id":"room00-persistent-topology","room_key":"room:0","room_floor":0,"context":"persistent_room","dimensions":[4,4],"visual_scope":"full_static","native_bindings":6,"structural_facilities":2,"status":"PASS"},
+    {"id":"room01-addition-topology","room_key":"room:1","room_floor":1,"context":"addition_floor_preview","dimensions":[4,4],"visual_scope":"topology_only","native_bindings":0,"structural_facilities":0,"status":"PASS"},
+    {"id":"rooms02-17-topology","room_keys":["room:2","room:3","room:4","room:5","room:6","room:7","room:8","room:9","room:10","room:11","room:12","room:13","room:14","room:15","room:16","room:17"],"room_floor":0,"context":"main_display","dimensions":[14,14],"visual_scope":"topology_only","native_bindings":0,"structural_facilities":0,"status":"PASS"}
+  ],
+  "negative_fixtures": [
+    "no raw type to FurnitureData inference",
+    "no room-wide global y-sort",
+    "no unsupported floor/context dimensions",
+    "no generated pixels or screenshots"
+  ],
+  "source_boundary": {"source_roots_read_only":true,"source_roots_executed":false,"production_renderer_changed":false,"server_started":false,"v6_started":false}
+}

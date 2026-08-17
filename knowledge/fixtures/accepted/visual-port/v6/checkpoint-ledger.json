@@ -1,0 +1,98 @@
+{
+  "schema_version": "social-dev-visual-port-v6-checkpoint-ledger-v1",
+  "phase": "V6",
+  "title": "Staff / StaffData / human animation / Room integration",
+  "execution_mode": "INLINE_STATIC_ONLY",
+  "status": "PASS_STATIC",
+  "production_renderer_changed": false,
+  "source_roots_executed": false,
+  "network_used": false,
+  "local_server_started": false,
+  "emulator_or_adb_used": false,
+  "live_app_observation_used": false,
+  "screenshot_used_as_proof": false,
+  "pixel_parity": "DEFERRED_TO_V7",
+  "checkpoints": [
+    {
+      "id": "V6.0",
+      "status": "PASS",
+      "scope": "V1-V5 baseline gate and Staff evidence inventory",
+      "verification": [
+        "Full Vitest baseline passed: 41 files, 187 tests",
+        "Focused V1-V5 regression passed: 16 files, 108 tests",
+        "TypeScript typecheck and production build passed",
+        "JSON/Python validation, source-boundary audit, and git diff check passed"
+      ],
+      "next_checkpoint": "V6.1"
+    },
+    {
+      "id": "V6.1-V6.2",
+      "status": "PASS",
+      "scope": "Staff native visual surface and StaffData image selector contract",
+      "evidence": ["staff-native-map.json", "staffdata-visual-contract.json"],
+      "next_checkpoint": "V6.3"
+    },
+    {
+      "id": "V6.3-V6.4",
+      "status": "PASS",
+      "scope": "Human action to SEB selectors and native direction/reverse semantics",
+      "evidence": ["human-action-selector-map.json", "staff-direction-contract.json"],
+      "next_checkpoint": "V6.5"
+    },
+    {
+      "id": "V6.5-V6.6",
+      "status": "PASS_STATIC",
+      "scope": "Frame state, source-bounded interval policy, alpha visibility, world coordinates, and camera offset",
+      "evidence": ["staff-animation-contract.json", "staff-coordinate-contract.json"],
+      "next_checkpoint": "V6.7"
+    },
+    {
+      "id": "V6.7-V6.8",
+      "status": "PASS_STATIC",
+      "scope": "RoomV5 Staff ordering/occlusion and room:0 actor bootstrap",
+      "evidence": ["staff-room-ordering.json", "room00-actor-bootstrap.json"],
+      "next_checkpoint": "V6.9"
+    },
+    {
+      "id": "V6.9",
+      "status": "PASS_STATIC",
+      "scope": "Selected StaffData/action fixture matrix",
+      "evidence": ["staff-fixture-manifest.json"],
+      "next_checkpoint": "V6.10"
+    },
+    {
+      "id": "V6.10-V6.11",
+      "status": "PASS_STATIC",
+      "scope": "Isolated StaffV6 compatibility implementation and command-only Room+Staff preview",
+      "implementation": "runtime/social-dev/src/v6/",
+      "focused_tests": "runtime/social-dev/tests/v6-staff.test.ts",
+      "next_checkpoint": "V6.12"
+    },
+    {
+      "id": "V6.12-V6.13",
+      "status": "PASS_STATIC",
+      "scope": "Staff command parity and integrated room:0 manifest",
+      "evidence": ["staff-command-parity-results.json", "room00-with-staff-manifest.json"],
+      "next_checkpoint": "V6.14"
+    },
+    {
+      "id": "V6.14",
+      "status": "PASS_STATIC_STOP_BEFORE_V7",
+      "scope": "Final static gate, regression handoff, and explicit V7 stop",
+      "verification": [
+        "Focused V6 passed: 23 tests",
+        "V1-V5 regression and full Vitest passed",
+        "TypeScript typecheck, production build, JSON/Python gates, source-boundary audit, and git diff check passed"
+      ],
+      "stop_condition": "Do not start V7 automatically. Exact pixels, native cadence, and remaining source-limited linkage remain explicit unknowns."
+    }
+  ],
+  "deterministic_manifest": {
+    "path": "knowledge/fixtures/accepted/visual-port/v6/room00-with-staff-manifest.json",
+    "room_key": "room:0",
+    "commands": 77,
+    "traces": 62,
+    "events": 791,
+    "sha256": "bfab918ef5ea04512da380b4d5134c4b02d1d7ca29fd9c6fb47d7b4e40944142"
+  }
+}

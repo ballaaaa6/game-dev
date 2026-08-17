@@ -1,0 +1,116 @@
+{
+  "schema_version": "social-dev-k3-floor-selector-closure-v1",
+  "gap_id": "K3-GAP-FLOOR-DIRECT-SELECTOR",
+  "status": "CLOSED",
+  "original_subject_id": "selector:floor:5",
+  "canonical_subject_id": "ROOMDATA_FLOOR_IMAGE_INDEX:5",
+  "namespaces": {
+    "data_row_id": "DATA_ROW_ID:data:RoomData:0",
+    "data_row_index": "DATA_ROW_INDEX:data:RoomData:1",
+    "room_data_id": "ROOM_DATA_ID:0",
+    "roomdata_floor_image_index": "ROOMDATA_FLOOR_IMAGE_INDEX:5",
+    "native_indirection_index": "NATIVE_INDIRECTION_INDEX:5",
+    "image_selector_id": "IMAGE_SELECTOR_ID:23",
+    "asset_id": "asset:01_GAME_PACKS/chip/floor_05.png"
+  },
+  "source_row": {
+    "row_id": "data:room:0",
+    "table_id": "data:RoomData",
+    "native_id": 0,
+    "row_index": 1,
+    "field": "floorImgId_",
+    "value": 5,
+    "raw_row_sha256": "220ae2c09add804a45154504245740a76901cc638b70b45c73315d02bfe6b150",
+    "source_file": "01_GAME_PACKS/xls/English.lproj/room.txt"
+  },
+  "native_chain": [
+    {
+      "method": "Room.InitMapChips",
+      "rva": "0x12CB1F4",
+      "field": "RoomData.floorImgId_",
+      "field_offset": "0x48",
+      "operation": "load floorImgId_ as NATIVE_INDIRECTION_INDEX",
+      "source": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12CB268"
+    },
+    {
+      "method": "Room.InitMapChips",
+      "rva": "0x12CB1F4",
+      "operation": "zero MapChip image id selects Room.FLOOR_IMAGE_ID_ARRAY[index]",
+      "array": "Room.FLOOR_IMAGE_ID_ARRAY",
+      "array_metadata_offset": "0x467878",
+      "index": "NATIVE_INDIRECTION_INDEX:5",
+      "selector": "IMAGE_SELECTOR_ID:23",
+      "source": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12CB35C-0x12CB378"
+    },
+    {
+      "method": "MapChip constructor",
+      "rva": "0x12A1A1C",
+      "field": "MapChip.imageId_",
+      "operation": "stores IMAGE_SELECTOR_ID:23",
+      "source": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12CB388-0x12CB3A8"
+    },
+    {
+      "method": "MapChip.DrawFloor",
+      "rva": "0x12A1F38",
+      "field": "MapChip.imageId_",
+      "field_offset": "0x18",
+      "operation": "indexes the chip image selector table and draws the resolved image",
+      "source": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12A1F78-0x12A2034"
+    }
+  ],
+  "native_static_array": {
+    "field": "Room.FLOOR_IMAGE_ID_ARRAY",
+    "element_type": "int32",
+    "length": 11,
+    "values": [
+      0,
+      19,
+      20,
+      21,
+      22,
+      23,
+      82,
+      83,
+      84,
+      85,
+      95
+    ],
+    "metadata_offset": "0x467878",
+    "metadata_hash": "2A4181A72504BAB3345E427ABC26886C58162778EEB5AB4E6EEC5097271BF679",
+    "raw_bytes_hex": "000000001300000014000000150000001600000017000000520000005300000054000000550000005f000000"
+  },
+  "selector_resource": {
+    "selector_key": "ref:chip:img:23",
+    "selector_id": 23,
+    "source_file": "01_GAME_PACKS/chip/img.inf",
+    "source_row": 21,
+    "raw_line": "23\tfloor_05.png,bin",
+    "target_asset_id": "asset:01_GAME_PACKS/chip/floor_05.png",
+    "target_relative_path": "01_GAME_PACKS/chip/floor_05.png",
+    "asset_sha256": "BE6572AF9DF60F5ED00EB0AB0E7D4DD95BA08749D7EC88B027A8AE5B3896C08C",
+    "asset_size_bytes": 1000,
+    "dimensions": [
+      80,
+      39
+    ]
+  },
+  "old_direct_claim": {
+    "subject_id": "selector:floor:5",
+    "object_id": "IMAGE_SELECTOR_ID:5",
+    "classification": "REJECTED",
+    "reason": "The subject was a misnamed direct-selector claim; the source/native scalar is ROOMDATA_FLOOR_IMAGE_INDEX:5 and the authoritative indirect result is IMAGE_SELECTOR_ID:23."
+  },
+  "runtime_boundary": {
+    "runtime_compatibility_alias_id": "COMPATIBILITY_ALIAS_ID:85",
+    "runtime_alias_preserved": true,
+    "pixel_asset_changed": false,
+    "native_selector_is_not_collapsed_into_alias": true
+  },
+  "provenance": [
+    "knowledge/fixtures/accepted/runtime/default_map_chip_contract.json",
+    "knowledge/fixtures/accepted/runtime/native_room_floor_usage_contract.json",
+    "knowledge/sources/phase3a_apk_probe/raw/global-metadata.dat:0x467878",
+    "knowledge/fixtures/accepted/native_content_registry.json:ref:chip:img:23",
+    "knowledge/sources/phase3a_apk_probe/raw/manifest.json"
+  ]
+}

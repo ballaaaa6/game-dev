@@ -1,0 +1,10 @@
+{
+  "schema_version": "social-dev-i0-unknowns-v1",
+  "status": "PASS_NO_BLOCKING_UNKNOWN",
+  "source_limited_nonblocking": [
+    "exact pixel interpolation remains outside the behavior acceptance boundary; node geometry and arrival semantics are exact",
+    "bubble rendering remains a visual event only; renderer semantics are unchanged",
+    "unsupported meeting/develop branches remain numeric state vocabulary without invented product policy"
+  ],
+  "blockers": []
+}

@@ -1,0 +1,99 @@
+{
+  "command_image_ids": [
+    "resChip_:image:85",
+    "resChip_:image:154",
+    "resChip_:image:10",
+    "resChip_:image:13",
+    "resChip_:image:156",
+    "resChip_:image:14",
+    "resChip_:image:15",
+    "resChip_:image:12",
+    "resChip_:image:11",
+    "resChip_:image:105",
+    "resChip_:image:155",
+    "resChip_:image:2",
+    "resChip_:image:18",
+    "resChip_:image:3",
+    "resChip_:image:4",
+    "resChip_:image:109",
+    "resChip_:image:106",
+    "resChip_:image:127",
+    "resChip_:image:6",
+    "resChip_:image:7",
+    "resHuman_:image:86",
+    "resHuman_:image:87",
+    "resHuman_:image:88"
+  ],
+  "raw_type_identity_policy": "No filename-based semantic identity; command image IDs remain group-qualified numeric selectors.",
+  "schema_version": "social-dev-visual-port-v7-selected-path-closure-v1",
+  "status": "pass_static",
+  "used_paths": [
+    {
+      "fixtures": [
+        "wall.seb",
+        "door.seb",
+        "staff.0_wait_right",
+        "furniture.3_desk_chair"
+      ],
+      "path": "Graphics.DrawImage crop",
+      "selected": true
+    },
+    {
+      "fixtures": [
+        "graphics.clipped_draw",
+        "graphics.transformed_draw"
+      ],
+      "path": "Graphics.DrawScaledImage",
+      "selected": true
+    },
+    {
+      "fixtures": [
+        "floor.direct_image",
+        "wall.seb",
+        "door.seb",
+        "staff.0_typing_right"
+      ],
+      "path": "Seb sprite source-slot resolution",
+      "selected": true
+    },
+    {
+      "fixtures": [
+        "furniture.12",
+        "furniture.26",
+        "furniture.56"
+      ],
+      "path": "direct FurnitureData image",
+      "selected": true
+    },
+    {
+      "path": "CustomImages dictionary",
+      "reason": "No selected room:0+Staff command uses it.",
+      "selected": false,
+      "status": "SOURCE_LIMITED"
+    },
+    {
+      "path": "atlas dispatch",
+      "reason": "No selected room:0+Staff command uses it.",
+      "selected": false,
+      "status": "SOURCE_LIMITED"
+    },
+    {
+      "path": "optimized image blocks",
+      "reason": "Selected logical OPT PNGs are already source-backed promoted images; no native block payload is selected.",
+      "selected": false,
+      "status": "SOURCE_LIMITED"
+    },
+    {
+      "path": "synthetic FRECT/RECT/LINE",
+      "reason": "No selected room:0+Staff command uses TEXID -2/-3/-4.",
+      "selected": false,
+      "status": "SOURCE_LIMITED"
+    },
+    {
+      "path": "depth-aware Seb.Render",
+      "reason": "Selected SEBs carry no proven depth payload.",
+      "selected": false,
+      "status": "SOURCE_LIMITED"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "i2-dashboard-subscription-contract-v1",
+  "status": "PASS",
+  "publication_triggers": [
+    "one scheduler tick",
+    "every product command result including rejection"
+  ],
+  "publication_count": "one per logical tick/command",
+  "disposer": "removes listener and prevents further callbacks",
+  "anti_race": "DOM controls call typed command; DOM is re-rendered from next committed snapshot only"
+}

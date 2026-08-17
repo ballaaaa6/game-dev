@@ -1,0 +1,464 @@
+{
+  "schema_version": "social-dev-native-room-floor-usage-contract-v1",
+  "package": "social-dev-native-room-floor-usage-contract",
+  "status": "pass",
+  "semantic_status": "approved_for_runtime_contract",
+  "catalog_id": "display-slice-01",
+  "content_hash": "91d009764eb7628cd28061e0e34c4c8ca4875fa421bbbc0d7eaa20176d358a88",
+  "native_artifact_ref": {
+    "apk_sha256": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
+    "binary_sha256": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a",
+    "metadata_sha256": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579",
+    "method_ids": [
+      "room_static_constructor",
+      "room_init_map_chips",
+      "map_chip_draw",
+      "map_chip_draw_floor",
+      "map_chip_draw_extension_floor"
+    ]
+  },
+  "topology_selection": {
+    "native_field": "Room.floor_",
+    "predicate": "floor == 0 ? MAPCHIP_ARRAY[0] : MAPCHIP_ARRAY[1]",
+    "variants": {
+      "floor_0": {
+        "native_index": 0,
+        "floor_predicate": "floor == 0",
+        "width": 14,
+        "height": 14,
+        "length": 196,
+        "rows": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            9,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            5,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            7,
+            6,
+            6,
+            11,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            2,
+            4,
+            5,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            2,
+            3,
+            7,
+            6,
+            11,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            2,
+            3,
+            8,
+            8,
+            5,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            5,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            7,
+            6,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "status": "verified_native_topology"
+      },
+      "floor_nonzero": {
+        "native_index": 1,
+        "floor_predicate": "floor != 0",
+        "width": 4,
+        "height": 4,
+        "length": 16,
+        "rows": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "status": "verified_native_topology"
+      }
+    }
+  },
+  "usage": [
+    {
+      "usage_id": "player-add-room",
+      "roomdata_ids": [
+        "room:0",
+        "room:1",
+        "room:2",
+        "room:3",
+        "room:4",
+        "room:5",
+        "room:6",
+        "room:7",
+        "room:8",
+        "room:9",
+        "room:10",
+        "room:11",
+        "room:12",
+        "room:13",
+        "room:14",
+        "room:15",
+        "room:16",
+        "room:17"
+      ],
+      "roomdata_id_status": "parameterized_native_roomdata_argument",
+      "room_floor_value": 0,
+      "topology_variant": "floor_0",
+      "width": 4,
+      "height": 4,
+      "is_preview": false,
+      "callers": [
+        {
+          "file": "sources/raw/1_Click_CSharp_Code update/game/Player.cs",
+          "line": 4389,
+          "method": "Player.AddRoom"
+        }
+      ],
+      "status": "verified_native_constructor_dimensions"
+    },
+    {
+      "usage_id": "addition-floor-preview",
+      "roomdata_ids": [
+        "room:0",
+        "room:1",
+        "room:2",
+        "room:3",
+        "room:4",
+        "room:5",
+        "room:6",
+        "room:7",
+        "room:8",
+        "room:9",
+        "room:10",
+        "room:11",
+        "room:12",
+        "room:13",
+        "room:14",
+        "room:15",
+        "room:16",
+        "room:17"
+      ],
+      "roomdata_id_status": "selected_preview_vector_element_dynamic_id",
+      "room_floor_value": 1,
+      "topology_variant": "floor_nonzero",
+      "width": 4,
+      "height": 4,
+      "is_preview": true,
+      "callers": [
+        {
+          "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm.cs",
+          "lines": [
+            125618,
+            126477
+          ]
+        },
+        {
+          "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/SubForm.cs",
+          "lines": [
+            125578,
+            126437
+          ]
+        },
+        {
+          "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/InitAdditionFloor.cs",
+          "line": 143
+        },
+        {
+          "file": "sources/raw/1_Click_CSharp_Code update/form/SubForm_Split/UpdateAdditionFloor.cs",
+          "line": 765
+        }
+      ],
+      "status": "verified_native_constructor_dimensions"
+    },
+    {
+      "usage_id": "main-display-map",
+      "roomdata_ids": [
+        "room:0"
+      ],
+      "roomdata_id_status": "explicit_roomdata_index",
+      "room_floor_value": 0,
+      "topology_variant": "floor_0",
+      "width": 14,
+      "height": 14,
+      "is_preview": false,
+      "callers": [
+        {
+          "file": "sources/raw/1_Click_CSharp_Code update/KairoEngine/main/AppData.cs",
+          "line": 13813,
+          "method": "AppData.NewGame"
+        }
+      ],
+      "status": "verified_native_constructor_dimensions"
+    }
+  ],
+  "roomdata_catalog": {
+    "room_keys": [
+      "room:0",
+      "room:1",
+      "room:2",
+      "room:3",
+      "room:4",
+      "room:5",
+      "room:6",
+      "room:7",
+      "room:8",
+      "room:9",
+      "room:10",
+      "room:11",
+      "room:12",
+      "room:13",
+      "room:14",
+      "room:15",
+      "room:16",
+      "room:17"
+    ],
+    "room_count": 18,
+    "floor_image_links": "knowledge/fixtures/accepted/runtime/room_catalog_contract.json",
+    "objchip_grid": "10x10 RoomData.objMap_/objDir_"
+  },
+  "runtime_policy": {
+    "roomdata_is_interior_catalog_key": true,
+    "room_floor_is_constructor_key": true,
+    "mapchip_never_inferred_from_objchip": true,
+    "floor_image_table_is_independent_from_mapchip_topology": true,
+    "nonzero_topology_requires_4x4_native_dimensions": true,
+    "unsupported_dimension_combinations_are_rejected": true,
+    "raw_native_floor_value_is_preserved": true,
+    "environment_scope": {
+      "main_display": {
+        "topology": "floor_0",
+        "dimensions": "14x14",
+        "outer_mapchip": "native"
+      },
+      "persistent_room": {
+        "topology": "floor_0",
+        "dimensions": "4x4",
+        "outer_mapchip": "not_present"
+      },
+      "addition_floor_preview": {
+        "topology": "floor_nonzero",
+        "dimensions": "4x4",
+        "outer_mapchip": "not_present"
+      },
+      "non_main_outer_mapchip_policy": "no_synthetic_14x14_promotion"
+    }
+  },
+  "source_evidence": {
+    "knowledge_catalog": "knowledge/fixtures/accepted/native_room_floor_usage_catalog.json",
+    "source_policy": "C# and native artifacts are evidence only; browser runtime imports this contract, not source roots."
+  },
+  "contract_hash": "f1477ed112767b1e123de180d288a224fc35cc5eef6ed2852a5f12f38fe33830"
+}

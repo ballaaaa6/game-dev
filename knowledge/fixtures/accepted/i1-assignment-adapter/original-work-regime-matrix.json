@@ -1,0 +1,40 @@
+{
+  "schema_version": "social-dev-i1-original-work-regime-matrix-v1",
+  "status": "PASS_I1_1_ORIGINAL_WORK_REGIMES",
+  "checkpoint_token": "PASS_I1_1_ORIGINAL_WORK_REGIMES",
+  "regimes": [
+    {
+      "id": "BASELINE_NO_PROJECT",
+      "status": "PASS",
+      "living": ["desk ownership", "route", "STATE_WORK", "typing", "equipment", "talk", "HP recovery", "home and return"],
+      "product": "no task record / IDLE_NO_TASK read label",
+      "evidence": ["i0-living-runtime/transition-traces/S1.jsonl", "living-core-closure/original-task-to-living-core-boundary.json"],
+      "forbidden_inference": "STATE_WORK is not an external task."
+    },
+    {
+      "id": "PLANNING_ACTIVE",
+      "status": "PASS",
+      "living": ["Player.StartPlanning", "Room.OnStartPlanning", "Staff.OnStartPlanning", "planning flag", "planning rate/quality", "Player.UpdatePlanning -> Room.UpdatePlanning -> Staff.UpdatePlanning2", "Player.IsCompletedPlanning -> Room.OnEndPlanning -> Staff.OnEndPlanning"],
+      "product": "no task queue and no arbitrary task identity",
+      "evidence": ["g1_5/planning-command-boundary-native.json", "runtime-contract-freeze/work-planning-runtime-contract.json"],
+      "forbidden_inference": "StartPlanning is not arbitrary external task execution."
+    },
+    {
+      "id": "DEVELOP_ACTIVE",
+      "status": "PASS_WITH_SOURCE_LIMITS",
+      "living": ["Staff.state 12 dispatches UpdateDevelop", "developState 0..9 jump table", "clone Staff objects", "developState/frame2/power/stepFinished fields", "Develop-specific HP/down and enemy interruption"],
+      "product": "original Develop has no recovered external task ID or arbitrary dashboard payload",
+      "evidence": ["original-development-start-chain.json", "update-develop-native-map.json", "develop-hp-interaction.json"],
+      "forbidden_inference": "Staff.state DEVELOP does not imply an external task ID."
+    },
+    {
+      "id": "POST_DEVELOP_BASELINE",
+      "status": "PASS_WITH_SOURCE_LIMITS",
+      "living": ["DevelopForm resets participating clones to developState 8 and DevelopForm state 11 at step clear", "Staff.OnFinishDevelop calls ChangeStateToWait and copies clamped HP/aura to original Staff"],
+      "product": "I1 terminal overlay leaves canonical living untouched; no product completion rewrite is needed",
+      "evidence": ["original-development-completion-chain.json", "develop-interruption-contract.json"],
+      "source_limit": "The exact native caller that writes Staff.state=12 and the final non-UI Staff state after the damaged Develop form are not required by Bridge C and are not fabricated."
+    }
+  ],
+  "conclusion": "The three regimes are distinct. Bridge C is the only truthful arbitrary-external-task representation."
+}

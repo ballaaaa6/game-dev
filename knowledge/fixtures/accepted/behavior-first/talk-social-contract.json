@@ -1,0 +1,87 @@
+{
+  "initiator": {
+    "guards": [
+      "target not null",
+      "target != self",
+      "target flags do not include 0x840",
+      "target flag mask 6 equals sitting",
+      "target state == STATE_WORK",
+      "standing/use cell is not type 6"
+    ],
+    "method": "GotoTalk",
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 3262,
+      "note": "Random colleague selection and bilateral flags.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "private void GotoTalk()"
+    },
+    "target_selection": "one AppData.Random(staffs_.Length) staff id",
+    "writes": [
+      "initiator FLAG_RESERVED_TALK",
+      "target FLAG_RESERVED_TALK",
+      "target FLAG_INVITED_TALK",
+      "colleagueId_ both sides",
+      "initiator state MOVE",
+      "initiator move mode TO_STAFF"
+    ]
+  },
+  "invite": {
+    "guards": [
+      "colleagueId_ is valid",
+      "frame >=20",
+      "frame >=60 branch can select talk goal type 0"
+    ],
+    "method": "InviteStaffToTalk",
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 2359,
+      "note": "Invitation timing and target callback.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "private void InviteStaffToTalk()"
+    },
+    "writes": [
+      "state MOVE",
+      "move mode TO_STAND_TALKING",
+      "target OnInvitedTalk"
+    ]
+  },
+  "partner_cleanup": {
+    "effect": "frame_=0; colleagueId_=-1; clear invited/reserved flags; state WAIT",
+    "method": "OnColleagueRemoved",
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 10910,
+      "note": "Partner removal cleanup.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "public void OnColleagueRemoved()"
+    }
+  },
+  "schema_version": "social-dev-behavior-first-talk-social-contract-v1",
+  "skill_effect": {
+    "effect_index": 8,
+    "effect_value": 150,
+    "flag": 1,
+    "name": "Loving Meetings",
+    "scene": 1,
+    "skill_id": 1,
+    "status": "selected data record plus readable OnEndTyping use; random gauge distribution not promoted",
+    "target": 0,
+    "type": 10
+  },
+  "source_limit": "Full meeting-state handler and exact random/cadence behavior are not closed by the damaged UpdateMeeting and InviteStaffToTalk bodies.",
+  "status": "pass_with_source_limits",
+  "talk_timing": {
+    "frame_110": "AddMeetingPointGauge(Lib.Random(0,4))",
+    "frame_130_or_more": "clear flags and colleagueId_; GotoDesk",
+    "frame_20": "optional bubble",
+    "frame_70": "optional bubble",
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 2297,
+      "note": "Talk completion.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "if (num >= 130)"
+    }
+  }
+}

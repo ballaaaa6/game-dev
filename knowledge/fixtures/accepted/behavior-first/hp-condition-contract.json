@@ -1,0 +1,804 @@
+{
+  "authority": "Staff.hp_ plus StaffData.PARAM_HP=5 and JobData HP parameter lookup",
+  "condition_search": {
+    "direct_drain_search": {
+      "RecoverHp(-": [],
+      "hp_ +=": [],
+      "hp_ -=": [],
+      "hp_--": []
+    },
+    "exact_name_results_in_Staff_cs": {
+      "condition": [],
+      "condition_": [],
+      "energy_": [],
+      "fatigue_": [],
+      "frameToStartRecovery_": [
+        262,
+        1203,
+        1205,
+        1298,
+        1637,
+        1763,
+        2933,
+        14386,
+        15713
+      ],
+      "hp_": [
+        258,
+        683,
+        1741,
+        1743,
+        2924,
+        5773,
+        7121,
+        7122,
+        7125,
+        7126,
+        7137,
+        7263,
+        7265,
+        7277,
+        7278,
+        7520,
+        7535,
+        11201,
+        11237,
+        11238,
+        11241,
+        11242,
+        11253,
+        11260,
+        11265,
+        11283,
+        11285,
+        11580,
+        11581,
+        11586,
+        11588,
+        11589,
+        11592,
+        11606,
+        11615,
+        11617,
+        14384,
+        15709
+      ],
+      "recoveryHpStock_": [
+        266,
+        1203,
+        1224,
+        1299,
+        1300,
+        1615,
+        1636,
+        1764,
+        1765,
+        2934,
+        2935,
+        14388,
+        15717
+      ],
+      "stamina_": [],
+      "status_": []
+    },
+    "expanded_exact_name_search": {
+      "condition_": {
+        "Staff.cs_matches": [],
+        "case_sensitive": false,
+        "matches_by_file": {
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/UnityEngine.Bindings/NativeConditionalAttribute.cs": [
+            {
+              "line": 7,
+              "text": "private string _003CCondition_003Ek__BackingField;"
+            },
+            {
+              "line": 15,
+              "text": "_003CCondition_003Ek__BackingField = value;"
+            }
+          ]
+        },
+        "scope": "all C# files under csharp_raw_20260813/1_Click_CSharp_Code"
+      },
+      "energy_": {
+        "Staff.cs_matches": [],
+        "case_sensitive": false,
+        "matches_by_file": {
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Avatar.cs": [
+            {
+              "line": 52,
+              "text": "public const int ENERGY_MAX = 5;"
+            }
+          ]
+        },
+        "scope": "all C# files under csharp_raw_20260813/1_Click_CSharp_Code"
+      },
+      "fatigue_": {
+        "Staff.cs_matches": [],
+        "case_sensitive": false,
+        "matches_by_file": {},
+        "scope": "all C# files under csharp_raw_20260813/1_Click_CSharp_Code"
+      },
+      "stamina_": {
+        "Staff.cs_matches": [],
+        "case_sensitive": false,
+        "matches_by_file": {
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/EventData.cs": [
+            {
+              "line": 82,
+              "text": "public const int EV_STAMINA_IS_MAX = 7;"
+            },
+            {
+              "line": 270,
+              "text": "public const int EV_FIRST_STAMINA_EMPTY = 139;"
+            },
+            {
+              "line": 314,
+              "text": "public const int EV_STAMINA_OVER_SELECT = 161;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/MiniGameForm2.cs": [
+            {
+              "line": 209,
+              "text": "internal static readonly int RESPUZZLE_STAMINA_BOX;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs": [
+            {
+              "line": 622,
+              "text": "public const int TYPE_STAMINA_DIALOG = 155;"
+            },
+            {
+              "line": 1456,
+              "text": "private static readonly int[][][] PROPOSAL_DECIDE_STAMINA_BOX_COLORS;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Player.cs": [
+            {
+              "line": 571,
+              "text": "public const long RECOVER_STAMINA_TIME = 420L;"
+            },
+            {
+              "line": 573,
+              "text": "public const int STAMINA_DEFAULT = 10;"
+            },
+            {
+              "line": 575,
+              "text": "public const int STAMINA_MAX = 99;"
+            },
+            {
+              "line": 651,
+              "text": "public const int RECOVER_STAMINA_COIN_NUM = 3;"
+            },
+            {
+              "line": 773,
+              "text": "public static readonly int[] REDEBUG_STAMINA_COSTS;"
+            },
+            {
+              "line": 791,
+              "text": "private SecureInt stamina_;"
+            },
+            {
+              "line": 1001,
+              "text": "private object UpdateStamina_lock;"
+            },
+            {
+              "line": 1235,
+              "text": "object updateStamina_lock = new object();"
+            },
+            {
+              "line": 1236,
+              "text": "UpdateStamina_lock = updateStamina_lock;"
+            },
+            {
+              "line": 1292,
+              "text": "stamina_ = secureInt;"
+            },
+            {
+              "line": 2109,
+              "text": "int num = stamina_.Get();"
+            },
+            {
+              "line": 2151,
+              "text": "int num = stamina_.Get();"
+            },
+            {
+              "line": 2154,
+              "text": "int num2 = stamina_.Get();"
+            },
+            {
+              "line": 2195,
+              "text": "stamina_ = secureInt;"
+            },
+            {
+              "line": 2200,
+              "text": "stamina_ = secureInt2;"
+            },
+            {
+              "line": 2203,
+              "text": "int num12 = stamina_.Get();"
+            },
+            {
+              "line": 2219,
+              "text": "stamina_ = secureInt3;"
+            },
+            {
+              "line": 2227,
+              "text": "int num14 = stamina_.Get();"
+            },
+            {
+              "line": 2278,
+              "text": "if (stamina_ != null)"
+            },
+            {
+              "line": 2280,
+              "text": "int num = stamina_.Get();"
+            },
+            {
+              "line": 2330,
+              "text": "if (stamina_ != null)"
+            },
+            {
+              "line": 2332,
+              "text": "num = stamina_.Get();"
+            },
+            {
+              "line": 2337,
+              "text": "if (stamina_ != null)"
+            },
+            {
+              "line": 2339,
+              "text": "int num2 = stamina_.Get();"
+            },
+            {
+              "line": 2345,
+              "text": "stamina_ = secureInt;"
+            },
+            {
+              "line": 3241,
+              "text": "int num2 = stamina_.Get();"
+            },
+            {
+              "line": 4539,
+              "text": "if (stamina_ != null)"
+            },
+            {
+              "line": 4541,
+              "text": "return stamina_.Get();"
+            },
+            {
+              "line": 6584,
+              "text": "Monitor.Enter(UpdateStamina_lock, ref lockTaken);"
+            },
+            {
+              "line": 6622,
+              "text": "bool flag8 = stamina_ == null;"
+            },
+            {
+              "line": 6629,
+              "text": "int num2 = stamina_.Get();"
+            },
+            {
+              "line": 6773,
+              "text": "Monitor.Exit(UpdateStamina_lock);"
+            },
+            {
+              "line": 6806,
+              "text": "Monitor.Exit(UpdateStamina_lock);"
+            },
+            {
+              "line": 10979,
+              "text": "if (stamina_ != null)"
+            },
+            {
+              "line": 10981,
+              "text": "int num = stamina_.Get();"
+            },
+            {
+              "line": 21729,
+              "text": "bool flag9 = stamina_ == null;"
+            },
+            {
+              "line": 21735,
+              "text": "int num9 = stamina_.Get();"
+            },
+            {
+              "line": 27719,
+              "text": "stamina_ = secureInt;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/AppData.cs": [
+            {
+              "line": 846,
+              "text": "public const int RESCOM_SEB_STAMINA_01 = 43;"
+            },
+            {
+              "line": 848,
+              "text": "public const int RESCOM_SEB_STAMINA_GAUGE = 44;"
+            },
+            {
+              "line": 924,
+              "text": "public const int RESCOM_SEB_STAMINA_STR = 84;"
+            },
+            {
+              "line": 1428,
+              "text": "public const int RESGAME_SEB_STAMINA_FUKIDASHI = 20;"
+            }
+          ]
+        },
+        "scope": "all C# files under csharp_raw_20260813/1_Click_CSharp_Code"
+      },
+      "status_": {
+        "Staff.cs_matches": [],
+        "case_sensitive": false,
+        "matches_by_file": {
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/Mono.Net.Security/AsyncProtocolRequest.cs": [
+            {
+              "line": 55,
+              "text": "private AsyncOperationStatus _003Cstatus_003E5__2;"
+            },
+            {
+              "line": 57,
+              "text": "private AsyncOperationStatus _003CnewStatus_003E5__3;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/System.Net/WebCompletionSource.cs": [
+            {
+              "line": 20,
+              "text": "private readonly Status _003CStatus_003Ek__BackingField;"
+            },
+            {
+              "line": 26,
+              "text": "public Status Status => _003CStatus_003Ek__BackingField;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/System.Net/WebConnectionTunnel.cs": [
+            {
+              "line": 73,
+              "text": "private int _003Cstatus_003E5__3;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/System.Security.Cryptography.X509Certificates/X509ChainElement.cs": [
+            {
+              "line": 11,
+              "text": "private X509ChainStatusFlags compressed_status_flags;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/UnityEngine.Android/AndroidAssetPackInfo.cs": [
+            {
+              "line": 7,
+              "text": "private readonly AndroidAssetPackStatus _003Cstatus_003Ek__BackingField;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/UnityEngine.Android/AndroidAssetPackState.cs": [
+            {
+              "line": 7,
+              "text": "private readonly AndroidAssetPackStatus _003Cstatus_003Ek__BackingField;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/UnityEngine.EventSystems/PointerEventData.cs": [
+            {
+              "line": 80,
+              "text": "private PenStatus _003CpenStatus_003Ek__BackingField;"
+            },
+            {
+              "line": 390,
+              "text": "return _003CpenStatus_003Ek__BackingField;"
+            },
+            {
+              "line": 394,
+              "text": "_003CpenStatus_003Ek__BackingField = value;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/UnityEngine.UIElements/DropdownMenuAction.cs": [
+            {
+              "line": 18,
+              "text": "private Status _003Cstatus_003Ek__BackingField;"
+            },
+            {
+              "line": 32,
+              "text": "_003Cstatus_003Ek__BackingField = value;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/UnityEngine.UIElements/EventBase.cs": [
+            {
+              "line": 50,
+              "text": "private LifeCycleStatus _003ClifeCycleStatus_003Ek__BackingField;"
+            },
+            {
+              "line": 130,
+              "text": "return _003ClifeCycleStatus_003Ek__BackingField;"
+            },
+            {
+              "line": 134,
+              "text": "_003ClifeCycleStatus_003Ek__BackingField = value;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/UnityEngine.UIElements/PanelEventHandler.cs": [
+            {
+              "line": 48,
+              "text": "private PenStatus _003CpenStatus_003Ek__BackingField;"
+            },
+            {
+              "line": 252,
+              "text": "return _003CpenStatus_003Ek__BackingField;"
+            },
+            {
+              "line": 256,
+              "text": "_003CpenStatus_003Ek__BackingField = value;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/UnityEngine.UIElements/PointerEventBase.cs": [
+            {
+              "line": 43,
+              "text": "private PenStatus _003CpenStatus_003Ek__BackingField;"
+            },
+            {
+              "line": 248,
+              "text": "return _003CpenStatus_003Ek__BackingField;"
+            },
+            {
+              "line": 252,
+              "text": "_003CpenStatus_003Ek__BackingField = value;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/EventData.cs": [
+            {
+              "line": 208,
+              "text": "public const int EV_FIRST_STAFF_STATUS_SELECT = 108;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/GameForm.cs": [
+            {
+              "line": 149,
+              "text": "public const int STATUS_BAR_HEIGHT = 32;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubForm.cs": [
+            {
+              "line": 830,
+              "text": "private const int STAFF_STATUS_STEP_NORMAL = 0;"
+            },
+            {
+              "line": 832,
+              "text": "private const int STAFF_STATUS_STEP_READY_GET_EXP = 1;"
+            },
+            {
+              "line": 834,
+              "text": "private const int STAFF_STATUS_STEP_GET_EXP = 2;"
+            },
+            {
+              "line": 836,
+              "text": "private const int STAFF_STATUS_STEP_LEVEL_UP = 4;"
+            },
+            {
+              "line": 838,
+              "text": "private const int STAFF_STATUS_STEP_PARAM_UP = 8;"
+            },
+            {
+              "line": 840,
+              "text": "private const int STAFF_STATUS_STEP_WAITING_KEY_INPUT = 16;"
+            },
+            {
+              "line": 842,
+              "text": "private const int STAFF_STATUS_STEP_DISMISSAL = 32;"
+            },
+            {
+              "line": 844,
+              "text": "private const int STAFF_STATUS_STEP_JOIN = 64;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/SubFormPresidentHome.cs": [
+            {
+              "line": 22,
+              "text": "private static readonly string[] PRESIDENT_STATUS_STR;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/GameRecord.cs": [
+            {
+              "line": 13,
+              "text": "public const int GAME_STATUS_TYPE_SELL = 0;"
+            },
+            {
+              "line": 15,
+              "text": "public const int GAME_STATUS_TYPE_REVIEW = 1;"
+            },
+            {
+              "line": 17,
+              "text": "public const int GAME_STATUS_TYPE_STABILITY = 2;"
+            },
+            {
+              "line": 19,
+              "text": "public const int GAME_STATUS_TYPE_PRICE = 3;"
+            },
+            {
+              "line": 21,
+              "text": "public const int GAME_STATUS_TYPE_SURPRISE = 4;"
+            },
+            {
+              "line": 23,
+              "text": "public const int GAME_STATUS_TYPE_END = 5;"
+            },
+            {
+              "line": 25,
+              "text": "public static readonly int[][] GAME_STATUS_RATE_TABLE;"
+            }
+          ],
+          "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/main/AppData.cs": [
+            {
+              "line": 1020,
+              "text": "public const int RESCOM_SEB_STATUS_FRAME = 132;"
+            },
+            {
+              "line": 1460,
+              "text": "public const int RESGAME_SEB_STATUS_BAR = 36;"
+            },
+            {
+              "line": 1462,
+              "text": "public const int RESGAME_SEB_STATUS_BAR_RANK = 37;"
+            }
+          ]
+        },
+        "scope": "all C# files under csharp_raw_20260813/1_Click_CSharp_Code"
+      }
+    },
+    "finding": "No Staff field named stamina_, energy_, fatigue_, or condition_ was found. Expanded exact-token hits belong to unrelated Player stamina, Avatar energy, EventData/UI vocabulary, or Unity binding code; none establishes a Staff condition field. The readable Staff source has no RecoverHp(-...), hp_ -=, or hp_-- ordinary-work write. Do not invent a work drain; ordinary work drain remains unresolved until native body tracing is allowed."
+  },
+  "field": {
+    "name": "hp_",
+    "offset": "0xE8",
+    "owner": "Staff",
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 258,
+      "note": "Exact Staff HP field.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "private int hp_;"
+    }
+  },
+  "initialization": {
+    "initial_hp_literal": 100,
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 683,
+      "note": "Staff.Init default before Room.AddStaff max normalization.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "hp_ = 100;"
+    }
+  },
+  "max_formula": {
+    "expression": "GetBaseParam(StaffData.PARAM_HP, 0) + GetJobParam(StaffData.PARAM_HP, level_)",
+    "parameter_value": 5,
+    "refs": [
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/StaffData.cs",
+        "line": 23,
+        "note": "HP parameter index.",
+        "source_sha256": "3464f954f7b2b9e47a755c1dbd76eca218e216d3845b16ca9e558e3f528cf92a",
+        "symbol": "public const int PARAM_HP = 5;"
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 11268,
+        "note": "Ratio reads base and job HP.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "public int GetHpRatio()"
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 11600,
+        "note": "Max recovery.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "public void RecoverHpMax()"
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 11609,
+        "note": "Max clamp.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "public void ClampHpMax()"
+      }
+    ]
+  },
+  "native_refs": [
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned recovery helper.",
+      "rva": "0x12D2C8C",
+      "symbol": "Staff.UpdateRecoveryHp"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned broad update.",
+      "rva": "0x12D2EC8",
+      "symbol": "Staff.Update"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Pinned recovery operation.",
+      "rva": "0x12D2DD8",
+      "symbol": "Staff.RecoverHp"
+    }
+  ],
+  "reads": [
+    {
+      "consumer": "Staff.GetHp",
+      "kind": "authoritative_read",
+      "ref": {
+        "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+        "note": "Native getter.",
+        "rva": "0x12DCB00",
+        "symbol": "Staff.GetHp"
+      }
+    },
+    {
+      "consumer": "Staff.GetHpRatio",
+      "kind": "ratio_read",
+      "ref": {
+        "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+        "note": "Native ratio helper.",
+        "rva": "0x12D3BE8",
+        "symbol": "Staff.GetHpRatio"
+      }
+    },
+    {
+      "consumer": "Staff.Update",
+      "kind": "low_hp_guard",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 1561,
+        "note": "Door escape guard.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "if (hpRatio <= 5 && state_ != 2 && state_ != 13)"
+      }
+    },
+    {
+      "consumer": "Staff.UpdateWork",
+      "kind": "sleep_decision_input",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 1556,
+        "note": "Low-HP sleeping decision in work handler.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "int hpRatio = GetHpRatio();"
+      }
+    },
+    {
+      "consumer": "Staff.UpdateStayHome",
+      "kind": "home_return_input",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 2094,
+        "note": "Home return threshold.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "if (hpRatio >= 40)"
+      }
+    },
+    {
+      "consumer": "DevelopForm/SubForm",
+      "kind": "management_ui_read",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/form/DevelopForm.cs",
+        "note": "UI reads Staff HP and GetParam(5); UI is a consumer, not autonomous authority."
+      }
+    }
+  ],
+  "schema_version": "social-dev-behavior-first-hp-condition-contract-v1",
+  "source_limit": "The decompiler damaged UpdateRecoveryHp cadence logic and broad Update dispatch. HP storage, max formula, thresholds, stock writes, and readable recovery writes are closed; ordinary living-work drain is not.",
+  "status": "pass_with_source_limits",
+  "thresholds": {
+    "home_return_ratio_percent": 40,
+    "low_hp_ratio_percent": 5,
+    "recovery_start_delay_frames": 20,
+    "sleeping_flag": 32
+  },
+  "writes": [
+    {
+      "operation": "hp_=100",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 683,
+        "note": "Initialization literal.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "hp_ = 100;"
+      },
+      "site": "Staff.Init",
+      "status": "source_backed"
+    },
+    {
+      "operation": "hp_=argument",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 11263,
+        "note": "Explicit setter.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "public void SetHp(int hp)"
+      },
+      "site": "Staff.SetHp",
+      "status": "source_backed"
+    },
+    {
+      "operation": "hp_+=value; clamp to computed max; clear sleeping at max",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 11578,
+        "note": "Recovery and max clamp.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "public bool RecoverHp(int value)"
+      },
+      "site": "Staff.RecoverHp",
+      "status": "source_backed"
+    },
+    {
+      "operation": "hp_=computed max",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 11600,
+        "note": "New staff normalization.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "public void RecoverHpMax()"
+      },
+      "site": "Staff.RecoverHpMax",
+      "status": "source_backed"
+    },
+    {
+      "operation": "if hp_>max then hp_=max",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 11609,
+        "note": "Loaded staff normalization.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "public void ClampHpMax()"
+      },
+      "site": "Staff.ClampHpMax",
+      "status": "source_backed"
+    },
+    {
+      "operation": "RecoverHp(1) from recovery stock",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 1223,
+        "note": "Per-stock recovery write.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "bool flag4 = RecoverHp(1);"
+      },
+      "site": "Staff.UpdateRecoveryHp",
+      "status": "source_backed_with_cadence_limit"
+    },
+    {
+      "operation": "RecoverHp(1)",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 2092,
+        "note": "Stay-home tick recovery.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "bool flag = RecoverHp(1);"
+      },
+      "site": "Staff.UpdateStayHome",
+      "status": "source_backed"
+    },
+    {
+      "operation": "damage/HP floor or combat adjustment",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 7142,
+        "note": "Combat path, not ordinary living work.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "public void OnAttacked(int power)"
+      },
+      "site": "Staff.OnFinishDevelop/OnAttacked",
+      "status": "source_backed_with_combat_scope"
+    },
+    {
+      "operation": "restore/copy hp_",
+      "ref": {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+        "line": 11201,
+        "note": "Clone/overwrite persistence path.",
+        "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+        "symbol": "staff.hp_ = hp_;"
+      },
+      "site": "Staff.Deserialize/Clone",
+      "status": "source_backed"
+    }
+  ]
+}

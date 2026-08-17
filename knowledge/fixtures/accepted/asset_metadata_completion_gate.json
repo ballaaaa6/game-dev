@@ -1,0 +1,325 @@
+{
+  "schema_version": "social-dev-asset-metadata-completion-gate-v1",
+  "package": "social-dev",
+  "status": "pass",
+  "semantic_status": "asset_metadata_catalog_complete_with_runtime_subset_and_explicit_boundaries",
+  "refs": {
+    "baseline": {
+      "path": "knowledge/fixtures/accepted/asset_metadata_baseline.json",
+      "content_hash": "2ce296a4c47b92e1667cda63d719a433573dc9871172d1978bcd5537cd52d7e7"
+    },
+    "coverage": {
+      "path": "knowledge/fixtures/accepted/asset_metadata_coverage.json",
+      "content_hash": "9d47764ac1964516ceaef3329d178fc284e457d36cc5ccccfb2d7d2e2fedf377"
+    },
+    "taxonomy": {
+      "path": "knowledge/fixtures/accepted/asset_family_taxonomy.json",
+      "content_hash": "5f83e04cbd356b923cfcf4064f59a4f1b41baa40fe61528989ea5712bdd8fd08"
+    },
+    "selector": {
+      "path": "knowledge/fixtures/accepted/asset_selector_usage_matrix.json",
+      "content_hash": "0c0c04da2c4eb3ec3acd86c3f14f0d42af4a65b688e8cfade38b0995811ed4b2"
+    },
+    "fields": {
+      "path": "knowledge/fixtures/accepted/data_field_semantics_matrix.json",
+      "content_hash": "e2f2f5880a198261f182cc8fef8792151e3bf32b5a586e68b3673bec909aa8ad"
+    },
+    "composition": {
+      "path": "knowledge/fixtures/accepted/asset_composition_catalog.json",
+      "content_hash": "a4cda2ba4c8e4e8be03802563efec975f4abb12ee05eb7b4ac5aa0df8428619f"
+    },
+    "geometry": {
+      "path": "knowledge/fixtures/accepted/asset_geometry_catalog.json",
+      "content_hash": "5d1c2103a123681a88b8e41a7315f35762e6bd99802d53257bc52d441535fb6b"
+    },
+    "furniture": {
+      "path": "knowledge/fixtures/accepted/furniture_asset_metadata.json",
+      "content_hash": "2cd803df2a5abeba810118900d78c1734dc2ab7b27647a6a0cec3b4984db0f38"
+    },
+    "character": {
+      "path": "knowledge/fixtures/accepted/character_visual_asset_metadata.json",
+      "content_hash": "8cadc7b5c2128ee013e89de55e2600ba0d55ce7d1f31b50b218a53bc285c0df0"
+    },
+    "usage": {
+      "path": "knowledge/fixtures/accepted/asset_usage_lifecycle_placement_matrix.json",
+      "content_hash": "bea8a2372257bbe52122ca74f3e852ab7bc498acb31bb79641395caca492cf9a"
+    },
+    "surface": {
+      "path": "knowledge/fixtures/accepted/asset_surface_provenance.json",
+      "content_hash": "5cfe64f8dad9c6b3032493db2a5b716a2ea917a773a28920da82bb6c7e5501f9"
+    },
+    "runtime_manifest": {
+      "path": "knowledge/fixtures/accepted/runtime/asset_metadata_runtime_manifest.json",
+      "content_hash": "05e4d724451d009c2220d6dc8d9e1ee0451c0fbbdc9ad497aadf0e3a75db8fd9"
+    },
+    "runtime_contract": {
+      "path": "knowledge/fixtures/accepted/runtime/asset_metadata_runtime_contract.json",
+      "content_hash": "4d423aece5c8195f67275e7815d9433637701616eb7b56a00d532d450fdf8221"
+    }
+  },
+  "checks": [
+    {
+      "name": "baseline_asset_identity",
+      "passed": true,
+      "observed": {
+        "asset_rows": 3542,
+        "unique_relative_paths": 3542
+      },
+      "expected": {
+        "asset_rows": 3542,
+        "unique_relative_paths": 3542
+      }
+    },
+    {
+      "name": "native_catalog_identity",
+      "passed": true,
+      "observed": {
+        "data_manager_arrays": 43,
+        "data_types": 43,
+        "data_records": 3693,
+        "assets": 3542,
+        "selectors": 3192,
+        "data_selector_connections": 523,
+        "selector_asset_and_companion_connections": 4596,
+        "consumer_connections": 250,
+        "lifecycle_connections": 43
+      },
+      "expected": {
+        "data_records": 3693,
+        "assets": 3542,
+        "selectors": 3192
+      }
+    },
+    {
+      "name": "coverage_matrix",
+      "passed": true,
+      "observed": {
+        "indexed_assets": 3542,
+        "selectors": 3192,
+        "data_fields": 1063,
+        "data_selector_relations": 523
+      },
+      "expected": {
+        "indexed_assets": 3542,
+        "selectors": 3192,
+        "data_fields": 1063,
+        "data_selector_relations": 523
+      }
+    },
+    {
+      "name": "taxonomy_classification",
+      "passed": true,
+      "observed": {
+        "assets": 3542,
+        "families": 27,
+        "subfamilies": 78
+      },
+      "expected": {
+        "assets": 3542,
+        "families": 27
+      }
+    },
+    {
+      "name": "selector_and_field_semantics",
+      "passed": true,
+      "observed": {
+        "selectors": 3192,
+        "unresolved_selectors": 1,
+        "fields": 1063,
+        "selector_bearing_fields": 8
+      },
+      "expected": {
+        "selectors": 3192,
+        "unresolved_selectors": 1,
+        "fields": 1063,
+        "selector_bearing_fields": 8
+      }
+    },
+    {
+      "name": "composition_and_geometry",
+      "passed": true,
+      "observed": {
+        "composition_entries": 47,
+        "geometry_rows": 3546,
+        "runtime_geometry_gaps": 0
+      },
+      "expected": {
+        "composition_entries": 47,
+        "geometry_rows": 3546,
+        "runtime_geometry_gaps": 0
+      }
+    },
+    {
+      "name": "furniture_world_metadata",
+      "passed": true,
+      "observed": {
+        "furniture_records": 103,
+        "rooms": 18,
+        "native_binding_instances": 6
+      },
+      "expected": {
+        "furniture_records": 103,
+        "rooms": 18,
+        "native_binding_instances": 6
+      }
+    },
+    {
+      "name": "character_visual_metadata",
+      "passed": true,
+      "observed": {
+        "staff_records": 141,
+        "helper_records": 19,
+        "unique_human_images": 105,
+        "human_animations": 35,
+        "avatar_body_assets": 284,
+        "avatar_head_assets": 509
+      },
+      "expected": {
+        "staff_records": 141,
+        "helper_records": 19,
+        "unique_human_images": 105,
+        "human_animations": 35,
+        "avatar_body_assets": 284,
+        "avatar_head_assets": 509
+      }
+    },
+    {
+      "name": "usage_lifecycle_placement",
+      "passed": true,
+      "observed": {
+        "assets": 3542,
+        "usage_edges": 3495,
+        "lifecycle_edges": 43,
+        "families": 27,
+        "non_actor_families": 21
+      },
+      "expected": {
+        "assets": 3542,
+        "usage_edges": 3495,
+        "lifecycle_edges": 43,
+        "families": 27,
+        "non_actor_families": 21
+      }
+    },
+    {
+      "name": "surface_provenance",
+      "passed": true,
+      "observed": {
+        "indexed_assets": 3542,
+        "non_actor_families": 21,
+        "zip_exact_assets": 3542,
+        "apk_entry_present_assets": 3508,
+        "apk_entry_missing_assets": 34,
+        "unity_textasset_apk_missing_assets": 34
+      },
+      "expected": {
+        "indexed_assets": 3542,
+        "non_actor_families": 21,
+        "zip_exact_assets": 3542,
+        "apk_entry_present_assets": 3508,
+        "apk_entry_missing_assets": 34,
+        "unity_textasset_apk_missing_assets": 34
+      }
+    },
+    {
+      "name": "runtime_query_manifest",
+      "passed": true,
+      "observed": {
+        "runtime_assets": 186,
+        "families": 27,
+        "lazy": false,
+        "archive_imports": false
+      },
+      "expected": {
+        "runtime_assets": 186,
+        "families": 27,
+        "lazy": false,
+        "archive_imports": false
+      }
+    },
+    {
+      "name": "runtime_contract_connection",
+      "passed": true,
+      "observed": {
+        "runtime_assets_are_lazy": true,
+        "source_imports_are_disabled": true,
+        "runtime_asset_ids_are_unique": true,
+        "native_catalog_boundary_is_preserved": true,
+        "family_gate_required": true
+      },
+      "expected": {
+        "runtime_assets_are_lazy": true,
+        "source_imports_are_disabled": true
+      }
+    },
+    {
+      "name": "runtime_source_import_boundary",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    }
+  ],
+  "readiness": {
+    "catalog_metadata": "complete_for_all_3542_indexed_rows_with_explicit_status_or_boundary",
+    "native_identity_graph": "ready_for_3693_data_rows_and_3192_selector_records",
+    "runtime_query_surface": "ready_for_186_explicit_runtime_asset_rows_and_native_catalog_lookup",
+    "full_runtime_visual_promotion": "not_ready_and_not_claimed_for_catalog_only_rows",
+    "repeatability": "stable_asset_id_selector_key_and_contract_hash lookup; no filename guessing"
+  },
+  "counts": {
+    "indexed_assets": 3542,
+    "native_data_records": 3693,
+    "native_selectors": 3192,
+    "runtime_query_assets": 186,
+    "catalog_only_assets": 3231,
+    "unresolved_selector_identities": 1,
+    "helper_scope_gaps": 9,
+    "unity_textasset_apk_gaps": 34,
+    "non_actor_families_without_screen_event_contract": 21,
+    "runtime_geometry_gaps": 0
+  },
+  "explicit_boundaries": [
+    "1 lineup_layout/bg.seb selector has unresolved target identity.",
+    "11 helper selector-scope fields remain deferred; 1 helper image selector is an explicit -1 sentinel.",
+    "34 Unity TextAsset/resource rows have APK absence and unresolved nested mapping; they remain provenance-only.",
+    "21 non-actor families have catalog/provenance metadata but no invented screen/event consumer contract.",
+    "3,231 indexed assets are cataloged without a current native relation; they remain queryable evidence, not automatic runtime assets.",
+    "Full visual runtime promotion remains limited to the explicit 186-row runtime manifest."
+  ],
+  "verification_commands": [
+    "python -B tools/social-dev/test_asset_metadata_baseline.py",
+    "python -B tools/social-dev/test_asset_metadata_coverage.py",
+    "python -B tools/social-dev/test_asset_family_taxonomy.py",
+    "python -B tools/social-dev/test_asset_selector_usage_matrix.py",
+    "python -B tools/social-dev/test_asset_composition_geometry.py",
+    "python -B tools/social-dev/test_furniture_asset_metadata.py",
+    "python -B tools/social-dev/test_character_visual_asset_metadata.py",
+    "python -B tools/social-dev/test_asset_usage_lifecycle_placement.py",
+    "python -B tools/social-dev/test_asset_surface_provenance.py",
+    "python -B tools/social-dev/test_asset_metadata_runtime_manifest.py",
+    "npm run typecheck",
+    "npm test",
+    "npm run build"
+  ],
+  "determinism_inputs": {
+    "artifact_hashes": {
+      "baseline": "2ce296a4c47b92e1667cda63d719a433573dc9871172d1978bcd5537cd52d7e7",
+      "coverage": "9d47764ac1964516ceaef3329d178fc284e457d36cc5ccccfb2d7d2e2fedf377",
+      "taxonomy": "5f83e04cbd356b923cfcf4064f59a4f1b41baa40fe61528989ea5712bdd8fd08",
+      "selector": "0c0c04da2c4eb3ec3acd86c3f14f0d42af4a65b688e8cfade38b0995811ed4b2",
+      "fields": "e2f2f5880a198261f182cc8fef8792151e3bf32b5a586e68b3673bec909aa8ad",
+      "composition": "a4cda2ba4c8e4e8be03802563efec975f4abb12ee05eb7b4ac5aa0df8428619f",
+      "geometry": "5d1c2103a123681a88b8e41a7315f35762e6bd99802d53257bc52d441535fb6b",
+      "furniture": "2cd803df2a5abeba810118900d78c1734dc2ab7b27647a6a0cec3b4984db0f38",
+      "character": "8cadc7b5c2128ee013e89de55e2600ba0d55ce7d1f31b50b218a53bc285c0df0",
+      "usage": "bea8a2372257bbe52122ca74f3e852ab7bc498acb31bb79641395caca492cf9a",
+      "surface": "5cfe64f8dad9c6b3032493db2a5b716a2ea917a773a28920da82bb6c7e5501f9",
+      "runtime_manifest": "05e4d724451d009c2220d6dc8d9e1ee0451c0fbbdc9ad497aadf0e3a75db8fd9",
+      "runtime_contract": "4d423aece5c8195f67275e7815d9433637701616eb7b56a00d532d450fdf8221"
+    }
+  },
+  "determinism": {
+    "algorithm": "stable-json-sha256 excluding determinism.content_hash",
+    "content_hash": "ed5d2d858ef0bed93f2c7ffa8887f1feb64a4f3c75ea8ba518404844f36dcd94"
+  }
+}

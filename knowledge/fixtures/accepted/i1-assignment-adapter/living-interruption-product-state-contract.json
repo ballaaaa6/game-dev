@@ -1,0 +1,12 @@
+{
+  "schema_version": "social-dev-i1-living-interruption-product-state-contract-v1",
+  "status": "PASS_I1_8_INTERRUPTION_RETENTION",
+  "observations": [
+    { "living_path": "WORK -> equipment -> return", "product_rule": "TaskRecord and AgentBinding unchanged" },
+    { "living_path": "WORK -> talk -> return", "product_rule": "TaskRecord and AgentBinding unchanged" },
+    { "living_path": "low HP -> home -> return", "product_rule": "RUNNING is not auto-failed/cancelled/paused" },
+    { "living_path": "desk destruction -> fallback/reacquisition", "product_rule": "externalTaskId and status survive" }
+  ],
+  "resume": "living_interruption_observed and living_resumed_observed are read-only product events; no duplicate task_started event is emitted.",
+  "explicit_terminal_commands": ["complete_task", "fail_task", "cancel_task"]
+}

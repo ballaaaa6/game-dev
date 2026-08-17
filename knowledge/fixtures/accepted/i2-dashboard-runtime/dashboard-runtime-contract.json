@@ -1,0 +1,19 @@
+{
+  "schema": "i2-dashboard-runtime-contract-v1",
+  "status": "PASS",
+  "file": "runtime/social-dev/src/product/dashboard/runtime.ts",
+  "owners": [
+    "one LivingRuntime reference",
+    "one AssignmentAdapter",
+    "combined dashboard snapshot",
+    "subscriber publication"
+  ],
+  "bridge_mode": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+  "forbidden": [
+    "LivingStaff product fields",
+    "raw Staff gameplay controls",
+    "backend calls",
+    "task-driven living mutation",
+    "wall-clock values in canonical digest"
+  ]
+}

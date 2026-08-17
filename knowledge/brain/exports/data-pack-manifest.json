@@ -1,0 +1,445 @@
+{
+  "brain_revision": "k2-unified-brain-r1",
+  "core_counts": {
+    "FurnitureData": 103,
+    "JobData": 30,
+    "SkillData": 36,
+    "StaffData": 141
+  },
+  "row_count": 3693,
+  "schema_version": "social-dev-k2-original-data-pack-v1",
+  "status": "pass",
+  "table_count": 43,
+  "tables": [
+    {
+      "element_type": "AreaData",
+      "path": "knowledge/generated/original-data-pack/tables/area.json",
+      "row_count": 6,
+      "sha256": "db00a6f6682ad67e735c21caf4ddf4635086b4e229038b56a7648bd0124fb653",
+      "source_file": "knowledge/sources/data/csharp_update/AreaData.cs",
+      "status": "parsed",
+      "table_id": "data:AreaData",
+      "table_stem": "area"
+    },
+    {
+      "element_type": "AvatarEventData",
+      "path": "knowledge/generated/original-data-pack/tables/avatarEvent.json",
+      "row_count": 121,
+      "sha256": "ee1f7597f993f49acc89f955abd23b35acfda62deb67805d7686ab7e1aec7434",
+      "source_file": "knowledge/sources/data/csharp_update/AvatarEventData.cs",
+      "status": "parsed",
+      "table_id": "data:AvatarEventData",
+      "table_stem": "avatarEvent"
+    },
+    {
+      "element_type": "AvatarTalkData",
+      "path": "knowledge/generated/original-data-pack/tables/avatarTalk.json",
+      "row_count": 12,
+      "sha256": "a043e596ee339a1b6e3cfa2af6aa33ea6e96dbc644dca869649a2994ea6412c4",
+      "source_file": "knowledge/sources/data/csharp_update/AvatarTalkData.cs",
+      "status": "parsed",
+      "table_id": "data:AvatarTalkData",
+      "table_stem": "avatarTalk"
+    },
+    {
+      "element_type": "AwardData",
+      "path": "knowledge/generated/original-data-pack/tables/award.json",
+      "row_count": 27,
+      "sha256": "5d02020028b6d7502ce8a54f8900fb90da25605b6a13296b5e30283a86749367",
+      "source_file": "knowledge/sources/data/csharp_update/AwardData.cs",
+      "status": "parsed",
+      "table_id": "data:AwardData",
+      "table_stem": "award"
+    },
+    {
+      "element_type": "CompanyData",
+      "path": "knowledge/generated/original-data-pack/tables/company.json",
+      "row_count": 59,
+      "sha256": "e44c3006af219e6aa0d06940bb11ee6f8ca31a9be61f03a5c22cda01e7e119ae",
+      "source_file": "knowledge/sources/data/csharp_update/CompanyData.cs",
+      "status": "parsed",
+      "table_id": "data:CompanyData",
+      "table_stem": "company"
+    },
+    {
+      "element_type": "ContentMatchListData",
+      "path": "knowledge/generated/original-data-pack/tables/contentMatchList.json",
+      "row_count": 100,
+      "sha256": "a968ada336d7367e085b590199ac90e13ea40b02bb27bdcc007a03fb76fd0940",
+      "source_file": "knowledge/sources/data/csharp_update/ContentMatchListData.cs",
+      "status": "parsed",
+      "table_id": "data:ContentMatchListData",
+      "table_stem": "contentMatchList"
+    },
+    {
+      "element_type": "DownloadEventData",
+      "path": "knowledge/generated/original-data-pack/tables/downloadEvent.json",
+      "row_count": 20,
+      "sha256": "2fbceb021a3e6a4c6bdaa213ff3ee0ca074d8dd7fbf3dfe363e38782420ab34f",
+      "source_file": "knowledge/sources/data/csharp_update/DownloadEventData.cs",
+      "status": "parsed",
+      "table_id": "data:DownloadEventData",
+      "table_stem": "downloadEvent"
+    },
+    {
+      "element_type": "EnemySkillData",
+      "path": "knowledge/generated/original-data-pack/tables/enemySkill.json",
+      "row_count": 20,
+      "sha256": "509715d7d83ff631e32c2451af58a5e4c07e7e3b754930f7b84d249fa930118d",
+      "source_file": "knowledge/sources/data/csharp_update/EnemySkillData.cs",
+      "status": "parsed",
+      "table_id": "data:EnemySkillData",
+      "table_stem": "enemySkill"
+    },
+    {
+      "element_type": "EventData",
+      "path": "knowledge/generated/original-data-pack/tables/event.json",
+      "row_count": 383,
+      "sha256": "98aa8460b1a4ee7089deaf293cd9d950d8ec95b4f0fe451cb2c042d6ba9b4ced",
+      "source_file": "knowledge/sources/data/csharp_update/EventData.cs",
+      "status": "parsed",
+      "table_id": "data:EventData",
+      "table_stem": "event"
+    },
+    {
+      "element_type": "EventMessageData",
+      "path": "knowledge/generated/original-data-pack/tables/eventMessage.json",
+      "row_count": 69,
+      "sha256": "cad61386757d75ecc3040ae6c1eacb02290b35e3a0f705c3749d59e7e8ce5760",
+      "source_file": "knowledge/sources/data/csharp_update/EventMessageData.cs",
+      "status": "parsed",
+      "table_id": "data:EventMessageData",
+      "table_stem": "eventMessage"
+    },
+    {
+      "element_type": "FavoriteData",
+      "path": "knowledge/generated/original-data-pack/tables/favorite.json",
+      "row_count": 21,
+      "sha256": "8a948b7b0d43c5878b1b25a0ff42a0352f015ece4b82383a9a5f0842704447a0",
+      "source_file": "knowledge/sources/data/csharp_update/FavoriteData.cs",
+      "status": "parsed",
+      "table_id": "data:FavoriteData",
+      "table_stem": "favorite"
+    },
+    {
+      "element_type": "FestivalData",
+      "path": "knowledge/generated/original-data-pack/tables/festival.json",
+      "row_count": 56,
+      "sha256": "336ee775b2e48ab335614a8d7bce12c834fcf0369adf94c1cc9667dc1a714385",
+      "source_file": "knowledge/sources/data/csharp_update/FestivalData.cs",
+      "status": "parsed",
+      "table_id": "data:FestivalData",
+      "table_stem": "festival"
+    },
+    {
+      "element_type": "FurnitureData",
+      "path": "knowledge/generated/original-data-pack/tables/furniture.json",
+      "row_count": 103,
+      "sha256": "b346b350b2f39a4df13a25a73485a0b24512d43c52c5351b1b98ea47fe8dfa29",
+      "source_file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+      "status": "parsed",
+      "table_id": "data:FurnitureData",
+      "table_stem": "furniture"
+    },
+    {
+      "element_type": "GameDexData",
+      "path": "knowledge/generated/original-data-pack/tables/gameDex.json",
+      "row_count": 7,
+      "sha256": "9d1ea949a220e14c6cf67059f037ea0ecbfcad49a1ac35f678559a2808b99a7b",
+      "source_file": "knowledge/sources/data/csharp_update/GameDexData.cs",
+      "status": "parsed",
+      "table_id": "data:GameDexData",
+      "table_stem": "gameDex"
+    },
+    {
+      "element_type": "HardwareData",
+      "path": "knowledge/generated/original-data-pack/tables/hardware.json",
+      "row_count": 4,
+      "sha256": "5192ea26ec141325bafa7780c7955ccabc8cd48cfd08591386ced0bde87dc9f4",
+      "source_file": "knowledge/sources/data/csharp_update/HardwareData.cs",
+      "status": "parsed",
+      "table_id": "data:HardwareData",
+      "table_stem": "hardware"
+    },
+    {
+      "element_type": "HelperData",
+      "path": "knowledge/generated/original-data-pack/tables/helper.json",
+      "row_count": 19,
+      "sha256": "d8cd5f52aa37d5a5f4772553aa3dd6c75aa84b0155bdfad587fe1198c75fc7f4",
+      "source_file": "knowledge/sources/data/csharp_update/HelperData.cs",
+      "status": "parsed",
+      "table_id": "data:HelperData",
+      "table_stem": "helper"
+    },
+    {
+      "element_type": "HistoryData",
+      "path": "knowledge/generated/original-data-pack/tables/history.json",
+      "row_count": 117,
+      "sha256": "016925fdaabd8e5d81e6bf67a2073882bf4c7100f801a0dc978bf533b88b45a0",
+      "source_file": "knowledge/sources/data/csharp_update/HistoryData.cs",
+      "status": "parsed",
+      "table_id": "data:HistoryData",
+      "table_stem": "history"
+    },
+    {
+      "element_type": "IdeaData",
+      "path": "knowledge/generated/original-data-pack/tables/idea.json",
+      "row_count": 172,
+      "sha256": "56ea3acf3ecbb06af0673c79dab74d40ba44fefede0eed6013b82360e03c7acf",
+      "source_file": "knowledge/sources/data/csharp_update/IdeaData.cs",
+      "status": "parsed",
+      "table_id": "data:IdeaData",
+      "table_stem": "idea"
+    },
+    {
+      "element_type": "Install",
+      "path": "knowledge/generated/original-data-pack/tables/install.json",
+      "row_count": 27,
+      "sha256": "c8ca0c7a33480d8dfdbac5e44813f961bceff879cf24fb50a86a62794092518c",
+      "source_file": "knowledge/sources/data/csharp_update/Install.cs",
+      "status": "parsed",
+      "table_id": "data:Install",
+      "table_stem": "install"
+    },
+    {
+      "element_type": "ItemData",
+      "path": "knowledge/generated/original-data-pack/tables/item.json",
+      "row_count": 137,
+      "sha256": "32915091eb82e0380f1aeaf67b27faddff38f4df7fbe640622009e61de11cb25",
+      "source_file": "knowledge/sources/data/csharp_update/ItemData.cs",
+      "status": "parsed",
+      "table_id": "data:ItemData",
+      "table_stem": "item"
+    },
+    {
+      "element_type": "JobData",
+      "path": "knowledge/generated/original-data-pack/tables/job.json",
+      "row_count": 30,
+      "sha256": "c0329c1ac1ba52a824721f50ea7513ef17815affb0a4e76121fcc69dd2312c68",
+      "source_file": "knowledge/sources/data/csharp_update/JobData.cs",
+      "status": "parsed",
+      "table_id": "data:JobData",
+      "table_stem": "job"
+    },
+    {
+      "element_type": "LoginBonusData",
+      "path": "knowledge/generated/original-data-pack/tables/loginBonus.json",
+      "row_count": 30,
+      "sha256": "13b2d1e3ca61e060aeeec968a154df79fd8b5a8d1954c0f23b71efc9066ba3cd",
+      "source_file": "knowledge/sources/data/csharp_update/LoginBonusData.cs",
+      "status": "parsed",
+      "table_id": "data:LoginBonusData",
+      "table_stem": "loginBonus"
+    },
+    {
+      "element_type": "MailData",
+      "path": "knowledge/generated/original-data-pack/tables/mail.json",
+      "row_count": 191,
+      "sha256": "35bcfd7ff2b8a95818400506563bf0baa1b8801e6f1e0fa690b6785e8774856f",
+      "source_file": "knowledge/sources/data/csharp_update/MailData.cs",
+      "status": "parsed",
+      "table_id": "data:MailData",
+      "table_stem": "mail"
+    },
+    {
+      "element_type": "MailWordData",
+      "path": "knowledge/generated/original-data-pack/tables/mailWord.json",
+      "row_count": 769,
+      "sha256": "14d1e2beab55bf285725eff1f6f39389177449bd8b00a5117d04cad03b4573ab",
+      "source_file": "knowledge/sources/data/csharp_update/MailWordData.cs",
+      "status": "parsed",
+      "table_id": "data:MailWordData",
+      "table_stem": "mailWord"
+    },
+    {
+      "element_type": "ManagementData",
+      "path": "knowledge/generated/original-data-pack/tables/management.json",
+      "row_count": 16,
+      "sha256": "4ff17a8fd719b83c48f39184d70187522dc32cb2fa5fb685cce51da888c5b699",
+      "source_file": "knowledge/sources/data/csharp_update/ManagementData.cs",
+      "status": "parsed",
+      "table_id": "data:ManagementData",
+      "table_stem": "management"
+    },
+    {
+      "element_type": "ManagementEventData",
+      "path": "knowledge/generated/original-data-pack/tables/managementEvent.json",
+      "row_count": 23,
+      "sha256": "6b1b136a1a5333d1f9896078a87d20b4f1e6d5362a219a460472b5e90162eb8b",
+      "source_file": "knowledge/sources/data/csharp_update/ManagementEventData.cs",
+      "status": "parsed",
+      "table_id": "data:ManagementEventData",
+      "table_stem": "managementEvent"
+    },
+    {
+      "element_type": "MethodMatchListData",
+      "path": "knowledge/generated/original-data-pack/tables/methodMatchList.json",
+      "row_count": 25,
+      "sha256": "e95eb940f4aa48d9625de8a92e779e194cb837eaba0f7eafacd9dd67647dd13b",
+      "source_file": "knowledge/sources/data/csharp_update/MethodMatchListData.cs",
+      "status": "parsed",
+      "table_id": "data:MethodMatchListData",
+      "table_stem": "methodMatchList"
+    },
+    {
+      "element_type": "NewsData",
+      "path": "knowledge/generated/original-data-pack/tables/news.json",
+      "row_count": 1,
+      "sha256": "93b452f58174a71f28c2d5cd4b39f80ba6fe56ef536db50601a6ce3efb51976f",
+      "source_file": "knowledge/sources/data/csharp_update/NewsData.cs",
+      "status": "parsed",
+      "table_id": "data:NewsData",
+      "table_stem": "news"
+    },
+    {
+      "element_type": "PlatformContentData",
+      "path": "knowledge/generated/original-data-pack/tables/platformContent.json",
+      "row_count": 20,
+      "sha256": "cb6bb676fbe5bdbf39a406b3e2302c205038bf1bc5f77937490a270559efd44e",
+      "source_file": "knowledge/sources/data/csharp_update/PlatformContentData.cs",
+      "status": "parsed",
+      "table_id": "data:PlatformContentData",
+      "table_stem": "platformContent"
+    },
+    {
+      "element_type": "PlatformData",
+      "path": "knowledge/generated/original-data-pack/tables/platform.json",
+      "row_count": 12,
+      "sha256": "f274577104052550c9a133644a81f74a42da35a54139723aa3a5936cae94aeae",
+      "source_file": "knowledge/sources/data/csharp_update/PlatformData.cs",
+      "status": "parsed",
+      "table_id": "data:PlatformData",
+      "table_stem": "platform"
+    },
+    {
+      "element_type": "PrizeData",
+      "path": "knowledge/generated/original-data-pack/tables/prize.json",
+      "row_count": 26,
+      "sha256": "bd8b7caa95a6cf061f427e5cf61686a9a4e365cb67c72f3d07b86b03188ec146",
+      "source_file": "knowledge/sources/data/csharp_update/PrizeData.cs",
+      "status": "parsed",
+      "table_id": "data:PrizeData",
+      "table_stem": "prize"
+    },
+    {
+      "element_type": "ProfileData",
+      "path": "knowledge/generated/original-data-pack/tables/profile.json",
+      "row_count": 16,
+      "sha256": "f1c040d92ef26df01f2dbc5f0bd081dfcefb2de496ff4bf6d5106bb6e72d515a",
+      "source_file": "knowledge/sources/data/csharp_update/ProfileData.cs",
+      "status": "parsed",
+      "table_id": "data:ProfileData",
+      "table_stem": "profile"
+    },
+    {
+      "element_type": "ReleaseEventData",
+      "path": "knowledge/generated/original-data-pack/tables/releaseEvent.json",
+      "row_count": 27,
+      "sha256": "120299c820a7392833e294c258242c285fde56ac7abd5d779a4534a05eb901c6",
+      "source_file": "knowledge/sources/data/csharp_update/ReleaseEventData.cs",
+      "status": "parsed",
+      "table_id": "data:ReleaseEventData",
+      "table_stem": "releaseEvent"
+    },
+    {
+      "element_type": "RoomData",
+      "path": "knowledge/generated/original-data-pack/tables/room.json",
+      "row_count": 18,
+      "sha256": "ad6829740bd4e01eb62ac4d85f49281af02978311fea99871fb4ea4e46a15265",
+      "source_file": "knowledge/sources/data/csharp_update/RoomData.cs",
+      "status": "parsed",
+      "table_id": "data:RoomData",
+      "table_stem": "room"
+    },
+    {
+      "element_type": "RouletteData",
+      "path": "knowledge/generated/original-data-pack/tables/roulette.json",
+      "row_count": 111,
+      "sha256": "fec51342e5bed65111d23f58bf7b4255e121a4aa2d55b19234eac72b3d88f94d",
+      "source_file": "knowledge/sources/data/csharp_update/RouletteData.cs",
+      "status": "parsed",
+      "table_id": "data:RouletteData",
+      "table_stem": "roulette"
+    },
+    {
+      "element_type": "SaleTaskData",
+      "path": "knowledge/generated/original-data-pack/tables/saleTask.json",
+      "row_count": 21,
+      "sha256": "2831426ca18727dabe13ba8d0f54d50eb29896cc105203081df72b10b18e305b",
+      "source_file": "knowledge/sources/data/csharp_update/SaleTaskData.cs",
+      "status": "parsed",
+      "table_id": "data:SaleTaskData",
+      "table_stem": "saleTask"
+    },
+    {
+      "element_type": "ScheduleData",
+      "path": "knowledge/generated/original-data-pack/tables/schedule.json",
+      "row_count": 32,
+      "sha256": "0ab1f44be5efc8dcd1cef3ed5469ba12a1228994b0f98369fbd4a11d44df7d9b",
+      "source_file": "knowledge/sources/data/csharp_update/ScheduleData.cs",
+      "status": "parsed",
+      "table_id": "data:ScheduleData",
+      "table_stem": "schedule"
+    },
+    {
+      "element_type": "SkillData",
+      "path": "knowledge/generated/original-data-pack/tables/skill.json",
+      "row_count": 36,
+      "sha256": "2cdc813dcca097aa3ec5e13a20e392da9464e3c7140b72da5b02dc4da5a6d3a3",
+      "source_file": "knowledge/sources/data/csharp_update/SkillData.cs",
+      "status": "parsed",
+      "table_id": "data:SkillData",
+      "table_stem": "skill"
+    },
+    {
+      "element_type": "StaffData",
+      "path": "knowledge/generated/original-data-pack/tables/staff.json",
+      "row_count": 141,
+      "sha256": "13c26f9eaf76c5fbac56b0fc94abc77e7c4bf5f9c345f7295385cd8761bc1342",
+      "source_file": "knowledge/sources/data/csharp_update/StaffData.cs",
+      "status": "parsed",
+      "table_id": "data:StaffData",
+      "table_stem": "staff"
+    },
+    {
+      "element_type": "TalkData",
+      "path": "knowledge/generated/original-data-pack/tables/talk.json",
+      "row_count": 572,
+      "sha256": "394397e846d913dad08d00d4ea375907f304d77838f704aae2c3fa87f25b80bf",
+      "source_file": "knowledge/sources/data/csharp_update/TalkData.cs",
+      "status": "parsed",
+      "table_id": "data:TalkData",
+      "table_stem": "talk"
+    },
+    {
+      "element_type": "TodayEventData",
+      "path": "knowledge/generated/original-data-pack/tables/todayEvent.json",
+      "row_count": 20,
+      "sha256": "81d6c4cdcfc8e3fb525d541fbd4cde747ceada3ea7cb2cece44ccb9b403552f5",
+      "source_file": "knowledge/sources/data/csharp_update/TodayEventData.cs",
+      "status": "parsed",
+      "table_id": "data:TodayEventData",
+      "table_stem": "todayEvent"
+    },
+    {
+      "element_type": "TrophyData",
+      "path": "knowledge/generated/original-data-pack/tables/trophy.json",
+      "row_count": 75,
+      "sha256": "1a043130cf5bbdffa2395effa838dd962d663257898b8ada63a73b64130de6dc",
+      "source_file": "knowledge/sources/data/csharp_update/TrophyData.cs",
+      "status": "parsed",
+      "table_id": "data:TrophyData",
+      "table_stem": "trophy"
+    },
+    {
+      "element_type": "string",
+      "path": "knowledge/generated/original-data-pack/tables/help.json",
+      "row_count": 1,
+      "sha256": "cb53e42b016f4fbc42223e3ff83e69b3fa003741ea879c7f96379af996dbc17a",
+      "source_file": "knowledge/sources/data/csharp_update/DataManager.cs",
+      "status": "missing",
+      "table_id": "data:string",
+      "table_stem": "help"
+    }
+  ]
+}

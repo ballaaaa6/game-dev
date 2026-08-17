@@ -1,0 +1,46 @@
+{
+  "entry": {
+    "guard": "GetHpRatio() <= 5 and current state is not MOVE/STAY_HOME",
+    "move_mode": 10,
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 1561,
+      "note": "Low HP entry.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "if (hpRatio <= 5 && state_ != 2 && state_ != 13)"
+    },
+    "state": 2,
+    "target": "door"
+  },
+  "home_tick": {
+    "operation": "RecoverHp(1)",
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 2092,
+      "note": "Home recovery.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "bool flag = RecoverHp(1);"
+    }
+  },
+  "rest_authority": "Staff.STATE_STAY_HOME and UpdateStayHome; no FurnitureData name is promoted as a rest rule.",
+  "return": {
+    "door_reservation": true,
+    "guard": "GetHpRatio() >= 40",
+    "move_mode": 3,
+    "ref": {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 2094,
+      "note": "Door return reservation.",
+      "source_sha256": "f03c69feb9e1b31dc8d0615963e8f8dff5829bcbf3d9ee06b7c8d45d46dd74db",
+      "symbol": "if (hpRatio >= 40)"
+    },
+    "state": 11
+  },
+  "schema_version": "social-dev-behavior-first-home-rest-contract-v1",
+  "status": "pass_with_source_limits",
+  "unknowns": [
+    "Exact state assignment into STATE_STAY_HOME from indirect dispatch.",
+    "Whether hidden/home timing has any additional cadence outside UpdateStayHome.",
+    "Exact OnArriveGoal handling for the door route."
+  ]
+}

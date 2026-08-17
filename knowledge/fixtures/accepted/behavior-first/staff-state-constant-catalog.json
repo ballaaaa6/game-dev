@@ -1,0 +1,931 @@
+{
+  "data_constants": {
+    "EventData": [
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/EventData.cs",
+        "line": 108,
+        "name": "EV_RECOVERY_ALL_STAFFS",
+        "value": 20
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/EventData.cs",
+        "line": 166,
+        "name": "EV_FIRST_DEVELOP_HP_DOWN",
+        "value": 87
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/EventData.cs",
+        "line": 174,
+        "name": "EV_FIRST_STAFF_DOWN",
+        "value": 91
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/EventData.cs",
+        "line": 202,
+        "name": "EV_FIRST_HP_RECOVERY_BY_ITEM",
+        "value": 105
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/EventData.cs",
+        "line": 370,
+        "name": "EV_POLICY_SELECT_LOW_HP",
+        "value": 189
+      }
+    ],
+    "FurnitureData": [
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 13,
+        "name": "CATEGORY_DESK",
+        "value": 0
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 15,
+        "name": "CATEGORY_STORAGE",
+        "value": 1
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 17,
+        "name": "CATEGORY_HIGH_TECH",
+        "value": 2
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 19,
+        "name": "CATEGORY_ENVIRON",
+        "value": 3
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 21,
+        "name": "CATEGORY_RECOMMENDED",
+        "value": 4
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 23,
+        "name": "PASS_TYPE_PASSABLE",
+        "value": 0
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 25,
+        "name": "PASS_TYPE_CENTER",
+        "value": 1
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 27,
+        "name": "PASS_TYPE_NO_WAY",
+        "value": 2
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 29,
+        "name": "FLAG_OVERRIDE",
+        "value": 1
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 31,
+        "name": "FLAG_ANIME_ALWAYS",
+        "value": 2
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 33,
+        "name": "FLAG_ANIME_USE",
+        "value": 4
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 35,
+        "name": "FLAG_ANIME_GAUGE_MAX",
+        "value": 8
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 37,
+        "name": "FLAG_ATTRIBUTE",
+        "value": 16
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 39,
+        "name": "FLAG_USER",
+        "value": 32
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 41,
+        "name": "FLAG_EVERYONE",
+        "value": 64
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 43,
+        "name": "FLAG_ROCKET",
+        "value": 128
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 45,
+        "name": "FLAG_HOLE",
+        "value": 256
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 47,
+        "name": "FLAG_VOLCANO",
+        "value": 512
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 49,
+        "name": "FLAG_AQUARIUM",
+        "value": 1024
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 51,
+        "name": "FLAG_PASTURE",
+        "value": 2048
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 53,
+        "name": "FLAG_KAIROKUN",
+        "value": 4096
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 55,
+        "name": "FLAG_VACANT",
+        "value": 8192
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 57,
+        "name": "FLAG_INIT_DESK",
+        "value": 16384
+      },
+      {
+        "file": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+        "line": 59,
+        "name": "FLAG_INIT_PLACE",
+        "value": 32768
+      }
+    ],
+    "SkillData": [
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 12,
+        "name": "TYPE_GAME_PARAM_BOOST",
+        "value": 0
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 14,
+        "name": "TYPE_ATTACK_IDEA",
+        "value": 1
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 16,
+        "name": "TYPE_DEVELOP_SPEED_UP",
+        "value": 2
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 18,
+        "name": "TYPE_RECOVERY_BOTH_SIDES_STAFF",
+        "value": 3
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 20,
+        "name": "TYPE_STAFF_PARAM_BOOST",
+        "value": 4
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 22,
+        "name": "TYPE_TREASURE_RANK_UP",
+        "value": 5
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 24,
+        "name": "TYPE_GUARD_BOTH_SIDES_STAFF",
+        "value": 6
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 26,
+        "name": "TYPE_QUALITY_UP",
+        "value": 7
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 28,
+        "name": "TYPE_POWER_UP_BOOST",
+        "value": 8
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 30,
+        "name": "TYPE_COMBI_BONUS_UP",
+        "value": 9
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 32,
+        "name": "TYPE_MEETING_POINT_UP",
+        "value": 10
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 34,
+        "name": "TYPE_DEBUG_BOOST",
+        "value": 11
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 36,
+        "name": "TYPE_OVER_KILL",
+        "value": 12
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 38,
+        "name": "TYPE_AURA_CHARGE_UP",
+        "value": 13
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 40,
+        "name": "SCENE_DEVELOPING",
+        "value": 0
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 42,
+        "name": "SCENE_MAIN",
+        "value": 1
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 44,
+        "name": "SCENE_PLANNING",
+        "value": 2
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 46,
+        "name": "SCENE_POWER_UP",
+        "value": 3
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 48,
+        "name": "TARGET_SELF",
+        "value": 0
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 50,
+        "name": "TARGET_TEAM",
+        "value": 1
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 52,
+        "name": "TARGET_OTHER",
+        "value": 2
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 54,
+        "name": "EFFECT_GAME_PARAM",
+        "value": 0
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 56,
+        "name": "EFFECT_STAFF_PARAM",
+        "value": 1
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 58,
+        "name": "EFFECT_TREASURE_RANK",
+        "value": 2
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 60,
+        "name": "EFFECT_DEVELOP_SPEED",
+        "value": 3
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 62,
+        "name": "EFFECT_GUARD_VALUE",
+        "value": 4
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 64,
+        "name": "EFFECT_RECOVERY",
+        "value": 5
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 66,
+        "name": "EFFECT_ATTACK_DAMAGE",
+        "value": 6
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 68,
+        "name": "EFFECT_COMBI_BONUS",
+        "value": 7
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 70,
+        "name": "EFFECT_MEETING_POINT",
+        "value": 8
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 72,
+        "name": "EFFECT_DEBUG",
+        "value": 9
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 74,
+        "name": "EFFECT_POWER_UP",
+        "value": 10
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 76,
+        "name": "EFFECT_PLAN_QUALITY",
+        "value": 11
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 78,
+        "name": "EFFECT_AURA_CHARGE",
+        "value": 12
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 88,
+        "name": "FLAG_PASSIVE",
+        "value": 1
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 90,
+        "name": "FLAG_TEMP",
+        "value": 2
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+        "line": 92,
+        "name": "FLAG_DISPLAY_START_DEVELOP",
+        "value": 4
+      }
+    ],
+    "StaffData": [
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/StaffData.cs",
+        "line": 13,
+        "name": "PARAM_IDEA",
+        "value": 0
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/StaffData.cs",
+        "line": 15,
+        "name": "PARAM_PROGRAM",
+        "value": 1
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/StaffData.cs",
+        "line": 17,
+        "name": "PARAM_GRAPHIC",
+        "value": 2
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/StaffData.cs",
+        "line": 19,
+        "name": "PARAM_SOUND",
+        "value": 3
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/StaffData.cs",
+        "line": 21,
+        "name": "PARAM_NETWORK",
+        "value": 4
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/StaffData.cs",
+        "line": 23,
+        "name": "PARAM_HP",
+        "value": 5
+      },
+      {
+        "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/StaffData.cs",
+        "line": 25,
+        "name": "PARAM_END",
+        "value": 6
+      }
+    ]
+  },
+  "hp_parameter": [
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/StaffData.cs",
+      "line": 23,
+      "name": "PARAM_HP",
+      "value": 5
+    }
+  ],
+  "native_method_rvas": {
+    "Astar.AddNeighbor": "0x110F248",
+    "Astar.SearchRoute": "0x110E080",
+    "Astar._searchRoute": "0x110EBF0",
+    "ObjChip.GetStandingPositions": "0x12C4868",
+    "ObjChip.GetUsersNum": "0x12C4A70",
+    "ObjChip.IsCanSetToTalkGoal": "0x12C4D08",
+    "ObjChip.IsPassable": "0x12C4AB8",
+    "ObjChip.OnUseComplate": "0x12C0158",
+    "ObjChip.PlaceObj": "0x12C4308",
+    "ObjChip.ReserveUse": "0x12C49B0",
+    "ObjChip.Update": "0x12BED80",
+    "Room.AddStaff": "0x12CEB2C",
+    "Room.GetDoorIndex": "0x12CD088",
+    "Room.GetEmptyObjTypeOf": "0x12CFEA0",
+    "Room.GetIndexToUseEquipment": "0x12CFC94",
+    "Room.GetRandomObjChipTypeOf": "0x12CFA30",
+    "Room.GetStaffEmptyObjTypeOf": "0x12CF178",
+    "Room.InitObjChips": "0x12CB448",
+    "Room.PlaceDesk": "0x12CEFC8",
+    "Room.PlaceDoor": "0x12CB5E8",
+    "Room.PlaceObj": "0x12CE540",
+    "Room.SetupBigChipsParent": "0x12CB864",
+    "Room.Update": "0x12CB9E8",
+    "Staff.AddRecoveryHpStock": "0x12D2EB0",
+    "Staff.ClampHpMax": "0x12D3B9C",
+    "Staff.GetHp": "0x12DCB00",
+    "Staff.GetHpRatio": "0x12D3BE8",
+    "Staff.GotoDesk": "0x12D58EC",
+    "Staff.GotoEquip": "0x12D6540",
+    "Staff.GotoTalk": "0x12D6600",
+    "Staff.InviteStaffToTalk": "0x12D5090",
+    "Staff.OnArriveGoal": "0x12D8420",
+    "Staff.OnArriveNextNode": "0x12D8184",
+    "Staff.OnColleagueRemoved": "0x12DC6D8",
+    "Staff.OnDeskDestroyed": "0x12DC4B0",
+    "Staff.OnEndTyping": "0x12D67F0",
+    "Staff.OnEquipDestroyed": "0x12DC408",
+    "Staff.OnInvitedTalk": "0x12D6378",
+    "Staff.OnOpenDoor": "0x12DC7A8",
+    "Staff.OnStartTyping": "0x12D6478",
+    "Staff.RecoverHp": "0x12D2DD8",
+    "Staff.RecoverHpMax": "0x12DCF64",
+    "Staff.SearchRoute": "0x12D5A6C",
+    "Staff.SetHp": "0x12DCB08",
+    "Staff.Talk": "0x12D5588",
+    "Staff.Update": "0x12D2EC8",
+    "Staff.UpdateMeeting": "0x12D473C",
+    "Staff.UpdateMove": "0x12D57AC",
+    "Staff.UpdateRecoveryHp": "0x12D2C8C",
+    "Staff.UpdateStayHome": "0x12D59F4",
+    "Staff.UpdateWork": "0x12D4A7C",
+    "Staff.UseEquip": "0x12D4DEC"
+  },
+  "native_refs": [
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Native entry point for the broad per-Staff tick.",
+      "rva": "0x12D2EC8",
+      "symbol": "Staff.Update"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Native recovery helper.",
+      "rva": "0x12D2C8C",
+      "symbol": "Staff.UpdateRecoveryHp"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Native route wrapper.",
+      "rva": "0x12D5A6C",
+      "symbol": "Staff.SearchRoute"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Native FurnitureData passMap consumer.",
+      "rva": "0x12C4AB8",
+      "symbol": "ObjChip.IsPassable"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Native raw objMap-to-ObjChip initialization.",
+      "rva": "0x12CB448",
+      "symbol": "Room.InitObjChips"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Native room placement entry point.",
+      "rva": "0x12CE540",
+      "symbol": "Room.PlaceObj"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Native route search implementation.",
+      "rva": "0x110EBF0",
+      "symbol": "Astar._searchRoute"
+    },
+    {
+      "file": "knowledge/sources/phase3a_apk_probe/il2cpp_dump/dump.cs",
+      "note": "Native cardinal-neighbor connection.",
+      "rva": "0x110F248",
+      "symbol": "Astar.AddNeighbor"
+    }
+  ],
+  "objchip_constants": [
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 20,
+      "name": "OBJ_TYPE_PASS",
+      "value": 0
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 22,
+      "name": "OBJ_TYPE_EQUIP",
+      "value": 1
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 24,
+      "name": "OBJ_TYPE_DESK",
+      "value": 2
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 26,
+      "name": "OBJ_TYPE_BIG",
+      "value": 3
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 28,
+      "name": "OBJ_TYPE_BIG_CENTER",
+      "value": 4
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 30,
+      "name": "OBJ_TYPE_DOOR",
+      "value": 5
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 32,
+      "name": "OBJ_TYPE_OUTDOOR",
+      "value": 6
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 44,
+      "name": "DIRECTION_RIGHT",
+      "value": 0
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 46,
+      "name": "DIRECTION_LEFT",
+      "value": 1
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 48,
+      "name": "DIRECTION_UP",
+      "value": 2
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 50,
+      "name": "DIRECTION_DOWN",
+      "value": 3
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 56,
+      "name": "FLAG_INSTALLED",
+      "value": 1
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 58,
+      "name": "FLAG_CARDBOARD_OPEN",
+      "value": 2
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+      "line": 60,
+      "name": "FLAG_JUMP",
+      "value": 4
+    }
+  ],
+  "schema_version": "social-dev-behavior-first-state-constant-catalog-v1",
+  "source_files": {
+    "EventData": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/EventData.cs",
+    "FurnitureData": "knowledge/sources/data/csharp_update/FurnitureData.cs",
+    "ObjChip": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs",
+    "SkillData": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/SkillData.cs",
+    "Staff": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+    "StaffData": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/data/StaffData.cs"
+  },
+  "source_limit": "State labels and numeric values are closed; some handler-to-handler dispatch semantics remain source-limited by the damaged decompilation.",
+  "staff_state_move_flag_constants": [
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 28,
+      "name": "STATE_NORMAL",
+      "value": 0
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 30,
+      "name": "STATE_MEETING",
+      "value": 1
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 32,
+      "name": "STATE_MOVE",
+      "value": 2
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 34,
+      "name": "STATE_SIT_DOWN",
+      "value": 3
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 36,
+      "name": "STATE_WORK",
+      "value": 4
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 38,
+      "name": "STATE_USE_EQUIPMENT",
+      "value": 5
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 40,
+      "name": "STATE_TALK",
+      "value": 6
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 42,
+      "name": "STATE_INVITE_TO_TALK",
+      "value": 7
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 44,
+      "name": "STATE_FLY_AWAY",
+      "value": 8
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 46,
+      "name": "STATE_WAIT",
+      "value": 9
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 48,
+      "name": "STATE_WANDER",
+      "value": 10
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 50,
+      "name": "STATE_WAIT_BACK_OF_DOOR",
+      "value": 11
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 52,
+      "name": "STATE_DEVELOP",
+      "value": 12
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 54,
+      "name": "STATE_STAY_HOME",
+      "value": 13
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 82,
+      "name": "MOVE_MODE_STAY",
+      "value": 0
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 84,
+      "name": "MOVE_MODE_GOTO_EQUIPMENT",
+      "value": 1
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 86,
+      "name": "MOVE_MODE_WANDER",
+      "value": 2
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 88,
+      "name": "MOVE_MODE_GOTO_DESK",
+      "value": 3
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 90,
+      "name": "MOVE_MODE_INTO_EQUIPMENT",
+      "value": 4
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 92,
+      "name": "MOVE_MODE_OUTOF_EQUIPMENT",
+      "value": 5
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 94,
+      "name": "MOVE_MODE_SIT_DOWN",
+      "value": 6
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 96,
+      "name": "MOVE_MODE_TO_STAFF",
+      "value": 7
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 98,
+      "name": "MOVE_MODE_TO_STAND_TALKING",
+      "value": 8
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 100,
+      "name": "MOVE_MODE_TO_BACK_OF_CHAIR",
+      "value": 9
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 102,
+      "name": "MOVE_MODE_GO_TO_DOOR",
+      "value": 10
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 104,
+      "name": "MOVE_MODE_GO_HOME",
+      "value": 11
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 120,
+      "name": "FLAG_SITTING",
+      "value": 2
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 122,
+      "name": "FLAG_RESERVED_TALK",
+      "value": 4
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 124,
+      "name": "FLAG_INVITED_TALK",
+      "value": 8
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 126,
+      "name": "FLAG_TYPING",
+      "value": 16
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 128,
+      "name": "FLAG_SLEEPING",
+      "value": 32
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 130,
+      "name": "FLAG_PLANNING",
+      "value": 64
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 132,
+      "name": "FLAG_FADE_IN",
+      "value": 128
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 134,
+      "name": "FLAG_FADE_OUT",
+      "value": 256
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 136,
+      "name": "FLAG_PLANNING_COMPLETED",
+      "value": 512
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 138,
+      "name": "FLAG_SLIDING",
+      "value": 1024
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 140,
+      "name": "FLAG_PLATFORM_DEVELOP",
+      "value": 2048
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 142,
+      "name": "FLAG_NEW",
+      "value": 4096
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 144,
+      "name": "FLAG_DELETE_NEW",
+      "value": 8192
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 146,
+      "name": "FLAG_NEW_FUKIDASHI",
+      "value": 16384
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 148,
+      "name": "FLAG_WAITING_ROOM",
+      "value": 32768
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 150,
+      "name": "FLAG_LEADER",
+      "value": 65536
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 152,
+      "name": "FLAG_REINFORCE",
+      "value": 131072
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 154,
+      "name": "FLAG_SPECIAL_CHALLENGE",
+      "value": 262144
+    },
+    {
+      "file": "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Staff.cs",
+      "line": 156,
+      "name": "FLAG_FESTIVAL",
+      "value": 524288
+    }
+  ],
+  "status": "pass"
+}

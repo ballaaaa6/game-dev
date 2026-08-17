@@ -1,0 +1,44 @@
+{
+  "schema_version": "social-dev-k2-5-semantic-delta-v1",
+  "status": "PASS_ZERO_SEMANTIC_DELTA_PATH_CHANGES_ONLY",
+  "semantic_delta": 0,
+  "path_changes_allowed": true,
+  "canonical_brain": {
+    "path": "knowledge/brain/sqlite/social_dev_brain.sqlite",
+    "sha256_before": "6c8883a6f0bf8426d8ace702bbbedcd59e9b8b26aadd46dbf2965a2698b894be",
+    "sha256_after": "6c8883a6f0bf8426d8ace702bbbedcd59e9b8b26aadd46dbf2965a2698b894be",
+    "byte_identical": true
+  },
+  "original_data": {
+    "canonical_path": "knowledge/data/original/sqlite/social_dev_original_data.sqlite",
+    "legacy_path": "legacy/old-g1-5/social_dev_game_knowledge.sqlite",
+    "sha256_canonical": "9d561f7d5708c73b6b8a80acca10681f0323ec5a001145ed9c63215987d79d37",
+    "sha256_legacy": "9d561f7d5708c73b6b8a80acca10681f0323ec5a001145ed9c63215987d79d37",
+    "byte_identical": true
+  },
+  "runtime_pack": {
+    "pre_k2_manifest_sha256": "6f3ab7a759be170888e08d872b352999ff022992e1f185474a5876ebe1073516",
+    "pre_promotion_mirror_sha256": "85be18c8d03f886ce79fca3b67cf1f9f517ac3f310fc45787bab01141aecca84",
+    "canonical_sha256": "e7abff5ae6725530cb337a54f30706a76d51359721f594d9ca2dffab09cefb9f",
+    "mirror_sha256": "e7abff5ae6725530cb337a54f30706a76d51359721f594d9ca2dffab09cefb9f",
+    "byte_identical_canonical_and_mirror": true,
+    "semantic_change": 0,
+    "change_class": "provenance path normalization only"
+  },
+  "runtime_value_delta_evidence": "knowledge/brain/acceptance/k2/runtime-value-delta.json",
+  "pre_cutover_equivalence_evidence": "knowledge/brain/acceptance/k2/pre-cutover-equivalence.json",
+  "visual_value_delta": {
+    "mapchip_contract_hash": "3ea05bd9edcc5168a14ee1b0e79256e460072be75c018f11f2009d01c215d293",
+    "mapchip_png_hash": "fb40142389fe963bba46a93a122f961dc21fe8a85d0abac75b1a68fd3d4ecaed",
+    "semantic_change": 0
+  },
+  "gap_queue": {
+    "canonical_path": "knowledge/gaps/k3-gap-queue.json",
+    "legacy_export_path": "knowledge/brain/exports/k3-gap-queue.json",
+    "sha256_canonical": "ab621ba3c51e66cd8833fafba698339bcb3d53886d1dd1cfd544c6b8153e98ff",
+    "sha256_export": "ab621ba3c51e66cd8833fafba698339bcb3d53886d1dd1cfd544c6b8153e98ff",
+    "entry_count": 3,
+    "unchanged": true
+  },
+  "policy": "Meaning changes are forbidden. Any differing file hash outside retained provenance/path fields must fail the K2.5 closeout."
+}

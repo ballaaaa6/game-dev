@@ -1,0 +1,524 @@
+{
+  "schema": "i2-dashboard-scenario-results-v1",
+  "status": "PASS",
+  "scenarios": [
+    {
+      "id": "D1",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "zero bindings",
+          "status": "PASS",
+          "observed": []
+        },
+        {
+          "name": "zero tasks",
+          "status": "PASS",
+          "observed": []
+        },
+        {
+          "name": "unbound roster",
+          "status": "PASS",
+          "observed": [
+            0,
+            1,
+            2
+          ]
+        }
+      ],
+      "trace_lines": 1,
+      "error": null
+    },
+    {
+      "id": "D2",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "explicit bind accepted",
+          "status": "PASS",
+          "observed": {
+            "accepted": true,
+            "code": "OK",
+            "eventSequence": 0,
+            "agent": {
+              "externalAgentId": "agent-alpha",
+              "staffId": 1,
+              "boundSequence": 1
+            },
+            "task": null
+          }
+        },
+        {
+          "name": "remaining unbound Staff visible",
+          "status": "PASS",
+          "observed": [
+            0,
+            2
+          ]
+        }
+      ],
+      "trace_lines": 1,
+      "error": null
+    },
+    {
+      "id": "D3",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "task assigned",
+          "status": "PASS",
+          "observed": {
+            "externalTaskId": "task-alpha",
+            "externalAgentId": "agent-alpha",
+            "staffId": 0,
+            "status": "ASSIGNED",
+            "label": "Prepare brief",
+            "externalProgress": 0,
+            "bridgeMode": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+            "bridgeContextOwned": false,
+            "createdSequence": 2,
+            "assignedSequence": 2,
+            "startedSequence": null,
+            "terminalSequence": null,
+            "terminalReason": null
+          }
+        },
+        {
+          "name": "living unchanged",
+          "status": "PASS",
+          "observed": {
+            "frame": 0
+          }
+        }
+      ],
+      "trace_lines": 1,
+      "error": null
+    },
+    {
+      "id": "D4",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "task running",
+          "status": "PASS",
+          "observed": {
+            "externalTaskId": "task-alpha",
+            "externalAgentId": "agent-alpha",
+            "staffId": 0,
+            "status": "RUNNING",
+            "label": "Prepare scene brief",
+            "externalProgress": 0,
+            "bridgeMode": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+            "bridgeContextOwned": false,
+            "createdSequence": 2,
+            "assignedSequence": 2,
+            "startedSequence": 3,
+            "terminalSequence": null,
+            "terminalReason": null
+          }
+        },
+        {
+          "name": "living unchanged",
+          "status": "PASS",
+          "observed": {
+            "frame": 0
+          }
+        }
+      ],
+      "trace_lines": 1,
+      "error": null
+    },
+    {
+      "id": "D5",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "ten living frames",
+          "status": "PASS",
+          "observed": 10
+        },
+        {
+          "name": "ten living ticks",
+          "status": "PASS",
+          "observed": 10
+        },
+        {
+          "name": "ten living observations",
+          "status": "PASS",
+          "observed": 10
+        },
+        {
+          "name": "ten publications",
+          "status": "PASS",
+          "observed": 10
+        }
+      ],
+      "trace_lines": 1,
+      "error": null
+    },
+    {
+      "id": "D6",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "task remains running",
+          "status": "PASS",
+          "observed": "RUNNING"
+        },
+        {
+          "name": "interruption observed",
+          "status": "PASS",
+          "observed": [
+            "agent_bound",
+            "task_assigned",
+            "original_context_enter",
+            "task_started",
+            "living_interruption_observed"
+          ]
+        }
+      ],
+      "trace_lines": 1,
+      "error": null
+    },
+    {
+      "id": "D7",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "progress accepted",
+          "status": "PASS",
+          "observed": {
+            "externalTaskId": "task-alpha",
+            "externalAgentId": "agent-alpha",
+            "staffId": 0,
+            "status": "RUNNING",
+            "label": "Prepare scene brief",
+            "externalProgress": 42,
+            "bridgeMode": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+            "bridgeContextOwned": false,
+            "createdSequence": 2,
+            "assignedSequence": 2,
+            "startedSequence": 3,
+            "terminalSequence": null,
+            "terminalReason": null
+          }
+        },
+        {
+          "name": "living unchanged",
+          "status": "PASS",
+          "observed": {
+            "frame": 0
+          }
+        }
+      ],
+      "trace_lines": 1,
+      "error": null
+    },
+    {
+      "id": "D8",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "task completed",
+          "status": "PASS",
+          "observed": {
+            "externalTaskId": "task-alpha",
+            "externalAgentId": "agent-alpha",
+            "staffId": 0,
+            "status": "COMPLETED",
+            "label": "Prepare scene brief",
+            "externalProgress": 0,
+            "bridgeMode": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+            "bridgeContextOwned": false,
+            "createdSequence": 2,
+            "assignedSequence": 2,
+            "startedSequence": 3,
+            "terminalSequence": 4,
+            "terminalReason": "completed_by_command"
+          }
+        },
+        {
+          "name": "living continued",
+          "status": "PASS",
+          "observed": 1
+        }
+      ],
+      "trace_lines": 2,
+      "error": null
+    },
+    {
+      "id": "D9",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "task failed",
+          "status": "PASS",
+          "observed": {
+            "externalTaskId": "task-alpha",
+            "externalAgentId": "agent-alpha",
+            "staffId": 0,
+            "status": "FAILED",
+            "label": "Prepare scene brief",
+            "externalProgress": 0,
+            "bridgeMode": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+            "bridgeContextOwned": false,
+            "createdSequence": 2,
+            "assignedSequence": 2,
+            "startedSequence": 3,
+            "terminalSequence": 4,
+            "terminalReason": "execution_error"
+          }
+        }
+      ],
+      "trace_lines": 1,
+      "error": null
+    },
+    {
+      "id": "D10",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "task cancelled",
+          "status": "PASS",
+          "observed": {
+            "externalTaskId": "task-alpha",
+            "externalAgentId": "agent-alpha",
+            "staffId": 0,
+            "status": "CANCELLED",
+            "label": null,
+            "externalProgress": 0,
+            "bridgeMode": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+            "bridgeContextOwned": false,
+            "createdSequence": 2,
+            "assignedSequence": 2,
+            "startedSequence": null,
+            "terminalSequence": 3,
+            "terminalReason": "operator_cancelled"
+          }
+        }
+      ],
+      "trace_lines": 1,
+      "error": null
+    },
+    {
+      "id": "D11",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "two bindings",
+          "status": "PASS",
+          "observed": [
+            {
+              "externalAgentId": "agent-alpha",
+              "staffId": 0,
+              "boundSequence": 1
+            },
+            {
+              "externalAgentId": "agent-beta",
+              "staffId": 1,
+              "boundSequence": 2
+            }
+          ]
+        },
+        {
+          "name": "two tasks isolated",
+          "status": "PASS",
+          "observed": [
+            {
+              "externalTaskId": "task-alpha",
+              "externalAgentId": "agent-alpha",
+              "staffId": 0,
+              "status": "RUNNING",
+              "label": null,
+              "externalProgress": 0,
+              "bridgeMode": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+              "bridgeContextOwned": false,
+              "createdSequence": 3,
+              "assignedSequence": 3,
+              "startedSequence": 5,
+              "terminalSequence": null,
+              "terminalReason": null
+            },
+            {
+              "externalTaskId": "task-beta",
+              "externalAgentId": "agent-beta",
+              "staffId": 1,
+              "status": "ASSIGNED",
+              "label": null,
+              "externalProgress": 42,
+              "bridgeMode": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+              "bridgeContextOwned": false,
+              "createdSequence": 4,
+              "assignedSequence": 4,
+              "startedSequence": null,
+              "terminalSequence": null,
+              "terminalReason": null
+            }
+          ]
+        },
+        {
+          "name": "task state isolated",
+          "status": "PASS",
+          "observed": [
+            {
+              "externalAgentId": "agent-alpha",
+              "staffId": 0,
+              "staffDataId": 0,
+              "task": {
+                "externalTaskId": "task-alpha",
+                "status": "RUNNING",
+                "label": null,
+                "externalProgress": 0,
+                "bridgeMode": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+                "terminalReason": null
+              },
+              "living": {
+                "state": 0,
+                "stateName": "STATE_NORMAL",
+                "moveMode": 0,
+                "moveModeName": "MOVE_MODE_STAY",
+                "flags": 0,
+                "hp": 100,
+                "maxHp": 108,
+                "hpRatio": 92,
+                "deskId": 0,
+                "equipmentId": -1,
+                "colleagueId": -1,
+                "atHome": false,
+                "planning": false,
+                "developing": false,
+                "livingDisplayStatus": "WAITING",
+                "cell": [
+                  8,
+                  4
+                ],
+                "world": {
+                  "x": 280,
+                  "y": -31
+                },
+                "routeLength": 0,
+                "livingFrame": 0
+              },
+              "availability": "TASK_ACTIVE"
+            },
+            {
+              "externalAgentId": "agent-beta",
+              "staffId": 1,
+              "staffDataId": 1,
+              "task": {
+                "externalTaskId": "task-beta",
+                "status": "ASSIGNED",
+                "label": null,
+                "externalProgress": 42,
+                "bridgeMode": "PRODUCT_TASK_OVERLAY_WITH_BASELINE_LIVING",
+                "terminalReason": null
+              },
+              "living": {
+                "state": 0,
+                "stateName": "STATE_NORMAL",
+                "moveMode": 0,
+                "moveModeName": "MOVE_MODE_STAY",
+                "flags": 0,
+                "hp": 100,
+                "maxHp": 108,
+                "hpRatio": 92,
+                "deskId": 1,
+                "equipmentId": -1,
+                "colleagueId": -1,
+                "atHome": false,
+                "planning": false,
+                "developing": false,
+                "livingDisplayStatus": "WAITING",
+                "cell": [
+                  8,
+                  4
+                ],
+                "world": {
+                  "x": 280,
+                  "y": -31
+                },
+                "routeLength": 0,
+                "livingFrame": 0
+              },
+              "availability": "TASK_ACTIVE"
+            }
+          ]
+        }
+      ],
+      "trace_lines": 1,
+      "error": null
+    },
+    {
+      "id": "D12",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "unbound rejection",
+          "status": "PASS",
+          "observed": "AGENT_NOT_BOUND"
+        },
+        {
+          "name": "binding conflict",
+          "status": "PASS",
+          "observed": "AGENT_BINDING_CONFLICT"
+        },
+        {
+          "name": "active task conflict",
+          "status": "PASS",
+          "observed": "ACTIVE_TASK_CONFLICT"
+        },
+        {
+          "name": "active unbind conflict",
+          "status": "PASS",
+          "observed": "ACTIVE_TASK_PREVENTS_UNBIND"
+        },
+        {
+          "name": "invalid transition",
+          "status": "PASS",
+          "observed": "INVALID_TASK_TRANSITION"
+        }
+      ],
+      "trace_lines": 1,
+      "error": null
+    },
+    {
+      "id": "D13",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "fresh bindings empty",
+          "status": "PASS",
+          "observed": []
+        },
+        {
+          "name": "fresh tasks empty",
+          "status": "PASS",
+          "observed": []
+        }
+      ],
+      "trace_lines": 2,
+      "error": null
+    },
+    {
+      "id": "D14",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "replay digest stable",
+          "status": "PASS",
+          "observed": {
+            "left": "d6f5f83ffb05f073",
+            "right": "d6f5f83ffb05f073"
+          }
+        },
+        {
+          "name": "snapshot stable",
+          "status": "PASS",
+          "observed": true
+        }
+      ],
+      "trace_lines": 1,
+      "error": null
+    }
+  ]
+}

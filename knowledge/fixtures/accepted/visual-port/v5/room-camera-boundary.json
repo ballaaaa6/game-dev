@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "phase": "V5",
+  "status": "PASS_STATIC_CAMERA_BOUNDARY",
+  "source": "knowledge/fixtures/accepted/runtime/camera_coordinate_contract.json",
+  "runtime_implementation": "runtime/social-dev/src/v5/fixture-loader.ts and runtime/social-dev/src/v4/camera.ts",
+  "camera": {
+    "fields": ["ofx_", "ofy_"],
+    "transform": "screen = world + integer offset",
+    "default_offset": [0, 0],
+    "scale": 1,
+    "rotation": 0,
+    "viewport_clamp": "not synthesized"
+  },
+  "room_draw_boundary": {
+    "offset_is_set_once_before_child_passes": true,
+    "map_and_obj_adapters_receive_same_camera": true,
+    "room00_fixture_offset": [0, 0],
+    "verification_offset": [7, -3],
+    "observed_delta": [7, -3]
+  },
+  "proof": "CALL-FLOW-PROVEN",
+  "deferred": ["dynamic viewport", "clamp/easing", "live camera state"]
+}

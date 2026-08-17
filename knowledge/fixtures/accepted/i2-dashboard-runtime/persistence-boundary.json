@@ -1,0 +1,12 @@
+{
+  "schema": "i2-persistence-boundary-v1",
+  "status": "EPHEMERAL_IN_MEMORY",
+  "product_task_storage": "DashboardRuntime maps only",
+  "reload_behavior": "fresh runtime returns zero bindings/tasks and the deterministic living bootstrap",
+  "forbidden_persistence": [
+    "localStorage",
+    "IndexedDB",
+    "save files",
+    "backend task persistence"
+  ]
+}

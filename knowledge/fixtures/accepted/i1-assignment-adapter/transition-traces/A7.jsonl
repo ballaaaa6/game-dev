@@ -1,0 +1,2 @@
+{"scenarioId":"A7","step":1,"event":"original_context_exit","productStatus":"RUNNING","productAfter":"RUNNING","originalContextOwned":false}
+{"scenarioId":"A7","step":2,"event":"task_completed","productStatus":"COMPLETED","livingState":"STATE_WORK","assertion":"Staff and desk remain"}

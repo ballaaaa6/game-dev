@@ -1,0 +1,230 @@
+{
+  "directional_sequences": {
+    "DIRECTION_DOWN_3": [
+      {
+        "native": "0x12C1C70",
+        "operation": "desk primary Seb/AppData.DrawSeb",
+        "order": 0,
+        "owner": "ObjChip.Draw type-2 inner"
+      },
+      {
+        "guard": "staffId_ != -1",
+        "native": "0x12C1E38",
+        "operation": "chair subSeb ResourceManager.DrawSeb",
+        "order": 1,
+        "owner": "ObjChip.Draw type-2 inner",
+        "seb_frame": 1
+      },
+      {
+        "guard": "installed outer path; Staff flags bit 2 filter",
+        "native": "0x12C1ED4 -> 0x12DABA8",
+        "operation": "Staff.Draw offset overload",
+        "order": 2,
+        "owner": "ObjChip.staffs_"
+      },
+      {
+        "guard": "staffId_ != -1",
+        "native": "0x12C26DC",
+        "operation": "late chair subSeb foreground ResourceManager.DrawSeb",
+        "order": 3,
+        "owner": "ObjChip.Draw type-2 inner",
+        "seb_frame": 2
+      }
+    ],
+    "DIRECTION_UP_2": [
+      {
+        "guard": "staffId_ != -1",
+        "native": "0x12C2460",
+        "operation": "chair subSeb ResourceManager.DrawSeb",
+        "order": 0,
+        "owner": "ObjChip.Draw type-2 inner",
+        "seb_frame": 0
+      },
+      {
+        "guard": "installed outer path; Staff flags bit 2 filter",
+        "native": "0x12C2510 -> 0x12DABA8",
+        "operation": "Staff.Draw offset overload",
+        "order": 1,
+        "owner": "ObjChip.staffs_"
+      },
+      {
+        "native": "0x12C1C70",
+        "operation": "desk primary Seb/AppData.DrawSeb",
+        "order": 2,
+        "owner": "ObjChip.Draw type-2 inner"
+      }
+    ]
+  },
+  "dispatch": {
+    "direction3_branch": "0x12C1AC0/0x12C1AD0",
+    "direction_field": "ObjChip.direction_ @ +0x48",
+    "type_2_branch": "0x12C1914 -> 0x12C1A70"
+  },
+  "duplicate_staff_guard": {
+    "installed_outer": "0x12C108C tbz",
+    "principle": "live installed path does not also execute the uninstalled outer Staff loop",
+    "staff_loop": "0x12C1ED4 or 0x12C2510"
+  },
+  "late_foreground": {
+    "asset": "subSeb_",
+    "directions": [
+      3
+    ],
+    "frame": 2,
+    "guard": "staffId_ != -1",
+    "native": "0x12C2528..0x12C26DC"
+  },
+  "live_normal_path": {
+    "Room.Draw": "0x12CBB80",
+    "callsite": "0x12C10C4",
+    "inner_overload": "0x12C166C",
+    "installed_guard": "0x12C1088 -> 0x12C108C; installed true bypasses outer uninstalled Staff loop",
+    "outer_overload": "0x12C0E00",
+    "preview": false
+  },
+  "method": "ObjChip.Draw(Graphics,int,int,FurnitureData,bool)",
+  "native_anchors": [
+    {
+      "address": "0x12C1900",
+      "mnemonic": "cbz",
+      "op_str": "x27, #0x12c326c"
+    },
+    {
+      "address": "0x12C1914",
+      "mnemonic": "b.eq",
+      "op_str": "#0x12c1a70"
+    },
+    {
+      "address": "0x12C1AC0",
+      "mnemonic": "cmp",
+      "op_str": "w8, #3"
+    },
+    {
+      "address": "0x12C1AD0",
+      "mnemonic": "b.ne",
+      "op_str": "#0x12c229c"
+    },
+    {
+      "address": "0x12C1C70",
+      "mnemonic": "bl",
+      "op_str": "#0x125bb88"
+    },
+    {
+      "address": "0x12C1C80",
+      "mnemonic": "ldr",
+      "op_str": "w8, [x27, #0x78]"
+    },
+    {
+      "address": "0x12C1C84",
+      "mnemonic": "cmn",
+      "op_str": "w8, #1"
+    },
+    {
+      "address": "0x12C1E38",
+      "mnemonic": "bl",
+      "op_str": "#0x1c52f18"
+    },
+    {
+      "address": "0x12C1ED4",
+      "mnemonic": "bl",
+      "op_str": "#0x12daba8"
+    },
+    {
+      "address": "0x12C229C",
+      "mnemonic": "ldr",
+      "op_str": "x8, [sp, #0x30]"
+    },
+    {
+      "address": "0x12C22A0",
+      "mnemonic": "ldr",
+      "op_str": "w8, [x8, #0x78]"
+    },
+    {
+      "address": "0x12C2460",
+      "mnemonic": "bl",
+      "op_str": "#0x1c52f18"
+    },
+    {
+      "address": "0x12C2510",
+      "mnemonic": "bl",
+      "op_str": "#0x12daba8"
+    },
+    {
+      "address": "0x12C2528",
+      "mnemonic": "ldr",
+      "op_str": "w8, [x27, #0x78]"
+    },
+    {
+      "address": "0x12C2590",
+      "mnemonic": "bl",
+      "op_str": "#0x1c5bc08"
+    },
+    {
+      "address": "0x12C26C4",
+      "mnemonic": "ldr",
+      "op_str": "w2, [x9, #0x44]"
+    },
+    {
+      "address": "0x12C26D0",
+      "mnemonic": "mov",
+      "op_str": "w3, #2"
+    },
+    {
+      "address": "0x12C26DC",
+      "mnemonic": "bl",
+      "op_str": "#0x1c52f18"
+    },
+    {
+      "address": "0x12C1058",
+      "mnemonic": "ldr",
+      "op_str": "x8, [x22, #0x20]"
+    },
+    {
+      "address": "0x12C1088",
+      "mnemonic": "bl",
+      "op_str": "#0x1c98bec"
+    },
+    {
+      "address": "0x12C108C",
+      "mnemonic": "tbz",
+      "op_str": "w0, #0, #0x12c10f4"
+    },
+    {
+      "address": "0x12C10C4",
+      "mnemonic": "b",
+      "op_str": "#0x12c166c"
+    },
+    {
+      "address": "0x12C10F4",
+      "mnemonic": "ldr",
+      "op_str": "x0, [x22, #0x68]"
+    },
+    {
+      "address": "0x12C114C",
+      "mnemonic": "bl",
+      "op_str": "#0x12daba8"
+    }
+  ],
+  "preview_paths": [
+    {
+      "callsite": "0x12CC234",
+      "owner": "Room.Draw floor-select type-2",
+      "preview": true
+    },
+    {
+      "callsite": "0x12CE81C -> 0x12CE824",
+      "owner": "Room.DrawObjPreview",
+      "preview": true
+    }
+  ],
+  "rva": "0x12C166C",
+  "schema_version": "social-dev-k4-1-workstation-native-cfg-v1",
+  "source_refs": [
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:Draw(FurnitureData,bool)",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:Draw/DrawObjPreview",
+    "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so:0x12C166C/0x12C0E00/0x12CBB80/0x12CE824",
+    "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json:native_initial_furniture",
+    "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0].object_cells"
+  ],
+  "status": "PROVEN_CANONICAL"
+}

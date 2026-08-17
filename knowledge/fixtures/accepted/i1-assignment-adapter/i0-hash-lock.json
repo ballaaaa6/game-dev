@@ -1,0 +1,35 @@
+{
+  "schema_version": "social-dev-i1-i0-r0-hash-lock-v1",
+  "algorithm": "SHA-256; directory manifest is sorted relative-path + space + file-hash + LF",
+  "roots": {
+    "runtime/social-dev/src/core/living": {
+      "file_count": 14,
+      "manifest_sha256": "086883b3a2250d61333c438dabbef674038ab438f2d1f599b70b600fd0d618fd",
+      "files": {
+        "astar.ts": "67ab28d6cdb4b50ae9bdf5c90c0f37f146c9773fd01a41004286cd03d87cbadd",
+        "catalog.ts": "5ee48dc8ccb65ac2a863705894c57c4bcd32661c2e238bbc78709ec425cb368d",
+        "constants.ts": "7e6bc5f750de64b6b83c4974af07bb0704e3e27963d7cbb1c1f1cc57f082ac47",
+        "furniture.ts": "183f0072cdf2251e4e108b8f163bb11da946232519f6354e3d92bea787a50517",
+        "movement.ts": "f5c046244910bba6d632058925d0fa02b3841b68737570349df8a4f2f382a8b2",
+        "planning.ts": "1131fcf2fbb074433af1647b157da4b8217ca6883f85ec67ceac6be91b606a21",
+        "projection.ts": "bc75bfdc2845fae8b202d8308f4ee9d629eab3bc88526d0cc74d7c3a1ffdb58d",
+        "rng.ts": "141436e9a431158fa7cc7f605d791a7e0ed0c16a992e8ffee8439fa35f60174c",
+        "room.ts": "94ce75a56cb163da8328b9d8dc6789b595f83271d16f0c21afc8b8d84062b2bc",
+        "runtime.ts": "67959b513341bf4e18b554523743fa20605190dd869f1c27231290ad8b50d5ab",
+        "scenario-runner.ts": "ee4edb302f1f89781b33a47129559da3cee1d9e89d07dcba9dda13f4a5aeb35a",
+        "staff.ts": "69bb837274f959119302275e0eeb246f73329e6eb3e95f5e1e32f2383ad4546",
+        "trace.ts": "c8f21541e1f201c6271cd7073f9718211bd0a21d172451101a13458b55957b86",
+        "types.ts": "05be29a9b0ca8ac790bd671b161b0e66e817d732714a6af5e8fc21adc94dee41"
+      }
+    },
+    "knowledge/fixtures/accepted/i0-living-runtime": {
+      "file_count": 24,
+      "manifest_sha256": "f2e462f2365532bc5345852b645727a25b7d0e15d6cad0b266c28b87b1e7f2c2"
+    },
+    "knowledge/fixtures/accepted/runtime-contract-freeze": {
+      "file_count": 18,
+      "manifest_sha256": "040e32a1eabc7ec51233b47e070825989c2279b909c43eba3adc170161ae4613"
+    }
+  },
+  "preservation_check": "The locked manifests are captured before I1 implementation and must remain unchanged."
+}

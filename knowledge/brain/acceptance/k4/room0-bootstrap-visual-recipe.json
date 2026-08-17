@@ -1,0 +1,773 @@
+{
+  "actors": [
+    {
+      "id": "actor:staff:0",
+      "initial_position": [
+        280,
+        -31
+      ],
+      "source_staff_id": 0,
+      "spawn_cell": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": "actor:staff:1",
+      "initial_position": [
+        280,
+        -31
+      ],
+      "source_staff_id": 1,
+      "spawn_cell": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": "actor:staff:2",
+      "initial_position": [
+        280,
+        -31
+      ],
+      "source_staff_id": 2,
+      "spawn_cell": [
+        8,
+        4
+      ]
+    }
+  ],
+  "assembly_stages": [
+    {
+      "input": "DataManager arrays and resource selector tables",
+      "native_method": "DataManager.Load",
+      "order": 0,
+      "output": "native content catalog IDs",
+      "phase": "load"
+    },
+    {
+      "input": "roomData_[0], constructor floor=0, initStaffs",
+      "native_method": "AppData.NewGame",
+      "order": 1,
+      "output": "active Room instance",
+      "phase": "bootstrap"
+    },
+    {
+      "input": "width=14,height=14,floor,RoomData",
+      "native_method": "Room::.ctor",
+      "order": 2,
+      "output": "MapChip grid + ObjChip grid",
+      "phase": "construct"
+    },
+    {
+      "input": "Room.floor_ and RoomData.floorImgId_",
+      "native_method": "Room.InitMapChips",
+      "order": 3,
+      "output": "14x14 MapChip topology and floor selector",
+      "phase": "map"
+    },
+    {
+      "input": "RoomData.objMap_ and objDir_",
+      "native_method": "Room.InitObjChips",
+      "order": 4,
+      "output": "10x10 ObjChip instances with raw type/direction",
+      "phase": "objects"
+    },
+    {
+      "input": "ObjChip structural footprint/anchor types",
+      "native_method": "Room.SetupBigChipsParent",
+      "order": 5,
+      "output": "parent-linked object chips",
+      "phase": "parenting"
+    },
+    {
+      "input": "ObjChip.type_ == 5",
+      "native_method": "Room.PlaceDoor",
+      "order": 6,
+      "output": "installed door with FurnitureData=null",
+      "phase": "door"
+    },
+    {
+      "input": "FLAG_INIT_DESK / FLAG_INIT_PLACE and empty raw slots",
+      "native_method": "Room.PlaceDesk",
+      "order": 7,
+      "output": "explicit native FurnitureData bindings",
+      "phase": "initial_objects"
+    },
+    {
+      "input": "MapChip, ObjChip, Avatar passes",
+      "native_method": "Room.Draw",
+      "order": 8,
+      "output": "nine ordered render passes",
+      "phase": "draw"
+    },
+    {
+      "input": "runtime state",
+      "native_method": "Room.Update",
+      "order": 9,
+      "output": "updated ObjChip/actor state",
+      "phase": "update"
+    },
+    {
+      "input": "room instance state",
+      "native_method": "Room.Serialize",
+      "order": 10,
+      "output": "saved room state",
+      "phase": "persist"
+    }
+  ],
+  "door": {
+    "cell": [
+      8,
+      4
+    ],
+    "furniture_data": null,
+    "installed_flag": 1,
+    "raw_type": 5
+  },
+  "entrypoint": {
+    "entrypoint": "AppData.NewGame",
+    "initial_staff_count": 3,
+    "place_desk_argument": 0,
+    "room_constructor": {
+      "floor": 0,
+      "height": 14,
+      "is_preview": false,
+      "width": 14
+    },
+    "room_data_key": "data:room:0"
+  },
+  "exclusions": [
+    "Do not infer FurnitureData identity from raw ObjChip type or occupancy.",
+    "Do not draw selector-only furniture:2 or furniture:5 without a native cell binding.",
+    "Do not promote the raw type-4 structural anchors to FurnitureData; draw the verified furniture:0 SEB composition once at each native anchor.",
+    "Do not fan the three native initial actors out from the verified door entry position in the native spawn contract.",
+    "The separate floor00_display_policy may reserve verified empty walkable cells for a static presentation without changing native spawn evidence.",
+    "Exclude the additional red/black live-game prop from this bootstrap until its FurnitureData/selector binding is proven; do not infer or substitute an asset."
+  ],
+  "initial_furniture": [
+    {
+      "cell": [
+        2,
+        4
+      ],
+      "furniture_data_id": 3,
+      "object_id": "furniture:3",
+      "raw_type": 2,
+      "scan_order": 0,
+      "selector_flag": "FLAG_INIT_DESK"
+    },
+    {
+      "cell": [
+        3,
+        4
+      ],
+      "furniture_data_id": 3,
+      "object_id": "furniture:3",
+      "raw_type": 2,
+      "scan_order": 1,
+      "selector_flag": "FLAG_INIT_DESK"
+    },
+    {
+      "cell": [
+        6,
+        4
+      ],
+      "furniture_data_id": 3,
+      "object_id": "furniture:3",
+      "raw_type": 2,
+      "scan_order": 2,
+      "selector_flag": "FLAG_INIT_DESK"
+    },
+    {
+      "cell": [
+        8,
+        5
+      ],
+      "furniture_data_id": 12,
+      "object_id": "furniture:12",
+      "raw_type": 1,
+      "scan_order": 0,
+      "selector_flag": "FLAG_INIT_PLACE"
+    },
+    {
+      "cell": [
+        8,
+        6
+      ],
+      "furniture_data_id": 26,
+      "object_id": "furniture:26",
+      "raw_type": 1,
+      "scan_order": 1,
+      "selector_flag": "FLAG_INIT_PLACE"
+    },
+    {
+      "cell": [
+        2,
+        7
+      ],
+      "furniture_data_id": 56,
+      "object_id": "furniture:56",
+      "raw_type": 1,
+      "scan_order": 2,
+      "selector_flag": "FLAG_INIT_PLACE"
+    }
+  ],
+  "native_room_draw_commands": [
+    {
+      "native_method": "MapChip.DrawExtentionFloor",
+      "pass_id": "map-extension-floor",
+      "source": "shared MapChip extension wall contract"
+    },
+    {
+      "native_method": "MapChip.Draw",
+      "pass_id": "map-chip",
+      "source": "selected Room.floor_ topology"
+    },
+    {
+      "native_method": "ObjChip.Draw",
+      "pass_id": "object-chip-primary",
+      "source": "explicit FurnitureData instances only"
+    },
+    {
+      "native_method": "ObjChip.DrawWall",
+      "pass_id": "object-chip-wall",
+      "source": "wall predicate and raw door type 5"
+    },
+    {
+      "native_method": "Avatar.Draw",
+      "pass_id": "avatar-primary",
+      "source": "actor catalog"
+    },
+    {
+      "native_method": "Avatar.DrawSecondary",
+      "pass_id": "avatar-secondary",
+      "source": "actor catalog"
+    },
+    {
+      "native_method": "ObjChip.DrawLatePreview",
+      "pass_id": "object-chip-late-preview",
+      "source": "native pass slot"
+    },
+    {
+      "native_method": "ObjChip.DrawLate",
+      "pass_id": "object-chip-late",
+      "source": "native pass slot"
+    },
+    {
+      "native_method": "MapChip.DrawFloor",
+      "pass_id": "map-floor",
+      "source": "floor culling contract"
+    }
+  ],
+  "recipe_id": "ROOM0_BOOTSTRAP_VISUAL_RECIPE:0",
+  "render_composition": {
+    "door_cell": [
+      8,
+      4
+    ],
+    "foreground_wall_cells": [
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    "logical_order": [
+      "background",
+      "map-chip-and-map-floor-underlay",
+      "map-extension-floor-pale-boundary",
+      "object-chip-wall-rear-door-and-wall",
+      "object-chip-primary-native-furniture",
+      "avatar-primary-static-floor00-display-actors",
+      "object-chip-late-foreground-wall",
+      "diagnostic-overlay"
+    ],
+    "native_cell_order": "row_y_ascending_then_x_descending",
+    "native_pass_slots_preserved": true,
+    "rear_wall_cells": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        5
+      ],
+      [
+        8,
+        6
+      ]
+    ],
+    "source_basis": [
+      "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json",
+      "knowledge/fixtures/accepted/runtime/default_map_chip_contract.json",
+      "knowledge/fixtures/accepted/runtime/display_asset_manifest.json",
+      "knowledge/fixtures/accepted/runtime/room_placement_contract.json",
+      "knowledge/fixtures/accepted/adb-gameplay-20260814/analysis.md",
+      "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs",
+      "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs"
+    ],
+    "status": "approved_native_runtime_composition",
+    "underlay_committed_before_objects": true,
+    "wall_boundary_asset": "wall_01.png",
+    "wall_boundary_collision": "boundary_wall_not_passable"
+  },
+  "room": {
+    "floor_selector_chain": {
+      "asset": "floor_05.png",
+      "asset_id": "asset:01_GAME_PACKS/chip/floor_05.png",
+      "native_image_selector": 23,
+      "raw_roomdata_floor_image_index": 5,
+      "runtime_alias_is_separate": true
+    },
+    "map_topology": {
+      "map_chip_cells": 196,
+      "map_chip_height": 14,
+      "map_chip_variant": "floor_0",
+      "map_chip_width": 14,
+      "obj_chip_cells": 100,
+      "obj_chip_height": 10,
+      "obj_chip_width": 10,
+      "raw_type_counts": {
+        "0": 31,
+        "1": 8,
+        "2": 6,
+        "3": 16,
+        "4": 2,
+        "5": 1,
+        "6": 36
+      }
+    },
+    "native_data": {
+      "cost_coin": 2,
+      "cost_max": 30,
+      "cost_money": 1200,
+      "desk_num": 6,
+      "door_img_id": 7,
+      "equip_big_num": 2,
+      "equip_small_num": 8,
+      "flag": 0,
+      "floor_img_id": 5,
+      "id": 0,
+      "name": "Floor A",
+      "wall_img_id": 6
+    },
+    "native_map_selector": {
+      "native_field": "Room.floor_",
+      "native_floor_value": 0,
+      "selected_variant": "floor_0",
+      "selection_status": "explicit_current_runtime_fixture_floor_value",
+      "source_status": "AppData.NewGame constructs the active display Room with floor argument 0; RoomData does not select MapChip topology.",
+      "variant_rows": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          9,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          5,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          7,
+          6,
+          6,
+          11,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          2,
+          4,
+          5,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          2,
+          3,
+          7,
+          6,
+          11,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          2,
+          3,
+          8,
+          8,
+          5,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          5,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          7,
+          6,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "room_data_key": "data:room:0",
+    "room_key": "room:0"
+  },
+  "schema_version": "social-dev-k4-room0-bootstrap-visual-recipe-v1",
+  "source_refs": [
+    "knowledge/fixtures/accepted/runtime/floor00_scene_contract.json",
+    "knowledge/fixtures/accepted/runtime/native_scene_assembly_contract.json:rooms[room:0]",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/Room.cs:AppData.NewGame/Room constructor/PlaceDesk",
+    "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/game/ObjChip.cs:ObjChip construction and draw ownership"
+  ],
+  "status": "PROVEN_CANONICAL",
+  "structural_facilities": [
+    {
+      "anchor": [
+        4,
+        2
+      ],
+      "footprint_cells": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "image_asset_id": "asset:01_GAME_PACKS/chip/big_base00.png",
+      "map_anchor": [
+        4,
+        5
+      ],
+      "object_id": "furniture:0",
+      "raw_type": 4,
+      "render_policy": "static_single_frame_structural_composition",
+      "seb_filename": "big_base00.seb",
+      "seb_selector_id": 11,
+      "sprite_record": {
+        "destination_x": -40,
+        "destination_y": -21,
+        "flags": 0,
+        "height": 61,
+        "image_id": 18,
+        "reserved": 0,
+        "source_x": 0,
+        "source_y": 0,
+        "start_frame": 0,
+        "width": 120
+      }
+    },
+    {
+      "anchor": [
+        7,
+        2
+      ],
+      "footprint_cells": [
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ]
+      ],
+      "image_asset_id": "asset:01_GAME_PACKS/chip/big_base00.png",
+      "map_anchor": [
+        7,
+        5
+      ],
+      "object_id": "furniture:0",
+      "raw_type": 4,
+      "render_policy": "static_single_frame_structural_composition",
+      "seb_filename": "big_base00.seb",
+      "seb_selector_id": 11,
+      "sprite_record": {
+        "destination_x": -40,
+        "destination_y": -21,
+        "flags": 0,
+        "height": 61,
+        "image_id": 18,
+        "reserved": 0,
+        "source_x": 0,
+        "source_y": 0,
+        "start_frame": 0,
+        "width": 120
+      }
+    }
+  ]
+}

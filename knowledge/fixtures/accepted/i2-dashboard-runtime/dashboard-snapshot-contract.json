@@ -1,0 +1,33 @@
+{
+  "schema": "i2-dashboard-snapshot-contract-v1",
+  "status": "PASS",
+  "fields": [
+    "frame",
+    "living",
+    "dashboard",
+    "staffRoster",
+    "unboundStaff",
+    "bindings",
+    "tasks",
+    "events",
+    "livingDigest",
+    "assignmentDigest",
+    "lastCommandResult"
+  ],
+  "presentation_only": [
+    "lastCommandResult"
+  ],
+  "digest_excludes": [
+    "lastCommandResult",
+    "wall_clock",
+    "DOM ordering",
+    "Canvas pixels"
+  ],
+  "ordering": [
+    "Staff by staffId",
+    "bindings by externalAgentId",
+    "tasks by externalTaskId",
+    "events by sequence"
+  ],
+  "defensive_queries": true
+}

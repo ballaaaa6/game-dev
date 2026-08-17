@@ -1,0 +1,21 @@
+{
+  "schema_version": "social-dev-i0-deterministic-rng-replay-v1",
+  "status": "PASS_DETERMINISTIC_RNG_REPLAY",
+  "scenario_id": "S10",
+  "same_snapshot_hash": true,
+  "final_hash": "45df6d81b77bc678ed68bd98c7e28d862dfcaff6e279caf7c7f9322ce6214765",
+  "replay_hash": "45df6d81b77bc678ed68bd98c7e28d862dfcaff6e279caf7c7f9322ce6214765",
+  "same_draw_log": true,
+  "assertions": [
+    {
+      "name": "byte-identical-log",
+      "status": "PASS",
+      "detail": "same canonical state and replay stream produce identical output"
+    },
+    {
+      "name": "same-draw-log",
+      "status": "PASS",
+      "detail": "same RNG draw order is preserved"
+    }
+  ]
+}

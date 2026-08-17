@@ -1,0 +1,27 @@
+{
+  "schema_version": "social-dev-i0-tick-rng-closure-v1",
+  "status": "PASS_CANONICAL_TICK_RNG_AUTONOMY",
+  "tick_order": [
+    "staff entry/current frame",
+    "UpdateRecoveryHp",
+    "low-HP guard",
+    "state dispatch",
+    "state handler",
+    "route/arrival",
+    "handler timers",
+    "cleanup",
+    "visual projection"
+  ],
+  "room_order": "Room.staffIds insertion order before ObjChip update",
+  "rng": {
+    "appData": "[0,n)",
+    "appDataInclusive": "[min,max]",
+    "libInclusive": "[min,max]",
+    "injectable": true,
+    "math_random": false
+  },
+  "work_gate": "frame_%20==0",
+  "sleeping_gate": "frame_%200==0",
+  "ordinary_work_hp_drain": false,
+  "renderer_mutates_behavior": false
+}

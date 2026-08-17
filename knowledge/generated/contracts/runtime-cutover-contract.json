@@ -1,0 +1,8 @@
+{
+  "direct_json_import_files": [],
+  "facade_shape_preserved": true,
+  "loader": "runtime/social-dev/src/catalog/load-original-runtime-pack.ts",
+  "schema_version": "social-dev-k2-runtime-cutover-v1",
+  "single_pack": true,
+  "status": "pass"
+}

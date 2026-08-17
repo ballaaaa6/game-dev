@@ -1,0 +1,14 @@
+{
+  "schema": "i2-dashboard-error-contract-v1",
+  "status": "PASS",
+  "result_surface": "data-dashboard-error with accepted/rejected result and preserved I1 code",
+  "covered_codes": [
+    "AGENT_NOT_BOUND",
+    "AGENT_BINDING_CONFLICT",
+    "ACTIVE_TASK_CONFLICT",
+    "ACTIVE_TASK_PREVENTS_UNBIND",
+    "INVALID_TASK_TRANSITION",
+    "TASK_ALREADY_EXISTS"
+  ],
+  "living_mutation_on_rejection": false
+}
