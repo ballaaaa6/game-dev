@@ -1,0 +1,10 @@
+{
+  "artifact_digest_pass_1": "860f0f956a27de3a13e043e16624ddfc4abec64ed35cd9584a1363d203f16011",
+  "artifact_digest_pass_2": "860f0f956a27de3a13e043e16624ddfc4abec64ed35cd9584a1363d203f16011",
+  "byte_identical": true,
+  "csharp_digest_pass_1": "f14bb440e2da274137a5fc93a4e0d6f78cebe922128b3638c1fc2431251f3625",
+  "csharp_digest_pass_2": "f14bb440e2da274137a5fc93a4e0d6f78cebe922128b3638c1fc2431251f3625",
+  "deterministic": true,
+  "jsonl_sha256_pass_1": "f462e389fc15813a13e947e28d88b113eea31847bf22c1a7a8109ed3192effd1",
+  "jsonl_sha256_pass_2": "f462e389fc15813a13e947e28d88b113eea31847bf22c1a7a8109ed3192effd1"
+}

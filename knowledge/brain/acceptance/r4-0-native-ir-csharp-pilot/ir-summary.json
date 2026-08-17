@@ -1,0 +1,76 @@
+{
+  "hard": {
+    "count": 100,
+    "coverage": {
+      "CANDIDATE_REJECTED": 2,
+      "UNRESOLVED": 43,
+      "VERIFIED": 55
+    },
+    "generated_csharp": 55,
+    "oracles": {
+      "EXACT_SIMPLE_SOURCE": 28,
+      "NO_CANDIDATE": 43,
+      "STRUCTURAL_SOURCE_MATCH": 29
+    },
+    "ownership": {
+      "GAME_FIRST_PARTY": 41,
+      "KAIRO_ENGINE": 59
+    },
+    "patterns": {
+      "BITMASK_DEVICE_FALLBACK": 1,
+      "EMPTY_VOID_BODY": 4,
+      "FOCUS_VISIBLE_GUARD": 1,
+      "NO_STRUCTURAL_PATTERN": 43,
+      "STRAIGHT_FIELD_GETTER_WITH_PROLOGUE": 1,
+      "STRAIGHT_FIELD_SETTER": 3,
+      "TYPED_CALL_RETURN": 8,
+      "TYPED_NULL_GUARD": 19,
+      "TYPED_SINGLE_RETURN": 20
+    },
+    "rejected": 45,
+    "source_writes": 0,
+    "unresolved": 43,
+    "verified": 55
+  },
+  "positive": {
+    "all_verified": true,
+    "required": 6,
+    "source_writes": 0,
+    "verified": 6
+  },
+  "reproduction": {
+    "count": 200,
+    "coverage": {
+      "CANDIDATE_REJECTED": 7,
+      "UNRESOLVED": 66,
+      "VERIFIED": 127
+    },
+    "generated_csharp": 127,
+    "oracles": {
+      "EXACT_SIMPLE_SOURCE": 83,
+      "NO_CANDIDATE": 66,
+      "STRUCTURAL_SOURCE_MATCH": 51
+    },
+    "ownership": {
+      "GAME_FIRST_PARTY": 87,
+      "KAIRO_ENGINE": 113
+    },
+    "patterns": {
+      "AUTO_PROPERTY_GETTER": 1,
+      "AUTO_PROPERTY_SETTER": 2,
+      "BITMASK_DEVICE_FALLBACK": 1,
+      "EMPTY_VOID_BODY": 17,
+      "FOCUS_VISIBLE_GUARD": 1,
+      "NO_STRUCTURAL_PATTERN": 66,
+      "STRAIGHT_FIELD_GETTER_WITH_PROLOGUE": 19,
+      "STRAIGHT_FIELD_SETTER": 19,
+      "TYPED_CALL_RETURN": 37,
+      "TYPED_NULL_GUARD": 12,
+      "TYPED_SINGLE_RETURN": 25
+    },
+    "rejected": 73,
+    "source_writes": 0,
+    "unresolved": 66,
+    "verified": 127
+  }
+}

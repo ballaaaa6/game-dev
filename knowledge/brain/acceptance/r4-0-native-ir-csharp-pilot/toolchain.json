@@ -1,0 +1,9 @@
+{
+  "canonical_isil_present": true,
+  "canonical_isil_root": "C:\\Users\\WINDOW XI\\AppData\\Local\\Temp\\r0-cpp2il-audit-20260817\\rerun-current\\isil\\IsilDump",
+  "deterministic_emitter": "stable JSON ordering and fixed C# formatting",
+  "dotnet": "C:\\Program Files\\dotnet\\dotnet.EXE",
+  "llvm_objdump": "NOT_FOUND",
+  "native_disassembly_authority": "canonical ISIL evidence files; no guessed native bytes",
+  "python": "3.10.10"
+}

@@ -1,5 +1,18 @@
 # Project State
 
+## Current Status — R4.0 Native/ISIL typed-IR feasibility pilot closed (2026-08-18)
+
+The bounded R4.0 feasibility pilot is closed with `PASS_R4_0_NATIVE_IR_CSHARP_FEASIBILITY_PILOT_GO`. The canonical source gate passes against the pinned APK, native library, metadata, and C# archive; the 200-method reproduction cohort is deterministic; all six required positive methods verify; all five Google negative fixtures reject; and the 100-method hard cohort verifies 55 methods across both GAME_FIRST_PARTY and KAIRO_ENGINE ownerships and the required CFG-family representatives. The pilot emitted 127 proof-gated C# bodies, performed zero source writes, and left the original C# roots, Twin, graph, V8, and runtime unchanged.
+
+Compact acceptance evidence is under `knowledge/brain/acceptance/r4-0-native-ir-csharp-pilot/`; heavy per-method evidence remains local-only under `artifacts/r4-0-native-ir-pilot/`. Full-corpus R4 native/ISIL lifting is authorized by the pilot decision but was not started; stop at this boundary.
+
+## Git-visible current gate
+
+- `current_phase`: `R4_0_NATIVE_IR_CSHARP_FEASIBILITY_PILOT`
+- `status`: `PASS_R4_0_NATIVE_IR_CSHARP_FEASIBILITY_PILOT_GO`
+- `next_authorized_phase`: `R4_NATIVE_ISIL_SEMANTIC_LIFT`
+- `next_phase_started`: `false`
+
 ## Current Status — R3 whole-game CFG repair closed (2026-08-18)
 
 ## R3 whole-game CFG repair — complete

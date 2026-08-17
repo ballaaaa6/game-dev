@@ -1,5 +1,17 @@
 # TODO
 
+## R4.0 Native/ISIL typed-IR feasibility pilot — closed (2026-08-18)
+
+- [x] Read the user-provided R4.0 feasibility pilot prompt and attached evidence pack; keep the advisory prototype separate from the canonical R1.5/R3 universe.
+- [x] Reverify the pinned source gate and canonical 641-type / 10,827-method universe without modifying the read-only C# roots or Twin.
+- [x] Reproduce the deterministic 200-method cohort: 120 `BASELINE_READABLE`, 60 `DEFER_CFG_UNPROVEN`, and 20 `DEFER_R4_NATIVE` methods.
+- [x] Build the bounded ARM64/ISIL typed IR, managed ABI mapping, metadata field/call resolution, constants, null/array/exception facts, CFG dominator/post-dominator/loop/switch facts, structured AST, provenance, and deterministic C# emitter.
+- [x] Verify all six required positive methods, carry and reject all five Google negative fixtures, and audit zero source writes.
+- [x] Attempt the 100-method hard cohort with 50 CFG and 50 native methods across both ownerships and required CFG-family representatives; verify 55 methods.
+- [x] Pass deterministic byte-identical replay, C# syntax sanity, source immutability, and final decision gates with `PASS_R4_0_NATIVE_IR_CSHARP_FEASIBILITY_PILOT_GO`.
+
+The bounded pilot is closed and full `R4_NATIVE_ISIL_SEMANTIC_LIFT` is authorized as the next boundary, but it was not started. Do not begin full-corpus R4, R5, V8/web, Unity, integrations, persistence, backend, or deployment work without the next explicitly directed phase.
+
 ## R3 whole-game CFG repair — closed (2026-08-18)
 
 - [x] Read the attached R3 prework evidence pack and treat advisory Google/Gemini counts as non-canonical.
@@ -10,7 +22,7 @@
 - [x] Add the Roslyn-only family-first transformer library and strict planner; authorize zero canaries because semantic and graph-equivalence proof is unavailable.
 - [x] Reproduce the profiler deterministically, retain a zero graph delta, publish the compact acceptance package, and close with `PASS_R3_WHOLE_GAME_CFG_REPAIR_CLOSED`.
 
-Next authorized work is `R4_NATIVE_ISIL_SEMANTIC_LIFT`; do not start R4, R5, V8/web, Unity, integrations, persistence, backend, or deployment work in this phase.
+The bounded R4.0 pilot is now closed above; full `R4_NATIVE_ISIL_SEMANTIC_LIFT` remains the next authorized boundary and has not started.
 
 ## R2 automated whole-corpus repair — closed (2026-08-18)
 

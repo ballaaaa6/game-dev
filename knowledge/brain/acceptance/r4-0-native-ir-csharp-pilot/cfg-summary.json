@@ -1,0 +1,21 @@
+{
+  "cfg_profile_rows_loaded": 2856,
+  "families_required": [
+    "SWITCH_OR_JUMP_TABLE_COLLAPSE",
+    "OTHER_CFG",
+    "DECOMPILER_TYPE_CFG_DAMAGE",
+    "LOCAL_GOTO_BRANCH_CFG",
+    "LOOP_CFG_COLLAPSE"
+  ],
+  "families_selected": [
+    "DECOMPILER_TYPE_CFG_DAMAGE",
+    "LOCAL_GOTO_BRANCH_CFG",
+    "LOOP_CFG_COLLAPSE",
+    "OTHER_CFG",
+    "SWITCH_OR_JUMP_TABLE_COLLAPSE"
+  ],
+  "owners": [
+    "GAME_FIRST_PARTY",
+    "KAIRO_ENGINE"
+  ]
+}

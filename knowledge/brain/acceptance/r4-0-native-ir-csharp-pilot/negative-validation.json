@@ -1,0 +1,109 @@
+{
+  "fixtures": [
+    {
+      "decision": "REJECTED_NEGATIVE_FIXTURE",
+      "declaring_type": "kairo.unity.system.KairoBase",
+      "failure_modes": [
+        "DECLARATION_RENAMED_BUT_OLD_IDENTIFIER_CONSUMER_REMAINS",
+        "DECLARING_TYPE_INFERRED_AS_LOCAL_TYPE_WITHOUT_PROOF"
+      ],
+      "generated_csharp": false,
+      "method_id": "r1-method_b7bb8c72de11a0cbde59ed2a14e57cd3",
+      "method_name": "GetColumnType",
+      "present_in_canonical_universe": true,
+      "r3_status": "DEFER_MECHANICAL_UNPROVEN",
+      "reason": "negative fixture is outside the proof-gated source-write scope",
+      "required_r3_gate": [
+        "changed identifier must bind at every former use",
+        "local type must be proven from ISIL/metadata/dataflow, never copied from declaring type"
+      ],
+      "source_write": false
+    },
+    {
+      "decision": "REJECTED_NEGATIVE_FIXTURE",
+      "declaring_type": "kairo.unity.system.KairoBase",
+      "failure_modes": [
+        "DECLARATION_RENAMED_BUT_OLD_IDENTIFIER_CONSUMER_REMAINS",
+        "DECLARING_TYPE_INFERRED_AS_LOCAL_TYPE_WITHOUT_PROOF"
+      ],
+      "generated_csharp": false,
+      "method_id": "r1-method_4b9cafdd1bbb13bc43470eefa4761bd4",
+      "method_name": "ConnectMigrationCheck",
+      "present_in_canonical_universe": true,
+      "r3_status": "DEFER_MECHANICAL_UNPROVEN",
+      "reason": "negative fixture is outside the proof-gated source-write scope",
+      "required_r3_gate": [
+        "Roslyn symbol binding before/after",
+        "no orphan identifiers",
+        "type evidence required"
+      ],
+      "source_write": false
+    },
+    {
+      "decision": "REJECTED_NEGATIVE_FIXTURE",
+      "declaring_type": "kairo.unity.ui.TextLayout",
+      "failure_modes": [
+        "DECLARING_TYPE_INFERRED_AS_LOCAL_TYPE_WITHOUT_PROOF"
+      ],
+      "generated_csharp": false,
+      "method_id": "r1-method_f3a703cf8ca9f9ce50c89317bc1f0aee",
+      "method_name": "AddRuby",
+      "present_in_canonical_universe": true,
+      "r3_status": "DEFER_MECHANICAL_UNPROVEN",
+      "reason": "negative fixture is outside the proof-gated source-write scope",
+      "required_r3_gate": [
+        "ISIL/local-flow evidence for each restored local type",
+        "no syntax-only success criterion"
+      ],
+      "source_write": false
+    },
+    {
+      "decision": "REJECTED_NEGATIVE_FIXTURE",
+      "declaring_type": "kairo.unity.util.Profiler",
+      "failure_modes": [
+        "DECLARATION_RENAMED_BUT_OLD_IDENTIFIER_CONSUMER_REMAINS",
+        "DECLARING_TYPE_INFERRED_AS_LOCAL_TYPE_WITHOUT_PROOF"
+      ],
+      "generated_csharp": false,
+      "method_id": "r1-method_6cdd92c75cfa6c8e898199ad1982bd01",
+      "method_name": "BeginSample",
+      "present_in_canonical_universe": true,
+      "r3_status": "DEFER_MECHANICAL_UNPROVEN",
+      "reason": "negative fixture is outside the proof-gated source-write scope",
+      "required_r3_gate": [
+        "semantic diagnostics on touched nodes must not worsen",
+        "identifier/dataflow equivalence proof"
+      ],
+      "source_write": false
+    },
+    {
+      "decision": "REJECTED_NEGATIVE_FIXTURE",
+      "declaring_type": "kairo.unity.util.ResourceLoader",
+      "failure_modes": [
+        "DECLARATION_RENAMED_BUT_OLD_IDENTIFIER_CONSUMER_REMAINS",
+        "UNPROVEN_INVARIANT_GENERIC_CAST_REMOVAL"
+      ],
+      "generated_csharp": false,
+      "method_id": "r1-method_f88f97832b8bd2cd6989bd50fd3be64a",
+      "method_name": "StartLoading",
+      "present_in_canonical_universe": true,
+      "r3_status": "DEFER_R4_NATIVE",
+      "reason": "negative fixture is outside the proof-gated source-write scope",
+      "required_r3_gate": [
+        "generic conversion must be proven by Roslyn type system",
+        "no cast-chain deletion by textual simplification",
+        "no orphan identifier"
+      ],
+      "source_write": false
+    }
+  ],
+  "summary": {
+    "all_rejected": true,
+    "canonical_status": "REJECT_ALL_SOURCE_CHANGES",
+    "carried": 5,
+    "rejected": 5,
+    "required": 5,
+    "schema_version": "r3-negative-repair-fixtures-v1",
+    "source_writes": 0
+  }
+}

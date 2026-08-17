@@ -1,0 +1,487 @@
+{
+  "results": [
+    {
+      "calls": {
+        "isil": [],
+        "native": [],
+        "virtual_or_interface": []
+      },
+      "catalog_native_start": "0x01C31A50",
+      "coverage": "VERIFIED",
+      "fields": [
+        {
+          "declaring_type": "kairo.unity.ui.IApplication",
+          "is_static": false,
+          "name": "visible_",
+          "offset": "0x21",
+          "provenance": [
+            "dump.cs:kairo.unity.ui.IApplication:0x21",
+            "isil:1"
+          ],
+          "type": "bool"
+        },
+        {
+          "declaring_type": "kairo.unity.ui.IApplication",
+          "is_static": false,
+          "name": "isFocus_",
+          "offset": "0x34",
+          "provenance": [
+            "dump.cs:kairo.unity.ui.IApplication:0x34",
+            "isil:4"
+          ],
+          "type": "bool"
+        }
+      ],
+      "generated_csharp": true,
+      "label": "kairo.unity.ui.IApplication.Focus",
+      "method_id": "r1-method_03debfd4c9bea0f55f6a82bc108bfff6",
+      "method_name": "Focus",
+      "native_start": "0x1C31A50",
+      "pattern": "FOCUS_VISIBLE_GUARD",
+      "proof": {
+        "isil_available": true,
+        "metadata_fields_resolved": true,
+        "native_start_matches_catalog": true,
+        "no_unproven_direct_call": true,
+        "reconciled_native_calls_by_isil": 0,
+        "source_oracle_support": true,
+        "status": "VERIFIED_PILOT",
+        "unresolved_direct_calls": []
+      },
+      "source_support": {
+        "missing_calls": [],
+        "missing_exceptions": [],
+        "missing_fields": [],
+        "oracle": "STRUCTURAL_SOURCE_MATCH",
+        "required_calls": [],
+        "required_exceptions": [],
+        "required_fields": [
+          "isFocus_",
+          "visible_"
+        ],
+        "shape_supported": true,
+        "source_body_sha256": "c45a413273c2e67f7c6ea181fa2a6b36720fbd78fab6a6ea153db7ef1403ced8",
+        "source_match_status": "EXACT_TYPE",
+        "source_path": "kairo.unity.ui/IApplication.cs",
+        "source_present": true,
+        "supported": true
+      },
+      "source_write": false,
+      "status": "VERIFIED_PILOT"
+    },
+    {
+      "calls": {
+        "isil": [
+          {
+            "call": "Canvas.IsScreenCursor",
+            "callee_method_id": "r1-method_cc098ad0906228cf92ff4e1e936ed08f",
+            "callee_type": "kairo.unity.ui.Canvas",
+            "isil_index": 15,
+            "kind": "isil_call",
+            "resolution": "METADATA_NAME_UNIQUE"
+          }
+        ],
+        "native": [],
+        "virtual_or_interface": []
+      },
+      "catalog_native_start": "0x01C03E10",
+      "coverage": "VERIFIED",
+      "fields": [
+        {
+          "declaring_type": "kairo.unity.ui.Canvas",
+          "is_static": false,
+          "name": "lastInputDevice_",
+          "offset": "0x10C",
+          "provenance": [
+            "dump.cs:kairo.unity.ui.Canvas:0x10C",
+            "isil:1"
+          ],
+          "type": "Canvas.InputDevices"
+        }
+      ],
+      "generated_csharp": true,
+      "label": "kairo.unity.ui.Canvas.IsPointingDevice",
+      "method_id": "r1-method_05d46802c862dacec1def062e79593d7",
+      "method_name": "IsPointingDevice",
+      "native_start": "0x1C03E10",
+      "pattern": "BITMASK_DEVICE_FALLBACK",
+      "proof": {
+        "isil_available": true,
+        "metadata_fields_resolved": true,
+        "native_start_matches_catalog": true,
+        "no_unproven_direct_call": true,
+        "reconciled_native_calls_by_isil": 0,
+        "source_oracle_support": true,
+        "status": "VERIFIED_PILOT",
+        "unresolved_direct_calls": []
+      },
+      "source_support": {
+        "missing_calls": [],
+        "missing_exceptions": [],
+        "missing_fields": [],
+        "oracle": "STRUCTURAL_SOURCE_MATCH",
+        "required_calls": [
+          "IsScreenCursor"
+        ],
+        "required_exceptions": [],
+        "required_fields": [
+          "lastInputDevice_"
+        ],
+        "shape_supported": true,
+        "source_body_sha256": "4cfcac54ddde433bfc47b1f93489dec703d1be62a616426c3d57fc36d0331061",
+        "source_match_status": "EXACT_TYPE",
+        "source_path": "kairo.unity.ui/Canvas.cs",
+        "source_present": true,
+        "supported": true
+      },
+      "source_write": false,
+      "status": "VERIFIED_PILOT"
+    },
+    {
+      "calls": {
+        "isil": [
+          {
+            "call": "SecureInt.Get",
+            "callee_method_id": "r1-method_e0341e9d3e2a2eaa618a1809c1613440",
+            "callee_type": "kairo.unity.util.SecureInt",
+            "isil_index": 8,
+            "kind": "isil_call",
+            "resolution": "METADATA_NAME_UNIQUE"
+          }
+        ],
+        "native": [
+          {
+            "address": "0x12AC280",
+            "kind": "direct",
+            "mnemonic": "BL",
+            "resolution": "managed_exception_helper_candidate"
+          }
+        ],
+        "virtual_or_interface": []
+      },
+      "catalog_native_start": "0x012AC268",
+      "coverage": "VERIFIED",
+      "fields": [
+        {
+          "declaring_type": "game.Player",
+          "is_static": false,
+          "name": "numCoins_",
+          "offset": "0x30",
+          "provenance": [
+            "dump.cs:game.Player:0x30",
+            "isil:8"
+          ],
+          "type": "SecureInt"
+        }
+      ],
+      "generated_csharp": true,
+      "label": "game.Player.GetNumGameCoins",
+      "method_id": "r1-method_064c5d76f5f868b96ea803f92e0a97bd",
+      "method_name": "GetNumGameCoins",
+      "native_start": "0x12AC268",
+      "pattern": "NULL_GUARD_METHOD_CALL",
+      "proof": {
+        "isil_available": true,
+        "metadata_fields_resolved": true,
+        "native_start_matches_catalog": true,
+        "no_unproven_direct_call": true,
+        "reconciled_native_calls_by_isil": 0,
+        "source_oracle_support": true,
+        "status": "VERIFIED_PILOT",
+        "unresolved_direct_calls": []
+      },
+      "source_support": {
+        "missing_calls": [],
+        "missing_exceptions": [],
+        "missing_fields": [],
+        "oracle": "STRUCTURAL_SOURCE_MATCH",
+        "required_calls": [
+          "Get"
+        ],
+        "required_exceptions": [],
+        "required_fields": [
+          "numCoins_"
+        ],
+        "shape_supported": true,
+        "source_body_sha256": "68f944dd718300626c20decfa17af7926838cc914effa875fd68c47676d9ab86",
+        "source_match_status": "EXACT_TYPE",
+        "source_path": "game/Player.cs",
+        "source_present": true,
+        "supported": true
+      },
+      "source_write": false,
+      "status": "VERIFIED_PILOT"
+    },
+    {
+      "calls": {
+        "isil": [
+          {
+            "call": "MyFormBase.GetTouchValue",
+            "candidate_count": 2,
+            "isil_index": 15,
+            "kind": "isil_call",
+            "resolution": "VIRTUAL_OR_INTERFACE_AMBIGUOUS"
+          }
+        ],
+        "native": [],
+        "virtual_or_interface": [
+          {
+            "call": "MyFormBase.GetTouchValue",
+            "candidate_count": 2,
+            "isil_index": 15,
+            "kind": "isil_call",
+            "resolution": "VIRTUAL_OR_INTERFACE_AMBIGUOUS"
+          }
+        ]
+      },
+      "catalog_native_start": "0x012298BC",
+      "coverage": "VERIFIED",
+      "fields": [
+        {
+          "declaring_type": "system.form.LineupForm",
+          "is_static": false,
+          "name": "select_",
+          "offset": "0xF4",
+          "provenance": [
+            "dump.cs:system.form.LineupForm:0xF4",
+            "isil:13"
+          ],
+          "type": "int"
+        }
+      ],
+      "generated_csharp": true,
+      "label": "system.form.LineupForm.GetTouchValue",
+      "method_id": "r1-method_064dd9931b89c5f45a50e09670a5ab0f",
+      "method_name": "GetTouchValue",
+      "native_start": "0x12298BC",
+      "pattern": "MASKED_TYPE_BASE_FALLBACK",
+      "proof": {
+        "isil_available": true,
+        "metadata_fields_resolved": true,
+        "native_start_matches_catalog": true,
+        "no_unproven_direct_call": true,
+        "reconciled_native_calls_by_isil": 0,
+        "source_oracle_support": true,
+        "status": "VERIFIED_PILOT",
+        "unresolved_direct_calls": []
+      },
+      "source_support": {
+        "missing_calls": [],
+        "missing_exceptions": [],
+        "missing_fields": [],
+        "oracle": "STRUCTURAL_SOURCE_MATCH",
+        "required_calls": [
+          "GetTouchValue"
+        ],
+        "required_exceptions": [],
+        "required_fields": [
+          "select_"
+        ],
+        "shape_supported": true,
+        "source_body_sha256": "8347c02a5f8b8d4c3ad648b391772f6a22bf8665afd6351f1837da69abbfb00b",
+        "source_match_status": "EXACT_TYPE",
+        "source_path": "system.form/LineupForm.cs",
+        "source_present": true,
+        "supported": true
+      },
+      "source_write": false,
+      "status": "VERIFIED_PILOT"
+    },
+    {
+      "calls": {
+        "isil": [],
+        "native": [
+          {
+            "address": "0x1CEE38C",
+            "kind": "direct",
+            "mnemonic": "BL",
+            "resolution": "managed_exception_helper_candidate"
+          }
+        ],
+        "virtual_or_interface": []
+      },
+      "catalog_native_start": "0x01CEE374",
+      "coverage": "VERIFIED",
+      "fields": [
+        {
+          "declaring_type": "kairo.unity.surface.MotionEvent",
+          "is_static": false,
+          "name": "pointerIds",
+          "offset": "0x18",
+          "provenance": [
+            "dump.cs:kairo.unity.surface.MotionEvent:0x18",
+            "isil:3"
+          ],
+          "type": "int[]"
+        }
+      ],
+      "generated_csharp": true,
+      "label": "kairo.unity.surface.MotionEvent.GetPointerCount",
+      "method_id": "r1-method_00f7bd6307d1e46eaaa27f35c9ce7d38",
+      "method_name": "GetPointerCount",
+      "native_start": "0x1CEE374",
+      "pattern": "ARRAY_LENGTH_NULL_GUARD",
+      "proof": {
+        "isil_available": true,
+        "metadata_fields_resolved": true,
+        "native_start_matches_catalog": true,
+        "no_unproven_direct_call": true,
+        "reconciled_native_calls_by_isil": 0,
+        "source_oracle_support": true,
+        "status": "VERIFIED_PILOT",
+        "unresolved_direct_calls": []
+      },
+      "source_support": {
+        "missing_calls": [],
+        "missing_exceptions": [],
+        "missing_fields": [],
+        "oracle": "STRUCTURAL_SOURCE_MATCH",
+        "required_calls": [],
+        "required_exceptions": [],
+        "required_fields": [
+          "pointerIds"
+        ],
+        "shape_supported": true,
+        "source_body_sha256": "ff1ae8f369f2bf194c1f7ae01cb2c1aca939befd450cbbfec97ab17b3f766298",
+        "source_match_status": "EXACT_TYPE",
+        "source_path": "kairo.unity.surface/MotionEvent.cs",
+        "source_present": true,
+        "supported": true
+      },
+      "source_write": false,
+      "status": "VERIFIED_PILOT"
+    },
+    {
+      "calls": {
+        "isil": [
+          {
+            "call": "TouchEffectManager.GetInstance",
+            "callee_method_id": "r1-method_8795cf1070c56dca191aa78fab7737bf",
+            "callee_type": "surface.TouchEffectManager",
+            "isil_index": 5,
+            "kind": "isil_call",
+            "resolution": "METADATA_NAME_UNIQUE"
+          },
+          {
+            "call": "TouchEffectManager.RemoveSurface",
+            "callee_method_id": "r1-method_bda26ab106d472b8e4b53cc94a5cbc76",
+            "callee_type": "surface.TouchEffectManager",
+            "isil_index": 10,
+            "kind": "isil_call",
+            "resolution": "METADATA_NAME_UNIQUE"
+          },
+          {
+            "call": "MyFormBase.StopBlur",
+            "callee_method_id": "r1-method_31b3ff567ffb33dc9172c78a04057290",
+            "callee_type": "form.MyFormBase",
+            "isil_index": 12,
+            "kind": "isil_call",
+            "resolution": "METADATA_NAME_UNIQUE"
+          }
+        ],
+        "native": [
+          {
+            "address": "0x1112770",
+            "candidate_count": 1,
+            "candidates": [
+              "surface.TouchEffectManager$$GetInstance"
+            ],
+            "kind": "direct",
+            "mnemonic": "BL",
+            "name": "surface.TouchEffectManager$$GetInstance",
+            "resolution": "SCRIPT_NATIVE_EXACT"
+          },
+          {
+            "address": "0x1112780",
+            "candidate_count": 1,
+            "candidates": [
+              "surface.TouchEffectManager$$RemoveSurface"
+            ],
+            "kind": "direct",
+            "mnemonic": "BL",
+            "name": "surface.TouchEffectManager$$RemoveSurface",
+            "resolution": "SCRIPT_NATIVE_EXACT"
+          },
+          {
+            "address": "0x1112788",
+            "candidate_count": 1,
+            "candidates": [
+              "form.MyFormBase$$StopBlur"
+            ],
+            "kind": "direct",
+            "mnemonic": "BL",
+            "name": "form.MyFormBase$$StopBlur",
+            "resolution": "SCRIPT_NATIVE_EXACT"
+          },
+          {
+            "address": "0x1112798",
+            "kind": "direct",
+            "mnemonic": "BL",
+            "resolution": "managed_exception_helper_candidate"
+          }
+        ],
+        "virtual_or_interface": []
+      },
+      "catalog_native_start": "0x01112764",
+      "coverage": "VERIFIED",
+      "fields": [
+        {
+          "declaring_type": "form.MyFormBase",
+          "is_static": false,
+          "name": "view_",
+          "offset": "0xA8",
+          "provenance": [
+            "dump.cs:form.MyFormBase:0xA8",
+            "isil:10"
+          ],
+          "type": "GameView"
+        }
+      ],
+      "generated_csharp": true,
+      "label": "form.MyFormBase.Finish",
+      "method_id": "r1-method_033cdd4a5173f6a22789f7b2a100ae0c",
+      "method_name": "Finish",
+      "native_start": "0x1112764",
+      "pattern": "INSTANCE_MANAGER_CLEANUP",
+      "proof": {
+        "isil_available": true,
+        "metadata_fields_resolved": true,
+        "native_start_matches_catalog": true,
+        "no_unproven_direct_call": true,
+        "reconciled_native_calls_by_isil": 0,
+        "source_oracle_support": true,
+        "status": "VERIFIED_PILOT",
+        "unresolved_direct_calls": []
+      },
+      "source_support": {
+        "missing_calls": [],
+        "missing_exceptions": [],
+        "missing_fields": [],
+        "oracle": "STRUCTURAL_SOURCE_MATCH",
+        "required_calls": [
+          "GetInstance",
+          "RemoveSurface",
+          "StopBlur"
+        ],
+        "required_exceptions": [],
+        "required_fields": [
+          "view_"
+        ],
+        "shape_supported": true,
+        "source_body_sha256": "c34aefa29eaa594144880c74b33faa917c738dc1db772383bc59b5e9096e4c3a",
+        "source_match_status": "EXACT_TYPE",
+        "source_path": "form/MyFormBase.cs",
+        "source_present": true,
+        "supported": true
+      },
+      "source_write": false,
+      "status": "VERIFIED_PILOT"
+    }
+  ],
+  "summary": {
+    "all_verified": true,
+    "required": 6,
+    "source_writes": 0,
+    "verified": 6
+  }
+}

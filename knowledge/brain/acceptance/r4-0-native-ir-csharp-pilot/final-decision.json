@@ -1,0 +1,22 @@
+{
+  "decision": "GO",
+  "dominant_blockers": [],
+  "full_r4_native_lift_authorized": true,
+  "gates": {
+    "deterministic_replay": true,
+    "five_negatives_rejected": true,
+    "generated_csharp_syntax_sanity": true,
+    "hard_attempted_100": true,
+    "hard_cfg_family_diverse": true,
+    "hard_ownership_diverse": true,
+    "hard_verified_50": true,
+    "reproduction_200": true,
+    "six_positives": true,
+    "source_gate": true,
+    "source_unchanged": true,
+    "zero_known_false_positive_source_writes": true
+  },
+  "go_token": "PASS_R4_0_NATIVE_IR_CSHARP_FEASIBILITY_PILOT_GO",
+  "no_go_token": null,
+  "scope_boundary": "bounded R4.0 pilot only; no full-corpus native lift started"
+}
