@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "canonical_prework_rerun_pass": true,
+    "canonical_universe_reconciles": true,
+    "graph_split_reconciles": true,
+    "no_native_lift": true,
+    "no_v8_or_unity_work": true,
+    "original_source_manifest_pass": true,
+    "provenance_complete": true,
+    "queue_status_universe_pass": true,
+    "reindex_pass": true,
+    "roslyn_toolchain_pass": true,
+    "source_identities_match": true,
+    "twin_batch_pass": true,
+    "verify_pass": true
+  },
+  "failed_checks": [],
+  "schema_version": "r2-validation-v1",
+  "status": "PASS"
+}

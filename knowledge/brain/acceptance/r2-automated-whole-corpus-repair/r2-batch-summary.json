@@ -1,0 +1,55 @@
+{
+  "batch_id": "r2-type-canary-001",
+  "checks": {
+    "canonical_queue_coverage": true,
+    "eligible_methods_repaired": true,
+    "original_source_unmodified": true,
+    "provenance_complete": true,
+    "twin_files_changed_only_in_batch": true
+  },
+  "files": [
+    {
+      "after_bytes": 102011,
+      "after_sha256": "08ef1bc82e71c1bebb5083df3f8685a0137201a6137c287d37cb73e5884c7bfa",
+      "before_bytes": 101969,
+      "before_sha256": "cb01231c918d2801d618ad4729234a846ad2b3e27434b4e1044ebd1e39de9bb2",
+      "method_ids": [
+        "r1-method_6bd9ad6816c4323fc9e74083d81b9370"
+      ],
+      "relative_path": "kairo.unity.graphics/MeshManager.cs",
+      "syntax_diagnostics_after": 0,
+      "syntax_diagnostics_before": 0
+    },
+    {
+      "after_bytes": 10653,
+      "after_sha256": "2e2e775106200279dc71a960844acb837c3b2305f6476def0003e4bef51f3314",
+      "before_bytes": 10653,
+      "before_sha256": "d1f113741731383808ffa42ca0ca7a81384c2b5bbc8a2ed5a35635bdf3f59af5",
+      "method_ids": [
+        "r1-method_f6fb3df38fc608c5f330e6853b659c84"
+      ],
+      "relative_path": "kairo.unity.ui/Bundle.cs",
+      "syntax_diagnostics_after": 0,
+      "syntax_diagnostics_before": 0
+    },
+    {
+      "after_bytes": 185504,
+      "after_sha256": "2833a725714345da451974176ac317d0c56d2dcb0e9f6d280ce436eb06d3474f",
+      "before_bytes": 185506,
+      "before_sha256": "f26cf722fe7958d99853c414ca00eb88e93af99063f8fcde313b6b9d90fb1c19",
+      "method_ids": [
+        "r1-method_adcf7aa3a2c179e6159d4782ecc8a7d3",
+        "r1-method_f8baf84ccc832935bf38b3ecd68579e0"
+      ],
+      "relative_path": "kairo.unity.util/FieldInitializer.cs",
+      "syntax_diagnostics_after": 0,
+      "syntax_diagnostics_before": 0
+    }
+  ],
+  "method_status_count": 10827,
+  "planned_repair_eligible": 4,
+  "provenance_count": 4,
+  "repaired_count": 4,
+  "schema_version": "r2-batch-summary-compact-v1",
+  "status": "PASS"
+}

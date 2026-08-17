@@ -1,0 +1,20 @@
+{
+  "host": {
+    "dotnet_host": "C:\\Program Files\\dotnet\\dotnet.exe",
+    "dotnet_sdk_rows": [],
+    "powershell": "C:\\Users\\WINDOW XI\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell",
+    "powershell_edition": "Core",
+    "powershell_version": "7.6.4"
+  },
+  "network_package_install": false,
+  "regex_primary_mutation": false,
+  "roslyn": {
+    "assembly_version": "5.0.0.0",
+    "emitted_dynamic_assembly": true,
+    "microsoft_codeanalysis": "C:\\Users\\WINDOW XI\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\Microsoft.CodeAnalysis.dll",
+    "microsoft_codeanalysis_csharp": "C:\\Users\\WINDOW XI\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\Microsoft.CodeAnalysis.CSharp.dll",
+    "offline_roslyn_compile": true
+  },
+  "schema_version": "r2-toolchain-v1",
+  "status": "PASS"
+}

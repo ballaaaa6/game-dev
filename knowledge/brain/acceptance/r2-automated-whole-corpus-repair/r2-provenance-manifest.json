@@ -1,0 +1,125 @@
+{
+  "heavy_local_provenance": "D:\\antigravity\\test open ai\\artifacts\\r2-reference-twin\\batches\\r2-type-canary-001\\provenance.jsonl",
+  "record_count": 4,
+  "records": [
+    {
+      "after_body_sha256": "563d4dd02c28e5ae4515adb3f8f9627689fc5389d514457977d0a46941c4d879",
+      "after_file_sha256": "08ef1bc82e71c1bebb5083df3f8685a0137201a6137c287d37cb73e5884c7bfa",
+      "assembly": "KairoLibrary",
+      "batch_id": "r2-type-canary-001",
+      "before_body_sha256": "c503fb19c57c21f44466bd54567b4676b71de4d523ad5155d4c88b1c360c3b77",
+      "before_file_sha256": "cb01231c918d2801d618ad4729234a846ad2b3e27434b4e1044ebd1e39de9bb2",
+      "declaring_type": "kairo.unity.graphics.MeshManager",
+      "evidence_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/kairo.unity.graphics/MeshManager.cs",
+        "C:/Users/WINDOW XI/AppData/Local/Temp/r0-cpp2il-audit-20260817/rerun-current/isil/IsilDump/KairoLibrary/kairo/unity/graphics/MeshManager.txt",
+        "DummyDll/KairoLibrary.dll#0x060010C9"
+      ],
+      "metadata_token": "0x060010C9",
+      "method_id": "r1-method_6bd9ad6816c4323fc9e74083d81b9370",
+      "normalized_signature": "System.Void(kairo.unity.ui.Graphics,kairo.unity.graphics.Offscreen,System.Boolean)",
+      "repair_pass": "R2.2_TYPE_REPAIR",
+      "rule": "RESTORE_MESH_MANAGER_CONTAINER_GENERIC_ARGUMENTS",
+      "rva": 8294,
+      "source_file": "kairo.unity.graphics/MeshManager.cs",
+      "source_match_proof": "source_match_status=EXACT_TYPE;candidate_count=1;full_type=kairo.unity.graphics.MeshManager;method=.ctor;generic_arity=0;parameter_count=3;canonical_line_span=94-134;roslyn_line_span=94-134;before_body_sha256=c503fb19c57c21f44466bd54567b4676b71de4d523ad5155d4c88b1c360c3b77",
+      "status": "REPAIRED_CSHARP",
+      "syntax_nodes_changed": [
+        "GenericName@3312:26 Dictionary<object, object> -> Dictionary<Material, MeshBuilder>",
+        "GenericName@3356:26 Dictionary<object, object> -> Dictionary<Material, MeshBuilder>",
+        "GenericName@3459:34 List<KeyValuePair<object, object>> -> List<KeyValuePair<Material, MeshBuilder>>",
+        "GenericName@3505:34 List<KeyValuePair<object, object>> -> List<KeyValuePair<Material, MeshBuilder>>",
+        "GenericName@3645:12 List<object> -> List<LayerMesh>",
+        "GenericName@3670:12 List<object> -> List<LayerMesh>",
+        "GenericName@3833:12 List<object> -> List<MeshRecord>",
+        "GenericName@3858:12 List<object> -> List<MeshRecord>"
+      ],
+      "validation_result": "PASS_SYNTAX_DIAGNOSTICS_NONWORSENING_AND_DETERMINISTIC_REPLAY"
+    },
+    {
+      "after_body_sha256": "e03608213b272b025f5b5e5c3a77d21bac940827718c724d99791c35af49f739",
+      "after_file_sha256": "2e2e775106200279dc71a960844acb837c3b2305f6476def0003e4bef51f3314",
+      "assembly": "KairoLibrary",
+      "batch_id": "r2-type-canary-001",
+      "before_body_sha256": "02da230247054058c75d65e83f2c918ef9a4acd340ba1607bb91a0a2eb95120d",
+      "before_file_sha256": "d1f113741731383808ffa42ca0ca7a81384c2b5bbc8a2ed5a35635bdf3f59af5",
+      "declaring_type": "kairo.unity.ui.Bundle",
+      "evidence_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/kairo.unity.ui/Bundle.cs",
+        "C:/Users/WINDOW XI/AppData/Local/Temp/r0-cpp2il-audit-20260817/rerun-current/isil/IsilDump/KairoLibrary/kairo/unity/ui/Bundle.txt",
+        "DummyDll/KairoLibrary.dll#0x06001911"
+      ],
+      "metadata_token": "0x06001911",
+      "method_id": "r1-method_f6fb3df38fc608c5f330e6853b659c84",
+      "normalized_signature": "System.Void(System.String)",
+      "repair_pass": "R2.2_TYPE_REPAIR",
+      "rule": "RESTORE_BUNDLE_DICTIONARY_GENERIC_ARGUMENTS",
+      "rva": 8294,
+      "source_file": "kairo.unity.ui/Bundle.cs",
+      "source_match_proof": "source_match_status=EXACT_TYPE;candidate_count=1;full_type=kairo.unity.ui.Bundle;method=.ctor;generic_arity=0;parameter_count=1;canonical_line_span=32-55;roslyn_line_span=32-55;before_body_sha256=02da230247054058c75d65e83f2c918ef9a4acd340ba1607bb91a0a2eb95120d",
+      "status": "REPAIRED_CSHARP",
+      "syntax_nodes_changed": [
+        "GenericName@1042:26 Dictionary<object, object> -> Dictionary<string, string>",
+        "GenericName@1144:26 Dictionary<object, object> -> Dictionary<string, string>",
+        "GenericName@1372:26 Dictionary<object, object> -> Dictionary<string, string>"
+      ],
+      "validation_result": "PASS_SYNTAX_DIAGNOSTICS_NONWORSENING_AND_DETERMINISTIC_REPLAY"
+    },
+    {
+      "after_body_sha256": "91648b0d8aac0740893c93ddb155e66f645ef50c7916028132efdf7796ba8ccd",
+      "after_file_sha256": "2833a725714345da451974176ac317d0c56d2dcb0e9f6d280ce436eb06d3474f",
+      "assembly": "KairoLibrary",
+      "batch_id": "r2-type-canary-001",
+      "before_body_sha256": "174087aeaabbd5a7cbda250804785f1c078d8990be99f122691a14236d08cd20",
+      "before_file_sha256": "f26cf722fe7958d99853c414ca00eb88e93af99063f8fcde313b6b9d90fb1c19",
+      "declaring_type": "kairo.unity.util.FieldInitializer",
+      "evidence_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/kairo.unity.util/FieldInitializer.cs",
+        "C:/Users/WINDOW XI/AppData/Local/Temp/r0-cpp2il-audit-20260817/rerun-current/isil/IsilDump/KairoLibrary/kairo/unity/util/FieldInitializer.txt",
+        "DummyDll/KairoLibrary.dll#0x06000383"
+      ],
+      "metadata_token": "0x06000383",
+      "method_id": "r1-method_adcf7aa3a2c179e6159d4782ecc8a7d3",
+      "normalized_signature": "System.Void(System.Type)",
+      "repair_pass": "R2.2_TYPE_REPAIR",
+      "rule": "RESTORE_FIELD_INITIALIZER_DICTIONARY_VALUE_TYPE",
+      "rva": 8294,
+      "source_file": "kairo.unity.util/FieldInitializer.cs",
+      "source_match_proof": "source_match_status=EXACT_TYPE;candidate_count=1;full_type=kairo.unity.util.FieldInitializer;method=RestoreFields;generic_arity=0;parameter_count=1;canonical_line_span=634-649;roslyn_line_span=634-649;before_body_sha256=174087aeaabbd5a7cbda250804785f1c078d8990be99f122691a14236d08cd20",
+      "status": "REPAIRED_CSHARP",
+      "syntax_nodes_changed": [
+        "GenericName@22283:26 Dictionary<object, object> -> Dictionary<Type, Data[]>"
+      ],
+      "validation_result": "PASS_SYNTAX_DIAGNOSTICS_NONWORSENING_AND_DETERMINISTIC_REPLAY"
+    },
+    {
+      "after_body_sha256": "ca8e54591ab2d0d9ef378734ff6c26392569edf48959b08fdc7146fda86fbede",
+      "after_file_sha256": "2833a725714345da451974176ac317d0c56d2dcb0e9f6d280ce436eb06d3474f",
+      "assembly": "KairoLibrary",
+      "batch_id": "r2-type-canary-001",
+      "before_body_sha256": "ea6eed9be28ee654204daefbe2646866f8abeb270422581a4d06cd9a3ce92571",
+      "before_file_sha256": "f26cf722fe7958d99853c414ca00eb88e93af99063f8fcde313b6b9d90fb1c19",
+      "declaring_type": "kairo.unity.util.FieldInitializer",
+      "evidence_refs": [
+        "knowledge/sources/csharp_raw_20260813/1_Click_CSharp_Code/kairo.unity.util/FieldInitializer.cs",
+        "C:/Users/WINDOW XI/AppData/Local/Temp/r0-cpp2il-audit-20260817/rerun-current/isil/IsilDump/KairoLibrary/kairo/unity/util/FieldInitializer.txt",
+        "DummyDll/KairoLibrary.dll#0x06000382"
+      ],
+      "metadata_token": "0x06000382",
+      "method_id": "r1-method_f8baf84ccc832935bf38b3ecd68579e0",
+      "normalized_signature": "System.Void(System.Object)",
+      "repair_pass": "R2.2_TYPE_REPAIR",
+      "rule": "RESTORE_FIELD_INITIALIZER_DICTIONARY_VALUE_TYPE",
+      "rva": 8294,
+      "source_file": "kairo.unity.util/FieldInitializer.cs",
+      "source_match_proof": "source_match_status=EXACT_TYPE;candidate_count=1;full_type=kairo.unity.util.FieldInitializer;method=RestoreFields;generic_arity=0;parameter_count=1;canonical_line_span=613-632;roslyn_line_span=613-632;before_body_sha256=ea6eed9be28ee654204daefbe2646866f8abeb270422581a4d06cd9a3ce92571",
+      "status": "REPAIRED_CSHARP",
+      "syntax_nodes_changed": [
+        "GenericName@21656:26 Dictionary<object, object> -> Dictionary<object, Data[]>"
+      ],
+      "validation_result": "PASS_SYNTAX_DIAGNOSTICS_NONWORSENING_AND_DETERMINISTIC_REPLAY"
+    }
+  ],
+  "schema_version": "r2-provenance-manifest-v1",
+  "status": "PASS"
+}

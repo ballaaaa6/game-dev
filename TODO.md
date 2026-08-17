@@ -1,5 +1,18 @@
 # TODO
 
+## R2 automated whole-corpus repair — closed (2026-08-18)
+
+- [x] Read `R2_PREWORK_EVIDENCE_PACK.zip` and retain its queue/source profiles as advisory prework only.
+- [x] Rerun the tracked canonical profiler against `artifacts/r1-5-metadata-reconciliation/`: 10,827 methods/queue rows and 8 `SAFE_CANARY` plus 421 `REVIEW_WAVE_2` type candidates.
+- [x] Reverify the four pinned source identities and the 5,568-file / 5,504-C# / 55,358,557-byte source gate.
+- [x] Validate the bundled offline Roslyn 5.0.0.0 host through syntax parsing and dynamic compilation/emit without network package installation.
+- [x] Build the Roslyn-backed deterministic repair factory, strict overload-safe identity gate, and ignored 442-file Reference Twin.
+- [x] Apply and verify batch `r2-type-canary-001`: 4 exact syntax-only repairs, 4 complete provenance records, deterministic replay, non-worsening diagnostics, and unchanged original sources.
+- [x] Reindex the Twin conservatively, reconcile the R1.5.1 call/field split with zero graph delta, and emit the complete 10,827-row R2 status universe.
+- [x] Publish the compact acceptance package under `knowledge/brain/acceptance/r2-automated-whole-corpus-repair/` and close with `PASS_R2_AUTOMATED_WHOLE_CORPUS_REPAIR_CLOSED`.
+
+Next authorized work is `R3_WHOLE_GAME_CFG_REPAIR`; do not start R3, R4, R5, V8, Unity, or backend work in this phase.
+
 ## R1.5 metadata identity reconciliation and repair-universe correction — closed (2026-08-17)
 
 - [x] Read and unpack `R1_5_METADATA_RECONCILIATION_EVIDENCE_PACK.zip`; verify the pinned project source identities and retain only raw alternate dump/script/DummyDll evidence as cross-check inputs.

@@ -1,20 +1,35 @@
 # Project State
 
-## Current Status — R1.5 metadata reconciliation complete (2026-08-17)
+## Current Status — R2 automated whole-corpus repair closed (2026-08-18)
+
+## R2 automated whole-corpus repair — complete
+
+- `status`: `PASS_R2_AUTOMATED_WHOLE_CORPUS_REPAIR_CLOSED`.
+- The canonical prework profiler was rerun from the tracked `tools/social-dev/r2_prework_probe.py` against `artifacts/r1-5-metadata-reconciliation/`: 10,827 methods and queue rows; 429 type-repair candidates split into 8 `SAFE_CANARY` and 421 `REVIEW_WAVE_2`.
+- The pinned APK, C# archive, `libil2cpp.so`, and `global-metadata.dat` identities match. The source gate remains 5,568 files, 5,504 C# files, and 55,358,557 C# bytes.
+- The installed machine has no SDK rows, but the local bundled .NET 10 PowerShell host exposes Roslyn 5.0.0.0. Offline parse and dynamic compilation/emit passed; no network packages were installed and regex was not used for mutation.
+- The separate ignored Reference Twin is under `artifacts/r2-reference-twin/`; 442 target-closure files were mirrored without modifying the original C# source roots.
+- The strict Roslyn identity gate produced 4 exact syntax-only repairs: two `FieldInitializer.RestoreFields` overloads, `Bundle` construction, and the `MeshManager` constructor. All 4 were applied in batch `r2-type-canary-001` with complete provenance and deterministic replay.
+- Final R2 status coverage is exactly 10,827/10,827: 4 `REPAIRED_CSHARP`, 2,327 `BASELINE_READABLE`, 2,708 `DEFER_R3_CFG`, 2,674 `DEFER_R4_NATIVE`, 442 `DEFER_R2_UNPROVEN_MECHANICAL`, 38 `SOURCE_LIMITED`, and 2,634 `BLOCKED_IDENTITY`.
+- Static/exporter, decompiler-noise, CFG, and native body repairs were not guessed. The conservative Twin reindex reconciles the accepted R1.5.1 graph split with zero delta. Native lifting, V8/Unity, runtime, and original-source mutation remain untouched.
+- Compact acceptance evidence is under `knowledge/brain/acceptance/r2-automated-whole-corpus-repair/`. The next authorized boundary is `R3_WHOLE_GAME_CFG_REPAIR`; stop here.
+
+## Accepted baseline — R1.5 metadata reconciliation complete (2026-08-17)
 
 ## Git-visible current gate
 
-- `current_phase`: `R1_5_METADATA_RECONCILIATION`
-- `status`: `PASS_R1_5_METADATA_IDENTITY_RECONCILIATION_AND_REPAIR_UNIVERSE_CORRECTION_CLOSED`
+- `current_phase`: `R2_AUTOMATED_WHOLE_CORPUS_REPAIR`
+- `status`: `PASS_R2_AUTOMATED_WHOLE_CORPUS_REPAIR_CLOSED`
 - `R1.5`: `PASS`
 - `R1`: `PASS — superseded by corrected R1.5 metadata identities`
 - `V8`: `PASS (prior completed phase)`
 - `live_room0`: `true`
 - `autonomous_no_task_living`: `true`
 - `required_visual_fallback_count`: `0`
-- `next_authorized_phase`: `R2_AUTOMATED_WHOLE_CORPUS_REPAIR`
+- `next_authorized_phase`: `R3_WHOLE_GAME_CFG_REPAIR`
 - `next_phase_started`: `false`
 - `R1.5.1`: `PASS_R1_5_1_STATE_AND_CLOSURE_SYNC`
+- `R2`: `PASS_R2_AUTOMATED_WHOLE_CORPUS_REPAIR_CLOSED`
 
 ## R1.5 metadata identity reconciliation and repair-universe correction — complete (2026-08-17)
 

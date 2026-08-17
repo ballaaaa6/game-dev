@@ -1,0 +1,52 @@
+{
+  "checks": {
+    "changed_nodes_are_type_syntax_only": true,
+    "graph_split_reconciles": true,
+    "no_guessed_graph_edges": true,
+    "source_gate": true,
+    "twin_source_reindexed": true,
+    "twin_target_files_present": true
+  },
+  "graph_after": {
+    "canonical_call_split.AMBIGUOUS": 5306,
+    "canonical_call_split.OWNED_UNRESOLVED": 104306,
+    "canonical_call_split.RESOLVED_EXTERNAL": 8668,
+    "canonical_call_split.RESOLVED_OWNED": 13512,
+    "canonical_call_split.SOURCE_LIMITED": 0,
+    "canonical_field_split.AMBIGUOUS": 8549,
+    "canonical_field_split.OWNED_UNRESOLVED": 18246,
+    "canonical_field_split.RESOLVED_EXTERNAL": 1978,
+    "canonical_field_split.RESOLVED_OWNED": 4151,
+    "canonical_field_split.SOURCE_LIMITED": 0
+  },
+  "graph_before": {
+    "canonical_call_split.AMBIGUOUS": 5306,
+    "canonical_call_split.OWNED_UNRESOLVED": 104306,
+    "canonical_call_split.RESOLVED_EXTERNAL": 8668,
+    "canonical_call_split.RESOLVED_OWNED": 13512,
+    "canonical_call_split.SOURCE_LIMITED": 0,
+    "canonical_field_split.AMBIGUOUS": 8549,
+    "canonical_field_split.OWNED_UNRESOLVED": 18246,
+    "canonical_field_split.RESOLVED_EXTERNAL": 1978,
+    "canonical_field_split.RESOLVED_OWNED": 4151,
+    "canonical_field_split.SOURCE_LIMITED": 0
+  },
+  "graph_delta": {
+    "canonical_call_split.AMBIGUOUS": 0,
+    "canonical_call_split.OWNED_UNRESOLVED": 0,
+    "canonical_call_split.RESOLVED_EXTERNAL": 0,
+    "canonical_call_split.RESOLVED_OWNED": 0,
+    "canonical_call_split.SOURCE_LIMITED": 0,
+    "canonical_field_split.AMBIGUOUS": 0,
+    "canonical_field_split.OWNED_UNRESOLVED": 0,
+    "canonical_field_split.RESOLVED_EXTERNAL": 0,
+    "canonical_field_split.RESOLVED_OWNED": 0,
+    "canonical_field_split.SOURCE_LIMITED": 0
+  },
+  "interpretation": "R2 changes are GenericName syntax-only repairs; the call/field target graph is conservatively reindexed and remains identical to the accepted R1.5.1 split. No guessed edge assignments are emitted.",
+  "parsed_method_count": 9929,
+  "pre_existing_parse_error_count": 20,
+  "schema_version": "r2-graph-delta-v1",
+  "status": "PASS",
+  "target_source_file_count": 442
+}

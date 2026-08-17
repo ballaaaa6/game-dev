@@ -1,0 +1,15 @@
+{
+  "canonical_methods": 10827,
+  "canonical_queue": 10827,
+  "canonical_types": 641,
+  "decision": "PASS_R2_AUTOMATED_WHOLE_CORPUS_REPAIR_CLOSED",
+  "files_changed_in_twin": 3,
+  "methods_changed": 4,
+  "native_lifting_started": false,
+  "next_recommended_phase": "R3_WHOLE_GAME_CFG_REPAIR",
+  "original_source_files_changed": false,
+  "schema_version": "r2-final-decision-v1",
+  "source_identity": "MATCH",
+  "stop_boundary": "R2",
+  "v8_or_unity_changed": false
+}

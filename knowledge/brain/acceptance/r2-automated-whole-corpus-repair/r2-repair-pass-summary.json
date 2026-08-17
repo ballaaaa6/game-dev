@@ -1,0 +1,44 @@
+{
+  "auto_type": {
+    "attempted": 429,
+    "blocked_identity": 10,
+    "deferred_unproven": 415,
+    "prework_safe_canary": 8,
+    "repair_eligible": 4,
+    "repaired": 4,
+    "safe_canary_status_counts": {
+      "DEFER_R2_UNPROVEN_MECHANICAL": 4,
+      "REPAIR_ELIGIBLE": 4
+    }
+  },
+  "baseline_and_boundary_lanes": {
+    "source_limited": 38,
+    "verify_only_baseline_readable": 2327,
+    "verify_only_blocked_identity": 150
+  },
+  "cfg_micro_repairs": {
+    "attempted": 2856,
+    "blocked_identity": 148,
+    "deferred_to_r3": 2708,
+    "repaired": 0
+  },
+  "native_isil": {
+    "attempted": 4997,
+    "blocked_identity": 2323,
+    "deferred_to_r4": 2674,
+    "repaired": 0
+  },
+  "noise": {
+    "markers_preserved": true,
+    "markers_removed": 0,
+    "markers_rewritten": 0
+  },
+  "schema_version": "r2-repair-pass-summary-v1",
+  "static_exporter": {
+    "attempted": 27,
+    "blocked_identity": 0,
+    "deferred_unproven": 27,
+    "exact_payload_repairs": 0,
+    "repaired": 0
+  }
+}

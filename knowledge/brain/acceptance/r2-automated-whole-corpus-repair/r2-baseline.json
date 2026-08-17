@@ -1,0 +1,51 @@
+{
+  "canonical_method_count": 10827,
+  "canonical_queue_count": 10827,
+  "canonical_type_count": 641,
+  "isil_available": 10772,
+  "ownership": {
+    "GAME_FIRST_PARTY": 4547,
+    "KAIRO_ENGINE": 6280
+  },
+  "prework_rerun": {
+    "cfg_counts": {
+      "all_cfg": 2856,
+      "exact_source": 2856,
+      "heuristic_medium_le_40_cf_le_6_exact": 1019,
+      "heuristic_small_le_20_cf_le_3_exact": 641,
+      "tiny_body_le_10_exact": 390
+    },
+    "method_count": 10827,
+    "queue_count": 10827,
+    "schema_version": "r2-prework-profile-v1",
+    "type_tiers": {
+      "REVIEW_WAVE_2": 421,
+      "SAFE_CANARY": 8
+    }
+  },
+  "quality": {
+    "CFG_REPAIR": 2856,
+    "CLEAN": 2477,
+    "NATIVE_LIFT_REQUIRED": 4997,
+    "SOURCE_LIMITED": 41,
+    "STATIC_DATA_REPAIR": 27,
+    "TYPE_REPAIR": 429
+  },
+  "repair_disposition": {
+    "AUTO_STATIC_DATA_REPAIR": 27,
+    "AUTO_TYPE_REPAIR": 429,
+    "CFG_REPAIR": 2856,
+    "ISIL_ASSISTED_REPAIR": 4997,
+    "SOURCE_LIMITED": 41,
+    "VERIFY_ONLY": 2477
+  },
+  "schema_version": "r2-baseline-v1",
+  "source_body_present": 8309,
+  "source_match": {
+    "AMBIGUOUS_SOURCE_KEY": 174,
+    "EXACT_TYPE": 8619,
+    "MISSING": 2032,
+    "SHORT_TYPE": 2
+  },
+  "source_present": 8621
+}

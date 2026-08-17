@@ -1,8 +1,8 @@
 {
   "project": "Social Dev clean-room runtime",
-  "current_phase": "R1_5_METADATA_RECONCILIATION",
-  "status": "PASS_R1_5_METADATA_IDENTITY_RECONCILIATION_AND_REPAIR_UNIVERSE_CORRECTION_CLOSED",
-  "brain_revision": "r1-5-metadata-reconciliation-v1",
+  "current_phase": "R2_AUTOMATED_WHOLE_CORPUS_REPAIR",
+  "status": "PASS_R2_AUTOMATED_WHOLE_CORPUS_REPAIR_CLOSED",
+  "brain_revision": "r2-automated-whole-corpus-repair-v1",
   "current_branch": "main",
   "ready_for_v8": true,
   "v8": "PASS",
@@ -42,7 +42,7 @@
     "source_missing": 0,
     "heuristic_or_assumed": 0
   },
-  "latest_completed_phases": ["K2", "K2.5", "K3", "K4", "K4.1", "V8", "R1_WHOLE_CORPUS_INDEX", "R1_5_METADATA_RECONCILIATION"],
+  "latest_completed_phases": ["K2", "K2.5", "K3", "K4", "K4.1", "V8", "R1_WHOLE_CORPUS_INDEX", "R1_5_METADATA_RECONCILIATION", "R2_AUTOMATED_WHOLE_CORPUS_REPAIR"],
   "latest_validation": {
     "typecheck": "PASS",
     "vitest": "PASS — 49 files / 323 tests",
@@ -56,20 +56,21 @@
     "browser_smoke": "PASS",
     "v8": "PASS_V8_LIVE_ROOM0_VISUAL_RECONSTRUCTION",
     "r1": "PASS_R1_WHOLE_CORPUS_INDEX",
-    "r1_5": "PASS_R1_5_METADATA_IDENTITY_RECONCILIATION_AND_REPAIR_UNIVERSE_CORRECTION_CLOSED"
+    "r1_5": "PASS_R1_5_METADATA_IDENTITY_RECONCILIATION_AND_REPAIR_UNIVERSE_CORRECTION_CLOSED",
+    "r2": "PASS_R2_AUTOMATED_WHOLE_CORPUS_REPAIR_CLOSED"
   },
   "closure_sync": {
-    "phase": "R1_5_1_STATE_AND_CLOSURE_SYNC",
-    "status": "PASS_R1_5_1_STATE_AND_CLOSURE_SYNC",
-    "canonical_phase": "R1_5_METADATA_RECONCILIATION",
+    "phase": "R2_AUTOMATED_WHOLE_CORPUS_REPAIR",
+    "status": "PASS_R2_AUTOMATED_WHOLE_CORPUS_REPAIR_CLOSED",
+    "canonical_phase": "R2_AUTOMATED_WHOLE_CORPUS_REPAIR",
     "old_r1_status": "SUPERSEDED_BY_R1_5",
     "dependency_split_summary": "knowledge/brain/acceptance/r1-5-metadata-reconciliation/r1-5-1-dependency-split-summary.json",
-    "next_authorized_phase": "R2_AUTOMATED_WHOLE_CORPUS_REPAIR",
+    "next_authorized_phase": "R3_WHOLE_GAME_CFG_REPAIR",
     "next_phase_started": false
   },
-  "next_authorized_phase": "R2_AUTOMATED_WHOLE_CORPUS_REPAIR",
-  "ready_for_next_phase": false,
-  "latest_completed_audit": {
+  "next_authorized_phase": "R3_WHOLE_GAME_CFG_REPAIR",
+  "ready_for_next_phase": true,
+  "previous_completed_audit": {
     "name": "R1_5_METADATA_RECONCILIATION",
     "status": "COMPLETE",
     "decision": "PASS_R1_5_METADATA_IDENTITY_RECONCILIATION_AND_REPAIR_UNIVERSE_CORRECTION_CLOSED",
@@ -231,6 +232,29 @@
     "next_authorized_boundary": "R2_AUTOMATED_WHOLE_CORPUS_REPAIR",
     "next_phase_started": false,
     "supersedes": "R1_WHOLE_CORPUS_INDEX",
+    "stop": true
+  },
+  "latest_completed_audit": {
+    "name": "R2_AUTOMATED_WHOLE_CORPUS_REPAIR",
+    "status": "COMPLETE",
+    "decision": "PASS_R2_AUTOMATED_WHOLE_CORPUS_REPAIR_CLOSED",
+    "source_identity": "MATCH",
+    "roslyn_toolchain": "PASS_OFFLINE_BUNDLED_ROSLYN_5_0",
+    "target_type_count": 641,
+    "target_method_count": 10827,
+    "repair_queue_count": 10827,
+    "methods_changed": 4,
+    "files_changed_in_twin": 3,
+    "provenance_count": 4,
+    "queue_after_coverage": 10827,
+    "graph_delta": "ZERO",
+    "original_source_files_changed": false,
+    "native_lifting_started": false,
+    "v8_or_unity_changed": false,
+    "accepted_package_root": "knowledge/brain/acceptance/r2-automated-whole-corpus-repair",
+    "local_artifact_root": "artifacts/r2-reference-twin",
+    "next_authorized_boundary": "R3_WHOLE_GAME_CFG_REPAIR",
+    "next_phase_started": false,
     "stop": true
   },
   "key_k4_1_artifacts": [

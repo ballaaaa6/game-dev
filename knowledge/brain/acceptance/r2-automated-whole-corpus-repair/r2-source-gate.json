@@ -1,0 +1,42 @@
+{
+  "original_source_read_only": true,
+  "pinned_inputs": {
+    "apk": {
+      "actual_sha256": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
+      "expected_sha256": "fa0e9e3a843732258fc05b2611a8e0f5be6f7e95f2141a53f31fb082322fe2bf",
+      "match": true,
+      "path": "D:\\antigravity\\test open ai\\sources\\raw\\Social_Dev_Story_v2.5.1.apk"
+    },
+    "global_metadata": {
+      "actual_sha256": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579",
+      "expected_sha256": "f65f3a00675f35cfa28fef53c37ed7a2dc01e143b6d59c6014a286fa84e4a579",
+      "match": true,
+      "path": "D:\\antigravity\\test open ai\\knowledge\\sources\\phase3a_apk_probe\\raw\\global-metadata.dat"
+    },
+    "libil2cpp": {
+      "actual_sha256": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a",
+      "expected_sha256": "364893401fcf7fc2380ae64291783edf7b95eecea4775041c3f4c8c081b4d54a",
+      "match": true,
+      "path": "D:\\antigravity\\test open ai\\knowledge\\sources\\phase3a_apk_probe\\raw\\libil2cpp.so"
+    },
+    "rar": {
+      "actual_sha256": "a50a442491e422c20699a9ca4266e794d215bff29248d3edd24c41f42a57f903",
+      "expected_sha256": "a50a442491e422c20699a9ca4266e794d215bff29248d3edd24c41f42a57f903",
+      "match": true,
+      "path": "D:\\antigravity\\test open ai\\sources\\raw\\1_Click_CSharp_Code.rar"
+    }
+  },
+  "schema_version": "r2-source-gate-v1",
+  "source_root": {
+    "csharp_bytes": 55358557,
+    "csharp_files": 5504,
+    "manifest_file_count": 5568,
+    "mismatches": [],
+    "zero_byte_csharp_files": [
+      "-PrivateImplementationDetails-.cs",
+      "kairo.unity.ui/Graphics.cs",
+      "kairo.unity.util/Language.cs"
+    ]
+  },
+  "status": "PASS"
+}

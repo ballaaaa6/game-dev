@@ -1,0 +1,17 @@
+{
+  "queue_after_coverage": 10827,
+  "queue_before": 10827,
+  "schema_version": "r2-queue-after-summary-v1",
+  "status": "PASS",
+  "status_counts": {
+    "BASELINE_READABLE": 2327,
+    "BLOCKED_IDENTITY": 2634,
+    "DEFER_R2_UNPROVEN_MECHANICAL": 442,
+    "DEFER_R3_CFG": 2708,
+    "DEFER_R4_NATIVE": 2674,
+    "REPAIRED_CSHARP": 4,
+    "SOURCE_LIMITED": 38
+  },
+  "status_jsonl_sha256": "656ee765801928be2a84c02d54d89ef680eb4a52c598c94c028081e35239ca02",
+  "unique_method_ids": 10827
+}
