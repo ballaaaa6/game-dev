@@ -1,0 +1,14 @@
+{
+  "canonical_method_count": 10827,
+  "canonical_type_count": 641,
+  "compile_errors": 0,
+  "exact_t1_linkage": true,
+  "next_phase": "T3_SOURCE_LIKE_UPLIFT",
+  "parse_errors": 0,
+  "phase": "T2_WHOLE_TWIN_COMPILE",
+  "readable_probe_nonblocking": true,
+  "schema_version": "t2-final-decision-v1",
+  "semantic_uplift_started": false,
+  "status": "PASS_T2_WHOLE_TWIN_COMPILE_FACTORY_CLOSED",
+  "unity_v8_runtime_untouched": true
+}

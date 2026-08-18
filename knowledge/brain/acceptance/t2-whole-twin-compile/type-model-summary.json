@@ -1,0 +1,51 @@
+{
+  "base_relationship_count": 641,
+  "canonical_field_count": 10251,
+  "canonical_type_count": 641,
+  "canonical_type_set_sha256": "4a6d3fa8da03d8d4bf52850faec2fe47b06f01da4cfae2c6752e3d63250d85f8",
+  "emitted_relationship_policy": "owned bases are emitted; external framework/interface obligations remain explicit in the canonical model and boundary reports",
+  "generated_field_count": 10251,
+  "generated_type_count": 641,
+  "generated_type_ids_unique": true,
+  "generated_type_set_sha256": "4a6d3fa8da03d8d4bf52850faec2fe47b06f01da4cfae2c6752e3d63250d85f8",
+  "interface_relationship_count": 94,
+  "kind_counts": {
+    "class": 539,
+    "enum": 44,
+    "interface": 12,
+    "struct": 46
+  },
+  "nested_type_count": 186,
+  "normalization_tests": {
+    "all_pass": true,
+    "schema_version": "t2-type-shell-normalization-v1",
+    "tests": [
+      {
+        "expected": "DROP_NON_INTERFACE_BASE",
+        "input": "__StaticArrayInitTypeSize=258",
+        "name": "interface_bogus_static_array_base_is_dropped",
+        "pass": true
+      },
+      {
+        "expected": "RESOLVE_GENERIC_DEFINITION",
+        "input": "java.util.Vector`1<System.Object>",
+        "name": "instantiated_generic_base_is_not_treated_as_missing",
+        "pass": true
+      },
+      {
+        "expected": 2,
+        "input": "kairo.unity.util.EnumArray`2<!0,System.Int32>",
+        "name": "generic_base_placeholders_preserve_arity",
+        "pass": true
+      },
+      {
+        "expected": "ArrayUtil+CompareMethod",
+        "input": "kairo.unity.util.ArrayUtil+CompareMethod`1",
+        "name": "nested_generic_type_preserves_parent_identity",
+        "pass": true
+      }
+    ]
+  },
+  "schema_version": "t2-type-model-summary-v1",
+  "status": "PASS"
+}

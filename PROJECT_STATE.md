@@ -1,19 +1,23 @@
 # Project State
 
-## Current Status — T1 full-body generation closed (2026-08-18)
+## Current Status — T2 Whole-Twin compile factory closed (2026-08-18)
 
-The canonical T1 full-body generation phase is closed with `PASS_T1_FULL_BODY_GENERATION_CLOSED`. It preserved the corrected 641-type / 10,827-method universe exactly once per method: 2,481 `EXISTING_READABLE`, 8,291 `GENERATED_LOW`, 50 `DECLARATION_ONLY`, and 5 `SOURCE_LIMITED_STUB` representations. All 988,046 canonical native operations were decoded from the pinned ELF and serialized losslessly with zero omissions; 10,772 native ranges were independently byte-verified, while the historical T1.0 scan result of 9,672 range-consistent and 1,100 range-rejected rows remains preserved as reference evidence.
+The canonical T2 phase is closed with `PASS_T2_WHOLE_TWIN_COMPILE_FACTORY_CLOSED`. It materialized all 641 owned type shells and all 10,827 canonical method identities, with exactly one generated entry per method and exact linkage to the T1 representation hash and segment descriptors. The baseline preserves 2,481 `EXISTING_READABLE`, 8,291 `GENERATED_LOW`, 50 `DECLARATION_ONLY`, and 5 `SOURCE_LIMITED_STUB` tiers; all 988,046 T1 operations remain accounted for with zero omissions.
 
-The full pass emitted 49 deterministic shards, 10,827 provenance rows, native/ISIL fact and operation artifacts, compilable C# sidecar projections, and a complete registry. Roslyn parse/compile passed for every shard and the 10,827-entry registry; native-byte canaries, Google negative regressions, identity coverage, source immutability, deterministic replay, and boundary checks all passed. The heavy replay trees remain local-only under `artifacts/t1-full-body-generation/`; compact acceptance evidence is under `knowledge/brain/acceptance/t1-full-body-generation/`. The native IR JSON is the authoritative lossless operation payload; C# sidecars carry deterministic segment references and compile as a projection/index.
+The difficult-signature 500-method canary and the full generated C# factory both parse and compile with zero Roslyn errors. The runtime registry contains 10,827 exact T1 entries, 48 boundary contracts are explicit, canary/full deterministic replays and assembly hashes pass, and the Google negative regression gates pass. The bounded readable reinjection probe attempted 200 bodies, with 44 direct compile successes and 156 diagnostic rejections; it is recorded as non-blocking, with source-like uplift reserved for T3. Compact acceptance evidence is under `knowledge/brain/acceptance/t2-whole-twin-compile/`; heavy generated trees remain local-only under `artifacts/t2-whole-twin-compile/`.
 
-No Twin, Unity, V8, runtime, integration, persistence, backend, deployment, or original source files were changed. The next authorized boundary is `T2_WHOLE_TWIN_COMPILE_FACTORY`; it has not started. Stop here.
+No original source, Unity, V8, runtime, integration, persistence, backend, deployment, or semantic-uplift work was started. The next authorized boundary is `T3_SOURCE_LIKE_UPLIFT`; it has not started.
 
 ## Git-visible current gate
 
-- `current_phase`: `T1_FULL_BODY_GENERATION`
-- `status`: `PASS_T1_FULL_BODY_GENERATION_CLOSED`
-- `next_authorized_phase`: `T2_WHOLE_TWIN_COMPILE_FACTORY`
+- `current_phase`: `T2_WHOLE_TWIN_COMPILE`
+- `status`: `PASS_T2_WHOLE_TWIN_COMPILE_FACTORY_CLOSED`
+- `next_authorized_phase`: `T3_SOURCE_LIKE_UPLIFT`
 - `next_phase_started`: `false`
+
+## Historical Status — T1 full-body generation closed (2026-08-18)
+
+The canonical T1 full-body generation phase closed with `PASS_T1_FULL_BODY_GENERATION_CLOSED`. It preserved the corrected 641-type / 10,827-method universe exactly once per method and emitted the lossless 988,046-operation T1 representation/provenance corpus used by T2. Its compact acceptance evidence remains under `knowledge/brain/acceptance/t1-full-body-generation/`, with heavy replay trees local-only under `artifacts/t1-full-body-generation/`.
 
 ## Historical Status — T1.0 full-body generation pivot pilot closed (2026-08-18)
 

@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "duplicate_identity_coverage_rejected": true,
+    "exact_method_id_to_t1_representation_linkage": true,
+    "ir_operation_stream_not_truncated": true,
+    "native_identity_and_fingerprints_preserved": true,
+    "no_high_or_medium_placeholder_claim": true,
+    "registry_compile_is_not_payload_only": true
+  },
+  "fixture_source": "T2_WHOLE_TWIN_COMPILE_PREWORK_PACK/regression/GOOGLE_T1_COMPILE_REGRESSIONS.md",
+  "placeholder_high_medium_promotion_count": 0,
+  "schema_version": "t2-negative-regression-validation-v1",
+  "status": "PASS",
+  "wrong_rva_or_native_identity_promotion_count": 0
+}

@@ -1,0 +1,53 @@
+{
+  "expected_representation_tiers": {
+    "DECLARATION_ONLY": 50,
+    "EXISTING_READABLE": 2481,
+    "GENERATED_LOW": 8291,
+    "SOURCE_LIMITED_STUB": 5
+  },
+  "field_count": 10251,
+  "method_count": 10827,
+  "method_ids_sha256": "55bbfb7717a40bdfc29d05b855830c93849517b707b3a09b5c603246d392506a",
+  "method_ids_unique": true,
+  "method_shape_counts": {
+    "array_signature_methods": 989,
+    "byref_parameter_methods": 57,
+    "constructors": 937,
+    "generic_methods": 59,
+    "generic_placeholder_methods": 137,
+    "high_arity_methods_ge_6": 459,
+    "max_parameter_count": 13,
+    "nested_type_signature_methods": 746,
+    "virtual": 1205,
+    "void_return_methods": 5203
+  },
+  "ownership": {
+    "methods": {
+      "GAME_FIRST_PARTY": 4547,
+      "KAIRO_ENGINE": 6280
+    },
+    "types": {
+      "GAME_FIRST_PARTY": 198,
+      "KAIRO_ENGINE": 443
+    }
+  },
+  "quality_classes": {
+    "CFG_REPAIR": 2856,
+    "CLEAN": 2477,
+    "NATIVE_LIFT_REQUIRED": 4997,
+    "SOURCE_LIMITED": 41,
+    "STATIC_DATA_REPAIR": 27,
+    "TYPE_REPAIR": 429
+  },
+  "representation_tiers": {
+    "DECLARATION_ONLY": 50,
+    "EXISTING_READABLE": 2481,
+    "GENERATED_LOW": 8291,
+    "SOURCE_LIMITED_STUB": 5
+  },
+  "schema_version": "t2-canonical-universe-v1",
+  "status": "PASS",
+  "type_count": 641,
+  "type_ids_sha256": "2c4cc0ae1d9980848b1bcb9f41865ce3ba4635d61ccb69ec977e401ffb93fde6",
+  "type_ids_unique": true
+}

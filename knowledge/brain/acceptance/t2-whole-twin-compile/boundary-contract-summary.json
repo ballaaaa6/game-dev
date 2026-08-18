@@ -1,0 +1,14 @@
+{
+  "boundary_contract_count": 48,
+  "boundary_contract_ids_sha256": "7c865f237d644bbd4f250ba05845d453aae4280f809af7e6ee1a7b62a85a2c71",
+  "boundary_source_sha256": "f4fe5c5839dae6846e0738a2483252c68bcb757c688c6e91a818bbb27b0625f7",
+  "kind_counts": {
+    "class": 28,
+    "enum": 10,
+    "interface": 3,
+    "struct": 7
+  },
+  "schema_version": "t2-boundary-contract-summary-v1",
+  "status": "PASS",
+  "synthetic_contract_count": 1
+}

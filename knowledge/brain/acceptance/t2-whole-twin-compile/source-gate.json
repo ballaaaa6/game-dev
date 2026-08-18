@@ -1,0 +1,11 @@
+{
+  "canonical_field_count": 10251,
+  "canonical_method_count": 10827,
+  "canonical_type_count": 641,
+  "immutable_source_required": true,
+  "schema_version": "t2-source-gate-v1",
+  "source_identity": true,
+  "source_unchanged_baseline": true,
+  "status": "PASS",
+  "t1_source_gate_status": "PASS"
+}

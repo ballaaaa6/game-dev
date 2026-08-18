@@ -1,0 +1,60 @@
+{
+  "canary_ids_sha256": "2951b8ba2a7e8c0db082250e690eaae2cb7fcf4be49f134655d15240ca1654c6",
+  "compile": {
+    "compile_error_count": 0,
+    "compile_pass": true,
+    "diagnostics_by_code": {},
+    "diagnostics_by_root_cause_family": {},
+    "output_assembly_sha256": "1e4460e3cf0b55d18e68123e2cc73e49a050dcadb6135ebef816edf12c1a206a",
+    "output_bytes": 5177344,
+    "parse_error_count": 0,
+    "parse_pass": true,
+    "schema_version": "t2-roslyn-compile-v1",
+    "source_count": 35
+  },
+  "coverage": {
+    "duplicate_method_ids": 0,
+    "exact_t1_linkage_count": 500,
+    "missing_method_ids": [],
+    "represented_method_count": 500,
+    "unique_method_ids": 500
+  },
+  "generation": {
+    "boundary_contract_count": 48,
+    "canary": true,
+    "canonical_method_count": 10827,
+    "canonical_type_count": 641,
+    "canonical_unselected_method_count": 10327,
+    "duplicate_method_ids": 0,
+    "exact_t1_linkage_count": 500,
+    "generated_boundary_shard_count": 1,
+    "generated_content_sha256": "132669dadde2d300c5f083e9889f3f2420848ca5ec1a104e303cf1be09bcd509",
+    "generated_method_count": 500,
+    "generated_runtime_source_count": 24,
+    "generated_source_shard_count": 10,
+    "generated_type_count": 641,
+    "missing_method_ids": [],
+    "representation_tiers": {
+      "DECLARATION_ONLY": 5,
+      "EXISTING_READABLE": 125,
+      "GENERATED_LOW": 369,
+      "SOURCE_LIMITED_STUB": 1
+    },
+    "schema_version": "t2-materialization-generation-v1",
+    "signature_repairs": 0,
+    "unique_generated_method_ids": 500
+  },
+  "replay": {
+    "assembly_hash_equal": true,
+    "assembly_sha256_first": "1e4460e3cf0b55d18e68123e2cc73e49a050dcadb6135ebef816edf12c1a206a",
+    "assembly_sha256_second": "1e4460e3cf0b55d18e68123e2cc73e49a050dcadb6135ebef816edf12c1a206a",
+    "compared_file_count": 44,
+    "ids_equal": true,
+    "mismatched_file_count": 0,
+    "mismatched_files": [],
+    "pass": true,
+    "same_file_set": true
+  },
+  "schema_version": "t2-canary-summary-v1",
+  "status": "PASS"
+}

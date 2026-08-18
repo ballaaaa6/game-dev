@@ -1,0 +1,23 @@
+{
+  "canonical_method_count": 10827,
+  "canonical_method_ids_sha256": "55bbfb7717a40bdfc29d05b855830c93849517b707b3a09b5c603246d392506a",
+  "duplicate_ids": 0,
+  "exact_hash_linkage_count": 10827,
+  "generated_method_count": 10827,
+  "generated_method_ids_sha256": "55bbfb7717a40bdfc29d05b855830c93849517b707b3a09b5c603246d392506a",
+  "linkage_mismatch_count": 0,
+  "mismatch_samples": [],
+  "missing_ids": [],
+  "native_identity_mismatch_count": 0,
+  "no_high_or_medium_semantic_claim": true,
+  "no_truncated_ir_payload": true,
+  "registry_entry_count": 10827,
+  "registry_tree_sha256": "4862472dd9ba068a6c6bef0c2f23f4bce5664bfc8e55b106875d1c8e61649157",
+  "schema_version": "t2-t1-linkage-summary-v1",
+  "status": "PASS",
+  "t1_omitted_operation_total": 0,
+  "t1_operation_total": 988046,
+  "t1_segment_operation_total": 988046,
+  "t2_operation_total": 988046,
+  "unique_ids": true
+}

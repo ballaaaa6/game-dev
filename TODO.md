@@ -1,6 +1,19 @@
 # TODO
 
-## T1 full-body generation — closed (2026-08-18)
+## T2 Whole-Twin compile factory — closed (2026-08-18)
+
+- [x] Read the referenced pasted T2 specification and `T2_WHOLE_TWIN_COMPILE_PREWORK_PACK.zip`; rerun the advisory prework against the canonical R1.5/T1 artifacts.
+- [x] Pass the canonical source/universe gate for 641 owned types, 10,827 methods, and 10,251 owned fields with the pinned read-only source identity.
+- [x] Build the isolated type-shell, boundary-contract, exact-signature trampoline, runtime registry, diagnostic, and deterministic-shard factory without editing source roots or runtime/Unity/V8 code.
+- [x] Pass the difficult-signature 500-method canary: 500 unique IDs, zero missing/duplicate IDs, zero parse/compile errors, and exact 500/500 T1 linkage.
+- [x] Materialize and compile the full 10,827-method Whole-Twin factory: 641 type shells, 48 boundary contracts, 10,827 registry entries, 50 declaration-only methods, 5 source-limited stubs, zero parse errors, and zero compile errors.
+- [x] Validate exact T1 hash/segment linkage, 988,046-operation conservation, zero omitted operations, no HIGH/MEDIUM semantic claim, canary/full replay determinism, and all Google negative regressions.
+- [x] Run the diagnostic 200-method readable reinjection probe: 44 direct compile successes, 156 rejected bodies, and record failures as non-blocking T3 source-like uplift evidence.
+- [x] Close with `PASS_T2_WHOLE_TWIN_COMPILE_FACTORY_CLOSED` and leave `T3_SOURCE_LIKE_UPLIFT` unopened.
+
+The T2 phase is closed. Compact acceptance evidence is under `knowledge/brain/acceptance/t2-whole-twin-compile/`; heavy generated projects and assemblies remain local-only under `artifacts/t2-whole-twin-compile/`. The next authorized boundary is `T3_SOURCE_LIKE_UPLIFT`; do not start it without explicit authorization.
+
+## Historical T1 full-body generation — closed (2026-08-18)
 
 - [x] Read the referenced pasted specification and advisory `T1_FULL_BODY_GENERATION_PREWORK_PACK.zip`; preserve the canonical R1.5/R3 universe, pinned hashes, and read-only source boundary.
 - [x] Verify the canonical 641-type / 10,827-method universe and emit exactly one representation plus provenance row for every method.
@@ -10,7 +23,7 @@
 - [x] Pass identity coverage, provenance, native range/byte canaries, Google negative regressions, deterministic replay, source immutability, and boundary checks.
 - [x] Close with `PASS_T1_FULL_BODY_GENERATION_CLOSED`.
 
-The full T1 phase is closed. Compact acceptance evidence is under `knowledge/brain/acceptance/t1-full-body-generation/`; heavy replay artifacts remain local-only under `artifacts/t1-full-body-generation/`. The next authorized boundary is `T2_WHOLE_TWIN_COMPILE_FACTORY`; it has not started. Stop here.
+The full T1 phase is closed. Compact acceptance evidence is under `knowledge/brain/acceptance/t1-full-body-generation/`; heavy replay artifacts remain local-only under `artifacts/t1-full-body-generation/`. It authorized the completed T2 Whole-Twin compile factory recorded above.
 
 ## Historical T1.0 full-body generation pivot pilot — closed (2026-08-18)
 

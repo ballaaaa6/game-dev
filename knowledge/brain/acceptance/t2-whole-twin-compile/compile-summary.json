@@ -1,0 +1,83 @@
+{
+  "canary": {
+    "compile_error_count": 0,
+    "compile_pass": true,
+    "diagnostics_by_code": {},
+    "diagnostics_by_root_cause_family": {},
+    "output_assembly_sha256": "1e4460e3cf0b55d18e68123e2cc73e49a050dcadb6135ebef816edf12c1a206a",
+    "output_bytes": 5177344,
+    "parse_error_count": 0,
+    "parse_pass": true,
+    "schema_version": "t2-roslyn-compile-v1",
+    "source_count": 35
+  },
+  "canary_replay": {
+    "compile_error_count": 0,
+    "compile_pass": true,
+    "diagnostics_by_code": {},
+    "diagnostics_by_root_cause_family": {},
+    "output_assembly_sha256": "1e4460e3cf0b55d18e68123e2cc73e49a050dcadb6135ebef816edf12c1a206a",
+    "output_bytes": 5177344,
+    "parse_error_count": 0,
+    "parse_pass": true,
+    "schema_version": "t2-roslyn-compile-v1",
+    "source_count": 35
+  },
+  "full_run_a": {
+    "compile_error_count": 0,
+    "compile_pass": true,
+    "diagnostics_by_code": {},
+    "diagnostics_by_root_cause_family": {},
+    "output_assembly_sha256": "20623e80ab179a71dc3746ace2d62b982eb3f960240afc52229f80d128b2a190",
+    "output_bytes": 8344576,
+    "parse_error_count": 0,
+    "parse_pass": true,
+    "schema_version": "t2-roslyn-compile-v1",
+    "source_count": 35
+  },
+  "full_run_b": {
+    "compile_error_count": 0,
+    "compile_pass": true,
+    "diagnostics_by_code": {},
+    "diagnostics_by_root_cause_family": {},
+    "output_assembly_sha256": "20623e80ab179a71dc3746ace2d62b982eb3f960240afc52229f80d128b2a190",
+    "output_bytes": 8344576,
+    "parse_error_count": 0,
+    "parse_pass": true,
+    "schema_version": "t2-roslyn-compile-v1",
+    "source_count": 35
+  },
+  "readable_probe": {
+    "compile_error_count": 726,
+    "compile_pass": false,
+    "diagnostics_by_code": {
+      "CS0019": 4,
+      "CS0030": 6,
+      "CS0103": 594,
+      "CS0117": 21,
+      "CS0118": 6,
+      "CS0214": 5,
+      "CS0234": 1,
+      "CS0246": 73,
+      "CS1061": 8,
+      "CS1501": 3,
+      "CS1729": 2,
+      "CS1739": 3
+    },
+    "diagnostics_by_root_cause_family": {
+      "BOUNDARY_TYPE": 73,
+      "CONSTRUCTOR_BASE": 2,
+      "FIELD_DECLARATION": 4,
+      "INHERITANCE": 1,
+      "RUNTIME_TRAMPOLINE_API": 32,
+      "TYPE_DECLARATION": 614
+    },
+    "output_assembly_sha256": null,
+    "output_bytes": 0,
+    "parse_error_count": 0,
+    "parse_pass": true,
+    "schema_version": "t2-roslyn-compile-v1",
+    "source_count": 35
+  },
+  "schema_version": "t2-compile-summary-v1"
+}

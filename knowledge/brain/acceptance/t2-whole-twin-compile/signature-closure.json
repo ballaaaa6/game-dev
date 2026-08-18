@@ -1,0 +1,40 @@
+{
+  "boundary_contract_count": 48,
+  "distinct_signature_type_atoms": 614,
+  "normalization_tests": [
+    {
+      "expected": "DROP_NON_INTERFACE_BASE",
+      "input": "__StaticArrayInitTypeSize=258",
+      "name": "interface_bogus_static_array_base_is_dropped",
+      "pass": true
+    },
+    {
+      "expected": "RESOLVE_GENERIC_DEFINITION",
+      "input": "java.util.Vector`1<System.Object>",
+      "name": "instantiated_generic_base_is_not_treated_as_missing",
+      "pass": true
+    },
+    {
+      "expected": 2,
+      "input": "kairo.unity.util.EnumArray`2<!0,System.Int32>",
+      "name": "generic_base_placeholders_preserve_arity",
+      "pass": true
+    },
+    {
+      "expected": "ArrayUtil+CompareMethod",
+      "input": "kairo.unity.util.ArrayUtil+CompareMethod`1",
+      "name": "nested_generic_type_preserves_parent_identity",
+      "pass": true
+    }
+  ],
+  "schema_version": "t2-signature-closure-v1",
+  "signature_atoms_by_ownership": {
+    "BOUNDARY_CONTRACT_SYNTHETIC": 1,
+    "DOTNET_FRAMEWORK": 74,
+    "GAME_FIRST_PARTY": 162,
+    "KAIRO_ENGINE": 330,
+    "THIRD_PARTY": 15,
+    "UNITY_BOUNDARY": 32
+  },
+  "status": "FAIL"
+}

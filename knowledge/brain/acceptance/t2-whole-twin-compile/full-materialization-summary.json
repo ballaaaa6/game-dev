@@ -1,0 +1,50 @@
+{
+  "assembly_bytes": 8344576,
+  "assembly_sha256": "20623e80ab179a71dc3746ace2d62b982eb3f960240afc52229f80d128b2a190",
+  "boundary_shards": 1,
+  "compile": {
+    "compile_error_count": 0,
+    "compile_pass": true,
+    "diagnostics_by_code": {},
+    "diagnostics_by_root_cause_family": {},
+    "output_assembly_sha256": "20623e80ab179a71dc3746ace2d62b982eb3f960240afc52229f80d128b2a190",
+    "output_bytes": 8344576,
+    "parse_error_count": 0,
+    "parse_pass": true,
+    "schema_version": "t2-roslyn-compile-v1",
+    "source_count": 35
+  },
+  "declaration_only_count": 50,
+  "generation": {
+    "boundary_contract_count": 48,
+    "canary": false,
+    "canonical_method_count": 10827,
+    "canonical_type_count": 641,
+    "canonical_unselected_method_count": 0,
+    "duplicate_method_ids": 0,
+    "exact_t1_linkage_count": 10827,
+    "generated_boundary_shard_count": 1,
+    "generated_content_sha256": "0c79a5f3527233654d3950e584ca882a7a9e065df321a3ba267c6657f61138a3",
+    "generated_method_count": 10827,
+    "generated_runtime_source_count": 24,
+    "generated_source_shard_count": 10,
+    "generated_type_count": 641,
+    "missing_method_ids": [],
+    "representation_tiers": {
+      "DECLARATION_ONLY": 50,
+      "EXISTING_READABLE": 2481,
+      "GENERATED_LOW": 8291,
+      "SOURCE_LIMITED_STUB": 5
+    },
+    "schema_version": "t2-materialization-generation-v1",
+    "signature_repairs": 7,
+    "unique_generated_method_ids": 10827
+  },
+  "registry_chunks": 22,
+  "runtime_source_files": 24,
+  "schema_version": "t2-full-materialization-summary-v1",
+  "semantic_uplift_started": false,
+  "source_limited_stub_count": 5,
+  "source_shards": 10,
+  "status": "PASS"
+}
