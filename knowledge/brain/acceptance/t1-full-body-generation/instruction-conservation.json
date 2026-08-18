@@ -1,0 +1,15 @@
+{
+  "all_segments_conserved": true,
+  "expected_operations": 988046,
+  "extra_operations": 0,
+  "native_rows": 10772,
+  "non_native_rows": 55,
+  "omitted_operations": 0,
+  "raw_unknown_operations": 367,
+  "resolved_calls": 32552,
+  "resolved_fields": 46900,
+  "schema_version": "t1-full-instruction-conservation-v1",
+  "serialized_operations": 988046,
+  "unresolved_calls": 96310,
+  "unresolved_fields": 28099
+}

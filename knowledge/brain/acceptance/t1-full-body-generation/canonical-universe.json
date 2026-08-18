@@ -1,0 +1,38 @@
+{
+  "authority": "artifacts/r1-5-metadata-reconciliation/method-catalog.jsonl",
+  "cfg_authority": "artifacts/r3-preflight/canonical-rerun-1/r3-cfg-profile.jsonl",
+  "compiler_generated_method_ids": [],
+  "duplicate_method_ids": 0,
+  "expected": {
+    "methods": 10827,
+    "ownership": [
+      "GAME_FIRST_PARTY",
+      "KAIRO_ENGINE"
+    ],
+    "types": 641
+  },
+  "gate": true,
+  "isil_available": 10772,
+  "methods": 10827,
+  "native_available": 10772,
+  "out_of_scope_method_ids": [],
+  "ownership": {
+    "GAME_FIRST_PARTY": 4547,
+    "KAIRO_ENGINE": 6280
+  },
+  "r3_bundle_count": 2856,
+  "schema_version": "t1-full-canonical-universe-v1",
+  "source_body_present": 8309,
+  "status_authority": "artifacts/r3-preflight/canonical-rerun-1/r3-method-status.jsonl",
+  "status_counts": {
+    "BASELINE_READABLE": 2477,
+    "BLOCKED_IDENTITY": 63,
+    "DEFER_CFG_UNPROVEN": 2856,
+    "DEFER_MECHANICAL_UNPROVEN": 452,
+    "DEFER_R4_NATIVE": 4937,
+    "REPAIRED_CSHARP_R2": 4,
+    "SOURCE_LIMITED": 38
+  },
+  "types": 641,
+  "unique_method_ids": 10827
+}

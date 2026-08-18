@@ -1,6 +1,18 @@
 # TODO
 
-## T1.0 full-body generation pivot pilot — closed (2026-08-18)
+## T1 full-body generation — closed (2026-08-18)
+
+- [x] Read the referenced pasted specification and advisory `T1_FULL_BODY_GENERATION_PREWORK_PACK.zip`; preserve the canonical R1.5/R3 universe, pinned hashes, and read-only source boundary.
+- [x] Verify the canonical 641-type / 10,827-method universe and emit exactly one representation plus provenance row for every method.
+- [x] Emit the coverage-first tier set: 2,481 `EXISTING_READABLE`, 8,291 `GENERATED_LOW`, 50 `DECLARATION_ONLY`, and 5 `SOURCE_LIMITED_STUB`; keep high/medium/opaque tiers empty rather than inventing semantics.
+- [x] Decode and serialize all 988,046 canonical native operations with zero omissions or extras across deterministic sharded native/ISIL artifacts; preserve calls, fields, CFG facts, raw unknown operations, shared native identities, and native byte fingerprints.
+- [x] Compile all 49 C# sidecar shards and the 10,827-entry registry with the bundled Roslyn host; sidecars use deterministic references to the authoritative lossless native-IR segment files for extreme methods.
+- [x] Pass identity coverage, provenance, native range/byte canaries, Google negative regressions, deterministic replay, source immutability, and boundary checks.
+- [x] Close with `PASS_T1_FULL_BODY_GENERATION_CLOSED`.
+
+The full T1 phase is closed. Compact acceptance evidence is under `knowledge/brain/acceptance/t1-full-body-generation/`; heavy replay artifacts remain local-only under `artifacts/t1-full-body-generation/`. The next authorized boundary is `T2_WHOLE_TWIN_COMPILE_FACTORY`; it has not started. Stop here.
+
+## Historical T1.0 full-body generation pivot pilot — closed (2026-08-18)
 
 - [x] Read the attached T1.0 pilot instructions and the referenced pasted text before continuing; preserve the canonical R1.5/R3 universe and the read-only source boundary.
 - [x] Verify the pinned source identities and select the exact canonical 500-method cohort: 75 `BASELINE_READABLE`, 175 `CFG_DEFERRED`, 175 `NATIVE_DEFERRED`, 50 `IDENTITY_MECHANICAL_SOURCE_LIMITED`, and 25 `EXTREME_COMPLEXITY`.
@@ -9,7 +21,7 @@
 - [x] Pass bundled Roslyn parse/compile, byte-identical deterministic replay, ten Google/R3/R4 negative-fixture rejections, false-positive audit, and source immutability checks.
 - [x] Close with `PASS_T1_0_FULL_BODY_GENERATION_PIVOT_PILOT_GO`.
 
-The sidecar-only pilot is closed. The next authorized boundary is `T1_FULL_BODY_GENERATION`; it was not started. The legacy `R4_NATIVE_ISIL_SEMANTIC_LIFT` plan is retained as accepted history and superseded by the T1 coverage-first plan. Do not mass-generate the full corpus or begin T2/runtime/Unity/V8/integration/persistence/backend/deployment work without the next explicitly directed phase.
+The sidecar-only pilot is historical and closed. It authorized the completed `T1_FULL_BODY_GENERATION` boundary. The legacy `R4_NATIVE_ISIL_SEMANTIC_LIFT` plan is retained as accepted history and superseded by the T1 coverage-first plan.
 
 ## Historical R4.0 Native/ISIL typed-IR feasibility pilot — closed (2026-08-18)
 
@@ -33,7 +45,7 @@ The bounded R4.0 pilot remains accepted history. Its former `R4_NATIVE_ISIL_SEMA
 - [x] Add the Roslyn-only family-first transformer library and strict planner; authorize zero canaries because semantic and graph-equivalence proof is unavailable.
 - [x] Reproduce the profiler deterministically, retain a zero graph delta, publish the compact acceptance package, and close with `PASS_R3_WHOLE_GAME_CFG_REPAIR_CLOSED`.
 
-The bounded T1.0 pilot is now closed above; `T1_FULL_BODY_GENERATION` is the next authorized boundary and has not started.
+The bounded T1.0 pilot is historical; the full `T1_FULL_BODY_GENERATION` phase is closed above and `T2_WHOLE_TWIN_COMPILE_FACTORY` is the next authorized boundary.
 
 ## R2 automated whole-corpus repair — closed (2026-08-18)
 
@@ -318,10 +330,11 @@ The former GameDev/Virtual Office corpus, legacy runtime, extraction roots, and 
 
 ## Do Not Do During This Stage
 
-The current stage is the completed K4.1-to-V8 handoff. Do not start V8,
-visual reconstruction, renderer changes, pixel tuning, emulator/ADB/live-app
-work, server/backend/cloud work, integrations, persistence, or reverse
-engineering without a separate user-directed phase.
+The current stage is the completed T1 full-body generation closure. Do not
+start `T2_WHOLE_TWIN_COMPILE_FACTORY`, runtime/Twin integration, Unity/V8,
+server/backend/cloud work, integrations, persistence, deployment, emulator/
+ADB/live-app work, or additional reverse engineering without a separate
+user-directed phase.
 
 ## Historical K2 Unified Whole-Game Brain — complete (2026-08-16)
 

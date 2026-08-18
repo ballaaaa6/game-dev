@@ -1,0 +1,10 @@
+{
+  "max_method_ops": 15357,
+  "max_shard_bytes": 2805708,
+  "native_ir_bytes": 405783736,
+  "representation_bytes": 104468452,
+  "schema_version": "t1-full-serialization-summary-v1",
+  "segment_limit_bytes": 32768,
+  "shard_count": 49,
+  "shard_limit_operation_bytes": 8388608
+}

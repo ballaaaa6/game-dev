@@ -1,0 +1,17 @@
+{
+  "clean_output_roots": [
+    "artifacts/t1-full-body-generation/run-a",
+    "artifacts/t1-full-body-generation/run-b"
+  ],
+  "global_manifest_hash_run_a": "a32c983e133f493e5d20c19ec2a7ba98df060fc15fd67ca85235f9588e7e67a0",
+  "global_manifest_hash_run_b": "a32c983e133f493e5d20c19ec2a7ba98df060fc15fd67ca85235f9588e7e67a0",
+  "identity_hash_run_a": "08c5932928ddf708bc9e83e8922d45e962d894c943a88c771dec6855037b8526",
+  "identity_hash_run_b": "08c5932928ddf708bc9e83e8922d45e962d894c943a88c771dec6855037b8526",
+  "match": true,
+  "operation_counts_match": true,
+  "output_digest_run_a": "d1854d4d78413dd23ace72df53ed24c4ef343f8a9e58189ce6a7234125ff2170",
+  "output_digest_run_b": "d1854d4d78413dd23ace72df53ed24c4ef343f8a9e58189ce6a7234125ff2170",
+  "schema_version": "t1-full-deterministic-replay-v1",
+  "sidecar_compile_manifest_match": true,
+  "tier_summary_match": true
+}

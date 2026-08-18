@@ -1,6 +1,21 @@
 # Project State
 
-## Current Status — T1.0 full-body generation pivot pilot closed (2026-08-18)
+## Current Status — T1 full-body generation closed (2026-08-18)
+
+The canonical T1 full-body generation phase is closed with `PASS_T1_FULL_BODY_GENERATION_CLOSED`. It preserved the corrected 641-type / 10,827-method universe exactly once per method: 2,481 `EXISTING_READABLE`, 8,291 `GENERATED_LOW`, 50 `DECLARATION_ONLY`, and 5 `SOURCE_LIMITED_STUB` representations. All 988,046 canonical native operations were decoded from the pinned ELF and serialized losslessly with zero omissions; 10,772 native ranges were independently byte-verified, while the historical T1.0 scan result of 9,672 range-consistent and 1,100 range-rejected rows remains preserved as reference evidence.
+
+The full pass emitted 49 deterministic shards, 10,827 provenance rows, native/ISIL fact and operation artifacts, compilable C# sidecar projections, and a complete registry. Roslyn parse/compile passed for every shard and the 10,827-entry registry; native-byte canaries, Google negative regressions, identity coverage, source immutability, deterministic replay, and boundary checks all passed. The heavy replay trees remain local-only under `artifacts/t1-full-body-generation/`; compact acceptance evidence is under `knowledge/brain/acceptance/t1-full-body-generation/`. The native IR JSON is the authoritative lossless operation payload; C# sidecars carry deterministic segment references and compile as a projection/index.
+
+No Twin, Unity, V8, runtime, integration, persistence, backend, deployment, or original source files were changed. The next authorized boundary is `T2_WHOLE_TWIN_COMPILE_FACTORY`; it has not started. Stop here.
+
+## Git-visible current gate
+
+- `current_phase`: `T1_FULL_BODY_GENERATION`
+- `status`: `PASS_T1_FULL_BODY_GENERATION_CLOSED`
+- `next_authorized_phase`: `T2_WHOLE_TWIN_COMPILE_FACTORY`
+- `next_phase_started`: `false`
+
+## Historical Status — T1.0 full-body generation pivot pilot closed (2026-08-18)
 
 The canonical T1.0 sidecar-only pilot is closed with `PASS_T1_0_FULL_BODY_GENERATION_PIVOT_PILOT_GO`. It selected exactly 500 methods from the corrected 641-type / 10,827-method Twin universe: 75 `BASELINE_READABLE`, 175 `CFG_DEFERRED`, 175 `NATIVE_DEFERRED`, 50 `IDENTITY_MECHANICAL_SOURCE_LIMITED`, and 25 `EXTREME_COMPLEXITY`, balanced across GAME_FIRST_PARTY and KAIRO_ENGINE ownership. Every selected method has an explicit C# representation, identity, provenance, and native/ISIL accounting; 117,876 decoded native instructions are represented with zero omissions.
 
@@ -8,7 +23,7 @@ The hosted `TwinNativeIr` C# contract and 500 generated method sidecars parse an
 
 Compact acceptance evidence is under `knowledge/brain/acceptance/t1-0-full-body-generation-pivot-pilot/`; heavy per-method sidecars and replay artifacts remain local-only under `artifacts/t1-0-full-body-pilot/`.
 
-## Git-visible current gate
+## Historical T1.0 gate
 
 - `current_phase`: `T1_0_FULL_BODY_GENERATION_PIVOT_PILOT`
 - `status`: `PASS_T1_0_FULL_BODY_GENERATION_PIVOT_PILOT_GO`

@@ -1,0 +1,15 @@
+{
+  "canonical_universe": true,
+  "deterministic_replay": true,
+  "history_retained": true,
+  "identity_coverage": true,
+  "instruction_conservation": true,
+  "native_byte_audit": true,
+  "negative_regressions": true,
+  "provenance": true,
+  "schema_version": "t1-full-validation-v1",
+  "sidecar_compile": true,
+  "source_identity": true,
+  "source_unchanged": true,
+  "unity_v8_runtime_untouched": true
+}

@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "complete_rows": 10827,
+  "deterministic_run_id": "T1_FULL_BODY_GENERATION_CANONICAL_V1",
+  "generation_tool_version": "t1-full-body-generation-v1",
+  "rows": 10827,
+  "schema_version": "t1-full-provenance-summary-v1",
+  "source_mutation": false
+}

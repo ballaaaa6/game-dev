@@ -1,0 +1,13 @@
+{
+  "canonical_rows": 10827,
+  "canonical_unique_method_ids": 10827,
+  "duplicate_output_ids": 0,
+  "exact_one_representation_per_method": true,
+  "extra_ids": 0,
+  "extra_method_ids": [],
+  "missing_ids": 0,
+  "missing_method_ids": [],
+  "output_rows": 10827,
+  "schema_version": "t1-full-identity-coverage-v1",
+  "unique_output_method_ids": 10827
+}

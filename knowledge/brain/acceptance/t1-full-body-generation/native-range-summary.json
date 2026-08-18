@@ -1,0 +1,13 @@
+{
+  "full_t1_resolution": "All canonical native rows were independently byte-decoded from the pinned ELF at the canonical start and catalog count, with contiguous ARM64 instructions and no next-distinct-start overlap; no alternate shadow range was promoted.",
+  "isil_or_range_uncertain": 0,
+  "native_range_verified": 10772,
+  "native_rows_scanned": 10772,
+  "schema_version": "t1-full-native-range-summary-v1",
+  "t1_0_reference_scan": {
+    "preserved_as_historical_reference": true,
+    "range_consistent_native_rows": 9672,
+    "range_rejected_native_rows": 1100,
+    "scanned_native_rows": 10772
+  }
+}

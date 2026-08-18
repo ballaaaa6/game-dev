@@ -1,0 +1,2349 @@
+{
+  "audited_count": 123,
+  "authority": "knowledge/sources/phase3a_apk_probe/raw/libil2cpp.so",
+  "byte_order": "ELF little-endian bytes; raw_word_little_endian is decoded from those bytes",
+  "canaries": [
+    {
+      "first": {
+        "address": "0x1224EAC",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x1224FDC",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "7e3cf697",
+        "raw_word_little_endian": "0x97F63C7E"
+      },
+      "matches": true,
+      "method_id": "r1-method_000a3c69c6bd4876239c199771da9bc1",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x123CBA4",
+        "mnemonic": "LDR",
+        "operands": "w0, [x0, #0x38]",
+        "raw_bytes_little_endian": "003840b9",
+        "raw_word_little_endian": "0xB9403800"
+      },
+      "last": {
+        "address": "0x123CBA8",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_0013bf5940b02198411879185bb5e140",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1295ED8",
+        "mnemonic": "LDRB",
+        "operands": "w0, [x0, #0x6c]",
+        "raw_bytes_little_endian": "00b04139",
+        "raw_word_little_endian": "0x3941B000"
+      },
+      "last": {
+        "address": "0x1295EDC",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_00253266cfcbe5be9ec523631327dcbe",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12D646C",
+        "mnemonic": "LDRB",
+        "operands": "w8, [x0, #0xac]",
+        "raw_bytes_little_endian": "08b04239",
+        "raw_word_little_endian": "0x3942B008"
+      },
+      "last": {
+        "address": "0x12D6474",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_0054bbdc23964294fc215ca9f054906f",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1131ADC",
+        "mnemonic": "MOV",
+        "operands": "x8, x0",
+        "raw_bytes_little_endian": "e80300aa",
+        "raw_word_little_endian": "0xAA0003E8"
+      },
+      "last": {
+        "address": "0x1131AE8",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_0592dc3e7faed2a9642fac2acb78474e",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C10388",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x190",
+        "raw_bytes_little_endian": "ff4306d1",
+        "raw_word_little_endian": "0xD10643FF"
+      },
+      "last": {
+        "address": "0x1C120BC",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "9358c997",
+        "raw_word_little_endian": "0x97C95893"
+      },
+      "matches": true,
+      "method_id": "r1-method_0593af50d3117bfcf9fb8d0496ed2c2d",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11F3874",
+        "mnemonic": "STP",
+        "operands": "x29, x30, [sp, #-0x60]!",
+        "raw_bytes_little_endian": "fd7bbaa9",
+        "raw_word_little_endian": "0xA9BA7BFD"
+      },
+      "last": {
+        "address": "0x11F3AB4",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "c801f797",
+        "raw_word_little_endian": "0x97F701C8"
+      },
+      "matches": true,
+      "method_id": "r1-method_0baa817875ca0aebfe141739016bb997",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12D7DB8",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x50",
+        "raw_bytes_little_endian": "ff4301d1",
+        "raw_word_little_endian": "0xD10143FF"
+      },
+      "last": {
+        "address": "0x12D7F10",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "af70f397",
+        "raw_word_little_endian": "0x97F370AF"
+      },
+      "matches": true,
+      "method_id": "r1-method_0bad967fc1428c1e456a81a0b6434966",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11F0BF0",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x90",
+        "raw_bytes_little_endian": "ff4302d1",
+        "raw_word_little_endian": "0xD10243FF"
+      },
+      "last": {
+        "address": "0x11F36C4",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "11d3f197",
+        "raw_word_little_endian": "0x97F1D311"
+      },
+      "matches": true,
+      "method_id": "r1-method_0d802461ca6f0d3f8e42197c5a2b63dd",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1D4732C",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "last": {
+        "address": "0x1D4732C",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_109bd3f078ad4b52c7eaf7045a93247b",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x122E3B8",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x80",
+        "raw_bytes_little_endian": "ff0302d1",
+        "raw_word_little_endian": "0xD10203FF"
+      },
+      "last": {
+        "address": "0x122F80C",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "bfe2f097",
+        "raw_word_little_endian": "0x97F0E2BF"
+      },
+      "matches": true,
+      "method_id": "r1-method_109d6c1443e5c9e34e2b780560c85528",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x123E600",
+        "mnemonic": "LDR",
+        "operands": "x0, [x0, #0x20]",
+        "raw_bytes_little_endian": "001040f9",
+        "raw_word_little_endian": "0xF9401000"
+      },
+      "last": {
+        "address": "0x123E604",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_15eda4e156e76994a198a052017e1fa1",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x124753C",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x40]!",
+        "raw_bytes_little_endian": "fe0f1cf8",
+        "raw_word_little_endian": "0xF81C0FFE"
+      },
+      "last": {
+        "address": "0x1247860",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "5bb2f597",
+        "raw_word_little_endian": "0x97F5B25B"
+      },
+      "matches": true,
+      "method_id": "r1-method_15eecff85d8afb8424fa8807b86746f8",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1119708",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xa0",
+        "raw_bytes_little_endian": "ff8302d1",
+        "raw_word_little_endian": "0xD10283FF"
+      },
+      "last": {
+        "address": "0x1119A08",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "f169fa97",
+        "raw_word_little_endian": "0x97FA69F1"
+      },
+      "matches": true,
+      "method_id": "r1-method_1d769e28c00c4a5d0135688148de12d7",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1153B08",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x80",
+        "raw_bytes_little_endian": "ff0302d1",
+        "raw_word_little_endian": "0xD10203FF"
+      },
+      "last": {
+        "address": "0x1154754",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "857ff997",
+        "raw_word_little_endian": "0x97F97F85"
+      },
+      "matches": true,
+      "method_id": "r1-method_1d7ee58947cc6b56bdba3eedcd36c416",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11D4A5C",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x70",
+        "raw_bytes_little_endian": "ffc301d1",
+        "raw_word_little_endian": "0xD101C3FF"
+      },
+      "last": {
+        "address": "0x11DDD54",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "1e59f797",
+        "raw_word_little_endian": "0x97F7591E"
+      },
+      "matches": true,
+      "method_id": "r1-method_1ef7e3be95523e167eb2f6acfa161440",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1D0F850",
+        "mnemonic": "LDRB",
+        "operands": "w9, [x0, #0x10]",
+        "raw_bytes_little_endian": "09404039",
+        "raw_word_little_endian": "0x39404009"
+      },
+      "last": {
+        "address": "0x1D0F86C",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_2097c5ceb906465cbc84dd607eb99b37",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1D1F39C",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x40]!",
+        "raw_bytes_little_endian": "fe0f1cf8",
+        "raw_word_little_endian": "0xF81C0FFE"
+      },
+      "last": {
+        "address": "0x1D1F444",
+        "mnemonic": "B",
+        "operands": "#0x1d2226c",
+        "raw_bytes_little_endian": "8a0b0014",
+        "raw_word_little_endian": "0x14000B8A"
+      },
+      "matches": true,
+      "method_id": "r1-method_2099d768c3a91ca4b66e1a807674d759",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BBEA04",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xb0",
+        "raw_bytes_little_endian": "ffc302d1",
+        "raw_word_little_endian": "0xD102C3FF"
+      },
+      "last": {
+        "address": "0x1BC13E4",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "c99bca97",
+        "raw_word_little_endian": "0x97CA9BC9"
+      },
+      "matches": true,
+      "method_id": "r1-method_21bd28c398ed29c91e58916d516334f7",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1CECA04",
+        "mnemonic": "STR",
+        "operands": "w1, [x0, #0x28]",
+        "raw_bytes_little_endian": "012800b9",
+        "raw_word_little_endian": "0xB9002801"
+      },
+      "last": {
+        "address": "0x1CECA08",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_273f6e630aa23be41724a5412c7a000a",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1295110",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x20",
+        "raw_bytes_little_endian": "ff8300d1",
+        "raw_word_little_endian": "0xD10083FF"
+      },
+      "last": {
+        "address": "0x129512C",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_27476a82834b432e4878bb69a37b61e0",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C53140",
+        "mnemonic": "STP",
+        "operands": "d9, d8, [sp, #-0x40]!",
+        "raw_bytes_little_endian": "e923bc6d",
+        "raw_word_little_endian": "0x6DBC23E9"
+      },
+      "last": {
+        "address": "0x1C53248",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "e183cd97",
+        "raw_word_little_endian": "0x97CD83E1"
+      },
+      "matches": true,
+      "method_id": "r1-method_2dea8e4d5fa60765ff249dc52917f5ac",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1D3CAAC",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x90",
+        "raw_bytes_little_endian": "ff4302d1",
+        "raw_word_little_endian": "0xD10243FF"
+      },
+      "last": {
+        "address": "0x1D3CDCC",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "4fadc497",
+        "raw_word_little_endian": "0x97C4AD4F"
+      },
+      "matches": true,
+      "method_id": "r1-method_2dffd97cd8163e7105e91bcad33a8351",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BFA55C",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xf0",
+        "raw_bytes_little_endian": "ffc303d1",
+        "raw_word_little_endian": "0xD103C3FF"
+      },
+      "last": {
+        "address": "0x1BFCFA8",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "8bdcce97",
+        "raw_word_little_endian": "0x97CEDC8B"
+      },
+      "matches": true,
+      "method_id": "r1-method_30194466f189604ae3fd70b79fdc3838",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11D2330",
+        "mnemonic": "STP",
+        "operands": "x30, x21, [sp, #-0x20]!",
+        "raw_bytes_little_endian": "fe57bea9",
+        "raw_word_little_endian": "0xA9BE57FE"
+      },
+      "last": {
+        "address": "0x11D2390",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "8f87f797",
+        "raw_word_little_endian": "0x97F7878F"
+      },
+      "matches": true,
+      "method_id": "r1-method_33482bd36c20fd997b9fabab4bf35aa5",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x10DF948",
+        "mnemonic": "STP",
+        "operands": "x30, x21, [sp, #-0x20]!",
+        "raw_bytes_little_endian": "fe57bea9",
+        "raw_word_little_endian": "0xA9BE57FE"
+      },
+      "last": {
+        "address": "0x10DFB5C",
+        "mnemonic": "B",
+        "operands": "#0x10dfad8",
+        "raw_bytes_little_endian": "dfffff17",
+        "raw_word_little_endian": "0x17FFFFDF"
+      },
+      "matches": true,
+      "method_id": "r1-method_334c1c7220f9975294c96d6f021a34bd",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C506D0",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x1C507C8",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "d05ec897",
+        "raw_word_little_endian": "0x97C85ED0"
+      },
+      "matches": true,
+      "method_id": "r1-method_39bbd5e86ff53cae9dcc895dbcbdec73",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1D4DD08",
+        "mnemonic": "STP",
+        "operands": "x30, x23, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe5fbda9",
+        "raw_word_little_endian": "0xA9BD5FFE"
+      },
+      "last": {
+        "address": "0x1D4DE58",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "dd98c997",
+        "raw_word_little_endian": "0x97C998DD"
+      },
+      "matches": true,
+      "method_id": "r1-method_39c1e4466f06632d800ace078f84ceaa",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BAB060",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x1BAB1E4",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "e124d097",
+        "raw_word_little_endian": "0x97D024E1"
+      },
+      "matches": true,
+      "method_id": "r1-method_3ebc36463fd168186a84579c1827024b",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C3C2B0",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x80",
+        "raw_bytes_little_endian": "ff0302d1",
+        "raw_word_little_endian": "0xD10203FF"
+      },
+      "last": {
+        "address": "0x1C3C77C",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "94decd97",
+        "raw_word_little_endian": "0x97CDDE94"
+      },
+      "matches": true,
+      "method_id": "r1-method_3ed9ef5fe54b4fa4a5c224f693a11d0e",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BBAB78",
+        "mnemonic": "STP",
+        "operands": "x30, x21, [sp, #-0x20]!",
+        "raw_bytes_little_endian": "fe57bea9",
+        "raw_word_little_endian": "0xA9BE57FE"
+      },
+      "last": {
+        "address": "0x1BBAC00",
+        "mnemonic": "B",
+        "operands": "#0x1bbabe4",
+        "raw_bytes_little_endian": "f9ffff17",
+        "raw_word_little_endian": "0x17FFFFF9"
+      },
+      "matches": true,
+      "method_id": "r1-method_43df653df4e1c664e86eb67480cdcad5",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x115C8BC",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x90",
+        "raw_bytes_little_endian": "ff4302d1",
+        "raw_word_little_endian": "0xD10243FF"
+      },
+      "last": {
+        "address": "0x115D34C",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "875cf997",
+        "raw_word_little_endian": "0x97F95C87"
+      },
+      "matches": true,
+      "method_id": "r1-method_43e05dc50f4a732b07a3cd90a39f35b0",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11A48DC",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x11A4EE4",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "a13df897",
+        "raw_word_little_endian": "0x97F83DA1"
+      },
+      "matches": true,
+      "method_id": "r1-method_48d6e6fd39068ec833582be65a499cb7",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11E7F1C",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x80",
+        "raw_bytes_little_endian": "ff0302d1",
+        "raw_word_little_endian": "0xD10203FF"
+      },
+      "last": {
+        "address": "0x11E8B6C",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "9a2df797",
+        "raw_word_little_endian": "0x97F72D9A"
+      },
+      "matches": true,
+      "method_id": "r1-method_48dcba220fa1f81ed6d0bcae5e9f4948",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1D40C58",
+        "mnemonic": "STP",
+        "operands": "x30, x21, [sp, #-0x20]!",
+        "raw_bytes_little_endian": "fe57bea9",
+        "raw_word_little_endian": "0xA9BE57FE"
+      },
+      "last": {
+        "address": "0x1D40D04",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_4d65c1f70c24abb0cf716b955f640585",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11031F0",
+        "mnemonic": "STP",
+        "operands": "d9, d8, [sp, #-0x50]!",
+        "raw_bytes_little_endian": "e923bb6d",
+        "raw_word_little_endian": "0x6DBB23E9"
+      },
+      "last": {
+        "address": "0x1103390",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "91c3fa97",
+        "raw_word_little_endian": "0x97FAC391"
+      },
+      "matches": true,
+      "method_id": "r1-method_4d6912c64f02d9b7c12388038cfd983c",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11389C4",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x70",
+        "raw_bytes_little_endian": "ffc301d1",
+        "raw_word_little_endian": "0xD101C3FF"
+      },
+      "last": {
+        "address": "0x1138E2C",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "cfedf997",
+        "raw_word_little_endian": "0x97F9EDCF"
+      },
+      "matches": true,
+      "method_id": "r1-method_53ff5eb1ac8ccec568845b1a1f2c3fab",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1237D24",
+        "mnemonic": "STP",
+        "operands": "x29, x30, [sp, #-0x60]!",
+        "raw_bytes_little_endian": "fd7bbaa9",
+        "raw_word_little_endian": "0xA9BA7BFD"
+      },
+      "last": {
+        "address": "0x1238794",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "8eeef597",
+        "raw_word_little_endian": "0x97F5EE8E"
+      },
+      "matches": true,
+      "method_id": "r1-method_53ff8f4b6dfc44ebbe14782df9f0f469",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C9D270",
+        "mnemonic": "STP",
+        "operands": "x30, x19, [sp, #-0x10]!",
+        "raw_bytes_little_endian": "fe4fbfa9",
+        "raw_word_little_endian": "0xA9BF4FFE"
+      },
+      "last": {
+        "address": "0x1C9D294",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_5968e86ba16359d38ec5404ca521ab47",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1268EF4",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x70",
+        "raw_bytes_little_endian": "ffc301d1",
+        "raw_word_little_endian": "0xD101C3FF"
+      },
+      "last": {
+        "address": "0x126AA54",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "2df6ef97",
+        "raw_word_little_endian": "0x97EFF62D"
+      },
+      "matches": true,
+      "method_id": "r1-method_5970cc0fc80fb770e275e1a661ff7df6",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1CD8A50",
+        "mnemonic": "MOV",
+        "operands": "w0, wzr",
+        "raw_bytes_little_endian": "e0031f2a",
+        "raw_word_little_endian": "0x2A1F03E0"
+      },
+      "last": {
+        "address": "0x1CD8A54",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_5fe17aee4eb5a0e250da386a2af32385",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12BDD7C",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x12BE458",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "5dd7f397",
+        "raw_word_little_endian": "0x97F3D75D"
+      },
+      "matches": true,
+      "method_id": "r1-method_5fe3acea6aeb7b839a5271603e25d0d6",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x10D7C38",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xc0",
+        "raw_bytes_little_endian": "ff0303d1",
+        "raw_word_little_endian": "0xD10303FF"
+      },
+      "last": {
+        "address": "0x10DDB88",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "e029f697",
+        "raw_word_little_endian": "0x97F629E0"
+      },
+      "matches": true,
+      "method_id": "r1-method_603f3ad768f653c1ad9e44f50f51b539",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x10E01F8",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x60]!",
+        "raw_bytes_little_endian": "fe0f1af8",
+        "raw_word_little_endian": "0xF81A0FFE"
+      },
+      "last": {
+        "address": "0x10E0304",
+        "mnemonic": "B",
+        "operands": "#0x10e00a0",
+        "raw_bytes_little_endian": "67ffff17",
+        "raw_word_little_endian": "0x17FFFF67"
+      },
+      "matches": true,
+      "method_id": "r1-method_63da0a61d39253e720186844a6fd220b",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11898BC",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x70",
+        "raw_bytes_little_endian": "ffc301d1",
+        "raw_word_little_endian": "0xD101C3FF"
+      },
+      "last": {
+        "address": "0x118B418",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "54a4f897",
+        "raw_word_little_endian": "0x97F8A454"
+      },
+      "matches": true,
+      "method_id": "r1-method_63dd754c58a671589e38338ed328df2a",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1144F00",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xa0",
+        "raw_bytes_little_endian": "ff8302d1",
+        "raw_word_little_endian": "0xD10283FF"
+      },
+      "last": {
+        "address": "0x1147BEC",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "7ab1f997",
+        "raw_word_little_endian": "0x97F9B17A"
+      },
+      "matches": true,
+      "method_id": "r1-method_653cb36f6d5866775d978be53a9456df",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1197AC8",
+        "mnemonic": "STR",
+        "operands": "d8, [sp, #-0x70]!",
+        "raw_bytes_little_endian": "e80f19fc",
+        "raw_word_little_endian": "0xFC190FE8"
+      },
+      "last": {
+        "address": "0x1199E08",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "d869f897",
+        "raw_word_little_endian": "0x97F869D8"
+      },
+      "matches": true,
+      "method_id": "r1-method_66c9915392552a0311e2c36c5899bbd9",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C4DE68",
+        "mnemonic": "STP",
+        "operands": "x30, x23, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe5fbda9",
+        "raw_word_little_endian": "0xA9BD5FFE"
+      },
+      "last": {
+        "address": "0x1C4DF40",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "a598cd97",
+        "raw_word_little_endian": "0x97CD98A5"
+      },
+      "matches": true,
+      "method_id": "r1-method_66cbf8179001646b70b6da7a5e686c87",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BD3150",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x1a0",
+        "raw_bytes_little_endian": "ff8306d1",
+        "raw_word_little_endian": "0xD10683FF"
+      },
+      "last": {
+        "address": "0x1BD571C",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "fb4aca97",
+        "raw_word_little_endian": "0x97CA4AFB"
+      },
+      "matches": true,
+      "method_id": "r1-method_670696a9776ef7036bb22e4627e53a8c",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12B1F08",
+        "mnemonic": "STP",
+        "operands": "x30, x19, [sp, #-0x10]!",
+        "raw_bytes_little_endian": "fe4fbfa9",
+        "raw_word_little_endian": "0xA9BF4FFE"
+      },
+      "last": {
+        "address": "0x12B1F38",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "a508f497",
+        "raw_word_little_endian": "0x97F408A5"
+      },
+      "matches": true,
+      "method_id": "r1-method_6bb86e4b1d6cf85533bd6d25f7ba4064",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1CC9518",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x20]!",
+        "raw_bytes_little_endian": "fe0f1ef8",
+        "raw_word_little_endian": "0xF81E0FFE"
+      },
+      "last": {
+        "address": "0x1CC96A0",
+        "mnemonic": "BL",
+        "operands": "#0xfb4098",
+        "raw_bytes_little_endian": "7eaacb97",
+        "raw_word_little_endian": "0x97CBAA7E"
+      },
+      "matches": true,
+      "method_id": "r1-method_6bd34cdfc641b5e421148e65fa0c31ab",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12863F8",
+        "mnemonic": "MOV",
+        "operands": "w2, wzr",
+        "raw_bytes_little_endian": "e2031f2a",
+        "raw_word_little_endian": "0x2A1F03E2"
+      },
+      "last": {
+        "address": "0x12863FC",
+        "mnemonic": "B",
+        "operands": "#0x1286400",
+        "raw_bytes_little_endian": "01000014",
+        "raw_word_little_endian": "0x14000001"
+      },
+      "matches": true,
+      "method_id": "r1-method_726bfdd16707803b98d74cf0c880d87a",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1260808",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x50]!",
+        "raw_bytes_little_endian": "fe0f1bf8",
+        "raw_word_little_endian": "0xF81B0FFE"
+      },
+      "last": {
+        "address": "0x126089C",
+        "mnemonic": "B",
+        "operands": "#0x12608a0",
+        "raw_bytes_little_endian": "01000014",
+        "raw_word_little_endian": "0x14000001"
+      },
+      "matches": true,
+      "method_id": "r1-method_7275d23104e8653f4c4cade1f340ef9b",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12BB39C",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x70",
+        "raw_bytes_little_endian": "ffc301d1",
+        "raw_word_little_endian": "0xD101C3FF"
+      },
+      "last": {
+        "address": "0x12BDCF0",
+        "mnemonic": "BL",
+        "operands": "#0xfb4098",
+        "raw_bytes_little_endian": "ead8f397",
+        "raw_word_little_endian": "0x97F3D8EA"
+      },
+      "matches": true,
+      "method_id": "r1-method_78a65367e4c12fddc538c1a46992c2b9",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11E5C50",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x10]!",
+        "raw_bytes_little_endian": "fe0f1ff8",
+        "raw_word_little_endian": "0xF81F0FFE"
+      },
+      "last": {
+        "address": "0x11E5CAC",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "4839f797",
+        "raw_word_little_endian": "0x97F73948"
+      },
+      "matches": true,
+      "method_id": "r1-method_78a775d5aa039a7b718a4d2f3b7cb3e2",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x117FF4C",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x80",
+        "raw_bytes_little_endian": "ff0302d1",
+        "raw_word_little_endian": "0xD10203FF"
+      },
+      "last": {
+        "address": "0x11803E8",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "60d0f897",
+        "raw_word_little_endian": "0x97F8D060"
+      },
+      "matches": true,
+      "method_id": "r1-method_78aaa2c6fdb6ed873ccfc9cd96ce70d2",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1CD4708",
+        "mnemonic": "MOV",
+        "operands": "w0, wzr",
+        "raw_bytes_little_endian": "e0031f2a",
+        "raw_word_little_endian": "0x2A1F03E0"
+      },
+      "last": {
+        "address": "0x1CD470C",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_7f7372a01650f9b94581829a17b2c7e6",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11329A0",
+        "mnemonic": "STP",
+        "operands": "x29, x30, [sp, #-0x60]!",
+        "raw_bytes_little_endian": "fd7bbaa9",
+        "raw_word_little_endian": "0xA9BA7BFD"
+      },
+      "last": {
+        "address": "0x1132FB4",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "8804fa97",
+        "raw_word_little_endian": "0x97FA0488"
+      },
+      "matches": true,
+      "method_id": "r1-method_7f790bae6adfb59b9349e3656dfc1077",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x127A86C",
+        "mnemonic": "STP",
+        "operands": "x29, x30, [sp, #-0x60]!",
+        "raw_bytes_little_endian": "fd7bbaa9",
+        "raw_word_little_endian": "0xA9BA7BFD"
+      },
+      "last": {
+        "address": "0x127E968",
+        "mnemonic": "BL",
+        "operands": "#0xfb4098",
+        "raw_bytes_little_endian": "ccd5f497",
+        "raw_word_little_endian": "0x97F4D5CC"
+      },
+      "matches": true,
+      "method_id": "r1-method_80909f6525460f4495e542342d1a4b5b",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BC61B0",
+        "mnemonic": "STP",
+        "operands": "x30, x21, [sp, #-0x20]!",
+        "raw_bytes_little_endian": "fe57bea9",
+        "raw_word_little_endian": "0xA9BE57FE"
+      },
+      "last": {
+        "address": "0x1BC622C",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_83b1c72f31e98f00c669f7e55a2f8c86",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1259D94",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x70",
+        "raw_bytes_little_endian": "ffc301d1",
+        "raw_word_little_endian": "0xD101C3FF"
+      },
+      "last": {
+        "address": "0x1259E4C",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_83b2d0f36b4d8145ab3cb92941ec2c7a",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C285AC",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xb0",
+        "raw_bytes_little_endian": "ffc302d1",
+        "raw_word_little_endian": "0xD102C3FF"
+      },
+      "last": {
+        "address": "0x1C2AAE8",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "08f6c897",
+        "raw_word_little_endian": "0x97C8F608"
+      },
+      "matches": true,
+      "method_id": "r1-method_84cf5eae34391af239622ab307766bfe",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1CAD54C",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x20]!",
+        "raw_bytes_little_endian": "fe0f1ef8",
+        "raw_word_little_endian": "0xF81E0FFE"
+      },
+      "last": {
+        "address": "0x1CAD5B4",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_88b50f9c8d11075fc848f3d543c3839c",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C91EEC",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x1C91FF8",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "7588cc97",
+        "raw_word_little_endian": "0x97CC8875"
+      },
+      "matches": true,
+      "method_id": "r1-method_88b54ebbd9eadbb07af73388f7fb2574",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12C166C",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xc0",
+        "raw_bytes_little_endian": "ff0303d1",
+        "raw_word_little_endian": "0xD10303FF"
+      },
+      "last": {
+        "address": "0x12C3B0C",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "97c2f397",
+        "raw_word_little_endian": "0x97F3C297"
+      },
+      "matches": true,
+      "method_id": "r1-method_8a61cbcc101c79d32838f5c36020c387",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1D39A00",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "last": {
+        "address": "0x1D39A00",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_8e6463ec1966fda564e6c5e377dc5007",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x122FC14",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x50]!",
+        "raw_bytes_little_endian": "fe0f1bf8",
+        "raw_word_little_endian": "0xF81B0FFE"
+      },
+      "last": {
+        "address": "0x1230FE0",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "cadcf097",
+        "raw_word_little_endian": "0x97F0DCCA"
+      },
+      "matches": true,
+      "method_id": "r1-method_8e66f11ba7536461b6423c487ce105db",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BF82C4",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x1e0",
+        "raw_bytes_little_endian": "ff8307d1",
+        "raw_word_little_endian": "0xD10783FF"
+      },
+      "last": {
+        "address": "0x1BFA160",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "1be8ce97",
+        "raw_word_little_endian": "0x97CEE81B"
+      },
+      "matches": true,
+      "method_id": "r1-method_916256e6835fd307fbbc8e9cae223a0f",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12AE6FC",
+        "mnemonic": "CMP",
+        "operands": "w1, #1",
+        "raw_bytes_little_endian": "3f040071",
+        "raw_word_little_endian": "0x7100043F"
+      },
+      "last": {
+        "address": "0x12AE714",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_9328f80f350cf67198d9b7df4cf12dcb",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12B0DE4",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x12B13CC",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "cfdbee97",
+        "raw_word_little_endian": "0x97EEDBCF"
+      },
+      "matches": true,
+      "method_id": "r1-method_93370766b54c5749be44473d4e212626",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1CB06DC",
+        "mnemonic": "STP",
+        "operands": "x30, x19, [sp, #-0x10]!",
+        "raw_bytes_little_endian": "fe4fbfa9",
+        "raw_word_little_endian": "0xA9BF4FFE"
+      },
+      "last": {
+        "address": "0x1CB06F4",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_98559e68a6af6f7a0522a92d0e796182",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x116CB2C",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x80",
+        "raw_bytes_little_endian": "ff0302d1",
+        "raw_word_little_endian": "0xD10203FF"
+      },
+      "last": {
+        "address": "0x116D6CC",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "c21af997",
+        "raw_word_little_endian": "0x97F91AC2"
+      },
+      "matches": true,
+      "method_id": "r1-method_985b5191dd11706b8621db22b6529596",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1CB810C",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x1CB8170",
+        "mnemonic": "B",
+        "operands": "#0x1cae8c4",
+        "raw_bytes_little_endian": "d5d9ff17",
+        "raw_word_little_endian": "0x17FFD9D5"
+      },
+      "matches": true,
+      "method_id": "r1-method_9ce6214b54ffd57436e1e098e0e5dce6",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11B94E8",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x70",
+        "raw_bytes_little_endian": "ffc301d1",
+        "raw_word_little_endian": "0xD101C3FF"
+      },
+      "last": {
+        "address": "0x11B9E2C",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "e8e8f797",
+        "raw_word_little_endian": "0x97F7E8E8"
+      },
+      "matches": true,
+      "method_id": "r1-method_9ce91a846f96d48575b353e7fbd4e343",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x127564C",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x12756C0",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_a1b9ff222de884da1541db194eb0f139",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x124194C",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xd0",
+        "raw_bytes_little_endian": "ff4303d1",
+        "raw_word_little_endian": "0xD10343FF"
+      },
+      "last": {
+        "address": "0x1242424",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "b997f097",
+        "raw_word_little_endian": "0x97F097B9"
+      },
+      "matches": true,
+      "method_id": "r1-method_a1bb42e00e6d4c390e6afbdbf17059c7",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11B1470",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xc0",
+        "raw_bytes_little_endian": "ff0303d1",
+        "raw_word_little_endian": "0xD10303FF"
+      },
+      "last": {
+        "address": "0x11B5244",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "c9fcf797",
+        "raw_word_little_endian": "0x97F7FCC9"
+      },
+      "matches": true,
+      "method_id": "r1-method_a5274f5402d263f61253307ef57af02a",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12A7144",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xb0",
+        "raw_bytes_little_endian": "ffc302d1",
+        "raw_word_little_endian": "0xD102C3FF"
+      },
+      "last": {
+        "address": "0x12A9368",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "9b2bf497",
+        "raw_word_little_endian": "0x97F42B9B"
+      },
+      "matches": true,
+      "method_id": "r1-method_a5965dcbb34b8eef9ebaa929f231dbe6",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x111ABC4",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "last": {
+        "address": "0x111ABC4",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_a6171872193bf4b7ee7fbaa362a21d4a",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C8CAEC",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xb0",
+        "raw_bytes_little_endian": "ffc302d1",
+        "raw_word_little_endian": "0xD102C3FF"
+      },
+      "last": {
+        "address": "0x1C8D998",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "5c6ac797",
+        "raw_word_little_endian": "0x97C76A5C"
+      },
+      "matches": true,
+      "method_id": "r1-method_a618995a78a0854d5f9d6480ef489138",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x10FF1AC",
+        "mnemonic": "STR",
+        "operands": "d8, [sp, #-0x50]!",
+        "raw_bytes_little_endian": "e80f1bfc",
+        "raw_word_little_endian": "0xFC1B0FE8"
+      },
+      "last": {
+        "address": "0x1101370",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "99cbfa97",
+        "raw_word_little_endian": "0x97FACB99"
+      },
+      "matches": true,
+      "method_id": "r1-method_a647f58f6bae15c356735c5180f6bb78",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12974DC",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x50]!",
+        "raw_bytes_little_endian": "fe0f1bf8",
+        "raw_word_little_endian": "0xF81B0FFE"
+      },
+      "last": {
+        "address": "0x1297A04",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "f471f497",
+        "raw_word_little_endian": "0x97F471F4"
+      },
+      "matches": true,
+      "method_id": "r1-method_ab0c7a8cda3f2eb62538e6da400ed47a",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12666E4",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x90",
+        "raw_bytes_little_endian": "ff4302d1",
+        "raw_word_little_endian": "0xD10243FF"
+      },
+      "last": {
+        "address": "0x126831C",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "9330f597",
+        "raw_word_little_endian": "0x97F53093"
+      },
+      "matches": true,
+      "method_id": "r1-method_ab1110f13a8de9e510b1308079fac536",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12E0414",
+        "mnemonic": "STP",
+        "operands": "x30, x27, [sp, #-0x50]!",
+        "raw_bytes_little_endian": "fe6fbba9",
+        "raw_word_little_endian": "0xA9BB6FFE"
+      },
+      "last": {
+        "address": "0x12E06BC",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "c64ef397",
+        "raw_word_little_endian": "0x97F34EC6"
+      },
+      "matches": true,
+      "method_id": "r1-method_b0ba14d1af5f8e6ceec56a1569a5fc60",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C09E18",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x90",
+        "raw_bytes_little_endian": "ff4302d1",
+        "raw_word_little_endian": "0xD10243FF"
+      },
+      "last": {
+        "address": "0x1C0A40C",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "bf77c997",
+        "raw_word_little_endian": "0x97C977BF"
+      },
+      "matches": true,
+      "method_id": "r1-method_b0bd67ea2dc5d795647b2382db01e37a",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x10EB43C",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xc0",
+        "raw_bytes_little_endian": "ff0303d1",
+        "raw_word_little_endian": "0xD10303FF"
+      },
+      "last": {
+        "address": "0x10ED6E0",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "a21bfb97",
+        "raw_word_little_endian": "0x97FB1BA2"
+      },
+      "matches": true,
+      "method_id": "r1-method_b731feeb90179a7b7ec04b48149a1fed",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12B1E64",
+        "mnemonic": "STP",
+        "operands": "x30, x19, [sp, #-0x10]!",
+        "raw_bytes_little_endian": "fe4fbfa9",
+        "raw_word_little_endian": "0xA9BF4FFE"
+      },
+      "last": {
+        "address": "0x12B1E8C",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "d008f497",
+        "raw_word_little_endian": "0x97F408D0"
+      },
+      "matches": true,
+      "method_id": "r1-method_b78b3f23476a460ad84b5dffe9508556",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12A1F38",
+        "mnemonic": "STP",
+        "operands": "x30, x25, [sp, #-0x40]!",
+        "raw_bytes_little_endian": "fe67bca9",
+        "raw_word_little_endian": "0xA9BC67FE"
+      },
+      "last": {
+        "address": "0x12A20F0",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "3948f497",
+        "raw_word_little_endian": "0x97F44839"
+      },
+      "matches": true,
+      "method_id": "r1-method_b7987aaef2dfedfa54dacd38a2029438",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11158FC",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x1115B80",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "7a7afa97",
+        "raw_word_little_endian": "0x97FA7A7A"
+      },
+      "matches": true,
+      "method_id": "r1-method_be904b2485eba62866c4658d5b0b567b",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x125CF30",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x80",
+        "raw_bytes_little_endian": "ff0302d1",
+        "raw_word_little_endian": "0xD10203FF"
+      },
+      "last": {
+        "address": "0x125D024",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_be92467334a3213e735f5868123c3b8b",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1CC4284",
+        "mnemonic": "STP",
+        "operands": "x30, x23, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe5fbda9",
+        "raw_word_little_endian": "0xA9BD5FFE"
+      },
+      "last": {
+        "address": "0x1CC4358",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "9dbfcb97",
+        "raw_word_little_endian": "0x97CBBF9D"
+      },
+      "matches": true,
+      "method_id": "r1-method_c3dab4561c3556f997d91da5867e0702",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1128158",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x80",
+        "raw_bytes_little_endian": "ff0302d1",
+        "raw_word_little_endian": "0xD10203FF"
+      },
+      "last": {
+        "address": "0x1128FB8",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "6c2dfa97",
+        "raw_word_little_endian": "0x97FA2D6C"
+      },
+      "matches": true,
+      "method_id": "r1-method_c3e258bc531eb7149315a1309f031b63",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BB0BCC",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x20]!",
+        "raw_bytes_little_endian": "fe0f1ef8",
+        "raw_word_little_endian": "0xF81E0FFE"
+      },
+      "last": {
+        "address": "0x1BB939C",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "8cebcf97",
+        "raw_word_little_endian": "0x97CFEB8C"
+      },
+      "matches": true,
+      "method_id": "r1-method_c48217ed0b8b775e0e599ece297b5bda",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C6641C",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x10]!",
+        "raw_bytes_little_endian": "fe0f1ff8",
+        "raw_word_little_endian": "0xF81F0FFE"
+      },
+      "last": {
+        "address": "0x1C66494",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "5037cd97",
+        "raw_word_little_endian": "0x97CD3750"
+      },
+      "matches": true,
+      "method_id": "r1-method_c6daec6b4f0fc1e8375c3d2296888d5c",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1D512A4",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x110",
+        "raw_bytes_little_endian": "ff4304d1",
+        "raw_word_little_endian": "0xD10443FF"
+      },
+      "last": {
+        "address": "0x1D517A8",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "d85ac497",
+        "raw_word_little_endian": "0x97C45AD8"
+      },
+      "matches": true,
+      "method_id": "r1-method_c6db89026d5dfd0b662344c8263463fb",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C17774",
+        "mnemonic": "STP",
+        "operands": "d11, d10, [sp, #-0x80]!",
+        "raw_bytes_little_endian": "eb2bb86d",
+        "raw_word_little_endian": "0x6DB82BEB"
+      },
+      "last": {
+        "address": "0x1C17BD8",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "7d71ce97",
+        "raw_word_little_endian": "0x97CE717D"
+      },
+      "matches": true,
+      "method_id": "r1-method_cc819867ee739d2319dbfd09e1b6d658",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1173DF4",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xc0",
+        "raw_bytes_little_endian": "ff0303d1",
+        "raw_word_little_endian": "0xD10303FF"
+      },
+      "last": {
+        "address": "0x117521C",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "eefbf897",
+        "raw_word_little_endian": "0x97F8FBEE"
+      },
+      "matches": true,
+      "method_id": "r1-method_cc84d69f8ec1cce66f06b0d1d66e9b53",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BF0770",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x40]!",
+        "raw_bytes_little_endian": "fe0f1cf8",
+        "raw_word_little_endian": "0xF81C0FFE"
+      },
+      "last": {
+        "address": "0x1BF0A30",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "e70dcf97",
+        "raw_word_little_endian": "0x97CF0DE7"
+      },
+      "matches": true,
+      "method_id": "r1-method_d259cb93509434affede14f865a2bd82",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x125B554",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x125B5EC",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_d26225adc3e5f50342a61b3a531ceff4",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1CBAEEC",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xa0",
+        "raw_bytes_little_endian": "ff8302d1",
+        "raw_word_little_endian": "0xD10283FF"
+      },
+      "last": {
+        "address": "0x1CBF950",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "6ea2c697",
+        "raw_word_little_endian": "0x97C6A26E"
+      },
+      "matches": true,
+      "method_id": "r1-method_d455b6319f3ba7d61a6d74cad502b43e",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1222FE0",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x20]!",
+        "raw_bytes_little_endian": "fe0f1ef8",
+        "raw_word_little_endian": "0xF81E0FFE"
+      },
+      "last": {
+        "address": "0x1223088",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "5144f697",
+        "raw_word_little_endian": "0x97F64451"
+      },
+      "matches": true,
+      "method_id": "r1-method_d701537299f2f21acc15389dd2379d71",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x10E2AB8",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x10E2BC8",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "8145fb97",
+        "raw_word_little_endian": "0x97FB4581"
+      },
+      "matches": true,
+      "method_id": "r1-method_d701575e1361d554648175d764630120",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C701D0",
+        "mnemonic": "AND",
+        "operands": "w8, w1, #1",
+        "raw_bytes_little_endian": "28000012",
+        "raw_word_little_endian": "0x12000028"
+      },
+      "last": {
+        "address": "0x1C701D8",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_de0c7a3c54ad285cde85abf9a29f964d",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x123A16C",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xa0",
+        "raw_bytes_little_endian": "ff8302d1",
+        "raw_word_little_endian": "0xD10283FF"
+      },
+      "last": {
+        "address": "0x123A9B4",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "55b6f097",
+        "raw_word_little_endian": "0x97F0B655"
+      },
+      "matches": true,
+      "method_id": "r1-method_de0d93618f7f95b8aa87bdd4784e7858",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BBBCD8",
+        "mnemonic": "CMP",
+        "operands": "w1, #0x10",
+        "raw_bytes_little_endian": "3f400071",
+        "raw_word_little_endian": "0x7100403F"
+      },
+      "last": {
+        "address": "0x1BBBCF0",
+        "mnemonic": "B",
+        "operands": "#0x1f0b3a4",
+        "raw_bytes_little_endian": "ad3d0d14",
+        "raw_word_little_endian": "0x140D3DAD"
+      },
+      "matches": true,
+      "method_id": "r1-method_e3a7f29422f63d1d5dacd534703bdee2",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x128E3D0",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x90",
+        "raw_bytes_little_endian": "ff4302d1",
+        "raw_word_little_endian": "0xD10243FF"
+      },
+      "last": {
+        "address": "0x128E758",
+        "mnemonic": "BL",
+        "operands": "#0xfb41d4",
+        "raw_bytes_little_endian": "9f96f497",
+        "raw_word_little_endian": "0x97F4969F"
+      },
+      "matches": true,
+      "method_id": "r1-method_e3ab46ff29f5882a20a83565ef4788f6",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x11B7910",
+        "mnemonic": "LDR",
+        "operands": "w8, [x0, #0x294]",
+        "raw_bytes_little_endian": "089442b9",
+        "raw_word_little_endian": "0xB9429408"
+      },
+      "last": {
+        "address": "0x11B7934",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_eab6232728df34a3ef6533277aff1fc9",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C43260",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x1C4336C",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "98c3cd97",
+        "raw_word_little_endian": "0x97CDC398"
+      },
+      "matches": true,
+      "method_id": "r1-method_eab8c27dd79c1945117565e11445776c",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C00F54",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x130",
+        "raw_bytes_little_endian": "ffc304d1",
+        "raw_word_little_endian": "0xD104C3FF"
+      },
+      "last": {
+        "address": "0x1C02FE4",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "c994c997",
+        "raw_word_little_endian": "0x97C994C9"
+      },
+      "matches": true,
+      "method_id": "r1-method_ee16fc47e9c6ca09df89e09388858a0b",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12B8D88",
+        "mnemonic": "STP",
+        "operands": "x29, x30, [sp, #-0x60]!",
+        "raw_bytes_little_endian": "fd7bbaa9",
+        "raw_word_little_endian": "0xA9BA7BFD"
+      },
+      "last": {
+        "address": "0x12BB398",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "74e4f397",
+        "raw_word_little_endian": "0x97F3E474"
+      },
+      "matches": true,
+      "method_id": "r1-method_eeb8256ed92983abbe51dbfdba836436",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1CA4E00",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x20]!",
+        "raw_bytes_little_endian": "fe0f1ef8",
+        "raw_word_little_endian": "0xF81E0FFE"
+      },
+      "last": {
+        "address": "0x1CA4EA0",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "cb3ccc97",
+        "raw_word_little_endian": "0x97CC3CCB"
+      },
+      "matches": true,
+      "method_id": "r1-method_ef3847fd928a68be8d70f3c4f4ba41e0",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1D0E310",
+        "mnemonic": "STR",
+        "operands": "x30, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe0f1df8",
+        "raw_word_little_endian": "0xF81D0FFE"
+      },
+      "last": {
+        "address": "0x1D0E3A8",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_ef387490de0b5f11e3ce9dc8cf288d45",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C677CC",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x160",
+        "raw_bytes_little_endian": "ff8305d1",
+        "raw_word_little_endian": "0xD10583FF"
+      },
+      "last": {
+        "address": "0x1C6A030",
+        "mnemonic": "B",
+        "operands": "#0x1c69f90",
+        "raw_bytes_little_endian": "d8ffff17",
+        "raw_word_little_endian": "0x17FFFFD8"
+      },
+      "matches": true,
+      "method_id": "r1-method_f3d32903a48574b53972563cd2140452",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12766F4",
+        "mnemonic": "STP",
+        "operands": "x30, x23, [sp, #-0x30]!",
+        "raw_bytes_little_endian": "fe5fbda9",
+        "raw_word_little_endian": "0xA9BD5FFE"
+      },
+      "last": {
+        "address": "0x12768A8",
+        "mnemonic": "BL",
+        "operands": "#0xfb4098",
+        "raw_bytes_little_endian": "fcf5f497",
+        "raw_word_little_endian": "0x97F4F5FC"
+      },
+      "matches": true,
+      "method_id": "r1-method_f3d87bb6e45635c934c0dde94f8a1d19",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BD97C4",
+        "mnemonic": "STP",
+        "operands": "x29, x30, [sp, #-0x60]!",
+        "raw_bytes_little_endian": "fd7bbaa9",
+        "raw_word_little_endian": "0xA9BA7BFD"
+      },
+      "last": {
+        "address": "0x1BE87B4",
+        "mnemonic": "BL",
+        "operands": "#0xfb41cc",
+        "raw_bytes_little_endian": "862ecf97",
+        "raw_word_little_endian": "0x97CF2E86"
+      },
+      "matches": true,
+      "method_id": "r1-method_f3d9564431281bd60e9face7690fefac",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BD6D40",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xe0",
+        "raw_bytes_little_endian": "ff8303d1",
+        "raw_word_little_endian": "0xD10383FF"
+      },
+      "last": {
+        "address": "0x1BD8E5C",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "2b3dca97",
+        "raw_word_little_endian": "0x97CA3D2B"
+      },
+      "matches": true,
+      "method_id": "r1-method_f48a2edf451c8f567697fc99a9b6824f",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C4F450",
+        "mnemonic": "LDR",
+        "operands": "x8, [x0]",
+        "raw_bytes_little_endian": "080040f9",
+        "raw_word_little_endian": "0xF9400008"
+      },
+      "last": {
+        "address": "0x1C4F45C",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_f5c122e845b360dd418264bc51304650",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1D13618",
+        "mnemonic": "STP",
+        "operands": "x29, x30, [sp, #-0x60]!",
+        "raw_bytes_little_endian": "fd7bbaa9",
+        "raw_word_little_endian": "0xA9BA7BFD"
+      },
+      "last": {
+        "address": "0x1D13918",
+        "mnemonic": "BL",
+        "operands": "#0xfb4568",
+        "raw_bytes_little_endian": "1483ca97",
+        "raw_word_little_endian": "0x97CA8314"
+      },
+      "matches": true,
+      "method_id": "r1-method_f5c27abf7f981a5830ace84741fe0267",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1BCA85C",
+        "mnemonic": "STP",
+        "operands": "x29, x30, [sp, #-0x60]!",
+        "raw_bytes_little_endian": "fd7bbaa9",
+        "raw_word_little_endian": "0xA9BA7BFD"
+      },
+      "last": {
+        "address": "0x1BCFC28",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "b861ca97",
+        "raw_word_little_endian": "0x97CA61B8"
+      },
+      "matches": true,
+      "method_id": "r1-method_f976bb5267cba088645dce5e7714430f",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x124EE20",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0xc0",
+        "raw_bytes_little_endian": "ff0303d1",
+        "raw_word_little_endian": "0xD10303FF"
+      },
+      "last": {
+        "address": "0x125050C",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "7f5ff097",
+        "raw_word_little_endian": "0x97F05F7F"
+      },
+      "matches": true,
+      "method_id": "r1-method_f977f424c4a844277d966e76b74fb89a",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12C9790",
+        "mnemonic": "LDR",
+        "operands": "w8, [x0, #0xdc]",
+        "raw_bytes_little_endian": "08dc40b9",
+        "raw_word_little_endian": "0xB940DC08"
+      },
+      "last": {
+        "address": "0x12C97A0",
+        "mnemonic": "RET",
+        "operands": "",
+        "raw_bytes_little_endian": "c0035fd6",
+        "raw_word_little_endian": "0xD65F03C0"
+      },
+      "matches": true,
+      "method_id": "r1-method_fd2d13961566aa2c8d29e8822364c643",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x1C0B9E8",
+        "mnemonic": "SUB",
+        "operands": "sp, sp, #0x120",
+        "raw_bytes_little_endian": "ff8304d1",
+        "raw_word_little_endian": "0xD10483FF"
+      },
+      "last": {
+        "address": "0x1C0CEE8",
+        "mnemonic": "BL",
+        "operands": "#0xe68308",
+        "raw_bytes_little_endian": "086dc997",
+        "raw_word_little_endian": "0x97C96D08"
+      },
+      "matches": true,
+      "method_id": "r1-method_fd300d7b992aa57046902fd58c8062d4",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    },
+    {
+      "first": {
+        "address": "0x12CE440",
+        "mnemonic": "MOV",
+        "operands": "w4, wzr",
+        "raw_bytes_little_endian": "e4031f2a",
+        "raw_word_little_endian": "0x2A1F03E4"
+      },
+      "last": {
+        "address": "0x12CE444",
+        "mnemonic": "B",
+        "operands": "#0x12ce448",
+        "raw_bytes_little_endian": "01000014",
+        "raw_word_little_endian": "0x14000001"
+      },
+      "matches": true,
+      "method_id": "r1-method_fffeef902ba50483eec891455f2f05af",
+      "native_range_status": "NATIVE_RANGE_VERIFIED"
+    }
+  ],
+  "canary_count": 123,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "pass": true,
+  "schema_version": "t1-full-native-byte-audit-v1"
+}

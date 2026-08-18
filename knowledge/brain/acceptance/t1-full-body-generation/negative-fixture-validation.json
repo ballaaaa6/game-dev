@@ -1,0 +1,102 @@
+{
+  "duplicate_identity_rows_rejected": true,
+  "google_pack": "D:/downloads/T1_FULL_BODY_GENERATION_PREWORK_PACK.zip",
+  "google_pack_audit_entry": "T1_FULL_BODY_GENERATION_PREWORK_PACK/analysis/google-t1-adversarial-audit.json",
+  "pass": true,
+  "placeholder_hits": [],
+  "placeholder_semantic_names_rejected": true,
+  "pre_serialization_counter_mismatch_rejected": true,
+  "prior_r3_negative_fixtures_rejected": true,
+  "prior_r4_negative_fixtures_rejected": true,
+  "schema_version": "t1-full-negative-fixture-validation-v1",
+  "truncation_cap_rejected": true,
+  "wrong_native_rva_canaries": [
+    {
+      "actual": [
+        [
+          "LDR",
+          "w0, [x0, #0x38]"
+        ],
+        [
+          "RET",
+          ""
+        ]
+      ],
+      "expected": [
+        [
+          "LDR",
+          "w0, [x0, #0x38]"
+        ],
+        [
+          "RET",
+          ""
+        ]
+      ],
+      "label": "system.billing.util.Purchase.GetPurchaseState",
+      "match": true,
+      "method_id": "r1-method_0013bf5940b02198411879185bb5e140",
+      "representation_hash": "21ae22a042a88fa31401662f936c267e958245fb2a9731f03bf0be09bfbf08fb"
+    },
+    {
+      "actual": [
+        [
+          "LDRB",
+          "w0, [x0, #0x6c]"
+        ],
+        [
+          "RET",
+          ""
+        ]
+      ],
+      "expected": [
+        [
+          "LDRB",
+          "w0, [x0, #0x6c]"
+        ],
+        [
+          "RET",
+          ""
+        ]
+      ],
+      "label": "game.Avatar.GetBirthDayOfMonth",
+      "match": true,
+      "method_id": "r1-method_00253266cfcbe5be9ec523631327dcbe",
+      "representation_hash": "341c5cd5929f45f82ec7d87b8dcb0ccea3013ee6e1f614024916f7aa108e02d1"
+    },
+    {
+      "actual": [
+        [
+          "LDRB",
+          "w8, [x0, #0xac]"
+        ],
+        [
+          "UBFX",
+          "w0, w8, #4, #1"
+        ],
+        [
+          "RET",
+          ""
+        ]
+      ],
+      "expected": [
+        [
+          "LDRB",
+          "w8, [x0, #0xac]"
+        ],
+        [
+          "UBFX",
+          "w0, w8, #4, #1"
+        ],
+        [
+          "RET",
+          ""
+        ]
+      ],
+      "label": "game.Staff.IsTyping",
+      "match": true,
+      "method_id": "r1-method_0054bbdc23964294fc215ca9f054906f",
+      "representation_hash": "b951d0edfe38dff4d959a91cb5980210bc671bbe9e4c66a67cffc2f5b8d9ab93"
+    }
+  ],
+  "wrong_native_rva_rejected": true
+}
