@@ -1,19 +1,25 @@
 # Project State
 
-## Current Status — T2 Whole-Twin compile factory closed (2026-08-18)
+## Current Status — T3 source-like uplift closed (2026-08-18)
 
-The canonical T2 phase is closed with `PASS_T2_WHOLE_TWIN_COMPILE_FACTORY_CLOSED`. It materialized all 641 owned type shells and all 10,827 canonical method identities, with exactly one generated entry per method and exact linkage to the T1 representation hash and segment descriptors. The baseline preserves 2,481 `EXISTING_READABLE`, 8,291 `GENERATED_LOW`, 50 `DECLARATION_ONLY`, and 5 `SOURCE_LIMITED_STUB` tiers; all 988,046 T1 operations remain accounted for with zero omissions.
+The canonical T3 phase is closed with `PASS_T3_SOURCE_LIKE_UPLIFT_CLOSED`. The profiler covered all 10,827 canonical methods exactly once and preserved the 641-type / 10,251-field surface plus all 988,046 T1 operations and exact T1 hash/segment linkage. A 400-method whole-Twin canary covered both ownerships and every available family/risk dimension; the readable, simple, typed-IR, structured, and final waves all parsed and compiled with zero Roslyn errors.
 
-The difficult-signature 500-method canary and the full generated C# factory both parse and compile with zero Roslyn errors. The runtime registry contains 10,827 exact T1 entries, 48 boundary contracts are explicit, canary/full deterministic replays and assembly hashes pass, and the Google negative regression gates pass. The bounded readable reinjection probe attempted 200 bodies, with 44 direct compile successes and 156 diagnostic rejections; it is recorded as non-blocking, with source-like uplift reserved for T3. Compact acceptance evidence is under `knowledge/brain/acceptance/t2-whole-twin-compile/`; heavy generated trees remain local-only under `artifacts/t2-whole-twin-compile/`.
+The phase retained 990 proof-gated promotions from 992 candidates: 698 exact source bodies that passed the prior readable preflight and 292 strict straight-line native rules. Two native field-get candidates were rejected by whole-Twin diagnostics and remain on the T1 fallback path. Semantic tiers are `990 SOURCE_LIKE_EXACT`, `1,783 EXISTING_READABLE`, `7,999 GENERATED_LOW`, `50 DECLARATION_ONLY`, and `5 SOURCE_LIMITED_STUB`. The 16 named adversarial negative regressions, deterministic replay, arithmetic conservation, and final compilation all pass.
 
-No original source, Unity, V8, runtime, integration, persistence, backend, deployment, or semantic-uplift work was started. The next authorized boundary is `T3_SOURCE_LIKE_UPLIFT`; it has not started.
+Before profiling, T2 closure hygiene was rerun. The contradiction was caused by a stale prework threshold of 467 signature atoms; the canonical builder and final payload both report 614, and the regenerated T2 validation passes. Compact T3 acceptance evidence is under `knowledge/brain/acceptance/t3-source-like-uplift/`; heavy generated trees remain local-only under `artifacts/t3-source-like-uplift/`.
+
+No original source roots, Unity/V8/runtime product code, integrations, persistence, backend, deployment, or server were changed. The next authorized boundary is `T4_WHOLE_TWIN_VALIDATION`.
 
 ## Git-visible current gate
 
-- `current_phase`: `T2_WHOLE_TWIN_COMPILE`
-- `status`: `PASS_T2_WHOLE_TWIN_COMPILE_FACTORY_CLOSED`
-- `next_authorized_phase`: `T3_SOURCE_LIKE_UPLIFT`
+- `current_phase`: `T3_SOURCE_LIKE_UPLIFT`
+- `status`: `PASS_T3_SOURCE_LIKE_UPLIFT_CLOSED`
+- `next_authorized_phase`: `T4_WHOLE_TWIN_VALIDATION`
 - `next_phase_started`: `false`
+
+## Historical Status — T2 Whole-Twin compile factory closed (2026-08-18)
+
+The canonical T2 phase remains closed with `PASS_T2_WHOLE_TWIN_COMPILE_FACTORY_CLOSED`. It materialized all 641 owned type shells and all 10,827 canonical method identities, with exact linkage to the T1 representation hash and segment descriptors. Its baseline preserves 2,481 `EXISTING_READABLE`, 8,291 `GENERATED_LOW`, 50 `DECLARATION_ONLY`, and 5 `SOURCE_LIMITED_STUB` tiers; all 988,046 T1 operations remain accounted for with zero omissions. Its compact evidence is under `knowledge/brain/acceptance/t2-whole-twin-compile/`, with heavy generated trees under `artifacts/t2-whole-twin-compile/`.
 
 ## Historical Status — T1 full-body generation closed (2026-08-18)
 

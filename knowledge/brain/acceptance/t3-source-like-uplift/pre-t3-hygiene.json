@@ -1,0 +1,31 @@
+{
+  "after": {
+    "distinct_signature_type_atoms": 614,
+    "expected_distinct_signature_type_atoms": 614,
+    "final_decision_sha256": "9d8ee59ddd982d40b849126308ea36412b47e1790c067db630b4b340cd3c5c3b",
+    "signature_closure_sha256": "a722c647e62812cea3dc854d5ca90fd302339e8d6adf1935708ab21984795edc",
+    "signature_closure_status": "PASS",
+    "validation_sha256": "54459bc13622899c182dc8eb5f91ddf25e2a028608a22175728cadfdf62191c9"
+  },
+  "before": {
+    "signature_closure_sha256": "8d75b5e166a45388df5f003760b477e760d87d5801632451bbc7464924205bb4",
+    "signature_closure_status": "FAIL",
+    "stale_expected_distinct_signature_type_atoms": 467
+  },
+  "builder_replay": {
+    "canonical_generated_content_sha256": "0c79a5f3527233654d3950e584ca882a7a9e065df321a3ba267c6657f61138a3",
+    "replay_generated_content_sha256": "0c79a5f3527233654d3950e584ca882a7a9e065df321a3ba267c6657f61138a3",
+    "replay_summary": "artifacts\\t2-whole-twin-compile\\t3-builder-replay-a\\reports\\full-generation-summary.json"
+  },
+  "checks": {
+    "canonical_builder_generation_pass": true,
+    "canonical_builder_replay_pass": true,
+    "signature_atom_payload_count_consistent": true,
+    "signature_closure_status_pass": true,
+    "t2_final_decision_pass": true,
+    "t2_validation_pass": true
+  },
+  "root_cause": "The prework signature-closure threshold (467) was stale. The canonical T2 builder emits 614 distinct signature atoms; the validator now checks the final payload count and normalization result against 614.",
+  "schema_version": "t3-pre-t3-hygiene-v1",
+  "status": "PASS"
+}

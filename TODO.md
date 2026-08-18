@@ -1,5 +1,17 @@
 # TODO
 
+## T3 Source-like uplift — closed (2026-08-18)
+
+- [x] Re-read and close the T2 signature-closure hygiene contradiction before profiling: replace the stale 467-atom prework threshold with the canonical 614-atom builder/payload result and pass the independent pre-T3 hygiene check.
+- [x] Profile all 10,827 methods exactly once with ownership, T1 tier/hash/segments, native fingerprints, operation accounting, calls/fields/CFG, source hashes, family, risk shape, and promotion eligibility evidence.
+- [x] Run the 400-method whole-Twin canary across both ownerships and all available family/risk dimensions; compile the readable and simple native waves, explicitly compile the no-new-rule typed-IR/structured waves, and retain only proof-gated promotions.
+- [x] Retain 990 promotions from 992 candidates: 698 exact source bodies and 292 strict straight-line native promotions; reject two field-get candidates by compiler diagnostics and preserve their T1 fallback linkage.
+- [x] Preserve 641 types, 10,251 fields, 10,827 method IDs, 988,046 T1 operations, original representation tiers, exact hashes/segments, and no source/runtime/Unity/V8 mutation.
+- [x] Pass whole-Twin Roslyn compilation after every wave, deterministic replay, semantic-tier arithmetic, and all 16 named adversarial negative regressions.
+- [x] Close with `PASS_T3_SOURCE_LIKE_UPLIFT_CLOSED`; leave `T4_WHOLE_TWIN_VALIDATION` unopened.
+
+The T3 phase is closed. Compact acceptance evidence is under `knowledge/brain/acceptance/t3-source-like-uplift/`; heavy generated projects and assemblies remain local-only under `artifacts/t3-source-like-uplift/`. The next authorized boundary is `T4_WHOLE_TWIN_VALIDATION`; do not start it without explicit authorization.
+
 ## T2 Whole-Twin compile factory — closed (2026-08-18)
 
 - [x] Read the referenced pasted T2 specification and `T2_WHOLE_TWIN_COMPILE_PREWORK_PACK.zip`; rerun the advisory prework against the canonical R1.5/T1 artifacts.
@@ -11,7 +23,7 @@
 - [x] Run the diagnostic 200-method readable reinjection probe: 44 direct compile successes, 156 rejected bodies, and record failures as non-blocking T3 source-like uplift evidence.
 - [x] Close with `PASS_T2_WHOLE_TWIN_COMPILE_FACTORY_CLOSED` and leave `T3_SOURCE_LIKE_UPLIFT` unopened.
 
-The T2 phase is closed. Compact acceptance evidence is under `knowledge/brain/acceptance/t2-whole-twin-compile/`; heavy generated projects and assemblies remain local-only under `artifacts/t2-whole-twin-compile/`. The next authorized boundary is `T3_SOURCE_LIKE_UPLIFT`; do not start it without explicit authorization.
+The T2 phase is closed. Compact acceptance evidence is under `knowledge/brain/acceptance/t2-whole-twin-compile/`; heavy generated projects and assemblies remain local-only under `artifacts/t2-whole-twin-compile/`. T3 subsequently closed the authorized source-like uplift boundary above.
 
 ## Historical T1 full-body generation — closed (2026-08-18)
 
@@ -343,8 +355,8 @@ The former GameDev/Virtual Office corpus, legacy runtime, extraction roots, and 
 
 ## Do Not Do During This Stage
 
-The current stage is the completed T1 full-body generation closure. Do not
-start `T2_WHOLE_TWIN_COMPILE_FACTORY`, runtime/Twin integration, Unity/V8,
+The current stage is the completed T3 source-like uplift closure. Do not
+start `T4_WHOLE_TWIN_VALIDATION`, runtime/Twin product integration, Unity/V8,
 server/backend/cloud work, integrations, persistence, deployment, emulator/
 ADB/live-app work, or additional reverse engineering without a separate
 user-directed phase.

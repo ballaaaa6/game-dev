@@ -1,0 +1,14 @@
+{
+  "canonical_field_count": 10251,
+  "canonical_method_count": 10827,
+  "canonical_operation_count": 988046,
+  "canonical_type_count": 641,
+  "exact_t1_linkage": true,
+  "next_phase": "T4_WHOLE_TWIN_VALIDATION",
+  "phase": "T3_SOURCE_LIKE_UPLIFT",
+  "promoted_method_count": 990,
+  "rejected_candidate_count": 2,
+  "schema_version": "t3-final-decision-v1",
+  "status": "PASS_T3_SOURCE_LIKE_UPLIFT_CLOSED",
+  "unity_v8_runtime_untouched": true
+}

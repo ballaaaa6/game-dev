@@ -1,0 +1,9 @@
+{
+  "assembly_sha256_equal": true,
+  "compile_pass_a": true,
+  "compile_pass_b": true,
+  "schema_version": "t3-deterministic-replay-v1",
+  "source_generation_sha256_equal": true,
+  "source_tree_sha256_equal": true,
+  "status": "PASS"
+}

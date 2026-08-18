@@ -1,0 +1,6 @@
+{
+  "attempted": false,
+  "promotion_count": 0,
+  "schema_version": "t3-complex-uplift-v1",
+  "status": "SKIPPED_NO_PROVEN_COMPLEX_RULE"
+}

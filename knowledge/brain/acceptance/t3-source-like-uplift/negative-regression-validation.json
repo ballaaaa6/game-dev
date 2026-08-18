@@ -1,0 +1,90 @@
+{
+  "case_count": 16,
+  "case_results": [
+    {
+      "id": "INVALID_CTOR_EMISSION",
+      "pass": true
+    },
+    {
+      "id": "INVALID_COMPILER_GENERATED_IDENTIFIER",
+      "pass": true
+    },
+    {
+      "id": "SUMMARY_COMPILE_WITHOUT_ARTIFACT_COMPILE",
+      "pass": true
+    },
+    {
+      "id": "METHOD_ID_LABEL_WITHOUT_T1_HASH_LINK",
+      "pass": true
+    },
+    {
+      "id": "NOOP_DISPATCH_RUNTIME",
+      "pass": true
+    },
+    {
+      "id": "TYPE_SURFACE_COUNT_DRIFT",
+      "pass": true
+    },
+    {
+      "id": "FIELD_SURFACE_MISSING",
+      "pass": true
+    },
+    {
+      "id": "TIER_COLLAPSE",
+      "pass": true
+    },
+    {
+      "id": "FALSE_READABLE_REINJECTION_PASS",
+      "pass": true
+    },
+    {
+      "id": "REPORT_ARITHMETIC_DRIFT",
+      "pass": true
+    },
+    {
+      "id": "SHARED_NATIVE_BODY_IDENTITY_COLLAPSE",
+      "pass": true
+    },
+    {
+      "id": "WRONG_RVA_NATIVE_SLICE",
+      "pass": true
+    },
+    {
+      "id": "PLACEHOLDER_SEMANTIC_PROMOTION",
+      "pass": true
+    },
+    {
+      "id": "OPERATION_TRUNCATION",
+      "pass": true
+    },
+    {
+      "id": "PROMOTION_PROVENANCE_LOSS",
+      "pass": true
+    },
+    {
+      "id": "HIDDEN_COMPILE_REGRESSION",
+      "pass": true
+    }
+  ],
+  "checks": {
+    "FALSE_READABLE_REINJECTION_PASS": true,
+    "FIELD_SURFACE_MISSING": true,
+    "HIDDEN_COMPILE_REGRESSION": true,
+    "INVALID_COMPILER_GENERATED_IDENTIFIER": true,
+    "INVALID_CTOR_EMISSION": true,
+    "METHOD_ID_LABEL_WITHOUT_T1_HASH_LINK": true,
+    "NOOP_DISPATCH_RUNTIME": true,
+    "OPERATION_TRUNCATION": true,
+    "PLACEHOLDER_SEMANTIC_PROMOTION": true,
+    "PROMOTION_PROVENANCE_LOSS": true,
+    "REPORT_ARITHMETIC_DRIFT": true,
+    "SHARED_NATIVE_BODY_IDENTITY_COLLAPSE": true,
+    "SUMMARY_COMPILE_WITHOUT_ARTIFACT_COMPILE": true,
+    "TIER_COLLAPSE": true,
+    "TYPE_SURFACE_COUNT_DRIFT": true,
+    "WRONG_RVA_NATIVE_SLICE": true
+  },
+  "fixture": "tools/social-dev/t3_negative_regression_cases.json",
+  "schema_version": "t3-negative-regression-validation-v2",
+  "status": "PASS"
+}

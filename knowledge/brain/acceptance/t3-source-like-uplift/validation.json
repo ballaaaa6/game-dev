@@ -1,0 +1,14 @@
+{
+  "all_gates_pass": true,
+  "canary_compile": true,
+  "canonical_universe": true,
+  "deterministic_replay": true,
+  "exact_t1_linkage": true,
+  "final_compile": true,
+  "full_corpus_profile_exact_once": true,
+  "negative_regressions": true,
+  "pre_t3_hygiene": true,
+  "semantic_tier_arithmetic": true,
+  "status": "PASS",
+  "wave_compiles": true
+}

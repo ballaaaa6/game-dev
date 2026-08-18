@@ -1,0 +1,37 @@
+{
+  "candidate_count": 992,
+  "candidate_families": {
+    "CONST_RETURN": 5,
+    "EMPTY_VOID": 143,
+    "FIELD_GET": 146,
+    "READABLE_SOURCE_BODY": 698
+  },
+  "candidate_rules": {
+    "EXACT_SOURCE_BODY_COMPILE_PROVEN": 698,
+    "NATIVE_FIELD_READ_RETURN": 146,
+    "NATIVE_IMMEDIATE_RETURN": 3,
+    "NATIVE_ZERO_RETURN": 2,
+    "RET_ONLY": 143
+  },
+  "full_profile_method_count": 10827,
+  "not_proven": [
+    "CALL_FORWARD",
+    "BRANCH_RECONSTRUCTION",
+    "LOOP_RECONSTRUCTION",
+    "GENERIC_SPECIALIZATION",
+    "VIRTUAL_DISPATCH",
+    "BYREF_RECONSTRUCTION"
+  ],
+  "proven_rules": [
+    "EXACT_SOURCE_BODY_COMPILE_PROVEN",
+    "NATIVE_FIELD_READ_RETURN",
+    "NATIVE_FIELD_WRITE_ARG0",
+    "NATIVE_ZERO_RETURN",
+    "NATIVE_IMMEDIATE_RETURN",
+    "NATIVE_ARG0_RETURN",
+    "RET_ONLY"
+  ],
+  "readable_probe_rejected_count": 1783,
+  "readable_source_body_count": 698,
+  "schema_version": "t3-family-eligibility-v1"
+}

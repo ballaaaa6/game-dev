@@ -1,0 +1,80 @@
+{
+  "all_available_dimensions_covered": true,
+  "attempts": [
+    {
+      "active_candidate_count": 35,
+      "attempt": 1,
+      "compile_error_count": 0,
+      "compile_pass": true,
+      "demoted_method_ids": []
+    }
+  ],
+  "canary_method_count": 400,
+  "canary_method_ids_sha256": "bfc43f02f6bc2a52dbda9c7170ef30eb47177da3b9c9001bd04e5c288a7f0907",
+  "candidate_count": 35,
+  "compile": {
+    "compile_error_count": 0,
+    "compile_errors": [],
+    "compile_pass": true,
+    "diagnostics_by_code": {},
+    "diagnostics_by_root_cause_family": {},
+    "label": "canary",
+    "output_assembly": "D:\\antigravity\\test open ai\\artifacts\\t3-source-like-uplift\\waves\\canary\\diagnostics\\compiled.dll",
+    "output_bytes": 8344064,
+    "parse_error_count": 0,
+    "parse_errors": [],
+    "parse_pass": true,
+    "process_exit_code": 0,
+    "project_root": "D:\\antigravity\\test open ai\\artifacts\\t3-source-like-uplift\\waves\\canary",
+    "project_source_tree_sha256": "5da29867ca41b4150ab9d63a4e9e8b23a10560052815c14b20e341603eff0cc6",
+    "roslyn_root": "C:\\Users\\WINDOW XI\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell",
+    "schema_version": "t2-roslyn-compile-v1",
+    "source_count": 35
+  },
+  "families_available": [
+    "CALL_HEAVY",
+    "CONSTRUCTOR",
+    "CONTROL_FLOW",
+    "FIELD_ACCESSOR",
+    "STRAIGHT_LINE"
+  ],
+  "families_covered": [
+    "CALL_HEAVY",
+    "CONSTRUCTOR",
+    "CONTROL_FLOW",
+    "FIELD_ACCESSOR",
+    "STRAIGHT_LINE"
+  ],
+  "families_missing_because_absent_or_selection": [],
+  "ownership_counts": {
+    "GAME_FIRST_PARTY": 156,
+    "KAIRO_ENGINE": 244
+  },
+  "promoted_count": 35,
+  "rejected_count": 0,
+  "risk_shapes_available": [
+    "ARRAY",
+    "BYREF",
+    "CALL_HEAVY",
+    "CFG_BRANCH",
+    "CONSTRUCTOR",
+    "GENERIC",
+    "NESTED",
+    "STRAIGHT_LINE",
+    "VIRTUAL"
+  ],
+  "risk_shapes_covered": [
+    "ARRAY",
+    "BYREF",
+    "CALL_HEAVY",
+    "CFG_BRANCH",
+    "CONSTRUCTOR",
+    "GENERIC",
+    "NESTED",
+    "STRAIGHT_LINE",
+    "VIRTUAL"
+  ],
+  "risk_shapes_missing_because_absent_or_selection": [],
+  "schema_version": "t3-canary-v1",
+  "status": "PASS"
+}

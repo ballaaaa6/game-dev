@@ -1,0 +1,16 @@
+{
+  "candidate_families": {
+    "CONST_RETURN": 5,
+    "EMPTY_VOID": 143,
+    "FIELD_GET": 146
+  },
+  "candidate_rules": {
+    "NATIVE_FIELD_READ_RETURN": 146,
+    "NATIVE_IMMEDIATE_RETURN": 3,
+    "NATIVE_ZERO_RETURN": 2,
+    "RET_ONLY": 143
+  },
+  "native_candidate_count": 294,
+  "schema_version": "t3-simple-pattern-v1",
+  "status": "PASS"
+}

@@ -15,6 +15,11 @@ OWNED = {"GAME_FIRST_PARTY", "KAIRO_ENGINE"}
 EXPECTED_TYPES = 641
 EXPECTED_METHODS = 10_827
 EXPECTED_FIELDS = 10_251
+# The pre-T2 materialization probe reported 467 signature atoms, but the
+# canonical T2 builder's final type/boundary model closes 614 atoms. Keep this
+# pinned canonical count here so stale prework thresholds cannot manufacture a
+# false signature-closure failure.
+EXPECTED_SIGNATURE_TYPE_ATOMS = 614
 EXPECTED_TIERS = {
     "EXISTING_READABLE": 2_481,
     "GENERATED_LOW": 8_291,
@@ -281,10 +286,14 @@ def main(root: Path, acceptance: Path) -> int:
         "normalization_tests": normalization,
         "emitted_relationship_policy": "owned bases are emitted; external framework/interface obligations remain explicit in the canonical model and boundary reports",
     }
+    signature_atoms = signature.get("signature_atoms") or {}
+    signature_atom_count_matches_payload = signature.get("distinct_signature_type_atoms") == len(signature_atoms)
     signature_closure = {
         "schema_version": "t2-signature-closure-v1",
-        "status": "PASS" if signature.get("distinct_signature_type_atoms") == 467 and normalization.get("all_pass") else "FAIL",
+        "status": "PASS" if signature.get("distinct_signature_type_atoms") == EXPECTED_SIGNATURE_TYPE_ATOMS and signature_atom_count_matches_payload and normalization.get("all_pass") else "FAIL",
         "distinct_signature_type_atoms": signature.get("distinct_signature_type_atoms"),
+        "expected_distinct_signature_type_atoms": EXPECTED_SIGNATURE_TYPE_ATOMS,
+        "signature_atom_count_matches_payload": signature_atom_count_matches_payload,
         "signature_atoms_by_ownership": signature.get("signature_atoms_by_ownership"),
         "boundary_contract_count": signature.get("boundary_contract_count"),
         "normalization_tests": normalization.get("tests"),

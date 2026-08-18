@@ -1,0 +1,22 @@
+{
+  "schema_version": "t3-negative-regression-fixture-v1",
+  "source": "T3_SOURCE_LIKE_UPLIFT_PROMPT and GOOGLE_T2_T3_NEGATIVE_REGRESSIONS prework",
+  "cases": [
+    {"id": "INVALID_CTOR_EMISSION", "assertion": "Generated C# contains no raw .ctor or .cctor declaration token."},
+    {"id": "INVALID_COMPILER_GENERATED_IDENTIFIER", "assertion": "Generated declarations do not emit raw compiler-generated angle-bracket member identifiers."},
+    {"id": "SUMMARY_COMPILE_WITHOUT_ARTIFACT_COMPILE", "assertion": "The final compile record proves the exact final source tree was compiled with zero parse/compile errors."},
+    {"id": "METHOD_ID_LABEL_WITHOUT_T1_HASH_LINK", "assertion": "Every emitted method ID retains its T1 representation hash, shard, and segment descriptors."},
+    {"id": "NOOP_DISPATCH_RUNTIME", "assertion": "Promoted methods have source-like bodies and do not use the dispatch runtime body."},
+    {"id": "TYPE_SURFACE_COUNT_DRIFT", "assertion": "The promoted Twin retains the canonical 641-type surface."},
+    {"id": "FIELD_SURFACE_MISSING", "assertion": "The canonical field surface remains 10,251 fields."},
+    {"id": "TIER_COLLAPSE", "assertion": "The four T1 representation tiers remain exact after promotion."},
+    {"id": "FALSE_READABLE_REINJECTION_PASS", "assertion": "Readable bodies are promoted only from the compile-proven preflight set."},
+    {"id": "REPORT_ARITHMETIC_DRIFT", "assertion": "Profile operation totals remain 988,046 and semantic counts sum to 10,827."},
+    {"id": "SHARED_NATIVE_BODY_IDENTITY_COLLAPSE", "assertion": "Method identity coverage remains unique even when native fingerprints repeat."},
+    {"id": "WRONG_RVA_NATIVE_SLICE", "assertion": "Promotion ledger entries retain canonical native fingerprints and T1 segment references."},
+    {"id": "PLACEHOLDER_SEMANTIC_PROMOTION", "assertion": "Every promoted row names a proven promotion rule and SOURCE_LIKE_EXACT semantic tier."},
+    {"id": "OPERATION_TRUNCATION", "assertion": "Every T1 accounting record reports zero omitted operations."},
+    {"id": "PROMOTION_PROVENANCE_LOSS", "assertion": "Every promotion ledger entry retains ownership, declaring type, hash, shard, segments, and native/source evidence."},
+    {"id": "HIDDEN_COMPILE_REGRESSION", "assertion": "The deterministic replay compiles the identical final source tree with zero errors."}
+  ]
+}

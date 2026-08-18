@@ -1,0 +1,20 @@
+{
+  "field_count": 10251,
+  "method_count": 10827,
+  "method_ids_sha256": "55bbfb7717a40bdfc29d05b855830c93849517b707b3a09b5c603246d392506a",
+  "method_ids_unique": true,
+  "operation_count": 988046,
+  "ownership": {
+    "GAME_FIRST_PARTY": 4547,
+    "KAIRO_ENGINE": 6280
+  },
+  "representation_tiers": {
+    "DECLARATION_ONLY": 50,
+    "EXISTING_READABLE": 2481,
+    "GENERATED_LOW": 8291,
+    "SOURCE_LIMITED_STUB": 5
+  },
+  "schema_version": "t3-canonical-universe-v1",
+  "status": "PASS",
+  "type_count": 641
+}

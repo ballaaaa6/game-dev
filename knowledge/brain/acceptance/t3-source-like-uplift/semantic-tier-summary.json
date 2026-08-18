@@ -1,0 +1,20 @@
+{
+  "canonical_method_count": 10827,
+  "original_representation_tiers": {
+    "DECLARATION_ONLY": 50,
+    "EXISTING_READABLE": 2481,
+    "GENERATED_LOW": 8291,
+    "SOURCE_LIMITED_STUB": 5
+  },
+  "promoted_method_count": 990,
+  "rejected_candidate_count": 2,
+  "schema_version": "t3-semantic-tier-v1",
+  "semantic_tiers": {
+    "DECLARATION_ONLY": 50,
+    "EXISTING_READABLE": 1783,
+    "GENERATED_LOW": 7999,
+    "SOURCE_LIKE_EXACT": 990,
+    "SOURCE_LIMITED_STUB": 5
+  },
+  "tier_collapse": false
+}

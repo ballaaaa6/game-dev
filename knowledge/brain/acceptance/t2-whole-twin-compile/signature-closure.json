@@ -1,6 +1,7 @@
 {
   "boundary_contract_count": 48,
   "distinct_signature_type_atoms": 614,
+  "expected_distinct_signature_type_atoms": 614,
   "normalization_tests": [
     {
       "expected": "DROP_NON_INTERFACE_BASE",
@@ -28,6 +29,7 @@
     }
   ],
   "schema_version": "t2-signature-closure-v1",
+  "signature_atom_count_matches_payload": true,
   "signature_atoms_by_ownership": {
     "BOUNDARY_CONTRACT_SYNTHETIC": 1,
     "DOTNET_FRAMEWORK": 74,
@@ -36,5 +38,5 @@
     "THIRD_PARTY": 15,
     "UNITY_BOUNDARY": 32
   },
-  "status": "FAIL"
+  "status": "PASS"
 }

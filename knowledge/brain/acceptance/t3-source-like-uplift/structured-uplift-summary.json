@@ -1,0 +1,7 @@
+{
+  "candidate_count": 0,
+  "proven_structured_family_count": 0,
+  "reason": "T3 does not promote calls, branches, loops, generic specialization, virtual dispatch, or byref reconstruction without a source-confirmed exact body.",
+  "schema_version": "t3-structured-uplift-v1",
+  "status": "NO_PROVEN_STRUCTURED_RULE"
+}
