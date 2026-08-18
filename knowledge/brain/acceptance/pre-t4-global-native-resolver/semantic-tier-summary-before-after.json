@@ -1,0 +1,27 @@
+{
+  "after": {
+    "DECLARATION_ONLY": 50,
+    "EXISTING_READABLE": 1783,
+    "GENERATED_LOW": 7999,
+    "SOURCE_LIKE_EXACT": 990,
+    "SOURCE_LIMITED_STUB": 5
+  },
+  "before": {
+    "DECLARATION_ONLY": 50,
+    "EXISTING_READABLE": 1783,
+    "GENERATED_LOW": 7999,
+    "SOURCE_LIKE_EXACT": 990,
+    "SOURCE_LIMITED_STUB": 5
+  },
+  "canonical_method_count": 10827,
+  "delta": {
+    "DECLARATION_ONLY": 0,
+    "EXISTING_READABLE": 0,
+    "GENERATED_LOW": 0,
+    "SOURCE_LIKE_EXACT": 0,
+    "SOURCE_LIMITED_STUB": 0
+  },
+  "generated_low_after": 7999,
+  "generated_low_before": 7999,
+  "schema": "pre-t4-semantic-tier-summary-v1"
+}

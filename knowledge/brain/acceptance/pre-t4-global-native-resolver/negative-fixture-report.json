@@ -1,0 +1,15 @@
+{
+  "cases": {
+    "ambiguous_metadata_target": true,
+    "conditional_branch_not_thunk": true,
+    "cyclic_thunk_chain": true,
+    "import_not_managed_method": true,
+    "invalid_elf_target": true,
+    "shared_native_address_explicit": true,
+    "unresolved_generic_or_virtual_target": true,
+    "unsupported_got_relocation": true
+  },
+  "false_positive_count": 0,
+  "passed": true,
+  "schema": "pre-t4-global-native-resolver-negative-fixtures-v1"
+}

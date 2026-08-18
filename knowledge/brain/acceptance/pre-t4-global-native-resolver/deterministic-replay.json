@@ -1,0 +1,8 @@
+{
+  "differences": {},
+  "matches": true,
+  "run_a_file_count": 14,
+  "run_b_file_count": 14,
+  "run_b_root": "D:\\antigravity\\test open ai\\artifacts\\pre-t4-global-native-resolver\\replay-run",
+  "schema": "pre-t4-global-native-resolver-deterministic-replay-v1"
+}

@@ -1,0 +1,412 @@
+{
+  "candidate_count": 234,
+  "candidate_sample": [
+    {
+      "method_id": "r1-method_002d5beff06ff26a1a233bb5b4d0ce44",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_0089a9243345ef34f5629cfe0855a00e",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_022fd90530ce3b8187f31898c09da28b",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_037da1dff971cc10e52ef40d6eacdccf",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_05dd8234a7c3aeebbef752a06ff16c9a",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_08d5e5f5122adc1d9dfb2bf29c3b8ad7",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_0b8ec28b32fa6ce3e0e4443461a4efa9",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_0c048b22e7f124fe6a5b0b8c1eee8859",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_0db749dd7c61ca16abac5e74e3f959dd",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_0e0787d2c69236d1b33fa1ba0a9b572a",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_0e5162596fb181a199e797a531be7089",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_0ee2410e16c3f2e7409564e37c8a4504",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_12d61b568177df3482513c98b68cb2be",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_13132dd90d5b84203a1f2afa28cf4e4d",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_13ed023f64746215910368871639f81f",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_14997f454da1379b1e3235deb60cff63",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_14f5180f9e5b09d84136e79a2383df2b",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_14fc64fcd908e7b86ad66b4ab798e8de",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_15d942937e6b8093534fd8be17599723",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_16ba4a559d8e064ed53019760316cc85",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_16d15fc863ce87f23d71aa55449a0f93",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_16f5f8fb4f6e162a1516258edd74b607",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_18bfef88abcb2ea4af6108ee41b477c2",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_1a7897b2f68e761cebae15d59da68aaf",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_1a9a10660f8dfc77d18dfc53bd62aef3",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_1abc57d1b9d342abbc45faade0056b33",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_1ad316bd82ce9f32d4b30792a3fa85b0",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_1b26247abd2e26586548c08ecbb84a31",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_1f433964bf4306079fdd7d2b40e7dea5",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_1fbd25fd9f722b686db84c74ad8a6d6a",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_20a5aae6a0320e0936535da55bd6ef89",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_216ba21fe9d1b74a163a6bd971b80ba3",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_244efcd38ee70f86a619a419f64851a8",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_24582cf65873ee0d82d13571e872088c",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_2470e79fbdcbbb0cacda6386496fd565",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_24edfa606cfef32588889cb5191223c0",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_257440e9ac083122f5faaf7feea85ee7",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_25d32b02c23fd8389a360dbfb583642b",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_264dc480d9b7a4448b49e5e7c18f1fca",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_267994b5dfb32c7681f67131f3c894c1",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_270fb06f25e21eff19cbc36e071cf810",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_27210aa759aa81415c98cd94d154741e",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_27c32cf53acf6f4856d4144478db0ff0",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_27f2b25e35c481585c1bdac6b18db012",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_2807654ad34e27274aae24e11a7b9fc6",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_28390b643c3c43c6e80ca384ba778ec3",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_29049641c96727b60d5dae7ace71f576",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_297555d14192c84a0cde9390aac24fc8",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_29e8576b8de3f64cbf9b4dd5f3eb0960",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_2a3bc971d0c8ebbbd91bf23ebe7fbde7",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_2a5e7c623bf318805bbb9d78ed75493c",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_2a7ea179bb484d0b0ec08855986b6b7c",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_2a84f38a36455e57c09a3adb84391f42",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_2ae0d67b28e1301c52387c6b817eefdd",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_2ce7c0d367ebf19196c7e988d1478977",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_3583691f0e5016aa71ca46404ca427ee",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_36492994f735d2b2743572d9ea44e0ea",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_3766202f04e936ad30ea91f7755702c2",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_3963b1dbe1656982e6be79086e13544c",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_39c992f022d3d9933cecb7a7c0333b82",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_3c4aec7b2bc3c2978d41ee89a5165948",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_3cdd4bd1d5f54f376bb8d9c044a24dc6",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_3d45bfd89b3ae4e8cae9dd903c9f396a",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_3d945e8040e8a7fa99ec4bcfc624d596",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_3d9d7efe30c0356c49560f7908ddba3c",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_3f64a1a6137e32323da0381c6ba7d49b",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_3fb480f0b79e8135255500d2dac6d745",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_40af1e80dd562b87f460f6d05f4dbd2a",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_4140b5ad695000db7aebe520f6afdb87",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_4283490b3ce6b2dfd94db9ae7cd98609",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_44903404193b7b6048cb44bb3e720a0d",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_450440acfd9aefe21928e5ebf1ccd364",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_45cf26eade2ff861455480037d8f8878",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_462203a88d62e4abe918d52e0387ce7d",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_4663e4dbb89f43454f293afd16552a06",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_46aeb95db062b1fe0b298ce9749b9eb0",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_46f889436a82693d14a7ea3aab2efe2d",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_479b5229e2601c2c95a09bf3a2ac50dd",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_48d4937a562c573ffde70a1e5778dd56",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_4929521ba4a0c269632d2ccd44467292",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_4f503d5b63853602f61e24d0c815cd1c",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_506fd38113c67612c4cb1a2efd810c69",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_50821f4fddae366739b20dc7c574a170",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_50e48c3494cd3e9432ff4442611d33dc",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_514d72c219f022bf0e843411bdaff5bc",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_5217e279d6cf5a61830b92e1f73a3768",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_5245beaec288b81c303e9dbb3f9b04fb",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_52eeb1f498ae5a9b36b9293bd1123a4e",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_549de013dcf1daec5d8c337cf963765e",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_553863753fd0efe4202c8cf310450da0",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_56333dca567d930aa0c6ec03562b802b",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_57af547a7c60f4bd237bd5981822e49b",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_585f22299a12f7bee7fcffa03f327ce6",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_587c22000c62da8818a3283967959875",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_58befafcd6b31412a2ef98b82a354e11",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_5b3c46369d437d579c71b8b87fd36d86",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_5b7282976f04a60bb7ad38c44ce8a84d",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_5ddb819933282fc5860ce7796847684e",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_5fa741679270969b03117c059b42baa2",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    },
+    {
+      "method_id": "r1-method_5ffa73e6945f3892c881fa4c8870db19",
+      "reason": "all_observed_native_issue_classes_normalized_but_no_semantic_emitter_proof"
+    }
+  ],
+  "newly_compiler_valid_bodies": 0,
+  "newly_mechanically_recoverable_methods": 0,
+  "newly_semantically_proven_methods": 0,
+  "promotions_authorized": 0,
+  "reason_no_promotion": "Address/import/RELA normalization is not semantic equivalence; existing typed-IR/CFG proof and compiler gates were not extended by this bounded experiment.",
+  "schema": "pre-t4-bounded-reconstruction-v1",
+  "scope": "generated-low methods with normalized native issue evidence"
+}

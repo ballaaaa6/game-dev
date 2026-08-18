@@ -1,0 +1,41 @@
+{
+  "cpp2il_issue_categories": {
+    "OTHER_DECOMPILER_ISSUE": 70364,
+    "RESOLVABLE_BRANCH_THUNK": 6019,
+    "RESOLVABLE_GOT_RELOCATION": 24592,
+    "RESOLVABLE_PLT": 2126,
+    "UNRESOLVED_FIXED_LOAD": 580,
+    "UNRESOLVED_METHOD_ADDRESS": 4859
+  },
+  "remaining_dominant_families": [
+    {
+      "family": "OTHER_DECOMPILER_ISSUE",
+      "issue_occurrences": 70364,
+      "semantic_status": "UNRESOLVED"
+    },
+    {
+      "family": "UNRESOLVED_METHOD_ADDRESS",
+      "issue_occurrences": 4859,
+      "semantic_status": "UNRESOLVED"
+    },
+    {
+      "family": "UNRESOLVED_FIXED_LOAD",
+      "issue_occurrences": 580,
+      "semantic_status": "UNRESOLVED"
+    },
+    {
+      "family": "AMBIGUOUS_OR_VIRTUAL_NATIVE_TARGET",
+      "semantic_status": "UNRESOLVED",
+      "t1_call_occurrences": 66808
+    }
+  ],
+  "t1_native_call_categories": {
+    "AMBIGUOUS_SHARED_NATIVE_ADDRESS": 4173,
+    "CANONICAL_METHOD_NATIVE_ADDRESS_EXACT": 32394,
+    "IMPORTED_PLT": 3112,
+    "NO_TARGET": 2004,
+    "THUNK_TO_CANONICAL_METHOD": 174,
+    "UNBOUND_NORMALIZED_NATIVE_TARGET": 24060,
+    "UNRESOLVED_NATIVE_TARGET": 62635
+  }
+}

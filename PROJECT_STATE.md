@@ -1,6 +1,12 @@
 # Project State
 
-## Current Status — T3 source-like uplift closed (2026-08-18)
+## Current Status — bounded pre-T4 global native resolver experiment closed (2026-08-18)
+
+The accepted T3 source-like uplift remains historical/closed with `PASS_T3_SOURCE_LIKE_UPLIFT_CLOSED`. The bounded `PRE_T4_GLOBAL_NATIVE_RESOLVER_EXPERIMENT` closed with `NO_GO_FULL_DECOMPILATION`. The independently reproduced advisory counts matched exactly; native normalization resolved 20,216 mapped canonical issue occurrences, but canonical semantic tiers did not improve: `GENERATED_LOW` remained 7,999, with zero newly compiler-valid or semantically proven bodies. This is a method-level decision, not an issue-comment claim.
+
+The isolated artifact boundary is `artifacts/pre-t4-global-native-resolver/`; compact acceptance evidence is under `knowledge/brain/acceptance/pre-t4-global-native-resolver/`. The deterministic replay, eight negative fixtures, pinned input gate, and source immutability gate pass. No original source roots, APK, metadata, native library, accepted T1/T2/T3 evidence, Unity/V8/runtime product code, or T4 validation work was mutated or started by this experiment. The recommended next strategy is a rebuild/behavioral twin; T4 remains unopened and requires separate explicit authorization.
+
+## Historical Status — T3 source-like uplift closed (2026-08-18)
 
 The canonical T3 phase is closed with `PASS_T3_SOURCE_LIKE_UPLIFT_CLOSED`. The profiler covered all 10,827 canonical methods exactly once and preserved the 641-type / 10,251-field surface plus all 988,046 T1 operations and exact T1 hash/segment linkage. A 400-method whole-Twin canary covered both ownerships and every available family/risk dimension; the readable, simple, typed-IR, structured, and final waves all parsed and compiled with zero Roslyn errors.
 
@@ -12,10 +18,11 @@ No original source roots, Unity/V8/runtime product code, integrations, persisten
 
 ## Git-visible current gate
 
-- `current_phase`: `T3_SOURCE_LIKE_UPLIFT`
-- `status`: `PASS_T3_SOURCE_LIKE_UPLIFT_CLOSED`
+- `current_phase`: `PRE_T4_GLOBAL_NATIVE_RESOLVER_EXPERIMENT`
+- `status`: `NO_GO_FULL_DECOMPILATION`
 - `next_authorized_phase`: `T4_WHOLE_TWIN_VALIDATION`
 - `next_phase_started`: `false`
+- `experiment_boundary`: `T4 remains unopened; the resolver experiment is closed and recommends a rebuild/behavioral-twin strategy`
 
 ## Historical Status — T2 Whole-Twin compile factory closed (2026-08-18)
 

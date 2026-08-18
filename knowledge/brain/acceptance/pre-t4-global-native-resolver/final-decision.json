@@ -1,0 +1,15 @@
+{
+  "decision": "NO_GO_FULL_DECOMPILATION",
+  "guardrail": {
+    "applied": true,
+    "generated_low_after": 7999,
+    "generated_low_before": 7999,
+    "generated_low_delta": 0,
+    "generated_low_reduction_threshold_for_go": 1000,
+    "recovered_semantics": 0
+  },
+  "rationale": "The primary metric is canonical method-level semantic recovery, not decompiler issue-comment reduction.",
+  "recommendation": "Stop expanding the full source-recovery strategy; retain the resolver as evidence infrastructure and prefer a rebuild/behavioral-twin strategy.",
+  "schema": "pre-t4-global-native-resolver-decision-v1",
+  "t4_started": false
+}

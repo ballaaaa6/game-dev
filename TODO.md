@@ -1,5 +1,14 @@
 # TODO
 
+## Pre-T4 global native resolver experiment — closed (2026-08-18)
+
+- [x] Independently reproduce the attached advisory Cpp2IL issue, branch-thunk, PLT/import, and GOT/RELA measurements against the pinned repository inputs; all compared fields match.
+- [x] Implement deterministic proof-gated ARM64 branch-thunk collapse, ELF PLT/import resolution, GOT/RELA normalization, exact canonical native-target binding, and isolated resolver evidence without regex-rewriting generated C#.
+- [x] Join resolver facts to all 10,827 canonical methods and run a bounded mechanically safe reconstruction/impact measurement that separates `RESOLVED_NATIVE_NOISE` from `RECOVERED_SEMANTICS`.
+- [x] Validate negative fixtures, deterministic replay, source immutability, and the final `NO_GO_FULL_DECOMPILATION` decision; keep `T4_WHOLE_TWIN_VALIDATION` unopened.
+
+The experiment is intentionally bounded before T4. It resolved 20,216 mapped canonical native-noise occurrences, but recovered zero new semantics and left `GENERATED_LOW` at 7,999. T3 remains accepted/closed with `PASS_T3_SOURCE_LIKE_UPLIFT_CLOSED`; the recommended next strategy is a rebuild/behavioral twin, and T4 remains unopened.
+
 ## T3 Source-like uplift — closed (2026-08-18)
 
 - [x] Re-read and close the T2 signature-closure hygiene contradiction before profiling: replace the stale 467-atom prework threshold with the canonical 614-atom builder/payload result and pass the independent pre-T3 hygiene check.

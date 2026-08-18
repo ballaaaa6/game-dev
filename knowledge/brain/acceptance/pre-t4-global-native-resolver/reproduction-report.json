@@ -1,0 +1,605 @@
+{
+  "advisory_comparison": {
+    "advisory_schema": "cpp2il-global-resolver-probe-v1",
+    "compared_fields": [
+      "unique_unresolved_method_addresses",
+      "unresolved_addresses_recognized_as_plt",
+      "unresolved_addresses_recognized_as_branch_thunks",
+      "unique_fixed_unmanaged_load_addresses",
+      "fixed_load_addresses_recognized_as_got_relocations",
+      "scope_stats"
+    ],
+    "differences": {},
+    "matches": true,
+    "path": "D:\\downloads\\cpp2il_global_resolver_probe_report.json"
+  },
+  "elf": {
+    "got_range": [
+      "0x27CFB48",
+      "0x281DF78"
+    ],
+    "plt_relocation_entry_count": 565,
+    "plt_symbol_count_including_resolver_header": 566,
+    "relative_relocation_count": 254554
+  },
+  "fixed_load_addresses_recognized_as_got_relocations": 8785,
+  "interpretation": [
+    "Recognition is native-resolution evidence, not semantic C# reconstruction.",
+    "PLT and direct-B normalization are high-confidence; GOT RELA resolution identifies the storage target but does not name a managed field without metadata/layout proof.",
+    "Canonical method promotion remains disabled unless an independent semantic proof and compiler/IR gate pass."
+  ],
+  "schema": "pre-t4-global-native-resolver-reproduction-v1",
+  "scope_stats": {
+    "all_csharp": {
+      "files_whose_cpp2il_issue_messages_are_all_globally_resolvable": 47,
+      "files_with_at_least_one_globally_resolvable_issue": 571,
+      "files_with_cpp2il_issues": 585,
+      "issue_categories": {
+        "OTHER_DECOMPILER_ISSUE": 70364,
+        "RESOLVABLE_BRANCH_THUNK": 6019,
+        "RESOLVABLE_GOT_RELOCATION": 24592,
+        "RESOLVABLE_PLT": 2126,
+        "UNRESOLVED_FIXED_LOAD": 580,
+        "UNRESOLVED_METHOD_ADDRESS": 4859
+      },
+      "issue_message_count": 108540
+    },
+    "lowercase_projectish": {
+      "files_whose_cpp2il_issue_messages_are_all_globally_resolvable": 28,
+      "files_with_at_least_one_globally_resolvable_issue": 367,
+      "files_with_cpp2il_issues": 376,
+      "issue_categories": {
+        "OTHER_DECOMPILER_ISSUE": 57328,
+        "RESOLVABLE_BRANCH_THUNK": 3226,
+        "RESOLVABLE_GOT_RELOCATION": 20180,
+        "RESOLVABLE_PLT": 1615,
+        "UNRESOLVED_FIXED_LOAD": 530,
+        "UNRESOLVED_METHOD_ADDRESS": 2825
+      },
+      "issue_message_count": 85704
+    }
+  },
+  "top_fixed_loads": [
+    {
+      "address": "0x27CFD20",
+      "files": 110,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 575,
+      "target": "0x2866EA8"
+    },
+    {
+      "address": "0x27CFD68",
+      "files": 149,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 555,
+      "target": "0x288C540"
+    },
+    {
+      "address": "0x27CFC60",
+      "files": 30,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 542,
+      "target": "0x2866358"
+    },
+    {
+      "address": "0x27D0390",
+      "files": 117,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 526,
+      "target": "0x2865910"
+    },
+    {
+      "address": "0x27CFCE0",
+      "files": 132,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 346,
+      "target": "0x2865CA8"
+    },
+    {
+      "address": "0x27CFCC0",
+      "files": 85,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 330,
+      "target": "0x28683C8"
+    },
+    {
+      "address": "0x27D0E58",
+      "files": 43,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 231,
+      "target": "0x2865A58"
+    },
+    {
+      "address": "0x27CFCE8",
+      "files": 17,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 221,
+      "target": "0x286B578"
+    },
+    {
+      "address": "0x27D0D28",
+      "files": 13,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 210,
+      "target": "0x286B2D0"
+    },
+    {
+      "address": "0x27CFDE0",
+      "files": 52,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 205,
+      "target": "0x2868618"
+    },
+    {
+      "address": "0x27D01A8",
+      "files": 6,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 202,
+      "target": "0x2869388"
+    },
+    {
+      "address": "0x27CFDC0",
+      "files": 50,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 173,
+      "target": "0x286B990"
+    },
+    {
+      "address": "0x27CFB48",
+      "files": 58,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 172,
+      "target": "0x2865588"
+    },
+    {
+      "address": "0x27D58A8",
+      "files": 38,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 170,
+      "target": "0x2868F28"
+    },
+    {
+      "address": "0x27D0CE0",
+      "files": 16,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 163,
+      "target": "0x2873D00"
+    },
+    {
+      "address": "0x27D0718",
+      "files": 14,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 152,
+      "target": "0x2869550"
+    },
+    {
+      "address": "0x27D08D8",
+      "files": 29,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 129,
+      "target": "0x286DC78"
+    },
+    {
+      "address": "0x27D0668",
+      "files": 19,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 121,
+      "target": "0x2867C60"
+    },
+    {
+      "address": "0x27D0CB8",
+      "files": 31,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 116,
+      "target": "0x28671E8"
+    },
+    {
+      "address": "0x27CFEA0",
+      "files": 30,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 109,
+      "target": "0x28668F0"
+    },
+    {
+      "address": "0x27D1018",
+      "files": 46,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 105,
+      "target": "0x286B3B0"
+    },
+    {
+      "address": "0x27D0550",
+      "files": 35,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 104,
+      "target": "0x288C668"
+    },
+    {
+      "address": "0x27CFDF8",
+      "files": 34,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 90,
+      "target": "0x28686B8"
+    },
+    {
+      "address": "0x27CFDC8",
+      "files": 25,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 89,
+      "target": "0x286B390"
+    },
+    {
+      "address": "0x27D0BF0",
+      "files": 3,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 87,
+      "target": "0x286A2F8"
+    },
+    {
+      "address": "0x27D06D0",
+      "files": 31,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 79,
+      "target": "0x288E7C8"
+    },
+    {
+      "address": "0x27CFE78",
+      "files": 34,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 76,
+      "target": "0x288DF60"
+    },
+    {
+      "address": "0x27D7190",
+      "files": 16,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 75,
+      "target": "0x287B620"
+    },
+    {
+      "address": "0x27D00E8",
+      "files": 15,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 74,
+      "target": "0x2869D20"
+    },
+    {
+      "address": "0x27CFD90",
+      "files": 23,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 74,
+      "target": "0x287AD20"
+    },
+    {
+      "address": "0x27D4F10",
+      "files": 22,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 73,
+      "target": "0x2866688"
+    },
+    {
+      "address": "0x27D03A8",
+      "files": 42,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 71,
+      "target": "0x2865418"
+    },
+    {
+      "address": "0x27CFD80",
+      "files": 15,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 70,
+      "target": "0x286AD70"
+    },
+    {
+      "address": "0x27D0DD8",
+      "files": 15,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 69,
+      "target": "0x2873CE0"
+    },
+    {
+      "address": "0x27CFC58",
+      "files": 7,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 66,
+      "target": "0x2869360"
+    },
+    {
+      "address": "0x27D9270",
+      "files": 38,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 65,
+      "target": "0x28655B8"
+    },
+    {
+      "address": "0x27CFCF0",
+      "files": 20,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 63,
+      "target": "0x287AD80"
+    },
+    {
+      "address": "0x27D0100",
+      "files": 14,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 62,
+      "target": "0x2868DD8"
+    },
+    {
+      "address": "0x27D0368",
+      "files": 11,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 61,
+      "target": "0x286B890"
+    },
+    {
+      "address": "0x27D4208",
+      "files": 16,
+      "kind": "GOT_RELOCATION",
+      "occurrences": 59,
+      "target": "0x288E940"
+    }
+  ],
+  "top_unresolved_calls": [
+    {
+      "address": "0xFB3FB8",
+      "files": 214,
+      "kind": "BRANCH_THUNK",
+      "occurrences": 2809,
+      "target": "0x10086F4"
+    },
+    {
+      "address": "0xFB40AC",
+      "files": 154,
+      "kind": "BRANCH_THUNK",
+      "occurrences": 1552,
+      "target": "0x10183B8"
+    },
+    {
+      "address": "0x1014694",
+      "files": 89,
+      "kind": "UNRESOLVED",
+      "occurrences": 909
+    },
+    {
+      "address": "0x26A5F80",
+      "files": 178,
+      "kind": "PLT",
+      "occurrences": 799,
+      "symbol": "h"
+    },
+    {
+      "address": "0x1014590",
+      "files": 56,
+      "kind": "UNRESOLVED",
+      "occurrences": 660
+    },
+    {
+      "address": "0x26A5F70",
+      "files": 177,
+      "kind": "PLT",
+      "occurrences": 626,
+      "symbol": "ity_v0"
+    },
+    {
+      "address": "0xE68308",
+      "files": 183,
+      "kind": "UNRESOLVED",
+      "occurrences": 588
+    },
+    {
+      "address": "0xFB40B0",
+      "files": 93,
+      "kind": "BRANCH_THUNK",
+      "occurrences": 498,
+      "target": "0x1018108"
+    },
+    {
+      "address": "0xFB41F0",
+      "files": 99,
+      "kind": "BRANCH_THUNK",
+      "occurrences": 481,
+      "target": "0x10310F8"
+    },
+    {
+      "address": "0xE68F14",
+      "files": 57,
+      "kind": "UNRESOLVED",
+      "occurrences": 367
+    },
+    {
+      "address": "0xFB40B4",
+      "files": 72,
+      "kind": "BRANCH_THUNK",
+      "occurrences": 319,
+      "target": "0x1018608"
+    },
+    {
+      "address": "0x10B4A88",
+      "files": 119,
+      "kind": "UNRESOLVED",
+      "occurrences": 291
+    },
+    {
+      "address": "0x1B2ED4C",
+      "files": 34,
+      "kind": "UNRESOLVED",
+      "occurrences": 246
+    },
+    {
+      "address": "0xFB45F8",
+      "files": 94,
+      "kind": "BRANCH_THUNK",
+      "occurrences": 224,
+      "target": "0x1004328"
+    },
+    {
+      "address": "0x26A5F90",
+      "files": 94,
+      "kind": "PLT",
+      "occurrences": 219,
+      "symbol": "_infoE"
+    },
+    {
+      "address": "0x26A5FA0",
+      "files": 94,
+      "kind": "PLT",
+      "occurrences": 219,
+      "symbol": ""
+    },
+    {
+      "address": "0x1B2E590",
+      "files": 36,
+      "kind": "UNRESOLVED",
+      "occurrences": 197
+    },
+    {
+      "address": "0xE682F8",
+      "files": 47,
+      "kind": "UNRESOLVED",
+      "occurrences": 157
+    },
+    {
+      "address": "0x26A5FF0",
+      "files": 18,
+      "kind": "PLT",
+      "occurrences": 127,
+      "symbol": "__cxa_finalize"
+    },
+    {
+      "address": "0x16BF1D0",
+      "files": 21,
+      "kind": "UNRESOLVED",
+      "occurrences": 125
+    },
+    {
+      "address": "0x10145EC",
+      "files": 32,
+      "kind": "UNRESOLVED",
+      "occurrences": 119
+    },
+    {
+      "address": "0x26A5FD0",
+      "files": 30,
+      "kind": "PLT",
+      "occurrences": 107,
+      "symbol": ""
+    },
+    {
+      "address": "0x1B2E2FC",
+      "files": 26,
+      "kind": "UNRESOLVED",
+      "occurrences": 83
+    },
+    {
+      "address": "0x1B2E16C",
+      "files": 21,
+      "kind": "UNRESOLVED",
+      "occurrences": 77
+    },
+    {
+      "address": "0x16BF088",
+      "files": 16,
+      "kind": "UNRESOLVED",
+      "occurrences": 76
+    },
+    {
+      "address": "0x1B2E3A0",
+      "files": 11,
+      "kind": "BRANCH_THUNK",
+      "occurrences": 49,
+      "target": "0x1B2E2FC"
+    },
+    {
+      "address": "0x139099C",
+      "files": 25,
+      "kind": "UNRESOLVED",
+      "occurrences": 43
+    },
+    {
+      "address": "0xFB3FC4",
+      "files": 1,
+      "kind": "BRANCH_THUNK",
+      "occurrences": 34,
+      "target": "0xFFB198"
+    },
+    {
+      "address": "0xFB3FBC",
+      "files": 4,
+      "kind": "UNRESOLVED",
+      "occurrences": 30
+    },
+    {
+      "address": "0xFB40BC",
+      "files": 6,
+      "kind": "UNRESOLVED",
+      "occurrences": 29
+    },
+    {
+      "address": "0xFB40A4",
+      "files": 13,
+      "kind": "BRANCH_THUNK",
+      "occurrences": 29,
+      "target": "0xFAA858"
+    },
+    {
+      "address": "0x16BEF90",
+      "files": 11,
+      "kind": "UNRESOLVED",
+      "occurrences": 24
+    },
+    {
+      "address": "0x1B2E8B4",
+      "files": 9,
+      "kind": "UNRESOLVED",
+      "occurrences": 24
+    },
+    {
+      "address": "0x1B2E014",
+      "files": 8,
+      "kind": "UNRESOLVED",
+      "occurrences": 23
+    },
+    {
+      "address": "0x16BF87C",
+      "files": 12,
+      "kind": "UNRESOLVED",
+      "occurrences": 22
+    },
+    {
+      "address": "0x138BE6C",
+      "files": 8,
+      "kind": "UNRESOLVED",
+      "occurrences": 20
+    },
+    {
+      "address": "0x1B2EB90",
+      "files": 10,
+      "kind": "UNRESOLVED",
+      "occurrences": 19
+    },
+    {
+      "address": "0x1B2EA7C",
+      "files": 9,
+      "kind": "UNRESOLVED",
+      "occurrences": 19
+    },
+    {
+      "address": "0x13128A4",
+      "files": 3,
+      "kind": "UNRESOLVED",
+      "occurrences": 17
+    },
+    {
+      "address": "0x16BF8E0",
+      "files": 8,
+      "kind": "UNRESOLVED",
+      "occurrences": 16
+    }
+  ],
+  "unique_fixed_unmanaged_load_addresses": 9074,
+  "unique_unresolved_method_addresses": 311,
+  "unresolved_addresses_recognized_as_branch_thunks": 16,
+  "unresolved_addresses_recognized_as_plt": 16
+}
