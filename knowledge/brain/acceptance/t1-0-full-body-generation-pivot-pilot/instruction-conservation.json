@@ -1,0 +1,20 @@
+{
+  "all_native_ranges_accounted": true,
+  "native_facts": {
+    "branch_targets": 18500,
+    "catalog_count_conventions": {
+      "CATALOG_ISIL_DISASSEMBLY_INCLUDES_ONE_SYNTHETIC_TERMINAL_OP": 495,
+      "NO_NATIVE_OR_ISIL_BODY_IN_CANONICAL_CATALOG": 5
+    },
+    "raw_unknown_operations": 34,
+    "resolved_direct_calls": 3873,
+    "resolved_field_accesses": 16658,
+    "total_decoded_instructions": 117876,
+    "total_extra_ir_operations": 0,
+    "total_omitted_instructions": 0,
+    "total_represented_instructions": 117876,
+    "unresolved_direct_calls": 11713,
+    "unresolved_field_accesses": 2427
+  },
+  "omitted_operation_count": 0
+}

@@ -1,0 +1,54 @@
+{
+  "cohort_counts": {
+    "BASELINE_READABLE": 75,
+    "CFG_DEFERRED": 175,
+    "EXTREME_COMPLEXITY": 25,
+    "IDENTITY_MECHANICAL_SOURCE_LIMITED": 50,
+    "NATIVE_DEFERRED": 175
+  },
+  "complexity": {
+    "max_instructions": 8693,
+    "median_instructions": 41,
+    "native_backed_method_count": 495,
+    "p90_instructions": 332,
+    "p99_instructions": 3958
+  },
+  "high_level_quality": {
+    "rejected": 376,
+    "source_oracle_exact": 75,
+    "structural_confirmed": 49
+  },
+  "method_identity_coverage": 500,
+  "native_facts": {
+    "branch_targets": 18500,
+    "catalog_count_conventions": {
+      "CATALOG_ISIL_DISASSEMBLY_INCLUDES_ONE_SYNTHETIC_TERMINAL_OP": 495,
+      "NO_NATIVE_OR_ISIL_BODY_IN_CANONICAL_CATALOG": 5
+    },
+    "raw_unknown_operations": 34,
+    "resolved_direct_calls": 3873,
+    "resolved_field_accesses": 16658,
+    "total_decoded_instructions": 117876,
+    "total_extra_ir_operations": 0,
+    "total_omitted_instructions": 0,
+    "total_represented_instructions": 117876,
+    "unresolved_direct_calls": 11713,
+    "unresolved_field_accesses": 2427
+  },
+  "native_range_accounted": 500,
+  "provenance_coverage": 500,
+  "representation_coverage": {
+    "emitted": 500,
+    "missing": 0,
+    "total": 500
+  },
+  "sample_count": 500,
+  "schema_version": "t1-0-full-body-generation-pivot-pilot-v1",
+  "tier_counts": {
+    "EXISTING_READABLE": 75,
+    "GENERATED_HIGH": 49,
+    "GENERATED_LOW": 16,
+    "GENERATED_MEDIUM": 355,
+    "SOURCE_LIMITED_STUB": 5
+  }
+}

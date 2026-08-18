@@ -1,6 +1,17 @@
 # TODO
 
-## R4.0 Native/ISIL typed-IR feasibility pilot — closed (2026-08-18)
+## T1.0 full-body generation pivot pilot — closed (2026-08-18)
+
+- [x] Read the attached T1.0 pilot instructions and the referenced pasted text before continuing; preserve the canonical R1.5/R3 universe and the read-only source boundary.
+- [x] Verify the pinned source identities and select the exact canonical 500-method cohort: 75 `BASELINE_READABLE`, 175 `CFG_DEFERRED`, 175 `NATIVE_DEFERRED`, 50 `IDENTITY_MECHANICAL_SOURCE_LIMITED`, and 25 `EXTREME_COMPLEXITY`.
+- [x] Implement the hosted `TwinNativeIr` C# contract and emit an explicit C# sidecar for every selected method with identity, provenance, native/ISIL evidence, bindings, calls, fields, CFG facts, and an explicit limitation or stub where required.
+- [x] Pass representation/provenance/identity coverage 500/500, native/ISIL range accounting with 117,876 represented instructions and zero omissions, balanced ownership, and extreme-complexity coverage.
+- [x] Pass bundled Roslyn parse/compile, byte-identical deterministic replay, ten Google/R3/R4 negative-fixture rejections, false-positive audit, and source immutability checks.
+- [x] Close with `PASS_T1_0_FULL_BODY_GENERATION_PIVOT_PILOT_GO`.
+
+The sidecar-only pilot is closed. The next authorized boundary is `T1_FULL_BODY_GENERATION`; it was not started. The legacy `R4_NATIVE_ISIL_SEMANTIC_LIFT` plan is retained as accepted history and superseded by the T1 coverage-first plan. Do not mass-generate the full corpus or begin T2/runtime/Unity/V8/integration/persistence/backend/deployment work without the next explicitly directed phase.
+
+## Historical R4.0 Native/ISIL typed-IR feasibility pilot — closed (2026-08-18)
 
 - [x] Read the user-provided R4.0 feasibility pilot prompt and attached evidence pack; keep the advisory prototype separate from the canonical R1.5/R3 universe.
 - [x] Reverify the pinned source gate and canonical 641-type / 10,827-method universe without modifying the read-only C# roots or Twin.
@@ -10,7 +21,7 @@
 - [x] Attempt the 100-method hard cohort with 50 CFG and 50 native methods across both ownerships and required CFG-family representatives; verify 55 methods.
 - [x] Pass deterministic byte-identical replay, C# syntax sanity, source immutability, and final decision gates with `PASS_R4_0_NATIVE_IR_CSHARP_FEASIBILITY_PILOT_GO`.
 
-The bounded pilot is closed and full `R4_NATIVE_ISIL_SEMANTIC_LIFT` is authorized as the next boundary, but it was not started. Do not begin full-corpus R4, R5, V8/web, Unity, integrations, persistence, backend, or deployment work without the next explicitly directed phase.
+The bounded R4.0 pilot remains accepted history. Its former `R4_NATIVE_ISIL_SEMANTIC_LIFT` boundary is superseded by the T1 coverage-first plan above.
 
 ## R3 whole-game CFG repair — closed (2026-08-18)
 
@@ -22,7 +33,7 @@ The bounded pilot is closed and full `R4_NATIVE_ISIL_SEMANTIC_LIFT` is authorize
 - [x] Add the Roslyn-only family-first transformer library and strict planner; authorize zero canaries because semantic and graph-equivalence proof is unavailable.
 - [x] Reproduce the profiler deterministically, retain a zero graph delta, publish the compact acceptance package, and close with `PASS_R3_WHOLE_GAME_CFG_REPAIR_CLOSED`.
 
-The bounded R4.0 pilot is now closed above; full `R4_NATIVE_ISIL_SEMANTIC_LIFT` remains the next authorized boundary and has not started.
+The bounded T1.0 pilot is now closed above; `T1_FULL_BODY_GENERATION` is the next authorized boundary and has not started.
 
 ## R2 automated whole-corpus repair — closed (2026-08-18)
 

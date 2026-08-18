@@ -1,0 +1,9 @@
+{
+  "byte_identical": true,
+  "deterministic": true,
+  "pass_one_digest": "16ca93d902e27aff2a711696d5c5255232d4018bbe202780b0c9c309f4ccdf76",
+  "pass_one_summary_digest": "d630b94fc73bf573b8cd4a2243f446de28ccc0dab7e72900c74b4199ed265685",
+  "pass_two_digest": "16ca93d902e27aff2a711696d5c5255232d4018bbe202780b0c9c309f4ccdf76",
+  "pass_two_summary_digest": "d630b94fc73bf573b8cd4a2243f446de28ccc0dab7e72900c74b4199ed265685",
+  "schema_version": "t1-0-deterministic-replay-v1"
+}

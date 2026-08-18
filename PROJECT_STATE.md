@@ -1,12 +1,27 @@
 # Project State
 
-## Current Status — R4.0 Native/ISIL typed-IR feasibility pilot closed (2026-08-18)
+## Current Status — T1.0 full-body generation pivot pilot closed (2026-08-18)
+
+The canonical T1.0 sidecar-only pilot is closed with `PASS_T1_0_FULL_BODY_GENERATION_PIVOT_PILOT_GO`. It selected exactly 500 methods from the corrected 641-type / 10,827-method Twin universe: 75 `BASELINE_READABLE`, 175 `CFG_DEFERRED`, 175 `NATIVE_DEFERRED`, 50 `IDENTITY_MECHANICAL_SOURCE_LIMITED`, and 25 `EXTREME_COMPLEXITY`, balanced across GAME_FIRST_PARTY and KAIRO_ENGINE ownership. Every selected method has an explicit C# representation, identity, provenance, and native/ISIL accounting; 117,876 decoded native instructions are represented with zero omissions.
+
+The hosted `TwinNativeIr` C# contract and 500 generated method sidecars parse and compile through the bundled Roslyn host. Deterministic replay is byte-identical, ten negative fixtures reject with zero false positives, the pinned source gate passes, and original source/Twin/runtime/Unity/V8 files were not mutated. The advisory R4.0 plan is superseded by this coverage-first boundary; no 10,827-method generation or next phase was started.
+
+Compact acceptance evidence is under `knowledge/brain/acceptance/t1-0-full-body-generation-pivot-pilot/`; heavy per-method sidecars and replay artifacts remain local-only under `artifacts/t1-0-full-body-pilot/`.
+
+## Git-visible current gate
+
+- `current_phase`: `T1_0_FULL_BODY_GENERATION_PIVOT_PILOT`
+- `status`: `PASS_T1_0_FULL_BODY_GENERATION_PIVOT_PILOT_GO`
+- `next_authorized_phase`: `T1_FULL_BODY_GENERATION`
+- `next_phase_started`: `false`
+
+## Historical Status — R4.0 Native/ISIL typed-IR feasibility pilot closed (2026-08-18)
 
 The bounded R4.0 feasibility pilot is closed with `PASS_R4_0_NATIVE_IR_CSHARP_FEASIBILITY_PILOT_GO`. The canonical source gate passes against the pinned APK, native library, metadata, and C# archive; the 200-method reproduction cohort is deterministic; all six required positive methods verify; all five Google negative fixtures reject; and the 100-method hard cohort verifies 55 methods across both GAME_FIRST_PARTY and KAIRO_ENGINE ownerships and the required CFG-family representatives. The pilot emitted 127 proof-gated C# bodies, performed zero source writes, and left the original C# roots, Twin, graph, V8, and runtime unchanged.
 
 Compact acceptance evidence is under `knowledge/brain/acceptance/r4-0-native-ir-csharp-pilot/`; heavy per-method evidence remains local-only under `artifacts/r4-0-native-ir-pilot/`. Full-corpus R4 native/ISIL lifting is authorized by the pilot decision but was not started; stop at this boundary.
 
-## Git-visible current gate
+## Historical R4.0 gate
 
 - `current_phase`: `R4_0_NATIVE_IR_CSHARP_FEASIBILITY_PILOT`
 - `status`: `PASS_R4_0_NATIVE_IR_CSHARP_FEASIBILITY_PILOT_GO`

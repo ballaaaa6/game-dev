@@ -1,0 +1,15 @@
+{
+  "false_positive_count": 0,
+  "metadata_field_identity_failures": [],
+  "negative_fixture_count": 10,
+  "negative_fixtures_rejected": true,
+  "pass": true,
+  "placeholder_hits": [],
+  "placeholder_names_forbidden": [
+    "guardField",
+    "localTarget",
+    "valueField"
+  ],
+  "resolved_direct_call_identity_failures": [],
+  "schema_version": "t1-0-false-positive-audit-v1"
+}

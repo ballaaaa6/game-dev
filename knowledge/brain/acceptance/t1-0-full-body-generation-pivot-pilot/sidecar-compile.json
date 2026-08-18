@@ -1,0 +1,28 @@
+{
+  "command": [
+    "C:\\Users\\WINDOW XI\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+    "-NoLogo",
+    "-NoProfile",
+    "-File",
+    "D:\\antigravity\\test open ai\\tools\\social-dev\\compile_t1_sidecars.ps1",
+    "-ProjectRoot",
+    "D:\\antigravity\\test open ai\\artifacts\\t1-0-full-body-pilot\\csharp-sidecars",
+    "-OutputAssembly",
+    "D:\\antigravity\\test open ai\\artifacts\\t1-0-full-body-pilot\\reports\\SocialDev.T1Pilot.Sidecars.dll",
+    "-RoslynRoot",
+    "C:\\Users\\WINDOW XI\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell"
+  ],
+  "compile_error_count": 0,
+  "compile_errors": [],
+  "compile_pass": true,
+  "exit_code": 0,
+  "output_assembly": "D:\\antigravity\\test open ai\\artifacts\\t1-0-full-body-pilot\\reports\\SocialDev.T1Pilot.Sidecars.dll",
+  "output_bytes": 23229440,
+  "parse_error_count": 0,
+  "parse_errors": [],
+  "parse_pass": true,
+  "roslyn_root": "C:\\Users\\WINDOW XI\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell",
+  "schema_version": "t1-0-sidecar-compile-v1",
+  "sidecar_method_source_count": 500,
+  "source_count": 502
+}

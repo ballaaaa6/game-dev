@@ -1,0 +1,5002 @@
+[
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.ScheduleData",
+    "method_id": "r1-method_000a3c69c6bd4876239c199771da9bc1",
+    "method_name": "Deserialize",
+    "native_instruction_count": 77,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.IApplication",
+    "method_id": "r1-method_000cb229ebcc945ccfbbd8ed896376e8",
+    "method_name": "GetProperty",
+    "native_instruction_count": 52,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "system.billing.util.Purchase",
+    "method_id": "r1-method_0013bf5940b02198411879185bb5e140",
+    "method_name": "GetPurchaseState",
+    "native_instruction_count": 2,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.component.UIComponent",
+    "method_id": "r1-method_0026f177a5c906cbbb61136a98025d8f",
+    "method_name": "set_Enable",
+    "native_instruction_count": 3,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_00405f3eb3878d58ca889f6fe4c20099",
+    "method_name": "InitStaffMenu",
+    "native_instruction_count": 63,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.form.SplashForm",
+    "method_id": "r1-method_0071d37263e2e70e2e2d7dd9fb21c1f7",
+    "method_name": "ToString",
+    "native_instruction_count": 23,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.BootForm",
+    "method_id": "r1-method_01c93a0e7958fc8c35b21247ee235d07",
+    "method_name": "Update",
+    "native_instruction_count": 270,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "ext.util.Lib",
+    "method_id": "r1-method_0219c207f24763147e2bd78cd92b8d81",
+    "method_name": "ReadLongArray",
+    "native_instruction_count": 68,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.m3d4.util3d.Vector3D",
+    "method_id": "r1-method_027b0e7386afc29a635e85a28ade5988",
+    "method_name": "Dot",
+    "native_instruction_count": 15,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.StreamUtil",
+    "method_id": "r1-method_0315796a9f1a9ede9ccf3d254c8dfdd7",
+    "method_name": "ReadRectF",
+    "native_instruction_count": 67,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.Encrypter",
+    "method_id": "r1-method_03984679bb5e099ddf6b93e53a70630d",
+    "method_name": "PushEncryptionKey",
+    "native_instruction_count": 36,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.EventData",
+    "method_id": "r1-method_0466a2e6c52ae87a34346b2c62e97180",
+    "method_name": "CheckTerm",
+    "native_instruction_count": 251,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.DevelopForm",
+    "method_id": "r1-method_04778119107cd99fad8f3b934fd2ea4b",
+    "method_name": "MultiplyBugsNum",
+    "native_instruction_count": 44,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "game.Fan",
+    "method_id": "r1-method_04fc89d1480b286b829800e774254bbd",
+    "method_name": "IsFind",
+    "native_instruction_count": 4,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.TextLayout",
+    "method_id": "r1-method_050d2dae0f6af2083d4600290b421f0c",
+    "method_name": "GetRenderingFontSize",
+    "native_instruction_count": 17,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "data.FurnitureData",
+    "method_id": "r1-method_0575e4e7797a01f1d29a0f3b7cc8cc3b",
+    "method_name": "MinusNum",
+    "native_instruction_count": 5,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.BootFlagsExtension",
+    "method_id": "r1-method_0624e1b1496946711013b5d2b0a7de56",
+    "method_name": "HasFlag",
+    "native_instruction_count": 70,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.ActionReplay",
+    "method_id": "r1-method_06f3f58a9cd6c19c2832d55f2c940c46",
+    "method_name": "Create",
+    "native_instruction_count": 45,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_0722cb408a6e94858a1cb3805c132b29",
+    "method_name": "AppointNewLeader",
+    "native_instruction_count": 43,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "R.Library.Kairolib",
+    "method_id": "r1-method_0851329c1c23f1beadd464388f113186",
+    "method_name": "DrawNewText",
+    "native_instruction_count": 88,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "data.ItemData",
+    "method_id": "r1-method_086ff5d2396221a992dd1da820f12dca",
+    "method_name": "Add",
+    "native_instruction_count": 65,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.component.UIComponent",
+    "method_id": "r1-method_089e3227eec7061f01895960f78b493a",
+    "method_name": "set_Current",
+    "native_instruction_count": 23,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_099b96a81a9f43e0a9c2e547a58f434c",
+    "method_name": "InitTreasureBoxList",
+    "native_instruction_count": 57,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "data.SkillData",
+    "method_id": "r1-method_0b3897d133ee8dfcecca2c7ac0157962",
+    "method_name": "IsPassive",
+    "native_instruction_count": 24,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.io.BitArrayOutputStream",
+    "method_id": "r1-method_0b80b4d6759598a89af79567db956f68",
+    "method_name": "ToByteArray",
+    "native_instruction_count": 16,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.surface.MotionEvent",
+    "method_id": "r1-method_0b868eebf480981305f98dbed7142008",
+    "method_name": "GetPointerId",
+    "native_instruction_count": 12,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Proposal",
+    "method_id": "r1-method_0c74b92e95ef67b1b67af9dd3609952a",
+    "method_name": "SetIdea",
+    "native_instruction_count": 25,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_0cc776b45d3f5861f1922b7b6fcbf0af",
+    "method_name": "InitTreasureDiscover",
+    "native_instruction_count": 719,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "form.SubForm2",
+    "method_id": "r1-method_0d802461ca6f0d3f8e42197c5a2b63dd",
+    "method_name": "FriendDataThread",
+    "native_instruction_count": 2742,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.system.KairoBase",
+    "method_id": "r1-method_0dc16b486b0cf0a6c38200f26b6692f1",
+    "method_name": "Connect",
+    "native_instruction_count": 33,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.system.KairoBase",
+    "method_id": "r1-method_0de72a0fed37248ca041cd2ffdd70b03",
+    "method_name": "ConnectAsync",
+    "native_instruction_count": 27,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.form.DialogForm",
+    "method_id": "r1-method_0edef7cba9052579d59dccbd3ff16c76",
+    "method_name": "IsEnd",
+    "native_instruction_count": 50,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_0f222fa245959e7bdf591d18c7d0b14a",
+    "method_name": "DrawTextBox",
+    "native_instruction_count": 151,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.secure.XString",
+    "method_id": "r1-method_0fcaf16f3e1c175552b5777c246d987c",
+    "method_name": "LastIndexOf",
+    "native_instruction_count": 13,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.HelperData",
+    "method_id": "r1-method_0fdd926ad1ba3e97de3b72583dc7867b",
+    "method_name": "DeserializeFinal",
+    "native_instruction_count": 87,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.system.KairoBase",
+    "method_id": "r1-method_107b2cf7e59b1375503551572f1f9dee",
+    "method_name": "GetLatestVersion",
+    "native_instruction_count": 7,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.SecureByteArray",
+    "method_id": "r1-method_1157128258d570918bbc956f7b4e8d04",
+    "method_name": "Get",
+    "native_instruction_count": 74,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_12b0a6e691e40b01f33f10a5e821633c",
+    "method_name": "InitAdditionFloor",
+    "native_instruction_count": 178,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "form.SubForm2",
+    "method_id": "r1-method_12eb31f8826bbee00308b2e5302ebf9e",
+    "method_name": "DrawHelperExplain",
+    "native_instruction_count": 109,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "game.ObjChip",
+    "method_id": "r1-method_13199ca8647d1d51cc3b5c4d26f3371f",
+    "method_name": "GetChild",
+    "native_instruction_count": 22,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.util.ArrayUtil+CompareMethod`1",
+    "method_id": "r1-method_134eeccde248b23c54bb4ea73237bb7f",
+    "method_name": "Invoke",
+    "native_instruction_count": 5,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BLOCKED_IDENTITY",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "form.MyFormBase",
+    "method_id": "r1-method_13660425af35b646d8f724de32347229",
+    "method_name": "InitBlur",
+    "native_instruction_count": 19,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.util.ArrayUtil",
+    "method_id": "r1-method_137d0df0f3901e6183f3de246db5f435",
+    "method_name": "Change",
+    "native_instruction_count": 45,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Graphics",
+    "method_id": "r1-method_13ed023f64746215910368871639f81f",
+    "method_name": "FillRoundRect",
+    "native_instruction_count": 28,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.surface.SurfaceBase",
+    "method_id": "r1-method_148e0de5949a01f3cfb6ace602d9f7aa",
+    "method_name": "LocalTouchToScreen",
+    "native_instruction_count": 74,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_14e0a460a3fbef828b3e25b8584c1a23",
+    "method_name": "DrawIdeaPoint",
+    "native_instruction_count": 64,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.component.UIComponent",
+    "method_id": "r1-method_15cbe03c097e3133dda675352ab98e96",
+    "method_name": "get_BlurCount",
+    "native_instruction_count": 36,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.form.InstallForm",
+    "method_id": "r1-method_16881f90ff152aaa3d659249a28bdeb2",
+    "method_name": "DrawNoInstall",
+    "native_instruction_count": 1,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.m3d4.util3d.Transform",
+    "method_id": "r1-method_16f7cd2c13364a59c3bde8c95c406c5e",
+    "method_name": "_checkArgumentException",
+    "native_instruction_count": 10,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_17718648f3baba74bd8f5c9fec0435ed",
+    "method_name": "CreatePlatformContentDialog",
+    "native_instruction_count": 29,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.DevelopForm",
+    "method_id": "r1-method_18e380ecf2d237f16b270be3be5f2d32",
+    "method_name": "DrawCursorRect",
+    "native_instruction_count": 192,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.type.Rect",
+    "method_id": "r1-method_195e5c3ae321315a77bca907b9413832",
+    "method_name": "op_Inequality",
+    "native_instruction_count": 38,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.form.FormManagerBase",
+    "method_id": "r1-method_19d41bfd635c72d1ca0375bcf48ad665",
+    "method_name": "LockUpdate",
+    "native_instruction_count": 53,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "system.form.InstallForm",
+    "method_id": "r1-method_1a7ba2fcbc590b6a2d124ab19d9ffb8f",
+    "method_name": "_update",
+    "native_instruction_count": 168,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.FurnitureData",
+    "method_id": "r1-method_1b232d85f7eb987613c34b80447c0a41",
+    "method_name": "GetTargetName",
+    "native_instruction_count": 71,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "system.migration.MyMigration",
+    "method_id": "r1-method_1b27f0679404979b525ddbacee7f07f0",
+    "method_name": "Init",
+    "native_instruction_count": 7,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.io.HttpObject",
+    "method_id": "r1-method_1b587bbed2109b7648d1958d634303f5",
+    "method_name": "GetErrorText2",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.system.KairoBase",
+    "method_id": "r1-method_1c518497fe79fc9fd340c93a0ebb2bb4",
+    "method_name": "OnPreConnection",
+    "native_instruction_count": 1,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "java.lang.JMath",
+    "method_id": "r1-method_1c69f00e0a1ec8ab0d3d5b87a8e8dfb4",
+    "method_name": "Min",
+    "native_instruction_count": 3,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "system.billing.ui.PurchaseRecord",
+    "method_id": "r1-method_1df3372a53d11f564415ae884eed14f1",
+    "method_name": "ChangeState",
+    "native_instruction_count": 55,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_1e97d555c91900797f5dc69a441f6697",
+    "method_name": "<UpdateNameInput>b__1171_0",
+    "native_instruction_count": 14,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.form.GraphicsFontForm",
+    "method_id": "r1-method_204554319203ce2741b7eed147427596",
+    "method_name": "Update",
+    "native_instruction_count": 873,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.LanguageConfig",
+    "method_id": "r1-method_2046b5c035b805c3a77b48aab6049eea",
+    "method_name": "TryReadInt",
+    "native_instruction_count": 22,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.plugin.IRootPlugin",
+    "method_id": "r1-method_209a9af120d668fac7cd0456e0010807",
+    "method_name": "UseCoin",
+    "native_instruction_count": 0,
+    "ownership": "KAIRO_ENGINE",
+    "status": "SOURCE_LIMITED",
+    "tier": "SOURCE_LIMITED_STUB"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_20c4934169cba0d771e5c6fc9ad3fc90",
+    "method_name": "GetReinforceTeamSuccessRate",
+    "native_instruction_count": 107,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.ui.UIException",
+    "method_id": "r1-method_21a6d2eec8ca419b659b5a9c6306c62b",
+    "method_name": "GetStatus",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "kairo.unity.util.Language",
+    "method_id": "r1-method_21bd28c398ed29c91e58916d516334f7",
+    "method_name": "Init",
+    "native_instruction_count": 2681,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_21c47117052bbf104fa6917b2eb27d64",
+    "method_name": "CheckMoveStop",
+    "native_instruction_count": 66,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_2266d019fb9ef0dc31ac40fb06d929d3",
+    "method_name": "DrawTalkChara",
+    "native_instruction_count": 106,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Image",
+    "method_id": "r1-method_229cb15e65ab380e72ac5416bea4a9f4",
+    "method_name": "GetRGBPixels",
+    "native_instruction_count": 110,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.Canvas",
+    "method_id": "r1-method_22ca13aacb508f2d64474aef33b4c559",
+    "method_name": "ClearKeyBuffer",
+    "native_instruction_count": 60,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.DisplayMetrics",
+    "method_id": "r1-method_23152e4afa700ca956117b3924a191bc",
+    "method_name": "get_XDPI",
+    "native_instruction_count": 22,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.MailData",
+    "method_id": "r1-method_23fc6a9aea9329c5e5686a54690ea0ad",
+    "method_name": "GetPresentName",
+    "native_instruction_count": 137,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "ext.util.Lib",
+    "method_id": "r1-method_24103aba2c1e0e959d4f3888748dc8ae",
+    "method_name": "DrawLRArrow",
+    "native_instruction_count": 33,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.IApplication",
+    "method_id": "r1-method_24a6f5642e35a12166f0c5f591af99c3",
+    "method_name": "GetViewport",
+    "native_instruction_count": 34,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.task.Task",
+    "method_id": "r1-method_258cc37bb9477ecb4033e6f568e9698d",
+    "method_name": "get_S",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_2632065a4262e31217599b72f4be661c",
+    "method_name": "GetPlanningRate",
+    "native_instruction_count": 26,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "ext.util.Lib",
+    "method_id": "r1-method_2788252847e7757e71768ebd9dd90345",
+    "method_name": "AllUnuseImage",
+    "native_instruction_count": 126,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_2838714e7633641c516016e1063b5117",
+    "method_name": "UseGift",
+    "native_instruction_count": 27,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.StreamUtil",
+    "method_id": "r1-method_2840160d4219635ce9f785d2c023d162",
+    "method_name": "ReadLocation",
+    "native_instruction_count": 54,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.ImageAtlas",
+    "method_id": "r1-method_2897de6172a5bf9bbb90aeb2a34f17ef",
+    "method_name": "Apply",
+    "native_instruction_count": 9,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.UnityUtil",
+    "method_id": "r1-method_28de7e470fa6d55ca79c3bd591126941",
+    "method_name": "set_bundleIdentifier",
+    "native_instruction_count": 51,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "ext.util.ScrollList",
+    "method_id": "r1-method_295622197c1420c3fda04a8492ef6c96",
+    "method_name": "DrawScrollBar",
+    "native_instruction_count": 57,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "game.Camera",
+    "method_id": "r1-method_29cee9fa8e5154659f6be4b0a53a0eeb",
+    "method_name": "SetPosition",
+    "native_instruction_count": 2,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "surface.GamePad",
+    "method_id": "r1-method_2b59a94a4a0f3438cc5167a338857ba8",
+    "method_name": "SetLayoutMode",
+    "native_instruction_count": 59,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.Log",
+    "method_id": "r1-method_2b5ffd00eb17527f8c0e593531977957",
+    "method_name": "AddLogMesh",
+    "native_instruction_count": 93,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.component.UIOffscreen",
+    "method_id": "r1-method_2c3cc7d8030e393cf5a3f6cfeb2eea5e",
+    "method_name": "op_Implicit",
+    "native_instruction_count": 6,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_2c9e36c46558547c4e0153e9759fbb66",
+    "method_name": "DrawHardwareBox2",
+    "native_instruction_count": 369,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.DevelopForm",
+    "method_id": "r1-method_2e43562082472559cdb68aa564292b33",
+    "method_name": "ShootParamIcon",
+    "native_instruction_count": 129,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Image",
+    "method_id": "r1-method_2e871e7373c9b0a5208288ab70207758",
+    "method_name": "GetTexture2D",
+    "native_instruction_count": 57,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_2f6afcd1ca64df8e69441fe201be4a89",
+    "method_name": "CreateDevelopPolicy",
+    "native_instruction_count": 26,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.Language",
+    "method_id": "r1-method_2fd53d84fece4554a212562f1a8a6ac3",
+    "method_name": "SetSoftLabelTable",
+    "native_instruction_count": 100,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.surface.SurfaceBase",
+    "method_id": "r1-method_2fde69cd80e78d68848d6bc6d7fbabd8",
+    "method_name": "CreateTouchEvent",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "kairo.unity.ui.Canvas",
+    "method_id": "r1-method_30194466f189604ae3fd70b79fdc3838",
+    "method_name": "_decideKeyState",
+    "native_instruction_count": 2708,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "form.DevelopForm",
+    "method_id": "r1-method_3052403ff3bdfd6847507fade46ef161",
+    "method_name": "GetBaseX",
+    "native_instruction_count": 2,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "java.native.PluginBase",
+    "method_id": "r1-method_310177d5e38b0739561836ed9ea7743b",
+    "method_name": "GetStatic",
+    "native_instruction_count": 111,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_319eaa6f6b25384b1119d1573739f9eb",
+    "method_name": "Frame",
+    "native_instruction_count": 11,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "surface.GameView",
+    "method_id": "r1-method_32527b125d250b7836965558c60c2605",
+    "method_name": "Get",
+    "native_instruction_count": 11,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Camera",
+    "method_id": "r1-method_3258fc453f81b8ae3c3c549a4cab8c0b",
+    "method_name": "SetPosition",
+    "native_instruction_count": 42,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.component.UIComponent",
+    "method_id": "r1-method_32ea6355dcef267f710a35f10df16438",
+    "method_name": "OnDraw",
+    "native_instruction_count": 1,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.graph.PassFinder",
+    "method_id": "r1-method_3367ce8bf590ca313bd39fc2c9a48dee",
+    "method_name": "Search",
+    "native_instruction_count": 36,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.MiniGameForm",
+    "method_id": "r1-method_33b2cb7b337b00ff68a94cc1452036a4",
+    "method_name": "DrawRollMoney",
+    "native_instruction_count": 28,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.form.FormManagerBase",
+    "method_id": "r1-method_340ecc422c9d690978ef559bd761ff96",
+    "method_name": "CheckInitOrFinish",
+    "native_instruction_count": 125,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_35488a7ba9a5dbf574068c4ddf7448fb",
+    "method_name": "GetParam",
+    "native_instruction_count": 17,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.KairoService",
+    "method_id": "r1-method_3583dece1218fa886b6ada7cf252d100",
+    "method_name": "<Update>b__23_0",
+    "native_instruction_count": 151,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "java.io.DataOutputStream",
+    "method_id": "r1-method_35e20bb20ed5bc99b3f39ac8db1637aa",
+    "method_name": "WriteUTF",
+    "native_instruction_count": 60,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.util.SecureNumber",
+    "method_id": "r1-method_3629e4223f1bd572bb48373fc0b402ea",
+    "method_name": "GetHashCode",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.system.KairoBase",
+    "method_id": "r1-method_3766202f04e936ad30ea91f7755702c2",
+    "method_name": "GetFriendIdInt",
+    "native_instruction_count": 11,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_388eb5bb8b925b4c09e9b82895cd4f90",
+    "method_name": "Finish",
+    "native_instruction_count": 127,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.DevelopForm",
+    "method_id": "r1-method_38ad183b053af63c6af0577f02f4be76",
+    "method_name": "GetEnemyX",
+    "native_instruction_count": 26,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.KInput",
+    "method_id": "r1-method_38e5c7b5feec5c8787903c8cd2e4de67",
+    "method_name": "GetMouseWheel",
+    "native_instruction_count": 22,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.form.BillingForm",
+    "method_id": "r1-method_3b2a70e717cceeb226ca681a53388816",
+    "method_name": "LoadResource",
+    "native_instruction_count": 129,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.type.Location",
+    "method_id": "r1-method_3b7bbb03df1ea1742c5b3a0ee85f902d",
+    "method_name": "op_True",
+    "native_instruction_count": 3,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "data.PlatformContentData",
+    "method_id": "r1-method_3b80ac4b0daaac83eaf3b00e5771d0a1",
+    "method_name": "AddDevelopGauge",
+    "native_instruction_count": 36,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.native.KairoPlugin",
+    "method_id": "r1-method_3b8618fb4dac353b60080ad8a18631cf",
+    "method_name": "_getScaleRatio",
+    "native_instruction_count": 198,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_3bf551505cb3ab092587b87daf976ce0",
+    "method_name": "UpdatePlatformNegotiation",
+    "native_instruction_count": 487,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "java.util.JDate",
+    "method_id": "r1-method_3c825d29275a2da738e83ec701581ce3",
+    "method_name": "GetHashCode",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "system.form.ConnectForm",
+    "method_id": "r1-method_3cdff9a3c8887d7315d405870373be8e",
+    "method_name": "Finish",
+    "native_instruction_count": 2,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.RenderContents",
+    "method_id": "r1-method_3d5df3361d7ab11133861295cc95df61",
+    "method_name": "op_Implicit",
+    "native_instruction_count": 25,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.HelperData",
+    "method_id": "r1-method_3d6926a83335f518eb1f998df9f45fde",
+    "method_name": "ExeEffect",
+    "native_instruction_count": 465,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.form.LibraryFormBase",
+    "method_id": "r1-method_3e2e0fe06818573c20693751b161479f",
+    "method_name": "OnTouchArrow",
+    "native_instruction_count": 12,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_3f08b71361246f10477af792ce246136",
+    "method_name": "DrawGenreShop",
+    "native_instruction_count": 459,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.type.Rect",
+    "method_id": "r1-method_3f9668012d2e86e9947da03d4e7cd4c9",
+    "method_name": "op_Equality",
+    "native_instruction_count": 68,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.component.IComponentContainer",
+    "method_id": "r1-method_3fcca6d4c0ac47bac7a20245da22b97b",
+    "method_name": "GetComponent",
+    "native_instruction_count": 0,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BLOCKED_IDENTITY",
+    "tier": "SOURCE_LIMITED_STUB"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.MyFormBase",
+    "method_id": "r1-method_40741635ee046b27f1937290cae00d27",
+    "method_name": "Suspend",
+    "native_instruction_count": 47,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.io.AssetReader",
+    "method_id": "r1-method_40953dfab5adad44526bad5f0d4d0f8a",
+    "method_name": "GetInputStream",
+    "native_instruction_count": 45,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_40e82e216a6843e6c59f3696c1a4c945",
+    "method_name": "InitHardSelect",
+    "native_instruction_count": 37,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.IApplication",
+    "method_id": "r1-method_41ed51c9f3a4cddd10b0cc8bf715c3f6",
+    "method_name": "<SetResolutionScaleRatio>b__186_0",
+    "native_instruction_count": 16,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_42e2027a27e9419287013c8f026defda",
+    "method_name": "GetTreasureBoxList",
+    "native_instruction_count": 12,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.graphics.MaterialManager",
+    "method_id": "r1-method_430d0dcb4179ddbde9131966407dcfd2",
+    "method_name": "GetMaterial",
+    "native_instruction_count": 38,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm2",
+    "method_id": "r1-method_43a2a94b47e07b98e927cf0435f1f22f",
+    "method_name": "UpdateReinforceComplete",
+    "native_instruction_count": 133,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.FastVector`1",
+    "method_id": "r1-method_43e6295f9ee52287dd2efa98912871b0",
+    "method_name": "FirstElement",
+    "native_instruction_count": 10,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "system.form.BillingForm",
+    "method_id": "r1-method_445f7d76667ed403f377297407930018",
+    "method_name": "FillRect3",
+    "native_instruction_count": 55,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.math.Hit",
+    "method_id": "r1-method_44903404193b7b6048cb44bb3e720a0d",
+    "method_name": "op_Implicit",
+    "native_instruction_count": 30,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.billing.ui.StoreBase",
+    "method_id": "r1-method_456391dd69e56d2621e412536c9ea701",
+    "method_name": "InitializePurchasing",
+    "native_instruction_count": 461,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_45bfb266cc5149c28e5890a55b6c0b39",
+    "method_name": "AddFukidashi_",
+    "native_instruction_count": 39,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Seb",
+    "method_id": "r1-method_461140dd75d6fc0872f8b2db232cfa55",
+    "method_name": "DrawHorizontalLayer",
+    "native_instruction_count": 168,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Font",
+    "method_id": "r1-method_476424897ca167c721e7fb250ffe171e",
+    "method_name": "GetDefaultGUIFont",
+    "native_instruction_count": 107,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.io.RecordStore",
+    "method_id": "r1-method_48b84baa6990e34d9ff01d8d0d96d04f",
+    "method_name": "WriteRecord",
+    "native_instruction_count": 32,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm2",
+    "method_id": "r1-method_48cf442e57f3b39ba2ed2e1ed036dfc5",
+    "method_name": "CreateLoginNotice",
+    "native_instruction_count": 27,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.ObjChip",
+    "method_id": "r1-method_495203463f3551f4509c4fdf76a894d9",
+    "method_name": "StartAction",
+    "native_instruction_count": 94,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_49f56bd3a210396e95c3832bebf12c39",
+    "method_name": "UpdateSellingEnd",
+    "native_instruction_count": 952,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.graphics.Offscreen",
+    "method_id": "r1-method_4a7ff0eeabdc34633432db1f5d01fecd",
+    "method_name": "GetWidth",
+    "native_instruction_count": 7,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.IApplication",
+    "method_id": "r1-method_4a8527c8d8a4eac8a38dbdfa072bdfaa",
+    "method_name": "OnApplicationQuit",
+    "native_instruction_count": 314,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.surface.MotionEvent",
+    "method_id": "r1-method_4acb331b66120d3c031bc89919ac7bcc",
+    "method_name": "IsMousePointer",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "data.AwardData",
+    "method_id": "r1-method_4b708e19e3135863190653b40fa2dda5",
+    "method_name": "Deserialize",
+    "native_instruction_count": 39,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.billing.ui.BillingManager",
+    "method_id": "r1-method_4bb6464145a016964d37d839e8d37da0",
+    "method_name": "UpdateBillingItems",
+    "native_instruction_count": 952,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "java.io.DataInputStream",
+    "method_id": "r1-method_4bd09e61db4d310d5c8fac685bde7319",
+    "method_name": "ReadChar",
+    "native_instruction_count": 31,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.native.AdMobPlugin",
+    "method_id": "r1-method_4ce2ee8df53fa7b03a454cbebcf989cf",
+    "method_name": "ResetAdMobView",
+    "native_instruction_count": 1,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_4d47cdf4a02faa334e87b0528beeb75e",
+    "method_name": "GetFloor",
+    "native_instruction_count": 6,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.ImageAtlas",
+    "method_id": "r1-method_4dfeeaf0e0f012f594846e5692757921",
+    "method_name": "RaiseHeightMap",
+    "native_instruction_count": 102,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "system.form.BillingForm",
+    "method_id": "r1-method_4e72ab4035670ad2b2e0e88229282903",
+    "method_name": "GetLineElementsNum",
+    "native_instruction_count": 19,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.form.NewsForm",
+    "method_id": "r1-method_4e762bffd45ddb22a5ec7e2e334f5204",
+    "method_name": "ToString",
+    "native_instruction_count": 16,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.IApplication",
+    "method_id": "r1-method_4fe9ee46375e2cc912afc61cae2dfb51",
+    "method_name": "CopyDirectory",
+    "native_instruction_count": 119,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_5035ec8981e6b1a458f45c3db2880b71",
+    "method_name": "AddMenu",
+    "native_instruction_count": 13,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.SecureProperty",
+    "method_id": "r1-method_50a967721f0122d56fea68dabf3b00d6",
+    "method_name": "Load",
+    "native_instruction_count": 62,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.FestivalManager",
+    "method_id": "r1-method_51697fe16a0bb0e7b9bf0753b3938984",
+    "method_name": "Update",
+    "native_instruction_count": 138,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.TextLayout",
+    "method_id": "r1-method_51ddc4b24bbd4b59802b160c51bc8a30",
+    "method_name": "GetRenderRectVisible",
+    "native_instruction_count": 22,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "data.PlatformContentData",
+    "method_id": "r1-method_5204405e43ab21d374c036b9c5dcee1e",
+    "method_name": "GetPlusGameDevelopCost_",
+    "native_instruction_count": 4,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Seb",
+    "method_id": "r1-method_532cab2345bc907db3cfd66e11a1a600",
+    "method_name": "set_Flip",
+    "native_instruction_count": 3,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_53f90a180d509b6611d521665cfac69b",
+    "method_name": "CreateManagementFanUp",
+    "native_instruction_count": 31,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Image",
+    "method_id": "r1-method_54922745dc45a2a4278c45cff040158f",
+    "method_name": "Clear",
+    "native_instruction_count": 87,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_553db0d4498f5834d138ff40e41411f3",
+    "method_name": "UseSpeedDevelop",
+    "native_instruction_count": 77,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Image",
+    "method_id": "r1-method_5685444fb8d03b612711769cecd6a8c0",
+    "method_name": "<Apply>b__175_0",
+    "native_instruction_count": 37,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "TapjoyUnity.Internal.TapjoyUnityInit",
+    "method_id": "r1-method_56884a8461d1e7eed43a17b40e6970fb",
+    "method_name": "Awake",
+    "native_instruction_count": 355,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Seb",
+    "method_id": "r1-method_5718b818b08a62d0428a08807405826e",
+    "method_name": "DrawAnchor",
+    "native_instruction_count": 80,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_571d4a24ede50371abbbcbd7ed618144",
+    "method_name": "OnAttacked",
+    "native_instruction_count": 167,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "game.Meeting",
+    "method_id": "r1-method_5839d44a4b9701a1f0f0c654d5ca5ed3",
+    "method_name": "AdjustOrigin",
+    "native_instruction_count": 37,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.Balloon",
+    "method_id": "r1-method_589412ba72a31a015104ac2b0746261e",
+    "method_name": "SetSpace",
+    "native_instruction_count": 6,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.IdeaData",
+    "method_id": "r1-method_58b6512cbe63676c2529dddec7b12dfa",
+    "method_name": "NewGame",
+    "native_instruction_count": 85,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.graphics.MeshManager",
+    "method_id": "r1-method_598b68007af4c38d02f2c62a56c7a262",
+    "method_name": "UpdateLayerMeshes",
+    "native_instruction_count": 498,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Graphics",
+    "method_id": "r1-method_59af3822b94e90ab9a6b120a2cfa65bd",
+    "method_name": "GetMatrix",
+    "native_instruction_count": 48,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.ui.SoundBase",
+    "method_id": "r1-method_59d8b394597b224d60ce2ec15931195e",
+    "method_name": "SetLoop",
+    "native_instruction_count": 20,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm2",
+    "method_id": "r1-method_5a8a2511d458a402c266bf9e92de13b7",
+    "method_name": "CreateReinforceComplete",
+    "native_instruction_count": 26,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_5bb9f6f79ef8ebbecb21790b1ff258bb",
+    "method_name": "DrawPlanningFukidashi",
+    "native_instruction_count": 163,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Matrix",
+    "method_id": "r1-method_5c4f00335e0522d83705a0c1be7d444b",
+    "method_name": "SetConcat",
+    "native_instruction_count": 18,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.secure.XString",
+    "method_id": "r1-method_5c9e6100168f808ed8c960e31b162f3e",
+    "method_name": "ValueOf",
+    "native_instruction_count": 39,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.billing.ui.BillingManager",
+    "method_id": "r1-method_5d9ab14274f3eefd8135d39601653d51",
+    "method_name": "CheckRegistApply",
+    "native_instruction_count": 53,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "system.form.HttpForm",
+    "method_id": "r1-method_5de7d95454e300757dd4905faa2535f4",
+    "method_name": "Update",
+    "native_instruction_count": 137,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "game.Company",
+    "method_id": "r1-method_5e11e18cd4404d529722ce36b152ab51",
+    "method_name": "IsContracted",
+    "native_instruction_count": 4,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.ImageAtlasManager",
+    "method_id": "r1-method_5ec0cfc236c6971b05320fc6c3033f44",
+    "method_name": "CreateImageAtlas",
+    "native_instruction_count": 132,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "R.Library.Kairolib",
+    "method_id": "r1-method_5f63cdd56502c2ad4a4b53e431b0923f",
+    "method_name": "get_ButtonStorageDelete",
+    "native_instruction_count": 43,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "system.form.FriendForm",
+    "method_id": "r1-method_603f3ad768f653c1ad9e44f50f51b539",
+    "method_name": "_draw",
+    "native_instruction_count": 6101,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.GameForm",
+    "method_id": "r1-method_6099df23d769ef0511cbed835bc0af2d",
+    "method_name": "GetDialogShop",
+    "native_instruction_count": 22,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.util.BitUtil",
+    "method_id": "r1-method_616ec4d8aec31059f6d66b89b932a5f9",
+    "method_name": "On",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "ext.util.Lib",
+    "method_id": "r1-method_6176e516760c9cf8382932a7bbdcb08d",
+    "method_name": "ClipArea",
+    "native_instruction_count": 95,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.mono.InterfaceBase`1",
+    "method_id": "r1-method_61e915ca8d4cc97444ed13b12344c4a8",
+    "method_name": "OnCreate",
+    "native_instruction_count": 40,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.IApplication",
+    "method_id": "r1-method_63381afc2e8d65d2d28941f8b60a801d",
+    "method_name": "Gameover",
+    "native_instruction_count": 63,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.PlatformData",
+    "method_id": "r1-method_6354673955a1c12a83b6e1f12b2a7959",
+    "method_name": "GetUsersNum",
+    "native_instruction_count": 80,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "form.DevelopForm",
+    "method_id": "r1-method_63d2ec6004253314d6f0bf25debd49d8",
+    "method_name": "DrawInspirationPointRatio",
+    "native_instruction_count": 77,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "system.billing.ui.Receipt",
+    "method_id": "r1-method_63e098bd38f15e20eeedf81eb9dc73da",
+    "method_name": "GetJson",
+    "native_instruction_count": 36,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "form.DevelopForm",
+    "method_id": "r1-method_650e817ad3deaa0651e46bb7929cdf81",
+    "method_name": "GetStep",
+    "native_instruction_count": 2,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_653cb36f6d5866775d978be53a9456df",
+    "method_name": "DrawStaffStatus",
+    "native_instruction_count": 2876,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_6593f0a2a02551dd5919966f86a340ff",
+    "method_name": "IsJp",
+    "native_instruction_count": 29,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.IApplication",
+    "method_id": "r1-method_65b76259e54f0c3c79e861666b00f2b4",
+    "method_name": "Terminate",
+    "native_instruction_count": 106,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "java.lang.JMath",
+    "method_id": "r1-method_65f4090521c6fca284a97bc3c6696fe2",
+    "method_name": "ToRadians",
+    "native_instruction_count": 7,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.secure.XString",
+    "method_id": "r1-method_65fbfaa8e1c865551b14790fe47b71aa",
+    "method_name": "LastIndexOfAny",
+    "native_instruction_count": 9,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_6633ba4b883c92fa06760154b9d5397d",
+    "method_name": "DrawDevelopMenu",
+    "native_instruction_count": 1191,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_66c9915392552a0311e2c36c5899bbd9",
+    "method_name": "UpdateGameAwards",
+    "native_instruction_count": 2257,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "kairo.unity.util.Language",
+    "method_id": "r1-method_670696a9776ef7036bb22e4627e53a8c",
+    "method_name": "OptimizeLanguagePack",
+    "native_instruction_count": 2420,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BLOCKED_IDENTITY",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "R.Library.Kairolib",
+    "method_id": "r1-method_68409193e9310ffd7c9ef62998e50de2",
+    "method_name": "DrawPrivacyPolicy",
+    "native_instruction_count": 190,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.form.BillingForm",
+    "method_id": "r1-method_6871ec50d4204a8b7d2b10f6f4d93d52",
+    "method_name": "UpdateCoinShop",
+    "native_instruction_count": 933,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SpForm",
+    "method_id": "r1-method_68b3be331b8ea6bf3187f10cc9ebd266",
+    "method_name": "Update",
+    "native_instruction_count": 1395,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.ImageAtlasManager",
+    "method_id": "r1-method_68df050c0ff1b11b2ae51502ea64f0f8",
+    "method_name": "get_LockApply",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.licensing.LicenseChecker",
+    "method_id": "r1-method_6aa1065c245a10a22df57dd6ef45ebaf",
+    "method_name": "GetErrorCode",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.form.FormManagerBase",
+    "method_id": "r1-method_6b33c4616d90519f3301e48f30ab5745",
+    "method_name": "IsWait",
+    "native_instruction_count": 4,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_6b55e27e91996601c524df84a9d31709",
+    "method_name": "IsFailedToGetTime",
+    "native_instruction_count": 19,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "system.billing.ui.StoreBase",
+    "method_id": "r1-method_6b7c488a5214c6bffbca69f4172b2a14",
+    "method_name": "GetSubscriptionTime",
+    "native_instruction_count": 101,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.UnityUtil",
+    "method_id": "r1-method_6bd34cdfc641b5e421148e65fa0c31ab",
+    "method_name": "get_AndroidBundleIdentifier",
+    "native_instruction_count": 99,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Avatar",
+    "method_id": "r1-method_6bdf8d792ab8aaf3e8e6b12ea15dc798",
+    "method_name": "GetFreeAnswerStrAt",
+    "native_instruction_count": 34,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "form.MiniGameForm2",
+    "method_id": "r1-method_6ca97146d189580c6fee441267b7a7f2",
+    "method_name": "ToString",
+    "native_instruction_count": 16,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.util.Profiler",
+    "method_id": "r1-method_6cdd92c75cfa6c8e898199ad1982bd01",
+    "method_name": "BeginSample",
+    "native_instruction_count": 326,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.BootForm",
+    "method_id": "r1-method_6dc7f64180bd0b758ad3bd29db578225",
+    "method_name": "DisplayInterstitial",
+    "native_instruction_count": 19,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Font",
+    "method_id": "r1-method_6e8c986f85760b4f863c62c18ced2d19",
+    "method_name": "SetStyle",
+    "native_instruction_count": 76,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.SubForm2",
+    "method_id": "r1-method_6f1e1d35690fa3f98b844ae902e10aee",
+    "method_name": "InitGetCompany",
+    "native_instruction_count": 103,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "java.lang.JShort",
+    "method_id": "r1-method_6f43814bfc63aa7ab9ad72156e926c93",
+    "method_name": "Equals",
+    "native_instruction_count": 35,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.ui.Graphics",
+    "method_id": "r1-method_7055bd075ba9b495aa0d09cd6a397a19",
+    "method_name": "BeginRenderMatrix",
+    "native_instruction_count": 165,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BLOCKED_IDENTITY",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.util.BitUtil",
+    "method_id": "r1-method_71484fff05570c3a4b9928b532b820dc",
+    "method_name": "Off",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.ImageAtlas",
+    "method_id": "r1-method_714a7f81ff630a61a472f849e2bbbe7a",
+    "method_name": "AtlasToImage",
+    "native_instruction_count": 83,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "system.form.InstallForm",
+    "method_id": "r1-method_71581b4054188d285c8f2678097a28eb",
+    "method_name": "Update",
+    "native_instruction_count": 24,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_71d14cbaaa3b76d1d9c61218ff34404f",
+    "method_name": "GetGameScore",
+    "native_instruction_count": 37,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Graphics",
+    "method_id": "r1-method_7238c82da577f53e1c6a27404a4553d0",
+    "method_name": "DrawArc2",
+    "native_instruction_count": 5,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_73df9d57d848591d7892743924d65531",
+    "method_name": "DrawProposalArrival",
+    "native_instruction_count": 311,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "system.form.RestoreForm",
+    "method_id": "r1-method_73fd436b0e6ac72ff27767a540038bdf",
+    "method_name": "Update",
+    "native_instruction_count": 24,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.StreamUtil",
+    "method_id": "r1-method_742211a87fc563cc04af63e4c7f614b0",
+    "method_name": "PopFinalDeserialize",
+    "native_instruction_count": 64,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_74385ebc63089f66035f6f4b6ac52b91",
+    "method_name": "DrawDevelopMenuBg",
+    "native_instruction_count": 107,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.GameForm",
+    "method_id": "r1-method_74a74df7d33e5fb8c2a000daaf9539aa",
+    "method_name": "UpdateNotifyValue",
+    "native_instruction_count": 162,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.system.lobi.LobiManager",
+    "method_id": "r1-method_757267a6b3aa388a131a14bcd664d706",
+    "method_name": "Open",
+    "native_instruction_count": 123,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.CompanyData",
+    "method_id": "r1-method_7735af062707dcec87022a518ea8de8d",
+    "method_name": "IsDisplay",
+    "native_instruction_count": 66,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.native.KairoPlugin",
+    "method_id": "r1-method_774679b124978c20c0cfeb16a3a51e02",
+    "method_name": "LaunchApplication",
+    "native_instruction_count": 80,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.util.LogListener",
+    "method_id": "r1-method_77ab4d624f83e7115817c7e74a36645e",
+    "method_name": "OnRecvLog",
+    "native_instruction_count": 0,
+    "ownership": "KAIRO_ENGINE",
+    "status": "SOURCE_LIMITED",
+    "tier": "SOURCE_LIMITED_STUB"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_77d3cf6ff603d1cdea5e97f575566500",
+    "method_name": "SubStaffRoomCapacityIsOver",
+    "native_instruction_count": 7,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.WebBox",
+    "method_id": "r1-method_77da3cb1a16e57911933a864b31d16a3",
+    "method_name": "set_InvisibleLoading",
+    "native_instruction_count": 3,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.Canvas",
+    "method_id": "r1-method_783b181fac4b2c163e2fac1cca332728",
+    "method_name": "SetDisableKeyBits",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_78a65367e4c12fddc538c1a46992c2b9",
+    "method_name": "Deserialize",
+    "native_instruction_count": 2646,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.secure.XString",
+    "method_id": "r1-method_78ea4fa68169cd6ca83a1c125a8a720e",
+    "method_name": "StartsWith",
+    "native_instruction_count": 15,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "mail.form.MailForm",
+    "method_id": "r1-method_7950fb570f77d65109701263b1b4325b",
+    "method_name": "GetCurrentLineElementsNum",
+    "native_instruction_count": 25,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "data.FestivalData",
+    "method_id": "r1-method_7a94a04c18e1426d1015a21b0bdd7aa0",
+    "method_name": "Load",
+    "native_instruction_count": 26,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.ImageAtlas",
+    "method_id": "r1-method_7a97e0f2eec8c487548903eaf606b76a",
+    "method_name": "ImageToAtlas",
+    "native_instruction_count": 49,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.SubForm2",
+    "method_id": "r1-method_7a99f6dbb7a32d54400e31234f12f808",
+    "method_name": "<InitGiftSend>b__77_0",
+    "native_instruction_count": 105,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.type.FixedFloat",
+    "method_id": "r1-method_7b3ea0b5d3cf07d608ba1a336c728aa7",
+    "method_name": "op_Division",
+    "native_instruction_count": 5,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.MyFormBase",
+    "method_id": "r1-method_7b69f932bf2de01e09afd8bd3cd8b565",
+    "method_name": "AddTouch",
+    "native_instruction_count": 251,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_7b748bf67650ef1c5123305754f35dc7",
+    "method_name": "GotoEquip",
+    "native_instruction_count": 48,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "java.lang.StringEx",
+    "method_id": "r1-method_7d2cea5e808adca1ef5ab0dfe962ba2f",
+    "method_name": "SubstringJ",
+    "native_instruction_count": 5,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_7da046475e83f8023c7b5a3a58cadf62",
+    "method_name": "CreateProposalList",
+    "native_instruction_count": 548,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Graphics",
+    "method_id": "r1-method_7e39d3c5c66a0666cc5c03302f58110d",
+    "method_name": "FillTriangle",
+    "native_instruction_count": 7,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_7f6d3cd7489f3d021f210c8c190111d2",
+    "method_name": "Pow",
+    "native_instruction_count": 31,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.math.KairoMath",
+    "method_id": "r1-method_80392e1b2f2058c66395bf0761d38a9d",
+    "method_name": "DotProduct",
+    "native_instruction_count": 7,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.WebBox",
+    "method_id": "r1-method_803dfc4f0f4054e895dfdb1fffa58386",
+    "method_name": "SetViewRect",
+    "native_instruction_count": 145,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Graphics",
+    "method_id": "r1-method_80f38a6d419073ea5f89eaa74aece05a",
+    "method_name": "GetRenderModeDstRatio",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.MyFormBase",
+    "method_id": "r1-method_8129063b6ed49bca6e71e26c8e75f8b1",
+    "method_name": "Camera",
+    "native_instruction_count": 40,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "data.IdeaData",
+    "method_id": "r1-method_8228ace01f2ac3bb80b9d30af801c006",
+    "method_name": "GetHp",
+    "native_instruction_count": 33,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Matrix",
+    "method_id": "r1-method_82414d17e9e643ec316920c3f59ca3b1",
+    "method_name": "PreConcat",
+    "native_instruction_count": 97,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "form.RankForm",
+    "method_id": "r1-method_82cf06bd1df66a4647e981e119f0528a",
+    "method_name": "ConnectRegistScore",
+    "native_instruction_count": 77,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.Language",
+    "method_id": "r1-method_83e6833b31354bf001e2eaf30d80db38",
+    "method_name": "set_InternalTranslateEnable",
+    "native_instruction_count": 24,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.form.TapjoyForm",
+    "method_id": "r1-method_845e4acb35d6d97f0843278e833325ff",
+    "method_name": "Finish",
+    "native_instruction_count": 46,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.ResourceManager",
+    "method_id": "r1-method_8471321c2c979abdaffb82514885e77e",
+    "method_name": "Load",
+    "native_instruction_count": 63,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "kairo.unity.ui.IApplication",
+    "method_id": "r1-method_84cf5eae34391af239622ab307766bfe",
+    "method_name": "Awake",
+    "native_instruction_count": 2384,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "form.RealTimeForm",
+    "method_id": "r1-method_85d739addfd22287da7537807df3c0e8",
+    "method_name": "OnRecoveredStamina",
+    "native_instruction_count": 3,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "ext.util.Lib",
+    "method_id": "r1-method_864785fe4f40461b6e6c0b6e9abc0cc6",
+    "method_name": "GetRatio",
+    "native_instruction_count": 32,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.Calendar",
+    "method_id": "r1-method_86916baac88889d7d51e89c7466bdb08",
+    "method_name": "get_Year",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Meeting",
+    "method_id": "r1-method_873518f292739983215a74bca702b4cd",
+    "method_name": "UpdateStepIdeaExplosion",
+    "native_instruction_count": 154,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.type.Cylinder",
+    "method_id": "r1-method_8812836cb7bdbbfc88b2535b75c3292e",
+    "method_name": "Deserialize",
+    "native_instruction_count": 54,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "system.install.ui.IbResult",
+    "method_id": "r1-method_887cb0fd363811b6468af1d3e6bad494",
+    "method_name": "GetResponse",
+    "native_instruction_count": 2,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.io.PlayerPrefs",
+    "method_id": "r1-method_88ab2ea8dfce3bc44fe50676ec96f021",
+    "method_name": "SetString",
+    "native_instruction_count": 7,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_891e11f50a6c5d565dfff24f2a2ed62c",
+    "method_name": "InitInstallBonusAccept",
+    "native_instruction_count": 82,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.SecureShort",
+    "method_id": "r1-method_89a5dc9a12ffe203f6a766a26cba1e58",
+    "method_name": "Set",
+    "native_instruction_count": 7,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Graphics",
+    "method_id": "r1-method_89c11d85438f5e3fc4f6a3ae65b2669c",
+    "method_name": "ClipRect",
+    "native_instruction_count": 139,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "game.ObjChip",
+    "method_id": "r1-method_8a61cbcc101c79d32838f5c36020c387",
+    "method_name": "Draw",
+    "native_instruction_count": 2345,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_8a7bffe26e00d521cbfea4ca3332ee7c",
+    "method_name": "ResourceReDownload",
+    "native_instruction_count": 96,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "native.AppPlugin",
+    "method_id": "r1-method_8b9242766dd94963aec7efa31f3fd6b8",
+    "method_name": "ShowPurchaseLog",
+    "native_instruction_count": 97,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "native.WebBoxPluginOld",
+    "method_id": "r1-method_8bfda50d5e3d21d0d53aac09334f9082",
+    "method_name": "Visible",
+    "native_instruction_count": 98,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Graphics+ARGB",
+    "method_id": "r1-method_8c28dad7aceb713b6ff7d7c898c178ce",
+    "method_name": "get_R",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "surface.GameView",
+    "method_id": "r1-method_8dba3d332e305d7c3bfa346a1db10d2e",
+    "method_name": "OnTouchSubMenu",
+    "native_instruction_count": 30,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.DevelopForm",
+    "method_id": "r1-method_8de8cfac9f10dfe497c4944d61b7e7bb",
+    "method_name": "GetStaffCloneRandom",
+    "native_instruction_count": 51,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.SteamInputManager+AnalogButton",
+    "method_id": "r1-method_8ea1ddcfe6ddc37b2259f7bca7e97bb1",
+    "method_name": "Check",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.native.KairoPlugin",
+    "method_id": "r1-method_8fbf95c0cc22769d35a385d26911b205",
+    "method_name": "GetIntentPackage",
+    "native_instruction_count": 82,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.secure.XDouble",
+    "method_id": "r1-method_8fe003cabc7c7946f85998dfaad8db55",
+    "method_name": "get_Value",
+    "native_instruction_count": 72,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "system.form.LoginForm",
+    "method_id": "r1-method_902e8dbf952130a8ad3d25ff576f9f52",
+    "method_name": "GetKey",
+    "native_instruction_count": 18,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_904317108729a46e5057dece1f2db9cc",
+    "method_name": "UpdatePlatformComplete",
+    "native_instruction_count": 509,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.Install",
+    "method_id": "r1-method_909c3091c1474187d2f8ee74ad58f462",
+    "method_name": "Load",
+    "native_instruction_count": 104,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "kairo.unity.ui.Canvas",
+    "method_id": "r1-method_916256e6835fd307fbbc8e9cae223a0f",
+    "method_name": "OnInputUpdate",
+    "native_instruction_count": 1960,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Image",
+    "method_id": "r1-method_926a578dd71ab4225539707b4f0470d4",
+    "method_name": "Release",
+    "native_instruction_count": 65,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_926a6a6adde1010deb79b41c20402c49",
+    "method_name": "NeedsScaleDownForm",
+    "native_instruction_count": 57,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.type.SizeF",
+    "method_id": "r1-method_928af8feb86438d440e6babc80600d22",
+    "method_name": "op_LogicalNot",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "surface.GameView",
+    "method_id": "r1-method_92ab8c9eda1e689e749d22ebe583aed4",
+    "method_name": "AddTouch",
+    "native_instruction_count": 16,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.MailData",
+    "method_id": "r1-method_938c45eb76ffecc72fa89ed760ac3ea0",
+    "method_name": "CheckTerm",
+    "native_instruction_count": 188,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.form.GameoverForm",
+    "method_id": "r1-method_94663c69e90191e822149bf57ac4be7a",
+    "method_name": "Finish",
+    "native_instruction_count": 9,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.surface.TouchValue",
+    "method_id": "r1-method_956ac45a813e0037e71aad575774e554",
+    "method_name": "op_Implicit",
+    "native_instruction_count": 1,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_95d4ecf3040a56dfbd3af7443c432879",
+    "method_name": "OnRemovedFromCurrentFloor",
+    "native_instruction_count": 96,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "R.Library.Kairolib",
+    "method_id": "r1-method_95d73bd860f498cc4630737b998ba954",
+    "method_name": "DrawPrivacyPolicy",
+    "native_instruction_count": 32,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.ui.Bundle",
+    "method_id": "r1-method_96884ad05f5a5c7f1981aac0a0f72926",
+    "method_name": "GetInt",
+    "native_instruction_count": 16,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "mail.form.MailForm",
+    "method_id": "r1-method_96ae0e869eef1f6e05c02d62e5260fa3",
+    "method_name": "InitMailBox",
+    "native_instruction_count": 81,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "game.Company",
+    "method_id": "r1-method_96dc0c75970c621228702b90959e13f9",
+    "method_name": "GetName",
+    "native_instruction_count": 2,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Seb",
+    "method_id": "r1-method_96f1584ded9ea6474c5db2e79b0442c6",
+    "method_name": "GetImage",
+    "native_instruction_count": 104,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.EnumArray`2",
+    "method_id": "r1-method_981e067b99bc51b2231143df52c28d97",
+    "method_name": "get_Length",
+    "native_instruction_count": 7,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "kairo.unity.util.Language",
+    "method_id": "r1-method_98473e5502831c5ce39dc616cfd24cda",
+    "method_name": "MakeLangPackTemplate",
+    "native_instruction_count": 1888,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BLOCKED_IDENTITY",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_985b5191dd11706b8621db22b6529596",
+    "method_name": "DrawTimeDialog",
+    "native_instruction_count": 745,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "mail.form.MailForm",
+    "method_id": "r1-method_99d94dd9dd4e0e12bb97e20f71e41cac",
+    "method_name": "DrawMailMessageWindow",
+    "native_instruction_count": 579,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.IApplication",
+    "method_id": "r1-method_9a263fb26419f7ef5c0d02c4fdda29ac",
+    "method_name": "Sleep",
+    "native_instruction_count": 147,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_9a651bd1937a46ab38dc33974f0dd054",
+    "method_name": "DrawAvatarTalkMenu",
+    "native_instruction_count": 284,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.system.KairoBase",
+    "method_id": "r1-method_9ac5ccb9526eb88b6e24880fca59544e",
+    "method_name": "OnLoadGame",
+    "native_instruction_count": 1,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "system.install.ui.InstallManager",
+    "method_id": "r1-method_9ba4ebaa5832c897a75347b507382721",
+    "method_name": "SetIbResult",
+    "native_instruction_count": 28,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.TextLayout",
+    "method_id": "r1-method_9bb65d9b9f864162b31a4cccbbca8c79",
+    "method_name": "ClearRuby",
+    "native_instruction_count": 39,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_9be83a77a7728e6e10710cbba50c44bc",
+    "method_name": "DrawBox",
+    "native_instruction_count": 323,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.graphics.Offscreen",
+    "method_id": "r1-method_9d577a51878575ba5a92b331ad7b7dcc",
+    "method_name": "Resize",
+    "native_instruction_count": 115,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.graphics.Blur",
+    "method_id": "r1-method_9d8030440ff01a9f5de8a774862ec09d",
+    "method_name": "OnRenderImage",
+    "native_instruction_count": 87,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_9e231da787d057c0af7fc2faffc4d212",
+    "method_name": "CreateNewcomer",
+    "native_instruction_count": 37,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.SoundBase",
+    "method_id": "r1-method_9e3bdb12b9a9078e80a80d120ca63839",
+    "method_name": "ToString",
+    "native_instruction_count": 33,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.DataManager",
+    "method_id": "r1-method_9e9047e0f7a3936e1ff5c9ee3fbc9ae5",
+    "method_name": "GetInstance",
+    "native_instruction_count": 22,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "data.AwardData",
+    "method_id": "r1-method_9edb966f585ba3a0ce027b83a03f57f6",
+    "method_name": "GetBestRank",
+    "native_instruction_count": 35,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "system.form.BillingForm",
+    "method_id": "r1-method_9f236030efd75aa2ba9fe425258d3ea5",
+    "method_name": "_draw",
+    "native_instruction_count": 1919,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.GameForm",
+    "method_id": "r1-method_a0e2d2a0fe83b0e96356824ff54b60e7",
+    "method_name": "AddButtonTouchEffect",
+    "native_instruction_count": 193,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Graphics",
+    "method_id": "r1-method_a0e6fd11fa1d85496e17424bcf45d05e",
+    "method_name": "FillTriangle",
+    "native_instruction_count": 31,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.native.AdMobPlugin",
+    "method_id": "r1-method_a0ffefbb7b8d5b9631f580501dac1b5d",
+    "method_name": "IsStart",
+    "native_instruction_count": 81,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_a1c717e908e243140463eb83e1e34f6f",
+    "method_name": "CreateTalk",
+    "native_instruction_count": 102,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_a2376dd7710f3d2c397cff569b1bb33b",
+    "method_name": "IsLeader",
+    "native_instruction_count": 24,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.ImageTransform",
+    "method_id": "r1-method_a2d7693693a7140d8c1ccbc2c61c55b7",
+    "method_name": "GetTransform",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_a36187a2311b37a43c726270df91defc",
+    "method_name": "<UpdateGameNameEdit>b__729_0",
+    "native_instruction_count": 16,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ad.InterstitialAd",
+    "method_id": "r1-method_a3db66695a656b254f3938b55bb0f146",
+    "method_name": "Dispose",
+    "native_instruction_count": 24,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.TextFormat",
+    "method_id": "r1-method_a44f9e7f3e0c8eabe09f0ee4eb61c533",
+    "method_name": "Create",
+    "native_instruction_count": 41,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_a4ba8b65aab377b95db4794d934f5888",
+    "method_name": "CheckDraw",
+    "native_instruction_count": 8,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_a5274f5402d263f61253307ef57af02a",
+    "method_name": "DrawPlatformSelect",
+    "native_instruction_count": 3958,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "game.Meeting",
+    "method_id": "r1-method_a5965dcbb34b8eef9ebaa929f231dbe6",
+    "method_name": "Draw",
+    "native_instruction_count": 2186,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "form.GameForm",
+    "method_id": "r1-method_a647f58f6bae15c356735c5180f6bb78",
+    "method_name": "_update",
+    "native_instruction_count": 2162,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.component.UIComponent",
+    "method_id": "r1-method_a6857fb7063de7acae8dba5eb031c3a5",
+    "method_name": "GetComponents",
+    "native_instruction_count": 163,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_a6f00d9fbb012b8cfdd94f4d4eb7b5ac",
+    "method_name": "AddTreasureBox",
+    "native_instruction_count": 32,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.component.UIComponent",
+    "method_id": "r1-method_a6fb613b7fa9483211f9fe1ecf8a423b",
+    "method_name": "get_RefreshLock",
+    "native_instruction_count": 22,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.io.PlayerPrefs",
+    "method_id": "r1-method_a7e9a7888e55a9829cc6dc68aecf15a5",
+    "method_name": "GetFloat",
+    "native_instruction_count": 5,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_a883b50180abdc42aba3c19d0322e959",
+    "method_name": "GetNominateEval",
+    "native_instruction_count": 85,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "data.HardwareData",
+    "method_id": "r1-method_a8b9a90241a52447e7ff7b17185bacd8",
+    "method_name": "GetDisplayUsersNum",
+    "native_instruction_count": 2,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.io.RecordStore",
+    "method_id": "r1-method_a936d826a5fbcffefc1713652aa5bfea",
+    "method_name": "ReadAllRecords",
+    "native_instruction_count": 131,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.KInput",
+    "method_id": "r1-method_a97e3471de07a13d607969cf6ab09095",
+    "method_name": "Update",
+    "native_instruction_count": 1254,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "ext.util.StringArrayStream",
+    "method_id": "r1-method_a9d3728a53519ff28cea9cbbe263866b",
+    "method_name": "GetInt",
+    "native_instruction_count": 16,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_ab76b84b4f7876f88eccbdf1b62adca2",
+    "method_name": "AddLoginRouletteCount",
+    "native_instruction_count": 30,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_abd61b7dca333e4cdf82aca5dd2c17b5",
+    "method_name": "InitAvatarPartsList",
+    "native_instruction_count": 311,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Camera",
+    "method_id": "r1-method_ac683c2dfb604057e54661190cca6f43",
+    "method_name": "GetCursorY",
+    "native_instruction_count": 56,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.TextContents",
+    "method_id": "r1-method_ac84a3d6bd8030ae20314daf7d3053a1",
+    "method_name": "op_Implicit",
+    "native_instruction_count": 5,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.system.GameDataRecord",
+    "method_id": "r1-method_ac987469f898353037592b23dc299c30",
+    "method_name": "Deserialize",
+    "native_instruction_count": 116,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.form.FriendForm",
+    "method_id": "r1-method_ae2bf89a23cc3900bdc2aeadf683854a",
+    "method_name": "<_update>b__66_8",
+    "native_instruction_count": 154,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.Canvas",
+    "method_id": "r1-method_aec3b36a323f72cdab0a369ee2b5f193",
+    "method_name": "IsJcMouse",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_af7560f0102b7ee126936706a66a1e81",
+    "method_name": "DrawNumImage",
+    "native_instruction_count": 61,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.io.Storage",
+    "method_id": "r1-method_af8e21f34cda3a2f0967ca323a0fe970",
+    "method_name": "Open",
+    "native_instruction_count": 332,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.FastVector`1",
+    "method_id": "r1-method_afc2d1caf560f68f7e9890411719d5f4",
+    "method_name": "IndexOfFast",
+    "native_instruction_count": 24,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "game.Company",
+    "method_id": "r1-method_b0493332a806a88a492b0850c46d19c4",
+    "method_name": "GetRank",
+    "native_instruction_count": 2,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.DevelopForm",
+    "method_id": "r1-method_b0af559635195a274aacc182b2d814b0",
+    "method_name": "GetStaffDrawX",
+    "native_instruction_count": 111,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.type.Circle",
+    "method_id": "r1-method_b22192befc1fabffe34cfb59869ba139",
+    "method_name": "Set",
+    "native_instruction_count": 16,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_b2aa6e47a4979a1b0c4a64b715458dca",
+    "method_name": "OnEndPlanning",
+    "native_instruction_count": 13,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.DataManager",
+    "method_id": "r1-method_b2e0d4c23eb4837a8f769375cdc833a8",
+    "method_name": "GetInstance",
+    "native_instruction_count": 395,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.secure.XString",
+    "method_id": "r1-method_b3185971515255cf98442b7519a695ea",
+    "method_name": "ToArray",
+    "native_instruction_count": 51,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_b34272c4e88b1ac2d4551e1847460ea8",
+    "method_name": "ChangeState",
+    "native_instruction_count": 6,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "java.util.Vector`1",
+    "method_id": "r1-method_b36fa8323caa20f56d0dbf82b90a082f",
+    "method_name": "LastIndexOf",
+    "native_instruction_count": 22,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "surface.GameView",
+    "method_id": "r1-method_b52f92e95de11b4d2f41189d07b6e719",
+    "method_name": "AddTouch",
+    "native_instruction_count": 48,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "data.TrophyData",
+    "method_id": "r1-method_b5537bd4a1957e61d4e6be6b19768035",
+    "method_name": "NewGame",
+    "native_instruction_count": 5,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.MiniGameForm2+Piece",
+    "method_id": "r1-method_b5edda2364a2fe1424b195fc262bb242",
+    "method_name": "Drawn",
+    "native_instruction_count": 12,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.surface.SurfaceBase",
+    "method_id": "r1-method_b600d900791e2dd20993e434623f705e",
+    "method_name": "CanForceRegistTouch",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Graphics",
+    "method_id": "r1-method_b643b8161b71154f9044f758725bd69c",
+    "method_name": "GetAnchorPosition",
+    "native_instruction_count": 56,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.util.EnumArray`2",
+    "method_id": "r1-method_b6741d13b9757271286fbcf530f4425f",
+    "method_name": "set_Item",
+    "native_instruction_count": 64,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BLOCKED_IDENTITY",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "form.DevelopForm",
+    "method_id": "r1-method_b731feeb90179a7b7ec04b48149a1fed",
+    "method_name": "UpdateEffect",
+    "native_instruction_count": 2218,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Font",
+    "method_id": "r1-method_b76f47907e72f4fe077489809e98f198",
+    "method_name": "Set",
+    "native_instruction_count": 76,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_b847ddd5517fe7437d54ebe57fc60b59",
+    "method_name": "InitEquipList",
+    "native_instruction_count": 43,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "java.util.JRandom",
+    "method_id": "r1-method_b9294339dc5351dd9d69fac4817c2f42",
+    "method_name": "get_Logic",
+    "native_instruction_count": 18,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.ManagementData",
+    "method_id": "r1-method_b9dda9ff62abe8b4ca2a6abc157539b6",
+    "method_name": "CheckTermRequireItem",
+    "native_instruction_count": 56,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.native.AdMobPlugin",
+    "method_id": "r1-method_ba92b49f9db69fd073b9d3299581c377",
+    "method_name": "IsLoad",
+    "native_instruction_count": 81,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_bafd31f0bad62dc919ed8f5a3286ebef",
+    "method_name": "IsBan",
+    "native_instruction_count": 7,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "form.DevelopForm",
+    "method_id": "r1-method_bb0533cc5f13239e5fec6a65f2102070",
+    "method_name": "SetDamageReductionRate",
+    "native_instruction_count": 2,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_bbc3bec9438f8e117929458ecaae5d2b",
+    "method_name": "InitItemShopMenu",
+    "native_instruction_count": 219,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.secure.XByte",
+    "method_id": "r1-method_bccae7be7b3b09ab84c9f66731427377",
+    "method_name": "op_Implicit",
+    "native_instruction_count": 8,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "java.lang.JLong",
+    "method_id": "r1-method_bd29e17a4775805644014de6ae522865",
+    "method_name": "LongValue",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.ui.Bundle",
+    "method_id": "r1-method_bd58239ce5d2cb80f4e5c8b3f9210d88",
+    "method_name": "ContainsKey",
+    "native_instruction_count": 22,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.HistoryData",
+    "method_id": "r1-method_bd7dc979ef905ba6e4a0ed55f6552cfd",
+    "method_name": "Load",
+    "native_instruction_count": 97,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Seb",
+    "method_id": "r1-method_bdd140102080701db74105242f5801de",
+    "method_name": "IsFlipFrame",
+    "native_instruction_count": 4,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm2",
+    "method_id": "r1-method_be0b525633fd6ffb314d90aecf7c246c",
+    "method_name": "CreateReinforceTeamSelect",
+    "native_instruction_count": 30,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_bf31461d630b3aaf8c5f6ac4fbc117ce",
+    "method_name": "AddShortcut",
+    "native_instruction_count": 205,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.SplashScreen",
+    "method_id": "r1-method_c00a4180f8e15e4aa0f0cc754a6dbbe0",
+    "method_name": "Start",
+    "native_instruction_count": 44,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.io.RecordStore",
+    "method_id": "r1-method_c019f5f8f10a38bf431029557bfa7c33",
+    "method_name": "RemoveLastRecord",
+    "native_instruction_count": 59,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_c0bdf9a37d75cb0102dd1e2b4c3b29bc",
+    "method_name": "CreateSpecialCommand",
+    "native_instruction_count": 25,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Fan",
+    "method_id": "r1-method_c20a091bc029fd13a850fe7e3cb8a36f",
+    "method_name": "Deserialize",
+    "native_instruction_count": 64,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.util.Trophy",
+    "method_id": "r1-method_c221fff7cc34f1b1b2b5d81e8659fd59",
+    "method_name": "GetUnlockPoint",
+    "native_instruction_count": 20,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.EncodeUtil",
+    "method_id": "r1-method_c22cbf1e91f31eadece8387e7ce73c50",
+    "method_name": "LongToByteAry",
+    "native_instruction_count": 35,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.TextLayout",
+    "method_id": "r1-method_c28f8cd77e30730fef11749171905bf4",
+    "method_name": "AddPictograph",
+    "native_instruction_count": 103,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "form.SubForm2",
+    "method_id": "r1-method_c2d201f7baaa780c4998a9a6b942ec7b",
+    "method_name": "DrawLoginNoticeBox1",
+    "native_instruction_count": 121,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Graphics",
+    "method_id": "r1-method_c47ce3b93e7a964e00a6334f5cf8edaa",
+    "method_name": "PushFont",
+    "native_instruction_count": 10,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "java.native.JavaPlugin",
+    "method_id": "r1-method_c48217ed0b8b775e0e599ece297b5bda",
+    "method_name": "CreateUtcOffsetTable",
+    "native_instruction_count": 8693,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Balloon",
+    "method_id": "r1-method_c4888abb1d04856dcfa726223e5794bd",
+    "method_name": "Init",
+    "native_instruction_count": 91,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_c492167c792a4168d6b951ccdea1b114",
+    "method_name": "GetRankExp",
+    "native_instruction_count": 38,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_c5925fc9baccb8c5a6a08baa90c6fa0d",
+    "method_name": "UpdateNewTreasureFind",
+    "native_instruction_count": 464,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_c62a5ee4aa7a419e0754256e9b113008",
+    "method_name": "FillZeroNumString",
+    "native_instruction_count": 38,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Image",
+    "method_id": "r1-method_c6426c34ba76a6e1e6a284900428bcaa",
+    "method_name": "GetOptimize",
+    "native_instruction_count": 39,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.LoadTask+TaskMethod",
+    "method_id": "r1-method_c76dcbecc8354ebf4199428161b7ada7",
+    "method_name": "EndInvoke",
+    "native_instruction_count": 3,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.MenuForm",
+    "method_id": "r1-method_c83a6e88111cfea4bb0a594e5aad6019",
+    "method_name": "Init",
+    "native_instruction_count": 163,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.ImageAtlas",
+    "method_id": "r1-method_c8b2e1d79290c103bf45f27686ee3a81",
+    "method_name": "RegistBSP",
+    "native_instruction_count": 81,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "surface.GameView",
+    "method_id": "r1-method_c8e70d925dd612bb68aece4a645292ea",
+    "method_name": "OnTouchMainMenu",
+    "native_instruction_count": 11,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.secure.XLong",
+    "method_id": "r1-method_c9c6395e6f6cc205a873ec4bf2ef2d7b",
+    "method_name": "Equals",
+    "native_instruction_count": 223,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.component.IComponentContainer",
+    "method_id": "r1-method_c9e54150d30654c65143b5a1586bac83",
+    "method_name": "GetComponent",
+    "native_instruction_count": 0,
+    "ownership": "KAIRO_ENGINE",
+    "status": "SOURCE_LIMITED",
+    "tier": "SOURCE_LIMITED_STUB"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "data.RoomData",
+    "method_id": "r1-method_ca05c12d2516535641e289ec96b2dea9",
+    "method_name": "Load",
+    "native_instruction_count": 67,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "mail.ui.Mail",
+    "method_id": "r1-method_ca07c53afc86cb69296a48a33bf893c6",
+    "method_name": "DeserializeFinal",
+    "native_instruction_count": 39,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.SoundBase",
+    "method_id": "r1-method_ca5c824f2d541aa65f8caea42c82165b",
+    "method_name": "SetPitch",
+    "native_instruction_count": 64,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_cae7c57532a1b38c76c77a87925197f3",
+    "method_name": "DrawPolicyBox",
+    "native_instruction_count": 163,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.Compressor",
+    "method_id": "r1-method_caecf064503d814f14f22ca8937f1aed",
+    "method_name": "_writeByte",
+    "native_instruction_count": 31,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_cb14cc7c812438ce5fb5bdf086c2f300",
+    "method_name": "UpdateSellingStart",
+    "native_instruction_count": 297,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Pictograph",
+    "method_id": "r1-method_cdbba4838a367b599944d7410a9eb0d5",
+    "method_name": "get_Key",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "mail.form.MailForm",
+    "method_id": "r1-method_ce2c566549bacd921f708ddd69119de7",
+    "method_name": "CreateMailMessageWindow",
+    "native_instruction_count": 25,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.SecureByte",
+    "method_id": "r1-method_cee7be561e598f77eb0f09b1b97daaf0",
+    "method_name": "GetHashCode",
+    "native_instruction_count": 3,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.util.SecureString",
+    "method_id": "r1-method_cf1139a8c2a10a47d6635f661b1318eb",
+    "method_name": "Generate",
+    "native_instruction_count": 3,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_cf34ff38b24ef46dc145626bb7dba075",
+    "method_name": "CreateHelperUseDialog",
+    "native_instruction_count": 25,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.Keypad",
+    "method_id": "r1-method_d030adbc134a4d2bd450f968211c7ab6",
+    "method_name": "GetKeypadState",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.TextLayout",
+    "method_id": "r1-method_d0b83fd24765ec1d99398f0457f1421d",
+    "method_name": "GetHeight",
+    "native_instruction_count": 47,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_d11189b3496e7d36f22e5538216fa2db",
+    "method_name": "LoadSystem",
+    "native_instruction_count": 114,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_d11725387c62404f40b4be1566d83b52",
+    "method_name": "SubLoginRouletteCount",
+    "native_instruction_count": 31,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.MiniGameForm2",
+    "method_id": "r1-method_d29e0e2f815b526b91a17f250b3d0836",
+    "method_name": "LoadResource",
+    "native_instruction_count": 125,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.Compressor",
+    "method_id": "r1-method_d2b46869355d04fd2c9b1a7432fd4135",
+    "method_name": "_writeBit",
+    "native_instruction_count": 86,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "system.form.FriendForm",
+    "method_id": "r1-method_d2fe81dd5988d2584100415ea714ee32",
+    "method_name": "_update",
+    "native_instruction_count": 1951,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.WebBox",
+    "method_id": "r1-method_d366ada339d9f014e573aaf74aca2bff",
+    "method_name": "set_Visibility",
+    "native_instruction_count": 3,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "game.Fan",
+    "method_id": "r1-method_d3f7a67fd368f927ad498f0e09b501b0",
+    "method_name": "Serialize",
+    "native_instruction_count": 56,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "kairo.unity.util.StreamUtil",
+    "method_id": "r1-method_d455b6319f3ba7d61a6d74cad502b43e",
+    "method_name": "WriteArray",
+    "native_instruction_count": 4762,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.DevelopForm",
+    "method_id": "r1-method_d45b3530c8ea955276bc31d450eab81d",
+    "method_name": "DrawBugScale",
+    "native_instruction_count": 157,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_d49903c166b6bb3b3b3fec90b70ace69",
+    "method_name": "CreateSaleTaskBonus",
+    "native_instruction_count": 25,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.type.RectF",
+    "method_id": "r1-method_d540da6d235414d8016973b43d70643e",
+    "method_name": "Deserialize",
+    "native_instruction_count": 39,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.task.Task",
+    "method_id": "r1-method_d57d6cb6887e60d3a91ddf7e7433c29b",
+    "method_name": "Deserialize",
+    "native_instruction_count": 260,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.WebBox+OnMessageDelegate",
+    "method_id": "r1-method_d6922e9d01c1d51f927691207b0dbf57",
+    "method_name": "EndInvoke",
+    "native_instruction_count": 3,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "surface.GameView",
+    "method_id": "r1-method_d7bb2cbeec718d63543d59732f51e7c6",
+    "method_name": "Set",
+    "native_instruction_count": 114,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm2",
+    "method_id": "r1-method_d829262d4e05974dec027f0518298180",
+    "method_name": "CreateGiftSend",
+    "native_instruction_count": 27,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.io.Http",
+    "method_id": "r1-method_d82bbd3e28a7b76892d5102cbff8b96e",
+    "method_name": "MakeHttp",
+    "native_instruction_count": 336,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.component.UIComponent",
+    "method_id": "r1-method_d9597a970793f13b2c8c024edc87fd66",
+    "method_name": "get_KeyInputMode",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "game.Enemy",
+    "method_id": "r1-method_d9ff2cdb78f33c0bb88f42b447665337",
+    "method_name": "RecoveryHp",
+    "native_instruction_count": 32,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm2",
+    "method_id": "r1-method_da9957dcc369671dbd5f4662ded556c6",
+    "method_name": "CreateStaffLevelMax",
+    "native_instruction_count": 26,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_db5dafeeb55d6d6dbee942470ddffda9",
+    "method_name": "GetFriendIndexInFriendList",
+    "native_instruction_count": 82,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.SoundPlayer",
+    "method_id": "r1-method_dc04af73814e4c3ae9d1b79e5238650d",
+    "method_name": "GetVolume",
+    "native_instruction_count": 12,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "java.util.JRandom+Xorshift128",
+    "method_id": "r1-method_dd0dc132747e87584d528bdd2a04baeb",
+    "method_name": "SetSeed",
+    "native_instruction_count": 8,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_dd404d17963b2721e7f6200b72ff7106",
+    "method_name": "IsPushSoftLabel",
+    "native_instruction_count": 127,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.io.ByteListOutputStream",
+    "method_id": "r1-method_dd728b36b9a7ea41355d04ff476f2e57",
+    "method_name": "_init",
+    "native_instruction_count": 41,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_de1e335dc199b90db158e1453a961846",
+    "method_name": "UpdateWork",
+    "native_instruction_count": 220,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.billing.util.Inventory",
+    "method_id": "r1-method_de4ce32f802535aad96c514598cff62b",
+    "method_name": "GetAllPurchases",
+    "native_instruction_count": 27,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.system.KairoBase",
+    "method_id": "r1-method_df35c73160e583405337cb5e1b9347e6",
+    "method_name": "AddStartProcess",
+    "native_instruction_count": 59,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "data.AwardData",
+    "method_id": "r1-method_dfbab94bf6bf22b92e16786e5a20e60e",
+    "method_name": "GetEntryScore",
+    "native_instruction_count": 19,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Pictograph",
+    "method_id": "r1-method_e06d354d7de4c8e40f6eb7066ed9ce4f",
+    "method_name": "set_Margin",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Proposal",
+    "method_id": "r1-method_e0d184d7efe8a0d3a49756d07de059f4",
+    "method_name": "ResetPeriodMaxDownloads",
+    "native_instruction_count": 78,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.ArrayUtil",
+    "method_id": "r1-method_e18a3ce8869f800058668530bc76f3d5",
+    "method_name": "GetLowIndex",
+    "native_instruction_count": 40,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.IApplication",
+    "method_id": "r1-method_e271f67ebb71a277097bc5f608b4e5a9",
+    "method_name": "GetReadyAd",
+    "native_instruction_count": 22,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.type.Circle",
+    "method_id": "r1-method_e2d38c9316d1b123c52b8099c66a874d",
+    "method_name": "op_Implicit",
+    "native_instruction_count": 46,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm2",
+    "method_id": "r1-method_e2d8f91487da97f2034e20931885e5b6",
+    "method_name": "InitReinforceTeamSelect",
+    "native_instruction_count": 326,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "surface.GameView",
+    "method_id": "r1-method_e322e4a2ef209955b12f5d569a09bd2f",
+    "method_name": "IsGameSurface",
+    "native_instruction_count": 2,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.form.FormManagerBase",
+    "method_id": "r1-method_e35f059bdc5afdb51862980a3bc02bd4",
+    "method_name": "GetFormIndex",
+    "native_instruction_count": 22,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.migration.MyMigration",
+    "method_id": "r1-method_e395cf8dd9c15267a8b557b23f989d2e",
+    "method_name": "GetInstance",
+    "native_instruction_count": 59,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_e5d2814aebab8d3839eab40bfb44a9e5",
+    "method_name": "DrawShadedBox",
+    "native_instruction_count": 59,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.Language",
+    "method_id": "r1-method_e5fe0f3e5d8883bcea0ea9fddab914d4",
+    "method_name": "JapanesePackage",
+    "native_instruction_count": 109,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.StreamUtil",
+    "method_id": "r1-method_e611f33134ce0a84f2063e3e3782db0d",
+    "method_name": "Read",
+    "native_instruction_count": 64,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_e6121d7454cefec14f8471dec259a74a",
+    "method_name": "CreateManagementLvUp",
+    "native_instruction_count": 29,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "form.MiniGameForm2+Piece",
+    "method_id": "r1-method_e6f6904cb36d0098fa6d6f4a0d6d9094",
+    "method_name": "_draw",
+    "native_instruction_count": 0,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BLOCKED_IDENTITY",
+    "tier": "SOURCE_LIMITED_STUB"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "main.AppData",
+    "method_id": "r1-method_e71cf9aa00a5cdbf2dcb83464ae5c4e9",
+    "method_name": "GetParamNumSeb",
+    "native_instruction_count": 42,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.util.SecureNumber",
+    "method_id": "r1-method_e7d58d347c2407a71fcc2f8bc10a8b57",
+    "method_name": "GetInt",
+    "native_instruction_count": 4,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Keypad",
+    "method_id": "r1-method_e85efee3b12988f8a85305502b8670cf",
+    "method_name": "CheckKeyPulse",
+    "native_instruction_count": 13,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_e8649276e0cceb512c3aedcd1276bea3",
+    "method_name": "UpdateScheduleSetting",
+    "native_instruction_count": 359,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.component.UIComponent",
+    "method_id": "r1-method_e87c1fde1392fd26e12cc126e4b541d0",
+    "method_name": "GetComponent",
+    "native_instruction_count": 123,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BLOCKED_IDENTITY",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "data.ItemData",
+    "method_id": "r1-method_e93a23e93a6fa0fcb8fece6243ef3137",
+    "method_name": "GetReloadTime",
+    "native_instruction_count": 32,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.UnityUtil",
+    "method_id": "r1-method_e997017b90fe5728bee5aa145f911153",
+    "method_name": "CheckUnityVersion",
+    "native_instruction_count": 211,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.util.JarInflater",
+    "method_id": "r1-method_ea2e013633a47a3274a81dcfe898e26d",
+    "method_name": "Dispose",
+    "native_instruction_count": 1,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_eab99d07cc51d75ce286f204d6d8e9e1",
+    "method_name": "InitAvatarTalkMenu",
+    "native_instruction_count": 17,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Canvas",
+    "method_id": "r1-method_eb72eacccf48f746c3c663a2f9b70e10",
+    "method_name": "CheckPhysicalKey",
+    "native_instruction_count": 12,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "data.PlatformData",
+    "method_id": "r1-method_eb9245655b4d5c894875fbc8da6a016d",
+    "method_name": "IsContracted",
+    "native_instruction_count": 4,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Avatar",
+    "method_id": "r1-method_ec096c032a68bcaf1c9fbc6fffd58ef5",
+    "method_name": "AddParam",
+    "native_instruction_count": 84,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "java.lang.JRuntime",
+    "method_id": "r1-method_ec49b7eeb1177fb0ca167ce5b929a6cd",
+    "method_name": "GetRuntime",
+    "native_instruction_count": 30,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.form.SocialForm",
+    "method_id": "r1-method_edd605616806baca582de339743c10e3",
+    "method_name": "IsLogin",
+    "native_instruction_count": 20,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Seb",
+    "method_id": "r1-method_ee00cf9f369bca1a49ea1235a805be1e",
+    "method_name": "GetSpritesLocal",
+    "native_instruction_count": 93,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "kairo.unity.ui.Canvas",
+    "method_id": "r1-method_ee16fc47e9c6ca09df89e09388858a0b",
+    "method_name": "DrawDebugInfo",
+    "native_instruction_count": 2085,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.Graphics",
+    "method_id": "r1-method_ee9c53c707101738d2bfe237a08b2436",
+    "method_name": "ClearFigureClip",
+    "native_instruction_count": 14,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_eeb8256ed92983abbe51dbfdba836436",
+    "method_name": "Serialize",
+    "native_instruction_count": 2437,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_eec56f29cb7641599c400ab7a20da52b",
+    "method_name": "InitSave",
+    "native_instruction_count": 70,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.GameRecord",
+    "method_id": "r1-method_ef5b182a4f03bd16e62da517ec284b12",
+    "method_name": "Deserialize",
+    "native_instruction_count": 181,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "data.CompanyData",
+    "method_id": "r1-method_f065a09e4d134d4a8bc7cb8d42b50d4e",
+    "method_name": "GetPlusFansNum",
+    "native_instruction_count": 23,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.FastVector`1",
+    "method_id": "r1-method_f0f4b7cc0843db2d9b5c891c56e68042",
+    "method_name": "InsertElementAt",
+    "native_instruction_count": 65,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.component.UIComponent",
+    "method_id": "r1-method_f120b1f7419432d1267696e11032f89e",
+    "method_name": "get_Blur",
+    "native_instruction_count": 38,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Player",
+    "method_id": "r1-method_f20975555d1dea1f7c59cc44ac155fee",
+    "method_name": "RealTimeProcess",
+    "native_instruction_count": 190,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "data.Install",
+    "method_id": "r1-method_f20b0e0357c313310cee765ba65caf7b",
+    "method_name": "Serialize",
+    "native_instruction_count": 37,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.type.Padding",
+    "method_id": "r1-method_f2f93187a986e08aa52f694a4e6c20cc",
+    "method_name": "Set",
+    "native_instruction_count": 3,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "system.form.LanguageForm",
+    "method_id": "r1-method_f3120c71864d203a396d9269dde7a573",
+    "method_name": "DrawButton",
+    "native_instruction_count": 140,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ad.AdMobView",
+    "method_id": "r1-method_f3b131dd8ec6f4298d9529ef6abaa58b",
+    "method_name": "GetAdHeight",
+    "native_instruction_count": 187,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "kairo.unity.ui.TextLayout",
+    "method_id": "r1-method_f3d32903a48574b53972563cd2140452",
+    "method_name": "_makeTextBlocks",
+    "native_instruction_count": 2586,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "kairo.unity.util.Language",
+    "method_id": "r1-method_f48a2edf451c8f567697fc99a9b6824f",
+    "method_name": "UnicodeToChanakya",
+    "native_instruction_count": 2120,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.form.FormManagerBase",
+    "method_id": "r1-method_f4be785f812a5f356e59d14577775159",
+    "method_name": "Capture2",
+    "native_instruction_count": 274,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "kairo.unity.graph.PassFinder",
+    "method_id": "r1-method_f4e8516533f20a87f73edeb4d4c223a8",
+    "method_name": "Search",
+    "native_instruction_count": 33,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "system.form.FriendForm",
+    "method_id": "r1-method_f61d50b7a5a1163380bed7d2146e9c1e",
+    "method_name": "Draw",
+    "native_instruction_count": 173,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.SoundPlayer",
+    "method_id": "r1-method_f64a9504b3d194d9de74e77b62957c01",
+    "method_name": "UpdateOtherAudioPlay",
+    "native_instruction_count": 1,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "form.GameForm",
+    "method_id": "r1-method_f6773e253d898fb3f2b3c1c7cff293c5",
+    "method_name": "OnTouchEvent",
+    "native_instruction_count": 675,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.ui.SaveRecorder",
+    "method_id": "r1-method_f75eceb5ffc035cf4e23fd28714cfd6c",
+    "method_name": "IsAutoSaving",
+    "native_instruction_count": 33,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "IDENTITY_MECHANICAL_SOURCE_LIMITED",
+    "declaring_type": "data.IdeaData",
+    "method_id": "r1-method_f767609a277be11649563a159ccbfb40",
+    "method_name": "GetSaleRank",
+    "native_instruction_count": 21,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_MECHANICAL_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.util.Profiler+Record",
+    "method_id": "r1-method_f8840e9c6d6e244cfe0588758fb7b236",
+    "method_name": "get_Time",
+    "native_instruction_count": 2,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_f8884c8e56563656356ba9f965556c38",
+    "method_name": "InitWorldMap",
+    "native_instruction_count": 72,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "kairo.unity.ui.Canvas",
+    "method_id": "r1-method_f8aaf1f511a17bda372f7bc2d2b4fc2f",
+    "method_name": "KeyClick",
+    "native_instruction_count": 1,
+    "ownership": "KAIRO_ENGINE",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "game.Staff",
+    "method_id": "r1-method_f8d5db8d33b94efe55cc720f7b3efc2e",
+    "method_name": "AddFukidashi_",
+    "native_instruction_count": 35,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  },
+  {
+    "cohort": "EXTREME_COMPLEXITY",
+    "declaring_type": "kairo.unity.util.Language",
+    "method_id": "r1-method_f976bb5267cba088645dce5e7714430f",
+    "method_name": "LoadLanguagePack",
+    "native_instruction_count": 5364,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_LOW"
+  },
+  {
+    "cohort": "BASELINE_READABLE",
+    "declaring_type": "system.KairoService",
+    "method_id": "r1-method_f9c47f58d538233ba276e1f4f4368a9c",
+    "method_name": "SetLineupEnabled",
+    "native_instruction_count": 3,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "BASELINE_READABLE",
+    "tier": "EXISTING_READABLE"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.Compressor",
+    "method_id": "r1-method_fa47cb4a40000d67503c16db331a179e",
+    "method_name": "_readByte",
+    "native_instruction_count": 28,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.ui.ApplicationManager",
+    "method_id": "r1-method_fb80e15a15d0888414d5601ba321a80a",
+    "method_name": "get_BootArg",
+    "native_instruction_count": 22,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "form.SubForm",
+    "method_id": "r1-method_fb822d5c6e60e38b362eb7157788d541",
+    "method_name": "DrawButton",
+    "native_instruction_count": 200,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "kairo.unity.util.FastVector`1",
+    "method_id": "r1-method_fc1e38a5c7c82325340ce92c0488acab",
+    "method_name": "RemoveElement",
+    "native_instruction_count": 15,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "system.install.ui.IbHelper+OnIbBonusFinished",
+    "method_id": "r1-method_fca7b357cd9ecb33ba5c87fb923d6754",
+    "method_name": "BeginInvoke",
+    "native_instruction_count": 10,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "CFG_DEFERRED",
+    "declaring_type": "system.notification.MyNotify",
+    "method_id": "r1-method_fcb6ffc3ccb03236ad4dae4e5158d55c",
+    "method_name": "Load",
+    "native_instruction_count": 147,
+    "ownership": "GAME_FIRST_PARTY",
+    "status": "DEFER_CFG_UNPROVEN",
+    "tier": "GENERATED_MEDIUM"
+  },
+  {
+    "cohort": "NATIVE_DEFERRED",
+    "declaring_type": "kairo.unity.mono.InterfaceBase`1",
+    "method_id": "r1-method_fd900513807d6c54d2b8ba2b379f3a56",
+    "method_name": "OnInitFieldAccessor",
+    "native_instruction_count": 1,
+    "ownership": "KAIRO_ENGINE",
+    "status": "DEFER_R4_NATIVE",
+    "tier": "GENERATED_HIGH"
+  }
+]

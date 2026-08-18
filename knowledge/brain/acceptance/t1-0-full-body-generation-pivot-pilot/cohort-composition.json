@@ -1,0 +1,101 @@
+{
+  "cohort_counts": {
+    "BASELINE_READABLE": 75,
+    "CFG_DEFERRED": 175,
+    "EXTREME_COMPLEXITY": 25,
+    "IDENTITY_MECHANICAL_SOURCE_LIMITED": 50,
+    "NATIVE_DEFERRED": 175
+  },
+  "cohort_ownership": {
+    "BASELINE_READABLE": {
+      "GAME_FIRST_PARTY": 37,
+      "KAIRO_ENGINE": 38
+    },
+    "CFG_DEFERRED": {
+      "GAME_FIRST_PARTY": 87,
+      "KAIRO_ENGINE": 88
+    },
+    "EXTREME_COMPLEXITY": {
+      "GAME_FIRST_PARTY": 13,
+      "KAIRO_ENGINE": 12
+    },
+    "IDENTITY_MECHANICAL_SOURCE_LIMITED": {
+      "GAME_FIRST_PARTY": 25,
+      "KAIRO_ENGINE": 25
+    },
+    "NATIVE_DEFERRED": {
+      "GAME_FIRST_PARTY": 87,
+      "KAIRO_ENGINE": 88
+    }
+  },
+  "extreme_max_instructions": 8693,
+  "extreme_min_instructions": 1888,
+  "overall_ownership": {
+    "GAME_FIRST_PARTY": 249,
+    "KAIRO_ENGINE": 251
+  },
+  "schema_version": "t1-0-cohort-composition-v1",
+  "selection_scan": {
+    "canonical_rows": 10827,
+    "canonical_types": 641,
+    "cohort_ownership": {
+      "BASELINE_READABLE": {
+        "GAME_FIRST_PARTY": 37,
+        "KAIRO_ENGINE": 38
+      },
+      "CFG_DEFERRED": {
+        "GAME_FIRST_PARTY": 87,
+        "KAIRO_ENGINE": 88
+      },
+      "EXTREME_COMPLEXITY": {
+        "GAME_FIRST_PARTY": 13,
+        "KAIRO_ENGINE": 12
+      },
+      "IDENTITY_MECHANICAL_SOURCE_LIMITED": {
+        "GAME_FIRST_PARTY": 25,
+        "KAIRO_ENGINE": 25
+      },
+      "NATIVE_DEFERRED": {
+        "GAME_FIRST_PARTY": 87,
+        "KAIRO_ENGINE": 88
+      }
+    },
+    "cohort_shape": {
+      "BASELINE_READABLE": 75,
+      "CFG_DEFERRED": 175,
+      "EXTREME_COMPLEXITY": 25,
+      "IDENTITY_MECHANICAL_SOURCE_LIMITED": 50,
+      "NATIVE_DEFERRED": 175
+    },
+    "extreme_instruction_counts": [
+      8693,
+      6101,
+      5364,
+      4762,
+      3958,
+      2876,
+      2742,
+      2708,
+      2681,
+      2646,
+      2586,
+      2437,
+      2420,
+      2384,
+      2345,
+      2257,
+      2218,
+      2186,
+      2162,
+      2120,
+      2085,
+      1960,
+      1951,
+      1919,
+      1888
+    ],
+    "range_consistent_native_rows": 9672,
+    "range_rejected_native_rows": 1100,
+    "scanned_native_rows": 10772
+  }
+}

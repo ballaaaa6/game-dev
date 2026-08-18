@@ -1,0 +1,28 @@
+{
+  "decision": "GO",
+  "dominant_blockers": [],
+  "gates": {
+    "canonical_500_cohort_shape": true,
+    "canonical_universe": true,
+    "deterministic_replay": true,
+    "extreme_complexity_represented": true,
+    "google_negative_fixtures_reject": true,
+    "method_identity_coverage_500_of_500": true,
+    "native_isil_range_accounted": true,
+    "no_original_source_mutation": true,
+    "provenance_coverage_500_of_500": true,
+    "representation_coverage_500_of_500": true,
+    "sidecar_roslyn_parse_and_compile": true,
+    "source_identity": true,
+    "zero_unexplained_native_instruction_drops": true
+  },
+  "go_token": "PASS_T1_0_FULL_BODY_GENERATION_PIVOT_PILOT_GO",
+  "high_level_semantic_rate_is_not_go_threshold": true,
+  "legacy_r4_execution_plan": "SUPERSEDED_BY_T1_FULL_BODY_GENERATION",
+  "legacy_r4_status": "RETAINED_AS_ACCEPTED_EVIDENCE_HISTORY",
+  "next_authorized_phase": "T1_FULL_BODY_GENERATION",
+  "no_go_token": null,
+  "representation_coverage_is_go_threshold": true,
+  "source_mutation": false,
+  "stop_after_500_method_pilot": true
+}
